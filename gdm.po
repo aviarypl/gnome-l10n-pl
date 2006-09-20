@@ -12,9 +12,9 @@ msgid ""
 msgstr ""
 "Project-Id-Version: gdm2.HEAD.pl\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2006-09-16 18:00+0200\n"
-"PO-Revision-Date: 2006-08-12 23:50+0200\n"
-"Last-Translator: Artur Flinta <aflinta@at.kernel.pl>\n"
+"POT-Creation-Date: 2006-09-19 22:48+0200\n"
+"PO-Revision-Date: 2006-09-20 21:18+0200\n"
+"Last-Translator: Andrzej Polatyński <andrzej@datatel.net.pl>\n"
 "Language-Team: Polish <translators@gnomepl.org>\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -497,6 +497,8 @@ msgid ""
 "Error on option %s: %s.\n"
 "Run '%s --help' to see a full list of available command line options.\n"
 msgstr ""
+"Błąd opcji %s: %s.\n"
+"Aby wypisać pełną listę dostępnych opcji wiersza poleceń, należy uruchomić \"%s --help\".\n"
 
 #. make sure the pid file doesn't get wiped
 #: ../daemon/gdm.c:1436
@@ -2232,14 +2234,12 @@ msgid "%a %b %d, %l:%M %p"
 msgstr "%a %d %b, %H:%M"
 
 #: ../gui/gdmcommon.c:712
-#, fuzzy
 msgid " seconds"
-msgstr "%d sekunda"
+msgstr "sekund"
 
 #: ../gui/gdmcommon.c:714
-#, fuzzy
 msgid " second"
-msgstr "%d sekunda"
+msgstr "sekunda"
 
 #: ../gui/gdmdynamic.c:48
 #, c-format
@@ -3425,6 +3425,7 @@ msgid ""
 "enabled and will appear in the user drop-down lists for automatic and timed "
 "logins on the Security tab.  Users in the Exclude list will not appear."
 msgstr ""
+"<b>Uwaga:</b>  Użytkownicy występujący na liście dołączanych będą widoczni w przeglądarce twarzy, jeżeli zostanie ona uaktywniona. Będą widoczni także na listach wyboru użytkowników logowania automatycznego i z opóźnieniem. Użytkownicy z listy pomijanych nie będą widoczni."
 
 #: ../gui/gdmsetup.glade.h:5
 msgid ""
@@ -3432,19 +3433,19 @@ msgid ""
 "restarting.  Changes to these settings will not take effect until GDM is "
 "restarted."
 msgstr ""
+"<b>Uwaga:</b>  Nieprawidłowe ustawienia mogą spowodować, że X serwer się nie uruchomi. Zmiany tych ustawień będą uwzględnione dopiero po ponownym uruchomieniu GDM."
 
 #: ../gui/gdmsetup.glade.h:6
 msgid "A_dd..."
 msgstr "_Dodaj..."
 
 #: ../gui/gdmsetup.glade.h:7
-#, fuzzy
 msgid "A_llow remote system administrator login"
-msgstr "Możliwość zdalnego logowania z _opóźnieniem czasowym"
+msgstr "Możliwość z_dalnego logowania na konto administratora"
 
 #: ../gui/gdmsetup.glade.h:8
 msgid "A_pply User Changes"
-msgstr ""
+msgstr "_Zastosuj zmiany użytkowników"
 
 #: ../gui/gdmsetup.glade.h:9
 msgid "Accessibility"
@@ -3452,20 +3453,19 @@ msgstr "Dostępność"
 
 #: ../gui/gdmsetup.glade.h:10
 msgid "Add / Modify Servers To Start"
-msgstr ""
+msgstr "Dodaje / modyfikuje uruchamiane serwery"
 
 #: ../gui/gdmsetup.glade.h:11
 msgid "Add S_erver..."
-msgstr ""
+msgstr "Dodaj _serwer..."
 
 #: ../gui/gdmsetup.glade.h:12
 msgid "Add User"
-msgstr ""
+msgstr "Dodaj użytkownika"
 
 #: ../gui/gdmsetup.glade.h:13
-#, fuzzy
 msgid "Allo_w remote timed logins"
-msgstr "Możliwość zdalnego logowania z _opóźnieniem czasowym"
+msgstr "Możliwość _zdalnego logowania z opóźnieniem czasowym"
 
 #: ../gui/gdmsetup.glade.h:14
 msgid "Author:"
@@ -3477,30 +3477,27 @@ msgstr "Tło"
 
 #: ../gui/gdmsetup.glade.h:16
 msgid "C_ommand:"
-msgstr ""
+msgstr "_Polecenie:"
 
 #: ../gui/gdmsetup.glade.h:17
 msgid "C_ustom:"
-msgstr ""
+msgstr "_Własna:"
 
 #: ../gui/gdmsetup.glade.h:18
-#, fuzzy
 msgid "Co_lor:"
-msgstr "_Kolor"
+msgstr "_Kolor:"
 
 #: ../gui/gdmsetup.glade.h:19
 msgid "Color depth:"
-msgstr ""
+msgstr "Głębia kolorów:"
 
 #: ../gui/gdmsetup.glade.h:20
-#, fuzzy
 msgid "Configure _X Server..."
-msgstr "Konfigura_cja menedżera logowania..."
+msgstr "Ko_nfiguracja X serwera..."
 
 #: ../gui/gdmsetup.glade.h:21
-#, fuzzy
 msgid "Configure _XDMCP..."
-msgstr "_Konfiguracja"
+msgstr "Konfiguracja _XDMCP..."
 
 #: ../gui/gdmsetup.glade.h:22
 msgid "Copyright:"
@@ -3508,7 +3505,7 @@ msgstr "Prawa autorskie:"
 
 #: ../gui/gdmsetup.glade.h:23
 msgid "Disables X forwarding, but does not affect XDMCP."
-msgstr ""
+msgstr "Wyłącza przekazywanie X ale nie ma wpływu na XDMCP."
 
 #: ../gui/gdmsetup.glade.h:24
 msgid "Displays per _host:"
@@ -3516,79 +3513,75 @@ msgstr "Ekranó_w na komputer:"
 
 #: ../gui/gdmsetup.glade.h:25
 msgid "Do not show image for _remote logins"
-msgstr ""
+msgstr "Wyłączenie wyświetlania obra_zu w przypadku logowania zdalnego"
 
 #: ../gui/gdmsetup.glade.h:26
 msgid "E_nable debug messages to system log"
-msgstr ""
+msgstr "Zapi_sywanie komunikatów programistycznych w dzienniku systemowym"
 
 #: ../gui/gdmsetup.glade.h:27
 msgid "E_xclude:"
-msgstr ""
+msgstr "_Pomijani:"
 
 #: ../gui/gdmsetup.glade.h:28
-#, fuzzy
 msgid "Enable _Timed Login"
-msgstr "Logowanie z opóźnieniem czasowym"
+msgstr "Włączenie logowania z _opóźnieniem czasowym"
 
 #: ../gui/gdmsetup.glade.h:29
 msgid "Example: /usr/X11R6/bin/X"
-msgstr ""
+msgstr "Przykład: /usr/X11R6/bin/X"
 
 #: ../gui/gdmsetup.glade.h:30
-#, fuzzy
 msgid ""
 "Greeter\n"
 "Chooser"
-msgstr "Ekran powitalny"
+msgstr ""
+"Ekran powitalny\n"
+"Program wybierający (XDMCP)"
 
 #: ../gui/gdmsetup.glade.h:32
-#, fuzzy
 msgid "Honor _indirect requests"
 msgstr "Przyjmowanie poś_rednich połączeń"
 
 #: ../gui/gdmsetup.glade.h:33
-#, fuzzy
 msgid "I_mage:"
-msgstr "_Obraz"
+msgstr "_Obraz:"
 
 #: ../gui/gdmsetup.glade.h:34
 msgid "I_nclude:"
-msgstr ""
+msgstr "D_ołączani:"
 
 #: ../gui/gdmsetup.glade.h:35
 msgid "Includ_e Hostname Chooser (XDMCP) menu item"
-msgstr ""
+msgstr "Dołączenie pozycji _uruchamiającej program wybierający (XDMCP)"
 
 #: ../gui/gdmsetup.glade.h:36
 msgid "Include Con_figure menu item"
-msgstr ""
+msgstr "Dołączenie pozycji _konfigurowania menedżera logowania"
 
 #: ../gui/gdmsetup.glade.h:37
 msgid "L_ogin retry delay:"
-msgstr ""
+msgstr "Odstęp pomiędzy kolejnymi pró_bami logowania:"
 
 #: ../gui/gdmsetup.glade.h:38
 msgid "La_unch:"
-msgstr ""
+msgstr "Urucho_mienie:"
 
 #: ../gui/gdmsetup.glade.h:39
 msgid "Listen on _UDP port: "
 msgstr "Nasłuchiwanie na porcie _UDP: "
 
 #: ../gui/gdmsetup.glade.h:40
-#, fuzzy
 msgid "Local"
-msgstr "_Lokalnie: "
+msgstr "Lokalny"
 
 #: ../gui/gdmsetup.glade.h:42
-#, fuzzy
 msgid "Login _failed:"
-msgstr "Plik _dźwiękowy:"
+msgstr "_Niepowodzenie logowania:"
 
 #: ../gui/gdmsetup.glade.h:43
 msgid "Login _successful:"
-msgstr ""
+msgstr "_Pomyślne zalogowanie:"
 
 #: ../gui/gdmsetup.glade.h:44
 msgid "Logo"
@@ -3611,28 +3604,24 @@ msgid "Maximum indirect w_ait time:"
 msgstr "Maksymal_ny czas oczekiwania przy połączeniach pośrednich:"
 
 #: ../gui/gdmsetup.glade.h:49
-#, fuzzy
 msgid "Maximum p_ending indirect requests:"
 msgstr "Maksymalna liczba oc_zekujących pośrednich połączeń:"
 
 #: ../gui/gdmsetup.glade.h:50
 msgid "Menu Bar"
-msgstr ""
+msgstr "Pasek menu"
 
 #: ../gui/gdmsetup.glade.h:51
-#, fuzzy
 msgid "Op_tions:\t"
-msgstr "Opcje"
+msgstr "Op_cje:\t"
 
 #: ../gui/gdmsetup.glade.h:52
-#, fuzzy
 msgid "Pick Background Color"
-msgstr "Kolor _tła: "
+msgstr "Wybór koloru tła"
 
 #: ../gui/gdmsetup.glade.h:53
-#, fuzzy
 msgid "Pin_g interval:"
-msgstr "Odstęp pomiędzy pak_ietami ping (sekundy):"
+msgstr "Od_stęp pomiędzy pakietami ping:"
 
 #: ../gui/gdmsetup.glade.h:54
 msgid ""
@@ -3640,235 +3629,216 @@ msgid ""
 "Plain with face browser\n"
 "Themed"
 msgstr ""
+"Zwykły\n"
+"Zwykły z przeglądarką twarzy\n"
+"Z motywem graficznym"
 
 #: ../gui/gdmsetup.glade.h:57
-#, fuzzy
 msgid "R_emove"
-msgstr "_Zdalnie: "
+msgstr "_Usuń"
 
 #: ../gui/gdmsetup.glade.h:58
 msgid "Re_move Server"
-msgstr ""
+msgstr "_Usuwa serwer"
 
 #: ../gui/gdmsetup.glade.h:59
 msgid "Refresh rate:"
-msgstr ""
+msgstr "Częstotliwość odświeżania:"
 
 #: ../gui/gdmsetup.glade.h:60
-#, fuzzy
 msgid "Remote"
-msgstr "_Zdalnie: "
+msgstr "Zdalny"
 
 #: ../gui/gdmsetup.glade.h:61
 msgid ""
 "Remote login disabled\n"
 "Same as Local"
 msgstr ""
+"Zdalne logowanie wyłączone\n"
+"Taki sam jak lokalny"
 
 #: ../gui/gdmsetup.glade.h:63
-#, fuzzy
 msgid "Resolution:"
-msgstr "Opis:"
+msgstr "Rozdzielczość:"
 
 #: ../gui/gdmsetup.glade.h:64
 msgid "Sc_ale to fit screen"
-msgstr ""
+msgstr "Dopasowani_e do wielkości ekranu"
 
 #: ../gui/gdmsetup.glade.h:65
 msgid "Security"
 msgstr "Bezpieczeństwo"
 
 #: ../gui/gdmsetup.glade.h:66
-#, fuzzy
 msgid "Select Background Image"
-msgstr "_Skalowanie obrazu w tle do wymiarów ekranu"
+msgstr "Wybór obrazu tła"
 
 #: ../gui/gdmsetup.glade.h:67
-#, fuzzy
 msgid "Select Logo Image"
-msgstr "_Wybór języka..."
+msgstr "Wybór obrazu loga"
 
 #: ../gui/gdmsetup.glade.h:68
-#, fuzzy
 msgid "Select Sound File"
-msgstr "Plik _dźwiękowy:"
+msgstr "Wybór pliku dźwiękowego"
 
 #: ../gui/gdmsetup.glade.h:69
 msgid ""
 "Selected only\n"
 "Random from selected\n"
 msgstr ""
+"Tylko wybrany\n"
+"Losowany z zaznaczonych\n"
 
 #: ../gui/gdmsetup.glade.h:72
 msgid "Server Settings"
-msgstr ""
+msgstr "Ustawienia serwera"
 
 #: ../gui/gdmsetup.glade.h:73
-#, fuzzy
 msgid "Server _name:"
-msgstr "Nazwa użytkownika:"
+msgstr "_Nazwa serwera:"
 
 #: ../gui/gdmsetup.glade.h:74
 msgid "Servers To Start"
-msgstr ""
+msgstr "Liczba uruchamianych serwerów"
 
 #: ../gui/gdmsetup.glade.h:75
-#, fuzzy
 msgid "Sho_w Actions menu"
-msgstr "Wyświetlanie menu op_eracje"
+msgstr "Wyświ_etlanie menu czynności"
 
 #: ../gui/gdmsetup.glade.h:77
-#, fuzzy
 msgid "Themes"
-msgstr "_Motyw"
+msgstr "Motywy"
 
 #: ../gui/gdmsetup.glade.h:78
-#, fuzzy
 msgid "U_ser:"
-msgstr "Nazwa użytkownika:"
+msgstr "_Użytkownik:"
 
 #: ../gui/gdmsetup.glade.h:79
-#, fuzzy
 msgid "Users"
-msgstr "Nazwa użytkownika"
+msgstr "Użytkownicy"
 
 #: ../gui/gdmsetup.glade.h:80
-#, fuzzy
 msgid "Welcome Message"
-msgstr "Witaj"
+msgstr "Wiadomość powitalna"
 
 #: ../gui/gdmsetup.glade.h:81
 msgid "X Server Login Window Preferences"
-msgstr ""
+msgstr "Preferencje okna logowania X serwera"
 
 #: ../gui/gdmsetup.glade.h:82
 msgid "XDMCP Login Window Preferences"
-msgstr ""
+msgstr "Preferencje okna logowania XDMCP"
 
 #: ../gui/gdmsetup.glade.h:83
-#, fuzzy
 msgid "_Add..."
-msgstr "_Dodaj"
+msgstr "_Dodaj..."
 
 #: ../gui/gdmsetup.glade.h:84
 msgid "_Add/Modify..."
-msgstr ""
+msgstr "_Dodaj/Modyfikuj..."
 
 #: ../gui/gdmsetup.glade.h:85
-#, fuzzy
 msgid "_Allow local system administrator login"
-msgstr "Zwróć się o jego zainstalowanie do administratora systemu."
+msgstr "Zez_wolenie na lokalne logowanie na konto administratora"
 
 #: ../gui/gdmsetup.glade.h:86
 msgid "_Allow users to change fonts and colors of plain greeter"
-msgstr ""
+msgstr "_Użytkownicy mogą zmieniać czcionki i kolory zwykłego ekranu logowania"
 
 #: ../gui/gdmsetup.glade.h:87
-#, fuzzy
 msgid "_Background color:"
-msgstr "Kolor _tła: "
+msgstr "Kolor _tła:"
 
 #: ../gui/gdmsetup.glade.h:89
-#, fuzzy, no-c-format
+#, no-c-format
 msgid "_Default: \"Welcome to %n\""
-msgstr "%n wita"
+msgstr "_Domyślna: \"%n wita\""
 
 #: ../gui/gdmsetup.glade.h:90
 msgid "_Default: \"Welcome\""
-msgstr ""
+msgstr "_Domyślna: \"Witaj\""
 
 #: ../gui/gdmsetup.glade.h:91
-#, fuzzy
 msgid "_Deny TCP connections to Xserver"
-msgstr "Nie można nawiązać połączenia ze zdalnym serwerem"
+msgstr "Odrzucanie połączeń do _X serwera"
 
 #: ../gui/gdmsetup.glade.h:92
-#, fuzzy
 msgid "_Enable Automatic Login"
-msgstr "Automatyczne logowanie"
+msgstr "Włączenie _automatycznego logowania"
 
 #: ../gui/gdmsetup.glade.h:93
-#, fuzzy
 msgid "_Enable accessible login"
-msgstr "Uaktywnienie modułów dostępności"
+msgstr "Włączenie funkcji _dostępności ekranu logowania"
 
 #: ../gui/gdmsetup.glade.h:94
 msgid "_Flexible (on demand)"
-msgstr ""
+msgstr "_Elastyczny (na żądanie)"
 
 #: ../gui/gdmsetup.glade.h:95
-#, fuzzy
 msgid "_Image:"
-msgstr "_Obraz"
+msgstr "_Obraz:"
 
 #: ../gui/gdmsetup.glade.h:96
 msgid "_Include all users from /etc/passwd (not for NIS)"
-msgstr ""
+msgstr "Dołączenie _wszystkich użytkowników z /etc/passwd (nie dla NIS)"
 
 #: ../gui/gdmsetup.glade.h:97
-#, fuzzy
 msgid "_Login screen ready:"
-msgstr "Ustawienia ekranu logowania"
+msgstr "_Gotowość ekranu logowania:"
 
 #: ../gui/gdmsetup.glade.h:98
 msgid "_Logins are handled by this computer"
-msgstr ""
+msgstr "_Logowanie obsługiwane przez ten komputer"
 
 #: ../gui/gdmsetup.glade.h:99
-#, fuzzy
 msgid "_Pause before login:"
-msgstr "Liczba _sekund przed zalogowaniem:"
+msgstr "Opóźni_enie przed zalogowaniem:"
 
 #: ../gui/gdmsetup.glade.h:100
-#, fuzzy
 msgid "_Remove"
-msgstr "_Zdalnie: "
+msgstr "_Usuń"
 
 #: ../gui/gdmsetup.glade.h:101
-#, fuzzy
 msgid "_Remove..."
-msgstr "_Zdalnie: "
+msgstr "_Usuń..."
 
 #: ../gui/gdmsetup.glade.h:102
 msgid "_Server:"
-msgstr ""
+msgstr "_Serwer:"
 
 #: ../gui/gdmsetup.glade.h:103
 msgid "_Servers:"
-msgstr ""
+msgstr "_Serwery:"
 
 #: ../gui/gdmsetup.glade.h:104
 msgid "_Style:"
-msgstr ""
+msgstr "_Styl:"
 
 #: ../gui/gdmsetup.glade.h:105
-#, fuzzy
 msgid "_Theme:"
-msgstr "_Motyw"
+msgstr "M_otyw:"
 
 #: ../gui/gdmsetup.glade.h:106
-#, fuzzy
 msgid "_User:"
-msgstr "_Nazwa użytkownika:"
+msgstr "_Użytkownik:"
 
 #: ../gui/gdmsetup.glade.h:107
 msgid "_VT:"
-msgstr ""
+msgstr "_VT:"
 
 #: ../gui/gdmsetup.glade.h:108
 msgid "dummy"
-msgstr ""
+msgstr "dummy"
 
 #: ../gui/gdmsetup.glade.h:109
 msgid "seconds"
-msgstr ""
+msgstr "sekund"
 
 #: ../gui/gdmuser.c:276 ../gui/gdmuser.c:278
 msgid "Too many users to list here..."
 msgstr "Zbyt wielu użytkowników by ich wyświetlić..."
 
 #: ../gui/greeter/greeter.c:631 ../gui/greeter/greeter.c:682
-#, fuzzy
 msgid "Restart Machine"
 msgstr "Uruchom ponownie"
 
@@ -4260,20 +4230,3 @@ msgid "Too many alias levels for a locale; may indicate a loop"
 msgstr ""
 "Zbyt wiele poziomów aliasów dla ustawień lokalnych; może oznaczać pętlę"
 
-#~ msgid "- The GNOME login manager"
-#~ msgstr "- Menedżer logowania GNOME"
-
-#~ msgid "main options"
-#~ msgstr "główne opcje"
-
-#~ msgid "- Nested gdm login chooser"
-#~ msgstr "- Osadzony program wybierający logowanie gdm"
-
-#~ msgid "- Nested gdm login"
-#~ msgstr "- Osadzone logowanie gdm"
-
-#~ msgid "- gdm login chooser"
-#~ msgstr "- program wybierający logowanie gdm"
-
-#~ msgid "_Start Again"
-#~ msgstr "_Uruchom ponownie"
