@@ -13,7 +13,7 @@ msgstr ""
 "Project-Id-Version: gnome-volume-manager\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2006-09-16 18:19+0200\n"
-"PO-Revision-Date: 2006-09-24 17:32+0100\n"
+"PO-Revision-Date: 2006-09-27 19:13+0100\n"
 "Last-Translator: Stanisław Małolepszy <smalolepszy@aviary.pl>\n"
 "Language-Team: Polish <translation-team-pl@lists.sourceforge.net>\n"
 "MIME-Version: 1.0\n"
@@ -41,9 +41,8 @@ msgid "\"Always take this action\" checkbox for photo import from a device"
 msgstr "Pole wyboru importu zdjęć z urządzenia"
 
 #: ../gnome-volume-manager.schemas.in.h:6
-#, fuzzy
 msgid "':' delimited list of paths to check for autoopen files."
-msgstr "Lista ścieżek rozdzielonych znakiem \":\" do sprawdzania  przy automatycznym uruchamianiu plików binarnych i skryptów."
+msgstr "Lista ścieżek rozdzielonych znakiem \":\" do sprawdzania  przy automatycznym otwieraniu plików."
 
 #: ../gnome-volume-manager.schemas.in.h:7
 msgid "':' delimited list of paths to check for autorun binaries and scripts."
@@ -66,13 +65,12 @@ msgid "Action to take when a mixed Audio and Data CD is encountered."
 msgstr "Działanie podejmowane po włożeniu płyty CD Audio ze ścieżką danych."
 
 #: ../gnome-volume-manager.schemas.in.h:12
-#, fuzzy
 msgid "Action to take when an iPod Photo is encountered."
-msgstr "Działanie podejmowane po podłączeniu urządzenia zawierającego zdjęcia."
+msgstr "Działanie podejmowane po podłączeniu urządzenia iPod Photo."
 
 #: ../gnome-volume-manager.schemas.in.h:13
 msgid "Audio CD burn command"
-msgstr "Polecenie wypalenia płyty CD"
+msgstr "Polecenie wypalenia dźwiękowej płyty CD"
 
 #: ../gnome-volume-manager.schemas.in.h:14
 msgid "Automount removable drives"
@@ -156,7 +154,7 @@ msgstr "Polecenie wywoływane przy wypalaniu płyty CD z danymi."
 
 #: ../gnome-volume-manager.schemas.in.h:34
 msgid "Command to run when the user wishes to burn an Audio CD."
-msgstr "Polecenie wywoływane przy wypalaniu płyty CD Audio."
+msgstr "Polecenie wywoływane przy wypalaniu dźwiękowej płyty CD."
 
 #: ../gnome-volume-manager.schemas.in.h:35
 msgid "DVD play command"
@@ -244,25 +242,23 @@ msgstr "Uruchomienie programu do edycji wideo"
 
 #: ../gnome-volume-manager.schemas.in.h:56
 msgid "The threshold value for whether or not to toggle the notification on, based on the amount of additional space used since the last check."
-msgstr ""
+msgstr "Wartość progowa dla wyświetlania lub niewyświetlania powiadomienia, oparta na ilości dodatkowo wykorzystanej przestrzeni od ostatniego sprawdzania."
 
 #: ../gnome-volume-manager.schemas.in.h:57
 msgid "Threshold for notification of increased disk usage"
-msgstr ""
+msgstr "Próg powiadamiania o nadmiernym wykorzystaniu przestrzeni dyskowej."
 
 #: ../gnome-volume-manager.schemas.in.h:58
 msgid "Threshold percentage for notifying the user of low disk space."
-msgstr ""
+msgstr "Procentowy próg powiadamiania o małej ilości wolnego miejsca na dysku."
 
 #: ../gnome-volume-manager.schemas.in.h:59
-#, fuzzy
 msgid "VCD play command"
-msgstr "Polecenie odtwarzania płyty CD"
+msgstr "Polecenie odtwarzania płyty VCD"
 
 #: ../gnome-volume-manager.schemas.in.h:60
-#, fuzzy
 msgid "Whether autoopen files should be opened on newly mounted media."
-msgstr "Określa, czy automatycznie uruchamiane programy (pliki binarne i skrypty położone na ścieżkach określonych w \"autorun_path\") są uruchamiane na właśnie podmontowanym nośniku."
+msgstr "Określa, czy pliki przeznaczone do automatycznego otwarcia maja być automatycznie otwierane na właśnie podmontowanym nośniku."
 
 #: ../gnome-volume-manager.schemas.in.h:61
 msgid "Whether autorun programs (binaries and scripts located in 'autorun_path') are run on newly mounted media."
@@ -347,7 +343,7 @@ msgstr "Polecenie myszy"
 #: ../gnome-volume-manager.schemas.in.h:81
 #, fuzzy
 msgid "palm sync command"
-msgstr "Polecenie synchronizacji iPoda"
+msgstr "Polecenie palm sync"
 
 #: ../gnome-volume-manager.schemas.in.h:82
 msgid "printer command"
@@ -360,20 +356,20 @@ msgstr "Polecenie skanera"
 #: ../gnome-volume-manager.schemas.in.h:84
 #, fuzzy
 msgid "tablet command"
-msgstr "Polecenie wysunięcia"
+msgstr "Polecenie tablet"
 
 #: ../gnome-volume-manager.schemas.in.h:85
 msgid "video camera command"
 msgstr "Polecenie kamery"
 
 #: ../gnome-volume-manager.desktop.in.h:1
+#, fuzzy
 msgid "Volume Manager"
-msgstr ""
+msgstr "Menedżer nośników"
 
 #: ../gnome-volume-manager.desktop.in.h:2
-#, fuzzy
 msgid "Volume manager for removable drives and media"
-msgstr "Konfiguruje zarządzanie napędami i nośnikami wymiennymi"
+msgstr "Menedżer napędów i nośników wymiennymi"
 
 #: ../gnome-volume-properties.desktop.in.h:1
 msgid "Configure management of removable drives and media"
@@ -421,7 +417,7 @@ msgstr "<b>PocketPC</b>"
 
 #: ../gnome-volume-properties.glade.h:10
 msgid "<b>Portable Music Players</b>"
-msgstr ""
+msgstr "<p>Przenośne odtwarzacze muzyki</b>"
 
 #: ../gnome-volume-properties.glade.h:11
 msgid "<b>Printers</b>"
@@ -674,27 +670,27 @@ msgstr "Wypalenie płyty D_VD"
 
 #: ../src/manager.c:304
 msgid "Auto-Run Confirmation"
-msgstr ""
+msgstr "Potwierdzenie automatycznego uruchomienia"
 
 #: ../src/manager.c:305
 msgid "Auto-run capability detected."
-msgstr ""
+msgstr "Wykryto możliwość automatycznego uruchomienia."
 
 #: ../src/manager.c:306
 msgid "Would you like to allow <b>'${0}'</b> to run?"
-msgstr ""
+msgstr "Czy zezwolić na uruchomienie <b>'${0}'</b>?"
 
 #: ../src/manager.c:311
 msgid "Auto-Open Confirmation"
-msgstr ""
+msgstr "Potwierdzenie automatycznego otwarcia."
 
 #: ../src/manager.c:312
 msgid "Auto-Open capability detected."
-msgstr ""
+msgstr "Wykryto możliwość automatycznego otwarcia."
 
 #: ../src/manager.c:313
 msgid "Would you like to open <b>'${0}'</b>?"
-msgstr ""
+msgstr "Czy otworzyć <b>'${0}'</b>?"
 
 #: ../src/manager.c:318
 #: ../src/manager.c:325
@@ -704,7 +700,7 @@ msgstr "Import z aparatu"
 #: ../src/manager.c:319
 #: ../src/manager.c:326
 msgid "A camera has been detected."
-msgstr ""
+msgstr "Wykryto aparat fotograficzny."
 
 #: ../src/manager.c:320
 #: ../src/manager.c:327
@@ -721,11 +717,11 @@ msgstr "Zawsze wykonuj tę akcję"
 
 #: ../src/manager.c:332
 msgid "Photo Import"
-msgstr ""
+msgstr "Importowanie zdjęć"
 
 #: ../src/manager.c:333
 msgid "A photo card has been detected."
-msgstr ""
+msgstr "Wykryto kartę pamięci."
 
 #: ../src/manager.c:334
 msgid "There are photos on the card. Would you like to add these pictures to your album?"
@@ -733,11 +729,11 @@ msgstr "Na włożonym nośniku znajdują się zdjęcia. Czy zaimportować je do 
 
 #: ../src/manager.c:339
 msgid "Photos and Music"
-msgstr ""
+msgstr "Zdjęcia i muzyka"
 
 #: ../src/manager.c:340
 msgid "Photos were found on your music device."
-msgstr ""
+msgstr "Na odtwarzaczu zostały wykryte zdjęcia."
 
 #: ../src/manager.c:341
 msgid "Would you like to import the photos or manage its music?"
@@ -745,15 +741,16 @@ msgstr "Czy chcesz zaimportować zdjęcia lub przejść do zarządzania muzyką?
 
 #: ../src/manager.c:346
 msgid "Audio / Data CD"
-msgstr ""
+msgstr "Dzwiękowa płyta CD / płyta CD z danymi"
 
 #: ../src/manager.c:347
+#, fuzzy
 msgid "The CD in the drive contains both music and files."
-msgstr ""
+msgstr "Płyta CD w napędzie zawiera muzykę, jak i inne pliki."
 
 #: ../src/manager.c:348
 msgid "Would you like to listen to music or browse the files?"
-msgstr ""
+msgstr "Czy rozpocząć odtwarzanie muzyki, czy uruchomić przeglądarkę plików."
 
 #: ../src/manager.c:353
 #: ../src/manager.c:360
@@ -773,7 +770,7 @@ msgstr "Co chcesz zrobić?"
 #: ../src/manager.c:3127
 #, c-format
 msgid "%d%% of the disk space on %s is in use"
-msgstr ""
+msgstr "Wykorzystanych jest %d%% przestrzeni na urządzeniu %s"
 
 #: ../src/manager.c:3130
 msgid "Low Disk Space"
@@ -781,24 +778,24 @@ msgstr "Mało miejsca na dysku"
 
 #: ../src/manager.c:3248
 msgid "Print version and exit"
-msgstr ""
+msgstr "Pokaż wersję i zakończ"
 
 #: ../src/manager.c:3250
 msgid "Run as a daemon"
-msgstr ""
+msgstr "Uruchom jako procesu w tle"
 
 #: ../src/manager.c:3252
 msgid "Don't run as a daemon"
-msgstr ""
+msgstr "Nie uruchamiaj jako procesu w tle"
 
 #: ../src/manager.c:3254
 msgid "Run in secret mode"
-msgstr ""
+msgstr "Uruchom w trybie tajnym"
 
 #: ../src/manager.c:3286
 #, c-format
 msgid "Unrecognized --daemon argument: %s\n"
-msgstr ""
+msgstr "Nieznany argument --deamon: %s\n"
 
 #: ../src/properties.c:310
 msgid "Could not load the main interface"
