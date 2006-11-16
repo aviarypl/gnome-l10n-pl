@@ -12,20 +12,18 @@ msgstr ""
 "Project-Id-Version: gnopernicus\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2006-11-12 16:20+0100\n"
-"PO-Revision-Date: 2003-07-05 16:52+0100\n"
-"Last-Translator: Gnome PL Team <translators@gnomepl.org>\n"
+"PO-Revision-Date: 2006-11-16 12:37+0100\n"
+"Last-Translator: wadim dziedzic <nikdo@aviary.pl>\n"
 "Language-Team: Polish <translation-team-pl@lists.sourceforge.net>\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"Plural-Forms: nplurals=3; plural=(n==1 ? 0 : n%10>=2 && n%10<=4 && (n%100<10 "
-"|| n%100>=20) ? 1 : 2);\n"
+"Plural-Forms: nplurals=3; plural=(n==1 ? 0 : n%10>=2 && n%10<=4 && (n%100<10 || n%100>=20) ? 1 : 2);\n"
 
 #: ../braille/libbrl/ttybrl-wrap.c:304
 #, c-format
 msgid "BRLTTY command code not bound to Gnopernicus key code: 0X%04X\n"
-msgstr ""
-"Kod polecenia BRLTTY nie jest związany z kodem klucza Gnopernicusa: 0X%04X\n"
+msgstr "Kod polecenia BRLTTY nie jest związany z kodem klucza Gnopernicusa: 0X%04X\n"
 
 #: ../braille/libbrl/ttybrl-wrap.c:345
 msgid "Error opening brlapi connection"
@@ -85,12 +83,14 @@ msgstr "Zdalny Braille"
 msgid "Braille monitor"
 msgstr "Monitor Braille'a"
 
-#: ../brlmon/brlmon.c:325 ../brlmon/brlmon.c:333
+#: ../brlmon/brlmon.c:325
+#: ../brlmon/brlmon.c:333
 #, c-format
 msgid "Invalid port number: %d."
 msgstr "Niepoprawny numer portu: %d."
 
-#: ../brlmon/brlmon.c:326 ../brlmon/brlmon.c:334
+#: ../brlmon/brlmon.c:326
+#: ../brlmon/brlmon.c:334
 msgid "port_no = [1025 - 30000]."
 msgstr "numer_portu = [1025 -30000]."
 
@@ -108,20 +108,25 @@ msgstr "Nie można połączyć się z portem %d."
 msgid "Waiting for data on port UDP %u."
 msgstr "Oczekiwanie na dane na porcie UDP %u."
 
-#: ../brlmon/brlmonui.c:225 ../gnopi/gnopiconf.c:43
+#: ../brlmon/brlmonui.c:225
+#: ../gnopi/gnopiconf.c:43
 msgid "Failed to init gconf client."
 msgstr "Niepowodzenie przy próbie zainicjowania klienta GConf."
 
-#: ../brlmon/brlmonui.c:234 ../srconf/libsrconf/libsrconf.c:418
+#: ../brlmon/brlmonui.c:234
+#: ../srconf/libsrconf/libsrconf.c:418
 msgid "Failed to add directory."
 msgstr "Dodanie katalogu nie powiodło się."
 
-#: ../brlmon/brlmonui.c:246 ../gnopi/kbconf.c:79 ../gnopi/spconf.c:95
+#: ../brlmon/brlmonui.c:246
+#: ../gnopi/kbconf.c:79
+#: ../gnopi/spconf.c:95
 #: ../srconf/libsrconf/libsrconf.c:431
 msgid "Failed to add notify."
 msgstr "Dodanie powiadamiania nie powiodło się."
 
-#: ../brlmon/brlmonui.c:261 ../gnopi/gnopiconf.c:145
+#: ../brlmon/brlmonui.c:261
+#: ../gnopi/gnopiconf.c:145
 #, c-format
 msgid "Expected key: %s"
 msgstr "Oczekiwany klucz: %s"
@@ -131,34 +136,46 @@ msgstr "Oczekiwany klucz: %s"
 msgid "Failed to set value: %d"
 msgstr "Nie powiodło się ustawienie wartości: %d"
 
-#: ../brlmon/brlmonui.c:342 ../brlmon/brlmonui.c:444 ../gnopi/gnopiconf.c:353
-#: ../gnopi/gnopiconf.c:407 ../gnopi/gnopiconf.c:558 ../gnopi/gnopiconf.c:731
+#: ../brlmon/brlmonui.c:342
+#: ../brlmon/brlmonui.c:444
+#: ../gnopi/gnopiconf.c:353
+#: ../gnopi/gnopiconf.c:407
+#: ../gnopi/gnopiconf.c:558
+#: ../gnopi/gnopiconf.c:731
 #, c-format
 msgid "Invalid type of key: %s."
 msgstr "Niepoprawny typ klucza: %s."
 
-#: ../brlmon/brlmonui.c:345 ../brlmon/brlmonui.c:364
+#: ../brlmon/brlmonui.c:345
+#: ../brlmon/brlmonui.c:364
 #, c-format
 msgid "Failed to set int value: %d."
 msgstr "Nie powiodło się ustawinie wartości typu całkowitego: %d."
 
-#: ../brlmon/brlmonui.c:358 ../brlmon/brlmonui.c:459
+#: ../brlmon/brlmonui.c:358
+#: ../brlmon/brlmonui.c:459
 #, c-format
 msgid "Failed to get value: %s."
 msgstr "Nie powiodła się próba pobrania wartości: %s."
 
-#: ../brlmon/brlmonui.c:403 ../gnopi/gnopiconf.c:355 ../gnopi/gnopiconf.c:373
-#: ../gnopi/gnopiconf.c:560 ../gnopi/gnopiconf.c:576
+#: ../brlmon/brlmonui.c:403
+#: ../gnopi/gnopiconf.c:355
+#: ../gnopi/gnopiconf.c:373
+#: ../gnopi/gnopiconf.c:560
+#: ../gnopi/gnopiconf.c:576
 #, c-format
 msgid "Failed to set value: %d."
 msgstr "Nie powiodło się ustawienie wartości: %d."
 
-#: ../brlmon/brlmonui.c:447 ../brlmon/brlmonui.c:462
+#: ../brlmon/brlmonui.c:447
+#: ../brlmon/brlmonui.c:462
 #, c-format
 msgid "Failed to set boolean value: %d."
 msgstr "Nie powiodło się ustawienie wartości logicznej: %d."
 
-#: ../brlmon/brlmonui.c:501 ../gnopi/gnopiconf.c:494 ../gnopi/gnopiconf.c:507
+#: ../brlmon/brlmonui.c:501
+#: ../gnopi/gnopiconf.c:494
+#: ../gnopi/gnopiconf.c:507
 #, c-format
 msgid "Failed to set value: %s."
 msgstr "Nie powiodło się ustawienie wartości: %s."
@@ -168,12 +185,14 @@ msgstr "Nie powiodło się ustawienie wartości: %s."
 msgid "Failed to get string value: %s."
 msgstr "Nie powiodło się pobranie wartości ciągu tekstowego: %s."
 
-#: ../brlmon/brlmonui.c:539 ../brlmon/brlmonui.c:549
+#: ../brlmon/brlmonui.c:539
+#: ../brlmon/brlmonui.c:549
 #, c-format
 msgid "Failed to set string value: %s."
 msgstr "Nie powiodło się ustawienie wartości ciągu tekstowego: %s."
 
-#: ../brlmon/brlmonui.c:583 ../gnopi/bmui.c:297
+#: ../brlmon/brlmonui.c:583
+#: ../gnopi/bmui.c:297
 #, c-format
 msgid "Invalid modetype: %s."
 msgstr "Niepoprawny tryb: %s."
@@ -190,7 +209,8 @@ msgstr "Czcionka %s nie jest zainstalowana."
 #. *
 #. * returns:
 #. *
-#: ../brlmon/brlmonui.c:639 ../gnopi/bmui.c:251
+#: ../brlmon/brlmonui.c:639
+#: ../gnopi/bmui.c:251
 msgid "Can not parse color string."
 msgstr "Nie mozna przetworzyć znakowego ciągu koloru."
 
@@ -245,8 +265,12 @@ msgstr "Ustawinie rozmiaru czcionki nie powiodło się."
 msgid "Invalid position: %s."
 msgstr "Niepoprawne położenie: %s."
 
-#: ../gnopi/brlconf.c:300 ../gnopi/cmdmapconf.c:237 ../gnopi/coreconf.c:140
-#: ../gnopi/kbconf.c:126 ../gnopi/magconf.c:224 ../gnopi/spconf.c:158
+#: ../gnopi/brlconf.c:300
+#: ../gnopi/cmdmapconf.c:237
+#: ../gnopi/coreconf.c:140
+#: ../gnopi/kbconf.c:126
+#: ../gnopi/magconf.c:224
+#: ../gnopi/spconf.c:158
 #: ../gnopi/spconf.c:1247
 msgid "Unable to allocate memory."
 msgstr "Nie można przydzielić pamięci."
@@ -306,8 +330,11 @@ msgstr "Nie można ustawić czujnika pozycji: %d."
 msgid "Failed to set status cell: %s."
 msgstr "Nie można ustawić komórki stanu: %s."
 
-#: ../gnopi/brlconf.c:584 ../gnopi/brlui.c:509 ../gnopi/brlui.c:557
-#: ../gnopi/brlui.c:570 ../gnopi/spvoiceui.c:613
+#: ../gnopi/brlconf.c:584
+#: ../gnopi/brlui.c:509
+#: ../gnopi/brlui.c:557
+#: ../gnopi/brlui.c:570
+#: ../gnopi/spvoiceui.c:613
 msgid "<none>"
 msgstr "<żaden>"
 
@@ -329,11 +356,12 @@ msgstr "Szwedzki"
 
 #: ../gnopi/brlui.c:83
 msgid "French"
-msgstr ""
+msgstr "Francuski"
 
 #: ../gnopi/brlui.c:84
 #: ../gnopi/gnopi_files/Magnifier_Settings/magnifier_settings.glade2.h:70
-#: ../gnopi/magui.c:60 ../gnopi/magui.c:75
+#: ../gnopi/magui.c:60
+#: ../gnopi/magui.c:75
 msgid "none"
 msgstr "brak"
 
@@ -351,7 +379,8 @@ msgstr "_Port:"
 msgid "Language"
 msgstr "Język"
 
-#: ../gnopi/brlui.c:1352 ../gnopi/cmdmapui.c:475
+#: ../gnopi/brlui.c:1352
+#: ../gnopi/cmdmapui.c:475
 msgid "No selected command!"
 msgstr "Nie wybrano polecenia!"
 
@@ -359,21 +388,28 @@ msgstr "Nie wybrano polecenia!"
 msgid "Invalid device key!"
 msgstr "Niepoprawny klucza urządzenia!"
 
-#: ../gnopi/brlui.c:1611 ../gnopi/brlui.c:2034 ../gnopi/cmdmapui.c:717
-#: ../gnopi/cmdmapui.c:1568 ../gnopi/cmdmapui.c:1588
+#: ../gnopi/brlui.c:1611
+#: ../gnopi/brlui.c:2034
+#: ../gnopi/cmdmapui.c:717
+#: ../gnopi/cmdmapui.c:1568
+#: ../gnopi/cmdmapui.c:1588
 msgid "Commands"
 msgstr "Polecenia"
 
-#: ../gnopi/brlui.c:1766 ../gnopi/cmdmapui.c:1186
+#: ../gnopi/brlui.c:1766
+#: ../gnopi/cmdmapui.c:1186
 msgid "No selected item to modify!"
 msgstr "Nie wybrano elementu do modyfikacji!"
 
-#: ../gnopi/brlui.c:1778 ../gnopi/brlui.c:1858 ../gnopi/cmdmapui.c:1059
+#: ../gnopi/brlui.c:1778
+#: ../gnopi/brlui.c:1858
+#: ../gnopi/cmdmapui.c:1059
 #: ../gnopi/cmdmapui.c:1196
 msgid "Invalid selected item!"
 msgstr "Błędny zaznaczony element!"
 
-#: ../gnopi/brlui.c:1846 ../gnopi/cmdmapui.c:1046
+#: ../gnopi/brlui.c:1846
+#: ../gnopi/cmdmapui.c:1046
 msgid "No selected item to remove!"
 msgstr "Nie wybrano elementu do usunięcia!"
 
@@ -383,7 +419,8 @@ msgid "Braille Keys"
 msgstr "Klawisze Braille'a"
 
 # FIXME ???
-#: ../gnopi/cmdmapconf.c:462 ../gnopi/cmdmapconf.c:503
+#: ../gnopi/cmdmapconf.c:462
+#: ../gnopi/cmdmapconf.c:503
 msgid "Change commit error."
 msgstr "Zmiana popełnionego błędu."
 
@@ -442,23 +479,19 @@ msgid "magnifier default"
 msgstr "domyślna lupa"
 
 #: ../gnopi/cmdmapui.c:58
-#, fuzzy
 msgid "crosswire on/off"
 msgstr "przełączenie krzyżyka"
 
 # FIXME - przycięcie czy przypięcie?
 #: ../gnopi/cmdmapui.c:59
-#, fuzzy
 msgid "crosswire clip on/off"
 msgstr "przełączenie przycięcia krzyżyka"
 
 #: ../gnopi/cmdmapui.c:60
-#, fuzzy
 msgid "decrease crosswire size"
 msgstr "zmniejszenie rozmiaru krzyżyka"
 
 #: ../gnopi/cmdmapui.c:61
-#, fuzzy
 msgid "increase crosswire size"
 msgstr "zwiększenie rozmiaru krzyżyka"
 
@@ -576,8 +609,7 @@ msgstr "zmiana trybu nawigacji"
 
 #: ../gnopi/cmdmapui.c:94
 msgid "toggle flat review/focus tracking mode"
-msgstr ""
-"przełączanie trybu pomiędzy jednolitym przeglądem a śledzeniem skupienia"
+msgstr "przełączanie trybu pomiędzy jednolitym przeglądem a śledzeniem skupienia"
 
 #: ../gnopi/cmdmapui.c:95
 msgid "flat review"
@@ -592,7 +624,6 @@ msgid "read whole window"
 msgstr "czytanie całego okna"
 
 #: ../gnopi/cmdmapui.c:98
-#, fuzzy
 msgid "detailed information"
 msgstr "informacje szczegółowe"
 
@@ -621,7 +652,8 @@ msgstr "atrybuty przy karetce"
 msgid "watch current object"
 msgstr "śledzenie bieżącego obiektu"
 
-#: ../gnopi/cmdmapui.c:105 ../srcore/srctrl.c:1354
+#: ../gnopi/cmdmapui.c:105
+#: ../srcore/srctrl.c:1354
 msgid "unwatch all objects"
 msgstr "zaprzestanie śledzenia wszystkich obiektów"
 
@@ -705,195 +737,243 @@ msgstr "przełącza lupę"
 msgid "braille monitor on/off"
 msgstr "przełącza monitor braille'a"
 
-#: ../gnopi/cmdmapui.c:143 ../kbd_mouse/libke/libke.c:146
+#: ../gnopi/cmdmapui.c:143
+#: ../kbd_mouse/libke/libke.c:146
 msgid "A"
 msgstr "A"
 
-#: ../gnopi/cmdmapui.c:144 ../kbd_mouse/libke/libke.c:147
+#: ../gnopi/cmdmapui.c:144
+#: ../kbd_mouse/libke/libke.c:147
 msgid "B"
 msgstr "B"
 
-#: ../gnopi/cmdmapui.c:145 ../kbd_mouse/libke/libke.c:148
+#: ../gnopi/cmdmapui.c:145
+#: ../kbd_mouse/libke/libke.c:148
 msgid "C"
 msgstr "C"
 
-#: ../gnopi/cmdmapui.c:146 ../kbd_mouse/libke/libke.c:149
+#: ../gnopi/cmdmapui.c:146
+#: ../kbd_mouse/libke/libke.c:149
 msgid "D"
 msgstr "D"
 
-#: ../gnopi/cmdmapui.c:147 ../kbd_mouse/libke/libke.c:150
+#: ../gnopi/cmdmapui.c:147
+#: ../kbd_mouse/libke/libke.c:150
 msgid "E"
 msgstr "E"
 
-#: ../gnopi/cmdmapui.c:148 ../kbd_mouse/libke/libke.c:151
+#: ../gnopi/cmdmapui.c:148
+#: ../kbd_mouse/libke/libke.c:151
 msgid "F"
 msgstr "F"
 
-#: ../gnopi/cmdmapui.c:149 ../kbd_mouse/libke/libke.c:152
+#: ../gnopi/cmdmapui.c:149
+#: ../kbd_mouse/libke/libke.c:152
 msgid "G"
 msgstr "G"
 
-#: ../gnopi/cmdmapui.c:150 ../kbd_mouse/libke/libke.c:153
+#: ../gnopi/cmdmapui.c:150
+#: ../kbd_mouse/libke/libke.c:153
 msgid "H"
 msgstr "H"
 
-#: ../gnopi/cmdmapui.c:151 ../kbd_mouse/libke/libke.c:154
+#: ../gnopi/cmdmapui.c:151
+#: ../kbd_mouse/libke/libke.c:154
 msgid "I"
 msgstr "I"
 
-#: ../gnopi/cmdmapui.c:152 ../kbd_mouse/libke/libke.c:155
+#: ../gnopi/cmdmapui.c:152
+#: ../kbd_mouse/libke/libke.c:155
 msgid "J"
 msgstr "J"
 
-#: ../gnopi/cmdmapui.c:153 ../kbd_mouse/libke/libke.c:156
+#: ../gnopi/cmdmapui.c:153
+#: ../kbd_mouse/libke/libke.c:156
 msgid "K"
 msgstr "K"
 
-#: ../gnopi/cmdmapui.c:154 ../kbd_mouse/libke/libke.c:157
+#: ../gnopi/cmdmapui.c:154
+#: ../kbd_mouse/libke/libke.c:157
 msgid "L"
 msgstr "L"
 
-#: ../gnopi/cmdmapui.c:155 ../kbd_mouse/libke/libke.c:158
+#: ../gnopi/cmdmapui.c:155
+#: ../kbd_mouse/libke/libke.c:158
 msgid "M"
 msgstr "M"
 
-#: ../gnopi/cmdmapui.c:156 ../kbd_mouse/libke/libke.c:159
+#: ../gnopi/cmdmapui.c:156
+#: ../kbd_mouse/libke/libke.c:159
 msgid "N"
 msgstr "N"
 
-#: ../gnopi/cmdmapui.c:157 ../kbd_mouse/libke/libke.c:160
+#: ../gnopi/cmdmapui.c:157
+#: ../kbd_mouse/libke/libke.c:160
 msgid "O"
 msgstr "O"
 
-#: ../gnopi/cmdmapui.c:158 ../kbd_mouse/libke/libke.c:161
+#: ../gnopi/cmdmapui.c:158
+#: ../kbd_mouse/libke/libke.c:161
 msgid "P"
 msgstr "P"
 
-#: ../gnopi/cmdmapui.c:159 ../kbd_mouse/libke/libke.c:162
+#: ../gnopi/cmdmapui.c:159
+#: ../kbd_mouse/libke/libke.c:162
 msgid "Q"
 msgstr "Q"
 
-#: ../gnopi/cmdmapui.c:160 ../kbd_mouse/libke/libke.c:163
+#: ../gnopi/cmdmapui.c:160
+#: ../kbd_mouse/libke/libke.c:163
 msgid "R"
 msgstr "R"
 
-#: ../gnopi/cmdmapui.c:161 ../kbd_mouse/libke/libke.c:164
+#: ../gnopi/cmdmapui.c:161
+#: ../kbd_mouse/libke/libke.c:164
 msgid "S"
 msgstr "S"
 
-#: ../gnopi/cmdmapui.c:162 ../kbd_mouse/libke/libke.c:165
+#: ../gnopi/cmdmapui.c:162
+#: ../kbd_mouse/libke/libke.c:165
 msgid "T"
 msgstr "T"
 
-#: ../gnopi/cmdmapui.c:163 ../kbd_mouse/libke/libke.c:166
+#: ../gnopi/cmdmapui.c:163
+#: ../kbd_mouse/libke/libke.c:166
 msgid "U"
 msgstr "U"
 
-#: ../gnopi/cmdmapui.c:164 ../kbd_mouse/libke/libke.c:167
+#: ../gnopi/cmdmapui.c:164
+#: ../kbd_mouse/libke/libke.c:167
 msgid "V"
 msgstr "V"
 
-#: ../gnopi/cmdmapui.c:165 ../kbd_mouse/libke/libke.c:168
+#: ../gnopi/cmdmapui.c:165
+#: ../kbd_mouse/libke/libke.c:168
 msgid "W"
 msgstr "W"
 
-#: ../gnopi/cmdmapui.c:166 ../kbd_mouse/libke/libke.c:169
+#: ../gnopi/cmdmapui.c:166
+#: ../kbd_mouse/libke/libke.c:169
 msgid "X"
 msgstr "X"
 
-#: ../gnopi/cmdmapui.c:167 ../kbd_mouse/libke/libke.c:170
+#: ../gnopi/cmdmapui.c:167
+#: ../kbd_mouse/libke/libke.c:170
 msgid "Y"
 msgstr "Y"
 
-#: ../gnopi/cmdmapui.c:168 ../kbd_mouse/libke/libke.c:171
+#: ../gnopi/cmdmapui.c:168
+#: ../kbd_mouse/libke/libke.c:171
 msgid "Z"
 msgstr "Z"
 
-#: ../gnopi/cmdmapui.c:169 ../kbd_mouse/libke/libke.c:182
+#: ../gnopi/cmdmapui.c:169
+#: ../kbd_mouse/libke/libke.c:182
 msgid "F1"
 msgstr "F1"
 
-#: ../gnopi/cmdmapui.c:170 ../kbd_mouse/libke/libke.c:183
+#: ../gnopi/cmdmapui.c:170
+#: ../kbd_mouse/libke/libke.c:183
 msgid "F2"
 msgstr "F2"
 
-#: ../gnopi/cmdmapui.c:171 ../kbd_mouse/libke/libke.c:184
+#: ../gnopi/cmdmapui.c:171
+#: ../kbd_mouse/libke/libke.c:184
 msgid "F3"
 msgstr "F3"
 
-#: ../gnopi/cmdmapui.c:172 ../kbd_mouse/libke/libke.c:185
+#: ../gnopi/cmdmapui.c:172
+#: ../kbd_mouse/libke/libke.c:185
 msgid "F4"
 msgstr "F4"
 
-#: ../gnopi/cmdmapui.c:173 ../kbd_mouse/libke/libke.c:186
+#: ../gnopi/cmdmapui.c:173
+#: ../kbd_mouse/libke/libke.c:186
 msgid "F5"
 msgstr "F5"
 
-#: ../gnopi/cmdmapui.c:174 ../kbd_mouse/libke/libke.c:187
+#: ../gnopi/cmdmapui.c:174
+#: ../kbd_mouse/libke/libke.c:187
 msgid "F6"
 msgstr "F6"
 
-#: ../gnopi/cmdmapui.c:175 ../kbd_mouse/libke/libke.c:188
+#: ../gnopi/cmdmapui.c:175
+#: ../kbd_mouse/libke/libke.c:188
 msgid "F7"
 msgstr "F7"
 
-#: ../gnopi/cmdmapui.c:176 ../kbd_mouse/libke/libke.c:189
+#: ../gnopi/cmdmapui.c:176
+#: ../kbd_mouse/libke/libke.c:189
 msgid "F8"
 msgstr "F8"
 
-#: ../gnopi/cmdmapui.c:177 ../kbd_mouse/libke/libke.c:190
+#: ../gnopi/cmdmapui.c:177
+#: ../kbd_mouse/libke/libke.c:190
 msgid "F9"
 msgstr "F9"
 
-#: ../gnopi/cmdmapui.c:178 ../kbd_mouse/libke/libke.c:191
+#: ../gnopi/cmdmapui.c:178
+#: ../kbd_mouse/libke/libke.c:191
 msgid "F10"
 msgstr "F10"
 
-#: ../gnopi/cmdmapui.c:179 ../kbd_mouse/libke/libke.c:192
+#: ../gnopi/cmdmapui.c:179
+#: ../kbd_mouse/libke/libke.c:192
 msgid "F11"
 msgstr "F11"
 
-#: ../gnopi/cmdmapui.c:180 ../kbd_mouse/libke/libke.c:193
+#: ../gnopi/cmdmapui.c:180
+#: ../kbd_mouse/libke/libke.c:193
 msgid "F12"
 msgstr "F12"
 
-#: ../gnopi/cmdmapui.c:181 ../kbd_mouse/libke/libke.c:172
+#: ../gnopi/cmdmapui.c:181
+#: ../kbd_mouse/libke/libke.c:172
 msgid "0"
 msgstr "0"
 
-#: ../gnopi/cmdmapui.c:182 ../kbd_mouse/libke/libke.c:173
+#: ../gnopi/cmdmapui.c:182
+#: ../kbd_mouse/libke/libke.c:173
 msgid "1"
 msgstr "1"
 
-#: ../gnopi/cmdmapui.c:183 ../kbd_mouse/libke/libke.c:174
+#: ../gnopi/cmdmapui.c:183
+#: ../kbd_mouse/libke/libke.c:174
 msgid "2"
 msgstr "2"
 
-#: ../gnopi/cmdmapui.c:184 ../kbd_mouse/libke/libke.c:175
+#: ../gnopi/cmdmapui.c:184
+#: ../kbd_mouse/libke/libke.c:175
 msgid "3"
 msgstr "3"
 
-#: ../gnopi/cmdmapui.c:185 ../kbd_mouse/libke/libke.c:176
+#: ../gnopi/cmdmapui.c:185
+#: ../kbd_mouse/libke/libke.c:176
 msgid "4"
 msgstr "4"
 
-#: ../gnopi/cmdmapui.c:186 ../kbd_mouse/libke/libke.c:177
+#: ../gnopi/cmdmapui.c:186
+#: ../kbd_mouse/libke/libke.c:177
 msgid "5"
 msgstr "5"
 
-#: ../gnopi/cmdmapui.c:187 ../kbd_mouse/libke/libke.c:178
+#: ../gnopi/cmdmapui.c:187
+#: ../kbd_mouse/libke/libke.c:178
 msgid "6"
 msgstr "6"
 
-#: ../gnopi/cmdmapui.c:188 ../kbd_mouse/libke/libke.c:179
+#: ../gnopi/cmdmapui.c:188
+#: ../kbd_mouse/libke/libke.c:179
 msgid "7"
 msgstr "7"
 
-#: ../gnopi/cmdmapui.c:189 ../kbd_mouse/libke/libke.c:180
+#: ../gnopi/cmdmapui.c:189
+#: ../kbd_mouse/libke/libke.c:180
 msgid "8"
 msgstr "8"
 
-#: ../gnopi/cmdmapui.c:190 ../kbd_mouse/libke/libke.c:181
+#: ../gnopi/cmdmapui.c:190
+#: ../kbd_mouse/libke/libke.c:181
 msgid "9"
 msgstr "9"
 
@@ -1157,7 +1237,8 @@ msgstr "Inicjacja GConf nie powiodła się."
 msgid "gnopernicus"
 msgstr "gnopernicus"
 
-#: ../gnopi/gnopi.c:319 ../gnopi/gnopi_files/gnopi.glade2.h:13
+#: ../gnopi/gnopi.c:319
+#: ../gnopi/gnopi_files/gnopi.glade2.h:13
 msgid "Gnopernicus"
 msgstr "Gnopernicus"
 
@@ -1167,9 +1248,7 @@ msgstr "Niepoprawny parametr."
 
 #: ../gnopi/gnopi.c:330
 msgid "Multiple instances are NOT ALLOWED. This instance will end."
-msgstr ""
-"Uruchomienie wielu kopii jest NIEDOPUSCZALNE. Obecna instancja zostanie "
-"zakończona."
+msgstr "Uruchomienie wielu kopii jest NIEDOPUSCZALNE. Obecna instancja zostanie zakończona."
 
 #: ../gnopi/gnopi.c:336
 msgid "GTK initialization failed."
@@ -1711,17 +1790,14 @@ msgid "Search Preferences"
 msgstr "Preferencje wyszukiwania"
 
 #: ../gnopi/gnopi_files/Find/find.glade2.h:20
-#, fuzzy
 msgid "Search criteria are graphics"
 msgstr "Kryterium wyszukiwania jako grafika"
 
 #: ../gnopi/gnopi_files/Find/find.glade2.h:21
-#, fuzzy
 msgid "Search criterion is an attribute"
 msgstr "Kryterium wyszukiwania jako atrybut"
 
 #: ../gnopi/gnopi_files/Find/find.glade2.h:22
-#, fuzzy
 msgid "Search criterion is text"
 msgstr "Kryterium wyszukiwania jako tekst"
 
@@ -2012,22 +2088,18 @@ msgid "Cross-hair o_n/off"
 msgstr "Przełącze_nie krzyżyka"
 
 #: ../gnopi/gnopi_files/Magnifier_Settings/magnifier_settings.glade2.h:22
-#, fuzzy
 msgid "Crosswire clip on/off"
 msgstr "Przełącza przycięcie krzyżyka"
 
 #: ../gnopi/gnopi_files/Magnifier_Settings/magnifier_settings.glade2.h:23
-#, fuzzy
 msgid "Crosswire color"
 msgstr "Kolor krzyżyka"
 
 #: ../gnopi/gnopi_files/Magnifier_Settings/magnifier_settings.glade2.h:24
-#, fuzzy
 msgid "Crosswire on/off"
 msgstr "Przełącza krzyżyk"
 
 #: ../gnopi/gnopi_files/Magnifier_Settings/magnifier_settings.glade2.h:25
-#, fuzzy
 msgid "Crosswire size"
 msgstr "Rozmiar krzyżyka"
 
@@ -2064,7 +2136,6 @@ msgid "Display screen target"
 msgstr "Docelowy ekran wyświetlania"
 
 #: ../gnopi/gnopi_files/Magnifier_Settings/magnifier_settings.glade2.h:34
-#, fuzzy
 msgid "Invert crosswire color"
 msgstr "Odwraca kolory krzyżyka"
 
@@ -2094,7 +2165,7 @@ msgstr "Rodzaj śledzenia myszy"
 
 #: ../gnopi/gnopi_files/Magnifier_Settings/magnifier_settings.glade2.h:41
 msgid "Open a dialog to specify the color"
-msgstr ""
+msgstr "Otwiera okno wyboru koloru"
 
 #: ../gnopi/gnopi_files/Magnifier_Settings/magnifier_settings.glade2.h:42
 msgid "Panning on/off"
@@ -2231,7 +2302,8 @@ msgstr "Prezentacja"
 
 # FIXME - sprawdzić
 #: ../gnopi/gnopi_files/Presentation/presentation.glade2.h:5
-#: ../srcore/default.xml.in.h:18 ../srcore/verbose.xml.in.h:18
+#: ../srcore/default.xml.in.h:18
+#: ../srcore/verbose.xml.in.h:18
 msgid "Verbose"
 msgstr "Rozwlekły"
 
@@ -2416,12 +2488,8 @@ msgid "Add new word in dictionary"
 msgstr "Dodaje nowe słow do słownika"
 
 #: ../gnopi/gnopi_files/Speech_Settings/speech_settings.glade2.h:24
-msgid ""
-"Change for all voices the engine driver and the engine speaker with a "
-"selected driver and speaker"
-msgstr ""
-"Zmienia dla wszystkich głosów sterownik oraz mówcę mechanizmu na wybrany "
-"sterownik i mówcę"
+msgid "Change for all voices the engine driver and the engine speaker with a selected driver and speaker"
+msgstr "Zmienia dla wszystkich głosów sterownik oraz mówcę mechanizmu na wybrany sterownik i mówcę"
 
 #: ../gnopi/gnopi_files/Speech_Settings/speech_settings.glade2.h:25
 msgid "Charac_ter"
@@ -2566,7 +2634,6 @@ msgid "Remove word from dictionary"
 msgstr "Usuwa słowo ze słownika"
 
 #: ../gnopi/gnopi_files/Speech_Settings/speech_settings.glade2.h:60
-#, fuzzy
 msgid "Replacement"
 msgstr "Zamiennik"
 
@@ -2840,7 +2907,8 @@ msgstr ""
 msgid "About"
 msgstr "O programie"
 
-#: ../gnopi/gnopi_files/gnopi.glade2.h:5 ../srcore/srpres.c:818
+#: ../gnopi/gnopi_files/gnopi.glade2.h:5
+#: ../srcore/srpres.c:818
 msgid "Alert"
 msgstr "Alarm"
 
@@ -2900,7 +2968,8 @@ msgstr "Ustawienia"
 msgid "Preferences..."
 msgstr "Ustawienia..."
 
-#: ../gnopi/gnopi_files/gnopi.glade2.h:21 ../srcore/srspc.c:1042
+#: ../gnopi/gnopi_files/gnopi.glade2.h:21
+#: ../srcore/srspc.c:1042
 msgid "Question"
 msgstr "Pytanie"
 
@@ -2992,7 +3061,8 @@ msgstr "_Włącz obsługę"
 msgid "_Quit"
 msgstr "Z_akończ"
 
-#: ../gnopi/gnopiconf.c:409 ../gnopi/gnopiconf.c:427
+#: ../gnopi/gnopiconf.c:409
+#: ../gnopi/gnopiconf.c:427
 #, c-format
 msgid "Failed to set value: %f."
 msgstr "Nie powiodło się ustawienie wartości: %f."
@@ -3001,7 +3071,9 @@ msgstr "Nie powiodło się ustawienie wartości: %f."
 msgid "Failed to set value."
 msgstr "Nie można ustawić wartości."
 
-#: ../gnopi/gnopiui.c:73 ../gnopi/gnopiui.c:87 ../gnopi/gnopiui.c:99
+#: ../gnopi/gnopiui.c:73
+#: ../gnopi/gnopiui.c:87
+#: ../gnopi/gnopiui.c:99
 #: ../gnopi/gnopiui.c:105
 msgid "We could not load the interface!"
 msgstr "Nie można wczytać interfejsu!"
@@ -3019,12 +3091,8 @@ msgid "default"
 msgstr "domyślne"
 
 #: ../gnopi/magui.c:482
-msgid ""
-"Can NOT remove zoomer because multiple zoomers are not supported in this "
-"version."
-msgstr ""
-"Nie można usunąć powiększenia, ponieważ wiele powiększeń nie jest "
-"obsługiwanych w tej wersji."
+msgid "Can NOT remove zoomer because multiple zoomers are not supported in this version."
+msgstr "Nie można usunąć powiększenia, ponieważ wiele powiększeń nie jest obsługiwanych w tej wersji."
 
 #: ../gnopi/magui.c:685
 msgid "Zoomers"
@@ -3093,11 +3161,13 @@ msgstr "%s bez nazwy"
 msgid "Invalid word or replacer!"
 msgstr "Błędno słowo lub zamienik!"
 
-#: ../gnopi/spdictui.c:91 ../gnopi/spdictui.c:110
+#: ../gnopi/spdictui.c:91
+#: ../gnopi/spdictui.c:110
 msgid "Word exists in dictionary!"
 msgstr "Słowo istnieje w słowniku!"
 
-#: ../gnopi/spdictui.c:292 ../gnopi/spdictui.c:345
+#: ../gnopi/spdictui.c:292
+#: ../gnopi/spdictui.c:345
 msgid "No selected word to modify!"
 msgstr "Nie wybrano słowa do modyfikacji!"
 
@@ -3154,129 +3224,109 @@ msgid "Speaker"
 msgstr "Mówca"
 
 #: ../kbd_mouse/libke/libke.c:195
-#, fuzzy
 msgid "Window Left"
-msgstr "Okno"
+msgstr "Okno lewe"
 
 #: ../kbd_mouse/libke/libke.c:196
-#, fuzzy
 msgid "Window Right"
-msgstr "Okno"
+msgstr "Okno prawe"
 
 #: ../kbd_mouse/libke/libke.c:197
-#, fuzzy
 msgid "Alt Left"
-msgstr "lewo"
+msgstr "Lewy alt"
 
 #: ../kbd_mouse/libke/libke.c:198
-#, fuzzy
 msgid "Alt Right"
-msgstr "_Prawo:"
+msgstr "Prawy alt"
 
 #: ../kbd_mouse/libke/libke.c:199
-#, fuzzy
 msgid "Shift Left"
-msgstr "_Shift"
+msgstr "Lewy shift"
 
 #: ../kbd_mouse/libke/libke.c:200
 msgid "Shift Right"
-msgstr ""
+msgstr "Przesuń w prawo"
 
 #: ../kbd_mouse/libke/libke.c:201
-#, fuzzy
 msgid "Control Left"
-msgstr "Klawisz Control"
+msgstr "Lewy control"
 
 #: ../kbd_mouse/libke/libke.c:202
-#, fuzzy
 msgid "Control Right"
-msgstr "Klawisz Control"
+msgstr "Prawy control"
 
 #: ../kbd_mouse/libke/libke.c:203
-#, fuzzy
 msgid "CapsLock"
-msgstr "caps lock"
+msgstr "CapsLock"
 
 #: ../kbd_mouse/libke/libke.c:204
-#, fuzzy
 msgid "NumLock"
-msgstr "num lock"
+msgstr "NumLock"
 
 #: ../kbd_mouse/libke/libke.c:206
-#, fuzzy
 msgid "Home"
-msgstr "początek"
+msgstr "Home"
 
 #: ../kbd_mouse/libke/libke.c:207
-#, fuzzy
 msgid "End"
-msgstr "koniec"
+msgstr "End"
 
 #: ../kbd_mouse/libke/libke.c:208
-#, fuzzy
 msgid "Left"
-msgstr "Le_wo:"
+msgstr "Lewa strzałka"
 
 #: ../kbd_mouse/libke/libke.c:209
-#, fuzzy
 msgid "Right"
-msgstr "_Prawo:"
+msgstr "Prawa strzałka"
 
 #: ../kbd_mouse/libke/libke.c:210
-#, fuzzy
 msgid "Up"
-msgstr "U"
+msgstr "Górna strzałka"
 
 #: ../kbd_mouse/libke/libke.c:211
-#, fuzzy
 msgid "Down"
-msgstr "dół"
+msgstr "Dolna strzałka"
 
 #: ../kbd_mouse/libke/libke.c:212
-#, fuzzy
 msgid "Page Up"
-msgstr "strona do góry"
+msgstr "Page Up"
 
 #: ../kbd_mouse/libke/libke.c:213
-#, fuzzy
 msgid "Page Down"
-msgstr "strona w dół"
+msgstr "Page Down"
 
 #: ../kbd_mouse/libke/libke.c:214
-#, fuzzy
 msgid "BackSpace"
-msgstr "backspace"
+msgstr "BackSpace"
 
 #: ../kbd_mouse/libke/libke.c:215
-#, fuzzy
 msgid "Delete"
-msgstr "delete"
+msgstr "Delete"
 
 #: ../kbd_mouse/libke/libke.c:216
-#, fuzzy
 msgid "Escape"
-msgstr "escape"
+msgstr "Escape"
 
-#: ../kbd_mouse/libke/libke.c:414 ../kbd_mouse/libke/libke.c:434
-#, fuzzy
+#: ../kbd_mouse/libke/libke.c:414
+#: ../kbd_mouse/libke/libke.c:434
 msgid "Unable to get display\n"
-msgstr "Nie można pobrać rozmiaru ekranu"
+msgstr "Nie można pobrać ekranu\n"
 
 #: ../kbd_mouse/libke/libke.c:835
 msgid "Keyboard event contains a strange modifier\n"
-msgstr ""
+msgstr "Zdarzenie klawiatury zawiera dziwny modyfikator\n"
 
 #: ../kbd_mouse/libke/libke.c:838
 msgid "Keyboard \"MOD2\" modifier will be changed with \"NUMLOCK\" modifier\n"
-msgstr ""
+msgstr "Modyfikator klawiatury \"MOD2\" zostanie zamieniony na \"NUMLOCK\"\n"
 
 #: ../kbd_mouse/libke/libke.c:900
 msgid "Unable to create the listener for keyboard\n"
-msgstr ""
+msgstr "Nie można utworzyć nasłuchu klawiatury\n"
 
 #: ../kbd_mouse/libke/libke.c:983
 msgid "Unable to create the listener for mouse events\n"
-msgstr ""
+msgstr "Nie można utworzyć nasłuchu zdarzeń myszy\n"
 
 #. To translators: This is the military phonetic alphabet
 #. Be sure to remove "Phonetic|" from each string
@@ -3384,11 +3434,13 @@ msgstr "Yankee"
 msgid "Phonetic|Zulu"
 msgstr "Zulu"
 
-#: ../speech/libsrs/srs-speech.c:329 ../srcore/srspc.c:1814
+#: ../speech/libsrs/srs-speech.c:329
+#: ../srcore/srspc.c:1814
 msgid "space"
 msgstr "spacja"
 
-#: ../speech/libsrs/srs-speech.c:330 ../srcore/srspc.c:1816
+#: ../speech/libsrs/srs-speech.c:330
+#: ../srcore/srspc.c:1816
 msgid "tab"
 msgstr "tabulator"
 
@@ -3428,203 +3480,250 @@ msgid "Failed set data."
 msgstr "Ustawienie danych nie powiodło się."
 
 #. translators: the letter ' ' (space), in parentheses.
-#: ../srcore/default.xml.in.h:2 ../srcore/verbose.xml.in.h:2
+#: ../srcore/default.xml.in.h:2
+#: ../srcore/verbose.xml.in.h:2
 msgid "( )"
 msgstr "( )"
 
 #. translators: the letter 'C' for "checked", in parentheses.
-#: ../srcore/default.xml.in.h:4 ../srcore/verbose.xml.in.h:4
+#: ../srcore/default.xml.in.h:4
+#: ../srcore/verbose.xml.in.h:4
 msgid "(C)"
 msgstr "(C)"
 
 #. translators: the letter 'E' for "expanded", in parentheses.
-#: ../srcore/default.xml.in.h:6 ../srcore/verbose.xml.in.h:6
+#: ../srcore/default.xml.in.h:6
+#: ../srcore/verbose.xml.in.h:6
 msgid "(E)"
 msgstr "(E)"
 
 #. translators: the letter 'P' for "[button] pressed", in parentheses.
-#: ../srcore/default.xml.in.h:8 ../srcore/verbose.xml.in.h:8
+#: ../srcore/default.xml.in.h:8
+#: ../srcore/verbose.xml.in.h:8
 msgid "(P)"
 msgstr "(P)"
 
 #. translators: the letter 'U', for "unavailable", in parentheses.
-#: ../srcore/default.xml.in.h:10 ../srcore/verbose.xml.in.h:10
+#: ../srcore/default.xml.in.h:10
+#: ../srcore/verbose.xml.in.h:10
 msgid "(U)"
 msgstr "(U)"
 
 #. translators: the letter 'c' for "collapsed", in parentheses.
-#: ../srcore/default.xml.in.h:12 ../srcore/verbose.xml.in.h:12
+#: ../srcore/default.xml.in.h:12
+#: ../srcore/verbose.xml.in.h:12
 msgid "(c)"
 msgstr "(c)"
 
 #. translators: the letter 'm' for "minimized", in parentheses.
-#: ../srcore/default.xml.in.h:14 ../srcore/verbose.xml.in.h:14
+#: ../srcore/default.xml.in.h:14
+#: ../srcore/verbose.xml.in.h:14
 msgid "(m)"
 msgstr "(m)"
 
 #. translators: the letter 'n' for "not minimized", in parentheses.
-#: ../srcore/default.xml.in.h:16 ../srcore/verbose.xml.in.h:16
+#: ../srcore/default.xml.in.h:16
+#: ../srcore/verbose.xml.in.h:16
 msgid "(n)"
 msgstr "(n)"
 
-#: ../srcore/default.xml.in.h:17 ../srcore/verbose.xml.in.h:17
+#: ../srcore/default.xml.in.h:17
+#: ../srcore/verbose.xml.in.h:17
 msgid "Give maximum speech and braille output."
 msgstr "Maksymalne wyjście mowy i braille'a."
 
 #. translators: 'keyboard accelerator'
-#: ../srcore/default.xml.in.h:20 ../srcore/verbose.xml.in.h:20
+#: ../srcore/default.xml.in.h:20
+#: ../srcore/verbose.xml.in.h:20
 msgid "accelerator"
 msgstr "klawisz skrótu"
 
-#: ../srcore/default.xml.in.h:21 ../srcore/verbose.xml.in.h:21
+#: ../srcore/default.xml.in.h:21
+#: ../srcore/verbose.xml.in.h:21
 msgid "available"
 msgstr "dostępny"
 
 #. translators: "checked" as in "checkbox is checked"
-#: ../srcore/default.xml.in.h:23 ../srcore/verbose.xml.in.h:23
+#: ../srcore/default.xml.in.h:23
+#: ../srcore/verbose.xml.in.h:23
 msgid "checked"
 msgstr "zaznaczony"
 
-#: ../srcore/default.xml.in.h:24 ../srcore/verbose.xml.in.h:24
+#: ../srcore/default.xml.in.h:24
+#: ../srcore/verbose.xml.in.h:24
 msgid "closing tab"
 msgstr "zamykanie zakładki"
 
-#: ../srcore/default.xml.in.h:25 ../srcore/verbose.xml.in.h:25
+#: ../srcore/default.xml.in.h:25
+#: ../srcore/verbose.xml.in.h:25
 msgid "closing window"
 msgstr "zamykanie okna"
 
-#: ../srcore/default.xml.in.h:26 ../srcore/verbose.xml.in.h:26
+#: ../srcore/default.xml.in.h:26
+#: ../srcore/verbose.xml.in.h:26
 msgid "collapsed"
 msgstr "zwinięte"
 
-#: ../srcore/default.xml.in.h:27 ../srcore/verbose.xml.in.h:27
+#: ../srcore/default.xml.in.h:27
+#: ../srcore/verbose.xml.in.h:27
 msgid "column header"
 msgstr "nagłówek kolumny"
 
-#: ../srcore/default.xml.in.h:28 ../srcore/verbose.xml.in.h:28
+#: ../srcore/default.xml.in.h:28
+#: ../srcore/verbose.xml.in.h:28
 msgid "create tab"
 msgstr "tworzy zakładkę"
 
-#: ../srcore/default.xml.in.h:29 ../srcore/verbose.xml.in.h:29
+#: ../srcore/default.xml.in.h:29
+#: ../srcore/verbose.xml.in.h:29
 msgid "create window"
 msgstr "tworzy okno"
 
-#: ../srcore/default.xml.in.h:30 ../srcore/verbose.xml.in.h:30
+#: ../srcore/default.xml.in.h:30
+#: ../srcore/verbose.xml.in.h:30
 msgid "current value"
 msgstr "bieżąca wartość"
 
-#: ../srcore/default.xml.in.h:31 ../srcore/srctrl.c:2666
+#: ../srcore/default.xml.in.h:31
+#: ../srcore/srctrl.c:2666
 #: ../srcore/verbose.xml.in.h:31
 msgid "empty line"
 msgstr "pusta linia"
 
-#: ../srcore/default.xml.in.h:32 ../srcore/verbose.xml.in.h:32
+#: ../srcore/default.xml.in.h:32
+#: ../srcore/verbose.xml.in.h:32
 msgid "expanded"
 msgstr "rozwinięte"
 
-#: ../srcore/default.xml.in.h:33 ../srcore/srctrl.c:2258
-#: ../srcore/srctrl.c:2409 ../srcore/verbose.xml.in.h:33
+#: ../srcore/default.xml.in.h:33
+#: ../srcore/srctrl.c:2258
+#: ../srcore/srctrl.c:2409
+#: ../srcore/verbose.xml.in.h:33
 msgid "item"
 msgid_plural "items"
 msgstr[0] "element"
 msgstr[1] "elementy"
 msgstr[2] "elementów"
 
-#: ../srcore/default.xml.in.h:34 ../srcore/verbose.xml.in.h:34
+#: ../srcore/default.xml.in.h:34
+#: ../srcore/verbose.xml.in.h:34
 msgid "items"
 msgstr "elementy"
 
-#: ../srcore/default.xml.in.h:35 ../srcore/verbose.xml.in.h:35
+#: ../srcore/default.xml.in.h:35
+#: ../srcore/verbose.xml.in.h:35
 msgid "level"
 msgstr "poziom"
 
-#: ../srcore/default.xml.in.h:36 ../srcore/verbose.xml.in.h:36
+#: ../srcore/default.xml.in.h:36
+#: ../srcore/verbose.xml.in.h:36
 msgid "maximize window"
 msgstr "maksymalizuje okno"
 
-#: ../srcore/default.xml.in.h:37 ../srcore/verbose.xml.in.h:37
+#: ../srcore/default.xml.in.h:37
+#: ../srcore/verbose.xml.in.h:37
 msgid "minimize window"
 msgstr "minimalizuje okno"
 
-#: ../srcore/default.xml.in.h:38 ../srcore/verbose.xml.in.h:38
+#: ../srcore/default.xml.in.h:38
+#: ../srcore/verbose.xml.in.h:38
 msgid "minimized"
 msgstr "zminimalizowane"
 
-#: ../srcore/default.xml.in.h:39 ../srcore/verbose.xml.in.h:39
+#: ../srcore/default.xml.in.h:39
+#: ../srcore/verbose.xml.in.h:39
 msgid "no selection anymore"
 msgstr "nic nie jest zaznaczone"
 
-#: ../srcore/default.xml.in.h:40 ../srcore/verbose.xml.in.h:40
+#: ../srcore/default.xml.in.h:40
+#: ../srcore/verbose.xml.in.h:40
 msgid "normal"
 msgstr "zwykły"
 
-#: ../srcore/default.xml.in.h:41 ../srcore/verbose.xml.in.h:41
+#: ../srcore/default.xml.in.h:41
+#: ../srcore/verbose.xml.in.h:41
 msgid "paragraph inserted"
-msgstr ""
+msgstr "wstawiony akapit"
 
-#: ../srcore/default.xml.in.h:42 ../srcore/verbose.xml.in.h:42
+#: ../srcore/default.xml.in.h:42
+#: ../srcore/verbose.xml.in.h:42
 msgid "paragraph removed"
-msgstr ""
+msgstr "usunięty akapit"
 
-#: ../srcore/default.xml.in.h:43 ../srcore/verbose.xml.in.h:43
+#: ../srcore/default.xml.in.h:43
+#: ../srcore/verbose.xml.in.h:43
 msgid "pressed"
 msgstr "wciśnięty"
 
-#: ../srcore/default.xml.in.h:44 ../srcore/verbose.xml.in.h:44
+#: ../srcore/default.xml.in.h:44
+#: ../srcore/verbose.xml.in.h:44
 msgid "rename window"
 msgstr "zmiana nazwy okna"
 
-#: ../srcore/default.xml.in.h:45 ../srcore/verbose.xml.in.h:45
+#: ../srcore/default.xml.in.h:45
+#: ../srcore/verbose.xml.in.h:45
 msgid "restore window"
 msgstr "przywrócenie okna"
 
-#: ../srcore/default.xml.in.h:46 ../srcore/verbose.xml.in.h:46
+#: ../srcore/default.xml.in.h:46
+#: ../srcore/verbose.xml.in.h:46
 msgid "row header"
 msgstr "nagłówek wiersza"
 
-#: ../srcore/default.xml.in.h:47 ../srcore/verbose.xml.in.h:47
+#: ../srcore/default.xml.in.h:47
+#: ../srcore/verbose.xml.in.h:47
 msgid "selected"
 msgstr "zaznaczone"
 
 #. translators: 'keyboard shortcut'
-#: ../srcore/default.xml.in.h:49 ../srcore/verbose.xml.in.h:49
+#: ../srcore/default.xml.in.h:49
+#: ../srcore/verbose.xml.in.h:49
 msgid "shortcut"
 msgstr "skrót"
 
-#: ../srcore/default.xml.in.h:50 ../srcore/verbose.xml.in.h:50
+#: ../srcore/default.xml.in.h:50
+#: ../srcore/verbose.xml.in.h:50
 msgid "show tool tip"
 msgstr "wyświetlanie podpowiedzi narzędzia"
 
-#: ../srcore/default.xml.in.h:51 ../srcore/verbose.xml.in.h:51
+#: ../srcore/default.xml.in.h:51
+#: ../srcore/verbose.xml.in.h:51
 msgid "switch tab"
 msgstr "przełącza zakładkę"
 
-#: ../srcore/default.xml.in.h:52 ../srcore/verbose.xml.in.h:52
+#: ../srcore/default.xml.in.h:52
+#: ../srcore/verbose.xml.in.h:52
 msgid "switch to"
 msgstr "przełącza do"
 
-#: ../srcore/default.xml.in.h:53 ../srcore/verbose.xml.in.h:53
+#: ../srcore/default.xml.in.h:53
+#: ../srcore/verbose.xml.in.h:53
 msgid "switch to window"
 msgstr "przełącza do okna"
 
-#: ../srcore/default.xml.in.h:54 ../srcore/verbose.xml.in.h:54
+#: ../srcore/default.xml.in.h:54
+#: ../srcore/verbose.xml.in.h:54
 msgid "titleize window"
 msgstr "zatytułowanie okna"
 
-#: ../srcore/default.xml.in.h:55 ../srcore/verbose.xml.in.h:55
+#: ../srcore/default.xml.in.h:55
+#: ../srcore/verbose.xml.in.h:55
 msgid "unavailable"
 msgstr "niedostępny"
 
 #. translators: "checkbox is unchecked"
-#: ../srcore/default.xml.in.h:57 ../srcore/verbose.xml.in.h:57
+#: ../srcore/default.xml.in.h:57
+#: ../srcore/verbose.xml.in.h:57
 msgid "unchecked"
 msgstr "odznaczony"
 
-#: ../srcore/default.xml.in.h:58 ../srcore/verbose.xml.in.h:58
+#: ../srcore/default.xml.in.h:58
+#: ../srcore/verbose.xml.in.h:58
 msgid "unpressed"
 msgstr "wyciśnięty"
 
-#: ../srcore/default.xml.in.h:59 ../srcore/verbose.xml.in.h:59
+#: ../srcore/default.xml.in.h:59
+#: ../srcore/verbose.xml.in.h:59
 msgid "unselected"
 msgstr "niezaznaczone"
 
@@ -3712,11 +3811,13 @@ msgstr "bez paska stanu"
 msgid "on"
 msgstr "na"
 
-#: ../srcore/srctrl.c:2236 ../srcore/srctrl.c:2387
+#: ../srcore/srctrl.c:2236
+#: ../srcore/srctrl.c:2387
 msgid "from a"
 msgstr "z"
 
-#: ../srcore/srctrl.c:2238 ../srcore/srctrl.c:2394
+#: ../srcore/srctrl.c:2238
+#: ../srcore/srctrl.c:2394
 msgid "with"
 msgstr "z"
 
@@ -3748,11 +3849,13 @@ msgstr "pierwsza linia"
 msgid "last line"
 msgstr "ostatnia linia"
 
-#: ../srcore/srctrl.c:2644 ../srcore/srctrl.c:2646
+#: ../srcore/srctrl.c:2644
+#: ../srcore/srctrl.c:2646
 msgid "[first line]"
 msgstr "[pierwsza linia]"
 
-#: ../srcore/srctrl.c:2651 ../srcore/srctrl.c:2653
+#: ../srcore/srctrl.c:2651
+#: ../srcore/srctrl.c:2653
 msgid "[last line]"
 msgstr "[ostatnia linia]"
 
@@ -3764,7 +3867,8 @@ msgstr[0] "%d pusta linia"
 msgstr[1] "%d puste linie"
 msgstr[2] "%d pustych linii"
 
-#: ../srcore/srctrl.c:2694 ../srcore/srctrl.c:2696
+#: ../srcore/srctrl.c:2694
+#: ../srcore/srctrl.c:2696
 msgid "[empty line]"
 msgstr "[pusta linia]"
 
@@ -3776,8 +3880,11 @@ msgstr[0] "[%d pusta linia]"
 msgstr[1] "[%d puste linie]"
 msgstr[2] "[%d pustych linii]"
 
-#: ../srcore/srctrl.c:2780 ../srcore/srctrl.c:2781 ../srcore/srctrl.c:2789
-#: ../srcore/srctrl.c:2944 ../srcore/srctrl.c:2945
+#: ../srcore/srctrl.c:2780
+#: ../srcore/srctrl.c:2781
+#: ../srcore/srctrl.c:2789
+#: ../srcore/srctrl.c:2944
+#: ../srcore/srctrl.c:2945
 msgid "cannot make flat review for current window"
 msgstr "nie można zrobić jednolitego przeglądu dla bieżącego okna"
 
@@ -3815,7 +3922,8 @@ msgstr "Nie można pobrać mapowania poleceń użytkownika z GConf."
 msgid "no role available"
 msgstr "brak dostępnych ról"
 
-#: ../srcore/srmain.c:77 ../srcore/srmain.c:80
+#: ../srcore/srmain.c:77
+#: ../srcore/srmain.c:80
 msgid "No focus"
 msgstr "Brak skupienia"
 
@@ -3868,32 +3976,26 @@ msgid "cursor color"
 msgstr "kolor kursora"
 
 #: ../srcore/srmain.c:1026
-#, fuzzy
 msgid "crosswire on"
 msgstr "krzyżyk włączony"
 
 #: ../srcore/srmain.c:1026
-#, fuzzy
 msgid "crosswire off"
 msgstr "krzyżyk wyłączony"
 
 #: ../srcore/srmain.c:1043
-#, fuzzy
 msgid "crosswire clip on"
 msgstr "przycięcie krzyżyka włączone"
 
 #: ../srcore/srmain.c:1044
-#, fuzzy
 msgid "crosswire clip off"
 msgstr "przycięcie krzyżyka wyłączone"
 
 #: ../srcore/srmain.c:1062
-#, fuzzy
 msgid "crosswire size"
 msgstr "rozmiar krzyżyka"
 
 #: ../srcore/srmain.c:1080
-#, fuzzy
 msgid "crosswire color"
 msgstr "kolor krzyżyka"
 
@@ -3973,11 +4075,14 @@ msgstr "control"
 msgid "shift"
 msgstr "shift"
 
-#: ../srcore/srmain.c:1721 ../srcore/srpres.c:876
+#: ../srcore/srmain.c:1721
+#: ../srcore/srpres.c:876
 msgid "Window"
 msgstr "Okno"
 
-#: ../srcore/srmain.c:1726 ../srcore/srmain.c:1801 ../srcore/srpres.c:842
+#: ../srcore/srmain.c:1726
+#: ../srcore/srmain.c:1801
+#: ../srcore/srpres.c:842
 msgid "Menu"
 msgstr "Menu"
 
@@ -3989,11 +4094,13 @@ msgstr "caps lock"
 msgid "num lock"
 msgstr "num lock"
 
-#: ../srcore/srmain.c:1743 ../srcore/srmain.c:1787
+#: ../srcore/srmain.c:1743
+#: ../srcore/srmain.c:1787
 msgid "right"
 msgstr "prawo"
 
-#: ../srcore/srmain.c:1745 ../srcore/srmain.c:1789
+#: ../srcore/srmain.c:1745
+#: ../srcore/srmain.c:1789
 msgid "left"
 msgstr "lewo"
 
@@ -4106,11 +4213,15 @@ msgstr "PRZYCISK_OPCJI"
 msgid "Check box"
 msgstr "Przycisk opcji"
 
-#: ../srcore/srpres.c:821 ../srcore/srpres.c:844 ../srcore/srpres.c:854
+#: ../srcore/srpres.c:821
+#: ../srcore/srpres.c:844
+#: ../srcore/srpres.c:854
 msgid "MIT"
 msgstr "EME"
 
-#: ../srcore/srpres.c:821 ../srcore/srpres.c:844 ../srcore/srpres.c:854
+#: ../srcore/srpres.c:821
+#: ../srcore/srpres.c:844
+#: ../srcore/srpres.c:854
 msgid "MENU ITEM"
 msgstr "ELEMENT MENU"
 
@@ -4262,15 +4373,18 @@ msgstr "ZAWARTOŚĆ HTML"
 msgid "H T M L container"
 msgstr "Zawartość html"
 
-#: ../srcore/srpres.c:834 ../srcore/srpres.c:839
+#: ../srcore/srpres.c:834
+#: ../srcore/srpres.c:839
 msgid "LNK"
 msgstr "ODS"
 
-#: ../srcore/srpres.c:834 ../srcore/srpres.c:839
+#: ../srcore/srpres.c:834
+#: ../srcore/srpres.c:839
 msgid "LINK"
 msgstr "ODSYŁACZ"
 
-#: ../srcore/srpres.c:834 ../srcore/srpres.c:839
+#: ../srcore/srpres.c:834
+#: ../srcore/srpres.c:839
 msgid "link"
 msgstr "odsyłacz"
 
@@ -4518,7 +4632,8 @@ msgstr "PASEK PRZEWIJANIA"
 msgid "Scroll bar"
 msgstr "Pasek przewijania"
 
-#: ../srcore/srpres.c:858 ../srcore/srpres.c:886
+#: ../srcore/srpres.c:858
+#: ../srcore/srpres.c:886
 msgid "SPN"
 msgstr "OBP"
 
@@ -4590,7 +4705,8 @@ msgstr "TABELA"
 msgid "Table"
 msgstr "Tabela"
 
-#: ../srcore/srpres.c:864 ../srcore/srpres.c:893
+#: ../srcore/srpres.c:864
+#: ../srcore/srpres.c:893
 msgid "CEL"
 msgstr "KTA"
 
@@ -4602,7 +4718,8 @@ msgstr "KOMÓRKA TABELI"
 msgid "Table cell"
 msgstr "Komórka tabeli"
 
-#: ../srcore/srpres.c:865 ../srcore/srpres.c:890
+#: ../srcore/srpres.c:865
+#: ../srcore/srpres.c:890
 msgid "TCH"
 msgstr "NKT"
 
@@ -4626,7 +4743,8 @@ msgstr "NAGŁÓWEK WIERSZA TABELI"
 msgid "Table row header"
 msgstr "Nagłówek wiersza tabeli"
 
-#: ../srcore/srpres.c:867 ../srcore/srpres.c:868
+#: ../srcore/srpres.c:867
+#: ../srcore/srpres.c:868
 msgid "TXT"
 msgstr "TWL"
 
@@ -4926,11 +5044,11 @@ msgstr "Pasek edycji"
 
 #: ../srcore/srpres.c:893
 msgid "SPREAD SHEET CELL"
-msgstr ""
+msgstr "KOMÓRKA ARKUSZA KALKULACYJNEGO"
 
 #: ../srcore/srpres.c:893
 msgid "Spread sheet cell"
-msgstr ""
+msgstr "Komórka arkusza kalkulacyjnego"
 
 #: ../srcore/srspc.c:445
 #, c-format
@@ -5311,90 +5429,62 @@ msgstr "brak obsługi wymowy klawisza \"%s\""
 
 #~ msgid "Border color"
 #~ msgstr "Kolor ramki"
-
 #~ msgid "Serial port number where the device is linked"
 #~ msgstr "Port szeregowy do którego jest podłączone urządzenie"
-
 #~ msgid "Alpha"
 #~ msgstr "Alfa"
-
 #~ msgid "Bravo"
 #~ msgstr "Bravo"
-
 #~ msgid "Delta"
 #~ msgstr "Delta"
-
 #~ msgid "Echo"
 #~ msgstr "Echo"
-
 #~ msgid "Golf"
 #~ msgstr "Golf"
-
 #~ msgid "Hotel"
 #~ msgstr "Hotel"
-
 #~ msgid "India"
 #~ msgstr "India"
-
 #~ msgid "Juliet"
 #~ msgstr "Juliet"
-
 #~ msgid "Kilo"
 #~ msgstr "Kilo"
-
 #~ msgid "Lima"
 #~ msgstr "Lima"
-
 #~ msgid "Mike"
 #~ msgstr "Mike"
-
 #~ msgid "Oscar"
 #~ msgstr "Oscar"
-
 #~ msgid "Papa"
 #~ msgstr "Papa"
-
 #~ msgid "Quebec"
 #~ msgstr "Quebec"
-
 #~ msgid "Romeo"
 #~ msgstr "Romeo"
-
 #~ msgid "Sierra"
 #~ msgstr "Sierra"
-
 #~ msgid "Tango"
 #~ msgstr "Tango"
-
 #~ msgid "Victor"
 #~ msgstr "Victor"
-
 #~ msgid "Xray"
 #~ msgstr "X-Ray"
-
 #~ msgid "Yankee"
 #~ msgstr "Yankee"
-
 #~ msgid "Zulu"
 #~ msgstr "Zulu"
-
 #~ msgid "Count cha_racters"
 #~ msgstr "Zl_iczanie znaków"
-
 #~ msgid "Count characters"
 #~ msgstr "Zliczanie znaków"
-
 #~ msgid "uniform"
 #~ msgstr "uniform"
-
 #~ msgid "Can not install braille font."
 #~ msgstr "Nie można zainstalować czcionki Braille'a."
-
 #~ msgid "window hierarchy flat"
 #~ msgstr "płaska hierarchia okna"
-
 #~ msgid "Sa_y all cursors"
 #~ msgstr "Wymowa wszystkich _kursorów"
-
 #~ msgid "Say all cursors"
 #~ msgstr "Wymawia wszystkie kursory"
+
