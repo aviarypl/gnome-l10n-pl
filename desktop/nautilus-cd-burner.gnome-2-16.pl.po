@@ -11,8 +11,8 @@ msgstr ""
 "Project-Id-Version: Nautilus-cd-burner\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2006-11-12 16:36+0100\n"
-"PO-Revision-Date: 2006-11-17 22:12+0100\n"
-"Last-Translator: Marek Stepien <marcoos@aviary.pl>\n"
+"PO-Revision-Date: 2006-11-17 23:34+0100\n"
+"Last-Translator: wadim dziedzic <nikdo@aviary.pl>\n"
 "Language-Team: Polish <translation-team-pl@lists.sourceforge.net>\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -22,12 +22,12 @@ msgstr ""
 #: ../data/nautilus-cd-burner.desktop.in.h:1
 #: ../data/nautilus-cd-burner-open-iso.desktop.in.h:1
 msgid "CD/DVD Creator"
-msgstr "Druid płyty CD/DVD"
+msgstr "Asystent tworzenia CD/DVD"
 
 #: ../data/nautilus-cd-burner.desktop.in.h:2
 #: ../data/nautilus-cd-burner-open-iso.desktop.in.h:2
 msgid "Open the CD/DVD Creator"
-msgstr "Otwórz druida płyty CD/DVD"
+msgstr "Otwórz asystenta płyty CD/DVD"
 
 #: ../data/nautilus-cd-burner.glade.h:1
 msgid "    "
@@ -172,9 +172,9 @@ msgid " (invalid Unicode)"
 msgstr " (niepoprawny Unikod)"
 
 #: ../src/make-iso.c:886
-#, fuzzy, c-format
+#, c-format
 msgid "The selected location does not have enough space to store the disc image (%s MiB needed)."
-msgstr "Wybrane położenie nie posiada wystarczającej ilości miejsca do zapisania obrazu płyty (potrzeba %ld MB)."
+msgstr "Brak wystarczającej ilości miejsca do zapisania obrazu płyty w wybranym położeniu (potrzeba %s MiB)."
 
 #: ../src/make-iso.c:1023
 #: ../src/make-iso.c:1406
@@ -187,11 +187,13 @@ msgid "The operation was cancelled by the user."
 msgstr "Operacja została przerwana przez użytkownika."
 
 #: ../src/make-iso.c:1147
-#, fuzzy, c-format
+#, c-format
 msgid ""
 "Some files have invalid filenames: \n"
 "%s"
-msgstr "Część plików ma nieprawidłowe nazwy."
+msgstr ""
+"Część plików ma nieprawidłowe nazwy: \n"
+"%s"
 
 #: ../src/make-iso.c:1160
 msgid "Unknown character encoding."
@@ -219,9 +221,8 @@ msgid "Not a valid disc image."
 msgstr "Niepoprawny obraz płyty."
 
 #: ../src/nautilus-burn-bar.c:137
-#, fuzzy
 msgid "CD/DVD Creator Folder"
-msgstr "Otwórz druida płyty CD/DVD"
+msgstr "Folder tworzenia CD/DVD"
 
 #: ../src/nautilus-burn-bar.c:141
 #: ../src/ncb-selection-dialog.c:176
@@ -294,53 +295,45 @@ msgid "Drive"
 msgstr "Napęð"
 
 #: ../src/nautilus-burn-drive-selection.c:237
-#, fuzzy
 msgid "Unnamed CD/DVD Drive"
-msgstr "Nienazwany napęd SCSI (%s)"
+msgstr "Nienazwany napęd CD/DVD"
 
 #: ../src/nautilus-burn-recorder.c:600
-#, fuzzy
 msgid "The recorder could not be accessed."
 msgstr "Nie można uzyskać dostępu do nagrywarki"
 
 #: ../src/nautilus-burn-recorder.c:604
-#, fuzzy
 msgid "Not enough space available on the disc."
-msgstr "Brak dostępnego miejsca na dysku"
+msgstr "Brak wystarczającej ilości miejsca na dysku."
 
 #: ../src/nautilus-burn-recorder.c:608
 #: ../src/nautilus-burn-recorder.c:612
-#, fuzzy
 msgid "The files selected did not fit on the DVD."
-msgstr "Zaznaczone pliki nie mieszczą się na płycie CD"
+msgstr "Zaznaczone pliki nie mieszczą się na płycie DVF."
 
 #: ../src/nautilus-burn-recorder.c:624
 msgid "The target DVD drive is still in use."
-msgstr ""
+msgstr "Docelowy napęd DVD jest w użyciu."
 
 #: ../src/nautilus-burn-recorder.c:630
 msgid "Unhandled error, aborting"
 msgstr "Nieobsłużony błąd, przerwanie"
 
 #: ../src/nautilus-burn-recorder.c:695
-#, fuzzy
 msgid "The CD has already been recorded."
-msgstr "Płyta CD została już nagrana"
+msgstr "Płyta CD została już nagrana."
 
 #: ../src/nautilus-burn-recorder.c:715
-#, fuzzy
 msgid "The files selected did not fit on the CD."
-msgstr "Zaznaczone pliki nie mieszczą się na płycie CD"
+msgstr "Zaznaczone pliki nie mieszczą się na płycie CD,"
 
 #: ../src/nautilus-burn-recorder.c:719
-#, fuzzy
 msgid "All audio files must be stereo, 16-bit digital audio with 44100Hz samples."
 msgstr "Wszystkie pliki dźwiękowe muszą być stereofoniczne, próbkowane z częstotliwością 44.1 kHz i rozdzielczością 16 bitów."
 
 #: ../src/nautilus-burn-recorder.c:743
-#, fuzzy
 msgid "Error while writing to disc.  Try a lower speed."
-msgstr "Błąd podczas zapisywania na płycie"
+msgstr "Błąd podczas zapisywania na płycie. Proszę spróbować mniejszej prędkości zapisu."
 
 #: ../src/nautilus-burn-recorder.c:748
 msgid "The system is too slow to write the CD at this speed. Try a lower speed."
@@ -360,11 +353,11 @@ msgstr "Wypalanie płyty CD/DVD"
 
 #: ../src/nautilus-burn-recorder.c:1099
 msgid "Can only use growisofs on a single track"
-msgstr ""
+msgstr "Systemu growisofs można uzyć tylko na jednej ścieżce"
 
 #: ../src/nautilus-burn-recorder.c:1110
 msgid "Can only use growisofs on a data or graft list track"
-msgstr ""
+msgstr "Systemu growisofs można uzyć tylko ścieżce danych lub graft list"
 
 #: ../src/nautilus-burn-recorder.c:1475
 msgid "Blanking CD"
@@ -394,7 +387,7 @@ msgstr "Użycie urządzenia CD/DVD jako źródła zamiast burn:///"
 
 #: ../src/nautilus-cd-burner.c:298
 msgid "DEVICE"
-msgstr ""
+msgstr "URZĄDZENIE"
 
 #: ../src/nautilus-cd-burner.c:300
 msgid "Use ISO image as source instead of burn:///"
@@ -403,16 +396,15 @@ msgstr "Użycie obrazu ISO jako źródła zamiast burn:///"
 #: ../src/nautilus-cd-burner.c:300
 #: ../src/nautilus-cd-burner.c:302
 msgid "FILENAME"
-msgstr ""
+msgstr "NAZWA PLIKU"
 
 #: ../src/nautilus-cd-burner.c:302
 msgid "Use CUE/TOC file as source instead of burn:///"
 msgstr "Użycie pliku CUE/TOC jako źródła zamiast burn:///"
 
 #: ../src/ncb-selection.c:360
-#, fuzzy
 msgid "It appears that the disc, when created, will contain a single disc image file.  Do you want to create a disc from the contents of the image or with the image file inside?"
-msgstr "Wygląda na to, że płyta po utworzeniu będzie zawierała tylko plik obrazu płyty. Czy chcesz kontynuować i zapisać go na płycie jako plik?"
+msgstr "Wygląda na to, że płyta po utworzeniu będzie zawierała tylko plik obrazu płyty. Czy kontynuować i zapisać go na płycie jako plik?"
 
 #: ../src/ncb-selection.c:363
 msgid "Create disc containing a single disc image file?"
@@ -475,7 +467,7 @@ msgstr "Najprawdopodobniej brak nośnika w wybranym napędzie."
 
 #: ../src/ncb-selection.c:577
 msgid "The media is blank."
-msgstr ""
+msgstr "Nośnik jest pusty."
 
 #: ../src/ncb-selection.c:610
 #, c-format
@@ -485,7 +477,7 @@ msgstr "Nie znaleziono pliku: %s"
 #: ../src/ncb-selection.c:619
 #, c-format
 msgid "File does not appear to be a valid CUE sheet: %s"
-msgstr ""
+msgstr "Plik nie jest poprawnym arkuszem CUE: %s"
 
 #.
 #. translators: see strftime man page for meaning of %b, %d and %Y
@@ -497,38 +489,35 @@ msgstr "Dane osobiste, %d %b, %Y"
 
 #: ../src/ncb-selection.c:735
 msgid "Unable to create CD/DVD"
-msgstr ""
+msgstr "Nie można tworzyć CD/DVD"
 
 #: ../src/ncb-selection.c:899
 msgid "Source name"
-msgstr ""
+msgstr "Nazwa źródła"
 
 #: ../src/ncb-selection.c:906
 msgid "Source type"
-msgstr ""
+msgstr "Typ źródła"
 
 #: ../src/ncb-selection.c:914
 msgid "Source size"
-msgstr ""
+msgstr "Rozmiar źródła"
 
 #: ../src/ncb-selection.c:923
-#, fuzzy
 msgid "Disc label"
-msgstr "_Nazwa płyty:"
+msgstr "Nazwa płyty"
 
 #: ../src/ncb-selection.c:930
 msgid "Write speed"
 msgstr "Szybkość zapisu"
 
 #: ../src/ncb-selection-dialog.c:172
-#, fuzzy
 msgid "Copy Disc"
-msgstr "K_opiuj płytę..."
+msgstr "Kopiuj płytę"
 
 #: ../src/ncb-selection-dialog.c:174
-#, fuzzy
 msgid "Copy disc _to:"
-msgstr "Zapis płyty _do:"
+msgstr "Kopiuj płytę _do:"
 
 #: ../src/ncb-selection-dialog.c:346
 msgid "Maximum possible"
@@ -585,11 +574,13 @@ msgstr "Napęd jest zajęty"
 
 #: ../src/ncb-operation.c:356
 #: ../src/ncb-operation.c:361
-#, fuzzy, c-format
+#, c-format
 msgid ""
 "Please put a disc, with at least %s free, into the drive.  The following disc types are supported:\n"
 "%s"
-msgstr "Włóż do napędu %s z przynajmniej %d MB wolnymi."
+msgstr ""
+"Proszę włożyć do napędu płytę z %s wolnego miejsca. Obsługiwane typy płyt:\n"
+"%s"
 
 #: ../src/ncb-operation.c:359
 msgid "Insert a rewritable or blank disc"
@@ -601,11 +592,13 @@ msgstr "Włóż pustą płytę"
 
 #: ../src/ncb-operation.c:367
 #: ../src/ncb-operation.c:373
-#, fuzzy, c-format
+#, c-format
 msgid ""
 "Please replace the disc in the drive with a supported disc with at least %s free.  The following disc types are supported:\n"
 "%s"
-msgstr "Wymień w napędzie płytę na pustą %s z przynajmniej %d MB wolnymi."
+msgstr ""
+"Proszę włożyć do napędu płytę obsługiwanego typu z %s wolnego miejsca. Obsługiwane typy płyt:\n"
+"%s"
 
 #: ../src/ncb-operation.c:370
 msgid "Reload a rewritable or blank disc"
@@ -618,7 +611,7 @@ msgstr "Przeładuj pustą płytę"
 #: ../src/ncb-operation.c:387
 #: ../src/ncb-progress-dialog.c:425
 msgid "_Eject"
-msgstr ""
+msgstr "_Wysuń"
 
 #: ../src/ncb-operation.c:454
 #, c-format
@@ -668,14 +661,13 @@ msgid "_Overwrite"
 msgstr "_Nadpisz"
 
 #: ../src/ncb-operation.c:618
-#, fuzzy
 msgid "Choose a filename for the disc image"
-msgstr "Podaj nazwę pliku dla obrazu płyty CD-ROM"
+msgstr "Nazwa pliku dla obrazu płyty"
 
 #. Translators: this is the filename of the image
 #: ../src/ncb-operation.c:754
 msgid "image.iso"
-msgstr ""
+msgstr "image.iso"
 
 #: ../src/ncb-operation.c:775
 #, c-format
@@ -702,174 +694,144 @@ msgid "An error occurred while writing"
 msgstr "Wystąpił błąd podczas zapisu"
 
 #: ../src/ncb-operation.c:918
-#, fuzzy
 msgid "Writing Files to a Disc Image"
-msgstr "Zapis plików na płytę"
+msgstr "Zapis plików na obraz płyty"
 
 #: ../src/ncb-operation.c:919
-#, fuzzy
 msgid "Writing Files to CD"
-msgstr "Zapis plików na płytę"
+msgstr "Zapis plików na płytę CD"
 
 #: ../src/ncb-operation.c:920
-#, fuzzy
 msgid "Writing Files to DVD"
-msgstr "Zapis plików na płytę"
+msgstr "Zapis plików na płytę DVD"
 
 #: ../src/ncb-operation.c:923
-#, fuzzy
 msgid "Writing Image to Disc"
-msgstr "Zapis plików na płytę"
+msgstr "Zapis obrazu na płytę"
 
 #: ../src/ncb-operation.c:924
-#, fuzzy
 msgid "Copying Disc Image"
-msgstr "Tworzenie obrazu płyty"
+msgstr "Kopiowanie obrazu płyty"
 
 #: ../src/ncb-operation.c:925
-#, fuzzy
 msgid "Writing Image to CD"
-msgstr "Zapis plików na płytę"
+msgstr "Zapis obrazu na CD"
 
 #: ../src/ncb-operation.c:926
-#, fuzzy
 msgid "Writing Image to DVD"
-msgstr "Zapisywanie płyty DVD"
+msgstr "Zapis obrazu na DVD"
 
 #: ../src/ncb-operation.c:929
-#, fuzzy
 msgid "Copying Disc"
-msgstr "K_opiuj płytę..."
+msgstr "Kopiowanie płyty"
 
 #: ../src/ncb-operation.c:930
 msgid "Copying Disc to a Disc Image"
-msgstr ""
+msgstr "Kopiowanie dysku do obrazu"
 
 #: ../src/ncb-operation.c:931
 msgid "Copying Disc to CD"
-msgstr ""
+msgstr "Kopiowanie dysku na CD"
 
 #: ../src/ncb-operation.c:932
 msgid "Copying Disc to DVD"
-msgstr ""
+msgstr "Kopiowanie dysku na DVD"
 
 #: ../src/ncb-operation.c:936
-#, fuzzy
 msgid "Writing files to disc"
 msgstr "Zapis plików na płytę"
 
 #: ../src/ncb-operation.c:937
-#, fuzzy
 msgid "Writing files to a disc image"
-msgstr "Zapis plików na płytę"
+msgstr "Zapis plików na obraz płyty"
 
 #: ../src/ncb-operation.c:938
-#, fuzzy
 msgid "Writing files to CD"
-msgstr "Zapis plików na płytę"
+msgstr "Zapis plików na płytę CD"
 
 #: ../src/ncb-operation.c:939
-#, fuzzy
 msgid "Writing files to DVD"
-msgstr "Zapis plików na płytę"
+msgstr "Zapis plików na płytę DVD"
 
 #: ../src/ncb-operation.c:942
-#, fuzzy
 msgid "Writing image to disc"
-msgstr "Zapis plików na płytę"
+msgstr "Zapis plików na obraz płyty"
 
 #: ../src/ncb-operation.c:943
-#, fuzzy
 msgid "Copying disc image"
-msgstr "Tworzenie obrazu płyty"
+msgstr "Kopiowanie obrazu płyty"
 
 #: ../src/ncb-operation.c:944
-#, fuzzy
 msgid "Writing image to CD"
-msgstr "Zapis plików na płytę"
+msgstr "Zapis obrazu na płytę CD"
 
 #: ../src/ncb-operation.c:945
-#, fuzzy
 msgid "Writing image to DVD"
-msgstr "Zapis plików na płytę"
+msgstr "Zapis obrazu na płytę DVD"
 
 #: ../src/ncb-operation.c:948
-#, fuzzy
 msgid "Copying disc"
-msgstr "K_opiuj płytę..."
+msgstr "Kopiowanie płyty"
 
 #: ../src/ncb-operation.c:949
-#, fuzzy
 msgid "Copying disc to a disc image"
 msgstr "Tworzenie obrazu płyty"
 
 #: ../src/ncb-operation.c:950
 msgid "Copying disc to CD"
-msgstr ""
+msgstr "Kopiowanie dysku na CD"
 
 #: ../src/ncb-operation.c:951
 msgid "Copying disc to DVD"
-msgstr ""
+msgstr "Kopiowanie dysku na DVD"
 
 #: ../src/ncb-operation.c:955
-#, fuzzy
 msgid "The selected files are being written to a CD or DVD.  This operation may take a long time, depending on data size and write speed."
-msgstr "Wybrane pliki są zapisywane na %s. Zależnie od rozmiaru danych i szybkości zapisu, operacja może zająć dużo czasu."
+msgstr "Wybrane pliki są zapisywane na CD lub DVD. Zależnie od rozmiaru danych i szybkości zapisu, operacja może zająć dużo czasu."
 
 #: ../src/ncb-operation.c:956
-#, fuzzy
 msgid "The selected files are being written to a disc image file."
-msgstr "Wybrane pliki są zapisywane na %s. Zależnie od rozmiaru danych i szybkości zapisu, operacja może zająć dużo czasu."
+msgstr "Wybrane pliki są zapisywane jako plik obrazu płyty."
 
 #: ../src/ncb-operation.c:957
-#, fuzzy
 msgid "The selected files are being written to a CD.  This operation may take a long time, depending on data size and write speed."
-msgstr "Wybrane pliki są zapisywane na %s. Zależnie od rozmiaru danych i szybkości zapisu, operacja może zająć dużo czasu."
+msgstr "Wybrane pliki są zapisywane na CD. Zależnie od rozmiaru danych i szybkości zapisu, operacja może zająć dużo czasu."
 
 #: ../src/ncb-operation.c:958
-#, fuzzy
 msgid "The selected files are being written to a DVD.  This operation may take a long time, depending on data size and write speed."
-msgstr "Wybrane pliki są zapisywane na %s. Zależnie od rozmiaru danych i szybkości zapisu, operacja może zająć dużo czasu."
+msgstr "Wybrane pliki są zapisywane na DVD. Zależnie od rozmiaru danych i szybkości zapisu, operacja może zająć dużo czasu."
 
 #: ../src/ncb-operation.c:961
-#, fuzzy
 msgid "The selected disc image is being written to a CD or DVD.  This operation may take a long time, depending on data size and write speed."
-msgstr "Wybrane pliki są zapisywane na %s. Zależnie od rozmiaru danych i szybkości zapisu, operacja może zająć dużo czasu."
+msgstr "Wybrany obraz płyty jest zapisywany na CD lub DVD. Zależnie od rozmiaru danych i szybkości zapisu, operacja może zająć dużo czasu."
 
 #: ../src/ncb-operation.c:962
-#, fuzzy
 msgid "The selected disc image is being copied to a disc image file."
-msgstr "Utworzyć płytę zawierającą pojedynczy plik obrazu płyty?"
+msgstr "Wybrany obraz płyty jest kopiowany do pliku obrazu."
 
 #: ../src/ncb-operation.c:963
-#, fuzzy
 msgid "The selected disc image is being written to a CD.  This operation may take a long time, depending on data size and write speed."
-msgstr "Wybrane pliki są zapisywane na %s. Zależnie od rozmiaru danych i szybkości zapisu, operacja może zająć dużo czasu."
+msgstr "Wybrany obraz płyty jest zapisywany na CD. Zależnie od rozmiaru danych i szybkości zapisu, operacja może zająć dużo czasu."
 
 #: ../src/ncb-operation.c:964
-#, fuzzy
 msgid "The selected disc image is being written to a DVD.  This operation may take a long time, depending on data size and write speed."
-msgstr "Wybrane pliki są zapisywane na %s. Zależnie od rozmiaru danych i szybkości zapisu, operacja może zająć dużo czasu."
+msgstr "Wybrany obraz płyty jest zapisywany na DVD. Zależnie od rozmiaru danych i szybkości zapisu, operacja może zająć dużo czasu."
 
 #: ../src/ncb-operation.c:967
-#, fuzzy
 msgid "The selected disc is being copied to a CD or DVD.  This operation may take a long time, depending on data size and drive speed."
-msgstr "Wybrane pliki są zapisywane na %s. Zależnie od rozmiaru danych i szybkości zapisu, operacja może zająć dużo czasu."
+msgstr "Wybrana płyta jest kopiowana na CD lub DVD. Zależnie od rozmiaru danych i szybkości zapisu, operacja może zająć dużo czasu."
 
 #: ../src/ncb-operation.c:968
-#, fuzzy
 msgid "The selected disc is being copied to a disc image file.  This operation may take a long time, depending on data size and drive speed."
-msgstr "Wybrane pliki są zapisywane na %s. Zależnie od rozmiaru danych i szybkości zapisu, operacja może zająć dużo czasu."
+msgstr "Wybrana płyta jest kopiowana do pliku obrazu. Zależnie od rozmiaru danych i szybkości zapisu, operacja może zająć dużo czasu."
 
 #: ../src/ncb-operation.c:969
-#, fuzzy
 msgid "The selected disc is being copied to a CD.  This operation may take a long time, depending on data size and drive speed."
-msgstr "Wybrane pliki są zapisywane na %s. Zależnie od rozmiaru danych i szybkości zapisu, operacja może zająć dużo czasu."
+msgstr "Wybrana płyta jest kopiowana na CD. Zależnie od rozmiaru danych i szybkości zapisu, operacja może zająć dużo czasu."
 
 #: ../src/ncb-operation.c:970
-#, fuzzy
 msgid "The selected disc is being copied to a DVD.  This operation may take a long time, depending on data size and drive speed."
-msgstr "Wybrane pliki są zapisywane na %s. Zależnie od rozmiaru danych i szybkości zapisu, operacja może zająć dużo czasu."
+msgstr "Wybrana płyta jest kopiowana na DVD. Zależnie od rozmiaru danych i szybkości zapisu, operacja może zająć dużo czasu."
 
 #: ../src/ncb-operation.c:1027
 msgid "Burning CD"
