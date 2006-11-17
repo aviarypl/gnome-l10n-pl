@@ -1,5 +1,5 @@
+# translation of gnome-system-tools.gnome-2-14.po to 
 # translation of gnome-system-tools.po to Polish
-# Stanisław Małolepszy <smalolepszy@aviary.pl>, 2006.
 # Copyright (C) 2001-2005, 2006 Free Software Foundation, Inc.
 # -=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-
 # Aktualną wersję tego pliku możesz odnaleźć w repozytorium cvs.gnomepl.org
@@ -8,18 +8,20 @@
 # pomóc w jego rozwijaniu i pielęgnowaniu, napisz do nas na adres:
 # translators@gnomepl.org
 # -=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-
+# Stanisław Małolepszy <smalolepszy@aviary.pl>, 2006.
+# Wojciech Kapusta <wojciech@aviary.pl>, 2006.
 msgid ""
 msgstr ""
-"Project-Id-Version: gnome-system-tools\n"
+"Project-Id-Version: gnome-system-tools.gnome-2-14\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2006-11-12 16:10+0100\n"
-"PO-Revision-Date: 2006-09-24 15:48+0200\n"
-"Last-Translator: Stanisław Małolepszy <smalolepszy@aviary.pl>\n"
-"Language-Team: Polish <en@li.org>\n"
+"PO-Revision-Date: 2006-11-17 23:12+0100\n"
+"Last-Translator: Wojciech Kapusta <wojciech@aviary.pl>\n"
+"Language-Team:  <pl@li.org>\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"X-Generator: KBabel 1.11.2\n"
+"X-Generator: KBabel 1.9.1\n"
 "Plural-Forms:  nplurals=3; plural=(n==1 ? 0 : n%10>=2 && n%10<=4 && (n%"
 "100<10 || n%100>=20) ? 1 : 2);\n"
 
@@ -28,7 +30,7 @@ msgid ""
 "Comma separated list of hosts that the GST will be able to access when the "
 "remote configuration option is enabled"
 msgstr ""
-"Rozdzielona przecinkami lista komputerów, do których GST będzie posiadał "
+"Rozdzielona przecinkami lista komputerów, do których GST będzie miał "
 "dostęp po włączeniu opcji konfiguracji zdalnej"
 
 #: ../gnome-system-tools.schemas.in.h:2
@@ -37,8 +39,7 @@ msgstr "Ostatnio uruchamiana wersja GST"
 
 #: ../gnome-system-tools.schemas.in.h:3
 msgid "Preferred bootloader that boot-admin will configure"
-msgstr ""
-"Preferowany program ładujący system, konfigurowany przez narzędzie boot-admin"
+msgstr "Preferowany program rozruchowy, konfigurowany przez narzędzie boot-admin"
 
 #: ../gnome-system-tools.schemas.in.h:4
 msgid "Remote hosts"
@@ -62,24 +63,23 @@ msgid ""
 "more than one installed, if it's not set or isn't valid, then boot-admin "
 "will ask the user"
 msgstr ""
-"Klucz ten przechowuje program ładujący system, który zostanie skonfigurowany "
-"przez narzędzie boot-admin, jeżeli nie jest ustawiony lub jest niepoprawny, "
-"wtedy użytkownik zostanie poproszony o wskazanie go"
+"Klucz ten przechowuje program rozruchowy, który zostanie skonfigurowany "
+"przez narzędzie boot-admin; jeżeli nie jest ustawiony lub jest niepoprawny, "
+"wtedy użytkownik zostanie poproszony o jego wskazanie."
 
 #: ../gnome-system-tools.schemas.in.h:8
 msgid "Whether the tools will use remote administration or not"
-msgstr ""
-"Określenie czy narzędzia będą korzystały ze zdalnej administracji czy nie"
+msgstr "Określenie, czy narzędzia będą korzystały ze zdalnej administracji czy nie"
 
 #: ../gnome-system-tools.schemas.in.h:9
 msgid "Whether the users-admin tool should show all users and groups or not"
 msgstr ""
-"Określenie czy narzędzie users-admin powinno wyświetlać wszystkich "
+"Określenie, czy narzędzie users-admin powinno wyświetlać wszystkich "
 "użytkowników i grupy"
 
 #: ../gnome-system-tools.schemas.in.h:10
 msgid "Whether the warning dialog should be shown or not"
-msgstr "Określenie czy okno dialogowe z ostrzeżeniem powinno być wyświetlane"
+msgstr "Określenie, czy okno dialogowe z ostrzeżeniem powinno być wyświetlane"
 
 #: ../interfaces/boot.glade.in.h:1
 msgid "<b>Security</b>"
@@ -92,10 +92,9 @@ msgid ""
 "\n"
 "please select which do you want to configure"
 msgstr ""
-"<span size=\"larger\" weight=\"bold\">Znaleziono kilka programów ładujących "
-"system</span>\n"
+"<span size=\"larger\" weight=\"bold\">Znaleziono kilka programów rozruchowych</span>\n"
 "\n"
-"wybierz jeden do skonfigurowania"
+"- proszę wybrać jeden do skonfigurowania"
 
 #: ../interfaces/boot.glade.in.h:5 ../interfaces/users.glade.in.h:3
 msgid "<span weight=\"bold\">Basic Settings</span>"
@@ -119,7 +118,7 @@ msgstr "Pytanie przy uruchamianiu"
 
 #: ../interfaces/boot.glade.in.h:10 ../src/boot/main.c:71
 msgid "Boot Manager Settings"
-msgstr "Ustawienia mnedżera rozruchu systemu"
+msgstr "Ustawienia menedżera rozruchu systemu"
 
 #: ../interfaces/boot.glade.in.h:11
 msgid ""
@@ -128,12 +127,12 @@ msgid ""
 "boot time."
 msgstr ""
 "Wybierz obraz jądra używany przy rozruchu oraz partycję montowaną jako "
-"główną. Opcjonalnie możesz też podać parametry przekazywane do jądra przy "
+"główną. Opcjonalnie można też podać parametry przekazywane do jądra przy "
 "jego uruchamianiu."
 
 #: ../interfaces/boot.glade.in.h:12
 msgid "Click \"Forward\" to continue"
-msgstr "Aby kontynuować, kliknij \"Naprzód\""
+msgstr "Aby kontynuować, naciśnij \"Naprzód\""
 
 #: ../interfaces/boot.glade.in.h:13
 msgid "Confirmation"
@@ -147,7 +146,7 @@ msgstr "Tworzenie nowego obrazu startowego"
 
 #: ../interfaces/boot.glade.in.h:15
 msgid "Don't ask me again"
-msgstr "Bez zadawania tego pytania w przyszłości"
+msgstr "Nie zadawaj tego pytania w przyszłości"
 
 #: ../interfaces/boot.glade.in.h:16
 msgid "Enable IDE SCSI emulation"
@@ -167,7 +166,7 @@ msgstr "Zakończone"
 
 #: ../interfaces/boot.glade.in.h:19
 msgid "Manual"
-msgstr "Ręczna"
+msgstr "Ręcznie"
 
 #: ../interfaces/boot.glade.in.h:20
 msgid "Number of colors:"
@@ -191,7 +190,7 @@ msgstr "Rozdzielczość:"
 
 #: ../interfaces/boot.glade.in.h:25
 msgid "Seconds to wait before loading default kernel or OS"
-msgstr "Sekundy przed wczytaniem domyślnego jądra lub systemu"
+msgstr "Ilość sekund oczekiwania na wczytanie domyślnego jądra lub systemu"
 
 #: ../interfaces/boot.glade.in.h:26
 msgid "Select a kernel image"
@@ -203,14 +202,13 @@ msgstr "Wybierz obraz initrd"
 
 #: ../interfaces/boot.glade.in.h:28
 msgid "Specify the partition on which the operating system is installed."
-msgstr "Określ partycję, na której zainstalowany jest system operacyjny."
+msgstr "Podaj partycję, na której zainstalowany jest system operacyjny."
 
 #: ../interfaces/boot.glade.in.h:29
 msgid ""
 "The new boot image has been added. Please click \"Apply\" to save your "
 "changes."
-msgstr ""
-"Został dodany nowy obraz startowy. Aby zapisać zmiany, kliknij \"Zastosuj\"."
+msgstr "Został dodany nowy obraz startowy. Aby zapisać zmiany, naciśnij \"Zastosuj\"."
 
 #: ../interfaces/boot.glade.in.h:30
 msgid ""
@@ -261,10 +259,8 @@ msgid "_Root file system device:"
 msgstr "_Urządzenie głównego systemu plików:"
 
 #: ../interfaces/common.glade.in.h:1
-msgid ""
-"<span weight=\"bold\" size=\"larger\">Please enter your root password</span>"
-msgstr ""
-"<span weight=\"bold\" size=\"larger\">Wprowadź hasło administratora</span>"
+msgid "<span weight=\"bold\" size=\"larger\">Please enter your root password</span>"
+msgstr "<span weight=\"bold\" size=\"larger\">Wprowadź hasło administratora</span>"
 
 #: ../interfaces/common.glade.in.h:2
 msgid ""
@@ -285,8 +281,8 @@ msgid ""
 "system configuration or downright cripple your computer."
 msgstr ""
 "Jeśli na pewno wiesz, że jest ona jedną z platform wymienionych poniżej, "
-"możesz ją zaznaczyć i kontynuować. Zauważ jednak, że wybranie złej pozycji "
-"może uszkodzić lub nawet zniszczyć konfigurację twojego komputera."
+"można ją zaznaczyć i kontynuować. Zauważ jednak, że wybranie złej pozycji "
+"może uszkodzić lub nawet zniszczyć konfigurację Twojego komputera."
 
 #: ../interfaces/common.glade.in.h:5
 msgid "Remote administration"
@@ -403,7 +399,7 @@ msgstr "Adres IP:"
 
 #: ../interfaces/network.glade.in.h:22
 msgid "Interface name:"
-msgstr "Nazwa interfejs"
+msgstr "Nazwa interfejsu"
 
 #: ../interfaces/network.glade.in.h:23
 msgid "Interface properties"
@@ -559,7 +555,7 @@ msgstr "Ustawienia zaawansowane:"
 
 #: ../interfaces/services.glade.in.h:2
 msgid "Select the services that you wish to activate:"
-msgstr "Wybierz usługi, które mają zostać aktywowane:"
+msgstr "Wybierz usługi, które mają być aktywowane:"
 
 #: ../interfaces/shares.glade.in.h:1
 msgid "<b>Allowed hosts</b>"
@@ -651,7 +647,7 @@ msgstr "Użycie serwera WINS"
 
 #: ../interfaces/shares.glade.in.h:24
 msgid "Windows sharing settings"
-msgstr "Ustawienia udostępniania windows"
+msgstr "Ustawienia udostępniania Windows"
 
 #: ../interfaces/shares.glade.in.h:25
 msgid "_Add host"
@@ -739,7 +735,7 @@ msgstr "<span weight=\"bold\">Członkowie grupy</span>"
 
 #: ../interfaces/users.glade.in.h:6
 msgid "<span weight=\"bold\">Optional Settings</span>"
-msgstr "<span weight=\"bold\">Opcjonalne ustawienia</span>"
+msgstr "<span weight=\"bold\">Ustawienia opcjonalne</span>"
 
 #: ../interfaces/users.glade.in.h:7
 msgid "<span weight=\"bold\">Password Settings</span>"
@@ -791,11 +787,11 @@ msgstr "Liczba dni przed ostrzeżeniem i unieważnieniem hasła:"
 
 #: ../interfaces/users.glade.in.h:19
 msgid "Default _group:"
-msgstr "Domyślna g_rupa:"
+msgstr "G_rupa domyślna:"
 
 #: ../interfaces/users.glade.in.h:20
 msgid "Default _shell:"
-msgstr "Domyślna po_włoka:"
+msgstr "Po_włoka domyślna:"
 
 #: ../interfaces/users.glade.in.h:22
 msgid "Generate _random password"
@@ -823,7 +819,7 @@ msgstr "Grupy"
 
 #: ../interfaces/users.glade.in.h:28
 msgid "Ma_ximum days a password may be used:"
-msgstr "M_aksymalna liczba dni przez które można używać hasła:"
+msgstr "M_aksymalna liczba dni, przez które można używać hasła:"
 
 #: ../interfaces/users.glade.in.h:29
 msgid "Maximum UID:"
@@ -847,7 +843,7 @@ msgstr "Minimalna liczba dni pomiędzy zmianami hasła:"
 
 #: ../interfaces/users.glade.in.h:34
 msgid "Number of days that a password may be used:"
-msgstr "Liczba dni przez które można używać hasła:"
+msgstr "Liczba dni, przez które można używać hasła:"
 
 #: ../interfaces/users.glade.in.h:35
 msgid "O_ffice location:"
@@ -941,7 +937,7 @@ msgstr "Telefon _domowy:"
 
 #: ../interfaces/users.glade.in.h:57
 msgid "_Main group:"
-msgstr "Główna g_rupa:"
+msgstr "G_rupa główna:"
 
 #: ../interfaces/users.glade.in.h:58
 msgid "_Profile:"
@@ -1060,7 +1056,7 @@ msgstr "Błąd modyfikacji obrazu startowego"
 
 #: ../src/boot/boot.desktop.in.in.h:1
 msgid "Boot"
-msgstr "Rozruch systemu"
+msgstr "Uruchamianie systemu"
 
 #: ../src/boot/boot.desktop.in.in.h:2
 msgid "Configure the system boot process"
@@ -1081,17 +1077,17 @@ msgstr "Błąd usuwania obrazu startowego"
 #: ../src/boot/callbacks.c:414
 msgid "Without at least one boot image your computer will not start."
 msgstr ""
-"Bez przynajmniej jednego obrazu startowego, nie będzie można uruchomić "
+"Bez przynajmniej jednego obrazu startowego nie będzie można uruchomić "
 "komputera."
 
 #: ../src/boot/callbacks.c:433
 #, c-format
 msgid "Are you sure you want to delete \"%s\"?"
-msgstr "Czy na pewno chcesz usunąć \"%s\"?"
+msgstr "Czy na pewno usunąć \"%s\"?"
 
 #: ../src/boot/callbacks.c:435
 msgid "This may leave this operating system unbootable."
-msgstr "Może to zostawić system nie nadający się do uruchomienia."
+msgstr "Może to spowodować, że system nie będzie mógł się uruchomić."
 
 #: ../src/boot/callbacks.c:464
 msgid "The configuration will show empty"
@@ -1155,9 +1151,7 @@ msgstr "Wprowadzone hasło jest niepoprawne"
 msgid ""
 "Check that you typed it correctly and that you haven't activated the \"caps "
 "lock\" key"
-msgstr ""
-"Sprawdź, czy zostało wprowadzone poprawnie i nie jest aktywny klawisz \"caps "
-"lock\""
+msgstr "Sprawdź, czy zostało wprowadzone poprawnie i nie jest aktywny klawisz \"CapsLock\""
 
 #: ../src/common/gst-auth.c:104
 #, c-format
@@ -1166,7 +1160,7 @@ msgstr "Nie można uruchomić \"%s\""
 
 #: ../src/common/gst-auth.c:105
 msgid "Check that you have permissions to run this command"
-msgstr "Sprawdź czy masz uprawnienia do uruchomienia tego polecenia"
+msgstr "Sprawdź, czy masz uprawnienia do uruchomienia tego polecenia"
 
 #: ../src/common/gst-auth.c:107
 msgid "An unexpected error has occurred"
@@ -1211,7 +1205,7 @@ msgstr "Podczas uruchamiania skryptu przetwarzającego wystąpił błąd"
 #: ../src/common/gst-tool.c:1509
 #, c-format
 msgid "Welcome to the %s prerelease of the GNOME System Tools"
-msgstr "Witaj we wstępnym wydaniu %s Narzędzi systemowych GNOME"
+msgstr "Witamy we wstępnym wydaniu %s Narzędzi systemowych GNOME"
 
 #: ../src/common/gst-tool.c:1511
 msgid ""
@@ -1223,8 +1217,8 @@ msgid ""
 msgstr ""
 "Prace nad pakietem wciąż trwają, więc może on zawierać poważne błędy. Ze "
 "względu na sposób działania składających się nań narzędzi, błędy te mogą "
-"uczynić twój komputer <span weight=\"bold\">zupełnie bezużytecznym</span> i "
-"pochłonąć sporo twojego czasu, zdrowia i wysiłku. Udzieliliśmy ci "
+"uczynić Twój komputer <span weight=\"bold\">zupełnie bezużytecznym</span> i "
+"pochłonąć sporo Twojego czasu, zdrowia i wysiłku. Udzieliliśmy Ci "
 "ostrzeżenia. Dziękujemy za wypróbowanie tej testowej\n"
 "wersji Narzędzi Systemowych GNOME!"
 
@@ -1234,7 +1228,7 @@ msgstr "Ostrzeżenie"
 
 #: ../src/common/gst-tool.c:1552
 msgid "Don't show me this again"
-msgstr "Bez wyświetlania tego komunikatu w przyszłości"
+msgstr "Nie wyświetlaj tego komunikatu w przyszłości"
 
 #: ../src/common/gst-tool.c:1609
 msgid "GNOME System Tools"
@@ -1258,8 +1252,8 @@ msgid ""
 "Check that the settings are correct for this network and that the computer "
 "is correctly connected to it."
 msgstr ""
-"Sprawdź, czy ustawienia są odpowiednie dla tej sieci, oraz komputer jest "
-"prawidłowo podłączony do niej."
+"Sprawdź, czy ustawienia są odpowiednie dla tej sieci oraz czy komputer jest do niej "
+"prawidłowo podłączony."
 
 #: ../src/network/callbacks.c:237
 msgid "Could not autodetect modem device"
@@ -1270,7 +1264,7 @@ msgid ""
 "Check that the device is not busy and that is correctly attached to the "
 "computer."
 msgstr ""
-"Sprawdź czy urządzenie nie jest zajęte i czy zostało poprawnie podłączone do "
+"Sprawdź, czy urządzenie nie jest zajęte i czy zostało poprawnie podłączone do "
 "komputera."
 
 #: ../src/network/callbacks.c:451
@@ -1322,7 +1316,7 @@ msgid ""
 "Check that it is correctly typed and that it is correctly supported by your "
 "system."
 msgstr ""
-"Sprawdź czy jest prawidłowo wpisany i czy jest poprawnie obsługiwany przez "
+"Sprawdź, czy jest prawidłowo wpisany i czy jest poprawnie obsługiwany przez "
 "system."
 
 # FIXME - sprawdzić kontekst
@@ -1361,7 +1355,7 @@ msgstr "Połączenie ethernet"
 
 #: ../src/network/network-iface-irlan.c:122
 msgid "Infrared connection"
-msgstr "Połączenie podczerwieni"
+msgstr "Połączenie podczerwienią"
 
 #: ../src/network/network-iface-isdn.c:330
 msgid "ISDN connection"
@@ -1407,14 +1401,13 @@ msgstr "Ustawienia dla \"%s\""
 #. FIXME: put service name !!!
 #: ../src/services/callbacks.c:153
 msgid "Are you sure you want to deactivate this service?"
-msgstr "Czy na pewno chcesz deaktywować tą usługę?"
+msgstr "Czy na pewno deaktywować tą usługę?"
 
 #: ../src/services/callbacks.c:156
 msgid ""
 "This may affect your system behavior in several ways, possibly leading to "
 "data loss"
-msgstr ""
-"Może to wpłynąć w różny sposób na działanie systemu, łącznie z utratą danych"
+msgstr "Może to wpłynąć w różny sposób na działanie systemu, łącznie z utratą danych"
 
 #: ../src/services/main.c:55
 msgid "Services settings"
@@ -1446,7 +1439,7 @@ msgstr "Automatycznie montuje woluminy"
 
 #: ../src/services/service.c:34
 msgid "Actions scheduler"
-msgstr "Planer czynności"
+msgstr "Organizator czynności"
 
 #: ../src/services/service.c:34
 msgid "Executes scheduled actions"
@@ -1546,7 +1539,7 @@ msgstr "Udostępnianie stron WWW poprzez internet"
 
 #: ../src/shares/callbacks.c:187
 msgid "Are you sure you want to delete this share?"
-msgstr "Czy na pewno chcesz usunąć to udostępnienie?"
+msgstr "Czy na pewno usunąć to udostępnienie?"
 
 #: ../src/shares/callbacks.c:189
 msgid "Other computers in your network will stop viewing this."
@@ -1554,7 +1547,7 @@ msgstr "Inne komputery w sieci przestaną je widzieć."
 
 #: ../src/shares/main.c:90
 msgid "Add a shared path, modifies it if it already exists"
-msgstr "Dodaje udostępnianą ścieżkę, modyfikuje jeżeli już istnieje"
+msgstr "Dodaje udostępnianą ścieżkę, modyfikuje istniejącą"
 
 #: ../src/shares/main.c:90
 msgid "PATH"
@@ -1709,7 +1702,7 @@ msgstr "Nazwa grupy jest zbyt długa"
 msgid "To be valid, the group name should have less than %d character"
 msgid_plural "To be valid, the group name should have less than %d characters"
 msgstr[0] "Aby nazwa grupy była poprawna, powinna mieć mniej niż %i znak."
-msgstr[1] "Aby nazwa grupy była poprawna, powinna mieć mniej niż %i znaki."
+msgstr[1] "Aby nazwa grupy była poprawna, powinna mieć mniej niż %i znaków."
 msgstr[2] "Aby nazwa grupy była poprawna, powinna mieć mniej niż %i znaków."
 
 #. if invalid.
@@ -1801,11 +1794,11 @@ msgstr "Profil musi posiadać nazwę"
 
 #: ../src/users/profile-settings.c:130
 msgid "The profile must have a default home"
-msgstr "Profil musi posiadać domyślny katalog domowy"
+msgstr "Profil musi mieć domyślny katalog domowy"
 
 #: ../src/users/profile-settings.c:135 ../src/users/profile-settings.c:140
 msgid "The profile must have a default shell"
-msgstr "Profil musi posiadać domyślną powłokę"
+msgstr "Profil musi mieć domyślną powłokę"
 
 #: ../src/users/profile-settings.c:208
 msgid "The default profile should not be deleted"
@@ -1824,8 +1817,7 @@ msgstr "Usunąć profil \"%s\"?"
 
 #: ../src/users/profile-settings.c:220
 msgid "You will not be able to recover this profile after pressing \"apply\"."
-msgstr ""
-"Po kliknięciu \"Zastosuj\" odtworzenie tego profilu nie będzie możliwe."
+msgstr "Po naciśnięciu \"Zastosuj\" odtworzenie tego profilu nie będzie możliwe."
 
 #. Column name,          Adv_state_show,	Basic_state_show
 #: ../src/users/profiles-table.c:39
@@ -1850,7 +1842,7 @@ msgstr "Tekst"
 
 #: ../src/users/user-settings.c:73
 msgid "The \"root\" user should not be deleted"
-msgstr "Nie należy usunwać użytkownika \"root\""
+msgstr "Nie należy usuwać użytkownika \"root\""
 
 #: ../src/users/user-settings.c:74 ../src/users/user-settings.c:311
 #: ../src/users/user-settings.c:406 ../src/users/user-settings.c:442
@@ -1860,7 +1852,7 @@ msgstr "Spowoduje to, że system stanie się bezużyteczny."
 #: ../src/users/user-settings.c:83
 #, c-format
 msgid "Are you sure you want to delete user \"%s\"?"
-msgstr "Czy na pewno chcesz usunąć użytkownika \"%s\"?"
+msgstr "Czy na pewno usunąć użytkownika \"%s\"?"
 
 #: ../src/users/user-settings.c:85
 msgid ""
@@ -1891,12 +1883,9 @@ msgstr "Nazwa użytkownika jest zbyt długa"
 #, c-format
 msgid "To be valid, the user name should have less than %d character"
 msgid_plural "To be valid, the user name should have less than %d characters"
-msgstr[0] ""
-"Aby nazwa użytkownika była poprawna, powinna mieć mniej niż %i znak."
-msgstr[1] ""
-"Aby nazwa użytkownika była poprawna, powinna mieć mniej niż %i znaki."
-msgstr[2] ""
-"Aby nazwa użytkownika była poprawna, powinna mieć mniej niż %i znaków."
+msgstr[0] "Aby nazwa użytkownika była poprawna, powinna mieć mniej niż %i znak."
+msgstr[1] "Aby nazwa użytkownika była poprawna, powinna mieć mniej niż %i znaków."
+msgstr[2] "Aby nazwa użytkownika była poprawna, powinna mieć mniej niż %i znaków."
 
 #: ../src/users/user-settings.c:310
 msgid "User name for the \"root\" user should not be modified"
@@ -1911,7 +1900,7 @@ msgid ""
 "Please set a valid user name consisting of a lower case letter followed by "
 "lower case letters and numbers."
 msgstr ""
-"Wprowadź poprawną nazwę użytkownika, zawierającą pierwszą małą literę "
+"Wprowadź poprawną nazwę użytkownika, zawierającą pierwszą małą literę, "
 "poprzedzającą małe litery i cyfry."
 
 #: ../src/users/user-settings.c:323
@@ -1930,7 +1919,7 @@ msgstr "Niepoprawny znak \"%c\" w komentarzu"
 
 #: ../src/users/user-settings.c:350
 msgid "Check that this character is not used."
-msgstr "Sprawdź czy ten znak nie został użyty."
+msgstr "Sprawdź, czy ten znak nie został użyty."
 
 #: ../src/users/user-settings.c:398
 msgid "Home directory should not be empty"
@@ -1949,8 +1938,8 @@ msgid ""
 "Please enter full path for home directory\n"
 "<span size=\"smaller\">i.e.: /home/john</span>."
 msgstr ""
-"Podaj pełną ścieżkę do katalogu domowego\n"
-"<span size=\"smaller\">np.: /home/users/jan</span>."
+"Podaj pełną ścieżkę do katalogu domowego,\n"
+"<span size=\"smaller\">np.: /home/users/marysia</span>."
 
 #: ../src/users/user-settings.c:405
 msgid "Home directory of the \"root\" user should not be modified"
@@ -1979,7 +1968,7 @@ msgid ""
 "to security problems."
 msgstr ""
 "Wielu użytkowników może współdzielić ten sam identyfikator, ale nie jest to "
-"powszechne i może doprowadzić do problemów bezpieczeństwa."
+"powszechne i może doprowadzić do problemów z bezpieczeństwem."
 
 #: ../src/users/user-settings.c:479
 msgid "Incomplete path in shell"
@@ -1990,7 +1979,7 @@ msgid ""
 "Please enter full path for shell\n"
 "<span size=\"smaller\">i.e.: /bin/sh</span>."
 msgstr ""
-"Wprowadź pełną ścieżkę powłoki\n"
+"Wprowadź pełną ścieżkę powłoki,\n"
 "<span size=\"smaller\">np.: /bin/sh</span>."
 
 #: ../src/users/user-settings.c:502
@@ -2037,3 +2026,4 @@ msgstr "Powłoka"
 #: ../src/users/users.desktop.in.in.h:1
 msgid "Add or remove users and groups"
 msgstr "Dodawanie i usuwanie użytkowników i grup"
+
