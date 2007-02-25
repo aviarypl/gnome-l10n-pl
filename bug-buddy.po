@@ -16,15 +16,14 @@ msgstr ""
 "Project-Id-Version: bug-buddy.HEAD\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2007-02-19 09:25+0100\n"
-"PO-Revision-Date: 2006-11-28 11:27+0000\n"
-"Last-Translator: Wojciech Kapusta <wojciech@aviary.pl>\n"
+"PO-Revision-Date: 2007-02-25 23:17+0100\n"
+"Last-Translator: wadim dziedzic <nikdo@aviary.pl>\n"
 "Language-Team:  <pl@li.org>\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "X-Generator: KBabel 1.9.1\n"
-"Plural-Forms: nplurals=3; plural=(n==1 ? 0 : n%10>=2 && n%10<=4 && (n%100<10 "
-"|| n%100>=20) ? 1 : 2);\n"
+"Plural-Forms: nplurals=3; plural=(n==1 ? 0 : n%10>=2 && n%10<=4 && (n%100<10 || n%100>=20) ? 1 : 2);\n"
 
 #: ../src/bug-buddy.c:87
 msgid "Name of contact"
@@ -62,7 +61,9 @@ msgstr "WERSJA"
 msgid "File name of crashed program"
 msgstr "Nazwa pliku programu, który uległ awarii"
 
-#: ../src/bug-buddy.c:91 ../src/bug-buddy.c:93 ../src/bug-buddy.c:94
+#: ../src/bug-buddy.c:91
+#: ../src/bug-buddy.c:93
+#: ../src/bug-buddy.c:94
 msgid "FILE"
 msgstr "PLIK"
 
@@ -105,50 +106,41 @@ msgstr ""
 "Nie znaleziono połączenia sieciowego.\n"
 "Czy przechować ten raport do czasu aż połączenie będzie dostępne?"
 
-#: ../src/bug-buddy.c:501 ../src/bug-buddy.c:1057
+#: ../src/bug-buddy.c:501
+#: ../src/bug-buddy.c:1057
 msgid "_Close"
-msgstr ""
+msgstr "_Zamknij"
 
 #: ../src/bug-buddy.c:533
 msgid ""
-"A bug report detailing your software crash has been sent to GNOME. This "
-"information will allow the developers to understand the cause of the crash "
-"and prepare a solution for it.\n"
+"A bug report detailing your software crash has been sent to GNOME. This information will allow the developers to understand the cause of the crash and prepare a solution for it.\n"
 "\n"
-"You may be contacted by a GNOME developer if more details are required about "
-"the crash.\n"
+"You may be contacted by a GNOME developer if more details are required about the crash.\n"
 "\n"
 "You can view your bug report and follow its progress with this URL:\n"
 msgstr ""
-"Raport błędu ze szczegółami awarii programu został wysłany do GNOME. "
-"Informacja ta pozwoli programistom znaleźć przyczynę błędu i przygotować "
-"odpowiednie rozwiązanie.\n"
+"Raport błędu ze szczegółami awarii programu został wysłany do GNOME. Informacja ta pozwoli programistom znaleźć przyczynę błędu i przygotować odpowiednie rozwiązanie.\n"
 "\n"
-"Jeżeli będzie wymagane więcej informacji na temat awarii, może się z Tobą "
-"skontaktować programista GNOME.\n"
+"Jeżeli będzie wymagane więcej informacji na temat awarii, może się z Tobą skontaktować programista GNOME.\n"
 "\n"
 "Możesz zobaczyć zgłoszenie błędu i śledzić prace nad nim pod adresem:\n"
 
 #: ../src/bug-buddy.c:544
 msgid ""
-"Bug Buddy has encountered an error while submitting your report to the "
-"Bugzilla server.  Details of the error are included below.\n"
+"Bug Buddy has encountered an error while submitting your report to the Bugzilla server.  Details of the error are included below.\n"
 "\n"
 msgstr ""
-"Program Bug Buddy napotkał na błąd podczas wysyłania raportu do serwera "
-"Bugzilla. Szczegóły błędu są zamieszczone poniżej.\n"
+"Program Bug Buddy napotkał na błąd podczas wysyłania raportu do serwera Bugzilla. Szczegóły błędu są zamieszczone poniżej.\n"
 "\n"
 
 #: ../src/bug-buddy.c:550
 #, c-format
 msgid ""
-"Server returned bad state.  This is most likely a server issue and should be "
-"reported to bugmaster@gnome.org\n"
+"Server returned bad state.  This is most likely a server issue and should be reported to bugmaster@gnome.org\n"
 "\n"
 "%s"
 msgstr ""
-"Serwer zwrócił zły stan. Najprawdopodobniej jest to problem serwera i "
-"powinien zostać zgłoszony na adres bugmaster@gnome.org\n"
+"Serwer zwrócił zły stan. Najprawdopodobniej jest to problem serwera i powinien zostać zgłoszony na adres bugmaster@gnome.org\n"
 "\n"
 "%s"
 
@@ -164,75 +156,50 @@ msgstr ""
 "%s"
 
 #: ../src/bug-buddy.c:564
-msgid ""
-"Bugzilla reported an error when trying to process your request, but was "
-"unable to parse the response."
-msgstr ""
-"Bugzilla zgłosiła błąd podczas próby przetworzenia żądania, ale nie było "
-"możliwe przetworzenie odpowiedzi."
+msgid "Bugzilla reported an error when trying to process your request, but was unable to parse the response."
+msgstr "Bugzilla zgłosiła błąd podczas próby przetworzenia żądania, ale nie było możliwe przetworzenie odpowiedzi."
 
 #: ../src/bug-buddy.c:574
 msgid "The email address you provided is not valid."
 msgstr "Podany adres e-mail jest nieprawidłowy."
 
 #: ../src/bug-buddy.c:576
-msgid ""
-"The account associated with the email address provided has been disabled."
+msgid "The account associated with the email address provided has been disabled."
 msgstr "Konto powiązane z podanym adresem e-mail zostało wyłączone."
 
 #: ../src/bug-buddy.c:579
-msgid ""
-"The product specified doesn't exist or has been renamed.  Please upgrade to "
-"the latest version."
-msgstr ""
-"Podany produkt nie istnieje lub ma zmienioną nazwę. Zaktualizuj program do "
-"najnowszej wersji."
+msgid "The product specified doesn't exist or has been renamed.  Please upgrade to the latest version."
+msgstr "Podany produkt nie istnieje lub ma zmienioną nazwę. Zaktualizuj program do najnowszej wersji."
 
 #: ../src/bug-buddy.c:582
-msgid ""
-"The component specified doesn't exist or has been renamed.  Please upgrade "
-"to the latest version."
-msgstr ""
-"Podany składnik nie istnieje lub ma zmienioną nazwę. Zaktualizuj program do "
-"najnowszej wersji."
+msgid "The component specified doesn't exist or has been renamed.  Please upgrade to the latest version."
+msgstr "Podany składnik nie istnieje lub ma zmienioną nazwę. Zaktualizuj program do najnowszej wersji."
 
 #: ../src/bug-buddy.c:585
-msgid ""
-"The summary is required in your bug report. This should not happen with the "
-"latest Bug Buddy."
-msgstr ""
-"W zgłoszeniu błędu jest wymagane podsumowanie. Nie powinno się to zdarzyć w "
-"najnowszym Bug Buddy."
+msgid "The summary is required in your bug report. This should not happen with the latest Bug Buddy."
+msgstr "W zgłoszeniu błędu jest wymagane podsumowanie. Nie powinno się to zdarzyć w najnowszym Bug Buddy."
 
 #: ../src/bug-buddy.c:588
-msgid ""
-"The description is required in your bug report. This should not happen with "
-"the latest Bug Buddy."
-msgstr ""
-"W zgłoszeniu błędu jest wymagany opis. Nie powinno się to zdarzyć w "
-"najnowszym Bug Buddy."
+msgid "The description is required in your bug report. This should not happen with the latest Bug Buddy."
+msgstr "W zgłoszeniu błędu jest wymagany opis. Nie powinno się to zdarzyć w najnowszym Bug Buddy."
 
 #: ../src/bug-buddy.c:591
 #, c-format
 msgid ""
-"The fault code returned by Bugzilla is not recognized. Please report the "
-"following information to bugzilla.gnome.org manually:\n"
+"The fault code returned by Bugzilla is not recognized. Please report the following information to bugzilla.gnome.org manually:\n"
 "\n"
 "%s"
 msgstr ""
-"Nie rozpoznano błędnego kodu zwróconego przez Bugzillę. Zgłoś ręcznie "
-"poniższą informację do bugzilla.gnome.org:\n"
+"Nie rozpoznano błędnego kodu zwróconego przez Bugzillę. Zgłoś ręcznie poniższą informację do bugzilla.gnome.org:\n"
 "\n"
 "%s"
 
 #: ../src/bug-buddy.c:598
 msgid ""
-"An unknown error occurred.  This is most likely a problem with bug-buddy. "
-"Please report this problem manually at bugzilla.gnome.org\n"
+"An unknown error occurred.  This is most likely a problem with bug-buddy. Please report this problem manually at bugzilla.gnome.org\n"
 "\n"
 msgstr ""
-"Wystąpił nieznany błąd. Najprawdopodobniej jest to błąd programu Bug Buddy. "
-"Zgłoś ręcznie problem do bugzilla.gnome.org:\n"
+"Wystąpił nieznany błąd. Najprawdopodobniej jest to błąd programu Bug Buddy. Zgłoś ręcznie problem do bugzilla.gnome.org:\n"
 "\n"
 
 #: ../src/bug-buddy.c:752
@@ -251,24 +218,24 @@ msgstr "Wysyłanie..."
 #. Translators: This is the hyperlink which takes to http://live.gnome.org/GettingTraces/DistroSpecificInstructions
 #. * page. Please also mention that the page is in English
 #: ../src/bug-buddy.c:1018
-#, fuzzy
 msgid "Getting useful crash reports"
-msgstr "Wyślij także oczekujące raporty błędów"
+msgstr "Jak przygotowywać użyteczne raporty o awarii (ang.)"
 
 #: ../src/bug-buddy.c:1037
 #, c-format
 msgid ""
-"The application %s crashed. The bug reporting tool was unable to collect "
-"enough information about the crash to be useful to the developers.\n"
+"The application %s crashed. The bug reporting tool was unable to collect enough information about the crash to be useful to the developers.\n"
 "\n"
-"In order to submit useful reports, please consider installing debug packages "
-"for your distribution.\n"
-"Click the link below to get information about how to install these "
-"packages:\n"
+"In order to submit useful reports, please consider installing debug packages for your distribution.\n"
+"Click the link below to get information about how to install these packages:\n"
 msgstr ""
+"Program %s zakończył się niespodziewanie. Program raportujący błędy nie mógł zebrać wystarczającej ilości informacji na temat awarii.\n"
+"\n"
+"Aby zgłosić przydatny dla programistów raport, zaleca się zainstalować pakiety 'debug' dla dystrybucji.\n"
+"Aby zobaczyć więcej informacji na temat instalacji tych pakietów, należy kliknąć w poniższy odnośnik:\n"
 
-#: ../src/bug-buddy.c:1075 ../src/bug-buddy.c:1796
-#, fuzzy
+#: ../src/bug-buddy.c:1075
+#: ../src/bug-buddy.c:1796
 msgid ""
 "\n"
 "\n"
@@ -278,70 +245,48 @@ msgstr ""
 "Jeżeli to możliwe, raport powinien być napisany po angielsku.\n"
 
 #: ../src/bug-buddy.c:1088
-#, fuzzy, c-format
+#, c-format
 msgid ""
-"Information about the %s application crash has been successfully collected.  "
-"Please provide some more details about what you were doing when the "
-"application crashed.\n"
+"Information about the %s application crash has been successfully collected.  Please provide some more details about what you were doing when the application crashed.\n"
 "\n"
-"A valid email address is required.  This will allow the developers to "
-"contact you for more information if necessary."
+"A valid email address is required.  This will allow the developers to contact you for more information if necessary."
 msgstr ""
-"Informacja o awarii została poprawnie zebrana. Podaj kilka informacji o "
-"czynnościach wykonywanych gdy aplikacja uległa awarii.\n"
+"Informacja o awarii została poprawnie zebrana. Proszę podać informacje o czynnościach wykonywanych gdy aplikacja uległa awarii.\n"
 "\n"
-"Wymagany jest poprawny adres e-mail. Pozwoli to programistom na późniejszy "
-"kontakt w razie konieczności, by uzyskać więcej informacji.\n"
-"\n"
-"W informacji debugującej mogą być zawarte poufne dane; przeglądnij szczegóły "
-"poniżej, jeżeli obawiasz się przesłania haseł lub innych poufnych danych.\n"
+"Wymagany jest poprawny adres e-mail. Pozwoli to programistom na późniejszy kontakt, gdyby potrzeba było więcej informacji."
 
 #: ../src/bug-buddy.c:1125
 msgid "WARNING:"
-msgstr ""
+msgstr "UWAGA:"
 
 #: ../src/bug-buddy.c:1126
-msgid ""
-"Some sensitive data is likely present in the crash details.  Please review "
-"and edit the information if you are concerned about transmitting passwords "
-"or other sensitive data."
-msgstr ""
+msgid "Some sensitive data is likely present in the crash details.  Please review and edit the information if you are concerned about transmitting passwords or other sensitive data."
+msgstr "W informacjach o awarii mogą znajdować się prywatne dane. Proszę przejrzeć i zmodyfikować informacje, jeśli ich transmisja może zagrozić bezpieczeństwu systemu."
 
 #: ../src/bug-buddy.c:1183
 msgid "-bugreport.txt"
 msgstr "-bugreport.txt"
 
 #: ../src/bug-buddy.c:1234
-#, fuzzy
 msgid "_Save Bug Report"
-msgstr "Narzędzie do zgłaszania błędów"
+msgstr "_Zapisz raport"
 
 #: ../src/bug-buddy.c:1240
-#, fuzzy
 msgid ""
 "Information about the crash has been successfully collected.\n"
 "\n"
-"The application that crashed is not known to bug-buddy, therefore the bug "
-"report cannot be sent to the GNOME Bugzilla.  Please save the bug to a text "
-"file and report it to the appropriate bug tracker for this application."
+"The application that crashed is not known to bug-buddy, therefore the bug report cannot be sent to the GNOME Bugzilla.  Please save the bug to a text file and report it to the appropriate bug tracker for this application."
 msgstr ""
 "Informacje o awarii zostały prawidłowo zebrane.\n"
 "\n"
-"Aplikacja, która uległa awarii nie jest znana Bug Buddy, dlatego zgłoszenie "
-"błędu nie może zostać wysłane do GNOME Bugzilla. Zapisz raport błędu do "
-"pliku tekstowego i zgłoś w odpowiednim dla danej aplikacji systemie "
-"śledzenia błędów."
+"Aplikacja, która uległa awarii nie jest znana bug-buddy, dlatego zgłoszenie błędu nie może zostać wysłane do GNOME. Proszę zapisać raport błędu do pliku tekstowego i zgłosić go w odpowiednim dla danej aplikacji systemie śledzenia błędów."
 
 #: ../src/bug-buddy.c:1315
-#, fuzzy, c-format
+#, c-format
 msgid "There was an error displaying help: %s"
-msgstr ""
-"Podczas uruchamiania gdb wystąpił błąd:\n"
-"\n"
-"%s"
+msgstr "Podczas wyświetlania pomocy wystąpił błąd: %s"
 
 #: ../src/bug-buddy.c:1655
-#, fuzzy
 msgid ""
 "\n"
 "\n"
@@ -351,24 +296,22 @@ msgstr ""
 "\n"
 "\n"
 "Bug Buddy jest narzędziem ułatwiającym zgłaszanie\n"
-"w wypadku awarii programu informacji debugujących\n"
-"do GNOME Bugzilla."
+"informacji o awariach programów do GNOME Bugzilla."
 
-#: ../src/bug-buddy.c:1668 ../src/bug-buddy.glade.h:5
+#: ../src/bug-buddy.c:1668
+#: ../src/bug-buddy.glade.h:5
 msgid "Bug Buddy"
 msgstr "Bug Buddy"
 
 #: ../src/bug-buddy.c:1680
-#, fuzzy
 msgid ""
 "Bug Buddy could not load its user interface file.\n"
 "Please make sure Bug Buddy was installed correctly."
 msgstr ""
-"Nie można odczytać pliku z interfejsem użytkownika programu Bug Buddy (%s).\n"
-"Upewnij się, że Bug Buddy został poprawnie zainstalowany."
+"Nie można wczytać pliku z interfejsem użytkownika.\n"
+"Proszę upewnić się, że Bug Buddy został poprawnie zainstalowany."
 
 #: ../src/bug-buddy.c:1695
-#, fuzzy
 msgid "Collecting information from your system..."
 msgstr "Zbieranie informacji o systemie..."
 
@@ -381,68 +324,50 @@ msgid "Either --pid or --include arguments are required.\n"
 msgstr "Wymagany jest jeden z argumentów --pid albo --include.\n"
 
 #: ../src/bug-buddy.c:1712
-msgid ""
-"Bug Buddy was unable to retrieve information regarding the version of GNOME "
-"you are running.  This is most likely due to a missing installation of gnome-"
-"desktop.\n"
-msgstr ""
-"Nie można pobrać informacji związanych z uruchomioną wersją GNOME. "
-"Najprawdopodobniej wynika to z niezainstalowanego gnome-desktop.\n"
+msgid "Bug Buddy was unable to retrieve information regarding the version of GNOME you are running.  This is most likely due to a missing installation of gnome-desktop.\n"
+msgstr "Nie można pobrać informacji związanych z uruchomioną wersją GNOME. Najprawdopodobniej wynika to z niezainstalowanego gnome-desktop.\n"
 
 #: ../src/bug-buddy.c:1735
-#, fuzzy, c-format
-msgid ""
-"The %s application has crashed.  We are collecting information about the "
-"crash to send to the developers in order to fix the problem."
-msgstr ""
-"Aplikacja %s uległa awarii.\n"
-"Zbierane są informacje o awarii, aby wysłać je do\n"
-"programistów w celu usunięcia problemu."
+#, c-format
+msgid "The %s application has crashed.  We are collecting information about the crash to send to the developers in order to fix the problem."
+msgstr "Aplikacja %s uległa awarii. Trwa zbieranie informacji o awarii. Informacje te zostaną wysłane je do programistów w celu ułatwienia usunięcia problemu."
 
 #: ../src/bug-buddy.c:1756
-#, fuzzy
 msgid "Collecting information from the crash..."
 msgstr "Zbieranie informacji o awarii..."
 
 #: ../src/bug-buddy.c:1773
 #, c-format
-msgid ""
-"Bug Buddy encountered the following error when trying to retrieve debugging "
-"information: %s\n"
-msgstr ""
-"Program Bug Buddy podczas próby pobrania informacji debugujących napotkał na "
-"następujący problem: %s\n"
+msgid "Bug Buddy encountered the following error when trying to retrieve debugging information: %s\n"
+msgstr "Program Bug Buddy podczas próby pobrania informacji debugujących napotkał na następujący problem: %s\n"
 
 #: ../src/bug-buddy.c:1804
 #, c-format
-msgid ""
-"Bug Buddy doesn't know how to send a suggestion for the application %s.\n"
+msgid "Bug Buddy doesn't know how to send a suggestion for the application %s.\n"
 msgstr "Program Bug Buddy nie wie, jak wysłać sugestie dla aplikacji %s.\n"
 
 #: ../src/bug-buddy.c:1810
-#, fuzzy, c-format
+#, c-format
 msgid ""
 "Thank you for helping us improving our software.\n"
 "Please fill your suggestions/error information for %s application."
 msgstr ""
 "Dziękujemy za pomoc w udoskonalaniu oprogramowania.\n"
-"Wypełnij propozycje/informacje o błędach dla aplikacji %s.\n"
+"Proszę wypełnić propozycje/informacje o błędach dla aplikacji %s.\n"
 
 #: ../src/bug-buddy.c:1841
-#, fuzzy, c-format
+#, c-format
 msgid ""
 "Thank you for helping us improving our software.\n"
 "Please fill your suggestions/error information for %s application.\n"
 "\n"
-"A valid email address is required.  This will allow developers to contact "
-"you for more information if necessary."
+"A valid email address is required.  This will allow developers to contact you for more information if necessary."
 msgstr ""
 "Dziękujemy za pomoc w udoskonalaniu oprogramowania.\n"
-"Wypełnij propozycje/informacje o błędach dla aplikacji %s.\n"
+"Proszę wypełnić propozycje/informacje o błędach dla aplikacji %s.\n"
 "\n"
-"Wymagany jest poprawny adres e-mail. Pozwoli to programistom na późniejszy "
-"kontakt w razie konieczności, by uzyskać więcej informacji.\n"
-"\n"
+"Wymagany jest poprawny adres e-mail. Pozwoli to programistom \n"
+"na późniejszy kontakt, gdyby potrzeba było więcej informacji."
 
 #: ../src/bug-buddy.c:1850
 msgid "Suggestion / Error description:"
@@ -457,39 +382,32 @@ msgid "Report a bug in GNOME-based applications"
 msgstr "Zgłaszanie błędów aplikacji bazujących na GNOME"
 
 #: ../src/bug-buddy.glade.h:1
-#, fuzzy
 msgid "<b>What _were you doing when the application crashed?</b>"
-msgstr "<b>Jakie czynności były wykonywane, gdy aplikacja uległa awarii?</b>"
+msgstr "<b>Jakie _czynności były wykonywane, gdy aplikacja uległa awarii?</b>"
 
 #: ../src/bug-buddy.glade.h:2
-#, fuzzy
 msgid "<b>Your _email address:</b> "
-msgstr "Adres e-mail:"
+msgstr "<b>Adres _e-mail:</b>"
 
 #: ../src/bug-buddy.glade.h:3
-msgid ""
-"<small><i><b>Note:</b>  Sensitive information may be present in the crash "
-"details.  Please review the crash details if you are concerned about "
-"transmitting passwords or other sensitive information.</i></small>"
-msgstr ""
+msgid "<small><i><b>Note:</b>  Sensitive information may be present in the crash details.  Please review the crash details if you are concerned about transmitting passwords or other sensitive information.</i></small>"
+msgstr "<small><i><b>Uwaga:</b> W informacjach o awarii mogą znajdować się prywatne dane. Proszę przejrzeć i zmodyfikować informacje, jeśli transmisja tych danych może zagrozić bezpieczeństwu systemu.</i></small>"
 
 #: ../src/bug-buddy.glade.h:4
-#, fuzzy
 msgid "<span size=\"xx-large\"><b>Bug reporting tool</b></span>"
 msgstr "<span size=\"xx-large\">Narzędzie zgłaszania błędów</span>"
 
 #: ../src/bug-buddy.glade.h:6
 msgid "Review Crash Details"
-msgstr ""
+msgstr "Pokaż szczegóły awarii"
 
 #: ../src/bug-buddy.glade.h:7
-#, fuzzy
 msgid "Send _other pending crash reports"
-msgstr "Wyślij także oczekujące raporty błędów"
+msgstr "Wyślij _oczekujące raporty błędów"
 
 #: ../src/bug-buddy.glade.h:8
 msgid "_Review Crash Details"
-msgstr ""
+msgstr "_Pokaż szczegóły awarii"
 
 #: ../src/bug-buddy.glade.h:9
 msgid "_Send"
@@ -544,12 +462,8 @@ msgid "The binary file could not be found. Try using an absolute path."
 msgstr "Nie można odnaleźć pliku binarnego. Spróbuj użyć ścieżki absolutnej."
 
 #: ../src/gdb-buddy.c:239
-msgid ""
-"GDB could not be found on your system. Debugging information will not be "
-"obtained."
-msgstr ""
-"W systemie nie można odnaleźć programu GDB. Nie będzie można uzyskać "
-"informacji debugujących."
+msgid "GDB could not be found on your system. Debugging information will not be obtained."
+msgstr "W systemie nie można odnaleźć programu GDB. Nie będzie można uzyskać informacji debugujących."
 
 #: ../src/gdb-buddy.c:248
 msgid ""
@@ -579,25 +493,16 @@ msgid "Email Address"
 msgstr "Adres e-mail"
 
 #: ../bug-buddy.schemas.in.h:3
-msgid ""
-"Email Address for submitting bug reports to GNOME Bugzilla. This address "
-"will be used for correspondence regarding the bug you are submitting. If you "
-"already have a GNOME Bugzilla account, please use it as your Email Address."
-msgstr ""
-"Adres e-mail służący do zgłaszania błędów do Bugzilli GNOME. Adres ten "
-"będzie używany przy śledzeniu zgłoszonego błędu. Jeśli posiadasz już konto "
-"Bugzilli GNOME, użyj go jako swojego adresu e-mail."
+msgid "Email Address for submitting bug reports to GNOME Bugzilla. This address will be used for correspondence regarding the bug you are submitting. If you already have a GNOME Bugzilla account, please use it as your Email Address."
+msgstr "Adres e-mail służący do zgłaszania błędów do Bugzilli GNOME. Adres ten będzie używany przy śledzeniu zgłoszonego błędu. Jeśli posiadasz już konto Bugzilli GNOME, użyj go jako swojego adresu e-mail."
 
 #: ../bug-buddy.schemas.in.h:4
 msgid "File to save bug reports"
 msgstr "Plik do zapisu zgłoszeń błędów"
 
 #: ../bug-buddy.schemas.in.h:5
-msgid ""
-"File where you want to save your bug report in order to submit it later."
-msgstr ""
-"Plik, w którym zostanie zapisane Twoje zgłoszenie błędu, w celu późniejszego "
-"wysłania."
+msgid "File where you want to save your bug report in order to submit it later."
+msgstr "Plik, w którym zostanie zapisane Twoje zgłoszenie błędu, w celu późniejszego wysłania."
 
 #: ../bug-buddy.schemas.in.h:6
 msgid "Real name of user reporting the bug."
@@ -605,15 +510,12 @@ msgstr "Prawdziwa nazwa użytkownika zgłaszającego błąd."
 
 #~ msgid "Done"
 #~ msgstr "Zrobione"
-
 #~ msgid "Save"
 #~ msgstr "Zapisz"
-
 #~ msgid "Show details"
 #~ msgstr "Wyświetl szczegóły"
-
 #~ msgid "Couldn't load icon for %s"
 #~ msgstr "Nie można wczytać ikony dla %s"
-
 #~ msgid "Bug-Buddy"
 #~ msgstr "Bug Buddy"
+
