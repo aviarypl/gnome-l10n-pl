@@ -11,19 +11,19 @@ msgstr ""
 "Project-Id-Version: gnome-keyring-manager\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2007-02-20 22:18+0100\n"
-"PO-Revision-Date: 2004-08-14 01:25+0100\n"
-"Last-Translator: GNOME PL Team <translators@gnome.pl>\n"
+"PO-Revision-Date: 2007-02-27 01:08+0100\n"
+"Last-Translator: wadim dziedzic <nikdo@aviary.pl>\n"
 "Language-Team: Polish <translation-team-pl@lists.sourceforge.net>\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"Plural-Forms: nplurals=3; plural=(n==1 ? 0 : n%10>=2 && n%10<=4 && (n%100<10 "
-"|| n%100>=20) ? 1 : 2);\n"
+"Plural-Forms: nplurals=3; plural=(n==1 ? 0 : n%10>=2 && n%10<=4 && (n%100<10 || n%100>=20) ? 1 : 2);\n"
 
 #: ../data/gnome-keyring-manager.desktop.in.in.h:1
 #: ../data/gnome-keyring-manager.glade.h:20
 #: ../src/gnome-keyring-manager-main-ui.c:533
-#: ../src/gnome-keyring-manager-util.c:325 ../src/gnome-keyring-manager.c:140
+#: ../src/gnome-keyring-manager-util.c:325
+#: ../src/gnome-keyring-manager.c:140
 msgid "Keyring Manager"
 msgstr "Menedżer bazy kluczy"
 
@@ -77,13 +77,11 @@ msgstr "<b>_Nazwa użytkownika:</b>"
 
 #: ../data/gnome-keyring-manager.glade.h:12
 msgid ""
-"<span weight=\"bold\" size=\"larger\">Keyring name and password required</"
-"span>\n"
+"<span weight=\"bold\" size=\"larger\">Keyring name and password required</span>\n"
 "\n"
 "A name and password must be provided for the new keyring."
 msgstr ""
-"<span weight=\"bold\" size=\"larger\">Wymagana nazwa i hasło bazy kluczy</"
-"span>\n"
+"<span weight=\"bold\" size=\"larger\">Wymagana nazwa i hasło bazy kluczy</span>\n"
 "\n"
 "Musi być podana nazwa i hasło dla nowej bazy kluczy."
 
@@ -153,8 +151,7 @@ msgstr "Wyświetlanie kolumny ID na liście elementów bazy kluczy."
 
 #: ../data/gnome-keyring-manager.schemas.in.h:4
 msgid "Display modification time column in the keyring item list."
-msgstr ""
-"Wyświetlanie kolumny czasu modyfikacji na liście elementów bazy kluczy."
+msgstr "Wyświetlanie kolumny czasu modyfikacji na liście elementów bazy kluczy."
 
 #: ../data/gnome-keyring-manager.schemas.in.h:5
 msgid "Display modification time column in the keyring list."
@@ -182,8 +179,7 @@ msgstr "Wyświetlanie kolumny przekroczenia czasu blokady"
 
 #: ../data/gnome-keyring-manager.schemas.in.h:11
 msgid "Display the lock timeout column in the keyring list."
-msgstr ""
-"Wyświetlanie kolumny przekroczenia czasu blokady na liście bazy kluczy."
+msgstr "Wyświetlanie kolumny przekroczenia czasu blokady na liście bazy kluczy."
 
 #: ../data/gnome-keyring-manager.schemas.in.h:12
 msgid "Display the modification time"
@@ -326,19 +322,16 @@ msgid "building menus failed: %s"
 msgstr "budowanie menu nie powiodło się: %s"
 
 #: ../src/gnome-keyring-manager-util.c:106
-#, fuzzy
 msgid "Keyring daemon is not running."
-msgstr "Demon GNOME Keyring nie jest uruchomiony."
+msgstr "Demon Keyring nie jest uruchomiony."
 
 #: ../src/gnome-keyring-manager-util.c:110
-#, fuzzy
 msgid "Cannot communicate with the keyring daemon."
-msgstr "Nie można połączyć się z demonem GNOME Keyring."
+msgstr "Nie można połączyć się z demonem keyring."
 
 #: ../src/gnome-keyring-manager-util.c:114
-#, fuzzy
 msgid "Access denied to the keyring."
-msgstr "Zabroniony dostęp do GNOME Keyring."
+msgstr "Dostęp do keyring zabroniony."
 
 #: ../src/gnome-keyring-manager-util.c:118
 msgid "Keyring already exists."
@@ -353,9 +346,8 @@ msgid "Keyring already unlocked."
 msgstr "Baza kluczy jest już odblokowana."
 
 #: ../src/gnome-keyring-manager-util.c:134
-#, fuzzy
 msgid "Unknown keyring error."
-msgstr "Nieznany błąd GNOME Keyring."
+msgstr "Nieznany błąd keyring."
 
 #: ../src/gnome-keyring-manager-util.c:210
 msgid "?"
@@ -383,7 +375,7 @@ msgstr "%d %b %Y"
 
 #: ../src/gnome-keyring-manager-util.c:327
 msgid "A tool to manage the information stored in your keyrings."
-msgstr ""
+msgstr "Narzędzie do zarządzania bazą kluczy."
 
 #: ../src/gnome-keyring-manager-util.c:329
 msgid "Copyright © 2004, 2005 The GNOME Love Project"
@@ -395,117 +387,80 @@ msgstr "GNOME PL Team translators@gnomepl.org"
 
 #: ../src/gnome-keyring-manager-util.c:514
 #, c-format
-msgid ""
-"Error while trying to remove the %s directory from the list of gconf "
-"directories we listen to: %s"
-msgstr ""
-"Błąd podczas próby usunięcia katalogu %s ze śledzonej listy katalogów gconf: "
-"%s"
+msgid "Error while trying to remove the %s directory from the list of gconf directories we listen to: %s"
+msgstr "Błąd podczas próby usunięcia katalogu %s ze śledzonej listy katalogów gconf: %s"
 
 #~ msgid "Unknown keyring item type: %d"
 #~ msgstr "Nieznany rodzaj elementu bazy kluczy: %d"
-
 #~ msgid "Failed to get keyring info."
 #~ msgstr "Nie można pobrać informacji o bazie kluczy."
-
 #~ msgid "A row disappeared while we were waiting for the data..."
 #~ msgstr "Wiersz zniknął podczas oczekiwania na dane..."
-
 #~ msgid "Failed get the default keyring."
 #~ msgstr "Nie można pobrać domyślnej bazy kluczy."
-
 #~ msgid "The default keyring is not in the list store!"
 #~ msgstr "Domyślna baza kluczy nie znajduje się na liście!"
-
 #~ msgid "A simple keyring manager for GNOME 2"
 #~ msgstr "Prosty menedżer bazy kluczy dla GNOME 2"
-
 #~ msgid "Error while trying to read the gconf key %s: %s"
 #~ msgstr "Błąd podczas odczytu klucza gconf %s: %s"
-
 #~ msgid "Error while setting the gconf key %s: %s"
 #~ msgstr "Błąd podczas ustawiania klucza gconf %s: %s"
-
 #~ msgid ""
 #~ "Error trying to add %s to the list of gconf directories we listen to: %s"
 #~ msgstr ""
 #~ "Błąd podczas próby dodania %s do listy śledzonych katalogów gconf: %s"
-
 #~ msgid ""
 #~ "Error while trying to add a listener for changes on the gconf key %s: %s"
 #~ msgstr "Błąd podczas próby dodania śledzenia zmian klucza gconf %s: %s"
-
 #~ msgid "Attributes"
 #~ msgstr "Atrybuty"
-
 #~ msgid "Application Access Rights"
 #~ msgstr "Prawa dostępu aplikacji"
-
 #~ msgid "Advanced Editor: %s"
 #~ msgstr "Edytor zaawansowany: %s"
-
 #~ msgid "Value"
 #~ msgstr "Wartość"
-
 #~ msgid "Path"
 #~ msgstr "Ścieżka"
-
 #~ msgid "Remove"
 #~ msgstr "Usuń"
-
 #~ msgid "_Name:"
 #~ msgstr "_Nazwa:"
-
 #~ msgid "_Secret:"
 #~ msgstr "_Tajne:"
-
 #~ msgid "_Generic Secret"
 #~ msgstr "_Zwykłe tajne"
-
 #~ msgid "N_etwork Secret"
 #~ msgstr "_Sieciowe tajne"
-
 #~ msgid "No_te"
 #~ msgstr "_Uwaga"
-
 #~ msgid "C_reate"
 #~ msgstr "_Utwórz"
-
 #~ msgid "New Item For Session Keyring"
 #~ msgstr "Nowy element dla bazy kluczy sesji"
-
 #~ msgid "New Item For Keyring %s"
 #~ msgstr "Nowy element dla bazy kluczy %s"
-
 #~ msgid "User:"
 #~ msgstr "Użytkownik:"
-
 #~ msgid "Domain:"
 #~ msgstr "Domena:"
-
 #~ msgid "Server:"
 #~ msgstr "Serwer:"
-
 #~ msgid "Object:"
 #~ msgstr "Obiekt:"
-
 #~ msgid "Authentication Method:"
 #~ msgstr "Metoda autoryzacji:"
-
 #~ msgid "Protocol:"
 #~ msgstr "Protokół:"
-
 #~ msgid "Port:"
 #~ msgstr "Port:"
-
 #~ msgid "Te_xt:"
 #~ msgstr "Tek_st:"
-
 #~ msgid "GNOME Keyring Manager"
 #~ msgstr "Menedżer bazy kluczy GNOME"
-
 #~ msgid "/path/to/application"
 #~ msgstr "/ścieżka/do/aplikacji"
-
 #~ msgid "<b>Name</b>"
 #~ msgstr "<b>Nazwa</b>"
+
