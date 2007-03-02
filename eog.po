@@ -14,19 +14,18 @@ msgstr ""
 "Project-Id-Version: eog.HEAD.pl\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2007-02-19 09:38+0100\n"
-"PO-Revision-Date: 2006-08-15 16:35+0200\n"
-"Last-Translator: Artur Flinta <aflinta@at.kernel.pl>\n"
+"PO-Revision-Date: 2007-03-01 21:03+0100\n"
+"Last-Translator: wadim dziedzic <wdziedzic@aviary.pl>\n"
 "Language-Team: Polish <translators@gnomepl.org>\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"Plural-Forms:  nplurals=3; plural=(n==1 ? 0 : n%10>=2 && n%10<=4 && (n%"
-"100<10 || n%100>=20) ? 1 : 2);\n"
+"Plural-Forms: nplurals=3; plural=(n==1 ? 0 : n%10>=2 && n%10<=4 && (n%100<10 || n%100>=20) ? 1 : 2);\n"
 "X-Generator: KBabel 1.11.2\n"
 
 #: ../eog.desktop.in.in.h:1
 msgid "Browse and rotate images"
-msgstr ""
+msgstr "Przegląda i obraca obrazy"
 
 #: ../eog.desktop.in.in.h:2
 msgid "Image Viewer"
@@ -45,9 +44,8 @@ msgid "<b>File Path Specifications</b>"
 msgstr "<b>Określenie ścieżki pliku</b>"
 
 #: ../eog.glade.h:4
-#, fuzzy
 msgid "<b>Image Enhancements</b>"
-msgstr "<b>Skalowanie obrazu</b>"
+msgstr "<b>Rozszerzenia obrazu</b>"
 
 #: ../eog.glade.h:5
 msgid "<b>Image Zoom</b>"
@@ -87,7 +85,7 @@ msgstr "Folder docelowy:"
 
 #: ../eog.glade.h:14
 msgid "E_xpand images to fit screen"
-msgstr ""
+msgstr "_Rozciągaj obrazy do rozmiaru ekranu"
 
 #: ../eog.glade.h:15
 msgid "Eye of GNOME Preferences"
@@ -109,7 +107,8 @@ msgstr "Zmiana nazwy z:"
 msgid "Replace spaces by underscore"
 msgstr "Zamiana spacji na podkreślenia"
 
-#: ../eog.glade.h:20 ../shell/eog-window.c:3610
+#: ../eog.glade.h:20
+#: ../shell/eog-window.c:3610
 msgid "Save As"
 msgstr "Zapis jako"
 
@@ -118,12 +117,10 @@ msgid "Saving Image"
 msgstr "Zapis obrazu"
 
 #: ../eog.glade.h:22
-#, fuzzy
 msgid "Slideshow"
-msgstr "Pokaz slajdó_w"
+msgstr "Pokaz slajdów"
 
 #: ../eog.glade.h:23
-#, fuzzy
 msgid "Smooth images when _zoomed"
 msgstr "Interpolacja obrazu przy powię_kszaniu"
 
@@ -137,7 +134,7 @@ msgstr "Do:"
 
 #: ../eog.glade.h:26
 msgid "_Automatic orientation"
-msgstr ""
+msgstr "Orientacja _automatyczna"
 
 #: ../eog.glade.h:27
 msgid "_Browse"
@@ -156,13 +153,8 @@ msgid "seconds"
 msgstr "sekundach"
 
 #: ../eog.schemas.in.h:1
-msgid ""
-"A value greater than 0 determines the seconds an image stays on screen until "
-"the next one is shown automatically. Zero disables the automatic browsing."
-msgstr ""
-"Wartość większa od 0 określa liczbę sekund jaką obraz pozostaje na ekranie "
-"przed wyświetleniem kolejnego. Wartość zero wyłącza automatyczne "
-"przeglądanie."
+msgid "A value greater than 0 determines the seconds an image stays on screen until the next one is shown automatically. Zero disables the automatic browsing."
+msgstr "Wartość większa od 0 określa liczbę sekund jaką obraz pozostaje na ekranie przed wyświetleniem kolejnego. Wartość zero wyłącza automatyczne przeglądanie."
 
 #: ../eog.schemas.in.h:3
 #, no-c-format
@@ -171,37 +163,23 @@ msgstr "Możliwe początkowe powiększenie większe od 100%"
 
 #: ../eog.schemas.in.h:4
 msgid "Automatic orientation"
-msgstr ""
+msgstr "Orientacja automatyczna"
 
 #: ../eog.schemas.in.h:5
 msgid "Delay in seconds until showing the next image"
 msgstr "Opóźnienie w sekundach wyświetlania pojedynczego obrazu"
 
 #: ../eog.schemas.in.h:6
-msgid ""
-"Determines how transparency should be indicated. Valid values are "
-"CHECK_PATTERN, COLOR and NONE. If COLOR is choosen, then the trans_color key "
-"determines the used color value."
-msgstr ""
-"Określa sposób prezentowania przezroczystości. Poprawnymi wartościami są: "
-"CHECK_PATTERN (wzór szachownicy), COLOR (kolor) i NONE (brak). Jeśli wybrano "
-"opcję COLOR, wówczas klucz trans_key określa wartość użytego koloru."
+msgid "Determines how transparency should be indicated. Valid values are CHECK_PATTERN, COLOR and NONE. If COLOR is choosen, then the trans_color key determines the used color value."
+msgstr "Określa sposób prezentowania przezroczystości. Poprawnymi wartościami są: CHECK_PATTERN (wzór szachownicy), COLOR (kolor) i NONE (brak). Jeśli wybrano opcję COLOR, wówczas klucz trans_key określa wartość użytego koloru."
 
 #: ../eog.schemas.in.h:7
-msgid ""
-"If the transparency key has the value COLOR, then this key determines the "
-"color which is used for indicating transparency."
-msgstr ""
-"Jeśli klucz transparency (przezroczystość) ma wartość COLOR (kolor), wówczas "
-"opcja ta określa kolor wykorzystywany do prezentacji przezroczystości."
+msgid "If the transparency key has the value COLOR, then this key determines the color which is used for indicating transparency."
+msgstr "Jeśli klucz transparency (przezroczystość) ma wartość COLOR (kolor), wówczas opcja ta określa kolor wykorzystywany do prezentacji przezroczystości."
 
 #: ../eog.schemas.in.h:8
-msgid ""
-"If this is set to FALSE small images will not be stretched to fit into the "
-"screen initially."
-msgstr ""
-"Jeśli opcja ta nie jest ustawiona, małe obrazy nie będą rozciągane aby "
-"wypełnić początkowo ekran."
+msgid "If this is set to FALSE small images will not be stretched to fit into the screen initially."
+msgstr "Jeśli opcja ta nie jest ustawiona, małe obrazy nie będą rozciągane aby wypełnić początkowo ekran."
 
 #: ../eog.schemas.in.h:9
 msgid "Interpolate Image"
@@ -252,30 +230,20 @@ msgid "Transparency indicator"
 msgstr "Wskaźnik przezroczystości"
 
 #: ../eog.schemas.in.h:21
-msgid ""
-"Whether opening an image should create a new window instead of replacing the "
-"image in the current window."
-msgstr ""
-"Określa, czy przy otwieraniu obrazu powinno być tworzone nowe okno, zamiast "
-"umieszczania obrazu w bieżącym oknie."
+msgid "Whether opening an image should create a new window instead of replacing the image in the current window."
+msgstr "Określa, czy przy otwieraniu obrazu powinno być tworzone nowe okno, zamiast umieszczania obrazu w bieżącym oknie."
 
 #: ../eog.schemas.in.h:22
-msgid ""
-"Whether or not the sequence of images should be shown in an endless loop."
+msgid "Whether or not the sequence of images should be shown in an endless loop."
 msgstr "Określa czy sekwencja obrazów powinna być zapętlana."
 
 #: ../eog.schemas.in.h:23
-msgid ""
-"Whether the image should be interpolated on zoom or not. This leads to "
-"better quality but is somewhat slower than non interpolated images."
-msgstr ""
-"Określa, czy przy powiększaniu obrazu powinien on być interpolowany. "
-"Interpolacja poprawia jakość obrazu jednak spowalnia jego wyświetlanie."
+msgid "Whether the image should be interpolated on zoom or not. This leads to better quality but is somewhat slower than non interpolated images."
+msgstr "Określa, czy przy powiększaniu obrazu powinien on być interpolowany. Interpolacja poprawia jakość obrazu jednak spowalnia jego wyświetlanie."
 
 #: ../eog.schemas.in.h:24
-msgid ""
-"Whether the image should be rotated automatically based on EXIF orientation."
-msgstr ""
+msgid "Whether the image should be rotated automatically based on EXIF orientation."
+msgstr "Określa czy obraz ma być automatycznie obrócony na bazie danych EXIF"
 
 #: ../libeog/eog-image-jpeg.c:344
 #, c-format
@@ -294,15 +262,18 @@ msgstr "Transformacja na niewczytanym obrazie."
 msgid "EXIF not supported for this file format."
 msgstr "EXIF nie jest obsługiwane dla tego formatu pliku."
 
-#: ../libeog/eog-image.c:1128 ../libeog/eog-image.c:1337
+#: ../libeog/eog-image.c:1128
+#: ../libeog/eog-image.c:1337
 msgid "File exists"
 msgstr "Plik istnieje"
 
-#: ../libeog/eog-image.c:1277 ../libeog/eog-image.c:1405
+#: ../libeog/eog-image.c:1277
+#: ../libeog/eog-image.c:1405
 msgid "No image loaded."
 msgstr "Nie wczytano obrazu."
 
-#: ../libeog/eog-image.c:1286 ../libeog/eog-image.c:1414
+#: ../libeog/eog-image.c:1286
+#: ../libeog/eog-image.c:1414
 msgid "Temporary file creation failed."
 msgstr "Utworzenie tymczasowego pliku nie powiodło się."
 
@@ -330,12 +301,14 @@ msgstr "Inne"
 msgid "Tag"
 msgstr "Znacznik"
 
-#: ../libeog/eog-info-view-exif.c:219 ../libeog/eog-info-view-file.c:96
+#: ../libeog/eog-info-view-exif.c:219
+#: ../libeog/eog-info-view-file.c:96
 msgid "Value"
 msgstr "Wartość"
 
 #. only used for internal purpose
-#: ../libeog/eog-info-view-file.c:28 ../shell/eog-save-as-dialog-helper.c:29
+#: ../libeog/eog-info-view-file.c:28
+#: ../shell/eog-save-as-dialog-helper.c:29
 msgid "Filename"
 msgstr "Nazwa pliku"
 
@@ -419,103 +392,92 @@ msgid "Could not display help for Eye of GNOME"
 msgstr "Nie można wyświetlić pomocy programu Oko Gnoma"
 
 #: ../shell/eog-print-image-setup.c:810
-#, fuzzy
 msgid "Image"
-msgstr "_Obraz"
+msgstr "Obraz"
 
 #: ../shell/eog-print-image-setup.c:811
 msgid "The image whose printing properties will be setup"
-msgstr ""
+msgstr "Obraz, którego właściwości drukowana bedą ustawiane"
 
 #: ../shell/eog-print-image-setup.c:817
 msgid "Page Setup"
-msgstr ""
+msgstr "Układ strony"
 
 #: ../shell/eog-print-image-setup.c:818
 msgid "The information for the page where the image will be printed"
-msgstr ""
+msgstr "Informacja dla strony gdzie obraz zostanie wydrukowany"
 
 #: ../shell/eog-print-image-setup.c:842
 msgid "Position"
-msgstr ""
+msgstr "Położenie"
 
 #: ../shell/eog-print-image-setup.c:847
-#, fuzzy
 msgid "_Left:"
-msgstr "Lewo"
+msgstr "_Lewo:"
 
 #: ../shell/eog-print-image-setup.c:848
-#, fuzzy
 msgid "_Right:"
-msgstr "Prawo"
+msgstr "_Prawo:"
 
 #: ../shell/eog-print-image-setup.c:849
-#, fuzzy
 msgid "_Top:"
-msgstr "Do:"
+msgstr "_Góra:"
 
 #: ../shell/eog-print-image-setup.c:850
 msgid "_Bottom:"
-msgstr ""
+msgstr "_Dół:"
 
 #: ../shell/eog-print-image-setup.c:852
-#, fuzzy
 msgid "C_enter:"
-msgstr "Licznik"
+msgstr "Śr_odek:"
 
 #: ../shell/eog-print-image-setup.c:857
 msgid "None"
-msgstr ""
+msgstr "Brak"
 
 #: ../shell/eog-print-image-setup.c:859
-#, fuzzy
 msgid "Horizontal"
-msgstr "Odbij po_ziomo"
+msgstr "Poziomo"
 
 #: ../shell/eog-print-image-setup.c:861
-#, fuzzy
 msgid "Vertical"
-msgstr "Odbij pio_nowo"
+msgstr "Pionowo"
 
 #: ../shell/eog-print-image-setup.c:863
-#, fuzzy
 msgid "Both"
-msgstr "Miesiąc"
+msgstr "Oba"
 
 #: ../shell/eog-print-image-setup.c:879
 msgid "Size"
-msgstr ""
+msgstr "Rozmiar"
 
 #: ../shell/eog-print-image-setup.c:884
-#, fuzzy
 msgid "_Width:"
-msgstr "Szerokość"
+msgstr "_Szerokość:"
 
 #: ../shell/eog-print-image-setup.c:886
-#, fuzzy
 msgid "_Height:"
-msgstr "Wysokość"
+msgstr "_Wysokość:"
 
 #: ../shell/eog-print-image-setup.c:889
 msgid "_Scaling:"
-msgstr ""
+msgstr "_Skalowanie:"
 
 #: ../shell/eog-print-image-setup.c:902
 msgid "_Unit:"
-msgstr ""
+msgstr "_Jednostka:"
 
 #: ../shell/eog-print-image-setup.c:907
 msgid "Millimeters"
-msgstr ""
+msgstr "Milimetry"
 
 #: ../shell/eog-print-image-setup.c:909
 msgid "Inches"
-msgstr ""
+msgstr "Cale"
 
 #: ../shell/eog-print-image-setup.c:929
-#, fuzzy
 msgid "Preview"
-msgstr "Podgląd wydruku"
+msgstr "Podgląd"
 
 #: ../shell/eog-save-as-dialog-helper.c:30
 msgid "Counter"
@@ -564,12 +526,8 @@ msgid "Option not available."
 msgstr "Opcja niedostępna."
 
 #: ../shell/eog-save-as-dialog-helper.c:163
-msgid ""
-"To use this function you need the libexif library. Please install libexif "
-"(http://libexif.sf.net) and recompile Eye of GNOME."
-msgstr ""
-"Aby użyć tej funkcji, potrzebna jest biblioteka libexif. Zainstaluj "
-"bibliotekę libexif (http://libexif.sf.net) i pononie skompiluj Oko Gnoma."
+msgid "To use this function you need the libexif library. Please install libexif (http://libexif.sf.net) and recompile Eye of GNOME."
+msgstr "Aby użyć tej funkcji, potrzebna jest biblioteka libexif. Zainstaluj bibliotekę libexif (http://libexif.sf.net) i pononie skompiluj Oko Gnoma."
 
 #: ../shell/eog-save-as-dialog-helper.c:237
 msgid "as is"
@@ -585,16 +543,17 @@ msgid "Cancel saving ..."
 msgstr "Anuluj zapis ..."
 
 #: ../shell/eog-window.c:570
-#, fuzzy
 msgid "Image Settings"
-msgstr "_Kolekcja obrazów"
+msgstr "Ustawienia obrazu"
 
 #: ../shell/eog-window.c:585
-#, fuzzy, c-format
+#, c-format
 msgid ""
 "Error printing file:\n"
 "%s"
-msgstr "Błąd podczas usuwania obrazu %s"
+msgstr ""
+"Błąd podczas drukowania obrazu:\n"
+"%s"
 
 #. Translators should localize the following string
 #. * which will give them credit in the About box.
@@ -605,40 +564,21 @@ msgid "translator-credits"
 msgstr "GNOME PL Team <translators@gnomepl.org>"
 
 #: ../shell/eog-window.c:700
-msgid ""
-"This program is free software; you can redistribute it and/or modify it "
-"under the terms of the GNU General Public License as published by the Free "
-"Software Foundation; either version 2 of the License, or (at your option) "
-"any later version.\n"
-msgstr ""
-"Ten program jest oprogramowaniem ogólnodostępnym; możesz je rozpowszechniać "
-"i/lub modyfikować zgodnie z postanowieniami GNU General Public License "
-"opublikowanej przez Free Software Foundation w wersji 2 lub (zależnie od "
-"twojego wyboru) którejkolwiek późniejszej.\n"
+msgid "This program is free software; you can redistribute it and/or modify it under the terms of the GNU General Public License as published by the Free Software Foundation; either version 2 of the License, or (at your option) any later version.\n"
+msgstr "Ten program jest oprogramowaniem ogólnodostępnym; możesz je rozpowszechniać i/lub modyfikować zgodnie z postanowieniami GNU General Public License opublikowanej przez Free Software Foundation w wersji 2 lub (zależnie od twojego wyboru) którejkolwiek późniejszej.\n"
 
 #: ../shell/eog-window.c:704
-msgid ""
-"This program is distributed in the hope that it will be useful, but WITHOUT "
-"ANY WARRANTY; without even the implied warranty of MERCHANTABILITY or "
-"FITNESS FOR A PARTICULAR PURPOSE.  See the GNU General Public License for "
-"more details.\n"
-msgstr ""
-"Program ten jest rozpowszechniana w nadziei, że będzie użyteczny, ale BEZ "
-"ŻADNEJ GWARANCJI, w tym bez gwarancji PRZYDATNOŚCI DO KONKRETNEGO "
-"ZASTOSOWANIA. Szczegóły można znaleźć w GNU General Public License.\n"
+msgid "This program is distributed in the hope that it will be useful, but WITHOUT ANY WARRANTY; without even the implied warranty of MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the GNU General Public License for more details.\n"
+msgstr "Program ten jest rozpowszechniana w nadziei, że będzie użyteczny, ale BEZ ŻADNEJ GWARANCJI, w tym bez gwarancji PRZYDATNOŚCI DO KONKRETNEGO ZASTOSOWANIA. Szczegóły można znaleźć w GNU General Public License.\n"
 
 #: ../shell/eog-window.c:708
-msgid ""
-"You should have received a copy of the GNU General Public License along with "
-"this program; if not, write to the Free Software Foundation, Inc., 51 "
-"Franklin Street, Fifth Floor, Boston, MA 02110-1301, USA"
-msgstr ""
-"Kopia licencji GNU GPL powinna zostać dostarczona wraz z tym programem. "
-"Jeśli jej brak, napisz na adres Free Software Foundation, Inc., 51 Franklin "
-"Street, Fifth Floor, Boston, MA 02110-1301, USA"
+msgid "You should have received a copy of the GNU General Public License along with this program; if not, write to the Free Software Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston, MA 02110-1301, USA"
+msgstr "Kopia licencji GNU GPL powinna zostać dostarczona wraz z tym programem. Jeśli jej brak, napisz na adres Free Software Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston, MA 02110-1301, USA"
 
-#: ../shell/eog-window.c:721 ../shell/eog-window.c:3327
-#: ../shell/eog-window.c:3967 ../shell/main.c:624
+#: ../shell/eog-window.c:721
+#: ../shell/eog-window.c:3327
+#: ../shell/eog-window.c:3967
+#: ../shell/main.c:624
 msgid "Eye of GNOME"
 msgstr "Oko GNOME"
 
@@ -664,7 +604,8 @@ msgstr "Nadpisać plik %s?"
 msgid "File exists. Do you want to overwrite it?"
 msgstr "Plik istnieje. Czy chcesz go nadpisać?"
 
-#: ../shell/eog-window.c:1202 ../shell/eog-window.c:1218
+#: ../shell/eog-window.c:1202
+#: ../shell/eog-window.c:1218
 msgid "Skip"
 msgstr "Pomiń"
 
@@ -677,7 +618,8 @@ msgstr "Nadpisz"
 msgid "Error on saving %s."
 msgstr "Błąd podczas zapisywania %s."
 
-#: ../shell/eog-window.c:1219 ../shell/eog-window.c:1786
+#: ../shell/eog-window.c:1219
+#: ../shell/eog-window.c:1786
 msgid "Retry"
 msgstr "Ponów"
 
@@ -725,7 +667,8 @@ msgstr[2] ""
 "Czy na pewno chcesz przenieść\n"
 "%d wybranych obrazów do śmietnika?"
 
-#: ../shell/eog-window.c:2196 ../shell/eog-window.c:3565
+#: ../shell/eog-window.c:2196
+#: ../shell/eog-window.c:3565
 msgid "Move to Trash"
 msgstr "Przenoszenie do śmietnika"
 
@@ -810,7 +753,6 @@ msgid "_Contents"
 msgstr "_Zawartość"
 
 #: ../shell/eog-window.c:3539
-#, fuzzy
 msgid "Help on this application"
 msgstr "Wyświetla pomoc na temat aplikacji"
 
@@ -843,8 +785,7 @@ msgid "_Image Collection"
 msgstr "_Kolekcja obrazów"
 
 #: ../shell/eog-window.c:3547
-msgid ""
-"Changes the visibility of the image collection pane in the current window"
+msgid "Changes the visibility of the image collection pane in the current window"
 msgstr "Zmienia widoczność panelu kolekcji obrazów w bieżącym oknie"
 
 #: ../shell/eog-window.c:3551
@@ -857,7 +798,7 @@ msgstr "Z_apisz jako..."
 
 #: ../shell/eog-window.c:3553
 msgid "Page Set_up..."
-msgstr ""
+msgstr "_Układ strony"
 
 #: ../shell/eog-window.c:3554
 msgid "Print..."
@@ -896,12 +837,14 @@ msgid "_Slideshow"
 msgstr "Pokaz slajdó_w"
 
 #. accelerators
-#: ../shell/eog-window.c:3569 ../shell/eog-window.c:3575
+#: ../shell/eog-window.c:3569
+#: ../shell/eog-window.c:3575
 #: ../shell/eog-window.c:3576
 msgid "_Zoom In"
 msgstr "Po_większ"
 
-#: ../shell/eog-window.c:3570 ../shell/eog-window.c:3577
+#: ../shell/eog-window.c:3570
+#: ../shell/eog-window.c:3577
 msgid "Zoom _Out"
 msgstr "Z_mniejsz"
 
@@ -913,13 +856,16 @@ msgstr "_Zwykły rozmiar"
 msgid "Best _Fit"
 msgstr "_Dopasuj"
 
-#: ../shell/eog-window.c:3578 ../shell/eog-window.c:3580
+#: ../shell/eog-window.c:3578
+#: ../shell/eog-window.c:3580
 #: ../shell/eog-window.c:3594
 msgid "_Next Image"
 msgstr "_Następny obraz"
 
-#: ../shell/eog-window.c:3579 ../shell/eog-window.c:3581
-#: ../shell/eog-window.c:3582 ../shell/eog-window.c:3593
+#: ../shell/eog-window.c:3579
+#: ../shell/eog-window.c:3581
+#: ../shell/eog-window.c:3582
+#: ../shell/eog-window.c:3593
 msgid "_Previous Image"
 msgstr "_Poprzedni obraz"
 
@@ -927,11 +873,13 @@ msgstr "_Poprzedni obraz"
 msgid "Move to _Trash"
 msgstr "Przenieś do ś_mietnika"
 
-#: ../shell/eog-window.c:3584 ../shell/eog-window.c:3595
+#: ../shell/eog-window.c:3584
+#: ../shell/eog-window.c:3595
 msgid "_First Image"
 msgstr "P_ierwszy obraz"
 
-#: ../shell/eog-window.c:3585 ../shell/eog-window.c:3596
+#: ../shell/eog-window.c:3585
+#: ../shell/eog-window.c:3596
 msgid "_Last Image"
 msgstr "_Ostatni obraz"
 
@@ -1011,9 +959,9 @@ msgstr[1] "Nie znaleziono plików."
 msgstr[2] "Nie znaleziono plików."
 
 #: ../shell/main.c:426
-#, fuzzy, c-format
+#, c-format
 msgid "Couldn't load image '%s'."
-msgstr "Nie można otworzyć \"%s\""
+msgstr "Nie można otworzyć obrazu '%s'"
 
 #: ../shell/recent-files/egg-recent-view-gtk.c:346
 #, c-format
@@ -1026,21 +974,16 @@ msgstr "Pusty"
 
 #~ msgid "View different types of images"
 #~ msgstr "Wyświetla różne rodzaje obrazów"
-
 #~ msgid "."
 #~ msgstr "."
-
 #~ msgid "<b>Image Interpolation</b>"
 #~ msgstr "<b>Interpolacja obrazu</b>"
-
 #~ msgid "Allow _zoom greater than 100% initially"
 #~ msgstr "Możliwe początkowe po_większenie większe niż 100%"
-
 #~ msgid "Slide Show"
 #~ msgstr "Pokaz slajdów"
-
 #~ msgid "Print"
 #~ msgstr "Drukuj"
-
 #~ msgid "Rotat_e 180°"
 #~ msgstr "O_bróć o 180°"
+

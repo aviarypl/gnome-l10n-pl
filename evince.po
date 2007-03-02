@@ -19,14 +19,13 @@ msgstr ""
 "Project-Id-Version: evince.gnome-2-16\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2007-02-19 09:54+0100\n"
-"PO-Revision-Date: 2006-11-17 21:41+0100\n"
-"Last-Translator: Wojciech Kapusta <wojciech@aviary.pl>\n"
+"PO-Revision-Date: 2007-03-01 21:21+0100\n"
+"Last-Translator: wadim dziedzic <wdziedzic@aviary.pl>\n"
 "Language-Team:  <pl@li.org>\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"Plural-Forms:  nplurals=3; plural=(n==1 ? 0 : n%10>=2 && n%10<=4 && (n%"
-"100<10 || n%100>=20) ? 1 : 2);\n"
+"Plural-Forms: nplurals=3; plural=(n==1 ? 0 : n%10>=2 && n%10<=4 && (n%100<10 || n%100>=20) ? 1 : 2);\n"
 "X-Generator: KBabel 1.9.1\n"
 
 #: ../backend/comics/comics-document.c:148
@@ -39,10 +38,8 @@ msgid "No images found in archive %s"
 msgstr "Nie znaleziono obrazów w archiwum %s"
 
 #: ../backend/djvu/djvu-document.c:159
-msgid ""
-"The document is composed by several files. One or more of such files cannot "
-"be accessed."
-msgstr ""
+msgid "The document is composed by several files. One or more of such files cannot be accessed."
+msgstr "Ten dokument jest złożony z kilku plików. Brak dostępu do jednego lub kilku z nich."
 
 #: ../backend/dvi/dvi-document.c:89
 msgid "File not available"
@@ -112,42 +109,39 @@ msgstr "Niedołączona"
 
 #: ../backend/impress/zip.c:50
 msgid "No error"
-msgstr ""
+msgstr "Bez błędu"
 
 #: ../backend/impress/zip.c:53
 msgid "Not enough memory"
-msgstr ""
+msgstr "Brak pamięci"
 
 #: ../backend/impress/zip.c:56
 msgid "Cannot find zip signature"
-msgstr ""
+msgstr "Nie można znaleźć sygnatury zip"
 
 #: ../backend/impress/zip.c:59
 msgid "Invalid zip file"
-msgstr ""
+msgstr "Niepoprawny plik zip"
 
 #: ../backend/impress/zip.c:62
-#, fuzzy
 msgid "Multi file zips are not supported"
-msgstr "Tworzenie dokumentów PDF nie jest obsługiwane"
+msgstr "Wieloplikowe archiwa zip nie są obsługiwane"
 
 #: ../backend/impress/zip.c:65
-#, fuzzy
 msgid "Cannot open the file"
-msgstr "Nie można otworzyć pliku “%s”.\n"
+msgstr "Nie można otworzyć pliku"
 
 #: ../backend/impress/zip.c:68
 msgid "Cannot read data from file"
-msgstr ""
+msgstr "Nie można odczytać danych z pliku"
 
 #: ../backend/impress/zip.c:71
 msgid "Cannot find file in the zip archive"
-msgstr ""
+msgstr "Nie można znaleźć pliku w archiwum zip"
 
 #: ../backend/impress/zip.c:74
-#, fuzzy
 msgid "Unknown error"
-msgstr "Nieznany typ MIME"
+msgstr "Nieznany błąd"
 
 # Rozmiar papieru
 #: ../backend/ps/gsdefaults.c:30
@@ -228,18 +222,16 @@ msgstr "Quarto"
 msgid "10x14"
 msgstr "10 x 14"
 
-#: ../backend/ps/ps-document.c:172 ../backend/ps/ps-document.c:186
+#: ../backend/ps/ps-document.c:172
+#: ../backend/ps/ps-document.c:186
 #, c-format
 msgid "Cannot open file “%s”.\n"
 msgstr "Nie można otworzyć pliku “%s”.\n"
 
 #: ../backend/ps/ps-document.c:233
 #, c-format
-msgid ""
-"Failed to load document “%s”. Ghostscript interpreter was not found in path"
-msgstr ""
-"Wczytanie dokumentu “%s” nie powiodło się. Nie znaleziono interpretera "
-"Ghostscript w ścieżce wyszukiwania"
+msgid "Failed to load document “%s”. Ghostscript interpreter was not found in path"
+msgstr "Wczytanie dokumentu “%s” nie powiodło się. Nie znaleziono interpretera Ghostscript w ścieżce wyszukiwania"
 
 #: ../backend/ps/ps-document.c:250
 #, c-format
@@ -259,16 +251,15 @@ msgid "Interpreter failed."
 msgstr "Błąd interpretera."
 
 #: ../backend/impress/impress-document.c:294
-#, fuzzy
 msgid "Remote files aren't supported"
-msgstr "Tworzenie dokumentów PDF nie jest obsługiwane"
+msgstr "Zdalne pliki nie są obsługiwane"
 
 #: ../backend/impress/impress-document.c:305
-#, fuzzy
 msgid "Invalid document"
-msgstr "Drukuje bieżący dokument"
+msgstr "Niepoprawny dokument"
 
-#: ../libdocument/ev-attachment.c:303 ../libdocument/ev-attachment.c:316
+#: ../libdocument/ev-attachment.c:303
+#: ../libdocument/ev-attachment.c:316
 #, c-format
 msgid "Couldn't save attachment “%s”: %s"
 msgstr "Nie można było zapisać załącznika “%s”: %s"
@@ -305,7 +296,8 @@ msgstr "Dokumenty PostScript"
 msgid "PDF Documents"
 msgstr "Dokumenty PDF"
 
-#: ../libdocument/ev-document-factory.c:474 ../shell/ev-window.c:4643
+#: ../libdocument/ev-document-factory.c:474
+#: ../shell/ev-window.c:4643
 msgid "Images"
 msgstr "Obrazy"
 
@@ -380,12 +372,12 @@ msgid "Separator"
 msgstr "Separator"
 
 #: ../cut-n-paste/totem-screensaver/totem-scrsaver.c:111
-#, fuzzy
 msgid "Running in presentation mode"
-msgstr "Uruchom Evince w trybie prezentacji"
+msgstr "Praca w trybie prezentacji"
 
 #. translators: this is the label for toolbar button
-#: ../cut-n-paste/zoom-control/ephy-zoom.h:48 ../shell/ev-window.c:4296
+#: ../cut-n-paste/zoom-control/ephy-zoom.h:48
+#: ../shell/ev-window.c:4296
 msgid "Best Fit"
 msgstr "Dopasuj"
 
@@ -429,7 +421,8 @@ msgstr "300%"
 msgid "400%"
 msgstr "400%"
 
-#: ../data/evince.desktop.in.in.h:1 ../shell/ev-window.c:3456
+#: ../data/evince.desktop.in.in.h:1
+#: ../shell/ev-window.c:3456
 #: ../shell/ev-window-title.c:127
 msgid "Document Viewer"
 msgstr "Przeglądarka dokumentów"
@@ -439,9 +432,8 @@ msgid "View multipage documents"
 msgstr "Wyświetla wielostronicowe dokumenty"
 
 #: ../data/evince-password.glade.h:1
-#, fuzzy
 msgid "Password Entry"
-msgstr "_Hasło:"
+msgstr "Podanie hasła"
 
 #: ../data/evince-password.glade.h:2
 msgid "Remember password for this session"
@@ -488,9 +480,8 @@ msgid "<b>Optimized:</b>"
 msgstr "<b>Optymalizacja:</b>"
 
 #: ../data/evince-properties.glade.h:9
-#, fuzzy
 msgid "<b>Paper Size:</b>"
-msgstr "<b>Optymalizacja:</b>"
+msgstr "<b>Rozmiar papieru</b>"
 
 #: ../data/evince-properties.glade.h:10
 msgid "<b>Producer:</b>"
@@ -514,9 +505,7 @@ msgstr "Nie uwzględniaj ograniczeń dokumentu"
 
 #: ../data/evince.schemas.in.h:2
 msgid "Override document restrictions, like restriction to copy or to print."
-msgstr ""
-"Nie uwzględniaj ograniczeń dokumentu, takich jak ograniczenie kopiowania lub "
-"drukowania."
+msgstr "Nie uwzględniaj ograniczeń dokumentu, takich jak ograniczenie kopiowania lub drukowania."
 
 #: ../properties/ev-properties-main.c:110
 msgid "Document"
@@ -534,33 +523,33 @@ msgstr "Brak"
 #.
 #: ../properties/ev-properties-view.c:260
 msgid "default:mm"
-msgstr ""
+msgstr "default:mm"
 
 #. Imperial measurement (inches)
 #: ../properties/ev-properties-view.c:292
 #, c-format
 msgid "%.2f x %.2f in"
-msgstr ""
+msgstr "%.2f x %.2f in"
 
 #. Metric measurement (millimeters)
 #: ../properties/ev-properties-view.c:297
 #, c-format
 msgid "%.0f x %.0f mm"
-msgstr ""
+msgstr "%.0f x %.0f mm"
 
 #. Note to translators: first placeholder is the paper name (eg.
 #. * A4), second placeholder is the paper size (eg. 297x210 mm)
 #: ../properties/ev-properties-view.c:308
 #, c-format
 msgid "%s, Portrait (%s)"
-msgstr ""
+msgstr "%s, pionowo (%s)"
 
 #. Note to translators: first placeholder is the paper name (eg.
 #. * A4), second placeholder is the paper size (eg. 297x210 mm)
 #: ../properties/ev-properties-view.c:315
 #, c-format
 msgid "%s, Landscape (%s)"
-msgstr ""
+msgstr "%s, poziomo (%s)"
 
 #: ../shell/eggfindbar.c:157
 msgid "Search string"
@@ -638,8 +627,7 @@ msgstr "Wymagane hasło"
 
 #: ../shell/ev-password.c:84
 #, c-format
-msgid ""
-"The document “%s” is locked and requires a password before it can be opened."
+msgid "The document “%s” is locked and requires a password before it can be opened."
 msgstr "Dokument “%s” jest zablokowany, otworzenie go wymaga podania hasła."
 
 #: ../shell/ev-password.c:149
@@ -656,12 +644,8 @@ msgid "Incorrect password"
 msgstr "Hasło nieprawidłowe"
 
 #: ../shell/ev-password-view.c:111
-msgid ""
-"This document is locked and can only be read by entering the correct "
-"password."
-msgstr ""
-"Ten dokument jest zablokowany, jego wczytanie wymaga podania prawidłowego "
-"hasła."
+msgid "This document is locked and can only be read by entering the correct password."
+msgstr "Ten dokument jest zablokowany, jego wczytanie wymaga podania prawidłowego hasła."
 
 #: ../shell/ev-password-view.c:120
 msgid "_Unlock Document"
@@ -693,7 +677,8 @@ msgstr "Zbieranie informacji o czcionce... %3d%%"
 msgid "Attachments"
 msgstr "Załącznik"
 
-#: ../shell/ev-sidebar-links.c:266 ../shell/ev-view.c:2821
+#: ../shell/ev-sidebar-links.c:266
+#: ../shell/ev-view.c:2821
 msgid "Loading..."
 msgstr "Wczytywanie..."
 
@@ -775,12 +760,11 @@ msgstr "Rozpocznij %s"
 
 #: ../shell/ev-view.c:1858
 msgid "End of presentation. Press Escape to exit."
-msgstr ""
+msgstr "Koniec prezentacji. Klawisz Esc zamyka okno."
 
 #: ../shell/ev-view.c:2534
-#, fuzzy
 msgid "Jump to page:"
-msgstr "Przejdź do strony"
+msgstr "Przejdź do strony:"
 
 #. TRANS: Sometimes this could be better translated as
 #. "%d hit(s) on this page".  Therefore this string
@@ -801,12 +785,12 @@ msgstr "%3d%% pozostałych do przeszukania"
 #: ../shell/ev-window.c:742
 #, c-format
 msgid "Page %s - %s"
-msgstr ""
+msgstr "Strona %s - %s"
 
 #: ../shell/ev-window.c:744
-#, fuzzy, c-format
+#, c-format
 msgid "Page %s"
-msgstr "Strony"
+msgstr "Strona %s"
 
 #: ../shell/ev-window.c:1321
 msgid "Unable to open document"
@@ -817,19 +801,18 @@ msgid "Open Document"
 msgstr "Otwieranie dokumentu"
 
 #: ../shell/ev-window.c:1538
-#, fuzzy, c-format
+#, c-format
 msgid "Couldn't create symlink “%s”: %s"
-msgstr "Nie można było zapisać załącznika “%s”: %s"
+msgstr "Nie można utworzyć dowiązania “%s”: %s"
 
 #: ../shell/ev-window.c:1567
-#, fuzzy
 msgid "Cannot open a copy."
-msgstr "Nie można otworzyć pliku “%s”.\n"
+msgstr "Nie można otworzyć kopii."
 
 #: ../shell/ev-window.c:1848
-#, fuzzy, c-format
+#, c-format
 msgid "Failed to create file “%s”: %s"
-msgstr "Nie można wczytać dokumentu “%s”"
+msgstr "Nie można utworzyć pliku “%s”: %s"
 
 #: ../shell/ev-window.c:1875
 #, c-format
@@ -844,11 +827,13 @@ msgstr "Zapis kopii"
 msgid "Failed to print document"
 msgstr "Nie można wydrukować dokumentu"
 
-#: ../shell/ev-window.c:2097 ../shell/ev-window.c:2282
+#: ../shell/ev-window.c:2097
+#: ../shell/ev-window.c:2282
 msgid "Printing is not supported on this printer."
 msgstr "Drukowanie na tej drukarce nie jest możliwe."
 
-#: ../shell/ev-window.c:2207 ../shell/ev-window.c:2333
+#: ../shell/ev-window.c:2207
+#: ../shell/ev-window.c:2333
 msgid "Print"
 msgstr "Drukuj"
 
@@ -858,19 +843,16 @@ msgstr "Tworzenie dokumentów PDF nie jest obsługiwane"
 
 #: ../shell/ev-window.c:2284
 #, c-format
-msgid ""
-"You were trying to print to a printer using the “%s” driver. This program "
-"requires a PostScript printer driver."
-msgstr ""
-"Próba wydruku z użyciem sterownika “%s”. Ten program wymaga drukarki ze "
-"sterownikiem PostScript."
+msgid "You were trying to print to a printer using the “%s” driver. This program requires a PostScript printer driver."
+msgstr "Próba wydruku z użyciem sterownika “%s”. Ten program wymaga drukarki ze sterownikiem PostScript."
 
 #: ../shell/ev-window.c:2342
 msgid "Pages"
 msgstr "Strony"
 
 #. Toolbar-only
-#: ../shell/ev-window.c:2709 ../shell/ev-window.c:4106
+#: ../shell/ev-window.c:2709
+#: ../shell/ev-window.c:4106
 msgid "Leave Fullscreen"
 msgstr "Opuść tryb pełnoekranowy"
 
@@ -879,20 +861,16 @@ msgid "Toolbar Editor"
 msgstr "Edytor paska narzędzi"
 
 #: ../shell/ev-window.c:3452
-#, fuzzy, c-format
+#, c-format
 msgid ""
 "Document Viewer.\n"
 "Using poppler %s (%s)"
 msgstr ""
-"Przeglądarka plików Postscript i PDF.\n"
+"Przeglądarka dokumentów.\n"
 "Używa poppler %s (%s)"
 
 #: ../shell/ev-window.c:3480
-msgid ""
-"Evince is free software; you can redistribute it and/or modify it under the "
-"terms of the GNU General Public License as published by the Free Software "
-"Foundation; either version 2 of the License, or (at your option) any later "
-"version.\n"
+msgid "Evince is free software; you can redistribute it and/or modify it under the terms of the GNU General Public License as published by the Free Software Foundation; either version 2 of the License, or (at your option) any later version.\n"
 msgstr ""
 "Evince jest wolnym oprogramowaniem; można go rozprowadzać dalej\n"
 "lub modyfikować na warunkach Powszechnej Licencji Publicznej GNU,\n"
@@ -900,11 +878,7 @@ msgstr ""
 "Licencji lub (według Twojego wyboru) którejś z późniejszych wersji.\n"
 
 #: ../shell/ev-window.c:3484
-msgid ""
-"Evince is distributed in the hope that it will be useful, but WITHOUT ANY "
-"WARRANTY; without even the implied warranty of MERCHANTABILITY or FITNESS "
-"FOR A PARTICULAR PURPOSE.  See the GNU General Public License for more "
-"details.\n"
+msgid "Evince is distributed in the hope that it will be useful, but WITHOUT ANY WARRANTY; without even the implied warranty of MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the GNU General Public License for more details.\n"
 msgstr ""
 "Evince program rozpowszechniany jest z nadzieją, iż będzie on\n"
 "użyteczny - jednak BEZ JAKIEJKOLWIEK GWARANCJI, nawet domyślnej\n"
@@ -913,28 +887,25 @@ msgstr ""
 "Powszechnej Licencji Publicznej GNU.\n"
 
 #: ../shell/ev-window.c:3488
-msgid ""
-"You should have received a copy of the GNU General Public License along with "
-"Evince; if not, write to the Free Software Foundation, Inc., 59 Temple "
-"Place, Suite 330, Boston, MA  02111-1307  USA\n"
+msgid "You should have received a copy of the GNU General Public License along with Evince; if not, write to the Free Software Foundation, Inc., 59 Temple Place, Suite 330, Boston, MA  02111-1307  USA\n"
 msgstr ""
 "Z pewnością wraz z niniejszym programem otrzymałeś też egzemplarz\n"
 "Powszechnej Licencji Publicznej GNU (GNU General Public License);\n"
 "jeśli nie - napisz do Free Software Foundation, Inc., 59 Temple\n"
 "Place, Fifth Floor, Boston, MA  02110-1301  USA\n"
 
-#: ../shell/ev-window.c:3512 ../shell/main.c:284
+#: ../shell/ev-window.c:3512
+#: ../shell/main.c:284
 msgid "Evince"
 msgstr "Evince"
 
 #: ../shell/ev-window.c:3515
-#, fuzzy
 msgid "© 1996-2007 The Evince authors"
-msgstr "© 1996-2005 Autorzy Evince"
+msgstr "© 1996-2007 Autorzy Evince"
 
 #: ../shell/ev-window.c:3521
 msgid "translator-credits"
-msgstr "GNOME PL Team <translators@gnomepl.org>"
+msgstr "GnomePL/AviaryPL"
 
 #: ../shell/ev-window.c:4023
 msgid "_File"
@@ -957,7 +928,8 @@ msgid "_Help"
 msgstr "Pomo_c"
 
 #. File menu
-#: ../shell/ev-window.c:4030 ../shell/ev-window.c:4202
+#: ../shell/ev-window.c:4030
+#: ../shell/ev-window.c:4202
 msgid "_Open..."
 msgstr "_Otwórz..."
 
@@ -966,16 +938,15 @@ msgid "Open an existing document"
 msgstr "Otwiera istniejący dokument"
 
 #: ../shell/ev-window.c:4033
-#, fuzzy
 msgid "Open a _Copy"
-msgstr "Zapis kopii"
+msgstr "Otwórz _kopię"
 
 #: ../shell/ev-window.c:4034
-#, fuzzy
 msgid "Open a copy of the current document in a new window"
-msgstr "Zapisuje kopię bieżącego dokumentu"
+msgstr "Otwiera kopię bieżącego dokumentu w nowym oknie"
 
-#: ../shell/ev-window.c:4036 ../shell/ev-window.c:4204
+#: ../shell/ev-window.c:4036
+#: ../shell/ev-window.c:4204
 msgid "_Save a Copy..."
 msgstr "_Zapisz kopię..."
 
@@ -984,13 +955,12 @@ msgid "Save a copy of the current document"
 msgstr "Zapisuje kopię bieżącego dokumentu"
 
 #: ../shell/ev-window.c:4039
-#, fuzzy
 msgid "Print Set_up..."
-msgstr "Drukuj..."
+msgstr "Ustawienia wy_druku..."
 
 #: ../shell/ev-window.c:4040
 msgid "Setup the page settings for printing"
-msgstr ""
+msgstr "Ustawia stronę do wydruku"
 
 #: ../shell/ev-window.c:4042
 msgid "_Print..."
@@ -1004,7 +974,8 @@ msgstr "Drukuje bieżący dokument"
 msgid "P_roperties"
 msgstr "Wł_aściwości"
 
-#: ../shell/ev-window.c:4054 ../shell/ev-window.c:4056
+#: ../shell/ev-window.c:4054
+#: ../shell/ev-window.c:4056
 msgid "Select _All"
 msgstr "Z_aznacz wszystko"
 
@@ -1174,20 +1145,19 @@ msgstr "_Przejdź do"
 
 #: ../shell/ev-window.c:4191
 msgid "Open in New _Window"
-msgstr ""
+msgstr "Ot_wórz w nowym oknie"
 
 #: ../shell/ev-window.c:4193
 msgid "_Copy Link Address"
 msgstr "_Skopiuj adres odnośnika"
 
 #: ../shell/ev-window.c:4195
-#, fuzzy
 msgid "_Save Image As..."
-msgstr "_Zapisz kopię..."
+msgstr "_Zapisz obraz jako..."
 
 #: ../shell/ev-window.c:4197
 msgid "Copy _Image"
-msgstr ""
+msgstr "Skopiuj _obraz"
 
 #: ../shell/ev-window.c:4236
 msgid "Page"
@@ -1207,15 +1177,15 @@ msgstr "Dostosowuje powiększenie dokumentu"
 
 #: ../shell/ev-window.c:4259
 msgid "Navigation"
-msgstr ""
+msgstr "Nawigacja"
 
 #: ../shell/ev-window.c:4261
 msgid "Back"
-msgstr ""
+msgstr "Wstecz"
 
 #: ../shell/ev-window.c:4263
 msgid "Move across visited pages"
-msgstr ""
+msgstr "Przechodzi pomiędzy odwiedzonymi stronami"
 
 #. translators: this is the label for toolbar button
 #: ../shell/ev-window.c:4279
@@ -1243,14 +1213,12 @@ msgid "Fit Width"
 msgstr "Dopasuj do szerokości"
 
 #: ../shell/ev-window.c:4612
-#, fuzzy
 msgid "The image could not be saved."
-msgstr "Nie można zapisać załącznika."
+msgstr "Nie można zapisać obrazu."
 
 #: ../shell/ev-window.c:4631
-#, fuzzy
 msgid "Save Image"
-msgstr "Obrazy"
+msgstr "Zapisuje obraz"
 
 #: ../shell/ev-window.c:4686
 msgid "Unable to open attachment"
@@ -1262,9 +1230,8 @@ msgstr "Nie można zapisać załącznika."
 
 # Rozmiar papieru
 #: ../shell/ev-window.c:4757
-#, fuzzy
 msgid "Save Attachment"
-msgstr "Załącznik"
+msgstr "Zapisz załącznik"
 
 #: ../shell/ev-window-title.c:141
 #, c-format
@@ -1304,12 +1271,8 @@ msgid "Evince Document Viewer"
 msgstr "Przeglądarka dokumentów Evince"
 
 #: ../thumbnailer/evince-thumbnailer.schemas.in.h:1
-msgid ""
-"Boolean options available, true enables thumbnailing and false disables the "
-"creation of new thumbnails"
-msgstr ""
-"Dostępne są dwie opcje: prawda włącza miniatury, fałsz blokuje tworzenie "
-"nowych miniatur"
+msgid "Boolean options available, true enables thumbnailing and false disables the creation of new thumbnails"
+msgstr "Dostępne są dwie opcje: prawda włącza miniatury, fałsz blokuje tworzenie nowych miniatur"
 
 #: ../thumbnailer/evince-thumbnailer.schemas.in.h:2
 msgid "Enable thumbnailing of PDF Documents"
@@ -1320,25 +1283,17 @@ msgid "Thumbnail command for PDF Documents"
 msgstr "Polecenie tworzenia miniatur dla dokumentów PDF"
 
 #: ../thumbnailer/evince-thumbnailer.schemas.in.h:4
-msgid ""
-"Valid command plus arguments for the PDF Document thumbnailer. See nautilus "
-"thumbnailer documentation for more information."
-msgstr ""
-"Prawidłowe polecenie wraz z parametrami dla generatora miniatur PDF. Więcej "
-"informacji można znaleźć w dokumentacji generatora miniatur programu "
-"Nautilus."
+msgid "Valid command plus arguments for the PDF Document thumbnailer. See nautilus thumbnailer documentation for more information."
+msgstr "Prawidłowe polecenie wraz z parametrami dla generatora miniatur PDF. Więcej informacji można znaleźć w dokumentacji generatora miniatur programu Nautilus."
 
 #~ msgid "No document loaded."
 #~ msgstr "Nie wczytano dokumentu."
-
 #~ msgid "Broken pipe."
 #~ msgstr "Uszkodzony potok."
-
 #~ msgid "Error while decompressing file “%s”:\n"
 #~ msgstr "Błąd podczas dekompresji pliku “%s”:\n"
-
 #~ msgid "File is not readable."
 #~ msgstr "Nie można odczytać pliku."
-
 #~ msgid "Document loaded."
 #~ msgstr "Wczytano dokument."
+
