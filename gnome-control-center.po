@@ -6,7 +6,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: gnome-control-center\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2007-09-09 20:38+0100\n"
+"POT-Creation-Date: 2007-09-15 19:08+0200\n"
 "PO-Revision-Date: 2007-09-14 17:03+0200\n"
 "Last-Translator: Artur Flinta <aflinta@gmail.com>\n"
 "Language-Team: Polish <pl@li.org>\n"
@@ -1337,6 +1337,7 @@ msgid "Theme Packages"
 msgstr "Pakiet motywu"
 
 #: ../capplets/appearance/theme-save.c:91
+#, c-format
 msgid "Theme name must be present"
 msgstr "Motyw musi mieć nazwę"
 
@@ -3132,7 +3133,7 @@ msgstr "Okno, na którym ma być rysowany BGApplier"
 msgid "<b>Start %s</b>"
 msgstr "<b>Uruchom %s</b>"
 
-#: ../libslab/application-tile.c:381
+#: ../libslab/application-tile.c:381 ../libslab/system-tile.c:92
 msgid "Help"
 msgstr "Pomoc"
 
@@ -3202,6 +3203,7 @@ msgstr "Wyszukiwanie"
 
 #. make open with default action
 #: ../libslab/directory-tile.c:168
+#, c-format
 msgid "<b>Open</b>"
 msgstr "<b>Otwórz</b>"
 
@@ -3271,6 +3273,7 @@ msgid "Unexpected tag '%s' inside '%s'"
 msgstr "Nieoczekiwany znacznik \"%s\" wewnątrz \"%s\""
 
 #: ../libslab/libslab-bookmarkfile.c:1929
+#, c-format
 msgid "No valid bookmark file found in data dirs"
 msgstr "Nie odnaleziono poprawnego pliku zakładek w katalogach danych"
 
@@ -3325,22 +3328,31 @@ msgstr "Żadna aplikacja o nazwie \"%s\" nie zarejestrowała zakładki dla \"%s\
 msgid "Find Now"
 msgstr "Znajdź teraz"
 
-#: ../libslab/system-tile.c:128
+#: ../libslab/system-tile.c:94
+msgid "Lock Screen"
+msgstr "Blokada ekranu"
+
+#: ../libslab/system-tile.c:96 ../libsounds/sound-view.c:45
+msgid "Logout"
+msgstr "Wylogowanie"
+
+#: ../libslab/system-tile.c:98
+msgid "Shutdown"
+msgstr "Zamknięcie systemu"
+
+#: ../libslab/system-tile.c:136
 #, c-format
 msgid "<b>Open %s</b>"
 msgstr "<b>Otwórz %s</b>"
 
-#: ../libslab/system-tile.c:141
+#: ../libslab/system-tile.c:149
+#, c-format
 msgid "Remove from System Items"
 msgstr "Usuń z elementów systemowych"
 
 #: ../libsounds/sound-view.c:44
 msgid "Login"
 msgstr "Logowanie"
-
-#: ../libsounds/sound-view.c:45
-msgid "Logout"
-msgstr "Wylogowanie"
 
 #: ../libsounds/sound-view.c:46
 msgid "Boing"
@@ -3723,6 +3735,7 @@ msgstr[1] "%d minuty do przerwy"
 msgstr[2] "%d minut do przerwy"
 
 #: ../typing-break/drwright.c:504
+#, c-format
 msgid "Less than one minute until the next break"
 msgstr "Mniej niż minuta do przerwy"
 
