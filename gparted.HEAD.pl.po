@@ -8,8 +8,8 @@ msgstr ""
 "Project-Id-Version: gparted\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2008-04-09 19:40+0100\n"
-"PO-Revision-Date: 2008-05-03 15:07+0100\n"
-"Last-Translator: wadim dziedzic <nikdo@aviary.pl>\n"
+"PO-Revision-Date: 2008-05-03 16:25+0100\n"
+"Last-Translator: Piotr Zaryk (Aviary.pl) <pzaryk@aviary.pl>\n"
 "Language-Team: GNOME PL Team <gnome-l10n@lists.aviary.pl>\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -22,10 +22,9 @@ msgstr ""
 msgid "Create, reorganize, and delete partitions"
 msgstr "Tworzenie, reorganizacja i usuwanie partycji"
 
-# REV: nazwa programu
 #: ../gparted.desktop.in.h:2
 msgid "GParted Partition Editor"
-msgstr "Edytor partycji Gparted"
+msgstr "Edytor partycji GParted"
 
 #: ../src/Dialog_Base_Partition.cc:56
 msgid "Free Space Preceding (MiB):"
@@ -67,10 +66,9 @@ msgstr "Ustawienie etykiety dla %1"
 msgid "A disklabel is a piece of data stored at a well known place on the disk, that indicates where each partition begins and how many sectors it occupies."
 msgstr "Etykieta dysku to część danych przechowywana w dobrze znanym miejscu na dysku, która wskazuje gdzie każda z partycji się zaczyna oraz ile sektorów zajmuje."
 
-# REV: interpunkcja - przecinek przed jeśli
 #: ../src/Dialog_Disklabel.cc:50
 msgid "You need a disklabel if you want to create partitions on this disk."
-msgstr "Etykieta dysku jest wymagana jeśli planuje się tworzyć partycje na tym dysku."
+msgstr "Etykieta dysku jest wymagana, jeśli planuje się tworzyć partycje na tym dysku."
 
 #: ../src/Dialog_Disklabel.cc:52
 msgid "By default GParted creates an msdos disklabel."
@@ -142,14 +140,13 @@ msgstr "Flagi:"
 msgid "Path:"
 msgstr "Ścieżka:"
 
-# REV: "stan" ?
 #: ../src/Dialog_Partition_Info.cc:238
 msgid "Status:"
-msgstr "Status:"
+msgstr "Stan:"
 
 #: ../src/Dialog_Partition_Info.cc:245
 msgid "Busy (At least one logical partition is mounted)"
-msgstr "Zajęty (przynajmniej jedna partycja logiczna jest zamontowana)"
+msgstr "W użyciu (przynajmniej jedna partycja logiczna jest zamontowana)"
 
 # REV: dlaczego nie "aktywna"
 #: ../src/Dialog_Partition_Info.cc:247
@@ -160,10 +157,10 @@ msgstr "Włączona"
 msgid "Mounted on %1"
 msgstr "Zamontowana w %1"
 
-# REV: zgodnie z okolicznymi tekstami musiałby być rodzaj żeński - może zamiast "zajęta" trzeba używać "w użyciu"
+# REV: nieużywany?
 #: ../src/Dialog_Partition_Info.cc:253
 msgid "Not busy (There are no mounted logical partitions)"
-msgstr "Nie zajęte (nie ma zamontowanych żadnych partycji logicznych)"
+msgstr "Nieużywane (nie ma zamontowanych żadnych partycji logicznych)"
 
 # REV: j.w.
 #: ../src/Dialog_Partition_Info.cc:255
@@ -191,23 +188,21 @@ msgstr "Pierwszy sektor:"
 msgid "Last Sector:"
 msgstr "Ostatni sektor:"
 
-# REV: raczej "Wszystkich sektorów" to chyba chodzi o liczbę
 #. total sectors
 #: ../src/Dialog_Partition_Info.cc:299
 #: ../src/Win_GParted.cc:478
 msgid "Total Sectors:"
-msgstr "Wszystkie sektory:"
+msgstr "Wszystkich sektorów:"
 
 #. TO TRANSLATORS: dialog title, looks like Set partition label on /dev/hda3
 #: ../src/Dialog_Partition_Label.cc:32
 msgid "Set partition label on %1"
 msgstr "Ustawianie etykiety dla %1"
 
-# REV: tytuł okna - rzeczownikowo/imiesłów: "Tworzenie nowej partycji"
 #. TO TRANSLATORS: dialogtitle
 #: ../src/Dialog_Partition_New.cc:26
 msgid "Create new Partition"
-msgstr "Utwórz nową partycję"
+msgstr "Tworzenie nowej partycji"
 
 #. checkbutton..
 #: ../src/Dialog_Partition_New.cc:34
@@ -219,25 +214,22 @@ msgstr "Zaokrąglenie do cylindrów"
 msgid "Create as:"
 msgstr "Ustaw jako:"
 
-# REV: dlaczego wielkie litery?
 #. fill partitiontype menu
 #: ../src/Dialog_Partition_New.cc:71
 #: ../src/OperationCreate.cc:73
 msgid "Primary Partition"
-msgstr "Partycja Podstawowa"
+msgstr "Partycja podstawowa"
 
-# REV: j.w.
 #: ../src/Dialog_Partition_New.cc:72
 #: ../src/OperationCreate.cc:76
 #: ../src/OperationDelete.cc:75
 msgid "Logical Partition"
-msgstr "Partycja Logiczna"
+msgstr "Partycja logiczna"
 
-# REV: j.w.
 #: ../src/Dialog_Partition_New.cc:73
 #: ../src/OperationCreate.cc:79
 msgid "Extended Partition"
-msgstr "Partycja Rozszerzona"
+msgstr "Partycja rozszerzona"
 
 #: ../src/Dialog_Partition_New.cc:172
 msgid "New Partition #%1"
@@ -251,21 +243,18 @@ msgstr "Zmień rozmiar/przenieś %1"
 msgid "Resize %1"
 msgstr "Zmień rozmiar %1"
 
-# REV: "zastosowywanie" jakoś karkołomnie brzmi. Już lepiej "Wprowadzanie ... zmian" ew. "Trwa wprowadzanie..."
 #: ../src/Dialog_Progress.cc:32
 #: ../src/Dialog_Progress.cc:44
 msgid "Applying pending operations"
-msgstr "Zastosowywanie zaplanowanych operacji"
+msgstr "Wykonywanie zaplanowanych operacji"
 
-# REV: gadający komputer; j.w.
 #: ../src/Dialog_Progress.cc:46
 msgid "Applying all listed operations."
-msgstr "Stosuję wszystkie planowane operacji."
+msgstr "Wykonywanie wszystkich zaplanowanych operacji."
 
-# REV: operacje są policzalne, więc "liczby operacji"
 #: ../src/Dialog_Progress.cc:48
 msgid "Depending on the amount and type of operations this might take a long time."
-msgstr "W zależności od ilości i rodzaju operacji może to zająć sporo czasu."
+msgstr "W zależności od rodzaju i liczby operacji może to zająć sporo czasu."
 
 #: ../src/Dialog_Progress.cc:61
 msgid "Completed Operations:"
@@ -300,24 +289,21 @@ msgstr "%1 ostrzeżeń"
 msgid "An error occurred while applying the operations"
 msgstr "Wystąpił błąd podczas wykonywania operacji"
 
-# REV: przecinek; lepiej: Aby uzyskać ..., należy zobaczyć...
 #: ../src/Dialog_Progress.cc:273
 msgid "See the details for more information."
-msgstr "Należy zobaczyć szczegóły aby uzyskać dodatkowe informacje."
+msgstr "Aby uzyskać dodatkowe informacje, należy zobaczyć szczegóły."
 
 #: ../src/Dialog_Progress.cc:274
 msgid "IMPORTANT"
 msgstr "WAŻNE"
 
-# REV: ogólnie bym unikał wykrzykników
 #: ../src/Dialog_Progress.cc:275
 msgid "If you want support, you need to provide the saved details!"
-msgstr "W przypadku chęci zasięgnięcia pomocy należy zapisać szczegółowe informacje!"
+msgstr "W przypadku chęci zasięgnięcia pomocy należy zapisać szczegółowe informacje."
 
-# REV: See = wybrać ?
 #: ../src/Dialog_Progress.cc:277
 msgid "See %1 for more information."
-msgstr "Proszę wybrać %1, aby uzyskać więcej informacji"
+msgstr "Proszę zobaczyć %1, aby uzyskać więcej informacji"
 
 #: ../src/Dialog_Progress.cc:310
 msgid "Are you sure you want to cancel the current operation?"
@@ -398,39 +384,34 @@ msgstr "Zarządzanie flagami %1"
 msgid "unrecognized"
 msgstr "nierozpoznany"
 
-# REV: długości ?
 #: ../src/GParted_Core.cc:305
 msgid "A partition cannot have a length of %1 sectors"
-msgstr "Partycja nie może posiadać wielkości %1 sektorów"
+msgstr "Partycja nie może posiadać długości %1 sektorów"
 
 #: ../src/GParted_Core.cc:313
 msgid "A partition with used sectors (%1) greater than it's length (%2) is not valid"
 msgstr "Partycja z użytymi sektorami (%1) większymi niż jej wielkość  (%2) jest nieprawidłowa"
 
-# REV: lepiej komunikaty
 #: ../src/GParted_Core.cc:379
 msgid "libparted messages"
-msgstr "wiadomości libparted"
+msgstr "komunikaty libparted"
 
-# REV: bez ! lepiej
 #. no filesystem found....
 #: ../src/GParted_Core.cc:737
 msgid "Unable to detect filesystem! Possible reasons are:"
-msgstr "Nie można wykryć systemu plików! Możliwe powody to:"
+msgstr "Nie można wykryć systemu plików. Możliwe przyczyny:"
 
 #: ../src/GParted_Core.cc:739
 msgid "The filesystem is damaged"
 msgstr "System plików jest uszkodzony"
 
-# REV: nazwa programu, gramatyka: nieznany komu, a nie dla kogo. "System plików nie jest znany programowi GParted"
 #: ../src/GParted_Core.cc:741
 msgid "The filesystem is unknown to GParted"
-msgstr "System plików jest nieznany dla Gparted"
+msgstr "System plików nie jest znany programowi GParted"
 
-# REV: lepiej "Brak..."
 #: ../src/GParted_Core.cc:743
 msgid "There is no filesystem available (unformatted)"
-msgstr "Nie ma dostępnego sytemu plików (niesformatowany)"
+msgstr "Brak dostępnego sytemu plików (niesformatowany)"
 
 #: ../src/GParted_Core.cc:839
 msgid "Unable to find mountpoint"
@@ -478,10 +459,9 @@ msgstr "tworzenie nowego system plików %1"
 msgid "delete partition"
 msgstr "usuwanie partycji"
 
-# REV: tu chyba nie będzie trybu rozkazującego (to raczej checkbox - bo przyciski mają zwykle "Clear Partition Label ..."
 #: ../src/GParted_Core.cc:1123
 msgid "Clear partition label on %1"
-msgstr "Wyczyść etykietę partycji %1"
+msgstr "Czyszczenie etykiety partycji %1"
 
 #: ../src/GParted_Core.cc:1128
 msgid "Set partition label to \"%1\" on %2"
@@ -507,10 +487,9 @@ msgstr "przenoszenie systemu plików w prawo"
 msgid "move filesystem"
 msgstr "przenoszenie systemu plików"
 
-# REV: lepiej "operacja pominięta"
 #: ../src/GParted_Core.cc:1257
 msgid "new and old filesystem have the same positition. skipping this operation"
-msgstr "nowy i poprzedni system plików posiadają jednakowe położenie; pomijanie tej operacji"
+msgstr "nowy i poprzedni system plików posiadają jednakowe położenie; operacja pominięta"
 
 #: ../src/GParted_Core.cc:1276
 msgid "perform real move"
@@ -603,15 +582,13 @@ msgstr "powiększanie systemu plików"
 msgid "resize filesystem"
 msgstr "zmiana rozmiaru systemu plików"
 
-# REV: j.w.
 #: ../src/GParted_Core.cc:1565
 msgid "new and old filesystem have the same size. skipping this operation"
-msgstr "nowa i poprzednia partycja posiadają ten sam rozmiar; pomijanie tej operacji"
+msgstr "nowa i poprzednia partycja posiadają ten sam rozmiar; operacja pominięta"
 
-# REV: ujednolicić z następnym - zwiększanie - powiększanie
 #: ../src/GParted_Core.cc:1600
 msgid "grow filesystem to fill the partition"
-msgstr "zwiększanie systemu plików aby wypełnił partycję"
+msgstr "powiększanie systemu plików aby wypełnił partycję"
 
 #: ../src/GParted_Core.cc:1605
 msgid "growing is not available for this filesystem"
@@ -661,10 +638,9 @@ msgstr "%1 sektorów odczytano"
 msgid "%1 sectors copied"
 msgstr "%1 sektorów skopiowano"
 
-# REV: transakcji
 #: ../src/GParted_Core.cc:1816
 msgid "rollback last transaction"
-msgstr "cofnięcie ostatniej zmiany"
+msgstr "cofnięcie ostatniej transakcji"
 
 #: ../src/GParted_Core.cc:1843
 msgid "check filesystem on %1 for errors and (if possible) fix them"
@@ -682,27 +658,23 @@ msgstr "ustawianie rodzaju partycji %1"
 msgid "new partitiontype: %1"
 msgstr "nowy rodzaj partycji %1"
 
-# REV: szyk - po polsku lepiej brzmi: odczytano 1 z 2
 #: ../src/GParted_Core.cc:1926
 msgid "%1 of %2 read (%3 remaining)"
-msgstr "%1 z %2 odczytano (%3 pozostało)"
+msgstr "Odczytano %1 z %2 (%3 pozostało)"
 
-# REV: j.w.
 #: ../src/GParted_Core.cc:1926
 msgid "%1 of %2 copied (%3 remaining)"
-msgstr "%1 z %2 skopiowano (%3 pozostało)"
+msgstr "Skopiowano %1 z %2 (%3 pozostało)"
 
-# REV: j.w.
 #: ../src/GParted_Core.cc:1932
 #: ../src/GParted_Core.cc:2027
 msgid "%1 of %2 read"
-msgstr "%1 z %2 odczytano"
+msgstr "Odczytano %1 z %2"
 
-# REV: j.w.
 #: ../src/GParted_Core.cc:1932
 #: ../src/GParted_Core.cc:2027
 msgid "%1 of %2 copied"
-msgstr "%1 z %2 skopiowano"
+msgstr "Skopiowano %1 z %2"
 
 #: ../src/GParted_Core.cc:1950
 msgid "read %1 sectors using a blocksize of %2 sectors"
@@ -732,10 +704,9 @@ msgstr "przeliczanie nowego rozmiaru i połozenia %1"
 msgid "requested start: %1"
 msgstr "wybrany początek: %1"
 
-# REV: błędne tłumaczenie
 #: ../src/GParted_Core.cc:2137
 msgid "requested end: %1"
-msgstr "Zamontowana w %1"
+msgstr "wybrany koniec: %1"
 
 #: ../src/GParted_Core.cc:2138
 msgid "requested size: %1 (%2)"
@@ -894,40 +865,33 @@ msgstr "wolne"
 msgid "%1 B"
 msgstr "%1 B"
 
-# REV: blędne tłumaczenie
 #: ../src/Utils.cc:149
 msgid "%1 KiB"
-msgstr "%1 KB"
+msgstr "%1 KiB"
 
-# REV: j.w.
 #: ../src/Utils.cc:154
 msgid "%1 MiB"
-msgstr "%1 MB"
+msgstr "%1 MiB"
 
-# REV: j.w.
 #: ../src/Utils.cc:159
 msgid "%1 GiB"
-msgstr "%1 GB"
+msgstr "%1 GiB"
 
-# REV: j.w.
 #: ../src/Utils.cc:164
 msgid "%1 TiB"
-msgstr "%1 TB"
+msgstr "%1 TiB"
 
-# REV: ładniej "przez program gparted"
 #: ../src/Utils.cc:291
 msgid "# Temporary file created by gparted.  It may be deleted.\n"
-msgstr "# Plik tymczasowy utworzony przez gparted. Może zostać usunięty.\n"
+msgstr "# Plik tymczasowy utworzony przez program gparted. Może zostać usunięty.\n"
 
-# REV: wielka litera po dwukropku niepotrzebna
 #: ../src/Utils.cc:300
 msgid "Label operation failed:  Unable to write to temporary file %1.\n"
-msgstr "Operacja etykiety nieudana: Nie można zapisać pliku tymczasowego %1.\n"
+msgstr "Operacja etykiety nieudana: nie można zapisać pliku tymczasowego %1.\n"
 
-# REV: j.w.
 #: ../src/Utils.cc:309
 msgid "Label operation failed:  Unable to create temporary file %1.\n"
-msgstr "Operacja etykiety nieudana: Nie można utworzyć pliku tymczasowego %1.\n"
+msgstr "Operacja etykiety nieudana: nie można utworzyć pliku tymczasowego %1.\n"
 
 #. ==== GUI =========================
 #: ../src/Win_GParted.cc:69
@@ -996,16 +960,13 @@ msgstr "Usuń wybraną partycję"
 msgid "Resize/Move the selected partition"
 msgstr "Zmień rozmiar/przenieś wybraną partycję"
 
-# REV: "pamięci podręcznej" ?
-# REV: raczej "Kopiuje wybraną..."
 #: ../src/Win_GParted.cc:234
 msgid "Copy the selected partition to the clipboard"
-msgstr "Skopiuj wybraną partycję do schowka"
+msgstr "Kopiuje wybraną partycję do pamięci podręcznej"
 
-# REV: j.w.
 #: ../src/Win_GParted.cc:239
 msgid "Paste the partition from the clipboard"
-msgstr "Wklej partycję ze schowka"
+msgstr "Wkleja partycję z pamięci podręcznej"
 
 #: ../src/Win_GParted.cc:249
 msgid "Undo Last Operation"
@@ -1027,10 +988,9 @@ msgstr "_Formatuj na"
 msgid "Unmount"
 msgstr "Odmontuj"
 
-# REV: accesskey
 #: ../src/Win_GParted.cc:330
 msgid "_Mount on"
-msgstr "Zamontuj w"
+msgstr "Za_montuj w"
 
 #: ../src/Win_GParted.cc:337
 msgid "M_anage Flags"
@@ -1103,11 +1063,11 @@ msgstr "O_dmontuj"
 
 #: ../src/Win_GParted.cc:776
 msgid "_Swapoff"
-msgstr "Wyłącz _swap"
+msgstr "Wyłącz partycję w_ymiany"
 
 #: ../src/Win_GParted.cc:782
 msgid "_Swapon"
-msgstr "Włącz _swap"
+msgstr "Włącz partycję wym_iany"
 
 #: ../src/Win_GParted.cc:939
 msgid "%1 - GParted"
@@ -1117,68 +1077,61 @@ msgstr "%1 - GParted"
 msgid "Scanning all devices..."
 msgstr "Skanowanie wszystkich urządzeń..."
 
-# REV: "następujących urządzeniach"
 #: ../src/Win_GParted.cc:1001
 msgid "The kernel is unable to re-read the partitiontables on the following devices:"
-msgstr "Jądro systemu nie może ponownie odczytać tablic partycji na urządzeniach:"
+msgstr "Jądro systemu nie może ponownie odczytać tablic partycji na następujących urządzeniach:"
 
 #: ../src/Win_GParted.cc:1008
 msgid "Because of this you will only have limited access to these devices. Unmount all mounted partitions on a device to get full access."
 msgstr "Z tego powodu dostęp do tych urządzeń będzie ograniczony. Odmontowanie wszystkich zamontowanych partycji urządzenia umożliwi całkowity dostęp."
 
-# REV: żadnych urządzeń ? chyba lepiej brzmi
 #: ../src/Win_GParted.cc:1052
 msgid "No devices detected"
-msgstr "Nie wykryto urządzeń"
+msgstr "Nie wykryto żadnych urządzeń"
 
 #: ../src/Win_GParted.cc:1131
 msgid "Sorry, not yet implemented."
 msgstr "Niestety wciąż niedostępne."
 
-# REV: ... można znaleźć na stronie 
 #: ../src/Win_GParted.cc:1137
 msgid "Please visit http://gparted.sf.net for more information and support."
-msgstr "Więcej informacji i wsparcie: http://gparted.sf.net."
+msgstr "Więcej informacji i wsparcie można znaleźć na stronie: http://gparted.sf.net"
 
 #: ../src/Win_GParted.cc:1153
 msgid "GNOME Partition Editor"
 msgstr "Edytor partycji dla GNOME"
 
-# REV: GNOME PL Team <gnome-l10n@lists.aviary.pl>
 #. TO TRANSLATORS: your name(s) here please, if there are more translators put newlines (\n) between the names.
 #. It's a good idea to provide the url of your translationteam as well. Thanks!
 #: ../src/Win_GParted.cc:1169
 msgid "translator-credits"
 msgstr ""
-"Tomasz Lorek <tlorek@gmail.com>, 2006.\n"
+"GNOME PL Team <gnome-l10n@lists.aviary.pl>.\n"
 "Piotr Zaryk (Aviary.pl) <pzaryk@aviary.pl>, 2008."
 
 #: ../src/Win_GParted.cc:1211
 msgid "It is not possible to create more than %1 primary partitions"
 msgstr "Nie można utworzyć więcej niż %1 podstawowych partycji"
 
-# REV: szyk
 #: ../src/Win_GParted.cc:1219
 msgid "If you want more partitions you should first create an extended partition. Such a partition can contain other partitions. Because an extended partition is also a primary partition it might be necessary to remove a primary partition first."
-msgstr "Jeśli potrzeba większej liczby partycji należy najpierw utworzyć partycję rozszerzoną. Taka partycja może zawierać inne. Ponieważ partycja rozszerzona jest także partycją podstawową uprzednie usunięcie partycji podstawowej może okazać się konieczne."
+msgstr "Należy najpierw utworzyć partycję rozszerzoną, jeśli potrzeba większej liczby partycji. Taka partycja może zawierać inne. Ponieważ partycja rozszerzona jest także partycją podstawową uprzednie usunięcie partycji podstawowej może okazać się konieczne."
 
 #: ../src/Win_GParted.cc:1405
 msgid "Unable to delete %1!"
 msgstr "Nie można usunąć %1!"
 
-# REV: "o numerze większym niż" ?
 #: ../src/Win_GParted.cc:1412
 msgid "Please unmount any logical partitions having a number higher than %1"
-msgstr "Proszę odmontować wszelkie partycje logiczne, posiadające numer większy niż %1"
+msgstr "Proszę odmontować wszystkie partycje logiczne o numerze większym niż %1"
 
 #: ../src/Win_GParted.cc:1423
 msgid "Are you sure you want to delete %1?"
 msgstr "Na pewno usunąć %1?"
 
-# REV: "nie będzie" ?
 #: ../src/Win_GParted.cc:1430
 msgid "After deletion this partition is no longer available for copying."
-msgstr "Po usunięciu ta partycja nie jest już dostępna do kopiowania."
+msgstr "Po usunięciu ta partycja nie będzie już dostępna do kopiowania."
 
 #. TO TRANSLATORS: dialogtitle, looks like   Delete /dev/hda2 (ntfs, 2345 MiB)
 #: ../src/Win_GParted.cc:1433
@@ -1197,39 +1150,33 @@ msgstr "System plików %1 wymaga partycji o rozmiarze wynoszącym przynajmniej %
 msgid "A partition with a %1 filesystem has a maximum size of %2."
 msgstr "Partycja z systemem plików %1 posiada maksymalny rozmiar wynoszący %2."
 
-# REV: liczba mnoga
 #: ../src/Win_GParted.cc:1598
 msgid "The partition could not be unmounted from the following mountpoints:"
-msgstr "Partycja nie może zostać odmontowana z poniższego punktu montowania:"
+msgstr "Partycja nie może zostać odmontowana z poniższych punktów montowania:"
 
 #: ../src/Win_GParted.cc:1600
 msgid "Most likely other partitions are also mounted on these mountpoints. You are advised to unmount them manually."
 msgstr "Najprawdopodobniej inne partycje również są zamontowane w tych punktach. Zaleca się ręczne ich odmontowanie."
 
-# REV: "partycji swap"
 #: ../src/Win_GParted.cc:1650
 msgid "Deactivating swap on %1"
-msgstr "Wyłączanie swap na %1"
+msgstr "Wyłączanie partycji wymiany na %1"
 
-# REV: j.w.
 #: ../src/Win_GParted.cc:1650
 msgid "Activating swap on %1"
-msgstr "Włączanie swap na %1"
+msgstr "Włączanie partycji wymiany na %1"
 
-# REV: j.w.
 #: ../src/Win_GParted.cc:1657
 msgid "Could not deactivate swap"
-msgstr "Nie można wyłączyć swap'a"
+msgstr "Nie można wyłączyć partycji wymiany"
 
-# REV: j.w.
 #: ../src/Win_GParted.cc:1657
 msgid "Could not activate swap"
-msgstr "Nie można włączyć swap"
+msgstr "Nie można włączyć partycji wymiany"
 
-# REV: gadający komputer - "Odmontowywanie"
 #: ../src/Win_GParted.cc:1673
 msgid "Unmounting %1"
-msgstr "Odmontowuję %1"
+msgstr "Odmontowywanie %1"
 
 #: ../src/Win_GParted.cc:1678
 msgid "Could not unmount %1"
@@ -1247,29 +1194,25 @@ msgstr "Nie można zamontować %1 w %2"
 msgid "Are you sure you want to create a %1 disklabel on %2?"
 msgstr "Na pewno utworzyć etykietę %1 na %2?"
 
-# REV: ta operacja? (jak już wszędzie są operacje)
 #: ../src/Win_GParted.cc:1746
 msgid "This operation will destroy all data on %1!"
-msgstr "To działanie usunie wszystkie dane z %1"
+msgstr "Ta operacja usunie wszystkie dane z %1"
 
 #: ../src/Win_GParted.cc:1755
 msgid "Error while setting new disklabel"
 msgstr "Błąd podczas ustawiania nowej etykiety dysku"
 
-# REV: ja bym tam nie żałował tego "Czy na pewno..."
 #: ../src/Win_GParted.cc:1869
 msgid "Are you sure you want to apply the pending operations?"
-msgstr "Na pewno zastosować zaplanowane operacje?"
+msgstr "Czy na pewno zastosować zaplanowane operacje?"
 
-# REV: szyk: "Przed kontynuacją zaleca się..."
 #: ../src/Win_GParted.cc:1874
 msgid "It is recommended to backup valuable data before proceeding."
-msgstr "Zaleca się wykonanie kopii zapasowej wartościowych danych przed kontynuacją."
+msgstr "Przed kontynuacją zaleca się wykonanie kopii zapasowej wartościowych danych."
 
-# REV: nie jestem pewny czy tu tryb rozkazujący pasuje
 #: ../src/Win_GParted.cc:1875
 msgid "Apply operations to harddisk"
-msgstr "Zastosuj operacje na dysku twardym"
+msgstr "Wykonanie operacji na dysku twardym"
 
 #. create mountpoint...
 #: ../src/jfs.cc:140
@@ -1322,17 +1265,15 @@ msgstr "uruchom symulację"
 msgid "real resize"
 msgstr "rzeczywista zmiana rozmiaru"
 
-# REV: na pewno tryb rozkazujący?
 #. grow the mounted filesystem..
 #: ../src/xfs.cc:167
 msgid "grow mounted filesystem"
-msgstr "zwiększ zamontowany system plików"
+msgstr "powiększanie zamontowanego systemu plików"
 
-# REV: na pewno tryb rozkazujący?
 #. copy filesystem..
 #: ../src/xfs.cc:274
 msgid "copy filesystem"
-msgstr "skopiuj system plików"
+msgstr "kopiowanie systemu plików"
 
 #~ msgid "Filesystems"
 #~ msgstr "Systemy plików"
