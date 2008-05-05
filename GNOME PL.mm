@@ -16,7 +16,7 @@
 <node COLOR="#111111" CREATED="1209827962515" ID="Freemind_Link_1105701758" MODIFIED="1209829979984" TEXT="gnomepl.org -utracone" VSHIFT="-9">
 <icon BUILTIN="help"/>
 </node>
-<node COLOR="#111111" CREATED="1209827979906" ID="Freemind_Link_1584497854" MODIFIED="1209830000203" TEXT="status gnome.org">
+<node COLOR="#111111" CREATED="1209827979906" ID="Freemind_Link_1584497854" MODIFIED="1210011680765" TEXT="status gnome.pl">
 <icon BUILTIN="help"/>
 </node>
 </node>
