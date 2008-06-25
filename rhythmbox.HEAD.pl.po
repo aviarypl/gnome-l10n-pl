@@ -12,8 +12,8 @@ msgstr ""
 "Project-Id-Version: rhythmbox\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2008-06-15 12:34+0000\n"
-"PO-Revision-Date: 2008-06-25 12:34+0100\n"
-"Last-Translator: Joanna Mazgaj <jmazgaj@aviary.pl>\n"
+"PO-Revision-Date: 2008-06-25 17:33+0100\n"
+"Last-Translator: Tomasz Dominikowski <dominikowski@gmail.com>\n"
 "Language-Team: Aviary.pl <gnomepl@aviary.pl>\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -745,10 +745,9 @@ msgstr "Pobieranie okładek albumów z Internetu"
 msgid "Searching... drop artwork here"
 msgstr "Wyszukiwanie... okładki należy upuszczać tutaj"
 
-# String wyżej to samo sformułowanie zostało przetłumaczone jako "należy", tutaj "można". Wydaje mi się, że lepiej byłoby przyjąć jeden wariant dla obu.
 #: ../plugins/artdisplay/artdisplay/__init__.py:293
 msgid "Drop artwork here"
-msgstr "Okładki można upuszczać tutaj"
+msgstr "Okładki należy upuszczać tutaj"
 
 #: ../plugins/audiocd/audiocd.rb-plugin.in.h:1
 msgid "Audio CD Player"
@@ -762,10 +761,9 @@ msgstr "Obsługa odtwarzania płyt CD-Audio jako źródła muzyki"
 msgid "Multiple Albums Found"
 msgstr "Odnaleziono wiele albumów"
 
-# 'kilka' zamiast 'wiele'
 #: ../plugins/audiocd/multiple-album.glade.h:2
 msgid "This CD could be more than one album. Please select which album it is below and press <i>Continue</i>."
-msgstr "Ta płyta CD może być jednym z wielu albumów. Proszę wybrać album poniżej i nacisnąć przycisk <i>Kontynuuj</i>."
+msgstr "Ta płyta CD może być jednym z kilku albumów. Proszę wybrać album poniżej i nacisnąć przycisk <i>Kontynuuj</i>."
 
 #: ../plugins/audiocd/multiple-album.glade.h:3
 msgid "_Continue"
@@ -853,18 +851,15 @@ msgstr "Obiekt metadanych MusicBrainz jest nieprawidłowy. Proszę sprawdzić ko
 msgid "This CD could not be queried: %s\n"
 msgstr "Zapytanie o tę płytę CD nie mogło zostać wykonane: %s\n"
 
-# tłumaczenie imho sugeruje że napęd jest w ogóle pusty, a oryginał że może coś w nim jest, ale na tym na pewno nie ma muzyki ani filmów.
-# Niestety alternatywa nie przychodzi mi do głowy.
 #: ../plugins/audiocd/sj-metadata-musicbrainz.c:544
 #, c-format
 msgid "Device '%s' does not contain any media"
-msgstr "Urządzenie \"%s\" nie zawiera nośnika"
+msgstr "Urządzenie \"%s\" nie zawiera multimediów"
 
-# 'otwarte'
 #: ../plugins/audiocd/sj-metadata-musicbrainz.c:547
 #, c-format
 msgid "Device '%s' could not be opened. Check the access permissions on the device."
-msgstr "Urządzenie \"%s\" nie może zostać otworzone. Proszę sprawdzić uprawnienia dostępu do urządzenia."
+msgstr "Urządzenie \"%s\" nie może zostać otwarte. Proszę sprawdzić uprawnienia dostępu do urządzenia."
 
 #: ../plugins/audiocd/sj-metadata-musicbrainz.c:583
 msgid "Various"
@@ -1001,10 +996,9 @@ msgstr "Wysłanie informacji o ścieżkach nieudane"
 msgid "Queue is too long"
 msgstr "Kolejka jest za długa"
 
-# kropka
 #: ../plugins/audioscrobbler/rb-audioscrobbler.c:1178
 msgid "Track submission failed too many times"
-msgstr "Zbyt wiele niepowodzeń podczas wysyłania informacji o ścieżkach."
+msgstr "Zbyt wiele niepowodzeń podczas wysyłania informacji o ścieżkach"
 
 #: ../plugins/audioscrobbler/rb-lastfm-source.c:190
 msgid "Similar Artists radio"
@@ -1480,7 +1474,7 @@ msgstr "Proszę wymienić płytę w napędzie na pustą płytę CD."
 
 #: ../plugins/cd-recorder/rb-playlist-source-recorder.c:1023
 msgid "Reload a blank CD"
-msgstr "Przeładowanie pustej płyty CD"
+msgstr "Wymiana płyty na pustą płytę CD"
 
 #: ../plugins/cd-recorder/rb-playlist-source-recorder.c:1074
 msgid "Converting audio tracks"
@@ -1563,11 +1557,10 @@ msgstr "Lista odtwarzania jest za długa do nagrania na płycie CD-Audio."
 msgid "Cannot get free space at %s"
 msgstr "Nie można pobrać wolnej przestrzeni na %s"
 
-# Pierwsze zdanie oryginału to informacja o całkowitej długości listy, nie o tym o ile jest za długa: ("%s minutes long" a nie "%s minutes too long")
 #: ../plugins/cd-recorder/rb-playlist-source-recorder.c:1763
 #, c-format
 msgid "This playlist is %s minutes long.  This exceeds the length of a standard audio CD.  If the destination media is larger than a standard audio CD please insert it in the drive and try again."
-msgstr "Lista odtwarzania jest za długa o %s minut. Przekracza długość standardowej płyty CD-Audio. Jeśli docelowy nośnik jest bardziej pojemny od zwykłej płyty CD-Audio, to proszę wsunąć go na napędu i spróbować ponownie."
+msgstr "Długość listy odtwarzania wynosi %s minut. Przekracza długość standardowej płyty CD-Audio. Jeśli docelowy nośnik jest bardziej pojemny od zwykłej płyty CD-Audio, to proszę wsunąć go na napędu i spróbować ponownie."
 
 #: ../plugins/cd-recorder/rb-playlist-source-recorder.c:1774
 msgid "Playlist too long"
@@ -1660,12 +1653,10 @@ msgstr "Usługa MDNS nie jest uruchomiona"
 msgid "Browser already active"
 msgstr "Przeglądarka jest już aktywna"
 
-# "uruchomić" ? W tym i w stringu wyżej i niżej?
-# 2719 gdzie jest "activate plugin" zostało przetłumaczone jako "uruchomić"
 #: ../plugins/daap/rb-daap-mdns-browser-avahi.c:334
 #: ../plugins/daap/rb-daap-mdns-browser-howl.c:355
 msgid "Unable to activate browser"
-msgstr "Nie można aktywować przeglądarki"
+msgstr "Nie można uruchomić przeglądarki"
 
 #: ../plugins/daap/rb-daap-mdns-browser-avahi.c:359
 #: ../plugins/daap/rb-daap-mdns-browser-howl.c:380
@@ -1708,10 +1699,9 @@ msgstr "Usługa howl MDNS nie jest uruchomiona"
 msgid "_Disconnect"
 msgstr "_Rozłącz"
 
-# "Rozłączenie z zasobu" a niżej jest "Połącz z zasobem", "Połączenie z zasobem". Chyba powinno być "Rozłącz z zasobem".
 #: ../plugins/daap/rb-daap-plugin.c:118
 msgid "Disconnect from DAAP share"
-msgstr "Rozłączenie z zasobu DAAP"
+msgstr "Rozłączenie z zasobem DAAP"
 
 #: ../plugins/daap/rb-daap-plugin.c:120
 msgid "Connect to _DAAP share"
@@ -1925,29 +1915,22 @@ msgstr ""
 "    * Inteligentny system rekomendacji muzyki oparty o iRATE, pomagający słuchaczom odkrywać nowych wykonawców w oparciu o swoje gusta\n"
 " oraz inne kryteria, takie jak miejsce zamieszkania."
 
-# Czemu nie "Darmowy, prosty i szybki" ?
 #: ../plugins/jamendo/jamendo-loading.glade.h:5
 msgid "     * Free, simple and quick access to the music, for everyone."
-msgstr "    * Otwarty, prosty i szybki dostęp do muzyki dla wszystkich."
+msgstr "    * Darmowy, prosty i szybki dostęp do muzyki dla wszystkich."
 
-# Zdanie od dużej litery.
-# "..dokonywania wpłat.." ?
 #: ../plugins/jamendo/jamendo-loading.glade.h:6
 msgid "     * The possibility of making direct donations to the artists."
-msgstr "    * możliwość bezpośrednich wpłat dla wykonawców."
+msgstr "    * Możliwość dokonywania bezpośrednich wpłat dla wykonawców."
 
-# Kropka? Wydaje mi się, że jej brak w oryginale to przeoczenie
 #: ../plugins/jamendo/jamendo-loading.glade.h:7
 msgid "     * The use of the latest Peer-to-Peer technologies"
-msgstr "    * Użycie najnowszych technologii sieci Peer-to-Peer"
+msgstr "    * Użycie najnowszych technologii sieci Peer-to-Peer."
 
 #: ../plugins/jamendo/jamendo-loading.glade.h:8
 msgid "<b>Jamendo</b>"
 msgstr "<b>Jamendo</b>"
 
-# Twórczość jest udostępniana, a następnie zezwalają? Kto zezwala? Imho:
-# * pierwsze zdanie zostawić jak jest
-# * drugie zdanie: "artyści/wykonawcy zezwalają na..."
 #: ../plugins/jamendo/jamendo-loading.glade.h:9
 msgid ""
 "On jamendo, the artists distribute their music under Creative Commons licenses.\n"
@@ -1955,7 +1938,7 @@ msgid ""
 "It's a \"Some rights reserved\" agreement, perfectly suited for the new century."
 msgstr ""
 "W serwisie Jamendo twórczość udostępniana jest na licencjach Creative Commons.\n"
-"Mówiąc w skrócie, zezwalają na darmowe pobieranie, remiksowanie i dzielenie się utworami.\n"
+"Mówiąc w skrócie, wykonawcy zezwalają na darmowe pobieranie, remiksowanie i dzielenie się utworami.\n"
 "To umowa oparta na zasadzie \"pewne prawa zastrzeżone\", idealnie pasująca do nowego stulecia."
 
 #: ../plugins/jamendo/jamendo-loading.glade.h:12
@@ -2068,10 +2051,9 @@ msgstr[2] "%d stacji"
 msgid "New Internet Radio Station"
 msgstr "Nowa stacja radia internetowego"
 
-# brak dwukropka
 #: ../plugins/iradio/rb-iradio-source.c:1030
 msgid "URL of internet radio station:"
-msgstr "Adres URL internetowej stacji radiowej"
+msgstr "Adres URL internetowej stacji radiowej:"
 
 #: ../plugins/iradio/rb-station-properties-dialog.c:397
 #: ../podcast/rb-feed-podcast-properties-dialog.c:217
@@ -2457,10 +2439,9 @@ msgstr "Karta kredytowa"
 msgid "Expiry _month:"
 msgstr "_Miesiąc wygaśnięcia:"
 
-# Rok wygaśnięcia.
 #: ../plugins/magnatune/magnatune-purchase.glade.h:19
 msgid "Expiry _year (last two digits):"
-msgstr "Data w_ygaśnięcia (ostatnie dwie cyfry):"
+msgstr "Rok w_ygaśnięcia (ostatnie dwie cyfry):"
 
 #: ../plugins/magnatune/magnatune-purchase.glade.h:20
 msgid "Gift Card"
@@ -2506,10 +2487,9 @@ msgstr "Kupno ścieżek Magnatune"
 msgid "_Amount to pay (US Dollars):"
 msgstr "Sum_a do zapłaty (w dolarach amerykańskich):"
 
-# brak dwukropka
 #: ../plugins/magnatune/magnatune-purchase.glade.h:41
 msgid "_Email address:"
-msgstr "Adres _e-mail"
+msgstr "Adres _e-mail:"
 
 #: ../plugins/magnatune/magnatune-purchase.glade.h:42
 msgid "_Name (as printed on card):"
@@ -2551,13 +2531,10 @@ msgstr "Nie można kupić albumu"
 msgid "You must have a library location set to purchase an album."
 msgstr "Konieczne jest ustalenie położenia kolekcji przed zakupem albumu."
 
-# </I> - poprawić na </i> bo nie wiadomo czy to duże 'i' czy male 'L'.
-# 'przez' mi nie brzmi trochę, proponuje zmianę na wykonawcę: Kupić album "Lubimy was" wykonawcy "XYZ Band".
-# Chyba że z innych względów (odmiany, rodzajniki itp..) jest jak jest?
 #: ../plugins/magnatune/magnatune/MagnatuneSource.py:237
 #, python-format
 msgid "Would you like to purchase the album <i>%(album)s</i> by '%(artist)s'?"
-msgstr "Kupić album <i>%(album)s</I> przez \"%(artist)s\"?"
+msgstr "Kupić album <i>%(album)s</i> wykonawcy \"%(artist)s\"?"
 
 #: ../plugins/magnatune/magnatune/MagnatuneSource.py:358
 msgid "Rhythmbox could not understand the Magnatune catalogue, please file a bug."
@@ -2935,10 +2912,9 @@ msgstr "Wznawia odtwarzanie, jeśli jest zatrzymane"
 msgid "Pause playback if currently playing"
 msgstr "Pauzuje odtwarzanie, jeśli jest uruchomione"
 
-# Przełącza tryb / Przełącza do trybu / Przełącza tryby (między trybami) ?
 #: ../remote/dbus/rb-client.c:94
 msgid "Toggle play/pause mode"
-msgstr "Przełącza trybu odtwarzania/pauzy"
+msgstr "Przełącza tryby odtwarzania/pauzy"
 
 #. { "stop", 0, 0, G_OPTION_ARG_NONE, &stop, N_("Stop playback"), NULL },
 #: ../remote/dbus/rb-client.c:97
@@ -3806,7 +3782,6 @@ msgstr "Nieznana właściwość %s"
 msgid "Invalid property type %s for property %s"
 msgstr "Nieprawidłowy typ %s właściwości %s"
 
-# _Browse to "przeglądaj" chyba ze autor zgubił "r" na końcu ?
 #: ../shell/rb-source-header.c:133
 msgid "_Browse"
 msgstr "_Przeglądarka"
@@ -3882,8 +3857,6 @@ msgstr "Tytuły"
 msgid "Search titles"
 msgstr "Wyszukiwanie tytułów"
 
-# FIXME albo może rodzaj?
-# J: ja jestem za pozostawieniem gatunku (wszędzie wcześniej jest gatunek).
 #: ../sources/rb-browser-source.c:148
 msgid "Browse This _Genre"
 msgstr "Przeglądaj ten _gatunek"
@@ -3967,16 +3940,15 @@ msgstr "Muzyka"
 
 #: ../sources/rb-library-source.c:387
 msgid "Choose Library Location"
-msgstr "Wybierz położenie kolekcji"
+msgstr "Wybór położenia kolekcji"
 
 #: ../sources/rb-library-source.c:574
 msgid "Multiple locations set"
 msgstr "Zestaw wielu położeń"
 
-# niepotrzebny dwukropek
 #: ../sources/rb-library-source.c:671
 msgid "Add Location"
-msgstr "Dodaj położenie: "
+msgstr "Dodanie położenia"
 
 #: ../sources/rb-library-source.c:1037
 msgid "Example Path:"
@@ -4554,7 +4526,7 @@ msgstr "Tworzenie automatycznej listy odtwarzania"
 
 #: ../widgets/rb-query-creator.c:216
 msgid "Edit Automatic Playlist"
-msgstr "Modyfikuj automatyczną listę odtwarzania"
+msgstr "Modyfikowanie automatycznej listy odtwarzania"
 
 #. this string can only be so long, or there wont be a search entry :)
 #: ../widgets/rb-search-entry.c:154
