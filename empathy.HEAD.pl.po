@@ -6,13 +6,15 @@
 # pomóc w jego rozwijaniu i pielęgnowaniu, napisz do nas na adres:
 # translators@gnome.pl
 # -=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-
+# Review całości pliku: 14.07.2008 Wadim Dziedzic
+
 msgid ""
 msgstr ""
 "Project-Id-Version: empathy\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2008-07-08 17:33+0000\n"
-"PO-Revision-Date: 2008-07-12 14:48+0100\n"
-"Last-Translator: Tomasz Dominikowski <dominikowski@gmail.com>\n"
+"PO-Revision-Date: 2008-07-14 22:21+0100\n"
+"Last-Translator: Wadim Dziedzic <wdziedzic@aviary.pl>\n"
 "Language-Team: Aviary.pl <gnomepl@aviary.pl>\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -25,14 +27,17 @@ msgstr ""
 msgid "Empathy Instant Messenger"
 msgstr "Komunikator Empathy"
 
+# REV: ok, ale tak w ogóle trzeba się zastanowić nad polskim odpowiednikiem "instant message"
 #: ../data/empathy.desktop.in.in.h:2
 msgid "Send and receive instant messages"
 msgstr "Wysyłanie i odbieranie wiadomości tekstowych"
 
+# REV: nie jest to czasem jakiś opis/tooltip? (kropka na końcu)
 #: ../data/empathy.schemas.in.h:1
 msgid "Always open a separate chat window for new chats."
 msgstr "Stałe otwieranie osobnych okien rozmów dla nowych rozmów."
 
+# REV: raczej klawiszem Tab
 #: ../data/empathy.schemas.in.h:2
 msgid "Character to add after nickname when using nick completion (tab) in group chat."
 msgstr "Znak do dodania po automatycznym uzupełnieniu pseudonimu (przyciskiem TAB) podczas rozmowy grupowej."
@@ -61,6 +66,7 @@ msgstr "Domyślny katalog, z którego są wybierane awatary"
 msgid "Empathy should auto-connect on startup"
 msgstr "Automatycznie połączenie przy uruchomieniu programu"
 
+# REV: możnaby pozbyć się tego "Empathy ma używać" jak w stringu wyżej
 #: ../data/empathy.schemas.in.h:9
 msgid "Empathy should use the avatar of the contact as the chat window icon"
 msgstr "Empathy ma używać awatarów kontaktów jako ikony okna rozmowy"
@@ -69,14 +75,17 @@ msgstr "Empathy ma używać awatarów kontaktów jako ikony okna rozmowy"
 msgid "Enable popup when contact is available"
 msgstr "Włączenie powiadamiania, gdy kontakt staje się dostępny"
 
+# REV: niepotrzebny accesskey
 #: ../data/empathy.schemas.in.h:11
 msgid "Enable sound when away"
 msgstr "Włącz_enie dźwięku przy stanie nieobecności"
 
+# REV: niepotrzebny accesskey
 #: ../data/empathy.schemas.in.h:12
 msgid "Enable sound when busy"
 msgstr "Włączenie dźwięku przy stanie z_ajętości"
 
+# REV: jeśli to checkbox to mógłby być bez "Włączenie"
 #: ../data/empathy.schemas.in.h:13
 msgid "Enable spell checker"
 msgstr "Włączenie sprawdzania pisowni"
@@ -85,10 +94,12 @@ msgstr "Włączenie sprawdzania pisowni"
 msgid "Hide main window"
 msgstr "Ukrycie głównego okna"
 
+# REV: Raczej "Ukrywa główne okno..."
 #: ../data/empathy.schemas.in.h:15
 msgid "Hide the main window."
 msgstr "Ukrycie głównego okna."
 
+# REV: jakoś trochę koślawo ;-) jeśli to checkbox to może "Użycie programu NetworkManager" ?
 #: ../data/empathy.schemas.in.h:16
 msgid "NetworkManager should be used"
 msgstr "NetworkManager ma być używany"
@@ -169,10 +180,12 @@ msgstr "Określa, czy emotikony w rozmowach będą konwertowane do postaci grafi
 msgid "Whether or not to play a sound when messages arrive."
 msgstr "Określa, czy odtwarzać dźwięki po nadejściu wiadomości."
 
+# REV: ładniej byłoby "podczas stanu ..."
 #: ../data/empathy.schemas.in.h:36
 msgid "Whether or not to play sounds when away."
 msgstr "Określa, czy odtwarzać dźwięki przy stanie nieobecności."
 
+# REV: ładniej byłoby "podczas stanu ..."
 #: ../data/empathy.schemas.in.h:37
 msgid "Whether or not to play sounds when busy."
 msgstr "Określa, czy odtwarzać dźwięki przy stanie zajętości."
@@ -327,10 +340,12 @@ msgstr "<b>Serwery</b>"
 msgid "Charset:"
 msgstr "Zestaw znaków:"
 
+# REV: trzeba sprawdzić czy czasem nie jest to nazwa/tytuł okna
 #: ../libempathy-gtk/empathy-account-widget-irc.glade.h:4
 msgid "Create a new IRC network"
 msgstr "Tworzy nową sieć IRC"
 
+# REV: trzeba sprawdzić czy czasem nie jest to nazwa/tytuł okna
 #: ../libempathy-gtk/empathy-account-widget-irc.glade.h:5
 msgid "Edit the selected IRC network"
 msgstr "Modyfikuje zaznaczoną sieć IRC"
@@ -359,6 +374,7 @@ msgstr "Komunikat przy zakończeniu:"
 msgid "Real name:"
 msgstr "Prawdziwe imię i nazwisko:"
 
+# REV: trzeba sprawdzić czy czasem nie jest to nazwa/tytuł okna
 #: ../libempathy-gtk/empathy-account-widget-irc.glade.h:12
 msgid "Remove the selected IRC network"
 msgstr "Usuwa zaznaczoną sieć IRC"
@@ -375,6 +391,7 @@ msgstr "Pri_orytet:"
 msgid "Reso_urce:"
 msgstr "_Zasób:"
 
+# REV: może lepiej "starszego szyfrowania SSL"?
 #: ../libempathy-gtk/empathy-account-widget-jabber.glade.h:8
 msgid "Use old SS_L"
 msgstr "Używanie przestarzałego szyfrowania SS_L"
@@ -481,6 +498,7 @@ msgstr "Włączone"
 msgid "Accounts"
 msgstr "Konta"
 
+# REV: moze "Nastąpi usunięcie..."?
 #: ../libempathy-gtk/empathy-accounts-dialog.c:925
 #, c-format
 msgid ""
@@ -542,6 +560,7 @@ msgstr "Obrazy"
 msgid "All Files"
 msgstr "Wszystkie pliki"
 
+# REV: od klikania nie uciekniemy :-) "Kliknięcie powiększa"
 #: ../libempathy-gtk/empathy-avatar-image.c:294
 msgid "Click to enlarge"
 msgstr "Naciśniecie powiększy"
@@ -683,6 +702,7 @@ msgstr "Na pewno usunąć kontakt \"%s\"?"
 msgid "Removing contact"
 msgstr "Usuwanie kontaktu"
 
+# REV: nie chcę Cię mieć ?
 #: ../libempathy-gtk/empathy-contact-list-view.c:1326
 msgid "Sorry, I don't want you in my contact list anymore."
 msgstr "Przepraszam, ale już nie chcę Cię na mojej liście kontaktów."
@@ -788,6 +808,8 @@ msgstr "Żądanie informacji..."
 msgid "OS:"
 msgstr "System:"
 
+# REV: przecinek przed "w których"
+# REV: drugie zdanie niegramatyczne
 #: ../libempathy-gtk/empathy-contact-widget.glade.h:16
 msgid "Select the groups you want this contact to appear in, you can select more than one group or no groups."
 msgstr "Proszę wybrać grupy w których ma się pojawić ten kontakt, można wybrać więcej niż jedną grupę lub żadnej."
@@ -796,6 +818,7 @@ msgstr "Proszę wybrać grupy w których ma się pojawić ten kontakt, można wy
 msgid "Version:"
 msgstr "Wersja:"
 
+# REV: witryna?
 #: ../libempathy-gtk/empathy-contact-widget.glade.h:18
 msgid "Web site:"
 msgstr "Strona WWW:"
@@ -843,7 +866,7 @@ msgstr "Poprzednie rozmowy"
 msgid "Search"
 msgstr "Wyszukiwanie"
 
-# check this
+# REV: może "czego"? (wyszukiwanie czego?)
 #. Searching *for* something
 #: ../libempathy-gtk/empathy-log-window.glade.h:7
 msgid "_For:"
@@ -916,6 +939,7 @@ msgstr "Klasyczny"
 msgid "Simple"
 msgstr "Prosty"
 
+# REV: z otoczenia wnioskuję że raczej "Czysty"
 #: ../libempathy-gtk/empathy-theme-manager.c:75
 msgid "Clean"
 msgstr "Wyczyść"
@@ -953,6 +977,7 @@ msgstr "Bałtycki"
 msgid "Celtic"
 msgstr "Celtycki"
 
+# REV: środkowoeuropejski
 #: ../libempathy-gtk/totem-subtitle-encoding.c:183
 #: ../libempathy-gtk/totem-subtitle-encoding.c:185
 #: ../libempathy-gtk/totem-subtitle-encoding.c:187
@@ -1095,6 +1120,7 @@ msgstr "Zachodni"
 msgid "Vietnamese"
 msgstr "Wietnamski"
 
+# REV: wartość "Empty"
 #.
 #. * vim: sw=2 ts=8 cindent noai bs=2
 #.
@@ -1102,6 +1128,7 @@ msgstr "Wietnamski"
 msgid "The contact to display in the applet. Empty means no contact is displayed."
 msgstr "Kontakt do wyświetlenia w aplecie. \"Empty\" oznacza brak wyświetlania kontaktów."
 
+# REV: j.w.
 #: ../megaphone/data/GNOME_Megaphone_Applet.schemas.in.h:2
 msgid "The contact's avatar token. Empty means contact has no avatar."
 msgstr "Element awataru użytkownika. \"Empty\" oznacza brak awataru."
@@ -1115,6 +1142,7 @@ msgstr "Megafon"
 msgid "Talk!"
 msgstr "Rozmawiaj!"
 
+# REV: accesskey na p jest kiepski - lepiej dać np na _O
 #: ../megaphone/data/GNOME_Megaphone_Applet.xml.h:1
 #: ../nothere/data/GNOME_NotHere_Applet.xml.h:1
 msgid "_About"
@@ -1133,11 +1161,13 @@ msgstr "_Preferencje"
 msgid "Presence"
 msgstr "Obecność"
 
+# REV: nie jest to czasem tytuł? ("Ustawianie obecności..." ?)
 #: ../nothere/data/GNOME_NotHere_Applet.server.in.in.h:2
 #: ../nothere/src/nothere-applet.c:106
 msgid "Set your own presence"
 msgstr "Proszę ustawić własną obecność"
 
+# REV: nieprzetłumaczone
 #: ../src/empathy.c:125
 msgid "Invalid handle"
 msgstr ""
@@ -1215,6 +1245,7 @@ msgstr "Niniejszy program rozpowszechniany jest z nadzieją, iż będzie on  uż
 msgid "You should have received a copy of the GNU General Public License along with Empathy; if not, write to the Free Software Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston, MA 02110-130159 USA"
 msgstr "Z pewnością wraz z niniejszym programem dostarczono także egzemplarz Powszechnej Licencji Publicznej GNU (GNU General Public License);jeśli nie - proszę napisać do Free Software Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston, MA 02110-130159 USA"
 
+# REV: środowiska GNOME
 #: ../src/empathy-about-dialog.c:100
 msgid "An Instant Messaging client for GNOME"
 msgstr "Komunikator internetowy dla GNOME"
@@ -1271,6 +1302,7 @@ msgstr "Przygotowywanie"
 msgid "%s - Empathy Call"
 msgstr "%s - Rozmowa Empathy"
 
+# REV: nie są to czasem etapy połączenia? Dzwonienie, Łączenie...
 #: ../src/empathy-call-window.c:392
 msgid "Ringing"
 msgstr "Wykonywanie połączenia"
@@ -1568,6 +1600,7 @@ msgstr "_Dodaj kontakt..."
 msgid "_New Conversation..."
 msgstr "_Nowa rozmowa..."
 
+# REV: accesskey: o jest wcześniej ;)
 #: ../src/empathy-main-window.glade.h:14
 msgid "_Personal Information"
 msgstr "Informacje _osobiste"
@@ -1680,6 +1713,7 @@ msgstr "Preferencje"
 msgid "Show _avatars"
 msgstr "Wyświetlanie _awatarów"
 
+# REV: "jako obrazki"
 #: ../src/empathy-preferences.glade.h:18
 msgid "Show _smileys as images"
 msgstr "Konwertowanie _emotikon na obrazki"
@@ -1746,6 +1780,7 @@ msgstr "Użytkownik %s oferuje zaproszenie. Zostanie uruchomiony zewnętrzny pro
 msgid "%s is offering you an invitation, but you don't have the needed external application to handle it."
 msgstr "Użytkownik %s oferuje zaproszenie, ale brak wymaganego programu zewnętrznego, aby je obsłużyć."
 
+# REV: wysłanE
 #: ../src/empathy-status-icon.c:636
 #, c-format
 msgid "Subscription requested by %s"
