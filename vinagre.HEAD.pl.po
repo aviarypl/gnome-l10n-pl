@@ -14,8 +14,8 @@ msgstr ""
 "Project-Id-Version: vinagre\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2008-07-03 14:33+0000\n"
-"PO-Revision-Date: 2008-07-15 12:42+0100\n"
-"Last-Translator: Tomasz Dominikowski <dominikowski@gmail.com>\n"
+"PO-Revision-Date: 2008-07-17 22:56+0100\n"
+"Last-Translator: Joanna Mazgaj <jmazgaj@aviary.pl>\n"
 "Language-Team: Aviary.pl <gnomepl@aviary.pl>\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=utf-8\n"
@@ -59,6 +59,7 @@ msgstr "<b>Modyfikowanie zakładki</b>"
 msgid "<b>Enter a name for this connection</b>"
 msgstr "<b>Proszę wprowadzić nazwę dla tego połączenia</b>"
 
+# jm: może: wymagane jest hasło/podanie hasła. proszę je wprowadzić.
 #: ../data/vinagre.glade.h:4
 msgid "<b>In order to connect on this machine, a password is required. Please supply it.</b>"
 msgstr "<b>Aby połączyć się z tym komputerem wymagane jest wprowadzenie hasła. Proszę je wprowadzić.</b>"
@@ -113,11 +114,13 @@ msgstr "_Skalowanie"
 msgid "_View only"
 msgstr "_Tylko podgląd"
 
+# jm: port to nie ekran.
 #. Tooltip for host entry in connect dialog
 #: ../data/vinagre.glade.h:18
 msgid "host or host:display or host::port"
 msgstr "komputer lub komputer:ekran lub komputer::ekran"
 
+# jm: hmm..bez 'w' ?
 #: ../data/vinagre.schemas.in.h:1
 msgid "Maximum number of history items in connect dialog"
 msgstr "Maksymalna liczba elementów w historii w oknie dialogowym połączenia"
@@ -138,6 +141,7 @@ msgstr "Określa maksymalną liczbę elementów w rozwijalnym menu komputerów."
 msgid "The handler for \"vnc://\" URLs"
 msgstr "Obsługa adresów URL \"vnc://\""
 
+# jm: undertranslation: moze tez pozostawic istniejace połączenia.
 #: ../data/vinagre.schemas.in.h:6
 msgid "When connecting to a host, the client can say to the server to leave other clients connected or to drop the existent connections. Set the value to true to share the desktop with the other clients."
 msgstr "Podczas łączenia z komputerem, klient może nakazać serwerowi, aby inne połączone klienty zostały rozłączone. Ustawienie wartości na \"true\" spowoduje możliwość współdzielenia pulpitu z innymi klientami."
@@ -176,6 +180,7 @@ msgstr "Generator apletów Vinagre"
 msgid "Could not run vinagre: %s"
 msgstr "Nie można uruchomić vinagre: %s"
 
+# jm: nie powinno być bezosobowo, jako opis?
 #: ../src/vinagre-applet.c:167
 msgid "Open Remote Desktop Viewer"
 msgstr "Otwórz przeglądarkę zdalnych pulpitów"
@@ -184,6 +189,7 @@ msgstr "Otwórz przeglądarkę zdalnych pulpitów"
 msgid "Access your bookmarks"
 msgstr "Dostęp do zakładek"
 
+# jm: te
 #: ../src/vinagre-bookmarks.c:92
 msgid "Copying the bookmarks file to the new location. This operation is only supposed to run once."
 msgstr "Kopiowanie pliku zakładek do nowego położenia. Te działanie ma odbyć się tylko jednokrotnie."
@@ -357,6 +363,7 @@ msgstr "Skalowanie"
 msgid "Read only"
 msgstr "Tylko do odczytu"
 
+# jm: a nie zrób? polecenie ściąga skądś plik ze zrzutem, czy własnorecznie taki zrzut wykonuje?
 #. Machine menu
 #: ../src/vinagre-tab.c:744
 #: ../src/vinagre-tab.c:745
@@ -426,6 +433,7 @@ msgstr "_Zakładki"
 msgid "Connect to a remote machine"
 msgstr "Połączenie ze zdalnym komputerem"
 
+# jm: bezosob. opis funkcji.
 #: ../src/vinagre-ui.h:43
 msgid "Open a .VNC file"
 msgstr "Otwórz plik .VNC"
@@ -439,6 +447,7 @@ msgstr "Kończy pracę programu"
 msgid "_Open bookmark"
 msgstr "_Otwórz zakładkę"
 
+# jm: zdaje się, ze opis funkcji w stringu wyżej (Open bookmark)? Bezosob.
 #: ../src/vinagre-ui.h:49
 msgid "Connect to this machine"
 msgstr "Połącz z tym komputerem"
@@ -455,6 +464,7 @@ msgstr "Modyfikuje szczegóły zaznaczonej zakładki"
 msgid "_Remove from bookmarks"
 msgstr "_Usuń z zakładek"
 
+# jm: aktualnie zaznaczone?
 #: ../src/vinagre-ui.h:53
 msgid "Remove current selected connection from bookmarks"
 msgstr "Usuwa bieżące zaznaczone połączenie z zakładek"
@@ -493,6 +503,7 @@ msgstr "Dod_aj do zakładek"
 msgid "Add current connection to your bookmarks"
 msgstr "Dodaje bieżące połączenie do zakładek"
 
+# jm: jak wyżej o zrzucie ekranu.
 #: ../src/vinagre-ui.h:80
 msgid "Take a screenshot of active connection"
 msgstr "Pobiera zrzut ekranu aktywnego połączenia"
@@ -537,6 +548,8 @@ msgstr "_Pasek stanu"
 msgid "Show or hide the statusbar"
 msgstr "Wyświetla lub ukrywa pasek stanu"
 
+# jm: boczny? zakładek, jak w opisie w stringu poniżej.
+# nie bedzie sie to _P gryzlo z _P z 542
 #: ../src/vinagre-ui.h:110
 msgid "Side _Panel"
 msgstr "_Panel"
