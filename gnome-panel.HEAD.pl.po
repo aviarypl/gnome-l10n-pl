@@ -4,7 +4,7 @@ msgstr ""
 "Project-Id-Version: gnome-panel\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2008-07-07 16:06+0000\n"
-"PO-Revision-Date: 2008-07-09 21:04+0100\n"
+"PO-Revision-Date: 2008-07-19 13:52+0100\n"
 "Last-Translator: Piotr Zaryk (Aviary.pl) <pzaryk@aviary.pl>\n"
 "Language-Team: Aviary.pl <gnomepl@aviary.pl>\n"
 "MIME-Version: 1.0\n"
@@ -1760,10 +1760,9 @@ msgstr "Określa, czy lista \"Znane programy\" ma zostać rozwinięta w momencie
 msgid "If true, the \"Known Applications\" listing in the \"Run Application\" dialog is made available. Whether or not the listing is expanded when the dialog is shown is controlled by the show_program_list key."
 msgstr "Określa, czy lista \"Znane programy\" ma być dostępna w oknie \"Uruchom program\". Czy lista jest rozwinięta w momencie pokazania tego okna jest określone przez opcję show_program_list."
 
-# td: zmigrowana?
 #: ../gnome-panel/panel-general.schemas.in.h:11
 msgid "Old profiles configuration migrated"
-msgstr "Zmigrowana poprzednia konfiguracja profili"
+msgstr "Przeniesiona poprzednia konfiguracja profili"
 
 #: ../gnome-panel/panel-general.schemas.in.h:12
 msgid "Panel ID list"
@@ -1777,18 +1776,13 @@ msgstr "Lista identyfikatorów (ID) apletów panelu"
 msgid "Panel object ID list"
 msgstr "Lista identyfikatorów (ID) obiektów panelu"
 
-# td: wczytywanie
-# Przykładowo przecinek
-# bezosob (dodaj?)
-# przecinek aby
 #: ../gnome-panel/panel-global.schemas.in.h:1
 msgid "A list of applet IIDs that the panel will ignore. This way you can disable certain applets from loading or showing up in the menu. For example to disable the mini-commander applet add 'OAFIID:GNOME_MiniCommanderApplet' to this list. The panel must be restarted for this to take effect."
-msgstr "Lista identyfikatorów apletów ignorowanych przez panel. Tym sposobem można wyłączyć ładowanie niektórych apletów lub wyświetlanie ich w menu. Na przykład aby wyłączyć aplet mini-commander dodaj wpis 'OAFIID:GNOME_MiniCommanderApplet' do tej listy. Panel musi zostać ponownie uruchomiony aby zastosować zmiany."
+msgstr "Lista identyfikatorów apletów ignorowanych przez panel. Tym sposobem można wyłączyć wczytywanie niektórych apletów lub wyświetlanie ich w menu. Na przykład, aby wyłączyć aplet mini-commander należy dodać wpis 'OAFIID:GNOME_MiniCommanderApplet' do tej listy. Panel musi zostać ponownie uruchomiony, aby zastosować zmiany."
 
-# td: wczytywane
 #: ../gnome-panel/panel-global.schemas.in.h:2
 msgid "Applet IIDs to disable from loading"
-msgstr "Identyfikatory apletów, które nie będą ładowane"
+msgstr "Identyfikatory apletów, które nie będą wczytywane"
 
 #: ../gnome-panel/panel-global.schemas.in.h:3
 msgid "Autoclose drawer"
@@ -1843,10 +1837,9 @@ msgstr "Określa czy szuflada będzie automatycznie zamykana po kliknięciu znaj
 msgid "If true, a launcher is highlighted when the user moves the pointer over it."
 msgstr "Określa czy aktywator będzie wyróżniony po umieszczeniu wskaźnika myszy nad nim."
 
-# td: Określa czy, 1841 - 1857
 #: ../gnome-panel/panel-global.schemas.in.h:16
 msgid "If true, the panel will not allow a user to force an application to quit by removing access to the force quit button."
-msgstr "Jeżeli ustawione, panel nie pozwoli użytkownikowi na wymuszenie zakończenia programu, poprzez usunięcie przycisku wymuszenia zakończenia."
+msgstr "Określa, czy zabraniać użytkownikowi wymuszenia zakończenia programu, poprzez usunięcie przycisku wymuszenia zakończenia."
 
 #: ../gnome-panel/panel-global.schemas.in.h:17
 msgid "If true, the panel will not allow a user to lock their screen, by removing access to the lock screen menu entries."
@@ -1868,15 +1861,13 @@ msgstr "Określa czy są wyświetlane podpowiedzi dla obiektów w panelu."
 msgid "Browse and run installed applications"
 msgstr "Przeglądanie i uruchamianie zainstalowanych programów"
 
-# td: KATALOGÓW
 #: ../gnome-panel/panel-menu-bar.c:99
 msgid "Access documents, folders and network places"
-msgstr "Dostęp do dokumentów, folderów i miejsc sieciowych"
+msgstr "Dostęp do dokumentów, katalogów i miejsc sieciowych"
 
-# td: a nie środowiska?
 #: ../gnome-panel/panel-menu-bar.c:101
 msgid "Change desktop appearance and behavior, get help, or log out"
-msgstr "Zmiana wyglądu i zachowania pulpitu, pomoc, wylogowanie"
+msgstr "Zmiana wyglądu i zachowania środowiska, pomoc, wylogowanie"
 
 #: ../gnome-panel/panel-menu-bar.c:136
 msgid "Applications"
@@ -1909,11 +1900,10 @@ msgstr "Otwiera \"%s\""
 msgid "Unable to scan %s for media changes"
 msgstr "Skanowanie %s w poszukiwaniu zmian nośników nieudane"
 
-# td: Skanuj %s ponownie
 #: ../gnome-panel/panel-menu-items.c:556
 #, c-format
 msgid "Rescan %s"
-msgstr "Skanuj ponownie %s"
+msgstr "Skanuj %s ponownie"
 
 #: ../gnome-panel/panel-menu-items.c:593
 #, c-format
@@ -1933,10 +1923,9 @@ msgstr "Nośniki wymienne"
 msgid "Network Places"
 msgstr "Miejsca sieciowe"
 
-# td: KATALOG
 #: ../gnome-panel/panel-menu-items.c:979
 msgid "Open your personal folder"
-msgstr "Otwiera twój folder prywatny"
+msgstr "Otwiera katalog prywatny użytkownika"
 
 #. Translators: Desktop is used here as in
 #. * "Desktop Folder" (this is not the Desktop
@@ -1946,10 +1935,9 @@ msgstr "Otwiera twój folder prywatny"
 msgid "Desktop Folder|Desktop"
 msgstr "Pulpit"
 
-# td: KATALOG
 #: ../gnome-panel/panel-menu-items.c:1000
 msgid "Open the contents of your desktop in a folder"
-msgstr "Otwiera pulpit jako folder"
+msgstr "Otwiera pulpit jako katalog"
 
 #: ../gnome-panel/panel-menu-items.c:1392
 msgid "Places"
@@ -2003,10 +1991,9 @@ msgstr "IID apletu bonobo"
 msgid "Icon used for object's button"
 msgstr "Ikona przycisku obiektu"
 
-# td: 1995 - 2007, Określa czy
 #: ../gnome-panel/panel-object.schemas.in.h:4
 msgid "If true, the custom_icon key is used as a custom icon for the button. If false, the custom_icon key is ignored. This key is only relevant if the object_type key is \"menu-object\" or \"drawer-object\"."
-msgstr "Jeśli ta opcja jest włączona, opcja custom_icon wskazuje na ikonę przycisku. W przeciwnym razie custom_icon jest ignorowana. Niniejsza opcja ma sens tylko dla obiektów typu \"menu-object\" lub \"drawer-object\"."
+msgstr "Określa, czy wartość custom_icon powinna być używana jako ikona przycisku. W przeciwnym razie wartość custom_icon jest ignorowana. Niniejsza klucz ma sens tylko dla obiektów typu \"menu-object\" lub \"drawer-object\"."
 
 #: ../gnome-panel/panel-object.schemas.in.h:5
 msgid "If true, the menu_path key is used as the path from which the menu contents should be constructed. If false, the menu_path key is ignored. This key is only relevant if the object_type key is \"menu-object\"."
@@ -2104,14 +2091,13 @@ msgstr "Użycie własnej ikony dla przycisku obiektu"
 msgid "Use custom path for menu contents"
 msgstr "Użycie własnej ścieżki dla elementów menu"
 
-# td: najpierw błąd , 2108 też
 #: ../gnome-panel/panel-profile.c:766
 #: ../gnome-panel/panel-profile.c:793
 #: ../gnome-panel/panel-profile.c:829
 #: ../gnome-panel/panel-profile.c:1694
 #, c-format
 msgid "Error reading GConf string value '%s': %s"
-msgstr "Przy odczycie zmiennej znakowej GConf \"%s\" wystąpił błąd: %s"
+msgstr "Wystąpił błąd przy odczycie zmiennej znakowej GConf \"%s\": %s"
 
 #. we need to do this since the key was added in 2.19 and   			 * the default value returned when the key is not set       			 * (for people coming from older versions) is 0, which      			 * is not what we want.
 #: ../gnome-panel/panel-profile.c:808
@@ -2120,19 +2106,17 @@ msgstr "Przy odczycie zmiennej znakowej GConf \"%s\" wystąpił błąd: %s"
 #: ../gnome-panel/panel-profile.c:1745
 #, c-format
 msgid "Error reading GConf integer value '%s': %s"
-msgstr "Przy odczycie zmiennej całkowitej GConf \"%s\" wystąpił błąd: %s"
+msgstr "Wystąpił błąd przy odczycie zmiennej całkowitej GConf \"%s\": %s"
 
-# td: wczytywanie
 #: ../gnome-panel/panel-profile.c:1600
 #, c-format
 msgid "Panel '%s' is set to be displayed on screen %d which is not currently available. Not loading this panel."
-msgstr "Panel \"%s\" jest ustawiony jako wyświetlany na ekranie %d, który nie jest teraz dostępny. Pomijanie ładowania go."
+msgstr "Panel \"%s\" jest ustawiony jako wyświetlany na ekranie %d, który nie jest teraz dostępny. Pomijanie wczytywania go."
 
-# td: najpierw błąd
 #: ../gnome-panel/panel-profile.c:1678
 #, c-format
 msgid "Error reading GConf boolean value '%s': %s"
-msgstr "Przy odczycie zmiennej prawda/fałsz GConf \"%s\" wystąpił błąd: %s"
+msgstr "Wystąpił błąd przy odczycie zmiennej prawda/fałsz GConf \"%s\": %s"
 
 #: ../gnome-panel/panel-properties-dialog.c:126
 #: ../libpanel-applet/panel-test-applets.c:53
@@ -2328,11 +2312,10 @@ msgstr "Nie można zmienić \"%s\" z UTF-8"
 msgid "Choose a file to append to the command..."
 msgstr "Wybór pliku dołączanego do polecenia..."
 
-# td: bezosob
 #: ../gnome-panel/panel-run-dialog.c:1591
 #: ../gnome-panel/panel-run-dialog.glade.h:10
 msgid "Select an application to view its description."
-msgstr "Wybierz program, żeby zobaczyć jego opis."
+msgstr "Należy wybrać program, żeby zobaczyć jego opis."
 
 #: ../gnome-panel/panel-run-dialog.c:1629
 #, c-format
@@ -2364,11 +2347,9 @@ msgstr "Pole tekstowe na polecenie"
 msgid "Command icon"
 msgstr "Ikona polecenia"
 
-# td: bezosob
-# WPROWADZIĆ
 #: ../gnome-panel/panel-run-dialog.glade.h:5
 msgid "Enter a command string here to run it."
-msgstr "Wpisz tutaj wiersz polecenia, aby go uruchomić."
+msgstr "Należy wprowadzić tutaj wiersz polecenia, aby go uruchomić."
 
 #: ../gnome-panel/panel-run-dialog.glade.h:6
 msgid "List of known applications"
@@ -2386,10 +2367,9 @@ msgstr "Uruchomienie w _terminalu"
 msgid "Run with _file..."
 msgstr "Uruchomienie z plikiem..."
 
-# td: bezosob
 #: ../gnome-panel/panel-run-dialog.glade.h:11
 msgid "Select this box to run the command in a terminal window."
-msgstr "Zaznacz tę opcję, aby uruchomić polecenie w oknie terminala."
+msgstr "Należy zaznaczyć tę opcję, aby uruchomić polecenie w oknie terminala."
 
 #: ../gnome-panel/panel-run-dialog.glade.h:12
 msgid "Show list of known _applications"
@@ -2418,11 +2398,10 @@ msgstr ""
 msgid "The panel has encountered a fatal error"
 msgstr "Panel napotkał poważny błąd"
 
-# td: niezgrabne
 #. FIXME: the checkbox is not correctly aligned in the dialog...
 #: ../gnome-panel/panel-shell.c:80
 msgid "Force the panel to not be automatically restarted"
-msgstr "Wymuszenie wyłączenia ponownego uruchamiania panelu"
+msgstr "Wymuszenie, aby panel automatycznie nie wczytywał się ponownie."
 
 #: ../gnome-panel/panel-stock-icons.c:92
 msgid "_Force quit"
@@ -2436,7 +2415,6 @@ msgstr "_Wyczyść"
 msgid "D_on't Delete"
 msgstr "_Nie usuwaj"
 
-# FIXME - a może ukryj panel?
 #: ../gnome-panel/panel-toplevel.c:1176
 msgid "Hide Panel"
 msgstr "Ukrywa panel"
@@ -2555,10 +2533,9 @@ msgstr "Rozwijanie na całej szerokości ekranu"
 msgid "Fit image to panel"
 msgstr "Dostosowanie obrazu do rozmiarów panelu"
 
-# td: 2538 - 2574, Określa czy
 #: ../gnome-panel/panel-toplevel.schemas.in.h:14
 msgid "If true, arrows will be placed on the hide buttons. This key is only relevant if the enable_buttons key is true."
-msgstr "Po włączeniu tej opcji, zostaną wyświetlone strzałki na przyciskach ukrywania. Ta opcja ma sens tylko gdy enable_buttons jest ustawione."
+msgstr "Określa, czy zostaną wyświetlone strzałki na przyciskach ukrywania. Ta opcja ma sens tylko gdy enable_buttons jest ustawione."
 
 #: ../gnome-panel/panel-toplevel.schemas.in.h:15
 msgid "If true, buttons will be placed on each side of the panel which may be used to move the panel to edge of the screen, leaving only a button showing."
@@ -2680,11 +2657,9 @@ msgstr "Położenie panelu. Dopuszczalne wartości to: \"top\" (góra), \"bottom
 msgid "The speed in which panel animations should occur. Possible values are \"slow\", \"medium\" and \"fast\". This key is only relevant if the enable_animations key is true."
 msgstr "Prędkość z jaką powinna odbywać się animacja panelu. Dopuszczalne wartości to: \"slow\" (wolno), \"medium\" (średnio) i \"fast\" (szybko). Opcja ma znaczenie tylko w przypadku ustawienia enable_animations."
 
-# td: błąd rzeczowy, przekombinowane i błędne
-# przełączaniu, nie przełączniu
 #: ../gnome-panel/panel-toplevel.schemas.in.h:45
 msgid "This is a human readable name which you can use to identify a panel. Its main purpose is to serve as the panel's window title which is useful when navigating between panels."
-msgstr "Czytelna dla człowieka nazwa identyfikująca panel. Głównym zastosowaniem jest podawanie jej jako nazwy okna panelu, co jest przydatne przy przełączniu się pomiędzy panelami."
+msgstr "Czytelna dla człowieka nazwa do identyfikacji panelu. Głównym zastosowaniem jest określanie nazwy okna panelu, co jest przydatne przy przełączaniu się pomiędzy panelami."
 
 #: ../gnome-panel/panel-toplevel.schemas.in.h:46
 msgid "Visible pixels when hidden"
@@ -2731,10 +2706,9 @@ msgstr "Nie odnaleziono ikony \"%s\""
 msgid "file"
 msgstr "plik"
 
-# td: Katalog
 #: ../gnome-panel/panel-util.c:1243
 msgid "Home Folder"
-msgstr "Folder domowy"
+msgstr "Katalog domowy"
 
 #. Translators: this is the same string as the one found in
 #. * nautilus
@@ -2761,10 +2735,9 @@ msgstr "%1$s: %2$s"
 msgid "Open URL: %s"
 msgstr "Otwórz URL: %s"
 
-# td: usunąć
 #: ../gnome-panel/panel.c:1302
 msgid "Delete this drawer?"
-msgstr "Usuąć szufladę?"
+msgstr "Usunąć szufladę?"
 
 #: ../gnome-panel/panel.c:1303
 msgid ""
@@ -2778,14 +2751,13 @@ msgstr ""
 msgid "Delete this panel?"
 msgstr "Usunąć panel?"
 
-# td: zostaNą
 #: ../gnome-panel/panel.c:1307
 msgid ""
 "When a panel is deleted, the panel and its\n"
 "settings are lost."
 msgstr ""
-"Po usunięciu panelu utracone zostamą jego\n"
-"ustawienia."
+"Po usunięciu panelu jego ustawienia zostaną\n"
+"utracone."
 
 #: ../libpanel-applet/GNOME_Panel_TestApplet.server.in.h:1
 msgid "A simple applet for testing the GNOME-2.0 panel"
@@ -2885,10 +2857,9 @@ msgstr "Duży"
 msgid "Size|X Large"
 msgstr "Bardzo duży"
 
-# td: Na pewno coś lepszego się da tutaj wstawić
 #: ../libpanel-applet/panel-test-applets.c:67
 msgid "Size|XX Large"
-msgstr "Bardzo bardzo duży"
+msgstr "Ogromny"
 
 #: ../libpanel-applet/panel-test-applets.c:129
 #, c-format
