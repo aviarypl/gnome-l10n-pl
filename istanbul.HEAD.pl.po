@@ -9,7 +9,7 @@ msgstr ""
 "Project-Id-Version: Istanbul\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2008-07-09 04:01+0000\n"
-"PO-Revision-Date: 2008-07-10 21:50+0100\n"
+"PO-Revision-Date: 2008-07-19 15:02+0100\n"
 "Last-Translator: Piotr Zaryk (Aviary.pl) <pzaryk@aviary.pl>\n"
 "Language-Team: Aviary.pl <gnomepl@aviary.pl>\n"
 "MIME-Version: 1.0\n"
@@ -30,11 +30,11 @@ msgstr "Nagrywanie działań na pulpicie Istanbul"
 
 #: ../data/istanbul.desktop.in.h:3
 msgid "Record a video of your desktop session"
-msgstr "Nagrywanie wideo działań na pulpicie"
+msgstr "Nagrywanie filmów wideo działań w środowisku."
 
 #: ../data/istanbul.schemas.in.h:1
 msgid "Framerate to capture screencast as"
-msgstr ""
+msgstr "Ilość klatek na sekundę nagrania"
 
 #: ../data/istanbul.schemas.in.h:2
 msgid "Set true, if you are recording an OpenGL using app"
@@ -42,7 +42,7 @@ msgstr ""
 
 #: ../data/istanbul.schemas.in.h:3
 msgid "Set true, if you want to record the mouse pointer"
-msgstr ""
+msgstr "Określa, czy nagrywać wskaźnik myszy."
 
 #: ../data/istanbul.schemas.in.h:4
 msgid "Setting can be full, half or quarter"
@@ -83,11 +83,11 @@ msgstr "Brak zainstalowanej wtyczki ogg GStreamer."
 
 #: ../istanbul/main/save_window.py:88
 msgid "Save Screencast"
-msgstr ""
+msgstr "Zapisz nagranie"
 
 #: ../istanbul/main/save_window.py:104
 msgid "Ogg Media File (*.ogg)"
-msgstr ""
+msgstr "Plik Ogg (*.ogg)"
 
 #: ../istanbul/main/save_window.py:149
 #: ../istanbul/main/save_window.py:338
@@ -108,11 +108,11 @@ msgstr "Plik już istnieje w \"%s\". Zastąpienie go nadpisze jego zawartość."
 #: ../istanbul/main/save_window.py:312
 #, python-format
 msgid "There was an unknown error writing to \"%s\".  Please try a different file or location."
-msgstr ""
+msgstr "Wystąpił nieznany błąd podczas zapisywania do \"%s\". Należy wypróbować inne położenie lub plik."
 
 #: ../istanbul/main/save_window.py:337
 msgid "You have not saved the screencast.  Are you really sure you want to lose it?"
-msgstr ""
+msgstr "Nie zapisano nagrania. Czy na pewno je usunąć?"
 
 #: ../istanbul/main/screencast.py:145
 #, python-format
@@ -122,11 +122,15 @@ msgid ""
 "Debug Information:\n"
 "%s"
 msgstr ""
+"Wystąpił błąd podczas nagrywania: %s\n"
+"\n"
+"Informacje debugowania:\n"
+"%s"
 
 #: ../istanbul/main/tray_icon.py:45
 #: ../istanbul/main/tray_icon.py:84
 msgid "Left click to start screencast.  Right click for menu."
-msgstr ""
+msgstr "Należy kliknąć lewym przyciskiem myszy, aby rozpocząć nagrywanie. Prawy przycisk wywołuje menu."
 
 #: ../istanbul/main/tray_icon.py:61
 msgid "Left click to stop recording screencast."
@@ -134,7 +138,7 @@ msgstr "Należy kliknąć lewym przyciskiem myszy, aby zatrzymać nagrywanie."
 
 #: ../istanbul/main/tray_icon.py:72
 msgid "In process of saving to disk."
-msgstr ""
+msgstr "Trwa zapisywanie na dysku."
 
 #: ../istanbul/main/tray_popup.py:60
 msgid "istanbul"
@@ -142,7 +146,7 @@ msgstr "istanbul"
 
 #: ../istanbul/main/tray_popup.py:62
 msgid "Records a video of your desktop session"
-msgstr "Nagrywanie filmów wideo działań na pulpicie."
+msgstr "Nagrywanie filmów wideo działań w środowisku."
 
 #: ../istanbul/main/tray_popup.py:63
 msgid ""
@@ -170,16 +174,15 @@ msgstr "Wybierz _okno do nagrania"
 
 #: ../istanbul/main/tray_popup.py:90
 msgid "Select a window on the screen to capture"
-msgstr ""
+msgstr "Należy zaznaczyć okno na ekranie do nagrania"
 
 #: ../istanbul/main/tray_popup.py:98
 msgid "Record _3D"
 msgstr "Nagrywanie _3D"
 
 #: ../istanbul/main/tray_popup.py:107
-#, fuzzy
 msgid "Tick this if you want to screencast a 3d application.  This will however take more CPU power."
-msgstr "Należy zaznaczyć w przypadku chęci nagrania programu 3d. Zabierze to jednak więcej mocy procesora."
+msgstr "Należy zaznaczyć w przypadku chęci nagrania programu 3d. Używa więcej mocy CPU."
 
 #: ../istanbul/main/tray_popup.py:110
 msgid "Record _Mouse Pointer"
