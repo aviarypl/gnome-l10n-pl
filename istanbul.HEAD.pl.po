@@ -9,7 +9,7 @@ msgstr ""
 "Project-Id-Version: Istanbul\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2008-07-09 04:01+0000\n"
-"PO-Revision-Date: 2008-07-19 15:02+0100\n"
+"PO-Revision-Date: 2008-07-22 13:23+0100\n"
 "Last-Translator: Piotr Zaryk (Aviary.pl) <pzaryk@aviary.pl>\n"
 "Language-Team: Aviary.pl <gnomepl@aviary.pl>\n"
 "MIME-Version: 1.0\n"
@@ -34,11 +34,11 @@ msgstr "Nagrywanie filmów wideo działań w środowisku."
 
 #: ../data/istanbul.schemas.in.h:1
 msgid "Framerate to capture screencast as"
-msgstr "Ilość klatek na sekundę nagrania"
+msgstr "Ilość klatek na sekundę używanych do nagrania"
 
 #: ../data/istanbul.schemas.in.h:2
 msgid "Set true, if you are recording an OpenGL using app"
-msgstr ""
+msgstr "Określa, czy nagrywany będzie program używający OpenGL"
 
 #: ../data/istanbul.schemas.in.h:3
 msgid "Set true, if you want to record the mouse pointer"
@@ -46,19 +46,19 @@ msgstr "Określa, czy nagrywać wskaźnik myszy."
 
 #: ../data/istanbul.schemas.in.h:4
 msgid "Setting can be full, half or quarter"
-msgstr ""
+msgstr "Można ustawić pełny rozmiar, połowę lub ćwierć"
 
 #: ../data/istanbul.schemas.in.h:5
 msgid "Size to scale video to"
-msgstr ""
+msgstr "Rozmiar do którego należy przeskalować wideo"
 
 #: ../istanbul/main/area_select.py:125
 msgid "You selected too small an area.  Please try again."
-msgstr ""
+msgstr "Wybrano zbyt mały obszar. Proszę spróbować ponownie."
 
 #: ../istanbul/main/gst_player.py:62
 msgid "Error playing back screencast"
-msgstr ""
+msgstr "Błąd przy odtwarzaniu nagrania"
 
 #: ../istanbul/main/gst_player.py:64
 #, python-format
@@ -68,6 +68,10 @@ msgid ""
 "Debug Information:\n"
 "%s"
 msgstr ""
+"Wystąpił błąd przy odtwarzaniu nagrania: %s\n"
+"\n"
+"Informacje debugowania:\n"
+"%s"
 
 #: ../istanbul/main/main.py:98
 msgid "You do not have Istanbul properly installed, cannot find the istximagesrc GStreamer plugin installed."
@@ -83,7 +87,7 @@ msgstr "Brak zainstalowanej wtyczki ogg GStreamer."
 
 #: ../istanbul/main/save_window.py:88
 msgid "Save Screencast"
-msgstr "Zapisz nagranie"
+msgstr "Zapis nagrania"
 
 #: ../istanbul/main/save_window.py:104
 msgid "Ogg Media File (*.ogg)"
@@ -112,7 +116,7 @@ msgstr "Wystąpił nieznany błąd podczas zapisywania do \"%s\". Należy wypró
 
 #: ../istanbul/main/save_window.py:337
 msgid "You have not saved the screencast.  Are you really sure you want to lose it?"
-msgstr "Nie zapisano nagrania. Czy na pewno je usunąć?"
+msgstr "Nie zapisano nagrania, dlatego zostanie ono utracone. Czy na pewno to zrobić?"
 
 #: ../istanbul/main/screencast.py:145
 #, python-format
@@ -130,7 +134,7 @@ msgstr ""
 #: ../istanbul/main/tray_icon.py:45
 #: ../istanbul/main/tray_icon.py:84
 msgid "Left click to start screencast.  Right click for menu."
-msgstr "Należy kliknąć lewym przyciskiem myszy, aby rozpocząć nagrywanie. Prawy przycisk wywołuje menu."
+msgstr "Lewy przycisk myszy rozpoczyna nagrywanie. Prawy przycisk wywołuje menu."
 
 #: ../istanbul/main/tray_icon.py:61
 msgid "Left click to stop recording screencast."
@@ -153,6 +157,8 @@ msgid ""
 "Copyright (c) 2005-6 Zaheer Abbas Merali, John N. Laliberte\n"
 "Portions Copyright (C) Fluendo S.L."
 msgstr ""
+"Copyright (c) 2005-6 Zaheer Abbas Merali, John N. Laliberte\n"
+"Portions Copyright (C) Fluendo S.L."
 
 #: ../istanbul/main/tray_popup.py:67
 msgid "translator-credits"
@@ -166,7 +172,7 @@ msgstr "_Wybierz obszar do nagrania"
 
 #: ../istanbul/main/tray_popup.py:77
 msgid "Use a selector to select area of screen to capture."
-msgstr ""
+msgstr "Należy użyć wskaźnika do zaznaczenia obszaru ekranu do nagrania."
 
 #: ../istanbul/main/tray_popup.py:86
 msgid "Select _Window to Record"
@@ -182,7 +188,7 @@ msgstr "Nagrywanie _3D"
 
 #: ../istanbul/main/tray_popup.py:107
 msgid "Tick this if you want to screencast a 3d application.  This will however take more CPU power."
-msgstr "Należy zaznaczyć w przypadku chęci nagrania programu 3d. Używa więcej mocy CPU."
+msgstr "Należy zaznaczyć w przypadku konieczności nagrania programu 3d. Wymaga więcej mocy CPU."
 
 #: ../istanbul/main/tray_popup.py:110
 msgid "Record _Mouse Pointer"
@@ -190,15 +196,16 @@ msgstr "Nagrywanie wskaźnika _myszy"
 
 #: ../istanbul/main/tray_popup.py:119
 msgid "Tick this if you want to record the mouse pointer during the screencast."
-msgstr ""
+msgstr "Należy zaznaczyć w przypadku konieczności nagrania wskaźnika myszy."
 
 #: ../istanbul/main/tray_popup.py:122
 msgid "Record _Sound"
 msgstr "Nagrywanie _dźwięku"
 
 #: ../istanbul/main/tray_popup.py:133
+#, fuzzy
 msgid "Tick this if you want to record audio with the screencast.  You can choose the audio device to record from in the Multimedia Systems Selector in Preferences."
-msgstr ""
+msgstr "Należy zaznaczyć w przypadku konieczności nagrania dźwięku. Można wybrać urządzenie dźwiękowe do nagrania z Multimedia Systems Selector w preferencjach. "
 
 #: ../istanbul/main/tray_popup.py:141
 msgid "_Full Size"
@@ -214,7 +221,7 @@ msgstr "P_ołowa szerokości i wysokości"
 
 #: ../istanbul/main/tray_popup.py:169
 msgid "Select this to scale down the recording resolution by 1/2."
-msgstr "Wybór tej opcji powoduje zmniejszenie rozdzielczości nagrania o 1/2."
+msgstr "Wybór tej opcji powoduje zmniejszenie rozdzielczości nagrania do 1/2."
 
 #: ../istanbul/main/tray_popup.py:171
 msgid "_Quarter width and height"
@@ -222,5 +229,5 @@ msgstr "Ćw_ierć szerokości i wysokości"
 
 #: ../istanbul/main/tray_popup.py:176
 msgid "Select this to scale down the recording resolution by 1/4."
-msgstr "Wybór tej opcji powoduje zmniejszenie rozdzielczości nagrania o 1/4."
+msgstr "Wybór tej opcji powoduje zmniejszenie rozdzielczości nagrania do 1/4."
 
