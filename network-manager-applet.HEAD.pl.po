@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: network-manager-applet\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2008-07-19 04:01+0000\n"
-"PO-Revision-Date: 2008-07-22 12:08+0100\n"
+"PO-Revision-Date: 2008-07-22 14:06+0100\n"
 "Last-Translator: Piotr Zaryk (Aviary.pl) <pzaryk@aviary.pl>\n"
 "Language-Team: Aviary.pl <gnomepl@aviary.pl>\n"
 "MIME-Version: 1.0\n"
@@ -414,7 +414,9 @@ msgstr "Witryna WWW programu NetworkManager"
 
 #: ../src/applet-dialogs.c:592
 msgid "translator-credits"
-msgstr "Aviary.pl <gnomepl@aviary.pl>, 2008.Piotr Zaryk <pzaryk@aviary.pl>."
+msgstr ""
+"Aviary.pl <gnomepl@aviary.pl>, 2008.\n"
+"Piotr Zaryk <pzaryk@aviary.pl>."
 
 #: ../src/applet.c:477
 #, c-format
@@ -908,15 +910,13 @@ msgstr "<b>Kompresja</b>"
 msgid "<b>Echo</b>"
 msgstr "<b>Echo</b>"
 
-# REV: wygląda na checkbox - może: Dopuszczalna kompresja danych BSD?
 #: ../src/connection-editor/ce-page-ppp.glade.h:4
 msgid "Allow BSD data compression"
-msgstr "Dopuszczanie kompresji danych BSD"
+msgstr "Dopuszczalna kompresja danych BSD"
 
-# REV: .j.w
 #: ../src/connection-editor/ce-page-ppp.glade.h:5
 msgid "Allow Deflate data compression"
-msgstr "Dopuszczanie kompresji danych Deflate"
+msgstr "Dopuszczalna kompresji danych Deflate"
 
 #: ../src/connection-editor/ce-page-ppp.glade.h:6
 msgid "Require 128-bit encryption"
@@ -935,9 +935,8 @@ msgid "Use Point-to-Point Encryption (MPPE)"
 msgstr "Używanie szyfrowania PPP (MPPE)"
 
 #: ../src/connection-editor/ce-page-ppp.glade.h:10
-#, fuzzy
 msgid "Use Stateful MPPE"
-msgstr "Użycie stateful MPPE"
+msgstr "Używanie Stateful MPPE"
 
 #: ../src/connection-editor/ce-page-ppp.glade.h:11
 msgid "Use TCP header compression"
@@ -1188,13 +1187,12 @@ msgstr "Bezpieczeństwo sieci bezprzewodowych"
 #: ../src/connection-editor/page-wireless-security.c:258
 #: ../src/wireless-dialog.c:752
 msgid "WEP 128-bit Passphrase"
-msgstr "WEP 128-bit Długie hasło"
+msgstr "WEP 128-bit długie hasło"
 
-# REV: może lepiej "szesnastkowy"
 #: ../src/connection-editor/page-wireless-security.c:267
 #: ../src/wireless-dialog.c:761
 msgid "WEP 40/128-bit Hexadecimal"
-msgstr "WEP 40/128-bit Heksadecymalny"
+msgstr "WEP 40/128-bit szesnastkowy"
 
 #: ../src/connection-editor/page-wireless-security.c:276
 #: ../src/wireless-dialog.c:770
@@ -1225,16 +1223,13 @@ msgstr "Modyfikowanie %s"
 msgid "Editing unamed connection"
 msgstr "Modyfikowanie połączenia bez nazwy"
 
-# REV: personifikacja
-# REV: edytor połączeŃ
 #: ../src/connection-editor/nm-connection-editor.c:165
 msgid "The connection editor could not find some required resources (the NetworkManager applet glade file was not found)."
-msgstr "Edytor połączenie nie mógł odnaleźć niektórych wymaganych zasobów (plik glade apletu NetworkManager nie został odnaleziony)."
+msgstr "Nie można było odnaleźć niektórych wymaganych zasobów przez edytor połączeń (plik glade apletu NetworkManager nie został odnaleziony)."
 
-# REV: personifikacja
 #: ../src/connection-editor/nm-connection-editor.c:178
 msgid "The connection editor could not find some required resources (the glade file was not found)."
-msgstr "Edytor połączeń nie mógł odnaleźć niektórych wymaganych zasobów (plik glade nie został odnaleziony)."
+msgstr "Nie można było odnaleźć niektórych wymaganych zasobów przez edytor połączeń (plik glade nie został odnaleziony)."
 
 #: ../src/connection-editor/nm-connection-editor.glade.h:1
 msgid "Connect _automatically"
@@ -1257,7 +1252,6 @@ msgid "Network Connections"
 msgstr "Połączenia sieciowe"
 
 #: ../src/connection-editor/nm-connection-editor.glade.h:8
-#, fuzzy
 msgid "System setting"
 msgstr "Ustawienie systemowe"
 
@@ -1344,23 +1338,20 @@ msgstr "Dodawanie połączenia nie powiodło się %s."
 msgid "Could not update system connection: permission denied."
 msgstr "Nie można odświeżyć połączenia systemowego: brak uprawnień."
 
-# aktualizowanie?
 #: ../src/connection-editor/nm-connection-list.c:640
 #, c-format
 msgid "Updating connection failed: %s."
 msgstr "Odświeżanie połączenia nie powiodło się %s."
 
-# REV: szyk, połączneie przewodowe lepiej brzmi
 #: ../src/connection-editor/nm-connection-list.c:750
 #, c-format
 msgid "Wired connection %d"
-msgstr "Przewodowe połączenie %d"
+msgstr "Połączenie przewodowe %d"
 
-# REV: j.w.
 #: ../src/connection-editor/nm-connection-list.c:758
 #, c-format
 msgid "Wireless connection %d"
-msgstr "Bezprzewodowe połączenie %d"
+msgstr "Połączenie bezprzewodowe %d"
 
 #: ../src/connection-editor/nm-connection-list.c:773
 #, c-format
@@ -1393,17 +1384,15 @@ msgstr "Na pewno usunąć połączenie %s?"
 msgid "Cannot import VPN connection"
 msgstr "Nie można importować połączenia VPN"
 
-# REV: personifikacja
-# REV: overtranslation: "określonego"
 #: ../src/connection-editor/nm-connection-list.c:1120
 msgid ""
 "The VPN plugin failed to import the VPN connection correctly\n"
 "\n"
 "Error: no VPN service type."
 msgstr ""
-"Wtyczka VPN nie mogła zaimportować połączenia VPN poprawnie\n"
+"Nie udało się zaimportować połączenia VPN poprawnie\n"
 "\n"
-"Błąd: brak określonego rodzaju serwisu VPN."
+"Błąd: brak rodzaju serwisu VPN."
 
 #: ../src/connection-editor/vpn-helpers.c:228
 #, c-format
@@ -1429,11 +1418,10 @@ msgstr "Plik o nazwie \"%s\" już istnieje."
 msgid "_Replace"
 msgstr "Za_mień"
 
-# REV: deskryptor: "... zastąpić połączenie %s ..."
 #: ../src/connection-editor/vpn-helpers.c:309
 #, c-format
 msgid "Do you want to replace %s with the VPN connection you are saving?"
-msgstr "Czy zastąpić %s zapisywanym połączeniem VPN?"
+msgstr "Czy zastąpić połączenie %s zapisywanym połączeniem VPN?"
 
 #: ../src/connection-editor/vpn-helpers.c:343
 msgid "Cannot export VPN connection"
@@ -1460,32 +1448,28 @@ msgstr "Eksportuj połączenie VPN..."
 msgid "Cannot start VPN connection '%s'"
 msgstr "Nie można uruchomić połączenia VPN \"%s\""
 
-# REV: okna dialogowego
 #: ../src/vpn-password-dialog.c:140
 #, c-format
 msgid "Could not find the authentication dialog for VPN connection type '%s'. Contact your system administrator."
-msgstr "Nie można odnaleźć dialogu uwierzytelniającego dla połączenia VPN typu \"%s\". Skontaktuj się z administratorem systemu."
+msgstr "Nie można odnaleźć okna uwierzytelniania dla połączenia VPN typu \"%s\". Należy się skontaktować z administratorem systemu."
 
 #: ../src/vpn-password-dialog.c:248
 #, c-format
 msgid "There was a problem launching the authentication dialog for VPN connection type '%s'. Contact your system administrator."
 msgstr "Wystąpił problem podczas uruchamiania okna dialogowego uwierzytelniania dla połączenia VPN typu \"%s\". Skontaktuj się z administratorem systemu."
 
-# REV: dlaczego wewnętrzne?
-# REV: raczej Przewodowe uwierzytelnianie ..."
 #: ../src/wired-dialog.c:75
 msgid "Wired 802.1X authentication"
-msgstr "Wewnętrzne uwierzytelnianie 802.1X"
+msgstr "Przewodowe uwierzytelnianie 802.1X"
 
 #: ../src/wireless-dialog.c:408
 msgid "New..."
 msgstr "Nowe..."
 
-# REV: szyk: lepiej: do połączenia... wymagane są
 #: ../src/wireless-dialog.c:923
 #, c-format
 msgid "Passwords or encryption keys are required to access the wireless network '%s'."
-msgstr "Wymagane są hasła lub klucze szyfrujące do połączenia z siecią bezprzewodową \"%s\"."
+msgstr "Do połączenia z siecią bezprzewodową \"%s\" wymagane są hasła lub klucze szyfrujące."
 
 # REV: tu coś lepszego trzeba wymyślić
 #: ../src/wireless-dialog.c:925
@@ -1497,10 +1481,9 @@ msgstr "Wymagany klucz dla sieci bezprzewodowej"
 msgid "Secrets required by wireless network"
 msgstr "Wymagany klucz dla sieci bezprzewodowej"
 
-# REV: wygląda na tytuł okna - "Tworzenie nowej...."
 #: ../src/wireless-dialog.c:932
 msgid "Create New Wireless Network"
-msgstr "Utwórz nową sieć bezprzewodową"
+msgstr "Tworzenie nowej sieci bezprzewodowej"
 
 #: ../src/wireless-dialog.c:934
 msgid "New wireless network"
@@ -1572,12 +1555,10 @@ msgstr "Wybór klucza prywatnego..."
 msgid "TLS"
 msgstr "TLS"
 
-# REV: Tunelowane TLS?
 #: ../src/wireless-security/wireless-security.c:340
 msgid "Tunneled TLS"
-msgstr "Tunneled TLS"
+msgstr "tunelowane TLS"
 
-# REV: Chronione EAP ... ?
 #: ../src/wireless-security/wireless-security.c:351
 msgid "Protected EAP (PEAP)"
 msgstr "Chronione EAP (PEAP)"
