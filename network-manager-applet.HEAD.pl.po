@@ -8,8 +8,8 @@ msgstr ""
 "Project-Id-Version: network-manager-applet\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2008-07-19 04:01+0000\n"
-"PO-Revision-Date: 2008-07-20 14:14+0100\n"
-"Last-Translator: wadim dziedzic <wdziedzi@aviary.pl>\n"
+"PO-Revision-Date: 2008-07-22 11:53+0100\n"
+"Last-Translator: Piotr Zaryk (Aviary.pl) <pzaryk@aviary.pl>\n"
 "Language-Team: Aviary.pl <gnomepl@aviary.pl>\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -23,11 +23,10 @@ msgstr ""
 msgid "Auto CDMA network connection"
 msgstr "Automatyczne połączenie z siecią CDMA"
 
-# REV: raczej rozłącz
 #: ../src/applet-device-cdma.c:194
 #: ../src/applet-device-gsm.c:195
 msgid "Disconnect"
-msgstr "Rozłączony"
+msgstr "Rozłącz"
 
 #: ../src/applet-device-cdma.c:234
 #, c-format
@@ -76,10 +75,9 @@ msgstr "Wybieranie urządzenia CDMA %s..."
 msgid "Running PPP on device %s..."
 msgstr "Uruchamianie PPP na urządzeniu %s..."
 
-# REV: CDMA a nie GSM
 #: ../src/applet-device-cdma.c:308
 msgid "CDMA connection"
-msgstr "Połączenie GSM"
+msgstr "Połączenie CDMA"
 
 #: ../src/applet-device-cdma.c:416
 msgid "CDMA Network Password"
@@ -87,7 +85,7 @@ msgstr "Hasło sieci CDMA"
 
 #: ../src/applet-device-cdma.c:423
 msgid "A password is required to connect to the CDMA network."
-msgstr "Aby połączyć się z siecią CDMA wymagane jest hasło."
+msgstr "Do połączenia z siecią CDMA wymagane jest hasło."
 
 #: ../src/applet-device-cdma.c:439
 #: ../src/applet-device-gsm.c:542
@@ -152,14 +150,13 @@ msgstr "Wymagany kod PUK dla urządzenia GSM"
 msgid "GSM Network Password"
 msgstr "Hasło sieci GSM"
 
-# REV: może ujednolicić z tym samym stringiem dls CDMA
 #: ../src/applet-device-gsm.c:526
 msgid "A password is required to connect to the GSM network."
-msgstr "Wymagane jest hasło, aby połączyć się z siecią GSM."
+msgstr "Do połączenia z siecią GSM wymagane jest hasło."
 
 #: ../src/applet-device-wired.c:63
 msgid "Auto Ethernet"
-msgstr "Automatyczne połączenie przewodowe"
+msgstr "Automatyczne połączenie Ethernet"
 
 #: ../src/applet-device-wired.c:190
 #, c-format
@@ -235,15 +232,13 @@ msgstr[2] "Sieci bezprzewodowe"
 msgid "wireless is disabled"
 msgstr "sieć bezprzewodowa jest wyłączona"
 
-# REV: to wygląda na tytuł okna - czyli "Dostępne sieci bezprzewodowe"
 #: ../src/applet-device-wifi.c:981
 msgid "Wireless Networks Available"
-msgstr "Sieci bezprzewodowe są dostępne"
+msgstr "Dostępne sieci bezprzewodowe"
 
-# REV: kliknięcie tej ikony?
 #: ../src/applet-device-wifi.c:982
 msgid "Click on this icon to connect to a wireless network"
-msgstr "Kliknięcie na tej ikonie łączy z siecią przewodową"
+msgstr "Kliknięcie tej ikony łączy z siecią przewodową"
 
 #: ../src/applet-device-wifi.c:985
 msgid "Don't show this message again"
@@ -326,11 +321,10 @@ msgstr "Brak"
 msgid "Unknown"
 msgstr "Nieznane"
 
-# REV: może jednak ethernet?
 #: ../src/applet-dialogs.c:252
 #, c-format
 msgid "Ethernet (%s)"
-msgstr "Połączenie przewodowe (%s)"
+msgstr "Ethernet (%s)"
 
 #: ../src/applet-dialogs.c:254
 #, c-format
@@ -368,11 +362,10 @@ msgstr "%u Mb/s"
 msgid "Speed:"
 msgstr "Prędkość:"
 
-# REV: zabezpieczenia" nie będzie lepiej pasowało?
 #: ../src/applet-dialogs.c:323
 #: ../src/connection-editor/ce-page-wireless-security.glade.h:1
 msgid "Security:"
-msgstr "Bezpieczeństwo:"
+msgstr "Zabezpieczenia:"
 
 #: ../src/applet-dialogs.c:343
 msgid "IP Address:"
@@ -411,22 +404,18 @@ msgstr ""
 "Copyright © 2004-2008 Red Hat, Inc.\n"
 "Copyright © 2005-2008 Novell, Inc."
 
-# REV: aplet obszaru powiadamiania ?
 #: ../src/applet-dialogs.c:587
 msgid "Notification area applet for managing your network devices and connections."
-msgstr "Aplet w obszarze powiadamiania do obsługi urządzeń sieciowych i połączeń."
+msgstr "Aplet obszaru powiadamiania do obsługi urządzeń sieciowych i połączeń."
 
-# REV: Witryna WWW programu ...
 #: ../src/applet-dialogs.c:589
 msgid "NetworkManager Website"
-msgstr "Strona domowa NetworkManager"
+msgstr "Witryna WWW programu NetworkManager"
 
-# REV: do zaktualizowania
 #: ../src/applet-dialogs.c:592
 msgid "translator-credits"
-msgstr "GNOME PL Team <gnome-l10n@lists.aviary.pl>"
+msgstr "Aviary.pl <gnomepl@aviary.pl>, 2008.Piotr Zaryk <pzaryk@aviary.pl>."
 
-# REV: przecinek przed ponieważ
 #: ../src/applet.c:477
 #, c-format
 msgid ""
@@ -434,7 +423,7 @@ msgid ""
 "The VPN connection '%s' failed because the network connection was interrupted."
 msgstr ""
 "\n"
-"Połączenie VPN \"%s\" nie powiodło się ponieważ połączenie sieciowe zostało przerwane."
+"Połączenie VPN \"%s\" nie powiodło się, ponieważ połączenie sieciowe zostało przerwane."
 
 #: ../src/applet.c:479
 #, c-format
@@ -549,7 +538,6 @@ msgstr ""
 "\n"
 "%s"
 
-# REV: może lepiej rozpocząć zamiast ustanowić ? 
 #: ../src/applet.c:617
 #, c-format
 msgid ""
@@ -559,23 +547,21 @@ msgid ""
 "%s"
 msgstr ""
 "\n"
-"Nie udało się ustanowić połączenia VPN \"%s\".\n"
+"Nie udało się rozpocząć połączenia VPN \"%s\".\n"
 "\n"
 "%s"
 
-# REV: Brak dostępnych ... byłoby krócej
 #: ../src/applet.c:937
 msgid "No network devices available"
-msgstr "Nie odnaleziono żadnych urządzeń sieciowych"
+msgstr "Brak dostępnych urządzeń sieciowych"
 
 #: ../src/applet.c:1023
 msgid "_VPN Connections"
 msgstr "Połączenia _VPN"
 
-# REV: tu byłbym za formą niedokonaną - to nie jest jednokrokowa akcja
 #: ../src/applet.c:1073
 msgid "_Configure VPN..."
-msgstr "_Skonfiguruj VPN..."
+msgstr "_Konfiguruj VPN..."
 
 #: ../src/applet.c:1077
 msgid "_Disconnect VPN..."
@@ -594,7 +580,7 @@ msgstr "Sieć wyłączona"
 #. 'Enable Networking' item
 #: ../src/applet.c:1308
 msgid "Enable _Networking"
-msgstr "Uruchom _sieć"
+msgstr " _sieć"
 
 # REV: j.w.
 #. 'Enable Wireless' item
@@ -612,11 +598,10 @@ msgstr "_Informacje o połączeniu"
 msgid "Edit Connections..."
 msgstr "Modyfikuj połączenia..."
 
-# REV: accesskey na _c (jak np. w nautilusie, firefoksie itd).
 #. Help item
 #: ../src/applet.c:1352
 msgid "_Help"
-msgstr "P_omoc"
+msgstr "Pomo_c"
 
 #. About item
 #: ../src/applet.c:1361
@@ -631,25 +616,22 @@ msgstr "Rozłączony"
 msgid "The network connection has been disconnected."
 msgstr "Połączenie sieciowe zostało rozłączone."
 
-# REV: liczba pojedyncza
 #: ../src/applet.c:1718
 msgid "No network connection"
-msgstr "Brak połączeń sieciowych"
+msgstr "Brak połączenia sieciowego"
 
-# REV: starajmy się unikac personifikacji programów. IMO starczy "Nie można odnaleźć ... zasobów. 
 #: ../src/applet.c:2024
 msgid "The NetworkManager applet could not find some required resources.  It cannot continue.\n"
-msgstr "Aplet NetworkManager nie mógł odnaleźć niektórych wymaganych zasobów. Nie można kontynuować.\n"
+msgstr "Odnalezienie niektórych wymaganych zasobów jest niemożliwe. Nie można kontynuować.\n"
 
 #: ../src/applet.c:2167
 msgid "NetworkManager Applet"
 msgstr "Aplet NetworkManager"
 
-# REV: j.w. o personifikacji
 #: ../src/applet.c:2172
 #: ../src/wired-dialog.c:100
 msgid "The NetworkManager Applet could not find some required resources (the glade file was not found)."
-msgstr "Aplet NetworkManager nie mógł odnaleźć niektórych wymaganych zasobów (plik glade nie został odnaleziony)."
+msgstr "Odnalezienie niektórych wymaganych zasobów jest niemożliwe (nie odnaleziono pliku glade)."
 
 #: ../src/applet.glade.h:1
 #: ../src/connection-editor/ce-mobile-wizard.glade.h:1
@@ -793,16 +775,14 @@ msgstr "Tak"
 msgid "_Network Name:"
 msgstr "_Nazwa sieci:"
 
-# REV: może tez zmienimy na zabezpieczenia? jak sądzisz?
 #: ../src/applet.glade.h:37
 msgid "_Wireless Security:"
-msgstr "Bezpieczeństwo bezprze_wodowe:"
+msgstr "Zabezpieczenia sieci bezprze_wodowej:"
 
 #: ../src/applet.glade.h:38
 msgid "alert text"
 msgstr "tekst alarmu"
 
-# REV: przecinek przed którego
 #: ../src/connection-editor/ce-mobile-wizard.glade.h:2
 msgid ""
 "<span weight=\"bold\" size=\"larger\">Choose a Mobile Broadband Connection</span>\n"
@@ -811,7 +791,7 @@ msgid ""
 msgstr ""
 "<span weight=\"bold\" size=\"larger\">Proszę wybrać mobilne łącze szerokopasmowe</span>\n"
 "\n"
-"Należy wybrać lub podłączyć mobilne urządzenie szerokopasmowe którego zamierza się użyć dla nowego połączenia. Jeśli urządzenie nie jest dostępne, można wybrać ogólny rodzaj połączenia."
+"Należy wybrać lub podłączyć mobilne urządzenie szerokopasmowe, którego zamierza się użyć dla nowego połączenia. Jeśli urządzenie nie jest dostępne, można wybrać ogólny rodzaj połączenia."
 
 #: ../src/connection-editor/ce-page.c:52
 msgid "automatic"
@@ -838,7 +818,6 @@ msgstr "<span style=\"italic\">Przykład: 10.10.10.1, 10.10.10.2</span>"
 msgid "<span style=\"italic\">Example: lab.gnome.org, gnome.org</span>"
 msgstr "<span style=\"italic\">Przykład: lab.gnome.org, gnome.org</span>"
 
-# REV: trzeba ujednolicić formy "automatycznie - ręcznie" albo "automatyczne - ręczne"
 #: ../src/connection-editor/ce-page-ip4.glade.h:4
 msgid ""
 "DHCP\n"
@@ -849,7 +828,7 @@ msgid ""
 msgstr ""
 "DHCP\n"
 "automatyczne IP\n"
-"ręcznie\n"
+"ręczne\n"
 "DHCP z własnymi ustawieniami DNS\n"
 "udostępniane dla innych komputerów"
 
@@ -953,10 +932,9 @@ msgstr "Wysyłanie pakietów echo PPP"
 msgid "Use Authentication"
 msgstr "Używanie uwierzytelniania"
 
-# REV: zamieńmy na "Używanie" tak jak w sąsiednich stringach
 #: ../src/connection-editor/ce-page-ppp.glade.h:9
 msgid "Use Point-to-Point Encryption (MPPE)"
-msgstr "Użycie szyfrowania PPP (MPPE)"
+msgstr "Używanie szyfrowania PPP (MPPE)"
 
 #: ../src/connection-editor/ce-page-ppp.glade.h:10
 #, fuzzy
@@ -1022,10 +1000,9 @@ msgstr "Adres _MAC:"
 msgid "_Port:"
 msgstr "_Port:"
 
-# REV: accesskey powtórzony (1 wyżej jest _Port)
 #: ../src/connection-editor/ce-page-wired.glade.h:17
 msgid "_Speed:"
-msgstr "_Prędkość:"
+msgstr "Pręd_kość:"
 
 #: ../src/connection-editor/ce-page-wired.glade.h:18
 #: ../src/connection-editor/ce-page-wireless.glade.h:17
@@ -1046,10 +1023,9 @@ msgstr ""
 msgid "Ban_d:"
 msgstr "Pa_smo:"
 
-# REV: brak accesskeya
 #: ../src/connection-editor/ce-page-wireless.glade.h:6
 msgid "C_hannel:"
-msgstr "Kanał:"
+msgstr "Ka_nał:"
 
 #: ../src/connection-editor/ce-page-wireless.glade.h:7
 msgid ""
@@ -1087,17 +1063,15 @@ msgstr "_SSID:"
 msgid "mW"
 msgstr "mW"
 
-# REV: połączeniA VPN
-# REV: dostępny W liście
 #: ../src/connection-editor/ce-vpn-wizard.glade.h:2
 msgid ""
 "<span weight=\"bold\" size=\"larger\">Choose a VPN Connection Type</span>\n"
 "\n"
 "Select the type of VPN you wish to use for the new connection.  If the type of VPN connection you wish to create does not appear in the list, you may not have the correct VPN plugin installed."
 msgstr ""
-"<span weight=\"bold\" size=\"larger\">Proszę wybrać rodzaj połączenie VPN</span>\n"
+"<span weight=\"bold\" size=\"larger\">Proszę wybrać rodzaj połączenia VPN</span>\n"
 "\n"
-"Należy wybrać rodzaj połączenia, który zamierza się nawiązać. Jeśli wymagany rodzaj połączenia VPN nie jest dostępny na liście, odpowiednia wtyczka VPN może nie być zainstalowana."
+"Należy wybrać rodzaj połączenia, który zamierza się nawiązać. Jeśli wymagany rodzaj połączenia VPN nie jest dostępny w liście, odpowiednia wtyczka VPN może nie być zainstalowana."
 
 #: ../src/connection-editor/mobile-wizard.c:76
 msgid "Installed GSM device"
@@ -1184,10 +1158,9 @@ msgstr "VPN"
 msgid "Wired"
 msgstr "Przewodowe"
 
-# REV: ujednolicić z kolejnym stringiem (może też zabezpieczenia użyć?)
 #: ../src/connection-editor/page-wired-security.c:82
 msgid "802.1x Security"
-msgstr "Bezpieczeństwo 802.1x"
+msgstr "Zabezpieczenia 802.1x"
 
 #: ../src/connection-editor/page-wired-security.c:93
 msgid "Use 802.1X security for this connection"
@@ -1609,7 +1582,7 @@ msgstr "Tunneled TLS"
 # REV: Chronione EAP ... ?
 #: ../src/wireless-security/wireless-security.c:351
 msgid "Protected EAP (PEAP)"
-msgstr "Protected EAP (PEAP)"
+msgstr "Chronione EAP (PEAP)"
 
 #~ msgid "Could not find some required resources (the glade file)!"
 #~ msgstr ""
