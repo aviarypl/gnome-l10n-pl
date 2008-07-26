@@ -9,13 +9,14 @@
 # Artur Flinta <aflinta@gmail.com>, 2006.
 # Wojciech Kapusta <wojciech@aviary.pl>, 2006.
 # Tomasz Dominikowski <tdominikowski@aviary.pl>, 2007, 2008
+# review by Piotr Zaryk <pzaryk@aviary.pl>, 2008.
 msgid ""
 msgstr ""
 "Project-Id-Version: deskbar-applet\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2008-07-14 20:42+0000\n"
-"PO-Revision-Date: 2008-07-15 15:34+0100\n"
-"Last-Translator: Tomasz Dominikowski <dominikowski@gmail.com>\n"
+"PO-Revision-Date: 2008-07-26 09:25+0100\n"
+"Last-Translator: Piotr Zaryk (Aviary.pl) <pzaryk@aviary.pl>\n"
 "Language-Team: Aviary.pl <gnomepl@aviary.pl>\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -57,6 +58,8 @@ msgstr "Skrót klawiszowy"
 msgid "Milliseconds to wait before starting to search"
 msgstr "Opóźnienie uruchomienia wyszukiwania w milisekundach"
 
+# REV: Nie ilość, tylko liczba (policzalne)
+# Tak chyba byłoby zgrabniej, poza tym w oryginale nie ma nic o wprowadzaniu znaków: Minimalna liczba znaków wymaganych do rozpoczęcia wyszukiwania
 #: ../data/deskbar-applet.schemas.in.h:9
 msgid "Minimum number of characters needed to start searching"
 msgstr "Minimalna ilość znaków, które muszą zostać wprowadzone, zanim aplet rozpocznie wyszukiwanie"
@@ -70,10 +73,12 @@ msgid "The default height of the window in pixels"
 msgstr "Domyślna wysokość okna w pikselach"
 
 #: ../data/deskbar-applet.schemas.in.h:12
+#, fuzzy
 msgid "The default position of the window on the screen (x-coordinate)"
 msgstr "Domyślne położenie okna na ekranie (koordynata X)"
 
 #: ../data/deskbar-applet.schemas.in.h:13
+#, fuzzy
 msgid "The default position of the window on the screen (y-coordinate)"
 msgstr "Domyślne położenie okna na ekranie (koordynata Y)"
 
@@ -81,6 +86,9 @@ msgstr "Domyślne położenie okna na ekranie (koordynata Y)"
 msgid "The default width of the window in pixels"
 msgstr "Domyślna szerokość okna w pikselach"
 
+# REV: Zogniskują uwagę? Hmm...
+# ...które uaktywnią aplet deskbar
+# ...które wyświetlą aplet deskbar?
 #: ../data/deskbar-applet.schemas.in.h:15
 msgid "The key sequence will focus Deskbar-Applet, allowing to type quickly"
 msgstr "Sekwencja przycisków, które zogniskują uwagę na aplecie deskbar, pozwalając na szybkie wprowadzanie danych"
@@ -97,10 +105,12 @@ msgstr "Lista wyeksportowanych nazw klas włączonych usługodawców sortowana w
 msgid "The maximum number of items stored in history"
 msgstr "Maksymalna liczba elementów przechowywana w historii"
 
+# REV: Liczba znaków
 #: ../data/deskbar-applet.schemas.in.h:19
 msgid "The minimum number of characters that need to be typed before the applet starts showing matches"
 msgstr "Minimalna ilość znaków, które muszą zostać wprowadzone, zanim aplet rozpocznie wyszukiwanie"
 
+# REV: uderzenie? Nie lepiej wciśnięcie? Klawisze wciskamy, nie uderzamy, przynajmniej jeśli chodzi o klawiaturę komputerową.
 #: ../data/deskbar-applet.schemas.in.h:20
 msgid "The time in milliseconds between a keystroke in the search entry and the actual search being performed"
 msgstr "Czas w milisekundach pomiędzy uderzeniem klawisza w polu wyszukiwania, a samym wyszukiwaniem"
@@ -125,14 +135,17 @@ msgstr "Wysokość okna"
 msgid "Window width"
 msgstr "Szerokość okna"
 
+# REV: nie lepiej po prostu współrzędna zamiast koordynaty?
 #: ../data/deskbar-applet.schemas.in.h:26
 msgid "X-coordinate of window"
 msgstr "Koordynata X okna"
 
+# REV: j.w.
 #: ../data/deskbar-applet.schemas.in.h:27
 msgid "Y-coordinate of window"
 msgstr "Koordynata Y okna"
 
+# REV: _About tłumaczymy w GNOME na "O programie", nieprawdaż?
 #: ../data/Deskbar_Applet.xml.h:1
 msgid "_About"
 msgstr "_Informacje o"
@@ -141,6 +154,7 @@ msgstr "_Informacje o"
 msgid "_Clear History"
 msgstr "Wyczyść _historię"
 
+# REV: Pomo_c (tak jest w większości programów GNOME, powinno być we wszystkich, dbamy o spójność)
 #: ../data/Deskbar_Applet.xml.h:3
 msgid "_Help"
 msgstr "_Pomoc"
@@ -285,6 +299,7 @@ msgstr "Wyszukiwanie <i>%(text)s</i> za pomocą <b>%(name)s</b>"
 msgid "URL"
 msgstr "Adres URL"
 
+# REV: Nie dowiązanie?
 #: ../deskbar/core/BrowserMatch.py:246
 msgid "Shortcut"
 msgstr "Skrót"
@@ -330,11 +345,13 @@ msgstr "Miejsca"
 msgid "Actions"
 msgstr "Działania"
 
+# REV: overtranslation. Sieć, nie strony WWW
 #: ../deskbar/core/Categories.py:45
 #: ../deskbar/handlers/web_address.py:44
 msgid "Web"
 msgstr "Strony WWW"
 
+# j.w.
 #: ../deskbar/core/Categories.py:49
 msgid "Web Search"
 msgstr "Wyszukiwarka stron WWW"
@@ -343,6 +360,7 @@ msgstr "Wyszukiwarka stron WWW"
 msgid "News"
 msgstr "Wiadomości"
 
+# REV: Nie notatki?
 #: ../deskbar/core/Categories.py:57
 msgid "Notes"
 msgstr "Uwagi"
@@ -491,6 +509,7 @@ msgstr "Przeszukiwanie zakładek del.icio.us po nazwie znacznika"
 msgid "del.icio.us Account"
 msgstr "Konto del.icio.us"
 
+# REV: Należy wprowadzić
 #: ../deskbar/handlers/desklicious.py:87
 msgid "Enter your del.icio.us username below"
 msgstr "Wprowadź poniżej nazwę użytkownika del.icio.us"
@@ -585,6 +604,7 @@ msgstr "Wyświetlanie wg nazw plików, katalogów, zakładek, napędów, miejsc 
 msgid "Shut down this system now?"
 msgstr "Wyłączyć komputer?"
 
+# REV: Żeby ominąć brak odmiany słowa sekuda w zależności od liczby, lepiej przebudować zdanie. Np.: "Czas pozostały do automatycznego wyłączenia komputera w sekundach: %s"
 #: ../deskbar/handlers/gdmactions.py:31
 #, python-format
 msgid "This system will be automatically shut down in %s seconds."
@@ -600,6 +620,7 @@ msgstr "Wyłącz komputer"
 msgid "Log out of this system now?"
 msgstr "Wylogować z systemu?"
 
+# j.w.
 #: ../deskbar/handlers/gdmactions.py:35
 #, python-format
 msgid "You will be automatically logged out in %s seconds."
@@ -616,6 +637,7 @@ msgstr "Wyloguj"
 msgid "Restart this system now?"
 msgstr "Uruchomić komputer ponownie?"
 
+# j.w.
 #: ../deskbar/handlers/gdmactions.py:39
 #, python-format
 msgid "This system will be automatically restarted in %s seconds."
@@ -631,6 +653,7 @@ msgstr "Uruchom ponownie"
 msgid "Suspend this system now?"
 msgstr "Wstrzymać system?"
 
+# j.w.
 #: ../deskbar/handlers/gdmactions.py:43
 #, python-format
 msgid "This system will be automatically suspended in %s seconds."
@@ -641,6 +664,7 @@ msgstr "Komputer zostanie automatycznie wstrzymany za %s sekund."
 msgid "Suspend"
 msgstr "Wstrzymaj"
 
+# REV: Zahibernować system? Patrz ciąg niżej.
 #: ../deskbar/handlers/gdmactions.py:46
 msgid "Hibernate this system now?"
 msgstr "Dokonać hibernacji systemu?"
@@ -1042,6 +1066,7 @@ msgstr "Turecki"
 msgid "Open article <i>%(name)s</i> in <b>Wikipedia</b>"
 msgstr "Otwórz artykuł <i>%(name)s</i> w <b>Wikipedii</b>"
 
+# REV: Wikipedii?
 #: ../deskbar/handlers/wikipedia-suggest.py:64
 msgid "Wikipedia Suggest"
 msgstr "Sugestie Wikipedia"
@@ -1050,6 +1075,7 @@ msgstr "Sugestie Wikipedia"
 msgid "As you type, Wikipedia will offer suggestions."
 msgstr "Sugestie Wikipedii, w trakcie pisania"
 
+# REV: Wikipedii?
 #: ../deskbar/handlers/wikipedia-suggest.py:120
 msgid "Wikipedia Suggest settings"
 msgstr "Ustawienia sugestii Wikipedia"
@@ -1237,6 +1263,7 @@ msgstr "Pasek działań \"wszystko w jednym\"."
 msgid "Deskbar Website"
 msgstr "Strona domowa Deskbar"
 
+# review by Piotr Zaryk <pzaryk@aviary.pl>, 2008.
 #. translators: These appear in the About dialog, usual format applies.
 #: ../deskbar/ui/About.py:34
 msgid "translator-credits"
@@ -1290,6 +1317,7 @@ msgstr "Zakończ"
 msgid "New accelerator..."
 msgstr "Nowy skrót..."
 
+# REV: wprowadzać tekstu
 #: ../deskbar/ui/preferences/AccelEntry.py:154
 #, python-format
 msgid ""
