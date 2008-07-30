@@ -14,8 +14,8 @@ msgstr ""
 "Project-Id-Version: Brasero 0.5.0\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2008-07-27 17:21+0200\n"
-"PO-Revision-Date: 2008-07-27 17:22+0100\n"
-"Last-Translator: Tomasz Dominikowski <dominikowski@gmail.com>\n"
+"PO-Revision-Date: 2008-07-30 20:57+0100\n"
+"Last-Translator: Joanna Mazgaj <jmazgaj@aviary.pl>\n"
 "Language-Team: Aviary.pl <gnomepl@aviary.pl>\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -855,14 +855,14 @@ msgid "%s, %02i%% done"
 msgstr "%s, %02i%% gotowe"
 
 #: ../src/brasero-utils.c:230
-#, fuzzy, c-format
+#, c-format
 msgid "%lli min"
-msgstr "%i min"
+msgstr "%lli min"
 
 #: ../src/brasero-utils.c:232
-#, fuzzy, c-format
+#, c-format
 msgid "%lli:%02lli min"
-msgstr "%i:%02i min"
+msgstr "%lli:%02lli min"
 
 #: ../src/brasero-utils.c:264
 msgid "KiB"
@@ -1912,25 +1912,24 @@ msgid "unknown"
 msgstr "nieznany"
 
 #: ../src/brasero-drive-properties.c:197
-#, fuzzy
 msgid "Do you really want to choose this location?"
-msgstr "Na pewno dodać \"%s\"?"
+msgstr "Na pewno wybrać to położenie?"
 
 #: ../src/brasero-drive-properties.c:200
 msgid ""
 "The filesystem on this volume doesn't support large files (size over 2 Gio).\n"
 "This can be a problem when writing DVDs or large images."
 msgstr ""
+"System plików na tym woluminie nie obsługuje dużych plików (rozmiar powyżej 2 Gio).\n"
+"Może to stanowić problem w przypadku nagrywania płyt DVD lub plików obrazów."
 
 #: ../src/brasero-drive-properties.c:204
-#, fuzzy
 msgid "_Keep current location"
-msgstr "Zapisuje bieżący projekt"
+msgstr "_Pozostaw bieżące położenie"
 
 #: ../src/brasero-drive-properties.c:205
-#, fuzzy
 msgid "_Change location"
-msgstr "_Zmień rozszerzenie"
+msgstr "_Zmień położenie"
 
 #: ../src/brasero-drive-properties.c:355
 #, c-format
@@ -3106,7 +3105,7 @@ msgstr "Niewystarczająca liczba miejsca na nośniku (%lli dla %lli)"
 #: ../src/burn-job.c:480
 #, c-format
 msgid "The filesystem you chose to store the temporary image on cannot hold files with a size over 2 Gio."
-msgstr ""
+msgstr "System plików wybrany do przechowywania tymczasowego pliku obrazu nie obsługuje plików o rozmiarze przekraczającym 2 Gio."
 
 #: ../src/burn-job.c:498
 #: ../src/burn-job.c:519
@@ -3407,7 +3406,7 @@ msgstr "Nagrywanie płyt CD/DVD"
 #: ../src/main.c:823
 #, c-format
 msgid "Please type %s --help to see all available options\n"
-msgstr ""
+msgstr "Aby zobaczyć wszystkie dostępne opcje należy wpisać komendę %s --help\n"
 
 #: ../src/plugins/cdrdao/burn-cdrdao.c:80
 msgid "Copying audio track"
@@ -4029,14 +4028,12 @@ msgid "Normalizing tracks"
 msgstr "Normalizowanie ścieżki"
 
 #: ../src/plugins/transcode/burn-normalize.c:560
-#, fuzzy
 msgid "GST plugin \"rgvolume\" could not be found"
-msgstr "plik dziennika nie może zostać odnaleziony."
+msgstr "Nie odnaleziono wtyczki GST \"rgvolume\""
 
 #: ../src/plugins/transcode/burn-normalize.c:568
-#, fuzzy
 msgid "GST plugin \"rganalysis\" could not be found"
-msgstr "plik dziennika nie może zostać odnaleziony."
+msgstr "Nie odnaleziono wtyczki GST \"rganalysis\""
 
 #: ../src/plugins/transcode/burn-normalize.c:576
 msgid "Normalize allows to set consistent sound levels between tracks"
