@@ -11,7 +11,7 @@ msgstr ""
 "Project-Id-Version: Nautilus\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2008-08-03 04:04+0000\n"
-"PO-Revision-Date: 2008-08-05 23:09+0100\n"
+"PO-Revision-Date: 2008-08-06 21:55+0100\n"
 "Last-Translator: wadim dziedzic <nikdo@aviary.pl>\n"
 "Language-Team: Aviary.pl <gnomepl@aviary.pl>\n"
 "MIME-Version: 1.0\n"
@@ -435,15 +435,13 @@ msgstr "Nazwa ikony kosza na pulpicie"
 msgid "Enables the classic Nautilus behavior, where all windows are browsers"
 msgstr "Włącza klasyczne zachowanie programu, gdzie wszystkie okna są przeglądarkami"
 
-# REV: nie włączona, a ustawiona na true (wartość gconf) prawdopodobnie w przypadku reszty ciągów z true/false powinno być tak samo
 #: ../libnautilus-private/apps_nautilus_preferences.schemas.in.h:36
 msgid "Filename for the default folder background. Only used if background_set is true."
-msgstr "Nazwa pliku dla domyślnego tła katalogu. Opcja używana tylko gdy zmienna background_set jest włączona."
+msgstr "Nazwa pliku dla domyślnego tła katalogu. Opcja używana tylko gdy zmienna background_set ma wartość true."
 
-# REV: jw.
 #: ../libnautilus-private/apps_nautilus_preferences.schemas.in.h:37
 msgid "Filename for the default side pane background. Only used if side_pane_background_set is true."
-msgstr "Nazwa pliku dla domyślnego tła panelu bocznego. Opcja używana tylko gdy zmienna side_pane_background_set jest włączona."
+msgstr "Nazwa pliku dla domyślnego tła panelu bocznego. Opcja używana tylko gdy zmienna side_pane_background_set ma wartość true."
 
 #: ../libnautilus-private/apps_nautilus_preferences.schemas.in.h:38
 msgid "Folders over this size will be truncated to around this size. The purpose of this is to avoid unintentionally blowing the heap and killing Nautilus on massive folders. A negative value denotes no limit. The limit is approximate due to the reading of folders chunk-wise."
@@ -2558,7 +2556,7 @@ msgstr "Nie można dodać programu"
 msgid "Select an Application"
 msgstr "Wybór programu"
 
-# Nazwa karty we właściwosciach
+# wd: Nazwa karty we właściwosciach pliku
 #: ../libnautilus-private/nautilus-open-with-dialog.c:727
 #: ../src/file-manager/fm-properties-window.c:5065
 msgid "Open With"
@@ -3487,9 +3485,8 @@ msgstr "Przygotowuje katalog do skopiowania za pomocą polecenia Wklej"
 
 #. tooltip
 #: ../src/file-manager/fm-directory-view.c:6751
-#, fuzzy
 msgid "Move or copy files previously selected by a Cut or Copy command into this folder"
-msgstr "Przenosi lub kopiuje pliki poprzednio zaznaczone za pomocą polecenia Skopiuj lub Wytnij do wybranego katalogu"
+msgstr "Przenosi lub kopiuje pliki poprzednio zaznaczone za pomocą polecenia Wytnij lub Skopiuj do tego katalogu"
 
 #. tooltip
 #: ../src/file-manager/fm-directory-view.c:6756
@@ -3503,33 +3500,28 @@ msgstr "Usuwa katalog bez przenoszenia go do kosza"
 
 #. tooltip
 #: ../src/file-manager/fm-directory-view.c:6768
-#, fuzzy
 msgid "Mount the volume associated with this folder"
-msgstr "Montuje wolumin związany z otwartym katalogiem"
+msgstr "Montuje wolumin związany z tym katalogiem"
 
 #. tooltip
 #: ../src/file-manager/fm-directory-view.c:6772
-#, fuzzy
 msgid "Unmount the volume associated with this folder"
-msgstr "Odmontowuje wolumin związany z otwartym katalogiem"
+msgstr "Odmontowuje wolumin związany z tym katalogiem"
 
 #. tooltip
 #: ../src/file-manager/fm-directory-view.c:6776
-#, fuzzy
 msgid "Eject the volume associated with this folder"
-msgstr "Wysuwa wolumin związany z otwartym katalogiem"
+msgstr "Wysuwa wolumin związany z tym katalogiem"
 
 #. tooltip
 #: ../src/file-manager/fm-directory-view.c:6780
-#, fuzzy
 msgid "Format the volume associated with this folder"
-msgstr "Formatuje wolumin związany z otwartym katalogiem"
+msgstr "Formatuje wolumin związany z tym katalogiem"
 
 #. tooltip
 #: ../src/file-manager/fm-directory-view.c:6785
-#, fuzzy
 msgid "View or modify the properties of this folder"
-msgstr "Wyświetla lub modyfikuje właściwości otwartego katalogu"
+msgstr "Wyświetla lub modyfikuje właściwości tego katalogu"
 
 #. Translators: %s is a directory
 #: ../src/file-manager/fm-directory-view.c:6867
@@ -3543,19 +3535,19 @@ msgid "_Scripts"
 msgstr "_Skrypty"
 
 #: ../src/file-manager/fm-directory-view.c:7159
-#, fuzzy, c-format
+#, c-format
 msgid "Move the open folder out of the trash to \"%s\""
-msgstr "Przenosi otwarty katalog do kosza"
+msgstr "Przenosi otwarty katalog z kosza do \"%s\""
 
 #: ../src/file-manager/fm-directory-view.c:7161
-#, fuzzy, c-format
+#, c-format
 msgid "Move the selected folder out of the trash to \"%s\""
-msgstr "Przenosi otwarty katalog do kosza"
+msgstr "Przenosi zaznaczony katalog z kosza do \"%s\""
 
 #: ../src/file-manager/fm-directory-view.c:7163
-#, fuzzy, c-format
+#, c-format
 msgid "Move the selected file out of the trash to \"%s\""
-msgstr "Przenosi każdy z zaznaczonych elementów do kosza"
+msgstr "Przenosi zaznaczony plik z kosza do \"%s\""
 
 #. add the "open in new window" menu item
 #: ../src/file-manager/fm-directory-view.c:7377
@@ -3567,9 +3559,8 @@ msgstr "Otwórz w nowym _oknie"
 
 #: ../src/file-manager/fm-directory-view.c:7379
 #: ../src/file-manager/fm-directory-view.c:7638
-#, fuzzy
 msgid "Browse in New _Window"
-msgstr "Przeglądaj w nowym oknie"
+msgstr "Przeglądaj w nowym _oknie"
 
 #: ../src/file-manager/fm-directory-view.c:7387
 #: ../src/file-manager/fm-directory-view.c:7648
@@ -3581,15 +3572,13 @@ msgstr[2] "_Przeglądaj katalogi"
 
 #: ../src/file-manager/fm-directory-view.c:7404
 #: ../src/file-manager/fm-directory-view.c:7678
-#, fuzzy
 msgid "Browse in New _Tab"
-msgstr "Przeglądaj w nowym oknie"
+msgstr "Przeglądaj w nowej _karcie"
 
 #: ../src/file-manager/fm-directory-view.c:7453
 #: ../src/file-manager/fm-directory-view.c:7711
-#, fuzzy
 msgid "_Delete Permanently"
-msgstr "Usuwa trwale otwarty katalog"
+msgstr "_Usuń trwale"
 
 #: ../src/file-manager/fm-directory-view.c:7454
 msgid "Delete the open folder permanently"
@@ -3605,36 +3594,36 @@ msgid "_Open with \"%s\""
 msgstr "_Otwórz za pomocą \"%s\""
 
 #: ../src/file-manager/fm-directory-view.c:7631
-#, fuzzy, c-format
+#, c-format
 msgid "Open in %'d New _Window"
 msgid_plural "Open in %'d New _Windows"
-msgstr[0] "Otwórz w nowym oknie"
-msgstr[1] "Otwórz w %'d nowych oknach"
-msgstr[2] "Otwórz w %'d nowych oknach"
+msgstr[0] "Otwórz w %'d nowym _oknie"
+msgstr[1] "Otwórz w %'d nowych _oknach"
+msgstr[2] "Otwórz w %'d nowych _oknach"
 
 #: ../src/file-manager/fm-directory-view.c:7640
-#, fuzzy, c-format
+#, c-format
 msgid "Browse in %'d New _Window"
 msgid_plural "Browse in %'d New _Windows"
-msgstr[0] "Przeglądaj w %'d nowym oknie"
-msgstr[1] "Przeglądaj w %'d nowych oknach"
-msgstr[2] "Przeglądaj w %'d nowych oknach"
+msgstr[0] "Przeglądaj w %'d nowym _oknie"
+msgstr[1] "Przeglądaj w %'d nowych _oknach"
+msgstr[2] "Przeglądaj w %'d nowych _oknach"
 
 #: ../src/file-manager/fm-directory-view.c:7671
-#, fuzzy, c-format
+#, c-format
 msgid "Open in %'d New _Tab"
 msgid_plural "Open in %'d New _Tabs"
-msgstr[0] "Otwórz w nowym oknie"
-msgstr[1] "Otwórz w %'d nowych oknach"
-msgstr[2] "Otwórz w %'d nowych oknach"
+msgstr[0] "Otwórz w %'d nowej _karcie"
+msgstr[1] "Otwórz w %'d nowych _kartach"
+msgstr[2] "Otwórz w %'d nowych _kartach"
 
 #: ../src/file-manager/fm-directory-view.c:7680
-#, fuzzy, c-format
+#, c-format
 msgid "Browse in %'d New _Tab"
 msgid_plural "Browse in %'d New _Tabs"
-msgstr[0] "Przeglądaj w %'d nowym oknie"
-msgstr[1] "Przeglądaj w %'d nowych oknach"
-msgstr[2] "Przeglądaj w %'d nowych oknach"
+msgstr[0] "Przeglądaj w %'d nowej _karcie"
+msgstr[1] "Przeglądaj w %'d nowych _kartach"
+msgstr[2] "Przeglądaj w %'d nowych _kartach"
 
 #: ../src/file-manager/fm-directory-view.c:7712
 msgid "Delete all selected items permanently"
@@ -3701,12 +3690,12 @@ msgid "You do not have the permissions necessary to view the contents of \"%s\".
 msgstr "Brak wymaganych uprawnień do wyświetlenia zawartości \"%s\"."
 
 #: ../src/file-manager/fm-error-reporting.c:63
-#, fuzzy, c-format
+#, c-format
 msgid "\"%s\" could not be found. Perhaps it has recently been deleted."
 msgstr "Nie można odnaleźć \"%s\". Być może został on ostatnio usunięty."
 
 #: ../src/file-manager/fm-error-reporting.c:67
-#, fuzzy, c-format
+#, c-format
 msgid "Sorry, could not display all the contents of \"%s\": %s"
 msgstr "Niestety nie można wyświetlić całej zawartości \"%s\": %s"
 
@@ -3741,7 +3730,7 @@ msgstr "Nazwa \"%s\" nie jest poprawna. Użyj innej nazwy."
 
 #. fall through
 #: ../src/file-manager/fm-error-reporting.c:137
-#, fuzzy, c-format
+#, c-format
 msgid "Sorry, could not rename \"%s\" to \"%s\": %s"
 msgstr "Niestety nie można zmienić nazwy \"%s\" na \"%s\": %s"
 
@@ -3756,7 +3745,7 @@ msgstr "Brak uprawnień do zmiany grupy \"%s\"."
 
 #. fall through
 #: ../src/file-manager/fm-error-reporting.c:180
-#, fuzzy, c-format
+#, c-format
 msgid "Sorry, could not change the group of \"%s\": %s"
 msgstr "Niestety nie można zmienić grupy \"%s\": %s"
 
@@ -3765,7 +3754,7 @@ msgid "The group could not be changed."
 msgstr "Nie można zmienić grupy."
 
 #: ../src/file-manager/fm-error-reporting.c:205
-#, fuzzy, c-format
+#, c-format
 msgid "Sorry, could not change the owner of \"%s\": %s"
 msgstr "Niestety nie można zmienić właściciela \"%s\": %s"
 
@@ -3774,7 +3763,7 @@ msgid "The owner could not be changed."
 msgstr "Nie można zmienić właściciela."
 
 #: ../src/file-manager/fm-error-reporting.c:227
-#, fuzzy, c-format
+#, c-format
 msgid "Sorry, could not change the permissions of \"%s\": %s"
 msgstr "Niestety nie można zmienić uprawnień \"%s\": %s"
 
@@ -3840,9 +3829,8 @@ msgstr "Upo_rządkuj elementy"
 #. name, stock id
 #. label, accelerator
 #: ../src/file-manager/fm-icon-view.c:1501
-#, fuzzy
 msgid "Stretc_h Icon..."
-msgstr "Zmień _rozmiar ikony"
+msgstr "_Rozciągnij ikonę..."
 
 #. tooltip
 #: ../src/file-manager/fm-icon-view.c:1502
@@ -3965,19 +3953,16 @@ msgid "_Compact"
 msgstr "_Zwarty"
 
 #: ../src/file-manager/fm-icon-view.c:2976
-#, fuzzy
 msgid "The compact view encountered an error."
-msgstr "Wystąpił błąd podczas widoku ikon."
+msgstr "Napotkano błąd w widoku zwartym."
 
 #: ../src/file-manager/fm-icon-view.c:2977
-#, fuzzy
 msgid "The compact view encountered an error while starting up."
-msgstr "Podczas uruchamiania widoku ikon wystąpił błąd."
+msgstr "Podczas uruchamiania widoku zwartego wystąpił błąd."
 
 #: ../src/file-manager/fm-icon-view.c:2978
-#, fuzzy
 msgid "Display this location with the compact view."
-msgstr "Wyświetla położenie za pomocą widoku ikon."
+msgstr "Wyświetla położenie za pomocą widoku zwartego."
 
 #: ../src/file-manager/fm-list-model.c:373
 #: ../src/file-manager/fm-tree-model.c:1266
@@ -4012,9 +3997,8 @@ msgstr "Zaznacza kolumny widoczne w tym katalogu"
 
 #. translators: this is used in the view menu
 #: ../src/file-manager/fm-list-view.c:2870
-#, fuzzy
 msgid "_List"
-msgstr "Lista"
+msgstr "_Lista"
 
 #: ../src/file-manager/fm-list-view.c:2871
 msgid "The list view encountered an error."
@@ -4029,9 +4013,8 @@ msgid "Display this location with the list view."
 msgstr "Wyświetla położenie za pomocą widoku listy."
 
 #: ../src/file-manager/fm-properties-window.c:511
-#, fuzzy
 msgid "You cannot assign more than one custom icon at a time!"
-msgstr "Nie można przypisać więcej niż jedną ikonę użytkownika jednocześnie!"
+msgstr "Nie można przypisać więcej niż jedną ikonę użytkownika jednocześnie."
 
 #: ../src/file-manager/fm-properties-window.c:512
 #: ../src/nautilus-information-panel.c:495
@@ -4320,9 +4303,8 @@ msgid "Text view:"
 msgstr "Zapis tekstowy:"
 
 #: ../src/file-manager/fm-properties-window.c:4768
-#, fuzzy
 msgid "You are not the owner, so you cannot change these permissions."
-msgstr "Nie będąc właścicielem nie można zmienić tych uprawnień."
+msgstr "Nie można zmienić tych uprawnień nie będąc właścicielem."
 
 #: ../src/file-manager/fm-properties-window.c:4792
 msgid "SELinux context:"
@@ -4412,13 +4394,11 @@ msgstr "Przed uruchomieniem programu Nautilus należy utworzyć te katalogi lub 
 #. * since neither of the above causes explain it.
 #.
 #: ../src/nautilus-application.c:597
-#, fuzzy
 msgid "Nautilus cannot be used now. Running the command \"bonobo-slay\" from the console may fix the problem. If not, you can try rebooting the computer or installing Nautilus again."
-msgstr "Uruchomienie Nautilusa nie jest w tej chwili możliwe. W usunięciu problemu może pomóc uruchomienie z wiersza poleceń \"bonobo-slay\". Jeśli problem nadal będzie się pojawiał, spróbuj ponownie uruchomić komputer lub przeinstalować Nautilusa."
+msgstr "Korzystanie z programu Nautilus nie jest w tej chwili możliwe. W usunięciu problemu może pomóc uruchomienie z wiersza poleceń \"bonobo-slay\". Jeśli problem nadal będzie się pojawiał, należy ponownie uruchomić komputer lub ponownie zainstalować program Nautilus."
 
 #. FIXME bugzilla.gnome.org 42536: The guesses and stuff here are lame.
 #: ../src/nautilus-application.c:603
-#, fuzzy
 msgid ""
 "Nautilus cannot be used now. Running the command \"bonobo-slay\" from the console may fix the problem. If not, you can try rebooting the computer or installing Nautilus again.\n"
 "\n"
@@ -4430,13 +4410,13 @@ msgid ""
 "\n"
 "We have also seen this error when a faulty version of bonobo-activation was installed."
 msgstr ""
-"Uruchomienie Nautilusa nie jest w tej chwili możliwe. W usunięciu problemu może pomóc uruchomienie z wiersza poleceń \"bonobo-slay\". Jeśli problem nadal będzie się pojawiał, spróbuj ponownie uruchomić komputer lub przeinstalować Nautilusa.\n"
+"Korzystanie z programu Nautilus nie jest w tej chwili możliwe. W usunięciu problemu może pomóc uruchomienie z wiersza poleceń \"bonobo-slay\". Jeśli problem nadal będzie się pojawiał, należy ponownie uruchomić komputer lub ponownie zainstalować program Nautilus.\n"
 "\n"
-"Bonobo nie może odnaleźć pliku Nautilus_shell.server. Jedną z możliwych przyczyn jest niepoprawna instalacja i brak tego pliku, inną zaś - brak katalogu mieszczącego bibliotekę bonobo-activation w zmiennej środowiskowej LD_LIBRARY_PATH.\n"
+"Program Bonobo nie może odnaleźć pliku Nautilus_shell.server. Jedną z możliwych przyczyn jest niepoprawna instalacja i brak tego pliku, inną zaś - brak katalogu mieszczącego bibliotekę bonobo-activation w zmiennej środowiskowej LD_LIBRARY_PATH.\n"
 "\n"
-"Uruchomienie \"bonobo-slay\" spowoduje usunięcie procesów bonobo-activation i GConfa, które mogą być wykorzystywane przez inne programy. Z nieznanych jeszcze przyczyn postępowanie to czasem pomaga w usunięciu problemu.\n"
+"Uruchomienie \"bonobo-slay\" spowoduje usunięcie procesów bonobo-activation i GConf, które mogą być wykorzystywane przez inne programy. Z nieznanych jeszcze przyczyn postępowanie to czasem pomaga w usunięciu problemu.\n"
 "\n"
-"Problem ten może być również objawem zainstalowania w systemie niewłaściwej wersji bonobo-activation."
+"Problem ten może być również objawem zainstalowania w systemie niewłaściwej wersji programu bonobo-activation."
 
 #. Some misc. error (can never happen with current
 #. * version of bonobo-activation). Show dialog and terminate the
@@ -4450,24 +4430,20 @@ msgstr ""
 #: ../src/nautilus-application.c:633
 #: ../src/nautilus-application.c:651
 #: ../src/nautilus-application.c:658
-#, fuzzy
 msgid "Nautilus cannot be used now, due to an unexpected error."
-msgstr "Z powodu nieoczekiwanego błędu nie można teraz używać Nautilusa."
+msgstr "Korzystanie z programu Nautilus nie jest w tej chwili możliwe z powodu nieoczekiwanego błędu."
 
 #: ../src/nautilus-application.c:634
-#, fuzzy
 msgid "Nautilus cannot be used now, due to an unexpected error from Bonobo when attempting to register the file manager view server."
-msgstr "Uruchomienie Nautilusa nie jest w tej chwili możliwe z powodu nieoczekiwanego błędu zgłoszonego przez Bonobo przy próbie zarejestrowania serwera widoku menedżera plików."
+msgstr "Korzystanie z programu Nautilus nie jest w tej chwili możliwe z powodu nieoczekiwanego błędu zgłoszonego przez Bonobo przy próbie zarejestrowania serwera widoku menedżera plików."
 
 #: ../src/nautilus-application.c:652
-#, fuzzy
 msgid "Nautilus cannot be used now, due to an unexpected error from Bonobo when attempting to locate the factory. Killing bonobo-activation-server and restarting Nautilus may help fix the problem."
-msgstr "Uruchomienie Nautilusa nie jest w tej chwili możliwe z powodu nieoczekiwanego błędu zgłoszonego przez Bonobo przy próbie odnalezienia generatora obiektów. W naprawieniu problemu może pomóc usunięcie procesu bonobo-activation-server i ponowne uruchomienie Nautilusa."
+msgstr "Korzystanie z programu Nautilus nie jest w tej chwili możliwe z powodu nieoczekiwanego błędu zgłoszonego przez Bonobo przy próbie odnalezienia generatora obiektów. W naprawieniu problemu może pomóc usunięcie procesu bonobo-activation-server i ponowne uruchomienie programu Nautilus."
 
 #: ../src/nautilus-application.c:659
-#, fuzzy
 msgid "Nautilus cannot be used now, due to an unexpected error from Bonobo when attempting to locate the shell object. Killing bonobo-activation-server and restarting Nautilus may help fix the problem."
-msgstr "Uruchomienie Nautilusa nie jest w tej chwili możliwe z powodu nieoczekiwanego błędu zgłoszonego przez Bonobo przy próbie odnalezienia obiektu powłoki. W naprawieniu problemu może pomóc usunięcie procesu bonobo-activation-server i ponowne uruchomienie Nautilusa."
+msgstr "Korzystanie z programu Nautilus nie jest w tej chwili możliwe z powodu nieoczekiwanego błędu zgłoszonego przez Bonobo przy próbie odnalezienia obiektu powłoki. W naprawieniu problemu może pomóc usunięcie procesu bonobo-activation-server i ponowne uruchomienie programu Nautilus."
 
 #: ../src/nautilus-application.c:1363
 #: ../src/nautilus-places-sidebar.c:1682
@@ -4475,7 +4451,7 @@ msgstr "Uruchomienie Nautilusa nie jest w tej chwili możliwe z powodu nieoczeki
 #: ../src/nautilus-places-sidebar.c:1728
 #, c-format
 msgid "Unable to eject %s"
-msgstr "Wysunięcie %s niemożliwe"
+msgstr "Wysunięcie %s nie jest możliwe"
 
 #: ../src/nautilus-autorun-software.c:144
 #: ../src/nautilus-autorun-software.c:147
@@ -4493,12 +4469,11 @@ msgid "<big><b>Error autorunning software</b></big>"
 msgstr "<big><b>Błąd podczas automatycznego uruchamiania oprogramowania</b></big>"
 
 #: ../src/nautilus-autorun-software.c:194
-#, fuzzy
 msgid "<big><b>This medium contains software intended to be automatically started. Would you like to run it?</b></big>"
 msgstr "<big><b>Ten nośnik zawiera oprogramowanie do automatycznego uruchomienia. Uruchomić je?</b></big>"
 
 #: ../src/nautilus-autorun-software.c:196
-#, fuzzy, c-format
+#, c-format
 msgid ""
 "The software will run directly from the medium \"%s\". You should never run software that you don't trust.\n"
 "\n"
@@ -4506,7 +4481,7 @@ msgid ""
 msgstr ""
 "Oprogramowanie zostanie uruchomione bezpośrednio z nośnika \"%s\". Nigdy nie powinno się uruchamiać oprogramowania, któremu się nie ufa.\n"
 "\n"
-"W razie wątpliwości proszę nacisnąć Anuluj."
+"W razie wątpliwości proszę nacisnąć przycisk Anuluj."
 
 #: ../src/nautilus-bookmarks-window.c:160
 #: ../src/nautilus-file-management-properties.c:206
@@ -4541,7 +4516,7 @@ msgid "Edit Bookmarks"
 msgstr "Edycja zakładek"
 
 #: ../src/nautilus-connect-server-dialog-main.c:75
-#, fuzzy, c-format
+#, c-format
 msgid "Cannot display location \"%s\""
 msgstr "Nie można wyświetlić położenia \"%s\""
 
@@ -4590,7 +4565,6 @@ msgid "Secure WebDAV (HTTPS)"
 msgstr "Bezpieczny WebDAV (HTTPS)"
 
 #: ../src/nautilus-connect-server-dialog.c:194
-#, fuzzy
 msgid "Cannot Connect to Server. You must enter a name for the server."
 msgstr "Nie można połączyć się z serwerem. Należy podać nazwę serwera."
 
@@ -4653,7 +4627,7 @@ msgid "Desktop"
 msgstr "Pulpit"
 
 #: ../src/nautilus-emblem-sidebar.c:226
-#, fuzzy, c-format
+#, c-format
 msgid "Could not remove emblem with name '%s'."
 msgstr "Nie można usunąć symbolu o nazwie \"%s\"."
 
@@ -4663,7 +4637,7 @@ msgid "This is probably because the emblem is a permanent one, and not one that 
 msgstr "Oznacza to prawdopodobnie, że jest to symbol trwały, a nie utworzony samodzielnie."
 
 #: ../src/nautilus-emblem-sidebar.c:260
-#, fuzzy, c-format
+#, c-format
 msgid "Could not rename emblem with name '%s'."
 msgstr "Nie można zmienić nazwy symbolu \"%s\"."
 
@@ -4744,7 +4718,7 @@ msgstr ""
 "1 GB"
 
 #: ../src/nautilus-file-management-properties.glade.h:10
-#, fuzzy, no-c-format
+#, no-c-format
 msgid ""
 "33%\n"
 "50%\n"
@@ -4754,9 +4728,9 @@ msgid ""
 "200%\n"
 "400%"
 msgstr ""
-"25%\n"
+"33%\n"
 "50%\n"
-"75%\n"
+"66%\n"
 "100%\n"
 "150%\n"
 "200%\n"
@@ -4767,9 +4741,8 @@ msgid "<b>Behavior</b>"
 msgstr "<b>Zachowanie</b>"
 
 #: ../src/nautilus-file-management-properties.glade.h:18
-#, fuzzy
 msgid "<b>Compact View Defaults</b>"
-msgstr "<b>Domyślne ustawienia widoku ikon</b>"
+msgstr "<b>Domyślne ustawienia widoku zwartego</b>"
 
 #: ../src/nautilus-file-management-properties.glade.h:19
 msgid "<b>Date</b>"
@@ -4900,13 +4873,12 @@ msgid "Count _number of items:"
 msgstr "O_kreślanie liczby elementów:"
 
 #: ../src/nautilus-file-management-properties.glade.h:53
-#, fuzzy
 msgid "D_efault zoom level:"
 msgstr "_Domyślne powiększenie:"
 
 #: ../src/nautilus-file-management-properties.glade.h:54
 msgid "Default _zoom level:"
-msgstr "_Domyślne powiększenie:"
+msgstr "D_omyślne powiększenie:"
 
 #: ../src/nautilus-file-management-properties.glade.h:55
 msgid "Display"
@@ -4921,14 +4893,14 @@ msgid "I_nclude a Delete command that bypasses Trash"
 msgstr "_Dodatkowe polecenie Usuń pomijające kosz"
 
 #: ../src/nautilus-file-management-properties.glade.h:58
-#, fuzzy
 msgid ""
 "Icon View\n"
 "List View\n"
 "Compact View"
 msgstr ""
 "Widok ikon\n"
-"Widok listy"
+"Widok listy\n"
+"Widok zwarty"
 
 #: ../src/nautilus-file-management-properties.glade.h:61
 msgid "Less common media formats can be configured here"
@@ -5166,9 +5138,8 @@ msgid "Use _Default Background"
 msgstr "Ustaw _domyślne tło"
 
 #: ../src/nautilus-information-panel.c:494
-#, fuzzy
 msgid "You cannot assign more than one custom icon at a time."
-msgstr "Nie można przypisać więcej niż jednej ikony jednocześnie."
+msgstr "Nie można przypisać więcej niż jednej ikony użytkownika jednocześnie."
 
 #: ../src/nautilus-information-panel.c:524
 msgid "You can only use images as custom icons."
@@ -5326,9 +5297,8 @@ msgstr "_Zakładki"
 
 #. name, stock id, label
 #: ../src/nautilus-navigation-window-menus.c:792
-#, fuzzy
 msgid "_Tabs"
-msgstr "K_osz"
+msgstr "_Karty"
 
 #. name, stock id, label
 #: ../src/nautilus-navigation-window-menus.c:793
@@ -5345,9 +5315,8 @@ msgid "New _Tab"
 msgstr "Nowa _karta"
 
 #: ../src/nautilus-navigation-window-menus.c:797
-#, fuzzy
 msgid "Open another tab for the displayed location"
-msgstr "Otwiera nowe okno programu Nautilus dla wyświetlanego położenia"
+msgstr "Otwiera nową kartę dla wyświetlanego położenia"
 
 #. name, stock id, label
 #: ../src/nautilus-navigation-window-menus.c:799
@@ -5400,9 +5369,8 @@ msgstr "Dodaje bieżące położenie do zakładek w tym menu"
 #. name, stock id, label
 #: ../src/nautilus-navigation-window-menus.c:814
 #: ../src/nautilus-spatial-window.c:902
-#, fuzzy
 msgid "_Edit Bookmarks..."
-msgstr "_Modyfikuj zakładki"
+msgstr "_Modyfikuj zakładki..."
 
 #: ../src/nautilus-navigation-window-menus.c:815
 #: ../src/nautilus-spatial-window.c:903
@@ -5534,9 +5502,8 @@ msgid "Toggle between button and text-based location bar"
 msgstr "Przełącza pomiędzy tesktowym i przyciskowym paskiem położenia"
 
 #: ../src/nautilus-navigation-window.c:284
-#, fuzzy
 msgid "_Close Tab"
-msgstr "Z_amknij"
+msgstr "Z_amknij kartę"
 
 #: ../src/nautilus-navigation-window.c:1206
 #, c-format
@@ -5544,9 +5511,8 @@ msgid "%s - File Browser"
 msgstr "%s - Przeglądarka plików"
 
 #: ../src/nautilus-notebook.c:414
-#, fuzzy
 msgid "Close tab"
-msgstr "Z_amknij"
+msgstr "Zamyka kartę"
 
 #: ../src/nautilus-notes-viewer.c:385
 #: ../src/nautilus-notes-viewer.c:499
@@ -5609,12 +5575,11 @@ msgstr "_Usuń..."
 
 #. now create the "add new" button
 #: ../src/nautilus-property-browser.c:376
-#, fuzzy
 msgid "Add new..."
-msgstr "_Dodaj nowy..."
+msgstr "Dodaj nową..."
 
 #: ../src/nautilus-property-browser.c:941
-#, fuzzy, c-format
+#, c-format
 msgid "Sorry, but pattern %s could not be deleted."
 msgstr "Niestety nie można usunąć deseniu %s."
 
@@ -5623,7 +5588,7 @@ msgid "Check that you have permission to delete the pattern."
 msgstr "Proszę sprawdzić czy użytkownik posiada uprawnienia do usunięcia desenia."
 
 #: ../src/nautilus-property-browser.c:970
-#, fuzzy, c-format
+#, c-format
 msgid "Sorry, but emblem %s could not be deleted."
 msgstr "Niestety nie można usunąć symbolu %s."
 
@@ -5690,7 +5655,7 @@ msgid "Reset is a special image that cannot be deleted."
 msgstr "Obraz czyszczący jest specjalnym rodzajem obrazu i nie może być usunięty."
 
 #: ../src/nautilus-property-browser.c:1200
-#, fuzzy, c-format
+#, c-format
 msgid "Sorry, but the pattern %s could not be installed."
 msgstr "Niestety nie można zainstalować deseniu %s."
 
@@ -5951,14 +5916,14 @@ msgid "The location is not a folder."
 msgstr "Położenie nie jest katalogiem."
 
 #: ../src/nautilus-window-manage-views.c:1914
-#, fuzzy, c-format
+#, c-format
 msgid "Could not find \"%s\"."
 msgstr "Nie można odnaleźć \"%s\"."
 
 #: ../src/nautilus-window-manage-views.c:1925
-#, fuzzy, c-format
+#, c-format
 msgid "Nautilus cannot handle \"%s\" locations."
-msgstr "Nautilus nie obsługuje położeń %s:"
+msgstr "Program Nautilus nie obsługuje położeń \"%s\"."
 
 #: ../src/nautilus-window-manage-views.c:1928
 msgid "Nautilus cannot handle this kind of locations."
@@ -5978,7 +5943,7 @@ msgstr "Odmowa dostępu."
 #. * the proxy is set up wrong.
 #.
 #: ../src/nautilus-window-manage-views.c:1950
-#, fuzzy, c-format
+#, c-format
 msgid "Could not display \"%s\", because the host could not be found."
 msgstr "Nie można wyświetlić \"%s\", ponieważ komputer nie został odnaleziony."
 
@@ -6008,18 +5973,16 @@ msgid "Nautilus is distributed in the hope that it will be useful, but WITHOUT A
 msgstr "Program Nautilus rozpowszechniany jest z nadzieją, iż będzie on użyteczny - jednak BEZ JAKIEJKOLWIEK GWARANCJI, nawet domyślnej gwarancji PRZYDATNOŚCI HANDLOWEJ albo PRZYDATNOŚCI DO OKREŚLONYCH ZASTOSOWAŃ. W celu uzyskania bliższych informacji należy zapoznać się z Powszechną Licencją Publiczną GNU. "
 
 #: ../src/nautilus-window-menus.c:550
-#, fuzzy
 msgid "You should have received a copy of the GNU General Public License along with Nautilus; if not, write to the Free Software Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston, MA 02110-1301 USA"
-msgstr "Z pewnością wraz z niniejszym programem dostarczono także egzemplarz Powszechnej Licencji Publicznej GNU (GNU General Public License); jeśli nie - proszę napisać do Free Software Foundation, Inc., 675 Mass Ave, Cambridge, MA 02139, USA."
+msgstr "Z pewnością wraz z niniejszym programem dostarczono także egzemplarz Powszechnej Licencji Publicznej GNU (GNU General Public License); jeśli nie - proszę napisać do Free Software Foundation, Inc., 675 Mass Ave, Cambridge, MA 02139, USA"
 
 #: ../src/nautilus-window-menus.c:562
 msgid "Nautilus is a graphical shell for GNOME that makes it easy to manage your files and the rest of your system."
 msgstr "Nautilus to graficzna powłoką będąca częścią środowiska GNOME. Ułatwia ona zarządzanie plikami oraz innymi elementami systemu."
 
 #: ../src/nautilus-window-menus.c:566
-#, fuzzy
 msgid "Copyright © 1999-2008 The Nautilus authors"
-msgstr "Copyright © 1999-2007 Autorzy Nautilusa"
+msgstr "Copyright © 1999-2008 Autorzy programu Nautilus"
 
 #. Translators should localize the following string
 #. * which will be displayed at the bottom of the about
