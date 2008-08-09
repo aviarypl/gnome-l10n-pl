@@ -13,9 +13,9 @@ msgid ""
 msgstr ""
 "Project-Id-Version: conduit.HEAD.pl\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2008-07-30 09:43+0000\n"
-"PO-Revision-Date: 2008-08-05 08:53+0100\n"
-"Last-Translator: Joanna Mazgaj <jmazgaj@aviary.pl>\n"
+"POT-Creation-Date: 2008-08-09 15:05+0200\n"
+"PO-Revision-Date: 2008-08-09 15:33+0100\n"
+"Last-Translator: Tomasz Dominikowski <dominikowski@gmail.com>\n"
 "Language-Team: Aviary.pl <gnomepl@aviary.pl>\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -67,7 +67,8 @@ msgstr "Anuluj synchronizację"
 msgid "Cancel currently synchronizing groups"
 msgstr "Przerwij synchronizację grup"
 
-# jm: chodzi o tą część, do której się przeciąga źródła danych do synchronizacji. to polecenie je czyści, ale 'canvas' - 'płótno' jest strasznie przekombinowane, 
+# jm: chodzi o tą część, do której się przeciąga źródła danych do synchronizacji. to polecenie je czyści, ale 'canvas' - 'płótno' jest strasznie przekombinowane,
+# rev: Wyczyść jest OK
 #: ../data/conduit.glade.h:8
 #, fuzzy
 msgid "Clear Canvas"
@@ -113,10 +114,12 @@ msgstr "Konwersje danych"
 msgid "Data Providers"
 msgstr "Źródła danych"
 
+# rev: usuń
 #: ../data/conduit.glade.h:19
 msgid "Delete Group"
 msgstr "Skasuj grupę"
 
+# rev: usuń
 #: ../data/conduit.glade.h:20
 msgid "Delete Item"
 msgstr "Skasuj element"
@@ -137,6 +140,7 @@ msgstr "Usuń analogiczny element"
 msgid "Editor"
 msgstr "Edytor"
 
+# rev: minimalizowanie
 #: ../data/conduit.glade.h:25
 msgid "Minimize to notification area"
 msgstr "Minimalizacja do obszaru powiadamiania"
@@ -166,48 +170,49 @@ msgid "Save settings on exit"
 msgstr "Zapisywanie ustawień podczas wyłączania"
 
 #: ../data/conduit.glade.h:32
+msgid "Show Hints"
+msgstr "Wyświetlanie podpowiedzi"
+
+# rev: stanu
+#: ../data/conduit.glade.h:33
 msgid "Show status icon"
 msgstr "Wyświetlanie ikony statusu"
 
-#: ../data/conduit.glade.h:33
+#: ../data/conduit.glade.h:34
 msgid "Skip"
 msgstr "Pomiń"
 
-#: ../data/conduit.glade.h:34
+#: ../data/conduit.glade.h:35
 msgid "Slow Sync"
 msgstr "Wolna synchronizacja"
 
-#: ../data/conduit.glade.h:35
+#: ../data/conduit.glade.h:36
 msgid "Sync Options"
 msgstr "Opcje synchronizacji"
 
-#: ../data/conduit.glade.h:36
+#: ../data/conduit.glade.h:37
 msgid "Synchronize All"
 msgstr "Synchronizuj wszystko"
 
-#: ../data/conduit.glade.h:37
+#: ../data/conduit.glade.h:38
 msgid "Synchronize Group"
 msgstr "Synchronizuj grupę"
 
-#: ../data/conduit.glade.h:38
+#: ../data/conduit.glade.h:39
 msgid "Synchronize group"
 msgstr "Synchronizuje grupę"
 
-#: ../data/conduit.glade.h:39
+#: ../data/conduit.glade.h:40
 msgid "Synchronizes all groups"
 msgstr "Synchronizuje wszyskie grupy"
 
-#: ../data/conduit.glade.h:40
+#: ../data/conduit.glade.h:41
 msgid "Title"
 msgstr "Tytuł"
 
-#: ../data/conduit.glade.h:41
+#: ../data/conduit.glade.h:42
 msgid "Two Way Sync"
 msgstr "Obustronna synchronizacja"
-
-#: ../data/conduit.glade.h:42
-msgid "Use built in Web browser"
-msgstr "Korzystanie z wbudowanej przeglądarki"
 
 #: ../data/conduit.glade.h:43
 msgid "When an item has been deleted:"
@@ -237,7 +242,7 @@ msgstr "_Plik"
 msgid "_Help"
 msgstr "Pomo_c"
 
-#: ../conduit/gtkui/Canvas.py:65
+#: ../conduit/gtkui/Canvas.py:149
 msgid "Drag a Data Provider here to continue"
 msgstr "Należy przeciągnąć na ten obszar źródło danych, aby kontynuować"
 
@@ -264,80 +269,82 @@ msgid "Conflicts (%s)"
 msgstr "Konflikty (%s)"
 
 #. Build some liststores to display
-#: ../conduit/gtkui/UI.py:235
+#: ../conduit/gtkui/UI.py:281
 msgid "Convert from"
 msgstr "Konwertuj z"
 
-#: ../conduit/gtkui/UI.py:236
+#: ../conduit/gtkui/UI.py:282
 msgid "into"
 msgstr "na"
 
 # jm: ??
-#: ../conduit/gtkui/UI.py:287
+# rev: ok
+#: ../conduit/gtkui/UI.py:333
 #, fuzzy
 msgid "Relationship Database"
 msgstr "Baza danych powiązań"
 
-#: ../conduit/gtkui/UI.py:291
+#: ../conduit/gtkui/UI.py:337
 msgid "Conversions Available"
 msgstr "Możliwe konwersje"
 
-#: ../conduit/gtkui/UI.py:297
+#: ../conduit/gtkui/UI.py:343
 #: ../conduit/gtkui/Tree.py:349
 #: ../conduit/modules/FileModule/FileConfiguration.py:105
 msgid "Name"
 msgstr "Nazwa"
 
-#: ../conduit/gtkui/UI.py:301
+#: ../conduit/gtkui/UI.py:347
 msgid "Loaded"
 msgstr "Wczytano"
 
-#: ../conduit/gtkui/UI.py:415
+# rev: bez czy
+#: ../conduit/gtkui/UI.py:459
 #: ../conduit/hildonui/UI.py:127
 msgid "Synchronization in progress. Do you want to cancel it?"
 msgstr "Trwa synchronizacja. Czy na pewno anulować?"
 
-#: ../conduit/gtkui/UI.py:582
+#: ../conduit/gtkui/UI.py:626
 msgid "_Synchronize All"
 msgstr "_Synchronizuj wszystko"
 
-#: ../conduit/gtkui/UI.py:582
+#: ../conduit/gtkui/UI.py:626
 msgid "Synchronizes All Groups"
 msgstr "Synchronizuje wszyskie grupy"
 
-#: ../conduit/gtkui/UI.py:583
+#: ../conduit/gtkui/UI.py:627
 msgid "_Cancel Synchronization"
 msgstr "_Anuluj synchronizację"
 
-#: ../conduit/gtkui/UI.py:583
+#: ../conduit/gtkui/UI.py:627
 msgid "Cancels Currently Synchronizing Groups"
 msgstr "Przerywa synchronizację grup"
 
-#: ../conduit/gtkui/UI.py:584
+#: ../conduit/gtkui/UI.py:628
 msgid "_Quit"
 msgstr "Za_kończ"
 
-#: ../conduit/gtkui/UI.py:584
+#: ../conduit/gtkui/UI.py:628
 msgid "Close Conduit"
 msgstr "Zamyka program Conduit"
 
-#: ../conduit/gtkui/UI.py:585
+#: ../conduit/gtkui/UI.py:629
 msgid "_About"
 msgstr "_O programie"
 
-#: ../conduit/gtkui/UI.py:585
+#: ../conduit/gtkui/UI.py:629
 msgid "About Conduit"
 msgstr "O programie Conduit"
 
-#: ../conduit/gtkui/UI.py:625
+#: ../conduit/gtkui/UI.py:669
 msgid "Synchronization Error"
 msgstr "Błąd podczas synchronizacji"
 
-#: ../conduit/gtkui/UI.py:628
+#: ../conduit/gtkui/UI.py:672
 msgid "Synchronization Complete"
 msgstr "Synchronizacja zakończona"
 
-#: ../conduit/gtkui/UI.py:644
+#: ../conduit/gtkui/UI.py:688
 msgid "Synchronizing"
 msgstr "Synchronizacja"
 
@@ -604,6 +611,7 @@ msgstr "Elementy"
 msgid "<i>Contains %s files</i>"
 msgstr "<i>Zawiera %s plików</i>"
 
+# rev: a nie dołącz?
 #: ../conduit/modules/FileModule/FileConfiguration.py:228
 msgid "Include file..."
 msgstr "Również plik..."
@@ -612,6 +620,7 @@ msgstr "Również plik..."
 msgid "All files"
 msgstr "Wszystkie pliki"
 
+# rev: a nie dołącz?
 #: ../conduit/modules/FileModule/FileConfiguration.py:253
 msgid "Include folder..."
 msgstr "Również katalog..."
@@ -728,6 +737,7 @@ msgstr "Synchronizacja zdjęć z programem F-Spot"
 msgid "F-Spot DBus interface is operating in read only mode"
 msgstr "Interfejs DBus programu F-Spot działa w trybie \"tylko do odczytu\""
 
+# rev: a nie wyświetlanie?
 #: ../conduit/modules/FspotModule/config.glade.h:1
 msgid "<b>Return Photos Tagged With</b>"
 msgstr "<b>Wyświetl zdjęcia z etykietami</b>"
@@ -740,6 +750,7 @@ msgstr "Utwórz etykiety:"
 msgid "GConf Settings"
 msgstr "Ustawienia GConf"
 
+# rev: środowiska, nie pulpitu
 #: ../conduit/modules/GConfModule/GConfModule.py:22
 msgid "Sync your desktop preferences"
 msgstr "Synchronizacja ustawień pulpitu"
@@ -762,41 +773,41 @@ msgstr "Picasa"
 msgid "Sync your Google Picasa photos"
 msgstr "Synchronizacja zdjęć z serwisem Picasa"
 
-#: ../conduit/modules/GoogleModule/GoogleModule.py:793
+#: ../conduit/modules/GoogleModule/GoogleModule.py:795
 msgid "Google Contacts"
 msgstr "Kontakty Google"
 
-#: ../conduit/modules/GoogleModule/GoogleModule.py:794
+#: ../conduit/modules/GoogleModule/GoogleModule.py:796
 msgid "Sync your Gmail contacts"
 msgstr "Synchronizacja kontaktów Gmail"
 
-#: ../conduit/modules/GoogleModule/GoogleModule.py:1050
+#: ../conduit/modules/GoogleModule/GoogleModule.py:1052
 #: ../conduit/modules/GoogleModule/documents-config.glade.h:5
 msgid "Google Documents"
 msgstr "Dokumenty Google"
 
-#: ../conduit/modules/GoogleModule/GoogleModule.py:1051
+#: ../conduit/modules/GoogleModule/GoogleModule.py:1053
 msgid "Sync your Google Documents"
 msgstr "Synchronizacja dokumentów Google"
 
-#: ../conduit/modules/GoogleModule/GoogleModule.py:1331
+#: ../conduit/modules/GoogleModule/GoogleModule.py:1333
 #: ../conduit/modules/RhythmboxModule/RhythmboxModule.py:57
 msgid "Unknown"
 msgstr "Nieznany"
 
-#: ../conduit/modules/GoogleModule/GoogleModule.py:1332
+#: ../conduit/modules/GoogleModule/GoogleModule.py:1334
 msgid "miscellaneous"
 msgstr "różne"
 
-#: ../conduit/modules/GoogleModule/GoogleModule.py:1333
+#: ../conduit/modules/GoogleModule/GoogleModule.py:1335
 msgid "No description."
 msgstr "Brak opisu."
 
-#: ../conduit/modules/GoogleModule/GoogleModule.py:1342
+#: ../conduit/modules/GoogleModule/GoogleModule.py:1344
 msgid "YouTube"
 msgstr "YouTube"
 
-#: ../conduit/modules/GoogleModule/GoogleModule.py:1343
+#: ../conduit/modules/GoogleModule/GoogleModule.py:1345
 msgid "Sync data from YouTube"
 msgstr "Synchronizowanie danych z serwisem YouTube"
 
@@ -892,6 +903,7 @@ msgstr "niezmienione"
 msgid "N800 Files"
 msgstr "Pliki N800"
 
+# rev: katalogów
 #: ../conduit/modules/N800Module/N800Module.py:122
 msgid "Synchronizes files/folders to a N800 device"
 msgstr "Synchronizacja plików/folderów z urządzeniam N800"
@@ -914,7 +926,6 @@ msgstr "Synchronizacja muzyki z urządzeniem N800"
 msgid "Music"
 msgstr "Muzyka"
 
-#. widea?
 #: ../conduit/modules/N800Module/N800Module.py:166
 msgid "N800 Videos"
 msgstr "Filmy wideo N800"
@@ -942,6 +953,7 @@ msgstr "Zdjęcie"
 msgid "Network"
 msgstr "Sieć"
 
+# rev: nie po prostu "Synchronizacja przez sieć" ?
 #: ../conduit/modules/NetworkModule/Server.py:148
 msgid "Enable synchronization via network"
 msgstr "Włączenie synchronizacji przez sieć"
@@ -950,6 +962,7 @@ msgstr "Włączenie synchronizacji przez sieć"
 msgid "Rhythmbox Music"
 msgstr "Odtwarzacz muzyki Rhythmbox"
 
+# rev: utworów
 #: ../conduit/modules/RhythmboxModule/RhythmboxModule.py:38
 msgid "Sync songs from your Rhythmbox playlists"
 msgstr "Synchronizacja piosenek z listami odtwarzania programu Rhythmbox"
@@ -992,4 +1005,7 @@ msgstr "Zoto"
 #: ../conduit/modules/ZotoModule/ZotoModule.py:155
 msgid "Sync your Zoto photos"
 msgstr "Synchronizacja zdjęć z serwisem Zoto"
+
+#~ msgid "Use built in Web browser"
+#~ msgstr "Korzystanie z wbudowanej przeglądarki"
 
