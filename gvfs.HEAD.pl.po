@@ -14,8 +14,8 @@ msgstr ""
 "Project-Id-Version: gvfs\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2008-08-07 20:41+0000\n"
-"PO-Revision-Date: 2008-08-12 00:07+0100\n"
-"Last-Translator: wadim dziedzic <wdziedzic@aviary,pl>\n"
+"PO-Revision-Date: 2008-08-12 18:19+0100\n"
+"Last-Translator: Tomasz Dominikowski <dominikowski@gmail.com>\n"
 "Language-Team: Aviary.pl <gnomepl@aviary.pl>\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -42,7 +42,6 @@ msgstr "Niepoprawna wartość zwrotna od query_info"
 msgid "Couldn't get stream file descriptor"
 msgstr "Nie można uzyskać opisu pliku strumienia"
 
-# REV: ja bym dał "zwrócona wartość z funkcji open"
 #: ../client/gdaemonfile.c:926
 #: ../client/gdaemonfile.c:996
 #: ../client/gdaemonfile.c:1055
@@ -52,7 +51,7 @@ msgstr "Nie można uzyskać opisu pliku strumienia"
 #: ../client/gdaemonfile.c:2312
 #: ../client/gdaemonfile.c:2571
 msgid "Invalid return value from open"
-msgstr "Niepoprawna wartość zwrotna od open"
+msgstr "Niepoprawna zwrócona wartość z funkcji open"
 
 #: ../client/gdaemonfile.c:1006
 #: ../client/gdaemonfile.c:1065
@@ -62,43 +61,37 @@ msgstr "Niepoprawna wartość zwrotna od open"
 msgid "Didn't get stream file descriptor"
 msgstr "Nie otrzymano opisu pliku strumienia"
 
-# REV: j.w.
 #: ../client/gdaemonfile.c:1238
 #: ../client/gdaemonfile.c:1255
 msgid "Invalid return value from call"
-msgstr "Niepoprawna wartość zwrotna od call"
+msgstr "Niepoprawna zwrócona wartość z funkcji call"
 
-# REV: j.w.
 #: ../client/gdaemonfile.c:1534
 msgid "Invalid return value from get_filesystem_info"
-msgstr "Niepoprawna wartość zwrotna od get_filesystem_info"
+msgstr "Niepoprawna zwrócona wartość z funkcji get_filesystem_info"
 
-# REV: nie czasem "zawierającego" ?
 #. translators: this is an error message when there is no user visible "mount" object
 #. corresponding to a particular path/uri
 #: ../client/gdaemonfile.c:1647
 msgid "Could not find enclosing mount"
-msgstr "Nie można odnaleźć zawartego punktu montowania"
+msgstr "Nie można odnaleźć zawierającego punktu montowania"
 
 #: ../client/gdaemonfile.c:1677
 #, c-format
 msgid "Invalid filename %s"
 msgstr "Niepoprawna nazwa pliku %s"
 
-# REV: j.w.
 #: ../client/gdaemonfile.c:1719
 msgid "Invalid return value from query_filesystem_info"
-msgstr "Niepoprawna wartość zwrotna od query_filesystem_info"
+msgstr "Niepoprawna zwrócona wartość z funkcji query_filesystem_info"
 
-# REV: j.w.
 #: ../client/gdaemonfile.c:2124
 msgid "Invalid return value from monitor_dir"
-msgstr "Niepoprawna wartość zwrotna od monitor_dir"
+msgstr "Niepoprawna zwrócona wartość z funkcji monitor_dir"
 
-# REV: j.w.
 #: ../client/gdaemonfile.c:2173
 msgid "Invalid return value from monitor_file"
-msgstr "Niepoprawna wartość zwrotna od monitor_file"
+msgstr "Niepoprawna zwrócona wartość z funkcji monitor_file"
 
 #: ../client/gdaemonfileinputstream.c:450
 #: ../client/gdaemonfileinputstream.c:458
@@ -170,17 +163,15 @@ msgstr "Błąd podczas uzyskiwania informacji o montowaniu: %s"
 msgid "Error connecting to daemon: %s"
 msgstr "Błąd podczas łączenia z usługą: %s"
 
-# REV: socket to nie wtyczka, a gniazdo
 #: ../common/gsysutils.c:136
 #, c-format
 msgid "Error creating socket: %s"
-msgstr "Błąd podczas tworzenia wtyczki: %s"
+msgstr "Błąd podczas tworzenia gniazda: %s"
 
-# REV: j.w.
 #: ../common/gsysutils.c:174
 #, c-format
 msgid "Error connecting to socket: %s"
-msgstr "Błąd podczas łączenia z wtyczką: %s"
+msgstr "Błąd podczas łączenia z gniazdem: %s"
 
 #: ../common/gvfsdaemonprotocol.c:515
 msgid "Invalid file info format"
@@ -208,24 +199,21 @@ msgstr "Usługa systemu plików %s"
 msgid "Error: %s"
 msgstr "Błąd: %s"
 
-# REV: zwykle dajemy chyba "Użycie"
 #: ../daemon/daemon-main.c:131
 #, c-format
 msgid "Usage: %s --spawner dbus-id object_path"
-msgstr "Użytkowanie: %s --spawner dbus-id ścieżka_obiektu"
+msgstr "Użycie: %s --spawner dbus-id ścieżka_obiektu"
 
-# REV: j.w.
 #: ../daemon/daemon-main.c:155
 #: ../daemon/daemon-main.c:173
 #, c-format
 msgid "Usage: %s key=value key=value ..."
-msgstr "Użytkowanie: %s key=wartość key=wartość ..."
+msgstr "Użycie: %s key=wartość key=wartość ..."
 
-# REV: podano
 #: ../daemon/daemon-main.c:171
 #, c-format
 msgid "No mount type specified"
-msgstr "Nie podanu typu montowania"
+msgstr "Nie podano typu montowania"
 
 #: ../daemon/daemon-main.c:241
 #, c-format
@@ -287,11 +275,10 @@ msgstr "Plik nie istnieje"
 msgid "The file is not a directory"
 msgstr "Plik nie jest katalogiem"
 
-# REV: jak nazwa backendu to może rzeczownik? "Nagrywanie" ?
 #. Translators: This is the name of the backend
 #: ../daemon/gvfsbackendburn.c:346
 msgid "Burn"
-msgstr "Zapisz"
+msgstr "Nagrywanie"
 
 #: ../daemon/gvfsbackendburn.c:376
 msgid "Unable to create temporary directory"
@@ -333,10 +320,9 @@ msgstr "Asystent CD/DVD"
 msgid "File exists"
 msgstr "Plik istnieje"
 
-# REV: na ścieżce?
 #: ../daemon/gvfsbackendburn.c:845
 msgid "No such file or directory in target path"
-msgstr "Nie ma takiego pliku lub katalogu w ścieżce docelowej"
+msgstr "Nie ma takiego pliku lub katalogu na ścieżce docelowej"
 
 #: ../daemon/gvfsbackendburn.c:868
 msgid "Can't copy directory over directory"
@@ -383,11 +369,10 @@ msgstr "Nie określono napędu"
 msgid "Cannot find drive %s"
 msgstr "Nie można odnaleźć napędu %s"
 
-# REV: plików dźwiękowych
 #: ../daemon/gvfsbackendcdda.c:286
 #, c-format
 msgid "Drive %s does not contain audio files"
-msgstr "Napęd %s nie zawiera ścieżek dźwiękowych"
+msgstr "Napęd %s nie zawiera plików dźwiękowych"
 
 #. Translator: %s is the device the disc is inserted into
 #: ../daemon/gvfsbackendcdda.c:294
@@ -747,10 +732,9 @@ msgstr "Aparat"
 msgid "Audio Player"
 msgstr "Odtwarzacz muzyki"
 
-# REV: ? - może "w celu uzyskania" ?
 #: ../daemon/gvfsbackendgphoto2.c:1325
 msgid "Error listing folders to figure out ignore prefix"
-msgstr "Błąd podczas przedstawiania katalogów, aby uzyskać prefiks ignorowania"
+msgstr "Błąd podczas przedstawiania katalogów w celu uzyskania prefiksu ignorowania"
 
 #: ../daemon/gvfsbackendgphoto2.c:1442
 msgid "No device specified"
@@ -760,10 +744,9 @@ msgstr "Nie określono urządzenia"
 msgid "Cannot create gphoto2 context"
 msgstr "Nie można utworzyć kontekstu gphoto2"
 
-# REV: trochę śmieszne - może "podczas tworzenia obiektu aparatu" ?
 #: ../daemon/gvfsbackendgphoto2.c:1469
 msgid "Error creating camera"
-msgstr "Błąd podczas tworzenia aparatu cyfrowego"
+msgstr "Błąd podczas tworzenia obiektu aparatu cyfrowego"
 
 #: ../daemon/gvfsbackendgphoto2.c:1482
 msgid "Error creating port info list"
@@ -795,7 +778,6 @@ msgstr "Błąd podczas inicjowania aparatu cyfrowego"
 msgid "gphoto2 mount on %s"
 msgstr "Punkt montowania gphoto2 na %s"
 
-# REV: o cyfrowym aparacie nic nie pisze w oryginale ;-)
 #: ../daemon/gvfsbackendgphoto2.c:1627
 msgid "No camera specified"
 msgstr "Nie określono aparatu cyfrowego"
@@ -809,15 +791,13 @@ msgstr "System plików jest zajęty: %d otwartych plików"
 msgid "Error creating file object"
 msgstr "Błąd podczas tworzenia obiektu pliku"
 
-# REV: może lepiej "pobierania pliku"?
 #: ../daemon/gvfsbackendgphoto2.c:1730
 msgid "Error getting file"
-msgstr "Błąd podczas uzyskiwania pliku"
+msgstr "Błąd podczas pobierania pliku"
 
-# REV: j.w.
 #: ../daemon/gvfsbackendgphoto2.c:1739
 msgid "Error getting data from file"
-msgstr "Błąd podczas uzyskiwania danych z pliku"
+msgstr "Błąd podczas pobierania danych z pliku"
 
 #: ../daemon/gvfsbackendgphoto2.c:1833
 #: ../daemon/gvfsbackendgphoto2.c:3007
@@ -894,10 +874,9 @@ msgstr "Nie można uzyskać danych pliku, aby dodać do"
 msgid "Error writing file"
 msgstr "Błąd podczas zapisywania pliku"
 
-# REV: raczej "(nie ten sam katalog)"
 #: ../daemon/gvfsbackendgphoto2.c:3153
 msgid "Not supported (not same directory)"
-msgstr "Nieobsługiwane (nie w tym samym katalogu)"
+msgstr "Nieobsługiwane (nie ten sam katalog)"
 
 #: ../daemon/gvfsbackendgphoto2.c:3165
 msgid "Not supported (src is dir, dst is dir)"
@@ -1016,7 +995,6 @@ msgstr "Zaloguj mimo wszystko"
 msgid "Cancel Login"
 msgstr "Anuluj logowanie"
 
-# REV: przecinek przed "należy"
 #: ../daemon/gvfsbackendsftp.c:939
 #, c-format
 msgid ""
@@ -1028,7 +1006,7 @@ msgstr ""
 "Tożsamość zdalnego komputera (%s) jest nieznana.\n"
 "To się zdarza, jeśli do komputera zalogowano się po raz pierwszy.\n"
 "\n"
-"Tożsamość wysłana przez zdalny komputer to %s. Aby uzyskać całkowitą pewność dotyczącą bezpieczeństwa należy się skontaktować z administratorem systemu."
+"Tożsamość wysłana przez zdalny komputer to %s. Aby uzyskać całkowitą pewność dotyczącą bezpieczeństwa, należy się skontaktować z administratorem systemu."
 
 #: ../daemon/gvfsbackendsftp.c:959
 msgid "Login dialog cancelled"
@@ -1241,10 +1219,9 @@ msgstr "Działanie nieobsługiwane przez mechanizm przetwarzający"
 msgid "Symlinks not supported by backend"
 msgstr "Dowiązania symboliczne nieobsługiwane przez mechanizm przetwarzający"
 
-# REV: lepiej pasowałoby "komunikat"
 #: ../daemon/gvfsjobsetattribute.c:123
 msgid "Invalid dbus message"
-msgstr "Błędna wiadomość dbus"
+msgstr "Błędny komunikat dbus"
 
 #: ../daemon/main.c:45
 msgid "Replace old daemon."
@@ -1285,10 +1262,9 @@ msgstr "%s: %s"
 msgid "Try \"%s --help\" for more information."
 msgstr "Więcej informacji: \"%s --help\""
 
-# REV: nie arumenty, a parametry
 #: ../daemon/mount.c:439
 msgid "Invalid arguments from spawned child"
-msgstr "Niepoprawne argumenty od utworzonego elementu zależnego"
+msgstr "Niepoprawne parametry od utworzonego elementu zależnego"
 
 #: ../daemon/mount.c:740
 #, c-format
@@ -1490,12 +1466,11 @@ msgstr "Mieszana płyta CD-Audio/Dane"
 msgid "%s Media"
 msgstr "Nośnik %s"
 
-# REV: "Dane zaszyfrowane 512MB" ? może w innym szyku byłoby lepiej?
 #. Translators: %s is the size of the volume (e.g. 512 MB)
 #: ../monitor/hal/ghalvolume.c:221
 #, c-format
 msgid "%s Encrypted Data"
-msgstr "Dane zaszyfrowane %s"
+msgstr "%s zaszyfrowanych danych"
 
 #: ../monitor/hal/hal-utils.c:40
 #: ../monitor/gphoto2/hal-utils.c:40
@@ -1651,17 +1626,15 @@ msgstr "Płyta HD DVD-RW"
 msgid "Blank HD DVD-RW Disc"
 msgstr "Pusta płyta HD DVD-RW"
 
-# REV: To raczej dysk, a nie płyta (dysk magnetooptyczny)
 #: ../monitor/hal/hal-utils.c:56
 #: ../monitor/gphoto2/hal-utils.c:56
 msgid "MO Disc"
-msgstr "Płyta MO"
+msgstr "Dysk MO"
 
-# REV: j.w.
 #: ../monitor/hal/hal-utils.c:56
 #: ../monitor/gphoto2/hal-utils.c:56
 msgid "Blank MO Disc"
-msgstr "Pusta płyta MO"
+msgstr "Pusty dysk MO"
 
 #: ../monitor/hal/hal-utils.c:57
 #: ../monitor/gphoto2/hal-utils.c:57
@@ -1701,22 +1674,19 @@ msgstr "%s: %s: błąd podczas odczytywania: %s\n"
 msgid "%s: %s:error closing: %s\n"
 msgstr "%s: %s:błąd podczas zamykania: %s\n"
 
-# REV: concatenate, to znaczy raczej - dołączenie, dopisanie
 #: ../programs/gvfs-cat.c:136
 msgid "LOCATION... - concatenate LOCATIONS to standard output."
-msgstr "POŁOŻENIE... - powiązanie POŁOŻEŃ do standardowego wyjścia."
+msgstr "POŁOŻENIE... - dołączenie POŁOŻEŃ do standardowego wyjścia."
 
-# REV: j.w.
 #. Translators: this message will appear after the usage string
 #. and before the list of options.
 #: ../programs/gvfs-cat.c:141
 msgid "Concatenate files at locations and print to the standard output. Works just like the traditional cat utility, but using gvfs location instead local files: for example you can use something like smb://server/resource/file.txt as location to concatenate."
-msgstr "Powiązanie plików w położeniach i odpowiedź na standardowe wyjście. Działa jak zwykłe narzędzie cat, ale używając położenia gvfs zamiast plików lokalnych: przykładowo można użyć czegoś takiego jak smb://serwer/zasób/plik.txt jako położenia do powiązania."
+msgstr "Dołączenie plików w położeniach i odpowiedź na standardowe wyjście. Działa jak zwykłe narzędzie cat, ale używając położenia gvfs zamiast plików lokalnych: przykładowo można użyć czegoś takiego jak smb://serwer/zasób/plik.txt jako położenia do powiązania."
 
-# REV: może "w razie potrzeby..."
 #: ../programs/gvfs-cat.c:148
 msgid "Note: just pipe through cat if you need its formatting option like -n, -T or other."
-msgstr "Uwaga: jeśli potrzeba opcji formatowania -n, -T lub innych, należy tunelować przez cat."
+msgstr "Uwaga: w razie potrzeby opcji formatowania -n, -T lub innych, należy tunelować przez cat."
 
 #. Translators: the %s is the program name. This error message
 #. means the user is calling gvfs-cat without any argument.
