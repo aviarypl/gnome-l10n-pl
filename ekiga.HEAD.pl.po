@@ -13,8 +13,8 @@ msgstr ""
 "Project-Id-Version: ekiga\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2008-07-10 08:10+0000\n"
-"PO-Revision-Date: 2008-07-15 13:19+0100\n"
-"Last-Translator: Tomasz Dominikowski <dominikowski@gmail.com>\n"
+"PO-Revision-Date: 2008-08-14 00:34+0100\n"
+"Last-Translator: wadim dziedzic <nikdo@aviary.pl>\n"
 "Language-Team: Aviary.pl <gnomepl@aviary.pl>\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -28,10 +28,12 @@ msgstr ""
 msgid "Ekiga Softphone"
 msgstr "Telefon Ekiga"
 
+# REV: a nie czasem VoIP i wideokonferencje?
 #: ../ekiga.desktop.in.in.h:2
 msgid "IP Telephony, VoIP and Video Conferencing"
 msgstr "Telefonia IP, konferencje VoIP i wideo"
 
+# REV: a są jakieś inne "niegłosowe" rozmowy? ;-)
 #: ../ekiga.desktop.in.in.h:3
 msgid "Talk to people over the Internet"
 msgstr "Rozmowy głosowe poprzez Internet"
@@ -44,6 +46,7 @@ msgstr "0: 56Kb/s, 1: ISDN, 2:DSL, 3: LAN, 4: własne"
 msgid "Allow Ekiga to fall back to software scaling the picture-in-picture if hardware support is not available. If this is set to false, Ekiga will not try to open the PIP if hardware support is not available."
 msgstr "Zezwolenie na awaryjny powrót do skalowania programowego obrazu w obrazie, jeśli obsługa sprzętowa jest niedostępna. Jeśli ustawione na \"false\", program Ekiga nie otworzy PIP, jeśli obsługa sprzętowa jest niedostępna."
 
+# REV: jeśli to checkbox, to starczy "Programowe skalowanie..."
 #: ../ekiga.schemas.in.in.h:3
 msgid "Allow picture-in-picture software scaling"
 msgstr "Zezwolenie na programowe skalowanie obrazu w obrazie"
@@ -109,6 +112,7 @@ msgstr "Wysyłanie DTMF"
 msgid "Disable video hardware acceleration"
 msgstr "Wyłączenie sprzętowego przyspieszania obrazu"
 
+# REV: wywołania czy może rozmowy lub połączenia?
 #: ../ekiga.schemas.in.in.h:19
 msgid "Display a popup window when receiving a call"
 msgstr "Wyświetlenie okna przy odbieraniu wywołania"
@@ -145,18 +149,22 @@ msgstr "Proszę wprowadzić liczbę sekund po których program Ekiga spróbuje o
 msgid "Enter your full name"
 msgstr "Proszę wprowadzić imię i nazwisko"
 
+# REV: j.w. może lepiej - rozmowy albo połączenia zamiast wywołań?
 #: ../ekiga.schemas.in.in.h:28
 msgid "Forward calls to host"
 msgstr "Przekazywanie wywołań do komputera"
 
+# REV: j.w.
 #: ../ekiga.schemas.in.in.h:29
 msgid "Forward calls to the given host if busy"
 msgstr "Przekazywanie wywołań do podanego komputera w przypadku zajętości"
 
+# REV: j.w.
 #: ../ekiga.schemas.in.in.h:30
 msgid "Forward calls to the given host if no answer"
 msgstr "Przekazywanie wywołań do podanego komputera w przypadku braku odpowiedzi"
 
+# REV: a nie czasem liczba klatek (wideo)?
 #: ../ekiga.schemas.in.in.h:31
 #: ../src/gui/preferences.cpp:1014
 msgid "Frame Rate"
@@ -175,6 +183,7 @@ msgstr "Określa, czy program Ekiga zostanie uruchomiony jako ukryty pod warunki
 msgid "If enabled, a popup window will be displayed when receiving an incoming call"
 msgstr "Określa, czy przy każdym otrzymaniu wywołania powinno być wyświetlane okno"
 
+# REV: o! tu mamy ładnie call=połączenie
 #: ../ekiga.schemas.in.in.h:35
 msgid "If enabled, all incoming calls will be forwarded to the host that is specified in the field below"
 msgstr "Określa, czy wszystkie połączenia przychodzące będą zawsze przekazywane do komputera wprowadzonego w poniższym polu"
@@ -236,6 +245,7 @@ msgstr "Maksymalny rozmiar bufora synchronizacji"
 msgid "NAT Binding Timeout"
 msgstr "Czas dowiązania NAT"
 
+# REV: raczej limit czasu, a nie opóźnienie
 #: ../ekiga.schemas.in.in.h:50
 msgid "No answer timeout"
 msgstr "Opóźnienie braku odpowiedzi"
@@ -269,6 +279,7 @@ msgstr "Rodzaj urządzenia wyjściowego"
 msgid "Place windows displaying video above other windows during calls"
 msgstr "Umieszczanie okien wyświetlających wideo podczas połączenia ponad innymi oknami"
 
+# REV: a może tu i poniże lepsza będzie forma niedokonana? "Odtwarzanie"?
 #: ../ekiga.schemas.in.in.h:58
 #: ../src/gui/preferences.cpp:1405
 msgid "Play busy tone"
@@ -332,6 +343,7 @@ msgstr "Położenie na ekranie okna preferencji"
 msgid "Position on the screen of the video settings window"
 msgstr "Położenie na ekranie okna ustawień obrazu"
 
+# REV: limit czasu
 #: ../ekiga.schemas.in.in.h:73
 msgid "Registration timeout"
 msgstr "Ograniczenie czasowe rejestracji"
@@ -348,6 +360,7 @@ msgstr "Rozmiar okna ze zdalnym obrazem wideo"
 msgid "Revision of the schema file"
 msgstr "Wersja pliku schematu"
 
+# REV: lepiej "Zapisywanie stanu grup w liście kontaktów" ?
 #: ../ekiga.schemas.in.in.h:77
 msgid "Roster view saving group status"
 msgstr "Widok listy zapisywanie stanu grupy"
@@ -380,10 +393,12 @@ msgstr "Wybór rozmiaru przesyłanego obrazu: mały (QCIF 176x144) lub duży (CI
 msgid "Select the video input device to use. If an error occurs when using this device a test picture will be transmitted."
 msgstr "Wybór wejściowego urządzenia wideo. Jeżeli wystąpi błąd podczas użycia tego urządzenia, zostanie wysłany obraz testowy."
 
+# REV: nie czasem "Wyświetlanie" ?
 #: ../ekiga.schemas.in.in.h:84
 msgid "Show offline contacts"
 msgstr "Wyświetla kontakty rozłączone"
 
+# REV: j.w.
 #: ../ekiga.schemas.in.in.h:85
 #: ../src/gui/main.cpp:1619
 msgid "Show the call panel"
@@ -785,6 +800,7 @@ msgstr "Telefon _komórkowy:"
 msgid "_Pager:"
 msgstr "_Pager:"
 
+# REV: dlaczego w liczbie pojedynczej jest inny szyk?
 #: ../lib/engine/addressbook/evolution/evolution-book.cpp:88
 #: ../lib/engine/addressbook/ldap/ldap-book.cpp:550
 msgid "user found"
@@ -890,10 +906,12 @@ msgstr "Nie można połączyć się z serwerem"
 msgid "Could not search"
 msgstr "Nie można wyszukać"
 
+# REV: oczekiwaniE
 #: ../lib/engine/addressbook/ldap/ldap-book.cpp:482
 msgid "Waiting for search results"
 msgstr "Oczekiwania na wyniki wyszukiwania"
 
+# REV: nie jest to czasem tytuł/nazwa okna? do sprawdzenia?
 #: ../lib/engine/addressbook/ldap/ldap-book.cpp:564
 msgid "Edit LDAP directory"
 msgstr "Modyfikuj katalog LDAP"
@@ -965,6 +983,7 @@ msgstr "_Wyślij"
 msgid "You say:\n"
 msgstr "Użytkownik powiedział(a):\n"
 
+# REV: mówi? (odpada od razu problem płci)
 #: ../lib/engine/gui/gtk-frontend/chat-window-page.cpp:968
 msgid "says:"
 msgstr "powiedział(a):"
@@ -978,6 +997,7 @@ msgstr "Wyczyść"
 msgid "Neighbours"
 msgstr "Sąsiedzi"
 
+# REV: do sprawdzenia czy to czasem nie tytuł/nagłówek okna
 #: ../lib/engine/presence/local-roster/local-presentity.cpp:218
 msgid "Edit roster element"
 msgstr "Modyfikuje element listy"
@@ -1001,6 +1021,7 @@ msgstr "Wybór grup:"
 msgid "Add to local roster"
 msgstr "Dodaje do lokalnej listy"
 
+# REV: może "lista kontaktów" (jeśli tak, to trzeba przejrzeć cały plik)
 #: ../lib/engine/presence/local-roster/local-heap.cpp:102
 msgid "Local roster"
 msgstr "Lokalna lista"
@@ -1046,11 +1067,13 @@ msgstr "Otwieranie urządzenia do zapisu"
 msgid "Failed to open the device"
 msgstr "Nie można otworzyć urządzenia"
 
+# REV: proszę sprawdzić
 #: ../src/devices/audio.cpp:294
 #, c-format
 msgid "Impossible to open the selected audio device (%s) for recording. Please check your audio setup, the permissions and that the device is not busy."
 msgstr "Nie można otworzyć wybranego urządzenia dźwiękowego (%s) do rejestrowania. Sprawdź ustawienia dźwięku, uprawnienia oraz czy urządzenie nie jest zajęte."
 
+# REV: proszę sprawdzić
 #: ../src/devices/audio.cpp:296
 #, c-format
 msgid "Impossible to open the selected audio device (%s) for playing. Please check your audio setup, the permissions and that the device is not busy."
@@ -1061,6 +1084,7 @@ msgstr "Nie można otworzyć wybranego urządzenia dźwiękowego (%s) do odtwarz
 msgid "Cannot use the audio device"
 msgstr "Nie można użyć urządzenia dźwiękowego"
 
+# REV: proszę sprawdzić
 #: ../src/devices/audio.cpp:312
 #, c-format
 msgid "The selected audio device (%s) was successfully opened but it is impossible to read data from this device. Please check your audio setup."
@@ -1070,10 +1094,12 @@ msgstr "Wybrane urządzenie dźwiękowe (%s) zostało otwarte, ale nie można od
 msgid "Recording your voice"
 msgstr "Nagrywanie głosu"
 
+# REV: może samo "odtwarzanie" starczy ?
 #: ../src/devices/audio.cpp:360
 msgid "Recording and playing back"
 msgstr "Nagrywanie i powtórne odtwarzanie"
 
+# REV: proszę sprawdzić
 #: ../src/devices/audio.cpp:381
 #, c-format
 msgid "The selected audio device (%s) was successfully opened but it is impossible to write data to this device. Please check your audio setup."
@@ -1090,6 +1116,7 @@ msgstr "Wybrane urządzenie dźwiękowe (%s) zostało otwarte, ale nie można za
 msgid "No device found"
 msgstr "Nie znaleziono urządzeń"
 
+# REV: dlaczego akurat "Ekiga patrzy"? ;-)
 #: ../src/devices/audio.cpp:495
 #, c-format
 msgid "Ekiga is now recording from %s and playing back to %s. Please say \"1, 2, 3, Ekiga rocks!\" in your microphone. You should hear yourself from the speakers after a four-second delay."
@@ -1122,15 +1149,18 @@ msgstr "Nieudane"
 msgid "_Disable"
 msgstr "_Wyłącz"
 
+# REV: ciekawe czy te 2 elementy razem występują... jeśli tak to trzeba inny accesske
 #: ../src/endpoints/opal-account.cpp:242
 msgid "_Enable"
 msgstr "_Włącz"
 
+# REV: do sprawdzenia czy to nie tytuł okna
 #: ../src/endpoints/opal-account.cpp:263
 #: ../src/endpoints/opal-bank.cpp:66
 msgid "Edit account"
 msgstr "Modyfikuje konto"
 
+# REV: dwukropek
 #: ../src/endpoints/opal-account.cpp:268
 #: ../src/endpoints/opal-bank.cpp:71
 msgid "Host"
@@ -1141,6 +1171,7 @@ msgstr "Komputer"
 msgid "User:"
 msgstr "Użytkownik:"
 
+# REV: "uwierzytelniania" ?
 #: ../src/endpoints/opal-account.cpp:270
 #: ../src/endpoints/opal-bank.cpp:73
 msgid "Authentication User:"
@@ -1151,6 +1182,7 @@ msgstr "Użytkownik uwierzytelniający:"
 msgid "Password:"
 msgstr "Hasło:"
 
+# REV: limit czsu?
 #: ../src/endpoints/opal-account.cpp:272
 #: ../src/endpoints/opal-bank.cpp:75
 msgid "Timeout:"
@@ -1197,6 +1229,7 @@ msgstr "Zdalny użytkownik przerwał połączenie"
 msgid "Remote user rejected the call"
 msgstr "Zdalny użytkownik odrzucił połączenie"
 
+# REV: dzwonienia?
 #: ../src/endpoints/opal-call.cpp:373
 msgid "Remote user has stopped calling"
 msgstr "Zdalny użytkownik zaprzestał wywołania"
@@ -1229,6 +1262,7 @@ msgstr "Brak wspólnego kodeka"
 msgid "Call forwarded"
 msgstr "Połączenie przekazane"
 
+# REV: może ładniej "Kontrola bezpieczeństwa"?
 #: ../src/endpoints/opal-call.cpp:397
 msgid "Security check failed"
 msgstr "Sprawdzenie bezpieczeństwa nie powiodło się"
@@ -1339,11 +1373,13 @@ msgid "Length required"
 msgstr "Wymagana długość"
 
 # td: Jednostka żądania zbyt duża?!
+# REV: tak - raczej "jednostka żądania"
 #: ../src/endpoints/sip.cpp:659
 msgid "Request entity too big"
 msgstr "Zbyt duże żądanie jednostki"
 
 # td: Żądanie zbyt długiego adresu URI?!
+# REV: raczej od końca: adres URI żądania
 #: ../src/endpoints/sip.cpp:663
 msgid "Request URI too long"
 msgstr "Zbyt długie żądanie adresu URI"
@@ -1413,6 +1449,7 @@ msgstr "Nieodszyfrowalne"
 msgid "Internal server error"
 msgstr "Wewnętrzny błąd serwera"
 
+# REV: DWie wielkie litery
 #: ../src/endpoints/sip.cpp:731
 msgid "Not implemented"
 msgstr "NIezaimplementowane"
@@ -1425,6 +1462,7 @@ msgstr "Niepoprawna bramka"
 msgid "Service unavailable"
 msgstr "Usługa niedostępna"
 
+# REV: ...limit czasu...
 #: ../src/endpoints/sip.cpp:743
 msgid "Server timeout"
 msgstr "Przekroczono czas oczekiwania na serwer"
@@ -1466,10 +1504,12 @@ msgstr "Zarejestrowano"
 msgid "Unregistered"
 msgstr "Niezarejestrowano"
 
+# REV: "nie można sie wyrejestrować" jakoś lepiej brzmi
 #: ../src/gui/accounts.cpp:184
 msgid "Could not unregister"
 msgstr "Nie można wyrejestrować sie"
 
+# REV: j.w.
 #: ../src/gui/accounts.cpp:190
 msgid "Could not register"
 msgstr "Nie można zarejestrować się"
@@ -1508,6 +1548,8 @@ msgstr "Konto"
 msgid "A"
 msgstr "A"
 
+# REV: logicznie byłoby, że konfiguracja nastąpi poprzez ODPOWIEDZENIE na kilka pytań ;-)
+# REV: 3 zdanie niepotrzebny przecinek
 #: ../src/gui/assistant.cpp:250
 msgid ""
 "This is the Ekiga general configuration assistant. The following steps will set up Ekiga by asking a few simple questions.\n"
@@ -1532,6 +1574,7 @@ msgstr "Informacje osobiste"
 msgid "Please enter your first name and your surname:"
 msgstr "Proszę wprowadzić swoje imię i nazwisko:"
 
+# REV: lepiej "podczas połączeń Z innym..."
 #: ../src/gui/assistant.cpp:307
 msgid "Your first name and surname will be used when connecting to other VoIP and videoconferencing software."
 msgstr "Imię i nazwisko będą używane podczas połączeń do innego oprogramowania do VoIP i wideokonferencji."
@@ -1548,6 +1591,7 @@ msgstr "Proszę wprowadzić swoją nazwę użytkownika:"
 msgid "Please enter your password:"
 msgstr "Proszę wprowadzić hasło:"
 
+# REV: przecinek przed lub niepotrzebny
 #: ../src/gui/assistant.cpp:403
 msgid ""
 "The username and password are used to login to your existing account at the ekiga.net free SIP service. If you do not have an ekiga.net SIP address yet, you may first create an account below. This will provide a SIP address that allows people to call you.\n"
@@ -1612,6 +1656,7 @@ msgstr "Wybór urządzenia dźwiękowego do dzwonienia:"
 msgid "The audio ringing device is the device  managed by the audio manager that will be used to play the ringing sound."
 msgstr "Urządzenie dźwiękowe do dzwonienia jest urządzeniem obsługiwanym przez menedżera dźwięku używanym do odtwarzania dźwięku dzwonienia."
 
+# REV: urządzeniA dźwiękowego
 #. ---
 #: ../src/gui/assistant.cpp:696
 msgid "Please choose the audio output device:"
@@ -1621,11 +1666,13 @@ msgstr "Wybór wyjściowego urządzenie dźwiękowego:"
 msgid "The audio output device is the device  managed by the audio manager that will be used to play audio."
 msgstr "Wyjściowe urządzenie dźwiękowe jest urządzeniem obsługiwanym przez menedżera dźwięku używanym do odtwarzania dźwięku."
 
+# REV: j.w.
 #. ---
 #: ../src/gui/assistant.cpp:717
 msgid "Please choose the audio input device:"
 msgstr "Wybór wejściowego urządzenie dźwiękowego:"
 
+# REV: dałbym "i" zamiast tego przecinka
 #: ../src/gui/assistant.cpp:725
 msgid "The audio input device is the device managed by the audio manager that will be used to record your voice."
 msgstr "Wejściowe urządzenie dźwiękowe jest urządzeniem używanym do zapisu głosu, zarządzanym przez menedżera dźwięku."
@@ -1675,10 +1722,14 @@ msgstr "Niniejszy program jest wolnym oprogramowaniem; można go rozprowadzać d
 msgid "This program is distributed in the hope that it will be useful, but WITHOUT ANY WARRANTY; without even the implied warranty of MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE. See the GNU General Public License for more details. You should have received a copy of the GNU General Public License along with this program; if not, write to the Free Software Foundation, Inc., 51 Franklin St, Fifth Floor, Boston, MA 02110-1301, USA."
 msgstr "Niniejszy program rozpowszechniany jest z nadzieją, iż będzie on użyteczny - jednak BEZ JAKIEJKOLWIEK GWARANCJI, nawet domyślnej gwarancji PRZYDATNOŚCI HANDLOWEJ albo PRZYDATNOŚCI DO OKREŚLONYCH ZASTOSOWAŃ. W celu uzyskania bliższych informacji należy zapoznać się z Powszechną Licencją Publiczną GNU. "
 
+# REV: przecinek i "i" - może zastąpić jedno i przez "oraz"
+# REV: niepotrzebny przecinek przed "pod warunkiem"
+# REV: wymogów _licencji_ GNU GPL
 #: ../src/gui/callbacks.cpp:173
 msgid "Ekiga is licensed under the GPL license and as a special exception, you have permission to link or otherwise combine this program with the programs OPAL, OpenH323 and PWLIB, and distribute the combination, without applying the requirements of the GNU GPL to the OPAL, OpenH323 and PWLIB programs, as long as you do follow the requirements of the GNU GPL for all the rest of the software thus combined."
 msgstr "Program Ekiga jest rozpowszechniany na licencji GPL ze specjalnym wyjątkiem, użytkownik ma prawo do linkowania lub innego sposobu łączenia tego programu z programami OPAL, OpenH323 i PWLIB, i rozpowszechniać te kombinacje bez zastosowywania wymogów GNU GPL do programów OPAL, OpenH323 i PWLIB, pod warunkiem stosowania się do wymogów GNU GPL dla reszty tak połączonego oprogramowania. "
 
+# REV: rok w pierwszej linijce
 #. Translators: Please write translator credits here, and
 #. * separate names with \n
 #: ../src/gui/callbacks.cpp:185
@@ -1771,6 +1822,7 @@ msgstr "Romowa odebrana"
 msgid "Missed call from"
 msgstr "Nieodebrana rozmowa od"
 
+# REV: przy > podczas
 #: ../src/gui/main.cpp:1078
 #, c-format
 msgid "Error while accessing video device %s"
@@ -1801,6 +1853,7 @@ msgstr ""
 "Sterownik nie obsługuje żadnego formatu koloru używanego przez program Ekiga.\n"
 " Aby ustalić, jakie palety są obsługiwane, proszę sprawdzić dokumentację sterownika jądra."
 
+# REV: frame rate = liczba klatek na sekunde
 #: ../src/gui/main.cpp:1101
 msgid "Error while setting the frame rate."
 msgstr "Błąd ustawiania liczby ramek."
@@ -1815,6 +1868,7 @@ msgstr "Błąd ustawiania rozmiaru ramki."
 msgid "Unknown error."
 msgstr "Nieznany błąd."
 
+# REV: przy > podczas
 #: ../src/gui/main.cpp:1166
 #, c-format
 msgid "Error while opening audio input device %s"
@@ -1824,6 +1878,7 @@ msgstr "Błąd przy otwieraniu wejściowego urządzenia dźwiękowego %s"
 msgid "Only silence will be transmitted."
 msgstr "Zostanie przesłana tylko cisza."
 
+# REV: możliwym rozwiązanieM
 #: ../src/gui/main.cpp:1173
 msgid "Unable to open the selected audio device for recording. In case it is a pluggable device it may be sufficient to reconnect it. If not, or if it still is not accessible, please check your audio setup, the permissions and that the device is not busy."
 msgstr "Nie można otworzyć wybranego urządzenia dźwiękowego (%s) do rejestrowania. Jeśli jest to zewnętrzne urządzenie możliwym rozwiązanie jest odłączenie i ponowne podłączenie urządzenia. Jeśli nie jest lub nadal jest niedostępne, to proszę sprawdzić ustawienia dźwięku, uprawnienia oraz czy urządzenie nie jest zajęte."
@@ -1832,20 +1887,24 @@ msgstr "Nie można otworzyć wybranego urządzenia dźwiękowego (%s) do rejestr
 msgid "The selected audio device was successfully opened but it is impossible to read data from this device. In case it is a pluggable device it may be sufficient to reconnect it. If not, or if it still is not accessible, please check your audio setup."
 msgstr "Wybrane urządzenie dźwiękowe zostało otwarte, ale nie można odczytać z niego danych. Proszę sprawdzić ustawienia dźwięku."
 
+# REV: przy > podczas
 #: ../src/gui/main.cpp:1251
 #, c-format
 msgid "Error while opening audio output device %s"
 msgstr "Błąd przy otwieraniu urządzenia dźwiękowego %s"
 
 # td: rozmowy przychodzącej?
+# REV: chyba jest ok
 #: ../src/gui/main.cpp:1254
 msgid "No incoming sound will be played."
 msgstr "Nie zostanie odtworzony dźwięk przychodzący."
 
+# REV: czegoś brakuje: "Jeśli nie jest lub nadal jest niedostępne..."
 #: ../src/gui/main.cpp:1258
 msgid "Unable to open the selected audio device for playing. In case it is a pluggable device it may be sufficient to reconnect it. If not, or if it still is not accessible, please check your audio setup, the permissions and that the device is not busy."
 msgstr "Nie można otworzyć wybranego urządzenia dźwiękowego do odtwarzania. Jeśli jest to zewnętrzne urządzenie możliwym rozwiązanie jest odłączenie i ponowne podłączenie urządzenia. Jeśli nie jest lub nadal jest niedostępne, to proszę sprawdzić ustawienia dźwięku, uprawnienia oraz czy urządzenie nie jest zajęte."
 
+# REV: j.w.
 #: ../src/gui/main.cpp:1262
 msgid "The selected audio device was successfully opened but it is impossible to write data from this device. In case it is a pluggable device it may be sufficient to reconnect it. If not, or if it still is not accessible, please check your audio setup."
 msgstr "Wybrane urządzenie dźwiękowe zostało otwarte, ale nie można zapisać do niego danych. Jeśli jest to zewnętrzne urządzenie możliwym rozwiązanie jest odłączenie i ponowne podłączenie urządzenia. Jeśli nie jest lub nadal jest niedostępne, to proszę sprawdzić ustawienia dźwięku."
@@ -1854,10 +1913,12 @@ msgstr "Wybrane urządzenie dźwiękowe zostało otwarte, ale nie można zapisa�
 msgid "Enter a URI on the left, and click this button to place a call"
 msgstr "Należy wprowadzić po lewej stronie adres URI, następnie nacisnąć ten przycisk, aby nawiązać połączenie"
 
+# REV: rozmowa tekstowa?
 #: ../src/gui/main.cpp:1522
 msgid "C_hat"
 msgstr "_Rozmowa"
 
+# REV: nie musi być tu czasem spójna forma z powyższym?
 #: ../src/gui/main.cpp:1524
 msgid "Ca_ll"
 msgstr "P_ołącz"
@@ -1931,6 +1992,7 @@ msgstr "Zakończ"
 msgid "Configuration Assistant"
 msgstr "Asystent konfiguracji"
 
+# REV: UruchAmia ?
 #: ../src/gui/main.cpp:1579
 msgid "Run the configuration assistant"
 msgstr "Uruchomia asystenta konfiguracji"
@@ -2024,6 +2086,7 @@ msgstr "Zwykły rozmiar"
 msgid "Fullscreen"
 msgstr "Pełny ekran"
 
+# REV: niepotrzebna kropka
 #: ../src/gui/main.cpp:1665
 msgid "Switch to fullscreen"
 msgstr "Tryb pełnoekranowy."
@@ -2048,11 +2111,13 @@ msgstr "Konto Komputer-Telefon"
 msgid "Manage your PC-To-Phone account"
 msgstr "Zarządzanie kontem Komputer-Telefon"
 
+# REV: _c ? czy się z czymś kłóci?
 #: ../src/gui/main.cpp:1686
 msgid "_Help"
 msgstr "P_omoc"
 
 # FXIME - manual czy podręcznik?
+# REV: podręcznik
 #: ../src/gui/main.cpp:1689
 #: ../src/gui/statusicon.cpp:436
 #: ../src/gui/statusicon.cpp:447
@@ -2073,6 +2138,7 @@ msgstr "Kontakty"
 msgid "Dialpad"
 msgstr "Panel wybierania"
 
+# REV: wideo?
 #: ../src/gui/main.cpp:1791
 msgid "Video Settings"
 msgstr "Ustawienia obrazu"
@@ -2117,10 +2183,12 @@ msgstr "Historia połączeń"
 msgid "_Retrieve Call"
 msgstr "Przy_wrócenie połączenia"
 
+# REV: dlaczego nie tryb rozkazujący?
 #: ../src/gui/main.cpp:3066
 msgid "Resume _Audio"
 msgstr "Wznowienie _dźwięku"
 
+# REV: j.w.
 #: ../src/gui/main.cpp:3068
 msgid "Resume _Video"
 msgstr "Wznowienie _wideo"
@@ -2208,6 +2276,7 @@ msgstr "Powoduje wywołanie przez Ekiga podanego adresu URI"
 msgid "No usable audio plugin detected"
 msgstr "Nie wykryto użytecznej wtyczki dźwiękowej"
 
+# REV: proszę upewnić się...
 #: ../src/gui/main.cpp:4386
 msgid "Ekiga didn't find any usable audio plugin. Make sure that your installation is correct."
 msgstr "Program Ekiga nie odnalazł żadnej użytecznej wtyczki dźwiękowej. Upewnij się, czy program jest poprawnie zainstalowany."
@@ -2216,6 +2285,7 @@ msgstr "Program Ekiga nie odnalazł żadnej użytecznej wtyczki dźwiękowej. Up
 msgid "No usable audio codecs detected"
 msgstr "Nie wykryto użytecznego kodeka dźwiękowego"
 
+# REV: j.w.
 #: ../src/gui/main.cpp:4390
 msgid "Ekiga didn't find any usable audio codec. Make sure that your installation is correct."
 msgstr "Program Ekiga nie odnalazł żadnej użytecznego kodeka dźwiękowego. Upewnij się, czy program jest poprawnie zainstalowany."
@@ -2224,6 +2294,8 @@ msgstr "Program Ekiga nie odnalazł żadnej użytecznego kodeka dźwiękowego. U
 msgid "Configuration database corruption"
 msgstr "Uszkodzenie bazy danych konfiguracji"
 
+# REV: waRtość
+# REV: "po angielsku" > "w języku angielskim"
 #: ../src/gui/main.cpp:4397
 #, c-format
 msgid ""
@@ -2292,10 +2364,12 @@ msgstr "Czas, po którym stan użytkownika jest ustawiany automatycznie na nieob
 msgid "Automatically set the user as away after the timeout has elapsed (in minutes)"
 msgstr "Automatyczne ustawienie stanu użytkownika na nieobecny po określonym czasie (w minutach)"
 
+# REV: połączeń?
 #: ../src/gui/preferences.cpp:433
 msgid "Call Forwarding"
 msgstr "Przekazywanie wywołań"
 
+# REV: połączeń
 #: ../src/gui/preferences.cpp:435
 msgid "_Always forward calls to the given host"
 msgstr "Stałe przekazywanie wywołań do podanego _komputera"
@@ -2304,6 +2378,7 @@ msgstr "Stałe przekazywanie wywołań do podanego _komputera"
 msgid "If enabled, all incoming calls will be forwarded to the host that is specified in the protocol settings"
 msgstr "Określa, czy wszystkie połączenia przychodzące będą przekazywane do komputera podanego w ustawieniach protokołu"
 
+# REV: wywołanie = połączenie
 #: ../src/gui/preferences.cpp:437
 msgid "Forward calls to the given host if _no answer"
 msgstr "Przekazywanie wywołań do podanego komputera w przypadku braku _odpowiedzi"
@@ -2312,6 +2387,7 @@ msgstr "Przekazywanie wywołań do podanego komputera w przypadku braku _odpowie
 msgid "If enabled, all incoming calls will be forwarded to the host that is specified in the protocol settings if you do not answer the call"
 msgstr "Określa, czy w przypadku braku odpowiedzi, wszystkie połączenia przychodzące będą przekazywane do komputera podanego w ustawieniach protokołu"
 
+# REV: wywołanie = połączenie
 #: ../src/gui/preferences.cpp:439
 msgid "Forward calls to the given host if _busy"
 msgstr "Przekazywanie wywołań do podanego komputera w przypadku _zajętości"
@@ -2325,6 +2401,7 @@ msgstr "Określa, czy w przypadku zajętości lub trybie nie przeszkadzać, wszy
 msgid "Call Options"
 msgstr "Opcje połączenia"
 
+# REV: limit czasu?
 #. Add all the fields
 #: ../src/gui/preferences.cpp:446
 msgid "Timeout to reject or forward unanswered incoming calls (in seconds):"
@@ -2553,14 +2630,17 @@ msgstr "Maksymalna _gęstość bitowa pasma wideo (w kbit/s):"
 msgid "The maximum video bitrate in kbits/s. The video quality and the number of transmitted frames per second (depends on codec) will be dynamically adjusted above their minimum during calls to try to minimize the bandwidth to the given value."
 msgstr "Maksymalna gęstość bitowa pasma wideo w kbit/s. Parametry jakości obrazu oraz liczby ramek przesyłanych w ciągu sekundy (zależy od kodeków) będą dynamicznie dopasowywane przy utrzymywaniu powyżej wartości minimalnych podczas rozmów, aby ograniczyć zajętość pasma do podanej wartości."
 
+# REV: jeśli to checkbox, to starczyłoby "Dźwięk podczas nowej..."
 #: ../src/gui/preferences.cpp:1414
 msgid "Play sound for new voice mails"
 msgstr "Odtworzenie dźwięku przy nowej poczcie głosowej"
 
+# REV: jeśli to checkbox, to starczyłoby "Dźwięk podczas nowej..."
 #: ../src/gui/preferences.cpp:1423
 msgid "Play sound for new instant messages"
 msgstr "Odtworzenie dźwięku przy nowej wiadomości"
 
+# REV: programu Ekiga
 #: ../src/gui/preferences.cpp:1452
 msgid "Ekiga Preferences"
 msgstr "Preferencje Ekiga"
@@ -2611,6 +2691,7 @@ msgstr "Wideo"
 msgid "PC-To-Phone Settings"
 msgstr "Ustawienia Komputer-Telefon"
 
+# REV: ... programu Ekiga
 #. Introduction label
 #: ../src/gui/tools.cpp:318
 msgid ""
@@ -2646,6 +2727,7 @@ msgstr "Załóż konto Ekiga Komputer-Telefon"
 msgid "Recharge the account"
 msgstr "Doładuj konto"
 
+# REV: prędzej balansu, ale też nie pasuje - "historę (stanu) konta" ?
 #: ../src/gui/tools.cpp:413
 msgid "Consult the balance history"
 msgstr "Sprawdź historię bilansu"
