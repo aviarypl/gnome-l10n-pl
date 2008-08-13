@@ -13,10 +13,10 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Banshee\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2008-07-31 21:37+0200\n"
-"PO-Revision-Date: 2008-08-11 23:29+0100\n"
-"Last-Translator: wadim dziedzic <wdziedzic@aviary,pl>\n"
-"Language-Team: Tomasz Dominikowski <gnomepl@aviary.pl>\n"
+"POT-Creation-Date: 2008-08-13 13:07+0200\n"
+"PO-Revision-Date: 2008-08-13 13:09+0100\n"
+"Last-Translator: Tomasz Dominikowski <dominikowski@gmail.com>\n"
+"Language-Team: Aviary.pl <gnomepl@aviary.pl>\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
@@ -246,7 +246,7 @@ msgstr "Nie można nagrać płyty CD"
 msgid "Brasero could not be started"
 msgstr "Brasero nie mógł zostać uruchomiony"
 
-#: ../src/Backends/Banshee.Gnome/Banshee.GnomeBackend/GnomeScreensaverManager.cs:69
+#: ../src/Backends/Banshee.Gnome/Banshee.GnomeBackend/GnomeScreensaverManager.cs:78
 msgid "Fullscreen video playback active"
 msgstr "Pełnoekranowe odtwarzanie wideo włączone"
 
@@ -608,21 +608,21 @@ msgstr "Wyszukiwanie multimediów"
 msgid "Scanning..."
 msgstr "Skanowanie..."
 
-#: ../src/Core/Banshee.Services/Banshee.Collection/ImportManager.cs:227
+#: ../src/Core/Banshee.Services/Banshee.Collection/ImportManager.cs:230
 #, csharp-format
 msgid "Scanning ({0} files)..."
 msgstr "Skanowanie ({0} plików)..."
 
-#: ../src/Core/Banshee.Services/Banshee.Collection/ImportManager.cs:262
+#: ../src/Core/Banshee.Services/Banshee.Collection/ImportManager.cs:266
 msgid "Importing Media"
 msgstr "Importowanie multimediów"
 
-#: ../src/Core/Banshee.Services/Banshee.Collection/ImportManager.cs:269
-#: ../src/Core/Banshee.Services/Banshee.Library/ThreadPoolImportSource.cs:113
+#: ../src/Core/Banshee.Services/Banshee.Collection/ImportManager.cs:273
+#: ../src/Core/Banshee.Services/Banshee.Library/ThreadPoolImportSource.cs:115
 msgid "The import process is currently running. Would you like to stop it?"
 msgstr "Trwa proces importowania. Przerwać?"
 
-#: ../src/Core/Banshee.Services/Banshee.Collection/ImportManager.cs:275
+#: ../src/Core/Banshee.Services/Banshee.Collection/ImportManager.cs:279
 #: ../src/Core/Banshee.Services/Banshee.Library/ThreadPoolImportSource.cs:77
 #: ../src/Extensions/Banshee.AudioCd/Banshee.AudioCd/AudioCdRipper.cs:179
 #, csharp-format
@@ -731,7 +731,7 @@ msgstr "Utwory bez oceny"
 msgid "Importing Songs"
 msgstr "Importowanie utworów"
 
-#: ../src/Core/Banshee.Services/Banshee.Library/ThreadPoolImportSource.cs:107
+#: ../src/Core/Banshee.Services/Banshee.Library/ThreadPoolImportSource.cs:109
 #, csharp-format
 msgid "Importing From {0}"
 msgstr "Importowanie z {0}"
@@ -797,16 +797,16 @@ msgstr "Nie można połączyć się z programem NetworkManager"
 msgid "An available, working network connection will be assumed"
 msgstr "Założono obecność działającego połączenia sieciowego"
 
-#: ../src/Core/Banshee.Services/Banshee.PlayerMigration/AmarokPlayerImportSource.cs:156
+#: ../src/Core/Banshee.Services/Banshee.PlayerMigration/AmarokPlayerImportSource.cs:143
 #, csharp-format
 msgid "Unable to import track: {0}"
 msgstr "Nie można zaimportować ścieżki: {0}"
 
-#: ../src/Core/Banshee.Services/Banshee.PlayerMigration/AmarokPlayerImportSource.cs:185
+#: ../src/Core/Banshee.Services/Banshee.PlayerMigration/AmarokPlayerImportSource.cs:177
 msgid "Importing from Amarok failed"
 msgstr "Importowanie z bazy danych z Amarok nieudane"
 
-#: ../src/Core/Banshee.Services/Banshee.PlayerMigration/AmarokPlayerImportSource.cs:196
+#: ../src/Core/Banshee.Services/Banshee.PlayerMigration/AmarokPlayerImportSource.cs:188
 msgid "Amarok"
 msgstr "Amarok"
 
@@ -940,12 +940,12 @@ msgstr "GB"
 msgid "artist"
 msgstr "artist"
 
-# puste albo dywiz (spacja bo całkiem pustego się nie da dać) ma to wyglądać
+# puste (tzn spacja bo całkiem pustego się nie da dać) ma to wyglądać
 # <UTWÓR> [nic] <WYKONAWCA> z <ALBUM>
 # <UTWÓR> przez <WYKONAWCA> z <ALBUM> nie ma wielkiego sensu
 #: ../src/Core/Banshee.Services/Banshee.Query/BansheeQuery.cs:96
 msgid "by"
-msgstr "-"
+msgstr " "
 
 #: ../src/Core/Banshee.Services/Banshee.Query/BansheeQuery.cs:96
 msgid "artists"
@@ -1229,7 +1229,7 @@ msgstr "Inteligentna lista odtwarzania"
 #: ../src/Core/Banshee.ThickClient/Banshee.Gui.Dialogs/TrackEditor.cs:320
 #: ../src/Core/Banshee.ThickClient/Banshee.Gui.Dialogs/TrackEditor.cs:343
 #: ../src/Core/Banshee.ThickClient/Resources/banshee-dialogs.glade.h:55
-#: ../src/Dap/Banshee.Dap/Banshee.Dap/DapSource.cs:264
+#: ../src/Dap/Banshee.Dap/Banshee.Dap/DapSource.cs:268
 msgid "Unknown"
 msgstr "Nieznany"
 
@@ -2087,6 +2087,10 @@ msgstr "Importowanie katalogu do kolekcji"
 msgid "Local Folder"
 msgstr "Katalog lokalny"
 
+#: ../src/Core/Banshee.ThickClient/Banshee.Library.Gui/PhotoFolderImportSource.cs:67
+msgid "Videos from Photos Folder"
+msgstr "Nagrania wideo z katalogu zdjęć"
+
 #: ../src/Core/Banshee.ThickClient/Banshee.MediaProfiles.Gui/ProfileComboBox.cs:84
 msgid "No available profiles"
 msgstr "Brak dostępnych profili"
@@ -2422,17 +2426,17 @@ msgstr "Produkt"
 msgid "Vendor"
 msgstr "Producent"
 
-#: ../src/Dap/Banshee.Dap/Banshee.Dap/DapSource.cs:212
+#: ../src/Dap/Banshee.Dap/Banshee.Dap/DapSource.cs:213
 #, csharp-format
 msgid "Loading {0}"
 msgstr "Wczytywanie {0}"
 
-#: ../src/Dap/Banshee.Dap/Banshee.Dap/DapSource.cs:266
+#: ../src/Dap/Banshee.Dap/Banshee.Dap/DapSource.cs:270
 #, csharp-format
 msgid "The {0} format is not supported by the device, and no converter was found to convert it."
 msgstr "Format {0} nie jest obsługiwany przez to urządzenie i nie odnaleziono konwertera do konwersji tego formatu."
 
-#: ../src/Dap/Banshee.Dap/Banshee.Dap/DapSource.cs:272
+#: ../src/Dap/Banshee.Dap/Banshee.Dap/DapSource.cs:276
 msgid "File format conversion is not supported for this device."
 msgstr "Konwersja formatu plików nie jest obsługiwana dla tego urządzenia."
 
@@ -2967,27 +2971,27 @@ msgstr "Dodaje nową stację radia internetowego lub listę odtwarzania"
 msgid "Edit Station"
 msgstr "Modyfikuj stację"
 
-#: ../src/Extensions/Banshee.InternetRadio/Banshee.InternetRadio/InternetRadioSource.cs:127
+#: ../src/Extensions/Banshee.InternetRadio/Banshee.InternetRadio/InternetRadioSource.cs:131
 msgid "Station"
 msgstr "Stacja"
 
-#: ../src/Extensions/Banshee.InternetRadio/Banshee.InternetRadio/InternetRadioSource.cs:128
+#: ../src/Extensions/Banshee.InternetRadio/Banshee.InternetRadio/InternetRadioSource.cs:132
 msgid "Creator"
 msgstr "Założyciel"
 
-#: ../src/Extensions/Banshee.InternetRadio/Banshee.InternetRadio/InternetRadioSource.cs:129
+#: ../src/Extensions/Banshee.InternetRadio/Banshee.InternetRadio/InternetRadioSource.cs:133
 msgid "Description"
 msgstr "Opis"
 
-#: ../src/Extensions/Banshee.InternetRadio/Banshee.InternetRadio/InternetRadioSource.cs:214
+#: ../src/Extensions/Banshee.InternetRadio/Banshee.InternetRadio/InternetRadioSource.cs:218
 msgid "Please provide a valid station URI"
 msgstr "Proszę wprowadzić poprawny adres URI stacji"
 
-#: ../src/Extensions/Banshee.InternetRadio/Banshee.InternetRadio/InternetRadioSource.cs:227
+#: ../src/Extensions/Banshee.InternetRadio/Banshee.InternetRadio/InternetRadioSource.cs:231
 msgid "Please provide a station genre"
 msgstr "Proszę wprowadzić gatunek stacji"
 
-#: ../src/Extensions/Banshee.InternetRadio/Banshee.InternetRadio/InternetRadioSource.cs:235
+#: ../src/Extensions/Banshee.InternetRadio/Banshee.InternetRadio/InternetRadioSource.cs:239
 msgid "Please provide a station title"
 msgstr "Proszę wprowadzić tytuł stacji"
 
@@ -3723,6 +3727,18 @@ msgstr "Zapytanie użytkownika, które odcinki mają zostać pobrane"
 #: ../src/Extensions/Banshee.Sample/Banshee.Sample/SampleSource.cs:40
 msgid "Sample"
 msgstr "Przykład"
+
+#: ../src/Extensions/Banshee.SqlDebugConsole/Banshee.SqlDebugConsole/SqlActions.cs:59
+msgid "Show SQL Console"
+msgstr "Wyświetl konsolę SQL"
+
+#: ../src/Extensions/Banshee.SqlDebugConsole/Banshee.SqlDebugConsole/SqlActions.cs:64
+msgid "Start SQL Monitoring"
+msgstr "Uruchom monitorowanie SQL"
+
+#: ../src/Extensions/Banshee.SqlDebugConsole/Banshee.SqlDebugConsole/SqlActions.cs:69
+msgid "Stop SQL Monitoring"
+msgstr "Zatrzymaj monitorowanie SQL"
 
 #: ../src/Libraries/Hyena.Gui/Hyena.Data.Gui/ListView/ListView_Header.cs:465
 #, csharp-format
