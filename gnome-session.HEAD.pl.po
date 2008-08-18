@@ -12,8 +12,8 @@ msgstr ""
 "Project-Id-Version: gnome-session\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2008-08-15 22:01+0000\n"
-"PO-Revision-Date: 2008-08-17 15:49+0100\n"
-"Last-Translator: Tomasz Dominikowski <dominikowski@gmail.com>\n"
+"PO-Revision-Date: 2008-08-19 00:25+0100\n"
+"Last-Translator: wadim dziedzic <wdziedzic@aviary,pl>\n"
 "Language-Team: Polish <gnomepl@aviary.pl>\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -48,6 +48,8 @@ msgstr "Określa, czy program gnome-session powinien automatycznie zapisywać st
 msgid "List of applications that are part of the default session."
 msgstr "Lista programów będących częścią sesji domyślnej."
 
+# REV: literówka: na usuwaniA
+# REV: może lepiej "Preferencje nie pozwalają ...."
 #: ../data/gnome-session.schemas.in.h:6
 msgid "List of components that are required as part of the session. (Each element names a key under \"/desktop/gnome/session/required-components\".) The Session Preferences will not normally allow users to remove a required component from the session, and the session manager will automatically add the required components back to the session if they do get removed."
 msgstr "Lista komponentów wymaganych jako części sesji. (Każdy element występuję pod własnym kluczem w \"/desktop/gnome/session/required-components\".) Preferencje sesji normalnie nie zezwolą użytkownikom na usuwania wymaganych komponentów z sesji, a menedżer sesji automatycznie doda z powrotem wymagane komponenty do sesji, jeśli zostaną usunięte."
@@ -60,6 +62,7 @@ msgstr "Potwierdzanie wylogowania"
 msgid "Panel"
 msgstr "Panel"
 
+# REV: czy absolutnie potrzebujemy to "preferowany" ?
 #: ../data/gnome-session.schemas.in.h:9
 msgid "Preferred Image to use for login splash screen"
 msgstr "Preferowany obraz, wyświetlany na ekranie powitalnym logowania"
@@ -72,6 +75,7 @@ msgstr "Lista wymaganych komponentów"
 msgid "Save sessions"
 msgstr "Zapis sesji"
 
+# REV: czy może lepiej "zaznaczona" ?
 #: ../data/gnome-session.schemas.in.h:12
 msgid "Selected option in the log out dialog"
 msgstr "Wybrana opcja w oknie wylogowania"
@@ -88,10 +92,13 @@ msgstr "Wyświetlanie ekranu powitalnego przy rozpoczynaniu sesji"
 msgid "The Window manager that gnome-session will start. Valid values are \"metacity\" and \"compiz\"."
 msgstr "Menedżer okien uruchamiany przez gnome-session. Poprawne wartości to \"metacity oraz \"compiz\"."
 
+# REV: to "dostarcza" trochę dziwnie brzmi - może wystarczy "wyświetla" ?
+# REV: ja bym dał interakcję w liczbie mnogiej
 #: ../data/gnome-session.schemas.in.h:16
 msgid "The file manager provides the desktop icons and allows you to interact with your saved files."
 msgstr "Menedżer plików dostarcza ikony na pulpicie i pozwala na interakcję z zapisanymi plikami."
 
+# REV: dostarcza - wyświetla, udostępnia ?
 #: ../data/gnome-session.schemas.in.h:17
 msgid "The panel provides the bar at the top or bottom of the screen containing menus, the window list, status icons, the clock, etc."
 msgstr "Panel dostarcza paski na górze i na dole ekranu, które zawierają menu, listę okien, ikony stanu, zegar, itp."
@@ -120,6 +127,7 @@ msgstr "Menedżer okien do uruchomienia"
 msgid "GNOME"
 msgstr "GNOME"
 
+# REV: środowiska GNOME
 #: ../data/gnome.desktop.in.h:2
 msgid "This session logs you into GNOME"
 msgstr "Ta sesja loguje użytkownika do GNOME"
@@ -132,6 +140,7 @@ msgstr "Konfiguracja sesji użytkownika"
 msgid "Sessions"
 msgstr "Sesje"
 
+# REV: może jakiś wcześniejszy acceskey? _D ?
 #: ../data/session-properties.glade.h:1
 msgid "Additional startup _programs:"
 msgstr "Dodatkowe p_rogramy startowe:"
@@ -144,6 +153,7 @@ msgstr "Przeglądaj..."
 msgid "Co_mmand:"
 msgstr "_Polecenie:"
 
+# REV: tu spokojnie możemy dać accesskey na _K
 #: ../data/session-properties.glade.h:4
 msgid "Comm_ent:"
 msgstr "Kom_entarz:"
@@ -169,6 +179,7 @@ msgstr "Z_apamiętanie uruchomionych programów podczas wylogowywania"
 msgid "_Name:"
 msgstr "_Nazwa:"
 
+# REV: to jest w rzeczywistości przycisk, więc "Zapamiętaj ... "
 #: ../data/session-properties.glade.h:10
 msgid "_Remember Currently Running Application"
 msgstr "_Zapamiętanie uruchomionych programów"
@@ -177,6 +188,7 @@ msgstr "_Zapamiętanie uruchomionych programów"
 msgid "<b>Some programs are still running:</b>"
 msgstr "<b>Niektóre programy są nadal uruchomione:</b>"
 
+# REV: "utratę niezapisanych wyników pracy" ;-)
 #: ../data/gsm-inhibit-dialog.glade.h:2
 #: ../gnome-session/gsm-inhibit-dialog.c:628
 msgid "Waiting for program to finish.  Interrupting program may cause you to lose work."
@@ -207,16 +219,19 @@ msgstr "Uruchamianie %s"
 msgid "Application does not accept documents on command line"
 msgstr "Program nie akceptuje dokumentów w wierszu poleceń"
 
+# REV: opcja uruchamiania ?
 #: ../egg/eggdesktopfile.c:1163
 #, c-format
 msgid "Unrecognized launch option: %d"
 msgstr "Nierozpoznana opcja uruchomieniowa: %d"
 
+# REV: wysłać > przekazać ?
 #: ../egg/eggdesktopfile.c:1370
 #, c-format
 msgid "Can't pass document URIs to a 'Type=Link' desktop entry"
 msgstr "Nie można wysłać adresów URI dokumentów do pozycji pulpitu \"Type=Link\""
 
+# REV: "Tego elementu..." brzmi lepiej...
 #: ../egg/eggdesktopfile.c:1389
 #, c-format
 msgid "Not a launchable item"
@@ -254,6 +269,7 @@ msgstr "ID"
 msgid "Session Management Options"
 msgstr "Opcje zarządzania sesją"
 
+# REV: wyświetlenie (opis opcji wiersza poleceń)
 #: ../egg/eggsmclient.c:242
 msgid "Show Session Management options"
 msgstr "Wyświetlanie opcji zarządzania sesją"
@@ -267,6 +283,7 @@ msgstr ""
 "Wystąpił problem z serwerem konfiguracji.\n"
 "(%s zakończył działanie ze stanem %d)"
 
+# REV: "Nie znaleziono ikony %s" brzmi lepiej
 #: ../gnome-session/gsm-inhibit-dialog.c:256
 #, c-format
 msgid "Icon '%s' not found"
@@ -280,10 +297,12 @@ msgstr "Nieznany"
 msgid "A program is still running:"
 msgstr "Program jest nadal uruchomiony:"
 
+# REV: dwukropek
 #: ../gnome-session/gsm-inhibit-dialog.c:631
 msgid "Some programs are still running:"
 msgstr "Niektóre programy są nadal uruchomione"
 
+# REV: niezapisanych wyników pracy
 #: ../gnome-session/gsm-inhibit-dialog.c:632
 msgid "Waiting for programs to finish.  Interrupting these programs may cause you to lose work."
 msgstr "Oczekiwanie na zakończenie działania programów. Przerwanie działania programów może spowodować utratę niezapisanej pracy."
@@ -376,6 +395,7 @@ msgstr "Wyłączyć komputer?"
 msgid "S_uspend"
 msgstr "W_strzymaj"
 
+# REV: tu musiałoby być dokonane: "Zahibernuj" bo w innych nie mamy "Wstrzymuj" " Uruchamiaj" "Wyłączaj" ;-)
 #: ../gnome-session/gsm-logout-dialog.c:404
 msgid "_Hibernate"
 msgstr "_Hibernuj"
@@ -397,10 +417,12 @@ msgstr "Brak odpowiedzi"
 msgid "This program is blocking log out."
 msgstr "Ten program uniemożliwia wylogowanie."
 
+# REV: może "...klienta z powodu trwającego zamykania sesji" ?
 #: ../gnome-session/gsm-xsmp-server.c:234
 msgid "Refusing new client connection because the session is currently being shut down\n"
 msgstr "Odmowa połączenia nowego klienta, ponieważ sesja jest obecnie zamykana\n"
 
+# REV: gniazda nasłuchującego
 #: ../gnome-session/gsm-xsmp-server.c:489
 #, c-format
 msgid "Could not create ICE listening socket: %s"
@@ -433,6 +455,7 @@ msgstr "Wersja tego programu"
 msgid " - the GNOME session manager"
 msgstr "- Menedżer sesji środowiska GNOME"
 
+# REV: wygląda jak tytuł okna - może "Wybór polecenia"
 #: ../capplet/gsm-app-dialog.c:130
 msgid "Select Command"
 msgstr "Proszę wybrać polecenie"
@@ -481,6 +504,7 @@ msgstr "Ustawia nazwę bieżącej sesji"
 msgid "NAME"
 msgstr "NAZWA"
 
+# REV: usunięcie sesji ?
 #: ../tools/gnome-session-save.c:53
 msgid "Kill session"
 msgstr "Usuń sesję"
