@@ -9,13 +9,14 @@
 # pomóc w jego rozwijaniu i pielęgnowaniu, napisz do nas:
 # gnomepl@aviary.pl
 # -=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-
+# review całoście pliku: 20.08.2008 wd
 msgid ""
 msgstr ""
 "Project-Id-Version: eog\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2008-07-22 04:52+0000\n"
-"PO-Revision-Date: 2008-08-20 19:19+0100\n"
-"Last-Translator: Tomasz Dominikowski <dominikowski@gmail.com>\n"
+"PO-Revision-Date: 2008-08-21 00:03+0100\n"
+"Last-Translator: wadim dziedzic <nikdo@aviary.pl>\n"
 "Language-Team: Aviary.pl <gnomepl@aviary.pl>\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -325,6 +326,7 @@ msgstr "Zmia_na obrazu po:"
 msgid "seconds"
 msgstr "sekundach"
 
+# REV: przecinek przed jaką
 #: ../data/eog.schemas.in.h:1
 msgid "A value greater than 0 determines the seconds an image stays on screen until the next one is shown automatically. Zero disables the automatic browsing."
 msgstr "Wartość większa od 0 określa liczbę sekund jaką obraz pozostaje na ekranie przed wyświetleniem kolejnego. Wartość zero wyłącza automatyczne przeglądanie."
@@ -366,6 +368,7 @@ msgstr "Położenie panelu kolekcji obrazów. Ustawienia: 0 na dół; 1 na lewo;
 msgid "Interpolate Image"
 msgstr "Interpolacja obrazu"
 
+# REV: "Proszę" albo "Położenie danej wtyczki można sprawdzić w..."
 #: ../data/eog.schemas.in.h:12
 msgid "List of active plugins. It doesn't contain the \"Location\" of the active plugins. See the .eog-plugin file for obtaining the \"Location\" of a given plugin."
 msgstr "Lista aktywnych wtyczek. Nie zawiera \"Położenia\" aktywnych wtyczek. Zobacz plik .eog-plugin, aby sprawdzić \"Położenie\" danej wtyczki."
@@ -398,6 +401,7 @@ msgstr "Wyświetla/ukrywa pasek stanu."
 msgid "Show/hide the window toolbar."
 msgstr "Wyświetla/ukrywa pasek narzędziowy."
 
+# REV: drugie zdanie do poprawy - w oryginale nic o rezultatach nie ma ;-)
 #: ../data/eog.schemas.in.h:21
 #, no-c-format
 msgid "The multiplier to be applied when using the mouse scroll wheel for zooming. This value defines the zooming step used for each scroll event. For example, 0.05 results in a 5% zoom increment for each scroll event and 1.00 result in a 100% zoom increment."
@@ -423,6 +427,7 @@ msgstr "Określa, czy można zmieniać rozmiar panelu kolekcji obrazów."
 msgid "Whether the image should be interpolated on zoom or not. This leads to better quality but is somewhat slower than non interpolated images."
 msgstr "Określa, czy przy powiększaniu obrazu powinien on być interpolowany. Interpolacja poprawia jakość obrazu jednak spowalnia jego wyświetlanie."
 
+# REV: lepiej "na podstawie danych"
 #: ../data/eog.schemas.in.h:27
 msgid "Whether the image should be rotated automatically based on EXIF orientation."
 msgstr "Określa czy obraz ma być automatycznie obrócony na bazie danych EXIF"
@@ -431,6 +436,7 @@ msgstr "Określa czy obraz ma być automatycznie obrócony na bazie danych EXIF"
 msgid "Whether the scroll wheel should be used for zooming or not."
 msgstr "Określa, czy kółko myszy ma być używane do przybliżania."
 
+# REV: wcześniej było przybliżAnia
 #: ../data/eog.schemas.in.h:29
 msgid "Zoom multiplier"
 msgstr "Mnożnik przybliżenia"
@@ -495,6 +501,7 @@ msgstr "Transformacja na niewczytanym obrazie."
 msgid "Transformation failed."
 msgstr "Transformacja nie powiodła się."
 
+# REV: "Dane EXIF nie są..."
 #: ../src/eog-image.c:948
 #, c-format
 msgid "EXIF not supported for this file format."
@@ -563,6 +570,7 @@ msgstr "Obsługa uprawnień XMP"
 msgid "XMP Other"
 msgstr "Inne XMP"
 
+# REV: etykieta?
 #: ../src/eog-exif-details.c:251
 msgid "Tag"
 msgstr "Znacznik"
@@ -608,6 +616,7 @@ msgstr "Ustawienia obrazu"
 msgid "Image"
 msgstr "Obraz"
 
+# REV: drukowanIa
 #: ../src/eog-print-image-setup.c:834
 msgid "The image whose printing properties will be setup"
 msgstr "Obraz, którego właściwości drukowana bedą ustawiane"
@@ -672,6 +681,7 @@ msgstr "_Szerokość:"
 msgid "_Height:"
 msgstr "_Wysokość:"
 
+# REV: acceskey nie kłóci się z _Szerokością?
 #: ../src/eog-print-image-setup.c:916
 msgid "_Scaling:"
 msgstr "_Skalowanie:"
@@ -704,6 +714,7 @@ msgstr "Nieznane"
 msgid "%.1f (lens)"
 msgstr "%.1f (obiektyw)"
 
+# REV: 35mm to ma zwykły film do aparatu ;-) żadna filmowa taśma
 #. Print as float to get a similar look as above.
 #. TRANSLATORS: This is the equivalent focal length assuming
 #. a 35mm film camera.
@@ -729,6 +740,7 @@ msgstr "Przynajmniej dwa pliki mają tę samą nazwę."
 msgid "Could not display help for Eye of GNOME"
 msgstr "Nie można wyświetlić pomocy programu Eye of GNOME"
 
+# REV: Unicode to nazwa własna
 #: ../src/eog-util.c:111
 msgid " (invalid Unicode)"
 msgstr " (niepoprawny Unikod)"
@@ -738,6 +750,7 @@ msgstr " (niepoprawny Unikod)"
 msgid "Open with \"%s\""
 msgstr "Otwórz za pomocą \"%s\""
 
+# REV: użycie?
 #: ../src/eog-window.c:1131
 #, c-format
 msgid "Use \"%s\" to open the selected image"
@@ -758,6 +771,7 @@ msgstr "Zapisywanie obrazu \"%s\" (%u/%u)"
 msgid "Loading image \"%s\""
 msgstr "Wczytywanie obrazu \"%s\""
 
+# REV: file = obrazu?
 #: ../src/eog-window.c:2270
 #, c-format
 msgid ""
@@ -781,14 +795,17 @@ msgstr ""
 "Aviary.pl <gnomepl@aviary.pl>, 2008\n"
 "Tomasz Dominikowski <tdominikowski@aviary.pl>, 2008"
 
+# REV: przekopiować z wiki
 #: ../src/eog-window.c:2490
 msgid "This program is free software; you can redistribute it and/or modify it under the terms of the GNU General Public License as published by the Free Software Foundation; either version 2 of the License, or (at your option) any later version.\n"
 msgstr "Ten program jest oprogramowaniem ogólnodostępnym; można go rozpowszechniać i/lub modyfikować zgodnie z postanowieniami GNU General Public License opublikowanej przez Free Software Foundation w wersji 2 lub (zależnie od twojego wyboru) którejkolwiek późniejszej.\n"
 
+# REV: j.w.
 #: ../src/eog-window.c:2494
 msgid "This program is distributed in the hope that it will be useful, but WITHOUT ANY WARRANTY; without even the implied warranty of MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the GNU General Public License for more details.\n"
 msgstr "Program ten jest rozpowszechniana w nadziei, że będzie użyteczny, ale BEZ ŻADNEJ GWARANCJI, w tym bez gwarancji PRZYDATNOŚCI DO KONKRETNEGO ZASTOSOWANIA. Szczegóły można znaleźć w GNU General Public License.\n"
 
+# REV: j.w.
 #: ../src/eog-window.c:2498
 msgid "You should have received a copy of the GNU General Public License along with this program; if not, write to the Free Software Foundation, Inc., 59 Temple Place - Suite 330, Boston, MA 02111-1307, USA."
 msgstr "Kopia licencji GNU GPL powinna zostać dostarczona wraz z tym programem. Jeśli jej brak, napisz na adres Free Software Foundation, Inc., 59 Temple Place - Suite 330, Boston, MA 02111-1307, USA."
@@ -811,6 +828,7 @@ msgstr ""
 "Na pewno przenieść\n"
 "\"%s\" do kosza?"
 
+# REV: nie będzie tu lepiej "zaznaczonych obrazów" ?
 #: ../src/eog-window.c:2900
 #, c-format
 msgid ""
@@ -1070,6 +1088,7 @@ msgstr "P_owiększ"
 msgid "Enlarge the image"
 msgstr "Powiększa obraz"
 
+# REV: dlaczego nie "pomniejsz" (byłoby spójnie z powiększ)
 #: ../src/eog-window.c:3322
 #: ../src/eog-window.c:3337
 msgid "Zoom _Out"
@@ -1122,6 +1141,7 @@ msgstr "_Następny obraz"
 msgid "Go to the next image of the collection"
 msgstr "Przechodzi do następnego obrazu w kolekcji"
 
+# REV: szersza literka do accesskeya
 #: ../src/eog-window.c:3358
 #: ../src/eog-window.c:3367
 msgid "_First Image"
@@ -1168,6 +1188,7 @@ msgstr "Lewo"
 msgid "In"
 msgstr "Powiększ"
 
+# REV: "Pomniejsz" ?
 #: ../src/eog-window.c:3460
 msgid "Out"
 msgstr "Zmniejsz"
