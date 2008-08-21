@@ -13,8 +13,8 @@ msgstr ""
 "Project-Id-Version: seahorse\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2008-07-17 01:42+0000\n"
-"PO-Revision-Date: 2008-07-19 13:35+0100\n"
-"Last-Translator: Tomasz Dominikowski <dominikowski@gmail.com>\n"
+"PO-Revision-Date: 2008-08-21 21:59+0100\n"
+"Last-Translator: Joanna Mazgaj <jmazgaj@aviary.pl>\n"
 "Language-Team: Polish <gnomepl@aviary.pl>\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -90,6 +90,7 @@ msgstr "Podpisany przez <i><key id='%s'/></i> dnia %s."
 msgid "Good Signature"
 msgstr "Podpis prawidłowy"
 
+# rev: brak kropki
 #: ../daemon/seahorse-service-crypto.c:169
 msgid "Signing key not in keyring."
 msgstr "Klucz podpisujący nie jest w bazie kluczy"
@@ -142,6 +143,7 @@ msgstr "Nie określono odbiorców"
 msgid "No signer specified"
 msgstr "Nie określono osoby podpisującej"
 
+# rev: deszyfrujacy ?
 #: ../daemon/seahorse-service-crypto.c:396
 #, c-format
 msgid "Invalid key type for decryption: %s"
@@ -176,6 +178,7 @@ msgstr "Nie można opublikować w sieci informacji o wykrywaniu."
 msgid "%s's encryption keys"
 msgstr "Klucze szyfrujące dla %s"
 
+# rev: PGP, nie PHP. Może 'w późniejszych/kolejnych wersjach' ?
 #: ../data/seahorse.schemas.in.h:1
 msgid "A list of key server URIs to search for remote PGP keys. In later versions a display name can be included, by appending a space and then the name."
 msgstr "Lista adresów serwerów kluczy, na których będą wyszukiwane zdalne klucze PHP. W przyszłych wersjach będzie możliwe dodawanie nazw, poprzez dopisanie spacji a następnie nazwy."
@@ -260,10 +263,12 @@ msgstr "Wyświetlanie kolumny typ w zarządcy kluczy"
 msgid "Show validity column in key manager"
 msgstr "Wyświetlanie kolumny poprawność w zarządcy kluczy"
 
+# rev: pare stringów wyżej nazwy kolumn były tłumaczone na polski, dlaczego teraz zostają w oryginale?
 #: ../data/seahorse.schemas.in.h:22
 msgid "Specify the column to sort the recipients window by. Columns are: 'name' and 'id'. Put a '-' in front of the column name to sort in descending order."
 msgstr "Określa kolumnę według której będą sortowane rekordy okna odbiorców. Możliwe wartości to: \"name\" i \"id\". Znak \"-\" przed nazwą kolumny sortuje w kolejności malejącej."
 
+# rev: pare stringów wyżej nazwy kolumn były tłumaczone na polski, dlaczego teraz zostają w oryginale?
 #: ../data/seahorse.schemas.in.h:23
 msgid "Specify the column to sort the seahorse key manager main window by. Columns are: 'name', 'id', 'validity', 'expires', 'trust', and 'type'. Put a '-' in front of the column name to sort in descending order."
 msgstr "Określa kolumnę według której będą sortowane rekordy głównego okna menedżera kluczy seahorse. Możliwe wartości to: \"name\", \"id\", \"validity\", \"expires\", \"trust\" i \"type\". Znak \"-\" przed nazwą kolumny sortuje w kolejności malejącej."
@@ -284,6 +289,7 @@ msgstr "Kolumna według której będą sortowane klucze seahorse"
 msgid "The key server to publish PGP keys to. Or empty to suppress publishing of PGP keys."
 msgstr "Serwer kluczy, na którym będą publikowane klucze PGP. Wartość pusta oznacza, że publikowanie kluczy jest wyłączone."
 
+# rev: przecinek przed 'na którym'
 #: ../data/seahorse.schemas.in.h:28
 msgid "The last key server a search was performed against or empty for all key servers."
 msgstr "Serwer kluczy na którym ostatnio przeprowadzane było wyszukiwanie. Pusta wartość oznacza, że wyszukiwanie było przeprowadzane na wszystkich serwerach."
@@ -296,6 +302,7 @@ msgstr "Ostatnio używane kryterium wyszukiwania na serwerze kluczy."
 msgid "This specifies the default key to use for certain operations, mainly signing."
 msgstr "Określa domyślny klucz używany przy określonych operacjach, głównie do podpisywania."
 
+# rev: retrieved to bardziej 'pobierane'
 #: ../data/seahorse.schemas.in.h:31
 msgid "Whether or not keys should be automatically retrieved from key servers."
 msgstr "Określa, czy klucze będą automatycznie synchronizowane z serwerami kluczy."
@@ -427,11 +434,13 @@ msgstr "_Wyświetlanie hasła"
 msgid "Type:"
 msgstr "Typ:"
 
+# rev: patrz wyżej: this is the noun not the verb
 #. To translators: This is the noun not the verb.
 #: ../gkr/seahorse-gkeyring-item-properties.glade.h:14
 msgid "Use:"
 msgstr "Użyj:"
 
+# rev:  zgodnie z informacją wyżej to bezokolicznik
 #. To translators: This is the infinitive not the imperative.
 #: ../gkr/seahorse-gkeyring-item-properties.glade.h:16
 msgid "_Delete"
@@ -530,6 +539,7 @@ msgstr "Nie podpisuj"
 msgid "Sign this message as %s"
 msgstr "Podpisanie wiadomości jako %s"
 
+# rev: podpisanie jako / z dużym 'P' się nie wykrzaczy skrót klawiszowy?
 #. Sign Label
 #: ../libcryptui/cryptui-key-chooser.c:278
 msgid "_Sign message as:"
@@ -556,6 +566,7 @@ msgstr "Wyświetlanie flag"
 msgid "Displayed date and/or time properties"
 msgstr "Wyświetlanie daty i/lub właściwości czasu"
 
+# rev: tryb jaki ?
 #: ../libegg/egg-datetime.c:319
 msgid "Lazy mode"
 msgstr "Tryb"
@@ -596,6 +607,7 @@ msgstr "Godzina"
 msgid "Displayed hour"
 msgstr "Wyświetlana godzina"
 
+# rev: minuta
 #: ../libegg/egg-datetime.c:349
 msgid "Minute"
 msgstr "Minut"
@@ -794,6 +806,7 @@ msgid "%02d:%02d"
 msgstr "%02d:%02d"
 
 # FIXME: lepiej nie będzie póki co
+# rev: a nie zamieni się tu miesiąc z dniem miejscami teraz ?
 #. TODO: should handle other display modes as well...
 #. Translators: This is YYYY-MM-DD
 #: ../libegg/egg-datetime.c:1169
@@ -815,6 +828,7 @@ msgstr "Dodaj bazę kluczy z hasłami"
 msgid "New Keyring Name:"
 msgstr "Nazwa nowej bazy kluczy:"
 
+# rev: odblokowujące
 #: ../libseahorse/seahorse-add-keyring.glade.h:3
 msgid "Please choose a name for the new keyring. You will be prompted for an unlock password."
 msgstr "Proszę wybrać nazwę dla nowej bazy kluczy. Użytkownik zostanie poproszony o hasło odblokowywujące."
@@ -898,6 +912,7 @@ msgstr "Aby uzyskać pomoc, należy skontaktować się z administratorem systemu
 msgid "URL"
 msgstr "URL"
 
+# rev: inny? 
 #: ../libseahorse/seahorse-prefs.c:359
 msgid "Custom"
 msgstr "Inny"
@@ -906,6 +921,7 @@ msgstr "Inny"
 msgid "None: Don't publish keys"
 msgstr "Brak: bez publikowania kluczy"
 
+# rev: kropka
 #: ../libseahorse/seahorse-prefs-keyrings.c:207
 msgid "<i>Automatically unlocked when user logs in.</i>"
 msgstr "<i>Automatyczne odblokowywanie przy zalogowaniu użytkownika</i>"
@@ -951,6 +967,7 @@ msgstr "<b>Baza kluczy haseł</b>"
 msgid "Automatically retrieve keys from _key servers"
 msgstr "Automatyczne synchronizowanie kluczy z serwerów _kluczy."
 
+# rev: automatyczna synchronizacja 
 #: ../libseahorse/seahorse-prefs.glade.h:4
 msgid "Automatically synchronize _modified keys with key servers"
 msgstr "Automatyczne synchronizowanie z_modyfikowanych kluczy z serwerami kluczy"
@@ -997,6 +1014,7 @@ msgstr "_Wyszukiwanie kluczy poprzez:"
 msgid "_Location for application passwords:"
 msgstr "_Położenie dla haseł programów:"
 
+# rev: skrót kl.
 #: ../libseahorse/seahorse-prefs.glade.h:16
 msgid "_Publish keys to:"
 msgstr "O_publikuj klucze na:"
@@ -1126,6 +1144,7 @@ msgstr "Unieważniony"
 msgid "Could not display help: %s"
 msgstr "Nie można wyświetlić pomocy: %s"
 
+# rev: utworzyć lub zaimportować klucz
 #: ../libcryptui/cryptui.c:211
 msgid "No encryption keys were found with which to perform the operation you requested.  The program <b>Passwords and Encryption Keys</b> will now be started so that you may either create a key or import one."
 msgstr "Nie znaleziono kluczy szyfrujących do wykonania żądanej operacji. Program <b>Hasła i klucze szyfrujące</b> zostanie teraz uruchomiony, aby można było utworzyć klucz lub go zaimportować."
@@ -1175,6 +1194,7 @@ msgstr "Imię i _nazwisko:"
 msgid "Key Co_mment:"
 msgstr "Ko_mentarz do klucza:"
 
+# rev: od dużej litery
 #: ../pgp/seahorse-add-uid.glade.h:5
 msgid "Must be at least 5 characters long"
 msgstr "musi mieć długość przynajmniej 5 znaków"
@@ -1205,6 +1225,7 @@ msgstr "Unieważnia klucz"
 msgid "_Never expires"
 msgstr "_Nigdy nie wygasa"
 
+# rev: deszyfrowanie ?
 #: ../pgp/seahorse-gpgmex-util.c:55
 msgid "Decryption failed. You probably do not have the decryption key."
 msgstr "Odszyfrowywanie nie powiodło się. Prawdopodobnie brak klucza deszyfrującego."
@@ -1502,6 +1523,7 @@ msgstr "Publiczny klucz PGP"
 msgid "ElGamal"
 msgstr "ElGamal"
 
+# rev: identyfikatora głównego użytkownika
 #: ../pgp/seahorse-pgp-key-properties.c:215
 msgid "Couldn't change primary user ID"
 msgstr "Nie można zmienić głównego identyfikatora użytkownika"
@@ -1603,6 +1625,7 @@ msgstr "_Nie zmieniaj rozmiaru"
 msgid "_Resize"
 msgstr "_Zmień rozmiar"
 
+# rev: brak drugiego zdania
 #: ../pgp/seahorse-pgp-photos.c:128
 #, c-format
 msgid "This is not a image file, or an unrecognized kind of image file. Try to use a JPEG image."
@@ -1625,6 +1648,7 @@ msgstr "Wybór zdjęcia dla klucza"
 msgid "Couldn't add photo"
 msgstr "Nie można dodać zdjęcia"
 
+# rev: niewłaściwym/nieprawidłowym
 #: ../pgp/seahorse-pgp-photos.c:291
 msgid "The file could not be loaded. It may be in an invalid format"
 msgstr "Plik nie może zostać wczytany. Prawdopodobnie jest on zapisany w nierozpoznawanym formacie"
@@ -1729,6 +1753,7 @@ msgstr "Zmień _hasło"
 msgid "Created:"
 msgstr "Utworzony:"
 
+# rev: deszyfruje ?
 #: ../pgp/seahorse-pgp-private-key-properties.glade.h:21
 msgid "Decrypt files and email sent to you."
 msgstr "Odszyfrowuje odebrane pliki i wiadomości."
@@ -1849,6 +1874,7 @@ msgstr "<b>Zaufanie do tego klucza</b>"
 msgid "<b>_Other Names:</b>"
 msgstr "<b>I_nne nazwy:</b>"
 
+# rev: brak skrótu kl.
 #: ../pgp/seahorse-pgp-public-key-properties.glade.h:17
 msgid "<b>_People who have signed this key:</b>"
 msgstr "<b>Osoby, które podpisały ten klucz:</b>"
@@ -1900,6 +1926,7 @@ msgstr "_Zaufanie do właściciela:"
 msgid "Your trust is manually specified on the <i>Details</i> tab."
 msgstr "Twoje zaufanie jest określane ręcznie w karcie <i>Szczegóły</i>."
 
+# rev: przecinek przed 'do których'
 #: ../pgp/seahorse-pgp-public-key-properties.glade.h:44
 msgid "_Only display the signatures of people I trust"
 msgstr "_Wyświetlanie tylko podpisów od osób do których mam zaufanie"
@@ -1978,6 +2005,7 @@ msgstr "Nie można podpisać klucza"
 msgid "No keys usable for signing"
 msgstr "Brak kluczy zdolnych do podpisywania"
 
+# rev: osobistych
 #: ../pgp/seahorse-pgp-sign.c:160
 msgid "You have no personal PGP keys that can be used to indicate your trust of this key."
 msgstr "Brak osobitych kluczy PGP, które mogłyby być użyte do wskazania twojego zaufania do tego klucza."
@@ -2264,6 +2292,7 @@ msgstr "Importuje klucze ze schowka"
 msgid "_Find Remote Keys..."
 msgstr "_Szukaj kluczy zdalnych..."
 
+# rev: w kontekscie pasuje 'wyszukuje'.
 #: ../src/seahorse-key-manager.vala:120
 #: ../src/seahorse-keyserver-results.vala:49
 msgid "Search for keys on a key server"
@@ -2281,14 +2310,17 @@ msgstr "Publikuje i/lub synchronizuje klucze lokalne z kluczami zdalnymi."
 msgid "T_ypes"
 msgstr "_Typy"
 
+# rev: wiświetla
 #: ../src/seahorse-key-manager.vala:126
 msgid "Show type column"
 msgstr "Wyświetlanie kolumny typu"
 
+# rev: to już w innym miejscu niż 2255 ?
 #: ../src/seahorse-key-manager.vala:127
 msgid "_Expiry"
 msgstr "_Wygasanie"
 
+# rev: j.w. 2285
 #: ../src/seahorse-key-manager.vala:127
 msgid "Show expiry column"
 msgstr "Wyświetlanie kolumny terminu wygaśnięcia"
@@ -2297,6 +2329,7 @@ msgstr "Wyświetlanie kolumny terminu wygaśnięcia"
 msgid "_Trust"
 msgstr "_Zaufanie"
 
+# rev: jw
 #: ../src/seahorse-key-manager.vala:128
 msgid "Show owner trust column"
 msgstr "Wyświetlanie kolumny zaufania"
@@ -2305,6 +2338,7 @@ msgstr "Wyświetlanie kolumny zaufania"
 msgid "_Validity"
 msgstr "_Poprawność"
 
+# rev: jw
 #: ../src/seahorse-key-manager.vala:129
 msgid "Show validity column"
 msgstr "Wyświetlanie kolumny poprawności"
@@ -2443,6 +2477,7 @@ msgstr "Nie można opublikować kluczy na serwerze"
 msgid "Couldn't retrieve keys from server: %s"
 msgstr "Nie można pobrać kluczy z serwera: %s"
 
+# rev: do synchronizacji
 #: ../src/seahorse-keyserver-sync.c:155
 #, c-format
 msgid "<b>%d key is selected for synchronizing</b>"
@@ -2468,10 +2503,12 @@ msgstr "<b>X kluczy zaznaczonych do synchronizacji</b>"
 msgid "Sync Keys"
 msgstr "Synchronizowanie kluczy"
 
+# rev: bez przecinka przed 'od momentu'
 #: ../src/seahorse-keyserver-sync.glade.h:3
 msgid "This will publish the keys in your key ring so they're available for others to use. You'll also get any changes others have made since you received their keys."
 msgstr "Synchronizacja spowoduje opublikowanie kluczy z twojej bazy kluczy. Zostaną także pobrane wszystkie zmiany w kluczach, jakie zostały wprowadzone ich właścicieli, od momentu ich zaimportowania."
 
+# rev: bez przecinka przed 'od momentu'.
 #: ../src/seahorse-keyserver-sync.glade.h:4
 msgid "This will retrieve any changes others have made since you received their keys. No key server has been chosen for publishing, so your keys will not be made available to others."
 msgstr "Synchronizacja spowoduje pobranie wszystkich zmian kluczy, jakie zostały wprowadzone przez ich właścicieli, od momentu ich zaimportowania. Nie wybrano żadnego serwera do publikowania kluczy, przez co twoje klucze nie będą dostępne dla innych."
@@ -2484,6 +2521,7 @@ msgstr "Serwery _kluczy"
 msgid "_Sync"
 msgstr "_Synchronizuj"
 
+# rev: _Klucz i serwery _kluczy w osobnych menu ?
 #. Top menu items
 #: ../src/seahorse-viewer.vala:36
 msgid "_Key"
@@ -2497,6 +2535,7 @@ msgstr "_Edycja"
 msgid "_View"
 msgstr "_Widok"
 
+# rev: _Pomoc i _Preferencje w osobnych menu?
 #: ../src/seahorse-viewer.vala:39
 msgid "_Help"
 msgstr "_Pomoc"
@@ -2699,6 +2738,7 @@ msgstr "Prywatny klucz SSH"
 msgid "Public Secure Shell Key"
 msgstr "Publiczny klucz SSH"
 
+# rev: brak kropki
 #: ../ssh/seahorse-ssh-key-properties.c:118
 msgid "Couldn't rename key."
 msgstr "Nie można zmienić nazwy klucza"
@@ -2748,6 +2788,7 @@ msgstr "<i>Ma zastosowanie tylko do konta \"%s\".</i>"
 msgid "E_xport Complete Key"
 msgstr "_Wyeksportuj cały klucz"
 
+# rev: brak skrótu
 #: ../ssh/seahorse-ssh-key-properties.glade.h:22
 msgid "The owner of this key is _authorized to connect to this computer"
 msgstr "Właściciel tego klucza jest uprawniony do łączenia się z tym komputerem"
