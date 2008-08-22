@@ -10,9 +10,9 @@ msgid ""
 msgstr ""
 "Project-Id-Version: networkmanager-openvpn\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2008-07-01 03:19+0000\n"
-"PO-Revision-Date: 2008-08-21 22:14+0100\n"
-"Last-Translator: Joanna Mazgaj <jmazgaj@aviary.pl>\n"
+"POT-Creation-Date: 2008-08-22 17:12+0200\n"
+"PO-Revision-Date: 2008-08-22 17:13+0100\n"
+"Last-Translator: Tomasz Dominikowski <dominikowski@gmail.com>\n"
 "Language-Team: Aviary.pl <gnomepl@aviary.pl>\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -53,15 +53,14 @@ msgstr "Zapamiętanie _hasła na czas tej sesji"
 msgid "_Save password in keyring"
 msgstr "_Zapamiętanie hasła w bazie kluczy"
 
-# rev: wirtualnej
 #: ../auth-dialog/main.c:187
 #, c-format
 msgid "You need to authenticate to access the Virtual Private Network '%s'."
-msgstr "Aby uzyskać dostęp do witualnej sieci prywatnej \"%s\", należy dokonać uwierzytelnienia."
+msgstr "Aby uzyskać dostęp do wirtualnej sieci prywatnej \"%s\", należy dokonać uwierzytelnienia."
 
 #: ../auth-dialog/main.c:188
 msgid "Authenticate VPN"
-msgstr "Uwierzytelnij VPN"
+msgstr "Uwierzytelnianie VPN"
 
 #: ../auth-dialog/main.c:201
 msgid "Certificate pass_word:"
@@ -71,15 +70,15 @@ msgstr "Hasło _certyfikatu:"
 msgid "Certificate password:"
 msgstr "Hasło certyfikatu:"
 
-#: ../properties/auth-helpers.c:68
+#: ../properties/auth-helpers.c:69
 msgid "Choose a Certificate Authority certificate..."
 msgstr "Wybór certyfikatu CA..."
 
-#: ../properties/auth-helpers.c:87
+#: ../properties/auth-helpers.c:88
 msgid "Choose your personal certificate..."
 msgstr "Wybór certyfikatu prywatnego..."
 
-#: ../properties/auth-helpers.c:105
+#: ../properties/auth-helpers.c:106
 msgid "Choose your private key..."
 msgstr "Wybór klucza prywatnego..."
 
@@ -87,45 +86,45 @@ msgstr "Wybór klucza prywatnego..."
 msgid "Choose an OpenVPN static key..."
 msgstr "Wybór klucza statycznego OpenVPN..."
 
-#: ../properties/auth-helpers.c:177
-#: ../properties/auth-helpers.c:866
+#: ../properties/auth-helpers.c:183
+#: ../properties/auth-helpers.c:862
 msgid "None"
 msgstr "Brak"
 
-#: ../properties/auth-helpers.c:520
+#: ../properties/auth-helpers.c:518
 msgid "PEM certificates (*.pem, *.crt, *.key)"
 msgstr "Certyfikaty PEM (*.pem, *.crt, *.key)"
 
-#: ../properties/auth-helpers.c:580
+#: ../properties/auth-helpers.c:578
 msgid "OpenVPN Static Keys (*.key)"
 msgstr "Klucze statyczne OpenVPN (*.key)"
 
-#: ../properties/auth-helpers.c:705
+#: ../properties/auth-helpers.c:689
 msgid "Default"
 msgstr "Domyślny"
 
-#: ../properties/nm-openvpn.c:53
+#: ../properties/nm-openvpn.c:52
 msgid "OpenVPN"
 msgstr "OpenVPN"
 
-#: ../properties/nm-openvpn.c:54
+#: ../properties/nm-openvpn.c:53
 msgid "Compatible with the OpenVPN server."
 msgstr "Kompatybilny z serwerem OpenVPN."
 
-#: ../properties/nm-openvpn.c:314
+#: ../properties/nm-openvpn.c:310
 #: ../properties/nm-openvpn-dialog.glade.h:7
 msgid "Certificates (TLS)"
 msgstr "Certyfikaty (TLS)"
 
-#: ../properties/nm-openvpn.c:326
+#: ../properties/nm-openvpn.c:322
 msgid "Password"
 msgstr "Hasło"
 
-#: ../properties/nm-openvpn.c:340
+#: ../properties/nm-openvpn.c:336
 msgid "Password with Certificates (TLS)"
 msgstr "Hasło z certyfikatami (TLS)"
 
-#: ../properties/nm-openvpn.c:352
+#: ../properties/nm-openvpn.c:348
 msgid "Static Key"
 msgstr "Klucz statyczny"
 
@@ -172,75 +171,65 @@ msgid "Key File:"
 msgstr "Plik klucza:"
 
 #: ../properties/nm-openvpn-dialog.glade.h:12
+msgid "Local IP Address:"
+msgstr "Lokalny adres IP:"
+
+#: ../properties/nm-openvpn-dialog.glade.h:13
+msgid "OpenVPN Advanced Options"
+msgstr "Zaawansowane opcje OpenVPN"
+
+#: ../properties/nm-openvpn-dialog.glade.h:14
 msgid "Private Key:"
 msgstr "Klucz prywatny:"
 
-#: ../properties/nm-openvpn-dialog.glade.h:13
+#: ../properties/nm-openvpn-dialog.glade.h:15
 msgid "Static Key:"
 msgstr "Klucz statyczny:"
 
-#: ../properties/nm-openvpn-dialog.glade.h:14
+#: ../properties/nm-openvpn-dialog.glade.h:16
 msgid "Type:"
 msgstr "Typ:"
 
-#: ../properties/nm-openvpn-dialog.glade.h:15
+#: ../properties/nm-openvpn-dialog.glade.h:17
 msgid "Use L_ZO data compression"
 msgstr "Użycie kompresji L_ZO"
 
-#: ../properties/nm-openvpn-dialog.glade.h:16
+#: ../properties/nm-openvpn-dialog.glade.h:18
 msgid "Use a TA_P device"
 msgstr "Użycie urządzenia TA_P"
 
-#: ../properties/nm-openvpn-dialog.glade.h:17
+#: ../properties/nm-openvpn-dialog.glade.h:19
 msgid "Use a _TCP connection"
 msgstr "Użycie połączenia _TCP"
 
-#: ../properties/nm-openvpn-dialog.glade.h:18
+#: ../properties/nm-openvpn-dialog.glade.h:20
 msgid "Use additional TLS authentication"
 msgstr "Użycie dodatkowego uwierzytelniania TLS"
 
-#: ../properties/nm-openvpn-dialog.glade.h:19
+#: ../properties/nm-openvpn-dialog.glade.h:21
 msgid "Use custom gateway p_ort:"
 msgstr "Własny port bra_my:"
 
-#: ../properties/nm-openvpn-dialog.glade.h:20
+#: ../properties/nm-openvpn-dialog.glade.h:22
 msgid "User Certificate:"
 msgstr "Certyfikat użytkownika:"
 
-#: ../properties/nm-openvpn-dialog.glade.h:21
+#: ../properties/nm-openvpn-dialog.glade.h:23
 msgid "User name:"
 msgstr "Nazwa użytkownika:"
 
-#: ../properties/nm-openvpn-dialog.glade.h:22
+#: ../properties/nm-openvpn-dialog.glade.h:24
 msgid "_Gateway:"
 msgstr "_Brama:"
 
-# nie tłumaczymy
-#: ../properties/nm-openvpn-dialog.glade.h:23
-msgid "gtk-cancel"
-msgstr ""
-
-# nie tłumaczymy
-#: ../properties/nm-openvpn-dialog.glade.h:24
-msgid "gtk-ok"
-msgstr ""
-
-#: ../properties/nm-openvpn-dialog.glade.h:25
-msgid "page 1"
-msgstr "strona 1"
-
-#: ../properties/nm-openvpn-dialog.glade.h:26
-msgid "page 2"
-msgstr "strona 2"
-
-#: ../properties/nm-openvpn-dialog.glade.h:27
-msgid "page 3"
-msgstr "strona 3"
-
-#: ../properties/nm-openvpn-dialog.glade.h:28
-msgid "page 4"
-msgstr "strona 4"
-
+#~ msgid "page 1"
+#~ msgstr "strona 1"
+#~ msgid "page 2"
+#~ msgstr "strona 2"
+#~ msgid "page 3"
+#~ msgstr "strona 3"
+#~ msgid "page 4"
+#~ msgstr "strona 4"
 #~ msgid "Add, Remove, and Edit VPN Connections"
 #~ msgstr "Dodawanie, usuwanie i edycja połączeń VPN"
 #~ msgid "VPN Connection Manager (OpenVPN)"
@@ -261,8 +250,6 @@ msgstr "strona 4"
 #~ msgstr "Typ połączenia: klucz współdzielony"
 #~ msgid "Shared Key:  %s"
 #~ msgstr "Klucz współdzielony: %s"
-#~ msgid "Local IP:  %s"
-#~ msgstr "Lokalny adres IP: %s"
 #~ msgid "Remote IP:  %s"
 #~ msgstr "Zdalny adres IP: %s"
 #~ msgid "Connection Type: Password"
@@ -345,8 +332,6 @@ msgstr "strona 4"
 #~ msgstr "Sieć"
 #~ msgid "Only use _VPN connection for these addresses:"
 #~ msgstr "_Używaj połączeń VPN tylko dla tych adresów:"
-#~ msgid "OpenVPN Advanced Options"
-#~ msgstr "Zaawansowane opcje OpenVPN"
 #~ msgid "OpenVPN Configuration"
 #~ msgstr "Konfiguracja OpenVPN"
 #~ msgid ""
