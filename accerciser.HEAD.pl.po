@@ -8,8 +8,8 @@ msgstr ""
 "Project-Id-Version: accerciser\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2008-07-08 18:46+0000\n"
-"PO-Revision-Date: 2008-08-08 14:28+0100\n"
-"Last-Translator: Hubert Stachurski <hubert@hubertstachurski.pl>\n"
+"PO-Revision-Date: 2008-08-25 16:33+0100\n"
+"Last-Translator: wadim dziedzic <wdziedzic@aviary.pl>\n"
 "Language-Team: Polish <gnome-l10n@lists.aviary.pl>\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -27,6 +27,7 @@ msgstr "Zrób przegląd funkcji dostępności swojej aplikacji"
 msgid "A list of plugins that are disabled by default"
 msgstr "Lista wtyczek domyślnie wyłączonych"
 
+# REV: raczej kolor ramek wyróżnienia
 #: ../accerciser.schemas.in.h:2
 msgid "Highlight border color"
 msgstr "Kolor wyróźnienia ramek"
@@ -35,6 +36,7 @@ msgstr "Kolor wyróźnienia ramek"
 msgid "Highlight duration"
 msgstr "Czas trwania wyróżnienia"
 
+# REV: kolor wypełnienia wyróżnienia
 #: ../accerciser.schemas.in.h:4
 msgid "Highlight fill color"
 msgstr "Kolor wyróżnienia wypełnienia"
@@ -63,6 +65,7 @@ msgstr "Czas trwania wyróżnienia pola w czasie zaznaczania dostępnych węzł�
 msgid "API Browser"
 msgstr "Przeglądarka API"
 
+# REV:może lepiej "bieżącego elementu" ?
 #: ../plugins/api_view.py:35
 msgid "Browse the various methods of the current accessible"
 msgstr "Umożliwia przeglądanie różnych metod bieżącej funkcji dostępności"
@@ -87,6 +90,7 @@ msgstr "Wartość"
 msgid "IPython Console"
 msgstr "Konsola IPython"
 
+# REV:  j.,w.
 #: ../plugins/console.py:32
 msgid "Interactive console for manipulating currently selected accessible"
 msgstr "Interaktywna konsola umożliwiająca manipulowanie zaznaczoną funkcją dostępności"
@@ -103,10 +107,12 @@ msgstr "_Wyczyść zaznaczenie"
 msgid "Everything"
 msgstr "Wszystko"
 
+# REV: byłbym za accessible=element (w tym kontekście oczywiście)
 #: ../plugins/event_monitor.glade.h:4
 msgid "Selected accessible"
 msgstr "Zaznaczona funkcja dostępności"
 
+# REV: application = program (zob. słownik na wiki.aviary.pl)
 #: ../plugins/event_monitor.glade.h:5
 msgid "Selected application"
 msgstr "Zaznaczona aplikacja"
@@ -136,9 +142,8 @@ msgid "Start/stop event recording"
 msgstr "Uruchomienie/zatrzymanie nagrywania zdarzeń"
 
 #: ../plugins/event_monitor.py:67
-#, fuzzy
 msgid "Clear event log"
-msgstr "_Wyczyść zaznaczenie"
+msgstr "Wyczyść dziennik zdarzeń"
 
 #. add accessible's name to buffer
 #: ../plugins/event_monitor.py:117
@@ -241,6 +246,7 @@ msgstr "_Czynność"
 msgid "Alpha"
 msgstr "Alpha"
 
+# REV: Program
 #: ../plugins/interface_view.glade.h:26
 msgid "Ap_plication"
 msgstr "_Aplikacja"
@@ -290,6 +296,7 @@ msgstr "_Hipertekst"
 msgid "Header:"
 msgstr "Nagłówek:"
 
+# REV: istnieje coś takiego poza polskim windowsem?
 #. add url role to buffer
 #: ../plugins/interface_view.glade.h:38
 #: ../plugins/validate.py:281
@@ -313,14 +320,12 @@ msgid "Lo_gin Helper"
 msgstr "L_ogin Helper"
 
 #: ../plugins/interface_view.glade.h:43
-#, fuzzy
 msgid "Locale"
-msgstr "Locale"
+msgstr "Język"
 
 #: ../plugins/interface_view.glade.h:44
-#, fuzzy
 msgid "Locale:"
-msgstr "Locale:"
+msgstr "Język:"
 
 #: ../plugins/interface_view.glade.h:45
 #, fuzzy
@@ -351,6 +356,7 @@ msgstr "Wykonaj czynność"
 msgid "Position"
 msgstr "Pozycja"
 
+# REV: lepiej "względna"
 #: ../plugins/interface_view.glade.h:52
 msgid "Relative position"
 msgstr "Pozycja relatywna"
@@ -444,10 +450,10 @@ msgstr "Umożliwia podgląd różnych właściwości interfejsu"
 #: ../plugins/interface_view.py:187
 #: ../plugins/interface_view.py:189
 #: ../plugins/interface_view.py:190
-#, fuzzy
 msgid "(not implemented)"
-msgstr " (niezaimplementowane)"
+msgstr "niezaimplementowane)"
 
+# REV: skrót klawiszowy? przypisanie klawisza?
 #: ../plugins/interface_view.py:463
 msgid "Key binding"
 msgstr "Klawisz"
@@ -466,6 +472,7 @@ msgid "End"
 msgstr "Koniec"
 
 # poprawne językowo?
+# REV: zbyt wielu raczej
 #: ../plugins/interface_view.py:927
 msgid "Too many selectable children"
 msgstr "Zbyt wiele potomków"
@@ -476,18 +483,19 @@ msgstr "Typ zawartości"
 
 #: ../plugins/interface_view.py:1298
 #: ../plugins/interface_view.py:1301
-#, fuzzy
 msgid "<i>(Editable)</i>"
-msgstr " <i>(Edytowalny)</i>"
+msgstr "<i>(Element edytowalny)</i>"
 
 #: ../plugins/quick_select.py:11
 msgid "Quick Select"
 msgstr "Szybkie zaznaczanie"
 
+# REV: lepiej "zawierająca" albo "udostępniająca"
 #: ../plugins/quick_select.py:14
 msgid "Plugin with various methods of selecting accessibles quickly."
 msgstr "Wtyczka dostarczająca metod szybkiego zaznaczania funkcji dostępności."
 
+# REV: elementu...
 #: ../plugins/quick_select.py:20
 msgid "Inspect last focused accessible"
 msgstr "Podgląd ostatnio aktywnej funkcji dostępności"
@@ -541,23 +549,23 @@ msgstr "Bezczynny"
 msgid "Sche_ma:"
 msgstr "Sche_mat:"
 
+# REV: a nie czasem sprawdź? skontroluj?
 #: ../plugins/validate.glade.h:3
 msgid "V_alidate"
 msgstr "Z_atwierdź"
 
 #: ../plugins/validate.py:64
-#, fuzzy
 msgid "No description"
-msgstr "<brak opisu>"
+msgstr "Brak opisu"
 
+# REV: j.w.
 #: ../plugins/validate.py:152
 msgid "AT-SPI Validator"
 msgstr "Zatwierdzanie AT-SPI"
 
 #: ../plugins/validate.py:154
-#, fuzzy
 msgid "Validates application accessibility"
-msgstr "Zrób przegląd funkcji dostępności swojej aplikacji"
+msgstr "Sprawdza program pod kątem dostępności"
 
 #. log level column
 #. add level to buffer
@@ -576,38 +584,38 @@ msgstr "Rola"
 msgid "Saving"
 msgstr "Zapisywanie"
 
+# REV: j.w.
 #: ../plugins/validate.py:392
 msgid "Validating"
 msgstr "Zatwierdzanie"
 
 #: ../plugins/validate.py:548
 msgid "EXCEPT"
-msgstr ""
+msgstr "WYJĄTEK"
 
 #: ../plugins/validate.py:555
 msgid "ERROR"
-msgstr ""
+msgstr "BŁĄD"
 
 #: ../plugins/validate.py:563
 msgid "WARN"
-msgstr ""
+msgstr "UWAGA"
 
 #: ../plugins/validate.py:570
 msgid "INFO"
-msgstr ""
+msgstr "INFO"
 
 #: ../plugins/validate.py:577
 msgid "DEBUG"
-msgstr ""
+msgstr "DEBUG"
 
 #: ../plugindata/validate/basic.py:8
 msgid "Basic"
 msgstr "Podstawowy"
 
 #: ../plugindata/validate/basic.py:9
-#, fuzzy
 msgid "Tests fundamental GUI application accessibility"
-msgstr "Zrób przegląd funkcji dostępności swojej aplikacji"
+msgstr "Sprawdza dostępność interfejsu programów okienkowych"
 
 #: ../plugindata/validate/basic.py:24
 #, python-format
@@ -697,6 +705,7 @@ msgstr ""
 msgid "%s has no name or description"
 msgstr "%s nie ma nazwy ani opisu"
 
+# REV: lepiej chyba dosłownie "preferencje"
 #: ../src/lib/accerciser/accerciser.py:91
 msgid "_Preferences..."
 msgstr "_Ustawienia..."
@@ -706,9 +715,8 @@ msgid "_Contents"
 msgstr "_Zawartość"
 
 #: ../src/lib/accerciser/accerciser.py:135
-#, fuzzy
 msgid "Accerciser could not see the applications on your desktop.  You must enable desktop accessibility to fix this problem.  Do you want to enable it now?"
-msgstr "Accesiser nie mógł pobrać informacji o aplikacjach na pulpicie. Do poprawnej pracy tego programu wymagane jest włączenie technologii wspierających. Czy uruchomić je teraz?"
+msgstr "Nie można pobrać informacji o programach na pulpicie. Do poprawnej pracy tego programu wymagane jest włączenie technologii wspierających. Czy uruchomić je teraz?"
 
 #: ../src/lib/accerciser/accerciser.py:153
 msgid "Note: Changes only take effect after logout."
@@ -739,12 +747,12 @@ msgid "Refresh _Node"
 msgstr "Odśwież _węzły"
 
 # brak mi na to pomysłu...
+# REV: może tak..
 #. Translators: Appears as tooltip
 #.
 #: ../src/lib/accerciser/accessible_treeview.py:439
-#, fuzzy
 msgid "Refresh selected node's children"
-msgstr "Odświeża kolejne węzły zaznaczonego węzła "
+msgstr "Odświeża elementy potomne zaznaczonego węzła "
 
 #: ../src/lib/accerciser/hotkey_manager.py:220
 msgid "Component"
@@ -778,6 +786,7 @@ msgstr "Panel górny"
 msgid "Bottom panel"
 msgstr "Panel dolny"
 
+# REV: preferencje programu ...
 #: ../src/lib/accerciser/prefs_dialog.py:34
 msgid "accerciser Preferences"
 msgstr "Ustawienia"
@@ -803,6 +812,8 @@ msgid "Border color:"
 msgstr "Kolor ramki:"
 
 # box - okno?
+# REV: program prawdopodobnie zaznacza elementy interfejsu które są akutat testowane
+# REV: np: kolor ramki obszaru wyróżnienie
 #: ../src/lib/accerciser/prefs_dialog.py:93
 msgid "The border color of the highlight box"
 msgstr "Kolor ramki wyróżnonego okna"
@@ -812,14 +823,19 @@ msgid "Fill color:"
 msgstr "Kolor wypełnienia:"
 
 # box - okno ?
+# REV: j.w.
 #: ../src/lib/accerciser/prefs_dialog.py:98
 msgid "The fill color of the highlight box"
 msgstr "Kolor wypełnienia wyróżnionego okna"
 
+# REV: zob: http://wiki.aviary.pl/GNOME:ElementySta%C5%82e
+# Aviary.pl <gnomepl@aviary.pl>, 2008\n
+# Hubert Stachurski <...>, 2008
 #: ../src/lib/accerciser/about_dialog.py:52
 msgid "translator-credits"
 msgstr "GNOME PL <gnome-l10n@lists.aviary.pl>"
 
+# REV: Interaktywna przeglądarka funkcji dostępności ?
 #: ../src/lib/accerciser/about_dialog.py:53
 msgid "An interactive Python accessibility explorer"
 msgstr "Interaktywny eksplorator funkcji dostępności"
@@ -840,6 +856,7 @@ msgstr "Witryna WWW"
 msgid "_Add Bookmark..."
 msgstr "_Dodaj zakładkę..."
 
+# REV: elementu
 #: ../src/lib/accerciser/bookmarks.py:63
 msgid "Bookmark selected accessible."
 msgstr "Dodaje zakładkę do zaznaczonej funkcji dostępności."
@@ -852,6 +869,7 @@ msgstr "_Edytuj zakładki..."
 msgid "Manage bookmarks."
 msgstr "Zarządza zakładkami."
 
+# REV: raczej "Zmień/Modyfikuj zakładki..."
 #: ../src/lib/accerciser/bookmarks.py:323
 msgid "Edit Bookmarks..."
 msgstr "Edytowanie zakładek"
@@ -860,6 +878,7 @@ msgstr "Edytowanie zakładek"
 msgid "Title"
 msgstr "Tytuł"
 
+# REV: program
 #: ../src/lib/accerciser/bookmarks.py:435
 msgid "Application"
 msgstr "Aplikacja"
@@ -868,6 +887,7 @@ msgstr "Aplikacja"
 msgid "Path"
 msgstr "Ścieżka"
 
+# REV: 2 wielkie litery - prawdopodobnie przycisk czyli polecenie - "Dodaj zakładkę..."
 #: ../src/lib/accerciser/bookmarks.py:512
 msgid "Add Bookmark..."
 msgstr "Dodawanie zakładki..."
@@ -876,6 +896,7 @@ msgstr "Dodawanie zakładki..."
 msgid "Title:"
 msgstr "Tytuł:"
 
+# REV: program
 #: ../src/lib/accerciser/bookmarks.py:528
 msgid "Application:"
 msgstr "Aplikacja:"
@@ -888,6 +909,7 @@ msgstr "Ścieżka:"
 msgid "Plugin Errors"
 msgstr "Błędy wtyczki"
 
+# REV: a nie widok?
 #. Translators: This is the viewport in which the plugin appears,
 #. it is a noun.
 #.
@@ -936,6 +958,7 @@ msgstr "_Zakładki"
 msgid "_View"
 msgstr "_Widok"
 
+# REV: pomoc ma zwykle accesskey na c > Pomo_c
 #: ../src/lib/accerciser/ui_manager.py:24
 msgid "_Help"
 msgstr "Po_moc"
