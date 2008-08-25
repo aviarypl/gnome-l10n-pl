@@ -10,8 +10,8 @@ msgstr ""
 "Project-Id-Version: nautilus-cd-burner\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2008-02-12 21:59+0000\n"
-"PO-Revision-Date: 2008-08-25 15:45+0100\n"
-"Last-Translator: wadim dziedzic <wdziedzic@aviary.pl>\n"
+"PO-Revision-Date: 2008-08-25 16:19+0100\n"
+"Last-Translator: Tomasz Dominikowski <dominikowski@gmail.com>\n"
 "Language-Team: Aviary.pl <gnomepl@aviary.pl>\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -54,10 +54,9 @@ msgstr "<big><b>Część plików ma nieprawidłowe nazwy.</b></big>"
 msgid "<big><b>Writing files to disc</b></big>"
 msgstr "<big><b>Nagrywanie plików</b></big>"
 
-# REV: inicjalizacja...
 #: ../data/nautilus-cd-burner.glade.h:6
 msgid "<i>Initializing...</i>"
-msgstr "<i>Inicjowanie...</i>"
+msgstr "<i>Inicjalizacja...</i>"
 
 #: ../data/nautilus-cd-burner.glade.h:7
 msgid "Data size:"
@@ -88,10 +87,9 @@ msgstr "Nagrywanie płyty _do:"
 msgid "Writing Files to Disc"
 msgstr "Nagrywanie plików na płytę"
 
-# REV: accesskey:  N jest już na początku
 #: ../data/nautilus-cd-burner.glade.h:14
 msgid "_Dummy write"
-msgstr "Nagrywanie pozorowa_ne"
+msgstr "_Nagrywanie pozorowane"
 
 #: ../data/nautilus-cd-burner.schemas.in.h:1
 msgid "Default burn speed"
@@ -105,10 +103,9 @@ msgstr "Domyślna prędkość, z którą zostanie nagrany nośnik."
 msgid "Directory for the temporary ISO images"
 msgstr "Katalog na tymczasowe obrazy ISO"
 
-# REV: lepiej kropka lub średnik zamiast przecinka
 #: ../data/nautilus-cd-burner.schemas.in.h:4
 msgid "Directory used for the temporary ISO images, leave blank to use the default system temporary directory."
-msgstr "Katalog używany do zapisu tymczasowych obrazów ISO, proszę pozostawić puste pole aby użyć domyślnego katalogu tymczasowego systemu."
+msgstr "Katalog używany do zapisu tymczasowych obrazów ISO. Proszę pozostawić puste pole aby użyć domyślnego katalogu tymczasowego systemu."
 
 #: ../data/nautilus-cd-burner.schemas.in.h:5
 msgid "Enable Burnproof option"
@@ -118,7 +115,6 @@ msgstr "Włączenie opcji Burnproof"
 msgid "Enable debug"
 msgstr "Włączenie debugowania"
 
-# REV: nadpalanie? jest takie coś po polsku?
 #: ../data/nautilus-cd-burner.schemas.in.h:7
 msgid "Enable overburn"
 msgstr "Włączenie nadpalania (overburn)"
@@ -199,10 +195,9 @@ msgstr "Wybrane położenie nie posiada wystarczającej ilości miejsca do zapis
 msgid "Could not run sub process: %s."
 msgstr "Nie można uruchomić podprocesu: %s."
 
-# REV: anulowana
 #: ../src/make-iso.c:1039
 msgid "The operation was cancelled by the user."
-msgstr "Operacja została przerwana przez użytkownika."
+msgstr "Operacja została anulowana przez użytkownika."
 
 #: ../src/make-iso.c:1140
 #, c-format
@@ -301,9 +296,8 @@ msgstr "DVD+R DL"
 
 #: ../src/nautilus-burn-drive.c:1281
 msgid "Broken media type"
-msgstr "Rodzaj uszkodzonego nośnika"
+msgstr "Uszkodzony typ nośnika"
 
-# REV: a nie uszkodzony typ nośnika?
 #: ../src/nautilus-burn-drive-monitor.c:452
 msgid "File image"
 msgstr "Plik obrazu"
@@ -338,10 +332,9 @@ msgstr "Docelowy napęd DVD jest nadal w użyciu."
 msgid "Unhandled error, aborting"
 msgstr "Nieobsłużony błąd, przerwanie"
 
-# REV: lepiej: została już nagrana
 #: ../src/nautilus-burn-recorder.c:697
 msgid "The CD has already been recorded."
-msgstr "Płyta CD była już nagrana."
+msgstr "Płyta CD została już nagrana."
 
 #: ../src/nautilus-burn-recorder.c:717
 msgid "The files selected did not fit on the CD."
@@ -499,14 +492,13 @@ msgstr "Plik nie został odnaleziony: %s"
 msgid "File does not appear to be a valid CUE sheet: %s"
 msgstr "Plik nie wygląda na prawidłowy arkusz CUE: %s"
 
-# REV: niepotrzebny przecinek między b i Y
 #.
 #. translators: see strftime man page for meaning of %b, %d and %Y
 #. the maximum length for this field is 32 bytes
 #.
 #: ../src/ncb-selection.c:745
 msgid "Personal Data, %b %d, %Y"
-msgstr "Dane osobiste, %d %b, %Y"
+msgstr "Dane osobiste, %d %b %Y"
 
 #: ../src/ncb-selection.c:817
 msgid "Unable to create CD/DVD"
