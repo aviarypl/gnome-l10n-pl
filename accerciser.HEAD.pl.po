@@ -7,37 +7,57 @@ msgid ""
 msgstr ""
 "Project-Id-Version: accerciser\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2008-04-21 22:05+0000\n"
-"PO-Revision-Date: 2008-05-05 14:31+0100\n"
-"Last-Translator: Piotr Zaryk (Aviary.pl) <pzaryk@aviary.pl>\n"
-"Language-Team: GNOME PL Team <gnome-l10n@lists.aviary.pl>\n"
+"POT-Creation-Date: 2008-07-08 18:46+0000\n"
+"PO-Revision-Date: 2008-08-08 14:28+0100\n"
+"Last-Translator: Hubert Stachurski <hubert@hubertstachurski.pl>\n"
+"Language-Team: Polish <gnome-l10n@lists.aviary.pl>\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"Plural-Forms: nplurals=3; plural=(n==1 ? 0 : n%10>=2 && n%10<=4 && (n%100<10 || n%100>=20) ? 1 : 2);\n"
-"X-Poedit-Language: Polish\n"
-"X-Poedit-Country: POLAND\n"
-"X-Poedit-SourceCharset: utf-8\n"
 
 #: ../accerciser.desktop.in.in.h:1
-msgid "Accerciser Accesibility Explorer"
+msgid "Accerciser Accessibility Explorer"
 msgstr "Eksplorator dostępności Accerciser"
 
 #: ../accerciser.desktop.in.in.h:2
 msgid "Give your application an accessibility workout"
-msgstr "Należy wykonać przegląd funkcji dostępności programu"
+msgstr "Zrób przegląd funkcji dostępności swojej aplikacji"
 
 #: ../accerciser.schemas.in.h:1
 msgid "A list of plugins that are disabled by default"
 msgstr "Lista wtyczek domyślnie wyłączonych"
 
 #: ../accerciser.schemas.in.h:2
+msgid "Highlight border color"
+msgstr "Kolor wyróźnienia ramek"
+
+#: ../accerciser.schemas.in.h:3
+msgid "Highlight duration"
+msgstr "Czas trwania wyróżnienia"
+
+#: ../accerciser.schemas.in.h:4
+msgid "Highlight fill color"
+msgstr "Kolor wyróżnienia wypełnienia"
+
+#: ../accerciser.schemas.in.h:5
+msgid "The color and opacity of the highlight border."
+msgstr "Kolor i krycie wyróżnionych ramek."
+
+#: ../accerciser.schemas.in.h:6
+msgid "The color and opacity of the highlight fill."
+msgstr "Kolor i krycie wyróżnionego wypłnienia."
+
+#: ../accerciser.schemas.in.h:7
 msgid "The default plugin layout for the bottom panel"
 msgstr "Domyślny układ wtyczki dla dolnego panelu"
 
-#: ../accerciser.schemas.in.h:3
+#: ../accerciser.schemas.in.h:8
 msgid "The default plugin layout for the top panel"
 msgstr "Domyślny układ wtyczki dla górnego panelu"
+
+#: ../accerciser.schemas.in.h:9
+msgid "The duration of the highlight box when selecting accessible nodes"
+msgstr "Czas trwania wyróżnienia pola w czasie zaznaczania dostępnych węzłów"
 
 #: ../plugins/api_view.py:32
 msgid "API Browser"
@@ -89,7 +109,7 @@ msgstr "Zaznaczona funkcja dostępności"
 
 #: ../plugins/event_monitor.glade.h:5
 msgid "Selected application"
-msgstr "Zaznaczony program"
+msgstr "Zaznaczona aplikacja"
 
 #: ../plugins/event_monitor.glade.h:6
 msgid "Source"
@@ -113,7 +133,7 @@ msgstr "Wyróżnianie ostatniego zdarzenia"
 
 #: ../plugins/event_monitor.py:64
 msgid "Start/stop event recording"
-msgstr ""
+msgstr "Uruchomienie/zatrzymanie nagrywania zdarzeń"
 
 #: ../plugins/event_monitor.py:67
 #, fuzzy
@@ -125,7 +145,7 @@ msgstr "_Wyczyść zaznaczenie"
 #: ../plugins/interface_view.py:453
 #: ../plugins/interface_view.py:736
 #: ../plugins/validate.py:277
-#: ../src/lib/accerciser/accessible_treeview.py:388
+#: ../src/lib/accerciser/accessible_treeview.py:389
 #: ../src/lib/accerciser/plugin/plugin_manager.py:369
 msgid "Name"
 msgstr "Nazwa"
@@ -223,7 +243,7 @@ msgstr "Alpha"
 
 #: ../plugins/interface_view.glade.h:26
 msgid "Ap_plication"
-msgstr "Progr_am"
+msgstr "_Aplikacja"
 
 #: ../plugins/interface_view.glade.h:27
 msgid "Co_mponent"
@@ -293,14 +313,17 @@ msgid "Lo_gin Helper"
 msgstr "L_ogin Helper"
 
 #: ../plugins/interface_view.glade.h:43
+#, fuzzy
 msgid "Locale"
 msgstr "Locale"
 
 #: ../plugins/interface_view.glade.h:44
+#, fuzzy
 msgid "Locale:"
 msgstr "Locale:"
 
 #: ../plugins/interface_view.glade.h:45
+#, fuzzy
 msgid "MDI-Z-order"
 msgstr "MDI-Z-order"
 
@@ -442,6 +465,7 @@ msgstr "Początek"
 msgid "End"
 msgstr "Koniec"
 
+# poprawne językowo?
 #: ../plugins/interface_view.py:927
 msgid "Too many selectable children"
 msgstr "Zbyt wiele potomków"
@@ -511,15 +535,15 @@ msgstr "Potwierdzanie czyszczenia"
 #: ../plugins/validate.py:358
 #: ../plugins/validate.py:410
 msgid "Idle"
-msgstr ""
+msgstr "Bezczynny"
 
 #: ../plugins/validate.glade.h:2
 msgid "Sche_ma:"
-msgstr ""
+msgstr "Sche_mat:"
 
 #: ../plugins/validate.glade.h:3
 msgid "V_alidate"
-msgstr ""
+msgstr "Z_atwierdź"
 
 #: ../plugins/validate.py:64
 #, fuzzy
@@ -528,32 +552,33 @@ msgstr "<brak opisu>"
 
 #: ../plugins/validate.py:152
 msgid "AT-SPI Validator"
-msgstr ""
+msgstr "Zatwierdzanie AT-SPI"
 
 #: ../plugins/validate.py:154
+#, fuzzy
 msgid "Validates application accessibility"
-msgstr "Sprawdza funkcje dostępności programu"
+msgstr "Zrób przegląd funkcji dostępności swojej aplikacji"
 
 #. log level column
 #. add level to buffer
 #: ../plugins/validate.py:205
 #: ../plugins/validate.py:273
 msgid "Level"
-msgstr ""
+msgstr "Poziom"
 
 #. add accessible's role to buffer
 #: ../plugins/validate.py:279
-#: ../src/lib/accerciser/accessible_treeview.py:398
+#: ../src/lib/accerciser/accessible_treeview.py:399
 msgid "Role"
 msgstr "Rola"
 
 #: ../plugins/validate.py:344
 msgid "Saving"
-msgstr ""
+msgstr "Zapisywanie"
 
 #: ../plugins/validate.py:392
 msgid "Validating"
-msgstr ""
+msgstr "Zatwierdzanie"
 
 #: ../plugins/validate.py:548
 msgid "EXCEPT"
@@ -577,11 +602,12 @@ msgstr ""
 
 #: ../plugindata/validate/basic.py:8
 msgid "Basic"
-msgstr ""
+msgstr "Podstawowy"
 
 #: ../plugindata/validate/basic.py:9
+#, fuzzy
 msgid "Tests fundamental GUI application accessibility"
-msgstr "Sprawdza podstawowe funkcje dostępności GUI programu"
+msgstr "Zrób przegląd funkcji dostępności swojej aplikacji"
 
 #: ../plugindata/validate/basic.py:24
 #, python-format
@@ -595,12 +621,12 @@ msgstr ""
 
 #: ../plugindata/validate/basic.py:56
 msgid "more than one focused widget"
-msgstr ""
+msgstr "więcej niż jeden określony widget"
 
 #: ../plugindata/validate/basic.py:81
 #, python-format
 msgid "%s has no text interface"
-msgstr ""
+msgstr "%s nie ma interfejsu tekstowego"
 
 #. Translators: The first variable is the role name of the object that has an
 #. index mismatch.
@@ -608,7 +634,7 @@ msgstr ""
 #: ../plugindata/validate/basic.py:100
 #, python-format
 msgid "%s index in parent does not match child index"
-msgstr ""
+msgstr "indeks rodzica %s nie odpowiada ineksowi potomka"
 
 #: ../plugindata/validate/basic.py:145
 #, python-format
@@ -621,7 +647,7 @@ msgstr ""
 #: ../plugindata/validate/basic.py:194
 #, python-format
 msgid "%s missing name or label"
-msgstr ""
+msgstr "brak nazwy lub etykiety %s "
 
 #: ../plugindata/validate/basic.py:210
 #, python-format
@@ -643,7 +669,7 @@ msgstr ""
 #: ../plugindata/validate/basic.py:262
 #, python-format
 msgid "%s does not belong to a set"
-msgstr ""
+msgstr "%s nie należy do zestawu"
 
 #. Translators: The row or column number retrieved from a table child's
 #. object at a certain index is wrong.
@@ -667,9 +693,9 @@ msgid "%(rolename)s parent index %(num1)d does not match row and column index %(
 msgstr ""
 
 #: ../plugindata/validate/basic.py:352
-#, fuzzy, python-format
+#, python-format
 msgid "%s has no name or description"
-msgstr "<brak opisu>"
+msgstr "%s nie ma nazwy ani opisu"
 
 #: ../src/lib/accerciser/accerciser.py:91
 msgid "_Preferences..."
@@ -680,26 +706,45 @@ msgid "_Contents"
 msgstr "_Zawartość"
 
 #: ../src/lib/accerciser/accerciser.py:135
+#, fuzzy
 msgid "Accerciser could not see the applications on your desktop.  You must enable desktop accessibility to fix this problem.  Do you want to enable it now?"
-msgstr "Program Accesiser nie mógł pobrać informacji o programach na pulpicie. Do poprawnej pracy tego programu wymagane jest włączenie technologii wspierających. Czy uruchomić je teraz?"
+msgstr "Accesiser nie mógł pobrać informacji o aplikacjach na pulpicie. Do poprawnej pracy tego programu wymagane jest włączenie technologii wspierających. Czy uruchomić je teraz?"
 
 #: ../src/lib/accerciser/accerciser.py:153
 msgid "Note: Changes only take effect after logout."
 msgstr "Uwaga: Zmiany zostaną wprowadzone po wylogowaniu."
 
-#: ../src/lib/accerciser/accessible_treeview.py:344
+#: ../src/lib/accerciser/accessible_treeview.py:345
 msgid "<dead>"
 msgstr "<martwy>"
 
-#: ../src/lib/accerciser/accessible_treeview.py:405
+#: ../src/lib/accerciser/accessible_treeview.py:406
 msgid "Children"
 msgstr "L. potomków"
 
-#. Translators: Refresh current tree node's children.
+#: ../src/lib/accerciser/accessible_treeview.py:430
+msgid "_Refresh Registry"
+msgstr "Odśwież _rejestr"
+
+#. Translators: Appears as tooltip
 #.
 #: ../src/lib/accerciser/accessible_treeview.py:433
-msgid "Refresh _Current"
-msgstr "Odśwież _bieżące"
+msgid "Refresh all"
+msgstr "Odświeża wszystkie"
+
+#. Translators: Refresh current tree node's children.
+#.
+#: ../src/lib/accerciser/accessible_treeview.py:436
+msgid "Refresh _Node"
+msgstr "Odśwież _węzły"
+
+# brak mi na to pomysłu...
+#. Translators: Appears as tooltip
+#.
+#: ../src/lib/accerciser/accessible_treeview.py:439
+#, fuzzy
+msgid "Refresh selected node's children"
+msgstr "Odświeża kolejne węzły zaznaczonego węzła "
 
 #: ../src/lib/accerciser/hotkey_manager.py:220
 msgid "Component"
@@ -733,17 +778,43 @@ msgstr "Panel górny"
 msgid "Bottom panel"
 msgstr "Panel dolny"
 
-#: ../src/lib/accerciser/prefs_dialog.py:30
+#: ../src/lib/accerciser/prefs_dialog.py:34
 msgid "accerciser Preferences"
 msgstr "Ustawienia"
 
-#: ../src/lib/accerciser/prefs_dialog.py:36
+#: ../src/lib/accerciser/prefs_dialog.py:40
 msgid "Plugins"
 msgstr "Wtyczki"
 
-#: ../src/lib/accerciser/prefs_dialog.py:37
+#: ../src/lib/accerciser/prefs_dialog.py:41
 msgid "Global Hotkeys"
 msgstr "Skróty klawiszowe"
+
+#: ../src/lib/accerciser/prefs_dialog.py:49
+msgid "Highlighting"
+msgstr "Wyróżnianie"
+
+#: ../src/lib/accerciser/prefs_dialog.py:81
+msgid "Highlight duration:"
+msgstr "Czas trwania wyróżnienia:"
+
+#: ../src/lib/accerciser/prefs_dialog.py:89
+msgid "Border color:"
+msgstr "Kolor ramki:"
+
+# box - okno?
+#: ../src/lib/accerciser/prefs_dialog.py:93
+msgid "The border color of the highlight box"
+msgstr "Kolor ramki wyróżnonego okna"
+
+#: ../src/lib/accerciser/prefs_dialog.py:94
+msgid "Fill color:"
+msgstr "Kolor wypełnienia:"
+
+# box - okno ?
+#: ../src/lib/accerciser/prefs_dialog.py:98
+msgid "The fill color of the highlight box"
+msgstr "Kolor wypełnienia wyróżnionego okna"
 
 #: ../src/lib/accerciser/about_dialog.py:52
 msgid "translator-credits"
@@ -791,7 +862,7 @@ msgstr "Tytuł"
 
 #: ../src/lib/accerciser/bookmarks.py:435
 msgid "Application"
-msgstr "Program"
+msgstr "Aplikacja"
 
 #: ../src/lib/accerciser/bookmarks.py:443
 msgid "Path"
@@ -807,7 +878,7 @@ msgstr "Tytuł:"
 
 #: ../src/lib/accerciser/bookmarks.py:528
 msgid "Application:"
-msgstr "Program:"
+msgstr "Aplikacja:"
 
 #: ../src/lib/accerciser/bookmarks.py:531
 msgid "Path:"
@@ -824,7 +895,7 @@ msgstr "Błędy wtyczki"
 msgid "View"
 msgstr "Wyświetlanie"
 
-#: ../src/lib/accerciser/plugin/plugin_manager.py:465
+#: ../src/lib/accerciser/plugin/plugin_manager.py:455
 msgid "No view"
 msgstr "Bez wyświetlania"
 
