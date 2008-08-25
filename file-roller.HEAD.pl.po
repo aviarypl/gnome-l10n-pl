@@ -5,13 +5,14 @@
 # pomóc w jego rozwijaniu i pielęgnowaniu, napisz do nas:
 # gnomepl@aviary.pl
 # -=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-
+# review całości: 25.08.2008 wd
 msgid ""
 msgstr ""
 "Project-Id-Version: file-roller\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2008-08-14 16:44+0000\n"
-"PO-Revision-Date: 2008-08-24 21:38+0100\n"
-"Last-Translator: Tomasz Dominikowski <dominikowski@gmail.com>\n"
+"PO-Revision-Date: 2008-08-25 22:23+0100\n"
+"Last-Translator: wadim dziedzic <wdziedzic@aviary.pl>\n"
 "Language-Team: Aviary.pl <gnomepl@aviary.pl>\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -53,6 +54,7 @@ msgstr "Podział na _woluminy o rozmiarze"
 msgid "_Archive:"
 msgstr "_Archiwum:"
 
+# REV: dodatkowe? albo "Szyfrowanie także listy plików"
 #: ../data/glade/batch-add-files.glade.h:8
 #: ../data/glade/new.glade.h:5
 #: ../data/glade/password.glade.h:3
@@ -95,6 +97,7 @@ msgstr "W_szystkie pliki"
 msgid "_Files:"
 msgstr "O_kreślone pliki:"
 
+# REV: tu bym dał wybrane pliki (wybrane, czyli nie wszystkie)
 #: ../data/glade/delete.glade.h:4
 #: ../src/dlg-extract.c:374
 msgid "_Selected files"
@@ -109,6 +112,7 @@ msgstr "Na przykład: *.txt; *.doc"
 msgid "Archive _type:"
 msgstr "Typ _archiwum:"
 
+# REV: liczba pojedyncza?
 #: ../data/glade/open-with.glade.h:1
 msgid "A_vailable application:"
 msgstr "_Dostępne programy:"
@@ -240,14 +244,17 @@ msgstr "Wszystkie pliki"
 msgid "Last Output"
 msgstr "Ostatnie wyjście"
 
+# REV: wersja z wiki nie ma "tykania"
 #: ../src/actions.c:838
 msgid "File Roller is free software; you can redistribute it and/or modify it under the terms of the GNU General Public License as published by the Free Software Foundation; either version 2 of the License, or (at your option) any later version."
 msgstr "File Roller jest wolnym oprogramowaniem; możesz go rozprowadzać dalej i/lub modyfikować na warunkach Powszechnej Licencji Publicznej GNU, wydanej przez Fundację Wolnego Oprogramowania - według wersji 2 tej Licencji lub (według twojego wyboru) którejś z późniejszych wersji."
 
+# REV: j.w.
 #: ../src/actions.c:842
 msgid "File Roller is distributed in the hope that it will be useful, but WITHOUT ANY WARRANTY; without even the implied warranty of MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the GNU General Public License for more details."
 msgstr "File Roller jest rozpowszechniany z nadzieją, iż będzie użyteczny - jednak BEZ JAKIEJKOLWIEK GWARANCJI, nawet domyślnej gwarancji PRZYDATNOŚCI HANDLOWEJ albo PRZYDATNOŚCI DO OKREŚLONYCH ZASTOSOWAŃ. W celu uzyskania bliższych informacji sięgnij do Powszechnej Licencji Publicznej GNU."
 
+# REV: j.w.
 #: ../src/actions.c:846
 msgid "You should have received a copy of the GNU General Public License along with File Roller; if not, write to the Free Software Foundation, Inc., 51 Franklin St, Fifth Floor, Boston, MA  02110-1301 USA"
 msgstr "Z pewnością wraz z niniejszym programem otrzymano też egzemplarz Powszechnej Licencji Publicznej GNU (GNU General Public License); jeśli nie - napisz do Free Software Foundation, Inc., 59 Temple Place, Fifth Floor, Boston, MA  02110-1301  USA"
@@ -329,6 +336,7 @@ msgstr "_Wczytaj opcje"
 msgid "Sa_ve Options"
 msgstr "_Zapisz opcje"
 
+# REV: nie lubię "resetowania" - może: przywróć (domyślne) opcje?
 #: ../src/dlg-add-folder.c:304
 msgid "_Reset Options"
 msgstr "Z_resetuj opcje"
@@ -512,6 +520,7 @@ msgstr "Plik nie istnieje"
 msgid "You don't have the right permissions."
 msgstr "Brak uprawnień."
 
+# REV: overtranslation :-)
 #: ../src/fr-archive.c:2369
 msgid "This archive type cannot be modified"
 msgstr "Nieobsługiwany typ archiwum do modyfikacji"
@@ -647,10 +656,12 @@ msgstr "Archiwum:"
 msgid "Extraction completed successfully"
 msgstr "Rozpakowanie powiodło się"
 
+# REV: lepiej - tworzenie archiwum zakończone powodzeniem
 #: ../src/fr-window.c:2669
 msgid "Archive created successfully"
 msgstr "Archiwum utworzono z powodzeniem"
 
+# REV: a nie lepiej "czekać"
 #: ../src/fr-window.c:2717
 msgid "wait please..."
 msgstr "proszę poczekać..."
@@ -664,18 +675,22 @@ msgstr "Przy rozpakowywaniu plików wystąpił błąd."
 msgid "Could not open \"%s\""
 msgstr "Nie można otworzyć \"%s\""
 
+# REV: lepszy szyk to "Wystąpił błąd podczas...."
 #: ../src/fr-window.c:2875
 msgid "An error occurred while loading the archive."
 msgstr "Przy wczytywaniu archiwum wystąpił błąd."
 
+# REV: j.w.
 #: ../src/fr-window.c:2879
 msgid "An error occurred while deleting files from the archive."
 msgstr "Przy usuwaniu plików z archiwum wystąpił błąd."
 
+# REV: j.w.
 #: ../src/fr-window.c:2885
 msgid "An error occurred while adding files to the archive."
 msgstr "Przy dodawaniu plików do archiwum wystąpił błąd."
 
+# REV: j.w.
 #: ../src/fr-window.c:2889
 msgid "An error occurred while testing archive."
 msgstr "Przy testowaniu archiwum wystąpił błąd."
@@ -818,6 +833,7 @@ msgstr "Nie można zmienić nazwy katalogu"
 msgid "Could not rename the file"
 msgstr "Nie można zmienić nazwy pliku"
 
+# REV: nie jest to czasem jakieś polecenie?
 #: ../src/fr-window.c:7692
 msgid "Paste Selection"
 msgstr "Wkleja zaznaczone elementy"
@@ -841,6 +857,7 @@ msgstr "Rozpakowanie plików z archiwum"
 msgid "%d %B %Y, %H:%M"
 msgstr "%d %B %Y, %H:%M"
 
+# REV: średnio pasuje - wyniki działania z wiersza poleceń ? albo może jeszcze coś lepszego..
 #. Expander
 #: ../src/gtk-utils.c:440
 msgid "Command _Line Output"
