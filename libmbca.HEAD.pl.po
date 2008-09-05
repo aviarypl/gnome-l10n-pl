@@ -1,21 +1,20 @@
 # Translation of libmbca to Polish
 # Copyright (C) 2008 Aviary.pl
 # This file is distributed under the same license as the libmbpca package.
-# Tomasz Dominikowski <tdominikowski@aviary.pl, 2008
-#
 # -=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-
 # Aviary.pl
 # Jeśli masz jakiekolwiek uwagi odnoszące się do tłumaczenia lub chcesz
 # pomóc w jego rozwijaniu i pielęgnowaniu, napisz do nas:
 # gnomepl@aviary.pl
 # -=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-
+# Tomasz Dominikowski <tdominikowski@aviary.pl>, 2008.
 msgid ""
 msgstr ""
 "Project-Id-Version: libmbca\n"
 "Report-Msgid-Bugs-To: antti@kaijanmaki.net\n"
 "POT-Creation-Date: 2008-08-24 18:06+0000\n"
-"PO-Revision-Date: 2008-08-24 22:43+0100\n"
-"Last-Translator: Tomasz Dominikowski <dominikowski@gmail.com>\n"
+"PO-Revision-Date: 2008-09-05 13:35+0100\n"
+"Last-Translator: Piotr Zaryk (Aviary.pl) <pzaryk@aviary.pl>\n"
 "Language-Team: Aviary.pl <gnomepl@aviary.pl>\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=utf-8\n"
@@ -23,6 +22,7 @@ msgstr ""
 "Plural-Forms: nplurals=3; plural=(n==1 ? 0 : n%10>=2 && n%10<=4 && (n%100<10 || n%100>=20) ? 1 : 2);\n"
 "X-Poedit-Language: Polish\n"
 "X-Poedit-Country: Poland\n"
+"X-Poedit-SourceCharset: utf-8\n"
 
 #: ../src/mbca_assistant.c:288
 msgid "Country"
@@ -69,6 +69,7 @@ msgstr "PC Card, PCMCIA lub ExpressCard"
 msgid "Select the correct device from the list"
 msgstr "Proszę wybrać poprawne urządzenie z listy"
 
+# REV: OK, ale w oryginale nie ma mowy o slocie. Nie wiem, czy geekowi pomaga w czymkolwiek określenie slot. Może (...)"karta SIM znajduje się w odpowiednim miejscu."
 #: ../src/method_page.c:129
 msgid "<small>Make sure the SIM card is in place</small>"
 msgstr "<small>Proszę się upewnić, że karta SIM znajduje się w odpowiednim slocie</small>"
@@ -81,6 +82,7 @@ msgstr "USB"
 msgid "Select the USB device from the list"
 msgstr "Proszę wybrać urządzenie USB z listy"
 
+# REV: slot, j.w.
 #: ../src/method_page.c:152
 msgid "<small>The device must be plugged in and must be switched on. Make sure that the mobile phone has no security lock active. Make sure the SIM card is in place</small>"
 msgstr "<small>Urządzenie musi być podłączone i włączone. Proszę się upewnić, że telefon nie ma włączonej żadnej blokady. Proszę się upewnić, że karta SIM znajduje się w odpowiednim slocie</small>"
@@ -91,6 +93,7 @@ msgstr "<small>Urządzenie musi być podłączone i włączone. Proszę się upe
 msgid "_Country:"
 msgstr "_Kraj:"
 
+# REV: pomocą
 #: ../src/provider_page.c:176
 msgid "You can search the list by entering text on your keyboard"
 msgstr "Można przeszukiwać listę wprowadzając tekst za pomoca klawiatury"
@@ -116,6 +119,7 @@ msgstr "Kabel szeregowy"
 msgid "<b>Connection method:</b>"
 msgstr "<b>Metoda połączenia:</b>"
 
+# REV: raczej kraj, chodzi o terytorium
 #: ../data/mbca.glade.h:2
 msgid "<b>Country:</b>"
 msgstr "<b>Państwo:</b>"
@@ -140,14 +144,19 @@ msgstr "<small><b>uwaga:</b></small>"
 msgid "<small>If necessary go back and change the details. When you are done give the configuration a name which will be easy to identify later</small>"
 msgstr "<small>Jeśli to konieczne, można wrócić i zmienić szczegóły. Po ukończeniu można nadać połączeniu nazwę, aby można je było później łatwo rozpoznać</small>"
 
+# REV: undertranslation, styl. - lepiej: "proszę zapoznać się z instrukcją obsługi używanego telefonu komórkowego".
 #: ../data/mbca.glade.h:8
 msgid "<small>Make sure your computer and mobile phone have Bluetooth enabled and your mobile phone is discoverable by other Bluetooth devices. Consult your mobile phone's instruction manual if necessary</small>"
 msgstr "<small>Proszę się upewnić, że komputer i telefon komórkowy mają włączoną funkcję Bluetooth, a telefon komórkowy jest wykrywalny przez inne urządzenia Bluetooth. Jeśli to konieczne, proszę sprawdzić w instrukcji obsługi telefonu</small>"
 
+# REV: literówka, odpowiednia
 #: ../data/mbca.glade.h:9
 msgid "<small>Service providers may have multiple subscription models. Make sure you select the correct one</small>"
 msgstr "<small>Dostawcy usług mogą oferować kilka opcji abonamentowych. Proszę się upewnić, że została wybrana odpowiedna</small>"
 
+# REV: literówka, któremu
+# właśnie tworzonej?
+# lepiej aktualnie, obecnie tworzonej
 #: ../data/mbca.glade.h:10
 msgid ""
 "<small>The leftmost column indicates which subsystem the port belongs to. <i>pnp</i> usually means serial ports that are in the side of the computer, <i>usb</i> and <i>pci</i> are mobile phones, data modems, or serial port adapters.\n"
@@ -186,14 +195,17 @@ msgstr "Kliknięcie wyświetli lub ukryje listę państw"
 msgid "Connection Method"
 msgstr "Metoda połączenia"
 
+# REV: używany telefon kom. lub modem (your mobile phone)
 #: ../data/mbca.glade.h:21
 msgid "How is your mobile phone or data modem connected to your computer?"
 msgstr "Jak jest podłączony telefon komórkowy lub modem?"
 
+# REV: połączenie komórkowe, jak rozumiem
 #: ../data/mbca.glade.h:22
 msgid "New Mobile Broadband Connection"
 msgstr "Nowe połączenie bezprzewodowe, szerokopasmowe"
 
+# REV: literówka
 #: ../data/mbca.glade.h:23
 msgid "Path:"
 msgstr "Ściezka:"
@@ -202,6 +214,7 @@ msgstr "Ściezka:"
 msgid "Select the Bluetooth device from the list"
 msgstr "Proszę wybrać urządzenie Bluetooth z listy"
 
+# REV: raczej kraj, chodzi o terytorium
 #: ../data/mbca.glade.h:25
 msgid "Select the country and the service provider"
 msgstr "Proszę wybrać państwo i dostawcę usług"
@@ -222,6 +235,8 @@ msgstr "Dostawca usługi"
 msgid "Summary"
 msgstr "Podsumowanie"
 
+# REV: komórkowego połączenia z internetem?
+# zostanie nawiązane przy użyciu
 #: ../data/mbca.glade.h:30
 msgid "This assistant will guide you through setting up a new mobile broadband connection. The connection can be established using a mobile phone or a dedicated data modem."
 msgstr "Ten asystent przeprowadzi proces konfiguracji nowego szerokopasmowego, bezprzewodowego połączenia z Internetem. Połączenie zostanie nawiązane używając telefonu komórkowego lub dedykowanego modemu."
@@ -250,3 +265,4 @@ msgstr "_Ręcznie:"
 msgid "_USB"
 msgstr "_USB"
 
+# review całości Piotr Zaryk <pzaryk@aviary.pl>, 2008.
