@@ -13,7 +13,7 @@ msgstr ""
 "Project-Id-Version: gtk+-properties.HEAD.pl\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2008-09-05 02:37+0000\n"
-"PO-Revision-Date: 2008-09-08 15:36+0100\n"
+"PO-Revision-Date: 2008-09-10 09:36+0100\n"
 "Last-Translator: Piotr Zaryk (Aviary.pl) <pzaryk@aviary.pl>\n"
 "Language-Team: Aviary.pl <gnomepl@aviary.pl>\n"
 "MIME-Version: 1.0\n"
@@ -331,7 +331,7 @@ msgstr "Widoczny gdy przepełniony"
 # j.w.
 #: ../gtk/gtkaction.c:279
 msgid "When TRUE, toolitem proxies for this action are represented in the toolbar overflow menu."
-msgstr "Jeżeli ustawione, pośredniki elementu tej operacji będą przedstawione w menu przepełnionego paska narzędziowego."
+msgstr "Jeżeli TRUE, pośredniki elementu tej operacji będą przedstawione w menu przepełnionego paska narzędziowego."
 
 #: ../gtk/gtkaction.c:286
 #: ../gtk/gtktoolitem.c:163
@@ -351,7 +351,7 @@ msgstr "Jest ważna"
 # Określić co oznacza to proxy...
 #: ../gtk/gtkaction.c:295
 msgid "Whether the action is considered important. When TRUE, toolitem proxies for this action show text in GTK_TOOLBAR_BOTH_HORIZ mode."
-msgstr "Określa czy operacja jest traktowana jako ważna. Po ustawieniu wartości PRAWDA, pośredniki obiektu narzędziowego dla tej operacji wyświetlą tekst w trybie GTK_TOOLBAR_BOTH_HORIZ."
+msgstr "Określa czy operacja jest traktowana jako ważna. Po ustawieniu wartości TRUE pośredniki obiektu narzędziowego dla tej operacji wyświetlą tekst w trybie GTK_TOOLBAR_BOTH_HORIZ."
 
 #: ../gtk/gtkaction.c:303
 msgid "Hide if empty"
@@ -360,7 +360,7 @@ msgstr "Ukrywanie jeśli pusta"
 # j.w.
 #: ../gtk/gtkaction.c:304
 msgid "When TRUE, empty menu proxies for this action are hidden."
-msgstr "Po ustawieniu wartości prawda, pośredniki pustego menu dla tej operacji będą ukrywane."
+msgstr "Po ustawieniu wartości TRUE pośredniki pustego menu dla tej operacji będą ukrywane."
 
 #: ../gtk/gtkaction.c:310
 #: ../gtk/gtkactiongroup.c:177
@@ -681,7 +681,7 @@ msgstr "Drugorzędny"
 
 #: ../gtk/gtkbbox.c:137
 msgid "If TRUE, the child appears in a secondary group of children, suitable for, e.g., help buttons"
-msgstr "Określa czy kontrolka powinna pojawić się w drugorzędnej grupie kontrolek potomnych, przydatnej np. przy przyciskach pomocy."
+msgstr "Po ustawieniu wartości TRUE kontrolka będzie pojawiać się w drugorzędnej grupie kontrolek potomnych, przydatnej np. przy przyciskach pomocy."
 
 #: ../gtk/gtkbox.c:98
 #: ../gtk/gtkexpander.c:219
@@ -893,9 +893,8 @@ msgid "Show button images"
 msgstr "Wyświetlanie obrazów przycisków"
 
 #: ../gtk/gtkbutton.c:492
-#, fuzzy
 msgid "Whether images should be shown on buttons"
-msgstr "Określa czy w menu powinny być wyświetlane obrazy"
+msgstr "Określa, czy na przyciskach powinny być wyświetlane obrazy"
 
 #: ../gtk/gtkcalendar.c:440
 msgid "Year"
@@ -927,7 +926,7 @@ msgstr "Wyświetlanie nagłówka"
 
 #: ../gtk/gtkcalendar.c:485
 msgid "If TRUE, a heading is displayed"
-msgstr "Po ustawieniu wartości PRAWDA, nagłówek jest wyświetlany"
+msgstr "Po ustawieniu wartości TRUE nagłówek będzie wyświetlany"
 
 #: ../gtk/gtkcalendar.c:499
 msgid "Show Day Names"
@@ -935,7 +934,7 @@ msgstr "Wyświetlanie nazw dni"
 
 #: ../gtk/gtkcalendar.c:500
 msgid "If TRUE, day names are displayed"
-msgstr "Po ustawieniu wartości PRAWDA, nazwy dni są wyświetlane"
+msgstr "Po ustawieniu wartości TRUE nazwy dni będą wyświetlane"
 
 #: ../gtk/gtkcalendar.c:513
 msgid "No Month Change"
@@ -943,7 +942,7 @@ msgstr "Bez zmiany miesiąca"
 
 #: ../gtk/gtkcalendar.c:514
 msgid "If TRUE, the selected month cannot be changed"
-msgstr "Jeżeli ustawione, wybrany miesiąc nie może zostać zmieniony"
+msgstr "Po ustawieniu wartości TRUE wybrany miesiąc nie będzie mógł być zmieniony"
 
 #: ../gtk/gtkcalendar.c:528
 msgid "Show Week Numbers"
@@ -951,36 +950,31 @@ msgstr "Wyświetlanie numerów tygodni"
 
 #: ../gtk/gtkcalendar.c:529
 msgid "If TRUE, week numbers are displayed"
-msgstr "Po ustawieniu wartości PRAWDA, numery tygodni są wyświetlane"
+msgstr "Po ustawieniu wartości TRUE numery tygodni będą wyświetlane"
 
 #: ../gtk/gtkcalendar.c:544
-#, fuzzy
 msgid "Details Width"
-msgstr "Domyślna szerokość"
+msgstr "Szerokość szczegółów"
 
 #: ../gtk/gtkcalendar.c:545
-#, fuzzy
 msgid "Details width in characters"
-msgstr "Maksymalna szerokość w znakach"
+msgstr "Szerokość szczegółów w znakach"
 
 #: ../gtk/gtkcalendar.c:560
-#, fuzzy
 msgid "Details Height"
-msgstr "Domyślna wysokość"
+msgstr "Wysokość szczegółów"
 
 #: ../gtk/gtkcalendar.c:561
 msgid "Details height in rows"
-msgstr ""
+msgstr "Wysokość szczegółów w wierszach"
 
 #: ../gtk/gtkcalendar.c:577
-#, fuzzy
 msgid "Show Details"
-msgstr "Okno dialogowe"
+msgstr "Wyświetl szczegóły"
 
 #: ../gtk/gtkcalendar.c:578
-#, fuzzy
 msgid "If TRUE, details are shown"
-msgstr "Po ustawieniu wartości PRAWDA, nazwy dni są wyświetlane"
+msgstr "Jeśli TRUE, szczegóły są wyświetlane"
 
 #: ../gtk/gtkcellrenderer.c:177
 msgid "mode"
@@ -2304,7 +2298,7 @@ msgstr "Długość tekstu"
 
 #: ../gtk/gtkentry.c:662
 msgid "Length of the text currently in the entry"
-msgstr ""
+msgstr "Długość tekstu obecnego we wpisie"
 
 #: ../gtk/gtkentry.c:933
 msgid "Border between text and frame."
@@ -2374,7 +2368,7 @@ msgstr "Szerokość okna wyskakującego"
 
 #: ../gtk/gtkentrycompletion.c:355
 msgid "If TRUE, the popup window will have the same size as the entry"
-msgstr "Jeżeli ustawione, okno wyskakujące będzie miało taką samą szereokość jak pole wejścia"
+msgstr "Po ustawieniu wartości TRUE okno wyskakujące będzie miało taką samą szereokość jak pole wejściowe"
 
 #: ../gtk/gtkentrycompletion.c:373
 msgid "Popup single match"
@@ -2382,7 +2376,7 @@ msgstr "Okno pojedynczego dopasowania"
 
 #: ../gtk/gtkentrycompletion.c:374
 msgid "If TRUE, the popup window will appear for a single match."
-msgstr "Jeżeli ustawione, okno wyskakujące pojawi się przy pojedynczym dopasowaniu."
+msgstr "Po ustawieniu wartości TRUE okno wyskakujące pojawi się przy pojedynczym dopasowaniu."
 
 #: ../gtk/gtkentrycompletion.c:388
 msgid "Inline selection"
@@ -3132,11 +3126,11 @@ msgstr "Klawisz skrótu mnemonika związany z etykietą"
 #: ../gtk/gtkmenu.c:528
 #: ../gtk/gtkmenuitem.c:233
 msgid "Accel Path"
-msgstr ""
+msgstr "Ścieżka skrótu"
 
 #: ../gtk/gtkmenu.c:529
 msgid "An accel path used to conveniently construct accel paths of child items"
-msgstr ""
+msgstr "Ścieżka skrótu używana do wygodnego tworzenia ścieżek skrótów elementów podrzędnych"
 
 #: ../gtk/gtkmenu.c:545
 #, fuzzy
@@ -3462,7 +3456,7 @@ msgstr "Wyświetlanie nagłówka"
 
 #: ../gtk/gtkmountoperation.c:169
 msgid "Are we showing a dialog"
-msgstr ""
+msgstr "Czy wyświetlać okno dialogowe"
 
 #: ../gtk/gtkmountoperation.c:177
 #, fuzzy
@@ -3531,7 +3525,7 @@ msgstr "Przewijalny"
 
 #: ../gtk/gtknotebook.c:631
 msgid "If TRUE, scroll arrows are added if there are too many tabs to fit"
-msgstr "Określa, czy w razie braku miejsca na karty powinny być wyświetlane strzałki przewijania"
+msgstr "Po ustawieniu wartości TRUE w razie braku miejsca na karty powinny być wyświetlane strzałki przewijania"
 
 #: ../gtk/gtknotebook.c:637
 msgid "Enable Popup"
@@ -3539,7 +3533,7 @@ msgstr "Menu podręczne"
 
 #: ../gtk/gtknotebook.c:638
 msgid "If TRUE, pressing the right mouse button on the notebook pops up a menu that you can use to go to a page"
-msgstr "Określa czy kliknięcie notatnika prawym przyciskiem powinno powodować wyświetlenie menu z wyborem strony."
+msgstr "Po ustawieniu wartości TRUE kliknięcie notatnika prawym przyciskiem powinno powodować wyświetlenie menu z wyborem strony."
 
 #: ../gtk/gtknotebook.c:645
 msgid "Whether tabs should have homogeneous sizes"
@@ -3711,7 +3705,7 @@ msgstr "Ustalenie pozycji"
 
 #: ../gtk/gtkpaned.c:228
 msgid "TRUE if the Position property should be used"
-msgstr "Określa czy powinna być używana własność \"Position\" (pozycja)."
+msgstr "Po ustawieniu wartości TRUE powinna być używana własność \"Position\" (pozycja)."
 
 #: ../gtk/gtkpaned.c:234
 msgid "Handle Size"
@@ -3744,7 +3738,7 @@ msgstr "Zmienny rozmiar"
 # FIXME - czy to o to chodzi?
 #: ../gtk/gtkpaned.c:288
 msgid "If TRUE, the child expands and shrinks along with the paned widget"
-msgstr "Jeżeli ustawione, potomek jest zwijany i rozwijany zgodnie z kontrolką panelu"
+msgstr "Po ustawieniu wartości TRUE potomek jest zwijany i rozwijany zgodnie z kontrolką panelu"
 
 #: ../gtk/gtkpaned.c:303
 msgid "Shrink"
@@ -3752,7 +3746,7 @@ msgstr "Możliwość zmniejszania"
 
 #: ../gtk/gtkpaned.c:304
 msgid "If TRUE, the child can be made smaller than its requisition"
-msgstr "Jeżeli ustawione, potomek może być mniejszy od swoich wymagań"
+msgstr "Po ustawieniu wartości TRUE potomek może być mniejszy od swoich wymagań"
 
 #: ../gtk/gtkplug.c:150
 #: ../gtk/gtkstatusicon.c:285
@@ -3765,7 +3759,7 @@ msgstr "Określa czy wtyczka jest jest osadzona"
 
 #: ../gtk/gtkplug.c:165
 msgid "Socket Window"
-msgstr ""
+msgstr "Okno gniazda"
 
 #: ../gtk/gtkplug.c:166
 #, fuzzy
@@ -3802,7 +3796,7 @@ msgstr "Akceptowanie PDF"
 
 #: ../gtk/gtkprinter.c:145
 msgid "TRUE if this printer can accept PDF"
-msgstr "Ustawione, jeżeli drukarka akceptuje PDF"
+msgstr "Po ustawieniu wartości TRUE drukarka akceptuje PDF"
 
 #: ../gtk/gtkprinter.c:151
 msgid "Accepts PostScript"
@@ -3810,7 +3804,7 @@ msgstr "Akceptowanie PostScript"
 
 #: ../gtk/gtkprinter.c:152
 msgid "TRUE if this printer can accept PostScript"
-msgstr "Ustawione, jeżeli drukarka akceptuje PostScript"
+msgstr "Po ustawieniu wartości TRUE drukarka akceptuje PostScript"
 
 #: ../gtk/gtkprinter.c:158
 msgid "State Message"
@@ -6708,11 +6702,11 @@ msgstr "Okno grawitacji okna"
 
 #: ../gtk/gtkwindow.c:744
 msgid "Transient for Window"
-msgstr ""
+msgstr "Potomne okna"
 
 #: ../gtk/gtkwindow.c:745
 msgid "The transient parent of the dialog"
-msgstr ""
+msgstr "Nadrzędne potomnego okna dialogowego"
 
 #: ../gtk/gtkwindow.c:759
 msgid "Opacity for Window"
