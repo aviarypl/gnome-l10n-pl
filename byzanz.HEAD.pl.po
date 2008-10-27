@@ -9,8 +9,8 @@ msgstr ""
 "Project-Id-Version: Byzanz\n"
 "Report-Msgid-Bugs-To: http://bugzilla.gnome.org/\n"
 "POT-Creation-Date: 2008-10-22 04:50+0000\n"
-"PO-Revision-Date: 2008-10-23 21:39+0100\n"
-"Last-Translator: wadim dziedzic <wdziedzic@aviary,pl>\n"
+"PO-Revision-Date: 2008-10-24 12:05+0100\n"
+"Last-Translator: Piotr Makowski <pzaryk@aviary.pl>\n"
 "Language-Team: Aviary.pl <gnomepl@aviary.pl>\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -49,14 +49,13 @@ msgstr "Użycie tej metody jako domyślnej metody nagrywania. Do wyboru: \"scree
 msgid "A file could not be saved."
 msgstr "Plik nie mógł być zapisany."
 
-# REV: ja bym dał "Nie można zapisać %s" - pozbywamy się problemów z rodzajem i odmianą
 #: ../src/byzanzapplet.c:111
 #, c-format
 msgid ""
 "\"%s\" could not be saved.\n"
 "The error that occured was: %s"
 msgstr ""
-"\"%s\" nie mógł być zapisany.\n"
+"Nie można zapisać \"%s\".\n"
 "Błąd, który wystąpił: %s"
 
 #: ../src/byzanzapplet.c:175
@@ -71,25 +70,21 @@ msgstr "Zatrzymuje nagrywanie"
 msgid "Cannot start recording."
 msgstr "Nie można rozpocząć nagrywania."
 
-# REV: może rozwińmy - bpp to nie polski skrót: "wymaga 24- lub 32-bitowej głębi kolorów"
-# REV: mimo wszystko tłumaczyłbym "resolution" jako "głębię" - rozdzielczość nie ma nic wspólnego z 24/32 bitami
-# REV: Program Byzanz...
 #: ../src/byzanzapplet.c:259
 #: ../src/record.c:135
 #, c-format
 msgid "Byzanz requires a 24bpp or 32bpp depth for recording. The current resolution is set to %dbpp."
-msgstr "Byzanz wymaga głębi 24bpp lub 32bpp do nagrywania. Obecna rozdzielczość jest ustawiona na %dbpp."
+msgstr "Program Byzanz wymaga wymaga 24- lub 32-bitowej głębi kolorów do nagrywania. Obecna głębia kolorów jest ustawiona na %dbpp."
 
 #: ../src/byzanzapplet.c:369
 #: ../src/ByzanzApplet.server.in.in.h:2
 msgid "Desktop Recorder"
 msgstr "Rejestrator pulpitu"
 
-# REV: Nagrywa to, co ...
 #: ../src/byzanzapplet.c:372
 #: ../src/ByzanzApplet.server.in.in.h:3
 msgid "Record what's happening on your desktop"
-msgstr "Nagrywa, co dzieje się na pulpicie użytkownika."
+msgstr "Nagrywa to, co dzieje się na pulpicie użytkownika."
 
 #: ../src/byzanzapplet.c:374
 msgid "translator-credits"
@@ -105,10 +100,9 @@ msgstr "Nagrywanie kursora _myszy"
 msgid "_About"
 msgstr "_O programie"
 
-# REV: acceskey na literce z dolnym ogonkiem... (N nie może być?)
 #: ../src/byzanzselect.c:312
 msgid "Record _Desktop"
-msgstr "Nagraj _pulpit"
+msgstr "Nagraj p_ulpit"
 
 #: ../src/byzanzselect.c:312
 msgid "Record the entire desktop"
@@ -147,15 +141,13 @@ msgstr "SEKUND"
 msgid "Delay before start (default: 1 second)"
 msgstr "Opóźnienie przed rozpoczęciem (domyślnie 1 sekunda)"
 
-# REV: jeśli to checkbox, to wystarczy chyba "Zapętlenie animacji", co?
 #: ../src/record.c:38
 msgid "Let the animation loop"
-msgstr "Zezwolenie na zapętlenie animacji"
+msgstr "Zapętlenie animacji"
 
-# REV: nie lepiej "współrzędna"? "koordynata" to jakieś militarny wydźwięk ma... ;-)
 #: ../src/record.c:40
 msgid "X coordinate of rectangle to record"
-msgstr "koordynata X prostokąta do nagrania"
+msgstr "współrzędna X prostokąta do nagrania"
 
 #: ../src/record.c:40
 #: ../src/record.c:41
@@ -164,10 +156,9 @@ msgstr "koordynata X prostokąta do nagrania"
 msgid "PIXEL"
 msgstr "PIKSELI"
 
-# REV: j.w.
 #: ../src/record.c:41
 msgid "Y coordinate of rectangle to record"
-msgstr "koordynata Y prostokąta do nagrania"
+msgstr "współrzędna Y prostokąta do nagrania"
 
 #: ../src/record.c:42
 msgid "Width of recording rectangle"
@@ -179,6 +170,7 @@ msgstr "Wysokość prostokąta nagrywania"
 
 # nie mam pojęcia?
 # REV: Dodatkowe informacje?
+# Zaryk: Jak to dodatkowe informacje?
 #: ../src/record.c:44
 msgid "Be verbose"
 msgstr ""
@@ -197,16 +189,14 @@ msgstr "       %s --help\n"
 msgid "Recording done. Cleaning up...\n"
 msgstr "Nagrywanie ukończono. Czyszczenie...\n"
 
-# REV: nie byłoby ładniej: "Nagranie za %s [s]..." ? Nie ma odmiany i szyk w porządku...
 #: ../src/record.c:83
 #, c-format
 msgid "Recording starts. Will record %d seconds...\n"
-msgstr "Nagrywanie rozpoczęto. Sekund do nagrania: %d...\n"
+msgstr "Nagrywanie rozpoczęto. Zostanie nagranych %d s...\n"
 
-# REV: j.w.
 #: ../src/record.c:93
 msgid "Preparing recording. Will start in 1 second...\n"
-msgstr "Przygotowywanie nagrywania. Rozpoczęcie za 1 sekundę...\n"
+msgstr "Przygotowywanie nagrywania. Rozpocznie się za sekundę...\n"
 
 #: ../src/record.c:116
 msgid "record your current desktop session"
@@ -217,7 +207,6 @@ msgstr "nagrywanie obecnej sesji pulpitu"
 msgid "Wrong option: %s\n"
 msgstr "Błędna opcja: %s\n"
 
-# REV: lepiej "nie można zapisywać do pliku ..."
 #: ../src/record.c:142
 #, c-format
 msgid ""
@@ -225,5 +214,5 @@ msgid ""
 "Most likely the Damage extension is not available on the X server or the file \"%s\" is not writable.\n"
 msgstr ""
 "Nie można było przygotować nagrywania.\n"
-"Najprawdopodobniej rozszerzenie Damage jest niedostępne na serwerze X lub plik  \"%s\" jest nie do zapisu.\n"
+"Najprawdopodobniej rozszerzenie Damage jest niedostępne na serwerze X lub nie można zapisywać do pliku  \"%s\".\n"
 
