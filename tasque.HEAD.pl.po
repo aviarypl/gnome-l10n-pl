@@ -9,7 +9,7 @@ msgstr ""
 "Project-Id-Version: Tasque\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2008-10-22 03:21+0000\n"
-"PO-Revision-Date: 2008-10-24 11:56+0100\n"
+"PO-Revision-Date: 2008-11-12 13:49+0100\n"
 "Last-Translator: Piotr Makowski <pzaryk@aviary.pl>\n"
 "Language-Team: Aviary.pl <gnomepl@aviary.pl>\n"
 "MIME-Version: 1.0\n"
@@ -36,7 +36,6 @@ msgstr "Tasque"
 msgid "Copyright © 2008 Novell, Inc."
 msgstr "Copyright © 2008 Novell, Inc."
 
-# REV: "przydatna" nie brzmiałaby ładniej?
 #: ../src/Application.cs:465
 msgid "A Useful Task List"
 msgstr "Użyteczna lista zadań"
@@ -160,7 +159,6 @@ msgstr "Nazwa zadania"
 msgid "Due Date"
 msgstr "Termin wykonania"
 
-# REV: w polskich warunkach raczej dzień/miesiąc
 #: ../src/TaskTreeView.cs:187
 #: ../src/TaskTreeView.cs:189
 #: ../src/TaskTreeView.cs:201
@@ -168,7 +166,7 @@ msgstr "Termin wykonania"
 #: ../src/TaskTreeView.cs:678
 #: ../src/TaskTreeView.cs:683
 msgid "M/d - "
-msgstr "M/d - "
+msgstr "d/M - "
 
 #: ../src/TaskTreeView.cs:187
 #: ../src/TaskTreeView.cs:675
@@ -184,8 +182,6 @@ msgstr "Dzisiaj"
 msgid "Tomorrow"
 msgstr "Jutro"
 
-# REV: w polskich warunkach raczej dzień/miesiąc (ddd to chyba pełna nazwa dnia):
-# http://go-mono.com/docs/index.aspx?link=T%3aSystem.Globalization.DateTimeFormatInfo
 #: ../src/TaskTreeView.cs:191
 #: ../src/TaskTreeView.cs:193
 #: ../src/TaskTreeView.cs:195
@@ -194,13 +190,12 @@ msgstr "Jutro"
 #: ../src/TaskTreeView.cs:420
 #: ../src/TaskTreeView.cs:692
 msgid "M/d - ddd"
-msgstr "M/d - ddd"
+msgstr "d/M - ddd"
 
-# REV: nie czasem "w ciągu tygodnia" ?
 #: ../src/TaskTreeView.cs:201
 #: ../src/TaskTreeView.cs:683
 msgid "In 1 Week"
-msgstr "W 1 tydzień"
+msgstr "W ciągu tygodnia"
 
 #: ../src/TaskTreeView.cs:202
 #: ../src/TaskTreeView.cs:680
@@ -227,10 +222,9 @@ msgstr "Czasomierz"
 msgid "Task Completed"
 msgstr "Zadanie ukończone"
 
-# REV: polski format...
 #: ../src/TaskTreeView.cs:422
 msgid "M/d/yy - ddd"
-msgstr "M/d/yy - ddd"
+msgstr "d/M/yy - ddd"
 
 #: ../src/TaskTreeView.cs:575
 msgid "Action Canceled"
@@ -262,10 +256,9 @@ msgstr "_Dodaj zadanie"
 msgid "Overdue"
 msgstr "Zaległe"
 
-# REV: dałbym "następne 7 dni"
 #: ../src/TaskWindow.cs:311
 msgid "Next 7 Days"
-msgstr "Następnych 7 dni"
+msgstr "Następne 7 dni"
 
 #: ../src/TaskWindow.cs:327
 msgid "Future"
@@ -336,15 +329,13 @@ msgstr "W {0} dni, {1}"
 msgid "In {0} days"
 msgstr "W {0} dni"
 
-# REV: ciągi formatujące do kontroli
 #: ../src/Utilities.cs:294
 msgid "MMMM d, h:mm tt"
-msgstr "MMMM d, h:mm tt"
+msgstr "d MMMM, h:mm tt"
 
-# REV: tu np na pewno na odwrót "5 luty" a nie "luty 5"
 #: ../src/Utilities.cs:295
 msgid "MMMM d"
-msgstr "MMMM d"
+msgstr "d MMMM"
 
 #: ../src/Utilities.cs:300
 msgid "MMMM d yyyy, h:mm tt"
@@ -382,16 +373,14 @@ msgstr "Piątek"
 msgid "Saturday"
 msgstr "Sobota"
 
-# REV: trzebaby "today" zmienić na "dziś" - to jest regexp, który przeszukuje opisy zadan
 #. Then try some more natural language parsing
 #. A regular expression to capture a task that is due today
 #: ../src/Utilities.cs:368
 msgid "^(?<task>.+)\\s+today\\W*$"
-msgstr "^(?<task>.+)\\s+today\\W*$"
+msgstr "^(?<task>.+)\\s+dzisiaj\\W*$"
 
-# REV: - jutro... (albo lepiej "jutr" - to załapią się różne formy)
 #. A regular expression to capture a task that is due tomorrow
 #: ../src/Utilities.cs:370
 msgid "^(?<task>.+)\\s+tomorrow\\W*$"
-msgstr "^(?<task>.+)\\s+tomorrow\\W*$"
+msgstr "^(?<task>.+)\\s+jutr\\W*$"
 
