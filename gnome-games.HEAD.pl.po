@@ -14,8 +14,8 @@ msgstr ""
 "Project-Id-Version: gnome-games\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2008-11-18 18:04+0100\n"
-"PO-Revision-Date: 2008-11-19 00:46+0100\n"
-"Last-Translator: Joanna Mazgaj <jmazgaj@aviary.pl>\n"
+"PO-Revision-Date: 2008-12-19 23:57+0100\n"
+"Last-Translator: wadim dziedzic <nikdo@aviary.pl>\n"
 "Language-Team: American English <gnomepl@aviary.pl>\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -65,15 +65,18 @@ msgstr "Plik gry, który ma być użyty"
 msgid "The name of the file with the graphics for the cards."
 msgstr "Nazwa pliku zawierającego grafikę dla kart."
 
+# REV: a gdzie się "solitaire" w polskiej wersji zgubiło?
 #: ../aisleriot/aisleriot.schemas.in.h:10
 msgid "The name of the scheme file containing the solitaire game to play."
 msgstr "Nazwa pliku schematu z aktualną grą karcianą."
 
+# REV: może ładniej "Nazwa pliku motywu"
 #: ../aisleriot/aisleriot.schemas.in.h:11
 #: ../blackjack/data/blackjack.schemas.in.h:10
 msgid "Theme file name"
 msgstr "Nazwa pliku z motywem"
 
+# REV: tu lepiej pasuje "Określa, czy..."
 #: ../aisleriot/aisleriot.schemas.in.h:12
 #: ../aisleriot/window.c:2178
 #: ../gnect/data/gnect.schemas.in.h:13
@@ -81,10 +84,12 @@ msgstr "Nazwa pliku z motywem"
 msgid "Whether or not to play event sounds."
 msgstr "Przełącza odtwarzanie dźwięków zdarzeń"
 
+# REV: jw
 #: ../aisleriot/aisleriot.schemas.in.h:13
 msgid "Whether or not to show the status bar"
 msgstr "Przełącza wyświetlanie paska stanu"
 
+# REV: j.w.
 #: ../aisleriot/aisleriot.schemas.in.h:14
 #: ../blackjack/data/blackjack.schemas.in.h:13
 msgid "Whether or not to show the toolbar"
@@ -101,11 +106,13 @@ msgstr "Pasjans FreeCell"
 msgid "Play the popular FreeCell card game"
 msgstr "Popularna gra karciana FreeCell"
 
+# REV: nie personalizujmy programów. może "Nie można wczytać"?
 #: ../aisleriot/game.c:1114
 #, c-format
 msgid "Aisleriot cannot load the file “%s”. Please check your Aisleriot installation."
 msgstr "Aisleriot nie może wczytać pliku \"%s\". Proszę się upewnić, że gra Aisleriot została poprawnie zainstalowana."
 
+# REV: j.w.
 #: ../aisleriot/game.c:1555
 msgid "Aisleriot cannot find the last game you played."
 msgstr "Aisleriot nie może odnaleźć ostatnio wybranej gry."
@@ -143,6 +150,7 @@ msgstr "Błąd"
 msgid "Could not show help for “%s”"
 msgstr "Nie można wyświetlić pomocy dla \"%s\""
 
+# REV: "programu/gry Aisleriot"
 #: ../aisleriot/sol.c:369
 msgid "Could not show Aisleriot help"
 msgstr "Nie można wyświetlić pomocy dla Aisleriot"
@@ -191,6 +199,7 @@ msgstr "Zbiór różnych pasjansów"
 msgid "Unknown color"
 msgstr "Nieznany kolor"
 
+# REV: nie da się tego odróżnić od powyższego? (kolor karciany/kart?)
 #: ../aisleriot/sol.scm.h:2
 msgid "Unknown suit"
 msgstr "Nieznany kolor"
@@ -199,6 +208,7 @@ msgstr "Nieznany kolor"
 msgid "Unknown value"
 msgstr "Nieznana wartość"
 
+# REV: poniższe są w bierniku - dlaczego nie as?
 #: ../aisleriot/sol.scm.h:4
 msgid "ace"
 msgstr "as"
@@ -492,6 +502,7 @@ msgstr "dwójkę"
 msgid "Wins:"
 msgstr "Wygrane:"
 
+# REV: nie lepiej "razem"?
 #. Translators: this is the number of games played
 #: ../aisleriot/stats-dialog.c:149
 msgid "Total:"
@@ -949,17 +960,19 @@ msgstr "Motywy kart:"
 msgid "About FreeCell Solitaire"
 msgstr "O pasjansie FreeCell"
 
+# REV: o programie Aislerion
 #: ../aisleriot/window.c:603
 msgid "About AisleRiot"
 msgstr "O AisleRiot"
 
+# REV: Program A... zawiera 
 #: ../aisleriot/window.c:609
 msgid ""
 "AisleRiot provides a rule-based solitaire card engine that allows many different games to be played.\n"
 "AisleRiot is a part of GNOME Games."
 msgstr ""
 "AisleRiot udostępnia oparty na pasjansie mechanizm gry w karty, pozwalający na rozgrywki różnych gier.\n"
-" AisleRiot jest częścią gier GNOME."
+"AisleRiot jest częścią gier GNOME."
 
 #: ../aisleriot/window.c:620
 #: ../blackjack/src/menu.cpp:159
@@ -1106,6 +1119,7 @@ msgstr "_Widok"
 msgid "_Control"
 msgstr "_Sterowanie"
 
+# REV: domyślny acceskey to C ("Pomo_c")
 #. The Help menu
 #: ../aisleriot/window.c:2074
 #: ../blackjack/src/blackjack.cpp:347
@@ -1157,6 +1171,7 @@ msgstr "O_statnio grane"
 msgid "S_tatistics"
 msgstr "S_tatystyki"
 
+# REV: nie czasem "Wyświetla stat..." ?
 #: ../aisleriot/window.c:2090
 msgid "Show gameplay statistics"
 msgstr "Wyświetlanie statystyki rozgrywki"
@@ -1211,6 +1226,7 @@ msgstr "_Wzór kart"
 msgid "_Toolbar"
 msgstr "Pasek _narzędziowy"
 
+# REV: Przełącza wyświetlanie ...
 #. Preferences Dialog: Tooltip for Show Toolbar option
 #: ../aisleriot/window.c:2164
 #: ../glchess/glade/preferences.glade.h:20
@@ -1223,6 +1239,7 @@ msgstr "Wyświetlanie paska narzędziowego"
 msgid "_Statusbar"
 msgstr "Pasek _stanu"
 
+# REV: j.w.
 #: ../aisleriot/window.c:2169
 msgid "Show or hide statusbar"
 msgstr "Wyświetlanie paska stanu"
@@ -1316,6 +1333,7 @@ msgstr "Karta bazowa: Dama"
 msgid "Base Card: ~a"
 msgstr "Karta bazowa: ~a"
 
+# REV: nie czasem "Rozdaj ... " ?
 #: ../aisleriot/rules/agnes.scm.h:6
 #: ../aisleriot/rules/easthaven.scm.h:1
 #: ../aisleriot/rules/labyrinth.scm.h:1
@@ -1378,6 +1396,7 @@ msgid "Stock left: 0"
 msgstr "Pozostało na stosie: 0"
 
 # jm: przetasować?
+# REV: raczej tak
 #: ../aisleriot/rules/agnes.scm.h:9
 #: ../aisleriot/rules/backbone.scm.h:4
 #: ../aisleriot/rules/bakers_dozen.scm.h:1
@@ -1398,6 +1417,7 @@ msgstr "Można spróbować ponownie rozdać karty"
 msgid "an empty foundation pile"
 msgstr "pusty stos podkładu"
 
+# REV: czy "rozdawanie" ?
 #: ../aisleriot/rules/athena.scm.h:1
 #: ../aisleriot/rules/klondike.scm.h:8
 #: ../aisleriot/rules/osmosis.scm.h:5
@@ -1601,6 +1621,7 @@ msgstr "Zanim przejdziesz przez ulicę rozejrzyj się na obie strony"
 msgid "Monitors won't give you Vitamin D -- but sunlight will..."
 msgstr "Monitory nie dadzą ci witaminy D - w przeciwieństwie do słońca ..."
 
+# REV: he? ;-) to jakiś idiom?
 #: ../aisleriot/rules/clock.scm.h:9
 msgid "Never blow in a dog's ear"
 msgstr "Nigdy nie głaszcz psa pod włos"
@@ -1741,10 +1762,12 @@ msgstr "Pobierz kartę z talii"
 msgid "an empty space"
 msgstr "puste miejsce"
 
+# REV: się cofnąć? - może "cofnąć ruch" ?
 #: ../aisleriot/rules/freecell.scm.h:1
 msgid "No moves are possible. Undo or start again."
 msgstr "Brak możliwości ruchu. Należy się cofnąć lub rozpocząć od nowa."
 
+# REV: j.w.
 #: ../aisleriot/rules/freecell.scm.h:2
 msgid "The game has no solution. Undo or start again."
 msgstr "Gra nie ma rozwiązania. Należy się cofnąć lub rozpocząć od nowa."
@@ -1960,6 +1983,7 @@ msgid "and all cards below it"
 msgstr "i wszystkie karty pod spodem"
 
 # Szkoda, że nikt tego na plural nie przerobił
+# REV: no to buga na bugs.gnome.org
 #: ../aisleriot/rules/ten_across.scm.h:6
 msgid "empty slot(s)"
 msgstr "puste miejsce/miejsca"
@@ -1999,6 +2023,7 @@ msgstr "odpowiedni stos podkładu"
 msgid "Blackjack"
 msgstr "Oczko"
 
+# REV: może "w oczko" ?
 #: ../blackjack/data/blackjack.desktop.in.in.h:2
 msgid "Play the casino card game Blackjack"
 msgstr "Kasynowa wersja gry oczko"
@@ -2015,22 +2040,27 @@ msgstr "Wyświetlanie prawdopodobieństw wyników rozdania krupiera oraz wartoś
 msgid "Never take insurance"
 msgstr "Rezygnacja z ubezpieczeń"
 
+# REV: przecinek przed gdy
 #: ../blackjack/data/blackjack.schemas.in.h:4
 msgid "Never take insurance with a dealer showing an ace."
 msgstr "Rezygnacja z ubezpieczeń proponowanych gdy rozdający ma asa."
 
+# REV: może "Suma pieniędzy" ? w końcu co jak co ale pieniądze są policzalne
 #: ../blackjack/data/blackjack.schemas.in.h:5
 msgid "The amount of money in your bank"
 msgstr "Ilość pieniędzy w banku"
 
+# REV: j.w.
 #: ../blackjack/data/blackjack.schemas.in.h:6
 msgid "The amount of money in your bank."
 msgstr "Ilość pieniędzy w banku."
 
+# REV: w tym kontekście to chyba "wariant"
 #: ../blackjack/data/blackjack.schemas.in.h:8
 msgid "The name of the rules file containing the variation of the rules to play."
 msgstr "Nazwa użytego pliku zawierającego wariację zasad gry."
 
+# REV: j.w.
 #: ../blackjack/data/blackjack.schemas.in.h:9
 msgid "The variation of the rules file to use"
 msgstr "Plik z wariacją zasad, który ma zostać użyty"
@@ -2043,6 +2073,7 @@ msgstr "Szybkie rozdanie"
 msgid "Use a quick deal with no delay between each card."
 msgstr "Szybkie rozdanie bez przerw pomiędzy kartami."
 
+# REV: Określa, czy ?
 #: ../blackjack/data/blackjack.schemas.in.h:14
 msgid "Whether or not to show the toolbar."
 msgstr "Przełącza wyświetlanie paska narzędziowego."
@@ -2157,6 +2188,7 @@ msgid "Would you like insurance?"
 msgstr "Ubezpieczenie?"
 
 # JM: przy próbach zapisywania pliku w tym miejscu wywalało fatal error. Po usunięciu z pliku oryginalnego linijki #, c-format problem zniknął. Prawdopodobnie traktował 50% jak zmienną i próbował szaleć.
+# REV: musisz przywrócić to c-format, bo inaczej wywali się program ;-) Jeśli jest c-format, to procent uzyskuje się tak: %%
 #: ../blackjack/src/dialog.cpp:52
 msgid "Insurance is a side wager of 50% of the original wager that the dealer has a natural 21 (aka blackjack) that is offered when the dealer's face up card is an ace. If the dealer has a natural 21 then the player is paid double."
 msgstr "Ubezpieczenie jest dodatkowym zakładem o wartości 50% podstawowego zakładu. Zakład dotyczy posiadania przez rozdającego naturalnej 21 (tzw. oczko). Ubezpieczenie jest oferowane gdy pierwsza karta rozdającego to as. Jeżeli rozdający ma naturalną 21, wtedy gracz otrzymuje podwójną wypłatę."
@@ -2257,36 +2289,45 @@ msgstr "Poddanie"
 msgid "Dealer Speed"
 msgstr "Szybkość krupiera"
 
+# REV: może "Kliknięcie podwaja..."
+# REV: jeśli nie, to przecinek przed aby
 #: ../blackjack/src/events.cpp:508
 msgid "Click to double your wager"
 msgstr "Należy kliknąć aby podwoić zakład"
 
+# REV: j.w.
 #: ../blackjack/src/events.cpp:513
 #, c-format
 msgid "Double click to increase your wager by %.2f"
 msgstr "Należy dwukrotnie kliknąć aby zwiększyć zakład o %.2f"
 
+# REV: j.w.
 #: ../blackjack/src/events.cpp:525
 #, c-format
 msgid "Double click to decrease your wager by %.2f"
 msgstr "Należy dwukrotnie kliknąć aby zmniejszyć zakład o %.2f"
 
+# REV: j.w.
 #: ../blackjack/src/events.cpp:542
 msgid "Click to deal another card; drag card to split pair"
 msgstr "Należy kliknąć, aby pobrać następną kartę; należy przeciągnąć kartę by rozdzielić parę"
 
+# REV: j.w.
 #: ../blackjack/src/events.cpp:544
 msgid "Click to deal another card"
 msgstr "Należy kliknąć aby pobrać następną kartę"
 
+# REV: j.w.
 #: ../blackjack/src/events.cpp:546
 msgid "Click to finish adding cards to your hand"
 msgstr "Należy kliknąć aby zakończyć dodawanie kart"
 
+# REV: j.w.
 #: ../blackjack/src/events.cpp:549
 msgid "Click to deal a new hand"
 msgstr "Należy kliknąć aby rozpocząć nowe rozdanie"
 
+# REV: ta personalizacja kiepsko brzmi. może wystarczy "Nie można wczytać..."
 #: ../blackjack/src/game.cpp:386
 msgid "Blackjack can't load the requested file"
 msgstr "Gra Oczko nie może odczytać żądanego pliku"
@@ -2299,6 +2340,7 @@ msgstr "Proszę sprawdzić instalację gry Oczko"
 msgid "The best option is to stand"
 msgstr "Najlepszym wyborem jest nie branie karty"
 
+# REV: przecinek przed lub? (nie wiem jak ma być)
 #: ../blackjack/src/hand.cpp:122
 msgid "To stand means to stop adding cards to your hand.  Do this by clicking on the dealer's cards or by selecting the option from the Control menu."
 msgstr "Nie branie kart do ręki można wykonać poprzez kliknięcie kart krupiera, lub poprzez wybranie opcji w menu."
@@ -2307,6 +2349,7 @@ msgstr "Nie branie kart do ręki można wykonać poprzez kliknięcie kart krupie
 msgid "The best option is to hit"
 msgstr "Najlepszym wyborem jest wzięcie karty"
 
+# REV: przecinek przed lub? (nie wiem jak ma być)
 #: ../blackjack/src/hand.cpp:127
 msgid "To hit means to add another card to your hand.  Do this by clicking once on your cards or by selecting the option from the Control menu."
 msgstr "Wzięcie karty można zrobić poprzez pojedyncze kliknięcie na swoje karty, lub poprzez wybranie opcji w menu."
@@ -2374,6 +2417,7 @@ msgstr "Remis"
 msgid "Lose"
 msgstr "Przegrana"
 
+# REV: a nie czasem "wartosci oczekiwane przez gracza" ?
 #: ../blackjack/src/player.cpp:251
 msgid "Player expected values"
 msgstr "Oczekiwane wartości gracza"
@@ -2553,6 +2597,7 @@ msgstr "Rozmowa"
 msgid "--> Table"
 msgstr "--> Stół"
 
+# REV: może "gra"?
 #: ../dependencies/ggz-gtk/ggzclient.c:776
 msgid "Playing"
 msgstr "Granie"
@@ -2592,6 +2637,7 @@ msgstr ""
 "Uwierzytelnianie nie powiodło się.\n"
 "Proszę podać właściwe hasło."
 
+# REV: proszę nie krzyczeć ;-)
 #: ../dependencies/ggz-gtk/login.c:122
 #, c-format
 msgid "The username is too long!"
@@ -2626,6 +2672,7 @@ msgstr "Profil sewera"
 msgid "Profile:"
 msgstr "Profil:"
 
+# REV: nie jest to czasem tytuł okna? jeśli tak to "Edycja profili"
 #: ../dependencies/ggz-gtk/login.c:634
 msgid "Edit Profiles"
 msgstr "Modyfikuj profile"
@@ -2698,6 +2745,7 @@ msgstr "Strażnik"
 msgid "Captain"
 msgstr "Kapitan"
 
+# REV: koń?
 #: ../dependencies/ggz-gtk/first.c:58
 msgid "Knight"
 msgstr "Koń"
@@ -2722,6 +2770,7 @@ msgstr "Wampir"
 msgid "Chief"
 msgstr "Szef"
 
+# REV: ej! - to jest stopień wojskowy od "pułku" a nie "półki" ;-)
 #: ../dependencies/ggz-gtk/first.c:59
 msgid "Colonel"
 msgstr "Półkownik"
@@ -2734,6 +2783,7 @@ msgstr "Generał"
 msgid "Major"
 msgstr "Major"
 
+# REV: nie czasem "zwiadowca" ?
 #: ../dependencies/ggz-gtk/first.c:60
 msgid "Scout"
 msgstr "Skaut"
@@ -2771,6 +2821,7 @@ msgstr "Społeczność GGZ (szybki)"
 msgid "Local developer server"
 msgstr "Lokalny serwer roboczy"
 
+# REV: Czy utworzyć... brzmi zdecydowanie lepiej
 #: ../dependencies/ggz-gtk/first.c:190
 msgid "This is the first time you are running the GTK+ GGZ Gaming Zone client. Would you like to create some default server profiles?"
 msgstr "Klient Strefy Gier GGZ został uruchomiony po raz pierwszy. Utworzyć teraz domyślne profile serwerów?"
@@ -2948,6 +2999,7 @@ msgstr "Błąd gry"
 msgid "You're still at a table."
 msgstr "Gracz nadal jest przy stole."
 
+# REV: przecinek przed, trzeba
 #: ../dependencies/ggz-gtk/game.c:313
 msgid ""
 "You must be in a room to launch a game.\n"
@@ -3014,6 +3066,7 @@ msgstr "Nie zaimplementowane"
 msgid "Description"
 msgstr "Opis"
 
+# REV: Adres WWW?
 #: ../dependencies/ggz-gtk/types.c:191
 msgid "Web Address"
 msgstr "Adres sieciowy"
@@ -3096,6 +3149,7 @@ msgstr "Gospodarz"
 msgid "Administrator"
 msgstr "Administrator"
 
+# REV: ja bym dał bot lub robot
 #: ../dependencies/ggz-gtk/playerinfo.c:349
 #: ../libgames-support/games-dlg-players.c:127
 msgid "Bot"
@@ -3297,6 +3351,7 @@ msgstr "Miejsce %d:"
 msgid "Computer"
 msgstr "Komputer"
 
+# REV: dlaczego nie Otwórz?
 #: ../dependencies/ggz-gtk/launch.c:613
 msgid "Open"
 msgstr "Wczytaj"
@@ -3344,6 +3399,8 @@ msgstr ""
 "Można zgłosić chęć pomocy na stronie\n"
 "http://www.ggzgamingzone.org/"
 
+# REV: przecinek przed należy
+# REV: ewentualnie: Przed dołączeniem należy zaznaczyć stół.
 #: ../dependencies/ggz-gtk/client.c:563
 msgid "You must highlight a table before you can join it."
 msgstr "Aby dołączyć należy zaznaczyć stół."
@@ -3359,6 +3416,8 @@ msgstr "Błąd podczas dołączania"
 msgid "That table is full."
 msgstr "Stół jest pełny."
 
+# REV: przecinek przed należy
+# REV. ew. jw.
 #: ../dependencies/ggz-gtk/client.c:597
 msgid "You must highlight a table before you can watch it."
 msgstr "Aby obserwować stół należy go najpierw zaznaczyć."
@@ -3399,6 +3458,7 @@ msgstr "Obserwowanie istniejącej gry"
 msgid "Leave the game you're currently playing"
 msgstr "Opuszczenie bieżąco rozgrywanej gry"
 
+# REV: "w celu zmiany..."
 #: ../dependencies/ggz-gtk/client.c:685
 msgid "Show the properties dialog to change the client settings"
 msgstr "Wyświetlenie okna dialogowego właściwości, aby zmienić ustawienia klienta"
@@ -3594,10 +3654,13 @@ msgstr "Kraj:"
 msgid "Comments, Hobbies, Etc."
 msgstr "Komentarze, zainteresowania itp."
 
+# REV: za pomocą jednego kliknięcia
+# REV: lepiej forma niedokonana: wchodzenie do pokoju...
 #: ../dependencies/ggz-gtk/props.c:1443
 msgid "Single Click Room Entry"
 msgstr "Wejście do pokoju za jednym kliknięciem"
 
+# REV: nie będą to czasem polecenia dla komputera? (Wyświetl wszystkich)
 #: ../dependencies/ggz-gtk/props.c:1457
 msgid "Display All"
 msgstr "Wyświetlanie wszystkich"
@@ -3632,16 +3695,19 @@ msgstr "Wybór czcionki"
 msgid "%s: option `%s' is ambiguous\n"
 msgstr "%s: opcja \"%s\" jest niejednoznaczna\n"
 
+# REV: nie argument, a parametr
 #: ../dependencies/gnuchess/getopt.c:718
 #, c-format
 msgid "%s: option `--%s' doesn't allow an argument\n"
 msgstr "%s: opcja \"--%s\" nie pozwala na argument\n"
 
+# REV: j.w.
 #: ../dependencies/gnuchess/getopt.c:723
 #, c-format
 msgid "%s: option `%c%s' doesn't allow an argument\n"
 msgstr "%s: opcja \"%c%s\" nie pozwala na argument\n"
 
+# REV: j.w.
 #: ../dependencies/gnuchess/getopt.c:741
 #: ../dependencies/gnuchess/getopt.c:914
 #, c-format
@@ -3671,6 +3737,7 @@ msgstr "%s: niedozwolona opcja -- %c\n"
 msgid "%s: invalid option -- %c\n"
 msgstr "%s: niepoprawna opcja -- %c\n"
 
+# REV: j.w.
 #. 1003.2 specifies the format of this message.
 #: ../dependencies/gnuchess/getopt.c:833
 #: ../dependencies/gnuchess/getopt.c:963
@@ -3760,10 +3827,12 @@ msgstr "Katalog, który ma zostać otwarty do wczytania gry"
 msgid "The directory to open the save game dialog in"
 msgstr "Katalog, który ma zostać otwarty do zapisania gry"
 
+# REV: Format wyświetlania ruchów
 #: ../glchess/data/glchess.schemas.in.h:19
 msgid "The format to display moves in"
 msgstr "Formatowanie używane do wyświetlania ruchów"
 
+# REV: musisz zostawić wersję ang. opcji gconf, bo jak ktoś wpisze po polsku, to nie będzie działało
 #: ../glchess/data/glchess.schemas.in.h:20
 msgid "The format to display moves in, can be either 'human' (human readable), 'lan' (long algebraic notation) or 'san' (standard algebraic notation)"
 msgstr "Format wyświetlania informacji o wykonanych ruchach. Może to być format \"ludzki\" (zrozumiały dla przeciętnego człowieka), \"lan\" (pełna notacja algebraiczna) lub \"san\" (standardowa notacja algebraiczna)."
@@ -3780,10 +3849,12 @@ msgstr "Wysokość okna"
 msgid "The piece to promote pawns to"
 msgstr "Figura, na którą promować pionka"
 
+# REV: opcje po ang. + wyjaśnienia w nawiasie
 #: ../glchess/data/glchess.schemas.in.h:24
 msgid "The piece to promote to when a human player moves a pawn to the far rank. Can be one of: 'queen', 'knight', 'rook', 'bishop'."
 msgstr "Figura, na która zostanie promowany pionek po dotarciu do końca planszy. Może to być: \"królowa\", \"skoczek\", \"wieża\" lub \"goniec\"."
 
+# REV: opcje po ang. + wyjaśnienia w nawiasie
 #: ../glchess/data/glchess.schemas.in.h:25
 msgid "The side of the board that is in the foreground, either 'white', 'black', 'current' (the current player) or 'human' (the side of the current human player)"
 msgstr "Strona szachownicy wyświetlana z przodu: może to być część \"biała\" , \"czarna\", \"aktualna\" (aktualnego gracza) lub format \"ludzki\" (strona aktualnie rozgrywającego gracza - człowieka)."
@@ -3856,6 +3927,7 @@ msgstr "_Opuść"
 msgid "_Profile:"
 msgstr "_Profil:"
 
+# REV: jak _w, jest acceskeyem to dlaczego nie to pierwsze?
 #. Preferences Dialog: Check box for selecting if 3D view is available
 #. The View|3D Chess View menu
 #: ../glchess/glade/preferences.glade.h:2
@@ -3912,6 +3984,7 @@ msgstr "Wyświetlanie panelu historii gry"
 msgid "Shows hints during chess games"
 msgstr "Pokazuje podpowiedzi podczas gry w szachy"
 
+# REV: 2D > dwuwymiarowym; 3D > trójwymiarowym
 #. Preferences Dialog: Tooltip for 3D Chess View option
 #: ../glchess/glade/preferences.glade.h:24
 msgid "View the chess board by default in 2D mode, or optionally in 3D mode using OpenGL."
@@ -3927,6 +4000,7 @@ msgstr "_Numerowanie"
 msgid "_Move Hints"
 msgstr "Podpowi_edzi"
 
+# REV: raczej "Wczytywanie..." jeśli to tytuł okna
 #. Title of load game dialog
 #: ../glchess/glade/load_game.glade.h:2
 msgid "Load Chess Game"
@@ -3937,6 +4011,7 @@ msgstr "Wczytuje grę"
 msgid "Claim _Draw"
 msgstr "Zaproponuj _remis"
 
+# REV: "widok pełnoekranowy"
 #. The View|Leave Fullscreen menu
 #: ../glchess/glade/glchess.glade.h:6
 msgid "Leave _Fullscreen"
@@ -3952,6 +4027,7 @@ msgstr "Wczytuje zapisaną grę"
 msgid "Logs"
 msgstr "Dzienniki"
 
+# REV: acceskey G jest już zajęte?
 #. The Network Game toolbar button
 #: ../glchess/glade/glchess.glade.h:12
 #: ../libgames-support/games-stock.c:331
@@ -3981,6 +4057,7 @@ msgstr "Przewija do początku gry"
 msgid "Save the current game"
 msgstr "Zapisuje bieżącą grę"
 
+# REV: nie lepiej "Wyswietl" ?
 #. The View|Show Logs menu
 #: ../glchess/glade/glchess.glade.h:22
 msgid "Show _Logs"
@@ -4045,11 +4122,13 @@ msgstr "<b>Właściwości gry</b>"
 msgid "<b>Players</b>"
 msgstr "<b>Gracze</b>"
 
+# REV: nie lepiej "Czarne" ?
 #. New Game Dialog: Label before black player difficulty
 #: ../glchess/glade/new_game.glade.h:8
 msgid "B_lack:"
 msgstr "Czar_ny:"
 
+# REV: lepiej "Proszę wprowadzić tytuł gry"
 #. New Game Dialog: Tooltip for the game name entry
 #: ../glchess/glade/new_game.glade.h:10
 msgid "Enter the title for this game"
@@ -4065,11 +4144,13 @@ msgstr "Czas na _ruch:"
 msgid "Start the game. The game can be started once all fields are complete"
 msgstr "Rozpoczyna grę po wypełnieniu wszystkich pól."
 
+# REV: białE ?
 #. New Game Dialog: Label before white player difficulty
 #: ../glchess/glade/new_game.glade.h:18
 msgid "W_hite:"
 msgstr "Bi_ały:"
 
+# REV: CzarnE ?
 #. New Game Dialog: Label before black player combo box
 #: ../glchess/glade/new_game.glade.h:20
 msgid "_Black:"
@@ -4085,6 +4166,7 @@ msgstr "Nazwa g_ry:"
 msgid "_Start"
 msgstr "Rozpoczn_ij"
 
+# REV: dwukropwek, i j.w - może "białe"
 #. New Game Dialog: Label before white player combo box
 #: ../glchess/glade/new_game.glade.h:26
 msgid "_White:"
@@ -4100,6 +4182,7 @@ msgstr "Szachy"
 msgid "Play the classic two-player boardgame of chess"
 msgstr "Klasyczne szachy dla dwóch graczy"
 
+# REV: zainstalowany to jest program, a nie szachy ;-)
 #: ../glchess/src/glchess.in.in:50
 msgid "Chess incorrectly installed"
 msgstr "Szachy są niepoprawnie zainstalowane"
@@ -4108,6 +4191,7 @@ msgstr "Szachy są niepoprawnie zainstalowane"
 msgid "Chess is not able to start because required application files are not installed. If you are currently upgrading your system please wait until the upgrade has completed."
 msgstr "Nie można uruchomić gry w szachy ponieważ nie wszystkie wymagane pliki są zainstalowane. Jeśli trwa właśnie aktualizacja systemu, należy poczekać aż się skończy."
 
+# REV: Nieograniczony
 #. Translators: Time Combo: There is no time limit
 #: ../glchess/src/lib/gtkui/dialogs.py:125
 msgid "Unlimited"
@@ -4229,6 +4313,7 @@ msgstr "Proszę wskazać plik do wczytania"
 msgid "Unabled to load game"
 msgstr "Nie można wczytać gry"
 
+# REV: nazwę pliku
 #. Translators: Save Game Dialog: Error displayed when no file name entered
 #: ../glchess/src/lib/gtkui/dialogs.py:546
 msgid "Please enter a file name"
@@ -4287,6 +4372,7 @@ msgstr "Strona człowieka"
 msgid "Current Player"
 msgstr "Aktualny gracz"
 
+# REV: tak jak napisano w komentarzu: NIE tłumaczymy i nie wpisujemy do tłumaczenia tego przed | (popraw też dalej)
 #. Translators: Promotion Combo: Promote to a queen. Do not translate the 'chess-piece|' text.
 #: ../glchess/src/lib/gtkui/dialogs.py:617
 msgid "chess-piece|Queen"
@@ -4324,6 +4410,7 @@ msgstr "Szachy - %(game_name)s"
 msgid "∞"
 msgstr "∞"
 
+# REV: przecinek przed wszelkie
 #. Translators: Save Game Dialog: Notice that game needs saving
 #: ../glchess/src/lib/gtkui/gtkui.py:471
 msgid "If you don't save the changes to this game will be permanently lost"
@@ -4367,8 +4454,8 @@ msgid ""
 "b) Fifty moves have occured where no pawn has moved and no piece has been captured (50 move rule)"
 msgstr ""
 "Remis może zostać zaproponowany gdy:\n"
-" a) od trzech rund nie było zmian na planszy (trzykrotne powtórzenie pozycji)\n"
-" b) w ciągu ostatnich pięćdziesięciu ruchów nie ruszono żadnym pionkiem i nie została zbita żadna figura (reguła 50 ruchów)"
+"a) od trzech rund nie było zmian na planszy (trzykrotne powtórzenie pozycji)\n"
+"b) w ciągu ostatnich pięćdziesięciu ruchów nie ruszono żadnym pionkiem i nie została zbita żadna figura (reguła 50 ruchów)"
 
 #. TODO: This should be a pop-up dialog
 #. FIXME: This should create a pop-up dialog
@@ -4947,6 +5034,7 @@ msgstr "Wolne miejsce"
 msgid "AI (%s)"
 msgstr "Komputer (%s)"
 
+# REV: w tłumaczonym ciągu nie może być tego chess-file| (popraw też dalsze)
 #. Translators: The first file on the chess board. Do not translate the 'chess-file|' text
 #: ../glchess/src/lib/chess/__init__.py:12
 msgid "chess-file|a"
@@ -5059,6 +5147,7 @@ msgstr "chess-notation|Q"
 msgid "chess-notation|K"
 msgstr "chess-notation|K"
 
+# REV: wymienił bym te apostrofy na \"
 #. Translators: Description of an AI player used in log window. %(name)s is replaced with
 #. the name of the AI player. %(game)s is replaced with the name of the game the AI player
 #. is in.
@@ -5073,6 +5162,7 @@ msgstr "'%(name)s' w '%(game)s'"
 msgid "Application Log"
 msgstr "Dziennik programu"
 
+# REV: pomoc wiersza poleceń - "Użycie: %s [gra]"
 #. FIXME: Should be in a dialog
 #. Translators: Text displayed on the command-line if an unknown argument is passed
 #: ../glchess/src/lib/main.py:698
@@ -5095,6 +5185,7 @@ msgstr ""
 "Program glChess niespodziewanie zakończył działanie. Proszę zgłosić ten błąd na http://bugzilla.gnome.org\n"
 "Komunikaty do debugowania:"
 
+# REV: wyjściem czy zamknięciem?
 #: ../glchess/src/lib/main.py:740
 #: ../gnome-sudoku/src/lib/main.py:549
 msgid "Save game before closing?"
@@ -5108,6 +5199,8 @@ msgstr "glChess"
 msgid "Copyright 2005-2008 Robert Ancell (and contributors)"
 msgstr "Copyright 2005-2008 Robert Ancell (i współpracownicy)"
 
+# REV: może "Dwu- i trójwymiarowe szachy dla GNOME"
+# REV: "Program glChess ..."
 #: ../glchess/src/lib/defaults.py.in:60
 msgid ""
 "The 2D/3D chess game for GNOME. \n"
@@ -5118,6 +5211,7 @@ msgstr ""
 "\n"
 "glChess jest częścią gier GNOME."
 
+# REV: Program %s ...
 #. The GPL license string will be translated, and the game name inserted.
 #. This license is the same as in libgames-support/games-stock.c
 #. %s is replaced with the name of the game in gnome-games.
@@ -5128,6 +5222,7 @@ msgstr ""
 msgid "%s is free software; you can redistribute it and/or modify it under the terms of the GNU General Public License as published by the Free Software Foundation; either version 2 of the License, or (at your option) any later version."
 msgstr "%s jest wolnym oprogramowaniem; można go rozprowadzać dalej i/lub modyfikować na warunkach Powszechnej Licencji Publicznej GNU, wydanej przez Fundację Wolnego Oprogramowania - według wersji drugiej tej Licencji lub którejś z późniejszych wersji."
 
+# REV: Program %s ...
 #: ../glchess/src/lib/defaults.py.in:73
 #: ../gnome-sudoku/src/lib/defaults.py.in:56
 #: ../libgames-support/games-stock.c:411
@@ -5142,6 +5237,7 @@ msgstr "%s rozpowszechniany jest z nadzieją, iż będzie on użyteczny - jednak
 msgid "You should have received a copy of the GNU General Public License along with %s; if not, write to the Free Software Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston, MA  02110-1301  USA"
 msgstr "Z pewnością wraz z %s dostarczono także egzemplarz Powszechnej Licencji Publicznej GNU (GNU General Public License); jeśli nie - proszę napisać do Free Software Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston, MA 02110-130159 USA"
 
+# REV: katalogu danych
 #: ../glchess/src/lib/defaults.py.in:89
 #: ../gnome-sudoku/src/lib/defaults.py.in:71
 #, python-format
@@ -5165,6 +5261,7 @@ msgstr "Bez opisu"
 msgid "Small"
 msgstr "Mały"
 
+# REV: wywalić glines| (to jest kontekst)
 #: ../glines/glines.c:89
 msgid "glines|Medium"
 msgstr "glines|Średni"
@@ -5237,6 +5334,7 @@ msgstr "Nie można się tam ruszyć!"
 msgid "Five or More"
 msgstr "Kulki"
 
+# REV: "Kulki są", albo "Program/gra Kulki  jest..."
 #: ../glines/glines.c:1223
 msgid ""
 "GNOME port of the once-popular Color Lines game.\n"
@@ -5245,7 +5343,7 @@ msgid ""
 msgstr ""
 "Port niegdyś popularnej gry w kolorowe linie.\n"
 "\n"
-"\"Kulki\"  jest częścią gier GNOME."
+"\"Kulki\" jest częścią gier GNOME."
 
 #: ../glines/glines.c:1451
 msgid "Five or More Preferences"
@@ -5284,6 +5382,7 @@ msgstr "Ś_redni"
 msgid "_Large"
 msgstr "_Duży"
 
+# REV: bez glines|
 #: ../glines/glines.c:1537
 msgid "glines|General"
 msgstr "glines|Ogólne"
@@ -5435,6 +5534,7 @@ msgstr "ID motywu"
 msgid "Whether or not to use animation."
 msgstr "Przełącza wyświetlanie animacji."
 
+# REV: lepiej "Zero oznacza gracza człowieka..."
 #: ../gnect/data/gnect.schemas.in.h:15
 msgid "Zero is human; one through three correspond to the level of the computer player."
 msgstr "Zero odpowiada człowiekowi; wartości od jeden do trzech ustawiają poziom gry komputera."
@@ -5497,6 +5597,7 @@ msgstr "Wygrywa %s!"
 msgid "Waiting for %s to move."
 msgstr "Oczekiwanie na ruch gracza %s."
 
+# REV: chyba niepotrzebna wielka litera po dwukropku
 #: ../gnect/src/main.c:740
 #, c-format
 msgid "Hint: Column %d"
@@ -5522,6 +5623,7 @@ msgstr "Punkty"
 msgid "Drawn:"
 msgstr "Remis:"
 
+# REV: "Gra/Prorgam Czwórki jest..."
 #: ../gnect/src/main.c:921
 msgid ""
 "\"Four in a Row\" for GNOME, with a computer player driven by Giuliano Bertoletti's Velena Engine.\n"
@@ -5638,6 +5740,7 @@ msgstr "Jasne"
 msgid "Dark"
 msgstr "Ciemne"
 
+# REV: odwrócony wysoki kontrast ?
 #: ../gnect/src/theme.c:61
 msgid "High Contrast Inverse"
 msgstr "Wysoki kontrast odwrotny"
@@ -5679,6 +5782,7 @@ msgstr "Gracz %s dołączył do gry.\n"
 msgid "The game ended because the host %s left the game.\n"
 msgstr "Gra została zakończona, ponieważ gospodarz %s ją opuścił.\n"
 
+# REV: wyżej jest Grasz, to może i tu też by pasował...
 #: ../gnibbles/ggz-network.c:155
 #, c-format
 msgid "%s left the game.\n"
@@ -5846,18 +5950,22 @@ msgstr "Ruch w dół"
 msgid "Move up"
 msgstr "Ruch w górę"
 
+# REV: Liczba graczy...
 #: ../gnibbles/gnibbles.schemas.in.h:19
 msgid "Number of AI players"
 msgstr "Ilość graczy sterowanych przez komputer"
 
+# REV: Liczba graczy...
 #: ../gnibbles/gnibbles.schemas.in.h:20
 msgid "Number of AI players."
 msgstr "Ilość graczy sterowanych przez komputer."
 
+# REV: Liczba graczy...
 #: ../gnibbles/gnibbles.schemas.in.h:21
 msgid "Number of human players"
 msgstr "Ilość graczy sterowanych przez człowieka"
 
+# REV: Liczba graczy...
 #: ../gnibbles/gnibbles.schemas.in.h:22
 msgid "Number of human players."
 msgstr "Ilość graczy sterowanych przez człowieka."
@@ -5870,6 +5978,7 @@ msgstr "Poziomy w przypadkowej kolejności"
 msgid "Play levels in random order."
 msgstr "Poziomy w przypadkowej kolejności."
 
+# REV: kafelków gry
 #: ../gnibbles/gnibbles.schemas.in.h:25
 msgid "Size of game tiles"
 msgstr "Wielkość kafelków"
@@ -5894,6 +6003,7 @@ msgstr "Początkujący"
 msgid "Slow"
 msgstr "Wolno"
 
+# REV: bez gnibbles|
 #: ../gnibbles/main.c:68
 msgid "gnibbles|Medium"
 msgstr "gnibbles|Średnio"
@@ -5902,22 +6012,27 @@ msgstr "gnibbles|Średnio"
 msgid "Fast"
 msgstr "Szybko"
 
+# REV: wyżej były "fałszywe premie" nie jest to to samo?
 #: ../gnibbles/main.c:70
 msgid "Beginner with Fakes"
 msgstr "Początkujący z oszukiwaniem"
 
+# REV: j.w.
 #: ../gnibbles/main.c:71
 msgid "Slow with Fakes"
 msgstr "Wolny z oszukiwaniem"
 
+# REV: j.w.
 #: ../gnibbles/main.c:72
 msgid "Medium with Fakes"
 msgstr "Średni z oszukiwaniem"
 
+# REV: j.w.
 #: ../gnibbles/main.c:73
 msgid "Fast with Fakes"
 msgstr "Szybki z oszukiwaniem"
 
+# REV: Gra/program "robaki" jest...
 #: ../gnibbles/main.c:261
 msgid ""
 "A worm game for GNOME.\n"
@@ -5933,6 +6048,7 @@ msgstr ""
 msgid "Game over! The game has been won by %s!"
 msgstr "Koniec! Gra została wygrana przez %s!"
 
+# REV: lepiej "dla GNOME" - Gra w robaki dla gnome
 #. Translators: This string will be included in the intro screen, so don't make sure it fits!
 #: ../gnibbles/main.c:1020
 msgid "A worm game for GNOME."
@@ -5946,6 +6062,7 @@ msgstr "Preferencje gry Robaki"
 msgid "Speed"
 msgstr "Prędkość"
 
+# REV: może "Początkujący robak" ;-) byłoby dowcipniej ;-)
 #: ../gnibbles/preferences.c:270
 msgid "Nibbles newbie"
 msgstr "Początkujący w grze"
@@ -5976,10 +6093,12 @@ msgstr "_Fałszywe premie"
 msgid "_Starting level:"
 msgstr "P_oziom początkowy:"
 
+# REV: liczba....
 #: ../gnibbles/preferences.c:379
 msgid "Number of _human players:"
 msgstr "Ilość graczy sterowanych przez _człowieka:"
 
+# REV: liczba....
 #: ../gnibbles/preferences.c:400
 msgid "Number of _AI players:"
 msgstr "Ilość graczy sterowanych przez _komputer:"
@@ -6062,6 +6181,7 @@ msgstr ""
 msgid "There are no teleport locations left!!"
 msgstr "Brak lokacji na teleportację!!"
 
+# REV: dlaczego "również" ?
 #: ../gnobots2/game.c:1279
 msgid "There are no safe locations to teleport to!!"
 msgstr "Nie ma już również bezpiecznych lokacji na teleportację!!"
@@ -6169,6 +6289,8 @@ msgstr "Roboty"
 msgid "No game data could be found."
 msgstr "Nie można odnaleźć danych gry."
 
+# REV: lepiej "Nie można odnaleźć..." 
+# REV: "Gra nie może" brzmi śmiesznie...
 #: ../gnobots2/gnobots.c:333
 msgid "The program Robots was unable to find any valid game configuration files. Please check that the program is installed correctly."
 msgstr "Gra Roboty nie może odnaleźć żadnych poprawnych plików konfiguracyjnych gry. Proszę sprawdzić, czy gra jest poprawnie zainstalowana."
@@ -6177,15 +6299,19 @@ msgstr "Gra Roboty nie może odnaleźć żadnych poprawnych plików konfiguracyj
 msgid "Some graphics files are missing or corrupt."
 msgstr "Brakuję niektórych plików graficznych, lub są uszkodzone."
 
+# REV: lepiej "Nie można wczytać..." 
+# REV: "Gra nie może" brzmi śmiesznie...
 #: ../gnobots2/gnobots.c:354
 msgid "The program Robots was unable to load all the necessary graphics files. Please check that the program is installed correctly."
 msgstr "Gra Roboty nie może wczytać wszystkich niezbędnych plików graficznych. Proszę sprawdzić, czy gra jest poprawnie zainstalowana."
 
+# REV: mistranslation ;-)
 #. ********************************************************************
 #: ../gnobots2/gnobots2.desktop.in.in.h:1
 msgid "Avoid the robots and make them crash into each other"
 msgstr "Zapobieganie zderzeniom robotów"
 
+# REV: podczas gry
 #: ../gnobots2/gnobots2.schemas.in.h:3
 msgid "Enable game sounds"
 msgstr "Dźwięki gry"
@@ -6260,11 +6386,13 @@ msgstr "Klawisz przesunięcia Zach"
 msgid "Key to teleport"
 msgstr "Klawisz teleportacji"
 
+# REV: lepiej bez "do"
 #: ../gnobots2/gnobots2.schemas.in.h:19
 #: ../gnobots2/properties.c:582
 msgid "Key to teleport randomly"
 msgstr "Klawisz do losowej teleportacji"
 
+# REV: lepiej bez "do"
 #: ../gnobots2/gnobots2.schemas.in.h:20
 #: ../gnobots2/properties.c:583
 msgid "Key to wait"
@@ -6278,6 +6406,7 @@ msgstr "Motyw obrazu robota"
 msgid "Robot image theme. The theme of the images to use for the robots."
 msgstr "Motyw obrazów używanych do przedstawienia robotów. "
 
+# REV: raczej "standardowa opcja dla pasków..."
 #: ../gnobots2/gnobots2.schemas.in.h:24
 msgid "Show toolbar. A standard option for toolbars."
 msgstr "Wyświetlanie paska narzędziowego. Standardowy pasek z opcjami."
@@ -6342,6 +6471,7 @@ msgstr "Bezpieczne ruchy zapobiegają śmierci robota spowodowanej błędem. Je�
 msgid "Use super safe moves"
 msgstr "Bardzo bezpieczne ruchy"
 
+# REV: przecinek przed "kiedy"
 #: ../gnobots2/gnobots2.schemas.in.h:40
 msgid "Use super safe moves. The player is alerted when there is no safe move and the only option is to teleport out."
 msgstr "Gracz zostanie ostrzeżony kiedy nie będzie można wykonać bezpiecznego ruchu i jedyną opcją jest teleportacja."
@@ -6453,6 +6583,7 @@ msgstr "Typ gry"
 msgid "_Use safe moves"
 msgstr "B_ezpieczne ruchy"
 
+# REV: przecinki
 #: ../gnobots2/properties.c:491
 msgid "Prevent accidental moves that result in getting killed."
 msgstr "Zapobieganie niebezpiecznym ruchom w wyniku których można zginąć."
@@ -6461,6 +6592,7 @@ msgstr "Zapobieganie niebezpiecznym ruchom w wyniku których można zginąć."
 msgid "U_se super safe moves"
 msgstr "_Bardzo bezpieczne ruchy"
 
+# REV: przecinki
 #: ../gnobots2/properties.c:500
 msgid "Prevents all moves that result in getting killed."
 msgstr "Zapobieganie wszystkim niebezpiecznym ruchom w wyniku których można zginąć."
@@ -6572,6 +6704,7 @@ msgstr "Poziom od którego zacząć."
 msgid "Pause"
 msgstr "Wstrzymaj"
 
+# REV: ujednolicić z powyższym albo powyższe z tym (polecenie vs. nazwa)
 #: ../gnometris/gnometris.schemas.in.h:16
 #: ../gnometris/tetris.cpp:765
 msgid "Rotate"
@@ -6581,18 +6714,22 @@ msgstr "Obrót"
 msgid "The background color"
 msgstr "Kolor tła"
 
+# REV: przez funkcję
 #: ../gnometris/gnometris.schemas.in.h:18
 msgid "The background color, in a format gdk_color_parse understands."
 msgstr "Kolor tła zgodny z formatem rozumianym przez gdk_color_parse."
 
+# REV: Gęstość bloków
 #: ../gnometris/gnometris.schemas.in.h:19
 msgid "The density of blocks in rows filled at the start of the game. The value is between 0 (for no blocks) and 10 (for a completely filled row)."
 msgstr "Ilość bloków w wierszu na początku gry. Wartość jest z przedziału od 0 (brak bloków) do 10 (całkowicie wypełniony wiersz)."
 
+# REV: gęstość
 #: ../gnometris/gnometris.schemas.in.h:20
 msgid "The density of filled rows"
 msgstr "Ilość wypełnionych wierszy"
 
+# REV: bloków czy klocków ostatecznie?
 #: ../gnometris/gnometris.schemas.in.h:21
 msgid "The name of the theme used for rendering the blocks and the background."
 msgstr "Nazwa motywu używanego do wyświetlania klocków i tła."
@@ -6601,6 +6738,7 @@ msgstr "Nazwa motywu używanego do wyświetlania klocków i tła."
 msgid "The number of rows that are filled with random blocks at the start of the game."
 msgstr "Liczba wierszy wypełnionych losowo blokami na początku gry."
 
+# REV: liczba!
 #: ../gnometris/gnometris.schemas.in.h:23
 msgid "The number of rows to fill"
 msgstr "Ilość wypełnionych wierszy"
@@ -6649,6 +6787,7 @@ msgstr "Obrót przeciwny do wskazówek zegara."
 msgid "Whether to use the background image"
 msgstr "Używanie obrazu tła"
 
+# REV: Dlaczego tryb rozkazujacy?
 #: ../gnometris/main.cpp:56
 msgid "Set starting level (1 or greater)"
 msgstr "Ustaw poziom początkowy (1 lub większy)"
@@ -6685,6 +6824,7 @@ msgstr "Preferencje gry Gnometris"
 msgid "Setup"
 msgstr "Konfiguracja"
 
+# REV: liczba
 #. pre-filled rows
 #: ../gnometris/tetris.cpp:627
 msgid "_Number of pre-filled rows:"
@@ -6711,6 +6851,7 @@ msgstr "_Losowe kolory bloków"
 msgid "_Rotate blocks counterclockwise"
 msgstr "_Obrót bloku w lewo"
 
+# REV: blok - klocek ?
 #: ../gnometris/tetris.cpp:729
 msgid "Show _where the block will land"
 msgstr "Wyświetlanie miejsca lą_dowania klocka"
@@ -6744,6 +6885,8 @@ msgstr "Wyniki gry Gnometris"
 msgid "Sudoku"
 msgstr "Sudoku"
 
+# REV: liczba pojedyncza
+# REV: może: Łamigłówka liczbowa sprawdzająca logiczne myślenie
 #: ../gnome-sudoku/gnome-sudoku.desktop.in.in.h:2
 msgid "Test your logic skills in this number grid puzzle"
 msgstr "Łamigłówki umożliwiające sprawdzenie myślenia logicznego"
@@ -6782,10 +6925,12 @@ msgstr "_Dołączenie do wydruku gier już rozegranych"
 msgid "_Mark games as played once you've printed them."
 msgstr "_Oznaczanie gier wydrukowanych jako rozegranych"
 
+# REV: liczba (dla policzalnych plansz sudoku)
 #: ../gnome-sudoku/glade/print_games.glade.h:10
 msgid "_Number of sudoku to print: "
 msgstr "_Ilość plansz Sudoku do wydrukowania:"
 
+# REV: j.w.
 #: ../gnome-sudoku/glade/print_games.glade.h:11
 msgid "_Sudokus per page: "
 msgstr "Ilość plansz _Sudoku na stronę:"
@@ -6795,6 +6940,7 @@ msgstr "Ilość plansz _Sudoku na stronę:"
 msgid "_Very Hard"
 msgstr "_Bardzo trudny"
 
+# REV: liczba
 #: ../gnome-sudoku/glade/puzzle_generator.glade.h:1
 msgid "<i><u>Number of Puzzles</u></i>"
 msgstr "<i><u>Ilość łamigłówek</u></i>"
@@ -6831,6 +6977,7 @@ msgstr "Zasady tworzenia"
 msgid "Generate new puzzles _until stopped"
 msgstr "Generowanie nowych łamigłówek _do czasu zatrzymania"
 
+# REV: liczby
 #: ../gnome-sudoku/glade/puzzle_generator.glade.h:10
 msgid "Generate until _reaching target"
 msgstr "Generowanie nowych łamigłówek do _osiągnięcia ilości docelowej"
@@ -6839,10 +6986,12 @@ msgstr "Generowanie nowych łamigłówek do _osiągnięcia ilości docelowej"
 msgid "Puzzle Generator"
 msgstr "Generator łamigłówek"
 
+# REV: liczba
 #: ../gnome-sudoku/glade/puzzle_generator.glade.h:12
 msgid "Target _number of sudokus:"
 msgstr "Docelowa ilość plansz _sudoku:"
 
+# REV: jak wyżej jest "generator" to może tu "Generuj" ?
 #: ../gnome-sudoku/glade/puzzle_generator.glade.h:14
 msgid "_Generate"
 msgstr "_Utwórz"
@@ -6872,10 +7021,12 @@ msgstr "_Wyczyść rejestr"
 msgid "_Trackers"
 msgstr "_Rejestry"
 
+# REV: Program Sudoku
 #: ../gnome-sudoku/src/gnome-sudoku.in.in:59
 msgid "Sudoku incorrectly installed"
 msgstr "Sudoku zostało niepoprawnie zainstalowane"
 
+# REV: j.w. o personalizacji 
 #: ../gnome-sudoku/src/gnome-sudoku.in.in:60
 msgid "Sudoku is not able to start because required application files are not installed. If you are currently upgrading your system please wait until the upgrade has completed."
 msgstr "Sudoku nie może się uruchomić ponieważ wymagane pliki nie są zainstalowane. Jeśli trwa właśnie aktualizacja systemu, należy poczekać do jej zakończenia."
@@ -6902,6 +7053,7 @@ msgstr "Brak miejsca"
 msgid "No space left on disk"
 msgstr "Brak miejsca na dysku"
 
+# REV: Nie można ....
 #: ../gnome-sudoku/src/lib/saver.py:110
 #, python-format
 msgid "Sudoku is unable to created data folder %(path)s."
@@ -6911,6 +7063,7 @@ msgstr "Sudoku nie może utworzyć katalogu z danymi %(path)s."
 msgid "There is no disk space left!"
 msgstr "Brak miejsca na dysku!"
 
+# REV: niepotrzebna personalizacja
 #: ../gnome-sudoku/src/lib/saver.py:117
 #, python-format
 msgid "Sudoku was unable to create data folder %(path)s."
@@ -6967,6 +7120,7 @@ msgstr "Drukuj _wiele plansz"
 msgid "Print more than one sudoku at a time."
 msgstr "Wydruk więcej niż jednej planszy sudoku naraz."
 
+# REV: zamknij?
 #: ../gnome-sudoku/src/lib/main.py:274
 msgid "Close Sudoku"
 msgstr "Zakończ Sudoku"
@@ -6984,6 +7138,7 @@ msgstr "Zakończ Sudoku"
 msgid "_Tools"
 msgstr "Na_rzędzia"
 
+# REV: podpowieDŹ
 #: ../gnome-sudoku/src/lib/main.py:286
 #: ../libgames-support/games-stock.c:317
 msgid "_Hint"
@@ -6997,6 +7152,7 @@ msgstr "Wyświetla które cyfry pasują do bieżącego kwadratu."
 msgid "_Fill"
 msgstr "_Wypełnij"
 
+# REV: kropka
 #: ../gnome-sudoku/src/lib/main.py:291
 msgid "Automatically fill in the current square if possible."
 msgstr "W miarę możliwości wypełnia bieżący kwadrat"
@@ -7037,6 +7193,7 @@ msgstr "Ostrzega o kwadratach niemożliwych do wypełnienia po wykonaniu ruchu"
 msgid "_Track additions"
 msgstr "_Rejestr dodań"
 
+# REV: niedokończone
 #: ../gnome-sudoku/src/lib/main.py:326
 msgid "Mark new additions in a separate color so you can keep track of them."
 msgstr "Zaznacza nowo dodane cyfry osobnym kolorem"
@@ -7053,6 +7210,7 @@ msgstr "Podświetla bieżący kwadrat, wiersz i kolumnę"
 msgid "Generate new puzzles _while you play"
 msgstr "Generowanie _nowych łamigłówek podczas gry"
 
+# REV: przecinek nie potrzebny
 #: ../gnome-sudoku/src/lib/main.py:333
 msgid "Generate new puzzles in the background while you play. This will automatically pause when the game goes into the background."
 msgstr "Generuje nowe łamigłówki w tle, w trakcie grania. Generator zatrzyma się automatycznie jeśli gra znajdzie się w tle."
@@ -7069,10 +7227,13 @@ msgstr "_Cofnij"
 msgid "Undo last action"
 msgstr "Cofa ostatni ruch"
 
+# REV: acceskey 
+# REV: nie kojarzę teraz jak mamy w gnome, ale w GWO stoi "Powtórz"
 #: ../gnome-sudoku/src/lib/main.py:341
 msgid "_Redo"
 msgstr "Przywróć"
 
+# REV: nie kojarzę teraz jak mamy w gnome, ale w GWO stoi "Powtórz"
 #: ../gnome-sudoku/src/lib/main.py:341
 msgid "Redo last action"
 msgstr "Przywraca ostatni ruch"
@@ -7101,6 +7262,7 @@ msgstr "Czyści notatki i podpowiedzi"
 msgid "No Tracker"
 msgstr "Bez rejestrowania ruchów"
 
+# REV: l. mnoga
 #: ../gnome-sudoku/src/lib/main.py:346
 msgid "_Generate new puzzles"
 msgstr "_Generuj nową łamigłówkę"
@@ -7117,6 +7279,7 @@ msgstr "Wprowadzanie własnej siatki..."
 msgid "_Play game"
 msgstr "Zagr_aj"
 
+# REV: dałbym "aktywności"
 #: ../gnome-sudoku/src/lib/main.py:481
 #, python-format
 msgid "You completed the puzzle in %(totalTime)s (%(activeTime)s active)"
@@ -7154,6 +7317,7 @@ msgstr "Zapisać bieżącą grę przed rozpoczęciem nowej?"
 msgid "_Save game for later"
 msgstr "_Zapisz grę"
 
+# REV: porzuć?
 #: ../gnome-sudoku/src/lib/main.py:531
 msgid "_Abandon game"
 msgstr "_Opuść grę"
@@ -7251,6 +7415,7 @@ msgstr[0] "%(n)s łamigłówka"
 msgstr[1] "%(n)s łamigłówki"
 msgstr[2] "%(n)s łamigłówek"
 
+# REV: może "Zatrzymano" - jest bezpieczniejszą formą
 #: ../gnome-sudoku/src/lib/sudoku_generator_gui.py:191
 msgid "Stopped"
 msgstr "Zatrzymane"
@@ -7438,6 +7603,7 @@ msgstr "%e%B"
 msgid "Mines"
 msgstr "Miny"
 
+# REV: bez gnomine|
 #: ../gnomine/gnomine.c:99
 #: ../gnomine/gnomine.c:676
 msgid "gnomine|Medium"
@@ -7483,6 +7649,7 @@ msgid "Graphics:"
 msgstr "Grafika:"
 
 # JM: oryginalnie było 'popularna gra logiczna saper' ale na to sa copyrights, wiec zostało wywalone. Ew alternatywa: podobna do gry saper ?
+# REV: jest ok.
 #: ../gnomine/gnomine.c:470
 msgid ""
 "The popular logic puzzle minesweeper. Clear mines from a board using hints from squares you have already uncovered.\n"
@@ -7497,10 +7664,12 @@ msgstr ""
 msgid "Field Size"
 msgstr "Wielkość pola"
 
+# REV: to wielkość czy rozmiar (zob. wyżej)
 #: ../gnomine/gnomine.c:706
 msgid "Custom Size"
 msgstr "Własny rozmiar"
 
+# REV: liczba
 #: ../gnomine/gnomine.c:713
 msgid "_Number of mines:"
 msgstr "_Ilość min:"
@@ -7537,6 +7706,7 @@ msgstr "Wysokość siatki"
 msgid "Number of mines"
 msgstr "Liczba min"
 
+# REV: nawias otwierający
 #: ../gnomine/gnomine.c:986
 #: ../gnomine/gnomine.schemas.in.h:8
 msgid "Size of the board (0-2 = small-large, 3=custom)"
@@ -7556,6 +7726,7 @@ msgstr "Położenie X okna"
 msgid "Y location of window"
 msgstr "Położenie Y okna"
 
+# REV: przecinek przed aby?
 #: ../gnomine/gnomine.c:1140
 msgid "Press to Resume"
 msgstr "Należy nacisnąć aby kontynuować"
@@ -7564,6 +7735,7 @@ msgstr "Należy nacisnąć aby kontynuować"
 msgid "Time: "
 msgstr "Czas: "
 
+# REV: ... z ukrytych min
 #: ../gnomine/gnomine.desktop.in.in.h:1
 msgid "Clear hidden mines from a minefield"
 msgstr "Oczyszczanie pola minowego"
@@ -7592,6 +7764,7 @@ msgstr "Określa, czy można oznaczać pola jako nieznane."
 msgid "Set to true to enable warning icons when too many flags are placed."
 msgstr "Włącza ostrzeżenie po umieszczeniu zbyt dużej ilości flag na planszy."
 
+# REV: przecinek "zaminowane, jeśli odkryt"
 #: ../gnomine/gnomine.schemas.in.h:7
 msgid "Set to true to have gnomine automatically flag squares as mined when enough squares are revealed"
 msgstr "Włączone powoduje automatyczne flagowanie kwadratów jako zaminowane jeśli odkryta jest ich odpowiednia liczba"
@@ -7816,6 +7989,7 @@ msgstr "Gra zatrzymana"
 msgid "Playing %d×%d board"
 msgstr "Gra na planszy %dx%d"
 
+# REV: Gra/Program NNN jest...
 #: ../gnotravex/gnotravex.c:1909
 msgid ""
 "GNOME Tetravex is a simple puzzle where pieces must be positioned so that the same numbers are touching each other.\n"
@@ -8045,10 +8219,12 @@ msgstr "Paczka umiejętności"
 msgid "_Restart Puzzle"
 msgstr "Za_cznij od początku"
 
+# REV: puzzle czy łamigłówka czy układanka?
 #: ../gnotski/gnotski.c:431
 msgid "Next Puzzle"
 msgstr "Następne puzzle"
 
+# REV: puzzle czy łamigłówka czy układanka?
 #: ../gnotski/gnotski.c:433
 msgid "Previous Puzzle"
 msgstr "Poprzednie puzzle"
@@ -8057,6 +8233,7 @@ msgstr "Poprzednie puzzle"
 msgid "Level completed."
 msgstr "Poziom ukończony."
 
+# REV: puzzle czy łamigłówka czy układanka?
 #: ../gnotski/gnotski.c:826
 msgid "The Puzzle Has Been Solved!"
 msgstr "Puzzle rozwiązane!"
@@ -8065,6 +8242,7 @@ msgstr "Puzzle rozwiązane!"
 msgid "Klotski Scores"
 msgstr "Wyniki gry Klocki"
 
+# REV: puzzle czy łamigłówka?
 #: ../gnotski/gnotski.c:846
 msgid "Puzzle:"
 msgstr "Puzzle:"
@@ -8107,18 +8285,25 @@ msgstr ""
 "\n"
 "Klocki są częścią gier GNOME."
 
+# REV: przecinek przed aby
+# REV: rozwiązać?
 #: ../gnotski/gnotski.desktop.in.in.h:2
 msgid "Slide blocks to solve the puzzle"
 msgstr "Należy przesuwać bloki aby zakończyć grę"
 
+# REV: liczba
+# REV: puzzli czy układanek?
 #: ../gnotski/gnotski.schemas.in.h:1
 msgid "The number of the puzzle being played."
 msgstr "Ilość rozegranych puzzli."
 
+# REV: układane
+# REV: j..w
 #: ../gnotski/gnotski.schemas.in.h:2
 msgid "The puzzle in play"
 msgstr "Układanie puzzli"
 
+# REV: jakie punkty?
 #: ../gtali/clist.c:158
 msgid "Already used! Where do you want to put that?"
 msgstr "Już wykorzystane! Gdzie wpisać punkty?"
@@ -8129,6 +8314,7 @@ msgstr "Już wykorzystane! Gdzie wpisać punkty?"
 msgid "Score: %d"
 msgstr "Punkty: %d"
 
+# REV: ???
 #: ../gtali/clist.c:417
 #, c-format
 msgid "Field used"
@@ -8173,6 +8359,7 @@ msgstr "Regularne"
 
 # Czy powinno się te imiona tłumaczyć?
 # JM: wlasnie?
+# REV: z formy wygląda, że tak
 #: ../gtali/gtali.schemas.in.h:6
 msgid "[Human,Wilber,Bill,Monica,Kenneth,Janet]"
 msgstr "[Człowiek,Wilber,Wilhelm,Monika,Kenneth,Joanna]"
@@ -8235,6 +8422,7 @@ msgstr[0] "%s wygrał(a) grę z %d punktem"
 msgstr[1] "%s wygrał(a) grę z %d punktami"
 msgstr[2] "%s wygrał(a) grę z %d punktami"
 
+# REV: nie możemy odnieniać imion, więc lepiej "za gracza %s"
 #: ../gtali/gyahtzee.c:268
 #, c-format
 msgid "Computer playing for %s"
@@ -8287,6 +8475,7 @@ msgstr "Preferencje gry Kości"
 msgid "Human Players"
 msgstr "Gracze sterowani przez ludzi"
 
+# REV: liczba
 #: ../gtali/setup.c:299
 msgid "_Number of players:"
 msgstr "_Ilość graczy:"
@@ -8300,6 +8489,7 @@ msgstr "Gracze sterowani przez komputer"
 msgid "_Delay between rolls"
 msgstr "_Opóźnienie pomiędzy rzutami"
 
+# REV: liczba
 #: ../gtali/setup.c:331
 msgid "N_umber of opponents:"
 msgstr "_Ilość przeciwników:"
@@ -8415,6 +8605,7 @@ msgstr "Górna suma"
 msgid "Bonus if >62"
 msgstr "Premia jeżeli >62"
 
+# REV: gdzie indziej total=suma
 #. End of upper panel
 #: ../gtali/yahtzee.c:116
 #: ../gtali/yahtzee.c:529
@@ -8426,6 +8617,7 @@ msgstr "2 pary tego samego koloru [całość]"
 msgid "Full House [15 + total]"
 msgstr "Full [15 + suma]"
 
+# REV: gdzie indziej total=suma
 #: ../gtali/yahtzee.c:119
 #: ../gtali/yahtzee.c:531
 msgid "Full House Same Color [20 + total]"
@@ -8463,6 +8655,7 @@ msgstr "Generał [suma]"
 msgid "Iagno"
 msgstr "Iagno"
 
+# REV: Gra/program Iagno jest...
 #: ../iagno/gnothello.c:266
 msgid ""
 "A disk flipping game derived from Reversi.\n"
@@ -8483,10 +8676,12 @@ msgstr "Niepoprawny ruch."
 msgid "%.2d"
 msgstr "%.2d"
 
+# REV: odwrócenie czy położenie?
 #: ../iagno/gnothello.c:645
 msgid "It is your turn to place a dark piece"
 msgstr "Kolej na odwrócenie ciemnego krążka"
 
+# REV: odwrócenie czy położenie?
 #: ../iagno/gnothello.c:647
 msgid "It is your turn to place a light piece"
 msgstr "Kolej na odwrócenie jasnego krążka"
@@ -8641,6 +8836,7 @@ msgstr "ID"
 msgid "Session management options:"
 msgstr "Opcje menedżera sesji:"
 
+# REV: Wyświetla opcje lub Wyświetlenie opcji
 #: ../libgames-support/eggsmclient.c:245
 msgid "Show session management options"
 msgstr "Wyświetlenie opcje menedżera sesji"
@@ -8685,6 +8881,7 @@ msgid "List of players:"
 msgstr "Lista graczy:"
 
 # jm: uruchom??
+# REV: no...
 #. FIXME: you shouldn't be able to boot yourself
 #: ../libgames-support/games-dlg-players.c:436
 msgid "Boot player"
@@ -8726,6 +8923,7 @@ msgstr "<Naciśnij klawisz>"
 msgid "Unknown Command"
 msgstr "Nieznane polecenie"
 
+# REV: ??? padding to odstęp od krawędzi (wyjaśnione poniżej)
 #: ../libgames-support/games-gridframe.c:223
 #: ../libgames-support/games-gridframe.c:231
 msgid "X Padding"
@@ -8809,6 +9007,7 @@ msgstr "Wyłącza tryb pełnoekranowy"
 msgid "End the current network game and return to network server"
 msgstr "Zakończenie aktualnej gry sieciowej i powrót do serwera sieciowego"
 
+# REV: wstrzymanie 
 #: ../libgames-support/games-stock.c:55
 #: ../mahjongg/mahjongg.c:1260
 msgid "Pause the game"
@@ -8818,6 +9017,7 @@ msgstr "Wstrzymuje grę"
 msgid "Show a list of players in the network game"
 msgstr "Wyświetla listę graczy w grze sieciowej"
 
+# REV: kontynuacja
 #: ../libgames-support/games-stock.c:59
 #: ../mahjongg/mahjongg.c:1263
 msgid "Resume the paused game"
@@ -8840,6 +9040,7 @@ msgstr "Zamyka grę"
 msgid "_New"
 msgstr "_Nowa"
 
+# REV: a GWO na to "powtórz"
 #: ../libgames-support/games-stock.c:322
 msgid "_Redo Move"
 msgstr "_Przywróć ruch"
@@ -8862,6 +9063,7 @@ msgstr "_Cofnij ruch"
 msgid "_Deal"
 msgstr "Roz_daj"
 
+# REV: tryb pełnooekranowy
 #: ../libgames-support/games-stock.c:330
 msgid "_Leave Fullscreen"
 msgstr "_Opuść pełny ekran"
@@ -8934,6 +9136,8 @@ msgstr ""
 msgid "Mahjongg"
 msgstr "Mahjongg"
 
+# REV: kropka niepotrzebna
+# REV: płytek? czy może kostek?
 #: ../mahjongg/mahjongg.c:152
 msgid "Could not load tile set"
 msgstr "Nie można wczytać zestawu płytek."
@@ -8963,10 +9167,12 @@ msgstr "Wymieszaj"
 msgid "Mahjongg Scores"
 msgstr "Wyniki gry Mahjongg"
 
+# REV: gry Mahjonng
 #: ../mahjongg/mahjongg.c:707
 msgid "Mahjongg Preferences"
 msgstr "Preferencje Mahjongg"
 
+# REV: może "kostki"? - to chyba więcej mówi
 #: ../mahjongg/mahjongg.c:728
 msgid "Tiles"
 msgstr "Płytki"
@@ -8987,6 +9193,7 @@ msgstr "Plansze:"
 msgid "Tiles:"
 msgstr "Płytki:"
 
+# REV: Gra Mahjongg jest...
 #: ../mahjongg/mahjongg.c:927
 msgid ""
 "A matching game played with Mahjongg tiles.\n"
@@ -9003,6 +9210,7 @@ msgstr ""
 msgid "Mahjongg - %s"
 msgstr "Mahjongg - %s"
 
+# REV: Niestety nie można odnaleźć grywalnej kombinacji. ?
 #: ../mahjongg/mahjongg.c:1223
 msgid "Sorry, I was unable to find a playable configuration."
 msgstr "Nie można odnaleźć użytecznej konfiguracji."
@@ -9027,6 +9235,7 @@ msgstr "Usuwa pasujące pary płytek."
 msgid "Disassemble a pile of tiles by removing matching pairs"
 msgstr "Demontaż stosu kafli poprzez usuwanie pasujących par"
 
+# REV: bez mahjongg|
 #: ../mahjongg/maps.c:229
 msgid "mahjongg|Easy"
 msgstr "mahjongg|Łatwa"
@@ -9074,6 +9283,7 @@ msgstr "Trudna"
 msgid "1000 point bonus for clearing the board!"
 msgstr "Bonus w wysokości 1000 punktów, za wyczyszczenie planszy!"
 
+# REV: bez same-gnome|
 #: ../same-gnome/same-gnome.c:54
 msgid "same-gnome|Medium"
 msgstr "same-gnome|Średni"
@@ -9090,6 +9300,7 @@ msgstr "Dla kompatybilności wstecz"
 msgid "Game size (1=small, 3=large)"
 msgstr "Rozmiar gry (1=mały, 3=duży)"
 
+# REV: Czyszczenie planszy poprzez usuwanie grup kulek jedego koloru?
 #: ../same-gnome/same-gnome.desktop.in.in.h:1
 msgid "Clear the screen by removing groups of colored balls"
 msgstr "Należy wyczyścić ekran usuwając grupy kulek jednego koloru"
@@ -9102,6 +9313,7 @@ msgstr "Same GNOME"
 msgid "Height of the custom board"
 msgstr "Wysokość planszy użytkownika"
 
+# REV: nie tłumaczyć FALSE/TRUE
 #: ../same-gnome/same-gnome.schemas.in.h:2
 msgid "Setting this to FALSE means the pieces fall slowly, but gracefully. A setting of TRUE causes the pieces to fall quickly and jerkily."
 msgstr "Ustawienie na FAŁSZ, oznacza że klocki będą spadały wolno, lecz płynnie. Ustawienie na PRAWDA, oznacza że klocki będą spadały szybko, lecz skokowo."
@@ -9118,10 +9330,13 @@ msgstr "Plik z motywem użytkownika."
 msgid "The height of the custom board, 101 &gt; height &gt; 3."
 msgstr "Wysokość planszy użytkownika, 101 &gt; wysokość &gt; 3."
 
+# REV: "Rozmiar używanej planszy"
+# REV: nie dostosuj, a "własny" lub "użytkownika"
 #: ../same-gnome/same-gnome.schemas.in.h:6
 msgid "The size of the board to use. 1 = Custom, 2 = Small, 3 = Medium, 4 = Large."
 msgstr "Rozmiar planszy użytkownika. 1 = Dostosuj, 2 = Mały 3 = Średni 4 = Duży."
 
+# REV: Używany modtyw
 #: ../same-gnome/same-gnome.schemas.in.h:7
 msgid "The theme to use"
 msgstr "Motyw użytkownika"
@@ -9150,6 +9365,8 @@ msgstr[0] "%d punkt"
 msgstr[1] "%d punkty"
 msgstr[2] "%d punktów"
 
+# REV: "w nie" możnaby opuścić, co?
+# REV: Gra Same GNOME jest...
 #: ../same-gnome/ui.c:133
 msgid ""
 "I want to play that game! You know, they all go whirly-round and you click on them and they vanish!\n"
@@ -9168,6 +9385,7 @@ msgstr "Wyniki gry Same GNOME"
 msgid "Unfortunately your score did not make the top ten."
 msgstr "Niestety uzyskany wynik nie kwalifikuje się do pierwszej dziesiątki."
 
+# REV: motyw gry
 #: ../same-gnome/ui.c:288
 msgid "Same GNOME Theme"
 msgstr "Motyw Same GNOME"
@@ -9180,6 +9398,7 @@ msgstr "_Motyw..."
 msgid "_Fast Animation"
 msgstr "_Szybka animacja"
 
+# REV: danych motywu
 #: ../same-gnome/drawing.c:367
 msgid "No theme data was found."
 msgstr "Nie można odnaleźć motywu."
