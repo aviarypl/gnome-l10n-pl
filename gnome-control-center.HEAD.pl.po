@@ -13,8 +13,8 @@ msgstr ""
 "Project-Id-Version: gnome-control-center\n"
 "Report-Msgid-Bugs-To: http://bugzilla.gnome.org/enter_bug.cgi?product=gnome-control-center&component=general\n"
 "POT-Creation-Date: 2009-02-01 16:39+0000\n"
-"PO-Revision-Date: 2009-02-02 18:31+0100\n"
-"Last-Translator: Tomasz Dominikowski <dominikowski@gmail.com>\n"
+"PO-Revision-Date: 2009-02-04 23:48+0100\n"
+"Last-Translator: wadim dziedzic <wdziedzic@aviary,pl>\n"
 "Language-Team: Aviary.pl <gnomepl@aviary.pl>\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -23,10 +23,12 @@ msgstr ""
 "X-Poedit-Language: Polish\n"
 "X-Poedit-Country: Poland\n"
 
+# REV: obwódka? może ramka, krawędz? (później jest "krawędź") - najlepiej ujednolicić
 #: ../capplets/about-me/eel-alert-dialog.c:114
 msgid "Image/label border"
 msgstr "Obwódka obrazu/etykiety"
 
+# REv: j.w.
 #: ../capplets/about-me/eel-alert-dialog.c:115
 msgid "Width of border around the label and image in the alert dialog"
 msgstr "Szerokość obwódki etykiety i obrazu w oknie dialogowym powiadomienia"
@@ -51,13 +53,13 @@ msgstr "Przyciski wyświetlane w oknie powiadomienia"
 msgid "Show more _details"
 msgstr "_Więcej szczegółów"
 
-# td
+# REV: z kodu wynika że %s jest nazwą urządzenia (jak w stringu "Aby uruchomić logowanie za pomocą czytnika...") czyli trzeba rozwinąć: "na urządzeniu/czytniku %s" (zmiana globalna)
 #: ../capplets/about-me/fingerprint-strings.h:28
 #, c-format
 msgid "Place your left thumb on %s"
 msgstr "Proszę umieścić lewy kciuk na %s"
 
-# td
+# REV: przeciągnąć PO a nie NA (global)
 #: ../capplets/about-me/fingerprint-strings.h:28
 #, c-format
 msgid "Swipe your left thumb on %s"
@@ -332,6 +334,7 @@ msgid "Please contact your system administrator for help."
 msgstr "Proszę się skontaktować z administratorem systemu w celu uzyskania pomocy."
 
 # td
+# REV: hm - raczej "za pomocą linii papilarnych/odciska palca" - nigdzie tu nie ma "fignerprint reader" - do sprawdzenia w całym pliku
 #: ../capplets/about-me/gnome-about-me-fingerprint.c:518
 msgid "Enable Fingerprint Login"
 msgstr "Włączenie logowania za pomocą czytnika linii papilarnych"
@@ -819,10 +822,12 @@ msgstr[0] "Wybrana czcionka posiada wysokość %d punktu i może być trudne jej
 msgstr[1] "Wybrana czcionka posiada wysokość %d punktów i może być trudne jej efektywne wykorzystanie przez komputer. Zalecane jest wybranie czcionki o mniejszym rozmiarze."
 msgstr[2] "Wybrana czcionka posiada wysokość %d punktów i może być trudne jej efektywne wykorzystanie przez komputer. Zalecane jest wybranie czcionki o mniejszym rozmiarze."
 
+# REV: używa/użycie ?
 #: ../capplets/appearance/appearance-font.c:535
 msgid "Use previous font"
 msgstr "Użyj poprzedniej czcionki"
 
+# REV: używa/użycie ?
 #: ../capplets/appearance/appearance-font.c:537
 msgid "Use selected font"
 msgstr "Użyj zaznaczonej czcionki"
@@ -835,6 +840,7 @@ msgstr "Proszę wprowadzić nazwę pliku motywu do instalacji"
 msgid "filename"
 msgstr "nazwa_pliku"
 
+# REV: Określa...
 #. TRANSLATORS: don't translate the terms in brackets
 #: ../capplets/appearance/appearance-main.c:132
 msgid "Specify the name of the page to show (theme|background|fonts|interface)"
@@ -891,6 +897,7 @@ msgstr "Ten motyw sugeruje użycie tła i czcionki. Ostatnio zastosowana czcionk
 msgid "The current theme suggests a background and a font."
 msgstr "Ten motyw sugeruje użycie określonego tła i czcionki."
 
+# REV: w sąsiednich mamy "Ten motyw" więc może i tu?
 #: ../capplets/appearance/appearance-themes.c:719
 msgid "The current theme suggests a font. Also, the last applied font suggestion can be reverted."
 msgstr "Bieżący motyw sugeruje użycie określonej czcionki. Ostatnio zastosowana czcionka może zostać przywrócona."
@@ -967,6 +974,7 @@ msgstr "_Najlepsze kształty"
 msgid "Best co_ntrast"
 msgstr "Najlepszy _kontrast"
 
+# REV: nie czasem "Dopasuj" ?
 #: ../capplets/appearance/data/appearance.glade.h:14
 msgid "C_ustomize..."
 msgstr "Włas_ne..."
@@ -1485,6 +1493,7 @@ msgstr "Okno nadrzędne"
 msgid "Parent window of the dialog"
 msgstr "Okno nadrzędne okna dialogowego"
 
+# REV: adresu URI (spr. globalnie)
 #: ../capplets/common/file-transfer-dialog.c:231
 msgid "From URI"
 msgstr "Z URI"
@@ -1732,6 +1741,7 @@ msgstr "<b>Komunikator</b>"
 msgid "<b>Mail Reader</b>"
 msgstr "<b>Czytnik poczty</b>"
 
+# REV: nie chodzi tu czasem o "mobilność" - (laptopy, telefony)
 #: ../capplets/default-applications/gnome-default-applications-properties.glade.h:4
 msgid "<b>Mobility</b>"
 msgstr "<b>Motoryczne</b>"
@@ -1827,6 +1837,7 @@ msgstr "Balsa"
 msgid "Banshee Music Player"
 msgstr "Odtwarzacz muzyki Banshee"
 
+# REV: to jest chyba cała nazwa własna (do spr.)
 #: ../capplets/default-applications/gnome-default-applications.xml.in.h:3
 msgid "Claws Mail"
 msgstr "Poczta Claws"
@@ -1835,6 +1846,7 @@ msgstr "Poczta Claws"
 msgid "Dasher"
 msgstr "Dasher"
 
+# REV: bez odmiany nazw > systemu Debian (spr. globalnie)
 #: ../capplets/default-applications/gnome-default-applications.xml.in.h:5
 msgid "Debian Sensible Browser"
 msgstr "Inteligentna przeglądarka Debiana"
@@ -1863,6 +1875,7 @@ msgstr "Czytnik poczty Evolution"
 msgid "Firebird"
 msgstr "Firebird"
 
+# REV: CamelCase niepotrzebne
 #: ../capplets/default-applications/gnome-default-applications.xml.in.h:12
 msgid "Firefox"
 msgstr "FireFox"
@@ -2086,6 +2099,7 @@ msgid "R_otation:"
 msgstr "_Obrót:"
 
 # td
+# REV: nie czasem częstotliwość ?
 #: ../capplets/display/display-capplet.glade.h:14
 #| msgid "Re_fresh Rate:"
 msgid "Re_fresh rate:"
@@ -2232,10 +2246,12 @@ msgstr "Modyfikatory skrótu"
 msgid "Accelerator keycode"
 msgstr "Kod klawisza skrótu"
 
+# REV: klawisza skrótu?
 #: ../capplets/keybindings/eggcellrendererkeys.c:193
 msgid "Accel Mode"
 msgstr "Tryb skrótu"
 
+# REV: klawisza skrótu?
 #: ../capplets/keybindings/eggcellrendererkeys.c:194
 msgid "The type of accelerator."
 msgstr "Rodzaj skrótu."
@@ -2404,10 +2420,12 @@ msgstr "<small><i>Wolno</i></small>"
 msgid "A_cceleration:"
 msgstr "Pr_zyspieszenie:"
 
+# REV: Dozwolone odraczanie przerw ?
 #: ../capplets/keyboard/gnome-keyboard-properties.glade.h:13
 msgid "All_ow postponing of breaks"
 msgstr "Odr_aczanie przerw"
 
+# REV: raczej nie wspomaganie - może "reakcja" ?odpowiedź?    
 #: ../capplets/keyboard/gnome-keyboard-properties.glade.h:14
 msgid "Audio _Feedback..."
 msgstr "Wspom_aganie dźwiękowe..."
@@ -2833,6 +2851,7 @@ msgid "Set your mouse preferences"
 msgstr "Ustawianie preferencji myszy"
 
 # td
+# REV: trzykropek
 #: ../capplets/network/gnome-network-properties.c:677
 #: ../capplets/network/gnome-network-properties.c:816
 #| msgid "_Notifications..."
@@ -2954,6 +2973,7 @@ msgstr "_Nazwa położenia:"
 msgid "_Password:"
 msgstr "_Hasło:"
 
+# REV: pośrednik bezpiecznego http
 #: ../capplets/network/gnome-network-properties.glade.h:24
 msgid "_Secure HTTP proxy:"
 msgstr "_Bezpieczny pośrednik HTTP:"
@@ -2962,6 +2982,7 @@ msgstr "_Bezpieczny pośrednik HTTP:"
 msgid "_Use the same proxy for all protocols"
 msgstr "Ten sam pośrednik sieciowy dla wszystkich protokołów"
 
+# REV: programu preferencji
 #: ../capplets/windows/gnome-window-properties.c:346
 msgid "Cannot start the preferences application for your window manager"
 msgstr "Nie można uruchomić aplikacji konfigurującej menedżera okien"
@@ -2991,6 +3012,7 @@ msgstr "M_eta"
 msgid "<b>Movement Key</b>"
 msgstr "<b>Klawisz przesuwania</b>"
 
+# REV: działanie?
 #: ../capplets/windows/gnome-window-properties.glade.h:2
 msgid "<b>Titlebar Action</b>"
 msgstr "<b>Zachowanie paska tytułowego</b>"
@@ -3003,6 +3025,7 @@ msgstr "<b>Wybór okna</b>"
 msgid "To move a window, press-and-hold this key then grab the window:"
 msgstr "Aby przesunąć okno, należy wcisnąć wybrany poniżej klawisz, a następnie przeciągnąć okno przy użyciu myszy:"
 
+# REV: preferencje okien?
 #: ../capplets/windows/gnome-window-properties.glade.h:5
 msgid "Window Preferences"
 msgstr "Okna"
@@ -3300,6 +3323,7 @@ msgstr "Określa, czy zamykać powłokę, gdy wywołane jest działanie dodawani
 msgid "Indicates whether to close the shell when an upgrade or uninstall action is performed."
 msgstr "Określa, czy zamykać powłokę, gdy wywołane jest działanie aktualizacji lub deinstalacji."
 
+# REV: powiązane
 #: ../shell/control-center.schemas.in.h:10
 msgid "Task names and associated .desktop files"
 msgstr "Nazwy zadań i związane pliki .desktop"
@@ -3313,10 +3337,12 @@ msgstr "Nazwa wyświetlanego w control-center zadania, po której następuje sep
 msgid "[Change Theme;gtk-theme-selector.desktop,Set Preferred Applications;default-applications.desktop,Add Printer;gnome-cups-manager.desktop]"
 msgstr "[Zmiana motywu;gtk-theme-selector.desktop,Preferowane aplikacje;default-applications.desktop,Dodanie drukarki;gnome-cups-manager.desktop]"
 
+# REV: program "control-center"
 #: ../shell/control-center.schemas.in.h:14
 msgid "if true, the control-center will close when a \"Common Task\" is activated."
 msgstr "Wartość \"true\" określa, czy control-center zostanie zamknięte, gdy zostanie aktywowane \"Typowe zadanie\"."
 
+# REV: konfiguracji
 #: ../shell/gnomecc.desktop.in.in.h:2
 msgid "The GNOME configuration tool"
 msgstr "Narzędzie konfiguracyjne GNOME"
@@ -3335,6 +3361,7 @@ msgstr "Czas na przerwę!"
 msgid "/_Preferences"
 msgstr "/_Preferencje"
 
+# REV: albo "Informacje" albo "O programie"
 #: ../typing-break/drwright.c:130
 msgid "/_About"
 msgstr "/_Informacje o"
@@ -3460,6 +3487,7 @@ msgstr "Określa, czy należy tworzyć miniaturki dla czcionek TrueType"
 msgid "Whether to thumbnail Type1 fonts"
 msgstr "Określa, czy należy tworzyć miniaturki dla czcionek Type1"
 
+# REV: to było "óśm skrzyń fig" :)
 #: ../font-viewer/font-view.c:113
 msgid "The quick brown fox jumps over the lazy dog. 0123456789"
 msgstr "Pchnąć w tę łódź jeża lub osiem skrzyń fig. ĄĆĘŁŃÓŚŹŻ 0123456789"
@@ -3527,6 +3555,7 @@ msgstr "ROZMIAR"
 msgid "FONT-FILE OUTPUT-FILE"
 msgstr "PLIK-CZCIONKI PLIK-WYJŚCIOWY"
 
+# REV: literówa
 #: ../font-viewer/font-thumbnailer.c:263
 #, c-format
 msgid "Error parsing arguments: %s\n"
