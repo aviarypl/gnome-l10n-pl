@@ -14,8 +14,8 @@ msgstr ""
 "Project-Id-Version: ekiga\n"
 "Report-Msgid-Bugs-To: http://bugzilla.gnome.org/enter_bug.cgi?product=ekiga&component=general\n"
 "POT-Creation-Date: 2009-02-01 15:12+0000\n"
-"PO-Revision-Date: 2009-02-01 18:10+0100\n"
-"Last-Translator: Tomasz Dominikowski <dominikowski@gmail.com>\n"
+"PO-Revision-Date: 2009-02-07 17:51+0100\n"
+"Last-Translator: Joanna Mazgaj <jmazgaj@aviary.pl>\n"
 "Language-Team: Aviary.pl <gnomepl@aviary.pl>\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -94,13 +94,13 @@ msgstr "Stan kontaktu (krótki)"
 msgid "DTMF sending"
 msgstr "Wysyłanie DTMF"
 
-# td
 #: ../ekiga.schemas.in.in.h:15
 #| msgid "Disabled silence detection"
 msgid "Disable STUN network detection"
 msgstr "Wyłącza wykrywanie sieci STUN"
 
 # td
+# REV:a to nie jest wyjaśnienie do opcji powyżej? Wtedy to powyżej wymaga redakcji.
 #: ../ekiga.schemas.in.in.h:16
 #: ../src/gui/preferences.cpp:492
 msgid "Disable the automatic network setup resulting from the STUN test"
@@ -650,6 +650,7 @@ msgid "Neighbours"
 msgstr "Sąsiedzi"
 
 # td
+# REV: imgo wystarczy Czyszczenie
 #: ../lib/engine/components/call-history/history-book.cpp:140
 #: ../lib/engine/gui/gtk-frontend/call-history-view-gtk.cpp:162
 #| msgid "Clear"
@@ -763,24 +764,20 @@ msgstr "Usuń kontakt"
 msgid "Are you sure you want to remove %s from the addressbook?"
 msgstr "Na pewno usunąć %s z książki adresowej?"
 
-# td
 #: ../lib/engine/components/gstreamer/gst-audioinput.cpp:270
 #| msgid "Audio Codecs"
 msgid "Audio test"
 msgstr "Test dźwięku"
 
-# td
 #: ../lib/engine/components/gstreamer/gst-audiooutput.cpp:320
 msgid "Silent"
 msgstr "Cisza"
 
-# td
 #: ../lib/engine/components/gstreamer/gst-videoinput.cpp:226
 #| msgid "Video Codecs"
 msgid "Video test"
 msgstr "Test obrazu"
 
-# td
 #. Translators: "Screencast" means the video input device will be your screen -- the other end will see your desktop
 #: ../lib/engine/components/gstreamer/gst-videoinput.cpp:370
 #: ../lib/engine/components/gstreamer/gst-videoinput.cpp:375
@@ -788,6 +785,7 @@ msgid "Crazy"
 msgstr "Zwariowany"
 
 # td
+# REV: przesyłanie
 #: ../lib/engine/components/gstreamer/gst-videoinput.cpp:375
 msgid "Screencast"
 msgstr "Przesył obrazu ekranu"
@@ -796,24 +794,20 @@ msgstr "Przesył obrazu ekranu"
 msgid "_Refresh"
 msgstr "_Odśwież"
 
-# td
 #: ../lib/engine/components/ldap/ldap-book.cpp:412
 #| msgid "Open address book"
 msgid "_Remove addressbook"
 msgstr "_Usuń książkę adresową"
 
-# td
 #: ../lib/engine/components/ldap/ldap-book.cpp:414
 #| msgid "Address incomplete"
 msgid "Addressbook _properties"
 msgstr "_Właściwości książki adresowej"
 
-# td
 #: ../lib/engine/components/ldap/ldap-book.cpp:545
 msgid "LDAP SASL Interaction"
 msgstr "Interakcje między LDAP a SASL "
 
-# td
 #. Translators, Howard explained : "Challenge" is a generic term
 #. * in authentication. It's a prompt from the authentication mechanism
 #. * for some type of credential. Exactly what kind of challenge and
@@ -828,7 +822,6 @@ msgstr "Interakcje między LDAP a SASL "
 msgid "Challenge: "
 msgstr "Żądanie uwierzytelnienia:"
 
-# td
 #: ../lib/engine/components/ldap/ldap-book.cpp:595
 #| msgid "User Interface"
 msgid "Interact"
@@ -842,7 +835,6 @@ msgstr "Odświeżanie"
 msgid "Could not initialize server"
 msgstr "Nie można zainicjować serwera"
 
-# td
 #: ../lib/engine/components/ldap/ldap-book.cpp:684
 #: ../lib/engine/components/ldap/ldap-book.cpp:729
 msgid "LDAP Error: "
@@ -871,13 +863,11 @@ msgstr "Oczekiwanie na wyniki wyszukiwania"
 msgid "Please edit the following fields"
 msgstr "Proszę zmodyfikować następujące pola"
 
-# td
 #: ../lib/engine/components/ldap/ldap-book.cpp:933
 #| msgid "_Name"
 msgid "Book _Name"
 msgstr "_Nazwa książki"
 
-# td
 #: ../lib/engine/components/ldap/ldap-book.cpp:934
 msgid "Server _URI"
 msgstr "Adres _URI serwera"
@@ -894,30 +884,27 @@ msgstr "Podrzędne"
 msgid "Single Level"
 msgstr "Jeden poziom"
 
-# td
 #: ../lib/engine/components/ldap/ldap-book.cpp:943
 #| msgid "Search Scope:"
 msgid "_Search Scope"
 msgstr "_Zakres wyszukiwania"
 
-# td
 #: ../lib/engine/components/ldap/ldap-book.cpp:952
 msgid "_DisplayName Attribute"
 msgstr "Atrybut \"_Nazwa wyświetlana\""
 
-# td
 #: ../lib/engine/components/ldap/ldap-book.cpp:953
 #| msgid "Call _Attribute"
 msgid "Call _Attributes"
 msgstr "_Atrybuty dzwonienia"
 
 # td
+# REV: a to nie szablon filtru?
 #: ../lib/engine/components/ldap/ldap-book.cpp:955
 #: ../lib/engine/components/ldap/ldap-book.cpp:957
 msgid "_Filter Template"
 msgstr "_Filtruj szablon"
 
-# td
 #: ../lib/engine/components/ldap/ldap-book.cpp:959
 msgid "Bind _ID"
 msgstr "_ID dowiązania"
@@ -926,17 +913,14 @@ msgstr "_ID dowiązania"
 msgid "_Password"
 msgstr "_Hasło"
 
-# td
 #: ../lib/engine/components/ldap/ldap-book.cpp:961
 msgid "Use TLS"
 msgstr "Użycie TLS"
 
-# td
 #: ../lib/engine/components/ldap/ldap-book.cpp:962
 msgid "Use SASL"
 msgstr "Użycie SASL"
 
-# td
 #: ../lib/engine/components/ldap/ldap-book.cpp:976
 msgid "SASL _Mechanism"
 msgstr "_Mechanizm SASL"
@@ -945,27 +929,22 @@ msgstr "_Mechanizm SASL"
 msgid "Edit LDAP directory"
 msgstr "Modyfikowanie katalogu LDAP"
 
-# td
 #: ../lib/engine/components/ldap/ldap-book.cpp:1016
 msgid "Please provide a Book Name for this directory\n"
 msgstr "Proszę wprowadzić nazwę książki dla tego katalogu\n"
 
-# td
 #: ../lib/engine/components/ldap/ldap-book.cpp:1019
 msgid "Please provide a Server URI\n"
 msgstr "Proszę wprowadzić adres URI serwera\n"
 
-# td
 #: ../lib/engine/components/ldap/ldap-book.cpp:1022
 msgid "Please provide a DisplayName Attribute\n"
 msgstr "Proszę wprowadzić atrybut \"Nazwa wyświetlana\"\n"
 
-# td
 #: ../lib/engine/components/ldap/ldap-book.cpp:1025
 msgid "Please provide a Call Attribute\n"
 msgstr "Proszę wprowadzić atrybut dzwonienia\n"
 
-# td
 #: ../lib/engine/components/ldap/ldap-book.cpp:1028
 msgid "Invalid Server URI\n"
 msgstr "Niepoprawny adres URI serwera\n"
@@ -1038,29 +1017,26 @@ msgstr "Zmień nazwę"
 msgid "Family"
 msgstr "Rodzina"
 
-# td
 #: ../lib/engine/components/local-roster/local-heap.cpp:160
 #| msgid "_Find"
 msgid "Friend"
 msgstr "Przyjaciel"
 
-# td
 #: ../lib/engine/components/local-roster/local-heap.cpp:161
 msgid "Associate"
 msgstr "Współpracownik"
 
-# td
 #: ../lib/engine/components/local-roster/local-heap.cpp:162
 msgid "Assistant"
 msgstr "Asystent"
 
 # td
+# REV: przełożony prędzej [Szef ?]
 #: ../lib/engine/components/local-roster/local-heap.cpp:163
 #| msgid "Services"
 msgid "Supervisor"
 msgstr "Nadzorca"
 
-# td
 #: ../lib/engine/components/local-roster/local-heap.cpp:164
 msgid "Self"
 msgstr "Użytkownik"
@@ -1412,7 +1388,6 @@ msgstr "Nie odnaleziono"
 msgid "Method not allowed"
 msgstr "Metoda niezezwolona"
 
-# td
 #: ../lib/engine/components/opal/sip-endpoint.cpp:774
 #| msgid "Proxy auth. required"
 msgid "Proxy authentication required"
@@ -1540,61 +1515,51 @@ msgstr "Nieakceptowalne globalnie"
 msgid "Could not send message"
 msgstr "Nie można wysłać wiadomości"
 
-# td
 #: ../lib/engine/components/opal/sip-endpoint.cpp:1134
 #, c-format
 #| msgid "Incoming call from"
 msgid "Incoming call from %s"
 msgstr "Połączenie przychodzące od %s"
 
-# td
 #: ../lib/engine/components/opal/sip-endpoint.cpp:1136
 #, c-format
 #| msgid "Incoming call from"
 msgid "Incoming call"
 msgstr "Połączenie przychodzące"
 
-# td
 #: ../lib/engine/components/opal/sip-endpoint.cpp:1142
 #, c-format
 msgid "In a call with %s"
 msgstr "W trakcie rozmowy z %s"
 
-# td
 #: ../lib/engine/components/opal/sip-endpoint.cpp:1144
 #, c-format
 msgid "In a call"
 msgstr "W trakcie rozmowy"
 
-# td
 #: ../lib/engine/components/resource-list/rl-cluster.cpp:102
 msgid "New resource list"
 msgstr "Nowa lista zasobów"
 
-# td
 #: ../lib/engine/components/resource-list/rl-cluster.cpp:166
 msgid "Add new resource-list"
 msgstr "Dodaje nową listę zasobów"
 
-# td
 #: ../lib/engine/components/resource-list/rl-cluster.cpp:167
 #| msgid ""
 #| "Please fill in this form to add a new contact to ekiga's internal roster"
 msgid "Please fill in this form to add a new contact list to ekiga's remote roster"
 msgstr "Proszę wypełnić formularz, aby dodać nowy kontakt do zdalnej listy kontaktów programu Ekiga"
 
-# td
 #: ../lib/engine/components/resource-list/rl-cluster.cpp:171
 msgid "Writable:"
 msgstr "Zapisywalny:"
 
-# td
 #: ../lib/engine/components/resource-list/rl-cluster.cpp:172
 #| msgid "User:"
 msgid "Username:"
 msgstr "Użytkownik:"
 
-# td
 #: ../lib/engine/components/resource-list/rl-heap.cpp:103
 #: ../lib/engine/components/resource-list/rl-heap.cpp:144
 #: ../lib/engine/components/resource-list/rl-heap.cpp:178
@@ -1603,91 +1568,76 @@ msgstr "Użytkownik:"
 msgid "Unnamed"
 msgstr "Bez nazwy"
 
-# td
 #: ../lib/engine/components/resource-list/rl-heap.cpp:200
 #| msgid "New contact"
 msgid "_Add a new contact"
 msgstr "_Dodaj nowy kontakt"
 
-# td
 #: ../lib/engine/components/resource-list/rl-heap.cpp:202
 #| msgid "View the contacts list"
 msgid "_Refresh contact list"
 msgstr "_Odśwież listę kontaktów"
 
-# td
 #: ../lib/engine/components/resource-list/rl-heap.cpp:204
 #| msgid "Contact long status"
 msgid "Contact list _properties"
 msgstr "_Właściwości listy kontaktów"
 
-# td
 #: ../lib/engine/components/resource-list/rl-heap.cpp:467
 #| msgid "Put contact in groups:"
 msgid "Edit contact list properties"
 msgstr "Modyfikowanie właściwości listy kontaktów"
 
-# td
 #: ../lib/engine/components/resource-list/rl-heap.cpp:469
 #| msgid "Please edit the following fields"
 msgid "Please edit the following fields (no identifier means global)"
 msgstr "Proszę zmodyfikować następujące pola (brak identyfikatora oznacza ustawienie globalne)"
 
-# td
 #: ../lib/engine/components/resource-list/rl-heap.cpp:472
 #| msgid "Contact collision"
 msgid "Contact list's name"
 msgstr "Nazwa listy kontaktów"
 
-# td
 #: ../lib/engine/components/resource-list/rl-heap.cpp:473
 #| msgid "Documented by"
 msgid "Document root"
 msgstr "Główny katalog dokumentu"
 
-# td
 #: ../lib/engine/components/resource-list/rl-heap.cpp:474
 msgid "Identifier"
 msgstr "Identyfikator"
 
-# td
 #: ../lib/engine/components/resource-list/rl-heap.cpp:475
 #| msgid "_Disable"
 msgid "Writable"
 msgstr "Zapisywalny"
 
-# td
 #: ../lib/engine/components/resource-list/rl-heap.cpp:476
 #| msgid "Server timeout"
 msgid "Server username"
 msgstr "Nazwa użytkownika serwera"
 
-# td
 #: ../lib/engine/components/resource-list/rl-heap.cpp:477
 #| msgid "Bad username/password"
 msgid "Server password"
 msgstr "Hasło serwera"
 
-# td
 #: ../lib/engine/components/resource-list/rl-heap.cpp:529
 #| msgid "Remove contact"
 msgid "Add a remote contact"
 msgstr "Usuwanie zdalnego kontaktu"
 
-# td
 #: ../lib/engine/components/resource-list/rl-heap.cpp:530
 #| msgid ""
 #| "Please fill in this form to add a new contact to ekiga's internal roster"
 msgid "Please fill in this form to create a new contact on a remote server"
 msgstr "Proszę wypełnić formularz, aby dodać nowy kontakt na zdalnym serwerze"
 
-# td
 #: ../lib/engine/components/resource-list/rl-presentity.cpp:221
 #| msgid "Edit contact"
 msgid "Edit remote contact"
 msgstr "Modyfikowanie kontaktu zdalnego"
 
-# td
 #: ../lib/engine/components/resource-list/rl-presentity.cpp:222
 #| msgid ""
 #| "Please fill in this form to change an existing element of ekiga's "
@@ -1695,7 +1645,6 @@ msgstr "Modyfikowanie kontaktu zdalnego"
 msgid "Please fill in this form to change an existing contact on a remote server"
 msgstr "Proszę wypełnić formularz, aby zmienić istniejący kontakt na zdalnym serwerze"
 
-# td
 #: ../lib/engine/gui/gtk-core/form-dialog-gtk.cpp:660
 #| msgid "Advanced Settings"
 msgid "Advanced"
@@ -1736,7 +1685,7 @@ msgstr "mówi:"
 msgid "Open link in browser"
 msgstr "Otwórz odnośnik w przeglądarce"
 
-# FXIXME - co to jest?
+# REV: trzeba zniknąć skrót klawiszowy, 
 #: ../lib/engine/gui/gtk-frontend/chat-area.cpp:376
 msgid "Copy link"
 msgstr "S_kopiuj odnośnik"
@@ -1891,6 +1840,7 @@ msgid "Please enter your PIN code:"
 msgstr "Proszę wprowadzić kod PIN:"
 
 # td
+# REV: stacjonarnych i komórkowych.
 #: ../src/gui/assistant.cpp:699
 #| msgid ""
 #| "You can make calls to regular phones and cell numbers worldwide using "
@@ -2089,12 +2039,10 @@ msgstr ""
 msgid "Ekiga is full-featured SIP and H.323 compatible VoIP, IP-Telephony and Videoconferencing application that allows you to make audio and video calls to remote users with SIP and H.323 hardware or software."
 msgstr "Program Ekiga jest bogatym w funkcje programem VoIP, telefonii internetowej oraz wideokonferencji kompatybilnym z protokołami SIP oraz H.323 umożliwiając wykonywanie połączeń dźwiękowych i wideo do użytkowników z oprogramowaniem lub sprzętem zgodnym z SIP lub H.323."
 
-# td
 #: ../src/gui/callbacks.cpp:269
 msgid "Help display is not supported by your GTK+ version"
 msgstr "Brak obsługi wyświetlania pomocy przez zainstalowaną wersję GTK+"
 
-# td
 #: ../src/gui/callbacks.cpp:277
 #| msgid "Failed to open the device"
 msgid "Unable to open help file."
@@ -2186,23 +2134,19 @@ msgstr "Nieodebrana rozmowa od %s"
 msgid "Error"
 msgstr "Błąd"
 
-# td
 #: ../src/gui/main.cpp:979
 #| msgid "Error while opening audio output device %s"
 msgid "Error while initializing video output"
 msgstr "Błąd podczas inicjowania wyjścia obrazu"
 
-# td
 #: ../src/gui/main.cpp:980
 msgid "No video will be displayed during this call->"
 msgstr "Podczas tej rozmowy obraz nie będzie wyświetlany->"
 
-# td
 #: ../src/gui/main.cpp:990
 msgid "There was an error opening or initializing the video output. Please verify that no other application is using the accelerated video output."
 msgstr "Wystąpił błąd podczas otwierania lub inicjowania wyjścia obrazu. Proszę sprawdzić, czy inny program nie korzysta z przyspieszanego wyjścia obrazu."
 
-# td
 #: ../src/gui/main.cpp:992
 msgid "There was an error opening or initializing the video output. Please verify that you are using a color depth of 24 or 32 bits per pixel."
 msgstr "Wystąpił błąd podczas otwierania lub inicjowania wyjścia obrazu. Proszę sprawdzić, czy głębia kolorów wynosi 24 lub 32 bity na piksel."
@@ -2317,6 +2261,7 @@ msgid "Unable to open the selected audio device for playing. In case it is a plu
 msgstr "Nie można otworzyć wybranego urządzenia dźwiękowego do odtwarzania. Jeśli jest to zewnętrzne urządzenie możliwym rozwiązanie jest odłączenie i ponowne podłączenie urządzenia. Jeśli nie jest to urządzenie zewnętrzne lub nadal jest niedostępne, to proszę sprawdzić ustawienia dźwięku, uprawnienia oraz czy urządzenie nie jest zajęte."
 
 # td
+# REV: zapisać na/w nim danych. rozłączenie i ponowne jego podłączenie [nie będzie się powtarzać].
 #: ../src/gui/main.cpp:1378
 #| msgid ""
 #| "The selected audio device was successfully opened but it is impossible to "
@@ -2626,6 +2571,7 @@ msgid "View information about Ekiga"
 msgstr "Wyświetla informacje o programie Ekiga"
 
 # td
+# REV: ładniej mi brzmi: "Po lewej stronie należy wprowadzić... . [kropka] Następnie...
 #: ../src/gui/main.cpp:3346
 #| msgid "Enter a URI on the left, and click this button to place a call"
 msgid "Enter a URI on the left, and click this button to place a call or to hangup"
@@ -2651,6 +2597,7 @@ msgstr "Zmiana głośności karty dźwiękowej"
 msgid "Change the color settings of your video device"
 msgstr "Zmiana ustawień kolorów urządzenia generującego obraz"
 
+# REV: powinno być 'wyświetla obraz z kamery' [podpowiedź do przycisku]
 #: ../src/gui/main.cpp:3584
 msgid "Display images from your camera device"
 msgstr "Wyświetlanie obrazu z kamery"
@@ -2750,7 +2697,6 @@ msgstr "Umieszcz_anie okien wyświetlających obraz wideo nad innymi oknami"
 msgid "Network Settings"
 msgstr "Ustawienia sieci"
 
-# td
 #: ../src/gui/preferences.cpp:492
 #| msgid "Disabled silence detection"
 msgid "Disable network _detection"
