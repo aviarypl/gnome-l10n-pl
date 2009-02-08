@@ -14,8 +14,8 @@ msgstr ""
 "Project-Id-Version: vinagre\n"
 "Report-Msgid-Bugs-To: http://bugzilla.gnome.org/enter_bug.cgi?product=vinagre&component=general\n"
 "POT-Creation-Date: 2009-01-12 14:52+0000\n"
-"PO-Revision-Date: 2009-02-04 16:43+0100\n"
-"Last-Translator: Tomasz Dominikowski <dominikowski@gmail.com>\n"
+"PO-Revision-Date: 2009-02-08 20:25+0100\n"
+"Last-Translator: wadim dziedzic <wdziedzic@aviary,pl>\n"
 "Language-Team: Aviary.pl <gnomepl@aviary.pl>\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=utf-8\n"
@@ -135,6 +135,7 @@ msgid "_Password:"
 msgstr "_Hasło:"
 
 # td
+# REV: credentials to nie uprawnienia, a dane logowania
 #: ../data/vinagre.glade.h:19
 #| msgid "_Remember this password"
 msgid "_Remember this credential"
@@ -241,6 +242,7 @@ msgid "Unknown error"
 msgstr "Nieznany błąd"
 
 # td
+# REV: po dwukropku raczej nie daje sie wielkiej litery (global)
 #: ../src/vinagre-bookmarks.c:351
 #| msgid "Error while initializing bookmarks: %s"
 msgid "Error while initializing bookmarks: The file seems to be empty"
@@ -278,6 +280,7 @@ msgid "Error while saving bookmarks: %s"
 msgstr "Błąd podczas zapisywania zakładek: %s"
 
 # td
+# REV: po polsku nie da się "kogoś/czegoś zmigrować", zakładki same nie migrują - lepiej dać "przenoszenia" (global)
 #: ../src/vinagre-bookmarks-migration.c:93
 #: ../src/vinagre-bookmarks-migration.c:100
 msgid "Error while migrating bookmarks: Failed to create the XML structure"
@@ -364,6 +367,7 @@ msgid "Remove Item?"
 msgstr "Usunąć element?"
 
 # td
+# REV: wielka litera po dwukropku
 #: ../src/vinagre-bookmarks-ui.c:264
 #| msgid "Error while saving bookmarks: %s"
 msgid "Error removing bookmark: Entry not found"
@@ -405,12 +409,14 @@ msgid "The protocol %s is not supported."
 msgstr "Protokół %s nie jest obsługiwany."
 
 # td
+# REV: lepiej nie komplikować i dać "Nie można otworzyć pliku"
 #: ../src/vinagre-connection.c:695
 #| msgid "Choose the file"
 msgid "Could not open the file."
 msgstr "Nie można było otworzyć pliku."
 
 # td
+# REV: j.w.
 #: ../src/vinagre-connection.c:714
 #| msgid "Choose the file"
 msgid "Could not parse the file."
@@ -423,6 +429,7 @@ msgid "Bad value for 'shared' flag: %d. It is supposed to be 0 or 1. Ignoring it
 msgstr "Błędna wartość dla flagi \"shared\": %d. Powinna być 0 lub 1. Ignorowanie."
 
 # td
+# REV: bez "było"
 #: ../src/vinagre-connection.c:765
 msgid "Could not find the host address in the file."
 msgstr "Nie można było odnaleźć adresu hosta w pliku."
@@ -545,6 +552,7 @@ msgid "Error saving recent connection."
 msgstr "Błąd podczas zapisywania ostatniego połączenia."
 
 # td
+# REV: credentials to nie uprawnienia
 #: ../src/vinagre-tab.c:496
 #| msgid "Error saving the password on the keyring."
 msgid "Error saving the credential on the keyring."
@@ -669,6 +677,7 @@ msgid "Remove current selected connection from bookmarks"
 msgstr "Usuwa bieżąco zaznaczone połączenie z zakładek"
 
 # td
+# REV: Nie może być _N ?
 #: ../src/vinagre-ui.h:58
 msgid "_New Folder"
 msgstr "Nowy _katalog"
@@ -683,6 +692,7 @@ msgstr "Tworzy nowy katalog"
 msgid "_Contents"
 msgstr "_Zawartość"
 
+# REV: nie chodzi czasem o "man vinagre" czyli podręcznik systemowy ?
 #: ../src/vinagre-ui.h:63
 msgid "Open the vinagre manual"
 msgstr "Otwiera instrukcję obsługi Vinagre"
@@ -730,6 +740,7 @@ msgid "_Original size"
 msgstr "_Rozmiar pierwotny"
 
 # td
+# REV: pulpitu
 #: ../src/vinagre-ui.h:96
 msgid "Adjusts the window to the remote desktop's size"
 msgstr "Dopasowuje okno do rozmiarów zdalnego ekranu"
@@ -807,6 +818,7 @@ msgstr ""
 msgid "Vinagre Website"
 msgstr "Witryna programu Vinagre"
 
+# REV: scalić pliku vinagre....
 #: ../src/vinagre-window.c:413
 #, c-format
 msgid "Could not merge vinagre-ui.xml: %s"
@@ -816,6 +828,7 @@ msgstr "Nie można połączyć vinagre-ui.xml: %s"
 msgid "_Recent connections"
 msgstr "_Ostatnie połączenia"
 
+# REV: jak tooltip to "Otwiera..."
 #. Translators: This is server:port, a statusbar tooltip when mouse is over a bookmark item on menu
 #: ../src/vinagre-window.c:614
 #, c-format
