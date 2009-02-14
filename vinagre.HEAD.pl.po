@@ -12,10 +12,10 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: vinagre\n"
-"Report-Msgid-Bugs-To: http://bugzilla.gnome.org/enter_bug.cgi?product=vinagre&component=general\n"
-"POT-Creation-Date: 2009-01-12 14:52+0000\n"
-"PO-Revision-Date: 2009-02-08 20:25+0100\n"
-"Last-Translator: wadim dziedzic <wdziedzic@aviary,pl>\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2009-02-14 15:45+0100\n"
+"PO-Revision-Date: 2009-02-14 15:53+0100\n"
+"Last-Translator: Tomasz Dominikowski <dominikowski@gmail.com>\n"
 "Language-Team: Aviary.pl <gnomepl@aviary.pl>\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=utf-8\n"
@@ -41,13 +41,12 @@ msgstr "Dostęp do zdalnych pulpitów"
 #: ../data/vinagre.desktop.in.in.h:2
 #: ../data/vinagre-file.desktop.in.in.h:2
 #: ../src/GNOME_VinagreApplet.server.in.in.h:2
-#: ../src/vinagre-applet.c:258
-#: ../src/vinagre-applet.c:264
+#: ../src/vinagre-applet.c:418
+#: ../src/vinagre-applet.c:473
 #: ../src/vinagre-main.c:151
 msgid "Remote Desktop Viewer"
 msgstr "Przeglądarka zdalnych pulpitów"
 
-# td
 #: ../data/vinagre.glade.h:1
 msgid "<b>Authentication is required</b>"
 msgstr "<b>Wymagane uwierzytelnienie</b>"
@@ -56,29 +55,22 @@ msgstr "<b>Wymagane uwierzytelnienie</b>"
 msgid "<b>Connection options</b>"
 msgstr "<b>Opcje połączenia</b>"
 
-# td
 #: ../data/vinagre.glade.h:3
-#| msgid "<b>Connection options</b>"
 msgid "<b>Connection</b>"
 msgstr "<b>Połączenie</b>"
 
-# td
 #: ../data/vinagre.glade.h:4
 msgid "<b>Folder</b>"
 msgstr "<b>Katalog</b>"
 
-# td
 #: ../data/vinagre.glade.h:5
 msgid "<b>Interface</b>"
 msgstr "<b>Interfejs</b>"
 
-# td
 #: ../data/vinagre.glade.h:6
-#| msgid "<b>Connection options</b>"
 msgid "<b>Options</b>"
 msgstr "<b>Opcje</b>"
 
-# td
 #: ../data/vinagre.glade.h:7
 msgid "<b>Parent Folder</b>"
 msgstr "<b>Katalog nadrzędny</b>"
@@ -98,7 +90,6 @@ msgstr "Zakładki"
 msgid "Host:"
 msgstr "Komputer:"
 
-# td
 #: ../data/vinagre.glade.h:11
 msgid "Preferences"
 msgstr "Preferencje"
@@ -113,7 +104,6 @@ msgstr "Określa, czy wyświetlać karty nawet w przypadku tylko jednego aktywne
 msgid "Whether we should show the menu accelerators (shortcut keys)"
 msgstr "Określa, czy wyświetlać skróty klawiszowe w menu"
 
-# td
 #: ../data/vinagre.glade.h:14
 msgid "_Always show tabs"
 msgstr "_Stałe wyświetlanie kart"
@@ -134,10 +124,8 @@ msgstr "_Nazwa:"
 msgid "_Password:"
 msgstr "_Hasło:"
 
-# td
 # REV: credentials to nie uprawnienia, a dane logowania
 #: ../data/vinagre.glade.h:19
-#| msgid "_Remember this password"
 msgid "_Remember this credential"
 msgstr "_Zapamiętanie uprawnień"
 
@@ -145,14 +133,11 @@ msgstr "_Zapamiętanie uprawnień"
 msgid "_Scaling"
 msgstr "_Skalowanie"
 
-# td
 #: ../data/vinagre.glade.h:21
 msgid "_Show menu shortcuts"
 msgstr "_Wyświetlanie skrótów menu"
 
-# td
 #: ../data/vinagre.glade.h:22
-#| msgid "_Name:"
 msgid "_Username:"
 msgstr "_Nazwa użytkownika:"
 
@@ -209,18 +194,16 @@ msgstr "Menu szybkiego dostępu do zdalnych komputerów"
 msgid "Vinagre Applet Factory"
 msgstr "Generator apletów Vinagre"
 
-# td
-#: ../src/vinagre-applet.c:100
-#: ../src/vinagre-applet.c:178
-#| msgid "Could not run vinagre: %s"
+#: ../src/vinagre-applet.c:271
+#: ../src/vinagre-applet.c:349
 msgid "Could not run vinagre:"
 msgstr "Nie można uruchomić vinagre:"
 
-#: ../src/vinagre-applet.c:198
+#: ../src/vinagre-applet.c:369
 msgid "Open Remote Desktop Viewer"
 msgstr "Otwórz przeglądarkę zdalnych pulpitów"
 
-#: ../src/vinagre-applet.c:265
+#: ../src/vinagre-applet.c:419
 msgid "Access your bookmarks"
 msgstr "Dostęp do zakładek"
 
@@ -241,36 +224,25 @@ msgstr "Błąd podczas inicjowania zakładek: %s"
 msgid "Unknown error"
 msgstr "Nieznany błąd"
 
-# td
-# REV: po dwukropku raczej nie daje sie wielkiej litery (global)
 #: ../src/vinagre-bookmarks.c:351
-#| msgid "Error while initializing bookmarks: %s"
 msgid "Error while initializing bookmarks: The file seems to be empty"
-msgstr "Błąd podczas inicjowania zakładek: Plik wydaje się być pusty"
+msgstr "Błąd podczas inicjowania zakładek: plik wydaje się być pusty"
 
-# td
 #: ../src/vinagre-bookmarks.c:358
-#| msgid "Error while initializing bookmarks: %s"
 msgid "Error while initializing bookmarks: The file is not a vinagre bookmarks file"
 msgstr "Błąd podczas inicjowania zakładek: Plik nie jest plikiem zakładek programu vinagre"
 
-# td
 #: ../src/vinagre-bookmarks.c:420
 #: ../src/vinagre-bookmarks.c:427
-#| msgid "Error while saving bookmarks: %s"
 msgid "Error while saving bookmarks: Failed to create the XML structure"
 msgstr "Błąd podczas zapisywania zakładek: Nie udało się utworzyć struktury XML"
 
-# td
 #: ../src/vinagre-bookmarks.c:434
 #: ../src/vinagre-bookmarks.c:441
-#| msgid "Error while saving bookmarks: %s"
 msgid "Error while saving bookmarks: Failed to initialize the XML structure"
 msgstr "Błąd podczas zapisywania zakładek: Nie udało się zainicjować struktury XML"
 
-# td
 #: ../src/vinagre-bookmarks.c:450
-#| msgid "Error while saving bookmarks: %s"
 msgid "Error while saving bookmarks: Failed to finalize the XML structure"
 msgstr "Błąd podczas zapisywania zakładek: Nie udało się sfinalizować struktury XML"
 
@@ -279,69 +251,52 @@ msgstr "Błąd podczas zapisywania zakładek: Nie udało się sfinalizować stru
 msgid "Error while saving bookmarks: %s"
 msgstr "Błąd podczas zapisywania zakładek: %s"
 
-# td
-# REV: po polsku nie da się "kogoś/czegoś zmigrować", zakładki same nie migrują - lepiej dać "przenoszenia" (global)
 #: ../src/vinagre-bookmarks-migration.c:93
 #: ../src/vinagre-bookmarks-migration.c:100
 msgid "Error while migrating bookmarks: Failed to create the XML structure"
-msgstr "Wystąpił błąd podczas migrowania zakładek: Nie udało się utworzyć struktury XML"
+msgstr "Wystąpił błąd podczas przenoszenia zakładek: Nie udało się utworzyć struktury XML"
 
-# td
 #: ../src/vinagre-bookmarks-migration.c:107
 #: ../src/vinagre-bookmarks-migration.c:114
 msgid "Error while migrating bookmarks: Failed to initialize the XML structure"
-msgstr "Wystąpił błąd podczas migrowania zakładek: Nie udało się zainicjować struktury XML"
+msgstr "Wystąpił błąd podczas przenoszenia zakładek: Nie udało się zainicjować struktury XML"
 
-# td
 #: ../src/vinagre-bookmarks-migration.c:123
 msgid "Error while migrating bookmarks: Failed to finalize the XML structure"
-msgstr "Wystąpił błąd podczas migrowania zakładek: Nie udało się sfinalizować struktury XML"
+msgstr "Wystąpił błąd podczas przenoszenia zakładek: Nie udało się sfinalizować struktury XML"
 
-# td
 #: ../src/vinagre-bookmarks-migration.c:133
 #: ../src/vinagre-bookmarks-migration.c:231
 #, c-format
-#| msgid "Error while saving bookmarks: %s"
 msgid "Error while migrating bookmarks: %s"
-msgstr "Błąd podczas migrowania zakładek: %s"
+msgstr "Błąd podczas przenoszenia zakładek: %s"
 
-# td
 #: ../src/vinagre-bookmarks-migration.c:231
 msgid "Failed to create the directory"
 msgstr "Nie udało się utworzyć katalogu"
 
-# td
 #: ../src/vinagre-bookmarks-migration.c:255
-#| msgid ""
-#| "Copying the bookmarks file to the new location. This operation is only "
-#| "supposed to run once."
 msgid "Migrating the bookmarks file to the new format. This operation is only supposed to run once."
 msgstr "Migrowanie pliku zakładek do nowego formatu. Operacja ma odbyć się tylko jednokrotnie."
 
-# td
 #: ../src/vinagre-bookmarks-migration.c:263
 #, c-format
-#| msgid "Error while saving bookmarks: %s"
 msgid "Error opening old bookmarks file: %s"
 msgstr "Błąd podczas otwierania poprzedniego pliku zakładek: %s"
 
-# td
 #: ../src/vinagre-bookmarks-migration.c:264
 #: ../src/vinagre-bookmarks-migration.c:276
 msgid "Migration cancelled"
 msgstr "Migracja anulowana"
 
-# td
 #: ../src/vinagre-bookmarks-migration.c:273
 msgid "Could not remove the old bookmarks file"
 msgstr "Nie można usunąć poprzedniego pliku zakładek"
 
-# td
 #: ../src/vinagre-bookmarks-tree.c:120
 msgid "Root Folder"
 msgstr "Katalog główny"
 
-# td
 #: ../src/vinagre-bookmarks-ui.c:66
 msgid "Invalid name for this folder"
 msgstr "Niepoprawna nazwa dla tego katalogu"
@@ -351,29 +306,22 @@ msgstr "Niepoprawna nazwa dla tego katalogu"
 msgid "Are you sure you want to remove <i>%s</i> from bookmarks?"
 msgstr "Na pewno usunąć <i>%s</i> z zakładek?"
 
-# td
 #: ../src/vinagre-bookmarks-ui.c:241
 msgid "Remove Folder?"
 msgstr "Usunąć katalog?"
 
-# td
 #: ../src/vinagre-bookmarks-ui.c:242
 msgid "Notice that all its subfolders and items will be removed as well."
 msgstr "Proszę zwrócić uwagę, iż wszystkie jego podkatalogi znajdujące się w nich elementy także zostaną usunięte."
 
-# td
 #: ../src/vinagre-bookmarks-ui.c:247
 msgid "Remove Item?"
 msgstr "Usunąć element?"
 
-# td
-# REV: wielka litera po dwukropku
 #: ../src/vinagre-bookmarks-ui.c:264
-#| msgid "Error while saving bookmarks: %s"
 msgid "Error removing bookmark: Entry not found"
-msgstr "Błąd podczas usuwania zakładki: Wpis nieodnaleziony"
+msgstr "Błąd podczas usuwania zakładki: wpis nieodnaleziony"
 
-# td
 #: ../src/vinagre-bookmarks-ui.c:281
 msgid "New Folder"
 msgstr "Nowy katalog"
@@ -383,7 +331,7 @@ msgid "Choose the file"
 msgstr "Wybór pliku"
 
 #: ../src/vinagre-commands.c:124
-#: ../src/vinagre-tab.c:1082
+#: ../src/vinagre-tab.c:1089
 msgid "Supported formats"
 msgstr "Obsługiwane formaty"
 
@@ -408,38 +356,27 @@ msgstr "Proszę wybrać serwer VNC"
 msgid "The protocol %s is not supported."
 msgstr "Protokół %s nie jest obsługiwany."
 
-# td
-# REV: lepiej nie komplikować i dać "Nie można otworzyć pliku"
 #: ../src/vinagre-connection.c:695
-#| msgid "Choose the file"
 msgid "Could not open the file."
-msgstr "Nie można było otworzyć pliku."
+msgstr "Nie można otworzyć pliku."
 
-# td
-# REV: j.w.
 #: ../src/vinagre-connection.c:714
-#| msgid "Choose the file"
 msgid "Could not parse the file."
-msgstr "Nie można było przetworzyć pliku."
+msgstr "Nie można przetworzyć pliku."
 
-# td
 #: ../src/vinagre-connection.c:759
 #, c-format
 msgid "Bad value for 'shared' flag: %d. It is supposed to be 0 or 1. Ignoring it."
 msgstr "Błędna wartość dla flagi \"shared\": %d. Powinna być 0 lub 1. Ignorowanie."
 
-# td
-# REV: bez "było"
 #: ../src/vinagre-connection.c:765
 msgid "Could not find the host address in the file."
-msgstr "Nie można było odnaleźć adresu hosta w pliku."
+msgstr "Nie można odnaleźć adresu hosta w pliku."
 
-# td
 #: ../src/vinagre-fav.c:667
 msgid "Invalid operation"
 msgstr "Niepoprawna operacja"
 
-# td
 #: ../src/vinagre-fav.c:668
 msgid "Data received from drag&drop operation is invalid."
 msgstr "Dane otrzymane z operacji \"przeciągnij i upuść\" są niepoprawne."
@@ -491,16 +428,12 @@ msgstr "Nieudane uzyskanie nazwy komputera przez avahi: %s\n"
 msgid "Failed to browse for hosts: %s\n"
 msgstr "Nieudane przeglądanie w poszukiwaniu komputerów: %s\n"
 
-# td
 #: ../src/vinagre-notebook.c:168
 #, c-format
-#| msgid "Connection to host \"%s\" was closed."
 msgid "Connection to host <i>%s</i> was closed."
 msgstr "Połączenie z komputerem <i>%s</i> zostało zamknięte."
 
-# td
 #: ../src/vinagre-notebook.c:170
-#| msgid "Connection to host \"%s\" was closed."
 msgid "Connection closed"
 msgstr "Połączenie zostało zamknięte"
 
@@ -521,29 +454,21 @@ msgstr "Nie można zainicjować menedżera preferencji."
 msgid "Error connecting to host."
 msgstr "Błąd podczas łączenia z komputerem."
 
-# td
 #: ../src/vinagre-tab.c:354
 #, c-format
-#| msgid "Authentication to host \"%s\" has failed"
 msgid "Authentication to host <i>%s</i> has failed"
 msgstr "Uwierzytelnienie w komputerze <i>%s</i> nie powiodło się"
 
-# td
 #: ../src/vinagre-tab.c:360
-#| msgid "Authentication to host \"%s\" has failed"
 msgid "Authentication failed"
 msgstr "Uwierzytelnienie nie powiodło się"
 
-# td
 #: ../src/vinagre-tab.c:382
 #, c-format
-#| msgid "Authentication method to host \"%s\" is unsupported. (%u)"
 msgid "Authentication method to host <i>%s</i> is unsupported. (%u)"
 msgstr "Metoda uwierzytelniania w komputerze <i>%s</i> jest nieobsługiwana. (%u)"
 
-# td
 #: ../src/vinagre-tab.c:386
-#| msgid "Authentication method to host \"%s\" is unsupported. (%u)"
 msgid "Authentication unsupported"
 msgstr "Metoda uwierzytelniania jest nieobsługiwana"
 
@@ -551,14 +476,10 @@ msgstr "Metoda uwierzytelniania jest nieobsługiwana"
 msgid "Error saving recent connection."
 msgstr "Błąd podczas zapisywania ostatniego połączenia."
 
-# td
-# REV: credentials to nie uprawnienia
 #: ../src/vinagre-tab.c:496
-#| msgid "Error saving the password on the keyring."
 msgid "Error saving the credential on the keyring."
-msgstr "Błąd podczas zapisywania uprawnień w bazie kluczy."
+msgstr "Błąd podczas zapisywania uwierzytelnień w bazie kluczy."
 
-# td
 #: ../src/vinagre-tab.c:828
 msgid "Minimize window"
 msgstr "Minimalizuje okno"
@@ -598,16 +519,20 @@ msgstr "Port:"
 msgid "Dimensions:"
 msgstr "Wymiary:"
 
-#: ../src/vinagre-tab.c:1068
+#: ../src/vinagre-tab.c:1067
+msgid "Could not get a screenshot of the connection."
+msgstr "Nie udało się uzyskać zrzutu ekranu połączenia."
+
+#: ../src/vinagre-tab.c:1075
 #, c-format
 msgid "Screenshot of %s"
 msgstr "Zrzut ekranu %s"
 
-#: ../src/vinagre-tab.c:1071
+#: ../src/vinagre-tab.c:1078
 msgid "Save Screenshot"
 msgstr "Zapisz zrzut ekranu"
 
-#: ../src/vinagre-tab.c:1135
+#: ../src/vinagre-tab.c:1142
 msgid ""
 "Scaling is not supported on this installation.\n"
 "\n"
@@ -646,7 +571,6 @@ msgstr "Otwórz plik .VNC"
 msgid "Quit the program"
 msgstr "Kończy pracę programu"
 
-# td
 #: ../src/vinagre-ui.h:49
 msgid "Edit the application preferences"
 msgstr "Modyfikuje preferencje programu"
@@ -676,13 +600,10 @@ msgstr "_Usuń z zakładek"
 msgid "Remove current selected connection from bookmarks"
 msgstr "Usuwa bieżąco zaznaczone połączenie z zakładek"
 
-# td
-# REV: Nie może być _N ?
 #: ../src/vinagre-ui.h:58
 msgid "_New Folder"
-msgstr "Nowy _katalog"
+msgstr "_Nowy katalog"
 
-# td
 #: ../src/vinagre-ui.h:59
 msgid "Create a new folder"
 msgstr "Tworzy nowy katalog"
@@ -692,10 +613,9 @@ msgstr "Tworzy nowy katalog"
 msgid "_Contents"
 msgstr "_Zawartość"
 
-# REV: nie chodzi czasem o "man vinagre" czyli podręcznik systemowy ?
 #: ../src/vinagre-ui.h:63
 msgid "Open the vinagre manual"
-msgstr "Otwiera instrukcję obsługi Vinagre"
+msgstr "Otwiera podręcznik systemowy Vinagre"
 
 #: ../src/vinagre-ui.h:65
 msgid "About this application"
@@ -734,16 +654,13 @@ msgstr "Wysyła Ctrl+Alt+Del do aktywnego połączenia"
 msgid "View the current machine in full screen"
 msgstr "Wyświetla bieżącą sesję na pełnym ekranie"
 
-# td
 #: ../src/vinagre-ui.h:95
 msgid "_Original size"
 msgstr "_Rozmiar pierwotny"
 
-# td
-# REV: pulpitu
 #: ../src/vinagre-ui.h:96
 msgid "Adjusts the window to the remote desktop's size"
-msgstr "Dopasowuje okno do rozmiarów zdalnego ekranu"
+msgstr "Dopasowuje okno do rozmiarów zdalnego pulpitu"
 
 #: ../src/vinagre-ui.h:102
 msgid "S_caling"
@@ -785,10 +702,7 @@ msgstr "P_anel"
 msgid "Show or hide the side panel"
 msgstr "Wyświetla lub ukrywa panel zakładek"
 
-# td
 #: ../src/vinagre-utils.c:75
-#| msgid "The following error has occurred:"
-#| msgid_plural "The following errors have occurred:"
 msgid "An error has occurred:"
 msgstr "Wystąpił błąd:"
 
@@ -802,11 +716,11 @@ msgstr "Niniejszy program jest wolnym oprogramowaniem; można go rozprowadzać d
 
 #: ../src/vinagre-utils.c:440
 msgid "Vinagre is distributed in the hope that it will be useful, but WITHOUT ANY WARRANTY; without even the implied warranty of MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the GNU General Public License for more details."
-msgstr "Niniejszy program rozpowszechniany jest z nadzieją, iż będzie on użyteczny - jednak BEZ JAKIEJKOLWIEK GWARANCJI, nawet domyślnej gwarancji PRZYDATNOŚCI HANDLOWEJ albo PRZYDATNOŚCI DO OKREŚLONYCH ZASTOSOWAŃ. W celu uzyskania bliższych informacji należy zapoznać się z Powszechną Licencją Publiczną GNU. "
+msgstr "Niniejszy program rozpowszechniany jest z nadzieją, iż będzie on użyteczny - jednak BEZ JAKIEJKOLWIEK GWARANCJI, nawet domyślnej gwarancji PRZYDATNOŚCI HANDLOWEJ albo PRZYDATNOŚCI DO OKREŚLONYCH ZASTOSOWAŃ. W celu uzyskania bliższych informacji należy zapoznać się z Powszechną Licencją Publiczną GNU."
 
 #: ../src/vinagre-utils.c:444
 msgid "You should have received a copy of the GNU General Public License along with this program. If not, see <http://www.gnu.org/licenses/>."
-msgstr "Z pewnością wraz z niniejszym programem dostarczono także egzemplarz Powszechnej Licencji Publicznej GNU (GNU General Public License); jeśli nie - proszę napisać do Free Software Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston, MA 02110-130159 USA"
+msgstr "Z pewnością wraz z niniejszym programem dostarczono także egzemplarz Powszechnej Licencji Publicznej GNU (GNU General Public License); jeśli nie - proszę zobaczyć stronę <http://www.gnu.org/licenses/>."
 
 #: ../src/vinagre-utils.c:466
 msgid "translator-credits"
@@ -818,22 +732,20 @@ msgstr ""
 msgid "Vinagre Website"
 msgstr "Witryna programu Vinagre"
 
-# REV: scalić pliku vinagre....
 #: ../src/vinagre-window.c:413
 #, c-format
 msgid "Could not merge vinagre-ui.xml: %s"
-msgstr "Nie można połączyć vinagre-ui.xml: %s"
+msgstr "Nie można scalić pliku vinagre-ui.xml: %s"
 
 #: ../src/vinagre-window.c:441
 msgid "_Recent connections"
 msgstr "_Ostatnie połączenia"
 
-# REV: jak tooltip to "Otwiera..."
 #. Translators: This is server:port, a statusbar tooltip when mouse is over a bookmark item on menu
 #: ../src/vinagre-window.c:614
 #, c-format
 msgid "Open %s:%d"
-msgstr "Otwórz %s:%d"
+msgstr "Otwiera %s:%d"
 
 #: ../src/vinagre-window.c:797
 msgid "Press Ctrl+Alt to release the cursor"
