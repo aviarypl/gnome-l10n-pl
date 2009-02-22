@@ -11,8 +11,8 @@ msgstr ""
 "Project-Id-Version: gnome-terminal\n"
 "Report-Msgid-Bugs-To: http://bugzilla.gnome.org/enter_bug.cgi?product=gnome-terminal&amp;component=general\n"
 "POT-Creation-Date: 2008-12-15 21:26+0000\n"
-"PO-Revision-Date: 2009-02-22 21:52+0100\n"
-"Last-Translator: Joanna Mazgaj <jmazgaj@aviary.pl>\n"
+"PO-Revision-Date: 2009-02-22 23:32+0100\n"
+"Last-Translator: wadim dziedzic <wdziedzic@aviary,pl>\n"
 "Language-Team: Aviary.pl <gnomepl@aviary.pl>\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -80,7 +80,6 @@ msgstr "Ko_dowania widoczne w menu:"
 msgid "A subset of possible encodings are presented in the Encoding submenu. This is a list of encodings to appear there. The special encoding name \"current\" means to display the encoding of the current locale."
 msgstr "Podzbiór możliwych kodowań jest prezentowany w podmenu Kodowanie. Pojawia się tam lista kodowań. Nazwa kodowania specjalnego \"current\" oznacza wyświetlanie kodowania na podstawie bieżących ustawień regionalnych."
 
-# rev: czemu przecinek, nie kropka?
 #: ../src/gnome-terminal.schemas.in.h:2
 msgid "A value between 0.0 and 1.0 indicating how much to darken the background image. 0.0 means no darkness, 1.0 means fully dark. In the current implementation, there are only two levels of darkness possible, so the setting behaves as a boolean, where 0.0 disables the darkening effect."
 msgstr "Wartość pomiędzy 0,0 a 1,0 wskazuje wielkość przyciemnienia obrazu tła. Wartość 0,0 oznacza brak przyciemniania, 1,0 oznacza pełne zaciemnienie. W obecnej wersji możliwe są tylko dwa poziomy przyciemnienia, czyli ustawienie zachowuje się jak zmienna logiczna, gdzie 0,0 wyłącza efekt zaciemnienia."
@@ -191,11 +190,9 @@ msgstr "Ikona dla okna terminala"
 msgid "Icon to use for tabs/windows containing this profile."
 msgstr "Ikona używana w kartach/oknach zawierających ten profil."
 
-# rev: ta kropka dzieli jedno zdanie w dwa różniebrzmiące. W oryginale jest: can erase the configured title, go before it, go after it, or replace it; tłumaczenie to: dynamicznie ustawiony tytuł może zastąpić skonfigurowany tytuł. Można wstawić go przed, za lub zastąpić go. 
-# Imho: dynamicznie ustawiony tytuł może usunąć skonfigurowany tytuł, zostać wstawiony przed lub za niego, lub go zastąpić. Możliwymi itp...
 #: ../src/gnome-terminal.schemas.in.h:31
 msgid "If the application in the terminal sets the title (most typically people have their shell set up to do this), the dynamically-set title can erase the configured title, go before it, go after it, or replace it. The possible values are \"replace\", \"before\", \"after\", and \"ignore\"."
-msgstr "Gdy program w terminalu ustawia tytuł (większość typowych użytkowników posiada swój zbiór powłok, które to robią), dynamicznie ustawiony tytuł może zastąpić skonfigurowany tytuł. Można wstawić go przed, za lub zastąpić go. Możliwymi wartościami są \"replace\" (zastąp), \"before\" (wstaw przed), \"after\" (wstaw za) oraz \"ignore\" (ignoruj)."
+msgstr "Gdy program w terminalu ustawia tytuł (większość typowych użytkowników posiada swój zbiór powłok, które to robią), dynamicznie ustawiony tytuł może usunąć skonfigurowany tytuł, może zostać wstawiony przed niego, za niego  lub go zastąpić. Możliwymi wartościami są \"replace\" (zastąp), \"before\" (wstaw przed), \"after\" (wstaw za) oraz \"ignore\" (ignoruj)."
 
 #: ../src/gnome-terminal.schemas.in.h:32
 msgid "If true, allow applications in the terminal to make text boldface."
@@ -539,10 +536,9 @@ msgstr "Określa kod generowany przez klawisz backspace. Możliwe wartości to \
 msgid "Sets what code the delete key generates. Possible values are \"ascii-del\" for the ASCII DEL character, \"control-h\" for Control-H (AKA the ASCII BS character), \"escape-sequence\" for the escape sequence typically bound to backspace or delete. \"escape-sequence\" is normally considered the correct setting for the Delete key."
 msgstr "Określa kod generowany przez klawisz delete. Możliwe wartości to \"ascii-del\" dla znaku ASCII DEL, \"control-h\"  dla Control-H (znanego jako znak ASCII BS), \"escape-sequence\" dla sekwencji sterującej charakterystycznej dla klawiszy backspace lub delete. Dla klawisza delete standardowo przyjmuje się \"escape-sequence\"."
 
-# REV: dostępną
 #: ../src/gnome-terminal.schemas.in.h:120
 msgid "Terminals have a 16-color palette that applications inside the terminal can use. This is that palette, in the form of a colon-separated list of color names. Color names should be in hex format e.g. \"#FF00FF\""
-msgstr "Terminale posiadają szesnastokolorową paletę dostepną dla programów w nich uruchamianych. To jest ta paleta, w formie listy kolorów oddzielonych dwukropkiem. Nazwy kolorów powinny być w formacie szesnastkowym np. \"#FF00FF\""
+msgstr "Terminale posiadają szesnasto-kolorową paletę dostępną dla programów w nich uruchamianych. To jest ta paleta, w formie listy kolorów oddzielonych dwukropkiem. Nazwy kolorów powinny być w formacie szesnastkowym np. \"#FF00FF\""
 
 #: ../src/gnome-terminal.schemas.in.h:121
 msgid "The cursor appearance"
@@ -560,19 +556,17 @@ msgstr "Dostępne wartości to \"system\", aby użyć globalnych ustawień migan
 msgid "Title for terminal"
 msgstr "Tytuł terminala"
 
-# rev: chyba title_mode
 #: ../src/gnome-terminal.schemas.in.h:125
 msgid "Title to display for the terminal window or tab. This title may be replaced by or combined with the title set by the application inside the terminal, depending on the title_mode setting."
-msgstr "Tytuł wyświetlany na górnej belce okna terminala lub karty. Może być on zastąpiony lub dodany z tytułem ustawianym przez program wewnątrz terminala, w zależności od ustawień trybu mode_title."
+msgstr "Tytuł wyświetlany na górnej belce okna terminala lub karty. Może być on zastąpiony lub dodany z tytułem ustawianym przez program wewnątrz terminala, w zależności od ustawień trybu title_mode."
 
 #: ../src/gnome-terminal.schemas.in.h:126
 msgid "True if the menubar should be shown in new windows, for windows/tabs with this profile."
 msgstr "Określa, czy w nowych oknach powinno być wyświetlane menu, dotyczy okien/kart z tym profilem."
 
-# REV: RRodzaj; słownik mi podpowiada: pseudo przezroczystości, lub pseudo-przezroczystości.
 #: ../src/gnome-terminal.schemas.in.h:127
 msgid "Type of terminal background. May be \"solid\" for a solid color, \"image\" for an image, or \"transparent\" for either real transparency if a compositing window manager is running, or pseudo-transparency otherwise."
-msgstr "RRodzaj tła terminala. Może być \"solid\" dla jednolitego koloru, \"image\" dla obrazu lub \"transparent\" dla przezroczystości kompozytowego menedżera okien lub pseudoprzezroczystości."
+msgstr "Rodzaj tła terminala. Może to być wartość \"solid\" dla jednolitego koloru, \"image\" dla obrazu lub \"transparent\" dla przezroczystości kompozytowego menedżera okien lub pseudo-przezroczystości."
 
 #: ../src/gnome-terminal.schemas.in.h:128
 msgid "What to do with dynamic title"
@@ -582,10 +576,9 @@ msgstr "Sposób postępowania z tytułem dynamicznym"
 msgid "What to do with the terminal when the child command exits"
 msgstr "Określa, co zrobić z terminalem, kiedy zakończy się polecenie potomne"
 
-# rev: słowo czy słowa?
 #: ../src/gnome-terminal.schemas.in.h:130
 msgid "When selecting text by word, sequences of these characters are considered single words. Ranges can be given as \"A-Z\". Literal hyphen (not expressing a range) should be the first character given."
-msgstr "Podczas zaznaczania tekstu po wyrazach, sekwencja tych znaków będzie rozumiana jako pojedyncze słowo. Zakres może być wprowadzany jako \"A-Z\". Znak łącznika (nie wyrażającego zakresu) powinien być pierwszym podanym znakiem."
+msgstr "Podczas zaznaczania tekstu po słowach, sekwencja tych znaków będzie rozumiana jako pojedyncze słowa. Zakres może być wprowadzany jako \"A-Z\". Znak dywiza (nie wyrażającego zakresu) powinien być pierwszym podanym znakiem."
 
 #: ../src/gnome-terminal.schemas.in.h:131
 msgid "Where to put the terminal scrollbar. Possibilities are \"left\", \"right\", and \"disabled\"."
@@ -914,10 +907,9 @@ msgstr ""
 "Dopisanie przed początkowym tytułem\n"
 "Zachowanie początkowego tytułu"
 
-# REV: skrót klawiszowy
 #: ../src/profile-preferences.glade.h:43
 msgid "Ru_n a custom command instead of my shell"
-msgstr "Uruchamia własne _polecenie zamiast powłoki"
+msgstr "Uru_chamia własne polecenie zamiast powłoki"
 
 #: ../src/profile-preferences.glade.h:44
 msgid "S_hade transparent or image background:"
@@ -927,10 +919,9 @@ msgstr "Przy_ciemnianie przezroczystości i obrazu tła:"
 msgid "Scroll on _keystroke"
 msgstr "Przewijanie przy _naciśnięciu klawisza"
 
-# rev: nie znam kontekstu, ale skrót w tym miejscu nie będzie kolidował z tym bezpośrednio nad nim [oba mają 'n']?
 #: ../src/profile-preferences.glade.h:46
 msgid "Scroll on _output"
-msgstr "Przewijanie przy pojawieniu się _nowych danych"
+msgstr "Prz_ewijanie przy pojawieniu się nowych danych"
 
 #: ../src/profile-preferences.glade.h:47
 msgid "Scroll_back:"
@@ -1022,7 +1013,6 @@ msgstr "_Uruchomienie w roli powłoki startowej"
 msgid "_Scrollbar is:"
 msgstr "Położenie p_aska przewijania:"
 
-# REV: skrót klawiszowy
 #: ../src/profile-preferences.glade.h:71
 msgid "_Solid color"
 msgstr "_Jednolity kolor"
@@ -1283,12 +1273,11 @@ msgstr "Nie można otworzyć odnośnika: %s"
 msgid "Failed to parse arguments: %s\n"
 msgstr "Nie można zanalizować parametrów: %s\n"
 
-# rev: utworzono czy tworzenie [bo trwa właśnie]?
 #. Incompatible factory version, fall back, to new instance
 #: ../src/terminal.c:382
 #, c-format
 msgid "Incompatible factory version; creating a new instance.\n"
-msgstr "Niekompatybilna wersja fabryki. Utworzono nową instancję.\n"
+msgstr "Niekompatybilna wersja fabryki. Tworzenie nowej instancji.\n"
 
 #: ../src/terminal.c:388
 #, c-format
@@ -1440,10 +1429,9 @@ msgstr "hindi"
 msgid "Persian"
 msgstr "perskie"
 
-# rev: a nie jest to gudżarati?
 #: ../src/terminal-encoding.c:97
 msgid "Gujarati"
-msgstr "gujarati"
+msgstr "gudżarackie"
 
 #: ../src/terminal-encoding.c:98
 msgid "Gurmukhi"
@@ -1492,17 +1480,15 @@ msgstr "Terminal GNOME"
 msgid "Argument to \"%s\" is not a valid command: %s"
 msgstr "Parametr opcji \"%s\" nie jest poprawnym poleceniem: %s"
 
-# rev: dwie role
 #: ../src/terminal-options.c:343
 msgid "Two roles given for one window"
-msgstr "Dla tego samego okna wprowadzono wiele ról"
+msgstr "Jednemu oknu nadano dwie role"
 
-# rev: wprowadzono dwukrotnie opcję
 #: ../src/terminal-options.c:364
 #: ../src/terminal-options.c:397
 #, c-format
 msgid "\"%s\" option given twice for the same window\n"
-msgstr "Dla tego samego okna wprowadzono wiele opcji \"%s\"\n"
+msgstr "Opcję \"%s\" podano dwukrotnie dla tego samego okna\n"
 
 #: ../src/terminal-options.c:595
 #, c-format
@@ -1592,7 +1578,7 @@ msgstr "Ustawia ostatnio wybraną kartę jako aktywną w jej oknie"
 # rev: kropka niepotrzebna
 #: ../src/terminal-options.c:1016
 msgid "Execute the argument to this option inside the terminal"
-msgstr "Wykonuje wewnątrz terminala polecenie podane w parametrze tej opcji."
+msgstr "Wykonuje wewnątrz terminala polecenie podane w parametrze tej opcji"
 
 #: ../src/terminal-options.c:1025
 msgid "Use the given profile instead of the default profile"
@@ -1754,10 +1740,9 @@ msgstr "_Karty"
 msgid "_Help"
 msgstr "Pomo_c"
 
-# rev: skrót
 #: ../src/terminal-window.c:1569
 msgid "New _Profile…"
-msgstr "Nowy _profil..."
+msgstr "N_owy profil…"
 
 #: ../src/terminal-window.c:1572
 #: ../src/terminal-window.c:1694
@@ -1776,11 +1761,11 @@ msgstr "Wklej _nazwy plików"
 
 #: ../src/terminal-window.c:1592
 msgid "P_rofiles…"
-msgstr "P_rofile..."
+msgstr "P_rofile…"
 
 #: ../src/terminal-window.c:1595
 msgid "_Keyboard Shortcuts…"
-msgstr "Skróty _klawiszowe..."
+msgstr "Skróty _klawiszowe…"
 
 #: ../src/terminal-window.c:1598
 msgid "Pr_ofile Preferences"
@@ -1793,7 +1778,7 @@ msgstr "Zmień p_rofil"
 
 #: ../src/terminal-window.c:1615
 msgid "_Set Title…"
-msgstr "_Ustaw tytuł..."
+msgstr "_Ustaw tytuł…"
 
 #: ../src/terminal-window.c:1618
 msgid "Set _Character Encoding"
@@ -1810,7 +1795,7 @@ msgstr "Zresetuj i _wyczyść"
 #. Terminal/Encodings menu
 #: ../src/terminal-window.c:1627
 msgid "_Add or Remove…"
-msgstr "_Dodaj lub usuń..."
+msgstr "_Dodaj lub usuń…"
 
 #. Tabs menu
 #: ../src/terminal-window.c:1632
@@ -1845,7 +1830,7 @@ msgstr "_O programie"
 #. Popup menu
 #: ../src/terminal-window.c:1657
 msgid "_Send Mail To…"
-msgstr "_Wyślij wiadomość e-mail do..."
+msgstr "_Wyślij wiadomość e-mail do…"
 
 #: ../src/terminal-window.c:1660
 msgid "_Copy E-mail Address"
@@ -1853,11 +1838,11 @@ msgstr "Skopiuj _adres e-mail"
 
 #: ../src/terminal-window.c:1663
 msgid "C_all To…"
-msgstr "_Wywołaj..."
+msgstr "_Zadzwoń…"
 
 #: ../src/terminal-window.c:1666
 msgid "_Copy Call Address"
-msgstr "Skopiuj _adres wywołania"
+msgstr "Skopiuj _adres dzwonienia"
 
 #: ../src/terminal-window.c:1669
 msgid "_Open Link"
