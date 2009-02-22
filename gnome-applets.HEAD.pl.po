@@ -17,8 +17,8 @@ msgstr ""
 "Project-Id-Version: gnome-applets\n"
 "Report-Msgid-Bugs-To: http://bugzilla.gnome.org/enter_bug.cgi?product=gnome-applets&component=general\n"
 "POT-Creation-Date: 2009-02-22 13:49+0000\n"
-"PO-Revision-Date: 2009-02-22 20:45+0100\n"
-"Last-Translator: Joanna Mazgaj <jmazgaj@aviary.pl>\n"
+"PO-Revision-Date: 2009-02-22 23:14+0100\n"
+"Last-Translator: wadim dziedzic <wdziedzic@aviary,pl>\n"
 "Language-Team: Aviary.pl <gnomepl@aviary.pl>\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -185,10 +185,12 @@ msgstr "Monitoruje poziomu naładowania akumulatora komputera przenośnego"
 msgid "_Preferences"
 msgstr "_Preferencje"
 
+# REV: ja bym dał "komputer"
 #: ../battstat/battstat_applet.c:67
 msgid "System is running on AC power"
 msgstr "System jest zasilany z sieci"
 
+# REV: j.w.
 #: ../battstat/battstat_applet.c:68
 msgid "System is running on battery power"
 msgstr "System jest zasilany z akumulatora"
@@ -290,6 +292,7 @@ msgstr "Informacja akumulatora"
 msgid "You have %d%% of your total battery capacity remaining."
 msgstr "Pozostało %d%% pojemności baterii"
 
+# REV: pozbył bym się "z" z "z całej pojemności"
 #: ../battstat/battstat_applet.c:576
 #, c-format
 msgid "You have %d minute of battery power remaining (%d%% of the total capacity)."
@@ -299,6 +302,9 @@ msgstr[1] "Pozostały %d minuty pracy na baterii (%d%% z całej pojemności)."
 msgstr[2] "Pozostało %d minut pracy na baterii (%d%% z całej pojemności)."
 
 # jm: to już tu było ale czy nie lepiej zmienić na 'utracie' ? tu i niżej?
+# REV: oczywiście!
+# REV: ja bym dał "Aby zapobiec utraceniu danych, należy:
+# REV: podłączyć..., zapisać, zakończyć
 #. TRANSLATORS: this is a list, it is left as a single string
 #. * to allow you to make it appear like a list would in your
 #. * locale.  This is if the laptop does not support suspend.
@@ -312,6 +318,7 @@ msgstr ""
 " • podłącz komputer do gniazdka zasilania, albo\n"
 " • zapisz otwarte dokumenty i zakończ pracę komputera."
 
+# REV: uśpij > wstrzymać
 #. TRANSLATORS: this is a list, it is left as a single string
 #. * to allow you to make it appear like a list would in your
 #. * locale.  This is if the laptop supports suspend.
@@ -361,6 +368,8 @@ msgstr "Wystąpił błąd podczas wyświetlania pomocy: %s"
 msgid "This utility shows the status of your laptop battery."
 msgstr "Narzędzie wyświetlające stan akumulatora laptopa."
 
+# REV: dałbym "mechanizm hal"
+# REV: (a korektorzy z novella powiedzieliby "zaplecze HAL" ;-))
 #. true
 #: ../battstat/battstat_applet.c:1235
 msgid "HAL backend enabled."
@@ -381,7 +390,7 @@ msgstr "<b>Wygląd</b>"
 msgid "<b>Notifications</b>"
 msgstr "<b>Powiadomienia</b>"
 
-# jm
+# REV: wyświetla?
 #: ../battstat/battstat_applet.ui.h:3
 msgid "<small>(shows single image for status and charge)</small>"
 msgstr "<small>(wyświetlanie pojedynczego obrazka dla stanu i ładowania)</small>"
@@ -397,11 +406,13 @@ msgid "Battery Charge Monitor Preferences"
 msgstr "Preferencje monitora poziomu naładowania akumulatora"
 
 # jm
+# ERV: wyświetlaNIE (to checkbox)
 #: ../battstat/battstat_applet.ui.h:6
 msgid "Show _percentage remaining"
 msgstr "Wyświetlany pozostały p_rocent"
 
 # jm
+# REV: j.w.
 #: ../battstat/battstat_applet.ui.h:7
 msgid "Show _time remaining"
 msgstr "Wyświetlany pozostały c_zas"
@@ -417,16 +428,20 @@ msgid "_Expanded view"
 msgstr "W_idok rozszerzony"
 
 # jm
+# REV:wygląda na checkbox - więc Powiadomienie, gdy...
 #: ../battstat/battstat_applet.ui.h:10
 msgid "_Notify when battery is fully recharged"
 msgstr "_Powiadamiaj, gdy akumulator jest w pełni naładowany"
 
 # jm
+# REV: procentU? wartości procentowej?
 #: ../battstat/battstat_applet.ui.h:11
 msgid "_Show time/percentage:"
 msgstr "Wy_świetlanie czasu/procent:"
 
 # jm
+# REV: checkbox - "Ostrzeganie, gdy..."
+# REV: ew. Ostrzeżenie o spadku poziomu naładowania do:
 #: ../battstat/battstat_applet.ui.h:12
 msgid "_Warn when battery charge drops to:"
 msgstr "Os_trzegaj, kiedy poziom akumulatora spadnie do:"
@@ -690,6 +705,7 @@ msgstr "Wartość 0 oznacza wyświetlanie częstotliwości procesora, 1 częstot
 msgid "A 0 value means to show the applet in graphic mode (pixmap only), 1 to show the applet in text mode (not to show the pixmap) and 2 to show the applet in graphic and text mode."
 msgstr "Wartość 0 oznacza wyświetlanie apletu w trybie graficznym (sama piksmapa), 1 wyświetlenie apletu w trybie tekstowym (bez wyświetlania piksmapy), 2 wyświetlenie grafiki i tekstu."
 
+# REV: monitorowany procesor?
 #: ../cpufreq/cpufreq-applet.schemas.in.h:3
 msgid "CPU to Monitor"
 msgstr "Procesor do śledzenia"
@@ -729,6 +745,7 @@ msgid "CPU Frequency Monitor Preferences"
 msgstr "Preferencje monitora częstotliwości procesora"
 
 # jm
+# REV: może lepiej "jako częstotliwość" ?
 #: ../cpufreq/cpufreq-preferences.ui.h:5
 msgid "Show CPU frequency as _frequency"
 msgstr "Wyświetlanie częstotliwości procesora w _częstotliwościach"
@@ -902,6 +919,7 @@ msgid "Directory in which the theme is located"
 msgstr "Katalog, w którym znajduje się motyw"
 
 # FIXME - tłumaczyć nazwę?
+# REV: raczej nie...
 #: ../geyes/themes.c:127
 msgid "Can not launch the eyes applet."
 msgstr "Nie można uruchomić apletu oczy."
@@ -910,6 +928,7 @@ msgstr "Nie można uruchomić apletu oczy."
 msgid "There was a fatal error while trying to load the theme."
 msgstr "Wystąpił poważny błąd podczas próby wczytania motywu."
 
+# REV: apletu Geyes
 #: ../geyes/themes.c:304
 msgid "Geyes Preferences"
 msgstr "Preferencje Geyes"
@@ -1696,6 +1715,7 @@ msgid "Temperature:"
 msgstr "Temperatura:"
 
 # FIXME - odczucie czego?
+# REV: temperatura odczuwalna?
 #: ../gweather/gweather-dialog.c:296
 msgid "Feels like:"
 msgstr "Odczucie:"
@@ -1732,10 +1752,12 @@ msgstr "Zachód słońca:"
 msgid "Current Conditions"
 msgstr "Aktualne warunki"
 
+# REV: prognoza?
 #: ../gweather/gweather-dialog.c:503
 msgid "Forecast Report"
 msgstr "Raport pogodowy"
 
+# REV: nie jest to jakiś serwis ten ForeCast?
 #: ../gweather/gweather-dialog.c:503
 msgid "See the ForeCast Details"
 msgstr "Wyświetla szczegółową prognozę pogody"
@@ -1753,15 +1775,18 @@ msgid "_Visit Weather.com"
 msgstr "_Odwiedź Weather.com"
 
 # jm: to już było, ale to nie jest czasem wyjasnienie? I powinno być bezosob, np. Wejście/przejście na strone XYZ?
+# REV: to jest opis - "Wyświetla stronę weather.com"
 #: ../gweather/gweather-dialog.c:553
 msgid "Visit Weather.com"
 msgstr "Odwiedź Weather.com"
 
 # jm: to już tu było, ale ja bym dała Należy, zamiast proszę.
+# REV: ok - i jeszcze "witrynę Weather.com"
 #: ../gweather/gweather-dialog.c:553
 msgid "Click to Enter Weather.com"
 msgstr "Proszę kliknąć, aby odwiedzić Weather.com"
 
+# REV: szyk - "Dla tego położenia nie jest obecnie dostępna prognoza". ?
 #: ../gweather/gweather-dialog.c:638
 msgid "Forecast not currently available for this location."
 msgstr "Prognoza nie jest obecnie dostępna dla tego położenia."
@@ -1771,6 +1796,7 @@ msgstr "Prognoza nie jest obecnie dostępna dla tego położenia."
 msgid "Location view"
 msgstr "Widok położenia"
 
+# REV: Wybór położenia z listy?
 #: ../gweather/gweather-pref.c:171
 msgid "Select Location from the list"
 msgstr "Wybierz położenie z listy"
@@ -1787,6 +1813,7 @@ msgstr "Wejście liczbowe związane z odświeżaniem"
 msgid "Address Entry"
 msgstr "Wejście adresu"
 
+# REV: Wprowadzenie adresu URL ?
 #: ../gweather/gweather-pref.c:173
 msgid "Enter the URL"
 msgstr "Wprowadź URL"
@@ -1812,6 +1839,7 @@ msgstr "_Automatyczna aktualizacja co:"
 msgid "_Temperature unit:"
 msgstr "Jednostka _temperatury:"
 
+# REV: jeśli jednostka, to "DomyślnA"
 #: ../gweather/gweather-pref.c:857
 #: ../gweather/gweather-pref.c:877
 #: ../gweather/gweather-pref.c:903
@@ -1819,15 +1847,18 @@ msgstr "Jednostka _temperatury:"
 msgid "Default"
 msgstr "Domyślne"
 
+# REV: jednostka to chyba się nazywa "Stopnie kelwina"
 #: ../gweather/gweather-pref.c:858
 msgid "Kelvin"
 msgstr "Kelvin"
 
+# REV: j.w.
 #. TRANSLATORS: Celsius is sometimes referred Centigrade
 #: ../gweather/gweather-pref.c:860
 msgid "Celsius"
 msgstr "Celsjusz"
 
+# REV: j.w.
 #: ../gweather/gweather-pref.c:861
 msgid "Fahrenheit"
 msgstr "Fahrenheit"
@@ -1847,6 +1878,7 @@ msgstr "m/s"
 msgid "km/h"
 msgstr "km/h"
 
+# REV: po polsku ten skrót tak wygląda?
 #. TRANSLATOR: The wind speed unit "miles per hour"
 #: ../gweather/gweather-pref.c:883
 msgid "mph"
@@ -1966,6 +1998,7 @@ msgstr "Położenie"
 msgid "Invest"
 msgstr "Inwestycje"
 
+# REV: może jednak bezosobowo - śledzenie inwestycji ?
 #: ../invest-applet/data/Invest_Applet.server.in.in.h:2
 #: ../invest-applet/invest/about.py:23
 msgid "Track your invested money."
@@ -2005,16 +2038,19 @@ msgid "Auto _refresh"
 msgstr "Automatyczne o_dświeżanie"
 
 # jm: nie wiem co to...
+# REV: jest coś takiego jak "Wstęga Bollingera"
 #: ../invest-applet/data/financialchart.ui.h:8
 msgid "Bollinger"
 msgstr "Bollinger"
 
 # jm
+# REV: lepiej "Pobieranie"
 #: ../invest-applet/data/financialchart.ui.h:9
 msgid "Downloading chart from <b>Yahoo!</b>"
 msgstr "Ściąganie wykresu z <b>Yahoo!</b>"
 
 # jm [za bossa.pl]
+# REV: ja bym dał "Ruchoma średnia wykładnicza"
 #: ../invest-applet/data/financialchart.ui.h:10
 msgid "Exponential moving average: "
 msgstr "Eksponencjalna średnia ruchoma:"
@@ -2079,6 +2115,7 @@ msgid "Splits"
 msgstr "Podziały"
 
 # jm
+# REV: to chyba będzie obrót - http://pl.wikipedia.org/wiki/Wolumen_(gie%C5%82da) ?
 #: ../invest-applet/data/financialchart.ui.h:23
 msgid "Vol"
 msgstr "Vol"
@@ -2088,6 +2125,7 @@ msgid "Vol+MA"
 msgstr "Vol+MA"
 
 # jm
+# REV: - http://pl.wikipedia.org/wiki/Wolumen_(gie%C5%82da) ??
 #: ../invest-applet/data/financialchart.ui.h:25
 msgid "Volumes"
 msgstr "Woluminy"
@@ -2099,6 +2137,7 @@ msgid "W%R"
 msgstr "W%R"
 
 # jm
+# REV: styl wykresu?
 #: ../invest-applet/data/financialchart.ui.h:28
 msgid "_Graph style: "
 msgstr "Styl g_raficzny:"
@@ -2109,11 +2148,13 @@ msgid "_Options"
 msgstr "_Opcje"
 
 # jm
+# REV: ticker to nie zegar, a taka "taśma" z przejeżdżającymi kursami akcji (nie wiem jak po polsku)
 #: ../invest-applet/data/financialchart.ui.h:30
 msgid "_Ticker symbol: "
 msgstr "_Symbol zegara:"
 
 # jm
+# REV: a nie "akcje" ?
 #: ../invest-applet/data/prefs-dialog.ui.h:1
 msgid "<b>Stocks</b>"
 msgstr "<b>Notowania</b>"
@@ -2128,6 +2169,7 @@ msgstr ""
 "<b>Źródło: </b> Yahoo!</small></i>"
 
 # jm. [hmm, a może Profil Inwestora? - czy to będzie za duża zmiana]
+# REV: Preferencje apletu Invest?
 #: ../invest-applet/data/prefs-dialog.ui.h:4
 msgid "Invest Preferences"
 msgstr "Preferencje inwestowania"
@@ -2147,6 +2189,7 @@ msgid "<b>No stock quotes are currently available</b>"
 msgstr "<b>Brak dostępnych notowań giełdowych</b>"
 
 # jm. to już było, ale ja bym tu dała 'nie jest podłączony do internetu' albo coś podobnego
+# REV: +1
 #: ../invest-applet/invest/applet.py:55
 msgid "The server could not be contacted. The computer is either offline or the servers are down. Try again later."
 msgstr "Nie można połączyć się z serwerem. Komputer jest offline lub serwery przestały odpowiadać. Proszę spróbować później."
@@ -2176,6 +2219,7 @@ msgstr "Aplet inwestycji"
 msgid "Symbol"
 msgstr "Symbol"
 
+# REV: a nie "ilość" ?
 #: ../invest-applet/invest/preferences.py:24
 msgid "Amount"
 msgstr "Wielkość"
@@ -2211,6 +2255,7 @@ msgstr "Średnia zmiana notowań %%: %+.2f%%"
 msgid "Positions balance: %+.2f"
 msgstr "Pozycje bilansu: %+.2f"
 
+# REV: o jest :)
 #. model: SYMBOL, TICKER_ONLY, BALANCE, BALANCE_PCT, VALUE, VARIATION_PCT, PB
 #. Translators: these words all refer to a stock. Last is short
 #. for "last price". Gain is referring to the gain since the
@@ -2277,6 +2322,7 @@ msgstr "Uruchom program"
 msgid "Command line"
 msgstr "Wiersz poleceń"
 
+# REV: proszę...
 #: ../mini-commander/src/command_line.c:532
 msgid "Type a command here and Gnome will execute it for you"
 msgstr "Wpisz tutaj polecenie powłoki, które chcesz wykonać"
@@ -2354,6 +2400,7 @@ msgid "<b>Size</b>"
 msgstr "<b>Rozmiar</b>"
 
 # jm
+# REV: nowe makro?
 #: ../mini-commander/src/mini-commander.ui.h:6
 msgid "Add New Macro"
 msgstr "Dodaj makro"
@@ -2414,6 +2461,7 @@ msgid "_Pattern:"
 msgstr "_Wzór:"
 
 # jm
+# REV: nie będzie się _U kłócić z _Usuń makro powyżej?
 #: ../mini-commander/src/mini-commander.ui.h:19
 msgid "_Use default theme colors"
 msgstr "_Użycie domyślnych kolorów motywu"
@@ -2513,6 +2561,7 @@ msgstr "Składowa czerwona koloru tła."
 msgid "The red component of the foreground color."
 msgstr "Składowa czerwona koloru pierwszego planu."
 
+# REV: globaplny
 #: ../mini-commander/src/mini-commander.schemas.in.h:24
 msgid "This per-applet key is deprecated in favour of the global key, /schemas/apps/mini-commander-global/macro_patterns."
 msgstr "Ten klucz apletu jest stary i zastąpiony przez globaplny klucz, /schemas/apps/mini-commander-global/macro_patterns."
@@ -2704,6 +2753,7 @@ msgstr "_Aktywuj"
 msgid "_Deactivate"
 msgstr "_Deaktywuj"
 
+# REV: właściwości
 #: ../modemlights/GNOME_ModemLights.xml.h:5
 #: ../stickynotes/stickynotes.ui.h:45
 msgid "_Properties"
@@ -2777,6 +2827,7 @@ msgid "<span weight=\"bold\" size=\"larger\">Root password required</span>"
 msgstr "<span weight=\"bold\" size=\"larger\">Wymagane hasło administratora</span>"
 
 # jm
+# REV: lepiej "Proszę podać hasło"
 #: ../modemlights/modemlights.ui.h:3
 msgid "Enter password"
 msgstr "Wprowadzania hasła"
@@ -3031,6 +3082,8 @@ msgid "Swap graph background color"
 msgstr "Kolor tła wykresu przestrzeni wymiany"
 
 # FIXME - co to?
+# REV: plik "desktop" to coś w rodzaju windowsowego skrótu
+# REV: Plik desktop do uruchomienia jako monitor systemu
 #: ../multiload/multiload.schemas.in.h:31
 msgid "The desktop description file to execute as the system monitor"
 msgstr "Plik opisu pulpitu do uruchomienia jako monitor systemu"
@@ -3167,6 +3220,7 @@ msgstr "Obciążenie"
 msgid "_Average"
 msgstr "Średn_ia"
 
+# REV: Dysk twardy ?
 #: ../multiload/properties.c:629
 msgid "Harddisk"
 msgstr "Dysk niewymienny"
@@ -3296,6 +3350,7 @@ msgid "<b>Default Note Properties</b>"
 msgstr "<b>Domyślne właściwości notatki</b>"
 
 # jm
+# REV: nie lepiej "cofnąć" ?
 #: ../stickynotes/stickynotes.ui.h:4
 msgid ""
 "<b>Delete all sticky notes?</b>\n"
@@ -3307,6 +3362,7 @@ msgstr ""
 "Czynności nie da się odwrócić."
 
 # jm
+# REV: j.w.
 #: ../stickynotes/stickynotes.ui.h:7
 msgid ""
 "<b>Delete this sticky note?</b>\n"
@@ -3323,31 +3379,37 @@ msgid "<b>Properties</b>"
 msgstr "<b>Właściwości</b>"
 
 # jm
+# REV: wygląda raczej na "zagajenie" w oknie - więc może "Proszę wybrać..." ?
 #: ../stickynotes/stickynotes.ui.h:11
 msgid "Choose a base color to use for all sticky notes"
 msgstr "Wybór podstawowego koloru dla wszystkich notatek"
 
 # jm
+# REV: j.w.
 #: ../stickynotes/stickynotes.ui.h:12
 msgid "Choose a color for the note"
 msgstr "Wybór koloru dla notatki"
 
 # jm
+# REV: j.w.
 #: ../stickynotes/stickynotes.ui.h:13
 msgid "Choose a font for the note"
 msgstr "Wybór czcionki dla notatki"
 
 # jm
+# REV: j.w.
 #: ../stickynotes/stickynotes.ui.h:14
 msgid "Choose a font to use for all sticky notes"
 msgstr "Wybór czcionki dla wszystkich notatek"
 
 # jm
+# REV: proszę określić? .
 #: ../stickynotes/stickynotes.ui.h:15
 msgid "Choose if notes are visible on all workspaces"
 msgstr "Określa, czy notatki są widoczne na wszystkich obszarach"
 
 # jm
+# REV: j.w.
 #: ../stickynotes/stickynotes.ui.h:16
 msgid "Choose if the default style is forced on all notes"
 msgstr "Określa, czy użycie domyślnego stylu będzie wymuszane na wszystkich notatkach"
@@ -3368,6 +3430,7 @@ msgid "Font Co_lor:"
 msgstr "Ko_lor czcionki:"
 
 # jm
+# REV: wygląda
 #: ../stickynotes/stickynotes.ui.h:20
 msgid "Force _default color and font on notes"
 msgstr "Wymuś _domyślny kolor i czcionkę w notatkach"
@@ -3489,6 +3552,8 @@ msgid "_Lock Note"
 msgstr "_Zablokuj notatkę"
 
 # jm
+# REV: checkbox prawdopodobnie > "Wyświetlanie...
+# REV: roboczych
 #: ../stickynotes/stickynotes.ui.h:46
 msgid "_Put notes on all workspaces"
 msgstr "_Wyświetlaj notatki na wszystkich obszarach"
@@ -3611,6 +3676,7 @@ msgstr "Wyświetla notatki"
 msgid "Sticky Notes for the GNOME Desktop Environment"
 msgstr "Notatki dla środowiska GNOME"
 
+# REV: po kuknięciu w interfejs dałbym "Przejście do kosza"
 #: ../trashapplet/GNOME_Panel_TrashApplet.server.in.in.h:1
 msgid "Go to Trash"
 msgstr "Przechodzi do kosza"
@@ -3625,6 +3691,7 @@ msgid "_Empty Trash"
 msgstr "Op_różnij kosz"
 
 # jm: SMIETNIK CZY KOSZ ?
+# REV: kosz!
 #: ../trashapplet/GNOME_Panel_TrashApplet.xml.h:4
 msgid "_Open Trash"
 msgstr "Otwórz śmi_etnik"
@@ -3660,6 +3727,7 @@ msgid "Delete Immediately?"
 msgstr "Usunąć natychmiast?"
 
 # jm. j/w
+# REV: ja bym jednak dał tutaj "czy" TD się uparł, żeby nie dawać, ale to w końcu są pytania w pełnym zdaniu.
 #: ../trashapplet/src/trashapplet.c:482
 msgid "Cannot move items to trash, do you want to delete them immediately?"
 msgstr "Nie można przenieść elementów do kosza, usunąć je od razu?"
