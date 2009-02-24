@@ -17,7 +17,7 @@ msgstr ""
 "Project-Id-Version: gnome-games.HEAD\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2009-01-22 23:53+0100\n"
-"PO-Revision-Date: 2009-02-21 16:10+0100\n"
+"PO-Revision-Date: 2009-02-24 18:20+0100\n"
 "Last-Translator: Wojciech Kapusta <wkapusta@aviary.pl>\n"
 "Language-Team:  <pl@li.org>\n"
 "MIME-Version: 1.0\n"
@@ -144,7 +144,6 @@ msgstr ""
 msgid "This game does not have hint support yet."
 msgstr "Gra nie obsługuje jeszcze podpowiedzi."
 
-# jm: zmienione na propozycję (z "należy" na "można"), ponieważ jest to podpowiedź w pasjansach przeniesienia jednej karty na inną. Nie zawsze jedyna możliwa opcja
 #. Both %s are card names
 #. The first %s is a card name, the 2nd %s a sentence fragment.
 #. * Yes, we know this is bad for i18n.
@@ -1473,8 +1472,6 @@ msgstr "Zanim przejdziesz przez ulicę rozejrzyj się na obie strony"
 msgid "Monitors won't give you Vitamin D -- but sunlight will..."
 msgstr "Monitory nie dadzą ci witaminy D - w przeciwieństwie do słońca ..."
 
-# REV: he? ;-) to jakiś idiom?
-# JM: nie wiem, to już tu było :)
 #: ../aisleriot/rules/clock.scm.h:9
 msgid "Never blow in a dog's ear"
 msgstr "Nigdy nie głaszcz psa pod włos"
@@ -1872,7 +1869,6 @@ msgstr "Pobierz kartę z talii"
 msgid "Match the top two cards of the waste."
 msgstr "Dopasuj dwie najwyższe karty z wykorzystanych."
 
-# JM: to jest checkbox w pasjansie AisleRiot - three peaks. Po jego zaznaczeniu przy rozdaniu nowej karty ze stosu nowe punkty są dodawane do już uzyskanego wyniku w grze. Bez niego ilość wcześniej uzyskanych punktów jest zmniejszana po rozdaniu nowej karty.
 #: ../aisleriot/rules/triple_peaks.scm.h:2
 msgid "Multiplier Scoring"
 msgstr "Punktacja narastająca"
@@ -2380,10 +2376,9 @@ msgstr "Gracz nie znajduje się w pokoju!"
 msgid "There was an error sending the chat."
 msgstr "Wystąpił błąd podczas wysyłania rozmowy."
 
-# jm: tak, ze względu na tą nieszczęsną formę osobową
 #: ../dependencies/ggz-gtk/ggzclient.c:451
 msgid "You're not at a table."
-msgstr "Gracz nie jest przy stole."
+msgstr "Nie jesteś przy stole."
 
 #: ../dependencies/ggz-gtk/ggzclient.c:455
 #, c-format
@@ -2856,10 +2851,9 @@ msgstr "Można grać w tylko jedną grę jednocześnie."
 msgid "Game Error"
 msgstr "Błąd gry"
 
-# jm: tak, ze względu na tą nieszczęsną formę osobową
 #: ../dependencies/ggz-gtk/game.c:304
 msgid "You're still at a table."
-msgstr "Gracz nadal jest przy stole."
+msgstr "Jesteś nadal przy stole."
 
 #: ../dependencies/ggz-gtk/game.c:313
 msgid ""
@@ -3031,12 +3025,14 @@ msgstr "#%d"
 
 #. Translators: L is short for 'Network Latency'.
 #: ../dependencies/ggz-gtk/playerlist.c:347
+#, fuzzy
 msgid "L"
 msgstr "L"
 
 #. Translators: T# is short for 'Table Number'.
 #: ../dependencies/ggz-gtk/playerlist.c:353
 #: ../dependencies/ggz-gtk/tablelist.c:192
+#, fuzzy
 msgid "T#"
 msgstr "T#"
 
@@ -3110,10 +3106,9 @@ msgstr "Nieznany pokój"
 msgid "You can't join a room; you're not logged in"
 msgstr "Nie można dołączyć się do pokoju bez zalogowania"
 
-# jm: tak, ze względu na tą nieszczęsną formę osobową
 #: ../dependencies/ggz-gtk/roomlist.c:77
 msgid "You're already in between rooms"
-msgstr "Gracz już znajduje się między pokojami"
+msgstr "Jesteś już między pokojami"
 
 #: ../dependencies/ggz-gtk/roomlist.c:82
 msgid "You can't switch rooms while playing a game"
@@ -3432,10 +3427,9 @@ msgstr "Kolor rozmowy"
 msgid "Default chat color assigned to your friends"
 msgstr "Domyślny kolor rozmowy przyporządkowany do znajomych"
 
-# jm: tak, ze względu na tą nieszczęsną formę osobową.
 #: ../dependencies/ggz-gtk/props.c:1229
 msgid "Chat color used when your name is typed"
-msgstr "Kolor rozmowy, w której użyto imię Gracza"
+msgstr "Kolor rozmowy, w której użyto Twoje imię"
 
 #: ../dependencies/ggz-gtk/props.c:1238
 msgid "Chat color used for all other chats"
@@ -3680,8 +3674,6 @@ msgstr "Wysokość okna"
 msgid "The piece to promote pawns to"
 msgstr "Figura, na którą promować piona"
 
-# REV: opcje po ang. + wyjaśnienia w nawiasie
-# JM: ok
 #: ../glchess/data/glchess.schemas.in.h:25
 msgid ""
 "The piece to promote to when a human player moves a pawn to the far rank. "
@@ -3691,8 +3683,6 @@ msgstr ""
 "to być: \"queen\" (hetman), \"knight\" (skoczek), \"rook\" (wieża) lub "
 "\"bishop\" (goniec)."
 
-# REV: opcje po ang. + wyjaśnienia w nawiasie
-# JM: ok
 #: ../glchess/data/glchess.schemas.in.h:26
 msgid ""
 "The side of the board that is in the foreground, either 'white', 'black', "
@@ -3823,7 +3813,6 @@ msgstr "Format zapisu ruchu:"
 msgid "Preferences"
 msgstr "Preferencje"
 
-# JM: promocja w znaczeniu awans piona szachowego. ten czasownik jest używany w przepisach szachowych
 #. Preferences Dialog: Label before promotion type combo box
 #: ../glchess/glade/preferences.glade.h:10
 msgid "Promotion Type:"
@@ -3859,11 +3848,8 @@ msgstr "Wyświetlanie podpowiedzi podczas gry w szachy"
 msgid "Smooth edges of the 3D elements (anti-alias)"
 msgstr "Wygładzanie krawędzi elementów trójwymiarowych (antyaliasing)"
 
-# REV: 2D > dwuwymiarowym; 3D > trójwymiarowym
-# JM: czy chodziło o dodanie wyjaśnień po 2D i 3D czy o zupełną zamianę?
 #. Preferences Dialog: Tooltip for 3D Chess View option
 #: ../glchess/glade/preferences.glade.h:26
-#, fuzzy
 msgid ""
 "View the chess board by default in 2D mode, or optionally in 3D mode using "
 "OpenGL."
@@ -4207,8 +4193,8 @@ msgstr "Proszę wprowadzić nazwę pliku"
 msgid "Unabled to save game"
 msgstr "Nie można zapisać gry"
 
-# WK: wychodzę z założenia, że chodzi tu o notację przedstawioną u dołu okna,
-# czyli w tym przypadku opisowy sposób przedstawienia posunięcia
+#. WK: wychodzę z założenia, że chodzi tu o notację przedstawioną u dołu okna,
+#. czyli w tym przypadku opisowy sposób przedstawienia posunięcia
 #. Translators: Move Format Combo: Moves shown in human descriptive notation
 #. Translators: Player Type Combo: Player is human controlled
 #: ../glchess/src/lib/gtkui/dialogs.py:587
@@ -5713,7 +5699,6 @@ msgstr "Robaki"
 msgid "Gnibbles"
 msgstr "Robaki"
 
-# JM: doprawdy? :)
 #. This is the long descriptive name for the room
 #: ../gnibbles/gnibbles.room.in.h:4
 msgid "Gnibbles is a worms game for GNOME."
@@ -6076,9 +6061,6 @@ msgstr ""
 "Nie można wczytać wszystkich niezbędnych plików graficznych. Proszę "
 "sprawdzić, czy gra jest prawidłowo zainstalowana."
 
-# REV: mistranslation? ;-)
-# JM: lepiej? :)
-#. ********************************************************************
 #: ../gnobots2/gnobots2.desktop.in.in.h:1
 msgid "Avoid the robots and make them crash into each other"
 msgstr "Unikanie robotów i sprawianie, że zderzają się między sobą"
@@ -6579,7 +6561,6 @@ msgstr "Używanie obrazu tła"
 msgid "Set starting level (1 or greater)"
 msgstr "Ustawienie poziomu początkowego (1 lub wyższy)"
 
-# JM: tak w zgodzie z wczesniejszymi: to nie powinno zostać jak w oryginale?
 #: ../gnometris/main.cpp:50
 msgid "LEVEL"
 msgstr "POZIOM"
@@ -6970,8 +6951,6 @@ msgstr "Ostrzega o kwadratach niemożliwych do wypełnienia po wykonaniu ruchu"
 msgid "_Track additions"
 msgstr "_Rejestr dodań"
 
-# REV: niedokończone
-# JM: nie za bardzo odbiegłam?
 #: ../gnome-sudoku/src/lib/main.py:326
 msgid "Mark new additions in a separate color so you can keep track of them."
 msgstr "Zaznacza nowo dodane cyfry osobnym kolorem, aby można było je odróżnić."
@@ -7122,7 +7101,7 @@ msgstr "Liczba pól do wypełnienia od razu, dzięki eliminacji:"
 msgid "Number of moves instantly fillable by filling: "
 msgstr "Liczba pól do wypełnienia od razu, dzięki już wypełnionym:"
 
-# jm: sudoku, game statistics
+#. JM: sudoku, game statistics
 #: ../gnome-sudoku/src/lib/main.py:836
 msgid "Amount of trial-and-error required to solve: "
 msgstr "Liczba błędnych prób wymaganych do rozwiązania:"
@@ -7988,7 +7967,6 @@ msgstr "Numer rozwiązywanej układanki."
 msgid "The puzzle in play"
 msgstr "Rozwiązywana układanka"
 
-# JM: punktacja w kościach, można wybrać miejsce, w którym zostaną wpisane punkty. Jeśli w wybranym miejscu są już punkty z poprzednich rzutów wyświetli się ten właśnie komunikat.
 #: ../gtali/clist.c:158
 msgid "Already used! Where do you want to put that?"
 msgstr "Już wykorzystane! Gdzie wpisać punkty?"
@@ -7998,7 +7976,6 @@ msgstr "Już wykorzystane! Gdzie wpisać punkty?"
 msgid "Score: %d"
 msgstr "Punkty: %d"
 
-# JM: lista punktowa w grze Kości. Po nakierowaniu kursora mysz nad wybraną pozycję pojawi się albo ilość możliwych do wpisania punktów albo ten komunikat.
 #: ../gtali/clist.c:417
 #, c-format
 msgid "Field used"
