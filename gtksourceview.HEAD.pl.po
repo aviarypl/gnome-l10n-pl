@@ -3,27 +3,27 @@
 # Andrzej Polatyński <andrzej@datatel.net.pl>, 2007.
 # Copyright (C) 2001-2005, 2006 Free Software Foundation, Inc.
 # -=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-
-# Aktualną wersję tego pliku możesz odnaleźć w repozytorium cvs.gnomepl.org
-# (:pserver:anonymous@cvs.gnomepl.org:/gnomepl, puste hasło)
+# Aviary.pl
 # Jeśli masz jakiekolwiek uwagi odnoszące się do tłumaczenia lub chcesz
-# pomóc w jego rozwijaniu i pielęgnowaniu, napisz do nas na adres:
-# translators@gnomepl.org
+# pomóc w jego rozwijaniu i pielęgnowaniu, napisz do nas:
+# gnomepl@aviary.pl
 # -=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-
+
 msgid ""
 msgstr ""
 "Project-Id-Version: gtksourceview.HEAD.pl\n"
-"Report-Msgid-Bugs-To: http://bugzilla.gnome.org/enter_bug.cgi?"
-"product=gtksourceview&component=general\n"
+"Report-Msgid-Bugs-To: http://bugzilla.gnome.org/enter_bug.cgi?product=gtksourceview&component=general\n"
 "POT-Creation-Date: 2009-02-14 11:52+0000\n"
-"PO-Revision-Date: 2008-02-23 23:33+0100\n"
+"PO-Revision-Date: 2009-02-25 23:02+0100\n"
 "Last-Translator: wadim dziedzic <nikdo@aviary.pl>\n"
-"Language-Team: Polish <gnome-l10n@lists.aviary.pl>\n"
+"Language-Team: Polish <gnomepl@aviary.pl>\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "X-Generator: KBabel 1.11.2\n"
-"Plural-Forms: nplurals=3; plural=(n==1 ? 0 : n%10>=2 && n%10<=4 && (n%100<10 "
-"|| n%100>=20) ? 1 : 2);\n"
+"Plural-Forms: nplurals=3; plural=(n==1 ? 0 : n%10>=2 && n%10<=4 && (n%100<10 || n%100>=20) ? 1 : 2);\n"
+"X-Poedit-Language: Polish\n"
+"X-Poedit-Country: POLAND\n"
 
 #: ../gtksourceview/gtksourcebuffer.c:180
 #: ../gtksourceview/gtksourceprintcompositor.c:471
@@ -84,7 +84,7 @@ msgstr "Schemat stylu"
 #: ../gtksourceview/gtksourcecontextengine.c:2608
 #, c-format
 msgid "using \\C is not supported in language definitions"
-msgstr "używanie \\C nie jest obsługiwane w definicjach języka"
+msgstr "użycie \\C nie jest obsługiwane w definicjach języka"
 
 #. regex_new could fail, for instance if there are different
 #. * named sub-patterns with the same name or if resulting regex is
@@ -93,19 +93,15 @@ msgstr "używanie \\C nie jest obsługiwane w definicjach języka"
 #: ../gtksourceview/gtksourcecontextengine.c:3232
 #, c-format
 msgid ""
-"Cannot create a regex for all the transitions, the syntax highlighting "
-"process will be slower than usual.\n"
+"Cannot create a regex for all the transitions, the syntax highlighting process will be slower than usual.\n"
 "The error was: %s"
 msgstr ""
-"Nie można utworzyć wyrażenia regularnego dla wszystkich przejść, przez co "
-"proces wyróżniania elementów składni będzie spowolniony.\n"
+"Nie można utworzyć wyrażenia regularnego dla wszystkich przejść, przez co proces wyróżniania elementów składni będzie spowolniony.\n"
 "Wystąpił błąd: %s"
 
 #: ../gtksourceview/gtksourcecontextengine.c:4547
-msgid ""
-"Highlighting a single line took too much time, syntax highlighting will be "
-"disabled"
-msgstr ""
+msgid "Highlighting a single line took too much time, syntax highlighting will be disabled"
+msgstr "Wyróżnianie składni w wierszu zajęło zbyt dużo czasu i zostanie wyłączone"
 
 #: ../gtksourceview/gtksourcecontextengine.c:5757
 #, c-format
@@ -122,12 +118,8 @@ msgstr "powtórzony identyfikator kontekstu \"%s\""
 #: ../gtksourceview/gtksourcecontextengine.c:6109
 #: ../gtksourceview/gtksourcecontextengine.c:6169
 #, c-format
-msgid ""
-"style override used with wildcard context reference in language '%s' in ref "
-"'%s'"
-msgstr ""
-"użyto unieważnienia stylu za pomocą ogólnej referencji kontekstu w języku \"%"
-"s\" w referencji \"%s\""
+msgid "style override used with wildcard context reference in language '%s' in ref '%s'"
+msgstr "użyto wymuszenia stylu za pomocą ogólnej referencji kontekstu w języku \"%s\" w referencji \"%s\""
 
 #: ../gtksourceview/gtksourcecontextengine.c:6183
 #, c-format
@@ -196,11 +188,8 @@ msgid "Language specification directories"
 msgstr "Katalogi specyfikacji języka"
 
 #: ../gtksourceview/gtksourcelanguagemanager.c:135
-msgid ""
-"List of directories where the language specification files (.lang) are "
-"located"
-msgstr ""
-"Lista katalogów, w których przechowywane są pliki specyfikacji języka (.lang)"
+msgid "List of directories where the language specification files (.lang) are located"
+msgstr "Lista katalogów, w których przechowywane są pliki specyfikacji języka (.lang)"
 
 #: ../gtksourceview/gtksourcelanguagemanager.c:144
 msgid "Language ids"
@@ -218,7 +207,7 @@ msgstr "Nieznany identyfikator \"%s\" w wyrażeniu regularnym \"%s\""
 #: ../gtksourceview/gtksourcelanguage-parser-2.c:1107
 #, c-format
 msgid "in regex '%s': backreferences are not supported"
-msgstr "w wyrażeniu regularnym \"%s\": referencje wsteczne nie są obsługiwane"
+msgstr "wyr. regularne \"%s\": referencje wsteczne nie są obsługiwane"
 
 #: ../gtksourceview/gtksourcemark.c:119
 msgid "category"
@@ -244,15 +233,14 @@ msgstr "Szerokość tabulatora"
 #: ../gtksourceview/gtksourceprintcompositor.c:430
 #: ../gtksourceview/gtksourceview.c:291
 msgid "Width of a tab character expressed in spaces"
-msgstr "Szerokość tabulatora wyrażona w liczbie spacji"
+msgstr "Szerokość tabulatora wyrażona w znakach spacji"
 
 #: ../gtksourceview/gtksourceprintcompositor.c:450
 msgid "Wrap Mode"
 msgstr "Tryb zawijania"
 
 #: ../gtksourceview/gtksourceprintcompositor.c:451
-msgid ""
-"Whether to wrap lines never, at word boundaries, or at character boundaries."
+msgid "Whether to wrap lines never, at word boundaries, or at character boundaries."
 msgstr "Określa, czy łamać wiersz na granicy słów czy znaków."
 
 #: ../gtksourceview/gtksourceprintcompositor.c:472
@@ -320,12 +308,8 @@ msgid "Number of pages"
 msgstr "Liczba stron"
 
 #: ../gtksourceview/gtksourceprintcompositor.c:652
-msgid ""
-"The number of pages in the document (-1 means the document has not been "
-"completely paginated)."
-msgstr ""
-"Liczba stron dokumentu (-1 oznacza, że dokument nie został całkowicie "
-"podzielony na strony)."
+msgid "The number of pages in the document (-1 means the document has not been completely paginated)."
+msgstr "Liczba stron dokumentu (-1 oznacza, że dokument nie został całkowicie podzielony na strony)."
 
 #: ../gtksourceview/gtksourcestyle.c:70
 msgid "Line background"
@@ -351,21 +335,25 @@ msgstr "Kolor pierwszoplanowy"
 msgid "Foreground color"
 msgstr "Kolor pierwszoplanowy"
 
-#: ../gtksourceview/gtksourcestyle.c:94 ../gtksourceview/gtksourcestyle.c:95
+#: ../gtksourceview/gtksourcestyle.c:94
+#: ../gtksourceview/gtksourcestyle.c:95
 #: ../gtksourceview/language-specs/t2t.lang.h:2
 msgid "Bold"
 msgstr "Pogrubienie"
 
-#: ../gtksourceview/gtksourcestyle.c:102 ../gtksourceview/gtksourcestyle.c:103
+#: ../gtksourceview/gtksourcestyle.c:102
+#: ../gtksourceview/gtksourcestyle.c:103
 #: ../gtksourceview/language-specs/t2t.lang.h:5
 msgid "Italic"
 msgstr "Kursywa"
 
-#: ../gtksourceview/gtksourcestyle.c:110 ../gtksourceview/gtksourcestyle.c:111
+#: ../gtksourceview/gtksourcestyle.c:110
+#: ../gtksourceview/gtksourcestyle.c:111
 msgid "Underline"
 msgstr "Podkreślenie"
 
-#: ../gtksourceview/gtksourcestyle.c:118 ../gtksourceview/gtksourcestyle.c:119
+#: ../gtksourceview/gtksourcestyle.c:118
+#: ../gtksourceview/gtksourcestyle.c:119
 msgid "Strikethrough"
 msgstr "Przekreślenie"
 
@@ -522,12 +510,8 @@ msgid "Smart Home/End"
 msgstr "Użycie sprytnych klawiszy Home/End"
 
 #: ../gtksourceview/gtksourceview.c:367
-msgid ""
-"HOME and END keys move to first/last non whitespace characters on line "
-"before going to the start/end of the line"
-msgstr ""
-"Klawisze HOME i END najpierw przenoszą do pierwszych/ostatnich znaków w "
-"wierszu a następnie na początek/koniec wiersza"
+msgid "HOME and END keys move to first/last non whitespace characters on line before going to the start/end of the line"
+msgstr "Klawisze HOME i END najpierw przenoszą do pierwszych/ostatnich znaków w wierszu a następnie na początek/koniec wiersza"
 
 #: ../gtksourceview/gtksourceview.c:377
 msgid "Highlight current line"
@@ -543,20 +527,19 @@ msgstr "Wcięcie pod tabulatorem"
 
 #: ../gtksourceview/gtksourceview.c:386
 msgid "Whether to indent the selected text when the tab key is pressed"
-msgstr ""
-"Określa, czy zaznaczony tekst ma być wcięty po naciśnięciu klawisza Tab"
+msgstr "Określa, czy zaznaczony tekst ma być wcięty po naciśnięciu klawisza Tab"
 
 #: ../gtksourceview/gtksourceview.c:400
 msgid "Draw Spaces"
-msgstr ""
+msgstr "Rysowanie spacji"
 
 #: ../gtksourceview/gtksourceview.c:401
 msgid "Set if and how the spaces should be visualized"
-msgstr ""
+msgstr "Określa, czy i jak powinny być wizualizowane znaki spacji"
 
 #: ../gtksourceview/gtksourceview-i18n.c:38
 msgid "translator-credits"
-msgstr "GNOME PL <gnome-l10n@lists.aviary.pl>"
+msgstr "Aviary.pl <gnomepl@aviary.pl>, 2008-2009"
 
 #: ../gtksourceview/language-specs/ada.lang.h:1
 msgid "Ada"
@@ -564,7 +547,7 @@ msgstr "Ada"
 
 #: ../gtksourceview/language-specs/ada.lang.h:2
 msgid "Arbitrary base number"
-msgstr "Dowolna liczba podstawy"
+msgstr "Określona liczba podstawy"
 
 #. A boolean constant: TRUE, false
 #: ../gtksourceview/language-specs/ada.lang.h:3
@@ -845,16 +828,12 @@ msgid "String"
 msgstr "Napis"
 
 #: ../gtksourceview/language-specs/asp.lang.h:1
-#, fuzzy
-#| msgid "GAP"
 msgid "ASP"
-msgstr "GAP"
+msgstr "ASP"
 
 #: ../gtksourceview/language-specs/asp.lang.h:2
-#, fuzzy
-#| msgid "Object"
 msgid "ASP Object"
-msgstr "Obiekt"
+msgstr "Obiekt ASP"
 
 #. A function name (also: methods for classes)
 #: ../gtksourceview/language-specs/asp.lang.h:6
@@ -902,10 +881,8 @@ msgid "Special constant"
 msgstr "Stała specjalna"
 
 #: ../gtksourceview/language-specs/asp.lang.h:14
-#, fuzzy
-#| msgid "Special constant"
 msgid "VBScript and ADO constants"
-msgstr "Stała specjalna"
+msgstr "Stałe VBScript i ADO"
 
 #: ../gtksourceview/language-specs/awk.lang.h:1
 #: ../gtksourceview/language-specs/boo.lang.h:3
@@ -1004,10 +981,8 @@ msgid "Special Variable"
 msgstr "Zmienna specjalna"
 
 #: ../gtksourceview/language-specs/changelog.lang.h:1
-#, fuzzy
-#| msgid "Builtin"
 msgid "Bullet"
-msgstr "Wbudowane"
+msgstr "Wypunktowanie"
 
 #: ../gtksourceview/language-specs/changelog.lang.h:2
 msgid "ChangeLog"
@@ -1020,21 +995,19 @@ msgstr "Data"
 
 #: ../gtksourceview/language-specs/changelog.lang.h:4
 msgid "E-mail address"
-msgstr ""
+msgstr "Adres e-mail"
 
 #: ../gtksourceview/language-specs/changelog.lang.h:5
 msgid "File"
-msgstr ""
+msgstr "Plik"
 
 #: ../gtksourceview/language-specs/changelog.lang.h:7
-#, fuzzy
-#| msgid "Namespace"
 msgid "Name"
-msgstr "Przestrzeń nazw"
+msgstr "Nazwa"
 
 #: ../gtksourceview/language-specs/changelog.lang.h:9
 msgid "Release"
-msgstr ""
+msgstr "Wydanie"
 
 #: ../gtksourceview/language-specs/chdr.lang.h:1
 msgid "C/C++/ObjC Header"
@@ -1129,22 +1102,16 @@ msgid "Classic color scheme"
 msgstr "Klasyczny schemat kolorów"
 
 #: ../gtksourceview/language-specs/cmake.lang.h:1
-#, fuzzy
-#| msgid "Builtin Constant"
 msgid "Builtin Command"
-msgstr "Stała wbudowana"
+msgstr "Wbudowane polecenie"
 
 #: ../gtksourceview/language-specs/cmake.lang.h:2
-#, fuzzy
-#| msgid "Special Variable"
 msgid "Builtin Variable"
-msgstr "Zmienna specjalna"
+msgstr "Wbudowana zmienna"
 
 #: ../gtksourceview/language-specs/cmake.lang.h:3
-#, fuzzy
-#| msgid "Makefile"
 msgid "CMake"
-msgstr "Makefile"
+msgstr "CMake"
 
 #. Any constant
 #: ../gtksourceview/language-specs/cmake.lang.h:4
@@ -1156,20 +1123,16 @@ msgid "Constant"
 msgstr "Stała"
 
 #: ../gtksourceview/language-specs/cmake.lang.h:5
-#, fuzzy
-#| msgid "Keyword"
 msgid "Control Keyword"
-msgstr "Słowo kluczowe"
+msgstr "Sterujące słowo kluczowe"
 
 #: ../gtksourceview/language-specs/cobalt.xml.h:1
-#, fuzzy
-#| msgid "Classic color scheme"
 msgid "Blue based color scheme"
-msgstr "Klasyczny schemat kolorów"
+msgstr "Niebieski schemat kolorów"
 
 #: ../gtksourceview/language-specs/cobalt.xml.h:2
 msgid "Cobalt"
-msgstr ""
+msgstr "Cobalt"
 
 #: ../gtksourceview/language-specs/cpp.lang.h:1
 msgid "C++"
@@ -1180,10 +1143,8 @@ msgid "C#"
 msgstr "C#"
 
 #: ../gtksourceview/language-specs/csharp.lang.h:16
-#, fuzzy
-#| msgid "String"
 msgid "String Format"
-msgstr "Napis"
+msgstr "Format napisu"
 
 #: ../gtksourceview/language-specs/css.lang.h:1
 msgid "CSS"
@@ -1424,10 +1385,8 @@ msgid "Command"
 msgstr "Polecenie"
 
 #: ../gtksourceview/language-specs/dosbatch.lang.h:3
-#, fuzzy
-#| msgid "DPatch"
 msgid "Dos Batch"
-msgstr "DPatch"
+msgstr "Plik wsadowy Dos"
 
 #: ../gtksourceview/language-specs/dot.lang.h:1
 #: ../gtksourceview/language-specs/xml.lang.h:1
@@ -1436,7 +1395,7 @@ msgstr "Nazwa atrybutu"
 
 #: ../gtksourceview/language-specs/dot.lang.h:4
 msgid "Graphviz Dot"
-msgstr ""
+msgstr "Graphviz Dot"
 
 #: ../gtksourceview/language-specs/dpatch.lang.h:1
 msgid "DPatch"
@@ -1453,23 +1412,21 @@ msgstr "DTD"
 
 #: ../gtksourceview/language-specs/dtd.lang.h:3
 msgid "decl"
-msgstr ""
+msgstr "deklaracja"
 
+#  msgid "Entity"
 #: ../gtksourceview/language-specs/dtd.lang.h:4
-#, fuzzy
-#| msgid "Entity"
 msgid "entity"
-msgstr "Encja"
+msgstr "encja"
 
+#  msgid "Error"
 #: ../gtksourceview/language-specs/dtd.lang.h:5
-#, fuzzy
-#| msgid "Error"
 msgid "error"
-msgstr "Błąd"
+msgstr "błąd"
 
 #: ../gtksourceview/language-specs/dtd.lang.h:6
 msgid "quoted-value"
-msgstr ""
+msgstr "quoted-value"
 
 #: ../gtksourceview/language-specs/eiffel.lang.h:1
 msgid "Assertion"
@@ -1536,8 +1493,6 @@ msgid "Debug Code"
 msgstr "Kod do debugowania"
 
 #: ../gtksourceview/language-specs/forth.lang.h:5
-#, fuzzy
-#| msgid "Error text"
 msgid "Error Text"
 msgstr "Tekst błędu"
 
@@ -1572,7 +1527,7 @@ msgstr "Naukowe"
 
 #: ../gtksourceview/language-specs/gtk-doc.lang.h:2
 msgid "Deprecated"
-msgstr ""
+msgstr "Zdezaktualizowane"
 
 #: ../gtksourceview/language-specs/gtk-doc.lang.h:4
 msgid "Function Name"
@@ -1825,35 +1780,33 @@ msgstr "Zastrzeżony identyfikator"
 
 #: ../gtksourceview/language-specs/m4.lang.h:1
 msgid "Autoconf Macro"
-msgstr ""
+msgstr "Makro autoconf"
 
 #: ../gtksourceview/language-specs/m4.lang.h:2
 msgid "Obsolete Autoconf Macro"
-msgstr ""
+msgstr "Nieaktualne makro autoconf"
 
 #: ../gtksourceview/language-specs/m4.lang.h:4
 msgid "m4"
 msgstr "m4"
 
+#  msgid "Macros"
 #: ../gtksourceview/language-specs/m4.lang.h:5
-#, fuzzy
-#| msgid "Macros"
 msgid "m4 Macro"
-msgstr "Makra"
+msgstr "Makro m4"
 
+#  msgid "Comment"
 #: ../gtksourceview/language-specs/m4.lang.h:6
-#, fuzzy
-#| msgid "Comment"
 msgid "m4-comment"
-msgstr "Komentarz"
+msgstr "komentarz m4"
 
 #: ../gtksourceview/language-specs/makefile.lang.h:1
 msgid "Assignment Left Hand Side"
-msgstr ""
+msgstr "Lewa strona przypisania"
 
 #: ../gtksourceview/language-specs/makefile.lang.h:2
 msgid "Assignment Right Hand Side"
-msgstr ""
+msgstr "Prawa strona przypisania"
 
 #: ../gtksourceview/language-specs/makefile.lang.h:3
 msgid "Makefile"
@@ -1863,19 +1816,17 @@ msgstr "Makefile"
 #. the end of the line
 #: ../gtksourceview/language-specs/makefile.lang.h:7
 msgid "Trailing Tab"
-msgstr ""
+msgstr "Końcowe znaki tabulacji"
 
+#  msgid "Command"
 #: ../gtksourceview/language-specs/makefile.lang.h:9
-#, fuzzy
-#| msgid "Command"
 msgid "command"
-msgstr "Polecenie"
+msgstr "polecenie"
 
+#  msgid "Function"
 #: ../gtksourceview/language-specs/makefile.lang.h:10
-#, fuzzy
-#| msgid "Function"
 msgid "function"
-msgstr "Funkcja"
+msgstr "funkcja"
 
 #. FIXME make it better names, and make them translatable
 #: ../gtksourceview/language-specs/makefile.lang.h:11
@@ -1885,11 +1836,11 @@ msgstr "słowo kluczowe"
 
 #: ../gtksourceview/language-specs/makefile.lang.h:12
 msgid "prereq"
-msgstr ""
+msgstr "warunek wstępny"
 
 #: ../gtksourceview/language-specs/makefile.lang.h:13
 msgid "targets"
-msgstr ""
+msgstr "cele"
 
 #: ../gtksourceview/language-specs/msil.lang.h:1
 msgid "MSIL"
@@ -1901,7 +1852,7 @@ msgstr "Nemerle"
 
 #: ../gtksourceview/language-specs/nsis.lang.h:2
 msgid "NSIS"
-msgstr ""
+msgstr "NSIS"
 
 #: ../gtksourceview/language-specs/objc.lang.h:4
 msgid "Objective-C"
@@ -2046,14 +1997,12 @@ msgstr "pkg-config"
 
 #: ../gtksourceview/language-specs/po.lang.h:2
 msgid "Fuzzy"
-msgstr ""
+msgstr "Fuzzy"
 
 #. FIXME make it some nice name and mark it translatable
 #: ../gtksourceview/language-specs/po.lang.h:7
-#, fuzzy
-#| msgid "Special case"
 msgid "Special"
-msgstr "Przypadek specjalny"
+msgstr "Specjalne"
 
 #: ../gtksourceview/language-specs/po.lang.h:9
 msgid "gettext translation"
@@ -2207,56 +2156,40 @@ msgid "SQL"
 msgstr "SQL"
 
 #: ../gtksourceview/language-specs/t2t.lang.h:7
-#, fuzzy
-#| msgid "Section"
 msgid "Option"
-msgstr "Sekcja"
+msgstr "Opcja"
 
 #: ../gtksourceview/language-specs/t2t.lang.h:8
-#, fuzzy
-#| msgid "Function Name"
 msgid "Option Name"
-msgstr "Nazwa funkcji"
+msgstr "Nazwa opcji"
 
 #: ../gtksourceview/language-specs/t2t.lang.h:10
-#, fuzzy
-#| msgid "Section"
 msgid "Section 1"
-msgstr "Sekcja"
+msgstr "Sekcja 1"
 
 #: ../gtksourceview/language-specs/t2t.lang.h:11
-#, fuzzy
-#| msgid "Section"
 msgid "Section 2"
-msgstr "Sekcja"
+msgstr "Sekcja 2"
 
 #: ../gtksourceview/language-specs/t2t.lang.h:12
-#, fuzzy
-#| msgid "Section"
 msgid "Section 3"
-msgstr "Sekcja"
+msgstr "Sekcja 3"
 
 #: ../gtksourceview/language-specs/t2t.lang.h:13
-#, fuzzy
-#| msgid "Section"
 msgid "Section 4"
-msgstr "Sekcja"
+msgstr "Sekcja 4"
 
 #: ../gtksourceview/language-specs/t2t.lang.h:14
-#, fuzzy
-#| msgid "Section"
 msgid "Section 5"
-msgstr "Sekcja"
+msgstr "Sekcja 5"
 
 #: ../gtksourceview/language-specs/t2t.lang.h:15
 msgid "Text2Tags"
-msgstr ""
+msgstr "Text2Tags"
 
 #: ../gtksourceview/language-specs/t2t.lang.h:17
-#, fuzzy
-#| msgid "Verbatim"
 msgid "Verbatim Block"
-msgstr "Verbatim"
+msgstr "Blok bezpośredni"
 
 #: ../gtksourceview/language-specs/tango.xml.h:1
 msgid "Color scheme using Tango color palette"
@@ -2288,7 +2221,7 @@ msgstr "Texinfo"
 
 #: ../gtksourceview/language-specs/vala.lang.h:12
 msgid "Vala"
-msgstr ""
+msgstr "Vala"
 
 #: ../gtksourceview/language-specs/vbnet.lang.h:9
 msgid "VB.NET"
@@ -2334,35 +2267,32 @@ msgstr "Instrukcja przetwarzania"
 msgid "XML"
 msgstr "XML"
 
+#  msgid "GUI Elements"
 #: ../gtksourceview/language-specs/xslt.lang.h:1
-#, fuzzy
-#| msgid "GUI Elements"
 msgid "Element"
-msgstr "Elementy GUI"
+msgstr "Element"
 
 #: ../gtksourceview/language-specs/xslt.lang.h:4
 msgid "XSLT"
-msgstr ""
+msgstr "XSLT"
 
 #: ../gtksourceview/language-specs/yacc.lang.h:2
 msgid "Yacc"
 msgstr "Yacc"
 
+#  msgid "at-rules"
 #: ../gtksourceview/language-specs/yacc.lang.h:5
-#, fuzzy
-#| msgid "at-rules"
 msgid "rule"
-msgstr "Reguły at"
+msgstr "reguła"
 
 #: ../gtksourceview/language-specs/yacc.lang.h:6
 msgid "token-type"
-msgstr ""
+msgstr "token-type"
 
 #~ msgid "Compiler opt"
 #~ msgstr "Opcja kompilatora"
-
 #~ msgid "Inline C Code"
 #~ msgstr "Blok kodu w C"
-
 #~ msgid "grammar"
 #~ msgstr "gramatyka"
+
