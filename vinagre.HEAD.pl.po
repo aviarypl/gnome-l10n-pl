@@ -13,8 +13,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: vinagre\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2009-02-14 15:45+0100\n"
-"PO-Revision-Date: 2009-02-14 15:55+0100\n"
+"POT-Creation-Date: 2009-02-26 14:07+0100\n"
+"PO-Revision-Date: 2009-02-26 14:08+0100\n"
 "Last-Translator: Tomasz Dominikowski <dominikowski@gmail.com>\n"
 "Language-Team: Aviary.pl <gnomepl@aviary.pl>\n"
 "MIME-Version: 1.0\n"
@@ -79,74 +79,85 @@ msgstr "<b>Katalog nadrzędny</b>"
 msgid "<b>Which machine do you want to connect to?</b>"
 msgstr "<b>Z którym komputerem się połączyć?</b>"
 
+# td
 #: ../data/vinagre.glade.h:9
+msgid "<i><small>All fields above are mandatory</small></i>"
+msgstr "<i><small>Wszystkie powyższe pola są obowiązkowe</small></i>"
+
+#: ../data/vinagre.glade.h:10
 #: ../src/vinagre-fav.c:846
 msgid "Bookmarks"
 msgstr "Zakładki"
 
-#: ../data/vinagre.glade.h:10
+#: ../data/vinagre.glade.h:11
 #: ../src/vinagre-fav.c:422
-#: ../src/vinagre-tab.c:999
+#: ../src/vinagre-tab.c:1062
 msgid "Host:"
 msgstr "Komputer:"
 
-#: ../data/vinagre.glade.h:11
+#: ../data/vinagre.glade.h:12
 msgid "Preferences"
 msgstr "Preferencje"
 
-#: ../data/vinagre.glade.h:12
+#: ../data/vinagre.glade.h:13
 #: ../data/vinagre.schemas.in.h:8
 msgid "Whether we should show tabs even when there is only one active connection"
 msgstr "Określa, czy wyświetlać karty nawet w przypadku tylko jednego aktywnego połączenia"
 
-#: ../data/vinagre.glade.h:13
+#: ../data/vinagre.glade.h:14
 #: ../data/vinagre.schemas.in.h:9
 msgid "Whether we should show the menu accelerators (shortcut keys)"
 msgstr "Określa, czy wyświetlać skróty klawiszowe w menu"
 
-#: ../data/vinagre.glade.h:14
+#: ../data/vinagre.glade.h:15
 msgid "_Always show tabs"
 msgstr "_Stałe wyświetlanie kart"
 
-#: ../data/vinagre.glade.h:15
+# td
+#. This is a button label, in the authentication dialog
+#: ../data/vinagre.glade.h:17
+msgid "_Authenticate"
+msgstr "_Uwierzytelnij"
+
+#: ../data/vinagre.glade.h:18
 msgid "_Full screen"
 msgstr "_Pełny ekran"
 
-#: ../data/vinagre.glade.h:16
+#: ../data/vinagre.glade.h:19
 msgid "_Host:"
 msgstr "_Komputer:"
 
-#: ../data/vinagre.glade.h:17
+#: ../data/vinagre.glade.h:20
 msgid "_Name:"
 msgstr "_Nazwa:"
 
-#: ../data/vinagre.glade.h:18
+#: ../data/vinagre.glade.h:21
 msgid "_Password:"
 msgstr "_Hasło:"
 
 # REV: credentials to nie uprawnienia, a dane logowania
-#: ../data/vinagre.glade.h:19
+#: ../data/vinagre.glade.h:22
 msgid "_Remember this credential"
 msgstr "_Zapamiętanie uprawnień"
 
-#: ../data/vinagre.glade.h:20
+#: ../data/vinagre.glade.h:23
 msgid "_Scaling"
 msgstr "_Skalowanie"
 
-#: ../data/vinagre.glade.h:21
+#: ../data/vinagre.glade.h:24
 msgid "_Show menu shortcuts"
 msgstr "_Wyświetlanie skrótów menu"
 
-#: ../data/vinagre.glade.h:22
+#: ../data/vinagre.glade.h:25
 msgid "_Username:"
 msgstr "_Nazwa użytkownika:"
 
-#: ../data/vinagre.glade.h:23
+#: ../data/vinagre.glade.h:26
 msgid "_View only"
 msgstr "_Tylko podgląd"
 
 #. Tooltip for host entry in connect dialog
-#: ../data/vinagre.glade.h:25
+#: ../data/vinagre.glade.h:28
 msgid "host or host:display or host::port"
 msgstr "komputer lub komputer:ekran lub komputer::port"
 
@@ -216,7 +227,7 @@ msgstr "Błąd podczas inicjowania zakładek: %s"
 #: ../src/vinagre-bookmarks.c:459
 #: ../src/vinagre-bookmarks-migration.c:133
 #: ../src/vinagre-commands.c:145
-#: ../src/vinagre-connect.c:275
+#: ../src/vinagre-connect.c:277
 #: ../src/vinagre-fav.c:678
 #: ../src/vinagre-main.c:85
 #: ../src/vinagre-main.c:104
@@ -331,7 +342,7 @@ msgid "Choose the file"
 msgstr "Wybór pliku"
 
 #: ../src/vinagre-commands.c:124
-#: ../src/vinagre-tab.c:1089
+#: ../src/vinagre-tab.c:1152
 msgid "Supported formats"
 msgstr "Obsługiwane formaty"
 
@@ -342,34 +353,34 @@ msgstr[0] "Następujący plik nie mógł zostać otwarty:"
 msgstr[1] "Następujące pliki nie mogły zostać otwarte:"
 msgstr[2] "Następujące pliki nie mogły zostać otwarte:"
 
-#: ../src/vinagre-connect.c:179
+#: ../src/vinagre-connect.c:181
 #, c-format
 msgid "Error while saving history file: %s"
 msgstr "Błąd podczas zapisywania pliku historii: %s"
 
-#: ../src/vinagre-connect.c:191
+#: ../src/vinagre-connect.c:193
 msgid "Choose a VNC Server"
 msgstr "Proszę wybrać serwer VNC"
 
-#: ../src/vinagre-connection.c:600
+#: ../src/vinagre-connection.c:601
 #, c-format
 msgid "The protocol %s is not supported."
 msgstr "Protokół %s nie jest obsługiwany."
 
-#: ../src/vinagre-connection.c:695
+#: ../src/vinagre-connection.c:708
 msgid "Could not open the file."
 msgstr "Nie można otworzyć pliku."
 
-#: ../src/vinagre-connection.c:714
+#: ../src/vinagre-connection.c:727
 msgid "Could not parse the file."
 msgstr "Nie można przetworzyć pliku."
 
-#: ../src/vinagre-connection.c:759
+#: ../src/vinagre-connection.c:772
 #, c-format
 msgid "Bad value for 'shared' flag: %d. It is supposed to be 0 or 1. Ignoring it."
 msgstr "Błędna wartość dla flagi \"shared\": %d. Powinna być 0 lub 1. Ignorowanie."
 
-#: ../src/vinagre-connection.c:765
+#: ../src/vinagre-connection.c:778
 msgid "Could not find the host address in the file."
 msgstr "Nie można odnaleźć adresu hosta w pliku."
 
@@ -442,7 +453,7 @@ msgid "Connecting..."
 msgstr "Łączenie..."
 
 #: ../src/vinagre-notebook.c:221
-#: ../src/vinagre-tab.c:815
+#: ../src/vinagre-tab.c:878
 msgid "Close connection"
 msgstr "Zamknij połączenie"
 
@@ -472,67 +483,83 @@ msgstr "Metoda uwierzytelniania w komputerze <i>%s</i> jest nieobsługiwana. (%u
 msgid "Authentication unsupported"
 msgstr "Metoda uwierzytelniania jest nieobsługiwana"
 
-#: ../src/vinagre-tab.c:464
+#: ../src/vinagre-tab.c:460
 msgid "Error saving recent connection."
 msgstr "Błąd podczas zapisywania ostatniego połączenia."
 
-#: ../src/vinagre-tab.c:496
+#: ../src/vinagre-tab.c:492
 msgid "Error saving the credential on the keyring."
 msgstr "Błąd podczas zapisywania uwierzytelnień w bazie kluczy."
 
-#: ../src/vinagre-tab.c:828
+# td
+#: ../src/vinagre-tab.c:747
+#: ../src/vinagre-tab.c:764
+msgid "Authentication error"
+msgstr "Błąd uwierzytelniania"
+
+# td
+#: ../src/vinagre-tab.c:748
+msgid "A username is required in order to access this machine."
+msgstr "Nazwa użytkownika jest wymagana, aby uzyskać dostęp do tego komputera."
+
+# td
+#: ../src/vinagre-tab.c:765
+msgid "A password is required in order to access this machine."
+msgstr "Hasło jest wymagane, aby uzyskać dostęp do tego komputera."
+
+#: ../src/vinagre-tab.c:891
 msgid "Minimize window"
 msgstr "Minimalizuje okno"
 
-#: ../src/vinagre-tab.c:843
-#: ../src/vinagre-tab.c:844
+#: ../src/vinagre-tab.c:906
+#: ../src/vinagre-tab.c:907
 msgid "Scaling"
 msgstr "Skalowanie"
 
-#: ../src/vinagre-tab.c:853
-#: ../src/vinagre-tab.c:854
+#: ../src/vinagre-tab.c:916
+#: ../src/vinagre-tab.c:917
 msgid "Read only"
 msgstr "Tylko do odczytu"
 
 #. Machine menu
-#: ../src/vinagre-tab.c:864
-#: ../src/vinagre-tab.c:865
+#: ../src/vinagre-tab.c:927
+#: ../src/vinagre-tab.c:928
 #: ../src/vinagre-ui.h:85
 msgid "Take screenshot"
 msgstr "Pobierz zrzut ekranu"
 
-#: ../src/vinagre-tab.c:873
-#: ../src/vinagre-tab.c:874
+#: ../src/vinagre-tab.c:936
+#: ../src/vinagre-tab.c:937
 #: ../src/vinagre-ui.h:88
 msgid "Send Ctrl-Alt-Del"
 msgstr "Wyślij Ctrl-Alt-Del"
 
-#: ../src/vinagre-tab.c:998
+#: ../src/vinagre-tab.c:1061
 msgid "Desktop Name:"
 msgstr "Nazwa pulpitu:"
 
-#: ../src/vinagre-tab.c:1000
+#: ../src/vinagre-tab.c:1063
 msgid "Port:"
 msgstr "Port:"
 
-#: ../src/vinagre-tab.c:1001
+#: ../src/vinagre-tab.c:1064
 msgid "Dimensions:"
 msgstr "Wymiary:"
 
-#: ../src/vinagre-tab.c:1067
+#: ../src/vinagre-tab.c:1130
 msgid "Could not get a screenshot of the connection."
 msgstr "Nie udało się uzyskać zrzutu ekranu połączenia."
 
-#: ../src/vinagre-tab.c:1075
+#: ../src/vinagre-tab.c:1138
 #, c-format
 msgid "Screenshot of %s"
 msgstr "Zrzut ekranu %s"
 
-#: ../src/vinagre-tab.c:1078
+#: ../src/vinagre-tab.c:1141
 msgid "Save Screenshot"
 msgstr "Zapisz zrzut ekranu"
 
-#: ../src/vinagre-tab.c:1142
+#: ../src/vinagre-tab.c:1205
 msgid ""
 "Scaling is not supported on this installation.\n"
 "\n"
