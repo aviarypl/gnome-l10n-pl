@@ -14,8 +14,8 @@ msgstr ""
 "Project-Id-Version: ekiga\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2009-02-26 14:22+0100\n"
-"PO-Revision-Date: 2009-02-26 23:35+0100\n"
-"Last-Translator: wadim dziedzic <wdziedzic@aviary,pl>\n"
+"PO-Revision-Date: 2009-03-01 19:32+0100\n"
+"Last-Translator: Tomasz Dominikowski <dominikowski@gmail.com>\n"
 "Language-Team: Aviary.pl <gnomepl@aviary.pl>\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -53,10 +53,9 @@ msgstr "Programowe skalowanie obrazu-w-obrazie"
 msgid "Alternative audio output device"
 msgstr "Alternatywne urządzenie wyjścia dźwięku"
 
-# REV: wszędzie indziej mamy call=połączenie
 #: ../ekiga.schemas.in.in.h:5
 msgid "Always forward calls to the given host"
-msgstr "Stałe przekazywanie wywołań do podanego komputera"
+msgstr "Stałe przekazywanie połączeń do podanego komputera"
 
 #: ../ekiga.schemas.in.in.h:6
 msgid "Audio input device"
@@ -137,20 +136,17 @@ msgstr "Proszę wprowadzić liczbę sekund po których program Ekiga spróbuje o
 msgid "Enter your full name"
 msgstr "Proszę wprowadzić imię i nazwisko"
 
-# REV: wszędzie indziej mamy call=połączenie
 #: ../ekiga.schemas.in.in.h:25
 msgid "Forward calls to host"
-msgstr "Przekazywanie rozmów do komputera"
+msgstr "Przekazywanie połączeń do komputera"
 
-# REV: wszędzie indziej mamy call=połączenie
 #: ../ekiga.schemas.in.in.h:26
 msgid "Forward calls to the given host if busy"
-msgstr "Przekazywanie rozmów do podanego komputera w przypadku zajętości"
+msgstr "Przekazywanie połączeń do podanego komputera w przypadku zajętości"
 
-# REV: wszędzie indziej mamy call=połączenie
 #: ../ekiga.schemas.in.in.h:27
 msgid "Forward calls to the given host if no answer"
-msgstr "Przekazywanie rozmów do podanego komputera w przypadku braku odpowiedzi"
+msgstr "Przekazywanie połączeń do podanego komputera w przypadku braku odpowiedzi"
 
 #: ../ekiga.schemas.in.in.h:28
 #: ../src/gui/preferences.cpp:1018
@@ -883,10 +879,9 @@ msgstr "_Zakres wyszukiwania"
 msgid "_DisplayName Attribute"
 msgstr "Atrybut \"_Nazwa wyświetlana\""
 
-# REV: wszędzie indziej mamy call=połączenie
 #: ../lib/engine/components/ldap/ldap-book.cpp:953
 msgid "Call _Attributes"
-msgstr "_Atrybuty dzwonienia"
+msgstr "_Atrybuty połączenia"
 
 #: ../lib/engine/components/ldap/ldap-book.cpp:955
 #: ../lib/engine/components/ldap/ldap-book.cpp:957
@@ -929,10 +924,9 @@ msgstr "Proszę wprowadzić adres URI serwera\n"
 msgid "Please provide a DisplayName Attribute\n"
 msgstr "Proszę wprowadzić atrybut \"Nazwa wyświetlana\"\n"
 
-# REV: wszędzie indziej mamy call=połączenie
 #: ../lib/engine/components/ldap/ldap-book.cpp:1025
 msgid "Please provide a Call Attribute\n"
-msgstr "Proszę wprowadzić atrybut dzwonienia\n"
+msgstr "Proszę wprowadzić atrybut połączenia\n"
 
 #: ../lib/engine/components/ldap/ldap-book.cpp:1028
 msgid "Invalid Server URI\n"
@@ -1509,17 +1503,15 @@ msgstr "Połączenie przychodzące od %s"
 msgid "Incoming call"
 msgstr "Połączenie przychodzące"
 
-# REV: wszędzie indziej mamy call=połączenie
 #: ../lib/engine/components/opal/sip-endpoint.cpp:1142
 #, c-format
 msgid "In a call with %s"
-msgstr "W trakcie rozmowy z %s"
+msgstr "W trakcie połączenia z %s"
 
-# REV: wszędzie indziej mamy call=połączenie
 #: ../lib/engine/components/opal/sip-endpoint.cpp:1144
 #, c-format
 msgid "In a call"
-msgstr "W trakcie rozmowy"
+msgstr "W trakcie połączenia"
 
 #: ../lib/engine/components/resource-list/rl-cluster.cpp:102
 msgid "New resource list"
@@ -1768,7 +1760,6 @@ msgstr ""
 "\n"
 "Po zakończeniu pracy asystenta opcje można w każdej chwili zmienić wybierając Preferencje w menu Edycja."
 
-# td
 #: ../src/gui/assistant.cpp:331
 msgid "Welcome to Ekiga"
 msgstr "Witamy w programie Ekiga"
@@ -2095,16 +2086,14 @@ msgstr "Oczekiwanie"
 msgid "Call on hold"
 msgstr "Połączenie wstrzymane"
 
-# REV: wszędzie indziej mamy call=połączenie
 #: ../src/gui/main.cpp:763
 msgid "Call retrieved"
-msgstr "Romowa odebrana"
+msgstr "Połączenie odebrane"
 
-# REV: wszędzie indziej mamy call=połączenie
 #: ../src/gui/main.cpp:779
 #, c-format
 msgid "Missed call from %s"
-msgstr "Nieodebrana rozmowa od %s"
+msgstr "Nieodebrane połączenie od %s"
 
 #: ../src/gui/main.cpp:916
 msgid "Error"
@@ -2114,10 +2103,9 @@ msgstr "Błąd"
 msgid "Error while initializing video output"
 msgstr "Błąd podczas inicjowania wyjścia obrazu"
 
-# REV: wszędzie indziej mamy call=połączenie
 #: ../src/gui/main.cpp:982
 msgid "No video will be displayed during this call->"
-msgstr "Podczas tej rozmowy obraz nie będzie wyświetlany->"
+msgstr "Podczas tego połączenia obraz nie będzie wyświetlany->"
 
 #: ../src/gui/main.cpp:992
 msgid "There was an error opening or initializing the video output. Please verify that no other application is using the accelerated video output."
@@ -2205,12 +2193,9 @@ msgstr "Błąd podczas otwierania wejściowego urządzenia dźwiękowego %s"
 msgid "Only silence will be transmitted."
 msgstr "Zostanie przesłana tylko cisza."
 
-# REV: # (pofilter) variables: translation contains variables not in original: %s
-# REV: # (pofilter) printf: checks whether printf format strings match
-# REV: # (pofilter) brackets: translation has extra '(', ')'
 #: ../src/gui/main.cpp:1261
 msgid "Unable to open the selected audio device for recording. In case it is a pluggable device it may be sufficient to reconnect it. If not, or if it still is not accessible, please check your audio setup, the permissions and that the device is not busy."
-msgstr "Nie można otworzyć wybranego urządzenia dźwiękowego (%s) do rejestrowania. Jeśli jest to zewnętrzne urządzenie możliwym rozwiązaniem jest odłączenie i ponowne podłączenie urządzenia. Jeśli nie jest lub nadal jest niedostępne, to proszę sprawdzić ustawienia dźwięku, uprawnienia oraz czy urządzenie nie jest zajęte."
+msgstr "Nie można otworzyć wybranego urządzenia dźwiękowego do rejestrowania. Jeśli jest to zewnętrzne urządzenie możliwym rozwiązaniem jest odłączenie i ponowne podłączenie urządzenia. Jeśli nie jest lub nadal jest niedostępne, to proszę sprawdzić ustawienia dźwięku, uprawnienia oraz czy urządzenie nie jest zajęte."
 
 #: ../src/gui/main.cpp:1265
 msgid "The selected audio device was successfully opened but it is impossible to read data from this device. In case it is a pluggable device it may be sufficient to reconnect it. If not, or if it still is not accessible, please check your audio setup."
@@ -2328,10 +2313,9 @@ msgstr "Połączenie z %s"
 msgid "Call Duration: %s\n"
 msgstr "Czas trwania połączenia: %s\n"
 
-# REV: wszędzie indziej mamy call=połączenie
 #: ../src/gui/main.cpp:2945
 msgid "Transfer call to:"
-msgstr "Przeniesienie wywołania do:"
+msgstr "Przeniesienie połączenia do:"
 
 #: ../src/gui/main.cpp:2997
 msgid "No"
@@ -2480,10 +2464,9 @@ msgstr "_Historia połączeń"
 msgid "View the call history"
 msgstr "Wyświetla historię połączeń"
 
-# REV: wszędzie indziej mamy call=połączenie
 #: ../src/gui/main.cpp:3214
 msgid "_Show Call Panel"
-msgstr "Panel _dzwonienia"
+msgstr "_Panel połączeń"
 
 #: ../src/gui/main.cpp:3222
 msgid "_Local Video"
@@ -2544,10 +2527,9 @@ msgstr "Zasięgnij pomocy czytając podręcznik programu Ekiga"
 msgid "View information about Ekiga"
 msgstr "Wyświetla informacje o programie Ekiga"
 
-# REV: następnie _należy_ ;-)
 #: ../src/gui/main.cpp:3347
 msgid "Enter a URI on the left, and click this button to place a call or to hangup"
-msgstr "Po lewej stronie należy wprowadzić adres URI. Następnie nacisnąć ten przycisk, aby nawiązać połączenie lub się rozłączyć"
+msgstr "Po lewej stronie należy wprowadzić adres URI. Następnie należy nacisnąć ten przycisk, aby nawiązać połączenie lub się rozłączyć"
 
 #: ../src/gui/main.cpp:3398
 msgid "Contacts"
@@ -2612,10 +2594,9 @@ msgstr "Wypisuje komunikaty diagnostyczne w konsoli (poziom od 1 do 6)"
 msgid "Prints user plane debug messages in the console (level between 1 and 4)"
 msgstr "Wypisuje komunikaty diagnostyczne w konsoli (poziom od 1 do 6)"
 
-# REV: wszędzie indziej mamy call=połączenie
 #: ../src/gui/main.cpp:4415
 msgid "Makes Ekiga call the given URI"
-msgstr "Powoduje wywołanie przez program Ekiga podanego adresu URI"
+msgstr "Powoduje wykonanie połączenia przez program Ekiga z podanym adresem URI"
 
 #: ../src/gui/main.cpp:4524
 msgid "No usable audio plugin detected"
@@ -2894,10 +2875,9 @@ msgstr "Automatyczne usuwanie _echa"
 msgid "If enabled, use echo cancelation."
 msgstr "Określa, czy włączone jest automatyczne usuwanie echa."
 
-# REV: # (pofilter) accelerators: accelerator _ is missing from translation
 #: ../src/gui/preferences.cpp:984
 msgid "Maximum _jitter buffer (in ms):"
-msgstr "Maksymalny rozmiar bufora synchronizacji (w ms):"
+msgstr "_Maksymalny rozmiar bufora synchronizacji (w ms):"
 
 #: ../src/gui/preferences.cpp:984
 msgid "The maximum jitter buffer size for audio reception (in ms)."

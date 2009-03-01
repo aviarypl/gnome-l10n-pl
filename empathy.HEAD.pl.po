@@ -11,8 +11,8 @@ msgstr ""
 "Project-Id-Version: empathy\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2009-02-26 14:21+0100\n"
-"PO-Revision-Date: 2009-02-26 23:19+0100\n"
-"Last-Translator: wadim dziedzic <wdziedzic@aviary,pl>\n"
+"PO-Revision-Date: 2009-03-01 19:25+0100\n"
+"Last-Translator: Tomasz Dominikowski <dominikowski@gmail.com>\n"
 "Language-Team: Aviary.pl <gnomepl@aviary.pl>\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -74,11 +74,9 @@ msgstr "Domyślny katalog pobierania programu Empathy"
 msgid "Empathy has asked about importing accounts"
 msgstr "Program Empathy zapytał o importowanie kont"
 
-# REV: przy > podczas
-# REV: # (pofilter) endwhitespace: checks whether whitespace at the end of the strings matches
 #: ../data/empathy.schemas.in.h:12
 msgid "Empathy should auto-connect on startup"
-msgstr "Automatycznie połączenie przy uruchomieniu programu"
+msgstr "Automatycznie połączenie podczas uruchamiania programu"
 
 #: ../data/empathy.schemas.in.h:13
 msgid "Empathy should use the avatar of the contact as the chat window icon"
@@ -124,10 +122,9 @@ msgstr "Odtworzenie dźwięku dla nowych rozmów"
 msgid "Play a sound for outgoing messages"
 msgstr "Odtworzenie dźwięku przy wychodzącej wiadomości"
 
-# REV: ujednolicił bym ten i 3 poniższe
 #: ../data/empathy.schemas.in.h:24
 msgid "Play a sound when a contact logs in"
-msgstr "Odtworzenie dźwięku podczas zalogowania kontaktu"
+msgstr "Odtworzenie dźwięku, gdy kontakt się zaloguje"
 
 #: ../data/empathy.schemas.in.h:25
 msgid "Play a sound when a contact logs out"
@@ -135,20 +132,19 @@ msgstr "Odtworzenie dźwięku, gdy kontakt się wyloguje"
 
 #: ../data/empathy.schemas.in.h:26
 msgid "Play a sound when we log in"
-msgstr "Odtworzenie dźwięku po zalogowaniu użytkownika"
+msgstr "Odtworzenie dźwięku, gdy użytkownik się zaloguje"
 
 #: ../data/empathy.schemas.in.h:27
 msgid "Play a sound when we log out"
-msgstr "Odtworzenie dźwięku po wylogowaniu użytkownika"
+msgstr "Odtworzenie dźwięku, gdy użytkownik się wyloguje"
 
 #: ../data/empathy.schemas.in.h:28
 msgid "Popup notifications if the chat isn't focused"
 msgstr "Wyskakujące powiadomienie, jeśli okno rozmowy nie jest oknem aktywnym"
 
-# REV: jak w en jest zdanie to i u nas zróbmy zdanie - "zostało utworzone"
 #: ../data/empathy.schemas.in.h:29
 msgid "Salut account is created"
-msgstr "Konto Salut utworzone"
+msgstr "Konto Salut zostało utworzone"
 
 #: ../data/empathy.schemas.in.h:30
 msgid "Show avatars"
@@ -250,7 +246,6 @@ msgstr "Określa, czy odtwarzać dźwięk powiadamiający o zalogowaniu do sieci
 msgid "Whether or not to play a sound when logging off a network."
 msgstr "Określa, czy odtwarzać dźwięk powiadamiający o wylogowaniu z sieci."
 
-# td
 #: ../data/empathy.schemas.in.h:55
 msgid "Whether or not to play sound notifications when away or busy."
 msgstr "Określa, czy odtwarzać dźwięki powiadamiania podczas stanu nieobecności lub zajętości."
@@ -358,10 +353,9 @@ msgstr "Usunięcie hasła i wyczyszczenie pola."
 msgid "Pass_word:"
 msgstr "_Hasło:"
 
-# REV: nie czasem nazwa użytkownika?
 #: ../libempathy-gtk/empathy-account-widget-aim.glade.h:4
 msgid "Screen _Name:"
-msgstr "_Nazwa:"
+msgstr "_Nazwa użytkownika:"
 
 #: ../libempathy-gtk/empathy-account-widget-aim.glade.h:5
 #: ../libempathy-gtk/empathy-account-widget-groupwise.glade.h:5
@@ -527,21 +521,18 @@ msgstr "I_D Yahoo:"
 msgid "_Ignore conference and chatroom invitations"
 msgstr "_Ignorowanie zaproszeń konferencyjnych i pokoi rozmów"
 
-# REV: nie dałoby się accesskeya wcześniej i na literce bez nóżki dać?
 #: ../libempathy-gtk/empathy-account-widget-yahoo.glade.h:9
 msgid "_Room List locale:"
-msgstr "Ustawienia językowe listy _pokoi:"
+msgstr "_Ustawienia językowe listy pokoi:"
 
-# REV: Nie można przekonwertować...?
 #: ../libempathy-gtk/empathy-avatar-chooser.c:462
 #: ../libempathy-gtk/empathy-avatar-chooser.c:537
 msgid "Couldn't convert image"
-msgstr "Nie udało się skonwertować obrazu"
+msgstr "Nie można przekonwertować obrazu"
 
-# REV: (pofilter) startcaps: checks that the message starts with the correct capitalisation
 #: ../libempathy-gtk/empathy-avatar-chooser.c:463
 msgid "None of the accepted image formats is supported on your system"
-msgstr "żaden z akceptowanych formatów obrazu nie jest obsługiwany przez ten system"
+msgstr "Żaden z akceptowanych formatów obrazu nie jest obsługiwany przez ten system"
 
 #: ../libempathy-gtk/empathy-avatar-chooser.c:956
 msgid "Select Your Avatar Image"
@@ -655,7 +646,6 @@ msgstr "S_kopiuj adres odnośnika"
 msgid "_Open Link"
 msgstr "_Otwórz odnośnik"
 
-# td
 #. Translators: timestamp displayed between conversations in
 #. * chat windows (strftime format string)
 #: ../libempathy-gtk/empathy-chat-text-view.c:441
@@ -1016,51 +1006,50 @@ msgstr "Rozmowa głosowa zakończona"
 msgid "Current Locale"
 msgstr "Bieżące ustawienia językowe"
 
-# REV: przymiotniki > z małej litery (i dalej tak samo)
 #: ../libempathy-gtk/totem-subtitle-encoding.c:161
 #: ../libempathy-gtk/totem-subtitle-encoding.c:163
 #: ../libempathy-gtk/totem-subtitle-encoding.c:165
 #: ../libempathy-gtk/totem-subtitle-encoding.c:167
 msgid "Arabic"
-msgstr "Arabski"
+msgstr "arabski"
 
 #: ../libempathy-gtk/totem-subtitle-encoding.c:170
 msgid "Armenian"
-msgstr "Armeński"
+msgstr "armeński"
 
 #: ../libempathy-gtk/totem-subtitle-encoding.c:173
 #: ../libempathy-gtk/totem-subtitle-encoding.c:175
 #: ../libempathy-gtk/totem-subtitle-encoding.c:177
 msgid "Baltic"
-msgstr "Bałtycki"
+msgstr "bałtycki"
 
 #: ../libempathy-gtk/totem-subtitle-encoding.c:180
 msgid "Celtic"
-msgstr "Celtycki"
+msgstr "celtycki"
 
 #: ../libempathy-gtk/totem-subtitle-encoding.c:183
 #: ../libempathy-gtk/totem-subtitle-encoding.c:185
 #: ../libempathy-gtk/totem-subtitle-encoding.c:187
 #: ../libempathy-gtk/totem-subtitle-encoding.c:189
 msgid "Central European"
-msgstr "Środkowoeuropejski"
+msgstr "środkowoeuropejski"
 
 #: ../libempathy-gtk/totem-subtitle-encoding.c:192
 #: ../libempathy-gtk/totem-subtitle-encoding.c:194
 #: ../libempathy-gtk/totem-subtitle-encoding.c:196
 #: ../libempathy-gtk/totem-subtitle-encoding.c:198
 msgid "Chinese Simplified"
-msgstr "Chiński uproszczony"
+msgstr "chiński uproszczony"
 
 #: ../libempathy-gtk/totem-subtitle-encoding.c:201
 #: ../libempathy-gtk/totem-subtitle-encoding.c:203
 #: ../libempathy-gtk/totem-subtitle-encoding.c:205
 msgid "Chinese Traditional"
-msgstr "Chiński tradycyjny"
+msgstr "chiński tradycyjny"
 
 #: ../libempathy-gtk/totem-subtitle-encoding.c:208
 msgid "Croatian"
-msgstr "Chorwacki"
+msgstr "chorwacki"
 
 #: ../libempathy-gtk/totem-subtitle-encoding.c:211
 #: ../libempathy-gtk/totem-subtitle-encoding.c:213
@@ -1069,104 +1058,102 @@ msgstr "Chorwacki"
 #: ../libempathy-gtk/totem-subtitle-encoding.c:219
 #: ../libempathy-gtk/totem-subtitle-encoding.c:221
 msgid "Cyrillic"
-msgstr "Cyrylica"
+msgstr "cyrylica"
 
 #: ../libempathy-gtk/totem-subtitle-encoding.c:224
 msgid "Cyrillic/Russian"
-msgstr "Cyrylica/Rosyjski"
+msgstr "cyrylica/rosyjski"
 
 #: ../libempathy-gtk/totem-subtitle-encoding.c:227
 #: ../libempathy-gtk/totem-subtitle-encoding.c:229
 msgid "Cyrillic/Ukrainian"
-msgstr "Cyrylica/Ukraiński"
+msgstr "cyrylica/ukraiński"
 
 #: ../libempathy-gtk/totem-subtitle-encoding.c:232
 msgid "Georgian"
-msgstr "Gruziński"
+msgstr "gruziński"
 
 #: ../libempathy-gtk/totem-subtitle-encoding.c:235
 #: ../libempathy-gtk/totem-subtitle-encoding.c:237
 #: ../libempathy-gtk/totem-subtitle-encoding.c:239
 msgid "Greek"
-msgstr "Grecki"
+msgstr "grecki"
 
-# REV: chyba jest wersja transkryptowana - gudżaracki
 #: ../libempathy-gtk/totem-subtitle-encoding.c:242
 msgid "Gujarati"
-msgstr "Gujarati"
+msgstr "gudżaracki"
 
 #: ../libempathy-gtk/totem-subtitle-encoding.c:245
 msgid "Gurmukhi"
-msgstr "Gurmukhi"
+msgstr "gurmukhi"
 
 #: ../libempathy-gtk/totem-subtitle-encoding.c:248
 #: ../libempathy-gtk/totem-subtitle-encoding.c:250
 #: ../libempathy-gtk/totem-subtitle-encoding.c:252
 #: ../libempathy-gtk/totem-subtitle-encoding.c:254
 msgid "Hebrew"
-msgstr "Hebrajski"
+msgstr "hebrajski"
 
 #: ../libempathy-gtk/totem-subtitle-encoding.c:257
 msgid "Hebrew Visual"
-msgstr "Hebrajski graficzny"
+msgstr "hebrajski graficzny"
 
 #: ../libempathy-gtk/totem-subtitle-encoding.c:260
 msgid "Hindi"
-msgstr "Hinduski"
+msgstr "hinduski"
 
 #: ../libempathy-gtk/totem-subtitle-encoding.c:263
 msgid "Icelandic"
-msgstr "Islandzki"
+msgstr "islandzki"
 
 #: ../libempathy-gtk/totem-subtitle-encoding.c:266
 #: ../libempathy-gtk/totem-subtitle-encoding.c:268
 #: ../libempathy-gtk/totem-subtitle-encoding.c:270
 msgid "Japanese"
-msgstr "Japoński"
+msgstr "japoński"
 
 #: ../libempathy-gtk/totem-subtitle-encoding.c:273
 #: ../libempathy-gtk/totem-subtitle-encoding.c:275
 #: ../libempathy-gtk/totem-subtitle-encoding.c:277
 #: ../libempathy-gtk/totem-subtitle-encoding.c:279
 msgid "Korean"
-msgstr "Koreański"
+msgstr "koreański"
 
 #: ../libempathy-gtk/totem-subtitle-encoding.c:282
 msgid "Nordic"
-msgstr "Nordycki"
+msgstr "nordycki"
 
 #: ../libempathy-gtk/totem-subtitle-encoding.c:285
 msgid "Persian"
-msgstr "Perski"
+msgstr "perski"
 
 #: ../libempathy-gtk/totem-subtitle-encoding.c:288
 #: ../libempathy-gtk/totem-subtitle-encoding.c:290
 msgid "Romanian"
-msgstr "Rumuński"
+msgstr "rumuński"
 
 #: ../libempathy-gtk/totem-subtitle-encoding.c:293
 msgid "South European"
-msgstr "Południowoeuropejski"
+msgstr "południowoeuropejski"
 
 #: ../libempathy-gtk/totem-subtitle-encoding.c:296
 msgid "Thai"
-msgstr "Tajski"
+msgstr "tajski"
 
 #: ../libempathy-gtk/totem-subtitle-encoding.c:299
 #: ../libempathy-gtk/totem-subtitle-encoding.c:301
 #: ../libempathy-gtk/totem-subtitle-encoding.c:303
 #: ../libempathy-gtk/totem-subtitle-encoding.c:305
 msgid "Turkish"
-msgstr "Turecki"
+msgstr "turecki"
 
-# REV: Unicode - nazwa własna
 #: ../libempathy-gtk/totem-subtitle-encoding.c:308
 #: ../libempathy-gtk/totem-subtitle-encoding.c:310
 #: ../libempathy-gtk/totem-subtitle-encoding.c:312
 #: ../libempathy-gtk/totem-subtitle-encoding.c:314
 #: ../libempathy-gtk/totem-subtitle-encoding.c:316
 msgid "Unicode"
-msgstr "Unikod"
+msgstr "Unicode"
 
 #: ../libempathy-gtk/totem-subtitle-encoding.c:319
 #: ../libempathy-gtk/totem-subtitle-encoding.c:321
@@ -1383,7 +1370,6 @@ msgstr "Połączony - %d:%02dm"
 msgid "Hang up"
 msgstr "Rozłącz"
 
-# td
 #: ../src/empathy-call-window.glade.h:2
 msgid "Send Audio"
 msgstr "Wyślij dźwięk"
@@ -1968,7 +1954,6 @@ msgstr "Język"
 msgid "<b>Appearance</b>"
 msgstr "<b>Wygląd</b>"
 
-# td
 #: ../src/empathy-preferences.glade.h:2
 msgid "<b>Behavior</b>"
 msgstr "<b>Zachowanie</b>"
