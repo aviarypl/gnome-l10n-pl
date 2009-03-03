@@ -15,8 +15,8 @@ msgstr ""
 "Project-Id-Version: gtksourceview.HEAD\n"
 "Report-Msgid-Bugs-To: http://bugzilla.gnome.org/enter_bug.cgi?product=gtksourceview&component=general\n"
 "POT-Creation-Date: 2009-02-14 11:52+0000\n"
-"PO-Revision-Date: 2009-03-02 11:26+0100\n"
-"Last-Translator: Wojciech Kapusta <wkapusta@aviary.pl>\n"
+"PO-Revision-Date: 2009-03-03 22:25+0100\n"
+"Last-Translator: wadim dziedzic <wdziedzic@aviary,pl>\n"
 "Language-Team:  <pl@li.org>\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -120,7 +120,6 @@ msgstr "powtórzony identyfikator kontekstu \"%s\""
 #: ../gtksourceview/gtksourcecontextengine.c:6109
 #: ../gtksourceview/gtksourcecontextengine.c:6169
 #, c-format
-#, fuzzy
 msgid "style override used with wildcard context reference in language '%s' in ref '%s'"
 msgstr "użyto wymuszenia stylu za pomocą ogólnej referencji kontekstu w języku \"%s\", w referencji \"%s\""
 
@@ -182,11 +181,9 @@ msgstr "Sekcja języka"
 msgid "Hidden"
 msgstr "Ukryty"
 
-# WK: brak "przed użytkownikiem?
 #: ../gtksourceview/gtksourcelanguage.c:240
-#, fuzzy
 msgid "Whether the language should be hidden from the user"
-msgstr "Określa, czy język powinien być ukrywany"
+msgstr "Określa, czy język powinien być ukrywany przed użyttkownikiem"
 
 #: ../gtksourceview/gtksourcelanguagemanager.c:134
 msgid "Language specification directories"
@@ -248,10 +245,7 @@ msgstr "Tryb zawijania"
 msgid "Whether to wrap lines never, at word boundaries, or at character boundaries."
 msgstr "Określa, czy łamać wiersz na granicy słów czy znaków."
 
-# WK: zmieniłem formę na niedokonaną, gdyż chodzi tu o ustawienie
-# a nie o jednorazowe wydrukowanie
 #: ../gtksourceview/gtksourceprintcompositor.c:472
-#, fuzzy
 msgid "Whether to print the document with highlighted syntax"
 msgstr "Określa, czy drukować dokument z wyróżnianiem elementów składni"
 
@@ -335,9 +329,8 @@ msgstr "Tło"
 msgid "Background color"
 msgstr "Kolor tła"
 
-# WK: w zasadzie OK, mam wątpliwości tylko co do kontekstu
+# TODO: spr. kontekst
 #: ../gtksourceview/gtksourcestyle.c:86
-#, fuzzy
 msgid "Foreground"
 msgstr "Kolor pierwszoplanowy"
 
@@ -367,15 +360,13 @@ msgstr "Podkreślenie"
 msgid "Strikethrough"
 msgstr "Przekreślenie"
 
-# WK: kontekst?
+# TODO: spr. kontekst
 #: ../gtksourceview/gtksourcestyle.c:126
-#, fuzzy
 msgid "Line background set"
 msgstr "Ustawione tło linii"
 
-# WK: kontekst?
+# TODO: spr. kontekst
 #: ../gtksourceview/gtksourcestyle.c:127
-#, fuzzy
 msgid "Whether line background color is set"
 msgstr "Określa, czy tło linii jest ustawione"
 
@@ -391,9 +382,8 @@ msgstr "Określa, czy ustawiony jest kolor pierwszoplanowy"
 # "Tło ustawione" nie brzmi.
 # Patrz wyżej, np. "Ustawione tło linii"
 #: ../gtksourceview/gtksourcestyle.c:142
-#, fuzzy
 msgid "Background set"
-msgstr "Tło ustawione"
+msgstr "Ustawione tło"
 
 #: ../gtksourceview/gtksourcestyle.c:143
 msgid "Whether background color is set"
@@ -803,7 +793,6 @@ msgstr "Źródła"
 msgid "Storage Class"
 msgstr "Klasa przechowująca"
 
-# WK: nie lepiej (dokładniej) "ciąg"?
 #. A string constant: "this is a string"
 #: ../gtksourceview/language-specs/ada.lang.h:13
 #: ../gtksourceview/language-specs/asp.lang.h:13
@@ -843,9 +832,8 @@ msgstr "Klasa przechowująca"
 #: ../gtksourceview/language-specs/vala.lang.h:11
 #: ../gtksourceview/language-specs/vbnet.lang.h:8
 #: ../gtksourceview/language-specs/vhdl.lang.h:9
-#, fuzzy
 msgid "String"
-msgstr "Napis"
+msgstr "Ciąg znaków"
 
 #: ../gtksourceview/language-specs/asp.lang.h:1
 msgid "ASP"
@@ -966,12 +954,10 @@ msgstr "Logiczny"
 msgid "Definition"
 msgstr "Definicja"
 
-# WK: nie lepiej (dokładniej) "Ciąg"?
 #: ../gtksourceview/language-specs/boo.lang.h:8
 #: ../gtksourceview/language-specs/python.lang.h:13
-#, fuzzy
 msgid "Multiline string"
-msgstr "Napis wielowierszowy"
+msgstr "Wielowierszowy ciąg znaków"
 
 #: ../gtksourceview/language-specs/boo.lang.h:9
 #: ../gtksourceview/language-specs/xml.lang.h:10
@@ -1152,11 +1138,9 @@ msgstr "Sterujące słowo kluczowe"
 msgid "Blue based color scheme"
 msgstr "Niebieski schemat kolorów"
 
-# WK: co to kest? Jeśli nazwa koloru, to "Kobalt"
 #: ../gtksourceview/language-specs/cobalt.xml.h:2
-#, fuzzy
 msgid "Cobalt"
-msgstr "Cobalt"
+msgstr "Kobalt"
 
 #: ../gtksourceview/language-specs/cpp.lang.h:1
 msgid "C++"
@@ -1166,11 +1150,9 @@ msgstr "C++"
 msgid "C#"
 msgstr "C#"
 
-# WK: patrz uwagi dot. ciągów powyżej
 #: ../gtksourceview/language-specs/csharp.lang.h:16
-#, fuzzy
 msgid "String Format"
-msgstr "Format napisu"
+msgstr "Format ciągu znaków"
 
 #: ../gtksourceview/language-specs/css.lang.h:1
 msgid "CSS"
@@ -1279,13 +1261,11 @@ msgstr "Zastrzeżone słowo kluczowe"
 msgid "Shebang"
 msgstr "Shebang"
 
-# WK: patrz uwagi dot. ciągów powyżej
 #. This style doesn't map to anything since it must be used as an additional
 #. style for text which is already styled as a "string"
 #: ../gtksourceview/language-specs/def.lang.h:51
-#, fuzzy
 msgid "Special character (inside a string)"
-msgstr "Znak specjalny (wewnątrz napisu)"
+msgstr "Znak specjalny (wewnątrz ciągu znaków)"
 
 #. Any statement
 #: ../gtksourceview/language-specs/def.lang.h:55
@@ -1371,7 +1351,6 @@ msgid "D"
 msgstr "D"
 
 #: ../gtksourceview/language-specs/d.lang.h:14
-#, fuzzy
 msgid "Special Token"
 msgstr "Token specjalny"
 
@@ -1391,7 +1370,6 @@ msgstr "Elementy GUI"
 msgid "Header Elements"
 msgstr "Elementy nagłówka"
 
-# WK: czasem markup używany jesttakże w znaczeniu "znaczniki"
 #: ../gtksourceview/language-specs/docbook.lang.h:5
 #: ../gtksourceview/language-specs/dtd.lang.h:2
 #: ../gtksourceview/language-specs/gtk-doc.lang.h:6
@@ -1402,9 +1380,8 @@ msgstr "Elementy nagłówka"
 #: ../gtksourceview/language-specs/texinfo.lang.h:8
 #: ../gtksourceview/language-specs/xml.lang.h:9
 #: ../gtksourceview/language-specs/xslt.lang.h:2
-#, fuzzy
 msgid "Markup"
-msgstr "Znacznik"
+msgstr "Znaczniki"
 
 #: ../gtksourceview/language-specs/docbook.lang.h:6
 msgid "Structural Elements"
@@ -1472,7 +1449,6 @@ msgid "Debug"
 msgstr "Debug"
 
 #: ../gtksourceview/language-specs/eiffel.lang.h:7
-#, fuzzy
 msgid "Design by Contract"
 msgstr "Design by Contract"
 
@@ -1533,7 +1509,6 @@ msgid "Forth"
 msgstr "Forth"
 
 #: ../gtksourceview/language-specs/fortran.lang.h:1
-#, fuzzy
 msgid "BOZ Literal"
 msgstr "BOZ Literal"
 
@@ -1612,12 +1587,10 @@ msgstr "Dyrektywa include"
 msgid "Widget State"
 msgstr "Stan widgetu"
 
-# WK: w html jest to tłumaczone (kotwica)
 #: ../gtksourceview/language-specs/haddock.lang.h:1
 #: ../gtksourceview/language-specs/t2t.lang.h:1
-#, fuzzy
 msgid "Anchor"
-msgstr "Anchor"
+msgstr "Kotwica"
 
 #: ../gtksourceview/language-specs/haddock.lang.h:2
 msgid "Code Block"
@@ -1664,9 +1637,8 @@ msgid "Inline Haddock Section"
 msgstr "Blok sekcji haddock"
 
 #: ../gtksourceview/language-specs/haddock.lang.h:13
-#, fuzzy
 msgid "Itemized list"
-msgstr "Lista nienumerowana"
+msgstr "Lista wypunktowana"
 
 #: ../gtksourceview/language-specs/haddock.lang.h:15
 msgid "Monospace"
@@ -1676,11 +1648,9 @@ msgstr "Monospace"
 msgid "URL"
 msgstr "URL"
 
-# WK: patrz wyżej, liczba zmiennoprzecinkowa
 #: ../gtksourceview/language-specs/haskell.lang.h:6
-#, fuzzy
 msgid "Float"
-msgstr "Rzeczywisty"
+msgstr "Liczba zmiennoprzecinkowa"
 
 #: ../gtksourceview/language-specs/haskell.lang.h:7
 msgid "Haskell"
@@ -1700,7 +1670,6 @@ msgid "Symbol"
 msgstr "Symbol"
 
 #: ../gtksourceview/language-specs/haskell-literate.lang.h:1
-#, fuzzy
 msgid "Literate Haskell"
 msgstr "Literate Haskell"
 
@@ -1777,9 +1746,8 @@ msgstr "Kate"
 # WK: a co np. z phpowym "include" - czyli dołączaniem?
 #: ../gtksourceview/language-specs/latex.lang.h:3
 #: ../gtksourceview/language-specs/texinfo.lang.h:5
-#, fuzzy
 msgid "Include"
-msgstr "Zawieranie"
+msgstr "Dołączanie"
 
 #: ../gtksourceview/language-specs/latex.lang.h:4
 msgid "Inline Math Mode"
@@ -1923,11 +1891,9 @@ msgstr "Argument etykietowany"
 msgid "Module Path"
 msgstr "Ścieżka modułu"
 
-# WK: czy to jest nazwa?
 #: ../gtksourceview/language-specs/ocaml.lang.h:13
-#, fuzzy
 msgid "Objective Caml"
-msgstr "Objective Caml"
+msgstr "Obiektowy Caml"
 
 #: ../gtksourceview/language-specs/ocaml.lang.h:14
 msgid "Ocamldoc Comments"
@@ -1974,7 +1940,6 @@ msgid "Pascal"
 msgstr "Pascal"
 
 #: ../gtksourceview/language-specs/perl.lang.h:3
-#, fuzzy
 msgid "Control"
 msgstr "Control"
 
@@ -2012,12 +1977,10 @@ msgid "POD Escape"
 msgstr "POD Escape"
 
 #: ../gtksourceview/language-specs/perl.lang.h:14
-#, fuzzy
 msgid "POD heading"
 msgstr "POD heading"
 
 #: ../gtksourceview/language-specs/perl.lang.h:15
-#, fuzzy
 msgid "POD keyword"
 msgstr "POD keyword"
 
@@ -2042,7 +2005,6 @@ msgid "pkg-config"
 msgstr "pkg-config"
 
 #: ../gtksourceview/language-specs/po.lang.h:2
-#, fuzzy
 msgid "Fuzzy"
 msgstr "Fuzzy"
 
@@ -2174,7 +2136,6 @@ msgid "Ruby"
 msgstr "Ruby"
 
 #: ../gtksourceview/language-specs/scheme.lang.h:5
-#, fuzzy
 msgid "Scheme"
 msgstr "Scheme"
 
