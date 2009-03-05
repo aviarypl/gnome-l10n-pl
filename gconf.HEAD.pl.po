@@ -1,1984 +1,2514 @@
-# Polish translation of tomboy.
-# Copyright (C) 2007, 2008 Aviary.pl
+# translation of gconf.HEAD.pl.po to Polish
+# Artur Flinta <aflinta@gmail.com>, 2007, 2008.
+# Tomasz Dominikowski <tdominikowski@aviary.pl>, 2009.
 # -=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-
 # Aviary.pl
 # Jeśli masz jakiekolwiek uwagi odnoszące się do tłumaczenia lub chcesz
 # pomóc w jego rozwijaniu i pielęgnowaniu, napisz do nas:
 # gnomepl@aviary.pl
 # -=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-
-# This file is distributed under the same license as the tomboy package.
 msgid ""
 msgstr ""
-"Project-Id-Version: tomboy\n"
+"Project-Id-Version: gconf\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2009-03-04 16:46+0100\n"
-"PO-Revision-Date: 2009-03-04 16:46+0100\n"
+"POT-Creation-Date: 2009-03-04 16:53+0100\n"
+"PO-Revision-Date: 2009-03-04 17:33+0100\n"
 "Last-Translator: Tomasz Dominikowski <dominikowski@gmail.com>\n"
 "Language-Team: Aviary.pl <gnomepl@aviary.pl>\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "X-Generator: KBabel 1.11.4\n"
-"Plural-Forms: nplurals=3; plural=n==1 ? 0 : n%10>=2 && n%10<=4 && (n%100<10 || n%100>=20) ? 1 : 2;\n"
+"Plural-Forms: nplurals=3; plural=(n==1 ? 0 : n%10>=2 && n%10<=4 && (n%100<10 || n%100>=20) ? 1 : 2);\n"
 "X-Poedit-Language: Polish\n"
 "X-Poedit-Country: Poland\n"
 
-#: ../data/GNOME_TomboyApplet.server.in.in.h:1
-msgid "Accessories"
-msgstr "Akcesoria"
-
-#: ../data/GNOME_TomboyApplet.server.in.in.h:2
-msgid "Simple and easy to use note-taking"
-msgstr "Prosty i łatwy w użyciu program do sporządzania notatek"
-
-#: ../data/GNOME_TomboyApplet.server.in.in.h:3
-msgid "Tomboy Applet Factory"
-msgstr "Generator apletu Tomboy"
-
-#: ../data/GNOME_TomboyApplet.server.in.in.h:4
-#: ../data/tomboy.desktop.in.h:3
-#: ../Tomboy/Tray.cs:522
-msgid "Tomboy Notes"
-msgstr "Notatnik Tomboy"
-
-#: ../data/GNOME_TomboyApplet.xml.h:1
-#: ../Tomboy/ActionManager.cs:164
-msgid "_About"
-msgstr "_O programie"
-
-#: ../data/GNOME_TomboyApplet.xml.h:2
-#: ../Tomboy/ActionManager.cs:157
-#: ../Tomboy/Tray.cs:236
-msgid "_Help"
-msgstr "Pomo_c"
-
-#: ../data/GNOME_TomboyApplet.xml.h:3
-#: ../Tomboy/ActionManager.cs:153
-#: ../Tomboy/Tray.cs:231
-msgid "_Preferences"
-msgstr "_Preferencje"
-
-#: ../data/tomboy.desktop.in.h:1
-msgid "Note-taker"
-msgstr "Notatnik"
-
-#: ../data/tomboy.desktop.in.h:2
-msgid "Take notes, link ideas, and stay organized"
-msgstr "Robienie notatek, łączenie pomysłów, organizacja"
-
-#: ../data/tomboy.schemas.in.h:1
-msgid "Accept SSL Certificates"
-msgstr "Akceptowanie certyfikatów SSL"
-
-#: ../data/tomboy.schemas.in.h:2
-msgid "Create a new Note"
-msgstr "Utwórz nową notatkę"
-
-#: ../data/tomboy.schemas.in.h:3
-msgid "Custom Font Face"
-msgstr "Własna czcionka"
-
-#: ../data/tomboy.schemas.in.h:4
-msgid "Determines X coordinate of Search window; stored on Tomboy exit."
-msgstr "Określa współrzędną X okna wyszukiwania; zachowywane przy zakończeniu programu Tomboy."
-
-#: ../data/tomboy.schemas.in.h:5
-msgid "Determines Y coordinate of Search window; stored on Tomboy exit."
-msgstr "Określa współrzędną Y okna wyszukiwania; zachowywane przy zakończeniu programu Tomboy."
-
-#: ../data/tomboy.schemas.in.h:6
-msgid "Determines pixel height of Search window; stored on Tomboy exit."
-msgstr "Określa wysokość okna wyszukiwania w pikselach; zachowywane przy zakończeniu programu Tomboy."
-
-#: ../data/tomboy.schemas.in.h:7
-msgid "Determines pixel width of Search window; stored on Tomboy exit."
-msgstr "Określa szerokość okna wyszukiwania w pikselach; zachowywane przy zakończeniu programu Tomboy."
-
-#: ../data/tomboy.schemas.in.h:8
-msgid "Enable Auto bulleted lists."
-msgstr "Włącza automatyczne wypunktowanie list."
-
-#: ../data/tomboy.schemas.in.h:9
-msgid "Enable Middle-Click Paste On Icon."
-msgstr "Włączenie wklejania środkowym przyciskiem myszy na ikonie."
-
-#: ../data/tomboy.schemas.in.h:10
-msgid "Enable WikiWord highlighting"
-msgstr "Wyróżnianie WikiSłów"
-
-#: ../data/tomboy.schemas.in.h:11
-msgid "Enable closing notes with escape."
-msgstr "Włączenie zamykania notatek klawiszem Escape."
-
-#: ../data/tomboy.schemas.in.h:12
-msgid "Enable custom font"
-msgstr "Własna czcionka"
-
-#: ../data/tomboy.schemas.in.h:13
-msgid "Enable global keybindings"
-msgstr "Globalne skróty klawiszowe"
-
-#: ../data/tomboy.schemas.in.h:14
-msgid "Enable spellchecking"
-msgstr "Sprawdzanie pisowni"
-
-#: ../data/tomboy.schemas.in.h:15
-msgid "Enable startup notes"
-msgstr "Włączenie notatek startowych"
-
-#: ../data/tomboy.schemas.in.h:16
-msgid "Enable this option if you want bulleted lists to be automatic when you place - or * at the beginning of a line."
-msgstr "Włączenie opcji spowoduje automatyczne wypunktowanie list. Znak - lub * na początku linii."
-
-#: ../data/tomboy.schemas.in.h:17
-msgid "Enable this option if you want to be able to middle-click the Tomboy icon to paste timestamped content into the Start Here note."
-msgstr "Włączenie tej opcji umożliwia wklejanie do notatki Start zawartości schowka wraz ze znacznikiem czasu za pomocą kliknięcia ikony programu Tomboy środkowym przyciskiem myszy."
-
-#: ../data/tomboy.schemas.in.h:18
-msgid "Enable this option to highlight words ThatLookLikeThis. Clicking the word will create a note with that name."
-msgstr "Włączenie tej opcji spowoduje wyróżnianie słów, które wyglądają tak, JakToSłowo. Kliknięcie tak zapisanego słowa utworzy notatkę o takim tytule."
-
-#: ../data/tomboy.schemas.in.h:19
-msgid "FUSE Mounting Timeout (ms)"
-msgstr "Limit czasu montowania FUSE (w ms)"
-
-#: ../data/tomboy.schemas.in.h:20
-msgid "HTML Export All Linked Notes"
-msgstr "Eksport HTML wszystkich dowiązanych notatek"
-
-#: ../data/tomboy.schemas.in.h:21
-msgid "HTML Export Last Directory"
-msgstr "Ostatni katalog eksportu HTML"
-
-#: ../data/tomboy.schemas.in.h:22
-msgid "HTML Export Linked Notes"
-msgstr "Eksport HTML dowiązanych notatek"
-
-#: ../data/tomboy.schemas.in.h:23
-msgid "If enable_custom_font is true, the font name set here will be used as the font when displaying notes."
-msgstr "Jeśli włączone jest enable_custom_font, czcionka ustawiona w tym polu będzie używana do wyświetlania notatek."
-
-#: ../data/tomboy.schemas.in.h:24
-msgid "If enabled, all notes that were open when Tomboy quit will automatically be reopened at startup."
-msgstr "Jeśli włączone, to wszystkie otwarte przy zamykaniu notatki zostaną przy następnym uruchomieniu ponownie otwarte."
-
-#: ../data/tomboy.schemas.in.h:25
-msgid "If enabled, an opened note can be closed by hitting the escape key."
-msgstr "Jeśli włączone, otwarta notatka może zostać zamknięta naciskając klawisz Escape."
-
-#: ../data/tomboy.schemas.in.h:26
-msgid "If true, misspellings will be underlined in red, and correct spelling suggestions shown in the right-click menu."
-msgstr "Jeśli opcja ta jest zaznaczona, błędnie napisane słowa będą podkreślane na czerwono, a podpowiedzi prawidłowej pisowni będą dostępne w menu pod prawym przyciskiem myszy."
-
-#: ../data/tomboy.schemas.in.h:27
-msgid "If true, the desktop-global keybindings set in /apps/tomboy/global_keybindings will be enabled, allowing for useful Tomboy actions to be available from any application."
-msgstr "Jeżeli ustawione, zostaną włączone ogólnosystemowe skróty klawiszowe ustawione w /apps/tomboy/global_keybindings, pozwalając na dostęp do funkcji programu Tomboy z poziomu dowolnego programu."
-
-#: ../data/tomboy.schemas.in.h:28
-msgid "If true, the font name set in custom_font_face will be used as the font when displaying notes. Otherwise the desktop default font will be used."
-msgstr "Jeżeli ustawione, czcionka ustawiona w custom_font_face zostanie użyta do wyświetlania notatek. W przeciwnym wypadku zostanie użyta domyślna czcionka środowiska."
-
-#: ../data/tomboy.schemas.in.h:29
-msgid "Indicates that the Sticky Note Importer plugin has not been run, so it should run automatically the next time Tomboy starts."
-msgstr "Wskazuje, że wtyczka Importera notatek nie była jeszcze uruchamiana, w związku z czym powinna zostać uruchomiona automatycznie podczas następnego uruchomienia programu Tomboy."
-
-#: ../data/tomboy.schemas.in.h:30
-msgid "Integer determining the minimum number of notes to show in the Tomboy note menu."
-msgstr "Liczba całkowita określająca minimalną liczbę notatek wyświetlanych w menu programu Tomboy."
-
-#: ../data/tomboy.schemas.in.h:31
-msgid "Integer value indicating if there is a preference to always perform a specific behavior when a conflict is detected, instead of prompting the user. The values map to an internal enumeration. 0 indicates that the user wishes to be prompted when a conflict occurs, so that they may handle each conflict situation on a case-by-case basis."
-msgstr "Wartość liczbowa określająca czy zawsze wykonywać określoną akcję po wykryciu konfliktu (zamiast pytania użytkownika). Wartość 0 oznacza proszenie użytkownika o decyzję przy każdym konflikcie."
-
-#: ../data/tomboy.schemas.in.h:32
-msgid "List of pinned notes."
-msgstr "Lista przypiętych notatek."
-
-#: ../data/tomboy.schemas.in.h:33
-msgid "Minimum number of notes to show in menu"
-msgstr "Minimalna liczba notatek wyświetlana w menu"
-
-#: ../data/tomboy.schemas.in.h:34
-msgid "Note Synchronization Conflict Saved Behavior"
-msgstr "Zachowanie po wykryciu konfliktu synchronizacji notatki"
-
-#: ../data/tomboy.schemas.in.h:35
-msgid "Open Recent Changes"
-msgstr "Otwarcie ostatnich zmian"
-
-#: ../data/tomboy.schemas.in.h:36
-msgid "Open Search Dialog"
-msgstr "Otwarcie okna wyszukiwania"
-
-#: ../data/tomboy.schemas.in.h:37
-msgid "Open Start Here"
-msgstr "Otwarcie \"Start\""
-
-#: ../data/tomboy.schemas.in.h:38
-msgid "Path on SSH server to Tomboy synchronization directory (optional)."
-msgstr "Ścieżka na serwerze SSH do katalogu synchronizacji programu Tomboy (opcjonalna)."
-
-#: ../data/tomboy.schemas.in.h:39
-msgid "Path to the synchronization server when using the filesystem synchronization service addin."
-msgstr "Ścieżka do serwera synchronizacji w przypadku korzystania z dodatku synchronizacji systemu plików."
-
-#: ../data/tomboy.schemas.in.h:40
-msgid "SSHFS Remote Synchronization Folder"
-msgstr "Katalog synchronizacji zdalnej SSHFS"
-
-#: ../data/tomboy.schemas.in.h:41
-msgid "SSHFS Remote Synchronization User Name"
-msgstr "Nazwa użytkownika synchronizacji zdalnej SSHFS"
-
-#: ../data/tomboy.schemas.in.h:42
-msgid "SSHFS Synchronization Server Port"
-msgstr "Port serwera synchronizacji SSHFS"
-
-#: ../data/tomboy.schemas.in.h:43
-msgid "SSHFS Synchronization Server URL"
-msgstr "Adres URL serwera synchronizacji SSHFS"
-
-#: ../data/tomboy.schemas.in.h:44
-msgid "Saved height of Search window"
-msgstr "Zapisana wysokość okna wyszukiwania"
-
-#: ../data/tomboy.schemas.in.h:45
-msgid "Saved horizontal position of Search window"
-msgstr "Zapisane poziome położenie okna wyszukiwania"
-
-#: ../data/tomboy.schemas.in.h:46
-msgid "Saved vertical position of Search window"
-msgstr "Zapisane pionowe położenie okna wyszukiwania"
-
-#: ../data/tomboy.schemas.in.h:47
-msgid "Saved width of Search window"
-msgstr "Zapisana szerokość okna wyszukiwania"
-
-#: ../data/tomboy.schemas.in.h:48
-msgid "Selected Synchronization Service Addin"
-msgstr "Wybrany dodatek usługi synchronizacji"
-
-#: ../data/tomboy.schemas.in.h:49
-msgid "Set to TRUE to activate"
-msgstr "Ustawienie na \"true\" włączy opcję"
-
-#: ../data/tomboy.schemas.in.h:50
-msgid "Show applet menu"
-msgstr "Wyświetlanie menu apletu"
-
-#: ../data/tomboy.schemas.in.h:51
-msgid "Start Here Note"
-msgstr "Notatka Start"
-
-#: ../data/tomboy.schemas.in.h:52
-msgid "Sticky Note Importer First Run"
-msgstr "Pierwsze uruchomienie Importera notatek"
-
-#: ../data/tomboy.schemas.in.h:53
-msgid "Synchronization Client ID"
-msgstr "ID klienta synchronizacji"
-
-#: ../data/tomboy.schemas.in.h:54
-msgid "Synchronization Local Server Path"
-msgstr "Ścieżka lokalnego serwera synchronizacji"
-
-#: ../data/tomboy.schemas.in.h:55
-msgid "The date format that is used for the timestamp."
-msgstr "Format daty używany do automatycznego wstawiania."
-
-#: ../data/tomboy.schemas.in.h:56
-msgid "The global keybinding for creating and displaying a new Note. The format looks like \"&lt;Control&gt;a\" or \"&lt;Shift&gt;&lt;Alt&gt;F1\". The parser is fairly liberal and allows lower or upper case, and also abbreviations such as \"&lt;Ctl&gt;\" and \"&lt;Ctrl&gt;\". If you set the option to the special string \"disabled\", then there will be no keybinding for this action."
-msgstr "Globalne przypisanie klawisza dla tworzenia i wyświetlania nowej notatki. Format jest w postaci \"&lt;Control&gt;a\" lub \"&lt;Shift&gt;&lt;Alt&gt;F1\". Analizator jest całkiem tolerancyjny i zezwala na małe i duże litery, jak również skróty takie jak \"&lt;Ctl&gt;\" oraz \"&lt;Ctrl&gt;\". Jeżeli opcja zostanie ustawiona na specjalny ciąg \"disabled\" (wyłączone), wtedy nie będzie przypisanego klawisza do tego działania."
-
-#: ../data/tomboy.schemas.in.h:57
-msgid "The global keybinding for opening the \"Start Here\" note. The format looks like \"&lt;Control&gt;a\" or \"&lt;Shift&gt;&lt;Alt&gt;F1\". The parser is fairly liberal and allows lower or upper case, and also abbreviations such as \"&lt;Ctl&gt;\" and \"&lt;Ctrl&gt;\". If you set the option to the special string \"disabled\", then there will be no keybinding for this action."
-msgstr "Globalne przypisanie klawisza dla otwarcia notatki \"Start\". Format jest w postaci \"&lt;Control&gt;a\" lub \"&lt;Shift&gt;&lt;Alt&gt;F1\". Analizator jest całkiem tolerancyjny i zezwala na małe i duże litery, jak również skróty takie jak \"&lt;Ctl&gt;\" oraz \"&lt;Ctrl&gt;\". Jeżeli opcja zostanie ustawiona na specjalny ciąg \"disabled\" (wyłączone), wtedy nie będzie przypisanego klawisza do tego działania."
-
-#: ../data/tomboy.schemas.in.h:58
-msgid "The global keybinding for opening the Note Search dialog. The format looks like \"&lt;Control&gt;a\" or \"&lt;Shift&gt;&lt;Alt&gt;F1\". The parser is fairly liberal and allows lower or upper case, and also abbreviations such as \"&lt;Ctl&gt;\" and \"&lt;Ctrl&gt;\". If you set the option to the special string \"disabled\", then there will be no keybinding for this action."
-msgstr "Globalne przypisanie klawisza dla otwarcia okna wyszukiwania notatki. Format jest w postaci \"&lt;Control&gt;a\" lub \"&lt;Shift&gt;&lt;Alt&gt;F1\". Analizator jest całkiem tolerancyjny i zezwala na małe i duże litery, jak również skróty takie jak \"&lt;Ctl&gt;\" oraz \"&lt;Ctrl&gt;\". Jeżeli opcja zostanie ustawiona na specjalny ciąg \"disabled\" (wyłączone), wtedy nie będzie przypisanego klawisza do tego działania."
-
-#: ../data/tomboy.schemas.in.h:59
-msgid "The global keybinding for opening the Recent Changes dialog. The format looks like \"&lt;Control&gt;a\" or \"&lt;Shift&gt;&lt;Alt&gt;F1\". The parser is fairly liberal and allows lower or upper case, and also abbreviations such as \"&lt;Ctl&gt;\" and \"&lt;Ctrl&gt;\". If you set the option to the special string \"disabled\", then there will be no keybinding for this action."
-msgstr "Globalne przypisanie klawisza dla otwarcia okna ostatnich zmian. Format jest w postaci \"&lt;Control&gt;a\" lub \"&lt;Shift&gt;&lt;Alt&gt;F1\". Analizator jest całkiem tolerancyjny i zezwala na małe i duże litery, jak również skróty takie jak \"&lt;Ctl&gt;\" oraz \"&lt;Ctrl&gt;\". Jeżeli opcja zostanie ustawiona na specjalny ciąg \"disabled\" (wyłączone), wtedy nie będzie przypisanego klawisza do tego działania."
-
-#: ../data/tomboy.schemas.in.h:60
-msgid "The global keybinding for showing the Tomboy applet's menu. The format looks like \"&lt;Control&gt;a\" or \"&lt;Shift&gt;&lt;Alt&gt;F1\". The parser is fairly liberal and allows lower or upper case, and also abbreviations such as \"&lt;Ctl&gt;\" and \"&lt;Ctrl&gt;\". If you set the option to the special string \"disabled\", then there will be no keybinding for this action."
-msgstr "Globalne przypisanie klawisza dla wyświetlenia menu apletu Tomboy. Format jest w postaci \"&lt;Control&gt;a\" lub \"&lt;Shift&gt;&lt;Alt&gt;F1\". Analizator jest całkiem tolerancyjny i zezwala na małe i duże litery, jak również skróty takie jak \"&lt;Ctl&gt;\" oraz \"&lt;Ctrl&gt;\". Jeżeli opcja zostanie ustawiona na specjalny ciąg \"disabled\" (wyłączone), wtedy nie będzie przypisanego klawisza do tego działania."
-
-#: ../data/tomboy.schemas.in.h:61
-msgid "The handler for \"note://\" URLs"
-msgstr "Obsługa adresu URL \"note://\""
-
-#: ../data/tomboy.schemas.in.h:62
-msgid "The last directory a note was exported to using the Export To HTML plugin."
-msgstr "Ostatni katalog do którego notatka została wyeksportowana przy użyciu wtyczki Eksport do HTML."
-
-#: ../data/tomboy.schemas.in.h:63
-msgid "The last setting for the 'Export linked notes' checkbox in the Export to HTML plugin."
-msgstr "Ostatnie ustawienie dla opcji \"Eksport powiązanych notatek\" we wtyczce Eksport do HTML."
-
-#: ../data/tomboy.schemas.in.h:64
-msgid "The last setting for the 'Include all other linked notes' checkbox in the Export to HTML plugin. This setting is used in conjunction with the 'HTML Export Linked Notes' setting and is used to specify whether all notes (found recursively) should be included during an export to HTML."
-msgstr "Ostatnie ustawienie dla opcji \"Dołącz wszystkie inne powiązane notatki\" wtyczki eksportu do HTML. Używane jest w połączeniu z ustawieniem \"Eksport HTML dowiązanych notatek\" aby określić, czy podczas eksportu do HTML mają być eksportowane wszystkie rekursywnie powiązane ze sobą notatki."
-
-#: ../data/tomboy.schemas.in.h:65
-msgid "The note URI of the note that should be considered the \"Start Here\" note, which is always placed at the bottom of the Tomboy note menu and also accessible by hotkey."
-msgstr "Adres URI notatki, która ma być traktowana jako notatka \"Start\", która zawsze wyświetlana jest u dołu menu programu Tomboy oraz dostępna jest poprzez skrót klawiszowy."
-
-#: ../data/tomboy.schemas.in.h:66
-msgid "The port to use when connecting to the synchronization server via SSH."
-msgstr "Port używany do łączenia z serwerem synchronizacji poprzez SSH."
-
-#: ../data/tomboy.schemas.in.h:67
-msgid "Time (in milliseconds) Tomboy should wait for a response when using FUSE to mount a sync share."
-msgstr "Czas oczekiwania (w milisekundach) programu Tomboy na odpowiedź podczas używania FUSE do montowania zasobu synchronizacji."
-
-#: ../data/tomboy.schemas.in.h:68
-msgid "Timestamp format"
-msgstr "Format znacznika czasu"
-
-#: ../data/tomboy.schemas.in.h:69
-msgid "URL of SSH server containing Tomboy synchronization directory."
-msgstr "Adres URL serwera SSH zawierającego katalog synchronizacji programu Tomboy."
-
-#: ../data/tomboy.schemas.in.h:70
-msgid "Unique identifier for the currently configured note synchronization service addin."
-msgstr "Niepowtarzalny identyfikator bieżącego dodatku usługi synchronizacji notatek."
-
-#: ../data/tomboy.schemas.in.h:71
-msgid "Unique identifier for this Tomboy client, used when communicating with a sychronization server."
-msgstr "Niepowtarzalny identyfikator tego klienta Tomboy używany podczas kontaktów z serwerem synchronizacji."
-
-#: ../data/tomboy.schemas.in.h:72
-msgid "Use wdfs option \"-ac\" to accept SSL certificates without prompting the user."
-msgstr "Proszę użyć opcji wdfs \"-ac\", aby akceptować certyfikaty SSL, bez pytania użytkownika."
-
-#: ../data/tomboy.schemas.in.h:73
-msgid "User name to use when connecting to the synchronization server via SSH."
-msgstr "Nazwa użytkownika używana podczas łączenia z serwerem synchronizacji poprzez SSH."
-
-#: ../data/tomboy.schemas.in.h:74
-msgid "Whitespace-separated list of note URIs for notes that should always appear in the Tomboy note menu."
-msgstr "Rozdzielana odstępami lista adresów URI notatek, które zawsze mają wyświetlane w menu programu Tomboy."
-
-#: ../Tomboy/ActionManager.cs:127
-msgid "_File"
-msgstr "_Plik"
-
-#: ../Tomboy/ActionManager.cs:130
-msgid "_New"
-msgstr "_Nowa"
-
-#: ../Tomboy/ActionManager.cs:131
-#: ../Tomboy/ActionManager.cs:172
-msgid "Create a new note"
-msgstr "Tworzy nową notatkę"
-
-#: ../Tomboy/ActionManager.cs:134
-msgid "_Open..."
-msgstr "_Otwórz..."
-
-#: ../Tomboy/ActionManager.cs:135
-msgid "Open the selected note"
-msgstr "Otwiera wybraną notatkę"
-
-#: ../Tomboy/ActionManager.cs:138
-msgid "_Delete"
-msgstr "_Usuń"
-
-#: ../Tomboy/ActionManager.cs:139
-msgid "Delete the selected note"
-msgstr "Usuwa wybraną notatkę"
-
-#: ../Tomboy/ActionManager.cs:142
-#: ../Tomboy/NoteWindow.cs:416
-msgid "_Close"
-msgstr "_Zamknij"
-
-#: ../Tomboy/ActionManager.cs:143
-msgid "Close this window"
-msgstr "Zamyka to okno"
-
-#: ../Tomboy/ActionManager.cs:146
-#: ../Tomboy/Tray.cs:248
-msgid "_Quit"
-msgstr "Za_kończ"
-
-#: ../Tomboy/ActionManager.cs:147
-msgid "Quit Tomboy"
-msgstr "Kończy działanie programu Tomboy"
-
-#: ../Tomboy/ActionManager.cs:150
-msgid "_Edit"
-msgstr "_Edycja"
-
-#: ../Tomboy/ActionManager.cs:154
-#: ../Tomboy/PreferencesDialog.cs:62
-msgid "Tomboy Preferences"
-msgstr "Preferencje Tomboy"
-
-#: ../Tomboy/ActionManager.cs:160
-msgid "_Contents"
-msgstr "Spis _tematów"
-
-#: ../Tomboy/ActionManager.cs:161
-msgid "Tomboy Help"
-msgstr "Pomoc Tomboy"
-
-#: ../Tomboy/ActionManager.cs:165
-msgid "About Tomboy"
-msgstr "O programie Tomboy"
-
-#: ../Tomboy/ActionManager.cs:168
-msgid "TrayIcon"
-msgstr "Ikona powiadamiania"
-
-#: ../Tomboy/ActionManager.cs:171
-msgid "Create _New Note"
-msgstr "Utwórz _nową notatkę"
-
-#: ../Tomboy/ActionManager.cs:175
-#: ../Tomboy/NoteWindow.cs:359
-msgid "_Search All Notes"
-msgstr "_Szukaj w notatkach"
-
-#: ../Tomboy/ActionManager.cs:176
-msgid "Open the Search All Notes window"
-msgstr "Otwiera okno przeszukiwania wszystkich notatek"
-
-#: ../Tomboy/ActionManager.cs:179
-msgid "S_ynchronize Notes"
-msgstr "_Synchronizuj notatki"
-
-#: ../Tomboy/ActionManager.cs:180
-msgid "Start synchronizing notes"
-msgstr "Uruchamia synchronizację notatek"
-
-#: ../Tomboy/Addins/Backlinks/BacklinksNoteAddin.cs:38
-msgid "What links here?"
-msgstr "Odnośniki do tej notatki"
-
-#: ../Tomboy/Addins/Backlinks/BacklinksNoteAddin.cs:84
-msgid "(none)"
-msgstr "(brak)"
-
-#: ../Tomboy/Addins/Bugzilla/BugzillaPreferences.cs:32
-msgid "You can use any bugzilla just by dragging links into notes.  If you want a special icon for certain hosts, add them here."
-msgstr "Do korzystania z bugzilli wystarczy przeciągnąć odnośniki do notatek. Tutaj można także przypisać ikony dla poszczególnych komputerów."
-
-#: ../Tomboy/Addins/Bugzilla/BugzillaPreferences.cs:50
-msgid "Host Name"
-msgstr "Nazwa komputera"
-
-#: ../Tomboy/Addins/Bugzilla/BugzillaPreferences.cs:67
-msgid "Icon"
-msgstr "Ikona"
-
-#: ../Tomboy/Addins/Bugzilla/BugzillaPreferences.cs:185
-msgid "Select an icon..."
-msgstr "Wybór ikony..."
-
-#. Extra Widget
-#: ../Tomboy/Addins/Bugzilla/BugzillaPreferences.cs:200
-msgid "_Host name:"
-msgstr "Nazwa _komputera"
-
-#: ../Tomboy/Addins/Bugzilla/BugzillaPreferences.cs:229
-msgid "No host name specified"
-msgstr "Nie określono nazwy komputera"
-
-#: ../Tomboy/Addins/Bugzilla/BugzillaPreferences.cs:230
-msgid "You must specify the Bugzilla host name to use with this icon."
-msgstr "Do użycia tej ikony należy określić nazwę komputera obsługującego Bugzillę."
-
-#: ../Tomboy/Addins/Bugzilla/BugzillaPreferences.cs:256
-msgid "Error saving icon"
-msgstr "Wystąpił błąd podczas zapisywania ikony"
-
-#: ../Tomboy/Addins/Bugzilla/BugzillaPreferences.cs:257
-msgid "Could not save the icon file."
-msgstr "Nie można zapisać pliku ikony."
-
-#: ../Tomboy/Addins/Bugzilla/BugzillaPreferences.cs:311
-msgid "Really remove this icon?"
-msgstr "Na pewno usunąć tę ikonę?"
-
-#: ../Tomboy/Addins/Bugzilla/BugzillaPreferences.cs:312
-msgid "If you remove an icon it is permanently lost."
-msgstr "Usunięcie spowoduje bezpowrotną utratę ikony."
-
-#: ../Tomboy/Addins/ExportToHtml/ExportToHtmlNoteAddin.cs:66
-msgid "Export to HTML"
-msgstr "Eksportuj do HTML"
-
-#: ../Tomboy/Addins/ExportToHtml/ExportToHtmlNoteAddin.cs:113
-#, csharp-format
-msgid "Your note was exported to \"{0}\"."
-msgstr "Notatka została wyeksportowana do \"{0}\"."
-
-#: ../Tomboy/Addins/ExportToHtml/ExportToHtmlNoteAddin.cs:124
-msgid "Note exported successfully"
-msgstr "Notatka została pomyślnie wyeksportowana"
-
-#: ../Tomboy/Addins/ExportToHtml/ExportToHtmlNoteAddin.cs:130
-msgid "Access denied."
-msgstr "Dostęp zabroniony."
-
-#: ../Tomboy/Addins/ExportToHtml/ExportToHtmlNoteAddin.cs:132
-msgid "Folder does not exist."
-msgstr "Katalog nie istnieje."
-
-#: ../Tomboy/Addins/ExportToHtml/ExportToHtmlNoteAddin.cs:147
-#, csharp-format
-msgid "Could not save the file \"{0}\""
-msgstr "Zapisanie pliku \"{0}\" nie było możliwe"
-
-#: ../Tomboy/Addins/ExportToHtml/ExportToHtmlDialog.cs:13
-msgid "Destination for HTML Export"
-msgstr "Miejsce docelowe eksportu HTML"
-
-#: ../Tomboy/Addins/ExportToHtml/ExportToHtmlDialog.cs:23
-msgid "Export linked notes"
-msgstr "Eksport dowiązanych notatek"
-
-#: ../Tomboy/Addins/ExportToHtml/ExportToHtmlDialog.cs:28
-msgid "Include all other linked notes"
-msgstr "Dołącz wszystkie inne powiązane notatki"
-
-#: ../Tomboy/Addins/Evolution/EvolutionNoteAddin.cs:273
-msgid "Cannot open email"
-msgstr "Nie można otworzyć wiadomości e-mail"
-
-#: ../Tomboy/Addins/FileSystemSyncService/FileSystemSyncServiceAddin.cs:91
-msgid "_Folder Path:"
-msgstr "Ścieżka do _katalogu:"
-
-#: ../Tomboy/Addins/FileSystemSyncService/FileSystemSyncServiceAddin.cs:101
-msgid "_Browse..."
-msgstr "Prze_glądaj..."
-
-#: ../Tomboy/Addins/FileSystemSyncService/FileSystemSyncServiceAddin.cs:120
-msgid "Select Synchronization Folder..."
-msgstr "Wybierz katalog synchronizacji..."
-
-#: ../Tomboy/Addins/FileSystemSyncService/FileSystemSyncServiceAddin.cs:148
-msgid "Folder path field is empty."
-msgstr "Pole ścieżki katalogu jest puste."
-
-#: ../Tomboy/Addins/FileSystemSyncService/FileSystemSyncServiceAddin.cs:157
-msgid "Specified folder path does not exist, and Tomboy was unable to create it."
-msgstr "Podana ścieżka do katalogu nie istnieje i nie mogła być utworzona."
-
-#: ../Tomboy/Addins/FileSystemSyncService/FileSystemSyncServiceAddin.cs:235
-msgid "Local Folder"
-msgstr "Katalog lokalny"
-
-#: ../Tomboy/Addins/FixedWidth/FixedWidthMenuItem.cs:14
-msgid "_Fixed Width"
-msgstr "Stała _szerokość"
-
-#: ../Tomboy/Addins/GalagoPresence/GalagoPresenceNoteAddin.cs:244
-#, csharp-format
-msgid "Cannot contact '{0}'"
-msgstr "Nie można skontaktować się z \"{0}\""
-
-#: ../Tomboy/Addins/GalagoPresence/GalagoPresenceNoteAddin.cs:247
-#, csharp-format
-msgid "Error running gaim-remote: {0}"
-msgstr "Błąd uruchomienia gaim-remote: {0}"
-
-#: ../Tomboy/Addins/InsertTimestamp/InsertTimestampNoteAddin.cs:29
-msgid "Insert Timestamp"
-msgstr "Wstaw znacznik czasu"
-
-#. initial newline
-#: ../Tomboy/Addins/InsertTimestamp/InsertTimestampPreferences.cs:29
-#: ../Tomboy/Applet.cs:210
-#: ../Tomboy/Preferences.cs:132
-msgid "dddd, MMMM d, h:mm tt"
-msgstr "dddd, d MMMM, H:mm"
-
-#: ../Tomboy/Addins/InsertTimestamp/InsertTimestampPreferences.cs:54
-msgid "Choose one of the predefined formats or use your own."
-msgstr "Proszę wybrać jeden z zaproponowanych formatów lub użyć własnego."
-
-#: ../Tomboy/Addins/InsertTimestamp/InsertTimestampPreferences.cs:62
-msgid "Use _Selected Format"
-msgstr "Użycie _zaznaczonego formatu"
-
-#: ../Tomboy/Addins/InsertTimestamp/InsertTimestampPreferences.cs:87
-msgid "_Use Custom Format"
-msgstr "Własny forma_t"
-
-#: ../Tomboy/Addins/NoteOfTheDay/NoteOfTheDay.cs:10
-msgid "Today: Template"
-msgstr "Dzisiaj: Szablon"
-
-#: ../Tomboy/Addins/NoteOfTheDay/NoteOfTheDay.cs:12
-msgid "Today: "
-msgstr "Dzisiaj: "
-
-#. Format: "Today: Friday, July 01 2005"
-#: ../Tomboy/Addins/NoteOfTheDay/NoteOfTheDay.cs:17
-msgid "dddd, MMMM d yyyy"
-msgstr "dddd, d MMMM yyyy"
-
-#: ../Tomboy/Addins/NoteOfTheDay/NoteOfTheDay.cs:43
-msgid "Tasks"
-msgstr "Zadania"
-
-#: ../Tomboy/Addins/NoteOfTheDay/NoteOfTheDay.cs:44
-msgid "Appointments"
-msgstr "Spotkania"
-
-#: ../Tomboy/Addins/NoteOfTheDay/NoteOfTheDayPreferences.cs:16
-msgid "Change the <span weight=\"bold\">Today: Template</span> note to customize the text that new Today notes have."
-msgstr "Aby zmienić tekst w nowych notatkach Dzisiaj, wystarczy zmienić wzorzec <span weight=\"bold\">Dzisiaj: Szablon</span>."
-
-#: ../Tomboy/Addins/NoteOfTheDay/NoteOfTheDayPreferences.cs:24
-msgid "_Open Today: Template"
-msgstr "_Otwórz Dzisiaj: Szablon"
-
-#: ../Tomboy/Addins/PrintNotes/PrintNotesNoteAddin.cs:51
-msgid "Print"
-msgstr "Drukuj"
-
-#: ../Tomboy/Addins/PrintNotes/PrintNotesNoteAddin.cs:79
-msgid "Error printing note"
-msgstr "Wystąpił błąd podczas zapisywania drukowania notatki"
-
-#: ../Tomboy/Addins/PrintNotes/PrintNotesNoteAddin.cs:205
-#, csharp-format
-msgid "Page {0} of {1}"
-msgstr "Strona {0} z {1}"
-
-#. Translators: Explanation of the date and time format specifications can be found here:
-#. * http://msdn.microsoft.com/en-us/library/system.globalization.datetimeformatinfo.aspx
-#: ../Tomboy/Addins/PrintNotes/PrintNotesNoteAddin.cs:224
-msgid "dddd MM/dd/yyyy, hh:mm:ss tt"
-msgstr "dddd, d MMMM, H:mm"
-
-#: ../Tomboy/Addins/Sketching/SketchingNoteAddin.cs:19
-msgid "Add a sketch"
-msgstr "Dodaj szkic"
-
-#: ../Tomboy/Addins/SshSyncService/SshSyncServiceAddin.cs:43
-msgid "Se_rver:"
-msgstr "Ser_wer:"
-
-#: ../Tomboy/Addins/SshSyncService/SshSyncServiceAddin.cs:52
-#: ../Tomboy/Addins/WebDavSyncService/WebDavSyncServiceAddin.cs:60
-msgid "User_name:"
-msgstr "Nazwa uż_ytkownika:"
-
-#: ../Tomboy/Addins/SshSyncService/SshSyncServiceAddin.cs:61
-msgid "_Folder Path (optional):"
-msgstr "Ścieżka do _katalogu (opcjonalna):"
-
-#. Text for label describing setup required for SSH sync addin to work
-#: ../Tomboy/Addins/SshSyncService/SshSyncServiceAddin.cs:71
-msgid "SSH synchronization requires an existing SSH key for this server and user, added to a running SSH daemon."
-msgstr "Synchronizacja SSH wymaga istniejącego klucza SSH dla tego serwera i klucza, dodanego do uruchomionej usługi SSH."
-
-#: ../Tomboy/Addins/SshSyncService/SshSyncServiceAddin.cs:95
-msgid "Server or username field is empty."
-msgstr "Pole serwer lub nazwa użytkownika jest puste."
-
-#: ../Tomboy/Addins/SshSyncService/SshSyncServiceAddin.cs:143
-msgid "SSH (sshfs FUSE)"
-msgstr "SSH (sshfs FUSE)"
-
-#: ../Tomboy/Addins/SshSyncService/SshSyncServiceAddin.cs:191
-msgid "Timeout connecting to server. Please ensure that your SSH key has been added to a running SSH daemon."
-msgstr "Przekroczono limit czasu połączenia z serwerem. Proszę upewnić się, że klucz SSH został dodany do uruchomionego demona SSH."
-
-#: ../Tomboy/Addins/StickyNoteImport/StickyNoteImportNoteAddin.cs:50
-msgid "Import from Sticky Notes"
-msgstr "Importuj z programu Sticky Notes"
-
-#: ../Tomboy/Addins/StickyNoteImport/StickyNoteImportNoteAddin.cs:133
-msgid "No Sticky Notes found"
-msgstr "Nie znaleziono notatek"
-
-#: ../Tomboy/Addins/StickyNoteImport/StickyNoteImportNoteAddin.cs:134
-#, csharp-format
-msgid "No suitable Sticky Notes file was found at \"{0}\"."
-msgstr "Nie znaleziono pliku notatek Sticky Notes w \"{0}\"."
-
-#: ../Tomboy/Addins/StickyNoteImport/StickyNoteImportNoteAddin.cs:143
-msgid "Sticky Notes import completed"
-msgstr "Import notatek zakończony"
-
-#: ../Tomboy/Addins/StickyNoteImport/StickyNoteImportNoteAddin.cs:144
-#, csharp-format
-msgid "<b>{0}</b> of <b>{1}</b> Sticky Notes were successfully imported."
-msgstr "Import notatek zakończony powodzeniem (<b>{0}</b> z <b>{1}</b>)."
-
-#: ../Tomboy/Addins/StickyNoteImport/StickyNoteImportNoteAddin.cs:156
-msgid "Untitled"
-msgstr "Bez tytułu"
-
-#: ../Tomboy/Addins/StickyNoteImport/StickyNoteImportNoteAddin.cs:185
-msgid "Sticky Note: "
-msgstr "Notatka: "
-
-#: ../Tomboy/Addins/Tasque/TasqueNoteAddin.cs:62
-msgid "Tasque"
-msgstr "Tasque"
-
-#. Note to translators: "All" here must match up with the "All"
-#. category translation in Tasque for this to work properly.  "All"
-#. is used here to allow Tasque to decide which default category
-#. will be used to create the new task.
-#: ../Tomboy/Addins/Tasque/TasqueNoteAddin.cs:86
-msgid "All"
-msgstr "Wszystkie"
-
-#: ../Tomboy/Addins/Tasque/TasqueNoteAddin.cs:145
-msgid "--- Tasque is not running ---"
-msgstr "--- Tasque jest wyłączony ---"
-
-#: ../Tomboy/Addins/WebDavSyncService/WebDavSyncServiceAddin.cs:51
-msgid "_URL:"
-msgstr "Adres _URL:"
-
-#: ../Tomboy/Addins/WebDavSyncService/WebDavSyncServiceAddin.cs:69
-msgid "_Password:"
-msgstr "_Hasło:"
-
-#: ../Tomboy/Addins/WebDavSyncService/WebDavSyncServiceAddin.cs:90
-msgid "URL, username, or password field is empty."
-msgstr "Pole URL, nazwa użytkownika lub hasło jest puste."
-
-#: ../Tomboy/Addins/WebDavSyncService/WebDavSyncServiceAddin.cs:132
-msgid "WebDAV (wdfs FUSE)"
-msgstr "WebDAV (wdfs FUSE)"
-
-#: ../Tomboy/Addins/WebDavSyncService/WebDavSyncServiceAddin.cs:191
-msgid "There was an error connecting to the server.  This may be caused by using an incorrect user name and/or password."
-msgstr "Napotkano błąd podczas łączenia z serwerem. Może to być spowodowanie niepoprawną nazwą użytkownika i/lub hasłem."
-
-#. TODO: If the above fails (no keyring daemon), save all but password
-#. to GConf, and notify user.
-#. Save configuration into GConf
-#. Preferences.Set ("/apps/tomboy/sync_wdfs_url", url ?? string.Empty);
-#. Preferences.Set ("/apps/tomboy/sync_wdfs_username", username ?? string.Empty);
-#: ../Tomboy/Addins/WebDavSyncService/WebDavSyncServiceAddin.cs:267
-msgid "Saving configuration to the GNOME keyring failed with the following message:"
-msgstr "Zapis konfiguracji w bazie kluczy GNOME zakończony niepowodzeniem:"
-
-#. Translators: This is the name of "Window" menu in the Mac menubar
-#: ../Tomboy/MacApplication.cs:160
-msgid "_Window"
-msgstr "_Okno"
-
-#: ../Tomboy/Notebooks/CreateNotebookDialog.cs:24
-#: ../Tomboy/Notebooks/NotebookApplicationAddin.cs:53
-msgid "Create a new notebook"
-msgstr "Nowy notatnik"
-
-#: ../Tomboy/Notebooks/CreateNotebookDialog.cs:25
-msgid "Type the name of the notebook you'd like to create."
-msgstr "Proszę podać nazwę notatnika do utworzenia."
-
-#: ../Tomboy/Notebooks/CreateNotebookDialog.cs:31
-msgid "N_otebook name:"
-msgstr "Na_zwa notatnika:"
-
-#: ../Tomboy/Notebooks/CreateNotebookDialog.cs:45
-msgid "Name already taken"
-msgstr "Nazwa jest już zajęta"
-
-#. Translation note: This is the Create button in the Create
-#. New Note Dialog.
-#: ../Tomboy/Notebooks/CreateNotebookDialog.cs:59
-msgid "C_reate"
-msgstr "_Utwórz"
-
-#. The templateNoteTite should show the name of the
-#. notebook.  For example, if the name of the notebooks
-#. "Meetings", the templateNoteTitle should be "Meetings
-#. Notebook Template".  Translators should place the
-#. name of the notebook accordingly using "{0}".
-#. TODO: Figure out how to make this note for
-#. translators appear properly.
-#: ../Tomboy/Notebooks/Notebook.cs:79
-#, csharp-format
-msgid "{0} Notebook Template"
-msgstr "Szablon notatki {0}"
-
-#: ../Tomboy/Notebooks/Notebook.cs:183
-msgid "All Notes"
-msgstr "Wszystkie notatki"
-
-#: ../Tomboy/Notebooks/Notebook.cs:215
-msgid "Unfiled Notes"
-msgstr "Notatki bez kategorii"
-
-#: ../Tomboy/Notebooks/NotebookApplicationAddin.cs:48
-msgid "Note_books"
-msgstr "No_tatniki"
-
-#: ../Tomboy/Notebooks/NotebookApplicationAddin.cs:49
-#: ../Tomboy/Notebooks/NotebookApplicationAddin.cs:69
-msgid "Create a new note in a notebook"
-msgstr "Tworzy nową notatkę w notatniku"
-
-#: ../Tomboy/Notebooks/NotebookApplicationAddin.cs:52
-#: ../Tomboy/Notebooks/NotebookApplicationAddin.cs:223
-msgid "New Note_book..."
-msgstr "Nowy _notatnik..."
-
-#: ../Tomboy/Notebooks/NotebookApplicationAddin.cs:56
-msgid "_New Note"
-msgstr "N_owa notatka"
-
-#: ../Tomboy/Notebooks/NotebookApplicationAddin.cs:57
-msgid "Create a new note in this notebook"
-msgstr "Tworzy nową notatkę w tym notatniku"
-
-#: ../Tomboy/Notebooks/NotebookApplicationAddin.cs:60
-msgid "_Open Template Note"
-msgstr "_Otwórz szablon notatki"
-
-#: ../Tomboy/Notebooks/NotebookApplicationAddin.cs:61
-msgid "Open this notebook's template note"
-msgstr "Otwiera szablon notatki tego notatnika"
-
-#: ../Tomboy/Notebooks/NotebookApplicationAddin.cs:64
-msgid "Delete Note_book"
-msgstr "Usuń nota_tnik"
-
-#: ../Tomboy/Notebooks/NotebookApplicationAddin.cs:65
-msgid "Delete the selected notebook"
-msgstr "Usuwa zaznaczony notatnik"
-
-#: ../Tomboy/Notebooks/NotebookApplicationAddin.cs:68
-#: ../Tomboy/RecentChanges.cs:251
-msgid "Notebooks"
-msgstr "Notatniki"
-
-#: ../Tomboy/Notebooks/NotebookManager.cs:356
-msgid "Really delete this notebook?"
-msgstr "Na pewno usunąć ten notatnik?"
-
-#: ../Tomboy/Notebooks/NotebookManager.cs:358
-msgid "The notes that belong to this notebook will not be deleted, but they will no longer be associated with this notebook.  This action cannot be undone."
-msgstr "Notatki należące do tego notatnika nie zostaną usunięte, lecz nie będą już powiązane z tym notatnikiem. Ta czynność nie może zostać cofnięta."
-
-#: ../Tomboy/Notebooks/NotebookMenuItem.cs:14
-msgid "No notebook"
-msgstr "Brak notatnika"
-
-#. Translators should preserve the "{0}" in the following
-#. string.  After being formatted for a notebook named,
-#. "Meetings", for example, the resultant string would be:
-#. New "Meetings" Note
-#: ../Tomboy/Notebooks/NotebookNewNoteMenuItem.cs:27
-#, csharp-format
-msgid "New \"{0}\" Note"
-msgstr "Nowa notatka \"{0}\""
-
-#: ../Tomboy/Notebooks/NotebookNoteAddin.cs:45
-msgid "Place this note into a notebook"
-msgstr "Umieść tę notatkę w notatniku"
-
-#: ../Tomboy/Notebooks/NotebookNoteAddin.cs:126
-msgid "Notebook"
-msgstr "Notatnik"
-
-#: ../Tomboy/Notebooks/NotebookNoteAddin.cs:155
-msgid "_New notebook..."
-msgstr "Nowy _notatnik..."
-
-#: ../Tomboy/Note.cs:1427
-msgid "Really delete this note?"
-msgstr "Ne pewno usunąć tę notatkę?"
-
-#: ../Tomboy/Note.cs:1430
-#, csharp-format
-msgid "Really delete this {0} note?"
-msgid_plural "Really delete these {0} notes?"
-msgstr[0] "Ne pewno usunąć tę {0} notatkę?"
-msgstr[1] "Ne pewno usunąć te {0} notatki?"
-msgstr[2] "Ne pewno usunąć tych {0} notatek?"
-
-#: ../Tomboy/Note.cs:1441
-msgid "If you delete a note it is permanently lost."
-msgstr "Usunięcie spowoduję bezpowrotną utratę notatki."
-
-#: ../Tomboy/Note.cs:1475
-msgid "Error saving note data."
-msgstr "Wystąpił błąd podczas zapisywania danych notatki."
-
-#: ../Tomboy/Note.cs:1476
-msgid "An error occurred while saving your notes. Please check that you have sufficient disk space, and that you have appropriate rights on ~/.tomboy. Error details can be found in ~/.tomboy.log."
-msgstr "Wystąpił błąd podczas zapisywania notatek. Proszę sprawdzić, czy dostępna jest wystarczająca ilość miejsca na dysku i czy użytkownik ma odpowiednie uprawnienia do katalogu ~/.tomboy. Szczegóły błędu można znaleźć w pliku ~/.tomboy.log."
-
-#. New Note Template
-#. Translators: This is 'New Note' Template, not New 'Note Template'
-#: ../Tomboy/NoteManager.cs:19
-#: ../Tomboy/PreferencesDialog.cs:210
-msgid "New Note Template"
-msgstr "Wzorzec nowej notatki"
-
-#: ../Tomboy/NoteManager.cs:135
+#: ../backends/evoldap-backend.c:159
+#, c-format
+msgid "Failed to get configuration file path from '%s'"
+msgstr "Nie powiodło się pobranie ścieżki pliku konfiguracyjnego z \"%s\""
+
+#: ../backends/evoldap-backend.c:170
+#, c-format
+msgid "Created Evolution/LDAP source using configuration file '%s'"
+msgstr "Utworzono źródło Evolution/LDAP przy użyciu pliku konfiguracyjnego \"%s\""
+
+#: ../backends/evoldap-backend.c:444
+#, c-format
+msgid "Unable to parse XML file '%s'"
+msgstr "Nie można przeanalizować pliku XML \"%s\""
+
+#: ../backends/evoldap-backend.c:453
+#, c-format
+msgid "Config file '%s' is empty"
+msgstr "Plik konfiguracyjny \"%s\" jest pusty"
+
+#: ../backends/evoldap-backend.c:464
+#, c-format
+msgid "Root node of '%s' must be <evoldap>, not <%s>"
+msgstr "Węzeł główny \"%s\" musi być typu <evoldap> a nie <%s>"
+
+#: ../backends/evoldap-backend.c:502
+#, c-format
+msgid "No <template> specified in '%s'"
+msgstr "Nie określono <template> w \"%s\""
+
+#: ../backends/evoldap-backend.c:509
+#, c-format
+msgid "No \"filter\" attribute specified on <template> in '%s'"
+msgstr "Nie określono atrybutu \"filter\" dla elementu <template> w \"%s\""
+
+#: ../backends/evoldap-backend.c:571
+#, c-format
+msgid "No LDAP server or base DN specified in '%s'"
+msgstr "Nie określono serwera LDAP lub bazowego DN w \"%s\""
+
+#: ../backends/evoldap-backend.c:577
+#, c-format
+msgid "Contacting LDAP server: host '%s', port '%d', base DN '%s'"
+msgstr "Lączenie z serwerem LDAP: komputer \"%s\", port \"%d\", bazowy DN \"%s\""
+
+#: ../backends/evoldap-backend.c:584
+#, c-format
+msgid "Failed to contact LDAP server: %s"
+msgstr "Nie można połączyć się z serwerem LDAP: %s"
+
+#: ../backends/evoldap-backend.c:672
+#, c-format
+msgid "Searching for entries using filter: %s"
+msgstr "Wyszukiwanie elementów przy użyciu filtra: %s"
+
+#: ../backends/evoldap-backend.c:686
+#, c-format
+msgid "Error querying LDAP server: %s"
+msgstr "Błąd przy odpytywaniu serwera LDAP: %s"
+
+#: ../backends/evoldap-backend.c:696
+#, c-format
+msgid "Got %d entries using filter: %s"
+msgstr "Uzyskano %d elementów przy użyciu filtra: %s"
+
+#: ../backends/gconf-merge-tree.c:59
+#, c-format
+msgid "Cannot find directory %s\n"
+msgstr "Nie można znaleźć katalogu %s\n"
+
+#: ../backends/gconf-merge-tree.c:75
+#, c-format
+msgid "Error saving GConf tree to '%s': %s\n"
+msgstr "Błąd podczas zapisu drzewa GConf do \"%s\": %s\n"
+
+#: ../backends/gconf-merge-tree.c:101
+#, c-format
+msgid "Usage: %s <dir>\n"
+msgstr "Użycie: %s <katalog>\n"
+
+#: ../backends/gconf-merge-tree.c:107
+#, c-format
 msgid ""
-"<note-content>Start Here\n"
-"\n"
-"<bold>Welcome to Tomboy!</bold>\n"
-"\n"
-"Use this \"Start Here\" note to begin organizing your ideas and thoughts.\n"
-"\n"
-"You can create new notes to hold your ideas by selecting the \"Create New Note\" item from the Tomboy Notes menu in your GNOME Panel. Your note will be saved automatically.\n"
-"\n"
-"Then organize the notes you create by linking related notes and ideas together!\n"
-"\n"
-"We've created a note called <link:internal>Using Links in Tomboy</link:internal>.  Notice how each time we type <link:internal>Using Links in Tomboy</link:internal> it automatically gets underlined?  Click on the link to open the note.</note-content>"
+"Usage: %s <dir>\n"
+"  Merges a markup backend filesystem hierarchy like:\n"
+"    dir/%%gconf.xml\n"
+"        subdir1/%%gconf.xml\n"
+"        subdir2/%%gconf.xml\n"
+"  to:\n"
+"    dir/%%gconf-tree.xml\n"
 msgstr ""
-"<note-content>Start\n"
-"\n"
-"<bold>Witamy w programie Tomboy!</bold>\n"
-"\n"
-"Notatka \"Start\" pozwala rozpocząć organizowanie swoich pomysłów i myśli.\n"
-"\n"
-"Poprzez wybranie polecenia \"Utwórz nową notatkę\" z menu programu Tomboy w panelu GNOME, można tworzyć nowe notatki i szybko zapisywać swoje pomysły.\n"
-"\n"
-"Sporządzone notatki można bardzo łatwo organizować tworząc hierarchie i powiązania pokrewnych idei za pomocą odnośników.\n"
-"\n"
-"Stworzyliśmy przykładową notatkę o nazwie <link:internal>Używanie odnośników</link:internal>. Proszę zauważyć, że za każdym razem, gdy piszemy <link:internal>Używanie odnośników</link:internal>, nazwa ta zostaje automatycznie podkreślona, a kliknięcie odnośnika natychmiast otwiera tą notatkę.</note-content>"
+"Użycie: %s <katalog>\n"
+"  Scala hierarchię znaczników w systemie plików w postaci:\n"
+"    katalog/%%gconf.xml\n"
+"            podkatalog1/%%gconf.xml\n"
+"            podkatalog2/%%gconf.xml\n"
+"  do postaci:\n"
+"    katalog/%%gconf-tree.xml\n"
 
-#: ../Tomboy/NoteManager.cs:154
+#: ../backends/markup-backend.c:163
+msgid "Unloading text markup backend module."
+msgstr "Usuwanie z pamięci modułu oznaczania tekstu."
+
+#: ../backends/markup-backend.c:226
+#: ../backends/xml-backend.c:288
+#, c-format
+msgid "Couldn't find the XML root directory in the address `%s'"
+msgstr "Nie można znaleźć katalogu głównego XML pod adresem \"%s\""
+
+#: ../backends/markup-backend.c:283
+#: ../backends/xml-backend.c:343
+#, c-format
+msgid "Could not make directory `%s': %s"
+msgstr "Nie można utworzyć katalogu \"%s\": %s"
+
+#: ../backends/markup-backend.c:390
+#: ../backends/xml-backend.c:442
+#, c-format
+msgid "Can't read from or write to the XML root directory in the address \"%s\""
+msgstr "Nie można odczytać lub zapisywać do katalogu głównego XML-a pod adresem \"%s\""
+
+#: ../backends/markup-backend.c:401
+#: ../backends/xml-backend.c:452
+#, c-format
+msgid "Directory/file permissions for XML source at root %s are: %o/%o"
+msgstr "Uprawnienia do katalogu/pliku dla źródła XML dla roota %s są: %o/%o"
+
+#: ../backends/markup-backend.c:740
+#: ../backends/xml-backend.c:683
+#, c-format
+msgid "Remove directory operation is no longer supported, just remove all the values in the directory"
+msgstr "Operacja usuwania katalogu nie jest już obsługiwana, należy po prostu usunąć wszystkie wartości z katalogu"
+
+#: ../backends/markup-backend.c:826
+#: ../backends/xml-backend.c:769
+#, c-format
+msgid "Could not open lock directory for %s to remove locks: %s\n"
+msgstr "Nie można otworzyć katalogu blokad dla %s w celu usunięcia blokad: %s\n"
+
+#: ../backends/markup-backend.c:839
+#: ../backends/xml-backend.c:782
+#, c-format
+msgid "Could not remove file %s: %s\n"
+msgstr "Nie można usunąć pliku %s: %s\n"
+
+#: ../backends/markup-backend.c:860
+msgid "Initializing Markup backend module"
+msgstr "Inicjowanie modułu znaczników"
+
+#: ../backends/markup-backend.c:918
+#: ../backends/xml-backend.c:880
+#, c-format
+msgid "Failed to give up lock on XML directory \"%s\": %s"
+msgstr "Nieudana próba zwolnienia blokady na katalogu XML \"%s\": %s"
+
+#: ../backends/markup-tree.c:400
+#, c-format
+msgid "Failed to write some configuration data to disk\n"
+msgstr "Nie można zapisać pewnych danych konfiguracyjnych na dysk\n"
+
+#: ../backends/markup-tree.c:923
+#: ../backends/xml-dir.c:1267
+#, c-format
+msgid "Could not make directory \"%s\": %s"
+msgstr "Nie można utworzyć katalogu \"%s\": %s"
+
+#: ../backends/markup-tree.c:963
+#: ../backends/markup-tree.c:970
+#, c-format
+msgid "Could not remove \"%s\": %s\n"
+msgstr "Nie można usunąć pliku \"%s\": %s\n"
+
+#: ../backends/markup-tree.c:1171
+#, c-format
+msgid "Failed to write \"%s\": %s\n"
+msgstr "Nie można zapisać \"%s\": %s\n"
+
+#: ../backends/markup-tree.c:1379
+#, c-format
+msgid "Failed to load file \"%s\": %s"
+msgstr "Nie można wczytać pliku \"%s\": %s"
+
+#: ../backends/markup-tree.c:1969
+#, c-format
+msgid "Line %d character %d: %s"
+msgstr "Wiersz %d znak %d: %s"
+
+#: ../backends/markup-tree.c:2188
+#, c-format
+msgid "Attribute \"%s\" repeated twice on the same <%s> element"
+msgstr "Atrybut \"%s\" powtórzony dwukrotnie dla tego samego elementu <%s>"
+
+#: ../backends/markup-tree.c:2205
+#: ../backends/markup-tree.c:2229
+#, c-format
+msgid "Attribute \"%s\" is invalid on <%s> element in this context"
+msgstr "Atrybut \"%s\" jest nieprawidłowy dla elementu <%s> w tym kontekście"
+
+#: ../backends/markup-tree.c:2254
+#: ../gconf/gconf-value.c:111
+#, c-format
+msgid "Didn't understand `%s' (expected integer)"
+msgstr "Niezrozumiała wartość \"%s\" (oczekiwano liczby całkowitej)"
+
+#: ../backends/markup-tree.c:2261
+#: ../gconf/gconf-value.c:121
+#, c-format
+msgid "Integer `%s' is too large or small"
+msgstr "Wartość całkowita \"%s\" jest zbyt duża lub zbyt mała"
+
+#: ../backends/markup-tree.c:2293
+#: ../gconf/gconf-value.c:186
+#, c-format
+msgid "Didn't understand `%s' (expected true or false)"
+msgstr "Niezrozumiała wartość \"%s\" (oczekiwano wartości logicznej)"
+
+#: ../backends/markup-tree.c:2317
+#: ../gconf/gconf-value.c:142
+#, c-format
+msgid "Didn't understand `%s' (expected real number)"
+msgstr "Niezrozumiała wartość \"%s\" (oczekiwano liczby rzeczywistej)"
+
+#: ../backends/markup-tree.c:2397
+#, c-format
+msgid "Unknown value \"%s\" for \"%s\" attribute on element <%s>"
+msgstr "Nieznana wartość \"%s\" dla atrybutu \"%s\" elementu <%s>"
+
+#: ../backends/markup-tree.c:2417
+#: ../backends/markup-tree.c:2457
+#: ../backends/markup-tree.c:2481
+#: ../backends/markup-tree.c:2489
+#: ../backends/markup-tree.c:2544
+#: ../backends/markup-tree.c:2609
+#: ../backends/markup-tree.c:2721
+#: ../backends/markup-tree.c:2789
+#: ../backends/markup-tree.c:2847
+#: ../backends/markup-tree.c:2997
+#, c-format
+msgid "No \"%s\" attribute on element <%s>"
+msgstr "Brak atrybutu \"%s\" dla elementu <%s>"
+
+#: ../backends/markup-tree.c:2431
+#, c-format
+msgid "Invalid ltype \"%s\" on <%s>"
+msgstr "Nieprawidłowa wartość ltype \"%s\" dla <%s>"
+
+#: ../backends/markup-tree.c:2511
+#, c-format
+msgid "Invalid first-element type \"%s\" on <%s>"
+msgstr "Nieprawidłowy rodzaj wartości first-element \"%s\" dla <%s>"
+
+#: ../backends/markup-tree.c:2525
+#, c-format
+msgid "Invalid cdr_type \"%s\" on <%s>"
+msgstr "Nieprawidłowa wartość cdr_type \"%s\" dla <%s>"
+
+#: ../backends/markup-tree.c:2561
+#, c-format
+msgid "Invalid list_type \"%s\" on <%s>"
+msgstr "Nieprawidłowa wartość list_type \"%s\" dla <%s>"
+
+#: ../backends/markup-tree.c:2928
+msgid "Two <default> elements below a <local_schema>"
+msgstr "Dwa elementy <default> poniżej <local_schema>"
+
+#: ../backends/markup-tree.c:2943
+msgid "Two <longdesc> elements below a <local_schema>"
+msgstr "Dwa elementy <longdesc> poniżej <local_schema>"
+
+#: ../backends/markup-tree.c:2950
+#, c-format
+msgid "Element <%s> is not allowed below <%s>"
+msgstr "Element <%s> nie jest dozwolony poniżej <%s>"
+
+#: ../backends/markup-tree.c:2975
+#: ../backends/markup-tree.c:3080
+#: ../backends/markup-tree.c:3134
+#: ../backends/markup-tree.c:3185
+#, c-format
+msgid "<%s> provided but current element does not have type %s"
+msgstr "Podano <%s> lecz aktualny element nie posiada typu %s"
+
+#: ../backends/markup-tree.c:3058
+msgid "Two <car> elements given for same pair"
+msgstr "Dwa elementy <car> podano dla tej samej pary"
+
+#: ../backends/markup-tree.c:3072
+msgid "Two <cdr> elements given for same pair"
+msgstr "Dwa elementy <cdr> podane dla tej samej pary"
+
+#: ../backends/markup-tree.c:3126
+#, c-format
+msgid "<li> has wrong type %s"
+msgstr "<li> posiada nieprawidłowy typ %s"
+
+#: ../backends/markup-tree.c:3157
+#, c-format
+msgid "<%s> provided but parent <entry> does not have a value"
+msgstr "Dostarczono <%s> lecz rodzic <entry> nie posiada wartości"
+
+#: ../backends/markup-tree.c:3198
+#: ../backends/markup-tree.c:3221
+#: ../backends/markup-tree.c:3243
+#: ../backends/markup-tree.c:3260
+#, c-format
+msgid "Element <%s> is not allowed inside current element"
+msgstr "Element <%s> jest niedozwolony wewnątrz bieżącego elementu"
+
+#: ../backends/markup-tree.c:3292
+#, c-format
+msgid "Outermost element in menu file must be <gconf> not <%s>"
+msgstr "Skrajnym elementem w pliku menu musi być <gconf> nie <%s>"
+
+#: ../backends/markup-tree.c:3312
+#: ../backends/markup-tree.c:3334
+#: ../backends/markup-tree.c:3339
+#, c-format
+msgid "Element <%s> is not allowed inside a <%s> element"
+msgstr "Element <%s> jest niedozwolony wewnątrz elementu <%s>"
+
+#: ../backends/markup-tree.c:3483
+#, c-format
+msgid "No text is allowed inside element <%s>"
+msgstr "Tekst jest niedozwolony wewnątrz elementu <%s>"
+
+#: ../backends/markup-tree.c:3600
+#: ../backends/markup-tree.c:4366
+#: ../backends/markup-tree.c:4385
+#, c-format
+msgid "Failed to open \"%s\": %s\n"
+msgstr "Nie można otworzyć pliku \"%s\": %s\n"
+
+#: ../backends/markup-tree.c:3630
+#, c-format
+msgid "Error reading \"%s\": %s\n"
+msgstr "Błąd przy wczytywaniu \"%s\": %s\n"
+
+# td
+#: ../backends/markup-tree.c:4460
+#, c-format
+msgid "Could not flush file '%s' to disk: %s"
+msgstr "Nie można przenieść pliku \"%s\" na dysk: %s"
+
+#: ../backends/markup-tree.c:4479
+#, c-format
+msgid "Error writing file \"%s\": %s"
+msgstr "Błąd przy zapisywaniu pliku \"%s\": %s"
+
+#: ../backends/markup-tree.c:4508
+#, c-format
+msgid "Failed to move temporary file \"%s\" to final location \"%s\": %s"
+msgstr "Nie można przenieść pliku tymczasowego \"%s\" do końcowego położenia \"%s\": %s"
+
+#: ../backends/xml-backend.c:239
+msgid "Unloading XML backend module."
+msgstr "Usuwanie z pamięci modułu XML."
+
+#: ../backends/xml-backend.c:618
+#, c-format
+msgid "Error syncing the XML backend directory cache: %s"
+msgstr "Błąd przy synchronizacji cache katalogów modułu XML: %s"
+
+#: ../backends/xml-backend.c:809
+msgid "Initializing XML backend module"
+msgstr "Inicjowanie modułu XML"
+
+#: ../backends/xml-cache.c:288
+msgid "Failed to sync XML cache contents to disk"
+msgstr "Synchronizacja zawartości cache XML-a z kopią na dysku nie powiodła się"
+
+#: ../backends/xml-cache.c:318
+#, c-format
+msgid "Unable to remove directory `%s' from the XML backend cache, because it has not been successfully synced to disk"
+msgstr "Nie można usunąć katalogu \"%s\" z cache modułu operującego na XML-u, ponieważ nie został on pomyślnie zsynchronizowany z dyskiem"
+
+#: ../backends/xml-dir.c:170
+#, c-format
+msgid "Could not stat `%s': %s"
+msgstr "Nie można odczytać \"%s\": %s"
+
+#: ../backends/xml-dir.c:180
+#, c-format
+msgid "XML filename `%s' is a directory"
+msgstr "Plik XML \"%s\" jest katalogiem"
+
+#: ../backends/xml-dir.c:417
+#: ../backends/xml-dir.c:426
+#, c-format
+msgid "Failed to delete \"%s\": %s"
+msgstr "Nie można usunąć \"%s\": %s"
+
+#: ../backends/xml-dir.c:472
+#, c-format
+msgid "Failed to write file `%s': %s"
+msgstr "Nie można zapisać do pliku \"%s\": %s"
+
+#: ../backends/xml-dir.c:486
+#: ../backends/xml-dir.c:522
+#, c-format
+msgid "Failed to set mode on `%s': %s"
+msgstr "Nie można ustawić uprawnień pliku \"%s\": %s"
+
+#: ../backends/xml-dir.c:497
+#, c-format
+msgid "Failed to write XML data to `%s': %s"
+msgstr "Nie można zapisać danych w XML-u do pliku \"%s\": %s"
+
+#: ../backends/xml-dir.c:507
+#: ../backends/xml-dir.c:1291
+#, c-format
+msgid "Failed to close file `%s': %s"
+msgstr "Nie można zamknąć pliku \"%s\": %s"
+
+#: ../backends/xml-dir.c:537
+#: ../backends/xml-dir.c:547
+#, c-format
+msgid "Failed to rename `%s' to `%s': %s"
+msgstr "Nie można zmienić nazwy \"%s\" na \"%s\": %s"
+
+#: ../backends/xml-dir.c:553
+#, c-format
+msgid "Failed to restore `%s' from `%s': %s"
+msgstr "Nie można odtworzyć \"%s\" z \"%s\": %s"
+
+#: ../backends/xml-dir.c:565
+#, c-format
+msgid "Failed to delete old file `%s': %s"
+msgstr "Nie można usunąć starego pliku \"%s\": %s"
+
+#. These are all fatal errors
+#: ../backends/xml-dir.c:991
+#, c-format
+msgid "Failed to stat `%s': %s"
+msgstr "Nie można uzyskać informacji o \"%s\" : %s"
+
+#: ../backends/xml-dir.c:1165
+#, c-format
+msgid "Duplicate entry `%s' in `%s', ignoring"
+msgstr "Podwójne wpisy \"%s\" w \"%s\", zignorowano"
+
+#: ../backends/xml-dir.c:1187
+#, c-format
+msgid "Entry with no name in XML file `%s', ignoring"
+msgstr "Wpis bez nazwy w pliku XML \"%s\", zignorowano"
+
+#: ../backends/xml-dir.c:1195
+#, c-format
+msgid "A toplevel node in XML file `%s' is <%s> rather than <entry>, ignoring"
+msgstr "Głównym węzłem w pliku XML \"%s\" jest <%s> zamiast <entry>, zignorowano"
+
+#: ../backends/xml-dir.c:1283
+#, c-format
+msgid "Failed to create file `%s': %s"
+msgstr "Nie można utworzyć pliku \"%s\": %s"
+
+#: ../backends/xml-dir.c:1382
+#, c-format
+msgid "Failed to parse XML file \"%s\""
+msgstr "Przy analizie pliku XML \"%s\" wystąpił błąd"
+
+#. There was an error
+#: ../backends/xml-entry.c:153
+#, c-format
+msgid "Ignoring XML node with name `%s': %s"
+msgstr "Zignorowano węzeł XML o nazwie \"%s\": %s"
+
+#: ../backends/xml-entry.c:329
+#, c-format
+msgid "Ignoring schema name `%s', invalid: %s"
+msgstr "Zignorowano nazwę schematu \"%s\", niewłaściwy: %s"
+
+#: ../backends/xml-entry.c:377
+#, c-format
+msgid "Ignoring XML node `%s': %s"
+msgstr "Zignorowano węzeł XML-a \"%s\": %s"
+
+#: ../backends/xml-entry.c:730
+#, c-format
+msgid "Failed reading default value for schema: %s"
+msgstr "Błąd odczytu domyślnej wartości dla schematu: %s"
+
+#: ../backends/xml-entry.c:950
+#, c-format
+msgid "No \"type\" attribute for <%s> node"
+msgstr "Brak atrybutu \"type\" dla węzła <%s>"
+
+#: ../backends/xml-entry.c:964
+#, c-format
+msgid "A node has unknown \"type\" attribute `%s', ignoring"
+msgstr "Węzeł posiada nieznany atrybut \"type\" \"%s\", zignorowano"
+
+#: ../backends/xml-entry.c:979
+msgid "No \"value\" attribute for node"
+msgstr "Brak atrybutu \"value\" dla węzła"
+
+#: ../backends/xml-entry.c:1027
+#: ../backends/xml-entry.c:1103
+#, c-format
+msgid "Didn't understand XML node <%s> inside an XML list node"
+msgstr "Niezrozumiały węzeł XML-a <%s> wewnątrz węzła listy"
+
+#: ../backends/xml-entry.c:1061
+msgid "Invalid type (list, pair, or unknown) in a list node"
+msgstr "Niewłaściwy typ (lista, para, lub coś innego) w liście węzłów"
+
+#: ../backends/xml-entry.c:1084
+#, c-format
+msgid "Bad XML node: %s"
+msgstr "Niepoprawny węzeł XML-a: %s"
+
+#: ../backends/xml-entry.c:1092
+#, c-format
+msgid "List contains a badly-typed node (%s, should be %s)"
+msgstr "Lista zawiera węzeł niewłaściwego typu (%s, powinno być %s)"
+
+#: ../backends/xml-entry.c:1144
+#, c-format
+msgid "Ignoring bad car from XML pair: %s"
+msgstr "Zignorowano niepoprawny pierwszy element pary w XML-u: %s"
+
+#: ../backends/xml-entry.c:1153
+#: ../backends/xml-entry.c:1176
+msgid "parsing XML file: lists and pairs may not be placed inside a pair"
+msgstr "analiza pliku XML: listy oraz pary nie mogą być umieszczane wewnątrz par"
+
+#: ../backends/xml-entry.c:1166
+#, c-format
+msgid "Ignoring bad cdr from XML pair: %s"
+msgstr "Zignorowano niepoprawny drugi element pary w XML-u: %s"
+
+#: ../backends/xml-entry.c:1185
+#, c-format
+msgid "Didn't understand XML node <%s> inside an XML pair node"
+msgstr "Niezrozumiały węzeł XML-a <%s> wewnątrz węzła pary"
+
+#: ../backends/xml-entry.c:1203
+msgid "Didn't find car and cdr for XML pair node"
+msgstr "Nie odnaleziono w XML-u części car i cdr wewnątrz węzła pary"
+
+#: ../backends/xml-entry.c:1209
+msgid "Missing cdr from pair of values in XML file"
+msgstr "Brak drugiego elementu pary wartości w XML-u"
+
+#: ../backends/xml-entry.c:1216
+msgid "Missing car from pair of values in XML file"
+msgstr "Brak pierwszego elementu pary wartości w XML-u"
+
+#: ../backends/xml-entry.c:1221
+msgid "Missing both car and cdr values from pair in XML file"
+msgstr "Brak pierwszego i drugiego elementu pary wartości w XML-u"
+
+# td
+#: ../defaults/org.gnome.gconf.defaults.policy.in.h:1
+msgid "Change GConf mandatory values"
+msgstr "Zmiana obowiązkowych wartości GConf"
+
+# td
+#: ../defaults/org.gnome.gconf.defaults.policy.in.h:2
+msgid "Change GConf system values"
+msgstr "Zmiana wartości systemowych GConf"
+
+# td
+#: ../defaults/org.gnome.gconf.defaults.policy.in.h:3
+msgid "Privileges are required to change GConf mandatory values"
+msgstr "Aby zmienić wartości obowiązkowe GConf wymagane są uprawnienia"
+
+# td
+#: ../defaults/org.gnome.gconf.defaults.policy.in.h:4
+msgid "Privileges are required to change GConf system values"
+msgstr "Aby zmienić wartości systemowe GConf wymagane są uprawnienia"
+
+#: ../gconf/gconf-backend.c:62
+#, c-format
+msgid "`%c' is an invalid character in a configuration storage address"
+msgstr "Znak \"%c\" jest niedozwolony w adresach przechowujących konfigurację"
+
+#. -- end debug only
+#: ../gconf/gconf-backend.c:216
+#, c-format
+msgid "No such file `%s'\n"
+msgstr "Plik \"%s\" nie istnieje\n"
+
+#: ../gconf/gconf-backend.c:261
+#, c-format
+msgid "Backend `%s' failed to return a vtable\n"
+msgstr "Moduł \"%s\" nieprawidłowo zwrócił wartość vtable\n"
+
+#: ../gconf/gconf-backend.c:276
+#, c-format
+msgid "Backend `%s' missing required vtable member `%s'\n"
+msgstr "Moduł tła \"%s\" nie posiada wymaganego atrybutu vtable \"%s\"\n"
+
+#: ../gconf/gconf-backend.c:302
+#, c-format
+msgid "Bad address `%s': %s"
+msgstr "Niepoprawny adres \"%s\": %s"
+
+#: ../gconf/gconf-backend.c:312
+#, c-format
+msgid "Bad address `%s'"
+msgstr "Niepoprawny adres \"%s\""
+
+#: ../gconf/gconf-backend.c:337
+msgid "GConf won't work without dynamic module support (gmodule)"
+msgstr "GConf nie może działać bez obsługi dynamicznych modułów (gmodule)"
+
+#: ../gconf/gconf-backend.c:346
+#, c-format
+msgid "Error opening module `%s': %s\n"
+msgstr "Błąd przy otwieraniu modułu \"%s\": %s\n"
+
+#: ../gconf/gconf-backend.c:357
+#, c-format
+msgid "Error initializing module `%s': %s\n"
+msgstr "Błąd przy inicjacji modułu \"%s\": %s\n"
+
+#: ../gconf/gconf-backend.c:388
+#, c-format
+msgid "Couldn't locate backend module for `%s'"
+msgstr "Nie można odnaleźć modułu obsługującego \"%s\""
+
+#: ../gconf/gconf-backend.c:425
+msgid "Failed to shut down backend"
+msgstr "Błąd przy zamykaniu modułu przechowującego"
+
+#: ../gconf/gconf-client.c:345
+#: ../gconf/gconf-client.c:363
+#, c-format
+msgid "GConf Error: %s\n"
+msgstr "Błąd GConfa: %s\n"
+
+#: ../gconf/gconf-client.c:913
+#, c-format
+msgid "GConf warning: failure listing pairs in `%s': %s"
+msgstr "Ostrzeżenie GConf: błąd przy wypisywaniu par w \"%s\": %s"
+
+#: ../gconf/gconf-client.c:1198
+#, c-format
+msgid "Expected `%s' got `%s' for key %s"
+msgstr "Oczekiwano \"%s\", otrzymano \"%s\" dla klucza %s"
+
+#: ../gconf/gconf-database.c:212
+msgid "Received invalid value in set request"
+msgstr "Otrzymano niewłaściwą wartość w zbiorze żądania"
+
+#: ../gconf/gconf-database.c:220
+#, c-format
+msgid "Couldn't make sense of CORBA value received in set request for key `%s'"
+msgstr "Nie można zinterpretować wartości Corby otrzymanej z żądaniem przypisania do klucza \"%s\""
+
+#: ../gconf/gconf-database.c:503
+msgid "Received request to drop all cached data"
+msgstr "Otrzymano żądanie aby odrzucić wszystkie zbuforowane dane"
+
+#: ../gconf/gconf-database.c:520
+msgid "Received request to sync synchronously"
+msgstr "Otrzymano żądanie synchronicznej synchronizacji"
+
+#: ../gconf/gconf-database.c:808
+msgid "Fatal error: failed to get object reference for ConfigDatabase"
+msgstr "Poważny błąd: nie można uzyskać referencji obiektu ConfigDatabase"
+
+#: ../gconf/gconf-database.c:974
+#, c-format
+msgid "Failed to sync one or more sources: %s"
+msgstr "Błąd przy synchronizowaniu jednego lub więcej źródeł: %s"
+
+#: ../gconf/gconf-database.c:1047
+#, c-format
+msgid "Error obtaining new value for `%s' after change notification from backend `%s': %s"
+msgstr "Błąd przy pobieraniu nowej wartości dla \"%s\" po zmianie powiadamiania od tła \"%s\": %s"
+
+#: ../gconf/gconf-database.c:1120
+#, c-format
+msgid "Failed to log addition of listener %s (%s); will not be able to restore this listener on gconfd restart, resulting in unreliable notification of configuration changes."
+msgstr "Nie można zapisać w dzienniku dodania słuchacza %s (%s); przy ponownym uruchomieniu gconfd nie będzie można go przywrócić, co spowoduje niewłaściwe funkcjonowanie powiadamiania o zmianach w konfiguracji."
+
+#: ../gconf/gconf-database.c:1154
+#, c-format
+msgid "Listener ID %lu doesn't exist"
+msgstr "ID słuchacza %lu nie istnieje"
+
+#: ../gconf/gconf-database.c:1168
+#, c-format
+msgid "Failed to log removal of listener to logfile (most likely harmless, may result in a notification weirdly reappearing): %s"
+msgstr "Nie można zapisać w dzienniku usunięcia słuchacza (może to spowodować dziwne ponawianie powiadomień): %s"
+
+#: ../gconf/gconf-database.c:1301
+#: ../gconf/gconf-sources.c:1737
+#, c-format
+msgid "Error getting value for `%s': %s"
+msgstr "Błąd przy pobieraniu wartości dla \"%s\": %s"
+
+#: ../gconf/gconf-database.c:1351
+#, c-format
+msgid "Error setting value for `%s': %s"
+msgstr "Błąd przy ustawianiu wartości dla \"%s\": %s"
+
+#: ../gconf/gconf-database.c:1399
+#, c-format
+msgid "Error unsetting `%s': %s"
+msgstr "Błąd przy czyszczeniu \"%s\": %s"
+
+#: ../gconf/gconf-database.c:1428
+#, c-format
+msgid "Error getting default value for `%s': %s"
+msgstr "Błąd przy pobieraniu domyślnej wartości \"%s\": %s"
+
+#: ../gconf/gconf-database.c:1486
+#, c-format
+msgid "Error unsetting \"%s\": %s"
+msgstr "Błąd przy czyszczeniu \"%s\": %s"
+
+#: ../gconf/gconf-database.c:1517
+#, c-format
+msgid "Error getting new value for \"%s\": %s"
+msgstr "Błąd przy pobieraniu nowej wartości dla \"%s\": %s"
+
+#: ../gconf/gconf-database.c:1572
+#, c-format
+msgid "Error checking existence of `%s': %s"
+msgstr "Błąd przy sprawdzaniu istnienia \"%s\": %s"
+
+#: ../gconf/gconf-database.c:1596
+#, c-format
+msgid "Error removing directory \"%s\": %s"
+msgstr "Błąd przy usuwaniu katalogu \"%s\": %s"
+
+#: ../gconf/gconf-database.c:1623
+#, c-format
+msgid "Failed to get all entries in `%s': %s"
+msgstr "Nie można pobrać wszystkich elementów z \"%s\": %s"
+
+#: ../gconf/gconf-database.c:1649
+#, c-format
+msgid "Error listing dirs in `%s': %s"
+msgstr "Błąd przy pobieraniu zawartości katalogów w \"%s\": %s"
+
+#: ../gconf/gconf-database.c:1670
+#, c-format
+msgid "Error setting schema for `%s': %s"
+msgstr "Błąd przy ustawianiu schematu dla \"%s\": %s"
+
+#: ../gconf/gconf-error.c:26
+msgid "Success"
+msgstr "Sukces"
+
+#: ../gconf/gconf-error.c:27
+msgid "Failed"
+msgstr "Niepowodzenie"
+
+#: ../gconf/gconf-error.c:28
+msgid "Configuration server couldn't be contacted"
+msgstr "Nie można nawiązać połączenia z serwerem konfiguracji"
+
+#: ../gconf/gconf-error.c:29
+msgid "Permission denied"
+msgstr "Brak dostępu"
+
+#: ../gconf/gconf-error.c:30
+msgid "Couldn't resolve address for configuration source"
+msgstr "Nie można uzyskać adresu źródła konfiguracji"
+
+#: ../gconf/gconf-error.c:31
+msgid "Bad key or directory name"
+msgstr "Niepoprawna nazwa klucz lub katalogu"
+
+#: ../gconf/gconf-error.c:32
+msgid "Parse error"
+msgstr "Błąd składniowy"
+
+#: ../gconf/gconf-error.c:33
+msgid "Corrupt data in configuration source database"
+msgstr "Uszkodzone dane w bazie danych źródła konfiguracji"
+
+#: ../gconf/gconf-error.c:34
+msgid "Type mismatch"
+msgstr "Niezgodność typów"
+
+#: ../gconf/gconf-error.c:35
+msgid "Key operation on directory"
+msgstr "Operacja dotycząca klucza na katalogu"
+
+#: ../gconf/gconf-error.c:36
+msgid "Directory operation on key"
+msgstr "Operacja dotycząca katalogu na kluczu"
+
+#: ../gconf/gconf-error.c:37
+msgid "Can't overwrite existing read-only value"
+msgstr "Nie można nadpisać istniejącej wartości przeznaczonej tylko do odczytu"
+
+#: ../gconf/gconf-error.c:38
+msgid "Object Activation Framework error"
+msgstr "Błąd systemu aktywacji obiektów (OAF)"
+
+#: ../gconf/gconf-error.c:39
+msgid "Operation not allowed without configuration server"
+msgstr "Operacja nie jest dozwolona bez serwera konfiguracji"
+
+#: ../gconf/gconf-error.c:40
+msgid "Failed to get a lock"
+msgstr "Nie można uzyskać blokady"
+
+#: ../gconf/gconf-error.c:41
+msgid "No database available to save your configuration"
+msgstr "Brak dostępnej bazy danych do zapisu konfiguracji"
+
+#: ../gconf/gconf-internals.c:94
+#, c-format
+msgid "No '/' in key \"%s\""
+msgstr "Brak znaku \"/\" w kluczu \"%s\""
+
+#: ../gconf/gconf-internals.c:182
+#, c-format
+msgid "Invalid UTF-8 in string value in '%s'"
+msgstr "Niepoprawny UTF-8 w wartości napisu w \"%s\""
+
+#: ../gconf/gconf-internals.c:241
+msgid "Couldn't interpret CORBA value for list element"
+msgstr "Nie można zinterpretować wartości CORBA elementu listy"
+
+#: ../gconf/gconf-internals.c:243
+#, c-format
+msgid "Incorrect type for list element in %s"
+msgstr "Niepoprawny typ elementu listy w %s"
+
+#: ../gconf/gconf-internals.c:256
+msgid "Received list from gconfd with a bad list type"
+msgstr "Otrzymano od procesu gconfd listę niewłaściwego typu"
+
+#: ../gconf/gconf-internals.c:437
+msgid "Failed to convert object to IOR"
+msgstr "Nie można skonwertować obiektu na IOR"
+
+#: ../gconf/gconf-internals.c:574
+msgid "Invalid UTF-8 in locale for schema"
+msgstr "Niepoprawne znaki UTF-8 jako kod języka schematu"
+
+#: ../gconf/gconf-internals.c:582
+msgid "Invalid UTF-8 in short description for schema"
+msgstr "Niepoprawne znaki UTF-8 w krótkim opisie schematu"
+
+#: ../gconf/gconf-internals.c:590
+msgid "Invalid UTF-8 in long description for schema"
+msgstr "Niepoprawne znaki UTF-8 w długim opisie schematu"
+
+#: ../gconf/gconf-internals.c:598
+msgid "Invalid UTF-8 in owner for schema"
+msgstr "Niepoprawne znaki UTF-8 w nazwie właściciela schematu"
+
+#: ../gconf/gconf-internals.c:843
+#, c-format
+msgid "Couldn't open path file `%s': %s\n"
+msgstr "Nie można otworzyć pliku \"%s\": %s\n"
+
+#: ../gconf/gconf-internals.c:899
+#, c-format
+msgid "Adding source `%s'\n"
+msgstr "Dodawanie źródła \"%s\"\n"
+
+#: ../gconf/gconf-internals.c:914
+#, c-format
+msgid "Read error on file `%s': %s\n"
+msgstr "Błąd podczas odczytu pliku \"%s\": %s\n"
+
+#: ../gconf/gconf-internals.c:1188
+#: ../gconf/gconf-internals.c:1254
+#: ../gconf/gconf-value.c:155
+#: ../gconf/gconf-value.c:254
+#: ../gconf/gconf-value.c:396
+#: ../gconf/gconf-value.c:1668
+#, c-format
+msgid "Text contains invalid UTF-8"
+msgstr "Tekst zawiera niepoprawną sekwencję UTF-8"
+
+#: ../gconf/gconf-internals.c:1339
+#, c-format
+msgid "Expected list, got %s"
+msgstr "Oczekiwano listy, otrzymano %s"
+
+#: ../gconf/gconf-internals.c:1349
+#, c-format
+msgid "Expected list of %s, got list of %s"
+msgstr "Oczekiwano listy %s, otrzymano listę %s"
+
+#: ../gconf/gconf-internals.c:1477
+#, c-format
+msgid "Expected pair, got %s"
+msgstr "Oczekiwano pary, otrzymano %s"
+
+#: ../gconf/gconf-internals.c:1491
+#, c-format
+msgid "Expected (%s,%s) pair, got a pair with one or both values missing"
+msgstr "Oczekiwano pary (%s,%s), otrzymano parę z brakującą jedną lub obiema wartościami"
+
+#: ../gconf/gconf-internals.c:1507
+#, c-format
+msgid "Expected pair of type (%s,%s) got type (%s,%s)"
+msgstr "Oczekiwano pary (%s,%s), otrzymano parę (%s,%s)"
+
+#: ../gconf/gconf-internals.c:1623
+msgid "Quoted string doesn't begin with a quotation mark"
+msgstr "Zacytowany napis nie rozpoczyna się znakiem cytowania"
+
+#: ../gconf/gconf-internals.c:1684
+msgid "Quoted string doesn't end with a quotation mark"
+msgstr "Zacytowany napis nie kończy się znakiem cytowania"
+
+#: ../gconf/gconf-internals.c:1802
+msgid "Encoded value is not valid UTF-8"
+msgstr "Zakodowana wartość nie jest poprawnym napisem UTF-8"
+
+#: ../gconf/gconf-internals.c:2286
+#, c-format
+msgid "Could not lock temporary file '%s': %s"
+msgstr "Nie można zablokować tymczasowego pliku \"%s\": %s"
+
+#: ../gconf/gconf-internals.c:2313
+#, c-format
+msgid "Could not create file '%s', probably because it already exists"
+msgstr "Nie można utworzyć pliku \"%s\", prawdopodobnie już on istnieje"
+
+#: ../gconf/gconf-internals.c:2381
+#, c-format
+msgid "Failed to create or open '%s'"
+msgstr "Nie można utworzyć lub otworzyć \"%s\""
+
+#: ../gconf/gconf-internals.c:2391
+#, c-format
+msgid "Failed to lock '%s': probably another process has the lock, or your operating system has NFS file locking misconfigured (%s)"
+msgstr "Nie można zablokować \"%s\": prawdopodobnie blokadę przetrzymuje inny proces lub w systemie zostało niepoprawnie skonfigurowane blokowanie po NFS-ie (%s)"
+
+#: ../gconf/gconf-internals.c:2411
+#, c-format
+msgid "Failed to remove '%s': %s"
+msgstr "Nie można usunąć \"%s\": %s"
+
+# td
+#: ../gconf/gconf-internals.c:2439
+#, c-format
+msgid "Not running within active session"
+msgstr "Nie działa w ramach aktywnej sesji"
+
+# td
+#: ../gconf/gconf-internals.c:2449
+#, c-format
+msgid "Failed to get connection to session: %s"
+msgstr "Nie można uzyskać połączenia z sesją: %s"
+
+# td
+#: ../gconf/gconf-internals.c:2468
+#, c-format
+msgid "Could not send message to gconf daemon: %s"
+msgstr "Nie można wysłać komunikatu do usługi gconf: %s"
+
+# td
+#: ../gconf/gconf-internals.c:2479
+#, c-format
+msgid "daemon gave erroneous reply: %s"
+msgstr "błędna odpowiedź usługi: %s"
+
+#: ../gconf/gconf-internals.c:2517
+#, c-format
+msgid "couldn't contact ORB to resolve existing gconfd object reference"
+msgstr "nie można uzyskać od ORB-a odwołania do istniejącego obiektu gconfd"
+
+#: ../gconf/gconf-internals.c:2529
+#, c-format
+msgid "Failed to convert IOR '%s' to an object reference"
+msgstr "Nie można skonwertować IOR-a \"%s\" na odwołanie do obiektu"
+
+#: ../gconf/gconf-internals.c:2554
+#, c-format
+msgid "couldn't create directory `%s': %s"
+msgstr "Nie można utworzyć katalogu \"%s\": %s"
+
+#: ../gconf/gconf-internals.c:2611
+#, c-format
+msgid "Can't write to file `%s': %s"
+msgstr "Nie można zapisać do pliku \"%s\": %s"
+
+#: ../gconf/gconf-internals.c:2652
+#, c-format
+msgid "We didn't have the lock on file `%s', but we should have"
+msgstr "Program nie posiada blokady na plik \"%s\", choć powinien"
+
+#: ../gconf/gconf-internals.c:2675
+#, c-format
+msgid "Failed to link '%s' to '%s': %s"
+msgstr "Nie można dowiązać \"%s\" do \"%s\": %s"
+
+#: ../gconf/gconf-internals.c:2687
+#, c-format
+msgid "Failed to remove lock file `%s': %s"
+msgstr "Nie można usunąć pliku blokady \"%s\": %s"
+
+#: ../gconf/gconf-internals.c:2710
+#, c-format
+msgid "Failed to clean up file '%s': %s"
+msgstr "Nie można wyczyścić pliku \"%s\": %s"
+
+#: ../gconf/gconf-internals.c:2726
+#, c-format
+msgid "Failed to remove lock directory `%s': %s"
+msgstr "Nie można usunąć katalogu blokady \"%s\": %s"
+
+#: ../gconf/gconf-internals.c:2864
+#, c-format
+msgid "Server ping error: %s"
+msgstr "Brak odpowiedzi serwera przy sprawdzeniu aktywności: %s"
+
+# td
+#: ../gconf/gconf-internals.c:2883
+#, c-format
+msgid "Failed to contact configuration server; some possible causes are that you need to enable TCP/IP networking for ORBit, or you have stale NFS locks due to a system crash. See http://projects.gnome.org/gconf/ for information. (Details - %s)"
+msgstr "Nie można nawiązać połączenia z serwerem konfiguracji. Możliwe, że konieczne będzie uaktywnienie obsługi TCP/IP w konfiguracji ORBit, może to też być spowodowane blokadami NFS pozostałymi po awarii systemu. Aby uzyskać więcej informacji proszę odwiedzić stronę http://projects.gnome.org/gconf/. (szczegóły - %s)"
+
+#: ../gconf/gconf-internals.c:2884
+msgid "none"
+msgstr "brak"
+
+#: ../gconf/gconf-sanity-check.c:49
+msgid "- Sanity checks for GConf"
+msgstr "- Sprawdzanie poprawności GConf"
+
+#: ../gconf/gconf-sanity-check.c:58
+#: ../gconf/gconftool.c:639
+#, c-format
 msgid ""
-"<note-content>Using Links in Tomboy\n"
-"\n"
-"Notes in Tomboy can be linked together by highlighting text in the current note and clicking the <bold>Link</bold> button above in the toolbar.  Doing so will create a new note and also underline the note's title in the current note.\n"
-"\n"
-"Changing the title of a note will update links present in other notes.  This prevents broken links from occurring when a note is renamed.\n"
-"\n"
-"Also, if you type the name of another note in your current note, it will automatically be linked for you.</note-content>"
+"Error while parsing options: %s.\n"
+"Run '%s --help' to see a full list of available command line options.\n"
 msgstr ""
-"<note-content>Używanie odnośników\n"
-"\n"
-"Notatki w programie Tomboy można ze sobą wiązać z pomocą odnośników, które dodaje się zaznaczając wybrany fragment tekstu i naciskając przycisk <bold>Odnośnik</bold> na pasku narzędziowym. Zostanie utworzona nowa notatka, a zaznaczony w bieżącej notatce tekst zostanie podkreślony.\n"
-"\n"
-"Zmiana tytułu notatki spowoduje także zmianę wszystkich odnośników do tej notatki w pozostałych notatkach. Dzięki temu po zmianie nazwy wszystkie odnośniki do zmienionej notatki zachowują funkcjonalność.\n"
-"\n"
-"Co więcej, wystarczy wpisać w bieżącej notatce tytuł innej notatki, aby został on automatycznie dowiązany do tej notatki i podkreślony.</note-content>"
-
-#. Attempt to find an existing Start Here note
-#: ../Tomboy/NoteManager.cs:169
-#: ../Tomboy/NoteManager.cs:236
-msgid "Start Here"
-msgstr "Start"
-
-#: ../Tomboy/NoteManager.cs:174
-msgid "Using Links in Tomboy"
-msgstr "Używanie odnośników"
-
-#: ../Tomboy/NoteManager.cs:313
-#, csharp-format
-msgid "New Note {0}"
-msgstr "Nowa notatka {0}"
-
-#. Use a simple "Describe..." body and highlight
-#. it so it can be easily overwritten
-#: ../Tomboy/NoteManager.cs:386
-#: ../Tomboy/NoteManager.cs:478
-msgid "Describe your new note here."
-msgstr "Treść nowej notatki..."
-
-#: ../Tomboy/NoteWindow.cs:58
-msgid "Find in This Note"
-msgstr "Znajdź w tej notatce"
-
-#: ../Tomboy/NoteWindow.cs:371
-msgid "_Link to New Note"
-msgstr "_Dowiązanie do nowej notatki"
-
-#: ../Tomboy/NoteWindow.cs:383
-msgid "Te_xt"
-msgstr "Te_kst"
-
-#: ../Tomboy/NoteWindow.cs:391
-msgid "_Find in This Note"
-msgstr "_Znajdź w tej notatce"
-
-#: ../Tomboy/NoteWindow.cs:406
-msgid "Clos_e All Notes"
-msgstr "Za_mknij wszystkie notatki"
-
-#: ../Tomboy/NoteWindow.cs:446
-msgid "Search"
-msgstr "Wyszukiwanie"
-
-#: ../Tomboy/NoteWindow.cs:449
-msgid "Search your notes (Ctrl-Shift-F)"
-msgstr "Przeszukiwanie notatek (Ctrl+Shift+F)"
-
-#: ../Tomboy/NoteWindow.cs:461
-msgid "Link"
-msgstr "Odnośnik"
-
-#: ../Tomboy/NoteWindow.cs:467
-msgid "Link selected text to a new note (Ctrl-L)"
-msgstr "Tworzy odnośnik do nowej notatki (Ctrl+L)"
-
-#: ../Tomboy/NoteWindow.cs:480
-msgid "_Text"
-msgstr "_Tekst"
-
-#: ../Tomboy/NoteWindow.cs:485
-msgid "Set properties of text"
-msgstr "Ustawia właściwości tekstu"
-
-#: ../Tomboy/NoteWindow.cs:490
-msgid "T_ools"
-msgstr "_Narzędzia"
-
-#: ../Tomboy/NoteWindow.cs:494
-msgid "Use tools on this note"
-msgstr "Narzędzia notatki"
-
-#: ../Tomboy/NoteWindow.cs:502
-msgid "Delete this note"
-msgstr "Usuwa tę notatkę"
-
-#: ../Tomboy/NoteWindow.cs:511
-#: ../Tomboy/Synchronization/SyncManager.cs:161
-msgid "Synchronize Notes"
-msgstr "Synchronizuj notatki"
-
-#: ../Tomboy/NoteWindow.cs:554
-msgid "_Find..."
-msgstr "_Znajdź..."
-
-#: ../Tomboy/NoteWindow.cs:565
-#: ../Tomboy/NoteWindow.cs:767
-msgid "Find _Next"
-msgstr "_Następne"
-
-#: ../Tomboy/NoteWindow.cs:578
-msgid "Find _Previous"
-msgstr "Znajdź p_oprzednie"
-
-#: ../Tomboy/NoteWindow.cs:666
-msgid "Cannot create note"
-msgstr "Nie można utworzyć notatki"
-
-#: ../Tomboy/NoteWindow.cs:747
-msgid "_Find:"
-msgstr "_Znajdź:"
-
-#: ../Tomboy/NoteWindow.cs:758
-msgid "_Previous"
-msgstr "_Poprzednie"
-
-#: ../Tomboy/NoteWindow.cs:1242
-msgid "_Bold"
-msgstr "_Pogrubienie"
-
-#: ../Tomboy/NoteWindow.cs:1254
-msgid "_Italic"
-msgstr "Kursy_wa"
-
-#: ../Tomboy/NoteWindow.cs:1266
-msgid "_Strikeout"
-msgstr "P_rzekreślenie"
-
-#: ../Tomboy/NoteWindow.cs:1278
-msgid "_Highlight"
-msgstr "Wyróżn_ienie"
-
-#: ../Tomboy/NoteWindow.cs:1291
-msgid "Font Size"
-msgstr "Rozmiar czcionki"
-
-#: ../Tomboy/NoteWindow.cs:1294
-msgid "_Normal"
-msgstr "_Zwykły"
-
-#: ../Tomboy/NoteWindow.cs:1301
-msgid "Hu_ge"
-msgstr "_Ogromny"
-
-#: ../Tomboy/NoteWindow.cs:1309
-msgid "_Large"
-msgstr "_Duży"
-
-#: ../Tomboy/NoteWindow.cs:1317
-msgid "S_mall"
-msgstr "_Mały"
-
-#: ../Tomboy/NoteWindow.cs:1328
-msgid "Bullets"
-msgstr "Wypunktowanie"
-
-# window title for exit dialog
-#: ../Tomboy/PreferencesDialog.cs:80
-msgid "Editing"
-msgstr "Modyfikowanie"
-
-#: ../Tomboy/PreferencesDialog.cs:83
-msgid "Hotkeys"
-msgstr "Klawisze skrótów"
-
-#: ../Tomboy/PreferencesDialog.cs:85
-msgid "Synchronization"
-msgstr "Synchronizacja"
-
-#: ../Tomboy/PreferencesDialog.cs:87
-msgid "Add-ins"
-msgstr "Dodatki"
-
-#: ../Tomboy/PreferencesDialog.cs:146
-msgid "_Spell check while typing"
-msgstr "_Sprawdzanie pisowni podczas pisania"
-
-#: ../Tomboy/PreferencesDialog.cs:155
-msgid "Misspellings will be underlined in red, with correct spelling suggestions shown in the context menu."
-msgstr "Błędnie napisane słowa będą podkreślane na czerwono, a podpowiedzi prawidłowej pisowni będą dostępne w menu pod prawym przyciskiem myszy."
-
-#. WikiWords...
-#: ../Tomboy/PreferencesDialog.cs:166
-msgid "Highlight _WikiWords"
-msgstr "_Wyróżnianie WikiSłów"
-
-#: ../Tomboy/PreferencesDialog.cs:174
-msgid "Enable this option to highlight words <b>ThatLookLikeThis</b>. Clicking the word will create a note with that name."
-msgstr "Uaktywnienie tej opcji spowoduje wyróżnianie słów <b>KtóreWyglądająTakJakTo</b>. Kliknięcie takiego słowa utworzy notatkę o takiej właśnie nazwie."
-
-#. Auto bulleted list
-#: ../Tomboy/PreferencesDialog.cs:181
-msgid "Enable auto-_bulleted lists"
-msgstr "A_utomatyczne wypunktowanie list"
-
-#. Custom font...
-#: ../Tomboy/PreferencesDialog.cs:190
-msgid "Use custom _font"
-msgstr "Własna _czcionka"
-
-#: ../Tomboy/PreferencesDialog.cs:214
-msgid "Use the new note template to specify the text that should be used when creating a new note."
-msgstr "Wzorzec nowej notatki pozwala określić domyślną treść dla nowotworzonych notatek."
-
-#: ../Tomboy/PreferencesDialog.cs:224
-msgid "Open New Note Template"
-msgstr "Otwórz wzorzec nowej notatki"
-
-#. Hotkeys...
-#: ../Tomboy/PreferencesDialog.cs:281
-msgid "Listen for _Hotkeys"
-msgstr "_Klawisze skrótów"
-
-#: ../Tomboy/PreferencesDialog.cs:290
-msgid "Hotkeys allow you to quickly access your notes from anywhere with a keypress. Example Hotkeys: <b>&lt;Control&gt;&lt;Shift&gt;F11</b>, <b>&lt;Alt&gt;N</b>"
-msgstr "Klawisze skrótów pozwalają na szybki dostęp do notatek z dowolnego miejsca. Przykładowe klawisze skrótów: <b>&lt;Control&gt;&lt;Shift&gt;F11</b>, <b>&lt;Alt&gt;N</b>"
-
-#. Show notes menu keybinding...
-#: ../Tomboy/PreferencesDialog.cs:310
-msgid "Show notes _menu"
-msgstr "Wyświetlenie _menu notatek"
-
-#. Open Start Here keybinding...
-#: ../Tomboy/PreferencesDialog.cs:327
-msgid "Open \"_Start Here\""
-msgstr "Otwarcie notatki \"_Start\""
-
-#. Create new note keybinding...
-#: ../Tomboy/PreferencesDialog.cs:344
-msgid "Create _new note"
-msgstr "Utworzenie _nowej notatki"
-
-#. Open Search All Notes window keybinding...
-#: ../Tomboy/PreferencesDialog.cs:361
-msgid "Open \"Search _All Notes\""
-msgstr "Otwarcie okna \"_Przeszukiwanie notatek\""
-
-#: ../Tomboy/PreferencesDialog.cs:388
-msgid "Ser_vice:"
-msgstr "_Usługa:"
-
-#: ../Tomboy/PreferencesDialog.cs:441
-#: ../Tomboy/PreferencesDialog.cs:1019
-msgid "Not configurable"
-msgstr "Nie do konfiguracji"
-
-#. "Advanced..." button to bring up extra sync config dialog
-#: ../Tomboy/PreferencesDialog.cs:461
-msgid "_Advanced..."
-msgstr "Zaa_wansowane..."
-
-#: ../Tomboy/PreferencesDialog.cs:522
-msgid "The following add-ins are installed"
-msgstr "Zainstalowano poniższe dodatki"
-
-#: ../Tomboy/PreferencesDialog.cs:553
-msgid "_Enable"
-msgstr "_Włącz"
-
-#: ../Tomboy/PreferencesDialog.cs:559
-msgid "_Disable"
-msgstr "Wyłą_cz"
-
-#: ../Tomboy/PreferencesDialog.cs:690
-msgid "Not Implemented"
-msgstr "Niezaimplementowane"
-
-#: ../Tomboy/PreferencesDialog.cs:704
-#, csharp-format
-msgid "{0} Preferences"
-msgstr "Preferencje: {0}"
-
-#: ../Tomboy/PreferencesDialog.cs:843
-msgid "Choose Note Font"
-msgstr "Wybór czcionki notatki"
-
-#: ../Tomboy/PreferencesDialog.cs:887
-msgid "Other Synchronization Options"
-msgstr "Inne opcje synchronizacji"
-
-#: ../Tomboy/PreferencesDialog.cs:894
-msgid "When a conflict is detected between a local note and a note on the configured synchronization server:"
-msgstr "Kiedy zostanie wykryty konflikt pomiędzy notatką lokalną a notatką na skonfigurowanym serwerze synchronizacji:"
-
-#: ../Tomboy/PreferencesDialog.cs:901
-msgid "Always ask me what to do."
-msgstr "Zawsze pytaj co robić."
-
-#: ../Tomboy/PreferencesDialog.cs:905
-msgid "Rename my local note."
-msgstr "Zmień nazwę notatki lokalnej."
-
-#: ../Tomboy/PreferencesDialog.cs:909
-msgid "Replace my local note with the server's update."
-msgstr "Zastąp kopię lokalną aktualizacją z serwera."
-
-#: ../Tomboy/PreferencesDialog.cs:1055
-msgid "WARNING: Are you sure?"
-msgstr "UWAGA: Na pewno?"
-
-#: ../Tomboy/PreferencesDialog.cs:1057
-msgid "Clearing your synchronization settings is not recommended.  You may be forced to synchronize all of your notes again when you save new settings."
-msgstr "Usunięcie ustawień synchronizacji nie jest zalecane. Może być konieczna ponowna synchronizacja wszystkich notatek po zapisaniu nowych ustawień."
-
-#: ../Tomboy/PreferencesDialog.cs:1070
-msgid "Resetting Synchronization Settings"
-msgstr "Usuwanie ustawień synchronizacji"
-
-#: ../Tomboy/PreferencesDialog.cs:1072
-msgid "You have disabled the configured synchronization service.  Your synchronization settings will now be cleared.  You may be forced to synchronize all of your notes again when you save new settings"
-msgstr "Skonfigurowana usługa synchronizacji została wyłączona. Ustawienia synchronizacji zostaną usunięte. Może być konieczna ponowna synchronizacja wszystkich notatek po zapisaniu nowych ustawień"
-
-#: ../Tomboy/PreferencesDialog.cs:1170
-msgid "Success! You're connected!"
-msgstr "Sukces - połączenie nawiązane."
-
-#: ../Tomboy/PreferencesDialog.cs:1172
-msgid "Tomboy is ready to synchronize your notes. Would you like to synchronize them now?"
-msgstr "Program Tomboy jest gotowy do synchronizacji notatek. Zsynchronizować je teraz?"
-
-#: ../Tomboy/PreferencesDialog.cs:1195
-msgid "Sorry, but something went wrong.  Please check your information and try again.  The ~/.tomboy.log might be useful too."
-msgstr "Niestety łączenie nie powiodło się. Proszę sprawdzić ustawienia i spróbować ponownie. Dziennik znajduje się w pliku ~/.tomboy.log."
-
-#: ../Tomboy/PreferencesDialog.cs:1204
-msgid "Error connecting :("
-msgstr "Błąd podczas łączenia."
-
-#: ../Tomboy/PreferencesDialog.cs:1280
-msgid "Version:"
-msgstr "Wersja:"
-
-#: ../Tomboy/PreferencesDialog.cs:1287
-msgid "Author:"
-msgstr "Autor:"
-
-#: ../Tomboy/PreferencesDialog.cs:1294
-msgid "Copyright:"
-msgstr "Copyright:"
-
-#: ../Tomboy/PreferencesDialog.cs:1300
-msgid "Add-in Dependencies:"
-msgstr "Zależności dodatku:"
-
-#: ../Tomboy/RecentChanges.cs:76
-msgid "Search All Notes"
-msgstr "Przeszukiwanie notatek"
-
-#: ../Tomboy/RecentChanges.cs:93
-msgid "_Search:"
-msgstr "_Szukaj:"
-
-#: ../Tomboy/RecentChanges.cs:114
-msgid "C_ase Sensitive"
-msgstr "_Rozróżnianie wielkości liter"
-
-#: ../Tomboy/RecentChanges.cs:316
-msgid "Note"
-msgstr "Notatka"
-
-#: ../Tomboy/RecentChanges.cs:338
-msgid "Last Changed"
-msgstr "Ostatnio zmieniane"
-
-#: ../Tomboy/RecentChanges.cs:470
-msgid "Matches"
-msgstr "Pasujące"
-
-#: ../Tomboy/RecentChanges.cs:521
-#, csharp-format
-msgid "{0} match"
-msgid_plural "{0} matches"
-msgstr[0] "{0} dopasowanie"
-msgstr[1] "{0} dopasowania"
-msgstr[2] "{0} dopasowań"
-
-#: ../Tomboy/RecentChanges.cs:535
-#, csharp-format
-msgid "Total: {0} note"
-msgid_plural "Total: {0} notes"
-msgstr[0] "Razem: {0} notatka"
-msgstr[1] "Razem: {0} notatki"
-msgstr[2] "Razem: {0} notatek"
-
-#: ../Tomboy/RecentChanges.cs:545
-#, csharp-format
-msgid "Matches: {0} note"
-msgid_plural "Matches: {0} notes"
-msgstr[0] "Pasuje: {0} notatka"
-msgstr[1] "Pasują: {0} notatki"
-msgstr[2] "Pasuje: {0} notatek"
-
-#: ../Tomboy/RecentChanges.cs:676
-msgid "Notes"
-msgstr "Notatki"
-
-#: ../Tomboy/Tomboy.cs:205
-msgid "Cannot create new note"
-msgstr "Nie można utworzyć nowej notatki"
-
-#: ../Tomboy/Tomboy.cs:292
-msgid "translator-credits"
-msgstr "Aviary.pl <gnomepl@aviary.pl>, 2008, 2009."
-
-#: ../Tomboy/Tomboy.cs:301
-msgid "Copyright © 2004-2007 Alex Graveley"
-msgstr "Copyright © 2004-2007 Alex Graveley"
-
-#: ../Tomboy/Tomboy.cs:302
-msgid "A simple and easy to use desktop note-taking application."
-msgstr "Prosty i łatwy w użyciu program do sporządzania notatek."
-
-#: ../Tomboy/Tomboy.cs:312
-msgid "Homepage"
-msgstr "Strona domowa"
-
-#: ../Tomboy/Tomboy.cs:419
+"Błąd przy analizowaniu opcji: %s.\n"
+"Uruchom \"%s --help\", aby zobaczyć pełną listę opcji dostępnych z wiersza poleceń.\n"
+
+#: ../gconf/gconf-sanity-check.c:143
+#: ../gconf/gconf-sanity-check.c:168
+#, c-format
 msgid ""
-"Tomboy: A simple, easy to use desktop note-taking application.\n"
-"Copyright (C) 2004-2006 Alex Graveley <alex@beatniksoftware.com>\n"
-"\n"
+"Please contact your system administrator to resolve the following problem:\n"
+"Could not open or create the file \"%s\"; this indicates that there may be a problem with your configuration, as many programs will need to create files in your home directory. The error was \"%s\" (errno = %d)."
 msgstr ""
-"Tomboy: prosty i łatwy w użyciu program do sporządzania notatek.\n"
-"Copyright (C) 2004-2006 Alex Graveley <alex@beatniksoftware.com>\n"
-"\n"
+"Proszę skontaktować się z administratorem systemu, aby rozwiązać następujący problem:\n"
+"Nie można otworzyć lub utworzyć pliku \"%s\"; wskazuje to, że może istnieć problem z konfiguracją, gdyż wiele programów wymaga tworzenia w katalogu domowym pewnych plików. Błąd, który wystąpił: \"%s\" (errno = %d)."
 
-#: ../Tomboy/Tomboy.cs:431
+#: ../gconf/gconf-sanity-check.c:182
+#, c-format
 msgid ""
-"Usage:\n"
-"  --version\t\t\tPrint version information.\n"
-"  --help\t\t\tPrint this usage message.\n"
-"  --note-path [path]\t\tLoad/store note data in this directory.\n"
-"  --search [text]\t\tOpen the search all notes window with the search text.\n"
+"Please contact your system administrator to resolve the following problem:\n"
+"Could not lock the file \"%s\"; this indicates that there may be a problem with your operating system configuration. If you have an NFS-mounted home directory, either the client or the server may be set up incorrectly. See the rpc.statd and rpc.lockd documentation. A common cause of this error is that the \"nfslock\" service has been disabled.The error was \"%s\" (errno = %d)."
 msgstr ""
-"Użycie:\n"
-"  --version\t\t\tWypisuje informację o wersji.\n"
-"  --help\t\t\tWyświetla informację o użyciu.\n"
-"  --note-path [ścieżka]\t\tWczytuje/zapisuje dane notatek w podanym katalogu.\n"
-"  --search [tekst]\t\tOtwiera okno wyszukiwania we wszystkich notatkach z podaną frazą.\n"
+"Proszę skontaktować się z administratorem systemu, aby rozwiązać następujący problem:\n"
+"Nie można zablokować pliku \"%s\"; wskazuje to, że może istnieć problem z konfiguracją systemu operacyjnego. Jeśli katalog domowy jest udostępniany poprzez NFS, może to być spowodowane niewłaściwymi ustawieniami klienta lub serwera. Zajrzyj do dokumentacji rpc.statd i rpc.lockd. Częstą przyczyną tego błędu jest zablokowana usługa \"nfslock\". Błąd, który wystąpił: \"%s\" (errno = %d)."
 
-#: ../Tomboy/Tomboy.cs:442
+#: ../gconf/gconf-sanity-check.c:199
+#, c-format
+msgid "Can't remove file %s: %s\n"
+msgstr "Nie można usunąć pliku \"%s\": %s\n"
+
+#: ../gconf/gconf-sanity-check.c:235
+#, c-format
 msgid ""
-"  --new-note\t\t\tCreate and display a new note.\n"
-"  --new-note [title]\t\tCreate and display a new note, with a title.\n"
-"  --open-note [title/url]\tDisplay the existing note matching title.\n"
-"  --start-here\t\t\tDisplay the 'Start Here' note.\n"
-"  --highlight-search [text]\tSearch and highlight text in the opened note.\n"
+"Please contact your system administrator to resolve the following problem:\n"
+"No configuration sources in the configuration file \"%s\"; this means that preferences and other settings can't be saved. %s%s"
 msgstr ""
-"  --new-note\t\t\tTworzy i wyświetla nową notatkę.\n"
-"  --new-note [tytuł]\t\tTworzy i wyświetla nową notatkę o podanym tytule.\n"
-"  --open-note [tytuł/url]\tWyświetla istniejącą notatkę o pasującym tytule.\n"
-"  --start-here\t\t\tWyświetla notatkę \"Start\".\n"
-"  --highlight-search [tekst]\tWyszukuje i wyróżnia podany tekst w otwartej notatce.\n"
+"Proszę skontaktować się z administratorem systemu, aby rozwiązać następujący problem:\n"
+"W pliku konfiguracyjnym \"%s\" nie ma żadnych źródeł konfiguracji; oznacza to, że nie jest możliwy zapis preferencji i innych ustawień. %s%s"
 
-#. TODO: Restore this functionality with addins
-#. usage +=
-#. Catalog.GetString (
-#. "  --check-plugin-unloading\tCheck if plugins are " +
-#. "unloaded properly.\n");
-#: ../Tomboy/Tomboy.cs:459
-msgid "D-BUS remote control disabled.\n"
-msgstr "Zdalna kontrola D-Bus wyłączona.\n"
+#: ../gconf/gconf-sanity-check.c:238
+msgid "Error reading the file: "
+msgstr "Błąd podczas odczytu pliku: "
 
-#: ../Tomboy/Tomboy.cs:467
-#, csharp-format
-msgid "Version {0}"
-msgstr "Wersja {0}"
-
-#: ../Tomboy/Tomboy.cs:537
-#, csharp-format
+#: ../gconf/gconf-sanity-check.c:261
+#, c-format
 msgid ""
-"Tomboy: unsupported option '{0}'\n"
-"Try 'tomboy --help' for more information.\n"
-"D-BUS remote control disabled."
+"Please contact your system administrator to resolve the following problem:\n"
+"Could not resolve the address \"%s\" in the configuration file \"%s\": %s"
 msgstr ""
-"Tomboy: nieobsługiwana opcja \"{0}\"\n"
-"Polecenie \"tomboy --help\" wyświetla więcej informacji.\n"
-"Zdalna kontrola D-Bus wyłączona."
+"Proszę skontaktować się z administratorem systemu, aby rozwiązać następujący problem:\n"
+"Nie można odnaleźć adresu \"%s\", występującego w pliku konfiguracyjnym \"%s\": %s"
 
-#: ../Tomboy/Tray.cs:63
-msgid " (new)"
-msgstr " (nowa)"
-
-#: ../Tomboy/Tray.cs:241
-msgid "_About Tomboy"
-msgstr "_O programie"
-
-#: ../Tomboy/Utils.cs:146
-msgid "The \"Tomboy Notes Manual\" could not be found.  Please verify that your installation has been completed successfully."
-msgstr "\"Podręcznik programu Tomboy\" nie został znaleziony. Proszę sprawdzić czy instalacja programu się powiodła."
-
-#: ../Tomboy/Utils.cs:155
-msgid "Help not found"
-msgstr "Pomoc nie została znaleziona"
-
-#: ../Tomboy/Utils.cs:171
-msgid "Cannot open location"
-msgstr "Nie można otworzyć położenia"
-
-#: ../Tomboy/Utils.cs:193
-#, csharp-format
-msgid "Today, {0}"
-msgstr "Dzisiaj, {0}"
-
-#: ../Tomboy/Utils.cs:195
-msgid "Today"
-msgstr "Dzisiaj"
-
-#: ../Tomboy/Utils.cs:199
-#, csharp-format
-msgid "Yesterday, {0}"
-msgstr "Wczoraj, {0}"
-
-#: ../Tomboy/Utils.cs:201
-msgid "Yesterday"
-msgstr "Wczoraj"
-
-#: ../Tomboy/Utils.cs:206
-#, csharp-format
-msgid "{0} day ago, {1}"
-msgid_plural "{0} days ago, {1}"
-msgstr[0] "{0} dzień temu, {1}"
-msgstr[1] "{0} dni temu, {1}"
-msgstr[2] "{0} dni temu, {1}"
-
-#: ../Tomboy/Utils.cs:210
-#, csharp-format
-msgid "{0} day ago"
-msgid_plural "{0} days ago"
-msgstr[0] "{0} dzień temu"
-msgstr[1] "{0} dni temu"
-msgstr[2] "{0} dni temu"
-
-#: ../Tomboy/Utils.cs:216
-#, csharp-format
-msgid "Tomorrow, {0}"
-msgstr "Jutro, {0}"
-
-#: ../Tomboy/Utils.cs:218
-msgid "Tomorrow"
-msgstr "Jutro"
-
-#: ../Tomboy/Utils.cs:223
-#, csharp-format
-msgid "In {0} day, {1}"
-msgid_plural "In {0} days, {1}"
-msgstr[0] "Za {0} dzień, {1}"
-msgstr[1] "Za {0} dni, {1}"
-msgstr[2] "Za {0} dni, {1}"
-
-#: ../Tomboy/Utils.cs:227
-#, csharp-format
-msgid "In {0} day"
-msgid_plural "In {0} days"
-msgstr[0] "Za {0} dzień"
-msgstr[1] "Za {0} dni"
-msgstr[2] "Za {0} dni"
-
-#: ../Tomboy/Utils.cs:232
-msgid "MMMM d, h:mm tt"
-msgstr "d MMMM, H:mm"
-
-#: ../Tomboy/Utils.cs:233
-msgid "MMMM d"
-msgstr "d MMMM"
-
-#: ../Tomboy/Utils.cs:235
-msgid "No Date"
-msgstr "Bez daty"
-
-#: ../Tomboy/Utils.cs:238
-msgid "MMMM d yyyy, h:mm tt"
-msgstr "d MMMM yyyy, H:mm"
-
-#: ../Tomboy/Utils.cs:239
-msgid "MMMM d yyyy"
-msgstr "d MMMM yyyy"
-
-#: ../Tomboy/Watchers.cs:155
-#, csharp-format
-msgid "(Untitled {0})"
-msgstr "(Bez tytułu {0})"
-
-#: ../Tomboy/Watchers.cs:188
-#, csharp-format
-msgid "A note with the title <b>{0}</b> already exists. Please choose another name for this note before continuing."
-msgstr "Notatka o tytule <b>{0}</b> już istnieje. Proszę wybrać inną nazwę."
-
-#: ../Tomboy/Watchers.cs:203
-msgid "Note title taken"
-msgstr "Zapisano tytuł notatki"
-
-#: ../Tomboy/Watchers.cs:551
-msgid "_Copy Link Address"
-msgstr "Skopiuj _adres odnośnika"
-
-#: ../Tomboy/Watchers.cs:556
-msgid "_Open Link"
-msgstr "_Otwórz odnośnik"
-
-#: ../Tomboy/Synchronization/FuseSyncServiceAddin.cs:94
-#, csharp-format
-msgid "This synchronization addin is not supported on your computer. Please make sure you have FUSE and {0} correctly installed and configured"
-msgstr "Dodatek synchronizacji nie jest obsługiwany na tym komputerze. Proszę upewnić się, że FUSE i {0} są poprawnie zainstalowane i skonfigurowane"
-
-#: ../Tomboy/Synchronization/FuseSyncServiceAddin.cs:129
-msgid "Could not read testfile."
-msgstr "Nie można odczytać pliku testowego."
-
-#: ../Tomboy/Synchronization/FuseSyncServiceAddin.cs:132
-msgid "Write test failed."
-msgstr "Test zapisu nie powiódł się."
-
-#: ../Tomboy/Synchronization/FuseSyncServiceAddin.cs:176
-msgid "Timeout connecting to server."
-msgstr "Przekroczono limit czasu połączenia z serwerem."
-
-#: ../Tomboy/Synchronization/FuseSyncServiceAddin.cs:184
-msgid "Error connecting to server."
-msgstr "Błąd podczas łączenia z serwerem."
-
-#: ../Tomboy/Synchronization/FuseSyncServiceAddin.cs:198
-msgid "FUSE could not be enabled."
-msgstr "Nie można włączyć FUSE."
-
-#: ../Tomboy/Synchronization/FuseSyncServiceAddin.cs:233
-msgid "An error ocurred while connecting to the specified server:"
-msgstr "Napotkano błąd podczas łączenia z podanym serwerem:"
-
-#. Expander containing TreeView
-#: ../Tomboy/Synchronization/SyncDialog.cs:88
-msgid "Details"
-msgstr "Szczegóły"
-
-#: ../Tomboy/Synchronization/SyncDialog.cs:118
-msgid "Note Title"
-msgstr "Tytuł notatki"
-
-#: ../Tomboy/Synchronization/SyncDialog.cs:125
-msgid "Status"
-msgstr "Status"
-
-#: ../Tomboy/Synchronization/SyncDialog.cs:240
-msgid "Acquiring sync lock..."
-msgstr "Ustanawianie blokady..."
-
-#: ../Tomboy/Synchronization/SyncDialog.cs:243
-msgid "Committing changes..."
-msgstr "Wysyłanie zmian..."
-
-#: ../Tomboy/Synchronization/SyncDialog.cs:246
-msgid "Synchronizing Notes"
-msgstr "Synchronizowanie notatek"
-
-#: ../Tomboy/Synchronization/SyncDialog.cs:247
-msgid "Synchronizing your notes..."
-msgstr "Trwa synchronizacja notatek"
-
-#: ../Tomboy/Synchronization/SyncDialog.cs:248
-msgid "This may take a while, kick back and enjoy!"
-msgstr "Proszę czekać - to może zająć trochę czasu."
-
-#: ../Tomboy/Synchronization/SyncDialog.cs:250
-msgid "Connecting to the server..."
-msgstr "Łączenie się z serwerem..."
-
-#: ../Tomboy/Synchronization/SyncDialog.cs:256
-msgid "Deleting notes off of the server..."
-msgstr "Usuwanie notatek z serwera..."
-
-#: ../Tomboy/Synchronization/SyncDialog.cs:260
-msgid "Downloading new/updated notes..."
-msgstr "Pobieranie nowych i uaktualnionych notatek..."
-
-#: ../Tomboy/Synchronization/SyncDialog.cs:272
-msgid "Server Locked"
-msgstr "Serwer zablokowany"
-
-#: ../Tomboy/Synchronization/SyncDialog.cs:273
-msgid "Server is locked"
-msgstr "Serwer został zablokowany"
-
-#: ../Tomboy/Synchronization/SyncDialog.cs:274
-msgid "One of your other computers is currently synchronizing.  Please wait 2 minutes and try again."
-msgstr "Jeden z komputerów dokonuje teraz synchronizacji. Proszę spróbować ponownie za 2 minuty."
-
-#: ../Tomboy/Synchronization/SyncDialog.cs:278
-msgid "Preparing to download updates from server..."
-msgstr "Przygotowywanie pobierania uaktualnień z serwera..."
-
-#: ../Tomboy/Synchronization/SyncDialog.cs:281
-msgid "Preparing to upload updates to server..."
-msgstr "Przygotowanie wysyłania uaktualnień na serwer..."
-
-#: ../Tomboy/Synchronization/SyncDialog.cs:284
-msgid "Uploading notes to server..."
-msgstr "Wysyłanie notatek na serwer..."
-
-#: ../Tomboy/Synchronization/SyncDialog.cs:287
-msgid "Synchronization Failed"
-msgstr "Synchronizacja nie powiodła się"
-
-#: ../Tomboy/Synchronization/SyncDialog.cs:288
-msgid "Failed to synchronize"
-msgstr "Synchronizacja nie powiodła się"
-
-#: ../Tomboy/Synchronization/SyncDialog.cs:289
-msgid "Could not synchronize notes.  Check the details below and try again."
-msgstr "Nie można zsynchronizować notatek. Proszę sprawdzić szczegóły poniżej i spróbować ponownie."
-
-#: ../Tomboy/Synchronization/SyncDialog.cs:295
-msgid "Synchronization Complete"
-msgstr "Synchronizacja ukończona"
-
-#: ../Tomboy/Synchronization/SyncDialog.cs:296
-msgid "Synchronization is complete"
-msgstr "Synchronizacja została ukończona"
-
-#: ../Tomboy/Synchronization/SyncDialog.cs:298
-#, csharp-format
-msgid "{0} note updated."
-msgid_plural "{0} notes updated."
-msgstr[0] "Zaktualizowano {0} notatkę."
-msgstr[1] "Zaktualizowano {0} notatki."
-msgstr[2] "Zaktualizowano {0} notatek."
-
-#: ../Tomboy/Synchronization/SyncDialog.cs:303
-msgid "Your notes are now up to date."
-msgstr "Notatki zostały zaktualizowane."
-
-#: ../Tomboy/Synchronization/SyncDialog.cs:307
-msgid "Synchronization Canceled"
-msgstr "Synchronizacja anulowana"
-
-#: ../Tomboy/Synchronization/SyncDialog.cs:308
-msgid "Synchronization was canceled"
-msgstr "Synchronizacja została anulowana"
-
-#: ../Tomboy/Synchronization/SyncDialog.cs:309
-msgid "You canceled the synchronization.  You may close the window now."
-msgstr "Anulowano synchronizację. Można teraz zamknąć okno."
-
-#: ../Tomboy/Synchronization/SyncDialog.cs:313
-msgid "Synchronization Not Configured"
-msgstr "Synchronizacja nieskonfigurowana"
-
-#: ../Tomboy/Synchronization/SyncDialog.cs:314
-msgid "Synchronization is not configured"
-msgstr "Synchronizacja nie została skonfigurowana"
-
-#: ../Tomboy/Synchronization/SyncDialog.cs:315
-msgid "Please configure synchronization in the preferences dialog."
-msgstr "Proszę skonfigurować synchronizację w oknie preferencji."
-
-#: ../Tomboy/Synchronization/SyncDialog.cs:319
-msgid "Synchronization Service Error"
-msgstr "Błąd usługi synchronizacji"
-
-#: ../Tomboy/Synchronization/SyncDialog.cs:320
-msgid "Service error"
-msgstr "Błąd usługi"
-
-#: ../Tomboy/Synchronization/SyncDialog.cs:321
-msgid "Error connecting to the synchronization service.  Please try again."
-msgstr "Błąd podczas łączenia się z usługą synchronizacji. Proszę spróbować ponownie."
-
-#: ../Tomboy/Synchronization/SyncDialog.cs:338
-msgid "Deleted locally"
-msgstr "Usunięte lokalnie"
-
-#: ../Tomboy/Synchronization/SyncDialog.cs:341
-msgid "Deleted from server"
-msgstr "Usunięto z serwera"
-
-#: ../Tomboy/Synchronization/SyncDialog.cs:344
-msgid "Updated"
-msgstr "Zaktualizowane"
-
-#: ../Tomboy/Synchronization/SyncDialog.cs:347
-msgid "Added"
-msgstr "Dodane"
-
-#: ../Tomboy/Synchronization/SyncDialog.cs:350
-msgid "Uploaded changes to server"
-msgstr "Wysłano zmiany na serwer"
-
-#: ../Tomboy/Synchronization/SyncDialog.cs:353
-msgid "Uploaded new note to server"
-msgstr "Wysłano nową notatkę na serwer"
-
-#: ../Tomboy/Synchronization/SyncDialog.cs:501
-msgid "Note Conflict"
-msgstr "Konflikt notatek"
-
-#. Suggest renaming note by appending " (old)" to the existing title
-#: ../Tomboy/Synchronization/SyncDialog.cs:507
-msgid " (old)"
-msgstr "(poprzednia)"
-
-#: ../Tomboy/Synchronization/SyncDialog.cs:546
-msgid "Rename local note:"
-msgstr "Zmień nazwę notatki lokalnej:"
-
-#: ../Tomboy/Synchronization/SyncDialog.cs:552
-msgid "Update links in referencing notes"
-msgstr "Zaktualizuj odnośniki w notatkach powiązanych"
-
-#: ../Tomboy/Synchronization/SyncDialog.cs:559
-msgid "Overwrite local note"
-msgstr "Nadpisz notatkę lokalną"
-
-#: ../Tomboy/Synchronization/SyncDialog.cs:563
-msgid "Always perform this action"
-msgstr "Zawsze wykonuj tą akcję"
-
-#. Set initial dialog text
-#: ../Tomboy/Synchronization/SyncDialog.cs:569
-msgid "Note conflict detected"
-msgstr "Wykryto konflikt notatek"
-
-#: ../Tomboy/Synchronization/SyncDialog.cs:570
-#, csharp-format
-msgid "The server version of \"{0}\" conflicts with your local note.  What do you want to do with your local note?"
-msgstr "Wersja z serwera notatki \"{0}\" koliduje z lokalną notatką. Co zrobić z notatką lokalną?"
-
-#: ../Tomboy/Synchronization/SyncManager.cs:159
-msgid "_Tools"
-msgstr "_Narzędzia"
-
-#: ../Tomboy/Synchronization/SyncUtils.cs:133
-#: ../Tomboy/Synchronization/SyncUtils.cs:177
-msgid "Could not enable FUSE"
-msgstr "Nie można włączyć FUSE"
-
-#: ../Tomboy/Synchronization/SyncUtils.cs:134
-#: ../Tomboy/Synchronization/SyncUtils.cs:178
-msgid "The FUSE module could not be loaded. Please check that it is installed properly and try again."
-msgstr "Moduł FUSE nie został odnaleziony. Proszę sprawdzić poprawność jego instalacji i spróbować ponownie."
-
-#: ../Tomboy/Synchronization/SyncUtils.cs:149
-msgid "Enable FUSE?"
-msgstr "Włączyć FUSE?"
-
-#. TODO: This message isn't entirely accurate.
-#. We should fix it.
-#: ../Tomboy/Synchronization/SyncUtils.cs:153
+#: ../gconf/gconf-sanity-check.c:322
 msgid ""
-"The synchronization you've chosen requires the FUSE module to be loaded.\n"
+"The files that contain your preference settings are currently in use.\n"
 "\n"
-"To avoid getting this prompt in the future, you should load FUSE at startup.  Add \"modprobe fuse\" to /etc/init.d/boot.local or \"fuse\" to /etc/modules."
-msgstr ""
-"Wybrana synchronizacja wymaga wczytania modułu FUSE.\n"
+"You might be logged in to a session from another computer, and the other login session is using your preference settings files.\n"
 "\n"
-"Aby uniknąć tej wiadomości, należy wczytywać FUSE podczas startu systemu. Wystarczy dopisać \"modprobe fuse\" do pliku /etc/init.d/boot.local lub \"fuse\" do pliku /etc/modules."
+"You can continue to use the current session, but this might cause temporary problems with the preference settings in the other session.\n"
+"\n"
+"Do you want to continue?"
+msgstr ""
+"Pliki zawierające ustawienia preferencji są w użyciu.\n"
+"\n"
+"Może być aktywna sesja z innego komputera, która używa plików ustawień preferencji.\n"
+"\n"
+"Można kontynuować w bieżącej sesji, ale może spowodować to przejściowe  problemy z ustawieniami w innej sesji.\n"
+"\n"
+"Czy chcesz kontynuować?"
 
-#~ msgid "Really delete these notes?"
-#~ msgstr "Na pewno usunąć tę notatkę?"
-#~ msgid "Add-in"
-#~ msgstr "Dodatek"
-#~ msgid "Version"
-#~ msgstr "Wersja"
-#~ msgid "Other"
-#~ msgstr "Inne"
-#~ msgid "Preparing pages..."
-#~ msgstr "Przygotowywanie stron..."
-#~ msgid "Rendering page %d of %d..."
-#~ msgstr "Przetwarzanie strony %d z %d..."
-#~ msgid "Printing page %d of %d..."
-#~ msgstr "Drukowanie strony %d z %d..."
-#~ msgid "Print preview"
-#~ msgstr "Podgląd wydruku"
-#~ msgid "%A %x, %X"
-#~ msgstr "%A %x, %x"
-#~ msgid "Configuration"
-#~ msgstr "Konfiguracja"
-#~ msgid "Configuration options for the print job"
-#~ msgstr "Opcje konfiguracyjne zadania drukowania"
-#~ msgid "Source Buffer"
-#~ msgstr "Bufor źródłowy"
-#~ msgid "GtkTextBuffer object to print"
-#~ msgstr "Obiekt GtkTextBuffer do drukowania"
-#~ msgid "Tabs Width"
-#~ msgstr "Szerokość tabulatorów"
-#~ msgid "Width in equivalent space characters of tabs"
-#~ msgstr "Szerokość tabulatorów (w znakach spacji)"
-#~ msgid "Wrap Mode"
-#~ msgstr "Tryb zawijania"
-#~ msgid "Word wrapping mode"
-#~ msgstr "Tryb zawijania wierszy"
-#~ msgid "Highlight"
-#~ msgstr "Wyróżnienie"
-#~ msgid "Whether to print the document with highlighted syntax"
-#~ msgstr "Określa czy drukować dokument z podświetlaniem składni"
-#~ msgid "Font"
-#~ msgstr "Czcionka"
-#~ msgid "GnomeFont name to use for the document text (deprecated)"
-#~ msgstr "Nazwa GnomeFont używanego dla tekstu dokumentu (nieaktualne)"
-#~ msgid "Font Description"
-#~ msgstr "Opis czcionki"
-#~ msgid "Font to use for the document text (e.g. \"Monospace 10\")"
-#~ msgstr "Czcionka dla tekstu dokumentu (np: \"Monospace 10\")"
-#~ msgid "Numbers Font"
-#~ msgstr "Czcionka numerów"
-#~ msgid "GnomeFont name to use for the line numbers (deprecated)"
-#~ msgstr "Nazwa GnomeFont używanego dla numerów linii (nieaktualne)"
-#~ msgid "Font description to use for the line numbers"
-#~ msgstr "Opis czcionki dla numerów linii"
-#~ msgid "Print Line Numbers"
-#~ msgstr "Drukowanie numerów linii"
-#~ msgid "Interval of printed line numbers (0 means no numbers)"
-#~ msgstr "Interwał drukowanych numerów linii (0 oznacza bez numerów)"
-#~ msgid "Print Header"
-#~ msgstr "Drukowanie nagłówków"
-#~ msgid "Whether to print a header in each page"
-#~ msgstr "Określa czy drukować nagłówek na każdej stronie"
-#~ msgid "Print Footer"
-#~ msgstr "Drukowanie stopki"
-#~ msgid "Whether to print a footer in each page"
-#~ msgstr "Określa czy drukować stopkę na każdej stronie"
-#~ msgid "Header and Footer Font"
-#~ msgstr "Czcionka nagłówka i stopki"
-#~ msgid "GnomeFont name to use for the header and footer (deprecated)"
-#~ msgstr "Nazwa GnomeFont używanego dla nagłówka i stopki (nieaktualne)"
-#~ msgid "Header and Footer Font Description"
-#~ msgstr "Opis czcionki dla nagłówka i stopki"
-#~ msgid "Font to use for headers and footers (e.g. \"Monospace 10\")"
-#~ msgstr "Czcionka dla nagłówków i stopek (np: \"Monospace 10\")"
-#~ msgid "_Open New Note Template..."
-#~ msgstr "_Otwórz szablon nowej notatki..."
-#~ msgid "NoteOfTheDay"
-#~ msgstr "NotatkaDnia"
-#~ msgid ""
-#~ "<note-content>Tagging In Tomboy\n"
-#~ "\n"
-#~ "Notes can be tagged with the tag bar at the bottom of the note screen. "
-#~ "Pressing <bold>Tab</bold> in the tag bar will autocomplete the nearest "
-#~ "tag. To confirm the displayed tag press <bold>Enter</bold>.</note-content>"
+#: ../gconf/gconf-sanity-check.c:343
+msgid "_Log Out"
+msgstr "K_oniec sesji"
+
+#: ../gconf/gconf-sanity-check.c:345
+msgid "_Continue"
+msgstr "_Kontynuuj"
+
+#: ../gconf/gconf-sanity-check.c:358
+#, c-format
+msgid "%s Continue (y/n)?"
+msgstr "%s Kontynuować (t/n)?"
+
+#: ../gconf/gconf-schema.c:211
+#: ../gconf/gconf-schema.c:219
+#: ../gconf/gconf-schema.c:227
+#: ../gconf/gconf-schema.c:235
+#, c-format
+msgid "Schema contains invalid UTF-8"
+msgstr "Schemat zawiera niepoprawną sekwencję UTF-8"
+
+#: ../gconf/gconf-schema.c:244
+#, c-format
+msgid "Schema specifies type list but doesn't specify the type of the list elements"
+msgstr "Schemat określa typ jako listę, lecz nie określa typu elementów listy"
+
+#: ../gconf/gconf-schema.c:254
+#, c-format
+msgid "Schema specifies type pair but doesn't specify the type of the car/cdr elements"
+msgstr "Schemat określa typ jako parę, lecz nie określa typu pierwszego/drugiego elementu"
+
+#: ../gconf/gconf-sources.c:374
+#, c-format
+msgid "Failed to load source \"%s\": %s"
+msgstr "Nie można wczytać źródła \"%s\": %s"
+
+#: ../gconf/gconf-sources.c:414
+#, c-format
+msgid "Resolved address \"%s\" to a writable configuration source at position %d"
+msgstr "Uzyskano adres \"%s\" do zapisywalnego źródła konfiguracji na pozycji %d"
+
+#: ../gconf/gconf-sources.c:420
+#, c-format
+msgid "Resolved address \"%s\" to a read-only configuration source at position %d"
+msgstr "Uzyskano adres \"%s\" do źródła konfiguracji tylko do odczytu na pozycji %d"
+
+#: ../gconf/gconf-sources.c:427
+#, c-format
+msgid "Resolved address \"%s\" to a partially writable configuration source at position %d"
+msgstr "Uzyskano adres \"%s\" do częściowo zapisywalnego źródła konfiguracji na pozycji %d"
+
+#: ../gconf/gconf-sources.c:436
+msgid "None of the resolved addresses are writable; saving configuration settings will not be possible"
+msgstr "Żaden z uzyskanych adresów nie jest zapisywalny; zapisywanie zmian w konfiguracji nie będzie możliwe"
+
+#: ../gconf/gconf-sources.c:690
+#, c-format
+msgid "Schema `%s' specified for `%s' stores a non-schema value"
+msgstr "Schemat \"%s\" podany dla \"%s\" przechowuje wartość nie należącą do schematu"
+
+#: ../gconf/gconf-sources.c:752
+msgid "The '/' name can only be a directory, not a key"
+msgstr "Nazwa \"/\" może dotyczyć tylko katalogu, nie klucza"
+
+#: ../gconf/gconf-sources.c:794
+#, c-format
+msgid "Value for `%s' set in a read-only source at the front of your configuration path"
+msgstr "Wartość \"%s\" jest ustawiona w źródle tylko od odczytu na początku ścieżki konfiguracji."
+
+#: ../gconf/gconf-sources.c:806
+#, c-format
+msgid "Unable to store a value at key '%s', as the configuration server has no writable databases. There are some common causes of this problem: 1) your configuration path file %s/path doesn't contain any databases or wasn't found 2) somehow we mistakenly created two gconfd processes 3) your operating system is misconfigured so NFS file locking doesn't work in your home directory or 4) your NFS client machine crashed and didn't properly notify the server on reboot that file locks should be dropped. If you have two gconfd processes (or had two at the time the second was launched), logging out, killing all copies of gconfd, and logging back in may help. If you have stale locks, remove ~/.gconf*/*lock. Perhaps the problem is that you attempted to use GConf from two machines at once, and ORBit still has its default configuration that prevents remote CORBA connections - put \"ORBIIOPIPv4=1\" in /etc/orbitrc. As always, check the user.* syslog for details on problems gconfd encountered. There can only be one gconfd per home directory, and it must own a lockfile in ~/.gconfd and also lockfiles in individual storage locations such as ~/.gconf"
+msgstr "Nie można przypisać wartości kluczowi \"%s\", ponieważ serwerowi konfiguracji nie podano żadnej zapisywalnej bazy danych. Dwa najczęstsze źródła tego problemu to: 1) skonfigurowana w %s/path ścieżka nie zawiera żadnych baz danych lub nie została odnaleziona; 2) w jakiś sposób zostały uruchomione dwa procesy gconfd; 3) system operacyjny jest niepoprawnie skonfigurowany i blokowanie nie działa w katalogu domowym zamontowanym po NFS; 4) padła maszyna kliencka, korzystająca z NFS-a i przy ponownym uruchamianiu nie powiadomiła serwera o konieczności porzucenia pozostałych blokad. Jeśli istnieją dwa procesy gconfd (albo istniały w chwili uruchamiania drugiego), może pomóc wylogowanie się, usunięcie wszystkich procesów gconfd i ponowne zalogowanie. Jeśli istnieją nieużywane blokady, usuń ~/.gconf*/*lock. Być może problem pojawił się z powodu próby jednoczesnego użycia GConfd z dwóch maszyn, podczas gdy domyślna konfiguracja ORBita nie zezwala na zdalne połączenia Corby - konieczne może być uaktywnienie obsługi TCP w serwerze ORBit poprzez umieszczenie w pliku /etc/orbitrc wiersza \"ORBIIOPIPv4=1\". Aby poznać szczegóły na temat powstałego problemu, przejrzyj user.* w syslogu. Z każdym katalogiem domowym może być związany tylko jeden proces gconfd i musi on posiadać blokadę w ~/.gconfd oraz pliki blokad powiązane z miejscami przechowywania konfiguracji, np. ~/.gconf."
+
+#: ../gconf/gconf-sources.c:1610
+#, c-format
+msgid "Error finding metainfo: %s"
+msgstr "Błąd przy wyszukiwaniu metainformacji: %s"
+
+#: ../gconf/gconf-sources.c:1679
+#, c-format
+msgid "Error getting metainfo: %s"
+msgstr "Błąd przy pobieraniu metainformacji: %s"
+
+#: ../gconf/gconf-sources.c:1703
+#, c-format
+msgid "Key `%s' listed as schema for key `%s' actually stores type `%s'"
+msgstr "Klucz \"%s\" określony jako schemat dla klucza \"%s\" przechowuje wartość typu \"%s\""
+
+#: ../gconf/gconf-value.c:262
+#, c-format
+msgid "Didn't understand `%s' (list must start with a '[')"
+msgstr "Niezrozumiała wartość \"%s\" (lista musi się rozpoczynać znakiem \"[\")"
+
+#: ../gconf/gconf-value.c:275
+#, c-format
+msgid "Didn't understand `%s' (list must end with a ']')"
+msgstr "Niezrozumiała wartość \"%s\" (lista musi się kończyć znakiem \"]\")"
+
+#: ../gconf/gconf-value.c:326
+#, c-format
+msgid "Didn't understand `%s' (extra unescaped ']' found inside list)"
+msgstr "Niezrozumiała wartość \"%s\" (dodatkowy znak \"]\" wewnątrz listy)"
+
+#: ../gconf/gconf-value.c:357
+#: ../gconf/gconf-value.c:518
+#, c-format
+msgid "Didn't understand `%s' (extra trailing characters)"
+msgstr "Nie zrozumiano \"%s\" (dodatkowe znaki na końcu)"
+
+#: ../gconf/gconf-value.c:404
+#, c-format
+msgid "Didn't understand `%s' (pair must start with a '(')"
+msgstr "Niezrozumiała wartość \"%s\" (para musi się zaczynać znakiem \"(\")"
+
+#: ../gconf/gconf-value.c:417
+#, c-format
+msgid "Didn't understand `%s' (pair must end with a ')')"
+msgstr "Niezrozumiała wartość \"%s\" (para musi się kończyć znakiem \")\")"
+
+#: ../gconf/gconf-value.c:447
+#: ../gconf/gconf-value.c:533
+#, c-format
+msgid "Didn't understand `%s' (wrong number of elements)"
+msgstr "Niezrozumiała wartość \"%s\" (niewłaściwa liczba elementów)"
+
+#: ../gconf/gconf-value.c:487
+#, c-format
+msgid "Didn't understand `%s' (extra unescaped ')' found inside pair)"
+msgstr "Nie zrozumiano \"%s\" (dodatkowy \")\" wewnątrz pary)"
+
+#: ../gconf/gconf.c:95
+msgid "Key is NULL"
+msgstr "Klucz ma wartość NULL"
+
+#: ../gconf/gconf.c:102
+#, c-format
+msgid "\"%s\": %s"
+msgstr "\"%s\": %s"
+
+#: ../gconf/gconf.c:423
+#, c-format
+msgid "Server couldn't resolve the address `%s'"
+msgstr "Serwer nie może odnaleźć adresu \"%s\""
+
+#: ../gconf/gconf.c:801
+msgid "Can't add notifications to a local configuration source"
+msgstr "Nie można dodać powiadomień do lokalnego źródła konfiguracji"
+
+#: ../gconf/gconf.c:2251
+#, c-format
+msgid "Adding client to server's list failed, CORBA error: %s"
+msgstr "Nie można dodać klienta do listy na serwerze. Błąd Corby: %s"
+
+#: ../gconf/gconf.c:2623
+msgid "Must begin with a slash '/'"
+msgstr "Musi się rozpoczynać ukośnikiem \"/\""
+
+#: ../gconf/gconf.c:2645
+msgid "Can't have two slashes '/' in a row"
+msgstr "Dwa ukośniki \"/\" nie mogą występować bezpośrednio po sobie"
+
+#: ../gconf/gconf.c:2647
+msgid "Can't have a period '.' right after a slash '/'"
+msgstr "Kropka \".\" nie może być umieszczona bezpośrednio po ukośniku \"/\""
+
+#: ../gconf/gconf.c:2667
+#, c-format
+msgid "'\\%o' is not an ASCII character and thus isn't allowed in key names"
+msgstr "Znak \"\\%o\" nie jest znakiem ASCII, więc nie jest dozwolony w nazwie klucza"
+
+#: ../gconf/gconf.c:2677
+#, c-format
+msgid "`%c' is an invalid character in key/directory names"
+msgstr "Znak \"%c\" jest niedozwolony w nazwach kluczy lub katalogów"
+
+#: ../gconf/gconf.c:2691
+msgid "Key/directory may not end with a slash '/'"
+msgstr "Klucz lub katalog nie może kończyć się ukośnikiem \"/\""
+
+#: ../gconf/gconf.c:3062
+#, c-format
+msgid "Failure shutting down configuration server: %s"
+msgstr "Błąd przy kończeniu pracy serwera konfiguracji: %s"
+
+#: ../gconf/gconf.c:3123
+#, c-format
+msgid "Expected float, got %s"
+msgstr "Oczekiwano liczby zmiennoprzecinkowej, otrzymano %s"
+
+#: ../gconf/gconf.c:3158
+#, c-format
+msgid "Expected int, got %s"
+msgstr "Oczekiwano liczby całkowitej, otrzymano %s"
+
+#: ../gconf/gconf.c:3193
+#, c-format
+msgid "Expected string, got %s"
+msgstr "Oczekiwano napisu, otrzymano %s"
+
+#: ../gconf/gconf.c:3227
+#, c-format
+msgid "Expected bool, got %s"
+msgstr "Oczekiwano wartości logicznej, otrzymano %s"
+
+#: ../gconf/gconf.c:3260
+#, c-format
+msgid "Expected schema, got %s"
+msgstr "Oczekiwano schematu, otrzymano %s"
+
+#: ../gconf/gconf.c:3599
+#, c-format
+msgid "CORBA error: %s"
+msgstr "Błąd CORBA: %s"
+
+#: ../gconf/gconfd.c:308
+msgid "Shutdown request received"
+msgstr "Otrzymano żądanie zakończenia"
+
+#: ../gconf/gconfd.c:340
+msgid "gconfd compiled with debugging; trying to load gconf.path from the source directory"
+msgstr "Demon gconfd został skompilowany z obsługą debugowania; próba odczytu gconf.path z katalogu źródłowego"
+
+#: ../gconf/gconfd.c:360
+#, c-format
+msgid "No configuration files found. Trying to use the default configuration source `%s'"
+msgstr "Nie odnaleziono plików konfiguracyjnych. Nastąpi próba użycia domyślnego źródła konfiguracji \"%s\""
+
+#. We want to stay alive but do nothing, because otherwise every
+#. request would result in another failed gconfd being spawned.
+#.
+#: ../gconf/gconfd.c:368
+#, c-format
+msgid "No configuration sources in the source path. Configuration won't be saved; edit %s%s"
+msgstr "Brak źródeł konfiguracji na ścieżce źródłowej. Konfiguracja nie zostanie zapisana; zmodyfikuj %s%s"
+
+#: ../gconf/gconfd.c:381
+#, c-format
+msgid "Error loading some configuration sources: %s"
+msgstr "Błąd przy wczytywaniu części źródeł konfiguracji: %s"
+
+#: ../gconf/gconfd.c:393
+msgid "No configuration source addresses successfully resolved. Can't load or store configuration data"
+msgstr "Nie uzyskano żadnego źródła konfiguracji. Nie można odczytać ani zapisać danych konfiguracji"
+
+#: ../gconf/gconfd.c:410
+msgid "No writable configuration sources successfully resolved. May be unable to save some configuration changes"
+msgstr "Nie uzyskano żadnego zapisywalnego źródła konfiguracji. Zapis zmian w konfiguracji może nie być możliwy"
+
+# td
+#: ../gconf/gconfd.c:591
+#, c-format
+msgid "Could not connect to session bus: %s"
+msgstr "Nie można połączyć z magistralą sesji: %s"
+
+# td
+#: ../gconf/gconfd.c:613
+#, c-format
+msgid "Failed to get bus name for daemon, exiting: %s"
+msgstr "Nie można uzyskać nazwy magistrali dla usługi, kończenie: %s"
+
+# td
+#: ../gconf/gconfd.c:694
+#, c-format
+msgid "Could not connect to system bus: %s"
+msgstr "Nie można połączyć się z magistralą systemową: %s"
+
+#: ../gconf/gconfd.c:830
+#, c-format
+msgid "starting (version %s), pid %u user '%s'"
+msgstr "uruchamianie (wersja %s), pid %u, użytkownik \"%s\""
+
+#: ../gconf/gconfd.c:890
+msgid "Failed to get object reference for ConfigServer"
+msgstr "Nie można uzyskać referencji obiektu ConfigServer"
+
+#: ../gconf/gconfd.c:919
+#, c-format
+msgid "Failed to write byte to pipe file descriptor %d so client program may hang: %s"
+msgstr "Nie można zapisać bajtu do potoku poprzez deskryptor %d, co może zawiesić program klienta: %s"
+
+#: ../gconf/gconfd.c:965
+#, c-format
+msgid "Error releasing lockfile: %s"
+msgstr "Błąd przy zwalnianiu pliku blokady: %s"
+
+#: ../gconf/gconfd.c:973
+msgid "Exiting"
+msgstr "Zakończenie"
+
+#: ../gconf/gconfd.c:991
+msgid "SIGHUP received, reloading all databases"
+msgstr "Otrzymano sygnał SIGHUP, przeładowywanie wszystkich baz"
+
+#: ../gconf/gconfd.c:1008
+msgid "GConf server is not in use, shutting down."
+msgstr "Serwer GConf nie jest używany, zakończenie."
+
+#: ../gconf/gconfd.c:1334
+#, c-format
+msgid "Error obtaining new value for `%s': %s"
+msgstr "Błąd przy pobieraniu nowej wartości dla \"%s\": %s"
+
+#: ../gconf/gconfd.c:1478
+#, c-format
+msgid "Returning exception: %s"
+msgstr "Zwracanie wyjątku: %s"
+
+#: ../gconf/gconfd.c:1584
+#, c-format
+msgid "Failed to open gconfd logfile; won't be able to restore listeners after gconfd shutdown (%s)"
+msgstr "Nie można otworzyć pliku dziennika gconfd; po zakończeniu gconfd nie będzie możliwe przywrócenie słuchaczy (%s)"
+
+#: ../gconf/gconfd.c:1619
+#, c-format
+msgid "Failed to close gconfd logfile; data may not have been properly saved (%s)"
+msgstr "Nie można zamknąć pliku dziennika gconfd, dane mogły nie zostać poprawnie zapisane (%s)"
+
+#: ../gconf/gconfd.c:1681
+#, c-format
+msgid "Could not open saved state file '%s' for writing: %s"
+msgstr "Nie można otworzyć pliku \"%s\" z zapisem stanu do zapisu: %s"
+
+#: ../gconf/gconfd.c:1695
+#, c-format
+msgid "Could not write saved state file '%s' fd: %d: %s"
+msgstr "Nie można zapisać do pliku \"%s\" (fd: %d) z zapisem stanu: %s"
+
+# td
+#: ../gconf/gconfd.c:1704
+#, c-format
+msgid "Could not flush saved state file '%s' to disk: %s"
+msgstr "Nie można przenieść zapisanego stanu pliku \"%s\" na dysk: %s"
+
+#: ../gconf/gconfd.c:1711
+#, c-format
+msgid "Failed to close new saved state file '%s': %s"
+msgstr "Nie można zamknąć nowego pliku \"%s\" z zapisem stanu: %s"
+
+#: ../gconf/gconfd.c:1725
+#, c-format
+msgid "Could not move aside old saved state file '%s': %s"
+msgstr "Nie można przenieść starego pliku \"%s\" z zapisem stanu: %s"
+
+#: ../gconf/gconfd.c:1735
+#, c-format
+msgid "Failed to move new saved state file into place: %s"
+msgstr "Nie można przenieść nowego pliku z zapisem stanu: %s"
+
+#: ../gconf/gconfd.c:1744
+#, c-format
+msgid "Failed to restore original saved state file that had been moved to '%s': %s"
+msgstr "Nie można przywrócić oryginalnego pliku z zapisem stanu przeniesionego do \"%s\": %s"
+
+#: ../gconf/gconfd.c:2223
+#, c-format
+msgid "Unable to restore a listener on address '%s', couldn't resolve the database"
+msgstr "Nie można przywrócić słuchacza spod adresu \"%s\" - nie można odnaleźć bazy danych"
+
+#: ../gconf/gconfd.c:2259
+#, c-format
+msgid "Error reading saved state file: %s"
+msgstr "Błąd przy odczycie pliku z zapisem stanu: %s"
+
+#: ../gconf/gconfd.c:2309
+#, c-format
+msgid "Unable to open saved state file '%s': %s"
+msgstr "Nie można otworzyć pliku \"%s\" z zapisem stanu: %s"
+
+#: ../gconf/gconfd.c:2428
+#, c-format
+msgid "Failed to log addition of listener to gconfd logfile; won't be able to re-add the listener if gconfd exits or shuts down (%s)"
+msgstr "Nie można zapisać dodania słuchacza w pliku dziennika gconfd; po zakończeniu gconfd nie będzie możliwe jego ponowne dodanie (%s)"
+
+#: ../gconf/gconfd.c:2433
+#, c-format
+msgid "Failed to log removal of listener to gconfd logfile; might erroneously re-add the listener if gconfd exits or shuts down (%s)"
+msgstr "Nie można zapisać usunięcia słuchacza w pliku dziennika gconfd; po zakończeniu gconfd może to spowodować błędne ponowne jego dodanie (%s)"
+
+#: ../gconf/gconfd.c:2456
+#: ../gconf/gconfd.c:2630
+#, c-format
+msgid "Failed to get IOR for client: %s"
+msgstr "Nie można pobrać wartości IOR dla klienta: %s"
+
+#: ../gconf/gconfd.c:2471
+#, c-format
+msgid "Failed to open saved state file: %s"
+msgstr "Odczytanie zapisanego stanu z pliku nie powiodło się: %s"
+
+#: ../gconf/gconfd.c:2484
+#, c-format
+msgid "Failed to write client add to saved state file: %s"
+msgstr "Nie można zapisać dodania klienta w pliku z zapisem stanu: %s"
+
+#: ../gconf/gconfd.c:2492
+#, c-format
+msgid "Failed to flush client add to saved state file: %s"
+msgstr "Nie można zrzucić dodania klienta do pliku z zapisem stanu: %s"
+
+#: ../gconf/gconfd.c:2591
+msgid "Some client removed itself from the GConf server when it hadn't been added."
+msgstr "Klient, który nie był dodany, usunął się z serwera."
+
+#: ../gconf/gconftool.c:93
+msgid "Set a key to a value and sync. Use with --type."
+msgstr "Ustawia klucz na wartość i synchronizuje. Użycie z parametrem --type."
+
+#: ../gconf/gconftool.c:102
+msgid "Print the value of a key to standard output."
+msgstr "Wypisuje na standardowe wyjście wartość klucza."
+
+#: ../gconf/gconftool.c:112
+msgid "Unset the keys on the command line"
+msgstr "Czyści klucze z wiersza poleceń"
+
+#: ../gconf/gconftool.c:121
+msgid "Recursively unset all keys at or below the key/directory names on the command line"
+msgstr "Rekurencyjnie czyści wszystkie klucze i katalogi podane w wierszu polecenia"
+
+# td
+#: ../gconf/gconftool.c:130
+msgid "Toggles a boolean key."
+msgstr "Przełącza klucz z wartością logiczną."
+
+#: ../gconf/gconftool.c:139
+msgid "Print all key/value pairs in a directory."
+msgstr "Wypisuje wszystkie pary klucz/wartość z katalogu"
+
+#: ../gconf/gconftool.c:148
+msgid "Print all subdirectories in a directory."
+msgstr "Wypisuje wszystkie podkatalogi danego katalogu."
+
+#: ../gconf/gconftool.c:157
+msgid "Print all subdirectories and entries under a directory, recursively."
+msgstr "Wypisuje rekurencyjnie wszystkie podkatalogi i elementy spod podanego katalogu."
+
+#: ../gconf/gconftool.c:166
+#: ../gconf/gconftool.c:175
+msgid "Search for a key, recursively."
+msgstr "Rekursywnie szuka klucza"
+
+#: ../gconf/gconftool.c:184
+msgid "Get the short doc string for a key"
+msgstr "Pobiera krótki napis dokumentujący powiązany z kluczem"
+
+#: ../gconf/gconftool.c:193
+msgid "Get the long doc string for a key"
+msgstr "Pobiera długi napis dokumentujący powiązany z kluczem"
+
+#: ../gconf/gconftool.c:202
+msgid "Return 0 if the directory exists, 2 if it does not."
+msgstr "Zwraca 0, jeśli katalog istnieje, 2 - w przeciwnym wypadku"
+
+#: ../gconf/gconftool.c:211
+msgid "Ignore schema defaults when reading values."
+msgstr "Ignoruje domyślne wartości schematu przy odczycie wartości"
+
+#: ../gconf/gconftool.c:226
+msgid "Dump to standard output an XML description of all entries under a directory, recursively."
+msgstr "Wypisuje rekurencyjnie na standardowym wyjściu opisy XML wszystkich elementów spod podanego katalogu."
+
+#: ../gconf/gconftool.c:235
+msgid "Load from the specified file an XML description of values and set them relative to a directory."
+msgstr "Pobiera z podanego pliku opisy XML wartości i ustawia je względem katalogu."
+
+#: ../gconf/gconftool.c:244
+msgid "Unload a set of values described in an XML file."
+msgstr "Usuwanie z pamięci zestawu wartości opisanych w pliku XML."
+
+#: ../gconf/gconftool.c:259
+msgid "Get the name of the default source"
+msgstr "Pobiera nazwę domyślnego źródła"
+
+#: ../gconf/gconftool.c:268
+msgid "Shut down gconfd. DON'T USE THIS OPTION WITHOUT GOOD REASON."
+msgstr "Kończy działanie gconfd. NIE UŻYWAJ TEJ OPCJI BEZ NAPRAWDĘ WAŻNEGO POWODU."
+
+#: ../gconf/gconftool.c:277
+msgid "Return 0 if gconfd is running, 2 if not."
+msgstr "Zwraca 0, jeśli gconf jest aktywny, 2 - w przeciwnym wypadku"
+
+#: ../gconf/gconftool.c:286
+msgid "Launch the configuration server (gconfd). (Normally happens automatically when needed.)"
+msgstr "Uruchamia serwer konfiguracji (gconfd). (Normalnie uruchamiany jest on automatycznie w razie potrzeby.)"
+
+#: ../gconf/gconftool.c:301
+msgid "Specify the type of the value being set, or the type of the value a schema describes. Unique abbreviations OK."
+msgstr "Określa typ ustawianej wartości lub wartości opisywanej przez schemat. Dopuszczalne są jednoznaczne skróty."
+
+#: ../gconf/gconftool.c:302
+msgid "int|bool|float|string|list|pair"
+msgstr "int|bool|float|string|list|pair"
+
+#: ../gconf/gconftool.c:310
+msgid "Print the data type of a key to standard output."
+msgstr "Wypisuje na standardowe wyjście typ danych klucza."
+
+# Nie jestem pewien tłumaczenia
+#: ../gconf/gconftool.c:319
+msgid "Get the number of elements in a list key."
+msgstr "Pobiera liczbę elementów z klucza listowego."
+
+#: ../gconf/gconftool.c:328
+msgid "Get a specific element from a list key, numerically indexed."
+msgstr "Pobiera wyszczególniony element z klucza listowego, indeksowanego numerycznie."
+
+#: ../gconf/gconftool.c:337
+msgid "Specify the type of the list value being set, or the type of the value a schema describes. Unique abbreviations OK."
+msgstr "Określa typ elementu ustawianej wartości listy lub wartości opisywanej przez schemat. Dopuszczalne są jednoznaczne skróty."
+
+#: ../gconf/gconftool.c:338
+#: ../gconf/gconftool.c:347
+#: ../gconf/gconftool.c:356
+msgid "int|bool|float|string"
+msgstr "int|bool|float|string"
+
+#: ../gconf/gconftool.c:346
+msgid "Specify the type of the car pair value being set, or the type of the value a schema describes. Unique abbreviations OK."
+msgstr "Określa typ pierwszego elementu ustawianej wartości pary lub wartości opisywanej przez schemat. Dopuszczalne są jednoznaczne skróty."
+
+#: ../gconf/gconftool.c:355
+msgid "Specify the type of the cdr pair value being set, or the type of the value a schema describes. Unique abbreviations OK."
+msgstr "Określa typ drugiego elementu ustawianej wartości pary lub wartości opisywanej przez schemat. Dopuszczalne są jednoznaczne skróty."
+
+#: ../gconf/gconftool.c:370
+msgid "Specify a schema file to be installed"
+msgstr "Określa nazwę pliku instalowanego schematu"
+
+#: ../gconf/gconftool.c:371
+msgid "FILENAME"
+msgstr "NAZWA_PLIKU"
+
+#: ../gconf/gconftool.c:379
+msgid "Specify a configuration source to use rather than the default path"
+msgstr "Określa źródło konfiguracji wykorzystywane zamiast domyślnej ścieżki"
+
+#: ../gconf/gconftool.c:380
+msgid "SOURCE"
+msgstr "ŹRÓDŁO"
+
+#: ../gconf/gconftool.c:388
+msgid "Bypass server, and access the configuration database directly. Requires that gconfd is not running."
+msgstr "Powoduje bezpośrednie odwoływanie się do bazy danych konfiguracji, z pominięciem serwera. Wymagane jest, aby nie był uruchomiony gconfd."
+
+#: ../gconf/gconftool.c:397
+msgid "Properly installs schema files on the command line into the database. Specify a custom configuration source in the GCONF_CONFIG_SOURCE environment variable, or set set the variable to an empty string to use the default configuration source."
+msgstr "Instaluje pliki schematów z wiersza poleceń w bazie danych. Przy użyciu źródła konfiguracji innego niż domyślne, powinna na nie wskazywać zmienna środowiskowa GCONF_CONFIG_SOURCE, pusta wartość oznacza domyślne źródło."
+
+#: ../gconf/gconftool.c:406
+msgid "Properly uninstalls schema files on the command line from the database. GCONF_CONFIG_SOURCE environment variable should be set to a non-default configuration source or set to the empty string to use the default."
+msgstr "Odinstalowuje pliki schematów z wiersza poleceń w bazie danych. Przy użyciu źródła konfiguracji innego niż domyślne, powinna na nie wskazywać zmienna środowiskowa GCONF_CONFIG_SOURCE, pusta wartość oznacza domyślne źródło."
+
+#: ../gconf/gconftool.c:421
+msgid "Torture-test an application by setting and unsetting a bunch of values of different types for keys on the command line."
+msgstr "Przeprowadza intensywny test aplikacji, ustawiając i czyszcząc mnóstwo wartości różnych typów dla kluczy podanych w wierszu poleceń."
+
+#: ../gconf/gconftool.c:430
+msgid "Torture-test an application by setting and unsetting a bunch of keys inside the directories on the command line."
+msgstr "Przeprowadza intensywny test aplikacji, ustawiając i czyszcząc mnóstwo wartości różnych typów dla kluczy wewnątrz katalogów, podanych w wierszu poleceń."
+
+#: ../gconf/gconftool.c:445
+msgid "Set a schema and sync. Use with --short-desc, --long-desc, --owner, and --type."
+msgstr "Ustawia schemat i synchronizuje. Używane z parametrami --short-desc, --long-desc, --owner oraz --type."
+
+#: ../gconf/gconftool.c:454
+msgid "Specify a short half-line description to go in a schema."
+msgstr "Określa krótki, kilkudziesięcioznakowy opis, umieszczany w schemacie."
+
+#: ../gconf/gconftool.c:455
+#: ../gconf/gconftool.c:464
+msgid "DESCRIPTION"
+msgstr "OPIS"
+
+#: ../gconf/gconftool.c:463
+msgid "Specify a several-line description to go in a schema."
+msgstr "Określa wielowierszowy opis schematu."
+
+#: ../gconf/gconftool.c:472
+msgid "Specify the owner of a schema"
+msgstr "Określa właściciela schematu"
+
+#: ../gconf/gconftool.c:473
+msgid "OWNER"
+msgstr "WŁAŚCICIEL"
+
+#: ../gconf/gconftool.c:481
+msgid "Get the name of the schema applied to this key"
+msgstr "Pobiera nazwę schematu zastosowanego do tego klucza"
+
+#: ../gconf/gconftool.c:490
+msgid "Specify the schema name followed by the key to apply the schema name to"
+msgstr "Określa nazwę schematu z występującą po nim nazwą klucza, do którego powinien być wykorzystany"
+
+#: ../gconf/gconftool.c:499
+msgid "Remove any schema name applied to the given keys"
+msgstr "Usuwa wszystkie nazwy schematów zastosowane do podanych kluczy"
+
+#: ../gconf/gconftool.c:514
+msgid "Print version"
+msgstr "Wypisuje wersję programu"
+
+#: ../gconf/gconftool.c:523
+msgid "[FILE...]|[KEY...]|[DIR...]"
+msgstr "[PLIK...]|[KLUCZ...]|[KATALOG...]"
+
+#: ../gconf/gconftool.c:585
+msgid "- Tool to manipulate a GConf configuration"
+msgstr "- Narzędzie do ustawiania konfiguracji GConf"
+
+#: ../gconf/gconftool.c:590
+msgid "Client options:"
+msgstr "Opcje klienta:"
+
+#: ../gconf/gconftool.c:590
+msgid "Show client options"
+msgstr "Wyświetla opcje klienta"
+
+#: ../gconf/gconftool.c:595
+msgid "Key type options:"
+msgstr "Opcje typu klucza:"
+
+#: ../gconf/gconftool.c:595
+msgid "Show key type options"
+msgstr "Wyświetla opcje typu klucza"
+
+#: ../gconf/gconftool.c:600
+msgid "Load/Save options:"
+msgstr "Opcje wczytywania/zapisu:"
+
+#: ../gconf/gconftool.c:600
+msgid "Show load/save options"
+msgstr "Wyświetla opcje wczytywania/zapisu"
+
+#: ../gconf/gconftool.c:605
+msgid "Server options:"
+msgstr "Opcje serwera:"
+
+#: ../gconf/gconftool.c:605
+msgid "Show server options"
+msgstr "Wyświetla opcje serwera"
+
+#: ../gconf/gconftool.c:610
+msgid "Installation options:"
+msgstr "Opcje instalacji:"
+
+#: ../gconf/gconftool.c:610
+msgid "Show installation options"
+msgstr "Wyświetla opcje instalacji"
+
+#: ../gconf/gconftool.c:615
+msgid "Test options:"
+msgstr "Opcje testów:"
+
+#: ../gconf/gconftool.c:615
+msgid "Show test options"
+msgstr "Wyświetla opcje testów"
+
+#: ../gconf/gconftool.c:620
+msgid "Schema options:"
+msgstr "Opcje schematów:"
+
+#: ../gconf/gconftool.c:620
+msgid "Show schema options"
+msgstr "Wyświetla opcje schematów"
+
+#: ../gconf/gconftool.c:629
+#, c-format
+msgid "Run '%s --help' to see a full list of available command line options.\n"
+msgstr "Parametr \"%s --help\" wyświetla pełną listę opcji dostępnych z wiersza poleceń.\n"
+
+#: ../gconf/gconftool.c:657
+#, c-format
+msgid "Can't get and set/unset simultaneously\n"
+msgstr "Nie można jednocześnie pobrać i ustawić wartości\n"
+
+#: ../gconf/gconftool.c:667
+#, c-format
+msgid "Can't set and get/unset simultaneously\n"
+msgstr "Nie można jednocześnie ustawić i pobrać wartości\n"
+
+#: ../gconf/gconftool.c:674
+#, c-format
+msgid "Can't get type and set/unset simultaneously\n"
+msgstr "Nie można jednocześnie pobrać i ustawić typu\n"
+
+# td
+#: ../gconf/gconftool.c:682
+#, c-format
+msgid "Can't toggle and get/set/unset simultaneously\n"
+msgstr "Nie można jednocześnie przełączyć i pobrać/ustawić/wyczyścić wartości\n"
+
+#: ../gconf/gconftool.c:693
+#, c-format
+msgid "Can't use --all-entries with --get or --set\n"
+msgstr "Nie można używać --all-entries wraz z --get lub --set\n"
+
+#: ../gconf/gconftool.c:704
+#, c-format
+msgid "Can't use --all-dirs with --get or --set\n"
+msgstr "Nie można używać --all-pairs wraz z --get lub --set\n"
+
+#: ../gconf/gconftool.c:718
+#, c-format
+msgid "--recursive-list should not be used with --get, --set, --unset, --all-entries, --all-dirs, or --search-key\n"
+msgstr "--recursive-list nie powinno być używane wraz z --get, --set, --unset, --all-entries, --all-dirs i --search-key\n"
+
+#: ../gconf/gconftool.c:732
+#, c-format
+msgid "--set_schema should not be used with --get, --set, --unset, --all-entries, --all-dirs, or --search-key\n"
+msgstr "--set_schema nie powinno być używane wraz z --get, --set, --unset, --all-entries, --all-dirs i --search-key\n"
+
+#: ../gconf/gconftool.c:738
+#, c-format
+msgid "Value type is only relevant when setting a value\n"
+msgstr "Typ wartości ma sens tylko przy ustawianiu wartości\n"
+
+#: ../gconf/gconftool.c:744
+#, c-format
+msgid "Must specify a type when setting a value\n"
+msgstr "Przy ustawianiu wartości należy określić typ\n"
+
+#: ../gconf/gconftool.c:752
+#, c-format
+msgid "--ignore-schema-defaults is only relevant with --get, --all-entries, --dump, --recursive-list, --get-list-size or --get-list-element\n"
+msgstr "--ignore-schema-defaults można użyć tylko z opcją --get, --all-entries, --dump, --recursive-list, --get-list-size lub --get-list-element\n"
+
+#: ../gconf/gconftool.c:764
+#: ../gconf/gconftool.c:777
+#: ../gconf/gconftool.c:790
+#: ../gconf/gconftool.c:804
+#: ../gconf/gconftool.c:817
+#: ../gconf/gconftool.c:830
+#: ../gconf/gconftool.c:844
+#, c-format
+msgid "%s option must be used by itself.\n"
+msgstr "Opcja %s musi występować samodzielnie.\n"
+
+#: ../gconf/gconftool.c:853
+#, c-format
+msgid "You must specify a configuration source with --config-source when using --direct\n"
+msgstr "Przy użyciu --direct należy podać źródło konfiguracji za pomocą --config-source\n"
+
+#: ../gconf/gconftool.c:859
+#, c-format
+msgid "Failed to init GConf: %s\n"
+msgstr "Inicjacja GConf nie powiodła się: %s\n"
+
+#: ../gconf/gconftool.c:887
+#, c-format
+msgid "GCONF_DISABLE_MAKEFILE_SCHEMA_INSTALL is set, not installing schemas\n"
+msgstr "Ustawione jest GCONF_DISABLE_MAKEFILE_SCHEMA_INSTALL, zaniechano instalacji schematów\n"
+
+#: ../gconf/gconftool.c:894
+#, c-format
+msgid "GCONF_DISABLE_MAKEFILE_SCHEMA_UNINSTALL is set, not uninstalling schemas\n"
+msgstr "Ustawione jest GCONF_DISABLE_MAKEFILE_SCHEMA_INSTALL, zaniechano odinstalowania schematów\n"
+
+#: ../gconf/gconftool.c:907
+#, c-format
+msgid "Must set the GCONF_CONFIG_SOURCE environment variable\n"
+msgstr "Należy ustawić zmienną środowiskową GCONF_CONFIG_SOURCE\n"
+
+#: ../gconf/gconftool.c:962
+#, c-format
+msgid "Failed to access configuration source(s): %s\n"
+msgstr "Błąd podczas dostępu do źródła konfiguracji: %s\n"
+
+#: ../gconf/gconftool.c:1267
+#, c-format
+msgid "Shutdown error: %s\n"
+msgstr "Błąd podczas zamykania: %s\n"
+
+#: ../gconf/gconftool.c:1310
+#, c-format
+msgid "Must specify one or more directories to recursively list.\n"
+msgstr "Należy podać jeden lub więcej katalogów przeznaczonych do rekurencyjnego wypisania.\n"
+
+#: ../gconf/gconftool.c:1355
+#: ../gconf/gconftool.c:1549
+#: ../gconf/gconftool.c:1815
+#, c-format
+msgid "Failure listing entries in `%s': %s\n"
+msgstr "Błąd przy wypisywaniu elementów spod \"%s\": %s\n"
+
+#: ../gconf/gconftool.c:1375
+#: ../gconf/gconftool.c:1568
+msgid "(no value set)"
+msgstr "(nie ustawiono wartości)"
+
+#: ../gconf/gconftool.c:1438
+#, c-format
+msgid "Must specify a key pattern to search for.\n"
+msgstr "Należy podać wzorzec klucza do wyszukiwania.\n"
+
+# td
+#: ../gconf/gconftool.c:1457
+#, c-format
+msgid "Must specify a PCRE regex to search for.\n"
+msgstr "Należy podać wzorzec PCRE do wyszukania.\n"
+
+# td
+#: ../gconf/gconftool.c:1464
+#, c-format
+msgid "Error compiling regex: %s\n"
+msgstr "Błąd przy kompilowaniu wzorca: %s\n"
+
+#: ../gconf/gconftool.c:1507
+#, c-format
+msgid "Must specify one or more directories to dump.\n"
+msgstr "Należy podać co najmniej jeden katalog przeznaczony do wypisania.\n"
+
+#: ../gconf/gconftool.c:1874
+#, c-format
+msgid "Failed to spawn the configuration server (gconfd): %s\n"
+msgstr "Uruchomienie procesu potomnego serwera konfiguracji (gconfd) nie powiodło się: %s\n"
+
+#: ../gconf/gconftool.c:1903
+#, c-format
+msgid "Must specify a key or keys to get\n"
+msgstr "Należy podać klucz lub klucze przeznaczone do pobrania\n"
+
+#: ../gconf/gconftool.c:1938
+#, c-format
+msgid "Type: %s\n"
+msgstr "Typ: %s\n"
+
+#: ../gconf/gconftool.c:1939
+#, c-format
+msgid "List Type: %s\n"
+msgstr "Typ listy: %s\n"
+
+#: ../gconf/gconftool.c:1940
+#, c-format
+msgid "Car Type: %s\n"
+msgstr "Typ pierwszego elementu: %s\n"
+
+#: ../gconf/gconftool.c:1941
+#, c-format
+msgid "Cdr Type: %s\n"
+msgstr "Typ drugiego elementu: %s\n"
+
+#: ../gconf/gconftool.c:1946
+#, c-format
+msgid "Default Value: %s\n"
+msgstr "Wartość domyślna: %s\n"
+
+#: ../gconf/gconftool.c:1946
+#: ../gconf/gconftool.c:1948
+#: ../gconf/gconftool.c:1949
+#: ../gconf/gconftool.c:1950
+msgid "Unset"
+msgstr "Brak wartości"
+
+#: ../gconf/gconftool.c:1948
+#, c-format
+msgid "Owner: %s\n"
+msgstr "Właściciel: %s\n"
+
+#: ../gconf/gconftool.c:1949
+#, c-format
+msgid "Short Desc: %s\n"
+msgstr "Krótki opis: %s\n"
+
+#: ../gconf/gconftool.c:1950
+#, c-format
+msgid "Long Desc: %s\n"
+msgstr "Długi opis: %s\n"
+
+#: ../gconf/gconftool.c:1959
+#: ../gconf/gconftool.c:2236
+#: ../gconf/gconftool.c:2270
+#: ../gconf/gconftool.c:2315
+#: ../gconf/gconftool.c:2460
+#, c-format
+msgid "No value set for `%s'\n"
+msgstr "Nie ustawiono wartości dla \"%s\"\n"
+
+#: ../gconf/gconftool.c:1963
+#: ../gconf/gconftool.c:2240
+#: ../gconf/gconftool.c:2274
+#: ../gconf/gconftool.c:2319
+#: ../gconf/gconftool.c:2464
+#, c-format
+msgid "Failed to get value for `%s': %s\n"
+msgstr "Nie można pobrać wartości \"%s\": %s\n"
+
+#: ../gconf/gconftool.c:2006
+#: ../gconf/gconftool.c:2018
+#, c-format
+msgid "Don't understand type `%s'\n"
+msgstr "Niezrozumiały typ \"%s\"\n"
+
+#: ../gconf/gconftool.c:2030
+#, c-format
+msgid "Must specify alternating keys/values as arguments\n"
+msgstr "Jako argumenty należy podać alternatywne klucze/wartości\n"
+
+#: ../gconf/gconftool.c:2050
+#, c-format
+msgid "No value to set for key: `%s'\n"
+msgstr "Nie ustawiono wartości dla klucza: \"%s\"\n"
+
+#: ../gconf/gconftool.c:2078
+#, c-format
+msgid "Cannot set schema as value\n"
+msgstr "Nie można ustawić schematu jako wartości\n"
+
+#: ../gconf/gconftool.c:2088
+#, c-format
+msgid "When setting a list you must specify a primitive list-type\n"
+msgstr "Przy ustawianiu listy należy podać typ podstawowy list-type\n"
+
+#: ../gconf/gconftool.c:2102
+#, c-format
+msgid "When setting a pair you must specify a primitive car-type and cdr-type\n"
+msgstr "Przy ustawianiu pary należy podać typy podstawowe car-type i cdr-type\n"
+
+#: ../gconf/gconftool.c:2117
+#, c-format
+msgid "Error: %s\n"
+msgstr "Błąd: %s\n"
+
+#: ../gconf/gconftool.c:2130
+#: ../gconf/gconftool.c:2195
+#: ../gconf/gconftool.c:3215
+#, c-format
+msgid "Error setting value: %s\n"
+msgstr "Błąd przy ustawianiu wartości: %s\n"
+
+#: ../gconf/gconftool.c:2148
+#, c-format
+msgid "Error syncing: %s\n"
+msgstr "Błąd przy synchronizacji: %s\n"
+
+# td
+#: ../gconf/gconftool.c:2163
+#, c-format
+msgid "Must specify one or more keys as arguments\n"
+msgstr "Należy podać co najmniej jeden lub więcej kluczy jako parametry\n"
+
+# td
+#: ../gconf/gconftool.c:2179
+#, c-format
+msgid "No value found for key %s\n"
+msgstr "Nie odnaleziono wartości dla klucza %s\n"
+
+# td
+#: ../gconf/gconftool.c:2185
+#, c-format
+msgid "Not a boolean value: %s\n"
+msgstr "To nie jest wartość logiczna: %s\n"
+
+#: ../gconf/gconftool.c:2216
+#, c-format
+msgid "Must specify a key or keys to get type\n"
+msgstr "Należy podać klucz lub klucze do pobrania typu\n"
+
+#: ../gconf/gconftool.c:2260
+#, c-format
+msgid "Must specify a key to lookup size of.\n"
+msgstr "Należy podać klucz którego rozmiar jest wyszukiwany.\n"
+
+#: ../gconf/gconftool.c:2285
+#: ../gconf/gconftool.c:2330
+#, c-format
+msgid "Key %s is not a list.\n"
+msgstr "Klucz %s nie jest listą.\n"
+
+#: ../gconf/gconftool.c:2305
+#, c-format
+msgid "Must specify a key from which to get list element.\n"
+msgstr "Należy podać klucz z którego można pobrać element listy.\n"
+
+#: ../gconf/gconftool.c:2336
+#, c-format
+msgid "Must specify list index.\n"
+msgstr "Należy podać indeks listy.\n"
+
+#: ../gconf/gconftool.c:2343
+#, c-format
+msgid "List index must be non-negative.\n"
+msgstr "Indeks listy nie może być ujemny.\n"
+
+#: ../gconf/gconftool.c:2352
+#, c-format
+msgid "List index is out of bounds.\n"
+msgstr "Indeks listy wykracza poza zakres.\n"
+
+#: ../gconf/gconftool.c:2378
+#, c-format
+msgid "Must specify a key or keys on the command line\n"
+msgstr "Należy podać w wierszy poleceń klucz lub klucze\n"
+
+#: ../gconf/gconftool.c:2398
+#, c-format
+msgid "No schema known for `%s'\n"
+msgstr "Brak znanego schematu dla \"%s\"\n"
+
+#: ../gconf/gconftool.c:2431
+#, c-format
+msgid "No doc string stored in schema at '%s'\n"
+msgstr "W schemacie pod \"%s\" nie zapisano dokumentacji\n"
+
+#: ../gconf/gconftool.c:2436
+#, c-format
+msgid "Error getting schema at '%s': %s\n"
+msgstr "Błąd przy pobieraniu schematu spod \"%s\": %s\n"
+
+#: ../gconf/gconftool.c:2443
+#, c-format
+msgid "No schema stored at '%s'\n"
+msgstr "Brak schematu zapisanego pod \"%s\"\n"
+
+#: ../gconf/gconftool.c:2446
+#, c-format
+msgid "Value at '%s' is not a schema\n"
+msgstr "Wartość pod \"%s\" nie jest schematem\n"
+
+#: ../gconf/gconftool.c:2502
+#, c-format
+msgid "Must specify a schema name followed by the key name to apply it to\n"
+msgstr "Należy podać nazwę schematu i występującą po nim nazwę klucza, do którego powinien być wykorzystany\n"
+
+#: ../gconf/gconftool.c:2509
+#, c-format
+msgid "Error associating schema name '%s' with key name '%s': %s\n"
+msgstr "Błąd przy wiązaniu schematu \"%s\" z kluczem \"%s\": %s\n"
+
+#: ../gconf/gconftool.c:2527
+#, c-format
+msgid "Must specify keys to unapply schema from\n"
+msgstr "Należy podać klucze które zostaną usunięte ze schematu.\n"
+
+#: ../gconf/gconftool.c:2537
+#, c-format
+msgid "Error removing schema name from '%s': %s\n"
+msgstr "Błąd przy usuwaniu schematu spod \"%s\": %s\n"
+
+#: ../gconf/gconftool.c:2562
+#, c-format
+msgid "Must specify key (schema name) as the only argument\n"
+msgstr "Należy podać klucz (nazwę schematu) jako jedyny argument\n"
+
+#: ../gconf/gconftool.c:2604
+#, c-format
+msgid "List type must be a primitive type: string, int, float or bool\n"
+msgstr "Typ listy musi być typem podstawowym: string, int, float lub bool\n"
+
+#: ../gconf/gconftool.c:2624
+#, c-format
+msgid "Pair car type must be a primitive type: string, int, float or bool\n"
+msgstr "Typ pierwszego elementu pary musi być typem podstawowym: string, int, float lub bool\n"
+
+#: ../gconf/gconftool.c:2644
+#, c-format
+msgid "Pair cdr type must be a primitive type: string, int, float or bool\n"
+msgstr "Typ drugiego elementu pary musi być typem podstawowym: string, int, float lub bool\n"
+
+#: ../gconf/gconftool.c:2659
+#, c-format
+msgid "Error setting value: %s"
+msgstr "Błąd przy ustawianiu wartości: %s"
+
+#: ../gconf/gconftool.c:2673
+#, c-format
+msgid "Error syncing: %s"
+msgstr "Błąd przy synchronizacji: %s"
+
+#: ../gconf/gconftool.c:2688
+#, c-format
+msgid "Must specify one or more directories to get key/value pairs from.\n"
+msgstr "Należy podać co najmniej jeden katalog, z którego powinny być pobrane pary klucz/wartość.\n"
+
+#: ../gconf/gconftool.c:2702
+#, c-format
+msgid "Must specify one or more keys to unset.\n"
+msgstr "Należy podać co najmniej jeden klucz przeznaczony do wyczyszczenia.\n"
+
+#: ../gconf/gconftool.c:2713
+#, c-format
+msgid "Error unsetting `%s': %s\n"
+msgstr "Błąd przy czyszczeniu \"%s\": %s\n"
+
+#: ../gconf/gconftool.c:2733
+#, c-format
+msgid "Must specify one or more keys to recursively unset.\n"
+msgstr "Należy podać jeden lub więcej kluczy, przeznaczonych do rekurencyjnego wyczyszczenia.\n"
+
+#: ../gconf/gconftool.c:2747
+#, c-format
+msgid "Failure during recursive unset of \"%s\": %s\n"
+msgstr "Błąd przy rekurencyjnym czyszczeniu \"%s\": %s\n"
+
+#: ../gconf/gconftool.c:2767
+#, c-format
+msgid "Must specify one or more directories to get subdirs from.\n"
+msgstr "Należy podać co najmniej jeden katalog, z którego powinny być pobrane podkatalogi.\n"
+
+#: ../gconf/gconftool.c:2801
+#, c-format
+msgid "Error listing dirs: %s\n"
+msgstr "Błąd przy wypisywaniu katalogów: %s\n"
+
+#: ../gconf/gconftool.c:2937
+#, c-format
+msgid "WARNING: must specify both a <car> and a <cdr> in a <pair>\n"
+msgstr "UWAGA: Należy podać zarówno <car> jak i <cdr> w <pair>\n"
+
+#: ../gconf/gconftool.c:2964
+#, c-format
+msgid "WARNING: key specified (%s) for schema under a <value> - ignoring\n"
+msgstr "UWAGA: Klucz określony (%s) dla schematu pod <value> - zignorowany\n"
+
+#: ../gconf/gconftool.c:2997
+#, c-format
+msgid "WARNING: must have a child node under <value>\n"
+msgstr "UWAGA: Musi istnieć węzeł potomny pod <value>\n"
+
+#: ../gconf/gconftool.c:3003
+#, c-format
+msgid "WARNING: node <%s> not understood\n"
+msgstr "UWAGA: Węzeł <%s> nie jest zrozumiały\n"
+
+#: ../gconf/gconftool.c:3021
+#, c-format
+msgid "WARNING: Failed to parse int value `%s'\n"
+msgstr "UWAGA: Nie można rozpoznać wartości typu int \"%s\"\n"
+
+#: ../gconf/gconftool.c:3042
+#, c-format
+msgid "WARNING: Failed to parse float value `%s'\n"
+msgstr "UWAGA: Nie można rozpoznać wartości typu float \"%s\"\n"
+
+#: ../gconf/gconftool.c:3064
+#, c-format
+msgid "WARNING: Failed to parse string value `%s'\n"
+msgstr "UWAGA: Nie można rozpoznać wartości ciągu znaków \"%s\"\n"
+
+#: ../gconf/gconftool.c:3085
+#, c-format
+msgid "WARNING: Failed to parse boolean value `%s'\n"
+msgstr "UWAGA: Nie można rozpoznać wartości typu logicznego \"%s\"\n"
+
+#: ../gconf/gconftool.c:3194
+#: ../gconf/gconftool.c:3736
+#, c-format
+msgid "WARNING: failed to associate schema `%s' with key `%s': %s\n"
+msgstr "UWAGA: powiązanie schematu \"%s\" z kluczem \"%s\" nie powiodło się: %s\n"
+
+#: ../gconf/gconftool.c:3309
+#, c-format
+msgid "WARNING: invalid or missing type for schema (%s)\n"
+msgstr "UWAGA: Niepoprawny lub brakujący typ schematu (%s)\n"
+
+#: ../gconf/gconftool.c:3318
+#, c-format
+msgid "WARNING: invalid or missing list_type for schema (%s)\n"
+msgstr "UWAGA: Niepoprawna lub brakująca wartość list_type schematu (%s)\n"
+
+#: ../gconf/gconftool.c:3329
+#: ../gconf/gconftool.c:3359
+#: ../gconf/gconftool.c:3388
+#, c-format
+msgid "WARNING: Failed to parse default value `%s' for schema (%s)\n"
+msgstr "UWAGA: Niezrozumiała wartość \"%s\" schematu (%s)\n"
+
+#: ../gconf/gconftool.c:3347
+#, c-format
+msgid "WARNING: invalid or missing car_type or cdr_type for schema (%s)\n"
+msgstr "UWAGA: Niepoprawna lub brakująca wartość car_type lub cdr_type schematu (%s)\n"
+
+#: ../gconf/gconftool.c:3372
+#, c-format
+msgid "WARNING: You cannot set a default value for a schema\n"
+msgstr "UWAGA: Nie można ustawić domyślnej wartości schematu\n"
+
+#: ../gconf/gconftool.c:3401
+#, c-format
+msgid "WARNING: gconftool internal error, unknown GConfValueType\n"
+msgstr "UWAGA: wewnętrzny błąd gconftool, nieznany GConfValueType\n"
+
+#: ../gconf/gconftool.c:3449
+#: ../gconf/gconftool.c:3470
+#: ../gconf/gconftool.c:3491
+#: ../gconf/gconftool.c:3512
+#, c-format
+msgid "WARNING: failed to parse type name `%s'\n"
+msgstr "UWAGA: Nie można rozpoznać nazwy typu \"%s\"\n"
+
+#: ../gconf/gconftool.c:3466
+#, c-format
+msgid "WARNING: list_type can only be int, float, string or bool and not `%s'\n"
+msgstr "UWAGA: Wartością list_type może być tylko int, float, string lub bool, nie zaś \"%s\"\n"
+
+#: ../gconf/gconftool.c:3487
+#, c-format
+msgid "WARNING: car_type can only be int, float, string or bool and not `%s'\n"
+msgstr "UWAGA: Wartością car_type może być tylko int, float, string lub bool, nie zaś \"%s\"\n"
+
+#: ../gconf/gconftool.c:3508
+#, c-format
+msgid "WARNING: cdr_type can only be int, float, string or bool and not `%s'\n"
+msgstr "UWAGA: Wartością cdr_type może być tylko int, float, string lub bool, nie zaś \"%s\"\n"
+
+#: ../gconf/gconftool.c:3548
+#, c-format
+msgid "WARNING: empty <applyto> node"
+msgstr "UWAGA: Pusty węzeł <applyto>"
+
+#: ../gconf/gconftool.c:3551
+#: ../gconf/gconftool.c:3809
+#, c-format
+msgid "WARNING: node <%s> not understood below <schema>\n"
+msgstr "UWAGA: Węzeł <%s> nie jest zrozumiały wewnątrz <schema>\n"
+
+#: ../gconf/gconftool.c:3562
+#, c-format
+msgid "WARNING: no <list_type> specified for schema of type list\n"
+msgstr "UWAGA: nie określono <list_type> dla schematu o typie \"lista\"\n"
+
+#: ../gconf/gconftool.c:3568
+#, c-format
+msgid "WARNING: no <car_type> specified for schema of type pair\n"
+msgstr "UWAGA: nie określono <car_type> dla schematu o typie \"para\"\n"
+
+#: ../gconf/gconftool.c:3574
+#, c-format
+msgid "WARNING: no <cdr_type> specified for schema of type pair\n"
+msgstr "UWAGA: nie określono <cdr_type> dla schematu o typie \"para\"\n"
+
+#: ../gconf/gconftool.c:3603
+#, c-format
+msgid "WARNING: <locale> node has no `name=\"locale\"' attribute, ignoring\n"
+msgstr "UWAGA: Węzeł <locale> nie zawiera atrybutu name=\"locale\", zignorowano\n"
+
+#: ../gconf/gconftool.c:3609
+#, c-format
+msgid "WARNING: multiple <locale> nodes for locale `%s', ignoring all past first\n"
+msgstr "UWAGA: Wiele węzłów <locale> z wartością \"%s\", Zignorowano wszystkie, poza pierwszym.\n"
+
+#: ../gconf/gconftool.c:3707
+#, c-format
+msgid "WARNING: Invalid node <%s> in a <locale> node\n"
+msgstr "UWAGA: Niepoprawny węzeł <%s> wewnątrz węzła <locale>\n"
+
+#: ../gconf/gconftool.c:3744
+#, c-format
+msgid "Attached schema `%s' to key `%s'\n"
+msgstr "Schemat \"%s\" został przyłączony do klucza \"%s\"\n"
+
+#: ../gconf/gconftool.c:3818
+#, c-format
+msgid "You must have at least one <locale> entry in a <schema>\n"
+msgstr "Wewnątrz <schema> musi występować co najmniej jedno <locale>\n"
+
+#: ../gconf/gconftool.c:3853
+#, c-format
+msgid "WARNING: failed to install schema `%s', locale `%s': %s\n"
+msgstr "UWAGA: zainstalowanie schematu \"%s\" dla ustawień narodowych \"%s\" nie powiodło się: %s\n"
+
+#: ../gconf/gconftool.c:3861
+#, c-format
+msgid "Installed schema `%s' for locale `%s'\n"
+msgstr "Zainstalowano schemat \"%s\" dla ustawień narodowych \"%s\"\n"
+
+#: ../gconf/gconftool.c:3871
+#, c-format
+msgid "WARNING: failed to uninstall schema `%s', locale `%s': %s\n"
+msgstr "UWAGA: odinstalowanie schematu \"%s\" dla ustawień narodowych \"%s\" nie powiodło się: %s\n"
+
+#: ../gconf/gconftool.c:3879
+#, c-format
+msgid "Uninstalled schema `%s' from locale `%s'\n"
+msgstr "Odinstalowano schemat \"%s\" dla ustawień narodowych \"%s\"\n"
+
+#: ../gconf/gconftool.c:3917
+#, c-format
+msgid "WARNING: no key specified for schema\n"
+msgstr "UWAGA: nie określono klucza dla schematu\n"
+
+#: ../gconf/gconftool.c:3958
+#, c-format
+msgid "WARNING: node <%s> not understood below <%s>\n"
+msgstr "UWAGA: Węzeł <%s> nie jest zrozumiały poniżej <%s>\n"
+
+#: ../gconf/gconftool.c:3990
+#, c-format
+msgid "Failed to open `%s': %s\n"
+msgstr "Nie można otworzyć \"%s\": %s\n"
+
+#: ../gconf/gconftool.c:3997
+#, c-format
+msgid "Document `%s' is empty?\n"
+msgstr "Dokument \"%s\" jest pusty?\n"
+
+#: ../gconf/gconftool.c:4009
+#, c-format
+msgid "Document `%s' has the wrong type of root node (<%s>, should be <%s>)\n"
+msgstr "Dokument \"%s\" zawiera nieprawidłowy węzeł główny (<%s>, powinno być <%s>)\n"
+
+#: ../gconf/gconftool.c:4022
+#, c-format
+msgid "Document `%s' has no top level <%s> node\n"
+msgstr "Dokument \"%s\" nie posiada węzła szczytowego <%s>\n"
+
+#: ../gconf/gconftool.c:4036
+#, c-format
+msgid "WARNING: node <%s> below <%s> not understood\n"
+msgstr "UWAGA: Niezrozumiały węzeł <%s> poniżej węzła <%s>\n"
+
+#: ../gconf/gconftool.c:4057
+#, c-format
+msgid "Error syncing configuration data: %s"
+msgstr "Błąd przy synchronizacji danych konfiguracji: %s"
+
+#: ../gconf/gconftool.c:4073
+#, c-format
+msgid "Must specify some schema files to install\n"
+msgstr "Należy podać jakieś pliki schematów do zainstalowania\n"
+
+#: ../gconf/gconftool.c:4101
+#, c-format
+msgid ""
+"\n"
+"%s\n"
+msgstr ""
+"\n"
+"%s\n"
+
+#: ../gconf/gconftool.c:4121
+#, c-format
+msgid "Failed to unset breakage key %s: %s\n"
+msgstr "Nie można wyczyścić klucza %s: %s\n"
+
+#: ../gconf/gconftool.c:4247
+#, c-format
+msgid "Must specify some keys to break\n"
+msgstr "Należy podać klucze przeznaczone do uszkodzenia\n"
+
+#: ../gconf/gconftool.c:4253
+#, c-format
+msgid ""
+"Trying to break your application by setting bad values for key:\n"
+"  %s\n"
+msgstr ""
+"Próba uszkodzenia aplikacji poprzez przypisanie niepoprawnych wartości do klucza:\n"
+"  %s\n"
+
+#: ../gconf/gconftool.c:4271
+#, c-format
+msgid "Must specify some directories to break\n"
+msgstr "Należy podać katalogi przeznaczone do uszkodzenia\n"
+
+#: ../gconf/gconftool.c:4290
+#, c-format
+msgid ""
+"Trying to break your application by setting bad values for keys in directory:\n"
+"  %s\n"
+msgstr ""
+"Próba uszkodzenia aplikacji poprzez przypisanie niepoprawnych wartości do kluczy w katalogu:\n"
+"  %s\n"
+
+#~ msgid "IOR file '%s' not opened successfully, no gconfd located: %s"
 #~ msgstr ""
-#~ "<note-content>Etykiety w programie Tomboy\n"
-#~ "\n"
-#~ "Za pomocą paska u dołu okna notatki każdej notatce można przypisać jedną "
-#~ "lub więcej etykiet. Użycie klawisza <bold>Tab</bold> w pasku etykiet "
-#~ "uruchamia autouzupełnienie do najbliższej nazwy. Aby zatwierdzić "
-#~ "zaznaczoną etykietę, należy nacisnąć klawisz <bold>Enter</bold>.</note-"
-#~ "content>"
-#~ msgid "Tags in Tomboy"
-#~ msgstr "Etykiety w programie Tomboy"
-#~ msgid "Delete"
-#~ msgstr "Usuń"
-#~ msgid "Case _sensitive"
-#~ msgstr "Rozróżnianie wielkości _liter"
-#~ msgid ""
-#~ "SSH synchronization requires an existing SSH key for this server and "
-#~ "user.  That key must be added to a running SSH daemon.  <span weight="
-#~ "\"bold\">Seahorse</span> is one application that can help you set this "
-#~ "up.  You will receive an error if no key is set up for this server and "
-#~ "user."
+#~ "nie udało się otworzyć pliku \"%s\" z IOR, nie odnaleziono gconfd: %s"
+#~ msgid "gconftool or other non-gconfd process has the lock file '%s'"
 #~ msgstr ""
-#~ "Synchronizacja SSH wymaga istniejącego klucza SSH dla tego serwera i "
-#~ "użytkownika. Ten klucz musi zostać dodany do uruchomionej usługi SSH. "
-#~ "<span weight=\"bold\">Seahorse</span> jest jedną z aplikacji, która może "
-#~ "pomóc w ustawieniach. Wynikiem braku klucza dla tego serwera i "
-#~ "użytkownika będzie komunikat błędu."
+#~ "plik blokady \"%s\" jest przetrzymywany przez gconftool lub inny proces "
+#~ "(nie gconfd)"
+#~ msgid "Failed to unlink lock file %s: %s\n"
+#~ msgstr "Nie można usunąć pliku blokady %s: %s\n"
+#~ msgid "Failed to stat %s: %s"
+#~ msgstr "Nie można uzyskać informacji o %s: %s"
 #~ msgid ""
-#~ "Your notes are up to date.  See the details below or close the window."
-#~ msgstr "Notatki są aktualne. Poniżej można zapoznać się ze szczegółami."
-#~ msgid "Downloading updates from server"
-#~ msgstr "Pobieranie uaktualnień z serwera"
-#~ msgid "Downloading new note from server"
-#~ msgstr "Pobieranie nowej notatki z serwera"
-#~ msgid "Path:"
-#~ msgstr "Ścieżka:"
-#~ msgid "Local File System Path"
-#~ msgstr "Ścieżka lokalna"
-#~ msgid "Default Plugins"
-#~ msgstr "Domyślne wtyczki"
-#~ msgid "Directory containing system-installed Plugins"
-#~ msgstr "Katalog zawierający wtyczki zainstalowane w systemie"
-#~ msgid "_Open Plugins Folder"
-#~ msgstr "_Otwórz katalog wtyczek"
-#~ msgid "Currently enabled plugins."
-#~ msgstr "Obecnie włączone wtyczki."
-#~ msgid "List containing the names of currently enabled plugins."
-#~ msgstr "Lista nazw obecnie włączonych wtyczek."
-#~ msgid "Cannot fully disable {0}."
-#~ msgstr "Nie można całkowicie wyłączyć {0}."
-#~ msgid ""
-#~ "Cannot fully disable {0} as there still are at least {1} reference to "
-#~ "this plugin. This indicates a programming error. Contact the plugin's "
-#~ "author and report this problem.\n"
-#~ "\n"
-#~ "<b>Developer Information:</b> This problem usually occurs when the "
-#~ "plugin's Dispose method fails to disconnect all event handlers. The heap-"
-#~ "shot profiler ({2}) can help to identify leaking references."
+#~ "Failed to create pipe for communicating with spawned gconf daemon: %s\n"
 #~ msgstr ""
-#~ "Nie można całkowicie wyłączyć wtyczki {0}, jako że istnieje do niej co "
-#~ "najmniej {1} odwołanie. Oznacza to błąd programisty. Proszę skontaktować "
-#~ "się z autorem wtyczki i zgłosić ten problem.\n"
-#~ "\n"
-#~ "<b>Informacje dla programistów:</b> Opisany problem występuje za zwyczaj "
-#~ "wtedy, gdy metoda Dispose nie jest w stanie rozłączyć się ze wszystkimi "
-#~ "procedurami obsługi. Heapshot profiler ({2}) może pomóc w odnalezieniu "
-#~ "wycieków referencji."
-#~ msgid "Plugins"
-#~ msgstr "Wtyczki"
-#~ msgid "Written by:"
-#~ msgstr "Autor:"
-#~ msgid "Web site:"
-#~ msgstr "Strona WWW:"
-#~ msgid "Settings"
-#~ msgstr "Ustawienia"
-#~ msgid "{0} Settings"
-#~ msgstr "{0} Ustawienia"
-#~ msgid "Homepage & Donations"
-#~ msgstr "Strona domowa i datki"
-#~ msgid ""
-#~ "  --check-plugin-unloading\tCheck if plugins are unloaded properly.\n"
-#~ msgstr ""
-#~ "  --check-plugin-unloading\tSprawdza, czy wtyczki zostały poprawnie "
-#~ "usunięte z pamięci .\n"
-#~ msgid "Use the following:"
-#~ msgstr "Użyj następujących:"
+#~ "Nie można utworzyć potoku do komunikacji z uruchomionym demonem gconf: %"
+#~ "s\n"
+#~ msgid "Failed to launch configuration server: %s\n"
+#~ msgstr "Nie można uruchomić serwera konfiguracji: %s\n"
+#~ msgid "Failed to open %s: %s"
+#~ msgstr "Nie można otworzyć %s: %s"
+#~ msgid "Owner of %s is not the current user"
+#~ msgstr "Właściciel %s nie jest bieżącym użytkownikiem"
+#~ msgid "Bad permissions %lo on directory %s"
+#~ msgstr "Nieprawidłowe uprawnienia %lo na katalogu %s"
+#~ msgid "Failed to create %s: %s"
+#~ msgstr "Nie można utworzyć %s: %s"
 
