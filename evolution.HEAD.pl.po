@@ -13,7 +13,7 @@ msgstr ""
 "Project-Id-Version: evolution.HEAD\n"
 "Report-Msgid-Bugs-To: http://bugzilla.gnome.org/enter_bug.cgi?product=evolution\n"
 "POT-Creation-Date: 2009-01-29 11:16+0000\n"
-"PO-Revision-Date: 2009-03-03 16:05+0100\n"
+"PO-Revision-Date: 2009-03-05 14:02+0100\n"
 "Last-Translator: Wojciech Kapusta <wkapusta@aviary.pl>\n"
 "Language-Team:  <pl@li.org>\n"
 "MIME-Version: 1.0\n"
@@ -4670,18 +4670,21 @@ msgstr "Nie można uruchomić evolution-data-server"
 
 #: ../calendar/conduits/calendar/calendar-conduit.c:1631
 #: ../calendar/conduits/calendar/calendar-conduit.c:1634
+#, fuzzy
 msgid "Could not read pilot's Calendar application block"
-msgstr "Nie można odczytać bloku aplikacji kalendarza Pilota"
+msgstr "Nie można odczytać bloku programu kalendarza Pilot"
 
 #: ../calendar/conduits/memo/memo-conduit.c:915
 #: ../calendar/conduits/memo/memo-conduit.c:918
+#, fuzzy
 msgid "Could not read pilot's Memo application block"
-msgstr "Nie można odczytać bloku aplikacji Memo Pilota"
+msgstr "Nie można odczytać bloku programu Memo Pilot"
 
 #: ../calendar/conduits/memo/memo-conduit.c:962
 #: ../calendar/conduits/memo/memo-conduit.c:965
+#, fuzzy
 msgid "Could not write pilot's Memo application block"
-msgstr "Nie można zapisać bloku aplikacji Memo Pilota"
+msgstr "Nie można zapisać bloku programu Memo Pilot"
 
 #: ../calendar/conduits/todo/todo-conduit.c:241
 msgid "Default Priority:"
@@ -4689,13 +4692,15 @@ msgstr "Domyślny priorytet:"
 
 #: ../calendar/conduits/todo/todo-conduit.c:1103
 #: ../calendar/conduits/todo/todo-conduit.c:1106
+#, fuzzy
 msgid "Could not read pilot's ToDo application block"
-msgstr "Nie można odczytać bloku aplikacji ToDo Pilota"
+msgstr "Nie można odczytać bloku programu ToDo Pilot"
 
 #: ../calendar/conduits/todo/todo-conduit.c:1148
 #: ../calendar/conduits/todo/todo-conduit.c:1151
+#, fuzzy
 msgid "Could not write pilot's ToDo application block"
-msgstr "Nie można zapisać bloku aplikacji ToDo Pilota"
+msgstr "Nie można zapisać bloku programu ToDo Pilot"
 
 #: ../calendar/gui/GNOME_Evolution_Calendar.server.in.in.h:1
 #: ../plugins/itip-formatter/itip-formatter.c:2523
@@ -4788,6 +4793,7 @@ msgstr[0] "minuta"
 msgstr[1] "minuty"
 msgstr[2] "minut"
 
+# WK: brak kontekstu; wymaga sprawdzenia i ewentualnie poprawy
 #: ../calendar/gui/alarm-notify/alarm-notify-dialog.c:120
 #: ../calendar/gui/alarm-notify/alarm-notify.glade.h:7
 #: ../calendar/gui/dialogs/alarm-dialog.glade.h:25
@@ -4797,10 +4803,11 @@ msgstr[2] "minut"
 #: ../plugins/calendar-weather/calendar-weather.c:525
 #: ../plugins/google-account-setup/google-source.c:653
 #: ../plugins/google-account-setup/google-contacts-source.c:367
+#, fuzzy
 msgid "hours"
 msgid_plural "hours"
-msgstr[0] "godzin"
-msgstr[1] "godzin"
+msgstr[0] "godzina"
+msgstr[1] "godziny"
 msgstr[2] "godzin"
 
 #: ../calendar/gui/alarm-notify/alarm-notify-dialog.c:298
@@ -4822,13 +4829,14 @@ msgid "Location:"
 msgstr "Położenie:"
 
 #: ../calendar/gui/alarm-notify/alarm-notify.glade.h:3
+#, fuzzy
 msgid "Snooze _time:"
 msgstr "_Czas uśpienia:"
 
 #: ../calendar/gui/alarm-notify/alarm-notify.glade.h:4
 #, fuzzy
 msgid "_Dismiss"
-msgstr "Zamknij"
+msgstr "Za_mknij"
 
 #: ../calendar/gui/alarm-notify/alarm-notify.glade.h:5
 #: ../calendar/gui/dialogs/comp-editor.c:1382
@@ -4844,6 +4852,7 @@ msgid "_Edit"
 msgstr "_Edycja"
 
 #: ../calendar/gui/alarm-notify/alarm-notify.glade.h:6
+#, fuzzy
 msgid "_Snooze"
 msgstr "_Uśpij"
 
@@ -4863,12 +4872,13 @@ msgstr "Brak opisu."
 
 #: ../calendar/gui/alarm-notify/alarm-queue.c:1485
 msgid "No location information available."
-msgstr "Brak informacji o położeniu."
+msgstr "Brak informacji o miejscu."
 
 #: ../calendar/gui/alarm-notify/alarm-queue.c:1530
 #, c-format
+#, fuzzy
 msgid "You have %d alarms"
-msgstr "%d przypomnień"
+msgstr "Masz %d przypomnień"
 
 #: ../calendar/gui/alarm-notify/alarm-queue.c:1692
 #: ../calendar/gui/alarm-notify/alarm-queue.c:1720
@@ -4885,8 +4895,8 @@ msgid ""
 msgstr ""
 "Przypomnienie zostało skonfigurowane do wysłania wiadomości,\n"
 "lecz Evolution nie obsługuje jeszcze przypomnień kalendarza\n"
-"z powiadamianiem za pośrednictwem wiadomości. Zamiast tego\n"
-"zostanie wyświetlone zwykłe okno przypomnienia."
+"z powiadamianiem za pośrednictwem wiadomości e-mail. Zamiast\n"
+"tego zostanie wyświetlone zwykłe okno przypomnienia."
 
 #: ../calendar/gui/alarm-notify/alarm-queue.c:1726
 #, c-format
@@ -4913,7 +4923,9 @@ msgstr "Bez pytania o ten program w przyszłości."
 msgid "Could not initialize Bonobo"
 msgstr "Nie można zainicjować Bonobo"
 
+# WK: może lepiej "utworzyć usługi przypomnień"
 #: ../calendar/gui/alarm-notify/notify-main.c:154
+#, fuzzy
 msgid ""
 "Could not create the alarm notify service factory, maybe it's already "
 "running..."
@@ -4921,7 +4933,7 @@ msgstr "Nie można utworzyć fabryki przypomnień, być może jest już uruchomi
 
 #: ../calendar/gui/alarm-notify/util.c:44
 msgid "invalid time"
-msgstr "niepoprawny czas"
+msgstr "nieprawidłowy czas"
 
 #. Translator: Entire string is like "Pop up an alert %d hours before start of appointment"
 #: ../calendar/gui/alarm-notify/util.c:69 ../calendar/gui/e-alarm-list.c:406
@@ -4962,7 +4974,7 @@ msgstr "Programy przypomnień"
 #: ../calendar/gui/apps_evolution_calendar.schemas.in.h:2
 #: ../mail/evolution-mail.schemas.in.h:6
 msgid "Amount of time in seconds the error should be shown on the status bar."
-msgstr "Czas pokazywania błędu w pasku statusu (w sekundach)."
+msgstr "Czas wyświetlania błędu na pasku statusu (w sekundach)."
 
 #: ../calendar/gui/apps_evolution_calendar.schemas.in.h:3
 msgid "Ask for confirmation when deleting items"
@@ -4978,27 +4990,31 @@ msgstr "Kolor tła zadań zaległych, w formacie \"#rrggbb\"."
 
 #: ../calendar/gui/apps_evolution_calendar.schemas.in.h:6
 msgid "Calendars to run alarms for"
-msgstr "Kalendarze dla których będą uruchamiane przypomnienia"
+msgstr "Kalendarze, dla których będą uruchamiane przypomnienia"
 
 #: ../calendar/gui/apps_evolution_calendar.schemas.in.h:7
+#, fuzzy
 msgid "Color to draw the Marcus Bains Line in the Time bar (empty for default)."
-msgstr "Kolor linii Marcusa Bainsa w pasku czasu (puste oznacza kolor domyślny)."
+msgstr "Kolor linii Marcusa Bainsa na pasku czasu (puste oznacza kolor domyślny)."
 
 #: ../calendar/gui/apps_evolution_calendar.schemas.in.h:8
 msgid "Color to draw the Marcus Bains line in the Day View."
-msgstr "Kolor linii Marcusa Bainsa w widoku dziennym."
+msgstr "Kolor linii Marcusa Bainsa w widoku jednego dnia."
 
+# WK: Do zastanowienia (weekendy)
 #: ../calendar/gui/apps_evolution_calendar.schemas.in.h:9
+#, fuzzy
 msgid "Compress weekends in month view"
-msgstr "Kompresowanie weekendów w widoku miesięcznym"
+msgstr "Kompresowanie weekendów w widoku miesiąca"
 
 #: ../calendar/gui/apps_evolution_calendar.schemas.in.h:10
+#, fuzzy
 msgid "Confirm expunge"
 msgstr "Potwierdzanie oczyszczenia"
 
 #: ../calendar/gui/apps_evolution_calendar.schemas.in.h:11
 msgid "Days on which the start and end of work hours should be indicated."
-msgstr "Dni na których powinny być wskazane godziny początku i końca pracy."
+msgstr "Dni, na których powinny być wskazane godziny początku i końca pracy."
 
 #: ../calendar/gui/apps_evolution_calendar.schemas.in.h:12
 msgid "Default appointment reminder"
@@ -5050,15 +5066,15 @@ msgstr "Wartość ukrywania zadania"
 
 #: ../calendar/gui/apps_evolution_calendar.schemas.in.h:24
 msgid "Horizontal pane position"
-msgstr "Poziome położenie panela"
+msgstr "Poziome położenie panelu"
 
 #: ../calendar/gui/apps_evolution_calendar.schemas.in.h:25
 msgid "Hour the workday ends on, in twenty four hour format, 0 to 23."
-msgstr "Godzina zakończenia dnia roboczego, w formacie 24-godzinnym, 0 do 23."
+msgstr "Godzina zakończenia dnia roboczego, w formacie 24-godzinnym - 0 do 23."
 
 #: ../calendar/gui/apps_evolution_calendar.schemas.in.h:26
 msgid "Hour the workday starts on, in twenty four hour format, 0 to 23."
-msgstr "Godzina rozpoczęcia dnia roboczego, w formacie 24-godzinnym, 0 do 23."
+msgstr "Godzina rozpoczęcia dnia roboczego, w formacie 24-godzinnym - 0 do 23."
 
 #: ../calendar/gui/apps_evolution_calendar.schemas.in.h:27
 msgid "Intervals shown in Day and Work Week views, in minutes."
@@ -5071,11 +5087,12 @@ msgstr "Czas ostatniego przypomnienia"
 #: ../calendar/gui/apps_evolution_calendar.schemas.in.h:29
 #: ../mail/evolution-mail.schemas.in.h:72
 msgid "Level beyond which the message should be logged."
-msgstr "Poziom powyżej którego wiadomość ma zostać zapisana w dzienniku."
+msgstr "Poziom, powyżej którego wiadomość ma zostać zapisana w dzienniku."
 
 #: ../calendar/gui/apps_evolution_calendar.schemas.in.h:30
+#, fuzzy
 msgid "List of recently used second time zones in a Day View."
-msgstr ""
+msgstr "Lista ostatnio używanych dodatkowych stref czasowych w widoku jednego dnia."
 
 #: ../calendar/gui/apps_evolution_calendar.schemas.in.h:31
 msgid "List of server URLs for free/busy publishing."
@@ -5087,29 +5104,31 @@ msgstr "Linia Marcusa Bainsa"
 
 #: ../calendar/gui/apps_evolution_calendar.schemas.in.h:33
 msgid "Marcus Bains Line Color - Day View"
-msgstr "Kolor linii Marcusa Bainsa - widok dzienny"
+msgstr "Kolor linii Marcusa Bainsa - widok jednego dnia"
 
 #: ../calendar/gui/apps_evolution_calendar.schemas.in.h:34
 msgid "Marcus Bains Line Color - Time bar"
 msgstr "Kolor linii Marcusa Bainsa - pasek czasu"
 
 #: ../calendar/gui/apps_evolution_calendar.schemas.in.h:35
+#, fuzzy
 msgid ""
 "Maximum number of recently used timezones to remember in a "
 "'day_second_zones' list."
-msgstr ""
+msgstr "Maksymalna liczba ostatnio używanych stref czasowych, które mają być zapamiętane na liście \"day_second_zones\"."
 
 #: ../calendar/gui/apps_evolution_calendar.schemas.in.h:36
+#, fuzzy
 msgid "Maximum number of recently used timezones to remember."
-msgstr ""
+msgstr "Maksymalna liczba ostatnio używanych stref czasowych do zapamiętania."
 
 #: ../calendar/gui/apps_evolution_calendar.schemas.in.h:37
 msgid "Minute the workday ends on, 0 to 59."
-msgstr "Minuta końca dnia roboczego - od 0 do 59"
+msgstr "Minuta końca dnia roboczego - od 0 do 59."
 
 #: ../calendar/gui/apps_evolution_calendar.schemas.in.h:38
 msgid "Minute the workday starts on, 0 to 59."
-msgstr "Minuta początku dnia roboczego, 0 do 59."
+msgstr "Minuta początku dnia roboczego - od 0 do 59."
 
 #: ../calendar/gui/apps_evolution_calendar.schemas.in.h:39
 msgid "Month view horizontal pane position"
@@ -5125,93 +5144,101 @@ msgstr "Liczba jednostek określających domyślne przypomnienie."
 
 #: ../calendar/gui/apps_evolution_calendar.schemas.in.h:42
 msgid "Number of units for determining when to hide tasks."
-msgstr "Liczba jednostek określających kiedy ukryć zadania."
+msgstr "Liczba jednostek określających, kiedy ukryć zadania."
 
 #: ../calendar/gui/apps_evolution_calendar.schemas.in.h:43
 msgid "Overdue tasks color"
 msgstr "Kolor zaległych zadań"
 
 #: ../calendar/gui/apps_evolution_calendar.schemas.in.h:44
+#, fuzzy
 msgid ""
 "Position of the horizontal pane, between the date navigator calendar and the "
 "task list when not in the month view, in pixels."
 msgstr ""
-"Położenie panelu poziomego, pomiędzy nawigatorem dat kalendarza a listą "
-"zadań kiedy nie ma widoku miesiąca, w pikselach."
+"Położenie panelu poziomego pomiędzy nawigatorem dat kalendarza a listą "
+"zadań, gdy nie jest to widok miesiąca (w pikselach)."
 
 #: ../calendar/gui/apps_evolution_calendar.schemas.in.h:45
+#, fuzzy
 msgid ""
 "Position of the horizontal pane, between the view and the date navigator "
 "calendar and task list in the month view, in pixels."
 msgstr ""
 "Położenie panelu poziomego pomiędzy widokiem a nawigatorem dat kalendarza "
-"oraz listą zadań w widoku miesiąca, w pikselach."
+"oraz listą zadań, w widoku miesiąca (w pikselach)."
 
 #: ../calendar/gui/apps_evolution_calendar.schemas.in.h:46
+#, fuzzy
 msgid ""
 "Position of the vertical pane, between the calendar lists and the date "
 "navigator calendar."
-msgstr "Położenie panelu pionowego, pomiędzy listą kalendarzy a wyborem dat."
+msgstr "Położenie panelu pionowego pomiędzy listą kalendarzy a nawigatorem dat."
 
 #: ../calendar/gui/apps_evolution_calendar.schemas.in.h:47
 msgid ""
 "Position of the vertical pane, between the task list and the task preview "
 "pane, in pixels."
 msgstr ""
-"Położenie panelu pionowego, pomiędzy listą zadań oraz panelem podglądu zadań "
+"Położenie panelu pionowego pomiędzy listą zadań oraz panelem podglądu zadań "
 "(w pikselach)."
 
 #: ../calendar/gui/apps_evolution_calendar.schemas.in.h:48
+#, fuzzy
 msgid ""
 "Position of the vertical pane, between the view and the date navigator "
 "calendar and task list in the month view, in pixels."
 msgstr ""
-"Położenie panelu pionowego, pomiędzy widokiem a nawigatorem dat kalendarza "
-"oraz listą zadań w widoku miesiąca, w pikselach."
+"Położenie panelu pionowego pomiędzy widokiem a nawigatorem dat kalendarza "
+"oraz listą zadań w widoku miesiąca (w pikselach)."
 
 #: ../calendar/gui/apps_evolution_calendar.schemas.in.h:49
+#, fuzzy
 msgid ""
 "Position of the vertical pane, between the view and the date navigator "
 "calendar and task list when not in the month view, in pixels."
 msgstr ""
-"Położenie panelu pionowego, pomiędzy widokiem a nawigatorem dat kalendarza "
-"oraz listą zadań kiedy nie w widoku miesiąca, w pikselach."
+"Położenie panelu pionowego pomiędzy widokiem a nawigatorem dat kalendarza "
+"oraz listą zadań, jeśli nie jest to widok miesiąca (w pikselach)."
 
 #: ../calendar/gui/apps_evolution_calendar.schemas.in.h:50
 msgid "Programs that are allowed to be run by alarms."
-msgstr "Programy które można uruchomić przez przypomnienia."
+msgstr "Programy, które można uruchomić przez przypomnienia."
 
 #: ../calendar/gui/apps_evolution_calendar.schemas.in.h:51
 msgid "Recently used second time zones in a Day View"
-msgstr ""
+msgstr "Ostatnio używane dodatkowe strefy czasowe w widoku jednego dnia"
 
 #: ../calendar/gui/apps_evolution_calendar.schemas.in.h:52
 msgid "Save directory for alarm audio"
-msgstr "Katalog zapisu plików dźwiękowych alarmów"
+msgstr "Katalog do zapisu plików dźwiękowych alarmów"
 
 #: ../calendar/gui/apps_evolution_calendar.schemas.in.h:53
+#, fuzzy
 msgid "Show RSVP field in the event/task/meeting editor"
-msgstr "Pokazuj pole RSVP w edytorze zdarzeń/zadań/zebrań"
+msgstr "Wyświetlanie pola RSVP w edytorze zdarzeń/zadań/zebrań"
 
 #: ../calendar/gui/apps_evolution_calendar.schemas.in.h:54
+#, fuzzy
 msgid "Show Role field in the event/task/meeting editor"
-msgstr "Pokazuj pole roli w edytorze zdarzeń/zadań/zebrań"
+msgstr "Wyświetlanie pola roli w edytorze zdarzeń/zadań/zebrań"
 
 #: ../calendar/gui/apps_evolution_calendar.schemas.in.h:55
 msgid "Show appointment end times in week and month views"
-msgstr "Wyświetlanie czasów zakończenia spotkań w widoku tygodniowym i miesięcznym"
+msgstr "Wyświetlanie czasów zakończenia spotkań w widoku tygodnia i miesiąca"
 
 #: ../calendar/gui/apps_evolution_calendar.schemas.in.h:56
 msgid "Show categories field in the event/meeting/task editor"
-msgstr "Pokazuj pole kategorii w edytorze zdarzeń/zadań/zebrań"
+msgstr "Wyświetlanie pola kategorii w edytorze zdarzeń/zadań/zebrań"
 
 #: ../calendar/gui/apps_evolution_calendar.schemas.in.h:57
 msgid "Show display alarms in notification tray"
-msgstr "Wyświetlanie przypomnień z w obszarze powiadamiania"
+msgstr "Wyświetlanie przypomnień w obszarze powiadamiania"
 
 #: ../calendar/gui/apps_evolution_calendar.schemas.in.h:58
+#, fuzzy
 msgid "Show status field in the event/task/meeting editor"
-msgstr "Pokazuj pole status w edytorze zdarzeń/zadań/zebrań"
+msgstr "Wyświetlanie pola statusu w edytorze zdarzeń/zadań/zebrań"
 
 #: ../calendar/gui/apps_evolution_calendar.schemas.in.h:59
 #: ../mail/evolution-mail.schemas.in.h:126
@@ -5225,26 +5252,27 @@ msgstr "Wyświetlanie panelu \"Podgląd\"."
 
 #: ../calendar/gui/apps_evolution_calendar.schemas.in.h:61
 msgid "Show timezone field in the event/meeting editor"
-msgstr "Pokazuj pole strefy czasowej w edytorze zdarzeń/zadań/zebrań"
+msgstr "Wyświetlanie pola strefy czasowej w edytorze zdarzeń/zadań/zebrań"
 
 #: ../calendar/gui/apps_evolution_calendar.schemas.in.h:62
 msgid "Show type field in the event/task/meeting editor"
-msgstr "Pokazuj pole typu w edytorze zdarzeń/zadań/zebrań"
+msgstr "Wyświetlanie pola typu w edytorze zdarzeń/zadań/zebrań"
 
 #: ../calendar/gui/apps_evolution_calendar.schemas.in.h:63
 #, fuzzy
 msgid "Show week number in Day and Work Week View"
-msgstr "Wyświetlanie numerów tygodni w nawigatorze dat"
+msgstr "Wyświetlanie numerów tygodni w widoku jednego dnia i tygodnia roboczego"
 
 #: ../calendar/gui/apps_evolution_calendar.schemas.in.h:64
 msgid "Show week numbers in date navigator"
 msgstr "Wyświetlanie numerów tygodni w nawigatorze dat"
 
 #: ../calendar/gui/apps_evolution_calendar.schemas.in.h:65
+#, fuzzy
 msgid ""
 "Shows the second time zone in a Day View, if set. Value is similar to one "
 "used in a 'timezone' key."
-msgstr ""
+msgstr "Wyświetlanie dodatkowej strefy czasowej w widoku jednego dnia. Wartość jest podobna do wartości używanych w kluczu \"timezone\"."
 
 #: ../calendar/gui/apps_evolution_calendar.schemas.in.h:66
 msgid "Tasks due today color"
@@ -5252,7 +5280,7 @@ msgstr "Kolor zadań na dziś"
 
 #: ../calendar/gui/apps_evolution_calendar.schemas.in.h:67
 msgid "Tasks vertical pane position"
-msgstr "Położenie pionowe panela zadań"
+msgstr "Położenie pionowe panelu zadań"
 
 #: ../calendar/gui/apps_evolution_calendar.schemas.in.h:69
 #, no-c-format
@@ -5260,7 +5288,7 @@ msgid ""
 "The URL template to use as a free/busy data fallback, %u is replaced by the "
 "user part of the mail address and %d is replaced by the domain."
 msgstr ""
-"Szablon adresu URL używany jako zastępczy dla informacji o zajętości, %u "
+"Szablon adresu URL używany jako zastępczy dla informacji o zajętości; %u "
 "jest zastępowane przez użytkownika z adresu e-mail, natomiast %d przez "
 "domenę."
 
@@ -5270,29 +5298,29 @@ msgid ""
 "untranslated Olsen timezone database location like \"America/New York\"."
 msgstr ""
 "Domyślna strefa czasowa używana dla dat i czasu w kalendarzu, jako "
-"nieprzetłumaczona baza położeń stref czasowych Olsena np.: \"America/New York"
-"\"."
+"nieprzetłumaczona baza położeń stref czasowych Olsena np.: \"America/New York\"."
 
 #: ../calendar/gui/apps_evolution_calendar.schemas.in.h:71
 msgid "The second timezone for a Day View"
-msgstr ""
+msgstr "Dodatkowa strefa czasowa dla widoku jednego dnia"
 
 #: ../calendar/gui/apps_evolution_calendar.schemas.in.h:72
-#, fuzzy
 msgid ""
 "This can have three possible values. 0 for errors. 1 for warnings. 2 for "
 "debug messages."
 msgstr ""
-"Możliwe wartości to: 0 dla błędów, 1 dla ostrzeżeń oraz 2 dla komunikatów "
+"Możliwe są trzy wartości: 0 dla błędów, 1 dla ostrzeżeń oraz 2 dla komunikatów "
 "debugowania."
 
 #: ../calendar/gui/apps_evolution_calendar.schemas.in.h:73
+#, fuzzy
 msgid "Time divisions"
 msgstr "Przedziały czasu:"
 
 #: ../calendar/gui/apps_evolution_calendar.schemas.in.h:74
+#, fuzzy
 msgid "Time the last alarm ran, in time_t."
-msgstr "Czas uruchomienia ostatniego porzypomnienia, w time_t."
+msgstr "Czas uruchomienia ostatniego przypomnienia, w \"time_t\"."
 
 #: ../calendar/gui/apps_evolution_calendar.schemas.in.h:75
 #: ../plugins/startup-wizard/startup-wizard.c:109
@@ -5303,7 +5331,7 @@ msgstr "Strefa czasowa"
 msgid ""
 "Transparency of the events in calendar views, a value between 0 "
 "(transparent) and 1 (opaque)."
-msgstr "Przezroczystość zdarzeń w widoku kalendarza. Wartość 0 (przezroczysty) do 1."
+msgstr "Przezroczystość zdarzeń w widoku kalendarza. Wartość od 0 (przezroczysty) do 1 (nieprzezroczyty)."
 
 #: ../calendar/gui/apps_evolution_calendar.schemas.in.h:77
 msgid "Twenty four hour time format"
@@ -5311,15 +5339,11 @@ msgstr "24-godzinny format czasu"
 
 #: ../calendar/gui/apps_evolution_calendar.schemas.in.h:78
 msgid "Units for a default reminder, \"minutes\", \"hours\" or \"days\"."
-msgstr ""
-"Jednostki dla domyślnego przypomnienia, \"minutes\" (minuty), \"hours"
-"\" (godziny) lub \"days\" (dni)."
+msgstr "Jednostki dla domyślnego przypomnienia: \"minutes\" (minuty), \"hours\" (godziny) lub \"days\" (dni)."
 
 #: ../calendar/gui/apps_evolution_calendar.schemas.in.h:79
 msgid "Units for determining when to hide tasks, \"minutes\", \"hours\" or \"days\"."
-msgstr ""
-"Jednostki określające kiedy ukryć zadania, \"minutes\" (minuty), \"hours"
-"\" (godziny) lub \"days\" (dni)."
+msgstr "Jednostki określające, kiedy ukryć zadania: \"minutes\" (minuty), \"hours\" (godziny) lub \"days\" (dni)."
 
 #: ../calendar/gui/apps_evolution_calendar.schemas.in.h:81
 msgid "Week start"
@@ -5327,7 +5351,7 @@ msgstr "Początek tygodnia"
 
 #: ../calendar/gui/apps_evolution_calendar.schemas.in.h:82
 msgid "Weekday the week starts on, from Sunday (0) to Saturday (6)."
-msgstr "Początkowy dzień tygodnia, od Niedzieli (0) do Soboty (6)."
+msgstr "Początkowy dzień tygodnia, od niedzieli (0) do soboty (6)."
 
 #: ../calendar/gui/apps_evolution_calendar.schemas.in.h:83
 msgid "Whether or not to use the notification tray for display alarms."
@@ -5335,30 +5359,32 @@ msgstr "Określa, czy używać obszaru powiadamiania do wyświetlania przypomnie
 
 #: ../calendar/gui/apps_evolution_calendar.schemas.in.h:84
 msgid "Whether to ask for confirmation when deleting an appointment or task."
-msgstr "Określa, czy potwierdzać kasowanie spotkań i zadań."
+msgstr "Określa, czy potwierdzać usuwanie spotkań i zadań."
 
 #: ../calendar/gui/apps_evolution_calendar.schemas.in.h:85
+#, fuzzy
 msgid "Whether to ask for confirmation when expunging appointments and tasks."
-msgstr "Określa, czy potwierdzać usunięcie spotkań i zadań."
+msgstr "Określa, czy potwierdzać wymazywanie spotkań i zadań."
 
 #: ../calendar/gui/apps_evolution_calendar.schemas.in.h:86
+#, fuzzy
 msgid ""
 "Whether to compress weekends in the month view, which puts Saturday and "
 "Sunday in the space of one weekday."
 msgstr ""
-"Określa czy kompresować weekendy w widoku miesięcy, co powoduje umieszczenie "
-"Soboty i Niedzieli w miejscu jednego dnia."
+"Określa, czy kompresować weekendy w widoku miesiąca, co powoduje umieszczenie "
+"soboty i niedzieli w miejscu jednego dnia."
 
 #: ../calendar/gui/apps_evolution_calendar.schemas.in.h:87
 msgid "Whether to display the end time of events in the week and month views."
 msgstr ""
-"Określa, czy wyświetlać czasów zakończenia zdarzeń w widoku tygodniowym i "
-"miesięcznym."
+"Określa, czy wyświetlać czasy zakończenia zdarzeń w widoku tygodnia i "
+"miesiąca."
 
 #: ../calendar/gui/apps_evolution_calendar.schemas.in.h:88
 msgid "Whether to draw the Marcus Bains Line (line at current time) in the calendar."
 msgstr ""
-"Określa czy rysować w kalendarzu wskazującą bieżący czas linię Marcusa "
+"Określa, czy rysować w kalendarzu wskazującą bieżący czas linię Marcusa "
 "Bainsa."
 
 #: ../calendar/gui/apps_evolution_calendar.schemas.in.h:89
@@ -5367,40 +5393,39 @@ msgstr "Określa, czy ukrywać zakończone zadania w widoku zadań."
 
 #: ../calendar/gui/apps_evolution_calendar.schemas.in.h:90
 msgid "Whether to set a default reminder for appointments."
-msgstr "Określa, czy ustawić domyślne przypomnienie dla spotkań."
+msgstr "Określa, czy ustawiać domyślne przypomnienie dla spotkań."
 
 #: ../calendar/gui/apps_evolution_calendar.schemas.in.h:91
 msgid "Whether to show RSVP field in the event/task/meeting editor"
-msgstr "Określa, czy wyświetlać pole RSVP w edytorze zdarzeń/zadań/zebań?"
+msgstr "Określa, czy wyświetlać pole RSVP w edytorze zdarzeń/zadań/zebań."
 
 #: ../calendar/gui/apps_evolution_calendar.schemas.in.h:92
 msgid "Whether to show categories field in the event/meeting editor"
-msgstr "Określa, czy wyświetlać kategorie edytorze zdarzeń/zebrań"
+msgstr "Określa, czy wyświetlać kategorie edytorze zdarzeń/zebrań."
 
 #: ../calendar/gui/apps_evolution_calendar.schemas.in.h:93
 msgid "Whether to show role field in the event/task/meeting editor"
-msgstr "Określa, czy polę rola w edytorze zdarzeń/zadań/spotkań"
+msgstr "Określa, czy wyświetlać pole roli w edytorze zdarzeń/zadań/spotkań."
 
 #: ../calendar/gui/apps_evolution_calendar.schemas.in.h:94
 msgid "Whether to show status field in the event/task/meeting editor"
-msgstr "Określa, czy pole stanu w edytorze zdarzeń/zadań/zebrań"
+msgstr "Określa, czy wyświetlać pole stanu w edytorze zdarzeń/zadań/zebrań."
 
 #: ../calendar/gui/apps_evolution_calendar.schemas.in.h:95
 msgid "Whether to show times in twenty four hour format instead of using am/pm."
-msgstr "Określa, czy wyświetlać czas w formacie 24-godzinnym zamiast 12-godzinnym."
+msgstr "Określa, czy wyświetlać czas w formacie 24-godzinnym zamiast w 12-godzinnym."
 
 #: ../calendar/gui/apps_evolution_calendar.schemas.in.h:96
 msgid "Whether to show timezone field in the event/meeting editor"
-msgstr "Określa, czy wyświetlać pole strefy czasowej w edytorze zdarzeń/zadań/zebrań"
+msgstr "Określa, czy wyświetlać pole strefy czasowej w edytorze zdarzeń/zadań/zebrań."
 
 #: ../calendar/gui/apps_evolution_calendar.schemas.in.h:97
 msgid "Whether to show type field in the event/task/meeting editor"
-msgstr "Określa, czy wyświetlać polę typu w edytorze zdarzeń/zadań/zebrań"
+msgstr "Określa, czy wyświetlać pole typu w edytorze zdarzeń/zadań/zebrań."
 
 #: ../calendar/gui/apps_evolution_calendar.schemas.in.h:98
-#, fuzzy
 msgid "Whether to show week number in the Day and Work Week View."
-msgstr "Określa, czy wyświetlać numery tygodni w nawigatorze dat."
+msgstr "Określa, czy wyświetlać numery tygodni w widoku jednego dnia i tygodnia roboczego."
 
 #: ../calendar/gui/apps_evolution_calendar.schemas.in.h:99
 msgid "Whether to show week numbers in the date navigator."
@@ -5408,7 +5433,7 @@ msgstr "Określa, czy wyświetlać numery tygodni w nawigatorze dat."
 
 #: ../calendar/gui/apps_evolution_calendar.schemas.in.h:100
 msgid "Whether to use daylight savings time while displaying events."
-msgstr "Określa czy używać czasu zimowgo podczas wyświetlania zdarzeń."
+msgstr "Określa, czy używać czasu zimowego podczas wyświetlania zdarzeń."
 
 #: ../calendar/gui/apps_evolution_calendar.schemas.in.h:101
 msgid "Work days"
@@ -5460,7 +5485,7 @@ msgstr "Zadania na następne 7 dni"
 
 #: ../calendar/gui/cal-search-bar.c:644
 msgid "Active Tasks"
-msgstr "Aktualne zadania "
+msgstr "Aktualne zadania"
 
 #: ../calendar/gui/cal-search-bar.c:648
 msgid "Overdue Tasks"
@@ -5495,7 +5520,7 @@ msgid ""
 "events."
 msgstr ""
 "Operacja ta bezpowrotnie usunie wszystkie zdarzenia starsze niż zaznaczony "
-"okres czasu. W przypadku kontynuowania operacji, późniejsze odzyskanie zadań "
+"okres czasu. W przypadku kontynuowania tej operacji późniejsze odzyskanie zadań "
 "nie będzie możliwe."
 
 #: ../calendar/gui/calendar-commands.c:321
@@ -5570,11 +5595,11 @@ msgstr "Nie można zaktualizować kalendarzy."
 #: ../calendar/gui/calendar-component.c:1142
 #, c-format
 msgid "Unable to open the calendar '%s' for creating events and meetings"
-msgstr "Nie można otworzyć kalendarza \"%s\" w celu utworzenia zdarzeń i zebrań"
+msgstr "Nie można otworzyć kalendarza \"%s\" w celu tworzenia zdarzeń i zebrań"
 
 #: ../calendar/gui/calendar-component.c:1158
 msgid "There is no calendar available for creating events and meetings"
-msgstr "Brak dostępnego kalendarza do utworzenia zdarzeń i zebrań"
+msgstr "Brak dostępnego kalendarza do tworzenia zdarzeń i zebrań"
 
 #: ../calendar/gui/calendar-component.c:1271
 msgid "Calendar Source Selector"
@@ -5603,6 +5628,7 @@ msgid "M_eeting"
 msgstr "Ze_branie"
 
 #: ../calendar/gui/calendar-component.c:1497
+#, fuzzy
 msgid "Create a new meeting request"
 msgstr "Tworzy nową prośbę o zebranie"
 
@@ -5677,8 +5703,9 @@ msgstr "Klasyfikacja"
 #: ../calendar/gui/caltypes.xml.h:7 ../calendar/gui/e-cal-list-view.c:249
 #: ../calendar/gui/e-cal-model.c:352 ../calendar/gui/e-calendar-table.c:557
 #: ../calendar/gui/memotypes.xml.h:6
+#, fuzzy
 msgid "Confidential"
-msgstr "Tajny"
+msgstr "Poufne"
 
 #: ../calendar/gui/caltypes.xml.h:8 ../calendar/gui/memotypes.xml.h:7
 #: ../calendar/gui/tasktypes.xml.h:10
@@ -5711,14 +5738,16 @@ msgstr "Organizator"
 #: ../calendar/gui/caltypes.xml.h:14 ../calendar/gui/e-cal-list-view.c:248
 #: ../calendar/gui/e-cal-model.c:350 ../calendar/gui/e-calendar-table.c:556
 #: ../calendar/gui/memotypes.xml.h:12
+#, fuzzy
 msgid "Private"
-msgstr "Prywatny"
+msgstr "Prywatne"
 
 #: ../calendar/gui/caltypes.xml.h:15 ../calendar/gui/e-cal-list-view.c:247
 #: ../calendar/gui/e-cal-model.c:341 ../calendar/gui/e-cal-model.c:348
 #: ../calendar/gui/e-calendar-table.c:555 ../calendar/gui/memotypes.xml.h:13
+#, fuzzy
 msgid "Public"
-msgstr "Publiczny"
+msgstr "Publiczne"
 
 #: ../calendar/gui/caltypes.xml.h:16
 #: ../calendar/gui/dialogs/event-editor.c:304
@@ -5756,6 +5785,7 @@ msgstr "jest"
 
 #: ../calendar/gui/caltypes.xml.h:22 ../calendar/gui/memotypes.xml.h:19
 #: ../calendar/gui/tasktypes.xml.h:30 ../mail/em-filter-i18n.h:36
+#, fuzzy
 msgid "is not"
 msgstr "nie jest"
 
@@ -5835,9 +5865,11 @@ msgstr "Adresat:"
 msgid "Send an email"
 msgstr "Wysłanie wiadomości"
 
+# WK: Zmieniono zgodnie z wytycznymi Gnome
 #: ../calendar/gui/dialogs/alarm-dialog.glade.h:14
+#, fuzzy
 msgid "_Arguments:"
-msgstr "_Argumenty:"
+msgstr "_Parametry:"
 
 #: ../calendar/gui/dialogs/alarm-dialog.glade.h:15
 msgid "_Program:"
@@ -5863,6 +5895,7 @@ msgstr "przed"
 #. 'This appointment recurs/Every[x][day(s)][for][1]occurrences' (dropdown menu options are in [square brackets])
 #: ../calendar/gui/dialogs/alarm-dialog.glade.h:20
 #: ../calendar/gui/dialogs/recurrence-page.glade.h:13
+#, fuzzy
 msgid "day(s)"
 msgstr "dni"
 
@@ -5889,7 +5922,7 @@ msgstr "początek spotkania"
 # FIXME - nie mam koncepcji na trigger/spust?
 #: ../calendar/gui/dialogs/alarm-list-dialog.c:244
 msgid "Action/Trigger"
-msgstr "Akcja/Uaktywnienie"
+msgstr "Działanie/Uaktywnienie"
 
 #: ../calendar/gui/dialogs/alarm-list-dialog.glade.h:1
 msgid "A_dd"
@@ -5935,12 +5968,12 @@ msgstr "Brak"
 
 #: ../calendar/gui/dialogs/cal-prefs-dialog.c:621
 msgid "Selected Calendars for Alarms"
-msgstr "Kalendarze dla których będą uruchamiane alarmy"
+msgstr "Kalendarze, dla których będą uruchamiane alarmy"
 
 #: ../calendar/gui/dialogs/cal-prefs-dialog.glade.h:1
 #, fuzzy
 msgid "(Shown in a Day View)"
-msgstr "_Pokaż pole w widoku"
+msgstr "(wyświetlone w widoku jednego dnia)"
 
 #: ../calendar/gui/dialogs/cal-prefs-dialog.glade.h:2
 msgid ""
@@ -5959,9 +5992,7 @@ msgstr ""
 #: ../calendar/gui/dialogs/cal-prefs-dialog.glade.h:8
 #, no-c-format
 msgid "<i>%u and %d will be replaced by user and domain from the email address.</i>"
-msgstr ""
-"<i>%u oraz %d zostaną zastąpione przez użytkownika i domenę z adresu e-mail."
-"</i>"
+msgstr "<i>%u oraz %d zostaną zastąpione przez użytkownika i domenę z adresu e-mail.</i>"
 
 #: ../calendar/gui/dialogs/cal-prefs-dialog.glade.h:9
 #: ../mail/mail-config.glade.h:10
@@ -6061,29 +6092,30 @@ msgstr "Sobota"
 #: ../calendar/gui/dialogs/cal-prefs-dialog.glade.h:38
 #, fuzzy
 msgid "Se_cond zone:"
-msgstr "Adresat:"
+msgstr "Strefa _dodatkowa:"
 
 #: ../calendar/gui/dialogs/cal-prefs-dialog.glade.h:39
 msgid "Select the calendars for alarm notification"
 msgstr "Przypomnienia z wybranych kalendarzy"
 
 #: ../calendar/gui/dialogs/cal-prefs-dialog.glade.h:40
+#, fuzzy
 msgid "Sh_ow a reminder"
-msgstr "_Przypomnienie na"
+msgstr "P_okaż przypomnienie"
 
 #: ../calendar/gui/dialogs/cal-prefs-dialog.glade.h:41
 #, fuzzy
 msgid "Show a _reminder"
-msgstr "_Przypomnienie na"
+msgstr "Pokaż p_rzypomnienie"
 
 #: ../calendar/gui/dialogs/cal-prefs-dialog.glade.h:42
 msgid "Show week _numbers in date navigator"
-msgstr "Wyświetlanie _numerów tygodni w przeglądarce dat"
+msgstr "Wyświetlanie _numerów tygodni w nawigatorze dat"
 
 #: ../calendar/gui/dialogs/cal-prefs-dialog.glade.h:43
 #, fuzzy
 msgid "Show week n_umber in Day and Work Week View"
-msgstr "Wyświetlanie numerów tygodni w nawigatorze dat"
+msgstr "Wyświetlanie n_umerów tygodni w widoku dnia i tygodnia roboczego"
 
 #: ../calendar/gui/dialogs/cal-prefs-dialog.glade.h:44
 #: ../calendar/gui/dialogs/recurrence-page.c:1122
@@ -6154,7 +6186,7 @@ msgstr "Potw_ierdzanie przed usunięciem elementów"
 
 #: ../calendar/gui/dialogs/cal-prefs-dialog.glade.h:60
 msgid "_Compress weekends in month view"
-msgstr "_Kompresowanie weekendów na widoku miesięcznym"
+msgstr "_Kompresowanie weekendów w widoku miesiąca"
 
 #: ../calendar/gui/dialogs/cal-prefs-dialog.glade.h:61
 msgid "_Day begins:"
@@ -6185,7 +6217,7 @@ msgstr "_Sob"
 
 #: ../calendar/gui/dialogs/cal-prefs-dialog.glade.h:70
 msgid "_Show appointment end times in week and month view"
-msgstr "Pokaż _czasy zakończenia spotkań w widoku tygodniowym i miesięcznym"
+msgstr "Pokaż _czasy zakończenia spotkań w widoku tygodnia i miesiąca"
 
 #: ../calendar/gui/dialogs/cal-prefs-dialog.glade.h:71
 msgid "_Time divisions:"
@@ -6202,8 +6234,9 @@ msgid "_Wed"
 msgstr "Ś_ro"
 
 #: ../calendar/gui/dialogs/cal-prefs-dialog.glade.h:76
+#, fuzzy
 msgid "before every anniversary/birthday"
-msgstr ""
+msgstr "przed każdą rocznicą / urodzinami"
 
 #: ../calendar/gui/dialogs/cal-prefs-dialog.glade.h:77
 msgid "before every appointment"
@@ -6299,7 +6332,7 @@ msgstr "%s  Wprowadzono zmiany. Anulować je wszystkie i uaktualnić edytor?"
 #: ../calendar/gui/dialogs/changed-comp.c:102
 #, c-format
 msgid "%s  You have made no changes, update the editor?"
-msgstr "%s Nie wprowadzono żadnych zmian, uaktualnić edytor?"
+msgstr "%s  Nie wprowadzono żadnych zmian, uaktualnić edytor?"
 
 #: ../calendar/gui/dialogs/comp-editor-page.c:448
 #, c-format
@@ -6316,13 +6349,17 @@ msgstr " (Zakończone "
 
 #: ../calendar/gui/dialogs/comp-editor-util.c:192 ../calendar/gui/print.c:2371
 msgid "Completed "
-msgstr "Zakończone"
+msgstr "Zakończone "
 
+# WK: a nie chodzi tu o "Do" (termin)?
 #: ../calendar/gui/dialogs/comp-editor-util.c:197 ../calendar/gui/print.c:2376
+#, fuzzy
 msgid " (Due "
 msgstr " (Należne "
 
+# WK: patrz poprzednie
 #: ../calendar/gui/dialogs/comp-editor-util.c:199 ../calendar/gui/print.c:2378
+#, fuzzy
 msgid "Due "
 msgstr "Należne "
 
@@ -6483,11 +6520,11 @@ msgstr "Strefa c_zasowa"
 
 #: ../calendar/gui/dialogs/comp-editor.c:1447
 msgid "Toggles whether the time zone is displayed"
-msgstr "Przełącza wyświetlanie pola strefa czasowa"
+msgstr "Przełącza wyświetlanie pola strefy czasowej"
 
 #: ../calendar/gui/dialogs/comp-editor.c:1456
 msgid "Pu_blic"
-msgstr "Pu_bliczny"
+msgstr "Pu_bliczne"
 
 #: ../calendar/gui/dialogs/comp-editor.c:1458
 msgid "Classify as public"
@@ -6495,7 +6532,7 @@ msgstr "Określ jako publiczne"
 
 #: ../calendar/gui/dialogs/comp-editor.c:1463
 msgid "_Private"
-msgstr "_Prywatny"
+msgstr "_Prywatne"
 
 #: ../calendar/gui/dialogs/comp-editor.c:1465
 msgid "Classify as private"
@@ -6503,19 +6540,21 @@ msgstr "Określ jako prywatne"
 
 #: ../calendar/gui/dialogs/comp-editor.c:1470
 msgid "_Confidential"
-msgstr "P_oufny"
+msgstr "P_oufne"
 
 #: ../calendar/gui/dialogs/comp-editor.c:1472
 msgid "Classify as confidential"
 msgstr "Oznacz jako poufne"
 
+# WK: usunięto "Pole" w celu poprawy wyglądu i spójności menu
 #: ../calendar/gui/dialogs/comp-editor.c:1480
+#, fuzzy
 msgid "R_ole Field"
-msgstr "Pole R_ola"
+msgstr "R_ola"
 
 #: ../calendar/gui/dialogs/comp-editor.c:1482
 msgid "Toggles whether the Role field is displayed"
-msgstr "Przełącza wyświetlanie pola rola"
+msgstr "Przełącza wyświetlanie pola roli"
 
 #: ../calendar/gui/dialogs/comp-editor.c:1488
 msgid "_RSVP"
@@ -6539,7 +6578,7 @@ msgstr "_Typ"
 
 #: ../calendar/gui/dialogs/comp-editor.c:1506
 msgid "Toggles whether the Attendee Type is displayed"
-msgstr "Przełącza wyświetlanie pola typ uczestnika"
+msgstr "Przełącza wyświetlanie pola typy uczestnika"
 
 #: ../calendar/gui/dialogs/comp-editor.c:1828
 #: ../composer/e-composer-private.c:64 ../widgets/misc/e-attachment-bar.c:1376
@@ -8393,23 +8432,26 @@ msgstr "Pomieszczenie"
 msgid "Chair"
 msgstr "Prowadzący"
 
+# WK: uproszczenie i dopasowanie do pozostałych pozycji listy
 #: ../calendar/gui/e-meeting-list-view.c:177
 #: ../calendar/gui/e-meeting-store.c:122 ../calendar/gui/e-meeting-store.c:139
 #: ../calendar/gui/e-meeting-store.c:742 ../calendar/gui/print.c:998
 msgid "Required Participant"
-msgstr "Wymagany uczestnik"
+msgstr "Wymagany"
 
+# WK: uproszczenie i dopasowanie do pozostałych pozycji listy
 #: ../calendar/gui/e-meeting-list-view.c:178
 #: ../calendar/gui/e-meeting-store.c:124 ../calendar/gui/e-meeting-store.c:141
 #: ../calendar/gui/print.c:999
 msgid "Optional Participant"
-msgstr "Opcjonalny uczestnik"
+msgstr "Opcjonalny"
 
+# WK: "Nie uczestnik" brzmi okropnie, ta forma pasuje np. do "Prowadzący"
 #: ../calendar/gui/e-meeting-list-view.c:179
 #: ../calendar/gui/e-meeting-store.c:126 ../calendar/gui/e-meeting-store.c:143
 #: ../calendar/gui/print.c:1000
 msgid "Non-Participant"
-msgstr "Nie uczestnik"
+msgstr "Nieuczestniczący"
 
 #: ../calendar/gui/e-meeting-list-view.c:201
 #: ../calendar/gui/e-meeting-store.c:170 ../calendar/gui/e-meeting-store.c:193
