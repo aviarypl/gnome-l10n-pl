@@ -13,8 +13,8 @@ msgstr ""
 "Project-Id-Version: gcalctool.HEAD.pl\n"
 "Report-Msgid-Bugs-To: http://bugzilla.gnome.org/enter_bug.cgi?product=gcalctool&component=general\n"
 "POT-Creation-Date: 2009-02-15 09:43+0000\n"
-"PO-Revision-Date: 2009-02-21 20:54+0100\n"
-"Last-Translator: wadim dziedzic <wdziedzic@aviary,pl>\n"
+"PO-Revision-Date: 2009-03-06 01:34+0100\n"
+"Last-Translator: Piotr Leszczyński <piotr@kontury.pl>\n"
 "Language-Team: Polish <translators@gnomepl.org>\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -47,6 +47,7 @@ msgstr "Brak historii cofania"
 msgid "No redo steps"
 msgstr "Brak historii powtarzania"
 
+# rev: zdefiniowana? patrz: malformed expression (spoójność)
 #. Translators: This message is displayed in the status bar when an
 #. invalid user-defined function is executed
 #: ../gcalctool/functions.c:180
@@ -115,6 +116,7 @@ msgid "Calculator - Scientific"
 msgstr "Kalkulator - naukowy"
 
 #  msgid "Calculator - Advanced"
+# rev: programisty?
 #. Translators: The window title when in programming mode
 #: ../gcalctool/gtk.c:69
 msgid "Calculator - Programming"
@@ -145,6 +147,7 @@ msgid "Calculator [%s] - Scientific"
 msgstr "Kalkulator [%s] - naukowy"
 
 #  msgid "Calculator [%s] - Advanced"
+# rev: programisty?
 #. Translators: The window title when in programming mode. %s is replaced with the hostname.
 #: ../gcalctool/gtk.c:83
 #, c-format
@@ -285,6 +288,7 @@ msgid "Inverse Tangent [W]"
 msgstr "Odwrotność tangensa [W]"
 
 #  msgid "Periodic payment [P]"
+# rev: hiperboliczny
 #. Translators: The hyperbolic tangent tooltip
 #: ../gcalctool/gtk.c:622
 msgid "Hyperbolic Tangent [w]"
@@ -392,6 +396,7 @@ msgstr "Podniesienie wyświetlanej wartości do potęgi odwrotności liczby y [O
 msgid "translator-credits"
 msgstr "Aviary.pl <gnomepl@aviary.pl>, 2008-2009"
 
+# rev: Fundację Wolnego Oprogramowania (Free Software Foundation)
 #. Translators: The license this software is under (GPL2+)
 #: ../gcalctool/gtk.c:1206
 msgid ""
@@ -478,6 +483,7 @@ msgstr "Błąd wczytywania interfejsu użytkownika"
 msgid "The user interface file %s is missing or unable to be loaded. Please check your installation."
 msgstr "Brak pliku interfejsu %s. Proszę zweryfikować instalację."
 
+# rev: bez kropki (nr - jak dr, mgr)
 #. Translators: Edit Constants Dialog: Constant number column title
 #. Translators: Edit Functions Dialog: Function number column title
 #: ../gcalctool/gtk.c:2676
@@ -549,6 +555,7 @@ msgstr "stopnie w radianach"
 msgid "2 ^ 20"
 msgstr "2 ^ 20"
 
+# rev: gramów na uncje (patrz: kilometrów na mile, centymetrów na cale)
 #. Translators: This is the label for the default constant, the number of ounces in one gram (0.0353)
 #: ../gcalctool/register.c:54
 msgid "Gram-to-ounce conversion factor"
@@ -580,16 +587,19 @@ msgstr "_Oblicz"
 msgid "C_ost:"
 msgstr "_Koszt:"
 
+# rev: "są na końcu" (nie: się na końcy); "każdego okresu spłaty" albo "każdego z okresów spłaty"
 #. Periodic Payment Dialog: Description of calculation
 #: ../glade/financial.glade.h:6
 msgid "Calculates the amount of the periodic payment of a loan, where payments are made at the end of each payment period. "
 msgstr "Oblicza sumę okresowej spłaty pożyczki, gdy spłaty dokonywane się na końcy każdego z okresu spłaty. "
 
+# rev: "Oblicza odpisy amortyzacji środka trwałego w danym okresie metodą sumy cyfr wszystkich lat amortyzacji. Metoda ta przyspiesza amortyzację, tak aby większe odpisy następowały we wcześniejszych okresach. Czas życia środka trwałego to liczba okresów, zwykle lat, w czasie których dokonuje się amortyzacja."
 #. Sum-Of-The-Years'-Digits Depreciation Dialog: Description of calculation
 #: ../glade/financial.glade.h:8
 msgid "Calculates the depreciation allowance on an asset for a specified period of time, using the Sum-Of-The-Years'-Digits method. This method of depreciation accelerates the rate of depreciation, so that more depreciation expense occurs in earlier periods than in later ones. The useful life is the number of periods, typically years, over which an asset is depreciated. "
 msgstr "Dla zadanego okresu czasu oblicza stawkę amortyzacji środka trwałego metodą sumy cyfr rocznych. Te metoda amortyzacju przyspiesza amortyzację tak, że we wcześniejszych okresach następuje szybszy spadek wartości. Czas życia środka trwałego to liczba okresów, zwykle lat, w czasie których dokonuje się amortyzacja. "
 
+# rev: "Oblicza odpisy amortyzacji środka trwałego w danym okresie metodą podwójnie malejącego salda."
 #. Double-Declining Depreciation Dialog: Description of calculation
 #: ../glade/financial.glade.h:10
 msgid "Calculates the depreciation allowance on an asset for a specified period of time, using the double-declining balance method."
@@ -605,6 +615,13 @@ msgstr "Oblicza przyszłą wartość wkładu na podstawie serii równych wpłat 
 msgid "Calculates the number of compounding periods necessary to increase an investment of present value to a future value, at a fixed interest rate per compounding period."
 msgstr "Oblicza liczbę okresów kapitalizacji wymaganą do zwiększenia wartości inwestycji do danej wartości przy danej stałej stopie procentowej w okreslie kapitalizacji."
 
+# rev: "w czasie zwykłej annuity" -> "w czasie płatności renty zwykłej"
+# [renta (płatna z dołu aka zwykła): http://www.ioz.pwr.wroc.pl/pracownicy/borzemska/renta_e.pdf;
+# renta płatna z dołu (annuity-immediate aka ordinary annuity, cf. Wikipedia - Annuity): http://www.ksiegarnia-ekonomiczna.com.pl/modules.php?name=Sklep&plik=lista&nazwa=opis&nr_katal=8388840738&hthost=1&store_id=2;
+# renta pewna z dołu (annuity-immediate aka ordinary annuity):
+# http://www.docstoc.com/docs/2216916/Rozdzia%C5%82-4-%EF%BF%BDThe-theory-of-interest%EF%BF%BD-SGKellison
+# (slajd 4)
+# inne nazwy: renta płatna na koniec okresu
 #. Payment Period Dialog: Description of calculation
 #: ../glade/financial.glade.h:16
 msgid "Calculates the number of payment periods that are necessary during the term of an ordinary annuity, to accumulate a future value, at a periodic interest rate."
@@ -620,11 +637,14 @@ msgstr "Oblicza stopę procentową wymaganą do zwiększenia wartości inwestycj
 msgid "Calculates the present value of an investment based on a series of equal payments discounted at a periodic interest rate over the number of payment periods in the term. "
 msgstr "Oblicza aktualną wartość inwestycji na podstawie serii równych wpłat i danej okresowej stopy procentowej w danym okresie. "
 
+# rev: marży zysku brutto
 #. Gross Profit Margin Dialog: Description of calculation
 #: ../glade/financial.glade.h:22
 msgid "Calculates the resale price of a product, based on the product cost and the wanted gross profit margin."
 msgstr "Oblicza cenę odsprzedaży produktu na podstawie kosztu produktu i docelowej marży brutto."
 
+# rev: prostoliniowej -> liniowej [po co wprowadzać nowy termin, a w związku z tym zamieszanie pojęciowe?];
+# "w ciągu których amortyzowany jest środek trwały"
 #. Straight-Line Depreciation Dialog: Description of calculation
 #: ../glade/financial.glade.h:24
 msgid "Calculates the straight-line depreciation of an asset for one period. The straight-line method of depreciation divides the depreciable cost evenly over the useful life of an asset. The useful life is the number of periods, typically years, over which an asset is depreciated. "
@@ -637,6 +657,7 @@ msgid "Compounding Term"
 msgstr "Okres kapitalizacji"
 
 #  msgid "Double-declining depreciation"
+# rev: Amortyzacja metodą podwójnie malejącego salda?
 #. Title of Double-Declining Depreciation dialog
 #: ../glade/financial.glade.h:28
 msgid "Double-Declining Depreciation"
@@ -654,6 +675,7 @@ msgstr "Wartość przyszła"
 msgid "Future _Value:"
 msgstr "_Wartość przyszła:"
 
+# rev: marża zysku brutto
 #. Title of Gross Profit Margin dialog
 #: ../glade/financial.glade.h:34
 #: ../glade/gcalctool.glade.h:223
@@ -661,6 +683,7 @@ msgid "Gross Profit Margin"
 msgstr "Marża brutto"
 
 #  msgid "Payment period"
+# rev: Okres płatności?
 #. Title of Payment Period dialog
 #: ../glade/financial.glade.h:36
 msgid "Payment Period"
@@ -1055,27 +1078,32 @@ msgstr "Backspace"
 msgid "Basic"
 msgstr "Podstawowy"
 
+# rev: funkcja bitowa?
 #. Tooltip for the boolean AND button
 #: ../glade/gcalctool.glade.h:117
 msgid "Bitwise AND [&]"
 msgstr "Bitowa funkcja AND [&]"
 
+# rev: funkcja bitowa?
 #. Tooltip for the boolean NOT button
 #: ../glade/gcalctool.glade.h:119
 msgid "Bitwise NOT [~]"
 msgstr "Bitowa funkcja NOT [~]"
 
+# rev: funkcja bitowa?
 #. Tooltip for the boolean OR button
 #: ../glade/gcalctool.glade.h:121
 msgid "Bitwise OR [|]"
 msgstr "Bitowa funkcja OR [|]"
 
 #  msgid "Bitwise XNOR [n]"
+# rev: funkcja bitowa?
 #. Tooltip for the boolean exclusive NOR button
 #: ../glade/gcalctool.glade.h:123
 msgid "Bitwise XNOR [{]"
 msgstr "Bitowa funkcja XNOR [{]"
 
+# rev: funkcja bitowa?
 #. Tooltip for the boolean exlcusive OR button
 #: ../glade/gcalctool.glade.h:125
 msgid "Bitwise XOR [x]"
@@ -1198,10 +1226,12 @@ msgstr "Dzielenie"
 msgid "Divide [/]"
 msgstr "Dzielenie [/]"
 
+# rev: Amortyzacja metodą podwójnie malejącego salda?
 #: ../glade/gcalctool.glade.h:173
 msgid "Double-declining depreciation"
 msgstr "Amortyzacja przyspieszona podwójna"
 
+# rev: Amortyzacja metodą podwójnie malejącego salda?
 #. Tooltip for the [Ddb] button
 #: ../glade/gcalctool.glade.h:175
 msgid "Double-declining depreciation [D]"
@@ -1321,11 +1351,13 @@ msgstr "Gpm"
 msgid "Gr_adians"
 msgstr "Gr_adiany"
 
+# rev: marża zysku brutto
 #. Tooltip for the [Gpm] button
 #: ../glade/gcalctool.glade.h:225
 msgid "Gross Profit Margin [I]"
 msgstr "Marża brutto [I]"
 
+# rev: marża zysku brutto [g]
 #: ../glade/gcalctool.glade.h:226
 msgid "Gross Profit Margin [g]"
 msgstr "Marża brutto [g]"
@@ -1340,31 +1372,37 @@ msgstr "_Hyp"
 msgid "He_x"
 msgstr "He_x"
 
+# rev: Cyfra szesnastkowa
 #. Tooltip for the hexadecimal digit A button
 #: ../glade/gcalctool.glade.h:232
 msgid "Hexadecimal digit A [a]"
 msgstr "Szesnastkowa cyfra A [a]"
 
+# rev: Cyfra szesnastkowa
 #. Tooltip for the hexadecimal digit B button
 #: ../glade/gcalctool.glade.h:234
 msgid "Hexadecimal digit B [b]"
 msgstr "Szesnastkowa cyfra B [b]"
 
+# rev: Cyfra szesnastkowa
 #. Tooltip for the hexadecimal digit C button
 #: ../glade/gcalctool.glade.h:236
 msgid "Hexadecimal digit C [c]"
 msgstr "Szesnastkowa cyfra C [c]"
 
+# rev: Cyfra szesnastkowa
 #. Tooltip for the hexadecimal digit D button
 #: ../glade/gcalctool.glade.h:238
 msgid "Hexadecimal digit D [d]"
 msgstr "Szesnastkowa cyfra D [d]"
 
+# rev: Cyfra szesnastkowa
 #. Tooltip for the hexadecimal digit E button
 #: ../glade/gcalctool.glade.h:240
 msgid "Hexadecimal digit E [e]"
 msgstr "Szesnastkowa cyfra E [e]"
 
+# rev: Cyfra szesnastkowa
 #. Tooltip for the hexadecimal digit F button
 #: ../glade/gcalctool.glade.h:242
 msgid "Hexadecimal digit F [f]"
@@ -1466,6 +1504,7 @@ msgstr "Cyfra 8"
 msgid "Numeric 9"
 msgstr "Cyfra 9"
 
+# rev: separator cyfrowy/liczbowy?
 #. Tooltip for the numeric point button
 #: ../glade/gcalctool.glade.h:274
 msgid "Numeric point"
@@ -1625,6 +1664,7 @@ msgstr "Ustawianie dokładności"
 msgid "Set display type to engineering format"
 msgstr "Ustawienie typu ekranu na tryb inżynierski"
 
+# rev: stałoprzecinkowy
 #. Tooltip for the fixed-point display radio button
 #: ../glade/gcalctool.glade.h:337
 msgid "Set display type to fixed-point format"
@@ -1645,36 +1685,43 @@ msgstr "Ustawianie opcji hiperbolicznej funkcji trygonometrycznych"
 msgid "Set inverse option for trigonometric functions"
 msgstr "Ustawianie opcji inwersji funkcji trygonometrycznych"
 
+# rev: Ustawienie systemu binarnego (o podstawie 2)
 #. Tooltip for the base 2 radio button
 #: ../glade/gcalctool.glade.h:345
 msgid "Set numeric base to binary (base 2)"
 msgstr "Ustawienie systemu na binarny (podstawa 2)"
 
+# rev: Ustawienie systemu dziesiętnego (o podstawie 10)
 #. Tooltip for the base 10 radio button
 #: ../glade/gcalctool.glade.h:347
 msgid "Set numeric base to decimal (base 10)"
 msgstr "Ustawienie systemu na dziesiętny (podstawa 10)"
 
+# rev: Ustawienie systemu szesnastkowego (o podstawie 16)
 #. Tooltip for the base 16 radio button
 #: ../glade/gcalctool.glade.h:349
 msgid "Set numeric base to hexadecimal (base 16)"
 msgstr "Ustawienie systemu szesnastkowy (podstawa 16)"
 
+# rev: Ustawienie systemu ósemkowego (o podstawie 8)
 #. Tooltip for the base 8 radio button
 #: ../glade/gcalctool.glade.h:351
 msgid "Set numeric base to octal (base 8)"
 msgstr "Ustawienie systemu ósemkowy (podstawa 8)"
 
+# rev: Przestawienie typu trygonometrycznego na stopnie
 #. Tooltip for the degrees radio button
 #: ../glade/gcalctool.glade.h:353
 msgid "Set trigonometric type to degrees"
 msgstr "Ustawienie typu trygonometrycznego na stopnie"
 
+# rev: Przestawienie typu trygonometrycznego na gradiany
 #. Tooltip for the gradians radio button
 #: ../glade/gcalctool.glade.h:355
 msgid "Set trigonometric type to gradians"
 msgstr "Ustawienie typu trygonometrycznego na radiany"
 
+# rev: Przestawienie typu trygonometrycznego na radiany
 #. Tooltip for the radian radio button
 #: ../glade/gcalctool.glade.h:357
 msgid "Set trigonometric type to radians"
@@ -1705,6 +1752,7 @@ msgstr "Wyświetlanie _dopełniających zer"
 msgid "Show help contents"
 msgstr "Wyświetla zawartość pomocy"
 
+# rev: Wyświetla rejestry pamięci [tooltip]
 #. Tooltip for the View|Memory Registers menu item
 #: ../glade/gcalctool.glade.h:369
 msgid "Show memory registers"
@@ -1715,6 +1763,7 @@ msgstr "Wyświetlanie rejestrów pamięci"
 msgid "Show the About Gcalctool dialog"
 msgstr "Wyświetla okno dialogowe informacji o Gcalctool"
 
+# rev: Wyświetla separator tysięcy [tooltip]
 #. Tooltip for the View|Show Thousands Separator menu item
 #: ../glade/gcalctool.glade.h:373
 msgid "Show thousands separator"
@@ -1725,6 +1774,7 @@ msgstr "Wyświetlanie separatora tysięcy"
 msgid "Show trailing zeroes"
 msgstr "Wyświetlanie dopełniających zer"
 
+# rev: Istotne _miejsca? ["znaczące miejsca" zalatuje tanią poezją informatyczną :) choć zdaję sobie sprawę, że "znaczący" to najbliższy ekwiwalent leksykalny ang. "significant"]
 #. Set Precision Dialog: Label before the significant places spin button
 #: ../glade/gcalctool.glade.h:377
 msgid "Significant _places:"
@@ -2007,6 +2057,7 @@ msgstr "_Rejestry pamięci"
 msgid "_Oct"
 msgstr "_Oct"
 
+# rev: _Programisty?
 #. View|Programming menu item
 #: ../glade/gcalctool.glade.h:487
 msgid "_Programming"
