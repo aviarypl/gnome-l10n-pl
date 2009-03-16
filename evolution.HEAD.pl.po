@@ -1,4 +1,5 @@
 # translation of evolution.HEAD.po to
+# Wojciech Kapusta <wkapusta@aviary.pl>, 2009.
 # Copyright (C) 2001-2005 Free Software , Inc.
 # -=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-
 # Aviary.pl
@@ -6,14 +7,13 @@
 # pomóc w jego rozwijaniu i pielęgnowaniu, napisz do nas:
 # gnomepl@aviary.pl
 # -=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-
-# Wojciech Kapusta <wkapusta@aviary.pl>, 2009.
 msgid ""
 msgstr ""
 "Project-Id-Version: evolution.HEAD\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2009-03-12 22:37+0100\n"
-"PO-Revision-Date: 2009-03-12 23:00+0100\n"
-"Last-Translator: wadim dziedzic <wdziedzic@aviary,pl>\n"
+"PO-Revision-Date: 2009-03-16 18:40+0100\n"
+"Last-Translator: Wojciech Kapusta <wkapusta@aviary.pl>\n"
 "Language-Team:  <pl@li.org>\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -13663,7 +13663,7 @@ msgstr "Pytanie w przypadku, gdy użytkownik chce otworzyć w tym samym czasie 1
 
 #: ../mail/evolution-mail.schemas.in.h:62
 msgid "If the \"Preview\" pane is on, then show it side-by-side rather than vertically."
-msgstr "Wyświetlanie okna podglądu pionowo a nie poziomo jeśli jest ono włączone"
+msgstr "Wyświetlanie okna podglądu pionowo a nie poziomo, jeśli jest ono włączone"
 
 #: ../mail/evolution-mail.schemas.in.h:63
 msgid "If there isn't a builtin viewer for a particular MIME type inside Evolution, any MIME types appearing in this list which map to a Bonobo component viewer in GNOME's MIME type database may be used for displaying content."
@@ -13723,19 +13723,20 @@ msgstr "Lista kont znanych komponentowi poczty Evolution. Lista zawiera nazwy po
 
 #: ../mail/evolution-mail.schemas.in.h:78
 msgid "List of custom headers and whether they are enabled."
-msgstr "Lista własnych nagłówków oraz czy są włączone."
+msgstr "Lista własnych nagłówków oraz określenie, czy są włączone."
 
 #: ../mail/evolution-mail.schemas.in.h:79
 msgid "List of dictionary language codes used for spell checking."
 msgstr "Lista kodów języków używanych do sprawdzania pisowni."
 
 #: ../mail/evolution-mail.schemas.in.h:80
+#, fuzzy
 msgid "List of labels known to the mail component of Evolution. The list contains strings containing name:color where color uses the HTML hex encoding."
-msgstr "Lista etykiet znanych komponentowi poczty Evolution. Lista zawiera ciągi zawierające nazwa:kolor, gdzie kolor używa kodowania HTML hex."
+msgstr "Lista etykiet znanych komponentowi poczty Evolution. Lista zawiera ciągi z elementami nazwa:kolor, gdzie kolor określony jest w szesnastkowym kodowaniu HTML."
 
 #: ../mail/evolution-mail.schemas.in.h:81
 msgid "List of protocol names whose license has been accepted."
-msgstr "Lista nazw protokołów których licencje zostały zaakceptowane."
+msgstr "Lista nazw protokołów, których licencje zostały zaakceptowane."
 
 #: ../mail/evolution-mail.schemas.in.h:82
 msgid "Load images for HTML messages over HTTP"
@@ -13743,7 +13744,7 @@ msgstr "Pobieranie obrazów dla wiadomości HTML poprzez protokół HTTP"
 
 #: ../mail/evolution-mail.schemas.in.h:83
 msgid "Load images for HTML messages over HTTP(S). Possible values are: \"0\" - Never load images off the net. \"1\" - Load images in messages from contacts. \"2\" - Always load images off the net."
-msgstr "Pobieranie obrazów dla wiadomości HTML poprzez protokół HTTP(S). Możliwe wartości to: 0 - bez pobierania obrazów z sieci, 1 - pobieranie obrazów jeżeli nadawca jest w książce adresowej, 2 - pobieranie wszystkich obrazów."
+msgstr "Pobieranie obrazów dla wiadomości HTML poprzez protokół HTTP(S). Możliwe wartości to: 0 - bez pobierania obrazów z sieci; 1 - pobieranie obrazów, jeżeli nadawca jest w książce adresowej; 2 - pobieranie wszystkich obrazów."
 
 #: ../mail/evolution-mail.schemas.in.h:84
 msgid "Log filter actions"
@@ -13791,19 +13792,19 @@ msgstr "Styl wyświetlania wiadomości (\"normal\" - zwykły , \"full headers\" 
 
 #: ../mail/evolution-mail.schemas.in.h:95
 msgid "Minimum days between emptying the junk on exit"
-msgstr "Minimalna liczba dni pomiędzy usuwanie niechcianych wiadomości przy wyjściu"
+msgstr "Minimalna liczba dni pomiędzy usuwaniem niechcianych wiadomości przy zakończeniu"
 
 #: ../mail/evolution-mail.schemas.in.h:96
 msgid "Minimum days between emptying the trash on exit"
-msgstr "Minimalna liczba dni pomiędzy opróżnieniami kosza przy wyjściu"
+msgstr "Minimalna liczba dni pomiędzy opróżnieniami kosza przy zakończeniu"
 
 #: ../mail/evolution-mail.schemas.in.h:97
 msgid "Minimum time between emptying the junk on exit, in days."
-msgstr "Minimalny okres czasu w dniach, pomiędzy usuwaniem niechcianych wiadomości przy wyjściu."
+msgstr "Minimalny okres czasu w dniach pomiędzy usuwaniem niechcianych wiadomości przy zakończeniu."
 
 #: ../mail/evolution-mail.schemas.in.h:98
 msgid "Minimum time between emptying the trash on exit, in days."
-msgstr "Minimalny okres czasu w dniach, pomiędzy opróżnieniami kosza przy wyjściu."
+msgstr "Minimalny okres czasu w dniach pomiędzy opróżnieniami kosza przy zakończeniu."
 
 #: ../mail/evolution-mail.schemas.in.h:99
 msgid "Number of addresses to display in TO/CC/BCC"
@@ -13815,7 +13816,7 @@ msgstr "Potwierdzenie przy pustym temacie"
 
 #: ../mail/evolution-mail.schemas.in.h:101
 msgid "Prompt the user when he or she tries to expunge a folder."
-msgstr "Potwierdzenie przy opróźnianiu katalogu."
+msgstr "Potwierdzenie przy opróżnianiu katalogu."
 
 #: ../mail/evolution-mail.schemas.in.h:102
 msgid "Prompt the user when he or she tries to send a message without a Subject."
@@ -13823,7 +13824,7 @@ msgstr "Potwierdzenie podczas próby wysłania wiadomości bez tematu."
 
 #: ../mail/evolution-mail.schemas.in.h:103
 msgid "Prompt to check if the user wants to go offline immediately"
-msgstr "Wyświetla pytanie czy użytkownik chce przejść natychmiast w tryb offline"
+msgstr "Wyświetla pytanie, czy użytkownik chce przejść natychmiast w tryb offline"
 
 #: ../mail/evolution-mail.schemas.in.h:104
 msgid "Prompt when deleting messages in search folder"
@@ -13942,8 +13943,9 @@ msgid "Subscribe dialog default width"
 msgstr "Domyślna szerokość okna subskrypcji"
 
 #: ../mail/evolution-mail.schemas.in.h:135
+#, fuzzy
 msgid "Terminal font"
-msgstr "Czcionka terminalowa"
+msgstr "Czcionka o stałej szerokości"
 
 #: ../mail/evolution-mail.schemas.in.h:136
 msgid "Text message part limit"
@@ -13953,17 +13955,21 @@ msgstr "Ograniczenie części tekstowej wiadomości"
 msgid "The default plugin for Junk hook"
 msgstr "Domyślna wtyczka dla funkcji Junk hook."
 
+# WK: Co to jest ta epoka?
 #: ../mail/evolution-mail.schemas.in.h:138
+#, fuzzy
 msgid "The last time empty junk was run, in days since the epoch."
 msgstr "Czas ostatniego usunięcia niechcianych wiadomości, w dniach od epoki."
 
 #: ../mail/evolution-mail.schemas.in.h:139
+#, fuzzy
 msgid "The last time empty trash was run, in days since the epoch."
 msgstr "Czas ostatniego opróżniania kosza, w dniach od początku epoki."
 
 #: ../mail/evolution-mail.schemas.in.h:140
+#, fuzzy
 msgid "The terminal font for mail display."
-msgstr "Czcionka terminalowa do wyświetlania wiadomości."
+msgstr "Czcionka o stałej szerokości do wyświetlania wiadomości."
 
 #: ../mail/evolution-mail.schemas.in.h:141
 msgid "The variable width font for mail display."
@@ -13979,7 +13985,7 @@ msgstr "Określa maksymalny rozmiar części tekstu, który może być formatowa
 
 #: ../mail/evolution-mail.schemas.in.h:144
 msgid "This is the default junk plugin, even though there are multiple plugins enabled. If the default listed plugin is disabled, then it won't fall back to the other available plugins."
-msgstr "To jest domyślna wtyczka niechcianych, aktywna nawet gdy włączonych jest więcej wtyczek. Jeśli domyślna wtyczka jest wyłączona, to inne wtyczki nie zostaną aktywowane/"
+msgstr "To jest domyślna wtyczka wiadomości niechcianych, aktywna nawet gdy włączonych jest więcej wtyczek. Jeśli domyślna wtyczka jest wyłączona, inne wtyczki nie zostaną aktywowane."
 
 #: ../mail/evolution-mail.schemas.in.h:145
 msgid "This key is read only once and reset to \"false\" after read. This unselects the mail in the list and removes the preview for that folder."
@@ -13987,27 +13993,27 @@ msgstr "Ten klucz odczytywany jest tylko raz a następnie ustawiany jest jako \"
 
 #: ../mail/evolution-mail.schemas.in.h:146
 msgid "This key should contain a list of XML structures specifying custom headers, and whether they are to be displayed. The format of the XML structure is &lt;header enabled&gt; - set enabled if the header is to be displayed in the mail view."
-msgstr "Klucz ten powinien zawierać listę struktur XML określających nagłówki własne (użytkownika) oraz kiedy powinny być wyświetlane. Format struktury XML jest następujący: &lt;header enabled&gt; - ustawione enabled (włączony) kiedy nagłówek ma być wyświetlany w widoku wiadomości."
+msgstr "Klucz ten powinien zawierać listę struktur XML określających nagłówki własne (użytkownika) oraz kiedy powinny być wyświetlane. Format struktury XML jest następujący: &lt;header enabled&gt; - ustawione enabled (włączony), jeśli nagłówek ma być wyświetlany w widoku wiadomości."
 
 #: ../mail/evolution-mail.schemas.in.h:147
 msgid "This option is related to the key lookup_addressbook and is used to determine whether to look up addresses in local address book only to exclude mail sent by known contacts from junk filtering."
-msgstr "Opcja ta jest powiązana z kluczem lookup_addressbook i jest używana do określania czy szukać adresów w lokalnej książce adresowej tylko w celu wyłączenia sprawdzania niechcianej poczty we wiadomościach od osób z kontaktów."
+msgstr "Opcja ta jest powiązana z kluczem lookup_addressbook i jest używana do określania, czy szukać adresów w lokalnej książce adresowej tylko w celu wyłączenia sprawdzania niechcianej poczty we wiadomościach od osób z kontaktów."
 
 #: ../mail/evolution-mail.schemas.in.h:148
 msgid "This option would help in improving the speed of fetching."
-msgstr "Ta opcja może zwiększyć prędkość pobierania/."
+msgstr "Ta opcja może zwiększyć prędkość pobierania."
 
 #: ../mail/evolution-mail.schemas.in.h:149
 msgid "This sets the number of addresses to show in default message list view, beyond which a '...' is shown."
-msgstr "Określa liczbę adresów wyświetlanych w domyślnym widoku wiadomości. Dla nadmiarowych wyświetlone będą '...'."
+msgstr "Określa liczbę adresów wyświetlanych w domyślnym widoku wiadomości. Dla nadmiarowych wyświetlone będą \"...\"."
 
 #: ../mail/evolution-mail.schemas.in.h:150
 msgid "This setting specifies whether the threads should be in expanded or collapsed state by default. Evolution requires a restart."
-msgstr "Ta opcja określa czy wątki mają być domyślnie rozwinięte lub zwinięte. Po zmianie wymagane jest ponowne uruchomienie Evolution."
+msgstr "Ta opcja określa, czy wątki mają być domyślnie rozwinięte lub zwinięte. Po zmianie wymagane jest ponowne uruchomienie programu Evolution."
 
 #: ../mail/evolution-mail.schemas.in.h:151
 msgid "This setting specifies whether the threads should be sorted based on latest message in each thread, rather than by message's date. Evolution requires a restart."
-msgstr "Ta opcja określa czy wątki mają być sortowane na podstawie ostatniej wiadomości czy na podstawie daty. Po zmianie wymagane jest ponowne uruchomienie Evolution."
+msgstr "Ta opcja określa, czy wątki mają być sortowane na podstawie ostatniej wiadomości, czy na podstawie daty. Po zmianie wymagane jest ponowne uruchomienie programu Evolution."
 
 #: ../mail/evolution-mail.schemas.in.h:152
 msgid "Thread the message list."
@@ -14023,11 +14029,11 @@ msgstr "Grupowanie wiadomości w wątki według tematu"
 
 #: ../mail/evolution-mail.schemas.in.h:155
 msgid "Timeout for marking message as seen"
-msgstr "Czas po jakim wiadomość będzie uznana za otwartą"
+msgstr "Czas, po jakim wiadomość będzie uznana za otwartą"
 
 #: ../mail/evolution-mail.schemas.in.h:156
 msgid "Timeout for marking message as seen."
-msgstr "Czas po jakim wiadomość będzie uznana za otwartą."
+msgstr "Czas, po jakim wiadomość będzie uznana za otwartą."
 
 #: ../mail/evolution-mail.schemas.in.h:157
 msgid "UID string of the default account."
@@ -14063,7 +14069,7 @@ msgstr "Użycie tylko lokalnych testów spamu (bez DNS)."
 
 #: ../mail/evolution-mail.schemas.in.h:165
 msgid "Use side-by-side or wide layout"
-msgstr "Użyj układu pionowego lub szerokiego"
+msgstr "Użycie układu pionowego lub szerokiego"
 
 #: ../mail/evolution-mail.schemas.in.h:166
 msgid "Variable width font"
@@ -14123,7 +14129,7 @@ msgstr "Określa, czy powrócić do wątkowania według tematu, jeżeli wiadomo�
 
 #: ../mail/evolution-mail.schemas.in.h:180
 msgid "Whether sort threads based on latest message in that thread"
-msgstr "Określa czy sortować wątki na podstawie ostatniej wiadomości danym wątku."
+msgstr "Określa, czy sortować wątki na podstawie ostatniej wiadomości danym wątku."
 
 #: ../mail/evolution-mail.schemas.in.h:181
 msgid "Width of the message-list pane"
@@ -14153,7 +14159,7 @@ msgstr "Katalog docelowy:"
 #: ../mail/importers/evolution-mbox-importer.c:82
 #: ../plugins/pst-import/pst-importer.c:305
 msgid "Select folder to import into"
-msgstr "Katalog do którego odbędzie się import"
+msgstr "Katalog, do którego odbędzie się import"
 
 #: ../mail/importers/evolution-mbox-importer.c:219
 msgid "Berkeley Mailbox (mbox)"
@@ -14165,7 +14171,7 @@ msgstr "Import formatu Berkeley Mailbox"
 
 #: ../mail/importers/mail-importer.c:147
 msgid "Importing mailbox"
-msgstr "Importowanie szkrzynki pocztowej"
+msgstr "Importowanie skrzynki pocztowej"
 
 #. Destination folder, was set in our widget
 #: ../mail/importers/mail-importer.c:231
@@ -14318,11 +14324,11 @@ msgstr " _Sprawdź obsługiwane typy "
 
 #: ../mail/mail-config.glade.h:2
 msgid "(Note: Requires restart of the application)"
-msgstr "(Uwaga: wymaga ponownego uruchomienia aplikacji)"
+msgstr "(Uwaga: wymaga ponownego uruchomienia programu)"
 
 #: ../mail/mail-config.glade.h:4
 msgid "<b>SSL is not supported in this build of Evolution</b>"
-msgstr "<b>Ta kopia Evolution nie obsługuje SSL</b>"
+msgstr "<b>Ta kompilacja programu Evolution nie obsługuje SSL</b>"
 
 #: ../mail/mail-config.glade.h:5
 msgid "<b>Sender Photograph</b>"
@@ -14334,7 +14340,7 @@ msgstr "<b>_Podpisy</b>"
 
 #: ../mail/mail-config.glade.h:7
 msgid "<b>Top Posting Option</b> (Not Recommended)"
-msgstr "<b>Odpowiedź nad tekstem</b> (nie zalecana)"
+msgstr "<b>Odpowiedź nad tekstem</b> (niezalecana)"
 
 #: ../mail/mail-config.glade.h:8
 msgid "<b>_Languages</b>"
@@ -14374,7 +14380,7 @@ msgstr "<span weight=\"bold\">Etykiety</span>"
 
 #: ../mail/mail-config.glade.h:19
 msgid "<span weight=\"bold\">Loading Images</span>"
-msgstr "<span weight=\"bold\">Pobieranie obrazów z sieci</span>"
+msgstr "<span weight=\"bold\">Pobieranie obrazów</span>"
 
 #: ../mail/mail-config.glade.h:20
 msgid "<span weight=\"bold\">Message Display</span>"
@@ -14407,7 +14413,7 @@ msgstr "<span weight=\"bold\">Czcionki drukowane</span>"
 
 #: ../mail/mail-config.glade.h:27
 msgid "<span weight=\"bold\">Proxy Settings</span>"
-msgstr "<span weight=\"bold\">Ustawienia pośrednika</span>"
+msgstr "<span weight=\"bold\">Ustawienia pośrednika sieciowego</span>"
 
 #: ../mail/mail-config.glade.h:28
 msgid "<span weight=\"bold\">Required Information</span>"
@@ -14463,7 +14469,7 @@ msgstr "Wysyłanie ukrytych kopii wiadomości (_bcc) do:"
 
 #: ../mail/mail-config.glade.h:42
 msgid "Always _trust keys in my keyring when encrypting"
-msgstr "Kluc_ze z własnej bazie zawsze zaufane podczas szyfrowania"
+msgstr "Kluc_ze z własnej bazy zawsze zaufane podczas szyfrowania"
 
 #: ../mail/mail-config.glade.h:43
 msgid "Always encrypt to _myself when sending encrypted messages"
@@ -14552,7 +14558,7 @@ msgstr "Domyślne kodowanie z_naków:"
 
 #: ../mail/mail-config.glade.h:68
 msgid "Delete junk messages on e_xit"
-msgstr "_Usuwanie niechcianych wiadomości przy wyjściu"
+msgstr "_Usuwanie niechcianych wiadomości przy zakończeniu"
 
 #: ../mail/mail-config.glade.h:70
 msgid "Digitally sign o_utgoing messages (by default)"
@@ -14560,7 +14566,7 @@ msgstr "Podpisyw_anie cyfrowe wychodzących wiadomości (domyślnie)"
 
 #: ../mail/mail-config.glade.h:71
 msgid "Do not format messages when text si_ze exceeds"
-msgstr "Bez _formatowania treści tekstowej jeśli rozmiar przekracza"
+msgstr "Bez _formatowania treści tekstowej, jeśli rozmiar przekracza"
 
 #: ../mail/mail-config.glade.h:72
 msgid "Do not mar_k messages as junk if sender is in my address book"
@@ -14592,7 +14598,7 @@ msgstr "_Opróżnianie katalogów kosza przy zakończeniu"
 
 #: ../mail/mail-config.glade.h:79
 msgid "Enable Magic S_pacebar"
-msgstr "Obsługa magicznej _spacji"
+msgstr "Obsługa \"magicznej _spacji\""
 
 #: ../mail/mail-config.glade.h:80
 msgid "Enable Sea_rch Folders"
@@ -14692,8 +14698,9 @@ msgid "Note: you will not be prompted for a password until you connect for the f
 msgstr "Uwaga: zapytanie o hasło pojawi się dopiero przy pierwszej próbie połączenia"
 
 #: ../mail/mail-config.glade.h:110
+#, fuzzy
 msgid "Option is ignored if a match for custom junk headers is found."
-msgstr "Opcja jest ignorowana jeśli dopasowany własny nagłówek niechcianej poczty."
+msgstr "Opcja jest ignorowana, jeśli znaleziony jest pasujący własny nagłówek niechcianej poczty."
 
 #: ../mail/mail-config.glade.h:111
 msgid "Or_ganization:"
@@ -14717,7 +14724,7 @@ msgstr ""
 
 #: ../mail/mail-config.glade.h:117
 msgid "Please enter information about the way you will send mail. If you are not sure, ask your system administrator or Internet Service Provider."
-msgstr "Proszę podać informacje o metodzie wysyłania wiadomości. W razie wątpliwości najlepiej skontaktować się z  administratorem lub dostawcą internetu (ISP)."
+msgstr "Proszę podać informacje o metodzie wysyłania wiadomości. W razie wątpliwości najlepiej skontaktować się z administratorem lub dostawcą internetu (ISP)."
 
 #: ../mail/mail-config.glade.h:118
 msgid "Please enter your name and email address below. The \"optional\" fields below do not need to be filled in, unless you wish to include this information in email you send."
@@ -14757,7 +14764,7 @@ msgstr "Host S_OCKS:"
 
 #: ../mail/mail-config.glade.h:128
 msgid "S_earch for sender photograph only in local address books"
-msgstr "S_zukanie zdjęcia wiadomości tylko w lokalnych książkach adresowych"
+msgstr "S_zukanie zdjęcia nadawcy tylko w lokalnych książkach adresowych"
 
 #: ../mail/mail-config.glade.h:129
 msgid "S_elect..."
@@ -14769,7 +14776,7 @@ msgstr "_Wysyłanie potwierdzeń:"
 
 #: ../mail/mail-config.glade.h:131
 msgid "S_tandard Font:"
-msgstr "_Zwykła czcionka:"
+msgstr "Czcionka s_tandardowa:"
 
 #: ../mail/mail-config.glade.h:133
 msgid "Select Drafts Folder"
@@ -14777,19 +14784,19 @@ msgstr "Wybór katalogu szkiców"
 
 #: ../mail/mail-config.glade.h:134
 msgid "Select HTML fixed width font"
-msgstr "Wybór czcionki o stałej szerokości używanej w HTML-u"
+msgstr "Wybór czcionki o stałej szerokości używanej w wiadomościach HTML"
 
 #: ../mail/mail-config.glade.h:135
 msgid "Select HTML fixed width font for printing"
-msgstr "Wybór czcionki o stałej szerokości używanej na wydruku"
+msgstr "Wybór czcionki o stałej szerokości używanej do wydruku"
 
 #: ../mail/mail-config.glade.h:136
 msgid "Select HTML variable width font"
-msgstr "Wybór czcionki o zmiennej szerokości używanej w HTML-u"
+msgstr "Wybór czcionki o zmiennej szerokości używanej w wiadomościach HTML"
 
 #: ../mail/mail-config.glade.h:137
 msgid "Select HTML variable width font for printing"
-msgstr "Wybór czcionki o zmiennej szerokości używanej na wydruku"
+msgstr "Wybór czcionki o zmiennej szerokości używanej do wydruku"
 
 #: ../mail/mail-config.glade.h:138
 msgid "Select Sent Folder"
@@ -14879,7 +14886,7 @@ msgstr "Nazwa _użytkownika:"
 
 #: ../mail/mail-config.glade.h:160
 msgid "V_ariable-width:"
-msgstr "_Zmienna szerokość:"
+msgstr "Czcionka o _zmiennej szerokości:"
 
 #: ../mail/mail-config.glade.h:161
 msgid ""
@@ -14901,11 +14908,11 @@ msgstr "Z_awsze"
 
 #: ../mail/mail-config.glade.h:166
 msgid "_Automatic proxy configuration URL:"
-msgstr "_Adres URL automatycznej konfiguracji pośrednika:"
+msgstr "_Adres URL automatycznej konfiguracji pośrednika sieciowego:"
 
 #: ../mail/mail-config.glade.h:167
 msgid "_Default junk plugin:"
-msgstr "_Domyślna wtyczka niechcianych:"
+msgstr "_Domyślna wtyczka wiadomości niechcianych:"
 
 #: ../mail/mail-config.glade.h:168
 msgid "_Direct connection to the Internet"
@@ -14932,12 +14939,13 @@ msgid "_Lookup in local address book only"
 msgstr "_Szukanie tylko w lokalnej książce adresowej"
 
 #: ../mail/mail-config.glade.h:175
+#, fuzzy
 msgid "_Make this my default account"
-msgstr "_Konto domyślne"
+msgstr "Ustaw jako _konto domyślne"
 
 #: ../mail/mail-config.glade.h:176
 msgid "_Manual proxy configuration:"
-msgstr "_Ręczna konfiguracja pośrednika:"
+msgstr "_Ręczna konfiguracja pośrednika sieciowego:"
 
 #: ../mail/mail-config.glade.h:177
 msgid "_Mark messages as read after"
@@ -14978,7 +14986,7 @@ msgstr "Wybi_erz..."
 #. If enabled, show animation; if disabled, only display a static image without any animation
 #: ../mail/mail-config.glade.h:189
 msgid "_Show image animations"
-msgstr "_Wyświetlanie animacji"
+msgstr "_Wyświetlanie obrazów animowanych"
 
 #: ../mail/mail-config.glade.h:190
 msgid "_Show the photograph of sender in the message preview"
@@ -14998,7 +15006,7 @@ msgstr "_Domyślne ustawienia systemu"
 
 #: ../mail/mail-config.glade.h:194
 msgid "_Use the same fonts as other applications"
-msgstr "_Używanie tych samych czcionek co inne aplikacje"
+msgstr "_Używanie tych samych czcionek, co inne programy"
 
 # wd: składany tekst w opcjach (zwężenie)
 #: ../mail/mail-config.glade.h:195
@@ -15044,7 +15052,7 @@ msgstr "Wszystkie lokalne katalogi"
 
 #: ../mail/mail-dialogs.glade.h:8
 msgid "Case _sensitive"
-msgstr "Z _rozróżnianiem małych i wielkich liter"
+msgstr "Z _rozróżnianiem wielkości liter"
 
 #: ../mail/mail-dialogs.glade.h:9
 msgid "Co_mpleted"
@@ -15109,7 +15117,7 @@ msgstr "_Znacznik:"
 
 #: ../mail/mail-dialogs.glade.h:24
 msgid "_Tick this to accept the license agreement"
-msgstr "Należy zaznaczyć aby zaakceptować umowę _licencyjną"
+msgstr "Należy zaznaczyć, aby zaakceptować umowę _licencyjną"
 
 #: ../mail/mail-folder-cache.c:834
 #, c-format
@@ -15139,12 +15147,12 @@ msgid ""
 "Appending to local `Sent' folder instead."
 msgstr ""
 "Nie powiodło się dodanie do %s: %s\n"
-"Zamiast tego będzie dodane do katalogu \"Wysłane\"."
+"Zamiast tego nastąpi dodanie do katalogu \"Wysłane\"."
 
 #: ../mail/mail-ops.c:619
 #, c-format
 msgid "Failed to append to local `Sent' folder: %s"
-msgstr "Dodanie do lokalanego katalogu \"Wysłane\" nie powiodło się: %s"
+msgstr "Dodanie do lokalnego katalogu \"Wysłane\" nie powiodło się: %s"
 
 #: ../mail/mail-ops.c:725
 msgid "Sending message"
@@ -15153,7 +15161,7 @@ msgstr "Wysyłanie wiadomości"
 #: ../mail/mail-ops.c:735
 #, c-format
 msgid "Sending message %d of %d"
-msgstr "Wysyłanie %d. z %d wiadomości"
+msgstr "Wysyłanie %d z %d wiadomości"
 
 #: ../mail/mail-ops.c:762
 #, c-format
@@ -15186,7 +15194,7 @@ msgstr "Kopiowanie wiadomości do %s"
 
 #: ../mail/mail-ops.c:1167
 msgid "Forwarded messages"
-msgstr "Przesłane wiadomości"
+msgstr "Przekazane wiadomości"
 
 #: ../mail/mail-ops.c:1208
 #, c-format
@@ -15239,7 +15247,7 @@ msgstr "Opróżnianie kosza w \"%s\""
 
 #: ../mail/mail-ops.c:1737
 msgid "Local Folders"
-msgstr "Lokalne katalogi"
+msgstr "Katalogi lokalne"
 
 #: ../mail/mail-ops.c:1818
 #, c-format
@@ -15315,7 +15323,7 @@ msgstr "Anulowanie..."
 
 #: ../mail/mail-send-recv.c:383
 msgid "Send & Receive Mail"
-msgstr "Wysyłanie i odbiór wiadomości"
+msgstr "Wysyłanie i odbieranie wiadomości"
 
 #: ../mail/mail-send-recv.c:394
 msgid "Cancel _All"
@@ -15380,21 +15388,21 @@ msgstr "Nie można utworzyć katalogu bufora \"%s\": %s"
 #: ../mail/mail-tools.c:150
 #, c-format
 msgid "Trying to movemail a non-mbox source `%s'"
-msgstr "Próba przeniesienia źródła które nie jest skrzynką pocztową \"%s\""
+msgstr "Próba przeniesienia źródła, które nie jest skrzynką pocztową \"%s\""
 
 #: ../mail/mail-tools.c:256
 #, c-format
 msgid "Forwarded message - %s"
-msgstr "Przesłana wiadomość - %s"
+msgstr "Przekazana wiadomość - %s"
 
 #: ../mail/mail-tools.c:258
 msgid "Forwarded message"
-msgstr "Przesłana wiadomość"
+msgstr "Przekazana wiadomość"
 
 #: ../mail/mail-tools.c:298
 #, c-format
 msgid "Invalid folder: `%s'"
-msgstr "Niepoprawny katalog: \"%s\""
+msgstr "Nieprawidłowy katalog: \"%s\""
 
 #: ../mail/mail-vfolder.c:89
 #, c-format
@@ -15404,12 +15412,12 @@ msgstr "Ustawianie katalogu wyszukiwania: %s"
 #: ../mail/mail-vfolder.c:240
 #, c-format
 msgid "Updating Search Folders for '%s:%s'"
-msgstr "Aktualizowanie katalogów wyszukiwania dla '%s:%s'"
+msgstr "Aktualizowanie katalogów wyszukiwania dla \"%s:%s\""
 
 #: ../mail/mail-vfolder.c:247
 #, c-format
 msgid "Updating Search Folders for '%s'"
-msgstr "Aktualizowanie katalogów wyszukiwania dla '%s'"
+msgstr "Aktualizowanie katalogów wyszukiwania dla \"%s\""
 
 #: ../mail/mail-vfolder.c:1086
 msgid "Edit Search Folder"
@@ -15444,23 +15452,25 @@ msgstr "Zażądano potwierdzenia przeczytania dla \"{1}\". Czy wysłać potwierd
 
 #: ../mail/mail.error.xml.h:7
 msgid "A signature already exists with the name \"{0}\". Please specify a different name."
-msgstr "Isnieje już sygnatura o nazwie \"{0}\". Proszę podać inną nazwę."
+msgstr "Istnieje już sygnatura o nazwie \"{0}\". Proszę podać inną nazwę."
 
 #: ../mail/mail.error.xml.h:8
 msgid "Adding a meaningful Subject line to your messages will give your recipients an idea of what your mail is about."
-msgstr "Podanie tytułu opisującego wiadomość, pozwoli odbiorcom wyobraźić sobie jej zawartość."
+msgstr "Podanie tytułu opisującego wiadomość pozwoli odbiorcom wyobrazić sobie jej zawartość."
 
 #: ../mail/mail.error.xml.h:9
+#, fuzzy
 msgid "Are you sure you want to delete this account and all its proxies?"
-msgstr "Czy na pewno usunąć to konto i wszystkie jego proxy?"
+msgstr "Czy na pewno usunąć to konto i wszystkich jego pośredników sieciowych?"
 
 #: ../mail/mail.error.xml.h:10
 msgid "Are you sure you want to delete this account?"
 msgstr "Czy na pewno usunąć to konto?"
 
 #: ../mail/mail.error.xml.h:11
+#, fuzzy
 msgid "Are you sure you want to disable this account and delete all its proxies?"
-msgstr "Czy na pewno wyłączyć to konto i usunąć wszystkie jego proxy?"
+msgstr "Czy na pewno wyłączyć to konto i usunąć wszystkich jego pośredników sieciowych?"
 
 #: ../mail/mail.error.xml.h:12
 msgid "Are you sure you want to open {0} messages at once?"
@@ -15528,7 +15538,7 @@ msgstr "Nie można usunąć katalogu systemowego \"{0}\"."
 
 #: ../mail/mail.error.xml.h:29
 msgid "Cannot edit Search Folder \"{0}\" as it does not exist."
-msgstr "Nie można zmodyfikować ktalogu wyszukiwania \"{0}\" ponieważ on nie istnieje."
+msgstr "Nie można zmodyfikować katalogu wyszukiwania \"{0}\", ponieważ on nie istnieje."
 
 #: ../mail/mail.error.xml.h:30
 msgid "Cannot move folder \"{0}\" to \"{1}\"."
@@ -15580,7 +15590,7 @@ msgstr "Nieudane sprawdzenie wiadomości niechcianych"
 
 #: ../mail/mail.error.xml.h:42
 msgid "Check to make sure your password is spelled correctly. Remember that many passwords are case sensitive; your caps lock might be on."
-msgstr "Proszę sprawdzić czy hasło zostało wpisane prawidłowo. Wiele haseł jest wrażliwych na wielkość liter; może być włączony klawisz caps lock."
+msgstr "Proszę sprawdzić, czy hasło zostało wpisane prawidłowo. W wielu hasłach rozróżniana jest wielkość liter; być może jest włączony klawisz CapsLock."
 
 #: ../mail/mail.error.xml.h:43
 msgid "Could not save signature file."
@@ -15620,7 +15630,7 @@ msgstr "Nie wyłączaj"
 
 #: ../mail/mail.error.xml.h:52
 msgid "Do you want to locally synchronize the folders that are marked for offline usage?"
-msgstr "Czy zsynchronizowac lokalnie katalogi zaznaczone do użycia w trybie offline?"
+msgstr "Czy zsynchronizować lokalnie katalogi zaznaczone do użycia w trybie offline?"
 
 #: ../mail/mail.error.xml.h:53
 msgid "Do you want to mark all messages as read?"
@@ -15652,35 +15662,38 @@ msgstr "Plik istnieje, ale nie można go nadpisać."
 
 #: ../mail/mail.error.xml.h:60
 msgid "File exists but is not a regular file."
-msgstr "Plik istnieje ale nie jest zwykłym plikiem."
+msgstr "Plik istnieje, ale nie jest zwykłym plikiem."
 
 #: ../mail/mail.error.xml.h:61
 msgid "If you continue, you will not be able to recover these messages."
-msgstr "W przypadku kontynuacji, nie będzie możliwości odtworzenia tej wiadomości."
+msgstr "W przypadku kontynuacji nie będzie możliwości odtworzenia tej wiadomości."
 
 #: ../mail/mail.error.xml.h:62
 msgid "If you delete the folder, all of its contents and its subfolders contents will be deleted permanently."
-msgstr "Jeżeli katalog zostanie usunięty, cała jego zawartość łącznie z podkatalogami zostanie trwale skasowana."
+msgstr "Jeżeli katalog zostanie usunięty, cała jego zawartość łącznie z podkatalogami zostanie trwale usunięta."
 
 #: ../mail/mail.error.xml.h:63
+#, fuzzy
 msgid "If you proceed, all proxy accounts will be deleted permanently."
-msgstr "W przypadku kontynuacji, wszystkie dane konta proxy będą usunięte."
+msgstr "W przypadku kontynuacji wszystkie dane konta proxy będą usunięte."
 
+# WK: coś namieszane jest z tymi proxy...
 #: ../mail/mail.error.xml.h:64
+#, fuzzy
 msgid ""
 "If you proceed, the account information and\n"
 "all proxy information will be deleted permanently."
 msgstr ""
-"W przypadku kontynuacji, informacje \n"
+"W przypadku kontynuacji informacje \n"
 "o koncie i proxy będą trwale usunięte."
 
 #: ../mail/mail.error.xml.h:66
 msgid "If you proceed, the account information will be deleted permanently."
-msgstr "W przypadku kontynuacji, informacje o koncie będą trwale usunięte."
+msgstr "W przypadku kontynuacji informacje o koncie będą trwale usunięte."
 
 #: ../mail/mail.error.xml.h:67
 msgid "If you quit, these messages will not be sent until Evolution is started again."
-msgstr "W przypadku zakończenia, te wiadomości nie będą wysłane do czasu następnego uruchomienia programu Evolution."
+msgstr "W przypadku zakończenia te wiadomości nie będą wysłane do czasu następnego uruchomienia programu Evolution."
 
 #: ../mail/mail.error.xml.h:68
 msgid "Ignore"
@@ -15697,7 +15710,7 @@ msgstr "Filtry pocztowe zostały automatycznie zaktualizowane."
 
 #: ../mail/mail.error.xml.h:72
 msgid "Many email systems add an Apparently-To header to messages that only have BCC recipients. This header, if added, will list all of your recipients to your message anyway. To avoid this, you should add at least one To: or CC: recipient."
-msgstr "Wiele systemów pocztowych dodaje nagłówek Apparently-To (Najwyraźniej-Do) do listów które posiadają tylko odbiorców BCC (ukryta kopia). Nagłówek może zawierać wszystkich odbiorców. Aby temu zapobiec, należy dodać przynajmniej jednego odbiorcę do pola Do: lub Kopia: (CC)."
+msgstr "Wiele systemów pocztowych dodaje nagłówek Apparently-To (Najwyraźniej-Do) do listów, które posiadają tylko ukrytych odbiorców (BCC). Nagłówek może zawierać wszystkich odbiorców. Aby temu zapobiec, należy dodać przynajmniej jednego odbiorcę do pola Do: lub Kopia: (CC)."
 
 #: ../mail/mail.error.xml.h:73
 msgid "Mark all messages as read"
@@ -15725,7 +15738,7 @@ msgstr "Proszę włączyć konto lub spróbować wysłać za pomocą innego kont
 
 #: ../mail/mail.error.xml.h:80
 msgid "Please enter a valid email address in the To: field. You can search for email addresses by clicking on the To: button next to the entry box."
-msgstr "Proszę podać poprawny adres e-mail w polu Do. Można wyszukać adresy e-mail klikając na przycisku Do: obok pola tekstowego."
+msgstr "Proszę podać prawidłowy adres e-mail w polu Do. Można wyszukać adresy e-mail, klikając na przycisku Do: obok pola tekstowego."
 
 #: ../mail/mail.error.xml.h:81
 msgid ""
@@ -15738,11 +15751,11 @@ msgstr ""
 
 #: ../mail/mail.error.xml.h:83
 msgid "Please provide an unique name to identify this signature."
-msgstr "Proszę podać nazwę tego podpisu."
+msgstr "Proszę podać unikatową nazwę tego podpisu."
 
 #: ../mail/mail.error.xml.h:84
 msgid "Please wait."
-msgstr "Poczekaj chwilę."
+msgstr "Proszę poczekać."
 
 #: ../mail/mail.error.xml.h:85
 msgid "Problem migrating old mail folder \"{0}\"."
@@ -15805,7 +15818,7 @@ msgid ""
 msgstr ""
 "Wysyłana lista kontaktów ma skonfigurowane ukrywanie listy odbiorców.\n"
 "\n"
-"Wiele systemów pocztowych dodaje nagłówek Apparently-To (Najwyraźniej-Do) do listów które posiadają tylko odbiorców BCC (ukryta kopia). Nagłówek może zawierać wszystkich odbiorców. Aby temu zapobiec, należy dodać przynajmniej jednego odbiorcę do pola Do: lub Kopia: (CC)."
+"Wiele systemów pocztowych dodaje nagłówek Apparently-To (Najwyraźniej-Do) do listów które posiadają tylko odbiorców ukrytych (BCC). Nagłówek może zawierać wszystkich odbiorców. Aby temu zapobiec, należy dodać przynajmniej jednego odbiorcę do pola Do: lub Kopia: (CC)."
 
 #: ../mail/mail.error.xml.h:101
 msgid ""
@@ -15817,7 +15830,7 @@ msgid ""
 msgstr ""
 "Poniższe katalogi wyszukiwania:\n"
 "{0}\n"
-"Używały usuniętego katalogu:\n"
+"używały usuniętego katalogu:\n"
 "    \"{1}\"\n"
 "i zostały zaktualizowane."
 
@@ -15831,7 +15844,7 @@ msgid ""
 msgstr ""
 "Poniższe reguły filtrów:\n"
 "{0}\n"
-"Używały usuniętego katalogu:\n"
+"używały usuniętego katalogu:\n"
 "    \"{1}\"\n"
 "i zostały zaktualizowane."
 
@@ -15847,7 +15860,7 @@ msgid ""
 msgstr ""
 "Ten katalog mógł być dodany niejawnie.\n"
 "Aby dodać go jawnie, należy skorzystać\n"
-"z edytora katalogów wyszykiwania."
+"z edytora katalogów wyszukiwania."
 
 #: ../mail/mail.error.xml.h:114
 msgid "This message cannot be sent because the account you chose to send with is not enabled"
@@ -15859,7 +15872,7 @@ msgstr "Wiadomość nie może zostać wysłana, gdyż nie wpisano żadnego odbio
 
 #: ../mail/mail.error.xml.h:116
 msgid "This server does not support this type of authentication and may not support authentication at all."
-msgstr "Ten serwer nie obsługuje tego rodzaju uwierzytelniania i może wogóle nie obsługiwać uwierzytelniania."
+msgstr "Ten serwer nie obsługuje tego rodzaju uwierzytelniania i może w ogóle nie obsługiwać uwierzytelniania."
 
 #: ../mail/mail.error.xml.h:117
 msgid "This signature has been changed, but has not been saved."
@@ -23734,7 +23747,4 @@ msgstr "Kontekst IM"
 #: ../widgets/text/e-text.c:3787
 msgid "Handle Popup"
 msgstr "Menu podręczne uchwytu"
-
-#~ msgid "Novell Groupwise"
-#~ msgstr "Novell Groupwise"
 
