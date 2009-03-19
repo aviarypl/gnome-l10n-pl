@@ -1,22 +1,24 @@
-# Copyright (C) 2002-2005 Free Software Foundation, Inc.
+# Copyright (C) 2002-2009 Free Software Foundation, Inc.
 # -=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-
-# Aktualną wersję tego pliku możesz odnaleźć w repozytorium cvs.gnomepl.org
-# (:pserver:anonymous@cvs.gnomepl.org:/gnomepl, puste hasło)
+# Aviary.pl
 # Jeśli masz jakiekolwiek uwagi odnoszące się do tłumaczenia lub chcesz
-# pomóc w jego rozwijaniu i pielęgnowaniu, napisz do nas na adres:
-# translators@gnomepl.org
+# pomóc w jego rozwijaniu i pielęgnowaniu, napisz do nas:
+# gnomepl@aviary.pl
 # -=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-
+# Review całości pliku: 17.03.2009 Piotr Leszczyński
 msgid ""
 msgstr ""
 "Project-Id-Version: metacity\n"
-"Report-Msgid-Bugs-To: http://bugzilla.gnome.org/enter_bug.cgi?product=metacity&component=general\n"
-"POT-Creation-Date: 2009-02-05 16:08+0000\n"
-"PO-Revision-Date: 2009-03-17 02:58+0100\n"
-"Last-Translator: Piotr Leszczyński <piotr@kontury.pl>\n"
-"Language-Team: Polish <translation-team-pl@lists.sourceforge.net>\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2009-03-19 10:44+0100\n"
+"PO-Revision-Date: 2009-03-19 12:20+0100\n"
+"Last-Translator: Tomasz Dominikowski <dominikowski@gmail.com>\n"
+"Language-Team: Polish <gnomepl@aviary.pl>\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
+"X-Poedit-Language: Polish\n"
+"X-Poedit-Country: Poland\n"
 
 #: ../src/50-metacity-desktop-key.xml.in.h:1
 msgid "Desktop"
@@ -103,9 +105,6 @@ msgstr "Skrótu klawiszowego z klawiszem %s i modyfikatorami %x używa już inny
 #.
 #: ../src/core/keybindings.c:2294
 #, c-format
-#| msgid ""
-#| "There was an error running \"%s\":\n"
-#| "%s."
 msgid ""
 "There was an error running <tt>%s</tt>:\n"
 "\n"
@@ -169,7 +168,6 @@ msgid "Make X calls synchronous"
 msgstr "Wezwania X synchroniczne"
 
 #: ../src/core/main.c:294
-#| msgid "Compositing Manager"
 msgid "Turn compositing on"
 msgstr "Włączenie kompozycji"
 
@@ -207,14 +205,13 @@ msgstr "Ponowne uruchomienie nie powiodło się: %s\n"
 #: ../src/core/prefs.c:660
 #, c-format
 msgid "GConf key '%s' is set to an invalid value\n"
-msgstr "Kluczowi GConfa \"%s\" jest przypisana niepoprawna wartość\n"
+msgstr "Kluczowi GConf \"%s\" jest przypisana niepoprawna wartość\n"
 
 #: ../src/core/prefs.c:586
 #: ../src/core/prefs.c:829
 #, c-format
-#| msgid "%d stored in GConf key %s is out of range 0 to %d\n"
 msgid "%d stored in GConf key %s is out of range %d to %d\n"
-msgstr "Wartość %d zapisana w kluczu GConfa %s jest poza zakresem %d - %d\n"
+msgstr "Wartość %d zapisana w kluczu GConf %s jest poza zakresem %d - %d\n"
 
 #: ../src/core/prefs.c:630
 #: ../src/core/prefs.c:707
@@ -226,17 +223,16 @@ msgstr "Wartość %d zapisana w kluczu GConfa %s jest poza zakresem %d - %d\n"
 #: ../src/core/prefs.c:1161
 #, c-format
 msgid "GConf key \"%s\" is set to an invalid type\n"
-msgstr "Klucz GConfa \"%s\" jest niewłaściwego typu\n"
+msgstr "Klucz GConf \"%s\" jest niewłaściwego typu\n"
 
-# rev: aplikacji -> programów
 #: ../src/core/prefs.c:1231
 msgid "Workarounds for broken applications disabled. Some applications may not behave properly.\n"
-msgstr "Obejścia dla niepoprawnie działających aplikacji są nieaktywne. Niektóre z nich mogą się więc zachowywać w sposób nieprzewidywalny.\n"
+msgstr "Obejścia dla niepoprawnie działających programów są nieaktywne. Niektóre z nich mogą się więc zachowywać w sposób nieprzewidywalny.\n"
 
 #: ../src/core/prefs.c:1302
 #, c-format
 msgid "Could not parse font description \"%s\" from GConf key %s\n"
-msgstr "Nie można przetworzyć opisu \"%s\", powiązanego z kluczem GConfa %s\n"
+msgstr "Nie można przetworzyć opisu \"%s\", powiązanego z kluczem GConf %s\n"
 
 #: ../src/core/prefs.c:1364
 #, c-format
@@ -265,12 +261,10 @@ msgstr "Wartość \"%s\", odnaleziona w bazie danych konfiguracji nie opisuje po
 msgid "Error setting name for workspace %d to \"%s\": %s\n"
 msgstr "Błąd przy ustawianiu nazwy obszaru roboczego %d na \"%s\": %s\n"
 
-# rev: Błąd przy ustawianiu statusu menedżera kompozycji: %s\n
 #: ../src/core/prefs.c:2753
-#, fuzzy, c-format
-#| msgid "Error setting name for workspace %d to \"%s\": %s\n"
+#, c-format
 msgid "Error setting compositor status: %s\n"
-msgstr "Błąd przy ustawianiu nazwy obszaru roboczego %d na \"%s\": %s\n"
+msgstr "Błąd przy ustawianiu stanu menedżera kompozycji: %s\n"
 
 #: ../src/core/screen.c:350
 #, c-format
@@ -302,13 +296,6 @@ msgstr "Nie można zwolnić podekranu %d ekranu \"%s\"\n"
 #. * "disabled" must also stay as it is.
 #.
 #: ../src/core/schema-bindings.c:169
-#| msgid ""
-#| "The keybinding used to close a window. The format looks like \"&lt;"
-#| "Control&gt;a\" or \"&lt;Shift&gt;&lt;Alt&gt;F1\". The parser is fairly "
-#| "liberal and allows lower or upper case, and also abbreviations such as "
-#| "\"&lt;Ctl&gt;\" and \"&lt;Ctrl&gt;\". If you set the option to the "
-#| "special string \"disabled\", then there will be no keybinding for this "
-#| "action."
 msgid ""
 "The format looks like \"<Control>a\" or <Shift><Alt>F1\".\n"
 "\n"
@@ -316,13 +303,6 @@ msgid ""
 msgstr "Przykładowy zapis ma postać \"&lt;Control&gt;a\" lub \"&lt;Shift&gt;&lt;Alt&gt;F1. Analiza składniowa jest niezbyt restrykcyjna - pozwala to na używanie małych i wielkich liter oraz skrótów, takich jak \"&lt;Ctl&gt;\" oraz \"&lt;Ctrl&gt;\". Jeśli opcji zostanie przypisany specjalny atrybut \"disabled\" (ang. nieaktywne), wówczas z akcją nie będzie powiązany żaden skrót klawiszowy."
 
 #: ../src/core/schema-bindings.c:177
-#| msgid ""
-#| "The keybinding used to close a window. The format looks like \"&lt;"
-#| "Control&gt;a\" or \"&lt;Shift&gt;&lt;Alt&gt;F1\". The parser is fairly "
-#| "liberal and allows lower or upper case, and also abbreviations such as "
-#| "\"&lt;Ctl&gt;\" and \"&lt;Ctrl&gt;\". If you set the option to the "
-#| "special string \"disabled\", then there will be no keybinding for this "
-#| "action."
 msgid ""
 "The format looks like \"<Control>a\" or <Shift><Alt>F1\".\n"
 "\n"
@@ -378,7 +358,6 @@ msgstr "Odnaleziono atrybut <metacity_session>, kiedy ID sesji został już usta
 #: ../src/core/session.c:1373
 #: ../src/core/session.c:1433
 #, c-format
-#| msgid "Unknown attribute %s on <window> element"
 msgid "Unknown attribute %s on <%s> element"
 msgstr "Nieznany atrybut %s elementu <%s>"
 
@@ -392,11 +371,10 @@ msgstr "zagnieżdżony znacznik <window>"
 msgid "Unknown element %s"
 msgstr "Nieznany element %s"
 
-# rev: aplikacji -> programu
 #: ../src/core/session.c:1879
 #, c-format
 msgid "Error launching metacity-dialog to warn about apps that don't support session management: %s\n"
-msgstr "Przy uruchamianiu metacity-dialog (z ostrzeżeniem na temat aplikacji bez obsługi sesji) wystąpił błąd: %s\n"
+msgstr "Przy uruchamianiu metacity-dialog (z ostrzeżeniem na temat programu bez obsługi sesji) wystąpił błąd: %s\n"
 
 #: ../src/core/util.c:101
 #, c-format
@@ -461,11 +439,10 @@ msgstr "Okno %s ustawia na sobie SM_CLIENT_ID, zamiast na oknie WM_CLIENT_LEADER
 msgid "Window %s sets an MWM hint indicating it isn't resizable, but sets min size %d x %d and max size %d x %d; this doesn't make much sense.\n"
 msgstr "Okno %s ustawia atrybut MWM, określający, że jego rozmiar okna jest niezmienny, lecz jednocześnie ustawia minimalny rozmiar na %d x %d, a maksymalny rozmiar na %d x %d. To nie ma żadnego sensu.\n"
 
-# rev: aplikacja ustawiła -> program ustawił
 #: ../src/core/window-props.c:260
 #, c-format
 msgid "Application set a bogus _NET_WM_PID %lu\n"
-msgstr "Aplikacja ustawiła błędną wartość _NET_WM_PID %lu\n"
+msgstr "Program ustawił błędną wartość _NET_WM_PID %lu\n"
 
 #: ../src/core/window-props.c:377
 #, c-format
@@ -477,12 +454,6 @@ msgstr "%s (na %s)"
 msgid "Invalid WM_TRANSIENT_FOR window 0x%lx specified for %s.\n"
 msgstr "Nieprawidłowa wartość WM_TRANSIENT_FOR dla okna 0x%lx określona w %s.\n"
 
-# rev: 
-# Okno 0x%lx ma właściwość %s,\n
-# której oczekiwanym typem jest %s, w formacie %d,\n
-# a w rzeczywistości ma typ %s, w formacie %d przy n_items %d.\n
-# Prawdopodobnie jest to błąd programu, a nie menedżera okien.\n
-# Właściwości okna: tytuł=\"%s\" klasa=\"%s\" nazwa=\"%s\"\n
 #: ../src/core/xprops.c:155
 #, c-format
 msgid ""
@@ -492,11 +463,11 @@ msgid ""
 "This is most likely an application bug, not a window manager bug.\n"
 "The window has title=\"%s\" class=\"%s\" name=\"%s\"\n"
 msgstr ""
-"Okno 0x%lx ma własność %s\n"
-"której oczekiwanym typem jest %s z formatem %d\n"
-"w rzeczywistości własność ma typ %s z formatem %d przy n_items %d.\n"
-"Prawdopodobnie jest to błąd aplikacji, a nie menedżera okien.\n"
-"Własności okna: tytuł=\"%s\" klasa=\"%s\" nazwa=\"%s\"\n"
+"Okno 0x%lx ma właściwość %s,\n"
+"której oczekiwanym typem jest %s, w formacie %d,\n"
+"a w rzeczywistości ma typ %s, w formacie %d przy n_items %d.\n"
+"Prawdopodobnie jest to błąd programu, a nie menedżera okien.\n"
+"Właściwości okna: tytuł=\"%s\" klasa=\"%s\" nazwa=\"%s\"\n"
 
 #: ../src/core/xprops.c:401
 #, c-format
@@ -557,89 +528,60 @@ msgid "Switch to workspace 12"
 msgstr "Przełączenie na 12. obszar roboczy"
 
 #: ../src/include/all-keybindings.h:122
-#| msgid "Switch to workspace on the left"
 msgid "Switch to workspace on the left of the current workspace"
 msgstr "Przełączenie na obszar roboczy po lewej"
 
 #: ../src/include/all-keybindings.h:126
-#| msgid "Switch to workspace on the right"
 msgid "Switch to workspace on the right of the current workspace"
 msgstr "Przełączenie na obszar roboczy po prawej"
 
 #: ../src/include/all-keybindings.h:130
-#| msgid "Switch to workspace above this one"
 msgid "Switch to workspace above the current workspace"
 msgstr "Przełączenie na obszar roboczy powyżej"
 
 #: ../src/include/all-keybindings.h:134
-#| msgid "Switch to workspace below this one"
 msgid "Switch to workspace below the current workspace"
 msgstr "Przełączenie na obszar roboczy poniżej"
 
-# rev: Przejście pomiędzy oknami programu z użyciem podręcznego okna
 #: ../src/include/all-keybindings.h:150
-#, fuzzy
-#| msgid "Move between windows of an application with popup"
 msgid "Move between windows of an application, using a popup window"
-msgstr "Przejście pomiędzy oknami aplikacji z użyciem wyskakującego okna"
+msgstr "Przejście pomiędzy oknami programu z użyciem podręcznego okna"
 
-# rev: Przejście do poprzedniego okna programu z użyciem okna podręcznego
 #: ../src/include/all-keybindings.h:153
-#, fuzzy
-#| msgid "Move backwards between windows of an application with popup"
 msgid "Move backward between windows of an application, using a popup window"
-msgstr "Przejście wstecz pomiędzy oknami aplikacji z użyciem wyskakującego okna"
+msgstr "Przejście do poprzedniego okna programu z użyciem okna podręcznego"
 
-# rev: Przechodzenie pomiędzy oknami z użyciem okna podręcznego
 #: ../src/include/all-keybindings.h:157
-#, fuzzy
-#| msgid "Move between windows with popup"
 msgid "Move between windows, using a popup window"
-msgstr "Przejście pomiędzy oknami z użyciem wyskakującego okna"
+msgstr "Przechodzenie pomiędzy oknami z użyciem okna podręcznego"
 
-# rev: Przejście do poprzedniego okna z użyciem okna podręcznego
 #: ../src/include/all-keybindings.h:160
-#, fuzzy
-#| msgid "Move focus backwards between windows using popup display"
 msgid "Move backward between windows, using a popup window"
-msgstr "Przeniesienie skupienia wstecz pomiędzy oknami z użyciem wyskakującego okna"
+msgstr "Przejście do poprzedniego okna z użyciem okna podręcznego"
 
-# rev: Przechodzenie między panelami i pulpitem z użyciem okna podręcznego
 #: ../src/include/all-keybindings.h:163
-#, fuzzy
-#| msgid "Move between panels and the desktop with popup"
 msgid "Move between panels and the desktop, using a popup window"
-msgstr "Przejście pomiędzy panelami i biurkiem z użyciem wyskakującego okna"
+msgstr "Przechodzenie między panelami i pulpitem z użyciem okna podręcznego"
 
-# rev: Przejście wstecz między panelami a biurkiem z użyciem okna podręcznego
 #: ../src/include/all-keybindings.h:166
-#, fuzzy
-#| msgid "Move backwards between panels and the desktop with popup"
 msgid "Move backward between panels and the desktop, using a popup window"
-msgstr "Przejście wstecz pomiędzy panelami i biurkiem z użyciem wyskakującego okna"
+msgstr "Przejście wstecz między panelami a biurkiem z użyciem okna podręcznego"
 
-# rev: aplikacji -> programów
 #: ../src/include/all-keybindings.h:171
 msgid "Move between windows of an application immediately"
-msgstr "Natychmiastowe przejście pomiędzy oknami aplikacji"
+msgstr "Natychmiastowe przejście pomiędzy oknami programu"
 
-# rev: Przejście do poprzedniego okna programu bezpośrednio
 #: ../src/include/all-keybindings.h:174
-#, fuzzy
-#| msgid "Move backwards between windows of an application immediately"
 msgid "Move backward between windows of an application immediately"
-msgstr "Natychmiastowe przejście wstecz pomiędzy oknami aplikacji"
+msgstr "Przejście do poprzedniego okna programu bezpośrednio"
 
 #: ../src/include/all-keybindings.h:177
 msgid "Move between windows immediately"
 msgstr "Natychmiastowe przejście pomiędzy oknami"
 
-# rev: Przejście do poprzedniego okna bezpośrednio
 #: ../src/include/all-keybindings.h:180
-#, fuzzy
-#| msgid "Move backwards between windows immediately"
 msgid "Move backward between windows immediately"
-msgstr "Natychmiastowe przejście wstecz pomiędzy oknami"
+msgstr "Przejście do poprzedniego okna bezpośrednio"
 
 #: ../src/include/all-keybindings.h:183
 msgid "Move between panels and the desktop immediately"
@@ -649,26 +591,17 @@ msgstr "Natychmiastowe przejście pomiędzy panelami i biurkiem"
 msgid "Move backward between panels and the desktop immediately"
 msgstr "Przejście wstecz pomiędzy panelami i biurkiem"
 
-# rev: Ukrycie wszystkich okien i uaktywnienie pulpitu
 #: ../src/include/all-keybindings.h:191
-#, fuzzy
-#| msgid "Hide all windows and focus desktop"
 msgid "Hide all normal windows and set focus to the desktop"
-msgstr "Ukrycie wszystkich okien i przekazanie skupienia do biurka"
+msgstr "Ukrycie wszystkich okien i uaktywnienie pulpitu"
 
-# rev: Wyświetlenie głównego menu panelu
 #: ../src/include/all-keybindings.h:194
-#, fuzzy
-#| msgid "Show the panel menu"
 msgid "Show the panel's main menu"
-msgstr "Wyświetlenie menu panelu"
+msgstr "Wyświetlenie głównego menu panelu"
 
-# rev: Wyświetlenie okna uruchamiania panelu
 #: ../src/include/all-keybindings.h:197
-#, fuzzy
-#| msgid "Show the panel run application dialog"
 msgid "Show the panel's \"Run Application\" dialog box"
-msgstr "Wyświetlanie okna uruchamiania panelu"
+msgstr "Wyświetlenie okna uruchamiania panelu"
 
 #: ../src/include/all-keybindings.h:238
 msgid "Take a screenshot"
@@ -683,7 +616,6 @@ msgid "Run a terminal"
 msgstr "Uruchomienie terminala"
 
 #: ../src/include/all-keybindings.h:257
-#| msgid "Activate window menu"
 msgid "Activate the window menu"
 msgstr "Otwarcie menu okna"
 
@@ -695,19 +627,15 @@ msgstr "Przełączenie trybu pełnoekranowego"
 msgid "Toggle maximization state"
 msgstr "Przełączenie trybu maksymalizacji"
 
-# rev: Przełączanie widoczności okna na samej górze
 #: ../src/include/all-keybindings.h:264
-#, fuzzy
-#| msgid "Lower window below other windows"
 msgid "Toggle whether a window will always be visible over other windows"
-msgstr "Odsunięcie okna pod pozostałe"
+msgstr "Przełączanie widoczności okna na samej górze"
 
 #: ../src/include/all-keybindings.h:266
 msgid "Maximize window"
 msgstr "Maksymalizacja okna"
 
 #: ../src/include/all-keybindings.h:268
-#| msgid "Resize window"
 msgid "Restore window"
 msgstr "Przywrócenie okna"
 
@@ -731,13 +659,9 @@ msgstr "Przeniesienie okna"
 msgid "Resize window"
 msgstr "Zmiana rozmiaru okna"
 
-# rev:
-# Przełączenie obecności okna na wszystkich obszarach roboczych/tylko jednym
 #: ../src/include/all-keybindings.h:281
-#, fuzzy
-#| msgid "Toggle window on all workspaces"
 msgid "Toggle whether window is on all workspaces or just one"
-msgstr "Przełączenie obecności okna na wszystkich obszarach roboczych"
+msgstr "Przełączenie obecności okna na wszystkich obszarach roboczych/tylko jednym"
 
 #: ../src/include/all-keybindings.h:285
 msgid "Move window to workspace 1"
@@ -804,7 +728,6 @@ msgid "Move window one workspace down"
 msgstr "Przeniesienie okna o obszar roboczy w dół"
 
 #: ../src/include/all-keybindings.h:342
-#| msgid "Raise obscured window, otherwise lower"
 msgid "Raise window if it's covered by another window, otherwise lower it"
 msgstr "Wysunięcie okna, jeśli jest zasłonięte, odsunięcie w przeciwnym wypadku."
 
@@ -825,54 +748,44 @@ msgid "Maximize window horizontally"
 msgstr "Pozioma maksymalizacja okna"
 
 #: ../src/include/all-keybindings.h:358
-#| msgid "Move window to north-west corner"
 msgid "Move window to north-west (top left) corner"
 msgstr "Przeniesienie okna do lewej górnej części ekranu"
 
 #: ../src/include/all-keybindings.h:361
-#| msgid "Move window to north-east corner"
 msgid "Move window to north-east (top right) corner"
 msgstr "Przeniesienie okna do prawej górnej części ekranu"
 
 #: ../src/include/all-keybindings.h:364
-#| msgid "Move window to south-west corner"
 msgid "Move window to south-west (bottom left) corner"
 msgstr "Przeniesienie okna do lewej dolnej części ekranu"
 
 #: ../src/include/all-keybindings.h:367
-#| msgid "Move window to south-east corner"
 msgid "Move window to south-east (bottom right) corner"
 msgstr "Przeniesienie okna do prawej dolnej części ekranu"
 
 #: ../src/include/all-keybindings.h:371
-#| msgid "Move window to north side of screen"
 msgid "Move window to north (top) side of screen"
 msgstr "Przeniesienie okna do górnej części ekranu"
 
 #: ../src/include/all-keybindings.h:374
-#| msgid "Move window to south side of screen"
 msgid "Move window to south (bottom) side of screen"
 msgstr "Przeniesienie okna do dolnej części ekranu"
 
 #: ../src/include/all-keybindings.h:377
-#| msgid "Move window to east side of screen"
 msgid "Move window to east (right) side of screen"
 msgstr "Przeniesienie okna do prawej części ekranu"
 
 #: ../src/include/all-keybindings.h:380
-#| msgid "Move window to west side of screen"
 msgid "Move window to west (left) side of screen"
 msgstr "Przeniesienie okna do lewej części ekranu"
 
 #: ../src/include/all-keybindings.h:383
-#| msgid "Move window to east side of screen"
 msgid "Move window to center of screen"
 msgstr "Przeniesienie okna na środek ekranu"
 
-# rev: aplikacjach -> programach
 #: ../src/metacity.schemas.in.in.h:1
 msgid "(Not implemented) Navigation works in terms of applications not windows"
-msgstr "(Nie zaimplementowane) Oparcie nawigacji na aplikacjach, zamiast na oknach"
+msgstr "(Nie zaimplementowane) Oparcie nawigacji na programach, zamiast na oknach"
 
 #: ../src/metacity.schemas.in.in.h:2
 msgid "A font description string describing a font for window titlebars. The size from the description will only be used if the titlebar_font_size option is set to 0. Also, this option is disabled if the titlebar_uses_desktop_font option is set to true."
@@ -895,28 +808,14 @@ msgid "Arrangement of buttons on the titlebar"
 msgstr "Rozmieszczenie przycisków na pasku tytułowym"
 
 #: ../src/metacity.schemas.in.in.h:7
-#| msgid ""
-#| "Arrangement of buttons on the titlebar. The value should be a string, "
-#| "such as \"menu:minimize,maximize,close\"; the colon separates the left "
-#| "corner of the window from the right corner, and the button names are "
-#| "comma-separated. Duplicate buttons are not allowed. Unknown button names "
-#| "are silently ignored so that buttons can be added in future metacity "
-#| "versions without breaking older versions."
 msgid "Arrangement of buttons on the titlebar. The value should be a string, such as \"menu:minimize,maximize,spacer,close\"; the colon separates the left corner of the window from the right corner, and the button names are comma-separated. Duplicate buttons are not allowed. Unknown button names are silently ignored so that buttons can be added in future metacity versions without breaking older versions. A special spacer tag can be used to insert some space between two adjacent buttons."
-msgstr "Rozmieszczenie przycisków na pasku tytułowym. Wartośc powinna być napisem w postaci \"menu:minimize,maximize,close\". Dwukropek rozdziela lewy róg okna od prawego, zaś nazwy przycisków są rozdzielone przecinkami. Nie można używać dwóch takich samych przycisków. Nieznane nazwy przycisków są ignorowane, aby w przyszłych wersjach programu mogły zostać dodane nowe przyciski nie powodując konfliktów. Aby rozdzielić dwa sąsiadujące ze sobą przyciski, można użyć specjalnego znacznika rozdzielenia ."
+msgstr "Rozmieszczenie przycisków na pasku tytułowym. Wartość powinna być napisem w postaci \"menu:minimize,maximize,close\". Dwukropek rozdziela lewy róg okna od prawego, zaś nazwy przycisków są rozdzielone przecinkami. Nie można używać dwóch takich samych przycisków. Nieznane nazwy przycisków są ignorowane, aby w przyszłych wersjach programu mogły zostać dodane nowe przyciski nie powodując konfliktów. Aby rozdzielić dwa sąsiadujące ze sobą przyciski, można użyć specjalnego znacznika rozdzielenia ."
 
-# rev:
-# Automatyczne wysuwanie uaktywnianych okien
 #: ../src/metacity.schemas.in.in.h:8
 msgid "Automatically raises the focused window"
-msgstr "Automatyczne wysuwanie okien otrzymujących skupienie"
+msgstr "Automatyczne wysuwanie uaktywnianych okien"
 
 #: ../src/metacity.schemas.in.in.h:9
-#| msgid ""
-#| "Clicking a window while holding down this modifier key will move the "
-#| "window (left click), resize the window (middle click), or show the window "
-#| "menu (right click). Modifier is expressed as \"&lt;Alt&gt;\" or \"&lt;"
-#| "Super&gt;\" for example."
 msgid "Clicking a window while holding down this modifier key will move the window (left click), resize the window (middle click), or show the window menu (right click). The left and right operations may be swapped using the \"mouse_button_resize\" key. Modifier is expressed as \"&lt;Alt&gt;\" or \"&lt;Super&gt;\" for example."
 msgstr "Kliknięcie okna przy przytrzymaniu tego modyfikatora spowoduje przesunięcie okna (lewy przycisk), zmianę jego rozmiaru (środkowy przycisk) lub wyświetlenie menu okna (prawy przycisk). Funkcjonalność lewego i prawego klawisza myszy można odwrócić za pomocą klawisza \"mouse_button_resize\". Przykładowy zapis modyfikatora ma postać \"&lt;Alt&gt;\" lub \"&lt;Super&gt;\"."
 
@@ -928,11 +827,9 @@ msgstr "Polecenia uruchamiane w odpowiedzi na użycia skrótów klawiszowych"
 msgid "Compositing Manager"
 msgstr "Menedżer kompozycji"
 
-# rev:
-# Określa, w jaki sposób uaktywniane są okna
 #: ../src/metacity.schemas.in.in.h:12
 msgid "Control how new windows get focus"
-msgstr "Określa, jak skupienie przekazywane jest do nowych okien"
+msgstr "Określa, w jaki sposób uaktywniane są okna"
 
 #: ../src/metacity.schemas.in.in.h:13
 msgid "Current theme"
@@ -944,47 +841,35 @@ msgstr "Opóźnienie w milisekundach używane przez opcję automatycznego wysuwa
 
 #: ../src/metacity.schemas.in.in.h:15
 msgid "Determines whether Metacity is a compositing manager."
-msgstr "Określa, czy Metacity ma być menedżerem kompozycji."
+msgstr "Określa, czy program Metacity ma być menedżerem kompozycji."
 
-# rev: Określa, czy programy lub system mogą generować słyszalne sygnały dźwiękowe; opcja może być używana razem z opcją \"wizualne sygnały dźwiękowe\", przedstawiającą sygnały dźwiękowe w formie graficznej.
-# ("bipnięcia" to zbyt potoczne słowo; z kolei "silent" oznacza tu nie to, że są one ciche (choć, owszem, to jedno ze znaczeń słowa silent), tylko w ogóle ich brak - są zastąpione oknami z komunikatem)
 #: ../src/metacity.schemas.in.in.h:16
 msgid "Determines whether applications or the system can generate audible 'beeps'; may be used in conjunction with 'visual bell' to allow silent 'beeps'."
-msgstr "Określa, czy aplikacje lub system mogą generować słyszalne sygnały dźwiękowe; opcja może być używana razem z opcją \"widoczne sygnały dźwiękowe\", zezwalającą na ciche \"bipnięcia\"."
+msgstr "Określa, czy programy lub system mogą generować słyszalne sygnały dźwiękowe; opcja może być używana razem z opcją \"wizualne sygnały dźwiękowe\", przedstawiającą sygnały dźwiękowe w formie graficznej."
 
-# rev: aplikacje -> programy
 #: ../src/metacity.schemas.in.in.h:17
 msgid "Disable misfeatures that are required by old or broken applications"
-msgstr "Wyłącza własności, które wymagane są przez stare i niewłaściwie zaimplementowane aplikacje."
+msgstr "Wyłącza własności, które wymagane są przez stare i niewłaściwie zaimplementowane programy."
 
-# rev: Włączone wizualne sygnały dźwiękowe
 #: ../src/metacity.schemas.in.in.h:18
 msgid "Enable Visual Bell"
-msgstr "Włączone widoczne sygnały dźwiękowe"
+msgstr "Włączone wizualne sygnały dźwiękowe"
 
-# rev:
-# Jeśli właściwość ta jest ustawiona, a sposób uaktywniania ustawiono jako \"sloppy\" (ang. luźny) lub \"mouse\" (ang. mysz), uaktywniane okno będzie automatycznie wysuwane po upływie czasu określanego przez klucz auto_raise_delay.
-# Opcja ta nie ma zastosowania w przypadku klikania na oknie, aby je wysunąć, ani w przypadku przechodzenia do okna podczas przeciągania go.
 #: ../src/metacity.schemas.in.in.h:19
 msgid "If set to true, and the focus mode is either \"sloppy\" or \"mouse\" then the focused window will be automatically raised after a delay specified by the auto_raise_delay key. This is not related to clicking on a window to raise it, nor to entering a window during drag-and-drop."
-msgstr "Jeśli właściwość ta jest ustawiona i sposób przełączania skupienia ustawiono jako \"sloppy\" lub \"mouse\" (ang. mysz), okno uzyskujące skupienie będzie automatycznie wysuwane po upływie opóźnienia określanego przez klucz auto_raise_delay, ani z przechodzeniem do okna podczas przesuwania."
+msgstr "Jeśli właściwość ta jest ustawiona, a sposób uaktywniania ustawiono jako \"sloppy\" (ang. luźny) lub \"mouse\" (ang. mysz), uaktywniane okno będzie automatycznie wysuwane po upływie czasu określanego przez klucz auto_raise_delay.Opcja ta nie ma zastosowania w przypadku klikania na oknie, aby je wysunąć, ani w przypadku przechodzenia do okna podczas przeciągania go."
 
-# rev: aplikacje -> programy
 #: ../src/metacity.schemas.in.in.h:20
 msgid "If true, ignore the titlebar_font option, and use the standard application font for window titles."
-msgstr "Ustawienie opcji powoduje ignorowanie opcji titlebar_font i używanie zamiast tego na paskach tytułowych standardowej czcionki systemowej używanej przez aplikacje."
+msgstr "Ustawienie opcji powoduje ignorowanie opcji titlebar_font i używanie zamiast tego na paskach tytułowych standardowej czcionki systemowej używanej przez programy."
 
-# rev: 
-# Ustawienie tej opcji spowoduje, że menedżer Metacity ograniczy interakcję z użytkownikiem poprzez użycie ramek przy skalowaniu okien, wyłączenie animacji i podobne. Dla wielu użytkowników może być to znaczące ograniczenie funkcjonalności, ale może pozwolić starszym programom i terminalom na normalną pracę, która w innym wypadku byłaby niemożliwa. Ramki skalowania okien będą jednak wyłączone po włączeniu technologii wspierających.
 #: ../src/metacity.schemas.in.in.h:21
 msgid "If true, metacity will give the user less feedback by using wireframes, avoiding animations, or other means. This is a significant reduction in usability for many users, but may allow legacy applications to continue working, and may also be a useful tradeoff for terminal servers. However, the wireframe feature is disabled when accessibility is on."
-msgstr "Ustawienie tej opcji powoduje, że menedżer Metacity ogranicza użytkownikowi sprzężenie zwrotne i czucie \"bezpośredniej manipulacji\", poprzez użycie ramek przy skalowaniu okien, wyłączenie animacji i podobne. Dla wielu użytkowników może być to znaczące ograniczenie funkcjonalności, ale może pozwolić starszym aplikacjom i terminalom na normalną pracę, która w innym wypadku była by nierealna. Mimo to, ramki skalowania okien zostaną wyłączone, gdy włączone zostaną technologie wspierające."
+msgstr "Ustawienie tej opcji spowoduje, że menedżer Metacity ograniczy interakcję z użytkownikiem poprzez użycie ramek przy skalowaniu okien, wyłączenie animacji i podobne. Dla wielu użytkowników może być to znaczące ograniczenie funkcjonalności, ale może pozwolić starszym programom i terminalom na normalną pracę, która w innym wypadku byłaby niemożliwa. Ramki skalowania okien będą jednak wyłączone po włączeniu technologii wspierających."
 
-# rev:
-# Ustawienie tej opcji powoduje, że menedżer Metacity pracuje w ramach programów, nie okien. Pojęcie to jest nieco abstrakcyjne, ale ogólnie ustawienia oparte na programach przypominają raczej działanie systemu MacOS niż systemu Windows. Gdy menedżer pracuje w trybie programów, po uaktywnieniu okna wszystkie okna danej aplikacji zostaną wysunięte. W trybie programów kliknięcia aktywujące nie są przekazywane do okien innych programów. Aktualnie tryb programów nie jest jednak w pełni obsługiwany.
 #: ../src/metacity.schemas.in.in.h:22
 msgid "If true, then Metacity works in terms of applications rather than windows. The concept is a bit abstract, but in general an application-based setup is more like the Mac and less like Windows. When you focus a window in application-based mode, all the windows in the application will be raised. Also, in application-based mode, focus clicks are not passed through to windows in other applications. Application-based mode is, however, largely unimplemented at the moment."
-msgstr "Ustawienie tej opcji powoduje, że menedżer Metacity pracuje w kategoriach aplikacji, nie okien. Pojęcie to jest nieco abstrakcyjne, ale ogólnie ustawienia oparte na aplikacjach przypominają raczej działanie systemu Mac OS niż systemu Windows. Gdy menedżer pracuje w trybie aplikacji, po skupieniu uwagi na oknie wszystkie okna danej aplikacji zostaną wysunięte. W trybie aplikacji kliknięcia przełączające skupienie nie są przekazywane do okien innych aplikacji. Tryb aplikacji jest w chwili obecnej w znacznej mierze niezaimplementowany."
+msgstr "Ustawienie tej opcji powoduje, że menedżer Metacity pracuje w ramach programów, nie okien. Pojęcie to jest nieco abstrakcyjne, ale ogólnie ustawienia oparte na programach przypominają raczej działanie systemu MacOS niż systemu Windows. Gdy menedżer pracuje w trybie programów, po uaktywnieniu okna wszystkie okna danego programu zostaną wysunięte. W trybie programów kliknięcia aktywujące nie są przekazywane do okien innych programów. Aktualnie tryb programów nie jest jednak w pełni obsługiwany."
 
 #: ../src/metacity.schemas.in.in.h:23
 msgid "If true, trade off usability for less resource usage"
@@ -1014,48 +899,21 @@ msgstr "Uruchomienie zdefiniowanego polecenia"
 msgid "Set this to true to resize with the right button and show a menu with the middle button while holding down the key given in \"mouse_button_modifier\"; set it to false to make it work the opposite way around."
 msgstr "Po włączeniu użytkownik będzie mógł zmieniać rozmiar okna po wciśnięciu prawego przycisku myszy i wyświetlać menu za pomocą środkowego przycisku przy jednoczesnym wciśnięciu przycisku podanego w opcji \"mouse_button_modifier\"; po wyłączeniu, sytuacja będzie odwrotna."
 
-# rev:
-# Wyłączenie tej opcji może prowadzić do nieprawidłowego działania, dlatego zaleca się, aby użytkownicy nie zmieniali jej domyślnej wartości. Wiele działań (np. kliknięcie w obszarze klienta, przesuwanie lub zmiana rozmiaru okna) powoduje jednoczesne wysunięcie okna. Odznaczenie tej opcji spowoduje oddzielenie wysuwania okna od innych działań użytkownika oraz ignorowanie żądań wysunięcia okna wysyłanych przez programy. Więcej informacji można także znaleźć na stronie http://bugzilla.gnome.org/show_bug.cgi?id=445447#c6.
-# Jednak nawet, gdy opcja jest wyłączona, okno może być wysunięte za pomocą kliknięcia lewym przyciskiem myszy w obszarze okna z jednoczesnym przytrzymaniem klawisza alt, zwykłego kliknięcia na dekoracji okna, lub specjalnych komunikatów systemowych, jak np. żądania aktywacji z apletu listy zadań. 
-# Opcja ta jest wyłączona w trybie uaktywnienia przez kliknięcie. 
-# Lista sposobów wysuwających okna, gdy opcja rise_on_click nie jest włączona, nie zawiera programowych żądań wysunięcia okna wysyłanych przez programy; te żądania będą ignorowane, niezależnie od ich powodu. Rada dla programistów: jeśli użytkownik uskarża się, że program po wyłączeniu tej opcji nie działa, należy uświadomić mu, że to _jego_ wina, oraz że powinien włączyć ją z powrotem, jeśli chce się pozbyć problemu. 
 #: ../src/metacity.schemas.in.in.h:30
-#, fuzzy
-#| msgid ""
-#| "Setting this option to false can lead to buggy behavior, so users are "
-#| "strongly discouraged from changing it from the default of true. Many "
-#| "actions (e.g. clicking in the client area, moving or resizing the window) "
-#| "normally raise the window as a side-effect. Set this option to false to "
-#| "decouple raising from other user actions. Even when this option is false, "
-#| "windows can still be raised by an alt-left-click anywhere on the window, "
-#| "a normal click on the window decorations, or by special messages from "
-#| "pagers, such as activation requests from tasklist applets. This option is "
-#| "currently disabled in click-to-focus mode. Note that the list of ways to "
-#| "raise windows when raise_on_click is false does not include programmatic "
-#| "requests from applications to raise windows; such requests will be "
-#| "ignored regardless of the reason for the request. If you are an "
-#| "application developer and have a user complaining that your application "
-#| "does not work with this setting disabled, tell them it is _their_ fault "
-#| "for breaking their window manager and that they need to change this "
-#| "option back to true or live with the bug they requested. See also http://"
-#| "bugzilla.gnome.org/show_bug.cgi?id=445447#c6."
 msgid "Setting this option to false can lead to buggy behavior, so users are strongly discouraged from changing it from the default of true. Many actions (e.g. clicking in the client area, moving or resizing the window) normally raise the window as a side-effect. Setting this option to false, which is strongly discouraged, will decouple raising from other user actions, and ignore raise requests generated by applications. See http://bugzilla.gnome.org/show_bug.cgi?id=445447#c6. Even when this option is false, windows can still be raised by an alt-left-click anywhere on the window, a normal click on the window decorations, or by special messages from pagers, such as activation requests from tasklist applets. This option is currently disabled in click-to-focus mode. Note that the list of ways to raise windows when raise_on_click is false does not include programmatic requests from applications to raise windows; such requests will be ignored regardless of the reason for the request. If you are an application developer and have a user complaining that your application does not work with this setting disabled, tell them it is _their_ fault for breaking their window manager and that they need to change this option back to true or live with the \"bug\" they requested."
-msgstr "Wyzerowanie tej opcji może prowadzić do błędnego działania, dlatego zaleca się aby użytkownicy nie zmieniali jej z domyślnej ustawionej wartości. Wiele działań (np. kliknięcie w obszarze klienta, przesuwanie lub zmiana rozmiaru okna) jako efekt dodatkowy ma wysunięcie okna. Odznaczenie tej opcji spowoduje odseparowanie wysunięcia okna od innych działań użytkownika. Nawet wtedy okno może być wysunięte za pomocą kliknięcia lewym przyciskiem myszy w obszarze okna z jednoczesnym przytrzymaniem klawisza alt, zwykłym kliknięciem na dekoracji okna, lub specjalnymi komunikatami systemowymi takimi jak aktywacja okna z apletu listy okien. Opcja ta jest wyłączona w trybie uzysknia skupienia przez kliknięcie. Lista sposobów wysuwających okna gdy rise_on_click nie jest ustawione, nie zawiera programowych żądań wysunięcia okna wysyłanych przez aplikacje; te żądania będą ignorowane niezależnie powodu żądania. Jeżeli jesteś programistą i masz użytkownika narzekającego, że aplikacja nie działa z tą opcją (kiedy nie jest ustawiona), powiedz mu, że to _jego_ błąd i niech ustawi tę opcję poprawnie, lub niech żyje dalej z tym błędem. Zobacz również http://bugzilla.gnome.org/show_bug.cgi?id=445447#c6."
+msgstr "Wyłączenie tej opcji może prowadzić do nieprawidłowego działania, dlatego zaleca się, aby użytkownicy nie zmieniali jej domyślnej wartości. Wiele działań (np. kliknięcie w obszarze klienta, przesuwanie lub zmiana rozmiaru okna) powoduje jednoczesne wysunięcie okna. Odznaczenie tej opcji spowoduje oddzielenie wysuwania okna od innych działań użytkownika oraz ignorowanie żądań wysunięcia okna wysyłanych przez programy. Więcej informacji można także znaleźć na stronie http://bugzilla.gnome.org/show_bug.cgi?id=445447#c6.Jednak nawet, gdy opcja jest wyłączona, okno może być wysunięte za pomocą kliknięcia lewym przyciskiem myszy w obszarze okna z jednoczesnym przytrzymaniem klawisza alt, zwykłego kliknięcia na dekoracji okna, lub specjalnych komunikatów systemowych, jak np. żądania aktywacji z apletu listy zadań.Opcja ta jest wyłączona w trybie uaktywnienia przez kliknięcie.Lista sposobów wysuwających okna, gdy opcja rise_on_click nie jest włączona, nie zawiera programowych żądań wysunięcia okna wysyłanych przez programy; te żądania będą ignorowane, niezależnie od ich powodu. Rada dla programistów: jeśli użytkownik uskarża się, że program po wyłączeniu tej opcji nie działa, należy uświadomić mu, że to _jego_ wina, oraz że powinien włączyć ją z powrotem, jeśli chce się pozbyć problemu."
 
-# rev: programy; programy
 #: ../src/metacity.schemas.in.in.h:31
 msgid "Some applications disregard specifications in ways that result in window manager misfeatures. This option puts Metacity in a rigorously correct mode, which gives a more consistent user interface, provided one does not need to run any misbehaving applications."
-msgstr "Niektóre aplikacje nie stosują się do specyfikacji, co może powodować nieprawidłowe zachowanie menedżera okien. Ta opcja przestawia Metacity w tryb ściśle prawidłowy, w którym interfejs użytkownika jest bardziej spójny, o ile nie są uruchamiane żadne aplikacje łamiące specyfikacje."
+msgstr "Niektóre programy nie stosują się do specyfikacji, co może powodować nieprawidłowe zachowanie menedżera okien. Ta opcja przestawia Metacity w tryb ściśle prawidłowy, w którym interfejs użytkownika jest bardziej spójny, o ile nie są uruchamiane żadne programy łamiące specyfikacje."
 
 #: ../src/metacity.schemas.in.in.h:32
 msgid "System Bell is Audible"
 msgstr "Brzęczyk systemowy jest słyszalny"
 
-# rev:
-# Opcja określa, w jaki sposób Metacity ma graficznie przedstawić odtworzenie dźwięku przez brzęczyk systemowy lub aplikację, która z niego korzysta. Aktualnie obsługiwane są dwie wartości \"fullscreen\", która powoduje mignięcie całego ekranu na czarno i biało oraz \"frame_flash\", która powoduje mignięcie paska tytułowego programu podczas wydawania dźwięku. Jeśli program, który wysłał sygnał dźwiękowy będzie nieznany (jak to ma zwykle miejsce przy domyślnym \"dźwięku systemowym\"), pasek tytułowy aktywnego okna zamigocze.
 #: ../src/metacity.schemas.in.in.h:33
 msgid "Tells Metacity how to implement the visual indication that the system bell or another application 'bell' indicator has been rung. Currently there are two valid values, \"fullscreen\", which causes a fullscreen white-black flash, and \"frame_flash\" which causes the titlebar of the application which sent the bell signal to flash. If the application which sent the bell is unknown (as is usually the case for the default \"system beep\"), the currently focused window's titlebar is flashed."
-msgstr "Opcja mówi Metacity w jaki sposób należy zrealizować graficznie wskazanie, że brzęczyk systemowy lub inna aplikacja korzystająca z brzęczyka wydała dźwięk. Aktualnie obsługiwane są dwie wartości \"fullscreen\", która powoduje mignięcie całego ekranu na czarno i biało oraz \"frame_flash\", wymuszająca migniecie paska tytułowego aplikacji podczas wydawania dźwięku. Jeśli aplikacja, która wysłała sygnał dźwiękowy jest nieznana (jak to ma miejsce zazwyczaj przy domyślnym \"bipnięciu systemowym\") mignie pasek tytułowy okna, na którym znajduje się aktualnie skupienie."
+msgstr "Opcja określa, w jaki sposób Metacity ma graficznie przedstawić odtworzenie dźwięku przez brzęczyk systemowy lub program, który z niego korzysta. Aktualnie obsługiwane są dwie wartości \"fullscreen\", która powoduje mignięcie całego ekranu na czarno i biało oraz \"frame_flash\", która powoduje mignięcie paska tytułowego programu podczas wydawania dźwięku. Jeśli program, który wysłał sygnał dźwiękowy będzie nieznany (jak to ma zwykle miejsce przy domyślnym \"dźwięku systemowym\"), pasek tytułowy aktywnego okna zamigocze."
 
 #: ../src/metacity.schemas.in.in.h:34
 msgid "The /apps/metacity/global_keybindings/run_command_N keys define keybindings that correspond to these commands. Pressing the keybinding for run_command_N will execute command_N."
@@ -1089,63 +947,29 @@ msgstr "Motyw określa wygląd krawędzi okien, pasków tytułowych, itp."
 msgid "The time delay before raising a window if auto_raise is set to true. The delay is given in thousandths of a second."
 msgstr "Opóźnienie czasowe przed wysunięciem okna, jeśli opcja automatycznego wysuwania (auto_rise) jest ustawiona. Opóźnienie jest podane w tysięcznych częściach sekundy."
 
-# rev:
-# sposób przekazywania skupienia -> tryb uaktywniania;
-# okno musi zostać kliknięte w celu przekazania do niego skupienia -> okno musi zostać kliknięte, aby zostało uaktywnione;
-# \"sloppy\" -> \"sloppy"\ (ang. luźny);
-# okno otrzymuje skupienie, gdy -> okno zostaje uaktywnione, gdy
-# a po opuszczeniu tego obszaru skupienie jest odbierane -> a po opuszczeniu go aktywacja jest wyłączana
 #: ../src/metacity.schemas.in.in.h:42
 msgid "The window focus mode indicates how windows are activated. It has three possible values; \"click\" means windows must be clicked in order to focus them, \"sloppy\" means windows are focused when the mouse enters the window, and \"mouse\" means windows are focused when the mouse enters the window and unfocused when the mouse leaves the window."
-msgstr "Sposób przekazywania skupienia określa, w jaki sposób aktywowane są okna. Opcja ta może przyjmować trzy wartości; \"click\" (ang. kliknięcie) oznacza, że okno musi zostać kliknięte w celu przekazania do niego skupienia, \"sloppy\" oznacza, że okno otrzymuje skupienie, gdy przesunięty zostanie na jego obszar wskaźnik myszy, zaś \"mouse\" (ang. mysz) oznacza, że okno otrzymuje skupienie, gdy wskaźnik myszy przesunięty zostanie na jego obszar, a po opuszczeniu tego obszaru skupienie jest odbierane."
+msgstr "Tryb uaktywnienia określa, w jaki sposób aktywowane są okna. Opcja ta może przyjmować trzy wartości; \"click\" (ang. kliknięcie) oznacza, że okno musi zostać kliknięte, aby zostało uaktywnione, \"sloppy\" (ang. luźny) oznacza, że okno otrzymuje skupienie, gdy przesunięty zostanie na jego obszar kursor myszy, zaś \"mouse\" (ang. mysz) oznacza, że okno zostaje uaktywnione, gdy kursor myszy przesunięty zostanie na jego obszar, a po opuszczeniu go aktywacja jest wyłączana."
 
 #: ../src/metacity.schemas.in.in.h:43
 msgid "The window screenshot command"
 msgstr "Polecenie pobrania zrzutu okna"
 
-# rev:
-# Ta opcja określa skutek dwukrotnego kliknięcia paska tytułowego okna. Aktualnie poprawnymi opcjami są: \"toggle_shade\" (zwija/rozwija okno), \"toggle_maximize\" (maksymalizuje/przywraca rozmiar okna), \"toggle_maximize_horizontally\" i \"toggle_maximize_vertically\" (maksymalizują/minimalizują okno w poziomie lub w pionie), \"minimize\" (minimalizuje okno), \"shade\" (zwija okno), \"menu\" (wyświetla menu okna), \"lower\" (chowa okno pod pozostałe) i \"none\" (brak jakiegokolwiek efektu).
 #: ../src/metacity.schemas.in.in.h:44
-#, fuzzy
-#| msgid ""
-#| "This option determines the effects of double-clicking on the title bar. "
-#| "Current valid options are 'toggle_shade', which will shade/unshade the "
-#| "window, 'toggle_maximize' which will maximize/unmaximize the window, "
-#| "'minimize' which will minimize the window, and 'none' which will not do "
-#| "anything."
 msgid "This option determines the effects of double-clicking on the title bar. Current valid options are 'toggle_shade', which will shade/unshade the window, 'toggle_maximize' which will maximize/unmaximize the window, 'toggle_maximize_horizontally' and 'toggle_maximize_vertically' which will maximize/unmaximize the window in that direction only, 'minimize' which will minimize the window, 'shade' which will roll the window up, 'menu' which will display the window menu, 'lower' which will put the window behind all the others, and 'none' which will not do anything."
-msgstr "Ta opcja określa skutek dwukrotnego kliknięcia paska tytułowego okna. Aktualnie poprawnymi opcjami są: \"toggle_shade\" (zwija/rozwija okno) oraz \"toggle_maximize\" (maksymalizuje/przywraca rozmiar okna), \"minimize\" (minimalizuje okno) i \"none\" (brak jakiegokolwiek skutku)."
+msgstr "Ta opcja określa skutek dwukrotnego kliknięcia paska tytułowego okna. Aktualnie poprawnymi opcjami są: \"toggle_shade\" (zwija/rozwija okno), \"toggle_maximize\" (maksymalizuje/przywraca rozmiar okna), \"toggle_maximize_horizontally\" i \"toggle_maximize_vertically\" (maksymalizują/minimalizują okno w poziomie lub w pionie), \"minimize\" (minimalizuje okno), \"shade\" (zwija okno), \"menu\" (wyświetla menu okna), \"lower\" (chowa okno pod pozostałe) i \"none\" (brak jakiegokolwiek efektu)."
 
-# rev:
-# Ta opcja określa skutek kliknięcia środkowym przyciskiem myszy na pasku tytułowym okna. Aktualnie poprawnymi opcjami są: \"toggle_shade\" (zwija/rozwija okno), \"toggle_maximize\" (maksymalizuje/przywraca rozmiar okna), \"toggle_maximize_horizontally\" i \"toggle_maximize_vertically\" (maksymalizują/minimalizują okno w poziomie lub w pionie), \"minimize\" (minimalizuje okno), \"shade\" (zwija okno), \"menu\" (wyświetla menu okna), \"lower\" (chowa okno pod pozostałe) i \"none\" (brak jakiegokolwiek efektu).
 #: ../src/metacity.schemas.in.in.h:45
-#, fuzzy
-#| msgid ""
-#| "This option determines the effects of middle-clicking on the title bar. "
-#| "Current valid options are 'toggle_shade', which will shade/unshade the "
-#| "window, 'toggle_maximize' which will maximize/unmaximize the window, "
-#| "'minimize' which will minimize the window, and 'none' which will not do "
-#| "anything."
 msgid "This option determines the effects of middle-clicking on the title bar. Current valid options are 'toggle_shade', which will shade/unshade the window, 'toggle_maximize' which will maximize/unmaximize the window, 'toggle_maximize_horizontally' and 'toggle_maximize_vertically' which will maximize/unmaximize the window in that direction only, 'minimize' which will minimize the window, 'shade' which will roll the window up, 'menu' which will display the window menu, 'lower' which will put the window behind all the others, and 'none' which will not do anything."
-msgstr "Ta opcja określa skutek kliknięcia środkowym klawiszem na pasku tytułowym okna. Aktualnie poprawnymi opcjami są: \"toggle_shade\" (zwija/rozwija okno) oraz \"toggle_maximize\" (maksymalizuje/przywraca rozmiar okna), \"minimize\" (minimalizuje okno) i \"none\" (brak jakiegokolwiek skutku)."
+msgstr "Ta opcja określa skutek kliknięcia środkowym przyciskiem myszy na pasku tytułowym okna. Aktualnie poprawnymi opcjami są: \"toggle_shade\" (zwija/rozwija okno), \"toggle_maximize\" (maksymalizuje/przywraca rozmiar okna), \"toggle_maximize_horizontally\" i \"toggle_maximize_vertically\" (maksymalizują/minimalizują okno w poziomie lub w pionie), \"minimize\" (minimalizuje okno), \"shade\" (zwija okno), \"menu\" (wyświetla menu okna), \"lower\" (chowa okno pod pozostałe) i \"none\" (brak jakiegokolwiek efektu)."
 
-# rev:
-# Ta opcja określa skutek kliknięcia prawym przyciskiem myszy na pasku tytułowym okna. Aktualnie poprawnymi opcjami są: \"toggle_shade\" (zwija/rozwija okno), \"toggle_maximize\" (maksymalizuje/przywraca rozmiar okna), \"toggle_maximize_horizontally\" i \"toggle_maximize_vertically\" (maksymalizują/minimalizują okno w poziomie lub w pionie), \"minimize\" (minimalizuje okno), \"shade\" (zwija okno), \"menu\" (wyświetla menu okna), \"lower\" (chowa okno pod pozostałe) i \"none\" (brak jakiegokolwiek efektu).
 #: ../src/metacity.schemas.in.in.h:46
-#, fuzzy
-#| msgid ""
-#| "This option determines the effects of right-clicking on the title bar. "
-#| "Current valid options are 'toggle_shade', which will shade/unshade the "
-#| "window, 'toggle_maximize' which will maximize/unmaximize the window, "
-#| "'minimize' which will minimize the window, and 'none' which will not do "
-#| "anything."
 msgid "This option determines the effects of right-clicking on the title bar. Current valid options are 'toggle_shade', which will shade/unshade the window, 'toggle_maximize' which will maximize/unmaximize the window, 'toggle_maximize_horizontally' and 'toggle_maximize_vertically' which will maximize/unmaximize the window in that direction only, 'minimize' which will minimize the window, 'shade' which will roll the window up, 'menu' which will display the window menu, 'lower' which will put the window behind all the others, and 'none' which will not do anything."
-msgstr "Ta opcja określa skutek kliknięcia przwym przyciskiem na pasku tytułowym okna. Aktualnie poprawnymi opcjami są: \"toggle_shade\" (zwija/rozwija okno) oraz \"toggle_maximize\" (maksymalizuje/przywraca rozmiar okna), \"minimize\" (minimalizuje okno) i \"none\" (brak jakiegokolwiek skutku)."
+msgstr "Ta opcja określa skutek kliknięcia prawym przyciskiem myszy na pasku tytułowym okna. Aktualnie poprawnymi opcjami są: \"toggle_shade\" (zwija/rozwija okno), \"toggle_maximize\" (maksymalizuje/przywraca rozmiar okna), \"toggle_maximize_horizontally\" i \"toggle_maximize_vertically\" (maksymalizują/minimalizują okno w poziomie lub w pionie), \"minimize\" (minimalizuje okno), \"shade\" (zwija okno), \"menu\" (wyświetla menu okna), \"lower\" (chowa okno pod pozostałe) i \"none\" (brak jakiegokolwiek efektu)."
 
-# rev: uzyskują skupienie -> zostają uaktywnione; tryb przekazywania skupienia -> tryb uaktywniania; oknom otwartym z poziomu terminala nie zostanie przekazane skupienie -> okna otwarte z poziomu terminala nie zostaną uaktywnione
 #: ../src/metacity.schemas.in.in.h:47
 msgid "This option provides additional control over how newly created windows get focus. It has two possible values; \"smart\" applies the user's normal focus mode, and \"strict\" results in windows started from a terminal not being given focus."
-msgstr "Ta opcja daje dodatkowe możliwości konfiguracji sposobu, w jaki nowo utworzone okna uzyskują skupienie. Dostępne są dwie wartości: \"smart\" - typowy tryb przekazywania skupienia wg ustawień użytkownika i \"strict\" - oknom otwartym z poziomu terminala nie zostanie przekazane skupienie."
+msgstr "Ta opcja daje dodatkowe możliwości konfiguracji sposobu, w jaki nowo utworzone okna zostają uaktywnione. Dostępne są dwie wartości: \"smart\" - typowy tryb uaktywniania wg ustawień użytkownika i \"strict\" - okna otwarte z poziomu terminala nie zostaną uaktywnione."
 
 #: ../src/metacity.schemas.in.in.h:48
 msgid "Turns on a visual indication when an application or the system issues a 'bell' or 'beep'; useful for the hard-of-hearing and for use in noisy environments."
@@ -1155,25 +979,21 @@ msgstr "Włączenie opcji spowoduje, że w przypadku gdy program lub system wyda
 msgid "Use standard system font in window titles"
 msgstr "Użycie w paskach tytułowych okien standardowej czcionki systemowej"
 
-# rev: Typ wizualnego sygnału dźwiękowego
 #: ../src/metacity.schemas.in.in.h:50
 msgid "Visual Bell Type"
-msgstr "Typ widzialnego sygnału dźwiękowego"
+msgstr "Typ wizualnego sygnału dźwiękowego"
 
-# rev: 
-# Określa, czy wysuwanie okna powinno towarzyszyć innym działaniom użytkownika
 #: ../src/metacity.schemas.in.in.h:51
 msgid "Whether raising should be a side-effect of other user interactions"
-msgstr "Określa, czy przenoszenie okna powinno być skukiem ubocznym innych działań"
+msgstr "Określa, czy wysuwanie okna powinno towarzyszyć innym działaniom użytkownika"
 
 #: ../src/metacity.schemas.in.in.h:52
 msgid "Whether to resize with the right button"
 msgstr "Określa czy zmieniać rozmiar okna za pomocą prawego przycisku myszy"
 
-# rev: skupienia -> uaktywnienia
 #: ../src/metacity.schemas.in.in.h:53
 msgid "Window focus mode"
-msgstr "Tryb skupienia okna"
+msgstr "Tryb uaktywnienia okna"
 
 #: ../src/metacity.schemas.in.in.h:54
 msgid "Window title font"
@@ -1200,11 +1020,9 @@ msgstr "Minimalizuje okno"
 msgid "Maximize Window"
 msgstr "Maksymalizuje okno"
 
-# rev: Przywrócenie okna
 #: ../src/ui/frames.c:1130
-#| msgid "Resize window"
 msgid "Restore Window"
-msgstr "Zmiana rozmiaru okna"
+msgstr "Przywrócenie okna"
 
 #: ../src/ui/frames.c:1133
 msgid "Roll Up Window"
@@ -1315,7 +1133,6 @@ msgstr "Za_mknij"
 
 #: ../src/ui/menu.c:203
 #, c-format
-#| msgid "Workspace %d"
 msgid "Workspace %d%n"
 msgstr "Obszar roboczy %d%n"
 
@@ -1428,10 +1245,9 @@ msgstr "Mod5"
 msgid "\"%s\" is not responding."
 msgstr "Okno \"%s\" nie odpowiada."
 
-# rev: programu (btw: nie wiem, czy to "całkowite" jest tu naprawdę konieczne, brzmi mało naturalnie)
 #: ../src/ui/metacity-dialog.c:97
 msgid "You may choose to wait a short while for it to continue or force the application to quit entirely."
-msgstr "Można poczekać chwilę dłużej lub wymusić całkowite zakończenie aplikacji."
+msgstr "Można poczekać chwilę dłużej lub wymusić zakończenie programu."
 
 #: ../src/ui/metacity-dialog.c:107
 msgid "_Wait"
@@ -1705,7 +1521,6 @@ msgstr "Stała \"%s\" została już zdefiniowana"
 #.
 #: ../src/ui/theme-parser.c:202
 #, c-format
-#| msgid "No \"x\" attribute on element <%s>"
 msgid "No \"%s\" attribute on element <%s>"
 msgstr "Brak atrybutu \"%s\" w elemencie <%s>"
 
@@ -1824,9 +1639,6 @@ msgstr "Element <%s> nie jest dopuszczalny poniżej <%s>"
 #: ../src/ui/theme-parser.c:1343
 #: ../src/ui/theme-parser.c:1357
 #: ../src/ui/theme-parser.c:1402
-#| msgid ""
-#| "Cannot specify both button_width/button_height and aspect ratio for "
-#| "buttons"
 msgid "Cannot specify both \"button_width\"/\"button_height\" and \"aspect_ratio\" for buttons"
 msgstr "Nie można jednocześnie określać dla przycisku jego szerokości i wysokości oraz współczynnika proporcji"
 
@@ -1920,7 +1732,7 @@ msgstr "Nieznana funkcja \"%s\" powiązana z przyciskiem"
 #: ../src/ui/theme-parser.c:2874
 #, c-format
 msgid "Button function \"%s\" does not exist in this version (%d, need %d)"
-msgstr "Fukcja \"%s\" przycisku nie istnieje w tej wersji (%d, wymaga %d)"
+msgstr "Funkcja \"%s\" przycisku nie istnieje w tej wersji (%d, wymaga %d)"
 
 #: ../src/ui/theme-parser.c:2886
 #, c-format
@@ -1958,25 +1770,22 @@ msgstr "\"%s\" nie jest poprawną wartością atrybutu \"resize\""
 msgid "Should not have \"resize\" attribute on <%s> element for maximized/shaded states"
 msgstr "Element <%s> nie powinien zawierać atrybutu \"resize\" przy stanie zmaksymalizowanym lub zwiniętym"
 
-# rev: Element <%s> nie powinien zawierać atrybutu \"resize\" przy stanie zmaksymalizowanym
 #: ../src/ui/theme-parser.c:3053
 #, c-format
 msgid "Should not have \"resize\" attribute on <%s> element for maximized states"
-msgstr "Nie powinno być atrybutu \"resize\" w elemecie <%s> przy stanie zmaksymalizowanym"
+msgstr "Element <%s> nie powinien zawierać atrybutu \"resize\" przy stanie zmaksymalizowanym"
 
-# rev: skupienia -> uaktywnienia
 #: ../src/ui/theme-parser.c:3067
 #: ../src/ui/theme-parser.c:3089
 #, c-format
 msgid "Style has already been specified for state %s resize %s focus %s"
-msgstr "Zdefiniowano już styl dla stanu %s, rozmiaru %s i skupienia %s"
+msgstr "Zdefiniowano już styl dla stanu %s, rozmiaru %s i uaktywnienia %s"
 
-# rev: skupienia -> uaktywnienia
 #: ../src/ui/theme-parser.c:3078
 #: ../src/ui/theme-parser.c:3100
 #, c-format
 msgid "Style has already been specified for state %s focus %s"
-msgstr "Zdefiniowano już styl dla stanu %s i skupienia %s"
+msgstr "Zdefiniowano już styl dla stanu %s i uaktywnienia %s"
 
 #: ../src/ui/theme-parser.c:3139
 msgid "Can't have a two draw_ops for a <piece> element (theme specified a draw_ops attribute and also a <draw_ops> element, or specified two elements)"
@@ -2023,15 +1832,13 @@ msgstr "Element <%s> nie jest dopuszczalny wewnątrz elementu operacji rysowania
 msgid "Element <%s> is not allowed inside a <%s> element"
 msgstr "Element <%s> nie jest dopuszczalny wewnątrz elementu <%s>"
 
-# rev: Brak elementu <draw_ops> powiązanego z elementem ramki
 #: ../src/ui/theme-parser.c:3594
 msgid "No draw_ops provided for frame piece"
-msgstr "Z elementem ramki nie jest powiązany element <draw_ops>"
+msgstr "Brak elementu <draw_ops> powiązanego z elementem ramki"
 
-# rev: Brak elementu <draw_ops> powiązanego z przyciskiem
 #: ../src/ui/theme-parser.c:3609
 msgid "No draw_ops provided for button"
-msgstr "Z przyciskiem nie jest powiązany element <draw_ops>"
+msgstr "Brak elementu <draw_ops> powiązanego z przyciskiem"
 
 #: ../src/ui/theme-parser.c:3661
 #, c-format
@@ -2145,10 +1952,9 @@ msgstr "Okno zawierające tylko krawędzie"
 msgid "Bar"
 msgstr "Pasek"
 
-# rev: programu
 #: ../src/ui/theme-viewer.c:378
 msgid "Normal Application Window"
-msgstr "Zwykłe okno aplikacji"
+msgstr "Zwykłe okno programu"
 
 #: ../src/ui/theme-viewer.c:382
 msgid "Dialog Box"
