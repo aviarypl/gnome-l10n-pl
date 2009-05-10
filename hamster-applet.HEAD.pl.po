@@ -15,10 +15,10 @@ msgid ""
 msgstr ""
 "Project-Id-Version: hamster-applet\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2009-04-21 17:37+0200\n"
-"PO-Revision-Date: 2009-04-21 20:53+0200\n"
+"POT-Creation-Date: 2009-05-10 12:09+0200\n"
+"PO-Revision-Date: 2009-05-10 12:14+0200\n"
 "Last-Translator: Łukasz Jernaś <deejay1@srem.org>\n"
-"Language-Team: Polish <gnomepl@aviary.pl>\n"
+"Language-Team: Polish <Polish <gnomepl@aviary.pl>>\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
@@ -32,9 +32,9 @@ msgstr ""
 msgid "Project Hamster - track your time"
 msgstr "Projekt Hamster - zarządzanie czasem"
 
-#. Title of reminder baloon
+#. Title of reminder notification
 #: ../data/Hamster_Applet.server.in.in.h:2 ../hamster/about.py:40
-#: ../hamster/about.py:41 ../hamster/applet.py:67
+#: ../hamster/about.py:41 ../hamster/applet.py:66
 msgid "Time Tracker"
 msgstr "Zarządzanie czasem"
 
@@ -106,7 +106,7 @@ msgstr "Usuń czynność"
 msgid "Remove category"
 msgstr "Usuń kategorię"
 
-#: ../data/preferences.ui.h:15 ../data/hamster-applet.schemas.in.h:8
+#: ../data/preferences.ui.h:15 ../data/hamster-applet.schemas.in.h:10
 msgid "Stop tracking on shutdown"
 msgstr "Zatrzymanie śledzenia przy wyłączeniu komputera"
 
@@ -125,6 +125,10 @@ msgstr "_Czynności"
 #: ../data/preferences.ui.h:19
 msgid "_Categories"
 msgstr "_Kategorie"
+
+#: ../data/preferences.ui.h:20
+msgid "remind also when no activity is set"
+msgstr "przypominaj również gdy nie ustawiono żadnej czynności"
 
 #: ../data/edit_activity.ui.h:1
 msgid "Activity:"
@@ -159,6 +163,17 @@ msgid "Keyboard shortcut for showing the Time Tracker window."
 msgstr "Skrót klawiszowy do wyświetlenia okna zarządzania czasem."
 
 #: ../data/hamster-applet.schemas.in.h:2
+msgid "Remind also when no activity is set"
+msgstr "Przypominaj również gdy nie ustawiono żadnej czynności"
+
+#: ../data/hamster-applet.schemas.in.h:3
+msgid ""
+"Remind every notify_interval minutes also if no activity has been started."
+msgstr ""
+"Przypomina co notify_interval minut nawet, jeśli nie uruchomiono żadnej "
+"czynności."
+
+#: ../data/hamster-applet.schemas.in.h:4
 msgid ""
 "Remind of current task every specified amount of minutes. Set to 0 or bigger "
 "than 120 to disable reminder."
@@ -166,24 +181,24 @@ msgstr ""
 "Przypominanie o bieżącej czynności co określoną liczbę minut. Ustawić na 0 "
 "lub więcej niż 120, aby wyłączyć przypominanie."
 
-#: ../data/hamster-applet.schemas.in.h:3
+#: ../data/hamster-applet.schemas.in.h:5
 msgid "Remind of current task every x minutes"
 msgstr "Przypominanie o bieżącej czynności co x minut"
 
-#: ../data/hamster-applet.schemas.in.h:4
+#: ../data/hamster-applet.schemas.in.h:6
 msgid "Show window"
 msgstr "Wyświetlanie okna"
 
-#: ../data/hamster-applet.schemas.in.h:5
+#: ../data/hamster-applet.schemas.in.h:7
 msgid "Stop tracking current activity on shutdown"
 msgstr "Zatrzymanie śledzenia bieżącej czynności przy wyłączeniu komputera"
 
-#: ../data/hamster-applet.schemas.in.h:6
+#: ../data/hamster-applet.schemas.in.h:8
 msgid "Stop tracking current activity, when computer becomes idle"
 msgstr ""
 "Zatrzymanie śledzenia bieżącej czynności podczas bezczynności komputera"
 
-#: ../data/hamster-applet.schemas.in.h:7
+#: ../data/hamster-applet.schemas.in.h:9
 msgid "Stop tracking on idle"
 msgstr "Zatrzymanie czasu podczas bezczynności"
 
@@ -193,15 +208,14 @@ msgid ""
 "span>"
 msgstr ""
 "<span size=\"small\" >Proszę wpisać czynność i nacisnąć klawisz Enter by "
-"zacząć śledzenie!</"
-"span>"
+"zacząć śledzenie!</span>"
 
 #: ../data/applet.ui.h:2
 msgid ""
 "<span size=\"small\" color=\"blue\" underline=\"single\">Tell me more</span>"
 msgstr ""
-"<span size=\"small\" color=\"blue\" underline=\"single\">Więcej informacji<"
-"/span>"
+"<span size=\"small\" color=\"blue\" underline=\"single\">Więcej informacji</"
+"span>"
 
 #: ../data/applet.ui.h:3
 msgid "Ad_d Earlier Activity"
@@ -212,7 +226,7 @@ msgstr "Dodaj _wcześniejszą czynność"
 msgid "Hamster"
 msgstr "Hamster"
 
-#: ../data/applet.ui.h:6 ../hamster/applet.py:525
+#: ../data/applet.ui.h:6 ../hamster/applet.py:538
 msgid "No records today"
 msgstr "Brak zapisów na dzisiaj"
 
@@ -298,61 +312,21 @@ msgstr ""
 "Aviary.pl <gnomepl@aviary.pl>, 2008, 2009\n"
 "Tomasz Dominikowski <tdominikowski@aviary.pl>, 2008, 2009."
 
-#. try yesterday if there is nothing today
-#: ../hamster/preferences.py:56 ../hamster/edit_activity.py:336
-#: ../hamster/applet.py:631 ../hamster/db.py:189 ../hamster/db.py:206
-#: ../hamster/db.py:209 ../hamster/db.py:372 ../hamster/db.py:476
-#: ../hamster/db.py:490 ../hamster/reports.py:129 ../hamster/stuff.py:73
-msgid "Unsorted"
-msgstr "Bez sortowania"
-
-#: ../hamster/preferences.py:104
-msgid "Name"
-msgstr "Nazwa"
-
-#: ../hamster/preferences.py:124 ../hamster/reports.py:106
-#: ../hamster/reports.py:172
-msgid "Category"
-msgstr "Kategoria"
-
-#: ../hamster/preferences.py:554
-msgid "New category"
-msgstr "Nowa kategoria"
-
-#: ../hamster/preferences.py:567
-msgid "New activity"
-msgstr "Nowa czynność"
-
-#. notify interval slider value label
-#: ../hamster/preferences.py:624
-#, python-format
-msgid "%(interval_minutes)d minutes"
-msgstr "%(interval_minutes)d minut"
-
-#. notify interval slider value label
-#: ../hamster/preferences.py:627
-msgid "Never"
-msgstr "Nigdy"
-
-#: ../hamster/edit_activity.py:351
-msgid "Update activity"
-msgstr "Aktualizowanie czynności"
-
 #. translators: this is edit activity action in the notifier bubble
-#: ../hamster/applet.py:77
+#: ../hamster/applet.py:76
 msgid "Edit"
 msgstr "Modyfikuj"
 
 #. translators: this is switch activity action in the notifier bubble
-#: ../hamster/applet.py:79
+#: ../hamster/applet.py:78
 msgid "Switch"
 msgstr "Przełącz"
 
-#: ../hamster/applet.py:292
+#: ../hamster/applet.py:301
 msgid "What to type in the activity box?"
 msgstr "Co można wpisać w pole aktywności?"
 
-#: ../hamster/applet.py:295
+#: ../hamster/applet.py:304
 msgid ""
 "There is simple syntax that enables you to add details to your activities:\n"
 "        \n"
@@ -384,31 +358,40 @@ msgstr ""
 "\n"
 "Więc, proszę zacząć śledzić!"
 
-#: ../hamster/applet.py:324 ../hamster/reports.py:109
+#: ../hamster/applet.py:333 ../hamster/reports.py:109
 #: ../hamster/reports.py:174
 msgid "Duration"
 msgstr "Czas trwania"
 
-#: ../hamster/applet.py:451 ../hamster/applet.py:598
+#: ../hamster/applet.py:455 ../hamster/applet.py:479 ../hamster/applet.py:611
 msgid "No activity"
 msgstr "Brak czynności"
 
 #. activity reminder
-#: ../hamster/applet.py:465
+#: ../hamster/applet.py:474
 #, python-format
 msgid "Working on <b>%s</b>"
 msgstr "Wykonywana czynność: <b>%s</b>"
 
 #. listing of today's categories and time spent in them
-#: ../hamster/applet.py:532
+#: ../hamster/applet.py:545
 #, python-format
 msgid "%(category)s: %(duration)s"
 msgstr "%(category)s: %(duration)s, "
 
-#: ../hamster/applet.py:534
+#: ../hamster/applet.py:547
 #, python-format
 msgid "%.1fh"
 msgstr "%.1fh"
+
+#. try yesterday if there is nothing today
+#: ../hamster/applet.py:644 ../hamster/db.py:189 ../hamster/db.py:206
+#: ../hamster/db.py:209 ../hamster/db.py:372 ../hamster/db.py:476
+#: ../hamster/db.py:490 ../hamster/edit_activity.py:326
+#: ../hamster/preferences.py:56 ../hamster/reports.py:129
+#: ../hamster/stuff.py:73
+msgid "Unsorted"
+msgstr "Bez sortowania"
 
 #. defaults
 #: ../hamster/db.py:671
@@ -447,6 +430,38 @@ msgstr "Podlewanie kwiatów"
 #: ../hamster/db.py:680
 msgid "Doing handstands"
 msgstr "Stanie na rękach"
+
+#: ../hamster/edit_activity.py:341
+msgid "Update activity"
+msgstr "Aktualizowanie czynności"
+
+#: ../hamster/preferences.py:104
+msgid "Name"
+msgstr "Nazwa"
+
+#: ../hamster/preferences.py:124 ../hamster/reports.py:106
+#: ../hamster/reports.py:172
+msgid "Category"
+msgstr "Kategoria"
+
+#: ../hamster/preferences.py:555
+msgid "New category"
+msgstr "Nowa kategoria"
+
+#: ../hamster/preferences.py:568
+msgid "New activity"
+msgstr "Nowa czynność"
+
+#. notify interval slider value label
+#: ../hamster/preferences.py:628
+#, python-format
+msgid "%(interval_minutes)d minutes"
+msgstr "%(interval_minutes)d minut"
+
+#. notify interval slider value label
+#: ../hamster/preferences.py:631
+msgid "Never"
+msgstr "Nigdy"
 
 #. overview label if start and end years don't match
 #. letter after prefixes (start_, end_) is the one of
