@@ -3,8 +3,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: pl\n"
 "POT-Creation-Date: 2009-03-18 19:00+0100\n"
-"PO-Revision-Date: 2009-06-06 17:01+0200\n"
-"Last-Translator: Łukasz Jernaś <deejay1@srem.org>\n"
+"PO-Revision-Date: 2009-07-05 22:06+0100\n"
+"Last-Translator: Joanna Mazgaj <jmazgaj@aviary.pl>\n"
 "Language-Team: Polish <Polish <gnomepl@aviary.pl>>\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -82,7 +82,9 @@ msgstr "Eitan"
 msgid "Isaacson"
 msgstr "Isaacson"
 
-#: ../C/accerciser.xml:57(orgname) ../C/accerciser.xml:66(orgname) ../C/accerciser.xml:108(para)
+#: ../C/accerciser.xml:57(orgname)
+#: ../C/accerciser.xml:66(orgname)
+#: ../C/accerciser.xml:108(para)
 msgid "Accerciser team"
 msgstr "Zespół Accerciser"
 
@@ -124,9 +126,7 @@ msgstr "Opinie"
 
 #: ../C/accerciser.xml:119(para)
 msgid "To report a bug or make a suggestion regarding the <application>Accerciser</application> application or this manual, follow the directions in the <ulink url=\"ghelp:gnome-feedback\" type=\"help\">GNOME Feedback Page</ulink>."
-msgstr ""
-"Aby zgłosić błąd lub komentarz dotyczący programu <application>Accerciser</application> lub niniejszego podręcznika, "
-"należy postępować zgodnie z instrukcjami na stronie <ulink type=\"help\" url=\"ghelp:gnome-feedback\">GNOME Feedback</ulink>."
+msgstr "Aby zgłosić błąd lub komentarz dotyczący programu <application>Accerciser</application> lub niniejszego podręcznika, należy postępować zgodnie z instrukcjami na stronie <ulink type=\"help\" url=\"ghelp:gnome-feedback\">GNOME Feedback</ulink>."
 
 #: ../C/accerciser.xml:126(primary)
 msgid "Accerciser"
@@ -136,6 +136,7 @@ msgstr "Accerciser"
 msgid "Introduction"
 msgstr "Wstęp"
 
+# rev: kontrolowac kontrolki? wedle slownika referencyjnego widget w gnome to widżet. btw: w 'about' opis accerciser to: Interaktywna przeglądarka funkcji dostępności w języku Python - myślę, że i tu się nada.
 #: ../C/accerciser.xml:136(para)
 msgid "<application>Accerciser</application> is an interactive Python accessibility explorer for the GNOME desktop. It uses <ulink url=\"http://directory.fsf.org/at-spi.html\" type=\"http\">AT-SPI</ulink> to inspect and control widgets, allowing you to check if an application is providing correct information to assistive technologies and automated test frameworks. <application>Accerciser</application> has a simple plugin framework which you can use to create custom views of accessibility information."
 msgstr "<application>Accerciser</application> jest interaktywną przeglądarką dostępności dla środowiska GNOME napisaną w Pythonie. Korzysta z <ulink url=\"http://directory.fsf.org/at-spi.html\" type=\"http\">AT-SPI</ulink> by uzyskać wgląd i kontrolować kontrolki, pozwalając na sprawdzenie czy dany program dostarcza poprawnych informacji dla technologii wspierających dostępność i zautomatyzowanych środowisk testowych. <application>Accerciser</application> posiada prosty zrąb dla obsługi wtyczek, które mogą dostarczać własne widoki przedstawiające informacje o dostępności."
@@ -160,6 +161,7 @@ msgstr "Program <application>Accerciser</application> można uruchomić w jeden 
 msgid "<guimenu>Applications</guimenu> menu"
 msgstr "z menu Programy"
 
+# rev: ja nie mam 'narzedzi programistow', mam 'programowanie' -> 'przeglądarka dostępności Accerciser'.
 #: ../C/accerciser.xml:161(para)
 msgid "Choose the <menuchoice><guisubmenu>Programming</guisubmenu><guimenuitem>Accerciser</guimenuitem></menuchoice> menu item."
 msgstr "wybierając polecenie <menuchoice><guisubmenu>Narzędzia programistów</guisubmenu><guimenuitem>Eksplorator dostępności Accerciser</guimenuitem></menuchoice>"
@@ -184,14 +186,17 @@ msgstr "Po uruchomieniu <application>Accerciser</application>"
 msgid "When you start <application>Accerciser</application>, the following window is displayed."
 msgstr "Po uruchomieniu programu <application>Accerciser</application> zostanie wyświetlone następujące okno:"
 
+# rev: programu
 #: ../C/accerciser.xml:187(title)
 msgid "<application>Accerciser</application> Main Window"
 msgstr "Główne okno <application>Accerciser</application>"
 
+# rev: pokazuje programu pewnie główne okno. 
 #: ../C/accerciser.xml:194(phrase)
 msgid "Shows <application>Accerciser</application> main window. Contains title bar, menu bar, accessible tree , right plugin display area, and bottom plugin display area. The menu bar contains File, Edit, Bookmarks, View, and Help menus."
 msgstr "Pokazuje  programu <application>Accerciser</application>. Zawiera pasek tytułowy, pasek menu, drzewo dostępności, prawy obszar wyświetlania wtyczek oraz dolny obszar wyświetlania wtyczek. Pasek menu zawiera menu Plik, Edycja, Zakładki, Widok oraz Pomoc."
 
+# rev: programu
 #. for example, the items on the menubar and on the toolbar.
 #. 		 This section is optional.
 #: ../C/accerciser.xml:211(para)
@@ -234,22 +239,26 @@ msgstr "Można przeciągać wtyczki z lub do tego obszaru tak samo jak w prawym 
 msgid "Plugin View Management"
 msgstr "Zarządzanie obszarem wtyczek"
 
+# REV: podwójny myślnik [--] imho niepotrzebny; korzystających z programów odczytujących? Ostatnie dwa zdania nie są w ogóle przetłumaczone. 
 #: ../C/accerciser.xml:254(para)
 msgid "<application>Accerciser</application> has two modes for viewing plugins. The current view mode could be toggled with <menuchoice><guimenu>View</guimenu><guimenuitem>Single plugin view</guimenuitem></menuchoice> or by pressing <keycombo><keycap>Control</keycap><keycap>t</keycap></keycombo>. When single mode is enabled, all plugins will be put in the top right plugin view and ordered alphabetically, this could be useful for screen reader users who have no use for <application>Accerciser</application>'s flexible plugin spacial layout scheme. When single view mode is disabled plugin tabs could be dragged and dropped in to different plugin views, or could be dragged to the desktop to put the given plugin in a new view. The placement of plugins could also be manipulated with the plugin context menu that could be brought up either from the plugin tab, or the plugin preferences dialog."
 msgstr "Program <application>Accerciser</application> posiada dwa tryby wyświetlania wtyczek. Aktywny tryb wyświetlania może być przełączony przy użyciu polecenia menu <menuchoice><guimenu>Widok</guimenu><guimenuitem>Pojedynczy widok wtyczek</guimenuitem></menuchoice> lub poprzez skorzystanie ze skrótu klawiszowego <keycombo><keycap>Control</keycap><keycap>t</keycap></keycombo>. Jeśli tryb pojedynczego widoku jest aktywny, wszystkie wtyczki zostaną umieszczone w prawym górnym obszarze wyświetlania wtyczek i uszeregowane w kolejności alfabetycznej -- może to być przydatne dla użytkowników programów odczytujących, którzy nie korzystają z wygodnego schematu rozmieszczania elementów programu <application>Accerciser</application>."
 
+# rev: a może 'Korzystanie [z programu]' ?
 #: ../C/accerciser.xml:278(title)
 msgid "Usage"
 msgstr "Sposób użycia"
 
+# rev: zgubiłeś 'ę' w dostępnego. 
 #: ../C/accerciser.xml:279(para)
 msgid "You can use <application>Accerciser</application> to inspect any accessible widget shown in the tree view using the available plugins. The first step is to select an accessible to inspect using one of the following methods: <placeholder-1/>"
-msgstr "Program <application>Accerciser</application> można wykorzystać w celu podejrzenia dowolnego dostępnego widżetu wyświetlonego w widoku drzewa, przy użyciu dostępnych wtyczek. Pierwszym krokiem w celu podejrzenia właściwości dosŧepnego obiektu, jest skorzystanie z jednego z następujących sposobów: <placeholder-1/>"
+msgstr "Program <application>Accerciser</application> można wykorzystać w celu podejrzenia dowolnego dostępnego widżetu wyświetlonego w widoku drzewa, przy użyciu dostępnych wtyczek. Pierwszym krokiem w celu podejrzenia właściwości dostepnego obiektu, jest skorzystanie z jednego z następujących sposobów: <placeholder-1/>"
 
 #: ../C/accerciser.xml:292(title)
 msgid "Select an accessible through the tree view."
 msgstr "Wybieranie obiektu z drzewa dostępności"
 
+# rev: bezosobowo. w ostatnim zdaniu: tego węzła - danego węzła
 #: ../C/accerciser.xml:293(para)
 msgid "Use the tree view to navigate the hierarchy of accessible objects rooted at desktop. Unfolding a tree node reveals its immediate children while folding it hides them. Each node shows an icon for its associated application or widget role and its accessible name, if available. The second column lists how many nodes will be shown if the item is unfolded."
 msgstr "Użyj widoku drzewa, aby przeglądać hierarchię dostępnych obiektów mających swój początek na pulpicie. Rozwinięcie węzła drzewa wyświetli jego bezpośrednich potomków, podczas gdy zwinięcie węzła ukryje je. Każdy węzeł jest zaopatrzony w ikonę, która przedstawia związaną z nim aplikację lub rolę widżeta oraz jego dostępną nazwę. Druga kolumna zawiera informację o tym, ile nowych węzłów zostanie wyświetlonych w momencie rozwinięcia tego węzła."
@@ -258,14 +267,17 @@ msgstr "Użyj widoku drzewa, aby przeglądać hierarchię dostępnych obiektów 
 msgid "Using bookmarks"
 msgstr "Korzystanie z zakładek"
 
+# rev: funkcji dostępności, zamiast elementów? aplikacją - aplikacja; wybrać z menu X polecenie Y. 
 #: ../C/accerciser.xml:305(para)
 msgid "Accerciser allows bookmarking selected accessibles for later examining. This could be helpful if the target application must be restarted, for example after rebuilding it. To bookmark the currently selected accessible do <menuchoice><guimenu>Bookmarks</guimenu><guimenuitem>Add Bookmark...</guimenuitem></menuchoice> or press <keycombo><keycap>Control</keycap><keycap>d</keycap></keycombo>."
 msgstr "Program Accerciser pozwala na dodanie do zakładek zaznaczonych elementów dostępności, w celach późniejszego zapoznania się z nimi. Może to być przydatne w chwili, gdy aplikacją, którą analizujemy musi zostać uruchomiona ponownie, na przykład po jej ponownej kompilacji. W celu dodania aktualnego elementu dostępności do zakładek, należy wykonać polecenie menu <menuchoice><guimenu>Zakładki</guimenu><guimenuitem>Dodaj zakładkę...</guimenuitem></menuchoice> lub skorzystać ze skrótu klawiszowego <keycombo><keycap>Control</keycap><keycap>d</keycap></keycombo>."
 
+# rev: może zamiast skonstruowane: składają się?
 #: ../C/accerciser.xml:317(para)
 msgid "Bookmarks to accessibles in Accerciser are defined by an application name and a \"path\" in the application's internal accessible hierarchy to the bookmarked accessible. When the target application is in a different state (ie. multiple top level frames) the path might not be correct."
 msgstr "Zakładki do elementów dostępnych w programie Accerciser są skonstruowane z nazwy programu oraz \"ścieżki\" opartej na jego wewnętrznej hierarchii. Jeśli program znajduje się w innym stanie (np. gdy posiada wiele głównych okien) ścieżka ta może okazać się nieprawidłowa."
 
+# rev: j/w co do poleceń w menu
 #: ../C/accerciser.xml:324(para)
 msgid "Bookmarks could be managed by accessing the bookmark editing dialog through <menuchoice><guimenu>Bookmarks</guimenu><guimenuitem>Edit Bookmarks...</guimenuitem></menuchoice>."
 msgstr "W celu zarządzania zakładkami należy skorzystać z polecenia menu <menuchoice><guimenu>Zakładki</guimenu><guimenuitem>Modyfikuj zakładki...</guimenuitem></menuchoice>."
@@ -278,10 +290,13 @@ msgstr "Domyślne wtyczki"
 msgid "<application>Accerciser</application> comes with several default plugins. These plugins allow you to view a variety of information about the currently selected accessible in the tree view and its neighbors. The default plugins available in 0.1.5 are the following:"
 msgstr "Program <application>Accerciser</application> jest dostarczany wraz z kilkunastoma domyślnymi wtyczkami. Wtyczki te pozwalają na wyświetlenie różnorodnych informacji dotyczących aktualnie zaznaczanego elementu dostępności w drzewie dostępności jak i jego sąsiadów. W wersji 0.1.5 dostępne są następujące wtyczki:"
 
-#: ../C/accerciser.xml:363(title) ../C/accerciser.xml:367(title)
+# rev: kurcze mam 9.04, ale u mnie sie to nazywa  'widok interfejsu'.
+#: ../C/accerciser.xml:363(title)
+#: ../C/accerciser.xml:367(title)
 msgid "Interface Viewer"
 msgstr "Przeglądarka interfejsów"
 
+# rev: imho wystarczy 'są' zamiast 'zostają'. 
 #: ../C/accerciser.xml:364(para)
 msgid "This plugin displays information about the available interfaces for the selected tree view accessible. Unsupported interfaces are grayed out. Various instruments for viewing and controlling an interface are available under each expander."
 msgstr "Wtyczka ta wyświetla informacje o dostęnych interfejsach dla aktualnie zaznaczonego elementu dostępności. Niewspierane interfejsy zostają wyszarzone. Pod z każdym z elementów rozwijających, znajdują się różne narzędzia do przeglądu i kontroli interfejsu."
@@ -290,10 +305,13 @@ msgstr "Wtyczka ta wyświetla informacje o dostęnych interfejsach dla aktualnie
 msgid "Interfaces that are supported by the selected accessible are shown as sensitive."
 msgstr "Interfejsy wspierane przez zaznaczony obiekt są wyświetlane jako aktywne."
 
-#: ../C/accerciser.xml:382(title) ../C/accerciser.xml:385(title)
+# rev: jak wcześniej, 'monitor zdarzen'. 
+#: ../C/accerciser.xml:382(title)
+#: ../C/accerciser.xml:385(title)
 msgid "Event Monitor"
 msgstr "Podgląd zdarzeń"
 
+# rev: funkcji dostępności ?
 #: ../C/accerciser.xml:383(para)
 msgid "This plugin monitors the selected types of events from the selected tree view accessible, from the selected tree view application, or the entire desktop."
 msgstr "Wtyczka ta obserwuje występowania wybranych typów zdarzeń zaznaczonego elementu dostępności, z zaznaczonego programu lub z całego pulpitu."
@@ -302,6 +320,7 @@ msgstr "Wtyczka ta obserwuje występowania wybranych typów zdarzeń zaznaczoneg
 msgid "The bottom part of the event monitor window allows you to pick the type and source of events."
 msgstr "Dolna część okna podglądu zdarzeń pozwala na wybranie typu i źródła zdarzeń."
 
+# rev: może: informacje na temat zmiany skrótu klaw. znajdują się..
 #: ../C/accerciser.xml:399(para)
 msgid "By pressing <keycombo><keycap>Control</keycap><keycap>Alt</keycap><keycap>l</keycap></keycombo> anywhere on the desktop, the last logged event will be highlighted for later reference. See <xref linkend=\"accerciser-hotkey-config\"/> for how to change this key combination."
 msgstr "Po skorzystaniu ze skrótu klawiszowego <keycombo><keycap>Control</keycap><keycap>Alt</keycap><keycap>l</keycap></keycombo> w dowolnym miejscu pulpitu, ostatnie zapamiętane zdarzenie zostanie podświetlone do późniejszego przeglądu. Aby dowiedzieć się jak zmienić ten skrót klawiszowy, proszę zajrzeć do sekcji <xref linkend=\"accerciser-hotkey-config\"/>."
@@ -310,11 +329,13 @@ msgstr "Po skorzystaniu ze skrótu klawiszowego <keycombo><keycap>Control</keyca
 msgid "IPython Console"
 msgstr "Konsola IPython"
 
+# rev: języka IPython. odpytać interejs Text -> interfejs; 
 #: ../C/accerciser.xml:413(para)
 msgid "This plugin is a fully-fledged <ulink url=\"http://ipython.scipy.org/moin/\" type=\"http\">IPython</ulink> console. Press <keycap>Tab</keycap> to show completions for the current command. Press <keycap>Enter</keycap> to execute any valid Python code. Commands at the console have access to the currently selected accessible in the accessible tree by way of the <varname>acc</varname> variable. In addition, all functions and constants from the pyatspi package are available as locals in the console. The most important of these are the functions for querying to other accessibility interfaces. For example, to query to the Text interface: <command>t = acc.queryText() </command>. Imports from the current working directory or Python path are also allowed."
 msgstr "Wtyczka ta jest pełnoprawną konsolą <ulink url=\"http://ipython.scipy.org/moin/\" type=\"http\">IPython</ulink>. W celu otrzymania podpowiedzi odnośnie danego polecenia należy skorzystać z klawisza <keycap>Tab</keycap>. Naciśnięcie klawisza <keycap>Enter</keycap> spowoduje wykonanie każdego poprawnego kodu języka Python. Polecenia w konsoli posiadają dostęp do aktualnie zaznaczonego elementu dostępnego w drzewie dostępności za pomocą zmiennej <varname>acc</varname>. Dodatkowo wszystkie funkcje i stałe z pakietu pyatspi są dostępne jako zmienne lokalne. Najważniejszymi z nich są funkcje do odpytywania innych interfejsów dostępności. Dla przykładu, aby odpytać interejs Text należy wpisać polecenie: <command>t = acc.queryText()</command>. Istnieje również możliwość importowania modułów Pythona z aktualnego katalogu lub z jego ścieżki."
 
-#: ../C/accerciser.xml:429(title) ../C/accerciser.xml:432(title)
+#: ../C/accerciser.xml:429(title)
+#: ../C/accerciser.xml:432(title)
 msgid "API Browser"
 msgstr "Przeglądarka API"
 
@@ -330,6 +351,7 @@ msgstr "Przeglądarka API"
 msgid "Script recorder"
 msgstr "Rejestrator skryptów"
 
+# rev: każde interakcja -> każda
 #: ../C/accerciser.xml:447(para)
 msgid "<application>Accerciser</application>'s script recorder allows users to record keyboard interaction with other desktop applications for the purpose of authoring UI test scripts. Currently the plug-in supports the generation of scripts for three platforms: Dogtail, LDTP, and an Accerciser's built-in API. Once you press the \"Record\" button every keyboard interaction will be recorded in to a script that could be executed later as a stand alone script."
 msgstr "Rejestrator skryptów programu <application>Accerciser</application> pozwala użytkownikom na rejestrację interakcji klawiatury z innymi programami w celu tworzenia skryptów do testowania interfejsu użytkownika. W chwili obecnej wtyczka ta wspiera tworzenie skryptów dla trzech platform: Dogtail, LDTP oraz wbudowanego API programu Accerciser. Po naciśnięciu przycisku \"Nagrywaj\" każde interakcja z klawiaturą zostanie zapisana do skryptu, który może później zostać wykonany samodzielnie."
@@ -346,6 +368,8 @@ msgstr "Rejestrator skryptów"
 msgid "Quick select"
 msgstr "Szybkie zaznaczanie"
 
+# rev: szynkie -> szybkie; natomias -> natomiast; aplikacja -> program; A/T w skrócie klawiszowym dużą literą.wszędzie dużą [wcześniejsze też popraw jeśli były]. zamiast elementów dostępności to co wcześniej.
+# Ponadto nie wydaje mi się aby tu chodziło o szybkie zaznaczanie, raczej wybieranie/dostęp z poziomu innych programów.
 #: ../C/accerciser.xml:472(para)
 msgid "This plugin provides global hotkeys for allowing quick selection of accessibles through the target application's UI. Pressing <keycombo><keycap>Control</keycap><keycap>Alt</keycap><keycap>a</keycap></keycombo> will select the last focused widget's accessible in <application>Accerciser</application>. Pressing <keycombo><keycap>Control</keycap><keycap>Alt</keycap><keycap>t</keycap></keycombo> will select the accessible of the widget that is under the pointer."
 msgstr "Wtyczka ta dostarcza skróty klawiszowe pozwalające na szynkie zaznaczanie elementów dostępności poprzez wskazanie ich w interfejsie aplikacji docelowej. Korzystając ze skrótu klawiszowego <keycombo><keycap>Control</keycap><keycap>Alt</keycap><keycap>a</keycap></keycombo> zaznaczy element dostępności ostatnio aktywowanego widżetu w programie <application>Accerciser</application>, natomias skorzystanie ze skróty klawiszowego <keycombo><keycap>Control</keycap><keycap>Alt</keycap><keycap>t</keycap></keycombo>  zaznaczy element dostępności widżetu znajdującego się kursorem myszy."
@@ -354,6 +378,7 @@ msgstr "Wtyczka ta dostarcza skróty klawiszowe pozwalające na szynkie zaznacza
 msgid "Validation"
 msgstr "Walidacja"
 
+# rev: niżej tłumaczysz severity jako poziom,
 #: ../C/accerciser.xml:490(para)
 msgid "This plugin checks applications for accessibility problems and generates a report including the severity and description of the problems. The report links errors to documentation about how to remedy common problems. The plugin is extensible with test schemas that define rules for validation."
 msgstr "Wtyczka ta sprawdza aplikację pod kątem problemów z dostępnością i tworzy raport zawierający opis oraz dotkliwość znalezionych problemów. Raport ten zawiera odesłania do dokumentacji opisującej jak zapobiegać najczęstszym problemom. Funkcjonalność tej wtyczki może zostać rozszerzona za pomocą schematów testów definiujących reguły walidacji."
@@ -362,6 +387,7 @@ msgstr "Wtyczka ta sprawdza aplikację pod kątem problemów z dostępnością i
 msgid "To run the validator, first select an item in the accessibility tree. The plugin will test the selected accessible and all of its descendants. Next select a schema to use for the test. Then click the <guibutton>Validate</guibutton> button to start the test. While the test is running, click the button again to cancel it."
 msgstr "W celu uruchomienia walidatora, należy wybrać najpierw element w drzewie dostępności. Wtyczka ta przetestuje zaznaczony element dostępności oraz wszystkie jego elementy pochodne. Następnie należy wybrać schemat, który ma być użyty do testów. Po kliknięciu lewym klawiszem myszy przycisku <guibutton>Sprawdź</guibutton> nastąpi uruchomienie testu. Ponowne kliknięcie na ten przycisk spowoduje jego przerwanie."
 
+# rev: wyżej tłumaczysz severity jako dotkliwość. wymaga to uściślenia.
 #: ../C/accerciser.xml:506(para)
 msgid "When the test completes, the report table shows the severity and description of all errors. Double click a row in the table to show the associated accessible in the tree. With an item selected, click the <guibutton>Help</guibutton> to get information about how to resolve the problem."
 msgstr "Po zakończeniu testu zostanie wyświetlona tabela zawierające poziom i opis wszystkich znalezionych błędów. Dwukrotne kliknięcie na wiersz tabeli wyświetli odpowiadający temu błędowi element dostępności w drzewie. Po zaznaczeniu wiersza kliknięcie przycisku <guibutton>Pomoc</guibutton> spowoduje wyświetlenie informacji o tym, jak rozwiązać problem."
@@ -382,6 +408,7 @@ msgstr "Układ wtyczek"
 msgid "There are two methods for configuring plugin layout in <application>Accerciser</application>. First you may choose <menuchoice><guimenu>Edit</guimenu><guimenuitem>Preferences</guimenuitem></menuchoice> to activate the <guilabel>Preferences</guilabel> dialog. This dialog contains tabs for each section, select the <guilabel>Plugins</guilabel> tab. Under this section you will find a list view of all the available plugins. Right-click on any of the plugins listed to configure it's view."
 msgstr "Istnieją dwa sposoby konfigurowania układu wtyczek w programie <application>Accerciser</application>. Po pierwsze można skorzystać z polecenia menu <menuchoice><guimenu>Edycja</guimenu><guimenuitem>Preferencje</guimenuitem></menuchoice>, aby wyświetlić okno dialogowe <guilabel>Preferencje</guilabel>. Okno to zawiera karty dla każdej z sekcji, należy w nim wybrać kartę <guilabel>Wtyczki</guilabel> - znajduje się tam lista wszystkich dostępnych wtyczek. Kliknięcie prawym klawiszem myszy na którąkolwiek z wtyczek pozwoli na dostosowanie jej wyglądu."
 
+# rev: preferencje; 
 #: ../C/accerciser.xml:545(para)
 msgid "You may bypass the <guilabel>Preferences</guilabel> dialog by using drag and drop to move plugin tabs. Dragging a plugin tab to the bottom or right plugin area in the main window will move the plugin. Dragging a tab to the desktop will create a new plugin window and drop the plugin in it."
 msgstr "Można też pominąć okno dialogowe <guilabel>Preferences</guilabel> po prostu przeciągając karty wtyczek. Przeciągnięcie karty wtyczki do dolnego lub prawego obszaru wyświetlania w oknie głównym spowoduje jej przestawienie. Przeciągniecie karty wtyczki na pulpit spowoduje utworzenie nowego okna zawierającego tą wtyczkę."
@@ -390,6 +417,7 @@ msgstr "Można też pominąć okno dialogowe <guilabel>Preferences</guilabel> po
 msgid "Global Hotkey Configuration"
 msgstr "Konfiguracja globalnych skrótów klawiszowych"
 
+# rev: a nie lepiej: niektóre elementy programu A mogą być dostępne/udostępnione za pomocą.. 
 #: ../C/accerciser.xml:553(para)
 msgid "Some elements in <application>Accerciser</application> may enable certain functionality via hotkeys. The hotkey combination could be changed via the <guilabel>Preferences</guilabel> dialog, to do so you may select <menuchoice><guimenu>Edit</guimenu><guimenuitem>Preferences</guimenuitem></menuchoice> to activate the <guilabel>Preferences</guilabel> dialog. This dialog contains tabs for each section, select the <guilabel>Global Hotkeys</guilabel> tab. Under this section you will find a list view of all the available hotkey features. Change the key bindings to you liking."
 msgstr "Niektóre części programu <application>Accerciser</application> mogą udostępniać swoją funkcjonalność przy pomocy klawiszy skrótu. Kombinacje klawiszy mogą zostać zmienione za pomocą okna dialogowego <guilabel>Preferencje</guilabel>, w tym celu należy wybrać polecenie menu <menuchoice><guimenu>Edycja</guimenu><guimenuitem>Preferencje</guimenuitem></menuchoice>, a następnie kartę <guilabel>Skróty klawiszowe</guilabel>. W karcie tej znajduje się lista wszystkich aktualnie dostępnych skrótów klawiszowych."
@@ -404,9 +432,7 @@ msgstr "Program <application>Acceerciser</application> został napisany przez Ei
 
 #: ../C/accerciser.xml:589(para)
 msgid "To report a bug or make a suggestion regarding this application or this manual, follow the directions in this <ulink url=\"ghelp:gnome-feedback\" type=\"help\">document</ulink>."
-msgstr ""
-"Aby zgłosić błąd lub komentarz dotyczący programu <application>Accerciser</application> lub niniejszego podręcznika, "
-"należy postępować zgodnie z instrukcjami zawartymi w <ulink type=\"help\" url=\"ghelp:gnome-feedback\">tym dokumencie</ulink>."
+msgstr "Aby zgłosić błąd lub komentarz dotyczący programu <application>Accerciser</application> lub niniejszego podręcznika, należy postępować zgodnie z instrukcjami zawartymi w <ulink type=\"help\" url=\"ghelp:gnome-feedback\">tym dokumencie</ulink>."
 
 #: ../C/accerciser.xml:592(para)
 msgid "Redistribution and use in source and binary forms, with or without modification, are permitted under the terms of the BSD License."
@@ -418,5 +444,4 @@ msgid "translator-credits"
 msgstr ""
 "Aviary.pl <gnomepl@aviary.pl>, 2009\n"
 "Łukasz Jernaś <deejay1@srem.org>, 2009"
-
 
