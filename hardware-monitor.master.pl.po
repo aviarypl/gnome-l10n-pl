@@ -11,8 +11,8 @@ msgstr ""
 "Project-Id-Version: hardware-monitor\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2009-08-07 14:37+0200\n"
-"PO-Revision-Date: 2009-04-19 10:57+0200\n"
-"Last-Translator: Łukasz Jernaś <deejay1@srem.org>\n"
+"PO-Revision-Date: 2009-08-07 16:42+0100\n"
+"Last-Translator: Tomasz Dominikowski <dominikowski@gmail.com>\n"
 "Language-Team: Polish <gnomepl@aviary.pl>\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -20,7 +20,8 @@ msgstr ""
 "X-Generator: Lokalize 0.3\n"
 "Plural-Forms: nplurals=3; plural=(n==1 ? 0 : n%10>=2 && n%10<=4 && (n%100<10 || n%100>=20) ? 1 : 2);\n"
 
-#: ../HardwareMonitor.server.in.in.h:1 ../src/applet.cpp:471
+#: ../HardwareMonitor.server.in.in.h:1
+#: ../src/applet.cpp:471
 msgid "Hardware Monitor"
 msgstr "Monitor sprzętu"
 
@@ -65,27 +66,21 @@ msgstr ""
 "%1\n"
 "%2"
 
+# rev: czemu nie po prostu "Obsługuje wykresy..."
 #: ../src/applet.cpp:465
-msgid ""
-"Monitor various hardware-related information, such as CPU usage, memory "
-"usage etc. Supports curve graphs, bar plots, column diagrams, textual "
-"monitoring and fluctuating flames."
-msgstr ""
-"Monitoruje informacje związane ze sprzętem, takie jak wykorzystanie "
-"procesora, pamięci itp. Obrazowanie za pomocą wykresów krzywych, wykresów "
-"słupkowych, diagramów kolumnowych, tekstu czy też \"płomieni\"."
+msgid "Monitor various hardware-related information, such as CPU usage, memory usage etc. Supports curve graphs, bar plots, column diagrams, textual monitoring and fluctuating flames."
+msgstr "Monitoruje informacje związane ze sprzętem, takie jak wykorzystanie procesora, pamięci itp. Obrazowanie za pomocą wykresów krzywych, wykresów słupkowych, diagramów kolumnowych, tekstu czy też \"płomieni\"."
 
 #. %1 is the copyright symbol
 #: ../src/applet.cpp:474
 msgid "Copyright %1 2003 Ole Laursen"
 msgstr "Copyright %1 2003 Ole Laursen"
 
+# rev: GNOME PL już nie istnieje, do usunięcia, złamać wiersz między 2009 a Łukasz
 #. note to translators: please fill in your names and email addresses
 #: ../src/applet.cpp:481
 msgid "translator-credits"
-msgstr ""
-"GNOME PL Team <translators@gnome.pl> Aviary.pl <gnomepl@aviary.pl>, 2009 "
-"Łukasz Jernaś <deejay1@srem.org>, 2009"
+msgstr "GNOME PL Team <translators@gnome.pl> Aviary.pl <gnomepl@aviary.pl>, 2009 Łukasz Jernaś <deejay1@srem.org>, 2009"
 
 #. %2 is a descriptive string from sensors.conf
 #: ../src/choose-monitor-window.cpp:115
@@ -101,7 +96,8 @@ msgstr "Czujnik %1"
 msgid "Fan %1: \"%2\""
 msgstr "Wentylator %1: \"%2\""
 
-#: ../src/choose-monitor-window.cpp:141 ../src/monitor-impls.cpp:1049
+#: ../src/choose-monitor-window.cpp:141
+#: ../src/monitor-impls.cpp:1049
 msgid "Fan %1"
 msgstr "Wentylator %1"
 
@@ -173,10 +169,12 @@ msgstr "Kol_umny"
 msgid "C_urves"
 msgstr "Krzy_we"
 
+# rev: to nie wygląda na treść przycisków, więc "Wybór urządzenia"
 #: ../src/ui.glade.h:18
 msgid "Choose a Device"
 msgstr "Wybierz urządzenie"
 
+# rev: j/w
 #: ../src/ui.glade.h:19
 msgid "Choose a Font"
 msgstr "Wybierz czcionkę"
@@ -193,19 +191,23 @@ msgstr "Urządzenia"
 msgid "Direction:"
 msgstr "Kierunek:"
 
+# rev: osobowość
 #: ../src/ui.glade.h:23
 msgid "Enter a folder residing on the disk to monitor"
 msgstr "Wprowadź katalog do monitorowania znajdujący się na dysku"
 
-#: ../src/ui.glade.h:24 ../src/monitor-impls.cpp:698
+#: ../src/ui.glade.h:24
+#: ../src/monitor-impls.cpp:698
 msgid "Ethernet (first)"
 msgstr "Ethernet (pierwszy)"
 
-#: ../src/ui.glade.h:25 ../src/monitor-impls.cpp:700
+#: ../src/ui.glade.h:25
+#: ../src/monitor-impls.cpp:700
 msgid "Ethernet (second)"
 msgstr "Ethernet (drugi)"
 
-#: ../src/ui.glade.h:26 ../src/monitor-impls.cpp:702
+#: ../src/ui.glade.h:26
+#: ../src/monitor-impls.cpp:702
 msgid "Ethernet (third)"
 msgstr "Ethernet (trzeci)"
 
@@ -221,7 +223,8 @@ msgstr "Właściwości monitora sprzętu"
 msgid "Incoming data"
 msgstr "Dane przychodzące"
 
-#: ../src/ui.glade.h:30 ../src/monitor-impls.cpp:704
+#: ../src/ui.glade.h:30
+#: ../src/monitor-impls.cpp:704
 msgid "Modem"
 msgstr "Modem"
 
@@ -281,7 +284,8 @@ msgstr "Wybór czujnika do monitorowania"
 msgid "Select whether to monitor incoming or outgoing data or both"
 msgstr "Określa, czy monitorować dane przychodzące, wychodzące lub wszystkie"
 
-#: ../src/ui.glade.h:45 ../src/monitor-impls.cpp:706
+#: ../src/ui.glade.h:45
+#: ../src/monitor-impls.cpp:706
 msgid "Serial link"
 msgstr "Połączenie szeregowe"
 
@@ -305,18 +309,22 @@ msgstr "Temperatura"
 msgid "The amount of data sent through a network connection"
 msgstr "Ilość danych przesłanych przez połączenie sieciowe"
 
+# rev: może użytego
 #: ../src/ui.glade.h:51
 msgid "The amount of disk space used"
 msgstr "Ilość zużytego miejsca na dyskach"
 
+# rev: j/w
 #: ../src/ui.glade.h:52
 msgid "The amount of disk-based memory used"
 msgstr "Ilość zużytej pamięci wymiany"
 
+# rev: j/w
 #: ../src/ui.glade.h:53
 msgid "The amount of memory used"
 msgstr "Ilość zużytej pamięci"
 
+# rev: j/w
 #: ../src/ui.glade.h:54
 msgid "The percentage of time that is spent running foreground processes"
 msgstr "Procent czasu zużywanego dla pierwszoplanowych zadań"
@@ -329,13 +337,10 @@ msgstr "Prędkość obrotowa wentylatorów"
 msgid "The temperature of the inside of the system"
 msgstr "Temperatura wewnątrz komputera"
 
+# rev: karta sieci lokalnej?
 #: ../src/ui.glade.h:57
-msgid ""
-"Type of connection - Ethernet is the most common local area network adapter "
-"type"
-msgstr ""
-"Rodzaj połączenia - Ethernet jest najpopularniejszym rodzajem karty sieci "
-"lokalnej"
+msgid "Type of connection - Ethernet is the most common local area network adapter type"
+msgstr "Rodzaj połączenia - Ethernet jest najpopularniejszym rodzajem karty sieci lokalnej"
 
 #: ../src/ui.glade.h:58
 msgid "Use _panel background"
@@ -357,7 +362,8 @@ msgstr "Przeglądarka"
 msgid "Which CPU no. to monitor"
 msgstr "Numer monitorowanego procesora"
 
-#: ../src/ui.glade.h:63 ../src/monitor-impls.cpp:708
+#: ../src/ui.glade.h:63
+#: ../src/monitor-impls.cpp:708
 msgid "Wireless"
 msgstr "Bezprzewodowe"
 
@@ -365,6 +371,7 @@ msgstr "Bezprzewodowe"
 msgid "_Add"
 msgstr "_Dodaj"
 
+# rev: to sugeruje zużycie np. łożysk. "Użycie"
 #: ../src/ui.glade.h:65
 msgid "_Disk usage"
 msgstr "Zużycie _dysku"
@@ -385,6 +392,7 @@ msgstr "P_ionowe słupki"
 msgid "_Load average"
 msgstr "Średnie o_bciążenie"
 
+# rev: użycie
 #: ../src/ui.glade.h:70
 msgid "_Memory usage"
 msgstr "Z_użycie pamięci"
@@ -401,6 +409,8 @@ msgstr "Przepustowość _sieci"
 msgid "_Remove"
 msgstr "_Usuń"
 
+# rev: użycie
+# swap to plik wymiany
 #: ../src/ui.glade.h:74
 msgid "_Swap usage"
 msgstr "Zużycie p_amięci wymiany"
@@ -409,6 +419,7 @@ msgstr "Zużycie p_amięci wymiany"
 msgid "_Temperature"
 msgstr "_Temperatura"
 
+# rev: nie koliduje skrót z _Temperatura?
 #: ../src/ui.glade.h:76
 msgid "_Text"
 msgstr "_Tekst"
@@ -443,7 +454,8 @@ msgstr "CPU"
 msgid "CPU %1"
 msgstr "CPU %1"
 
-#: ../src/monitor-impls.cpp:362 ../src/monitor-impls.cpp:496
+#: ../src/monitor-impls.cpp:362
+#: ../src/monitor-impls.cpp:496
 msgid "%1 Mb"
 msgstr "%1 Mb"
 
@@ -451,6 +463,7 @@ msgstr "%1 Mb"
 msgid "Disk-based memory"
 msgstr "Pamięć wymiany"
 
+# rev: hmm, musi być krótkie, ale Plik wymiany został sprawdzony, że się nie mieści?
 #. must be short
 #: ../src/monitor-impls.cpp:373
 msgid "Swap"
@@ -513,13 +526,15 @@ msgstr "%1 B/s"
 
 #. %1 is the network connection, e.g. "Ethernet (first)", in signifies
 #. that this is incoming data
-#: ../src/monitor-impls.cpp:716 ../src/monitor-impls.cpp:746
+#: ../src/monitor-impls.cpp:716
+#: ../src/monitor-impls.cpp:746
 msgid "%1, in"
 msgstr "%1, wejście"
 
 #. %1 is the network connection, e.g. "Ethernet (first)", out signifies
 #. that this is outgoing data
-#: ../src/monitor-impls.cpp:720 ../src/monitor-impls.cpp:748
+#: ../src/monitor-impls.cpp:720
+#: ../src/monitor-impls.cpp:748
 msgid "%1, out"
 msgstr "%1, wyjście"
 
@@ -538,6 +553,7 @@ msgstr "Mod."
 msgid "Ser."
 msgstr "Szer."
 
+# rev: osobiście wolę WLAN
 #. short for wireless
 #: ../src/monitor-impls.cpp:740
 msgid "W.less."
@@ -582,57 +598,40 @@ msgstr "Urządzenie"
 
 #~ msgid "*"
 #~ msgstr "*"
-
 #~ msgid "15.0%"
 #~ msgstr "15.0%"
-
 #~ msgid "Color of the bar"
 #~ msgstr "Kolor paska"
-
 #~ msgid "Color of the curve"
 #~ msgstr "Kolor krzywej"
-
 #~ msgid "Color of the flame"
 #~ msgstr "Kolor płomienia"
-
 #~ msgid "Pick a Color"
 #~ msgstr "Wybór koloru"
-
 #~ msgid "_Bars"
 #~ msgstr "_Paski"
-
 #~ msgid "<b>General</b>"
 #~ msgstr "<b>Ogólne</b>"
-
 #~ msgid "Amount of time between measurements (in seconds)"
 #~ msgstr "Odstęp czasowy pomiędzy pomiarami (w sekundach)"
-
 #~ msgid "Co_lumns:"
 #~ msgstr "Ko_lumny:"
-
 #~ msgid "General"
 #~ msgstr "Główne"
-
 #~ msgid "Number of columns to show simultanously"
 #~ msgstr "Liczba jednocześnie wyświetlanych kolumn"
-
 #~ msgid "Number of measured points to show simultanously"
 #~ msgstr "Liczba jednocześnie wyświetlanych punktów pomiarowych"
-
 #~ msgid "S_amples:"
 #~ msgstr "Pró_bki:"
-
 #~ msgid "Size of the applet in pixels"
 #~ msgstr "Rozmiar apletu w pikselach"
-
 #~ msgid "Thickness of the curve (in pixels)"
 #~ msgstr "Grubość krzywej (w pikselach)"
-
 #~ msgid "_Line width:"
 #~ msgstr "Szerokość li_nii:"
-
 #~ msgid "_Size:"
 #~ msgstr "_Rozmiar"
-
 #~ msgid "_Update interval:"
 #~ msgstr "Częs_totliwość aktualizacji:"
+
