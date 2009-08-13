@@ -15,17 +15,15 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: pdfmod 0.3\n"
-"Report-Msgid-Bugs-To: http://bugzilla.gnome.org/enter_bug."
-"cgi?product=pdfmod&component=general\n"
+"Report-Msgid-Bugs-To: http://bugzilla.gnome.org/enter_bug.cgi?product=pdfmod&component=general\n"
 "POT-Creation-Date: 2009-08-07 18:07+0000\n"
-"PO-Revision-Date: 2009-08-10 19:40+0200\n"
-"Last-Translator: Łukasz Jernaś <deejay1@srem.org>\n"
+"PO-Revision-Date: 2009-08-13 16:59+0100\n"
+"Last-Translator: Tomasz Dominikowski <dominikowski@gmail.com>\n"
 "Language-Team: Polish <gnomepl@aviary.pl>\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"Plural-Forms: nplurals=3; plural=(n==1 ? 0 : n%10>=2 && n%10<=4 && (n%100<10 "
-"|| n%100>=20) ? 1 : 2);\n"
+"Plural-Forms: nplurals=3; plural=(n==1 ? 0 : n%10>=2 && n%10<=4 && (n%100<10 || n%100>=20) ? 1 : 2);\n"
 "X-Poedit-Language: Polish\n"
 "X-Poedit-Country: Poland\n"
 "X-Poedit-Basepath: .\n"
@@ -36,13 +34,17 @@ msgid "PDF Modifier"
 msgstr "Edytor plików PDF"
 
 # LJ
+# rev: może wyodrębnia?
 #: ../data/pdfmod.desktop.in.h:2
 msgid "Remove, extract, and rotate pages in PDF documents"
 msgstr "Usuwa, wydziela i obraca strony w dokumentach PDF"
 
 # LJ
+# rev: to nie wygląda na polecenie, a jego opis
+# Poza tym niżej masz przenoszenie, tutaj przesuwanie, na coś trzeba się zdecydować, to mały program, o ujednolicenie nietrudno. Proponuję "Przenosi..."
 #. Translators: {0} is the # of pages, {1} is a translated string summarizing the pages, eg "page 1"
-#: ../src/PdfMod/PdfMod.Actions/MoveAction.cs:24, csharp-format
+#: ../src/PdfMod/PdfMod.Actions/MoveAction.cs:24,
+#: csharp-format
 #| msgid "Page {1}"
 #| msgid_plural "Page {1}"
 msgid "Move {1}"
@@ -87,6 +89,7 @@ msgstr "Zapisuje ten dokument jako nowy plik"
 msgid "_File"
 msgstr "_Plik"
 
+# rev: skrót nie może być na literce p wg zasad
 #: ../src/PdfMod/PdfMod/GlobalActions.cs:51
 msgid "Recent _Files"
 msgstr "Ostatnio otwarte _pliki"
@@ -114,6 +117,7 @@ msgid "Export Images"
 msgstr "Eksportuj obrazy"
 
 # LJ
+# rev: KATALOGU! :]
 #: ../src/PdfMod/PdfMod/GlobalActions.cs:57
 #| msgid "Save this document to a new file"
 msgid "Save all images in this document to a new folder"
@@ -139,6 +143,7 @@ msgstr "Zaznacz pasujące..."
 msgid "_View"
 msgstr "_Widok"
 
+# rev: standardowo skrót na _c
 #: ../src/PdfMod/PdfMod/GlobalActions.cs:71
 msgid "_Help"
 msgstr "_Pomoc"
@@ -147,11 +152,13 @@ msgstr "_Pomoc"
 msgid "_Contents"
 msgstr "_Zawartość"
 
+# rev: WYŚWIETL
+# to na bank nie jest polecenie, więc nie może być w formie osobowej
 #: ../src/PdfMod/PdfMod/GlobalActions.cs:79
 msgid "View and edit the title, keywords, and more for this document"
-msgstr ""
-"Zobacz i edytuj tytuł, słowa kluczowe i inne właściwości tego dokumentu"
+msgstr "Zobacz i edytuj tytuł, słowa kluczowe i inne właściwości tego dokumentu"
 
+# rev: wg reguł - narzędziowy
 #: ../src/PdfMod/PdfMod/GlobalActions.cs:81
 msgid "Toolbar"
 msgstr "Pasek narzędzi"
@@ -162,7 +169,9 @@ msgid "_Undo"
 msgstr "_Cofnij"
 
 # LJ
-#: ../src/PdfMod/PdfMod/GlobalActions.cs:153, csharp-format
+# rev: to nie wygląda na polecenie, a jego opis
+#: ../src/PdfMod/PdfMod/GlobalActions.cs:153,
+#: csharp-format
 msgid "Undo {0}"
 msgstr "Cofnij {0}"
 
@@ -172,7 +181,9 @@ msgid "_Redo"
 msgstr "_Ponów"
 
 # LJ
-#: ../src/PdfMod/PdfMod/GlobalActions.cs:158, csharp-format
+# rev: to nie wygląda na polecenie, a jego opis
+#: ../src/PdfMod/PdfMod/GlobalActions.cs:158,
+#: csharp-format
 #| msgid "Page {0}"
 msgid "Redo {0}"
 msgstr "Ponów {0}"
@@ -194,6 +205,7 @@ msgstr[1] "Usuwa {0} zaznaczone strony"
 msgstr[2] "Usuwa {0} zaznaczonych stron"
 
 # LJ
+# rev: wyodrębnij, sprawdzić globalnie
 #: ../src/PdfMod/PdfMod/GlobalActions.cs:172
 #, csharp-format
 msgid "Extract Page"
@@ -203,6 +215,7 @@ msgstr[1] "Wydziel {0} strony"
 msgstr[2] "Wydziel {0} stron"
 
 # LJ
+# rev: wyodrębnia
 #: ../src/PdfMod/PdfMod/GlobalActions.cs:175
 #, csharp-format
 msgid "Extract the selected page"
@@ -267,10 +280,12 @@ msgstr[2] "{0} stron"
 msgid "Error opening help"
 msgstr "Błąd podczas otwierania pliku pomocy"
 
+# rev: bez Czy
 #: ../src/PdfMod/PdfMod/GlobalActions.cs:393
 msgid "Would you like to open PDF Mod's online documentation?"
 msgstr "Czy otworzyć dokumentację online programu PDF Mod?"
 
+# rev: chyba lepiej "Odwiedź witrynę programu"
 #: ../src/PdfMod/PdfMod/GlobalActions.cs:414
 msgid "Visit Website"
 msgstr "Odwiedź stronę WWW"
@@ -303,10 +318,12 @@ msgstr[0] "Otworzyć {0} dokument w osobnych oknach?"
 msgstr[1] "Otworzyć {0} dokumenty w osobnych oknach?"
 msgstr[2] "Otworzyć {0} dokumentów w osobnych oknach?"
 
+# rev: wg reguł nie może być skrótu na małą literę p
 #: ../src/PdfMod/PdfMod/PdfMod.cs:202
 msgid "Open _First"
 msgstr "Otwórz _pierwszy"
 
+# rev: literka w występuję już w słowie Otwórz
 #: ../src/PdfMod/PdfMod/PdfMod.cs:203
 msgid "Open _All"
 msgstr "Otwórz _wszystkie"
@@ -353,6 +370,7 @@ msgstr "Dokument jest zaszyfrowany"
 msgid "Enter the document's password to open it:"
 msgstr "Należy wprowadzić hasło do dokumentu, aby można go było otworzyć:"
 
+# rev: to nie wygląda na polecenie
 #: ../src/PdfMod/PdfMod/QueryBox.cs:26
 msgid "Select Matching"
 msgstr "Zaznacz pasujące"
@@ -373,10 +391,14 @@ msgstr "_Słowa kluczowe"
 msgid "_Subject:"
 msgstr "T_emat:"
 
+# rev: properties to zmiany w kontekście tego programu?
 #: ../src/PdfMod/PdfMod/MetadataEditorBox.cs:69
 msgid "_Revert Properties"
 msgstr "_Cofnij zmiany"
 
+# rev: przeczytaj tłumaczenie ponownie, popatrz ciąg wyżej żeby było zgodnie jak poprawisz
+# "Zmienia..." lub "Przywraca..."
+# (to nie wygląda na polecenie, a jego opis)
 #: ../src/PdfMod/PdfMod/MetadataEditorBox.cs:70
 msgid "Change the document's properties back to the original values"
 msgstr "Przywróć początkowe wartości właściwości dokumentu"
@@ -385,6 +407,7 @@ msgstr "Przywróć początkowe wartości właściwości dokumentu"
 msgid "_Close"
 msgstr "_Zamknij"
 
+# rev: o, a tu jest OK - właściwości, ale powinno być "Ukrywa..." (to nie wygląda na polecenie, a jego opis)
 #: ../src/PdfMod/PdfMod/MetadataEditorBox.cs:76
 msgid "Hide the document's properties"
 msgstr "Ukryj właściwości dokumentu"
