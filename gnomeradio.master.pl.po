@@ -9,8 +9,8 @@ msgstr ""
 "Project-Id-Version: gnomeradio\n"
 "Report-Msgid-Bugs-To: http://bugzilla.gnome.org/enter_bug.cgi?product=gnomeradio&component=general\n"
 "POT-Creation-Date: 2009-04-17 15:22+0000\n"
-"PO-Revision-Date: 2009-08-13 15:55+0100\n"
-"Last-Translator: Tomasz Dominikowski <dominikowski@gmail.com>\n"
+"PO-Revision-Date: 2009-08-18 00:47+0200\n"
+"Last-Translator: Piotr Drąg <piotrdrag@gmail.com>\n"
 "Language-Team: Polish <gnomepl@aviary.pl>\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -68,10 +68,9 @@ msgstr "Liczba stacji"
 msgid "Radio device"
 msgstr "Urządzenie radia"
 
-# rev: nie chcę być upierdliwy, ale jeśli to jest w interfejsie, a nie w gconf, to to "any" nie ma sensu
 #: ../data/gnomeradio.schemas.in.h:13
 msgid "Specify the device driver to use (any, v4l1 or v4l2)"
-msgstr "Określa używany sterownik urządzenia (any, v4l1 lub v4l2)"
+msgstr "Określa używany sterownik urządzenia (\"any\", \"v4l1\" lub \"v4l2\")"
 
 #: ../data/gnomeradio.schemas.in.h:14
 #: ../src/prefs.c:626
@@ -84,7 +83,7 @@ msgstr "Ostatnia użyta częstotliwość (w MHz)"
 
 #: ../data/gnomeradio.schemas.in.h:16
 msgid "The mixer device that gnomeradio should use. Only changeable via this key (no GUI option)"
-msgstr "Urządzenie miksera używane przez gnomeradio. Zmieniane tylko poprzez ten klucz (brak opcji w interfejsie programu)"
+msgstr "Urządzenie miksera używane przez program gnomeradio. Zmieniane tylko poprzez ten klucz (brak opcji w interfejsie programu)"
 
 #: ../data/gnomeradio.schemas.in.h:17
 msgid "The number of presets"
@@ -94,10 +93,9 @@ msgstr "Liczba stacji"
 msgid "The preset that was enabled when gnomeradio was terminated. Range is 0 ... (# presets - 1). None is -1"
 msgstr "Stacja, która była włączona podczas zakończenia programu gnomeradio. Zakres od 0 do liczba_stacji - 1. Wartość -1 oznacza brak stacji."
 
-# rev: a nie licznik Geigera? ;]
 #: ../data/gnomeradio.desktop.in.h:1
 msgid "FM-Radio Tuner"
-msgstr "Tuner radowy FM"
+msgstr "Tuner radiowy FM"
 
 #: ../data/gnomeradio.desktop.in.h:2
 msgid "Listen to FM-radio"
@@ -245,10 +243,9 @@ msgstr "%B-%d-%Y_%H-%M-%S"
 msgid "%.2f MHz"
 msgstr "%.2f MHz"
 
-# rev: Wyłącz wyciszenie?
 #: ../src/gui.c:728
 msgid "Unmute"
-msgstr "Włącz głos"
+msgstr "Wyłącz wyciszenie"
 
 #: ../src/gui.c:732
 msgid "Mute"
@@ -268,7 +265,7 @@ msgid ""
 "\n"
 "This version has been compiled with LIRC support."
 msgstr ""
-"Gnomeradio jest programem tunera FM dla środowiska GNOME. Współpracuje ze wszystkimi tunerami sprzętowymi obsługiwanymi przez sterowniki video4linux.\n"
+"Program Gnomeradio jest programem tunera FM dla środowiska GNOME. Współpracuje ze wszystkimi tunerami sprzętowymi obsługiwanymi przez sterowniki video4linux.\n"
 "\n"
 "Wersja skompilowana z obsługą LIRC."
 
@@ -278,7 +275,7 @@ msgid ""
 "\n"
 "This version has been compiled without LIRC support."
 msgstr ""
-"Gnomeradio jest programem tunera FM dla środowiska GNOME. Współpracuje ze wszystkimi tunerami sprzętowymi obsługiwanymi przez sterowniki video4linux.\n"
+"Program Gnomeradio jest programem tunera FM dla środowiska GNOME. Współpracuje ze wszystkimi tunerami sprzętowymi obsługiwanymi przez sterowniki video4linux.\n"
 "\n"
 "Wersja skompilowana bez obsługi LIRC."
 
@@ -307,10 +304,9 @@ msgstr "0,05 MHz wstecz"
 msgid "0.05 MHz Forwards"
 msgstr "0,05 MHz w przód"
 
-# rev: programie, sprawdzić globalnie
 #: ../src/gui.c:993
 msgid "About Gnomeradio"
-msgstr "O gnomeradio"
+msgstr "O programie gnomeradio"
 
 #: ../src/gui.c:994
 msgid "Record radio as Wave, OGG or MP3"
@@ -398,7 +394,7 @@ msgstr "Zero bajtów"
 
 #: ../src/record.c:108
 msgid "Gnomeradio recording status"
-msgstr "Stan nagrywania gnomeradio"
+msgstr "Stan nagrywania programu gnomeradio"
 
 #: ../src/record.c:120
 #, c-format
@@ -417,41 +413,39 @@ msgstr "Rozmiar pliku:"
 msgid "Stop Recording"
 msgstr "Zatrzymaj nagrywanie"
 
-# rev: nie odmieniajmy GStreamer, globalnie
 #: ../src/rec_tech.c:42
 msgid "GStreamer runtime error."
-msgstr "Błąd uruchamiania GStreamera."
+msgstr "Błąd uruchamiania GStreamer."
 
 #: ../src/rec_tech.c:58
 msgid "Could not create GStreamer pipeline."
-msgstr "Nie można utworzyć potoku GStreamera."
+msgstr "Nie można utworzyć potoku GStreamer."
 
 #: ../src/rec_tech.c:59
 #: ../src/rec_tech.c:89
 msgid "Check your Gstreamer installation!"
-msgstr "Proszę sprawdzić instalację GStreamera."
+msgstr "Proszę sprawdzić instalację GStreamer."
 
 #: ../src/rec_tech.c:65
 msgid "Could not open Gstreamer OSS Source."
-msgstr "Nie można otworzyć źródła OSS GStreamera."
+msgstr "Nie można otworzyć źródła OSS GStreamer."
 
 #: ../src/rec_tech.c:66
 msgid "Verify your Gstreamer OSS subsystem installation!"
-msgstr "Proszę sprawdzić instalację podsystemu OSS GStreamera."
+msgstr "Proszę sprawdzić instalację podsystemu OSS GStreamer."
 
-# rev: kodera :]
 #: ../src/rec_tech.c:78
 #, c-format
 msgid "Could not create encoder \"%s\"."
-msgstr "Nie można utworzyć enkodera \"%s\"."
+msgstr "Nie można utworzyć kodera \"%s\"."
 
 #: ../src/rec_tech.c:80
 msgid "Verify your Gstreamer plugins installation!"
-msgstr "Proszę sprawdzić instalację wtyczek GStreamera."
+msgstr "Proszę sprawdzić instalację wtyczek GStreamer."
 
 #: ../src/rec_tech.c:88
 msgid "Could not create Gstreamer filesink."
-msgstr "Nie można utworzyć odpływu pliku GStreamera."
+msgstr "Nie można utworzyć odpływu pliku GStreamer."
 
 #. +
 #: ../src/bacon-volume.c:187
@@ -462,4 +456,3 @@ msgstr "+"
 #: ../src/bacon-volume.c:203
 msgid "-"
 msgstr "-"
-
