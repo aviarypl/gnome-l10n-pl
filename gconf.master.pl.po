@@ -9,8 +9,8 @@ msgstr ""
 "Project-Id-Version: gconf\n"
 "Report-Msgid-Bugs-To: http://bugzilla.gnome.org/enter_bug.cgi?product=gconf&component=general\n"
 "POT-Creation-Date: 2009-05-06 03:42+0000\n"
-"PO-Revision-Date: 2009-08-19 14:22+0100\n"
-"Last-Translator: Tomasz Dominikowski <dominikowski@gmail.com>\n"
+"PO-Revision-Date: 2009-08-20 02:45+0200\n"
+"Last-Translator: Piotr Drąg <piotrdrag@gmail.com>\n"
 "Language-Team: Polish <gnomepl@aviary.pl>\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -32,14 +32,13 @@ msgstr "Utworzono źródło Evolution/LDAP przy użyciu pliku konfiguracyjnego \
 #: ../backends/evoldap-backend.c:444
 #, c-format
 msgid "Unable to parse XML file '%s'"
-msgstr "Nie można przeanalizować pliku XML \"%s\""
+msgstr "Nie można przetworzyć pliku XML \"%s\""
 
 #: ../backends/evoldap-backend.c:453
 #, c-format
 msgid "Config file '%s' is empty"
 msgstr "Plik konfiguracyjny \"%s\" jest pusty"
 
-# pd
 #: ../backends/evoldap-backend.c:464
 #, c-format
 msgid "Root node of '%s' must be <evoldap>, not <%s>"
@@ -55,13 +54,11 @@ msgstr "Nie określono <template> w \"%s\""
 msgid "No \"filter\" attribute specified on <template> in '%s'"
 msgstr "Nie określono atrybutu \"filter\" dla elementu <template> w \"%s\""
 
-# pd
 #: ../backends/evoldap-backend.c:571
 #, c-format
 msgid "No LDAP server or base DN specified in '%s'"
 msgstr "Nie określono serwera LDAP lub podstawowego DN w \"%s\""
 
-# pd
 #: ../backends/evoldap-backend.c:577
 #, c-format
 msgid "Contacting LDAP server: host '%s', port '%d', base DN '%s'"
@@ -72,7 +69,6 @@ msgstr "Łączenie z serwerem LDAP: komputer \"%s\", port \"%d\", podstawowy DN 
 msgid "Failed to contact LDAP server: %s"
 msgstr "Nie można połączyć się z serwerem LDAP: %s"
 
-# pd
 #: ../backends/evoldap-backend.c:672
 #, c-format
 msgid "Searching for entries using filter: %s"
@@ -83,13 +79,11 @@ msgstr "Wyszukiwanie elementów używając filtra: %s"
 msgid "Error querying LDAP server: %s"
 msgstr "Błąd przy odpytywaniu serwera LDAP: %s"
 
-# pd
 #: ../backends/evoldap-backend.c:696
 #, c-format
 msgid "Got %d entries using filter: %s"
 msgstr "Uzyskano %d elementów używając filtra: %s"
 
-# pd
 #: ../backends/gconf-merge-tree.c:59
 #, c-format
 msgid "Cannot find directory %s\n"
@@ -310,13 +304,11 @@ msgstr "Dwa elementy <car> podano dla tej samej pary"
 msgid "Two <cdr> elements given for same pair"
 msgstr "Dwa elementy <cdr> podane dla tej samej pary"
 
-# pd
 #: ../backends/markup-tree.c:3115
 #, c-format
 msgid "<li> has wrong type %s"
 msgstr "<li> posiada błędny typ %s"
 
-# pd
 #: ../backends/markup-tree.c:3146
 #, c-format
 msgid "<%s> provided but parent <entry> does not have a value"
@@ -330,7 +322,6 @@ msgstr "Dostarczono <%s>, ale nadrzędne <entry> nie posiada wartości"
 msgid "Element <%s> is not allowed inside current element"
 msgstr "Element <%s> jest niedozwolony wewnątrz bieżącego elementu"
 
-# pd
 #: ../backends/markup-tree.c:3281
 #, c-format
 msgid "Outermost element in menu file must be <gconf> not <%s>"
@@ -379,7 +370,6 @@ msgstr "Nie można przenieść pliku tymczasowego \"%s\" do końcowego położen
 msgid "Unloading XML backend module."
 msgstr "Usuwanie z pamięci modułu XML."
 
-# pd
 #: ../backends/xml-backend.c:618
 #, c-format
 msgid "Error syncing the XML backend directory cache: %s"
@@ -389,12 +379,10 @@ msgstr "Błąd przy synchronizacji pamięci podręcznej katalogów modułu XML: 
 msgid "Initializing XML backend module"
 msgstr "Inicjowanie modułu XML"
 
-# pd
 #: ../backends/xml-cache.c:288
 msgid "Failed to sync XML cache contents to disk"
 msgstr "Synchronizacja zawartości pamięci podręcznej XML z kopią na dysku nie powiodła się"
 
-# pd
 #: ../backends/xml-cache.c:318
 #, c-format
 msgid "Unable to remove directory `%s' from the XML backend cache, because it has not been successfully synced to disk"
@@ -480,12 +468,10 @@ msgstr "Głównym węzłem w pliku XML \"%s\" jest <%s> zamiast <entry>, zignoro
 msgid "Failed to create file `%s': %s"
 msgstr "Nie można utworzyć pliku \"%s\": %s"
 
-# pd
-# rev: Przetworzenie, global
 #: ../backends/xml-dir.c:1382
 #, c-format
 msgid "Failed to parse XML file \"%s\""
-msgstr "Analiza pliku XML \"%s\" nie powiodła się"
+msgstr "Przetworzenie pliku XML \"%s\" nie powiodła się"
 
 #. There was an error
 #: ../backends/xml-entry.c:153
@@ -493,7 +479,6 @@ msgstr "Analiza pliku XML \"%s\" nie powiodła się"
 msgid "Ignoring XML node with name `%s': %s"
 msgstr "Zignorowano węzeł XML o nazwie \"%s\": %s"
 
-# pd
 #: ../backends/xml-entry.c:329
 #, c-format
 msgid "Ignoring schema name `%s', invalid: %s"
@@ -529,24 +514,20 @@ msgstr "Brak atrybutu \"value\" dla węzła"
 msgid "Didn't understand XML node <%s> inside an XML list node"
 msgstr "Niezrozumiały węzeł XML <%s> wewnątrz węzła listy"
 
-# pd
 #: ../backends/xml-entry.c:1061
 msgid "Invalid type (list, pair, or unknown) in a list node"
 msgstr "Nieprawidłowy typ (lista, para lub coś innego) na liście węzłów"
 
-# pd
 #: ../backends/xml-entry.c:1084
 #, c-format
 msgid "Bad XML node: %s"
 msgstr "Błędny węzeł XML: %s"
 
-# pd
 #: ../backends/xml-entry.c:1092
 #, c-format
 msgid "List contains a badly-typed node (%s, should be %s)"
 msgstr "Lista zawiera węzeł błędnego typu (%s, powinno być %s)"
 
-# pd
 #: ../backends/xml-entry.c:1144
 #, c-format
 msgid "Ignoring bad car from XML pair: %s"
@@ -557,7 +538,6 @@ msgstr "Zignorowano błędny pierwszy element pary XML: %s"
 msgid "parsing XML file: lists and pairs may not be placed inside a pair"
 msgstr "analiza pliku XML: listy oraz pary nie mogą być umieszczane wewnątrz par"
 
-# pd
 #: ../backends/xml-entry.c:1166
 #, c-format
 msgid "Ignoring bad cdr from XML pair: %s"
@@ -600,7 +580,6 @@ msgstr "Do zmiany wartości obowiązkowych GConf wymagane są uprawnienia"
 msgid "Privileges are required to change GConf system values"
 msgstr "Do zmiany wartości systemowych GConf wymagane są uprawnienia"
 
-# pd
 #: ../gconf/gconf-backend.c:62
 #, c-format
 msgid "`%c' is an invalid character in a configuration storage address"
@@ -622,13 +601,11 @@ msgstr "Moduł \"%s\" nieprawidłowo zwrócił wartość vtable\n"
 msgid "Backend `%s' missing required vtable member `%s'\n"
 msgstr "Moduł \"%s\" nie posiada wymaganego atrybutu vtable \"%s\"\n"
 
-# pd
 #: ../gconf/gconf-backend.c:302
 #, c-format
 msgid "Bad address `%s': %s"
 msgstr "Błędny adres \"%s\": %s"
 
-# pd
 #: ../gconf/gconf-backend.c:312
 #, c-format
 msgid "Bad address `%s'"
@@ -653,11 +630,9 @@ msgstr "Błąd przy inicjacji modułu \"%s\": %s\n"
 msgid "Couldn't locate backend module for `%s'"
 msgstr "Nie można odnaleźć modułu obsługującego \"%s\""
 
-# pd
-# rev: wg słownika moduł przetwarzający
 #: ../gconf/gconf-backend.c:425
 msgid "Failed to shut down backend"
-msgstr "Błąd przy zamykaniu modułu obsługującego"
+msgstr "Błąd przy zamykaniu modułu przetwarzającego"
 
 #: ../gconf/gconf-client.c:346
 #: ../gconf/gconf-client.c:364
@@ -675,18 +650,15 @@ msgstr "Ostrzeżenie GConf: błąd przy wypisywaniu par w \"%s\": %s"
 msgid "Expected `%s' got `%s' for key %s"
 msgstr "Oczekiwano \"%s\", otrzymano \"%s\" dla klucza %s"
 
-# pd
 #: ../gconf/gconf-database.c:212
 msgid "Received invalid value in set request"
 msgstr "Otrzymano nieprawidłową wartość w zbiorze żądania"
 
-# pd
 #: ../gconf/gconf-database.c:220
 #, c-format
 msgid "Couldn't make sense of CORBA value received in set request for key `%s'"
 msgstr "Nie można zinterpretować wartości CORBA otrzymanej z żądaniem przypisania do klucza \"%s\""
 
-# pd
 #: ../gconf/gconf-database.c:503
 msgid "Received request to drop all cached data"
 msgstr "Otrzymano żądanie, aby odrzucić wszystkie dane w pamięci podręcznej"
@@ -714,7 +686,6 @@ msgstr "Błąd przy pobieraniu nowej wartości dla \"%s\" po zmianie powiadamian
 msgid "Failed to log addition of listener %s (%s); will not be able to restore this listener on gconfd restart, resulting in unreliable notification of configuration changes."
 msgstr "Nie można zapisać w dzienniku dodania słuchacza %s (%s); przy ponownym uruchomieniu gconfd nie będzie można go przywrócić, co spowoduje niewłaściwe funkcjonowanie powiadamiania o zmianach w konfiguracji."
 
-# pd
 #: ../gconf/gconf-database.c:1154
 #, c-format
 msgid "Listener ID %lu doesn't exist"
@@ -801,14 +772,13 @@ msgstr "Brak dostępu"
 msgid "Couldn't resolve address for configuration source"
 msgstr "Nie można uzyskać adresu źródła konfiguracji"
 
-# pd
 #: ../gconf/gconf-error.c:31
 msgid "Bad key or directory name"
 msgstr "Błędna nazwa kluczu lub katalogu"
 
 #: ../gconf/gconf-error.c:32
 msgid "Parse error"
-msgstr "Błąd składniowy"
+msgstr "Błąd przetwarzania"
 
 #: ../gconf/gconf-error.c:33
 msgid "Corrupt data in configuration source database"
@@ -851,12 +821,10 @@ msgstr "Brak dostępnej bazy danych do zapisu konfiguracji"
 msgid "No '/' in key \"%s\""
 msgstr "Brak znaku \"/\" w kluczu \"%s\""
 
-# pd
-# rev: napisu? nie lepiej ciągu?
 #: ../gconf/gconf-internals.c:182
 #, c-format
 msgid "Invalid UTF-8 in string value in '%s'"
-msgstr "Nieprawidłowe znaki UTF-8 w wartości napisu w \"%s\""
+msgstr "Nieprawidłowe znaki UTF-8 w wartości ciągu w \"%s\""
 
 #: ../gconf/gconf-internals.c:241
 msgid "Couldn't interpret CORBA value for list element"
@@ -875,22 +843,18 @@ msgstr "Otrzymano od procesu gconfd listę niewłaściwego typu"
 msgid "Failed to convert object to IOR"
 msgstr "Nie można skonwertować obiektu na IOR"
 
-# pd
 #: ../gconf/gconf-internals.c:574
 msgid "Invalid UTF-8 in locale for schema"
 msgstr "Nieprawidłowe znaki UTF-8 jako kod języka schematu"
 
-# pd
 #: ../gconf/gconf-internals.c:582
 msgid "Invalid UTF-8 in short description for schema"
 msgstr "Nieprawidłowe znaki UTF-8 w krótkim opisie schematu"
 
-# pd
 #: ../gconf/gconf-internals.c:590
 msgid "Invalid UTF-8 in long description for schema"
 msgstr "Nieprawidłowe znaki UTF-8 w długim opisie schematu"
 
-# pd
 #: ../gconf/gconf-internals.c:598
 msgid "Invalid UTF-8 in owner for schema"
 msgstr "Nieprawidłowe znaki UTF-8 w nazwie właściciela schematu"
@@ -910,7 +874,6 @@ msgstr "Dodawanie źródła \"%s\"\n"
 msgid "Read error on file `%s': %s\n"
 msgstr "Błąd podczas odczytu pliku \"%s\": %s\n"
 
-# pd
 #: ../gconf/gconf-internals.c:1188
 #: ../gconf/gconf-internals.c:1254
 #: ../gconf/gconf-value.c:155
@@ -954,13 +917,10 @@ msgstr "Zacytowany napis nie rozpoczyna się znakiem cytowania"
 msgid "Quoted string doesn't end with a quotation mark"
 msgstr "Zacytowany napis nie kończy się znakiem cytowania"
 
-# pd
-# rev: nie ma nic o napisie, ale nie wiem jak z tego zrobić nie-masło-maślane. Nie zawiera prawidłowego kodowania UTF-8?
 #: ../gconf/gconf-internals.c:1802
 msgid "Encoded value is not valid UTF-8"
-msgstr "Zakodowana wartość nie jest prawidłowym napisem UTF-8"
+msgstr "Zakodowana wartość nie używa prawidłowego kodowania UTF-8"
 
-# pd
 #: ../gconf/gconf-internals.c:2286
 #, c-format
 msgid "Could not lock temporary file '%s': %s"
@@ -976,13 +936,11 @@ msgstr "Nie można utworzyć pliku \"%s\", prawdopodobnie już on istnieje"
 msgid "Failed to create or open '%s'"
 msgstr "Nie można utworzyć lub otworzyć \"%s\""
 
-# pd
 #: ../gconf/gconf-internals.c:2391
 #, c-format
 msgid "Failed to lock '%s': probably another process has the lock, or your operating system has NFS file locking misconfigured (%s)"
 msgstr "Nie można zablokować \"%s\": prawdopodobnie blokadę przetrzymuje inny proces lub w systemie zostało niepoprawnie skonfigurowane blokowanie NFS (%s)"
 
-# pd
 #: ../gconf/gconf-internals.c:2411
 #, c-format
 msgid "Failed to remove '%s': %s"
@@ -998,7 +956,6 @@ msgstr "Nie działa w ramach aktywnej sesji"
 msgid "Failed to get connection to session: %s"
 msgstr "Nie można uzyskać połączenia z sesją: %s"
 
-# pd
 #: ../gconf/gconf-internals.c:2468
 #, c-format
 msgid "Could not send message to GConf daemon: %s"
@@ -1009,14 +966,11 @@ msgstr "Nie można wysłać komunikatu do usługi GConf: %s"
 msgid "daemon gave erroneous reply: %s"
 msgstr "błędna odpowiedź usługi: %s"
 
-# pd
-# rev: koślawe, odwołania od ORB
 #: ../gconf/gconf-internals.c:2517
 #, c-format
 msgid "couldn't contact ORB to resolve existing gconfd object reference"
-msgstr "nie można uzyskać od ORB odwołania do istniejącego obiektu gconfd"
+msgstr "nie można uzyskać odwołania od ORB do istniejącego obiektu gconfd"
 
-# pd
 #: ../gconf/gconf-internals.c:2529
 #, c-format
 msgid "Failed to convert IOR '%s' to an object reference"
@@ -1413,7 +1367,6 @@ msgstr "Nie można uzyskać nazwy magistrali dla usługi, kończenie: %s"
 msgid "Could not connect to system bus: %s"
 msgstr "Nie można połączyć się z magistralą systemową: %s"
 
-# pd
 #: ../gconf/gconfd.c:830
 #, c-format
 msgid "starting (version %s), pid %u user '%s'"
@@ -1433,7 +1386,6 @@ msgstr "Nie można zapisać bajtu do potoku poprzez deskryptor %d, co może zawi
 msgid "Error releasing lockfile: %s"
 msgstr "Błąd przy zwalnianiu pliku blokady: %s"
 
-# pd
 #: ../gconf/gconfd.c:973
 msgid "Exiting"
 msgstr "Kończenie działania"
@@ -1442,7 +1394,6 @@ msgstr "Kończenie działania"
 msgid "SIGHUP received, reloading all databases"
 msgstr "Otrzymano sygnał SIGHUP, ponowne wczytywanie wszystkich baz"
 
-# pd
 #: ../gconf/gconfd.c:1008
 msgid "GConf server is not in use, shutting down."
 msgstr "Serwer GConf nie jest używany, wyłączanie."
@@ -1701,11 +1652,11 @@ msgstr "Odinstalowuje pliki schematów z wiersza poleceń w bazie danych. Przy u
 
 #: ../gconf/gconftool.c:421
 msgid "Torture-test an application by setting and unsetting a bunch of values of different types for keys on the command line."
-msgstr "Przeprowadza intensywny test aplikacji, ustawiając i czyszcząc mnóstwo wartości różnych typów dla kluczy podanych w wierszu poleceń."
+msgstr "Przeprowadza intensywny test programu, ustawiając i czyszcząc mnóstwo wartości różnych typów dla kluczy podanych w wierszu poleceń."
 
 #: ../gconf/gconftool.c:430
 msgid "Torture-test an application by setting and unsetting a bunch of keys inside the directories on the command line."
-msgstr "Przeprowadza intensywny test aplikacji, ustawiając i czyszcząc mnóstwo wartości różnych typów dla kluczy wewnątrz katalogów, podanych w wierszu poleceń."
+msgstr "Przeprowadza intensywny test programu, ustawiając i czyszcząc mnóstwo wartości różnych typów dla kluczy wewnątrz katalogów, podanych w wierszu poleceń."
 
 #: ../gconf/gconftool.c:445
 msgid "Set a schema and sync. Use with --short-desc, --long-desc, --owner, and --type."
@@ -1744,7 +1695,6 @@ msgstr "Określa nazwę schematu z występującą po nim nazwą klucza, do któr
 msgid "Remove any schema name applied to the given keys"
 msgstr "Usuwa wszystkie nazwy schematów zastosowane do podanych kluczy"
 
-# pd
 #: ../gconf/gconftool.c:514
 msgid "Print version"
 msgstr "Wyświetla wersję programu"
@@ -1753,7 +1703,6 @@ msgstr "Wyświetla wersję programu"
 msgid "[FILE...]|[KEY...]|[DIR...]"
 msgstr "[PLIK...]|[KLUCZ...]|[KATALOG...]"
 
-# pd
 #: ../gconf/gconftool.c:585
 msgid "- Tool to manipulate a GConf configuration"
 msgstr "- Narzędzie do zmieniania konfiguracji GConf"
@@ -1814,7 +1763,6 @@ msgstr "Opcje schematów:"
 msgid "Show schema options"
 msgstr "Wyświetla opcje schematów"
 
-# pd
 #: ../gconf/gconftool.c:629
 #, c-format
 msgid "Run '%s --help' to see a full list of available command line options.\n"
@@ -1845,7 +1793,6 @@ msgstr "Nie można jednocześnie przełączyć i pobrać/ustawić/wyczyścić wa
 msgid "Can't use --all-entries with --get or --set\n"
 msgstr "Nie można używać --all-entries wraz z --get lub --set\n"
 
-# pd
 #: ../gconf/gconftool.c:704
 #, c-format
 msgid "Can't use --all-dirs with --get or --set\n"
@@ -1897,13 +1844,11 @@ msgstr "Przy użyciu --direct należy podać źródło konfiguracji za pomocą -
 msgid "Failed to init GConf: %s\n"
 msgstr "Inicjacja GConf nie powiodła się: %s\n"
 
-# pd
 #: ../gconf/gconftool.c:887
 #, c-format
 msgid "GCONF_DISABLE_MAKEFILE_SCHEMA_INSTALL is set, not installing schemas\n"
 msgstr "Ustawiona jest zmienna GCONF_DISABLE_MAKEFILE_SCHEMA_INSTALL, zaniechano instalacji schematów\n"
 
-# pd
 #: ../gconf/gconftool.c:894
 #, c-format
 msgid "GCONF_DISABLE_MAKEFILE_SCHEMA_UNINSTALL is set, not uninstalling schemas\n"
@@ -1914,7 +1859,6 @@ msgstr "Ustawiona jest zmienna GCONF_DISABLE_MAKEFILE_SCHEMA_UNINSTALL, zaniecha
 msgid "Must set the GCONF_CONFIG_SOURCE environment variable\n"
 msgstr "Należy ustawić zmienną środowiskową GCONF_CONFIG_SOURCE\n"
 
-# pd
 #: ../gconf/gconftool.c:962
 #, c-format
 msgid "Failed to access configuration source(s): %s\n"
@@ -2251,53 +2195,45 @@ msgstr "Należy podać co najmniej jeden katalog, z którego powinny być pobran
 msgid "Error listing dirs: %s\n"
 msgstr "Błąd przy wypisywaniu katalogów: %s\n"
 
-# pd
 #: ../gconf/gconftool.c:2937
 #, c-format
 msgid "WARNING: must specify both a <car> and a <cdr> in a <pair>\n"
 msgstr "UWAGA: należy podać zarówno <car> jak i <cdr> w <pair>\n"
 
-# pd
 #: ../gconf/gconftool.c:2964
 #, c-format
 msgid "WARNING: key specified (%s) for schema under a <value> - ignoring\n"
 msgstr "UWAGA: klucz określony (%s) dla schematu pod <value> - zignorowany\n"
 
-# pd
 #: ../gconf/gconftool.c:2997
 #, c-format
 msgid "WARNING: must have a child node under <value>\n"
 msgstr "UWAGA: musi istnieć węzeł potomny pod <value>\n"
 
-# pd
 #: ../gconf/gconftool.c:3003
 #, c-format
 msgid "WARNING: node <%s> not understood\n"
 msgstr "UWAGA: węzeł <%s> nie jest zrozumiały\n"
 
-# pd
 #: ../gconf/gconftool.c:3021
 #, c-format
 msgid "WARNING: Failed to parse int value `%s'\n"
-msgstr "UWAGA: analiza wartości typu int \"%s\" nie powiodła się\n"
+msgstr "UWAGA: przetworzenie wartości typu int \"%s\" nie powiodło się\n"
 
-# pd
 #: ../gconf/gconftool.c:3042
 #, c-format
 msgid "WARNING: Failed to parse float value `%s'\n"
-msgstr "UWAGA: analiza wartości typu float \"%s\" nie powiodła się\n"
+msgstr "UWAGA: przetworzenie wartości typu float \"%s\" nie powiodło się\n"
 
-# pd
 #: ../gconf/gconftool.c:3064
 #, c-format
 msgid "WARNING: Failed to parse string value `%s'\n"
-msgstr "UWAGA: analiza wartości ciągu znaków \"%s\" nie powiodła się\n"
+msgstr "UWAGA: przetworzenie wartości ciągu znaków \"%s\" nie powiodło się\n"
 
-# pd
 #: ../gconf/gconftool.c:3085
 #, c-format
 msgid "WARNING: Failed to parse boolean value `%s'\n"
-msgstr "UWAGA: analiza wartości typu logicznego \"%s\" nie powiodła się\n"
+msgstr "UWAGA: przetworzenie wartości typu logicznego \"%s\" nie powiodło się\n"
 
 #: ../gconf/gconftool.c:3194
 #: ../gconf/gconftool.c:3736
@@ -2305,115 +2241,97 @@ msgstr "UWAGA: analiza wartości typu logicznego \"%s\" nie powiodła się\n"
 msgid "WARNING: failed to associate schema `%s' with key `%s': %s\n"
 msgstr "UWAGA: powiązanie schematu \"%s\" z kluczem \"%s\" nie powiodło się: %s\n"
 
-# pd
 #: ../gconf/gconftool.c:3309
 #, c-format
 msgid "WARNING: invalid or missing type for schema (%s)\n"
 msgstr "UWAGA: nieprawidłowy lub brakujący typ schematu (%s)\n"
 
-# pd
 #: ../gconf/gconftool.c:3318
 #, c-format
 msgid "WARNING: invalid or missing list_type for schema (%s)\n"
 msgstr "UWAGA: nieprawidłowa lub brakująca wartość list_type schematu (%s)\n"
 
-# pd
 #: ../gconf/gconftool.c:3329
 #: ../gconf/gconftool.c:3359
 #: ../gconf/gconftool.c:3388
 #, c-format
 msgid "WARNING: Failed to parse default value `%s' for schema (%s)\n"
-msgstr "UWAGA: analiza domyślnej wartości \"%s\" schematu nie powiodła się (%s)\n"
+msgstr "UWAGA: przetworzenie domyślnej wartości \"%s\" schematu nie powiodło się (%s)\n"
 
-# pd
 #: ../gconf/gconftool.c:3347
 #, c-format
 msgid "WARNING: invalid or missing car_type or cdr_type for schema (%s)\n"
 msgstr "UWAGA: nieprawidłowa lub brakująca wartość car_type lub cdr_type schematu (%s)\n"
 
-# pd
 #: ../gconf/gconftool.c:3372
 #, c-format
 msgid "WARNING: You cannot set a default value for a schema\n"
 msgstr "UWAGA: nie można ustawić domyślnej wartości schematu\n"
 
-# pd
 #: ../gconf/gconftool.c:3401
 #, c-format
 msgid "WARNING: gconftool internal error, unknown GConfValueType\n"
 msgstr "UWAGA: wewnętrzny błąd gconftool, nieznany typ GConfValueType\n"
 
-# pd
 #: ../gconf/gconftool.c:3449
 #: ../gconf/gconftool.c:3470
 #: ../gconf/gconftool.c:3491
 #: ../gconf/gconftool.c:3512
 #, c-format
 msgid "WARNING: failed to parse type name `%s'\n"
-msgstr "UWAGA: analiza nazwy typu \"%s\" nie powiodła się\n"
+msgstr "UWAGA: przetworzenie nazwy typu \"%s\" nie powiodło się\n"
 
-# pd
 #: ../gconf/gconftool.c:3466
 #, c-format
 msgid "WARNING: list_type can only be int, float, string or bool and not `%s'\n"
 msgstr "UWAGA: wartością list_type może być tylko int, float, string lub bool, a nie \"%s\"\n"
 
-# pd
 #: ../gconf/gconftool.c:3487
 #, c-format
 msgid "WARNING: car_type can only be int, float, string or bool and not `%s'\n"
 msgstr "UWAGA: wartością car_type może być tylko int, float, string lub bool, a nie \"%s\"\n"
 
-# pd
 #: ../gconf/gconftool.c:3508
 #, c-format
 msgid "WARNING: cdr_type can only be int, float, string or bool and not `%s'\n"
 msgstr "UWAGA: wartością cdr_type może być tylko int, float, string lub bool, a nie \"%s\"\n"
 
-# pd
 #: ../gconf/gconftool.c:3548
 #, c-format
 msgid "WARNING: empty <applyto> node"
 msgstr "UWAGA: pusty węzeł <applyto>"
 
-# pd
 #: ../gconf/gconftool.c:3551
 #: ../gconf/gconftool.c:3809
 #, c-format
 msgid "WARNING: node <%s> not understood below <schema>\n"
 msgstr "UWAGA: węzeł <%s> nie jest zrozumiały wewnątrz <schema>\n"
 
-# pd
 #: ../gconf/gconftool.c:3562
 #, c-format
 msgid "WARNING: no <list_type> specified for schema of type list\n"
 msgstr "UWAGA: nie określono <list_type> dla schematu o typie lista\n"
 
-# pd
 #: ../gconf/gconftool.c:3568
 #, c-format
 msgid "WARNING: no <car_type> specified for schema of type pair\n"
 msgstr "UWAGA: nie określono <car_type> dla schematu o typie para\n"
 
-# pd
 #: ../gconf/gconftool.c:3574
 #, c-format
 msgid "WARNING: no <cdr_type> specified for schema of type pair\n"
 msgstr "UWAGA: nie określono <cdr_type> dla schematu o typie para\n"
 
-# pd
 #: ../gconf/gconftool.c:3603
 #, c-format
 msgid "WARNING: <locale> node has no `name=\"locale\"' attribute, ignoring\n"
 msgstr "UWAGA: węzeł <locale> nie zawiera atrybutu name=\"locale\", zignorowano\n"
 
-# pd
 #: ../gconf/gconftool.c:3609
 #, c-format
 msgid "WARNING: multiple <locale> nodes for locale `%s', ignoring all past first\n"
 msgstr "UWAGA: wiele węzłów <locale> dla ustawień narodowych \"%s\", Zignorowano wszystkie, poza pierwszym.\n"
 
-# pd
 #: ../gconf/gconftool.c:3707
 #, c-format
 msgid "WARNING: Invalid node <%s> in a <locale> node\n"
@@ -2424,7 +2342,6 @@ msgstr "UWAGA: nieprawidłowy węzeł <%s> wewnątrz węzła <locale>\n"
 msgid "Attached schema `%s' to key `%s'\n"
 msgstr "Schemat \"%s\" został przyłączony do klucza \"%s\"\n"
 
-# pd
 #: ../gconf/gconftool.c:3818
 #, c-format
 msgid "You must have at least one <locale> entry in a <schema>\n"
@@ -2480,7 +2397,6 @@ msgstr "Dokument \"%s\" zawiera nieprawidłowy węzeł główny (<%s>, powinno b
 msgid "Document `%s' has no top level <%s> node\n"
 msgstr "Dokument \"%s\" nie posiada węzła szczytowego <%s>\n"
 
-# pd
 #: ../gconf/gconftool.c:4036
 #, c-format
 msgid "WARNING: node <%s> below <%s> not understood\n"
@@ -2515,15 +2431,13 @@ msgstr "Nie można wyczyścić klucza %s: %s\n"
 msgid "Must specify some keys to break\n"
 msgstr "Należy podać klucze przeznaczone do uszkodzenia\n"
 
-# pd
-# rev: programu, nie aplikacji, global check
 #: ../gconf/gconftool.c:4253
 #, c-format
 msgid ""
 "Trying to break your application by setting bad values for key:\n"
 "  %s\n"
 msgstr ""
-"Próba uszkodzenia aplikacji poprzez przypisanie błędnych wartości do klucza:\n"
+"Próba uszkodzenia programu przez przypisanie błędnych wartości do klucza:\n"
 "  %s\n"
 
 #: ../gconf/gconftool.c:4271
@@ -2531,14 +2445,11 @@ msgstr ""
 msgid "Must specify some directories to break\n"
 msgstr "Należy podać katalogi przeznaczone do uszkodzenia\n"
 
-# pd
-# rev: programu
 #: ../gconf/gconftool.c:4290
 #, c-format
 msgid ""
 "Trying to break your application by setting bad values for keys in directory:\n"
 "  %s\n"
 msgstr ""
-"Próba uszkodzenia aplikacji poprzez przypisanie błędnych wartości do kluczy w katalogu:\n"
+"Próba uszkodzenia programu przez przypisanie błędnych wartości do kluczy w katalogu:\n"
 "  %s\n"
-
