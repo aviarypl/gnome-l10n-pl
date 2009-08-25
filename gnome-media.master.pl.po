@@ -9,7 +9,7 @@ msgstr ""
 "Project-Id-Version: gnome-media\n"
 "Report-Msgid-Bugs-To: http://bugzilla.gnome.org/enter_bug.cgi?product=gnome-media&component=general\n"
 "POT-Creation-Date: 2009-08-18 12:26+0000\n"
-"PO-Revision-Date: 2009-08-20 16:50+0100\n"
+"PO-Revision-Date: 2009-08-25 11:56+0100\n"
 "Last-Translator: Tomasz Dominikowski <dominikowski@gmail.com>\n"
 "Language-Team: Aviary.pl <gnomepl@aviary.pl>\n"
 "MIME-Version: 1.0\n"
@@ -19,10 +19,9 @@ msgstr ""
 "X-Poedit-Language: Polish\n"
 "X-Poedit-Country: Poland\n"
 
-# rev: tu jest kontrola, a niżej regulacja. Wybrać jedno i ujednolicić. Global.
 #: ../gnome-volume-control/data/gnome-volume-control-applet.desktop.in.h:1
 msgid "Show desktop volume control"
-msgstr "Wyświetlanie kontroli głośności na pulpicie"
+msgstr "Wyświetlanie regulacji głośności na pulpicie"
 
 #: ../gnome-volume-control/data/gnome-volume-control-applet.desktop.in.h:2
 #: ../gst-mixer/gnome-volume-control.desktop.in.in.h:2
@@ -45,11 +44,10 @@ msgstr "Dźwięk"
 msgid "Enable debugging code"
 msgstr "Włączenie debugowania kodu"
 
-# rev: tego programu
 #: ../gnome-volume-control/src/applet-main.c:50
 #: ../gnome-volume-control/src/dialog-main.c:157
 msgid "Version of this application"
-msgstr "Wersja programu"
+msgstr "Wersja tego programu programu"
 
 #: ../gnome-volume-control/src/applet-main.c:62
 msgid " - GNOME Volume Control Applet"
@@ -141,14 +139,13 @@ msgstr "Wyciszenie"
 msgid "_Profile:"
 msgstr "_Profil:"
 
-# rev: przeczytaj komentarz od developerów
 #. translators:
 #. * The device has been disabled
 #: ../gnome-volume-control/src/gvc-mixer-control.c:991
 #: ../sound-theme/gvc-sound-theme-editor.c:896
 #: ../sound-theme/gvc-sound-theme-editor.c:992
 msgid "Disabled"
-msgstr "Wyłączony"
+msgstr "Wyłączone"
 
 #. translators:
 #. * The number of sound outputs on a particular device
@@ -213,11 +210,10 @@ msgstr "Sprzęt"
 msgid "C_hoose a device to configure:"
 msgstr "Wy_bór urządzenia do konfiguracji:"
 
-# rev: "dla" jest chyba niepotrzebne
 #: ../gnome-volume-control/src/gvc-mixer-dialog.c:1667
 #: ../gnome-volume-control/src/gvc-mixer-dialog.c:1794
 msgid "Settings for the selected device:"
-msgstr "Ustawienia dla wybranego urządzenia:"
+msgstr "Ustawienia wybranego urządzenia:"
 
 #: ../gnome-volume-control/src/gvc-mixer-dialog.c:1685
 msgid "_Input volume: "
@@ -239,10 +235,9 @@ msgstr "Wy_bór urządzenia do wyjścia dźwięku:"
 msgid "Applications"
 msgstr "Programy"
 
-# rev: raczej obecnie niż bieżąco
 #: ../gnome-volume-control/src/gvc-mixer-dialog.c:1809
 msgid "No application is currently playing or recording audio."
-msgstr "Żaden program bieżąco nie odtwarza lub nagrywa dźwięku."
+msgstr "Żaden program obecnie nie odtwarza lub nagrywa dźwięku."
 
 #: ../gnome-volume-control/src/gvc-mixer-dialog.c:1933
 #: ../sound-theme/gvc-sound-theme-chooser.c:730
@@ -271,17 +266,15 @@ msgstr "Preferencje _dźwięku"
 msgid "Muted"
 msgstr "Wyciszony"
 
-# rev: w oryginale nie ma nic o odtwarzaniu, a i record to raczej nagrywanie
 #: ../grecord/gnome-sound-recorder.desktop.in.in.h:1
 msgid "Record sound clips"
-msgstr "Rejestracja i odtwarzanie dźwięków"
+msgstr "Nagrywanie dźwięku"
 
 #: ../grecord/gnome-sound-recorder.desktop.in.in.h:2
 #: ../grecord/src/gsr-window.c:1236
 msgid "Sound Recorder"
 msgstr "Rejestrator dźwięku"
 
-# rev: wolałbym "Bez nazwy", jak np. w gedit
 #. Translator comment: default trackname is 'untitled', which
 #. * has as effect that the user cannot save to this file. The
 #. * 'save' action will open the save-as dialog instead to give
@@ -290,16 +283,14 @@ msgstr "Rejestrator dźwięku"
 #: ../grecord/src/gsr-window.c:1739
 #: ../grecord/src/gsr-window.c:2688
 msgid "Untitled"
-msgstr "Nienazwany"
+msgstr "Bez_nazwy"
 
-# rev: jw.
 #: ../grecord/src/gnome-recorder.c:146
 #: ../grecord/src/gsr-window.c:1741
 #, c-format
 msgid "Untitled-%d"
-msgstr "Nienazwany-%d"
+msgstr "Bez_nazwy-%d"
 
-# rev: przecinek przed czy
 #: ../grecord/src/gsr-window.c:193
 #, c-format
 msgid ""
@@ -311,7 +302,7 @@ msgid ""
 msgstr ""
 "Nie można utworzyć elementu %s GStreamer.\n"
 "Proszę zainstalować wtyczkę \"%s\" z modułu \"%s\".\n"
-"Proszę sprawdzić czy instalacja jest poprawna uruchamiając\n"
+"Proszę sprawdzić, czy instalacja jest poprawna uruchamiając\n"
 "    gst-inspect-0.10 %s\n"
 "i uruchomić gnome-sound-recorder ponownie."
 
@@ -405,11 +396,10 @@ msgstr "Nie można zapisać pliku \"%s\""
 msgid "Save file as"
 msgstr "Zapisuje plik pod podaną nazwą"
 
-# rev: przeczytaj jeszcze raz
 #: ../grecord/src/gsr-window.c:826
 #, c-format
 msgid "%s is not installed in the path."
-msgstr "Nie umieszczono %s na ścieżce."
+msgstr "%s nie jest zainstalowany w ścieżce."
 
 #: ../grecord/src/gsr-window.c:835
 #, c-format
@@ -521,7 +511,6 @@ msgstr "Czas trwania pliku:"
 msgid "Number of channels:"
 msgstr "Liczba kanałów:"
 
-# rev: próbki czy próbkowania?
 #: ../grecord/src/gsr-window.c:1169
 msgid "Sample rate:"
 msgstr "Częstotliwość próbkowania:"
@@ -591,7 +580,7 @@ msgstr "Nie można zapisać do pliku używając profilu dźwiękowego \"%s\". "
 msgid "_File"
 msgstr "_Plik"
 
-# rev: sample to plik dźwiękowy?
+# opis opcji w pasku stanu przy wybraniu Nowy w Rejestratorze dźwięku
 #: ../grecord/src/gsr-window.c:2125
 msgid "Create a new sample"
 msgstr "Tworzy nowy plik dźwiękowy"
@@ -633,10 +622,9 @@ msgstr "Kończy działanie programu"
 msgid "_Control"
 msgstr "_Sterowanie"
 
-# rev: Nagrywa
 #: ../grecord/src/gsr-window.c:2144
 msgid "Record sound"
-msgstr "Rejestruje dźwięk"
+msgstr "Nagrywa dźwięk"
 
 #: ../grecord/src/gsr-window.c:2146
 msgid "Play sound"
@@ -655,20 +643,17 @@ msgstr "Pomo_c"
 msgid "Contents"
 msgstr "Zawartość"
 
-# rev: podręcznik użytkownika
 #: ../grecord/src/gsr-window.c:2153
 msgid "Open the manual"
-msgstr "Otwiera podręcznik"
+msgstr "Otwiera podręcznik użytkownika"
 
-# rev: o tym programie
 #: ../grecord/src/gsr-window.c:2155
 msgid "About this application"
-msgstr "Informacje o programie"
+msgstr "O tym programie"
 
-# rev: nie można wczytać *pliku*
 #: ../grecord/src/gsr-window.c:2277
 msgid "Could not load ui.xml. The program may be not properly installed"
-msgstr "Nie można wczytać ui.xml. Program może być niepoprawnie zainstalowany"
+msgstr "Nie można wczytać pliku ui.xml. Program może być niepoprawnie zainstalowany"
 
 #: ../grecord/src/gsr-window.c:2300
 msgid "Open"
@@ -702,12 +687,11 @@ msgstr "Długość:"
 msgid "Level:"
 msgstr "Poziom:"
 
-# rev: dlaczego odwrotnie niż w oryginale? Nazwa otwartego pliku jest ważniejsza niż nazwa programu
 #. Translators: this is the window title, %s is the currently open file's name or Untitled
 #: ../grecord/src/gsr-window.c:2572
 #, c-format
 msgid "%s - Sound Recorder"
-msgstr "Rejestrator dźwięku - %s"
+msgstr "%s - Rejestrator dźwięku"
 
 #: ../gst-mixer/gnome-volume-control.schemas.in.h:1
 msgid "Height of the Window"
@@ -736,7 +720,7 @@ msgstr "Nieznana regulacja głośności %d"
 
 #: ../gst-mixer/src/main.c:159
 msgid "No volume control GStreamer plugins and/or devices found."
-msgstr "Nie odnaleziono wtyczek GStreamer i/lub urządzeń kontroli głośności."
+msgstr "Nie odnaleziono wtyczek GStreamer i/lub urządzeń regulacji głośności."
 
 #: ../gst-mixer/src/misc.c:64
 msgid "Recording"
@@ -848,7 +832,7 @@ msgstr "tylny prawy"
 msgid "front center"
 msgstr "przedni środkowy"
 
-# rev: hm, LFE to raczej mało znana nazwa w Polsce. Czy to jest Subwoofer?
+# wg wikipedii nie tłumaczymy
 #. Translators: This is the name of a surround sound channel. It
 #. * stands for "Low-Frequency Effects". If you're not sure that
 #. * this has an established and different translation in your
@@ -878,7 +862,7 @@ msgstr "Głośność kanału %s na %s"
 
 #: ../gst-mixer/src/window.c:133
 msgid "A GNOME/GStreamer-based volume control application"
-msgstr "Program do kontroli głośności oparty na technologii GNOME/GStreamer"
+msgstr "Program do regulacji głośności oparty na technologii GNOME/GStreamer"
 
 #: ../gst-mixer/src/window.c:136
 msgid "translator-credits"
@@ -900,7 +884,7 @@ msgstr "_Urządzenie: "
 #. set tooltips
 #: ../gst-mixer/src/window.c:417
 msgid "Control volume on a different device"
-msgstr "Kontrola głośności na innym urządzeniu"
+msgstr "Regulacja głośności na innym urządzeniu"
 
 #: ../gstreamer-properties/gstreamer-properties.c:206
 msgid "None"
@@ -934,13 +918,11 @@ msgstr "Domyślne ustawienia programów opartych na GStreamer"
 msgid "Multimedia Systems Selector"
 msgstr "Wybór systemów multimediów"
 
-# rev: kalka z angielskiego, a fe. "Automatycznie wykrywane" lub coś podobnego.
 #: ../gstreamer-properties/pipeline-constants.c:52
 #: ../gstreamer-properties/pipeline-constants.c:86
 msgid "Autodetect"
-msgstr "Autodetekcja"
+msgstr "Automatyczne wykrywanie"
 
-# rev: pozostawienie tego po angielsku jest zupełnie niepotrzebne i brzydkie. Niżej kilka(naście) stringów jeszcze bardziej.
 #: ../gstreamer-properties/pipeline-constants.c:54
 #: ../gstreamer-properties/pipeline-constants.c:117
 msgid "ALSA - Advanced Linux Sound Architecture"
@@ -948,12 +930,12 @@ msgstr "ALSA - Advanced Linux Sound Architecture"
 
 #: ../gstreamer-properties/pipeline-constants.c:69
 msgid "Artsd - ART Sound Daemon"
-msgstr "Artsd - ART Sound Daemon"
+msgstr "Artsd - Usługa dźwięku ART"
 
 #: ../gstreamer-properties/pipeline-constants.c:71
 #: ../gstreamer-properties/pipeline-constants.c:119
 msgid "ESD - Enlightenment Sound Daemon"
-msgstr "ESD - Enlightenment Sound Daemon"
+msgstr "ESD - Usługa dźwięku Enlightenment"
 
 #: ../gstreamer-properties/pipeline-constants.c:77
 #: ../gstreamer-properties/pipeline-constants.c:126
@@ -963,9 +945,8 @@ msgstr "OSS - Open Sound System"
 #: ../gstreamer-properties/pipeline-constants.c:79
 #: ../gstreamer-properties/pipeline-constants.c:128
 msgid "PulseAudio Sound Server"
-msgstr "PulseAudio Sound Server"
+msgstr "Serwer dźwięku PulseAudio"
 
-# rev: a nie "Własne"?
 #: ../gstreamer-properties/pipeline-constants.c:81
 #: ../gstreamer-properties/pipeline-constants.c:112
 #: ../gstreamer-properties/pipeline-constants.c:136
@@ -975,7 +956,7 @@ msgstr "PulseAudio Sound Server"
 #: ../sound-theme/gvc-sound-theme-editor.c:760
 #: ../sound-theme/sound-theme-file-utils.c:292
 msgid "Custom"
-msgstr "Dowolne"
+msgstr "Własne"
 
 #: ../gstreamer-properties/pipeline-constants.c:104
 msgid "OpenGL"
@@ -985,10 +966,9 @@ msgstr "OpenGL"
 msgid "SDL - Simple DirectMedia Layer"
 msgstr "SDL - Simple DirectMedia Layer"
 
-# rev: "bez" zamiast "nie"
 #: ../gstreamer-properties/pipeline-constants.c:108
 msgid "X Window System (No Xv)"
-msgstr "X Window System (nie Xv)"
+msgstr "X Window System (bez Xv)"
 
 #: ../gstreamer-properties/pipeline-constants.c:110
 msgid "X Window System (X11/XShm/Xv)"
@@ -1024,11 +1004,10 @@ msgstr "Video for Linux (v4l)"
 msgid "Video for Linux 2 (v4l2)"
 msgstr "Video for Linux 2 (v4l2)"
 
-# rev: przeczytaj jeszcze raz
 #: ../gstreamer-properties/pipeline-tests.c:176
 #, c-format
 msgid "Failed to construct test pipeline for '%s'"
-msgstr "Nie można utworzyć potoku testowego o nazwie \"%s\""
+msgstr "Nie można utworzyć potoku testowego dla \"%s\""
 
 #: ../profiles/audio-profile-edit.c:122
 #: ../profiles/audio-profiles-edit.c:538
@@ -1055,21 +1034,19 @@ msgstr "<brak opisu>"
 msgid "There was an error getting the list of gm_audio profiles. (%s)\n"
 msgstr "Wystąpił błąd przy pobieraniu listy profili gm_audio. (%s)\n"
 
-# rev: zmianach
 #: ../profiles/audio-profile.c:709
 #, c-format
 msgid "There was an error subscribing to notification of audio profile list changes. (%s)\n"
-msgstr "Wystąpił błąd podczas subskrypcji powiadamiania o zmianie listy profili dźwięku. (%s)\n"
+msgstr "Wystąpił błąd podczas subskrypcji powiadamiania o zmianach listy profili dźwięku. (%s)\n"
 
 #: ../profiles/audio-profile.c:912
 #, c-format
 msgid "There was an error forgetting profile path %s. (%s)\n"
 msgstr "Wystąpił błąd podczas porzucania katalogu profilu %s. (%s)\n"
 
-# rev: zmodyfikuj
 #: ../profiles/audio-profiles-edit.c:87
 msgid "_Edit"
-msgstr "_Modyfikuj"
+msgstr "Z_modyfikuj"
 
 #. the first argument will never be used since we only run for count > 1
 #: ../profiles/audio-profiles-edit.c:465
@@ -1157,15 +1134,13 @@ msgstr "Naz_wa profilu:"
 msgid "A description for the audio profile"
 msgstr "Opis profilu dźwiękowego"
 
-# rev: przecinek przed kiedy
 #: ../profiles/gnome-audio-profiles.schemas.in.in.h:2
 msgid "A description of the profile, containing more information and describing when to use this profile."
-msgstr "Opis profilu dźwiękowego, zawierający dodatkowe informacje opisujące kiedy użyć tego profilu."
+msgstr "Opis profilu dźwiękowego, zawierający dodatkowe informacje opisujące, kiedy użyć tego profilu."
 
-# rev: za pomocą tego profilu
 #: ../profiles/gnome-audio-profiles.schemas.in.in.h:3
 msgid "A filename extension to be used when storing files encoded with this profile."
-msgstr "Rozszerzenie nazwy pliku używane przy zapisie plików kodowanych przy użyciu tego profilu."
+msgstr "Rozszerzenie nazwy pliku używane przy zapisie plików kodowanych za pomocą tego profilu."
 
 #: ../profiles/gnome-audio-profiles.schemas.in.in.h:4
 msgid "A partial GStreamer pipeline to use for this profile."
@@ -1215,34 +1190,29 @@ msgstr "Domyślne rozszerzenie pliku dla tego profilu"
 msgid "The partial GStreamer pipeline used"
 msgstr "Częściowe użycie potoku GStreamer"
 
-# rev: brak przecinka przed gdy
 #: ../profiles/gnome-audio-profiles.schemas.in.in.h:16
 msgid "Used for converting to CD-quality audio, but with a lossless compression codec. Use this if you later want to edit the file or burn it to CD."
-msgstr "Używany do konwersji dźwięku do jakości CD, ale z koderem używającym bezstratnej kompresji. Należy użyć gdy w przyszłości plik będzie zmieniany lub wypalany na płycie CD."
+msgstr "Używany do konwersji dźwięku do jakości CD, ale z koderem używającym bezstratnej kompresji. Należy użyć, gdy w przyszłości plik będzie zmieniany lub wypalany na płycie CD."
 
 #: ../profiles/gnome-audio-profiles.schemas.in.in.h:17
 msgid "Used for converting to CD-quality audio, but with a lossy compression codec. Use this for CD extraction and radio recordings."
 msgstr "Używany do konwersji dźwięku do jakości CD, ale z koderem używającym kompresji stratnej. Należy użyć przy nagraniach radiowych lub wyodrębnianych z płyt CD."
 
-# rev: brak przecinka przed lecz. W ogóle lecz do zastąpienia przez zwykłe lub
 #: ../profiles/gnome-audio-profiles.schemas.in.in.h:18
 msgid "Used for converting to CD-quality audio, but with the lossy AAC codec. Use this for preparing files for copying to devices that only support the AAC codec. Note that using this format may be illegal in your jurisdiction; contact your lawyer for advice."
-msgstr "Używane do konwersji do jakości CD lecz ze stratnym kodekiem AAC. Kodek ten przydaje się do przygotowywania plików do kopiowania na urządzenia obsługujące tylko AAC. Uwaga: w niektórych krajach ten format może być nielegalny. Proszę zasięgnąć rady prawnika."
+msgstr "Używane do konwersji do jakości CD, ale ze stratnym kodekiem AAC. Kodek ten przydaje się do przygotowywania plików do kopiowania na urządzenia obsługujące tylko AAC. Uwaga: w niektórych krajach ten format może być nielegalny. Proszę zasięgnąć rady prawnika."
 
-# rev: jw.
 #: ../profiles/gnome-audio-profiles.schemas.in.in.h:19
 msgid "Used for converting to CD-quality audio, but with the lossy MP2 codec. Use this for preparing files for copying to devices that only support the MP2 codec. Note that using this format may be illegal in your jurisdiction; contact your lawyer for advice."
-msgstr "Używane do konwersji do jakości CD lecz ze stratnym kodekiem MP2. Kodek ten przydaje się do przygotowywania plików do kopiowania na urządzenia obsługujące tylko MP2. Uwaga: w niektórych krajach ten format może być nielegalny. Proszę zasięgnąć rady prawnika."
+msgstr "Używane do konwersji do jakości CD, ale ze stratnym kodekiem MP2. Kodek ten przydaje się do przygotowywania plików do kopiowania na urządzenia obsługujące tylko MP2. Uwaga: w niektórych krajach ten format może być nielegalny. Proszę zasięgnąć rady prawnika."
 
-# rev: jw.
 #: ../profiles/gnome-audio-profiles.schemas.in.in.h:20
 msgid "Used for converting to CD-quality audio, but with the lossy MP3 codec. Use this for preparing files for copying to devices that only support the MP3 codec. Note that using this format may be illegal in your jurisdiction; contact your lawyer for advice."
-msgstr "Używane do konwersji do jakości CD lecz ze stratnym kodekiem MP3. Kodek ten przydaje się do przygotowywania plików do kopiowania na urządzenia obsługujące tylko MP3. Uwaga: w niektórych krajach ten format może być nielegalny. Proszę zasięgnąć rady prawnika."
+msgstr "Używane do konwersji do jakości CD, ale ze stratnym kodekiem MP3. Kodek ten przydaje się do przygotowywania plików do kopiowania na urządzenia obsługujące tylko MP3. Uwaga: w niektórych krajach ten format może być nielegalny. Proszę zasięgnąć rady prawnika."
 
-# rev: edycji
 #: ../profiles/gnome-audio-profiles.schemas.in.in.h:21
 msgid "Used for converting to lossless voice-quality audio. Use this for recording and editing speech."
-msgstr "Używany do bezstratnej konwersji dźwięku do jakości głosu. Należy użyć do nagrywania i edycji mowy."
+msgstr "Używany do bezstratnej konwersji dźwięku do jakości głosu. Należy użyć do nagrywania i modyfikacji mowy."
 
 #: ../profiles/gnome-audio-profiles.schemas.in.in.h:22
 msgid "Used for converting to lossy voice-quality audio. Use this for recording speech that doesn't need to be edited."
@@ -1256,15 +1226,13 @@ msgstr "Głos, bezstratna"
 msgid "Voice, Lossy"
 msgstr "Głos, stratna"
 
-# rev: przecinek
 #: ../profiles/gnome-audio-profiles.schemas.in.in.h:25
 msgid "Whether or not this profile is to be used"
-msgstr "Określa czy ten profil jest używany"
+msgstr "Określa, czy ten profil jest używany"
 
-# rev: jw.
 #: ../profiles/gnome-audio-profiles.schemas.in.in.h:26
 msgid "Whether or not to use and display this profile."
-msgstr "Określa czy wyświetlać i używać ten profil."
+msgstr "Określa, czy wyświetlać i używać ten profil."
 
 #: ../sound-theme/gvc-sound-theme-chooser.c:322
 #: ../sound-theme/gvc-sound-theme-editor.c:523
@@ -1357,22 +1325,20 @@ msgctxt "Sound event"
 msgid "Logout"
 msgstr "Wylogowanie"
 
-# rev: Nowa wiadomość e-mail
 #: ../sound-theme/gvc-sound-theme-editor.c:88
 msgctxt "Sound event"
 msgid "New e-mail"
-msgstr "Nowy e-mail"
+msgstr "Nowa wiadomość e-mail"
 
 #: ../sound-theme/gvc-sound-theme-editor.c:89
 msgctxt "Sound event"
 msgid "Empty trash"
 msgstr "Opróżnienie kosza"
 
-# rev: ukończenie, przecinek przed itp niepotrzebny
 #: ../sound-theme/gvc-sound-theme-editor.c:90
 msgctxt "Sound event"
 msgid "Long action completed (download, CD burning, etc.)"
-msgstr "Zakończenie długiego działania (pobieranie, nagrywanie płyty CD, itp.)"
+msgstr "Ukończenie długiego działania (pobieranie, nagrywanie płyty CD itp.)"
 
 #. Alerts?
 #: ../sound-theme/gvc-sound-theme-editor.c:92
@@ -1443,3 +1409,4 @@ msgstr "Szkło"
 #: ../sound-theme/sounds/gnome-sounds-default.xml.in.in.h:12
 msgid "Sonar"
 msgstr "Sonar"
+
