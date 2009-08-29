@@ -9,7 +9,7 @@ msgstr ""
 "Project-Id-Version: totem\n"
 "Report-Msgid-Bugs-To: http://bugzilla.gnome.org/enter_bug.cgi?product=totem&component=general\n"
 "POT-Creation-Date: 2009-08-19 19:14+0000\n"
-"PO-Revision-Date: 2009-08-25 14:36+0100\n"
+"PO-Revision-Date: 2009-08-29 14:53+0100\n"
 "Last-Translator: Tomasz Dominikowski <dominikowski@gmail.com>\n"
 "Language-Team: Polish <gnomepl@aviary.pl>\n"
 "MIME-Version: 1.0\n"
@@ -80,10 +80,9 @@ msgstr "Wybierz plik _napisów..."
 msgid "Author:"
 msgstr "Autor:"
 
-# rev: skonfiguruj
 #: ../data/plugins.ui.h:2
 msgid "C_onfigure..."
-msgstr "K_onfiguruj..."
+msgstr "Sk_onfiguruj..."
 
 #: ../data/plugins.ui.h:3
 msgid "Copyright:"
@@ -230,7 +229,7 @@ msgstr "Dodanie filmu do listy odtwarzania"
 msgid "_Add to Playlist"
 msgstr "Dod_aj do listy odtwarzania"
 
-# rev: przeczytaj jeszcze raz
+# FIXME: http://live.gnome.org/GnomeGoals/CorrectDesktopFiles
 #. Title
 #: ../data/totem.desktop.in.in.in.h:1
 #: ../data/totem.ui.h:50
@@ -238,7 +237,6 @@ msgstr "Dod_aj do listy odtwarzania"
 msgid "Movie Player"
 msgstr "Odtwarzacz filmów Totem"
 
-# rev: a nie piosenki? :)
 #: ../data/totem.desktop.in.in.in.h:2
 msgid "Play movies and songs"
 msgstr "Odtwarza filmy i muzykę"
@@ -260,10 +258,9 @@ msgstr "14.4 Kbit/s Modem"
 msgid "16:9 (Widescreen)"
 msgstr "16:9 (Szeroki ekran)"
 
-# rev: powinno być Kbit/s
 #: ../data/totem.ui.h:5
 msgid "19.2 Kbps Modem"
-msgstr "19.2 Kbps Modem"
+msgstr "19.2 Kbit/s Modem"
 
 #: ../data/totem.ui.h:6
 #: ../src/totem-menu.c:1412
@@ -464,7 +461,7 @@ msgstr "Otwiera plik zdalny"
 
 #: ../data/totem.ui.h:57
 msgid "Play / P_ause"
-msgstr "Odtwarzaj / Wstrzym_aj"
+msgstr "Odtwarzaj/wstrzym_aj"
 
 #: ../data/totem.ui.h:58
 msgid "Play or pause the movie"
@@ -821,10 +818,9 @@ msgstr "_Widok"
 msgid "Allow the screensaver to activate when playing audio"
 msgstr "Włączanie wygaszacza ekranu podczas odtwarzania dźwięku"
 
-# rev: "przydatne w przypadku głośników..."
 #: ../data/totem.schemas.in.h:2
 msgid "Allow the screensaver to activate when playing audio. Disable if you have monitor-powered speakers."
-msgstr "Zezwolenie na włączenie wygaszacza ekranu podczas odtwarzania dźwięku. Przydatne dla głośników wbudowanych w monitory."
+msgstr "Zezwolenie na włączenie wygaszacza ekranu podczas odtwarzania dźwięku. Przydatne w przypadku głośników wbudowanych w monitory."
 
 #: ../data/totem.schemas.in.h:3
 msgid "Amount of data to buffer for network streams before starting to display the stream (in seconds)"
@@ -846,15 +842,13 @@ msgstr "Domyślne położenie dla okien dialogowych \"Otwórz...\""
 msgid "Default location for the \"Open...\" dialogs, default is the current directory"
 msgstr "Domyślne położenie dla okien dialogowych \"Otwórz...\". Domyślnie jest to bieżący katalog"
 
-# rev: w oryginale nie ma wielokropka
 #: ../data/totem.schemas.in.h:8
 msgid "Default location for the \"Take Screenshot\" dialogs"
-msgstr "Domyślne położenie dla okien dialogowych \"Zrzut ekranu...\""
+msgstr "Domyślne położenie dla okien dialogowych \"Pobierz zrzut ekranu\""
 
-# rev: jw.
 #: ../data/totem.schemas.in.h:9
 msgid "Default location for the \"Take Screenshot\" dialogs, default is the Pictures directory"
-msgstr "Domyślne położenie dla okien dialogowych \"Zrzut ekranu...\". Domyślnie jest to katalog Obrazy"
+msgstr "Domyślne położenie dla okien dialogowych \"Pobierz zrzut ekranu\". Domyślnie jest to katalog Obrazy"
 
 #: ../data/totem.schemas.in.h:10
 msgid "Enable deinterlacing"
@@ -948,14 +942,13 @@ msgstr "Rodzaj użytego wyjścia dźwięku"
 msgid "Type of audio output to use: \"0\" for stereo, \"1\" for 4-channel output, \"2\" for 5.0 channel output, \"3\" for 5.1 channel output, \"4\" for AC3 Passthrough."
 msgstr "Rodzaj użytego wyjścia dźwięku: \"0\" dla stereo, \"1\" dla 4-kanałowego, \"2\" dla wyjścia 5.0, \"3\" dla wyjścia 5.1, \"4\" dla AC3 Passthrough."
 
-# rev: przeczytaj komentarz. Wszystkie polskie napisy są w WINDOWS-1250
 #. Translators: This is default subtitle encoding
 #. character set. You can change this to be the most common
 #. encoding for fansub subtitles in your language. File a bug
 #. against Totem, and leave UTF-8 as the default if in doubt.
 #: ../data/totem.schemas.in.h:37
 msgid "UTF-8"
-msgstr "UTF-8"
+msgstr "WINDOWS-1250"
 
 #: ../data/totem.schemas.in.h:38
 msgid "Visualization quality setting"
@@ -998,11 +991,10 @@ msgstr "Odtwarzanie filmu"
 msgid "File is not a valid .desktop file"
 msgstr "Plik nie jest poprawnym plikiem .desktop"
 
-# rev: wyżej było ".desktop", warto by i tu dodać kropkę
 #: ../src/eggdesktopfile.c:188
 #, c-format
 msgid "Unrecognized desktop file Version '%s'"
-msgstr "Nierozpoznana wersja pliku desktop \"%s\""
+msgstr "Nierozpoznana wersja pliku .desktop \"%s\""
 
 #: ../src/eggdesktopfile.c:958
 #, c-format
@@ -1019,17 +1011,15 @@ msgstr "Program nie akceptuje dokumentów w wierszu poleceń"
 msgid "Unrecognized launch option: %d"
 msgstr "Nierozpoznana opcja uruchamiania: %d"
 
-# rev: jw.
 #: ../src/eggdesktopfile.c:1373
 #, c-format
 msgid "Can't pass document URIs to a 'Type=Link' desktop entry"
-msgstr "Nie można przekazać adresu URI dokumentu do pozycji \"Type=Link\" pliku desktop"
+msgstr "Nie można przekazać adresu URI dokumentu do pozycji \"Type=Link\" pliku .desktop"
 
-# rev: nie po polsku. Dałbym "Elementu nie można uruchomić"
 #: ../src/eggdesktopfile.c:1394
 #, c-format
 msgid "Not a launchable item"
-msgstr "Element jest nieuruchamialny"
+msgstr "Elementu nie można uruchomić"
 
 #: ../src/eggfileformatchooser.c:235
 #, c-format
@@ -1077,15 +1067,13 @@ msgstr "Określa plik zawierający zapisaną konfigurację"
 msgid "FILE"
 msgstr "PLIK"
 
-# rev: ID bym rozwinął. Zdecydowanie
 #: ../src/eggsmclient.c:231
 msgid "Specify session management ID"
-msgstr "Określa ID zarządzania sesją"
+msgstr "Określa identyfikator zarządzania sesją"
 
-# rev: jw.
 #: ../src/eggsmclient.c:231
 msgid "ID"
-msgstr "ID"
+msgstr "Identyfikator"
 
 #: ../src/eggsmclient.c:252
 msgid "Session management options:"
@@ -1193,13 +1181,12 @@ msgstr "Odbiornik DVB %u"
 msgid "Watch TV on '%s'"
 msgstr "Oglądanie TV przez \"%s\""
 
-# rev: może jednak "używający"?
 #. This lists the back-end type and version, such as
 #. * Movie Player using GStreamer 0.10.1
 #: ../src/totem-menu.c:1200
 #, c-format
 msgid "Movie Player using %s"
-msgstr "Odtwarzacz filmów używa %s"
+msgstr "Odtwarzacz filmów używający %s"
 
 #: ../src/totem-menu.c:1204
 msgid "Copyright © 2002-2009 Bastien Nocera"
@@ -1375,11 +1362,10 @@ msgstr "Proszę sprawdzić ustawienia sprzętu."
 msgid "Previous Chapter/Movie"
 msgstr "Poprzedni rozdział/film"
 
-# rev: spacje wokół "/"? nigdy wcześniej się z tym nie spotkałem. Niektóre ciągi w totemie też tak mają
 #: ../src/totem-object.c:3926
 #: ../src/totem-object.c:3928
 msgid "Play / Pause"
-msgstr "Odtwarzanie / pauza"
+msgstr "Odtwarzanie/wstrzymanie"
 
 #: ../src/totem-object.c:3935
 #: ../src/totem-object.c:3937
@@ -1400,7 +1386,7 @@ msgstr "Włącza śledzenie"
 
 #: ../src/totem-options.c:49
 msgid "Play/Pause"
-msgstr "Odtwarza/Wstrzymuje"
+msgstr "Odtwarza/wstrzymuje"
 
 #: ../src/totem-options.c:52
 msgid "Next"
@@ -2172,10 +2158,9 @@ msgstr "Plik wykonywalny gromit nie został odnaleziony."
 msgid "BBC iPlayer"
 msgstr "BBC iPlayer"
 
-# rev: dopisek dobry, ale zamiast "strumieniowania" (sic), dałbym raczej "Odtwarzanie strumieniowe"
 #: ../src/plugins/iplayer/iplayer.totem-plugin.in.h:2
 msgid "Stream BBC programs from the last 7 days from the BBC iPlayer service."
-msgstr "Strumieniowanie programów BBC z ostatnich 7 dni z usługi BBC iPlayer (dostępne wyłącznie w Wielkiej Brytanii)."
+msgstr "Odtwarzanie strumieniowe programów BBC z ostatnich 7 dni z usługi BBC iPlayer (dostępne wyłącznie w Wielkiej Brytanii)."
 
 #: ../src/plugins/iplayer/iplayer.py:57
 msgid "Error Listing Channel Categories"
@@ -2195,10 +2180,9 @@ msgstr "Wczytywanie..."
 msgid "Error getting programme feed"
 msgstr "Błąd podczas uzyskiwania danych programu"
 
-# rev: może "tego połączenia"?
 #: ../src/plugins/iplayer/iplayer.py:106
 msgid "There was an unknown error getting the list of programmes for this channel and category combination."
-msgstr "Wystąpił nieznany błąd podczas uzyskiwania listy programów tej kombinacji kanału i kategorii."
+msgstr "Wystąpił nieznany błąd podczas uzyskiwania listy programów tego połączenia kanału i kategorii."
 
 #: ../src/plugins/iplayer/iplayer2.py:295
 #, python-format
@@ -2682,10 +2666,9 @@ msgstr "Ustawienie ikony okna jako miniaturki odtwarzanego filmu"
 msgid "Thumbnail"
 msgstr "Miniaturka"
 
-# rev: programu
 #: ../src/plugins/tracker/tracker.totem-plugin.in.h:2
 msgid "Search for local videos using Tracker"
-msgstr "Wyszukiwanie lokalnych filmów używając Tracker"
+msgstr "Wyszukiwanie lokalnych filmów używając programu Tracker"
 
 #: ../src/plugins/youtube/youtube.totem-plugin.in.h:1
 msgid "A plugin to let you browse YouTube videos."
@@ -2846,3 +2829,4 @@ msgstr "Konsola Python dla programu Totem"
 #: ../src/plugins/pythonconsole/pythonconsole.py:120
 msgid "After you press OK, Totem will wait until you connect to it with winpdb or rpdb2. If you have not set a debugger password in GConf, it will use the default password ('totem')."
 msgstr "Po naciśnięciu przycisku OK program Totem poczeka na połączenie od winpdb lub rpdb2. Jeśli hasło debugowania nie zostało ustawione w GConf, to zostanie użyte domyślne (\"totem\")."
+
