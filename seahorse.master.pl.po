@@ -1,14 +1,9 @@
-# translation of seahorse to Polish
-# Copyright (C) 2001-2009 Free Software Foundation, Inc.
 # -=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-
 # Aviary.pl
 # Jeśli masz jakiekolwiek uwagi odnoszące się do tłumaczenia lub chcesz
 # pomóc w jego rozwijaniu i pielęgnowaniu, napisz do nas:
 # gnomepl@aviary.pl
 # -=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-
-# Andrzej Polatyński <andrzej@datatel.net.pl>, 2007.
-# Piotr Makowski <pmakowski@aviary.pl>, 2009.
-# Tomasz Dominikowski <tdominikowski@aviary.pl>, 2008, 2009.
 msgid ""
 msgstr ""
 "Project-Id-Version: seahorse\n"
@@ -24,6 +19,7 @@ msgstr ""
 "X-Poedit-Language: Polish\n"
 "X-Poedit-Country: Poland\n"
 
+# rev: jakoś nie pasuje mi tłumaczenie do oryginału, ale nie umiem powiedzieć czy odejście jest celowe
 #: ../daemon/seahorse-daemon.c:69
 msgid "Do not run seahorse-daemon as a daemon"
 msgstr "Uruchamia seahorse-daemon bez przechodzenia do pracy w tle"
@@ -217,6 +213,7 @@ msgstr "Włączenie udostępniania DNS-SD"
 msgid "Enables DNS-SD (Apple Bonjour) sharing of keys. seahorse-daemon must be running and must be built with HKP and DNS-SD support."
 msgstr "Włącza udostępnianie kluczy DNS-SD (Apple Bonjour). seahorse-daemon musi być uruchomiona i posiadać skompilowane wsparcie HKP i DNS-SD."
 
+# rev: ID. Wspominałem, że nie znoszę ID? ;) a niżej jest już identyfikator
 #: ../data/seahorse.schemas.in.h:10
 msgid "ID of the default key"
 msgstr "ID domyślnego klucza"
@@ -340,7 +337,6 @@ msgstr "Nazwa lub adres serwera."
 msgid "Couldn't add keyring"
 msgstr "Nie można dodać bazy kluczy"
 
-# td
 #: ../gkr/seahorse-gkr-add-item.xml.h:1
 msgid "Add Password"
 msgstr "Dodawanie hasła"
@@ -351,17 +347,14 @@ msgstr "Dodawanie hasła"
 msgid "_Description:"
 msgstr "_Opis:"
 
-# td
 #: ../gkr/seahorse-gkr-add-item.xml.h:3
 msgid "_Keyring:"
 msgstr "Baza _kluczy:"
 
-# td
 #: ../gkr/seahorse-gkr-add-item.xml.h:4
 msgid "_Password:"
 msgstr "_Hasło:"
 
-# td
 #: ../gkr/seahorse-gkr-add-item.xml.h:5
 msgid "_Show Password"
 msgstr "_Wyświetlanie hasła"
@@ -531,12 +524,11 @@ msgstr "Baza kluczy"
 msgid "Used to store application and network passwords"
 msgstr "Używane do przechowywania haseł programów i haseł sieciowych"
 
-# td
 #: ../gkr/seahorse-gkr-keyring-commands.c:96
 msgid "Stored Password"
 msgstr "Przechowywane hasło"
 
-# td
+# rev: hm, w oryginale są tylko hasła i tajemnice. No, może faktycznie tajemnice są beznadziejne i tak jest lepiej? ;)
 #: ../gkr/seahorse-gkr-keyring-commands.c:97
 msgid "Safely store a password or secret."
 msgstr "Bezpieczne przechowywanie haseł programów i haseł sieciowych."
@@ -704,6 +696,7 @@ msgstr "_Podpisywanie jako:"
 msgid "Name"
 msgstr "Nazwa"
 
+# rev: ID
 #. The keyid column
 #: ../libcryptui/cryptui-key-list.c:145
 #: ../pgp/seahorse-pgp-key-properties.c:1743
@@ -979,8 +972,7 @@ msgstr "To nie jest poprawny plik .desktop"
 msgid "Unrecognized desktop file Version '%s'"
 msgstr "Nierozpoznana wersja pliku .desktop \"%s\""
 
-# rev: dwukropek skąd?
-# żeby pominąć problem z niemożnością odmiany zawartości %s
+# dwukropek, żeby pominąć problem z niemożnością odmiany zawartości %s
 #: ../libegg/eggdesktopfile.c:958
 #, c-format
 msgid "Starting %s"
@@ -1043,6 +1035,7 @@ msgstr ":"
 msgid "Add Key Server"
 msgstr "Dodawanie serwera kluczy"
 
+# rev: host to bardzo brzydkie słowo, jeśli się da to trzeba czymś je zastąpić, najlepiej "komputerem"
 #: ../libseahorse/seahorse-add-keyserver.xml.h:3
 msgid "Host:"
 msgstr "Host:"
@@ -1613,6 +1606,7 @@ msgstr[2] "Wczytano %d kluczy"
 msgid "Loading Keys..."
 msgstr "Wczytywanie kluczy..."
 
+# rev: UIDy. Łojoj. "brakujący podpis własny" też mi się nie podoba.
 #: ../pgp/seahorse-gpgme-source.c:820
 msgid "Invalid key data (missing UIDs). This may be due to a computer with a date set in the future or a missing self-signature."
 msgstr "Nieprawidłowe dane klucza (brakujące UIDy). Przyczyną tego może być nieprawidłowo ustawiona data w systemie lub brakujący podpis własny."
@@ -1760,6 +1754,7 @@ msgstr "Data _wygaśnięcia:"
 msgid "Encryption _Type:"
 msgstr "Typ _szyfrowania:"
 
+# rev: nie może być "Tworzy"?
 #: ../pgp/seahorse-pgp-generate.xml.h:8
 msgid "Generate a new key"
 msgstr "Generuje nowy klucz"
@@ -1819,6 +1814,7 @@ msgstr "[Nieznany]"
 msgid "Name/Email"
 msgstr "Nazwa/E-mail"
 
+# rev: ID
 #: ../pgp/seahorse-pgp-key-properties.c:431
 msgid "Signature ID"
 msgstr "ID podpisu"
@@ -1912,6 +1908,7 @@ msgstr "<b>Komentarz:</b>"
 msgid "<b>Dates</b>"
 msgstr "<b>Daty</b>"
 
+# rev: adres e-mail
 #: ../pgp/seahorse-pgp-private-key-properties.xml.h:4
 #: ../pgp/seahorse-pgp-public-key-properties.xml.h:3
 msgid "<b>Email:</b>"
@@ -1921,6 +1918,7 @@ msgstr "<b>E-mail:</b>"
 msgid "<b>Fingerprint</b>"
 msgstr "<b>Odcisk palca</b>"
 
+# rev: ID
 #: ../pgp/seahorse-pgp-private-key-properties.xml.h:6
 #: ../pgp/seahorse-pgp-public-key-properties.xml.h:6
 msgid "<b>Key ID:</b>"
@@ -2003,6 +2001,7 @@ msgstr "Wygasanie"
 msgid "Expires:"
 msgstr "Wygasa:"
 
+# rev: Wyeksportuj
 #: ../pgp/seahorse-pgp-private-key-properties.xml.h:26
 msgid "Export"
 msgstr "Eksportuj"
@@ -2015,6 +2014,7 @@ msgstr "Przechodzi do następnego zdjęcia"
 msgid "Go to previous photo"
 msgstr "Przechodzi do poprzedniego zdjęcia"
 
+# rev: ID
 #: ../pgp/seahorse-pgp-private-key-properties.xml.h:30
 #: ../pgp/seahorse-pgp-public-key-properties.xml.h:30
 msgid "Key ID:"
@@ -2028,7 +2028,6 @@ msgstr "Ustawia to zdjęcie jako podstawowe"
 msgid "Names and Signatures"
 msgstr "Nazwy i podpisy"
 
-# td
 #: ../pgp/seahorse-pgp-private-key-properties.xml.h:35
 #: ../pgp/seahorse-pgp-public-key-properties.xml.h:33
 msgid "Never"
@@ -2106,7 +2105,6 @@ msgstr "<b>_Osoby, które podpisały ten klucz:</b>"
 msgid "Encrypt files and email to the key's owner "
 msgstr "Szyfrowanie plików i wiadomości do właściciela klucza "
 
-# td
 #: ../pgp/seahorse-pgp-public-key-properties.xml.h:23
 msgid "Fully"
 msgstr "Pełne"
@@ -2126,7 +2124,6 @@ msgstr "Jeśli istnieje pewność, że posiadaczem klucza jest \"%s\", proszę <
 msgid "If you no longer trust that '%s' owns this key, <i>revoke</i> your signature:"
 msgstr "Jeśli nie ma już pewności co do tożsamości osoby \"%s\", można <i>unieważnić</i> własny podpis:"
 
-# td
 #: ../pgp/seahorse-pgp-public-key-properties.xml.h:32
 msgid "Marginally"
 msgstr "Niewielkie"
@@ -2137,7 +2134,6 @@ msgstr "Niewielkie"
 msgid "Trust"
 msgstr "Zaufanie"
 
-# td
 #: ../pgp/seahorse-pgp-public-key-properties.xml.h:40
 msgid "Ultimately"
 msgstr "Ostateczne"
@@ -2447,7 +2443,6 @@ msgstr "Importowanie istniejących kluczy z pliku:"
 msgid "My _Personal Keys"
 msgstr "_Osobiste klucze"
 
-# td
 #: ../src/seahorse-key-manager.xml.h:5
 msgid "Other _Keys"
 msgstr "Inne _klucze"
@@ -2528,6 +2523,7 @@ msgstr "Internetowe wyszukiwanie kluczy innych osób. Klucze te można importowa
 msgid "Where to search:"
 msgstr "Miejsce wyszukiwania:"
 
+# rev: "Wy_szukaj"
 #: ../src/seahorse-keyserver-search.xml.h:6
 msgid "_Search"
 msgstr "_Szukaj"
@@ -2586,7 +2582,6 @@ msgstr "Serwery _kluczy"
 msgid "_Sync"
 msgstr "_Synchronizuj"
 
-# td
 #: ../src/seahorse-main.c:62
 msgid "Version of this application"
 msgstr "Wersja tego programu"
@@ -2603,8 +2598,10 @@ msgstr "Współpraca:"
 #: ../src/seahorse-viewer.c:172
 msgid "translator-credits"
 msgstr ""
-"Aviary.pl <gnomepl@aviary.pl> 2007 - 2009;\n"
-"Piotr Makowski <pmakowski@aviary.pl>."
+"Andrzej Polatyński <andrzej@datatel.net.pl>, 2007\n"
+"Aviary.pl <gnomepl@aviary.pl> 2007, 2008, 2009\n"
+"Piotr Makowski <pmakowski@aviary.pl>, 2009\n"
+"Tomasz Dominikowski <tdominikowski@aviary.pl>, 2008, 2009"
 
 #: ../src/seahorse-viewer.c:175
 msgid "Seahorse Project Homepage"
@@ -2627,10 +2624,12 @@ msgstr "_Widok"
 msgid "_Help"
 msgstr "Pomo_c"
 
+# rev: _ zwykle jest tutaj przed r
 #: ../src/seahorse-viewer.c:199
 msgid "Prefere_nces"
 msgstr "_Preferencje"
 
+# rev: dla jest niepotrzebne
 #: ../src/seahorse-viewer.c:200
 msgid "Change preferences for this program"
 msgstr "Zmienia preferencje dla tego programu"
@@ -2643,6 +2642,7 @@ msgstr "Informacje o tym programie"
 msgid "_Contents"
 msgstr "_Zawartość"
 
+# rev: pomoc tam jest przecież
 #: ../src/seahorse-viewer.c:205
 msgid "Show Seahorse help"
 msgstr "Otwiera podręcznik programu Seahorse"
@@ -2702,10 +2702,12 @@ msgstr "_Usuń"
 msgid "Delete selected items"
 msgstr "Usuwa zaznaczone elementy"
 
+# rev: "Wye_ksportuj"
 #: ../src/seahorse-viewer.c:545
 msgid "E_xport..."
 msgstr "E_ksportuj..."
 
+# rev: jw. Choć w sumie tutaj powinno być Eksportuje
 #: ../src/seahorse-viewer.c:546
 msgid "Export to a file"
 msgstr "Eksportuj do pliku"
@@ -2767,7 +2769,6 @@ msgstr "<i>Można użyć adresu e-mail i dowolnych innych informacji opisującyc
 msgid "A Secure Shell (SSH) key lets you connect securely to trusted computers using SSH, without entering a different password for each of them."
 msgstr "Klucz bezpiecznej powłoki (SSH) umożliwia bezpieczne połączenia z zaufanymi komputerami, bez konieczności podawania różnych haseł dla każdego z nich."
 
-# td
 #: ../ssh/seahorse-ssh-generate.xml.h:4
 msgid "DSA"
 msgstr "DSA"
@@ -2780,7 +2781,6 @@ msgstr "Jeżeli tworzony klucz ma być używany do łączenia się z konkretnym 
 msgid "New Secure Shell Key"
 msgstr "Nowy klucz SSH"
 
-# td
 #: ../ssh/seahorse-ssh-generate.xml.h:9
 msgid "RSA"
 msgstr "RSA"
@@ -2858,6 +2858,7 @@ msgstr "<b>Zaufanie</b>"
 msgid "<i>This only applies to the '%s'</i> account."
 msgstr "<i>Ma zastosowanie tylko do konta \"%s\".</i>"
 
+# rev: lepszy skrót byłby na k, choś nie sprawdzałem na żywo
 #: ../ssh/seahorse-ssh-key-properties.xml.h:18
 msgid "E_xport Complete Key"
 msgstr "_Wyeksportuj cały klucz"
@@ -2947,6 +2948,7 @@ msgstr "Nie można ustawić kluczy SSH na komputerze zdalnym."
 msgid "Configuring Secure Shell Keys..."
 msgstr "Konfigurowanie kluczy SSH..."
 
+# rev: dałbym raczej ".pl" zamiast com :)
 #: ../ssh/seahorse-ssh-upload.xml.h:1
 msgid "<i>eg: fileserver.example.com:port</i>"
 msgstr "<i>np.: serwerplików.domena.com:port</i>"
@@ -2970,979 +2972,3 @@ msgstr "_Login:"
 #: ../ssh/seahorse-ssh-upload.xml.h:7
 msgid "_Set Up"
 msgstr "_Przygotuj"
-
-#~ msgid "Create a PGP Key"
-#~ msgstr "Tworzenie klucza PGP"
-#~ msgid ""
-#~ "Unknown\n"
-#~ "Never\n"
-#~ "Marginal\n"
-#~ "Full\n"
-#~ "Ultimate"
-#~ msgstr ""
-#~ "Nieznane\n"
-#~ "Nigdy\n"
-#~ "Niewielkie\n"
-#~ "Pełne\n"
-#~ "Absolutne"
-#~ msgid ""
-#~ "Unknown\n"
-#~ "Never\n"
-#~ "Marginally\n"
-#~ "Fully\n"
-#~ "Ultimately"
-#~ msgstr ""
-#~ "Nieznane\n"
-#~ "Nigdy\n"
-#~ "Minimalne\n"
-#~ "Pełne\n"
-#~ "Absolutne"
-#~ msgid "Other _Collected Keys"
-#~ msgstr "Ze_brane klucze"
-#~ msgid "_Trusted Keys"
-#~ msgstr "Zaufa_ne klucze"
-#~ msgid "_About"
-#~ msgstr "_O programie"
-#~ msgid "_Copy"
-#~ msgstr "S_kopiuj"
-#~ msgid "<i>Automatically unlocked when user logs in.</i>"
-#~ msgstr "<i>Automatyczne odblokowanie przy zalogowaniu użytkownika.</i>"
-#~ msgid "Exporting is not yet supported."
-#~ msgstr "Eksportowanie nie jest jeszcze obsługiwane."
-#~ msgid "_Close"
-#~ msgstr "Za_mknij"
-#~ msgid "Copy public part of selected keys to the clipboard"
-#~ msgstr "Kopiuje publiczne części zaznaczonych kluczy do schowka"
-#~ msgid "Save this passphrase in my keyring"
-#~ msgstr "Zapisanie tego hasła w bazie kluczy"
-#~ msgid "Unparseable Key ID"
-#~ msgstr "Niemożliwy do przetworzenia identyfikator klucza"
-#~ msgid "Unknown/Invalid Key"
-#~ msgstr "Nieznany/nieprawidłowy klucz"
-#~ msgid ""
-#~ "<b>Warning</b>: Your system is not configured to cache passphrases in "
-#~ "secure memory."
-#~ msgstr ""
-#~ "<b>Ostrzeżenie</b>: System nie jest przystosowany do przechowywania "
-#~ "kluczy w bezpiecznej pamięci podręcznej."
-#~ msgid "_Show Window"
-#~ msgstr "Wyświetl _okno"
-#~ msgid "Print variables in for a C type shell"
-#~ msgstr "Wypisywanie zmiennych dla powłoki C"
-#~ msgid "Display environment variables (the default)"
-#~ msgstr "Wyświetlanie zmiennych środowiskowych (domyślne)"
-#~ msgid "Allow GPG agent request from any display"
-#~ msgstr "Zezwala na przyjmowanie żądań agenta GPG z dowolnego ekranu"
-#~ msgid "command..."
-#~ msgstr "polecenie..."
-#~ msgid "no command specified to execute"
-#~ msgstr "nie określono polecenia do uruchomienia"
-#~ msgid "Authorize Passphrase Access"
-#~ msgstr "Autoryzacja dostępu do haseł"
-#~ msgid "The passphrase is cached in memory."
-#~ msgstr "Hasło jest przechowywane w pamięci."
-#~ msgid "Always ask me before using a cached passphrase"
-#~ msgstr "Wyświetlanie zapytania przed użyciem zapamiętanego hasła"
-#~ msgid "_Authorize"
-#~ msgstr "_Autoryzuj"
-#~ msgid ""
-#~ "After performing an decrypt or verify operation from the applet, display "
-#~ "the resulting text in a window."
-#~ msgstr ""
-#~ "Wyświetlanie okna z tekstem wynikowym, po odszyfrowaniu lub wykonaniu "
-#~ "weryfikacji z poziomu apletu."
-#~ msgid ""
-#~ "After performing an encrypt or signing operation from the applet, display "
-#~ "the resulting text in a window."
-#~ msgstr ""
-#~ "Wyświetlanie okna z tekstem wynikowym, po szyfrowaniu lub podpisaniu z "
-#~ "poziomu apletu."
-#~ msgid "Display cache reminder in the notification area"
-#~ msgstr ""
-#~ "Wyświetlanie w obszarze powiadamiania przypomnienia o pamięci podręcznej"
-#~ msgid "Display clipboard after decrypting"
-#~ msgstr "Wyświetlanie schowka po odszyfrowaniu"
-#~ msgid "Display clipboard after encrypting"
-#~ msgstr "Wyświetlanie schowka po szyfrowaniu"
-#~ msgid "Expire passwords in the cache"
-#~ msgstr "Wygasanie haseł w pamięci podręcznej"
-#~ msgid ""
-#~ "If set to 'gnome' uses gnome-keyring to cache passwords. When set to "
-#~ "'internal' uses internal cache."
-#~ msgstr ""
-#~ "Jeżeli ustawiona wartość \"gnome\", używa gnome-keyring do przechowywania "
-#~ "haseł. Jeżeli ustawiona wartość \"internal\", używa wewnętrznego "
-#~ "mechanizmu pamięci podręcznej haseł."
-#~ msgid "Prompt before using GPG passwords in cache"
-#~ msgstr "Wyświetlanie zapytania przed użyciem haseł GPG z pamięci podręcznej"
-#~ msgid ""
-#~ "Reflect the contents of the clipboard (whether encrypted, signed, etc...) "
-#~ "in the panel applet icon."
-#~ msgstr ""
-#~ "Odzwierciedla zawartość schowka (zaszyfrowana, podpisana, itd.) na ikonie "
-#~ "apletu panelowego."
-#~ msgid ""
-#~ "Set to 'true' to enable display of the cache reminder in the notification "
-#~ "area of your panel."
-#~ msgstr ""
-#~ "Wyłączenie tej opcji spowoduje wyłączenie wyświetlania przypomnienia o "
-#~ "pamięci podręcznej w obszarze powiadamiania panelu. Wartość \"true\" "
-#~ "włącza tę opcję."
-#~ msgid ""
-#~ "Set to 'true' to have seahorse-agent prompt before giving out passwords "
-#~ "it has cached."
-#~ msgstr ""
-#~ "Zaznaczenie sprawia, że seahorse-agent będzie wyświetlał zapytanie przed "
-#~ "zezwoleniem na dostęp do haseł pamięci podręcznej."
-#~ msgid "Show clipboard state in panel"
-#~ msgstr "Wyświetlanie stanu schowka na panelu"
-#~ msgid "The time (in minutes) to cache GPG passwords"
-#~ msgstr "Czas (w minutach) przechowywania haseł GPG w pamięci podręcznej"
-#~ msgid ""
-#~ "This is the amount of time, specified in minutes, to cache GPG passwords "
-#~ "in seahorse-agent."
-#~ msgstr ""
-#~ "Czas przechowywania haseł GPG w seahorse-agent, podawany w minutach."
-#~ msgid ""
-#~ "This option enables the GPG password cache in the seahorse-agent program. "
-#~ "The 'use-agent' setting in gpg.conf affects this setting."
-#~ msgstr ""
-#~ "Ta opcja włącza pamięć podręczną haseł GPG w programie seahorse-agent. "
-#~ "Parametr \"use-agent\" w pliku gpg.conf ma wpływ na to ustawienie."
-#~ msgid ""
-#~ "When set, seahorse-agent expires GPG passwords in its cache after a "
-#~ "period of time."
-#~ msgstr ""
-#~ "Gdy zaznaczone, hasła GPG w pamięci podręcznej programu seahorse-agent "
-#~ "będą wygasały po upływie ustalonego czasu."
-#~ msgid "Whether the GPG password cache is enabled"
-#~ msgstr "Określa, czy pamięć podręczna haseł GPG jest włączona"
-#~ msgid "None. Prompt for a key."
-#~ msgstr "Brak. Wyświetlanie zapytania o wybór klucza."
-#~ msgid "<b>Remember PGP Passphrases</b>"
-#~ msgstr "<b>Zapamiętywanie haseł PGP</b>"
-#~ msgid "<i>A supported PGP passphrase caching agent is not running.</i>"
-#~ msgstr ""
-#~ "<i>Osługiwany agent pamięci podręcznej haseł PGP nie jest uruchomiony.</i>"
-#~ msgid "<i>This key is used to sign messages when no other key is chosen</i>"
-#~ msgstr ""
-#~ "<i>Ten klucz będzie używany do podpisywania wiadomości, gdy nie zostanie "
-#~ "wybrany żaden inny klucz</i>"
-#~ msgid "As_k me before using a cached passphrase"
-#~ msgstr "Wyświe_tlanie zapytania przed użyciem zapamiętanego hasła"
-#~ msgid "Show _icon in status area when passphrases are in memory"
-#~ msgstr ""
-#~ "Wyświetlanie _ikony w obszarze stanu gdy hasła znajdują się w pamięci"
-#~ msgid "When _encrypting, always include myself as a recipient"
-#~ msgstr "D_ołączanie siebie do listy odbiorców zaszyfrowanych danych"
-#~ msgid "_Always remember passphrases whenever logged in"
-#~ msgstr "Pamiętanie haseł od momentu _zalogowania"
-#~ msgid "Clipboard Text Encryption"
-#~ msgstr "Szyfrowanie tekstu w schowku"
-#~ msgid "Encrypt, decrypt or sign the clipboard (uses PGP type encryption)."
-#~ msgstr ""
-#~ "Szyfruje, odszyfrowuje lub podpisuje schowek (używa szyfrowania typu PGP)."
-#~ msgid "Seahorse Applet Factory"
-#~ msgstr "Generator apletów seahorse"
-#~ msgid "Use PGP/GPG to encrypt/decrypt/sign/verify/import the clipboard."
-#~ msgstr ""
-#~ "Używa PGP/GPG do szyfrowania/odszyfrowywania/podpisywania/weryfikowania/"
-#~ "importowania schowka."
-#~ msgid "The clipboard could not be encrypted."
-#~ msgstr "Schowek nie mógł zostać zaszyfrowany."
-#~ msgid "Choose Key to Sign with"
-#~ msgstr "Wybór klucza do podpisywania"
-#~ msgid "Signing Failed"
-#~ msgstr "Podpisywanie nie powiodło się"
-#~ msgid "The clipboard could not be Signed."
-#~ msgstr "Schowek nie mógł zostać podpisany."
-#~ msgid "Keys were found but not imported."
-#~ msgstr "Znaleziono klucze ale nie zostały one zaimportowane."
-#~ msgid "Decrypting Failed"
-#~ msgstr "Odszyfrowywanie nie powiodło się"
-#~ msgid "Text may be malformed."
-#~ msgstr "Tekst może być zniekształcony."
-#~ msgid "No PGP key or message was found on clipboard"
-#~ msgstr "Nie odnaleziono w schowku żadnych kluczy PGP ani wiadomości"
-#~ msgid "No PGP data found."
-#~ msgstr "Nie odnaleziono danych PGP."
-#~ msgid "Decrypted Text"
-#~ msgstr "Zdeszyfrowany tekst"
-#~ msgid "_Encrypt Clipboard"
-#~ msgstr "_Szyfruj schowek"
-#~ msgid "_Sign Clipboard"
-#~ msgstr "_Podpisz schowek"
-#~ msgid "_Decrypt/Verify Clipboard"
-#~ msgstr "_Odszyfruj/zweryfikuj schowek"
-#~ msgid "<b>Display clipboard contents after:</b>"
-#~ msgstr "<b>Wyświetlanie zawartości schowka po:</b>"
-#~ msgid "Clipboard Encryption Preferences"
-#~ msgstr "Preferencje szyfrowania schowka"
-#~ msgid "_Encrypting or signing the clipboard"
-#~ msgstr "_Szyfrowanie lub podpisywanie schowka"
-#~ msgid "_Show clipboard state in panel"
-#~ msgstr "_Wyświetlanie stanu schowka na panelu"
-#~ msgid "_Encrypt"
-#~ msgstr "_Szyfruj"
-#~ msgid "_Decrypt/Verify"
-#~ msgstr "_Odszyfruj/Weryfikuj"
-#~ msgid "Encrypted text"
-#~ msgstr "Tekst zaszyfrowany"
-#~ msgid "Keys found but not imported"
-#~ msgstr "Znaleziono klucze, ale nie zostały one zaimportowane"
-#~ msgid "No encrypted or signed text is selected."
-#~ msgstr "Nie zaznaczono zaszyfrowanego ani podpisanego tekstu."
-#~ msgid "Decrypted text"
-#~ msgstr "Rozszyfrowany tekst"
-#~ msgid "Verified text"
-#~ msgstr "Zweryfikowany tekst"
-#~ msgid "_Encrypt..."
-#~ msgstr "_Szyfruj..."
-#~ msgid "Decr_ypt/Verify"
-#~ msgstr "_Odszyfruj/zweryfikuj"
-#~ msgid "Decrypt and/or Verify text"
-#~ msgstr "Rozszyfrowuje i/lub weryfikuje tekst"
-#~ msgid "Enable the seahorse encryption plugin for gedit."
-#~ msgstr "Włącza wtyczkę szyfrowania seahorse dla edytora gedit."
-#~ msgid "Enable the seahorse gedit plugin"
-#~ msgstr "Włącza wtyczkę seahorse dla gedit"
-#~ msgid "This plugin performs encryption operations on text."
-#~ msgstr "Ta wtyczka umożliwia szyfrowanie tekstu."
-#~ msgid "Encrypt (and optionally sign) the selected file"
-#~ msgid_plural "Encrypt the selected files"
-#~ msgstr[0] "Szyfrowanie (i opcjonalne podpisanie) zaznaczonego pliku"
-#~ msgstr[1] "Szyfrowanie (i opcjonalne podpisanie) zaznaczonych plików"
-#~ msgstr[2] "Szyfrowanie (i opcjonalne podpisanie) zaznaczonych plików"
-#~ msgid "For internal use"
-#~ msgstr "Do użytku wewnętrznego"
-#~ msgid "Configure key servers and other encryption settings"
-#~ msgstr "Konfigurowanie serwerów kluczy i innych ustawień szyfrowania"
-#~ msgid "Encrypt and sign file with default key"
-#~ msgstr "Szyfruje i podpisuje plik domyślnym kluczem"
-#~ msgid "Read list of URIs on standard in"
-#~ msgstr "Odczytuje listę URI ze standardowego wejścia"
-#~ msgid "file..."
-#~ msgstr "plik..."
-#~ msgid "Choose Encrypted File Name for '%s'"
-#~ msgstr "Wybór nazwy zaszyfrowanego pliku dla \"%s\""
-#~ msgid "Choose Signer"
-#~ msgstr "Wybór osoby podpisującej"
-#~ msgid "Choose Signature File Name for '%s'"
-#~ msgstr "Wybór nazwy pliku podpisu dla \"%s\""
-#~ msgid "Choose Decrypted File Name for '%s'"
-#~ msgstr "Wybór nazwy odszyfrowanego pliku dla \"%s\""
-#~ msgid "Choose Original File for '%s'"
-#~ msgstr "Wybór pliku oryginału dla \"%s\""
-#~ msgid "Ace (.ace)"
-#~ msgstr "Ace (.ace)"
-#~ msgid "Ar (.ar)"
-#~ msgstr "Ar (.ar)"
-#~ msgid "Arj (.arj)"
-#~ msgstr "Arj (.arj)"
-#~ msgid "Ear (.ear)"
-#~ msgstr "Ear (.ear)"
-#~ msgid "Self-extracting zip (.exe)"
-#~ msgstr "Samorozpakowujące się archiwum zip (.exe)"
-#~ msgid "Jar (.jar)"
-#~ msgstr "Jar (.jar)"
-#~ msgid "Lha (.lzh)"
-#~ msgstr "Lha (.lzh)"
-#~ msgid "Rar (.rar)"
-#~ msgstr "Rar (.rar)"
-#~ msgid "Tar uncompressed (.tar)"
-#~ msgstr "Tar bez kompresji (.tar)"
-#~ msgid "Tar compressed with bzip (.tar.bz)"
-#~ msgstr "Tar skompresowane za pomocą bzip (.tar.bz)"
-#~ msgid "Tar compressed with bzip2 (.tar.bz2)"
-#~ msgstr "Tar skompresowane za pomocą bzip2 (.tar.bz2)"
-#~ msgid "Tar compressed with gzip (.tar.gz)"
-#~ msgstr "Tar skompresowane za pomocą gzip (.tar.gz)"
-#~ msgid "Tar compressed with lzop (.tar.lzo)"
-#~ msgstr "Tar skompresowane za pomocą lzop (.tar.lzo)"
-#~ msgid "Tar compressed with compress (.tar.Z)"
-#~ msgstr "Tar skompresowane za pomocą compress (.tar.Z)"
-#~ msgid "War (.war)"
-#~ msgstr "War (.war)"
-#~ msgid "Zip (.zip)"
-#~ msgstr "Zip (.zip)"
-#~ msgid "Zoo (.zoo)"
-#~ msgstr "Zoo (.zoo)"
-#~ msgid "7-Zip (.7z)"
-#~ msgstr "7-Zip (.7z)"
-#~ msgid "You have selected %d file "
-#~ msgid_plural "You have selected %d files "
-#~ msgstr[0] "Zaznaczono %d plik "
-#~ msgstr[1] "Zaznaczono %d pliki "
-#~ msgstr[2] "Zaznaczono %d plików "
-#~ msgid "and %d folder"
-#~ msgid_plural "and %d folders"
-#~ msgstr[0] "i %d katalog"
-#~ msgstr[1] "i %d katalogi"
-#~ msgstr[2] "i %d katalogów"
-#~ msgid "You have selected %d files"
-#~ msgstr "Zaznaczono %d plików"
-#~ msgid "You have selected %d folder"
-#~ msgid_plural "You have selected %d folders"
-#~ msgstr[0] "Zaznaczono %d katalog"
-#~ msgstr[1] "Zaznaczono %d katalogi"
-#~ msgstr[2] "Zaznaczono %d katalogów"
-#~ msgid "Back up Key Rings to Archive"
-#~ msgstr "Wykonywanie kopii zapasowej baz kluczy"
-#~ msgid "_Back up Key Rings..."
-#~ msgstr "_Archiwizacja baz kluczy..."
-#~ msgid "Back up all keys"
-#~ msgstr "Tworzy kopię zapasową wszystkich kluczy"
-#~ msgid "No matching keys found"
-#~ msgstr "Nie znaleziono pasujących kluczy"
-#~ msgid "Save selected keys as a file"
-#~ msgstr "Zapisuje zaznaczone klucze do pliku"
-#~ msgid "<b>You have selected multiple files or folders</b>"
-#~ msgstr "<b>Zaznaczono wiele plików lub katalogów</b>"
-#~ msgid ""
-#~ "Because the files are located remotely, each file will be encrypted "
-#~ "separately."
-#~ msgstr ""
-#~ "Ponieważ pliki są przechowywane zdalnie, każdy z nich będzie szyfrowany "
-#~ "osobno."
-#~ msgid "Encrypt each file separately"
-#~ msgstr "Szyfrowanie każdego pliku oddzielnie"
-#~ msgid "Encrypt packed together in a package"
-#~ msgstr "Szyfrowanie całego archiwum"
-#~ msgid "Package Name:"
-#~ msgstr "Nazwa archiwum:"
-#~ msgid "Packaging:"
-#~ msgstr "Archiwizowanie:"
-#~ msgid "encrypted-package"
-#~ msgstr "pakiet-zaszyfrowany"
-#~ msgid "Decrypt File"
-#~ msgstr "Odszyfrowuje plik"
-#~ msgid "I have checked that this key belongs to '%s'"
-#~ msgstr "Sprawdzono, że klucz ten należy do \"%s\""
-#~ msgid "couldn't read gpg configuration, will try to create"
-#~ msgstr "nie można odczytać konfiguracji gpg, próba utworzenia"
-#~ msgid "couldn't modify gpg configuration: %s"
-#~ msgstr "nie można zmodyfikować konfiguracji gpg: %s"
-#~ msgid ""
-#~ "Display variables instead of editing conf files (gpg.conf, SSH agent "
-#~ "socket)"
-#~ msgstr ""
-#~ "Wypisywanie zmiennych zamiast edytowania plików konfiguracyjnych (gpg."
-#~ "conf, gniazdo agenta SSH)"
-#~ msgid "couldn't drop privileges properly"
-#~ msgstr "nie można zrzucić uprawnień"
-#~ msgid ""
-#~ "When set seahorse-agent will try to automatically load the users SSH keys "
-#~ "when needed. This is equivalent to using the ssh-add utility."
-#~ msgstr ""
-#~ "Gdy zaznaczone, seahorse-agent będzie w razie potrzeby próbował "
-#~ "automatycznie wczytać klucze SSH użytkownika. Jest to równoznaczne z "
-#~ "użyciem polecenia ssh-add."
-#~ msgid "Whether to automatically load SSH keys on demand."
-#~ msgstr "Określa, czy w razie potrzeby automatycznie wczytywać klucze SSH."
-#~ msgid "Couldn't open the Session Properties"
-#~ msgstr "Nie można otworzyć właściwości sesji"
-#~ msgid "Couldn't start the 'seahorse-agent' program"
-#~ msgstr "Nie można uruchomić programu seahorse-agent"
-#~ msgid "The 'seahorse-agent' program exited unsuccessfully."
-#~ msgstr "Program \"seahorse-agent\" zakończył działanie niepowodzeniem."
-#~ msgid ""
-#~ "<b>Note:</b> The 'seahorse-agent' program has been started. This program "
-#~ "is necessary in order to cache passphrases. "
-#~ msgstr ""
-#~ "<b>Uwaga:</b> Program \"seahorse-agent\" został uruchomiony. Program ten "
-#~ "jest niezbędny do umożliwienia przechowywania haseł w pamięci podręcznej. "
-#~ msgid ""
-#~ "<b>Warning:</b> The 'seahorse-agent' program is not running. This program "
-#~ "is necessary in order to cache passphrases. "
-#~ msgstr ""
-#~ "<b>Ostrzeżenie:</b> Program \"seahorse-agent\" nie jest uruchomiony. Aby "
-#~ "możliwe było przechowywanie haseł w pamięci podręcznej, program ten musi "
-#~ "być uruchomiony. "
-#~ msgid ""
-#~ "<i>No SSH caching agent is running. Cannot load Secure Shell keys.</i>"
-#~ msgstr ""
-#~ "<i>Agent pamięci podręcznej SSH nie jest uruchomiony. Nie można wczytać "
-#~ "kluczy SSH.</i>"
-#~ msgid ""
-#~ "Changing the master password failed.  Make certain that you entered the "
-#~ "correct original master password."
-#~ msgstr ""
-#~ "Zmiana hasła głównego nie powiodła się. Proszę się upewnić, że pierwotne "
-#~ "hasło główne zostało wprowadzone poprawnie."
-#~ msgid ""
-#~ "GNOME Keyring stores passwords, network keys, passphrases and other "
-#~ "secrets required for authentication.  A <b>master password</b> is used to "
-#~ "protect these secrets.  The <b>master password</b> can be changed below."
-#~ msgstr ""
-#~ "Baza kluczy GNOME przechowuje hasła, klucze sieciowe, tzw. długie hasła i "
-#~ "inne poufne informacje wymagane do uwierzytelniania. <b>Hasło główne</b> "
-#~ "jest używane do ochrony tych informacji. <b>Hasło główne</b> może zostać "
-#~ "zmienione poniżej."
-#~ msgid "Original Master Password:"
-#~ msgstr "Pierwotne hasło główne:"
-#~ msgid "The master password was successfully changed."
-#~ msgstr "Hasło główne zostało zmienione z powodzeniem."
-#~ msgid ""
-#~ "To avoid manually starting the 'seahorse-agent' in the future\n"
-#~ "add it to the Session Manager. "
-#~ msgstr ""
-#~ "Aby uniknąć w przyszłości ręcznego uruchamiania \"seahorse-agent\",\n"
-#~ "należy dodać go do menedżera sesji. "
-#~ msgid "<b>Progress Message</b>"
-#~ msgstr "<b>Komunikat postępu</b>"
-#~ msgid "Cursor Position"
-#~ msgstr "Pozycja kursora"
-#~ msgid "The current position of the insertion cursor in chars"
-#~ msgstr "Bieżąca pozycja kursora wstawiania, podawana w znakach"
-#~ msgid "Selection Bound"
-#~ msgstr "Granica zaznaczenia"
-#~ msgid ""
-#~ "The position of the opposite end of the selection from the cursor in chars"
-#~ msgstr ""
-#~ "Pozycja drugiego końca zaznaczenia, liczona w znakach od pozycji kursora"
-#~ msgid "Maximum length"
-#~ msgstr "Maksymalna długość"
-#~ msgid "Maximum number of characters for this entry. Zero if no maximum"
-#~ msgstr ""
-#~ "Maksymalna liczba znaków dla tego wejścia. Zero jeżeli nie ma maksimum"
-#~ msgid "Has Frame"
-#~ msgstr "Ma ramkę"
-#~ msgid "FALSE removes outside bevel from entry"
-#~ msgstr "Wartość FALSE usuwa zewnętrzną krawędź wejścia"
-#~ msgid "Invisible character"
-#~ msgstr "Niewidoczne znaki"
-#~ msgid ""
-#~ "The character to use when masking entry contents (in \"password mode\")"
-#~ msgstr "Znak używany do maskowania zawartości wejścia (w \"trybie hasła\")"
-#~ msgid ""
-#~ "Whether to activate the default widget (such as the default button in a "
-#~ "dialog) when Enter is pressed"
-#~ msgstr ""
-#~ "Określa, czy włączyć domyślne widgety (takie jak domyślny przycisk okna "
-#~ "dialogowego) po naciśnięciu klawisza Enter"
-#~ msgid "Width in chars"
-#~ msgstr "Szerokość w znakach"
-#~ msgid "Number of characters to leave space for in the entry"
-#~ msgstr "Liczba pustych miejsc na znaki w wejściu"
-#~ msgid "Scroll offset"
-#~ msgstr "Przesunięcie przewijania"
-#~ msgid "Number of pixels of the entry scrolled off the screen to the left"
-#~ msgstr "Liczba pikseli wejścia przewiniętego na lewo poza ekran"
-#~ msgid "Text"
-#~ msgstr "Tekst"
-#~ msgid "Visibility"
-#~ msgstr "Widoczność"
-#~ msgid "Whether contents are drawn using invisible character"
-#~ msgstr ""
-#~ "Określa, czy zawartość jest wyświetlana za pomocą niewidocznych znaków"
-#~ msgid "Key type / algorithm"
-#~ msgstr "Rodzaj klucza / algorytm"
-#~ msgid "[Type here]"
-#~ msgstr "[Typ]"
-#~ msgid "[Use here]"
-#~ msgstr "[Zastosowanie]"
-
-#, fuzzy
-#~ msgid "P_roperties"
-#~ msgstr "Właściwości klucza"
-
-#, fuzzy
-#~ msgid "Retrieving key"
-#~ msgstr "Pobieranie kluczy"
-
-#, fuzzy
-#~ msgid "Removing item"
-#~ msgstr "Zapisywanie elementu..."
-
-#, fuzzy
-#~ msgid "Couldn't get default password keyring"
-#~ msgstr "Nie udało się ustawić domyślnej bazy kluczy"
-
-#, fuzzy
-#~ msgid "Couldn't get list of password keyrings"
-#~ msgstr "Nie udało się ustawić domyślnej bazy kluczy"
-
-#, fuzzy
-#~ msgid "Couldn't remove keyring"
-#~ msgstr "Nie udało się zablokować bazy kluczy"
-
-#, fuzzy
-#~ msgid "Are you sure you want to permanently delete the '%s' keyring?"
-#~ msgstr "Na pewno trwale usunąć identyfikator użytkownika \"%s\"?"
-
-#, fuzzy
-#~ msgid "<b>Default Keyring</b>"
-#~ msgstr "<b>Daty</b>"
-
-#, fuzzy
-#~ msgid "<b>Password Keyrings</b>"
-#~ msgstr "Baza kluczy"
-
-#, fuzzy
-#~ msgid "Password and Encryption Settings"
-#~ msgstr "Hasła i klucze szyfrujące"
-
-#, fuzzy
-#~ msgid "_Add Keyring"
-#~ msgstr "Baza kluczy"
-
-#, fuzzy
-#~ msgid "_Remove Keyring"
-#~ msgstr "Klucze zdalne"
-
-#, fuzzy
-#~ msgid "Unknown Key: %s"
-#~ msgstr "Nieznane"
-
-#, fuzzy
-#~ msgid "Unknown Key"
-#~ msgstr "Nieznane"
-
-#, fuzzy
-#~ msgid "Unavailable Key"
-#~ msgstr "Niedostępny"
-
-#, fuzzy
-#~ msgid "X509 Certificate"
-#~ msgstr "Certyfikat"
-
-#, fuzzy
-#~ msgid "Loading..."
-#~ msgstr "Wczytywanie kluczy..."
-
-#, fuzzy
-#~ msgid "Invalid or unrecognized object."
-#~ msgstr "Nieprawidłowy lub nierozpoznany klucz: %s"
-
-#, fuzzy
-#~ msgid "Expiry for Subkey %d of %s"
-#~ msgstr "Podklucz %d klucza %s"
-
-#, fuzzy
-#~ msgid "_Quit"
-#~ msgstr "_Edycja"
-
-#, fuzzy
-#~ msgid "Create a new personal key"
-#~ msgstr "Tworzy nowy klucz lub element"
-
-#, fuzzy
-#~ msgid "Import keys into your key ring from a file"
-#~ msgstr "Importowanie istniejących kluczy z pliku:"
-
-#, fuzzy
-#~ msgid "_Key"
-#~ msgstr "Klucz"
-
-#, fuzzy
-#~ msgid "E_xport Public Key..."
-#~ msgstr "Eksportowanie klucza publicznego"
-
-#, fuzzy
-#~ msgid "_Copy Public Key"
-#~ msgstr "Klucz publiczny"
-
-#, fuzzy
-#~ msgid "_Delete Key"
-#~ msgstr "_Usuwanie"
-
-#, fuzzy
-#~ msgid "Secure Shell Passphrase"
-#~ msgstr "Proszę wprowadzić hasło SSH:"
-
-#, fuzzy
-#~ msgid "Secure Shell Key Passphrase"
-#~ msgstr "Klucz SSH"
-
-#, fuzzy
-#~ msgid "Enter the passphrase for: %s"
-#~ msgstr "Stare hasło dla: %s"
-
-#, fuzzy
-#~ msgid ""
-#~ "%s is a private key. Make sure you have a backup. Do you still want to "
-#~ "delete it?"
-#~ msgstr "%s jest kluczem prywatnym. Na pewno kontynuować?"
-
-#, fuzzy
-#~ msgid "Couldn't delete key"
-#~ msgstr "Nie można usunąć podklucza"
-
-#, fuzzy
-#~ msgid "User ID"
-#~ msgstr "Dodaje identyfikator użytkownika"
-
-#, fuzzy
-#~ msgid "Please enter a passphrase to use."
-#~ msgstr "Hasło dla \"%s\""
-
-#, fuzzy
-#~ msgid "PGP Key: %s"
-#~ msgstr "Klucz PGP"
-
-#, fuzzy
-#~ msgid "Cache _Preferences"
-#~ msgstr "Preferencje"
-
-#, fuzzy
-#~ msgid "Cached Encryption Keys"
-#~ msgstr "Hasła i klucze szyfrujące"
-
-#, fuzzy
-#~ msgid "Change passphrase cache settings."
-#~ msgstr "Zmień hasło"
-
-#, fuzzy
-#~ msgid "Clear passphrase cache"
-#~ msgstr "Wpisz hasło"
-
-#, fuzzy
-#~ msgid "_Clear Cache"
-#~ msgstr "_Znajdź"
-
-#, fuzzy
-#~ msgid "Do not daemonize seahorse-agent"
-#~ msgstr "Uruchamia seahorse-daemon bez przechodzenia do pracy w tle"
-
-#, fuzzy
-#~ msgid "Encryption Key Agent (Seahorse)"
-#~ msgstr "Usługa szyfrowania (Seahorse)"
-
-#, fuzzy
-#~ msgid "Key Name"
-#~ msgstr "<i>Nazwa klucza</i>"
-
-#, fuzzy
-#~ msgid "<b>Default Key</b>"
-#~ msgstr "<b>Daty</b>"
-
-#, fuzzy
-#~ msgid "Encryption"
-#~ msgstr "Typ _szyfrowania:"
-
-#, fuzzy
-#~ msgid "PGP Passphrases"
-#~ msgstr "Hasło"
-
-#, fuzzy
-#~ msgid "_Default key:"
-#~ msgstr "ID domyślnego klucza"
-
-#, fuzzy
-#~ msgid "_Never remember passphrases"
-#~ msgstr "Nowe hasło"
-
-#, fuzzy
-#~ msgid "_Remember passphrases for"
-#~ msgstr "Hasło dla \"%s\""
-
-#, fuzzy
-#~ msgid "Couldn't set permissions on backup file."
-#~ msgstr "Nie można ustawić dostępu programów."
-
-#, fuzzy
-#~ msgid "_Preferences"
-#~ msgstr "Preferencje"
-
-#, fuzzy
-#~ msgid "seahorse-applet"
-#~ msgstr "Usługa Seahorse"
-
-#, fuzzy
-#~ msgid "Choose Recipient Keys"
-#~ msgstr "Zaznaczeni odbiorcy"
-
-#, fuzzy
-#~ msgid "Encrypted Text"
-#~ msgstr "Typ _szyfrowania:"
-
-#, fuzzy
-#~ msgid "Encryption Failed"
-#~ msgstr "Typ _szyfrowania:"
-
-#, fuzzy
-#~ msgid "Signed Text"
-#~ msgstr "Podpisz klucz"
-
-#, fuzzy
-#~ msgid "Import Failed"
-#~ msgstr "Importuje z pliku"
-
-#, fuzzy
-#~ msgid "Could not display the help file"
-#~ msgstr "Nie można wyświetlić pomocy: %s"
-
-#, fuzzy
-#~ msgid "_Import Keys from Clipboard"
-#~ msgstr "Importuje ze schowka"
-
-#, fuzzy
-#~ msgid "Encryption Applet"
-#~ msgstr "Typ _szyfrowania:"
-
-#, fuzzy
-#~ msgid "_Decrypting or verifying the clipboard"
-#~ msgstr "Importuje ze schowka"
-
-#, fuzzy
-#~ msgid "_Import Key"
-#~ msgstr "Importowanie klucza"
-
-#, fuzzy
-#~ msgid "Couldn't connect to seahorse-daemon"
-#~ msgstr "Nie można połączyć się z usługą bazy kluczy"
-
-#, fuzzy
-#~ msgid "Couldn't encrypt text"
-#~ msgstr "Nie można wygenerować klucza"
-
-#, fuzzy
-#~ msgid "Couldn't decrypt text"
-#~ msgstr "Nie można usunąć."
-
-#, fuzzy
-#~ msgid "Couldn't verify text"
-#~ msgstr "Nie można zweryfikować podpisu."
-
-#, fuzzy
-#~ msgid "Imported %d key"
-#~ msgid_plural "Imported %d keys"
-#~ msgstr[0] "Zaimportowano %d klucz"
-#~ msgstr[1] "Zaimportowano %d klucze"
-#~ msgstr[2] "Zaimportowano %d kluczy"
-
-#, fuzzy
-#~ msgid "Signed text"
-#~ msgstr "Podpisz klucz"
-
-#, fuzzy
-#~ msgid "Couldn't sign text"
-#~ msgstr "Nie można podpisać klucza"
-
-#, fuzzy
-#~ msgid "Encrypt the selected text"
-#~ msgstr "Usuwa zaznaczone elementy"
-
-#, fuzzy
-#~ msgid "Sig_n..."
-#~ msgstr "_Podpisz klucz..."
-
-#, fuzzy
-#~ msgid "Sign the selected text"
-#~ msgstr "Usuwa zaznaczone elementy"
-
-#, fuzzy
-#~ msgid "Text Encryption"
-#~ msgstr "Typ _szyfrowania:"
-
-#, fuzzy
-#~ msgid "Encrypt..."
-#~ msgstr "E_ksportuj..."
-
-#, fuzzy
-#~ msgid "Sign the selected file"
-#~ msgid_plural "Sign the selected files"
-#~ msgstr[0] "Usuwa zaznaczone elementy"
-#~ msgstr[1] "Usuwa zaznaczone elementy"
-#~ msgstr[2] "Usuwa zaznaczone elementy"
-
-#, fuzzy
-#~ msgid "Encryption Preferences"
-#~ msgstr "Preferencje"
-
-#, fuzzy
-#~ msgid "Encryption and Keyrings"
-#~ msgstr "Menedżer kluczy szyfrujących"
-
-#, fuzzy
-#~ msgid "Encrypt file"
-#~ msgstr "Typ _szyfrowania:"
-
-#, fuzzy
-#~ msgid "Sign file with default key"
-#~ msgstr "ID domyślnego klucza"
-
-#, fuzzy
-#~ msgid "Decrypt encrypted file"
-#~ msgstr "Używany do szyfrowania poczty i plików"
-
-#, fuzzy
-#~ msgid "Verify signature file"
-#~ msgstr "Nie można zweryfikować podpisu."
-
-#, fuzzy
-#~ msgid "Choose Recipients"
-#~ msgstr "Zaznaczeni odbiorcy"
-
-#, fuzzy
-#~ msgid "Couldn't load keys"
-#~ msgstr "Nie można udostępnić kluczy"
-
-#, fuzzy
-#~ msgid "Import is complete"
-#~ msgstr "Eksportowanie całego klucza"
-
-#, fuzzy
-#~ msgid "Importing keys ..."
-#~ msgstr "Importowanie kluczy"
-
-#, fuzzy
-#~ msgid "No valid signatures found"
-#~ msgstr "Nieprawidłowy podpis"
-
-#, fuzzy
-#~ msgid "File Encryption Tool"
-#~ msgstr "Typ _szyfrowania:"
-
-#, fuzzy
-#~ msgid "Encrypting"
-#~ msgstr "Typ _szyfrowania:"
-
-#, fuzzy
-#~ msgid "Couldn't encrypt file: %s"
-#~ msgstr "Nie można zarchiwizować plików"
-
-#, fuzzy
-#~ msgid "Signing"
-#~ msgstr "Podpisz"
-
-#, fuzzy
-#~ msgid "Couldn't sign file: %s"
-#~ msgstr "Nie można podpisać klucza"
-
-#, fuzzy
-#~ msgid "Importing"
-#~ msgstr "Importowanie kluczy"
-
-#, fuzzy
-#~ msgid "Couldn't import keys from file: %s"
-#~ msgstr "Nie można pobrać kluczy z serwera: %s"
-
-#, fuzzy
-#~ msgid "Decrypting"
-#~ msgstr "_Opis:"
-
-#, fuzzy
-#~ msgid "Couldn't decrypt file: %s"
-#~ msgstr "Nie można zarchiwizować plików"
-
-#, fuzzy
-#~ msgid "Verifying"
-#~ msgstr "Baza kluczy"
-
-#, fuzzy
-#~ msgid "Couldn't verify file: %s"
-#~ msgstr "Nie można zweryfikować podpisu."
-
-#, fuzzy
-#~ msgid "<b>%s%s</b>"
-#~ msgstr "<b>Zastosowanie:</b>"
-
-#, fuzzy
-#~ msgid "Couldn't list files"
-#~ msgstr "Nie można zarchiwizować plików"
-
-#, fuzzy
-#~ msgid "Couldn't read file"
-#~ msgstr "Nie można zarchiwizować plików"
-
-#, fuzzy
-#~ msgid "seahorse"
-#~ msgstr "Usługa Seahorse"
-
-#, fuzzy
-#~ msgid "Set Up Computer for _Secure Shell..."
-#~ msgstr "Konfiguruj klucz _dla SSH..."
-
-#, fuzzy
-#~ msgid "Couldn't retrieve key data"
-#~ msgstr "Nie można unieważnić podklucza"
-
-#, fuzzy
-#~ msgid "Couldn't write key to file"
-#~ msgstr "Niemożna wyeksportować klucza do \"%s\""
-
-#, fuzzy
-#~ msgid "Couldn't import keys into key ring"
-#~ msgstr "Nie można zaimportować kluczy"
-
-#, fuzzy
-#~ msgid "Couldn't write keys to file: %s"
-#~ msgstr "Nie można pobrać kluczy z serwera: %s"
-
-#, fuzzy
-#~ msgid "Save Remote Keys"
-#~ msgstr "Klucze zdalne"
-
-#, fuzzy
-#~ msgid "Save Key As..."
-#~ msgstr "Wczytywanie kluczy..."
-
-#, fuzzy
-#~ msgid "Remote Encryption Keys"
-#~ msgstr "Klucze szyfrujące dla %s"
-
-#, fuzzy
-#~ msgid "Encrypt Multiple Files"
-#~ msgstr "Wiele kluczy"
-
-#, fuzzy
-#~ msgid "Verify Signature"
-#~ msgstr "Zły podpis"
-
-#, fuzzy
-#~ msgid "<b>Secure Shell Keys</b>"
-#~ msgstr "Klucz SSH"
-
-#, fuzzy
-#~ msgid "Automatically load _Secure Shell keys"
-#~ msgstr "Odblokowuje klucz SSH"
-
-#, fuzzy
-#~ msgid "Confirm Master Password:"
-#~ msgstr "_Potwierdzenie hasła:"
-
-#, fuzzy
-#~ msgid "New Master Password:"
-#~ msgstr "Hasło sieciowe"
-
-#, fuzzy
-#~ msgid "Passphrase Cache"
-#~ msgstr "Hasło"
-
-#, fuzzy
-#~ msgid "Session Properties"
-#~ msgstr "Właściwości bazy kluczy"
-
-#, fuzzy
-#~ msgid "Progress Status"
-#~ msgstr "Tytuł postępu"
-
-#, fuzzy
-#~ msgid "<b>Login:</b>"
-#~ msgstr "<b>Położenie:</b>"
-
-#, fuzzy
-#~ msgid "<b>Server:</b>"
-#~ msgstr "<b>Serwery kluczy:</b>"
-
-#, fuzzy
-#~ msgid "[details]\n"
-#~ msgstr "Szczegóły"
-
-#, fuzzy
-#~ msgid "[login]"
-#~ msgstr "Login:"
-
-#, fuzzy
-#~ msgid "[server]"
-#~ msgstr "Serwer:"
-
-#, fuzzy
-#~ msgid "The contents of the entry"
-#~ msgstr "Kolumna według której będą sortowani odbiorcy"
-
-#, fuzzy
-#~ msgid "This key expired on: (placeholder)"
-#~ msgstr "Ten klucz wygasł dnia: %s"
-
