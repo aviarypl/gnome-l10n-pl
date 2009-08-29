@@ -9,7 +9,7 @@ msgstr ""
 "Project-Id-Version: seahorse\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2009-08-25 17:27+0200\n"
-"PO-Revision-Date: 2009-08-25 17:32+0100\n"
+"PO-Revision-Date: 2009-08-29 15:50+0100\n"
 "Last-Translator: Tomasz Dominikowski <dominikowski@gmail.com>\n"
 "Language-Team: Polish <gnomepl@aviary.pl>\n"
 "MIME-Version: 1.0\n"
@@ -19,7 +19,6 @@ msgstr ""
 "X-Poedit-Language: Polish\n"
 "X-Poedit-Country: Poland\n"
 
-# rev: jakoś nie pasuje mi tłumaczenie do oryginału, ale nie umiem powiedzieć czy odejście jest celowe
 #: ../daemon/seahorse-daemon.c:69
 msgid "Do not run seahorse-daemon as a daemon"
 msgstr "Uruchamia seahorse-daemon bez przechodzenia do pracy w tle"
@@ -213,10 +212,9 @@ msgstr "Włączenie udostępniania DNS-SD"
 msgid "Enables DNS-SD (Apple Bonjour) sharing of keys. seahorse-daemon must be running and must be built with HKP and DNS-SD support."
 msgstr "Włącza udostępnianie kluczy DNS-SD (Apple Bonjour). seahorse-daemon musi być uruchomiona i posiadać skompilowane wsparcie HKP i DNS-SD."
 
-# rev: ID. Wspominałem, że nie znoszę ID? ;) a niżej jest już identyfikator
 #: ../data/seahorse.schemas.in.h:10
 msgid "ID of the default key"
-msgstr "ID domyślnego klucza"
+msgstr "Identyfikator domyślnego klucza"
 
 #: ../data/seahorse.schemas.in.h:11
 msgid "If set to true, then files encrypted with seahorse will be ASCII armor encoded."
@@ -490,7 +488,7 @@ msgstr "Użycie:"
 #. To translators: This is the infinitive not the imperative.  This string refers to the ability of an application to delete this secret from its key ring.
 #: ../gkr/seahorse-gkr-item-properties.xml.h:16
 msgid "_Delete"
-msgstr "_Usuwanie"
+msgstr "_Usuń"
 
 #. To translators: This is the infinitive not the imperative.
 #: ../gkr/seahorse-gkr-item-properties.xml.h:19
@@ -528,7 +526,6 @@ msgstr "Używane do przechowywania haseł programów i haseł sieciowych"
 msgid "Stored Password"
 msgstr "Przechowywane hasło"
 
-# rev: hm, w oryginale są tylko hasła i tajemnice. No, może faktycznie tajemnice są beznadziejne i tak jest lepiej? ;)
 #: ../gkr/seahorse-gkr-keyring-commands.c:97
 msgid "Safely store a password or secret."
 msgstr "Bezpieczne przechowywanie haseł programów i haseł sieciowych."
@@ -696,13 +693,12 @@ msgstr "_Podpisywanie jako:"
 msgid "Name"
 msgstr "Nazwa"
 
-# rev: ID
 #. The keyid column
 #: ../libcryptui/cryptui-key-list.c:145
 #: ../pgp/seahorse-pgp-key-properties.c:1743
 #: ../src/seahorse-key-manager-store.c:840
 msgid "Key ID"
-msgstr "ID klucza"
+msgstr "Identyfikator klucza"
 
 #: ../libegg/egg-datetime.c:313
 msgid "Display flags"
@@ -1035,10 +1031,9 @@ msgstr ":"
 msgid "Add Key Server"
 msgstr "Dodawanie serwera kluczy"
 
-# rev: host to bardzo brzydkie słowo, jeśli się da to trzeba czymś je zastąpić, najlepiej "komputerem"
 #: ../libseahorse/seahorse-add-keyserver.xml.h:3
 msgid "Host:"
-msgstr "Host:"
+msgstr "Komputer:"
 
 #: ../libseahorse/seahorse-add-keyserver.xml.h:4
 msgid "Key Server Type:"
@@ -1606,10 +1601,9 @@ msgstr[2] "Wczytano %d kluczy"
 msgid "Loading Keys..."
 msgstr "Wczytywanie kluczy..."
 
-# rev: UIDy. Łojoj. "brakujący podpis własny" też mi się nie podoba.
 #: ../pgp/seahorse-gpgme-source.c:820
 msgid "Invalid key data (missing UIDs). This may be due to a computer with a date set in the future or a missing self-signature."
-msgstr "Nieprawidłowe dane klucza (brakujące UIDy). Przyczyną tego może być nieprawidłowo ustawiona data w systemie lub brakujący podpis własny."
+msgstr "Nieprawidłowe dane klucza (brakujące UID). Przyczyną tego może być nieprawidłowo ustawiona data w systemie lub brak podpisu własnego."
 
 #: ../pgp/seahorse-gpgme-source.c:910
 #: ../src/seahorse-key-manager.c:538
@@ -1754,10 +1748,9 @@ msgstr "Data _wygaśnięcia:"
 msgid "Encryption _Type:"
 msgstr "Typ _szyfrowania:"
 
-# rev: nie może być "Tworzy"?
 #: ../pgp/seahorse-pgp-generate.xml.h:8
 msgid "Generate a new key"
-msgstr "Generuje nowy klucz"
+msgstr "Tworzy nowy klucz"
 
 #: ../pgp/seahorse-pgp-generate.xml.h:9
 #: ../ssh/seahorse-ssh-generate.xml.h:7
@@ -1814,10 +1807,9 @@ msgstr "[Nieznany]"
 msgid "Name/Email"
 msgstr "Nazwa/E-mail"
 
-# rev: ID
 #: ../pgp/seahorse-pgp-key-properties.c:431
 msgid "Signature ID"
-msgstr "ID podpisu"
+msgstr "Identyfikator podpisu"
 
 #: ../pgp/seahorse-pgp-key-properties.c:552
 msgid "Couldn't change primary photo"
@@ -1908,21 +1900,19 @@ msgstr "<b>Komentarz:</b>"
 msgid "<b>Dates</b>"
 msgstr "<b>Daty</b>"
 
-# rev: adres e-mail
 #: ../pgp/seahorse-pgp-private-key-properties.xml.h:4
 #: ../pgp/seahorse-pgp-public-key-properties.xml.h:3
 msgid "<b>Email:</b>"
-msgstr "<b>E-mail:</b>"
+msgstr "<b>Adres e-mail:</b>"
 
 #: ../pgp/seahorse-pgp-private-key-properties.xml.h:5
 msgid "<b>Fingerprint</b>"
 msgstr "<b>Odcisk palca</b>"
 
-# rev: ID
 #: ../pgp/seahorse-pgp-private-key-properties.xml.h:6
 #: ../pgp/seahorse-pgp-public-key-properties.xml.h:6
 msgid "<b>Key ID:</b>"
-msgstr "<b>ID klucza:</b>"
+msgstr "<b>Identyfikator klucza:</b>"
 
 #: ../pgp/seahorse-pgp-private-key-properties.xml.h:7
 msgid "<b>Key Names and Signatures</b>"
@@ -2001,10 +1991,9 @@ msgstr "Wygasanie"
 msgid "Expires:"
 msgstr "Wygasa:"
 
-# rev: Wyeksportuj
 #: ../pgp/seahorse-pgp-private-key-properties.xml.h:26
 msgid "Export"
-msgstr "Eksportuj"
+msgstr "Wyeksportuj"
 
 #: ../pgp/seahorse-pgp-private-key-properties.xml.h:28
 msgid "Go to next photo"
@@ -2014,11 +2003,10 @@ msgstr "Przechodzi do następnego zdjęcia"
 msgid "Go to previous photo"
 msgstr "Przechodzi do poprzedniego zdjęcia"
 
-# rev: ID
 #: ../pgp/seahorse-pgp-private-key-properties.xml.h:30
 #: ../pgp/seahorse-pgp-public-key-properties.xml.h:30
 msgid "Key ID:"
-msgstr "ID klucza:"
+msgstr "Identyfikator klucza:"
 
 #: ../pgp/seahorse-pgp-private-key-properties.xml.h:32
 msgid "Make this photo the primary photo"
@@ -2523,14 +2511,13 @@ msgstr "Internetowe wyszukiwanie kluczy innych osób. Klucze te można importowa
 msgid "Where to search:"
 msgstr "Miejsce wyszukiwania:"
 
-# rev: "Wy_szukaj"
 #: ../src/seahorse-keyserver-search.xml.h:6
 msgid "_Search"
-msgstr "_Szukaj"
+msgstr "Wy_szukaj"
 
 #: ../src/seahorse-keyserver-search.xml.h:7
 msgid "_Search for keys containing: "
-msgstr "_Wyszukiwanie kluczy zawierających: "
+msgstr "_Wyszukaj klucze zawierające: "
 
 #: ../src/seahorse-keyserver-sync.c:45
 msgid "Couldn't publish keys to server"
@@ -2624,15 +2611,13 @@ msgstr "_Widok"
 msgid "_Help"
 msgstr "Pomo_c"
 
-# rev: _ zwykle jest tutaj przed r
 #: ../src/seahorse-viewer.c:199
 msgid "Prefere_nces"
-msgstr "_Preferencje"
+msgstr "P_referencje"
 
-# rev: dla jest niepotrzebne
 #: ../src/seahorse-viewer.c:200
 msgid "Change preferences for this program"
-msgstr "Zmienia preferencje dla tego programu"
+msgstr "Zmienia preferencje tego programu"
 
 #: ../src/seahorse-viewer.c:203
 msgid "About this program"
@@ -2642,10 +2627,9 @@ msgstr "Informacje o tym programie"
 msgid "_Contents"
 msgstr "_Zawartość"
 
-# rev: pomoc tam jest przecież
 #: ../src/seahorse-viewer.c:205
 msgid "Show Seahorse help"
-msgstr "Otwiera podręcznik programu Seahorse"
+msgstr "Otwiera podręcznik pomocy programu Seahorse"
 
 #: ../src/seahorse-viewer.c:302
 msgid "Export public key"
@@ -2702,15 +2686,13 @@ msgstr "_Usuń"
 msgid "Delete selected items"
 msgstr "Usuwa zaznaczone elementy"
 
-# rev: "Wye_ksportuj"
 #: ../src/seahorse-viewer.c:545
 msgid "E_xport..."
-msgstr "E_ksportuj..."
+msgstr "Wye_ksportuj..."
 
-# rev: jw. Choć w sumie tutaj powinno być Eksportuje
 #: ../src/seahorse-viewer.c:546
 msgid "Export to a file"
-msgstr "Eksportuj do pliku"
+msgstr "Eksportuje do pliku"
 
 #: ../src/seahorse-viewer.c:548
 msgid "Copy to the clipboard"
@@ -2858,14 +2840,13 @@ msgstr "<b>Zaufanie</b>"
 msgid "<i>This only applies to the '%s'</i> account."
 msgstr "<i>Ma zastosowanie tylko do konta \"%s\".</i>"
 
-# rev: lepszy skrót byłby na k, choś nie sprawdzałem na żywo
 #: ../ssh/seahorse-ssh-key-properties.xml.h:18
 msgid "E_xport Complete Key"
-msgstr "_Wyeksportuj cały klucz"
+msgstr "Wyeksportuj cały _klucz"
 
 #: ../ssh/seahorse-ssh-key-properties.xml.h:22
 msgid "The owner of this key is _authorized to connect to this computer"
-msgstr "Właściciel tego klucza jest uprawniony do łączenia się z _tym komputerem"
+msgstr "Właściciel _tego klucza jest uprawniony do łączenia się z tym komputerem"
 
 #: ../ssh/seahorse-ssh-key-properties.xml.h:23
 msgid "Used to connect to other computers."
@@ -2948,10 +2929,9 @@ msgstr "Nie można ustawić kluczy SSH na komputerze zdalnym."
 msgid "Configuring Secure Shell Keys..."
 msgstr "Konfigurowanie kluczy SSH..."
 
-# rev: dałbym raczej ".pl" zamiast com :)
 #: ../ssh/seahorse-ssh-upload.xml.h:1
 msgid "<i>eg: fileserver.example.com:port</i>"
-msgstr "<i>np.: serwerplików.domena.com:port</i>"
+msgstr "<i>np.: serwerplików.domena.pl:port</i>"
 
 #: ../ssh/seahorse-ssh-upload.xml.h:2
 msgid "Set Up Computer for SSH Connection"
@@ -2972,3 +2952,4 @@ msgstr "_Login:"
 #: ../ssh/seahorse-ssh-upload.xml.h:7
 msgid "_Set Up"
 msgstr "_Przygotuj"
+
