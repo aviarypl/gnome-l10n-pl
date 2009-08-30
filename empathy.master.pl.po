@@ -9,7 +9,7 @@ msgstr ""
 "Project-Id-Version: empathy\n"
 "Report-Msgid-Bugs-To: http://bugzilla.gnome.org/enter_bug.cgi?product=empathy&component=general\n"
 "POT-Creation-Date: 2009-08-29 08:25+0000\n"
-"PO-Revision-Date: 2009-08-30 14:33+0100\n"
+"PO-Revision-Date: 2009-08-30 16:39+0100\n"
 "Last-Translator: Tomasz Dominikowski <dominikowski@gmail.com>\n"
 "Language-Team: Polish <gnomepl@aviary.pl>\n"
 "MIME-Version: 1.0\n"
@@ -186,6 +186,7 @@ msgstr "Odtworzenie dźwięku, kiedy użytkownik się zaloguje"
 msgid "Play a sound when we log out"
 msgstr "Odtworzenie dźwięku, kiedy użytkownik się wyloguje"
 
+# rev: ok, ale wyżej masz dźwięk w l.poj., tutaj powiadomienia w l.mn., trzeba się na coś zdecydować. Global.
 #: ../data/empathy.schemas.in.h:38
 msgid "Popup notifications if the chat isn't focused"
 msgstr "Wyskakujące powiadomienia, jeśli okno rozmowy nie jest aktywne"
@@ -230,10 +231,12 @@ msgstr "Domyślny katalog zapisu przesyłanych plików."
 msgid "The last directory that an avatar image was chosen from."
 msgstr "Ostatni katalog, z którego był wybierany awatar."
 
+# rev: sprawdzić czy wszędzie są używane "okna rozmowy", czy może są gdzieś "okna rozmów" i ujednolicić. Nie wiem co lepiej brzmi, "okno rozmowy" czy "okno rozmów" ? Zauważ, że mamy też chat *room* w tym programie, "pokój rozmowy" raczej nie działa :) też sprawdzić na wszelki wypadek
 #: ../data/empathy.schemas.in.h:49
 msgid "The theme that is used to display the conversation in chat windows."
 msgstr "Motyw używany do wyświetlania rozmowy w oknach rozmowy."
 
+# rev: myślałem, że w dopełniaczu jest "emotikon", sprawdzić czy nie ma gdzieś emotikon globalnie.
 #: ../data/empathy.schemas.in.h:50
 msgid "Use graphical smileys"
 msgstr "Używanie graficznych emotikonów"
@@ -274,6 +277,7 @@ msgstr "Określa, czy program Empathy zapytał o zaimportowanie kont z innych pr
 msgid "Whether or not Empathy should automatically log in to your accounts on startup."
 msgstr "Określa, czy automatycznie logować się do kont podczas uruchamiania."
 
+# rev: z powodu? może dla?
 #: ../data/empathy.schemas.in.h:60
 msgid "Whether or not Empathy should reduce the location's accuracy for privacy reasons."
 msgstr "Określa, czy zmniejszać dokładność położenia z powodu prywatności."
@@ -334,10 +338,12 @@ msgstr "Określa, czy odtwarzać dźwięk powiadamiający o wylogowaniu z sieci.
 msgid "Whether or not to play sound notifications when away or busy."
 msgstr "Określa, czy odtwarzać dźwięki powiadamiania podczas nieobecności lub zajętości."
 
+# rev: czy ja wiem, może w dokonanym? To nie jest jakiś proces wylogowywania, który trwa długo. (wyloguje)
 #: ../data/empathy.schemas.in.h:75
 msgid "Whether or not to show a popup notification when a contact goes offline."
 msgstr "Określa, czy wyświetlać wyskakujące powiadomienie, kiedy kontakt się wylogowuje."
 
+# rev: jw. (zaloguje)
 #: ../data/empathy.schemas.in.h:76
 msgid "Whether or not to show a popup notification when a contact goes online."
 msgstr "Określa, czy wyświetlać wyskakujące powiadomienie, kiedy kontakt się loguje."
@@ -354,6 +360,7 @@ msgstr "Określa, czy wyświetlać wyskakujące powiadomienie podczas otrzymania
 msgid "Whether or not to show avatars for contacts in the contact list and chat windows."
 msgstr "Określa, czy wyświetlać awatary dla kontaktów na liście i oknach rozmów."
 
+# rev: szyk, wylogowane na koniec
 #: ../data/empathy.schemas.in.h:80
 msgid "Whether or not to show contacts that are offline in the contact list."
 msgstr "Określa, czy wyświetlać kontakty wylogowane na liście."
@@ -386,6 +393,8 @@ msgstr "Określa, jakie kryterium używać podczas sortowania listy kontaktów. 
 msgid "Can't set an empty display name"
 msgstr "Nie można ustawić pustej wyświetlanej nazwy"
 
+# rev: Sumy kontrolne?
+# kropka zbędna
 #: ../libempathy/empathy-ft-handler.c:839
 msgid "The hash of the received file and the sent one do not match"
 msgstr "Suma kontrolna pobranego i wysłanego pliku nie zgadzają się."
@@ -468,10 +477,12 @@ msgstr "Osoby w pobliżu"
 msgid "Yahoo! Japan"
 msgstr "Yahoo! Japan"
 
+# rev: Facebook Chat to chyba nazwa własna, z kolei Yahoo! Japan chyba nie :)
 #: ../libempathy/empathy-utils.c:385
 msgid "Facebook Chat"
 msgstr "Rozmowy Facebook"
 
+# rev: a nie sekundę? i wszystkie poniżej
 #: ../libempathy/empathy-time.c:137
 #, c-format
 msgid "%d second ago"
@@ -675,6 +686,7 @@ msgstr "Serwery"
 msgid "<span size=\"small\"><b>Example:</b> user@jabber.org</span>"
 msgstr "<span size=\"small\"><b>Przykład:</b> użytkownik@jabber.org</span>"
 
+# rev: sure, że to na przycisku?
 #: ../libempathy-gtk/empathy-account-widget-jabber.ui.h:4
 msgid "Override server settings"
 msgstr "Zastąp ustawienia serwera"
@@ -711,10 +723,12 @@ msgstr "Żądane hasło Jabbera?"
 msgid "_Encryption required (TLS/SSL)"
 msgstr "_Wymagane szyfrowanie (TLS/SSL)"
 
+# rev: skrót na literce _i, sprawdzić globalnie i na żywo
 #: ../libempathy-gtk/empathy-account-widget-jabber.ui.h:14
 msgid "_Ignore SSL certificate errors"
 msgstr "_Ignorowanie błędów certyfikatu SSL"
 
+# rev: Egzampyl
 #: ../libempathy-gtk/empathy-account-widget-msn.ui.h:1
 msgid "<span size=\"small\"><b>Example:</b> user@hotmail.com</span>"
 msgstr "<span size=\"small\"><b>Example:</b> użytkownik@hotmail.com</span>"
@@ -735,6 +749,7 @@ msgstr "Adres _e-mail:"
 msgid "_First Name:"
 msgstr "I_mię:"
 
+# rev: skrót na literce _J, sprawdzić konflikty na żywo, global
 #: ../libempathy-gtk/empathy-account-widget-local-xmpp.ui.h:4
 msgid "_Jabber ID:"
 msgstr "Identyfikator _Jabbera:"
@@ -784,10 +799,12 @@ msgstr "Nazwa _użytkownika:"
 msgid "Use _Yahoo Japan"
 msgstr "Użycie _Yahoo! Japan"
 
+# rev: hehe, może spację między ! a ? :)
 #: ../libempathy-gtk/empathy-account-widget-yahoo.ui.h:5
 msgid "What is your Yahoo! ID?"
 msgstr "Identyfikator Yahoo!?"
 
+# rev: jw.
 #: ../libempathy-gtk/empathy-account-widget-yahoo.ui.h:6
 msgid "What is your Yahoo! password?"
 msgstr "Hasło Yahoo!?"
@@ -796,6 +813,7 @@ msgstr "Hasło Yahoo!?"
 msgid "Yahoo I_D:"
 msgstr "I_dentyfikator Yahoo!:"
 
+# rev: skrót na _I, global and live check
 #: ../libempathy-gtk/empathy-account-widget-yahoo.ui.h:9
 msgid "_Ignore conference and chatroom invitations"
 msgstr "_Ignorowanie zaproszeń konferencyjnych i pokoi rozmów"
@@ -841,6 +859,7 @@ msgstr "Ponowne połączenie z tą rozmową nie powiodło się"
 msgid "Unsupported command"
 msgstr "Nieobsługiwane polecenie"
 
+# rev: slownik.lokalne.net mówi że "tryb offline / offline", global check, bowiem offline != rozłączony, disconnected = rozłączony
 #: ../libempathy-gtk/empathy-chat.c:535
 msgid "offline"
 msgstr "rozłączony"
@@ -1050,14 +1069,17 @@ msgctxt "menu item"
 msgid "_Video Call"
 msgstr "_Wideorozmowa"
 
+# rev: check conflicts, look up
 #: ../libempathy-gtk/empathy-contact-menu.c:324
 msgid "_View Previous Conversations"
 msgstr "_Wyświetl poprzednie rozmowy"
 
+# rev: brak skrótu klawiszowego wskazuje, że to niekoniecznie przycisk
 #: ../libempathy-gtk/empathy-contact-menu.c:346
 msgid "Send file"
 msgstr "Wyślij plik"
 
+# rev: brak skrótu klawiszowego wskazuje, że to niekoniecznie przycisk
 #: ../libempathy-gtk/empathy-contact-menu.c:369
 msgid "Share my desktop"
 msgstr "Współdziel pulpit"
@@ -1161,10 +1183,12 @@ msgstr "Poziom dokładności:"
 msgid "Error:"
 msgstr "Błąd:"
 
+# rev: błąd w pionie/poziomie po prostu?
 #: ../libempathy-gtk/empathy-contact-widget.c:1290
 msgid "Vertical Error (meters):"
 msgstr "Błąd w kierunku pionowym (metry):"
 
+# rev: jw.
 #: ../libempathy-gtk/empathy-contact-widget.c:1292
 msgid "Horizontal Error (meters):"
 msgstr "Błąd w kierunku poziomym (metry):"
@@ -1354,6 +1378,7 @@ msgstr "Nowa rozmowa"
 msgid "Custom Message..."
 msgstr "Własna wiadomość..."
 
+# rev: a to chyba jest pozycja w menu (rozkaz)
 #: ../libempathy-gtk/empathy-presence-chooser.c:229
 #: ../libempathy-gtk/empathy-presence-chooser.c:231
 msgid "Edit Custom Messages..."
@@ -1424,14 +1449,17 @@ msgstr "Rozmowa głosowa zakończona"
 msgid "Enter Custom Message"
 msgstr "Wprowadzenie własnej wiadomości"
 
+# rev: modyfikowanie, żeby być zgodny z ciągiem wyżej
 #: ../libempathy-gtk/empathy-status-preset-dialog.c:521
 msgid "Edit Custom Messages"
 msgstr "Modyfikacja własnej wiadomości"
 
+# rev: słownik mówi o "profilu ustawień", ale jest określone jako "do przemyślenia", nie wiem czy preset można traktować jako presence... chociaż dalej granica jest rozmyta. Może po prostu traktować preset w tym znaczeniu jako "Custom Message" jak wyżej? 
 #: ../libempathy-gtk/empathy-status-preset-dialog.ui.h:1
 msgid "Add _New Preset"
 msgstr "Dodaj _nową obecność"
 
+# rev: jw
 #: ../libempathy-gtk/empathy-status-preset-dialog.ui.h:2
 msgid "Saved Presets"
 msgstr "Zapisane obecności"
@@ -1609,6 +1637,7 @@ msgstr "tajskie"
 msgid "Turkish"
 msgstr "tureckie"
 
+# rev: blargh, tłumaczymy to czy nie?:) global
 #: ../libempathy-gtk/totem-subtitle-encoding.c:308
 #: ../libempathy-gtk/totem-subtitle-encoding.c:310
 #: ../libempathy-gtk/totem-subtitle-encoding.c:312
@@ -1631,6 +1660,7 @@ msgstr "zachodnie"
 msgid "Vietnamese"
 msgstr "wietnamskie"
 
+# rev: brak wyświetlania? brzmi dziwnie, może brak wyświetlanych? albo "wyłącza wyświetlanie..."
 #.
 #. * vim: sw=2 ts=8 cindent noai bs=2
 #.
@@ -1656,6 +1686,7 @@ msgstr "Porozmawiaj!"
 msgid "_About"
 msgstr "_O programie"
 
+# rev: evil shortcut of doom
 #: ../megaphone/data/GNOME_Megaphone_Applet.xml.h:2
 msgid "_Information"
 msgstr "_Informacje"
@@ -1710,6 +1741,7 @@ msgstr "Program Empathy rozpowszechniany jest z nadzieją, iż będzie on użyte
 msgid "You should have received a copy of the GNU General Public License along with Empathy; if not, write to the Free Software Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston, MA 02110-130159 USA"
 msgstr "Z pewnością wraz z programem Empathy dostarczono także egzemplarz Powszechnej Licencji Publicznej GNU (GNU General Public License); jeśli nie - proszę napisać do Free Software Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston, MA 02110-130159 USA."
 
+# rev: a gdzie on jest internetowy? :)
 #: ../src/empathy-about-dialog.c:119
 msgid "An Instant Messaging client for GNOME"
 msgstr "Komunikator internetowy dla środowiska GNOME"
@@ -1774,6 +1806,7 @@ msgstr "Inne posiadane konta rozmów do ustawienia?"
 msgid "Enter your account details"
 msgstr "Proszę wprowadzić szczegóły konta"
 
+# rev: spójrz na 3 ciąg od góry, żeby zachować konwencję tego typu "pytań" należałoby to przetłumaczyć jako "Rodzaj konta rozmów do utworzenia?"
 #: ../src/empathy-account-assistant.c:403
 msgid "What kind of chat account do you want to create?"
 msgstr "Jaki rodzaj konta rozmów utworzyć?"
@@ -1824,6 +1857,7 @@ msgstr "Tak"
 msgid "No, that's all for now"
 msgstr "Nie, to na razie wszytko"
 
+# rev: zapomniałem to przedyskutować, jest "Witamy" jako ogół ludzi pracujących nad tym programem, nie, że "Witaj" od Pana Komputera.
 #: ../src/empathy-account-assistant.c:903
 msgid "Welcome to Empathy"
 msgstr "Witaj w programie Empathy"
@@ -1923,6 +1957,7 @@ msgstr "Głośność"
 msgid "Connecting..."
 msgstr "Łączenie..."
 
+# rev: skrócone w innych programach, sidebar po angielsku wygląda nieźle, po polsku już kiepsko, nie da się tego skrócić? Bo wiadomo, że boczny :)
 #: ../src/empathy-call-window.c:778
 msgid "_Sidebar"
 msgstr "Panel _boczny"
@@ -2051,6 +2086,7 @@ msgstr "_Następna karta"
 msgid "_Previous Tab"
 msgstr "_Poprzednia karta"
 
+# rev: zakład, że idzie o pozycję w menu obok kratki do zaznaczania? Może lepiej po prostu Lista kontaktów? Koniecznie sprawdzić na żywo
 #: ../src/empathy-chat-window.ui.h:15
 #: ../src/empathy-status-icon.ui.h:4
 msgid "_Show Contact List"
@@ -2107,6 +2143,7 @@ msgstr "Użytkownik %s przesyła zaproszenie"
 msgid "An external application will be started to handle it."
 msgstr "Do obsługi zostanie uruchomiony zewnętrzny program."
 
+# rev: "je"? z czego to wynika? Jak nie wiemy, to może "aby obsłużyć działanie"
 #: ../src/empathy-event-manager.c:508
 msgid "You don't have the needed external application to handle it."
 msgstr "Brak wymaganego programu zewnętrznego, aby je obsłużyć."
@@ -2153,12 +2190,14 @@ msgstr ""
 "\n"
 "Wiadomość: %s"
 
+# rev: global offline check
 #. someone is logging off
 #: ../src/empathy-event-manager.c:936
 #, c-format
 msgid "%s is now offline."
 msgstr "Użytkownik %s rozłączył się."
 
+# rev: wg słownika "tryb online / online", global check
 #. someone is logging in
 #: ../src/empathy-event-manager.c:952
 #, c-format
@@ -2247,6 +2286,7 @@ msgstr "Ukończono przesyłanie pliku"
 msgid "Waiting for the other participant's response"
 msgstr "Oczekiwanie na odpowiedź drugiej strony"
 
+# rev: spójności
 #: ../src/empathy-ft-manager.c:643
 #: ../src/empathy-ft-manager.c:681
 #, c-format
@@ -2485,6 +2525,9 @@ msgstr "Nie można zatrzymać listy pokoi"
 msgid "Couldn't load room list"
 msgstr "Nie można wczytać listy pokoi"
 
+# rev: kliknąć nie jest zabronione, komentarze ze słownika: Nie nadużywać.
+# Wg standardów Aviary.pl "kliknąć coś", a nie "na czymś".
+# global check
 #: ../src/empathy-new-chatroom-dialog.ui.h:3
 msgid "Enter the room name to join here or click on one or more rooms in the list."
 msgstr "Proszę wprowadzić nazwę pokoju do dołączenia lub nacisnąć na jeden lub więcej pokoi na liście."
@@ -2517,10 +2560,12 @@ msgstr "Wysłano wiadomość"
 msgid "New conversation"
 msgstr "Nowa rozmowa"
 
+# rev: online
 #: ../src/empathy-preferences.c:151
 msgid "Contact goes online"
 msgstr "Kontakt połączył się"
 
+# rev: offline
 #: ../src/empathy-preferences.c:152
 msgid "Contact goes offline"
 msgstr "Kontakt rozłączył się"
