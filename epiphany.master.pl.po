@@ -8,8 +8,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: epiphany\n"
 "Report-Msgid-Bugs-To: http://bugzilla.gnome.org/enter_bug.cgi?product=epiphany\n"
-"POT-Creation-Date: 2009-08-25 14:46+0200\n"
-"PO-Revision-Date: 2009-08-25 14:48+0100\n"
+"POT-Creation-Date: 2009-09-06 14:22+0200\n"
+"PO-Revision-Date: 2009-09-06 14:22+0100\n"
 "Last-Translator: Tomasz Dominikowski <dominikowski@gmail.com>\n"
 "Language-Team: Polish <gnomepl@aviary.pl>\n"
 "MIME-Version: 1.0\n"
@@ -55,11 +55,15 @@ msgid "Browse the web"
 msgstr "Przeglądanie stron WWW"
 
 #: ../data/epiphany.desktop.in.in.h:2
+msgid "Epiphany"
+msgstr "Epiphany"
+
+#: ../data/epiphany.desktop.in.in.h:3
 msgid "Epiphany Web Browser"
 msgstr "Przeglądarka WWW Epiphany"
 
 #. sets the name to appear in the window list applet when grouping windows
-#: ../data/epiphany.desktop.in.in.h:3
+#: ../data/epiphany.desktop.in.in.h:4
 #: ../src/ephy-main.c:684
 msgid "Web Browser"
 msgstr "Przeglądarka WWW"
@@ -783,7 +787,7 @@ msgstr "_Wznów"
 #: ../embed/downloader-view.c:547
 #: ../embed/downloader-view.c:552
 #: ../lib/ephy-time-helpers.c:279
-#: ../src/ephy-window.c:1740
+#: ../src/ephy-window.c:1741
 msgid "Unknown"
 msgstr "Nieznany"
 
@@ -852,22 +856,22 @@ msgstr "%"
 msgid "Remaining"
 msgstr "Pozostało"
 
-#: ../embed/ephy-embed.c:432
+#: ../embed/ephy-embed.c:469
 msgid "Save"
 msgstr "Zapisz"
 
-#: ../embed/ephy-embed.c:574
+#: ../embed/ephy-embed.c:611
 msgctxt "file type"
 msgid "Unknown"
 msgstr "Nieznany"
 
-#: ../embed/ephy-embed.c:588
+#: ../embed/ephy-embed.c:625
 msgid "Download this potentially unsafe file?"
 msgstr "Pobrać potencjalnie niebezpieczny plik?"
 
 #. translators: First %s is the file type description,
 #. Second %s is the file name
-#: ../embed/ephy-embed.c:593
+#: ../embed/ephy-embed.c:630
 #, c-format
 msgid ""
 "File Type: “%s”.\n"
@@ -878,14 +882,14 @@ msgstr ""
 "\n"
 "Otwarcie \"%s\" jest niebezpieczne, ze względu na potencjalne niebezpieczeństwo uszkodzenia dokumentów lub naruszenia prywatności. Zamiast tego można go pobrać."
 
-#: ../embed/ephy-embed.c:601
+#: ../embed/ephy-embed.c:638
 msgid "Open this file?"
 msgstr "Otworzyć plik?"
 
 #. translators: First %s is the file type description,
 #. Second %s is the file name,
 #. Third %s is the application used to open the file
-#: ../embed/ephy-embed.c:607
+#: ../embed/ephy-embed.c:644
 #, c-format
 msgid ""
 "File Type: “%s”.\n"
@@ -896,13 +900,13 @@ msgstr ""
 "\n"
 "Można otworzyć \"%s\" używając \"%s\", albo go zapisać."
 
-#: ../embed/ephy-embed.c:614
+#: ../embed/ephy-embed.c:651
 msgid "Download this file?"
 msgstr "Pobrać ten plik?"
 
 #. translators: First %s is the file type description,
 #. Second %s is the file name
-#: ../embed/ephy-embed.c:619
+#: ../embed/ephy-embed.c:656
 #, c-format
 msgid ""
 "File Type: “%s”.\n"
@@ -913,11 +917,11 @@ msgstr ""
 "\n"
 "Brak programu mogącego otworzyć \"%s\". Zamiast tego można pobrać plik."
 
-#: ../embed/ephy-embed.c:626
+#: ../embed/ephy-embed.c:663
 msgid "_Save As..."
 msgstr "Z_apisz jako..."
 
-#: ../embed/ephy-embed.c:719
+#: ../embed/ephy-embed.c:772
 msgid "Web Inspector"
 msgstr "Web Inspector"
 
@@ -1269,34 +1273,39 @@ msgstr "Pliki lokalne"
 #. ms
 #. RELOAD_DELAY * RELOAD_DELAY_MAX_TICKS = 10 s
 #: ../embed/ephy-web-view.c:54
-#: ../embed/ephy-web-view.c:2077
-#: ../src/ephy-session.c:1335
+#: ../embed/ephy-web-view.c:2127
+#: ../src/ephy-session.c:1342
 msgid "Blank page"
 msgstr "Pusta strona"
 
-#: ../embed/ephy-web-view.c:1261
+#: ../embed/ephy-web-view.c:1129
+#, c-format
+msgid "http://www.google.com/search?q=%s&ie=UTF-8&oe=UTF-8"
+msgstr "http://www.google.pl/search?q=%s&ie=UTF-8&oe=UTF-8"
+
+#: ../embed/ephy-web-view.c:1320
 #, c-format
 msgid "Redirecting to “%s”…"
 msgstr "Przekierowywanie do \"%s\"..."
 
-#: ../embed/ephy-web-view.c:1263
+#: ../embed/ephy-web-view.c:1322
 #, c-format
 msgid "Transferring data from “%s”…"
 msgstr "Przesyłanie danych z \"%s\"..."
 
-#: ../embed/ephy-web-view.c:1265
+#: ../embed/ephy-web-view.c:1324
 #, c-format
 msgid "Waiting for authorization from “%s”…"
 msgstr "Oczekiwanie na upoważnienie od \"%s\"..."
 
 #. translators: %s here is the address of the web page
-#: ../embed/ephy-web-view.c:1271
-#: ../embed/ephy-web-view.c:1379
+#: ../embed/ephy-web-view.c:1330
+#: ../embed/ephy-web-view.c:1435
 #, c-format
 msgid "Loading “%s”…"
 msgstr "Wczytywanie \"%s\"..."
 
-#: ../embed/ephy-web-view.c:1381
+#: ../embed/ephy-web-view.c:1437
 msgid "Loading…"
 msgstr "Wczytywanie..."
 
@@ -1488,7 +1497,7 @@ msgstr "Historia"
 
 #: ../lib/ephy-stock-icons.c:49
 #: ../src/bookmarks/ephy-bookmark-factory-action.c:300
-#: ../src/ephy-window.c:1495
+#: ../src/ephy-window.c:1496
 msgid "Bookmark"
 msgstr "Zakładka"
 
@@ -1496,7 +1505,7 @@ msgstr "Zakładka"
 #: ../src/bookmarks/ephy-bookmarks-editor.c:896
 #: ../src/bookmarks/ephy-bookmarks-editor.c:1740
 #: ../src/bookmarks/ephy-topic-action.c:443
-#: ../src/ephy-window.c:1499
+#: ../src/ephy-window.c:1500
 msgid "Bookmarks"
 msgstr "Zakładki"
 
@@ -2139,24 +2148,24 @@ msgstr "Wyszukaj:"
 
 #. Create a menu item, and sync it
 #. Case sensitivity
-#: ../src/ephy-find-toolbar.c:436
-#: ../src/ephy-find-toolbar.c:558
+#: ../src/ephy-find-toolbar.c:434
+#: ../src/ephy-find-toolbar.c:556
 msgid "_Case sensitive"
 msgstr "_Rozróżnianie małych i wielkich liter"
 
-#: ../src/ephy-find-toolbar.c:541
+#: ../src/ephy-find-toolbar.c:539
 msgid "Find Previous"
 msgstr "Znajdź poprzednie"
 
-#: ../src/ephy-find-toolbar.c:544
+#: ../src/ephy-find-toolbar.c:542
 msgid "Find previous occurrence of the search string"
 msgstr "Wyszukuje poprzednie wystąpienie słowa lub frazy"
 
-#: ../src/ephy-find-toolbar.c:550
+#: ../src/ephy-find-toolbar.c:548
 msgid "Find Next"
 msgstr "Znajdź następne"
 
-#: ../src/ephy-find-toolbar.c:553
+#: ../src/ephy-find-toolbar.c:551
 msgid "Find next occurrence of the search string"
 msgstr "Wyszukuje następne wystąpienie ciągu"
 
@@ -2272,7 +2281,7 @@ msgstr "Data"
 
 #: ../src/ephy-main.c:81
 #: ../src/ephy-main.c:562
-#: ../src/window-commands.c:873
+#: ../src/window-commands.c:956
 msgid "GNOME Web Browser"
 msgstr "Przeglądarka WWW środowiska GNOME"
 
@@ -2341,11 +2350,11 @@ msgstr "Opcje przeglądarki WWW środowiska GNOME"
 msgid "Close tab"
 msgstr "Zamyka kartę"
 
-#: ../src/ephy-profile-migration.c:64
+#: ../src/ephy-profile-migration.c:80
 msgid "Failed to copy cookies file from Mozilla."
 msgstr "Skopiowanie ciasteczek z Mozilli nie powiodło się."
 
-#: ../src/ephy-profile-migration.c:119
+#: ../src/ephy-profile-migration.c:375
 msgid "Failed to read latest migration marker, aborting profile migration."
 msgstr "Odczytanie najnowszego znacznika migracji nie powiodło się, przerywanie migracji profilu."
 
@@ -2373,41 +2382,41 @@ msgstr "_Anuluj wylogowanie"
 msgid "_Abort Downloads"
 msgstr "_Przerwij pobrania"
 
-#: ../src/ephy-session.c:565
+#: ../src/ephy-session.c:571
 msgid "Recover previous browser windows and tabs?"
 msgstr "Przywrócić poprzednie okna i karty przeglądarki?"
 
-#: ../src/ephy-session.c:569
+#: ../src/ephy-session.c:575
 msgid "Epiphany appears to have exited unexpectedly the last time it was run. You can recover the opened windows and tabs."
 msgstr "Podczas ostatniego uruchomienia program Epiphany nieoczekiwanie zakończył pracę. Można przywrócić ostatnio otwarte okna i karty."
 
-#: ../src/ephy-session.c:573
+#: ../src/ephy-session.c:579
 msgid "_Don't Recover"
 msgstr "_Nie przywracaj"
 
-#: ../src/ephy-session.c:575
+#: ../src/ephy-session.c:581
 msgid "_Recover"
 msgstr "_Przywróć"
 
-#: ../src/ephy-session.c:577
+#: ../src/ephy-session.c:583
 msgid "Crash Recovery"
 msgstr "Odzyskiwanie po awarii programu"
 
 #. Translators: %s refers to the LSB distributor ID, for instance MandrivaLinux
-#: ../src/ephy-session.c:1279
+#: ../src/ephy-session.c:1286
 #, c-format
 msgid "This page was loading when the web browser closed unexpectedly. This might happen again if you reload the page. If it does, please report the problem to the %s developers."
 msgstr "Ta strona była wczytywana, gdy przeglądarka niespodziewanie zakończyła działanie. Może się to wydarzyć ponownie przy ponownym wczytywaniu strony. Jeśli tak się stanie, to proszę zgłosić ten problem programistom %s."
 
-#: ../src/ephy-shell.c:171
+#: ../src/ephy-shell.c:172
 msgid "Sidebar extension required"
 msgstr "Wymagane rozszerzenie panelu bocznego"
 
-#: ../src/ephy-shell.c:173
+#: ../src/ephy-shell.c:174
 msgid "Sidebar Extension Required"
 msgstr "Wymagane rozszerzenie panelu bocznego"
 
-#: ../src/ephy-shell.c:177
+#: ../src/ephy-shell.c:178
 msgid "The link you clicked needs the sidebar extension to be installed."
 msgstr "Kliknięty odnośnik wymaga zainstalowania rozszerzenia panelu bocznego."
 
@@ -2996,68 +3005,68 @@ msgstr "_Uruchom animację"
 msgid "St_op Animation"
 msgstr "_Zatrzymaj animację"
 
-#: ../src/ephy-window.c:522
+#: ../src/ephy-window.c:523
 msgid "There are unsubmitted changes to form elements"
 msgstr "Pozostały niewysłane zmiany elementów formularza"
 
-#: ../src/ephy-window.c:526
+#: ../src/ephy-window.c:527
 msgid "If you close the document anyway, you will lose that information."
 msgstr "Jeżeli dokument zostanie zamknięty, to informacja zostanie utracona."
 
-#: ../src/ephy-window.c:530
+#: ../src/ephy-window.c:531
 msgid "Close _Document"
 msgstr "Zamknij _dokument"
 
-#: ../src/ephy-window.c:1489
-#: ../src/window-commands.c:284
+#: ../src/ephy-window.c:1490
+#: ../src/window-commands.c:286
 msgid "Open"
 msgstr "Otwórz"
 
-#: ../src/ephy-window.c:1491
-#: ../src/window-commands.c:310
+#: ../src/ephy-window.c:1492
+#: ../src/window-commands.c:312
 msgid "Save As"
 msgstr "Zapis jako"
 
-#: ../src/ephy-window.c:1493
+#: ../src/ephy-window.c:1494
 msgid "Print"
 msgstr "Wydrukuj"
 
-#: ../src/ephy-window.c:1497
+#: ../src/ephy-window.c:1498
 msgid "Find"
 msgstr "Wyszukaj"
 
 #. Translators: This refers to text size
-#: ../src/ephy-window.c:1510
+#: ../src/ephy-window.c:1511
 msgid "Larger"
 msgstr "Większy"
 
 #. Translators: This refers to text size
-#: ../src/ephy-window.c:1513
+#: ../src/ephy-window.c:1514
 msgid "Smaller"
 msgstr "Mniejszy"
 
-#: ../src/ephy-window.c:1743
+#: ../src/ephy-window.c:1744
 msgid "Insecure"
 msgstr "Niepewny"
 
-#: ../src/ephy-window.c:1748
+#: ../src/ephy-window.c:1749
 msgid "Broken"
 msgstr "Uszkodzony"
 
-#: ../src/ephy-window.c:1756
+#: ../src/ephy-window.c:1757
 msgid "Low"
 msgstr "Niski"
 
-#: ../src/ephy-window.c:1763
+#: ../src/ephy-window.c:1764
 msgid "High"
 msgstr "Wysoki"
 
-#: ../src/ephy-window.c:1773
+#: ../src/ephy-window.c:1774
 #, c-format
 msgid "Security level: %s"
 msgstr "Poziom bezpieczeństwa: %s"
 
-#: ../src/ephy-window.c:1816
+#: ../src/ephy-window.c:1817
 #, c-format
 msgid "%d hidden popup window"
 msgid_plural "%d hidden popup windows"
@@ -3065,47 +3074,47 @@ msgstr[0] "%d ukryte wyskakujące okno"
 msgstr[1] "%d ukryte wyskakujące okna"
 msgstr[2] "%d ukrytych wyskakujących okien"
 
-#: ../src/ephy-window.c:2081
+#: ../src/ephy-window.c:2082
 #, c-format
 msgid "Open image “%s”"
 msgstr "Otwórz obraz \"%s\""
 
-#: ../src/ephy-window.c:2086
+#: ../src/ephy-window.c:2087
 #, c-format
 msgid "Use as desktop background “%s”"
 msgstr "Użyj jako tło \"%s\""
 
-#: ../src/ephy-window.c:2091
+#: ../src/ephy-window.c:2092
 #, c-format
 msgid "Save image “%s”"
 msgstr "Zapisz obraz \"%s\""
 
-#: ../src/ephy-window.c:2096
+#: ../src/ephy-window.c:2097
 #, c-format
 msgid "Copy image address “%s”"
 msgstr "Skopiuj adres obrazu \"%s\""
 
-#: ../src/ephy-window.c:2109
+#: ../src/ephy-window.c:2110
 #, c-format
 msgid "Send email to address “%s”"
 msgstr "Wyślij wiadomość e-mail na adres \"%s\""
 
-#: ../src/ephy-window.c:2115
+#: ../src/ephy-window.c:2116
 #, c-format
 msgid "Copy email address “%s”"
 msgstr "Skopiuj adres e-mail \"%s\""
 
-#: ../src/ephy-window.c:2127
+#: ../src/ephy-window.c:2128
 #, c-format
 msgid "Save link “%s”"
 msgstr "Zapisz odnośnik \"%s\""
 
-#: ../src/ephy-window.c:2133
+#: ../src/ephy-window.c:2134
 #, c-format
 msgid "Bookmark link “%s”"
 msgstr "Dodaj do zakładek odnośnik \"%s\""
 
-#: ../src/ephy-window.c:2139
+#: ../src/ephy-window.c:2140
 #, c-format
 msgid "Copy link's address “%s”"
 msgstr "Skopiuj adres odnośnika \"%s\""
@@ -3279,33 +3288,33 @@ msgstr[2] "Języków systemu (%s)"
 msgid "Select a Directory"
 msgstr "Wybór katalogu"
 
-#: ../src/window-commands.c:773
+#: ../src/window-commands.c:856
 msgid "The GNOME Web Browser is free software; you can redistribute it and/or modify it under the terms of the GNU General Public License as published by the Free Software Foundation; either version 2 of the License, or (at your option) any later version."
 msgstr "Przeglądarka WWW środowiska GNOME jest wolnym oprogramowaniem; można ją rozprowadzać dalej i/lub modyfikować na warunkach Powszechnej Licencji Publicznej GNU, wydanej przez Fundację Wolnego Oprogramowania (Free Software Foundation) - według wersji drugiej tej Licencji lub którejś z późniejszych wersji."
 
-#: ../src/window-commands.c:777
+#: ../src/window-commands.c:860
 msgid "The GNOME Web Browser is distributed in the hope that it will be useful, but WITHOUT ANY WARRANTY; without even the implied warranty of MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the GNU General Public License for more details."
 msgstr "Przeglądarka WWW środowiska GNOME rozpowszechniana jest z nadzieją, iż będzie ona użyteczny - jednak BEZ JAKIEJKOLWIEK GWARANCJI, nawet domyślnej gwarancji PRZYDATNOŚCI HANDLOWEJ albo PRZYDATNOŚCI DO OKREŚLONYCH ZASTOSOWAŃ. W celu uzyskania bliższych informacji należy zapoznać się z Powszechną Licencją Publiczną GNU."
 
-#: ../src/window-commands.c:781
+#: ../src/window-commands.c:864
 msgid "You should have received a copy of the GNU General Public License along with the GNOME Web Browser; if not, write to the Free Software Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston, MA  02110-1301  USA"
 msgstr "Z pewnością wraz z przeglądarką WWW środowiska GNOME dostarczono także egzemplarz Powszechnej Licencji Publicznej GNU (GNU General Public License); jeśli nie - proszę napisać do Free Software Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston, MA 02110-130159 USA."
 
-#: ../src/window-commands.c:827
-#: ../src/window-commands.c:843
-#: ../src/window-commands.c:854
+#: ../src/window-commands.c:910
+#: ../src/window-commands.c:926
+#: ../src/window-commands.c:937
 msgid "Contact us at:"
 msgstr "Kontakt:"
 
-#: ../src/window-commands.c:830
+#: ../src/window-commands.c:913
 msgid "Contributors:"
 msgstr "Współpracownicy:"
 
-#: ../src/window-commands.c:833
+#: ../src/window-commands.c:916
 msgid "Past developers:"
 msgstr "Poprzedni programiści:"
 
-#: ../src/window-commands.c:863
+#: ../src/window-commands.c:946
 #, c-format
 msgid ""
 "Lets you view web pages and find information on the internet.\n"
@@ -3322,7 +3331,7 @@ msgstr ""
 #. * this translation; in that case, please write each of them on a separate
 #. * line seperated by newlines (\n).
 #.
-#: ../src/window-commands.c:889
+#: ../src/window-commands.c:972
 msgid "translator-credits"
 msgstr ""
 "Cezary Jackiewicz <cjackiewicz@poczta.onet.pl>, 2000, 2001\n"
@@ -3330,7 +3339,7 @@ msgstr ""
 "Aviary.pl <gnomepl@aviary.pl>, 2009\n"
 "Piotr Drąg <piotrdrag@gmail.com>, 2009"
 
-#: ../src/window-commands.c:892
+#: ../src/window-commands.c:975
 msgid "GNOME Web Browser Website"
 msgstr "Strona przeglądarki WWW środowiska GNOME"
 
