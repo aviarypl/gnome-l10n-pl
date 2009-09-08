@@ -7,17 +7,15 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: NetworkManager\n"
-"Report-Msgid-Bugs-To: http://bugzilla.gnome.org/enter_bug.cgi?"
-"product=NetworkManager&component=general\n"
+"Report-Msgid-Bugs-To: http://bugzilla.gnome.org/enter_bug.cgi?product=NetworkManager&component=general\n"
 "POT-Creation-Date: 2009-08-27 03:24+0000\n"
-"PO-Revision-Date: 2009-09-09 01:31+0200\n"
-"Last-Translator: Piotr Drąg <piotrdrag@gmail.com>\n"
+"PO-Revision-Date: 2009-09-09 01:45+0100\n"
+"Last-Translator: Tomasz Dominikowski <dominikowski@gmail.com>\n"
 "Language-Team: Polish <gnomepl@aviary.pl>\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"Plural-Forms: nplurals=3; plural=n%10==1 && n%100!=11 ? 0 : n%10>=2 && n%"
-"10<=4 && (n%100<10 || n%100>=20) ? 1 : 2\n"
+"Plural-Forms: nplurals=3; plural=n%10==1 && n%100!=11 ? 0 : n%10>=2 && n%10<=4 && (n%100<10 || n%100>=20) ? 1 : 2\n"
 "X-Poedit-Language: Polish\n"
 "X-Poedit-Country: Poland\n"
 
@@ -106,7 +104,8 @@ msgstr "Brak wystarczającej ilości pamięci do przechowania IV."
 msgid "IV contains non-hexadecimal digits."
 msgstr "IV zawiera nie-szesnastkowe cyfry."
 
-#: ../libnm-util/crypto.c:382 ../libnm-util/crypto_gnutls.c:143
+#: ../libnm-util/crypto.c:382
+#: ../libnm-util/crypto_gnutls.c:143
 #: ../libnm-util/crypto_nss.c:169
 #, c-format
 msgid "Private key cipher '%s' was unknown."
@@ -116,8 +115,7 @@ msgstr "Nieznany szyfr klucza prywatnego \"%s\"."
 #: ../libnm-util/crypto.c:391
 #, c-format
 msgid "Not enough memory to decrypt private key."
-msgstr ""
-"Brak wystarczającej ilości pamięci do odszyfrowania klucza prywatnego."
+msgstr "Brak wystarczającej ilości pamięci do odszyfrowania klucza prywatnego."
 
 #: ../libnm-util/crypto.c:511
 #, c-format
@@ -128,9 +126,7 @@ msgstr "Nieudane określenie typu klucza prywatnego."
 #: ../libnm-util/crypto.c:530
 #, c-format
 msgid "Not enough memory to store decrypted private key."
-msgstr ""
-"Brak wystarczającej ilości pamięci do przechowania odszyfrowanego klucza "
-"prywatnego."
+msgstr "Brak wystarczającej ilości pamięci do przechowania odszyfrowanego klucza prywatnego."
 
 #: ../libnm-util/crypto_gnutls.c:46
 msgid "Failed to initialize the crypto engine."
@@ -142,7 +138,9 @@ msgid "Failed to initialize the MD5 engine: %s / %s."
 msgstr "Nieudana inicjacja modułu MD5: %s / %s."
 
 # pd
-#: ../libnm-util/crypto_gnutls.c:152 ../libnm-util/crypto_nss.c:178
+# rev: nope, bufora odszyfrowanego klucza
+#: ../libnm-util/crypto_gnutls.c:152
+#: ../libnm-util/crypto_nss.c:178
 #, c-format
 msgid "Not enough memory for decrypted key buffer."
 msgstr "Brak wystarczającej ilości pamięci dla odszyfrowanego bufora klucza."
@@ -276,7 +274,8 @@ msgstr "Nie można było odszyfrować pliku PKCS#12: %d"
 msgid "Couldn't verify PKCS#12 file: %d"
 msgstr "Nie można było zweryfikować pliku PKCS#12: %d"
 
-#: ../src/nm-netlink-monitor.c:194 ../src/nm-netlink-monitor.c:464
+#: ../src/nm-netlink-monitor.c:194
+#: ../src/nm-netlink-monitor.c:464
 #, c-format
 msgid "error processing netlink message: %s"
 msgstr "błąd podczas przetwarzania komunikatu netlink: %s"
@@ -284,27 +283,22 @@ msgstr "błąd podczas przetwarzania komunikatu netlink: %s"
 #: ../src/nm-netlink-monitor.c:260
 #, c-format
 msgid "unable to allocate netlink handle for monitoring link status: %s"
-msgstr ""
-"nie można utworzyć uchwytu netlink dla monitorowania statusu połączenia: %s"
+msgstr "nie można utworzyć uchwytu netlink dla monitorowania statusu połączenia: %s"
 
 #: ../src/nm-netlink-monitor.c:270
 #, c-format
 msgid "unable to connect to netlink for monitoring link status: %s"
-msgstr ""
-"nie można połączyć się z netlink dla monitorowania statusu połączenia: %s"
+msgstr "nie można połączyć się z netlink dla monitorowania statusu połączenia: %s"
 
 #: ../src/nm-netlink-monitor.c:278
 #, c-format
 msgid "unable to join netlink group for monitoring link status: %s"
-msgstr ""
-"nie można dołączyć do grupy netlink dla monitorowania statusu połączenia: %s"
+msgstr "nie można dołączyć do grupy netlink dla monitorowania statusu połączenia: %s"
 
 #: ../src/nm-netlink-monitor.c:286
 #, c-format
 msgid "unable to allocate netlink link cache for monitoring link status: %s"
-msgstr ""
-"nie można utworzyć buforów połączenia netlink dla monitorowania statusu "
-"połączenia: %s"
+msgstr "nie można utworzyć buforów połączenia netlink dla monitorowania statusu połączenia: %s"
 
 #: ../src/nm-netlink-monitor.c:494
 msgid "error occurred while waiting for data on socket"
@@ -374,18 +368,15 @@ msgstr "Polityka systemu powstrzymuje modyfikację ustawień systemowych"
 # pd
 #: ../policy/org.freedesktop.network-manager-settings.system.policy.in.h:6
 msgid "System policy prevents modification of the persistent system hostname"
-msgstr ""
-"Polityka systemu powstrzymuje modyfikację trwałej systemowej nazwy komputera"
+msgstr "Polityka systemu powstrzymuje modyfikację trwałej systemowej nazwy komputera"
 
 # pd
 #: ../policy/org.freedesktop.network-manager-settings.system.policy.in.h:7
 msgid "System policy prevents sharing connections via a protected WiFi network"
-msgstr ""
-"Polityka systemu powstrzymuje współdzielenie połączeń przez chronioną sieć "
-"WiFi"
+msgstr "Polityka systemu powstrzymuje współdzielenie połączeń przez chronioną sieć WiFi"
 
 # pd
 #: ../policy/org.freedesktop.network-manager-settings.system.policy.in.h:8
 msgid "System policy prevents sharing connections via an open WiFi network"
-msgstr ""
-"Polityka systemu powstrzymuje współdzielenie połączeń przez otwartą sieć WiFi"
+msgstr "Polityka systemu powstrzymuje współdzielenie połączeń przez otwartą sieć WiFi"
+
