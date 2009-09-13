@@ -9,8 +9,8 @@ msgstr ""
 "Project-Id-Version: network-manager-applet\n"
 "Report-Msgid-Bugs-To: http://bugzilla.gnome.org/enter_bug.cgi?product=NetworkManager&component=nm-applet\n"
 "POT-Creation-Date: 2009-08-26 18:57+0000\n"
-"PO-Revision-Date: 2009-09-13 17:42+0100\n"
-"Last-Translator: Tomasz Dominikowski <dominikowski@gmail.com>\n"
+"PO-Revision-Date: 2009-09-13 17:50+0200\n"
+"Last-Translator: Piotr Drąg <piotrdrag@gmail.com>\n"
 "Language-Team: Polish <gnomepl@aviary.pl>\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -27,47 +27,38 @@ msgstr "Zarządzanie połączeniami sieciowymi"
 msgid "Network Manager"
 msgstr "Menedżer sieci"
 
-# pd
 #: ../nm-applet.schemas.in.h:1
 msgid "Disable connected notifications"
 msgstr "Wyłącza powiadomienia o połączeniu"
 
-# pd
 #: ../nm-applet.schemas.in.h:2
 msgid "Disable disconnected notifications"
 msgstr "Wyłącza powiadomienia o rozłączeniu"
 
-# pd
 #: ../nm-applet.schemas.in.h:3
 msgid "Set this to TRUE to disable notifications when connecting to a network."
 msgstr "Ustawienie na \"TRUE\" wyłącza powiadomienia podczas łączenia z siecią."
 
-# pd
 #: ../nm-applet.schemas.in.h:4
 msgid "Set this to TRUE to disable notifications when disconnecting from a network."
 msgstr "Ustawienie na \"TRUE\" wyłącza powiadomienia podczas rozłączenia z sieci."
 
-# pd
 #: ../nm-applet.schemas.in.h:5
 msgid "Set this to TRUE to disable notifications when wireless networks are available."
 msgstr "Ustawienie na \"TRUE\" wyłącza powiadamiania o dostępności sieci bezprzewodowych."
 
-# pd
 #: ../nm-applet.schemas.in.h:6
 msgid "Stamp"
 msgstr "Okres czasowy"
 
-# pd
 #: ../nm-applet.schemas.in.h:7
 msgid "Suppress networks available notifications"
 msgstr "Wyłączenie powiadomień o dostępnych sieciach"
 
-# pd
 #: ../nm-applet.schemas.in.h:8
 msgid "Used to determine whether settings should be migrated to a new version."
 msgstr "Używane do określenia, czy ustawienia powinny zostać migrowane do nowej wersji."
 
-# pd
 #: ../nm-connection-editor.desktop.in.h:1
 msgid "Manage and change your network connection settings"
 msgstr "Zarządzanie ustawieniami połączeń sieciowych"
@@ -93,7 +84,6 @@ msgstr "Nawiązano połączenie z \"%s\"."
 msgid "Connection Established"
 msgstr "Połączenie ustanowione."
 
-# pd
 #: ../src/applet-device-bt.c:192
 msgid "You are now connected to the mobile broadband network."
 msgstr "Ustanowiono połączenie z siecią komórkową."
@@ -139,7 +129,6 @@ msgstr "Nawiązano połączenie komórkowe \"%s\""
 msgid "CDMA"
 msgstr "CDMA"
 
-# pd
 #: ../src/applet-device-cdma.c:213
 msgid "New Mobile Broadband (CDMA) connection..."
 msgstr "Nowe połączenie komórkowe (CDMA)..."
@@ -188,7 +177,6 @@ msgstr "Hasło:"
 msgid "GSM"
 msgstr "GSM"
 
-# pd
 #: ../src/applet-device-gsm.c:215
 msgid "New Mobile Broadband (GSM) connection..."
 msgstr "Nowe połączenie komórkowe (GSM)..."
@@ -461,7 +449,6 @@ msgstr "Główny DNS:"
 msgid "Secondary DNS:"
 msgstr "Drugorzędny DNS:"
 
-# pd
 #. Shouldn't really happen but ...
 #: ../src/applet-dialogs.c:477
 msgid "No valid active connections found!"
@@ -475,7 +462,6 @@ msgstr ""
 "Copyright © 2004-2008 Red Hat, Inc.\n"
 "Copyright © 2005-2008 Novell, Inc."
 
-# pd
 #: ../src/applet-dialogs.c:605
 msgid "Notification area applet for managing your network devices and connections."
 msgstr "Aplet obszaru powiadamiania do zarządzania urządzeniami i połączeniami sieciowymi."
@@ -492,11 +478,9 @@ msgstr ""
 "Tomasz Dominikowski <tdominikowski@aviary.pl>, 2008, 2009\n"
 "Piotr Drąg <piotrdrag@gmail.com>, 2009"
 
-# pd
-# rev: a nie brakujące zasoby?
 #: ../src/applet-dialogs.c:626
 msgid "Missing resources"
-msgstr "Brak zasobów"
+msgstr "Brakujące zasoby"
 
 #: ../src/applet.c:562
 #, c-format
@@ -790,7 +774,6 @@ msgstr "<span weight=\"bold\" size=\"larger\">Aktywne połączenia sieciowe</spa
 msgid "Anony_mous identity:"
 msgstr "Anoni_mowa tożsamość:"
 
-# pd
 #: ../src/applet.glade.h:8
 msgid ""
 "Automatic\n"
@@ -898,7 +881,6 @@ msgstr "Wersja _PEAP:"
 msgid "_Password:"
 msgstr "_Hasło:"
 
-# pd
 #: ../src/applet.glade.h:34
 msgid "_Private key password:"
 msgstr "_Hasło klucza prywatnego:"
@@ -926,11 +908,9 @@ msgstr "Zabezpieczenia sieci bezprze_wodowej:"
 msgid "automatic"
 msgstr "automatycznie"
 
-# pd
-# rev: to podchodzi pod po prostu ustawienia (hasła też są ustawieniami)
 #: ../src/connection-editor/ce-page.c:215
 msgid "Failed to update connection secrets due to an unknown error."
-msgstr "Zaktualizowanie sekretów połączenia nie powiodło się z powodu nieznanego błędu."
+msgstr "Zaktualizowanie ustawień połączenia nie powiodło się z powodu nieznanego błędu."
 
 #: ../src/connection-editor/ce-page-dsl.glade.h:3
 msgid "_Service:"
@@ -960,7 +940,6 @@ msgstr ""
 msgid "D_HCP client ID:"
 msgstr "Identyfikator klienta D_HCP:"
 
-# pd
 #: ../src/connection-editor/ce-page-ip4.glade.h:8
 #: ../src/connection-editor/ce-page-ip6.glade.h:7
 msgid "IP addresses identify your computer on the network.  Click the \"Add\" button to add an IP address."
@@ -1000,7 +979,6 @@ msgstr "T_rasy..."
 msgid "_Search domains:"
 msgstr "Domeny wy_szukiwania:"
 
-# pd
 #: ../src/connection-editor/ce-page-ip6.glade.h:13
 msgid "_Routes&#x2026;"
 msgstr "T_rasy&#x2026;"
@@ -1027,7 +1005,6 @@ msgstr ""
 "Preferuj 3G (UMTS/HSPA)\n"
 "Preferuj 2G (GPRS/EDGE)"
 
-# pd
 #: ../src/connection-editor/ce-page-mobile.glade.h:8
 msgid "Change..."
 msgstr "Zmień..."
@@ -1132,7 +1109,6 @@ msgstr "Wysyłanie pakietów _echo PPP"
 msgid "Use TCP _header compression"
 msgstr "Używanie kompresji _TCP header"
 
-# pd
 #: ../src/connection-editor/ce-page-ppp.glade.h:19
 msgid "Use _stateful MPPE"
 msgstr "Używanie _Stateful MPPE"
@@ -1189,7 +1165,6 @@ msgstr ""
 "BNC\n"
 "Media Independent Interface (MII)"
 
-# pd
 #: ../src/connection-editor/ce-page-wired.glade.h:12
 msgid "Full duple_x"
 msgstr "Pełny duple_ks"
@@ -1318,7 +1293,6 @@ msgstr "Parametry"
 msgid "Prefix"
 msgstr "Przedrostek"
 
-# pd
 #: ../src/connection-editor/page-dsl.c:153
 #: ../src/connection-editor/page-dsl.c:160
 msgid "Could not load DSL user interface."
@@ -1393,7 +1367,6 @@ msgstr "Współdzielone z innymi komputerami"
 msgid "Editing IPv4 routes for %s"
 msgstr "Modyfikowanie tras IPv4 dla %s"
 
-# pd
 #: ../src/connection-editor/page-ip4.c:708
 #: ../src/connection-editor/page-ip4.c:715
 msgid "Could not load IPv4 user interface."
@@ -1421,7 +1394,6 @@ msgstr "Zignoruj"
 msgid "Editing IPv6 routes for %s"
 msgstr "Modyfikowanie tras IPv6 dla %s"
 
-# pd
 #: ../src/connection-editor/page-ip6.c:667
 #: ../src/connection-editor/page-ip6.c:674
 msgid "Could not load IPv6 user interface."
@@ -1431,34 +1403,28 @@ msgstr "Nie można wczytać interfejsu użytkownika IPv6."
 msgid "IPv6 Settings"
 msgstr "Ustawienia IPv6"
 
-# pd
 #: ../src/connection-editor/page-mobile.c:365
 #: ../src/connection-editor/page-mobile.c:372
 msgid "Could not load mobile broadband user interface."
 msgstr "Nie można wczytać interfejsu użytkownika połączeń komórkowych."
 
-# pd
 #: ../src/connection-editor/page-mobile.c:390
 msgid "Unsupported mobile broadband connection type."
 msgstr "Nieobsługiwany typ połączenia komórkowego."
 
-# pd
 #. Fall back to just asking for GSM vs. CDMA
 #: ../src/connection-editor/page-mobile.c:632
 msgid "Select Mobile Broadband Provider Type"
 msgstr "Wybór typu dostawcy połączenia komórkowego"
 
-# pd
 #: ../src/connection-editor/page-mobile.c:659
 msgid "Select the technology your mobile broadband provider uses.  If you are unsure, ask your provider."
 msgstr "Proszę wybrać technologię używaną przez dostawcę połączenia komórkowego. W razie wątpliwości należy zapytać dostawcę."
 
-# pd
 #: ../src/connection-editor/page-mobile.c:664
 msgid "My provider uses _GSM-based technology (i.e. GPRS, EDGE, UMTS, HSDPA)"
 msgstr "Dostawca używa technologii opartej na _GSM (np. GPRS, EDGE, UMTS, HSDPA)"
 
-# pd
 #: ../src/connection-editor/page-mobile.c:669
 msgid "My provider uses _CDMA-based technology (i.e. 1xRTT, EVDO)"
 msgstr "Dostawca używa technologii opartej na _CDMA (np. 1xRTT, EVDO)"
@@ -1498,7 +1464,6 @@ msgstr "brak"
 msgid "Editing PPP authentication methods for %s"
 msgstr "Modyfikowanie metod uwierzytelniania PPP dla %s"
 
-# pd
 #: ../src/connection-editor/page-ppp.c:280
 #: ../src/connection-editor/page-ppp.c:287
 msgid "Could not load PPP user interface."
@@ -1514,7 +1479,6 @@ msgstr "Ustawienia PPP"
 msgid "VPN"
 msgstr "VPN"
 
-# pd
 #: ../src/connection-editor/page-vpn.c:116
 #, c-format
 msgid "Could not find VPN plugin service for '%s'."
@@ -1526,7 +1490,6 @@ msgstr "Nie można odnaleźć wtyczki usługi VPN dla \"%s\"."
 msgid "VPN connection %d"
 msgstr "Połączenie VPN %d"
 
-# pd
 #: ../src/connection-editor/page-wired.c:204
 #: ../src/connection-editor/page-wired.c:211
 msgid "Could not load wired user interface."
@@ -1561,7 +1524,6 @@ msgstr "domyślne"
 msgid "%u (%u MHz)"
 msgstr "%u (%u MHz)"
 
-# pd
 #: ../src/connection-editor/page-wireless.c:348
 #: ../src/connection-editor/page-wireless.c:355
 msgid "Could not load WiFi user interface."
@@ -1579,13 +1541,11 @@ msgstr "Bezprzewodowe"
 msgid "Wireless connection %d"
 msgstr "Połączenie bezprzewodowe %d"
 
-# pd
 #: ../src/connection-editor/page-wireless-security.c:262
 #: ../src/wireless-dialog.c:806
 msgid "WEP 40/128-bit Key"
 msgstr "40/128-bitowy klucz WEP"
 
-# pd
 #: ../src/connection-editor/page-wireless-security.c:271
 #: ../src/wireless-dialog.c:815
 msgid "WEP 128-bit Passphrase"
@@ -1606,13 +1566,10 @@ msgstr "WPA i WPA2 Personal"
 msgid "WPA & WPA2 Enterprise"
 msgstr "WPA i WPA2 Enterprise"
 
-# pd
-# rev: tam chodzi o jedno konkretne ustawienie wifi chyba
 #: ../src/connection-editor/page-wireless-security.c:363
 msgid "Could not load WiFi security user interface; missing WiFi setting."
-msgstr "Nie można wczytać interfejsu użytkownika WiFi; brak ustawień WiFi."
+msgstr "Nie można wczytać interfejsu użytkownika WiFi; brak ustawienia WiFi."
 
-# pd
 #: ../src/connection-editor/page-wireless-security.c:370
 #: ../src/connection-editor/page-wireless-security.c:377
 msgid "Could not load WiFi security user interface."
@@ -1640,7 +1597,6 @@ msgstr "Nie można było odnaleźć niektórych wymaganych zasobów przez edytor
 msgid "The connection editor could not find some required resources (the glade file was not found)."
 msgstr "Nie można było odnaleźć niektórych wymaganych zasobów przez edytor połączeń (plik glade nie został odnaleziony)."
 
-# pd
 #: ../src/connection-editor/nm-connection-editor.c:358
 msgid "Error creating connection editor dialog."
 msgstr "Błąd podczas tworzenia okna dialogowego edytora połączeń."
@@ -1731,46 +1687,38 @@ msgstr[0] "%d rok temu"
 msgstr[1] "%d lata temu"
 msgstr[2] "%d lat temu"
 
-# pd
 #: ../src/connection-editor/nm-connection-list.c:583
 msgid "Connection add failed"
 msgstr "Dodanie połączenia nie powiodło się"
 
-# pd
 #: ../src/connection-editor/nm-connection-list.c:594
 #: ../src/connection-editor/nm-connection-list.c:713
 msgid "An unknown error ocurred."
 msgstr "Wystąpił nieznany błąd."
 
-# pd
 #: ../src/connection-editor/nm-connection-list.c:603
 #: ../src/connection-editor/nm-connection-list.c:756
 msgid "Error initializing editor"
 msgstr "Błąd podczas inicjowania edytora"
 
-# pd
 #: ../src/connection-editor/nm-connection-list.c:619
 #: ../src/connection-editor/nm-connection-list.c:771
 #: ../src/connection-editor/nm-connection-list.c:931
 msgid "The connection editor dialog could not be initialized due to an unknown error."
 msgstr "Nie można zainicjować okna dialogowego edytora połączeń z powodu nieznanego błędu."
 
-# pd
 #: ../src/connection-editor/nm-connection-list.c:628
 msgid "Could not create new connection"
 msgstr "Nie można utworzyć nowego połączenia"
 
-# pd
 #: ../src/connection-editor/nm-connection-list.c:639
 msgid "Could not edit new connection"
 msgstr "Nie można modyfikować nowego połączenia"
 
-# pd
 #: ../src/connection-editor/nm-connection-list.c:786
 msgid "Could not edit connection"
 msgstr "Nie można zmodyfikować połączenia"
 
-# pd
 #: ../src/connection-editor/nm-connection-list.c:811
 msgid "Connection delete failed"
 msgstr "Usunięcie połączenia nie powiodło się"
@@ -1795,58 +1743,47 @@ msgstr ""
 "\n"
 "Błąd: brak typu serwisu VPN."
 
-# pd
 #: ../src/connection-editor/nm-connection-list.c:993
 msgid "Could not edit imported connection"
 msgstr "Nie można zmodyfikować zaimportowanego połączenia"
 
-# pd
 #: ../src/connection-editor/nm-connection-list.c:1129
 msgid "Name"
 msgstr "Nazwa"
 
-# pd
 #: ../src/connection-editor/nm-connection-list.c:1141
 msgid "Last Used"
 msgstr "Ostatnie użycie"
 
-# pd
 # na przycisku
 #: ../src/connection-editor/nm-connection-list.c:1244
 msgid "Edit"
 msgstr "Zmodyfikuj"
 
-# pd
 #: ../src/connection-editor/nm-connection-list.c:1245
 msgid "Edit the selected connection"
 msgstr "Modyfikowanie zaznaczonego połączenia"
 
-# pd
 #: ../src/connection-editor/nm-connection-list.c:1246
 msgid "Edit..."
 msgstr "Zmodyfikuj..."
 
-# pd
 #: ../src/connection-editor/nm-connection-list.c:1247
 msgid "Authenticate to edit the selected connection"
 msgstr "Należy się uwierzytelnić, aby modyfikować zaznaczone połączenie"
 
-# pd
 #: ../src/connection-editor/nm-connection-list.c:1261
 msgid "Delete"
 msgstr "Usuń"
 
-# pd
 #: ../src/connection-editor/nm-connection-list.c:1262
 msgid "Delete the selected connection"
 msgstr "Usunięcie zaznaczonego połączenia"
 
-# pd
 #: ../src/connection-editor/nm-connection-list.c:1263
 msgid "Delete..."
 msgstr "Usuń..."
 
-# pd
 #: ../src/connection-editor/nm-connection-list.c:1264
 msgid "Authenticate to delete the selected connection"
 msgstr "Należy się uwierzytelnić, aby usunąć zaznaczone połączenie"
@@ -1899,61 +1836,49 @@ msgstr ""
 msgid "Export VPN connection..."
 msgstr "Eksportuj połączenie VPN..."
 
-# pd
 #: ../src/gnome-bluetooth/network-manager-applet.c:197
 msgid "Access the Internet using your mobile phone"
 msgstr "Dostęp do Internetu używając telefonu komórkowego"
 
-# pd
 #: ../src/utils/mobile-wizard.c:196
 msgid "Your mobile broadband connection is configured with the following settings:"
 msgstr "Połączenie komórkowe zostało skonfigurowane za pomocą poniższych ustawień:"
 
-# pd
 #. Device
 #: ../src/utils/mobile-wizard.c:203
 msgid "Your Device:"
 msgstr "Urządzenie:"
 
-# pd
 #. Provider
 #: ../src/utils/mobile-wizard.c:214
 msgid "Your Provider:"
 msgstr "Dostawca:"
 
-# pd
 #. Plan and APN
 #: ../src/utils/mobile-wizard.c:225
 msgid "Your Plan:"
 msgstr "Plan:"
 
-# pd
-# rev: zamiast komórkowego daj usług internetowych albo internetu
 #: ../src/utils/mobile-wizard.c:246
 msgid "A connection will now be made to your mobile broadband provider using the settings you selected.  If the connection fails or you cannot access network resources, double-check your settings.  To modify your mobile broadband connection settings, choose \"Network Connections\" from the System >> Preferences menu."
-msgstr "Zostanie utworzone połączenie do dostawcy komórkowego używając wybranych ustawień. Jeśli połączenie nie powiedzie się lub nie będzie można uzyskać dostępu do zasobów sieciowych, należy powtórnie sprawdzić ustawienia. Aby je zmodyfikować, należy wybrać \"Połączenia sieciowe\" z menu System >> Preferencje."
+msgstr "Zostanie utworzone połączenie do dostawcy Internetu używając wybranych ustawień. Jeśli połączenie nie powiedzie się lub nie będzie można uzyskać dostępu do zasobów sieciowych, należy powtórnie sprawdzić ustawienia. Aby je zmodyfikować, należy wybrać \"Połączenia sieciowe\" z menu System >> Preferencje."
 
-# pd
 #: ../src/utils/mobile-wizard.c:258
 msgid "Confirm Mobile Broadband Settings"
 msgstr "Potwierdzenie ustawień połączenia komórkowego"
 
-# pd
 #: ../src/utils/mobile-wizard.c:319
 msgid "Unlisted"
 msgstr "Nie na liście"
 
-# pd
 #: ../src/utils/mobile-wizard.c:437
 msgid "_Select your plan:"
 msgstr "Pro_szę wybrać plan:"
 
-# pd
 #: ../src/utils/mobile-wizard.c:461
 msgid "Selected plan _APN (Access Point Name):"
 msgstr "Wybr_ana nazwa punktu dostępowego (APN) planu:"
 
-# pd
 #: ../src/utils/mobile-wizard.c:480
 msgid ""
 "Warning: Selecting an incorrect plan may result in billing issues for your broadband account or may prevent connectivity.\n"
@@ -1964,68 +1889,53 @@ msgstr ""
 "\n"
 "W razie wątpliwości dotyczących planu należy zapytać dostawcę o APN planu."
 
-# pd
 #: ../src/utils/mobile-wizard.c:487
 msgid "Choose your Billing Plan"
 msgstr "Proszę wybrać plan taryfowy"
 
-# pd
 #: ../src/utils/mobile-wizard.c:535
 msgid "My plan is not listed..."
 msgstr "Planu nie ma na liście..."
 
-# pd
 #: ../src/utils/mobile-wizard.c:688
 msgid "Select your provider from a _list:"
 msgstr "P_roszę wybrać dostawcę z listy:"
 
-# pd
 #: ../src/utils/mobile-wizard.c:701
 msgid "Provider"
 msgstr "Dostawca"
 
-# pd
-# rev: ufam że nie ma Za_mknij w oknie?
 #: ../src/utils/mobile-wizard.c:726
 msgid "I can't find my provider and I wish to enter it _manually:"
 msgstr "Dostawcy nie _ma na liście, proszę wprowadzić go ręcznie:"
 
-# pd
 #: ../src/utils/mobile-wizard.c:737
 msgid "Provider:"
 msgstr "Dostawca:"
 
-# pd
 #: ../src/utils/mobile-wizard.c:753
 msgid "My provider uses GSM technology (GPRS, EDGE, UMTS, HSPA)"
 msgstr "Dostawca używa technologii GSM (GPRS, EDGE, UMTS, HSPA)"
 
-# pd
 #: ../src/utils/mobile-wizard.c:755
 msgid "My provider uses CDMA technology (1xRTT, EVDO)"
 msgstr "Dostawca używa technologii CDMA (1xRTT, EVDO)"
 
-# pd
 #: ../src/utils/mobile-wizard.c:766
 msgid "Choose your Provider"
 msgstr "Wybór dostawcy"
 
-# pd
 #: ../src/utils/mobile-wizard.c:958
 msgid "Country List:"
-msgstr "Lista państw:"
+msgstr "Lista krajów:"
 
-# pd
-# rev: kraj
 #: ../src/utils/mobile-wizard.c:970
 msgid "Country"
-msgstr "Państwo"
+msgstr "Kraj"
 
-# pd
-# rev: kraju
 #: ../src/utils/mobile-wizard.c:1010
 msgid "Choose your Provider's Country"
-msgstr "Wybór państwa dostawcy"
+msgstr "Wybór kraju dostawcy"
 
 #: ../src/utils/mobile-wizard.c:1059
 msgid "Installed GSM device"
@@ -2035,52 +1945,42 @@ msgstr "Zainstalowane urządzenie GSM"
 msgid "Installed CDMA device"
 msgstr "Zainstalowane urządzenie CDMA"
 
-# pd
 #: ../src/utils/mobile-wizard.c:1230
 msgid "This assistant helps you easily set up a mobile broadband connection to a cellular (3G) network."
 msgstr "Ten asystent pomaga w łatwym ustawieniu połączenia komórkowego z siecią 3G."
 
-# pd
 #: ../src/utils/mobile-wizard.c:1235
 msgid "You will need the following information:"
 msgstr "Wymagane są następujące informacje:"
 
-# pd
 #: ../src/utils/mobile-wizard.c:1246
 msgid "Your broadband provider's name"
 msgstr "Nazwa dostawcy połączenia komórkowego"
 
-# pd
 #: ../src/utils/mobile-wizard.c:1252
 msgid "Your broadband billing plan name"
 msgstr "Nazwa planu taryfowego"
 
-# pd
 #: ../src/utils/mobile-wizard.c:1258
 msgid "(in some cases) Your broadband billing plan APN (Access Point Name)"
 msgstr "(w niektórych przypadkach) nazwa punktu dostępowego (APN) planu taryfowego"
 
-# pd
 #: ../src/utils/mobile-wizard.c:1285
 msgid "Create a connection for _this mobile broadband device:"
 msgstr "Utworzenie połączenia dla _tego urządzenia komórkowego:"
 
-# pd
 #: ../src/utils/mobile-wizard.c:1300
 msgid "Any device"
 msgstr "Dowolne urządzenie"
 
-# pd
 #: ../src/utils/mobile-wizard.c:1313
 msgid "Set up a Mobile Broadband Connection"
 msgstr "Ustawienie połączenia komórkowego"
 
-# pd
 #: ../src/utils/mobile-wizard.c:1487
 msgid "New Mobile Broadband Connection"
 msgstr "Nowe połączenie komórkowe"
 
-# pd
 #: ../src/utils/nmn-mobile-providers.c:515
 msgid "Default"
 msgstr "Domyślne"
@@ -2203,4 +2103,3 @@ msgstr "Tunelowane TLS"
 #: ../src/wireless-security/wireless-security.c:350
 msgid "Protected EAP (PEAP)"
 msgstr "Chronione EAP (PEAP)"
-
