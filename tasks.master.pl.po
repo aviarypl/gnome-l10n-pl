@@ -1,0 +1,508 @@
+# Polish translation of tasks.
+# Copyright (C) 2007-2009 Tomasz Dominikowski (Aviary.pl)
+# This file is distributed under the same license as the tasks package.
+# Tomasz Dominikowski <tdominikowski@aviary.pl>, 2007-2009.
+# -=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-
+# Aviary.pl
+# Jeśli masz jakiekolwiek uwagi odnoszące się do tłumaczenia lub chcesz
+# pomóc w jego rozwijaniu i pielęgnowaniu, napisz do nas:
+# gnomepl@aviary.pl
+# -=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-
+msgid ""
+msgstr ""
+"Project-Id-Version: tasks\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2009-09-14 13:10+0200\n"
+"PO-Revision-Date: 2009-09-14 13:30+0100\n"
+"Last-Translator: Tomasz Dominikowski <dominikowski@gmail.com>\n"
+"Language-Team: Polish <gnomepl@aviary.pl>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Poedit-Language: Polish\n"
+"X-Poedit-Country: POLAND\n"
+"Plural-Forms: nplurals=3; plural=(n==1 ? 0 : n%10>=2 && n%10<=4 && (n%100<10 || n%100>=20) ? 1 : 2);\n"
+
+#: ../data/tasks.desktop.in.h:1
+msgid "Personal task manager"
+msgstr "Menedżer prywatnych zadań"
+
+#: ../data/tasks.desktop.in.h:2
+#: ../src/gtk/main.c:462
+#: ../src/gtk/main.c:620
+#: ../src/hildon/hildon-tasks.c:437
+msgid "Tasks"
+msgstr "Zadania"
+
+#: ../data/tasks.desktop.in.h:3
+msgid "To Do list"
+msgstr "Lista zadań"
+
+#: ../libkoto/ical-util.c:62
+msgid "due today"
+msgstr "do dzisiaj"
+
+#: ../libkoto/ical-util.c:64
+msgid "due tomorrow"
+msgstr "do jutra"
+
+#: ../libkoto/ical-util.c:66
+msgid "due yesterday"
+msgstr "do wczoraj"
+
+#: ../libkoto/ical-util.c:70
+#, c-format
+msgid "due %A"
+msgstr "do %A"
+
+#. Fallback to returning the preferred date representation
+#: ../libkoto/ical-util.c:74
+#, c-format
+msgid "due %x"
+msgstr "do %x"
+
+#: ../libkoto/koto-all-group.c:28
+msgid "All"
+msgstr "Wszystkie"
+
+#: ../libkoto/koto-date-combo.c:62
+msgid "no date set"
+msgstr "data nieustalona"
+
+#: ../libkoto/koto-date-combo.c:409
+msgid "Today"
+msgstr "Dzisiaj"
+
+#: ../libkoto/koto-date-combo.c:412
+msgid "Never"
+msgstr "Nigdy"
+
+#. Translators: these strings should have every common form for weekdays
+#. including abbreviations, separated by |
+#: ../libkoto/koto-date-parser.c:80
+msgid "monday|mon"
+msgstr "poniedziałek|pon"
+
+#: ../libkoto/koto-date-parser.c:81
+msgid "tuesday|tue"
+msgstr "wtorek|wto"
+
+#: ../libkoto/koto-date-parser.c:82
+msgid "wednesday|wed"
+msgstr "środa|śro"
+
+#: ../libkoto/koto-date-parser.c:83
+msgid "thursday|thu"
+msgstr "czwartek|czw"
+
+#: ../libkoto/koto-date-parser.c:84
+msgid "friday|fri"
+msgstr "piątek|pią"
+
+#: ../libkoto/koto-date-parser.c:85
+msgid "saturday|sat"
+msgstr "sobota|sob"
+
+#: ../libkoto/koto-date-parser.c:86
+msgid "sunday|sun"
+msgstr "niedziela|nie"
+
+#. Translators: these strings should have every common form for month names
+#. including abbreviations, separated by |
+#: ../libkoto/koto-date-parser.c:101
+msgid "january|jan"
+msgstr "styczeń|sty"
+
+#: ../libkoto/koto-date-parser.c:102
+msgid "february|feb"
+msgstr "luty|lut"
+
+#: ../libkoto/koto-date-parser.c:103
+msgid "march|mar"
+msgstr "marzec|mar"
+
+#: ../libkoto/koto-date-parser.c:104
+msgid "april|apr"
+msgstr "kwiecień|kwi"
+
+#: ../libkoto/koto-date-parser.c:105
+msgid "may"
+msgstr "maj"
+
+#: ../libkoto/koto-date-parser.c:106
+msgid "june|jun"
+msgstr "czerwiec|cze"
+
+#: ../libkoto/koto-date-parser.c:107
+msgid "july|jul"
+msgstr "lipiec|lip"
+
+#: ../libkoto/koto-date-parser.c:108
+msgid "august|aug"
+msgstr "sierpień|sie"
+
+#: ../libkoto/koto-date-parser.c:109
+msgid "september|sept|sep"
+msgstr "wrzesień|wrz"
+
+#: ../libkoto/koto-date-parser.c:110
+msgid "october|oct"
+msgstr "październik|paź"
+
+#: ../libkoto/koto-date-parser.c:111
+msgid "november|nov"
+msgstr "listopad|lis"
+
+#: ../libkoto/koto-date-parser.c:112
+msgid "december|dec"
+msgstr "grudzień|gru"
+
+#.
+#. Translators: WARNING: scary strings ahead.  If you don't understand regular
+#. expressions then skip these, otherwise
+#. http://www.burtonini.com/blog/computers/tasks-2008-10-01-21-17 has some
+#. details about how this works.
+#.
+#. These strings are used to parse the user's input in the "New Task" entry to
+#. extract the meaning of what they entered, such as the due date.
+#.
+#. The important thing to preserve in the translation are the (?<name>expr)
+#. blocks, which identify a regular expression "expr" with the identifier
+#. "name".  These mark sections which will be used in the new task.  All of the
+#. strings have a block called "task", which is the actual task summary.  Other
+#. examples are "day" (day of the month), "month" (month name) and so on.
+#.
+#. Translators: "Pay bills today".  Just translate "today"
+#: ../libkoto/koto-date-parser.c:476
+msgid "^(?<task>.+) today$"
+msgstr ""
+
+#. Translators: "Pay bills tomorrow". Just translate "tomorrow"
+#: ../libkoto/koto-date-parser.c:480
+msgid "^(?<task>.+) tomorrow$"
+msgstr ""
+
+#. Translators: "Pay bills yesterday".  Just translate "yesterday"
+#: ../libkoto/koto-date-parser.c:484
+msgid "^(?<task>.+) yesterday$"
+msgstr ""
+
+#. Translators: "Pay bills next Monday".
+#: ../libkoto/koto-date-parser.c:488
+msgid "^(?<task>.+) next (?<day>\\w+)$"
+msgstr ""
+
+#. Translators: "Pay bills this tuesday".  just translate this|on|by|due to contain relevant words in
+#. your language, moving the day block is required.
+#: ../libkoto/koto-date-parser.c:493
+msgid "^(?<task>.+) (this|on|by|due) (?<day>\\w+)$"
+msgstr ""
+
+#. Translators: "Pay bills by 4/12" (day/month).  Re-arrange as required.
+#: ../libkoto/koto-date-parser.c:497
+msgid "^(?<task>.+) (?:by|due|on) (?<day>\\d{1,2})/(?<month>\\d{1,2})$"
+msgstr ""
+
+#. Translators: "Pay bills on 3rd" or "Pay bills on 12".  Not all languages
+#. have numeric suffixes so feel free to remove them.
+#: ../libkoto/koto-date-parser.c:502
+msgid "^(?<task>.+) (?:by|due|on)? (?<day>\\d{1,2})(?:st|nd|rd|th)?$"
+msgstr ""
+
+#. Translators: "Pay bills on 12th January" or "Pay bills on 23 June".
+#: ../libkoto/koto-date-parser.c:506
+msgid "^(?<task>.+) (?:by|due|on)? (?<day>\\d{1,2})(?:st|nd|rd|th)? (?<month>\\w+)$"
+msgstr ""
+
+#. Translators: "Pay bills on January 12th" or "Pay bills on 23 June".  This
+#. is for languages where there is two way of writing a day, if there is only
+#. one correct way then translate this identically to the previous one.
+#: ../libkoto/koto-date-parser.c:512
+msgid "^(?<task>.+) (?:by|due|on)? (?<month>\\w+) (?<day>\\d{1,2})(?:st|nd|rd|th)?$"
+msgstr ""
+
+#. Translators: "Pay bills on 15/4".
+#: ../libkoto/koto-date-parser.c:516
+msgid "^(?<task>.+) (?:by|due|on)? (?<digits>[\\d/-]+)$"
+msgstr ""
+
+#. Translators: "Pay bills by w43".  In English, w34 means "week 34", not all
+#. languages have this concept.
+#: ../libkoto/koto-date-parser.c:521
+msgid "^(?<task>.+) (?:by|due|on)? w(?<week>\\d{1,2})$"
+msgstr ""
+
+#. Translators: "Pay bills in 4 days".
+#: ../libkoto/koto-date-parser.c:525
+msgid "^(?<task>.+) in (?<days>\\d+) days?$"
+msgstr ""
+
+#. Translators: "Pay bills in 2 weeks".
+#: ../libkoto/koto-date-parser.c:529
+msgid "^(?<task>.+) in (?<weeks>\\d+) weeks?$"
+msgstr ""
+
+#: ../libkoto/koto-entry.c:98
+msgid "Insert"
+msgstr "Wstaw"
+
+#: ../libkoto/koto-entry.c:125
+msgid "Delete"
+msgstr "Usuń"
+
+#: ../libkoto/koto-field-editor-factory.c:417
+msgid "New Category"
+msgstr "Nowa kategoria"
+
+#: ../libkoto/koto-field-editor-factory.c:428
+msgid "Enter the name of the new category:"
+msgstr "Proszę wprowadzić nazwę nowej kategorii:"
+
+#: ../libkoto/koto-meta-group.c:46
+msgid "None"
+msgstr "Brak"
+
+#: ../libkoto/koto-meta-group.c:48
+msgid "New Group..."
+msgstr "Nowa grupa..."
+
+#: ../libkoto/koto-no-category-group.c:32
+msgid "No Category"
+msgstr "Bez kategorii"
+
+#: ../libkoto/koto-priority-combo.c:71
+msgid "Low"
+msgstr "Niski"
+
+#: ../libkoto/koto-priority-combo.c:73
+msgid "Normal"
+msgstr "Normalny"
+
+#: ../libkoto/koto-priority-combo.c:75
+msgid "High"
+msgstr "Wysoki"
+
+#: ../libkoto/koto-task-editor.c:55
+msgid "_Summary:"
+msgstr "Pod_sumowanie:"
+
+#: ../libkoto/koto-task-editor.c:56
+msgid "Ca_tegory:"
+msgstr "_Kategoria:"
+
+#: ../libkoto/koto-task-editor.c:57
+msgid "_Priority:"
+msgstr "_Priorytet"
+
+#: ../libkoto/koto-task-editor.c:58
+msgid "D_ue Date:"
+msgstr "_Termin:"
+
+#: ../libkoto/koto-task-editor.c:59
+msgid "_Web Address:"
+msgstr "_Adres URL:"
+
+#: ../libkoto/koto-task-editor.c:60
+msgid "D_escription:"
+msgstr "_Opis:"
+
+#: ../libkoto/koto-task-editor-dialog.c:70
+#: ../src/hildon/hildon-tasks.c:326
+#: ../src/omoko/openmoko-tasks.c:217
+#, c-format
+msgid "Are you sure you want to delete \"%s\"?"
+msgstr "Na pewno usunąć \"%s\"?"
+
+#: ../libkoto/koto-task-editor-dialog.c:73
+#: ../src/hildon/hildon-tasks.c:329
+msgid "If you delete an item, it is permanently lost."
+msgstr "Jeśli element zostanie usunięty, zostanie ostatecznie utracony."
+
+#: ../libkoto/koto-task-editor-dialog.c:83
+#: ../src/gtk/main.c:382
+#, c-format
+msgid "Delete Task %s"
+msgstr "Usuń zadanie %s"
+
+#: ../libkoto/koto-task-editor-dialog.c:101
+#, c-format
+msgid "Edit Task %s"
+msgstr "Modyfikuj zadanie %s"
+
+#: ../libkoto/koto-task-editor-dialog.c:282
+msgid "Det_ails"
+msgstr "_Szczegóły"
+
+#: ../libkoto/koto-task-editor-dialog.c:341
+msgid "<b>_Notes</b>"
+msgstr "<b>_Notatki</b>"
+
+#: ../libkoto/koto-task-editor-dialog.c:343
+msgid "_Notes"
+msgstr "_Notatki"
+
+#: ../libkoto/koto-task-editor-dialog.c:347
+#, c-format
+msgid "%s - Tasks"
+msgstr "%s - Zadania"
+
+#: ../libkoto/koto-task-view.c:78
+#: ../src/gtk/main.c:361
+msgid "Complete Task"
+msgstr "Zakończ zadanie"
+
+#: ../libkoto/koto-task-view.c:477
+msgid "Done"
+msgstr "Wykonane"
+
+#: ../libkoto/koto-task-view.c:484
+msgid "Summary"
+msgstr "Podsumowanie"
+
+#: ../libkoto/koto-undo-action.c:60
+#, c-format
+msgid "Undo %s"
+msgstr "Cofnij czynność: %s"
+
+#: ../libkoto/koto-undo-action.c:72
+msgid "Undo"
+msgstr "Cofnij"
+
+#: ../libkoto/koto-undo-action.c:84
+#, c-format
+msgid "Redo %s"
+msgstr "Ponów czynność: %s"
+
+#: ../libkoto/koto-undo-action.c:96
+msgid "Redo"
+msgstr "Ponów"
+
+#: ../libkoto/koto-undo-manager.c:355
+msgid "Original Sample"
+msgstr "Pierwotny wzór"
+
+#: ../src/gtk/main.c:205
+#, c-format
+msgid "Add task %s"
+msgstr "Dodaj zadanie %s"
+
+#: ../src/gtk/main.c:424
+msgid "Remove Completed"
+msgstr "Usuwanie ukończone"
+
+#: ../src/gtk/main.c:447
+#: ../src/hildon/hildon-tasks.c:422
+msgid ""
+"Tasks is free software; you can redistribute it and/or modify it under the terms of the GNU General Public License as published by the Free Software Foundation; either version 2 of the License, or (at your option) any later version.\n"
+"\n"
+"Tasks is distributed in the hope that it will be useful, but WITHOUT ANY WARRANTY; without even the implied warranty of MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the GNU General Public License for more details.\n"
+"\n"
+"You should have received a copy of the GNU General Public License along with Tasks; if not, write to the Free Software Foundation, Inc., 51 Franklin St, Fifth Floor, Boston, MA 0110-1301, USA"
+msgstr ""
+"Tasks is free software; you can redistribute it and/or modify it under the terms of the GNU General Public License as published by the Free Software Foundation; either version 2 of the License, or (at your option) any later version.\n"
+"\n"
+"Tasks is distributed in the hope that it will be useful, but WITHOUT ANY WARRANTY; without even the implied warranty of MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the GNU General Public License for more details.\n"
+"\n"
+"You should have received a copy of the GNU General Public License along with Tasks; if not, write to the Free Software Foundation, Inc., 51 Franklin St, Fifth Floor, Boston, MA 0110-1301, USA"
+
+#: ../src/gtk/main.c:468
+#: ../src/hildon/hildon-tasks.c:443
+msgid "translator-credits"
+msgstr ""
+"Aviary.pl <gnomepl@aviary.pl>, 2009\n"
+"Tomasz Dominikowski <tdominikowski@aviary.pl>, 2007, 2008, 2009"
+
+#: ../src/gtk/main.c:472
+#: ../src/hildon/hildon-tasks.c:447
+msgid "The Pimlico Project"
+msgstr "Projekt Pimlico"
+
+#. Action name, stock ID, label, accelerator, tooltip, callback
+#: ../src/gtk/main.c:479
+msgid "_Task"
+msgstr "_Zadanie"
+
+#: ../src/gtk/main.c:481
+#: ../src/hildon/hildon-tasks.c:461
+msgid "_Remove Completed"
+msgstr "U_suń ukończone"
+
+#: ../src/gtk/main.c:484
+msgid "_Edit"
+msgstr "_Edycja"
+
+#: ../src/gtk/main.c:486
+msgid "_Help"
+msgstr "Pomo_c"
+
+#: ../src/gtk/main.c:492
+msgid "Edit..."
+msgstr "Zmodyfikuj..."
+
+#. TODO: turn this action into a toggle action
+#: ../src/gtk/main.c:498
+#: ../src/hildon/hildon-tasks.c:459
+msgid "_Mark Complete"
+msgstr "_Zaznacz jako ukończone"
+
+#: ../src/gtk/main.c:621
+msgid " - a to do list"
+msgstr "- lista zadań"
+
+#: ../src/gtk/main.c:739
+#: ../src/hildon/hildon-tasks.c:558
+msgid "_Category:"
+msgstr "_Kategoria:"
+
+#: ../src/gtk/main.c:764
+#: ../src/hildon/hildon-tasks.c:578
+msgid "New task..."
+msgstr "Nowe zadanie..."
+
+#: ../src/gtk/main.c:788
+#: ../src/hildon/hildon-tasks.c:602
+#, c-format
+msgid "Tasks (%d)"
+msgstr "Zadania (%d)"
+
+#: ../src/hildon/hildon-tasks.c:388
+msgid "Are you sure you want to delete all completed tasks?"
+msgstr "Na pewno usunąć wszystkie ukończone zadanie?"
+
+#: ../src/hildon/hildon-tasks.c:390
+msgid "Deleting completed tasks means they are permanently lost."
+msgstr "Usunięcie ukończonych zadań spowoduje ich bezpowrotną utratę."
+
+#. Action name, stock ID, label, accelerator, tooltip, callback
+#. dummy
+#: ../src/hildon/hildon-tasks.c:456
+msgid "New Task"
+msgstr "Nowe zadanie"
+
+#: ../src/hildon/hildon-tasks.c:457
+msgid "Edit Task..."
+msgstr "Modyfikuj zadanie..."
+
+#: ../src/hildon/hildon-tasks.c:460
+msgid "Delete Task"
+msgstr "Usuń zadanie"
+
+#: ../src/hildon/hildon-tasks.c:462
+msgid "Quit"
+msgstr "Zakończ"
+
+#: ../src/hildon/hildon-tasks.c:463
+msgid "About"
+msgstr "O programie"
+
+#: ../src/omoko/openmoko-tasks.c:186
+msgid "New task"
+msgstr "Nowe zadanie"
+
+#~ msgid "%s (due %s)"
+#~ msgstr "%s (termin %s)"
+#~ msgid "Uncategorised"
+#~ msgstr "Bez kategorii"
+#~ msgid "_Add"
+#~ msgstr "Dod_aj"
+
