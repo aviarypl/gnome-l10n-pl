@@ -14,8 +14,8 @@ msgstr ""
 "Project-Id-Version: transmageddon\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2009-09-16 19:43+0200\n"
-"PO-Revision-Date: 2009-09-16 20:28+0100\n"
-"Last-Translator: Tomasz Dominikowski <dominikowski@gmail.com>\n"
+"PO-Revision-Date: 2009-09-17 18:10+0200\n"
+"Last-Translator: Łukasz Jernaś <deejay1@srem.org>\n"
 "Language-Team: Polish <gnomepl@aviary.pl>\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -28,11 +28,10 @@ msgstr ""
 msgid "Not a valid integer or fraction: %(value)s!"
 msgstr "Błędna wartość całkowita lub zmiennoprzecinkowa: %(value)s!"
 
-# rev: preset tłumaczymy po prostu jako ustawienie
 #: ../src/presets.py:410
 #, python-format
 msgid "Loaded device %(device)s (%(presets)d presets)"
-msgstr "Wczytano urządzenie %(device)s (%(presets)d profili)"
+msgstr "Wczytano urządzenie %(device)s (%(presets)d ustawień)"
 
 #: ../src/presets.py:477
 #, python-format
@@ -49,77 +48,64 @@ msgstr "Zapisywanie do pliku %(file)s"
 msgid "There was an error fetching and installing %(location)s: %(error)s"
 msgstr "Wystąpił błąd podczas pobierania i instalacji %(location)s: %(error)s"
 
-# rev: ustawień
 #: ../src/presets.py:506
 msgid "Checking for device preset updates..."
-msgstr "Wyszukiwanie aktualizacji profili urządzeń..."
+msgstr "Wyszukiwanie aktualizacji ustawień urządzeń..."
 
-# rev: Ustawienia
 #: ../src/presets.py:526
 #, python-format
 msgid "Device preset %(name)s is up to date"
-msgstr "Profil urządzenia %(name)s są aktualne"
+msgstr "Ustawienia urządzenia %(name)s są aktualne"
 
-# rev: zaktualizowane ustawienie
 #: ../src/presets.py:530
 #, python-format
 msgid "Found updated device preset %(name)s"
-msgstr "Znaleziono zaktualizowany profil dla urządzenia %(name)s"
+msgstr "Znaleziono zaktualizowane ustawienia dla urządzenia %(name)s"
 
-# rev: ustawienia
 #: ../src/presets.py:536
 #: ../src/presets.py:549
 #, python-format
 msgid "Error installing preset %(name)s from %(location)s: %(error)s"
-msgstr "Błąd instalacji profilu %(name)s z położenia %(location)s: %(error)s"
+msgstr "Błąd instalacji ustawienia %(name)s z położenia %(location)s: %(error)s"
 
-# rev: nowe ustawienie
 #: ../src/presets.py:543
 #, python-format
 msgid "Found new device preset %(name)s"
-msgstr "Znaleziono nowy profil urządzenia %(name)s"
+msgstr "Znaleziono nowe ustawienie urządzenia %(name)s"
 
-# rev: Nieprawidłowy wiersz dotyczący wersji wtyczki
-# oryginalny ciąg jest niejasny
 #: ../src/presets.py:556
 #, python-format
 msgid "Malformed plugin version line %(line)s"
-msgstr "Błędna linia informacyjna wtyczki %(line)s"
+msgstr "Nieprawidłowy wiersz dotyczący wersji wtyczki %(line)s"
 
-# rev: nie krzyczymy na użytkownika. 
 #: ../src/presets.py:560
 #, python-format
 msgid "There was a problem accessing %(location)spresets.txt!"
-msgstr "Wystąpił błąd dostępu do %(location)spresets.txt!"
+msgstr "Wystąpił błąd dostępu do %(location)spresets.txt."
 
-# rev: nie krzyczymy na użytkownika. 
 #: ../src/presets.py:582
 msgid "All device presets are up to date!"
-msgstr "Wszystkie profile urządzeń są aktualne!"
+msgstr "Wszystkie profile urządzeń są aktualne."
 
-# rev: Wybór
 #: ../src/transmageddon.glade.h:1
 msgid "<b>Choose Audio Codec</b>:"
-msgstr "<b>Wybierz kodek dźwięku</b>"
+msgstr "<b>Wybór kodeka dźwięku</b>:"
 
-# rev: Wybór
 #: ../src/transmageddon.glade.h:2
 msgid "<b>Choose Input File:</b>"
-msgstr "<b>Wybierz plik źródłowy</b>"
+msgstr "<b>Wybór pliku źródłowego:</b>"
 
-# rev: Wybór kodeka wideo
 #: ../src/transmageddon.glade.h:3
 msgid "<b>Choose Video Codec</b>:"
-msgstr "<b>Wybierz kodek obrazu</b>"
+msgstr "<b>Wybór kodeka wideo</b>:"
 
 #: ../src/transmageddon.glade.h:4
 msgid "<b>Output Format:</b>"
 msgstr "<b>Format wyjściowy:</b>"
 
-# rev: UstawieniA
 #: ../src/transmageddon.glade.h:5
 msgid "<b>Presets:</b>"
-msgstr "<b>Profil:</b>"
+msgstr "<b>Ustawienia:</b>"
 
 #: ../src/transmageddon.glade.h:6
 msgid "<small>Audio Channels:</small>"
@@ -129,25 +115,21 @@ msgstr "<small>Kanały dźwięku:</small>"
 msgid "<small>Audio codec:</small>"
 msgstr "<small>Kodek dźwięku:</small>"
 
-# rev: Obrócenie obrazu, jeśli to konieczne
 #: ../src/transmageddon.glade.h:8
 msgid "<small>Rotate the video image if needed</small>"
-msgstr "<small>Obróć obraz jeśli jest to wymagane</small>"
+msgstr "<small>Obrócenie obrazu, jeśli to konieczne</small>"
 
-# rev: wideo
 #: ../src/transmageddon.glade.h:9
 msgid "<small>Video codec:</small>"
-msgstr "<small>Kodek obrazu:</small>"
+msgstr "<small>Kodek wideo:</small>"
 
-# rev: nagrania wideo
 #: ../src/transmageddon.glade.h:10
 msgid "<small>Video height&#47;width:</small>"
-msgstr "<small>Wysokość&#47;szerokość obrazu:</small>"
+msgstr "<small>Wysokość&#47;szerokość nagrania wideo:</small>"
 
-# rev: skrót zajęty przez Pomo_c
 #: ../src/transmageddon.glade.h:11
 msgid "AA_C"
-msgstr "AA_C"
+msgstr "_AAC"
 
 #: ../src/transmageddon.glade.h:12
 msgid "AC_3"
@@ -195,12 +177,11 @@ msgstr "V_orbis"
 
 #: ../src/transmageddon.glade.h:23
 msgid "W_indowsMediaAudio 2"
-msgstr "W_indowsMediaAudio 2"
+msgstr "WindowsM_ediaAudio 2"
 
-# rev: skrót zajęty przez _Dirac
 #: ../src/transmageddon.glade.h:24
 msgid "_Audio passthrough"
-msgstr "_Dźwięk bez zmian"
+msgstr "Dź_więk bez zmian"
 
 #: ../src/transmageddon.glade.h:25
 msgid "_Dirac"
@@ -222,24 +203,21 @@ msgstr "Pomo_c"
 msgid "_Speex"
 msgstr "_Speex"
 
-# rev: a to z kolei jest na przycisku prawda? "Przekoduj", ale zwróć uwagę na skróty
 #: ../src/transmageddon.glade.h:30
 msgid "_Transcode"
-msgstr "_Transkodowanie"
+msgstr "Prze_koduj"
 
-# rev: skrót już zajęty przez V_orbis
 #: ../src/transmageddon.glade.h:31
 msgid "_Video passthrough"
-msgstr "_Obraz bez zmian"
+msgstr "Wideo bez _zmian"
 
 #: ../src/transmageddon.glade.h:32
 msgid "_View"
 msgstr "_Widok"
 
-# rev: skrót zajęty przez _Widok
 #: ../src/transmageddon.glade.h:33
 msgid "_WindowsMediaVideo2"
-msgstr "_WindowsMediaVideo2"
+msgstr "WindowsMedia_Video2"
 
 #: ../src/transmageddon.glade.h:34
 msgid "_mp3"
@@ -249,14 +227,13 @@ msgstr "_mp3"
 msgid "_xvid"
 msgstr "_xvid"
 
-# rev: postęp przekodowywania
 #: ../src/transmageddon.py:225
 #: ../src/transmageddon.py:489
 #: ../src/transmageddon.py:606
 #: ../src/transmageddon.py:626
 #: ../src/transmageddon.py:634
 msgid "Transcoding Progress"
-msgstr "Postęp transkodowania"
+msgstr "Postęp przekodowywania"
 
 #. Populate the rotatation box
 #: ../src/transmageddon.py:243
@@ -310,15 +287,13 @@ msgstr "Przebieg "
 msgid "File saved to "
 msgstr "Plik zapisany jako "
 
-# rev: Ukończono przekodowywanie
 #: ../src/transmageddon.py:387
 msgid "Done Transcoding"
-msgstr "Zakończono transkodowanie"
+msgstr "Ukończono przekodowywanie"
 
-# rev: to jest polecenie, czy może pojawia się na pasku stanu jako informacja? Wtedy uruchamianie następnego przebiegu
 #: ../src/transmageddon.py:395
 msgid "Start next pass"
-msgstr "Uruchom następny przebieg"
+msgstr "Uruchomianie następnego przebiegu"
 
 #: ../src/transmageddon.py:534
 msgid "Plugins not found, choose different codecs."
@@ -328,32 +303,26 @@ msgstr "Nie znaleziono wtyczek, proszę wybrać inne kodeki."
 msgid "Codec installation aborted."
 msgstr "Przerwano instalację kodeków."
 
-# rev: brakującej
 #: ../src/transmageddon.py:550
 msgid "Missing plugin installation failed: "
-msgstr "Instalacja wtyczki zakończona niepowodzeniem: "
+msgstr "Instalacja brakującej wtyczki zakończona niepowodzeniem: "
 
 #: ../src/transmageddon.py:604
 msgid "Writing "
 msgstr "Zapisywanie "
 
-# rev: położeniu
-# nie krzyczymy na użytkownika
 #: ../src/utils.py:73
 #, python-format
 msgid "Can't find %(path)s in any known prefix!"
-msgstr "Nie można znaleźć %(path)s w żadnej znanej lokalizacji!"
+msgstr "Nie można znaleźć %(path)s w żadnym znanym położeniu."
 
-# rev: "Przekodowywanie nagrań wideo Transmageddon".
-# W sprawie przekodowywania możesz pytać Wadim, ja byłem za konwertowaniem ;)
 #: ../transmageddon.desktop.in.in.h:1
 msgid "Transmageddon Video Transcoder"
-msgstr "Transkoder obrazu wideo Transmageddon"
+msgstr "Przekodowywanie nagrań wideo Transmageddon"
 
-# rev: konwertowania nagrań wideo
 #: ../transmageddon.desktop.in.in.h:2
 msgid "Video format conversion tool"
-msgstr "Narzędzie do transkodowania obrazu wideo"
+msgstr "Narzędzie do przekodowywania nagrań wideo"
 
 #~ msgid "Celt"
 #~ msgstr "Celt"
