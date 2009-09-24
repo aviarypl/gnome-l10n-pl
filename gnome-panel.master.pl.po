@@ -7,9 +7,9 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: gnome-panel\n"
-"Report-Msgid-Bugs-To: http://bugzilla.gnome.org/enter_bug.cgi?product=gnome-panel&component=general\n"
-"POT-Creation-Date: 2009-08-12 11:04+0000\n"
-"PO-Revision-Date: 2009-08-25 12:03+0100\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2009-09-25 00:44+0200\n"
+"PO-Revision-Date: 2009-09-25 00:50+0100\n"
 "Last-Translator: Tomasz Dominikowski <dominikowski@gmail.com>\n"
 "Language-Team: Polish <gnomepl@aviary.pl>\n"
 "MIME-Version: 1.0\n"
@@ -52,9 +52,9 @@ msgstr "_O programie"
 #: ../gnome-panel/panel-action-button.c:710
 #: ../gnome-panel/panel-context-menu.c:285
 #: ../gnome-panel/panel-menu-bar.c:345
-#: ../gnome-panel/panel-menu-button.c:663
+#: ../gnome-panel/panel-menu-button.c:664
 msgid "_Help"
-msgstr "Po_moc"
+msgstr "Pomo_c"
 
 #: ../applets/clock/GNOME_ClockApplet.xml.h:6
 #: ../applets/fish/GNOME_FishApplet.xml.h:3
@@ -64,7 +64,7 @@ msgid "_Preferences"
 msgstr "P_referencje"
 
 #: ../applets/clock/GNOME_ClockApplet_Factory.server.in.in.h:1
-#: ../applets/clock/clock.c:3689
+#: ../applets/clock/clock.c:3733
 msgid "Clock"
 msgstr "Zegar"
 
@@ -80,80 +80,99 @@ msgstr "Generator tworzący aplety zegara."
 msgid "Get the current time and date"
 msgstr "Wyświetla bieżącą datę i czas"
 
-#: ../applets/clock/calendar-window.c:305
-#: ../applets/clock/clock.c:448
+#. Translators: This is a strftime format string.
+#. * It is used to display the time in 12-hours format
+#. * (eg, like in the US: 8:10 am). The %p expands to
+#. * am/pm.
+#: ../applets/clock/calendar-window.c:309
+#: ../applets/clock/clock.c:451
 msgid "%l:%M %p"
 msgstr "%H:%M"
 
-#. translators: This is a strftime format string that is used for formatting
-#. * the time that is displayed for locations in the popup. This string is used
-#. * for 24-hour format.
-#. * There should be little need to translate this string.
-#.
-#: ../applets/clock/calendar-window.c:307
-#: ../applets/clock/clock.c:450
-#: ../applets/clock/clock.c:1574
-#: ../applets/clock/clock-location-tile.c:480
+#. Translators: This is a strftime format string.
+#. * It is used to display the time in 24-hours format
+#. * (eg, like in France: 20:10).
+#. Translators: This is a strftime format
+#. * string.
+#. * It is used to display the time in 24-hours
+#. * format (eg, like in France: 20:10).
+#. Translators: This is a strftime format string.
+#. * It is used to display the time in 24-hours format
+#. * (eg, like in France: 20:10).
+#: ../applets/clock/calendar-window.c:314
+#: ../applets/clock/clock.c:456
+#: ../applets/clock/clock.c:1616
+#: ../applets/clock/clock-location-tile.c:476
 msgid "%H:%M"
 msgstr "%H:%M"
 
-#. Translators: If the event did not start on the current day
-#. * we will display the start date in the most abbreviated way
-#. * possible.
-#: ../applets/clock/calendar-window.c:313
+#. Translators: This is a strftime format string.
+#. * It is used to display the start date of an appointment, in
+#. * the most abbreviated way possible.
+#: ../applets/clock/calendar-window.c:320
 msgid "%b %d"
 msgstr "%d %b"
 
-#: ../applets/clock/calendar-window.c:846
+#: ../applets/clock/calendar-window.c:853
 msgid "Tasks"
 msgstr "Zadania"
 
-#: ../applets/clock/calendar-window.c:846
-#: ../applets/clock/calendar-window.c:1022
-#: ../applets/clock/calendar-window.c:1658
+#: ../applets/clock/calendar-window.c:853
+#: ../applets/clock/calendar-window.c:1029
+#: ../applets/clock/calendar-window.c:1665
 msgid "Edit"
 msgstr "Zmodyfikuj"
 
-#: ../applets/clock/calendar-window.c:967
+#: ../applets/clock/calendar-window.c:974
 msgid "All Day"
 msgstr "Cały dzień"
 
-#: ../applets/clock/calendar-window.c:1106
+#: ../applets/clock/calendar-window.c:1113
 msgid "Appointments"
 msgstr "Spotkania"
 
-#: ../applets/clock/calendar-window.c:1131
+#: ../applets/clock/calendar-window.c:1138
 msgid "Birthdays and Anniversaries"
 msgstr "Urodziny i rocznice"
 
-#: ../applets/clock/calendar-window.c:1156
+#: ../applets/clock/calendar-window.c:1163
 msgid "Weather Information"
 msgstr "Informacje pogodowe"
 
-#: ../applets/clock/calendar-window.c:1658
+#: ../applets/clock/calendar-window.c:1665
 #: ../applets/clock/clock.ui.h:12
 msgid "Locations"
 msgstr "Położenia"
 
-#: ../applets/clock/calendar-window.c:1957
+#: ../applets/clock/calendar-window.c:1964
 msgid "Calendar"
 msgstr "Kalendarz"
 
-#: ../applets/clock/clock.c:448
+#. Translators: This is a strftime format string.
+#. * It is used to display the time in 12-hours format (eg, like
+#. * in the US: 8:10 am). The %p expands to am/pm.
+#: ../applets/clock/clock.c:451
 msgid "%l:%M:%S %p"
 msgstr "%H:%M:%S"
 
-#: ../applets/clock/clock.c:450
-#: ../applets/clock/clock.c:1572
+#. Translators: This is a strftime format string.
+#. * It is used to display the time in 24-hours format (eg, like
+#. * in France: 20:10).
+#. Translators: This is a strftime format
+#. * string.
+#. * It is used to display the time in 24-hours
+#. * format (eg, like in France: 20:10).
+#: ../applets/clock/clock.c:456
+#: ../applets/clock/clock.c:1610
 msgid "%H:%M:%S"
 msgstr "%H:%M:%S"
 
-#. translators: replace %e with %d if, when the day of the
-#. *              month as a decimal number is a single digit, it
-#. *              should begin with a 0 in your locale (e.g. "May
-#. *              01" instead of "May  1").
-#.
-#: ../applets/clock/clock.c:470
+#. Translators: This is a strftime format string.
+#. * It is used to display the date. Replace %e with %d if, when
+#. * the day of the month as a decimal number is a single digit,
+#. * it should begin with a 0 in your locale (e.g. "May 01"
+#. * instead of "May  1").
+#: ../applets/clock/clock.c:476
 msgid "%a %b %e"
 msgstr "%a %e %b"
 
@@ -161,7 +180,7 @@ msgstr "%a %e %b"
 #. *              if the time should come before the
 #. *              date on a clock in your locale.
 #.
-#: ../applets/clock/clock.c:477
+#: ../applets/clock/clock.c:483
 #, c-format
 msgid ""
 "%1$s\n"
@@ -174,104 +193,120 @@ msgstr ""
 #. *              if the time should come before the
 #. *              date on a clock in your locale.
 #.
-#: ../applets/clock/clock.c:485
+#: ../applets/clock/clock.c:491
 #, c-format
 msgid "%1$s, %2$s"
 msgstr "%1$s, %2$s"
 
-#. Show date in tooltip.  Translators: please leave the "%%s" as it is; we
-#. * use it to put in the timezone name later.
-#.
-#: ../applets/clock/clock.c:667
+#. Show date in tooltip.
+#. Translators: This is a strftime format string.
+#. * It is used to display a date. Please leave "%%s" as it is:
+#. * it will be used to insert the timezone name later.
+#: ../applets/clock/clock.c:674
 msgid "%A %B %d (%%s)"
 msgstr "%A, %d %B %Y (%%s)"
 
-#: ../applets/clock/clock.c:697
+#: ../applets/clock/clock.c:704
 msgid "Click to hide your appointments and tasks"
 msgstr "Kliknięcie ukryje terminy i zadania"
 
-#: ../applets/clock/clock.c:700
+#: ../applets/clock/clock.c:707
 msgid "Click to view your appointments and tasks"
 msgstr "Kliknięcie wyświetli terminy i zadania"
 
-#: ../applets/clock/clock.c:704
+#: ../applets/clock/clock.c:711
 msgid "Click to hide month calendar"
 msgstr "Kliknięcie ukryje miesięczny kalendarz"
 
-#: ../applets/clock/clock.c:707
+#: ../applets/clock/clock.c:714
 msgid "Click to view month calendar"
 msgstr "Kliknięcie wyświetli miesięczny kalendarz"
 
-#: ../applets/clock/clock.c:1427
+#: ../applets/clock/clock.c:1449
 msgid "Computer Clock"
 msgstr "Zegar komputerowy"
 
-#: ../applets/clock/clock.c:1567
+#. Translators: This is a strftime format
+#. * string.
+#. * It is used to display the time in 12-hours
+#. * format with a leading 0 if needed (eg, like
+#. * in the US: 08:10 am). The %p expands to
+#. * am/pm.
+#: ../applets/clock/clock.c:1595
 msgid "%I:%M:%S %p"
 msgstr "%H:%M:%S"
 
-#: ../applets/clock/clock.c:1569
+#. Translators: This is a strftime format
+#. * string.
+#. * It is used to display the time in 12-hours
+#. * format with a leading 0 if needed (eg, like
+#. * in the US: 08:10 am). The %p expands to
+#. * am/pm.
+#: ../applets/clock/clock.c:1603
 msgid "%I:%M %p"
 msgstr "%H:%M"
 
-#: ../applets/clock/clock.c:1611
+#. Translators: This is a strftime format string.
+#. * It is used to display a date in the full format (so that people can
+#. * copy and paste it elsewhere).
+#: ../applets/clock/clock.c:1656
 msgid "%A, %B %d %Y"
 msgstr "%A, %d %B %Y"
 
-#: ../applets/clock/clock.c:1642
+#: ../applets/clock/clock.c:1687
 msgid "Set System Time..."
 msgstr "Ustaw czas systemowy..."
 
-#: ../applets/clock/clock.c:1643
+#: ../applets/clock/clock.c:1688
 msgid "Set System Time"
 msgstr "Ustaw czas systemowy"
 
-#: ../applets/clock/clock.c:1658
+#: ../applets/clock/clock.c:1703
 msgid "Failed to set the system time"
 msgstr "Ustawienie czasu systemowego nieudane"
 
-#: ../applets/clock/clock.c:2722
+#: ../applets/clock/clock.c:2766
 msgid "Custom format"
 msgstr "Własny format"
 
-#: ../applets/clock/clock.c:3180
+#: ../applets/clock/clock.c:3224
 msgid "Choose Location"
 msgstr "Wybierz położenie"
 
-#: ../applets/clock/clock.c:3255
+#: ../applets/clock/clock.c:3299
 msgid "Edit Location"
 msgstr "Zmodyfikuj położenie"
 
-#: ../applets/clock/clock.c:3401
+#: ../applets/clock/clock.c:3445
 msgid "City Name"
 msgstr "Nazwa miasta"
 
-#: ../applets/clock/clock.c:3405
+#: ../applets/clock/clock.c:3449
 msgid "City Time Zone"
 msgstr "Strefa czasowa miasta"
 
-#: ../applets/clock/clock.c:3585
+#: ../applets/clock/clock.c:3629
 msgid "24 hour"
 msgstr "24-godzinny"
 
-#: ../applets/clock/clock.c:3586
+#: ../applets/clock/clock.c:3630
 msgid "UNIX time"
 msgstr "Czas uniksowy"
 
-#: ../applets/clock/clock.c:3587
+#: ../applets/clock/clock.c:3631
 msgid "Internet time"
 msgstr "Czas internetowy"
 
-#: ../applets/clock/clock.c:3595
+#: ../applets/clock/clock.c:3639
 msgid "Custom _format:"
 msgstr "Własny _format:"
 
-#: ../applets/clock/clock.c:3692
+#: ../applets/clock/clock.c:3736
 msgid "The Clock displays the current time and date"
 msgstr "Aplet zegara wyświetlający bieżącą datę i czas"
 
 #. Translator credits
-#: ../applets/clock/clock.c:3695
+#: ../applets/clock/clock.c:3739
 #: ../applets/fish/fish.c:623
 #: ../applets/notification_area/main.c:155
 #: ../applets/wncklet/showdesktop.c:531
@@ -597,52 +632,51 @@ msgstr "<small>Ustaw</small>"
 msgid "Set location as current location and use its timezone for this computer"
 msgstr "Ustawienie położenia jako bieżącago i użycie jego strefy czasowej dla tego komputera"
 
-#. translators: This is a strftime format string that is used for formatting
-#. * the time that is displayed for locations in the popup. This string is used
-#. * for 12-hour format (the %p expands to am/pm), when the local weekday differs
-#. * from the weekday at the location (the %A expands to the weekday).
-#. * There should be little need to translate this string.
-#.
+#. Translators: This is a strftime format string.
+#. * It is used to display the time in 12-hours format
+#. * (eg, like in the US: 8:10 am), when the local
+#. * weekday differs from the weekday at the location
+#. * (the %A expands to the weekday). The %p expands to
+#. * am/pm.
 #: ../applets/clock/clock-location-tile.c:453
 msgid "%l:%M <small>%p (%A)</small>"
 msgstr "%l:%M <small>%p (%A)</small>"
 
-#. translators: This is a strftime format string that is used for formatting
-#. * the time that is displayed for locations in the popup. This string is used
-#. * for 24-hour format (the %p expands to am/pm), when the local weekday differs
-#. * from the weekday at the location (the %A expands to the weekday).
-#. * There should be little need to translate this string.
-#.
-#: ../applets/clock/clock-location-tile.c:462
+#. Translators: This is a strftime format string.
+#. * It is used to display the time in 24-hours format
+#. * (eg, like in France: 20:10), when the local
+#. * weekday differs from the weekday at the location
+#. * (the %A expands to the weekday).
+#: ../applets/clock/clock-location-tile.c:461
 msgid "%H:%M <small>(%A)</small>"
 msgstr "%H:%M <small>(%A)</small>"
 
-#. translators: This is a strftime format string that is used for formatting
-#. * the time that is displayed for locations in the popup. This string is used
-#. * for 12-hour format (the %p expands to am/pm).
-#. * There should be little need to translate this string.
-#.
-#: ../applets/clock/clock-location-tile.c:472
+#. Translators: This is a strftime format string.
+#. * It is used to display the time in 12-hours format
+#. * (eg, like in the US: 8:10 am). The %p expands to
+#. * am/pm.
+#: ../applets/clock/clock-location-tile.c:470
 msgid "%l:%M <small>%p</small>"
 msgstr "%l:%M <small>%p</small>"
 
-#: ../applets/clock/clock-location-tile.c:581
+#: ../applets/clock/clock-location-tile.c:577
 #, c-format
 msgid "%s, %s"
 msgstr "%s - %s"
 
 #. FMQ: it's broken to read from another module's translations; add some API to libgweather.
-#: ../applets/clock/clock-location-tile.c:593
-#: ../applets/clock/clock-location-tile.c:601
+#: ../applets/clock/clock-location-tile.c:589
+#: ../applets/clock/clock-location-tile.c:598
 msgid "Unknown"
 msgstr "Nieznany"
 
-#: ../applets/clock/clock-location-tile.c:594
+#. Translators: The two strings are temperatures.
+#: ../applets/clock/clock-location-tile.c:591
 #, c-format
 msgid "%s, feels like %s"
 msgstr "%s, odczuwalna %s"
 
-#: ../applets/clock/clock-location-tile.c:612
+#: ../applets/clock/clock-location-tile.c:609
 #, c-format
 msgid "Sunrise: %s / Sunset: %s"
 msgstr "Wschód słońca: %s / Zachód słońca: %s"
@@ -1228,7 +1262,7 @@ msgstr "Nie można odnaleźć wolnego miejsca"
 
 #: ../gnome-panel/drawer.c:350
 #: ../gnome-panel/panel-addto.c:175
-#: ../gnome-panel/panel-toplevel.c:1617
+#: ../gnome-panel/panel-toplevel.c:1627
 msgid "Drawer"
 msgstr "Szuflada"
 
@@ -1312,9 +1346,9 @@ msgid "Key %s is not set, cannot load launcher\n"
 msgstr "Klucz %s nie jest ustawiony, nie można wczytać aktywatora\n"
 
 #: ../gnome-panel/launcher.c:964
-#: ../gnome-panel/panel-ditem-editor.c:1350
-#: ../gnome-panel/panel-ditem-editor.c:1384
-#: ../gnome-panel/panel-ditem-editor.c:1415
+#: ../gnome-panel/panel-ditem-editor.c:1407
+#: ../gnome-panel/panel-ditem-editor.c:1441
+#: ../gnome-panel/panel-ditem-editor.c:1472
 msgid "Could not save launcher"
 msgstr "Nie można zapisać aktywatora"
 
@@ -1479,7 +1513,7 @@ msgid "Copy a launcher from the applications menu"
 msgstr "Kopiuje aktywator z menu programu"
 
 #: ../gnome-panel/panel-addto.c:142
-#: ../gnome-panel/panel-menu-button.c:1081
+#: ../gnome-panel/panel-menu-button.c:1082
 msgid "Main Menu"
 msgstr "Menu główne"
 
@@ -1517,26 +1551,26 @@ msgstr "(puste)"
 msgid "query returned exception %s\n"
 msgstr "zapytanie zwróciło wyjątek %s\n"
 
-#: ../gnome-panel/panel-addto.c:1069
+#: ../gnome-panel/panel-addto.c:1071
 #, c-format
 msgid "Find an _item to add to \"%s\":"
 msgstr "_Wyszukiwany element do dodania do \"%s\":"
 
-#: ../gnome-panel/panel-addto.c:1073
+#: ../gnome-panel/panel-addto.c:1075
 #, c-format
 msgid "Add to Drawer"
 msgstr "Dodawanie do szuflady"
 
-#: ../gnome-panel/panel-addto.c:1075
+#: ../gnome-panel/panel-addto.c:1077
 msgid "Find an _item to add to the drawer:"
 msgstr "_Wyszukiwany element do dodania do szuflady:"
 
-#: ../gnome-panel/panel-addto.c:1077
+#: ../gnome-panel/panel-addto.c:1079
 #, c-format
 msgid "Add to Panel"
 msgstr "Dodawanie do panelu"
 
-#: ../gnome-panel/panel-addto.c:1079
+#: ../gnome-panel/panel-addto.c:1081
 msgid "Find an _item to add to the panel:"
 msgstr "_Wyszukiwany element do dodania do panelu:"
 
@@ -1617,82 +1651,82 @@ msgstr "_Nowy panel"
 
 #: ../gnome-panel/panel-context-menu.c:293
 msgid "A_bout Panels"
-msgstr "_Informacje o panelach"
+msgstr "_O panelach"
 
-#: ../gnome-panel/panel-ditem-editor.c:116
+#: ../gnome-panel/panel-ditem-editor.c:117
 msgid "Application"
 msgstr "Program"
 
-#: ../gnome-panel/panel-ditem-editor.c:118
+#: ../gnome-panel/panel-ditem-editor.c:119
 msgid "Application in Terminal"
 msgstr "Program w terminalu"
 
-#: ../gnome-panel/panel-ditem-editor.c:120
+#: ../gnome-panel/panel-ditem-editor.c:121
 msgid "Location"
 msgstr "Położenie"
 
 #. Type
-#: ../gnome-panel/panel-ditem-editor.c:622
+#: ../gnome-panel/panel-ditem-editor.c:625
 msgid "_Type:"
 msgstr "_Typ:"
 
 #. Name
-#: ../gnome-panel/panel-ditem-editor.c:629
+#: ../gnome-panel/panel-ditem-editor.c:632
 msgid "_Name:"
 msgstr "_Nazwa:"
 
-#: ../gnome-panel/panel-ditem-editor.c:637
+#: ../gnome-panel/panel-ditem-editor.c:640
 #: ../gnome-panel/panel-properties-dialog.c:286
 msgid "Browse icons"
 msgstr "Przeglądanie ikon"
 
-#: ../gnome-panel/panel-ditem-editor.c:655
+#: ../gnome-panel/panel-ditem-editor.c:658
 msgid "_Browse..."
-msgstr "_Przeglądaj..."
+msgstr "P_rzeglądaj..."
 
 #. Comment
-#: ../gnome-panel/panel-ditem-editor.c:662
+#: ../gnome-panel/panel-ditem-editor.c:665
 msgid "Co_mment:"
-msgstr "Ko_mentarz:"
+msgstr "_Komentarz:"
 
-#: ../gnome-panel/panel-ditem-editor.c:1024
+#: ../gnome-panel/panel-ditem-editor.c:1036
 msgid "Choose an application..."
 msgstr "Wybór programu..."
 
-#: ../gnome-panel/panel-ditem-editor.c:1028
+#: ../gnome-panel/panel-ditem-editor.c:1040
 msgid "Choose a file..."
 msgstr "Wybór pliku..."
 
-#: ../gnome-panel/panel-ditem-editor.c:1153
-#: ../gnome-panel/panel-ditem-editor.c:1162
+#: ../gnome-panel/panel-ditem-editor.c:1208
+#: ../gnome-panel/panel-ditem-editor.c:1217
 msgid "Comm_and:"
-msgstr "_Polecenie:"
+msgstr "P_olecenie:"
 
-#: ../gnome-panel/panel-ditem-editor.c:1171
+#: ../gnome-panel/panel-ditem-editor.c:1226
 msgid "_Location:"
 msgstr "_Położenie:"
 
-#: ../gnome-panel/panel-ditem-editor.c:1351
+#: ../gnome-panel/panel-ditem-editor.c:1408
 msgid "The name of the launcher is not set."
 msgstr "Nie określono nazwy aktywatora."
 
-#: ../gnome-panel/panel-ditem-editor.c:1355
+#: ../gnome-panel/panel-ditem-editor.c:1412
 msgid "Could not save directory properties"
 msgstr "Nie można zapisać właściwości katalogu"
 
-#: ../gnome-panel/panel-ditem-editor.c:1356
+#: ../gnome-panel/panel-ditem-editor.c:1413
 msgid "The name of the directory is not set."
 msgstr "Nie określono nazwy katalogu."
 
-#: ../gnome-panel/panel-ditem-editor.c:1372
+#: ../gnome-panel/panel-ditem-editor.c:1429
 msgid "The command of the launcher is not set."
 msgstr "Nie określono polecenia aktywatora."
 
-#: ../gnome-panel/panel-ditem-editor.c:1375
+#: ../gnome-panel/panel-ditem-editor.c:1432
 msgid "The location of the launcher is not set."
 msgstr "Nie określono położenia aktywatora."
 
-#: ../gnome-panel/panel-ditem-editor.c:1452
+#: ../gnome-panel/panel-ditem-editor.c:1509
 msgid "Could not display help document"
 msgstr "Nie można wyświetlić dokumentu pomocy"
 
@@ -1858,7 +1892,7 @@ msgid "Applications"
 msgstr "Programy"
 
 #: ../gnome-panel/panel-menu-bar.c:353
-#: ../gnome-panel/panel-menu-button.c:668
+#: ../gnome-panel/panel-menu-button.c:669
 msgid "_Edit Menus"
 msgstr "_Modyfikuj menu"
 
@@ -2119,7 +2153,7 @@ msgid "Drawer Properties"
 msgstr "Właściwości szuflady"
 
 #: ../gnome-panel/panel-properties-dialog.c:1067
-#: ../gnome-panel/panel-run-dialog.c:2018
+#: ../gnome-panel/panel-run-dialog.c:2019
 #, c-format
 msgid "Unable to load file '%s': %s."
 msgstr "Nie można wczytać pliku \"%s\": %s."
@@ -2282,26 +2316,26 @@ msgstr "Nie można uruchomić polecenia \"%s\""
 msgid "Could not convert '%s' from UTF-8"
 msgstr "Nie można zmienić \"%s\" z UTF-8"
 
-#: ../gnome-panel/panel-run-dialog.c:1255
+#: ../gnome-panel/panel-run-dialog.c:1256
 msgid "Choose a file to append to the command..."
 msgstr "Wybór pliku dołączanego do polecenia..."
 
-#: ../gnome-panel/panel-run-dialog.c:1633
+#: ../gnome-panel/panel-run-dialog.c:1634
 #: ../gnome-panel/panel-run-dialog.ui.h:8
 msgid "Select an application to view its description."
 msgstr "Należy wybrać program, żeby zobaczyć jego opis."
 
-#: ../gnome-panel/panel-run-dialog.c:1671
+#: ../gnome-panel/panel-run-dialog.c:1672
 #, c-format
 msgid "Will run command: '%s'"
 msgstr "Zostanie wykonane polecenie: \"%s\""
 
-#: ../gnome-panel/panel-run-dialog.c:1704
+#: ../gnome-panel/panel-run-dialog.c:1705
 #, c-format
 msgid "URI list dropped on run dialog had wrong format (%d) or length (%d)\n"
 msgstr "Lista adresów URI upuszczona na oknie uruchamiania ma nieprawidłowy format (%d) lub długość (%d)\n"
 
-#: ../gnome-panel/panel-run-dialog.c:2023
+#: ../gnome-panel/panel-run-dialog.c:2024
 msgid "Could not display run dialog"
 msgstr "Nie można wyświetlić okna uruchamiania"
 
@@ -2362,73 +2396,73 @@ msgstr "_Wyczyść"
 msgid "D_on't Delete"
 msgstr "_Nie usuwaj"
 
-#: ../gnome-panel/panel-toplevel.c:1178
+#: ../gnome-panel/panel-toplevel.c:1188
 msgid "Hide Panel"
 msgstr "Ukrywa panel"
 
 #. translators: these string will be shown in MetaCity's switch window
 #. * popup when you pass the focus to a panel
-#: ../gnome-panel/panel-toplevel.c:1588
+#: ../gnome-panel/panel-toplevel.c:1598
 msgid "Top Expanded Edge Panel"
 msgstr "Górny rozwijany panel krawędziowy GNOME"
 
-#: ../gnome-panel/panel-toplevel.c:1589
+#: ../gnome-panel/panel-toplevel.c:1599
 msgid "Top Centered Panel"
 msgstr "Górny panel wyśrodkowany"
 
-#: ../gnome-panel/panel-toplevel.c:1590
+#: ../gnome-panel/panel-toplevel.c:1600
 msgid "Top Floating Panel"
 msgstr "Górny panel oderwany"
 
-#: ../gnome-panel/panel-toplevel.c:1591
+#: ../gnome-panel/panel-toplevel.c:1601
 msgid "Top Edge Panel"
 msgstr "Górny panel krawędziowy"
 
-#: ../gnome-panel/panel-toplevel.c:1595
+#: ../gnome-panel/panel-toplevel.c:1605
 msgid "Bottom Expanded Edge Panel"
 msgstr "Dolny rozwijany panel krawędziowy"
 
-#: ../gnome-panel/panel-toplevel.c:1596
+#: ../gnome-panel/panel-toplevel.c:1606
 msgid "Bottom Centered Panel"
 msgstr "Dolny panel wyśrodkowany"
 
-#: ../gnome-panel/panel-toplevel.c:1597
+#: ../gnome-panel/panel-toplevel.c:1607
 msgid "Bottom Floating Panel"
 msgstr "Dolny panel oderwany"
 
-#: ../gnome-panel/panel-toplevel.c:1598
+#: ../gnome-panel/panel-toplevel.c:1608
 msgid "Bottom Edge Panel"
 msgstr "Dolny panel krawędziowy"
 
-#: ../gnome-panel/panel-toplevel.c:1602
+#: ../gnome-panel/panel-toplevel.c:1612
 msgid "Left Expanded Edge Panel"
 msgstr "Dolny rozwijany panel krawędziowy"
 
-#: ../gnome-panel/panel-toplevel.c:1603
+#: ../gnome-panel/panel-toplevel.c:1613
 msgid "Left Centered Panel"
 msgstr "Lewy panel wyśrodkowany"
 
-#: ../gnome-panel/panel-toplevel.c:1604
+#: ../gnome-panel/panel-toplevel.c:1614
 msgid "Left Floating Panel"
 msgstr "Lewy panel oderwany"
 
-#: ../gnome-panel/panel-toplevel.c:1605
+#: ../gnome-panel/panel-toplevel.c:1615
 msgid "Left Edge Panel"
 msgstr "Lewy panel krawędziowy"
 
-#: ../gnome-panel/panel-toplevel.c:1609
+#: ../gnome-panel/panel-toplevel.c:1619
 msgid "Right Expanded Edge Panel"
 msgstr "Prawy rozwijany panel krawędziowy"
 
-#: ../gnome-panel/panel-toplevel.c:1610
+#: ../gnome-panel/panel-toplevel.c:1620
 msgid "Right Centered Panel"
 msgstr "Prawy panel wyśrodkowany"
 
-#: ../gnome-panel/panel-toplevel.c:1611
+#: ../gnome-panel/panel-toplevel.c:1621
 msgid "Right Floating Panel"
 msgstr "Prawy panel oderwany"
 
-#: ../gnome-panel/panel-toplevel.c:1612
+#: ../gnome-panel/panel-toplevel.c:1622
 msgid "Right Edge Panel"
 msgstr "Prawy panel krawędziowy"
 
