@@ -13,8 +13,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: bug-buddy.HEAD\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2009-10-06 19:10+0200\n"
-"PO-Revision-Date: 2009-10-06 19:14+0200\n"
+"POT-Creation-Date: 2009-10-08 13:59+0200\n"
+"PO-Revision-Date: 2009-10-08 14:08+0200\n"
 "Last-Translator: Łukasz Jernaś <deejay1@srem.org>\n"
 "Language-Team: Polish <gnomepl@aviary.pl>\n"
 "MIME-Version: 1.0\n"
@@ -112,7 +112,7 @@ msgstr ""
 "natychmiastowego przesłania go do Bugzilla."
 
 #: ../data/bug-buddy.schemas.in.h:6
-msgid "GTK+ module for crash collecting support."
+msgid "GTK+ module for crash collection support."
 msgstr "Moduł GTK+ do obsługi zbierania raportów o awariach programów."
 
 #: ../data/bug-buddy.schemas.in.h:7
@@ -121,14 +121,15 @@ msgstr "Imię i nazwisko użytkownika zgłaszającego błąd."
 
 #: ../data/bug-buddy.schemas.in.h:8
 msgid ""
-"This key determines the GTK+ module to load for crash collecting support."
+"This key determines the GTK+ module to load for crash collection support."
 msgstr ""
-"Ten klucz określa moduł GTK+ do wczytania do zbierania raportów o awariach "
+"Ten klucz określa moduł GTK+ jaki należy wczytać w celu zbierania raportów o "
+"awariach "
 "programów."
 
 #: ../src/bug-buddy.c:82
-msgid "GNOME bug-buddy"
-msgstr "GNOME bug-buddy"
+msgid "GNOME Bug Buddy"
+msgstr "GNOME Bug Buddy"
 
 #: ../src/bug-buddy.c:90
 msgid "Package containing the program"
@@ -175,13 +176,14 @@ msgstr "Skopiuj _adres odnośnika"
 msgid "Bug Buddy was unable to view the link \"%s\"\n"
 msgstr "Program Bug Buddy nie mógł wyświetlić odnośnika \"%s\"\n"
 
+# LJ poprawki
 #: ../src/bug-buddy.c:461
 msgid ""
-"There has been a network error while sending the report. Do you want to save "
-"this report and send it later?"
+"There was a network error while sending the report. Do you want to save this "
+"report and send it later?"
 msgstr ""
-"Wystąpił błąd sieciowy podczas wysyłania raportu. Zapisać ten raport i "
-"wysłać go później?"
+"Wystąpił błąd sieciowy podczas wysyłania raportu. Zapisać ten raport, aby "
+"można było wysłać go później?"
 
 #: ../src/bug-buddy.c:464
 msgid ""
@@ -217,8 +219,8 @@ msgstr ""
 
 #: ../src/bug-buddy.c:606
 msgid ""
-"Bug Buddy has encountered an error while submitting your report to the "
-"Bugzilla server.  Details of the error are included below.\n"
+"Bug Buddy encountered an error while submitting your report to the Bugzilla "
+"server.  Details of the error are included below.\n"
 "\n"
 msgstr ""
 "Program Bug Buddy napotkał na błąd podczas wysyłania raportu do serwera "
@@ -307,21 +309,19 @@ msgstr ""
 "\n"
 "%s"
 
-#: ../src/bug-buddy.c:644
-#, c-format
+#: ../src/bug-buddy.c:644, c-format
 msgid ""
-"Failed to parse the xml-rpc response.  Response follows:\n"
+"Failed to parse the XML-RPC response.  Response follows:\n"
 "\n"
 "%s"
 msgstr ""
-"Przetworzenie odpowiedzi xml-rpc nie powiodło się. Treść odpowiedzi:\n"
+"Przetworzenie odpowiedzi XML-RPC nie powiodło się. Treść odpowiedzi:\n"
 "\n"
 "%s"
 
-#: ../src/bug-buddy.c:648
-#, c-format
+#: ../src/bug-buddy.c:648, c-format
 msgid ""
-"An unknown error occurred.  This is most likely a problem with bug-buddy. "
+"An unknown error occurred.  This is most likely a problem with Bug Buddy. "
 "Please report this problem manually at bugzilla.gnome.org\n"
 "\n"
 msgstr ""
@@ -340,7 +340,7 @@ msgid "There was an error creating the bug report\n"
 msgstr "Podczas tworzenia raportu błędu wystąpił błąd\n"
 
 #: ../src/bug-buddy.c:866
-msgid "Sending..."
+msgid "Sending…"
 msgstr "Wysyłanie..."
 
 #: ../src/bug-buddy.c:1026
@@ -447,20 +447,19 @@ msgstr "-raport_błędu.txt"
 msgid "_Save Bug Report"
 msgstr "_Zapisz raport"
 
-#: ../src/bug-buddy.c:1411
-#, c-format
+#: ../src/bug-buddy.c:1411, c-format
 msgid ""
 "The application %s has crashed.\n"
 "Information about the crash has been successfully collected.\n"
 "\n"
-"This application is not known to bug-buddy, therefore the bug report cannot "
+"This application is not known to Bug Buddy, therefore the bug report cannot "
 "be sent to the GNOME Bugzilla.  Please save the bug to a text file and "
 "report it to the appropriate bug tracker for this application."
 msgstr ""
 "Nastąpiła awaria programu %s.\n"
 "Informacje o awarii zostały prawidłowo zebrane.\n"
 "\n"
-"Program, który uległa awarii nie jest znany programowi bug-buddy, dlatego "
+"Program, który uległa awarii nie jest znany programowi Bug Buddy, dlatego "
 "zgłoszenie błędu nie może zostać wysłane do GNOME. Proszę zapisać raport "
 "błędu do pliku tekstowego i zgłosić go w odpowiednim dla danej aplikacji "
 "systemie śledzenia błędów."
@@ -491,7 +490,7 @@ msgstr ""
 "Należy upewnić się, że Bug Buddy został poprawnie zainstalowany."
 
 #: ../src/bug-buddy.c:1961
-msgid "Collecting information from your system..."
+msgid "Collecting information from your system…"
 msgstr "Zbieranie informacji o systemie..."
 
 #: ../src/bug-buddy.c:1964
@@ -503,7 +502,7 @@ msgid "Either --pid , --include or --minidump arguments are required.\n"
 msgstr "Wymagany jest jeden z parametrów: --pid, --include lub --minidump.\n"
 
 #: ../src/bug-buddy.c:1976
-msgid "The --unlink-tempfile option needs a --include argument.\n"
+msgid "The --unlink-tempfile option needs an --include argument.\n"
 msgstr "Opcja --unlink-tempfile wymaga parametru --include.\n"
 
 #: ../src/bug-buddy.c:1983
@@ -525,7 +524,7 @@ msgstr ""
 "te zostaną wysłane je do programistów w celu usunięcia problemu."
 
 #: ../src/bug-buddy.c:2022
-msgid "Collecting information from the crash..."
+msgid "Collecting information from the crash…"
 msgstr "Zbieranie informacji o awarii..."
 
 #: ../src/bug-buddy.c:2039
@@ -543,14 +542,13 @@ msgid ""
 "Bug Buddy doesn't know how to send a suggestion for the application %s.\n"
 msgstr "Nie wiadomo jak wysłać sugestie dla programu %s.\n"
 
-#: ../src/bug-buddy.c:2089
-#, c-format
+#: ../src/bug-buddy.c:2089, c-format
 msgid ""
-"Thank you for helping us improving our software.\n"
-"Please fill your suggestions/error information for %s application.\n"
+"Thank you for helping us to improve our software.\n"
+"Please fill in your suggestions/error information for %s application.\n"
 "\n"
-"A valid email address is required.  This will allow developers to contact "
-"you for more information if necessary."
+"A valid email address is required. This will allow developers to contact you "
+"for more information if necessary."
 msgstr ""
 "Dziękujemy za pomoc w udoskonalaniu naszego oprogramowania.\n"
 "Należy wypełnić propozycje/informacje o błędach dla programu %s.\n"
@@ -567,10 +565,9 @@ msgstr "Propozycja / opis błędu:"
 msgid "HTTP Response returned bad status code %d"
 msgstr "Odpowiedź HTTP zwróciła nieprawidłowy kod stanu %d"
 
-#: ../src/bugzilla.c:429
-#, c-format
+#: ../src/bugzilla.c:429, c-format
 msgid ""
-"Unable to parse XML-RPC Response\n"
+"Unable to parse XML-RPC response\n"
 "\n"
 "%s"
 msgstr ""
@@ -597,9 +594,10 @@ msgstr "Nie można utworzyć wiadomości XML-RPC."
 msgid "gdb has already exited"
 msgstr "gdb został już zakończony"
 
+# LJ zmieniono "..." na ";"
 #: ../src/gdb-buddy.c:91
-msgid "Error on read... aborting"
-msgstr "Błąd przy odczycie... przerywanie"
+msgid "Error on read; aborting."
+msgstr "Błąd przy odczycie; przerywanie."
 
 #: ../src/gdb-buddy.c:259
 #, c-format
