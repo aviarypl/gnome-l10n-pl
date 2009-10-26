@@ -1,14 +1,20 @@
 # Polish translation for emerillon.
 # Copyright (C) 2009 emerillon's COPYRIGHT HOLDER
 # This file is distributed under the same license as the emerillon package.
+# -=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-
+# Aviary.pl
+# Jeśli masz jakiekolwiek uwagi odnoszące się do tłumaczenia lub chcesz
+# pomóc w jego rozwijaniu i pielęgnowaniu, napisz do nas:
+# gnomepl@aviary.pl
+# -=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-
 #
 # Łukasz Jernaś <deejay1@srem.org>, 2009.
 msgid ""
 msgstr ""
 "Project-Id-Version: emerillon master\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2009-10-11 12:16+0200\n"
-"PO-Revision-Date: 2009-10-11 13:05+0200\n"
+"POT-Creation-Date: 2009-10-26 18:37+0100\n"
+"PO-Revision-Date: 2009-10-26 18:38+0100\n"
 "Last-Translator: Łukasz Jernaś <deejay1@srem.org>\n"
 "Language-Team: Polish <gnomepl@aviary.pl>\n"
 "MIME-Version: 1.0\n"
@@ -17,6 +23,34 @@ msgstr ""
 "Plural-Forms: nplurals=3; plural=(n==1 ? 0 : n%10>=2 && n%10<=4 && (n%100<10 "
 "|| n%100>=20) ? 1 : 2);\n"
 "X-Generator: Lokalize 1.0\n"
+
+#: ../data/emerillon.schemas.in.h:1
+msgid "Active plugins"
+msgstr "Aktywne wtyczki"
+
+#: ../data/emerillon.schemas.in.h:2
+msgid "List of active plugins."
+msgstr "Lista aktywnych wtyczek"
+
+#: ../data/emerillon.schemas.in.h:3
+msgid "Show/hide the window side pane."
+msgstr "Wyświetla/ukrywa boczny panel."
+
+#: ../data/emerillon.schemas.in.h:4
+msgid "Show/hide the window statusbar."
+msgstr "Wyświetla/ukrywa pasek stanu."
+
+#: ../data/emerillon.schemas.in.h:5
+msgid "Show/hide the window toolbar."
+msgstr "Wyświetla/ukrywa pasek narzędziowy."
+
+#: ../data/emerillon.desktop.in.in.h:1
+msgid "Browse maps"
+msgstr "Przeglądaj mapy"
+
+#: ../data/emerillon.desktop.in.in.h:2
+msgid "Map Viewer"
+msgstr "Przeglądarka map"
 
 #: ../emerillon/main.c:59
 msgid "Emerillon Map Viewer"
@@ -29,8 +63,8 @@ msgid ""
 "Software Foundation; either version 2 of the License, or (at your option) "
 "any later version.\n"
 msgstr ""
-"Niniejszy program jest wolnym oprogramowaniem; można go rozprowadzać dalej "
-"i/lub modyfikować na warunkach Powszechnej Licencji Publicznej GNU, wydanej "
+"Niniejszy program jest wolnym oprogramowaniem; można go rozprowadzać dalej i/"
+"lub modyfikować na warunkach Powszechnej Licencji Publicznej GNU, wydanej "
 "przez Fundację Wolnego Oprogramowania - według wersji drugiej tej Licencji "
 "lub którejś z późniejszych wersji.\n"
 
@@ -44,8 +78,8 @@ msgstr ""
 "Niniejszy program rozpowszechniany jest z nadzieją, iż będzie on użyteczny - "
 "jednak BEZ JAKIEJKOLWIEK GWARANCJI, nawet domyślnej gwarancji PRZYDATNOŚCI "
 "HANDLOWEJ albo PRZYDATNOŚCI DO OKREŚLONYCH ZASTOSOWAŃ. W celu uzyskania "
-"bliższych informacji należy zapoznać się z Powszechną Licencją Publiczną GNU."
-"\n"
+"bliższych informacji należy zapoznać się z Powszechną Licencją Publiczną "
+"GNU.\n"
 
 #: ../emerillon/window.c:371
 msgid ""
@@ -66,7 +100,7 @@ msgstr ""
 
 #: ../emerillon/window.c:383
 msgid "Emerillon"
-msgstr "xxxEmerillonxxx"
+msgstr "Emerillon"
 
 #: ../emerillon/window.c:387
 msgid "A map viewer for the GNOME desktop"
@@ -146,7 +180,7 @@ msgstr "Wyświetla lub ukrywa panel boczny w bieżącym oknie"
 
 #: ../emerillon/window.c:625
 msgid "_Street"
-msgstr "_Ulice"
+msgstr "_Drogowa"
 
 #: ../emerillon/window.c:626
 msgid "View the street map based on OpenStreetMap"
@@ -178,11 +212,11 @@ msgstr "Wyświetla mapę terenu na podstawie reliefu projektu mapsforfree.com"
 
 #: ../emerillon/window.c:667
 msgid "In"
-msgstr ""
+msgstr "Powiększ"
 
 #: ../emerillon/window.c:671
 msgid "Out"
-msgstr ""
+msgstr "Pomniejsz"
 
 #: ../emerillon/preferences.c:118
 msgid "Plugins"
@@ -192,50 +226,66 @@ msgstr "Wtyczki"
 msgid "Emerillon Preferences"
 msgstr "Preferencje programu Emerillon"
 
-#: ../plugins/placemarks/placemarks.c:112
-msgid "Go to this placemark"
-msgstr ""
+#: ../plugins/copy-link/copy-link.emerillon-plugin.in.h:1
+msgid "Copy link to Web"
+msgstr "Skopiuj odnośnik do strony internetowej"
 
-#: ../plugins/placemarks/placemarks.c:495
-msgid "_Placemarks"
+# LJ: erm, not completely sure about it...
+#: ../plugins/copy-link/copy-link.emerillon-plugin.in.h:2
+msgid "Provides a link for current view to major online maps"
 msgstr ""
+"Dostarcza odnośnik pozwalający wyświetlić obecne położenie w większych "
+"mapach online."
 
-#: ../plugins/placemarks/placemarks.c:499
-msgid "Placemark this location"
-msgstr ""
+#: ../plugins/copy-link/copy-link.c:110
+msgid "Copy to clipboard the link to this web service"
+msgstr "Kopiuje do schowka odnośnik do serwisu internetowego"
 
-#: ../plugins/placemarks/placemarks.c:501
-msgid "Add current location to your placemarks"
-msgstr ""
+#: ../plugins/copy-link/copy-link.c:157
+msgid "OpenStreetMap"
+msgstr "OpenStreetMap"
 
-#: ../plugins/placemarks/placemarks.c:505
-msgid "Organize placemarks..."
-msgstr ""
+#: ../plugins/copy-link/copy-link.c:158
+msgid "Yahoo! Maps"
+msgstr "Yahoo! Maps"
 
-#: ../plugins/placemarks/placemarks.c:507
-msgid "Edit and delete existing placemarks"
-msgstr ""
+#: ../plugins/copy-link/copy-link.c:159
+msgid "Google Maps"
+msgstr "Mapy Google"
+
+#: ../plugins/copy-link/copy-link.c:175
+msgid "_Copy link to"
+msgstr "S_kopiuj odnośnik do"
+
+#: ../plugins/map-position/map-position.emerillon-plugin.in.h:1
+msgid "Display in the statusbar the coordinates at the center of the map"
+msgstr "Wyświetla w pasku stanu współrzędne środka mapy"
+
+#: ../plugins/map-position/map-position.emerillon-plugin.in.h:2
+msgid "Map Position"
+msgstr "Pozycja na mapie"
 
 #: ../plugins/placemarks/add-dialog.c:117
 msgid "New Placemark"
-msgstr ""
+msgstr "Nowy znacznik"
 
 #: ../plugins/placemarks/add-dialog.c:130
 msgid "Name:"
 msgstr "Nazwa:"
 
+# LJ: myślę, że lepiej krótszą wersję niż pytać "czy aby na pewno?"
 #: ../plugins/placemarks/manage-dialog.c:167
 #, c-format
 msgid ""
 "You are about to remove the %s placemark!\n"
 "Are you sure you want to proceed?"
-msgstr ""
+msgstr "Czy na pewno usunąć znacznik %s?"
 
 #: ../plugins/placemarks/manage-dialog.c:201
 msgid "Organize Placemarks"
-msgstr ""
+msgstr "Zarządzanie znacznikami"
 
-#: ../plugins/placemarks/manage-dialog.c:233 ../plugins/search/search.c:473
+#: ../plugins/placemarks/manage-dialog.c:233 ../plugins/search/search.c:506
 msgid "Name"
 msgstr "Nazwa"
 
@@ -251,87 +301,55 @@ msgstr "Wysokość geograficzna"
 msgid "Zoom"
 msgstr "Powiększenie"
 
-#: ../plugins/copy-link/copy-link.emerillon-plugin.in.h:1
-msgid "Copy link to Web"
-msgstr ""
+#: ../plugins/placemarks/placemarks.c:112
+msgid "Go to this placemark"
+msgstr "Przejdź do tego znacznika"
 
-#: ../plugins/copy-link/copy-link.emerillon-plugin.in.h:2
-msgid "Provides a link for current view to major online maps"
-msgstr ""
+#: ../plugins/placemarks/placemarks.c:495
+msgid "_Placemarks"
+msgstr "_Znaczniki"
 
-#: ../plugins/copy-link/copy-link.c:105
-msgid "Copy to clipboard the link to this web service"
-msgstr ""
+#: ../plugins/placemarks/placemarks.c:499
+msgid "Placemark this location"
+msgstr "Utwórz znacznik na tej pozycji"
 
-#: ../plugins/copy-link/copy-link.c:152
-msgid "OpenStreetMap"
-msgstr "OpenStreetMap"
+#: ../plugins/placemarks/placemarks.c:501
+msgid "Add current location to your placemarks"
+msgstr "Dodaje obecne położenie do znaczników"
 
-#: ../plugins/copy-link/copy-link.c:153
-msgid "Yahoo! Maps"
-msgstr "Yahoo! Maps"
+#: ../plugins/placemarks/placemarks.c:505
+msgid "Organize placemarks..."
+msgstr "Zarządzaj znacznikami"
 
-#: ../plugins/copy-link/copy-link.c:154
-msgid "Google Maps"
-msgstr "Mapy Google"
-
-#: ../plugins/copy-link/copy-link.c:170
-msgid "_Copy link to"
-msgstr ""
+#: ../plugins/placemarks/placemarks.c:507
+msgid "Edit and delete existing placemarks"
+msgstr "Pozwala na edycję i usuwanie istniejących znaczników"
 
 #: ../plugins/placemarks/placemarks.emerillon-plugin.in.h:1
 msgid "Placemarks"
-msgstr ""
+msgstr "Znaczniki"
 
 #: ../plugins/placemarks/placemarks.emerillon-plugin.in.h:2
 msgid "Remembers your favorite view points"
-msgstr ""
+msgstr "Zapamiętuje ulubione punkty widokowe"
 
 #: ../plugins/search/search.c:109 ../plugins/search/search.c:110
 msgid "No result found"
 msgstr "Nie znaleziono wyników"
 
-#: ../plugins/search/search.c:464
+#: ../plugins/search/search.c:497
 msgid "No"
-msgstr ""
+msgstr "Nie"
 
-#: ../plugins/search/search.c:483
+#: ../plugins/search/search.c:516
 msgid "Search results"
 msgstr "Wyniki wyszukiwania"
 
 #: ../plugins/search/search.emerillon-plugin.in.h:1
 msgid "Allows searching GeoNames database"
-msgstr ""
+msgstr "Pozwala na przeszukiwanie bazy danych GeoNames"
 
 #: ../plugins/search/search.emerillon-plugin.in.h:2
 msgid "Search"
 msgstr "Wyszukiwanie"
-
-#: ../data/emerillon.schemas.in.h:1
-msgid "Active plugins"
-msgstr "Aktywne wtyczki"
-
-#: ../data/emerillon.schemas.in.h:2
-msgid "List of active plugins."
-msgstr "Lista aktywnych wtyczek"
-
-#: ../data/emerillon.schemas.in.h:3
-msgid "Show/hide the window side pane."
-msgstr "Wyświetla/ukrywa boczny panel."
-
-#: ../data/emerillon.schemas.in.h:4
-msgid "Show/hide the window statusbar."
-msgstr "Wyświetla/ukrywa pasek stanu."
-
-#: ../data/emerillon.schemas.in.h:5
-msgid "Show/hide the window toolbar."
-msgstr "Wyświetla/ukrywa pasek narzędziowy."
-
-#: ../data/emerillon.desktop.in.in.h:1
-msgid "Browse maps"
-msgstr "Przeglądaj mapy"
-
-#: ../data/emerillon.desktop.in.in.h:2
-msgid "Map Viewer"
-msgstr "Przeglądarka map"
 
