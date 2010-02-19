@@ -7,17 +7,15 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: devhelp\n"
-"Report-Msgid-Bugs-To: http://bugzilla.gnome.org/enter_bug.cgi?"
-"product=devhelp&component=general\n"
+"Report-Msgid-Bugs-To: http://bugzilla.gnome.org/enter_bug.cgi?product=devhelp&component=general\n"
 "POT-Creation-Date: 2009-12-14 15:53+0000\n"
-"PO-Revision-Date: 2010-02-18 20:37+0100\n"
-"Last-Translator: Piotr Drąg <piotrdrag@gmail.com>\n"
+"PO-Revision-Date: 2010-02-19 11:34+0100\n"
+"Last-Translator: Tomasz Dominikowski <dominikowski@gmail.com>\n"
 "Language-Team: Polish <gnomepl@aviary.pl>\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"Plural-Forms: nplurals=3; plural=(n==1 ? 0 : n%10>=2 && n%10<=4 && (n%100<10 "
-"|| n%100>=20) ? 1 : 2);\n"
+"Plural-Forms: nplurals=3; plural=(n==1 ? 0 : n%10>=2 && n%10<=4 && (n%100<10 || n%100>=20) ? 1 : 2);\n"
 "X-Poedit-Language: Polish\n"
 "X-Poedit-Country: Poland\n"
 
@@ -27,8 +25,11 @@ msgstr "Program pomocy dla programistów"
 
 #. i18n: Please don't translate "Devhelp" (it's marked as translatable
 #. * for transliteration only)
-#: ../data/devhelp.desktop.in.in.h:2 ../src/dh-main.c:235
-#: ../src/dh-window.c:736 ../src/dh-window.c:1043 ../src/dh-window.c:1849
+#: ../data/devhelp.desktop.in.in.h:2
+#: ../src/dh-main.c:235
+#: ../src/dh-window.c:736
+#: ../src/dh-window.c:1043
+#: ../src/dh-window.c:1849
 msgid "Devhelp"
 msgstr "Devhelp"
 
@@ -46,8 +47,7 @@ msgstr "Czcionka tekstu"
 
 #: ../data/devhelp.schemas.in.h:3
 msgid "Font for text with fixed width, such as code examples."
-msgstr ""
-"Czcionka tekstu o stałej szerokości, takiego jak przykłady kodu źródłowego."
+msgstr "Czcionka tekstu o stałej szerokości, takiego jak przykłady kodu źródłowego."
 
 #: ../data/devhelp.schemas.in.h:4
 msgid "Font for text with variable width."
@@ -157,8 +157,7 @@ msgstr "Wsparcie programu Devhelp"
 
 #: ../misc/gedit-plugin/devhelp.desktop.in.h:2
 msgid "Makes F2 bring up Devhelp for the word at the cursor"
-msgstr ""
-"Wywołuje program Devhelp dla bieżącego słowa po naciśnięciu klawisza F2"
+msgstr "Wywołuje program Devhelp dla bieżącego słowa po naciśnięciu klawisza F2"
 
 #: ../misc/gedit-plugin/devhelp/devhelp.py:38
 msgid "Show API Documentation"
@@ -242,14 +241,15 @@ msgstr "Wyświetla wersję i kończy działanie"
 
 #: ../src/dh-main.c:190
 msgid "Focus the Devhelp window with the search field active"
-msgstr ""
-"Przesuwa okno programu Devhelp na pierwszy plan i aktywuje pole wyszukiwania"
+msgstr "Przesuwa okno programu Devhelp na pierwszy plan i aktywuje pole wyszukiwania"
 
 #: ../src/dh-main.c:195
 msgid "Search and display any hit in the assistant window"
 msgstr "Wyszukuje i wyświetla każde trafienie w oknie asystenta"
 
-#: ../src/dh-parser.c:92 ../src/dh-parser.c:189 ../src/dh-parser.c:253
+#: ../src/dh-parser.c:92
+#: ../src/dh-parser.c:189
+#: ../src/dh-parser.c:253
 #: ../src/dh-parser.c:263
 #, c-format
 msgid "Expected '%s', got '%s' at line %d, column %d"
@@ -262,35 +262,26 @@ msgstr "Nieprawidłowa przestrzeń nazw \"%s\" w wierszu %d, kolumnie %d"
 
 #: ../src/dh-parser.c:140
 #, c-format
-msgid ""
-"\"title\", \"name\" and \"link\" elements are required at line %d, column %d"
-msgstr ""
-"Elementy \"title\", \"name\" i \"link\" są wymagane w wierszu %d, kolumnie %d"
+msgid "\"title\", \"name\" and \"link\" elements are required at line %d, column %d"
+msgstr "Elementy \"title\", \"name\" i \"link\" są wymagane w wierszu %d, kolumnie %d"
 
 #: ../src/dh-parser.c:208
 #, c-format
-msgid ""
-"\"name\" and \"link\" elements are required inside <sub> on line %d, column %"
-"d"
-msgstr ""
-"Elementy \"name\" i \"link\" są wymagane wewnątrz <sub> w wierszu %d, "
-"kolumnie %d"
+msgid "\"name\" and \"link\" elements are required inside <sub> on line %d, column %d"
+msgstr "Elementy \"name\" i \"link\" są wymagane wewnątrz <sub> w wierszu %d, kolumnie %d"
 
 #: ../src/dh-parser.c:288
 #, c-format
-msgid ""
-"\"name\" and \"link\" elements are required inside '%s' on line %d, column %d"
-msgstr ""
-"Elementy \"name\" i \"link\" są wymagane wewnątrz \"%s\" w wierszu %d, "
-"kolumnie %d"
+msgid "\"name\" and \"link\" elements are required inside '%s' on line %d, column %d"
+msgstr "Elementy \"name\" i \"link\" są wymagane wewnątrz \"%s\" w wierszu %d, kolumnie %d"
 
 #: ../src/dh-parser.c:301
 #, c-format
 msgid "\"type\" element is required inside <keyword> on line %d, column %d"
-msgstr ""
-"Element \"type\" jest wymagany wewnątrz <keyword> w wierszu %d, kolumnie %d"
+msgstr "Element \"type\" jest wymagany wewnątrz <keyword> w wierszu %d, kolumnie %d"
 
 # pd
+# rev: wolałbym tutaj dokonany (zdekompresować), tak jak zmodyfikuj, etc. Rationale: w trakcie dekompresowania coś się spierniczyło, wtedy dekompresować można, ale nie zdekompresować, czyli narzędzie istnieje, ale np. plik jest uszkodzony.
 #: ../src/dh-parser.c:506
 #, c-format
 msgid "Cannot uncompress book '%s': %s"
@@ -383,11 +374,13 @@ msgstr "Nowa _karta"
 msgid "_Print…"
 msgstr "Wy_drukuj…"
 
-#: ../src/dh-window.c:791 ../src/eggfindbar.c:342
+#: ../src/dh-window.c:791
+#: ../src/eggfindbar.c:342
 msgid "Find Next"
 msgstr "Znajdź następne"
 
-#: ../src/dh-window.c:793 ../src/eggfindbar.c:329
+#: ../src/dh-window.c:793
+#: ../src/eggfindbar.c:329
 msgid "Find Previous"
 msgstr "Znajdź poprzednie"
 
@@ -476,7 +469,8 @@ msgstr "Wyszukiwanie"
 msgid "Error opening the requested link."
 msgstr "Błąd podczas otwierania żądanego odnośnika."
 
-#: ../src/dh-window.c:1635 ../src/dh-window.c:1877
+#: ../src/dh-window.c:1635
+#: ../src/dh-window.c:1877
 msgid "Empty Page"
 msgstr "Pusta strona"
 
@@ -484,11 +478,13 @@ msgstr "Pusta strona"
 msgid "Find:"
 msgstr "Znajdź:"
 
-#: ../src/eggfindbar.c:333 ../src/eggfindbar.c:336
+#: ../src/eggfindbar.c:333
+#: ../src/eggfindbar.c:336
 msgid "Find previous occurrence of the search string"
 msgstr "Wyszukuje poprzednie wystąpienie ciągu znaków"
 
-#: ../src/eggfindbar.c:346 ../src/eggfindbar.c:349
+#: ../src/eggfindbar.c:346
+#: ../src/eggfindbar.c:349
 msgid "Find next occurrence of the search string"
 msgstr "Wyszukuje następne wystąpienie ciągu znaków"
 
@@ -497,6 +493,8 @@ msgid "C_ase Sensitive"
 msgstr "_Uwzględnianie wielkości liter"
 
 # pd
-#: ../src/eggfindbar.c:362 ../src/eggfindbar.c:365
+#: ../src/eggfindbar.c:362
+#: ../src/eggfindbar.c:365
 msgid "Toggle case sensitive search"
 msgstr "Przełącza tryb wyszukiwania z uwzględnianiem wielkości liter"
+
