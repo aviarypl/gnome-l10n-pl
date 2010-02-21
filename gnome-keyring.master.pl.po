@@ -9,36 +9,28 @@ msgstr ""
 "Project-Id-Version: gnome-keyring\n"
 "Report-Msgid-Bugs-To: http://bugzilla.gnome.org/enter_bug.cgi?product=gnome-keyring&component=general\n"
 "POT-Creation-Date: 2010-02-18 18:02+0000\n"
-"PO-Revision-Date: 2010-02-21 21:28+0100\n"
-"Last-Translator: Tomasz Dominikowski <dominikowski@gmail.com>\n"
+"PO-Revision-Date: 2010-02-21 21:42+0100\n"
+"Last-Translator: Piotr Drąg <piotrdrag@gmail.com>\n"
 "Language-Team: Polish <gnomepl@aviary.pl>\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"X-Generator: KBabel 1.11.2\n"
 "Plural-Forms: nplurals=3; plural=(n==1 ? 0 : n%10>=2 && n%10<=4 && (n%100<10 || n%100>=20) ? 1 : 2);\n"
 "X-Poedit-Language: Polish\n"
 "X-Poedit-Country: Poland\n"
 
-# pd
-# rev: w oryginale jest logs in, nie is logging in
 #: ../daemon/data/gnome-keyring.schemas.in.h:1
 msgid "This option enables the PKCS#11 component in the gnome-keyring daemon. It only takes effect during startup with gnome-session, (ie: when the user logs in). This setting may be overridden when certain command line arguments are passed to the daemon."
-msgstr "Ta opcja włącza składnik PKCS#11 usługi gnome-keyring. Działa tylko podczas uruchamiania usługi gnome-keyring (tzn. kiedy użytkownik się loguje). To ustawienie może zostać unieważnione poprzez odpowiednie parametry wiersza poleceń przekazane usłudze."
+msgstr "Ta opcja włącza składnik PKCS#11 usługi gnome-keyring. Działa tylko podczas uruchamiania za pomocą gnome-session (tzn. kiedy użytkownik zostaje zalogowany). To ustawienie może zostać unieważnione poprzez odpowiednie parametry wiersza poleceń przekazane usłudze."
 
-# pd
-# rev: jw
 #: ../daemon/data/gnome-keyring.schemas.in.h:2
 msgid "This option enables the SSH agent in the gnome-keyring daemon. It only takes effect as gnome-keyring-daemon starts, (ie: when the user logs in). This setting may be overridden when certain command line arguments are passed to the daemon."
-msgstr "Ta opcja uruchamia agenta SSH w usłudze gnome-keyring. Działa tylko podczas uruchamiania usługi gnome-keyring (tzn. kiedy użytkownik się loguje). To ustawienie może zostać unieważnione poprzez odpowiednie parametry wiersza poleceń przekazane usłudze."
+msgstr "Ta opcja uruchamia agenta SSH w usłudze gnome-keyring. Działa tylko podczas uruchamiania usługi gnome-keyring-daemon (tzn. kiedy użytkownik zostaje zalogowany). To ustawienie może zostać unieważnione poprzez odpowiednie parametry wiersza poleceń przekazane usłudze."
 
-# pd
-# rev: jw
 #: ../daemon/data/gnome-keyring.schemas.in.h:3
 msgid "This option enables the secret service component in the gnome-keyring daemon. It only takes effect during startup with gnome-session, (ie: when the user logs in). This setting may be overridden when certain command line arguments are passed to the daemon."
-msgstr "Ta opcja włącza składnik usługi haseł usługi gnome-keyring. Działa tylko podczas uruchamiania usługi gnome-keyring (tzn. kiedy użytkownik się loguje). To ustawienie może zostać unieważnione poprzez odpowiednie parametry wiersza poleceń przekazane usłudze."
+msgstr "Ta opcja włącza składnik usługi haseł usługi gnome-keyring. Działa tylko podczas uruchamiania za pomocą gnome-session (tzn. kiedy użytkownik zostaje zalogowany). To ustawienie może zostać unieważnione poprzez odpowiednie parametry wiersza poleceń przekazane usłudze."
 
-# pd
 #: ../daemon/data/gnome-keyring.schemas.in.h:4
 msgid "Whether the gnome-keyring PKCS#11 component is enabled."
 msgstr "Określa, czy składnik PKCS#11 usługi gnome-keyring jest włączony."
@@ -47,13 +39,10 @@ msgstr "Określa, czy składnik PKCS#11 usługi gnome-keyring jest włączony."
 msgid "Whether the gnome-keyring SSH agent is enabled."
 msgstr "Określa, czy agent SSH usługi gnome-keyring jest włączony."
 
-# pd
-# rev: agent usługa?
 #: ../daemon/data/gnome-keyring.schemas.in.h:6
 msgid "Whether the gnome-keyring secret service is enabled."
-msgstr "Określa, czy agent usługa haseł gnome-keyring jest włączona."
+msgstr "Określa, czy usługa haseł gnome-keyring jest włączona."
 
-# pd
 #. TRANSLATORS: This is the label for an keyring created without a label
 #: ../daemon/dbus/gkd-secret-change.c:77
 #: ../daemon/dbus/gkd-secret-create.c:73
@@ -72,13 +61,11 @@ msgstr "Zmiana hasła bazy kluczy"
 msgid "Choose a new password for the '%s' keyring"
 msgstr "Proszę wybrać nowe hasło dla bazy kluczy \"%s\""
 
-# pd
 #: ../daemon/dbus/gkd-secret-change.c:91
 #, c-format
 msgid "An application wants to change the password for the '%s' keyring. Choose the new password you want to use for it."
 msgstr "Program wymaga zmiany hasła dla bazy kluczy \"%s\". Należy wprowadzić hasło, jakie będzie z nią używane."
 
-# pd
 #: ../daemon/dbus/gkd-secret-change.c:110
 msgid "The original password was incorrect"
 msgstr "Oryginalne hasło jest niepoprawne"
@@ -91,7 +78,6 @@ msgstr "Hasło nowej bazy kluczy"
 msgid "Choose password for new keyring"
 msgstr "Proszę wprowadzić hasło dla nowej bazy kluczy"
 
-# pd
 #: ../daemon/dbus/gkd-secret-create.c:80
 #, c-format
 msgid "An application wants to create a new keyring called '%s'. Choose the password you want to use for it."
@@ -101,17 +87,14 @@ msgstr "Program wymaga utworzenia nowej bazy kluczy o nazwie \"%s\". Należy wpr
 msgid "Unlock Login Keyring"
 msgstr "Odblokowanie bazy kluczy konta"
 
-# pd
 #: ../daemon/dbus/gkd-secret-unlock.c:136
 msgid "Enter password for to unlock your login keyring"
 msgstr "Proszę wprowadzić hasło, aby odblokować bazę kluczy konta"
 
-# pd
 #: ../daemon/dbus/gkd-secret-unlock.c:140
 msgid "The password you use to log in to your computer no longer matches that of your login keyring."
 msgstr "Hasło używane do zalogowania się do komputera nie pasuje do hasła bazy kluczy konta."
 
-# pd
 #: ../daemon/dbus/gkd-secret-unlock.c:142
 msgid "The login keyring did not get unlocked when you logged into your computer."
 msgstr "Baza kluczy konta nie została automatycznie odblokowana podczas zalogowania się do tego komputera."
@@ -125,65 +108,53 @@ msgstr "Odblokowanie bazy kluczy"
 msgid "Enter password for keyring '%s' to unlock"
 msgstr "Proszę wprowadzić hasło do bazy kluczy \"%s\", aby ją odblokować"
 
-# pd
 #: ../daemon/dbus/gkd-secret-unlock.c:189
 #, c-format
 msgid "An application wants access to the keyring '%s', but it is locked"
 msgstr "Program wymaga dostępu do bazy kluczy \"%s\", ale baza jest zablokowana"
 
-# pd
 #: ../daemon/dbus/gkd-secret-unlock.c:219
 msgid "The unlock password was incorrect"
 msgstr "Hasło odblokowania jest niepoprawne"
 
-# pd
 #: ../daemon/gnome-keyring-pkcs11.desktop.in.in.h:1
 msgid "Certificate and Key Storage"
 msgstr "Przechowalnia certyfikatów i kluczy"
 
-# pd
 #: ../daemon/gnome-keyring-pkcs11.desktop.in.in.h:2
 msgid "GNOME Keyring: PKCS#11 Component"
 msgstr "Baza kluczy dla środowiska GNOME: składnik PKCS#11"
 
-# pd
 #: ../daemon/gnome-keyring-secrets.desktop.in.in.h:1
 msgid "GNOME Keyring: Secret Service"
 msgstr "Baza kluczy dla środowiska GNOME: usługa haseł"
 
-# pd
 #: ../daemon/gnome-keyring-secrets.desktop.in.in.h:2
 msgid "Secret Storage Service"
 msgstr "Usługa przechowywania haseł"
 
-# pd
 #: ../daemon/gnome-keyring-ssh.desktop.in.in.h:1
 msgid "GNOME Keyring: SSH Agent"
 msgstr "Baza kluczy dla środowiska GNOME: agent SSH"
 
-# pd
 #: ../daemon/gnome-keyring-ssh.desktop.in.in.h:2
 msgid "SSH Key Agent"
 msgstr "Agent kluczy SSH"
 
-# pd
 #. TRANSLATORS: This is the display label for the login keyring
 #: ../daemon/login/gkd-login.c:174
 msgid "Login"
 msgstr "Baza kluczy konta"
 
-# pd
 #: ../daemon/login/gkd-login.c:596
 #, c-format
 msgid "Unlock password for: %s"
 msgstr "Odblokowanie hasła dla: %s"
 
-# pd
 #: ../daemon/pkcs11/gkd-pkcs11-auth.c:294
 msgid "New Password Required"
 msgstr "Wymagane jest nowe hasło"
 
-# pd
 #: ../daemon/pkcs11/gkd-pkcs11-auth.c:295
 msgid "New password required for secure storage"
 msgstr "Wymagane jest nowe hasło do bezpiecznej przechowalni"
@@ -286,7 +257,6 @@ msgstr "Hasła nie są zgodne."
 msgid "Password cannot be blank"
 msgstr "Hasło nie może być puste"
 
-# pd
 #: ../daemon/prompt/gkd-prompt.ui.h:1
 msgid "Automatically unlock this keyring whenever I'm logged in"
 msgstr "Automatyczne odblokowanie tej bazy kluczy po zalogowaniu"
@@ -295,22 +265,18 @@ msgstr "Automatyczne odblokowanie tej bazy kluczy po zalogowaniu"
 msgid "New password strength"
 msgstr "Siła nowego hasła"
 
-# pd
 #: ../daemon/prompt/gkd-prompt.ui.h:3
 msgid "_Application:"
 msgstr "_Program:"
 
-# pd
 #: ../daemon/prompt/gkd-prompt.ui.h:4
 msgid "_Confirm:"
 msgstr "Pot_wierdzenie:"
 
-# pd
 #: ../daemon/prompt/gkd-prompt.ui.h:5
 msgid "_Details:"
 msgstr "_Szczegóły:"
 
-# pd
 #: ../daemon/prompt/gkd-prompt.ui.h:6
 msgid "_Name:"
 msgstr "_Nazwa:"
@@ -323,12 +289,10 @@ msgstr "P_oprzednie hasło:"
 msgid "_Password:"
 msgstr "_Hasło:"
 
-# pd
 #: ../egg/egg-oid.c:41
 msgid "Domain Component"
 msgstr "Składnik domeny"
 
-# pd
 #: ../egg/egg-oid.c:43
 msgid "User ID"
 msgstr "Identyfikator użytkownika"
@@ -447,13 +411,11 @@ msgstr "DSA"
 msgid "SHA1 with DSA"
 msgstr "SHA1 z DSA"
 
-# pd
 #: ../egg/egg-spawn.c:273
 #, c-format
 msgid "Unexpected error in select() reading data from a child process (%s)"
 msgstr "Nieoczekiwany błąd w select() podczas odczytywania danych z procesu potomnego (%s)"
 
-# pd
 #: ../egg/egg-spawn.c:320
 #, c-format
 msgid "Unexpected error in waitpid() (%s)"
@@ -483,7 +445,6 @@ msgstr "<b>Wydany przez</b>"
 msgid "<b>Issued To</b>"
 msgstr "<b>Wydany dla</b>"
 
-# pd
 #: ../gcr/gcr-certificate-basics-widget.ui.h:5
 msgid "<b>This certificate has been verified for the following uses:</b>"
 msgstr "<b>Ten certyfikat został sprawdzony dla następujących użytkowników:</b>"
@@ -640,27 +601,22 @@ msgstr "Zaimportowanie do:"
 msgid "Password:"
 msgstr "Hasło:"
 
-# pd
 #: ../gcr/gcr-unlock-options-widget.ui.h:1
 msgid "Lock this keyring after"
 msgstr "Zablokowanie tej bazy kluczy po"
 
-# pd
 #: ../gcr/gcr-unlock-options-widget.ui.h:2
 msgid "Lock this keyring if idle for"
 msgstr "Zablokowanie tej bazy kluczy w razie bezczynności przez"
 
-# pd
 #: ../gcr/gcr-unlock-options-widget.ui.h:3
 msgid "Lock this keyring when I log out"
 msgstr "Zablokowanie tej bazy kluczy po wylogowaniu"
 
-# pd
 #: ../gcr/gcr-unlock-options-widget.ui.h:4
 msgid "minutes"
 msgstr "minut"
 
-# pd
 #: ../gcr/gcr-importer.c:163
 #: ../gcr/gcr-parser.c:1573
 #: ../gp11/gp11-misc.c:98
@@ -680,14 +636,12 @@ msgstr "Importowanie certyfikatów/kluczy"
 msgid "Choose a location to store the imported certificates/keys."
 msgstr "Proszę wybrać położenie do przechowywania zaimportowanych certyfikatów/kluczy."
 
-# pd
 # Baza/przechowalnia do odblokowania, nie klucz, patrz http://bugzilla.gnome.org/show_bug.cgi?id=570529
 #. TRANSLATORS: The key is locked.
 #: ../gcr/gcr-importer.c:449
 msgid "In order to import the private key, it must be unlocked"
 msgstr "Aby zaimportować klucz prywatny, musi zostać odblokowana"
 
-# pd
 #. TRANSLATORS: The certificate is locked.
 #: ../gcr/gcr-importer.c:452
 msgid "In order to import the certificate, it must be unlocked"
@@ -698,21 +652,18 @@ msgstr "Aby zaimportować certyfikat, musi zostać odblokowana"
 msgid "In order to import the data, it must be unlocked"
 msgstr "Aby zaimportować dane, musi zostać odblokowana"
 
-# pd
 #. TRANSLATORS: The key is locked.
 #: ../gcr/gcr-importer.c:460
 #, c-format
 msgid "In order to import the private key '%s', it must be unlocked"
 msgstr "Aby zaimportować klucz prywatny \"%s\", musi zostać odblokowana"
 
-# pd
 #. TRANSLATORS: The certificate is locked.
 #: ../gcr/gcr-importer.c:463
 #, c-format
 msgid "In order to import the certificate '%s', it must be unlocked"
 msgstr "Aby zaimportować certyfikat \"%s\", musi zostać odblokowana"
 
-# pd
 #. TRANSLATORS: The object '%s' is locked.
 #: ../gcr/gcr-importer.c:466
 #, c-format
@@ -743,7 +694,6 @@ msgstr "Dane są zablokowane"
 msgid "Insufficient memory available"
 msgstr "Brak wolnej pamięci"
 
-# pd
 #: ../gp11/gp11-misc.c:103
 msgid "The specified slot ID is not valid"
 msgstr "Podany identyfikator gniazda jest nieprawidłowy"
@@ -752,7 +702,6 @@ msgstr "Podany identyfikator gniazda jest nieprawidłowy"
 msgid "Internal error"
 msgstr "Błąd wewnętrzny"
 
-# pd
 #: ../gp11/gp11-misc.c:107
 msgid "The operation failed"
 msgstr "Działanie się nie powiodło"
@@ -777,7 +726,6 @@ msgstr "Pole jest tylko do odczytu"
 msgid "The field is sensitive and cannot be revealed"
 msgstr "Pole jest poufne i nie może zostać ujawnione"
 
-# pd
 #: ../gp11/gp11-misc.c:119
 msgid "The field is invalid or does not exist"
 msgstr "Pole jest nieprawidłowe lub nie istnieje"
@@ -806,7 +754,6 @@ msgstr "Brak wolnej pamięci w urządzeniu"
 msgid "The device was removed or unplugged"
 msgstr "Urządzenie zostało usunięte lub odłączone"
 
-# pd
 #: ../gp11/gp11-misc.c:133
 msgid "The encrypted data is not valid or unrecognized"
 msgstr "Szyfrowane dane są nieprawidłowe lub nie zostały rozpoznane"
@@ -815,22 +762,18 @@ msgstr "Szyfrowane dane są nieprawidłowe lub nie zostały rozpoznane"
 msgid "The encrypted data is too long"
 msgstr "Szyfrowane dane są zbyt obszerne"
 
-# pd
 #: ../gp11/gp11-misc.c:137
 msgid "This operation is not supported"
 msgstr "Działanie nie jest obsługiwane"
 
-# pd
 #: ../gp11/gp11-misc.c:139
 msgid "The key is missing or invalid"
 msgstr "Brak klucza lub nieprawidłowy klucz"
 
-# pd
 #: ../gp11/gp11-misc.c:141
 msgid "The key is the wrong size"
 msgstr "Klucz ma błędny rozmiar"
 
-# pd
 #: ../gp11/gp11-misc.c:143
 msgid "The key is of the wrong type"
 msgstr "Klucz jest błędnego typu"
@@ -851,7 +794,6 @@ msgstr "Klucz wymagany"
 msgid "Cannot include the key in digest"
 msgstr "Nie można włączyć klucza do podsumowania"
 
-# pd
 #: ../gp11/gp11-misc.c:153
 msgid "This operation cannot be done with this key"
 msgstr "Te działanie nie może zostać przeprowadzone z tym kluczem"
@@ -864,7 +806,6 @@ msgstr "Nie można zastosować algorytmu wrap na kluczu"
 msgid "Cannot export this key"
 msgstr "Nie można wyeksportować klucza"
 
-# pd
 #: ../gp11/gp11-misc.c:159
 msgid "The crypto mechanism is invalid or unrecognized"
 msgstr "Mechanizm szyfrowania jest nieprawidłowy lub nie został rozpoznany"
@@ -873,22 +814,18 @@ msgstr "Mechanizm szyfrowania jest nieprawidłowy lub nie został rozpoznany"
 msgid "The crypto mechanism has an invalid argument"
 msgstr "Mechanizm szyfrowania zawiera nieprawidłowy parametr"
 
-# pd
 #: ../gp11/gp11-misc.c:163
 msgid "The object is missing or invalid"
 msgstr "Brak obiektu lub nieprawidłowy obiekt"
 
-# pd
 #: ../gp11/gp11-misc.c:165
 msgid "Another operation is already taking place"
 msgstr "Inne działanie już się odbywa"
 
-# pd
 #: ../gp11/gp11-misc.c:167
 msgid "No operation is taking place"
 msgstr "Brak bieżących działań"
 
-# pd
 #: ../gp11/gp11-misc.c:169
 msgid "The password or PIN is incorrect"
 msgstr "Hasło lub PIN jest niepoprawny"
@@ -913,7 +850,6 @@ msgstr "Hasło lub PIN jest zablokowany"
 msgid "The session is closed"
 msgstr "Sesja została zamknięta"
 
-# pd
 #: ../gp11/gp11-misc.c:181
 msgid "Too many sessions are active"
 msgstr "Za dużo aktywnych sesji"
@@ -958,7 +894,6 @@ msgstr "Niektóre pola zawierają nieprawidłowe wartości"
 msgid "The device is not present or unplugged"
 msgstr "Urządzenie jest nieobecne lub odłączone"
 
-# pd
 #: ../gp11/gp11-misc.c:203
 msgid "The device is invalid or unrecognizable"
 msgstr "Urządzenie jest nieprawidłowe lub nierozpoznawalne"
@@ -967,17 +902,14 @@ msgstr "Urządzenie jest nieprawidłowe lub nierozpoznawalne"
 msgid "The device is write protected"
 msgstr "Urządzenie ma włączoną blokadę zapisu"
 
-# pd
 #: ../gp11/gp11-misc.c:207
 msgid "Cannot import because the key is invalid"
 msgstr "Nie można zaimportować, klucz jest nieprawidłowy"
 
-# pd
 #: ../gp11/gp11-misc.c:209
 msgid "Cannot import because the key is of the wrong size"
 msgstr "Nie można zaimportować, klucz ma błędny rozmiar"
 
-# pd
 #: ../gp11/gp11-misc.c:211
 msgid "Cannot import because the key is of the wrong type"
 msgstr "Nie można zaimportować, klucz jest błędnego typu"
@@ -994,7 +926,6 @@ msgstr "Żaden użytkownik nie zalogował się"
 msgid "The user's password or PIN is not set"
 msgstr "Hasło lub PIN użytkownika jest nieustawiony"
 
-# pd
 #: ../gp11/gp11-misc.c:219
 msgid "The user is of an invalid type"
 msgstr "Nieprawidłowy typ użytkownika"
@@ -1007,27 +938,22 @@ msgstr "Inny użytkownik jest już zalogowany"
 msgid "Too many users of different types logged in"
 msgstr "Zalogowanych jest zbyt wielu użytkowników różnych typów"
 
-# pd
 #: ../gp11/gp11-misc.c:225
 msgid "Cannot import an invalid key"
 msgstr "Nie można zaimportować nieprawidłowego klucza"
 
-# pd
 #: ../gp11/gp11-misc.c:227
 msgid "Cannot import a key of the wrong size"
 msgstr "Nie można zaimportować klucza o błędnym rozmiarze"
 
-# pd
 #: ../gp11/gp11-misc.c:229
 msgid "Cannot export because the key is invalid"
 msgstr "Nie można wyeksportować, klucz jest nieprawidłowy"
 
-# pd
 #: ../gp11/gp11-misc.c:231
 msgid "Cannot export because the key is of the wrong size"
 msgstr "Nie można wyeksportować, klucz ma błędny rozmiar"
 
-# pd
 #: ../gp11/gp11-misc.c:233
 msgid "Cannot export because the key is of the wrong type"
 msgstr "Nie można wyeksportować, błędny typ klucza"
@@ -1048,7 +974,6 @@ msgstr "Mechanizm szyfrowania zawiera nieprawidłowy parametr"
 msgid "Not enough space to store the result"
 msgstr "Brak miejsca do zapisania wyniku"
 
-# pd
 #: ../gp11/gp11-misc.c:243
 msgid "The saved state is invalid"
 msgstr "Zapisany stan jest nieprawidłowy"
