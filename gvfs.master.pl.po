@@ -9,8 +9,8 @@ msgstr ""
 "Project-Id-Version: gvfs\n"
 "Report-Msgid-Bugs-To: http://bugzilla.gnome.org/enter_bug.cgi?product=gvfs&component=general\n"
 "POT-Creation-Date: 2010-02-22 15:40+0000\n"
-"PO-Revision-Date: 2010-02-24 18:51+0100\n"
-"Last-Translator: Tomasz Dominikowski <dominikowski@gmail.com>\n"
+"PO-Revision-Date: 2010-02-24 18:58+0100\n"
+"Last-Translator: Piotr Drąg <piotrdrag@gmail.com>\n"
 "Language-Team: Polish <gnomepl@aviary.pl>\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -24,8 +24,6 @@ msgstr ""
 msgid "Operation not supported, files on different mounts"
 msgstr "Nieobsługiwane działanie, pliki znajdują się na różnych punktach montowania"
 
-# pd
-# rev: a nie lepiej po prostu wartość zwrotna?
 #. Translators: %s is the name of a programming function
 #: ../client/gdaemonfile.c:868
 #: ../client/gdaemonfile.c:902
@@ -50,7 +48,7 @@ msgstr "Nieobsługiwane działanie, pliki znajdują się na różnych punktach m
 #: ../client/gvfsiconloadable.c:374
 #, c-format
 msgid "Invalid return value from %s"
-msgstr "Nieprawidłowa zwrócona wartość z funkcji %s"
+msgstr "Nieprawidłowa wartość zwrotna z funkcji %s"
 
 #: ../client/gdaemonfile.c:985
 #: ../client/gvfsiconloadable.c:339
@@ -191,12 +189,10 @@ msgstr "Nieprawidłowy format informacji o pliku"
 msgid "Invalid attribute info list content"
 msgstr "Nieprawidłowy atrybut zawartości "
 
-# pd
-# rev: czepiam się, ale Avahi to chyba usługa bardziej niż program? Może się mylę
 #: ../common/gvfsdnssdresolver.c:209
 #, c-format
 msgid "Error initializing Avahi: %s"
-msgstr "Błąd podczas inicjowania programu Avahi: %s"
+msgstr "Błąd podczas inicjowania usługi Avahi: %s"
 
 #: ../common/gvfsdnssdresolver.c:255
 #, c-format
@@ -315,7 +311,6 @@ msgstr ""
 "Wolumin jest zajęty\n"
 "Jeden lub więcej programów używa wolumin."
 
-# pd
 #: ../daemon/gvfsbackendafc.c:145
 msgid "Internal Apple File Control error"
 msgstr "Wewnętrzny błąd Apple File Control"
@@ -329,49 +324,40 @@ msgstr "Plik nie istnieje"
 msgid "The directory is not empty"
 msgstr "Katalog nie jest pusty"
 
-# pd
 #: ../daemon/gvfsbackendafc.c:156
 msgid "The device did not respond"
 msgstr "Urządzenie nie odpowiedziało"
 
-# pd
 #: ../daemon/gvfsbackendafc.c:160
 msgid "The connection was interrupted"
 msgstr "Połączenie zostało przerwane"
 
-# pd
 #: ../daemon/gvfsbackendafc.c:164
 msgid "Invalid Apple File Control data received"
 msgstr "Otrzymano nieprawidłowe dane Apple File Control"
 
-# pd
 #: ../daemon/gvfsbackendafc.c:168
 #, c-format
 msgid "Unhandled Apple File Control error (%d)"
 msgstr "Nieobsłużony błąd Apple File Control (%d)"
 
-# pd
 #: ../daemon/gvfsbackendafc.c:185
 msgid "Lockdown Error: Invalid Argument"
 msgstr "Błąd blokowania: nieprawidłowy parametr"
 
-# pd
 #: ../daemon/gvfsbackendafc.c:189
 #, c-format
 msgid "Unhandled Lockdown error (%d)"
 msgstr "Nieobsłużony błąd blokowania (%d)"
 
-# pd
 #: ../daemon/gvfsbackendafc.c:206
 msgid "libimobiledevice Error: Invalid Argument"
 msgstr "Błąd biblioteki libimobiledevice: nieprawidłowy parametr"
 
-# pd
 #: ../daemon/gvfsbackendafc.c:210
 msgid "libimobiledevice Error: No device found. Make sure usbmuxd is set up correctly."
 msgstr "Błąd biblioteki libimobiledevice: nie odnaleziono urządzenia. Proszę się upewnić, że usbmuxd jest poprawnie ustawione."
 
-# pd
 #: ../daemon/gvfsbackendafc.c:213
 #, c-format
 msgid "Unhandled libimobiledevice error (%d)"
@@ -389,23 +375,19 @@ msgstr "Nieobsłużony błąd biblioteki libimobiledevice (%d)"
 msgid "Invalid mount spec"
 msgstr "Nieprawidłowa specyfikacja montowania"
 
-# pd
 #: ../daemon/gvfsbackendafc.c:281
 msgid "Invalid AFC location: must be in the form of afc://uuid:port-number"
 msgstr "Nieprawidłowe położenie: musi być w formie afc://uuid:port-numer"
 
-# pd
-# rev: Apple File Control to chyba nazwa własna (nie wchodzę w szczegóły), ale może to przetłumaczyć na Urządzenie przenośne Apple? global 
 #: ../daemon/gvfsbackendafc.c:296
 #, c-format
 msgid "Service %d on Apple Mobile Device"
-msgstr "Usługa %d na Apple Mobile Device"
+msgstr "Usługa %d na Urządzeniu przenośnym firmy Apple"
 
-# pd
 #: ../daemon/gvfsbackendafc.c:302
 #, c-format
 msgid "Apple Mobile Device"
-msgstr "Apple Mobile Device"
+msgstr "Urządzenie przenośne firmy Apple"
 
 #: ../daemon/gvfsbackendafc.c:353
 #, c-format
@@ -417,11 +399,9 @@ msgstr "%s (%s)"
 msgid "Backups are not yet supported."
 msgstr "Kopie zapasowe nie są jeszcze obsługiwane."
 
-# pd
-# rev: z wielkiej
 #: ../daemon/gvfsbackendafc.c:686
 msgid "Invalid seek type"
-msgstr "nieprawidłowy typ wyszukiwania"
+msgstr "Nieprawidłowy typ wyszukiwania"
 
 #: ../daemon/gvfsbackendafc.c:1175
 #: ../daemon/gvfsbackendsftp.c:1820
@@ -441,7 +421,6 @@ msgstr "Nieobsługiwane działanie"
 msgid "/ on %s"
 msgstr "/ na %s"
 
-# pd
 #: ../daemon/gvfsbackendarchive.c:518
 #: ../daemon/gvfsbackendftp.c:564
 #: ../daemon/gvfsbackendsftp.c:1733
@@ -630,13 +609,11 @@ msgstr "Nie można utworzyć klienta gudev"
 msgid "Cannot connect to the system bus"
 msgstr "Nie można połączyć się z magistralą systemową"
 
-# pd
 #: ../daemon/gvfsbackendcdda.c:363
 #: ../daemon/gvfsbackendgphoto2.c:1540
 msgid "Cannot create libhal context"
 msgstr "Nie można utworzyć kontekstu biblioteki libhal"
 
-# pd
 #: ../daemon/gvfsbackendcdda.c:377
 #: ../daemon/gvfsbackendgphoto2.c:1553
 msgid "Cannot initialize libhal"
@@ -686,7 +663,6 @@ msgstr[2] "System plików jest zajęty: %d otwartych plików"
 msgid "No such file %s on drive %s"
 msgstr "Nie ma pliku %s w napędzie %s"
 
-# pd
 #. Translators: paranoia is the name of the cd audio reading library
 #: ../daemon/gvfsbackendcdda.c:804
 #, c-format
@@ -980,7 +956,6 @@ msgstr "Odtwarzacz muzyki"
 msgid "No device specified"
 msgstr "Nie określono urządzenia"
 
-# pd
 #: ../daemon/gvfsbackendgphoto2.c:1590
 msgid "Cannot create gphoto2 context"
 msgstr "Nie można utworzyć kontekstu biblioteki gphoto2"
@@ -1010,7 +985,6 @@ msgstr "Błąd podczas ustawiania portu komunikacji z aparatem cyfrowym"
 msgid "Error initializing camera"
 msgstr "Błąd podczas inicjowania aparatu cyfrowego"
 
-# pd
 #. Translator: %s represents the device, e.g. usb:001,042
 #: ../daemon/gvfsbackendgphoto2.c:1683
 #, c-format
@@ -1188,25 +1162,21 @@ msgstr "Urządzenie wymaga aktualizacji oprogramowania"
 msgid "Error deleting file: %s"
 msgstr "Błąd podczas usuwania pliku: %s"
 
-# pd
 #: ../daemon/gvfsbackendsftp.c:301
 #: ../daemon/gvfsbackendsftp.c:657
 msgid "ssh program unexpectedly exited"
 msgstr "Program ssh nieoczekiwanie zakończył działanie"
 
-# pd
 #: ../daemon/gvfsbackendsftp.c:309
 #: ../daemon/gvfsbackendsftp.c:1822
 #: ../daemon/gvfsftptask.c:400
 msgid "Permission denied"
 msgstr "Brak uprawnień"
 
-# pd
 #: ../daemon/gvfsbackendsftp.c:316
 msgid "Hostname not known"
 msgstr "Nazwa komputera jest nieznana"
 
-# pd
 #: ../daemon/gvfsbackendsftp.c:323
 msgid "No route to host"
 msgstr "Brak ścieżki do komputera"
@@ -1266,7 +1236,6 @@ msgstr ""
 "\n"
 "Tożsamość wysłana przez zdalny komputer to %s. Aby uzyskać całkowitą pewność dotyczącą bezpieczeństwa, należy się skontaktować z administratorem systemu."
 
-# pd
 #: ../daemon/gvfsbackendsftp.c:1073
 msgid "Login dialog cancelled"
 msgstr "Anulowano okno dialogowe logowania"
@@ -1537,12 +1506,10 @@ msgstr "Dowiązania symboliczne nieobsługiwane przez mechanizm przetwarzający"
 msgid "Invalid dbus message"
 msgstr "Nieprawidłowy komunikat D-Bus"
 
-# pd
-# rev: przeczytaj swoje tłumaczenie :)
 #: ../daemon/main.c:45
 #: ../metadata/meta-daemon.c:694
 msgid "Replace old daemon."
-msgstr "Zamienia poprzedniej usługi."
+msgstr "Zamienia poprzednią usługę."
 
 #: ../daemon/main.c:46
 msgid "Don't start fuse."
@@ -1941,17 +1908,14 @@ msgstr "DVD±R"
 msgid "DVD±RW"
 msgstr "DVD±RW"
 
-# pd
 #: ../monitor/hal/ghaldrive.c:153
 msgid "HDDVD"
 msgstr "HD DVD"
 
-# pd
 #: ../monitor/hal/ghaldrive.c:155
 msgid "HDDVD-r"
 msgstr "HD DVD-R"
 
-# pd
 #: ../monitor/hal/ghaldrive.c:157
 msgid "HDDVD-RW"
 msgstr "HD DVD-RW"
@@ -2061,23 +2025,19 @@ msgstr "%.1f GB"
 msgid "Mixed Audio/Data Disc"
 msgstr "Mieszana płyta CD-Audio/Dane"
 
-# pd
-# rev: o nie kolego, to za długie na kolumnę boczną nautilusa, a na bank tam będą wciskać, nie wiem jak to zmieścisz, może po prostu "Nośnik %s"
 #. Translators: %s is the size of the mount (e.g. 512 MB)
 #. Translators: %s is the size of the volume (e.g. 512 MB)
 #: ../monitor/hal/ghalmount.c:336
 #: ../monitor/hal/ghalvolume.c:255
 #, c-format
 msgid "%s Media"
-msgstr "Nośnik o rozmiarze %s"
+msgstr "Nośnik %s"
 
-# pd
-# rev: to też za długie, wiem że pewnie rzadko widziane, ale może lepiej skosić "o rozmiarze"
 #. Translators: %s is the size of the volume (e.g. 512 MB)
 #: ../monitor/hal/ghalvolume.c:232
 #, c-format
 msgid "%s Encrypted Data"
-msgstr "Zaszyfrowane dane o rozmiarze %s"
+msgstr "Zaszyfrowane dane %s"
 
 #: ../programs/gvfs-cat.c:37
 msgid "locations"
@@ -2111,7 +2071,6 @@ msgstr "%s: %s: błąd podczas odczytywania: %s\n"
 msgid "%s: %s:error closing: %s\n"
 msgstr "%s: %s:błąd podczas zamykania: %s\n"
 
-# pd
 #: ../programs/gvfs-cat.c:136
 msgid "LOCATION... - concatenate LOCATIONS to standard output."
 msgstr "POŁOŻENIE... - dołącza POŁOŻENIA do standardowego wyjścia."
@@ -2182,7 +2141,6 @@ msgstr "nigdy nie podąża za dowiązaniami symbolicznymi"
 msgid "progress"
 msgstr "postęp"
 
-# pd
 #: ../programs/gvfs-copy.c:114
 msgid "SOURCE... DEST - copy file(s) from SOURCE to DEST"
 msgstr "PLIK ŹRÓDŁOWY... PLIK DOCELOWY - kopiuje PLIK ŹRÓDŁOWY do PLIKU DOCELOWEGO"
@@ -2197,7 +2155,6 @@ msgstr "Brak operanda\n"
 msgid "Too many arguments\n"
 msgstr "Za dużo parametrów\n"
 
-# pd
 #: ../programs/gvfs-copy.c:148
 #: ../programs/gvfs-move.c:136
 #, c-format
@@ -2300,16 +2257,14 @@ msgstr "rozmiar: "
 msgid "hidden\n"
 msgstr "ukryty\n"
 
-# pd
 #: ../programs/gvfs-info.c:266
 msgid "Copy with file"
 msgstr "Kopiuje za pomocą pliku"
 
-# pd
-# rev: Nie wiem ocb w oryginale, ale chyba Keep = zachować? 
+# FIXME - co to w ogóle jest?
 #: ../programs/gvfs-info.c:270
 msgid "Keep with file when moved"
-msgstr "Utrzymuje plik podczas przenoszenia"
+msgstr "Podąża za plikiem podczas przenoszenia"
 
 #: ../programs/gvfs-info.c:307
 #, c-format
@@ -2358,7 +2313,6 @@ msgstr "- wyświetla listy plików w <położeniu>"
 msgid "create parent directories"
 msgstr "tworzy katalogi nadrzędne"
 
-# pd
 #: ../programs/gvfs-mkdir.c:50
 msgid "- create directories"
 msgstr "- tworzy katalogi"
@@ -2369,7 +2323,6 @@ msgstr "- tworzy katalogi"
 msgid "Error creating directory: %s\n"
 msgstr "Błąd podczas tworzenia katalogu: %s\n"
 
-# pd
 #: ../programs/gvfs-monitor-dir.c:38
 #: ../programs/gvfs-monitor-file.c:38
 msgid "Don't send single MOVED events."
@@ -2489,7 +2442,6 @@ msgstr "Zmiana nazwy została ukończona powodzeniem. Nowy adres URI: %s\n"
 msgid "ignore nonexistent files, never prompt"
 msgstr "ignoruje nieistniejące pliki, nigdy nie pyta"
 
-# pd
 #: ../programs/gvfs-rm.c:52
 msgid "- delete files"
 msgstr "- usuwa pliki"
@@ -2582,7 +2534,6 @@ msgstr "Błąd podczas przenoszenia pliku do kosza: %s\n"
 msgid "Follow symlinks, mounts and shortcuts like dirs"
 msgstr "Podąża za dowiązaniami symbolicznymi, punktami montowania i skrótami, takimi jak katalogi"
 
-# pd
 #: ../programs/gvfs-tree.c:242
 msgid "- list contents of directories in a tree-like format"
 msgstr "- wyświetla listę zawartości katalogów w formacie drzewa"
