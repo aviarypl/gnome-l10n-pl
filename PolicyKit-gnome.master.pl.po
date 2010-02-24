@@ -7,17 +7,15 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: PolicyKit-gnome\n"
-"Report-Msgid-Bugs-To: http://bugzilla.gnome.org/enter_bug.cgi?"
-"product=policykit-gnome&component=general\n"
+"Report-Msgid-Bugs-To: http://bugzilla.gnome.org/enter_bug.cgi?product=policykit-gnome&component=general\n"
 "POT-Creation-Date: 2009-09-12 20:13+0000\n"
-"PO-Revision-Date: 2010-02-23 18:24+0100\n"
-"Last-Translator: Piotr Drąg <piotrdrag@gmail.com>s\n"
+"PO-Revision-Date: 2010-02-24 18:35+0100\n"
+"Last-Translator: Tomasz Dominikowski <dominikowski@gmail.com>\n"
 "Language-Team: Polish <gnomepl@aviary.pl>\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"Plural-Forms: nplurals=3; plural=(n==1 ? 0 : n%10>=2 && n%10<=4 && (n%100<10 "
-"|| n%100>=20) ? 1 : 2);\n"
+"Plural-Forms: nplurals=3; plural=(n==1 ? 0 : n%10>=2 && n%10<=4 && (n%100<10 || n%100>=20) ? 1 : 2);\n"
 "X-Poedit-Language: Polish\n"
 "X-Poedit-Country: Poland\n"
 
@@ -53,7 +51,8 @@ msgstr "Może uzyskać"
 msgid "Whether authorization can be obtained"
 msgstr "Określa, czy można uzyskać upoważnienie"
 
-#: ../polkitgtk/polkitlockbutton.c:525 ../polkitgtk/polkitlockbutton.c:627
+#: ../polkitgtk/polkitlockbutton.c:525
+#: ../polkitgtk/polkitlockbutton.c:627
 msgid "Unlock Text"
 msgstr "Tekst odblokowania"
 
@@ -66,15 +65,17 @@ msgid "Click to make changes"
 msgstr "Kliknięcie dokona zmian"
 
 # pd
-#: ../polkitgtk/polkitlockbutton.c:542 ../polkitgtk/polkitlockbutton.c:644
+# rev: tooltip = podpowiedź (sprawdź w naszym słowniku), global!
+# I tak to nie będzie podpowiedź odblokowania tylko tekst podpowiedzi
+#: ../polkitgtk/polkitlockbutton.c:542
+#: ../polkitgtk/polkitlockbutton.c:644
 msgid "Unlock Tooltip"
 msgstr "Wskazówka odblokowania"
 
 # pd
 #: ../polkitgtk/polkitlockbutton.c:543
 msgid "The tooltip to display when prompting the user to unlock."
-msgstr ""
-"Wskazówka do wyświetlenia, gdy użytkownik jest proszony o odblokowanie."
+msgstr "Wskazówka do wyświetlenia, gdy użytkownik jest proszony o odblokowanie."
 
 # pd
 #: ../polkitgtk/polkitlockbutton.c:544
@@ -101,8 +102,7 @@ msgstr "Wskazówka zablokowania"
 # pd
 #: ../polkitgtk/polkitlockbutton.c:577
 msgid "The tooltip to display when prompting the user to lock."
-msgstr ""
-"Wskazówka do wyświetlenia, gdy użytkownik jest proszony o zablokowanie."
+msgstr "Wskazówka do wyświetlenia, gdy użytkownik jest proszony o zablokowanie."
 
 # pd
 #: ../polkitgtk/polkitlockbutton.c:578
@@ -116,12 +116,8 @@ msgstr "Tekst zablokowania"
 
 # pd
 #: ../polkitgtk/polkitlockbutton.c:594
-msgid ""
-"The text to display when prompting the user to lock down the action for all "
-"users."
-msgstr ""
-"Tekst do wyświetlenia, gdy użytkownik jest proszony o zablokowanie czynności "
-"dla wszystkich użytkowników."
+msgid "The text to display when prompting the user to lock down the action for all users."
+msgstr "Tekst do wyświetlenia, gdy użytkownik jest proszony o zablokowanie czynności dla wszystkich użytkowników."
 
 # pd
 #: ../polkitgtk/polkitlockbutton.c:595
@@ -135,29 +131,17 @@ msgstr "Wskazówka zablokowania"
 
 # pd
 #: ../polkitgtk/polkitlockbutton.c:611
-msgid ""
-"The tooltip to display when prompting the user to lock down the action for "
-"all users."
-msgstr ""
-"Wskazówka do wyświetlenia, gdy użytkownik jest proszony o zablokowanie "
-"czynności dla wszystkich użytkowników."
+msgid "The tooltip to display when prompting the user to lock down the action for all users."
+msgstr "Wskazówka do wyświetlenia, gdy użytkownik jest proszony o zablokowanie czynności dla wszystkich użytkowników."
 
 # pd
 #: ../polkitgtk/polkitlockbutton.c:612
-msgid ""
-"To prevent users without administrative privileges from making changes, "
-"click the lock."
-msgstr ""
-"Aby powstrzymać użytkowników bez uprawnień administracyjnych przed "
-"dokonaniem zmian, należy kliknąć blokadę."
+msgid "To prevent users without administrative privileges from making changes, click the lock."
+msgstr "Aby powstrzymać użytkowników bez uprawnień administracyjnych przed dokonaniem zmian, należy kliknąć blokadę."
 
 #: ../polkitgtk/polkitlockbutton.c:628
-msgid ""
-"The text to display when the user cannot obtain authorization through "
-"authentication."
-msgstr ""
-"Tekst do wyświetlenia, gdy użytkownik nie może uzyskać upoważnienia przez "
-"uwierzytelnienie."
+msgid "The text to display when the user cannot obtain authorization through authentication."
+msgstr "Tekst do wyświetlenia, gdy użytkownik nie może uzyskać upoważnienia przez uwierzytelnienie."
 
 # pd
 #: ../polkitgtk/polkitlockbutton.c:629
@@ -166,31 +150,20 @@ msgstr "Brak upoważnienia do dokonania zmian"
 
 # pd
 #: ../polkitgtk/polkitlockbutton.c:645
-msgid ""
-"The tooltip to display when the user cannot obtain authorization through "
-"authentication."
-msgstr ""
-"Wskazówka do wyświetlenia, gdy użytkownik nie może uzyskać upoważnienia "
-"przez uwierzytelnienie."
+msgid "The tooltip to display when the user cannot obtain authorization through authentication."
+msgstr "Wskazówka do wyświetlenia, gdy użytkownik nie może uzyskać upoważnienia przez uwierzytelnienie."
 
 # pd
 #: ../polkitgtk/polkitlockbutton.c:646
 msgid "System policy prevents changes. Contact your system administator."
-msgstr ""
-"Polityka systemu powstrzymuje zmiany. Proszę skontaktować się z "
-"administratorem systemu."
+msgstr "Polityka systemu powstrzymuje zmiany. Proszę skontaktować się z administratorem systemu."
 
 # pd
 #. Translators: this string is appended to the tooltip if the action is
 #. * currently locked down
 #: ../polkitgtk/polkitlockbutton.c:767
-msgid ""
-"This button is locked down so only users with administrative privileges can "
-"unlock it. Right-click the button to remove the lock down."
-msgstr ""
-"Ten przycisk jest zablokowany. Tylko użytkownicy z uprawnieniami "
-"administracyjnymi mogą go odblokować za pomocą kliknięcia prawym przyciskiem "
-"myszy."
+msgid "This button is locked down so only users with administrative privileges can unlock it. Right-click the button to remove the lock down."
+msgstr "Ten przycisk jest zablokowany. Tylko użytkownicy z uprawnieniami administracyjnymi mogą go odblokować za pomocą kliknięcia prawym przyciskiem myszy."
 
 #: ../src/main.c:128
 msgid "Click the icon to drop all elevated privileges"
@@ -211,29 +184,16 @@ msgstr "_Uwierzytelnij"
 
 # pd
 #: ../src/polkitgnomeauthenticationdialog.c:566
-msgid ""
-"An application is attempting to perform an action that requires privileges. "
-"Authentication as one of the users below is required to perform this action."
-msgstr ""
-"Program próbuje dokonać działania wymagającego upoważnienia. Aby dokonać "
-"tego działania wymagane jest uwierzytelnienie jako jeden z poniższych "
-"użytkowników."
+msgid "An application is attempting to perform an action that requires privileges. Authentication as one of the users below is required to perform this action."
+msgstr "Program próbuje dokonać działania wymagającego upoważnienia. Aby dokonać tego działania wymagane jest uwierzytelnienie jako jeden z poniższych użytkowników."
 
 #: ../src/polkitgnomeauthenticationdialog.c:574
-msgid ""
-"An application is attempting to perform an action that requires privileges. "
-"Authentication is required to perform this action."
-msgstr ""
-"Program próbuje dokonać działania wymagającego upoważnienia. Aby dokonać "
-"tego działania wymagane jest uwierzytelnienie."
+msgid "An application is attempting to perform an action that requires privileges. Authentication is required to perform this action."
+msgstr "Program próbuje dokonać działania wymagającego upoważnienia. Aby dokonać tego działania wymagane jest uwierzytelnienie."
 
 #: ../src/polkitgnomeauthenticationdialog.c:580
-msgid ""
-"An application is attempting to perform an action that requires privileges. "
-"Authentication as the super user is required to perform this action."
-msgstr ""
-"Program próbuje dokonać działania wymagającego upoważnienia. Aby dokonać "
-"tego działania wymagane jest uwierzytelnienie jako administrator."
+msgid "An application is attempting to perform an action that requires privileges. Authentication as the super user is required to perform this action."
+msgstr "Program próbuje dokonać działania wymagającego upoważnienia. Aby dokonać tego działania wymagane jest uwierzytelnienie jako administrator."
 
 #: ../src/polkitgnomeauthenticationdialog.c:615
 #: ../src/polkitgnomeauthenticator.c:289
@@ -281,3 +241,4 @@ msgstr "Błąd uwierzytelniania"
 #: ../src/polkit-gnome-authentication-agent-1.desktop.in.in.h:1
 msgid "PolicyKit Authentication Agent"
 msgstr "Agent uwierzytelniania PolicyKit"
+
