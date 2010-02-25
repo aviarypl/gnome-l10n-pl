@@ -1,4 +1,3 @@
-# Copyright (C) 2001-2009 Free Software Foundation, Inc.
 # -=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-
 # Aviary.pl
 # Jeśli masz jakiekolwiek uwagi odnoszące się do tłumaczenia lub chcesz
@@ -8,15 +7,17 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: gnome-netstatus\n"
-"Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2009-08-25 19:17+0200\n"
-"PO-Revision-Date: 2009-08-25 19:18+0100\n"
-"Last-Translator: Tomasz Dominikowski <dominikowski@gmail.com>\n"
+"Report-Msgid-Bugs-To: http://bugzilla.gnome.org/enter_bug.cgi?product=gnome-"
+"netstatus&component=general\n"
+"POT-Creation-Date: 2009-12-14 20:17+0000\n"
+"PO-Revision-Date: 2010-02-25 01:49+0100\n"
+"Last-Translator: Piotr Drąg <piotrdrag@gmail.com>\n"
 "Language-Team: Polish <gnomepl@aviary.pl>\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"Plural-Forms: nplurals=3; plural=(n==1 ? 0 : n%10>=2 && n%10<=4 && (n%100<10 || n%100>=20) ? 1 : 2);\n"
+"Plural-Forms: nplurals=3; plural=(n==1 ? 0 : n%10>=2 && n%10<=4 && (n%100<10 "
+"|| n%100>=20) ? 1 : 2);\n"
 "X-Poedit-Language: Polish\n"
 "X-Poedit-Country: Poland\n"
 
@@ -29,8 +30,7 @@ msgid "Monitor network activity"
 msgstr "Monitoruje aktywność sieci"
 
 #: ../src/GNOME_NetstatusApplet_Factory.server.in.in.h:3
-#: ../src/netstatus-applet.c:135
-#: ../src/netstatus-applet.c:302
+#: ../src/netstatus-applet.c:135 ../src/netstatus-applet.c:302
 msgid "Network Monitor"
 msgstr "Monitor sieci"
 
@@ -64,7 +64,7 @@ msgstr "Rozgłoszeniowy:"
 
 #: ../src/gnome-netstatus.ui.h:4
 msgid "Con_figure"
-msgstr "_Konfiguruj"
+msgstr "S_konfiguruj"
 
 #: ../src/gnome-netstatus.ui.h:5
 msgid "Connection"
@@ -120,7 +120,7 @@ msgstr "Obsługa"
 
 #: ../src/gnome-netstatus.ui.h:18
 msgid "Type:"
-msgstr "Rodzaj:"
+msgstr "Typ:"
 
 #: ../src/gnome-netstatus.ui.h:19
 msgid "_Name:"
@@ -140,11 +140,26 @@ msgstr "Interfejs sieciowy monitorowany przez monitora sieci."
 
 #: ../src/netstatus.schemas.in.h:5
 #, no-c-format
-msgid "This key specifies the name of the network configuration tool which should be invoked when the \"Configure\" button in the properties dialog is clicked. If the configuration tool can take a parameter of the interface to configure you may use %i in the string and it will be substituted with the interface name before invoking the configuration tool. For example, gnome-system-tool's network-admin tool takes the interface name through a --configure parameter. Thus, you could set the value of this key to be: \"network-admin --configure %i\"."
-msgstr "Klucz ten opisuje nazwę narzędzia konfiguracji sieci, które powinno zostać uruchomione po przyciśnięciu przycisku \"Konfiguruj\" w oknie właściwości.Jeżeli narzędzie konfiguracyjne może pobrać jako parametr, nazwę interfejsu sieciowego do konfiguracji, można użyć parametru %i, który zostanie podmieniony na nazwę interfejsu przed uruchomieniem narzędzia konfiguracji sieci. Np.: narzędzie network-admin z pakietu gnome-system-tools, pobiera nazwę interfejsu sieciowego poprzez parametr --configure. Wtedy, jako wartość klucza można ustawić: \"network-admin --configure %i\"."
+msgid ""
+"This key specifies the name of the network configuration tool which should "
+"be invoked when the \"Configure\" button in the properties dialog is "
+"clicked. If the configuration tool can take a parameter of the interface to "
+"configure you may use %i in the string and it will be substituted with the "
+"interface name before invoking the configuration tool. For example, gnome-"
+"system-tool's network-admin tool takes the interface name through a --"
+"configure parameter. Thus, you could set the value of this key to be: "
+"\"network-admin --configure %i\"."
+msgstr ""
+"Klucz ten opisuje nazwę narzędzia konfiguracji sieci, które powinno zostać "
+"uruchomione po przyciśnięciu przycisku \"Konfiguruj\" w oknie właściwości."
+"Jeżeli narzędzie konfiguracyjne może pobrać jako parametr, nazwę interfejsu "
+"sieciowego do konfiguracji, można użyć parametru %i, który zostanie "
+"podmieniony na nazwę interfejsu przed uruchomieniem narzędzia konfiguracji "
+"sieci. Np.: narzędzie network-admin z pakietu gnome-system-tools, pobiera "
+"nazwę interfejsu sieciowego poprzez parametr --configure. Wtedy, jako "
+"wartość klucza można ustawić: \"network-admin --configure %i\"."
 
-#: ../src/netstatus-applet.c:279
-#: ../src/netstatus-dialog.c:389
+#: ../src/netstatus-applet.c:279 ../src/netstatus-dialog.c:389
 #, c-format
 msgid ""
 "There was an error displaying help:\n"
@@ -159,10 +174,9 @@ msgstr "Monitor sieci wyświetlający stan urządzenia sieciowego."
 
 #: ../src/netstatus-applet.c:307
 msgid "translator-credits"
-msgstr "Aviary.pl <gnomepl@aviary.pl>, 2009."
+msgstr "Aviary.pl <gnomepl@aviary.pl>, 2009, 2010"
 
-#: ../src/netstatus-dialog.c:46
-#: ../src/netstatus-dialog.c:305
+#: ../src/netstatus-dialog.c:46 ../src/netstatus-dialog.c:305
 msgid "Unknown"
 msgstr "Nieznany"
 
@@ -186,7 +200,7 @@ msgstr[2] "%lu pakietów"
 #: ../src/netstatus-dialog.c:570
 #, c-format
 msgid "Failed to launch time configuration tool: %s"
-msgstr "Nie powiodło się uruchomienie narzędzia konfiguracji czasu: %s"
+msgstr "Uruchomienie narzędzia konfiguracji czasu się nie powiodło: %s"
 
 #: ../src/netstatus-icon.c:382
 #, c-format
@@ -207,7 +221,7 @@ msgstr "Interfejs"
 
 #: ../src/netstatus-icon.c:808
 msgid "The current interface the icon is monitoring."
-msgstr "Aktualnie monitorowany przez ikonę interfejs."
+msgstr "Obecnie monitorowany przez ikonę interfejs."
 
 #: ../src/netstatus-icon.c:815
 msgid "Orientation"
@@ -215,7 +229,7 @@ msgstr "Ułożenie"
 
 #: ../src/netstatus-icon.c:816
 msgid "The orientation of the tray."
-msgstr "Ułożenie pola powiadamiania."
+msgstr "Ułożenie obszaru powiadamiania."
 
 #: ../src/netstatus-icon.c:824
 msgid "Tooltips Enabled"
@@ -223,7 +237,7 @@ msgstr "Włączone podpowiedzi"
 
 #: ../src/netstatus-icon.c:825
 msgid "Whether or not the icon's tooltips are enabled."
-msgstr "Określa czy podpowiedzi ikony są włączone."
+msgstr "Określa, czy podpowiedzi ikon są włączone."
 
 #: ../src/netstatus-icon.c:832
 msgid "Show Signal"
@@ -231,7 +245,7 @@ msgstr "Wyświetlanie sygnału"
 
 #: ../src/netstatus-icon.c:833
 msgid "Whether or not the signal strength should be displayed."
-msgstr "Określa czy należy wyświetlać siłę sygnału."
+msgstr "Określa, czy należy wyświetlać siłę sygnału."
 
 #: ../src/netstatus-icon.c:942
 #, c-format
@@ -240,7 +254,8 @@ msgid ""
 "\n"
 "%s"
 msgstr ""
-"Proszę skontaktować się z administratorem systemu w celu rozwiązania problemu:\n"
+"Proszę skontaktować się z administratorem systemu w celu rozwiązania "
+"następującego problemu:\n"
 "\n"
 "%s"
 
@@ -284,26 +299,23 @@ msgstr "Sygnał"
 msgid "Wireless signal strength percentage"
 msgstr "Procentowa siła sygnału bezprzewodowego"
 
-#: ../src/netstatus-iface.c:198
-#: ../src/netstatus-util.c:167
+#: ../src/netstatus-iface.c:198 ../src/netstatus-util.c:167
 msgid "Error"
 msgstr "Błąd"
 
 #: ../src/netstatus-iface.c:199
 msgid "The current error condition"
-msgstr "Aktualne warunki błędu"
+msgstr "Obecne warunki błędu"
 
-#: ../src/netstatus-iface.c:441
-#: ../src/netstatus-iface.c:1204
+#: ../src/netstatus-iface.c:441 ../src/netstatus-iface.c:1204
 #, c-format
 msgid "Unable to open socket: %s"
 msgstr "Nie można otworzyć gniazda: %s"
 
-#: ../src/netstatus-iface.c:503
-#: ../src/netstatus-iface.c:1230
+#: ../src/netstatus-iface.c:503 ../src/netstatus-iface.c:1230
 #, c-format
 msgid "SIOCGIFFLAGS error: %s"
-msgstr "Błą SIOCGIFFLAGS: %s"
+msgstr "Błąd SIOCGIFFLAGS: %s"
 
 #: ../src/netstatus-iface.c:877
 msgid "AMPR NET/ROM"
@@ -317,8 +329,7 @@ msgstr "Ethernet"
 msgid "AMPR AX.25"
 msgstr "AMPR AX.25"
 
-#: ../src/netstatus-iface.c:895
-#: ../src/netstatus-iface.c:1015
+#: ../src/netstatus-iface.c:895 ../src/netstatus-iface.c:1015
 msgid "16/4 Mbps Token Ring"
 msgstr "16/4 Mbps Token Ring"
 
@@ -418,7 +429,7 @@ msgstr "Błąd SIOCGIFCONF: %s"
 #: ../src/netstatus-iface.c:1255
 #, c-format
 msgid "No network devices found"
-msgstr "Nie znaleziono urządzeń sieciowych"
+msgstr "Nie odnaleziono urządzeń sieciowych"
 
 #: ../src/netstatus-sysdeps.c:180
 #, c-format
@@ -429,17 +440,19 @@ msgstr "Nie można otworzyć /proc/net/dev: %s"
 msgid "Could not parse /proc/net/dev. Unknown format."
 msgstr "Nie można przetworzyć /prov/net/dev. Nieznany format."
 
-#: ../src/netstatus-sysdeps.c:204
-#: ../src/netstatus-sysdeps.c:330
+#: ../src/netstatus-sysdeps.c:204 ../src/netstatus-sysdeps.c:330
 #, c-format
 msgid "Could not parse interface name from '%s'"
 msgstr "Nie można przetworzyć nazwy interfejsu z \"%s\""
 
-#: ../src/netstatus-sysdeps.c:217
-#: ../src/netstatus-sysdeps.c:645
+#: ../src/netstatus-sysdeps.c:217 ../src/netstatus-sysdeps.c:645
 #, c-format
-msgid "Could not parse interface statistics from '%s'. prx_idx = %d; ptx_idx = %d; brx_idx = %d; btx_idx = %d;"
-msgstr "Nie można przetworzyć statystyk interfejsu z \"%s\". prx_idx = %d; ptx_idx = %d; brx_idx = %d; btx_idx = %d;"
+msgid ""
+"Could not parse interface statistics from '%s'. prx_idx = %d; ptx_idx = %d; "
+"brx_idx = %d; btx_idx = %d;"
+msgstr ""
+"Nie można przetworzyć statystyk interfejsu z \"%s\". prx_idx = %d; ptx_idx = "
+"%d; brx_idx = %d; btx_idx = %d;"
 
 #: ../src/netstatus-sysdeps.c:314
 msgid "Could not parse /proc/net/wireless. Unknown format."
@@ -448,12 +461,14 @@ msgstr "Nie można przetworzyć /prov/net/wireless. Nieznany format."
 #: ../src/netstatus-sysdeps.c:341
 #, c-format
 msgid "Could not parse wireless details from '%s'. link_idx = %d;"
-msgstr "Nie można przetworzyć szczegółów interfejsu bezprzewodowego z \"%s\". link_idx = %d;"
+msgstr ""
+"Nie można przetworzyć szczegółów interfejsu bezprzewodowego z \"%s\". "
+"link_idx = %d;"
 
 #: ../src/netstatus-sysdeps.c:414
 #, c-format
 msgid "Could not connect to interface, '%s'"
-msgstr "Nie można podłączyć się do interfejsu, \"%s\""
+msgstr "Nie można połączyć się z interfejsem, \"%s\""
 
 #: ../src/netstatus-sysdeps.c:420
 #, c-format
@@ -488,19 +503,3 @@ msgstr "Odbieranie"
 #: ../src/netstatus-util.c:164
 msgid "Sending/Receiving"
 msgstr "Wysyłanie/odbieranie"
-
-#~ msgid "    "
-#~ msgstr "    "
-#~ msgid "*"
-#~ msgstr "*"
-#~ msgid "0%"
-#~ msgstr "0%"
-#~ msgid "There was an error displaying help: %s"
-#~ msgstr "Wystąpił błąd podczas wyświetlania pomocy: %s"
-#~ msgid "Internet"
-#~ msgstr "Internet"
-#~ msgid "Cannot open /proc/net/wireless: %s"
-#~ msgstr "Nie można otworzyć /proc/net/wireless: %s"
-#~ msgid "dialog1"
-#~ msgstr "dialog1"
-
