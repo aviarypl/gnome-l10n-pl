@@ -9,8 +9,8 @@ msgstr ""
 "Project-Id-Version: gnome-color-manager\n"
 "Report-Msgid-Bugs-To: http://bugzilla.gnome.org/enter_bug.cgi?product=gnome-"
 "color-manager\n"
-"POT-Creation-Date: 2010-03-07 16:05+0000\n"
-"PO-Revision-Date: 2010-03-07 19:36+0100\n"
+"POT-Creation-Date: 2010-03-08 15:09+0000\n"
+"PO-Revision-Date: 2010-03-08 17:10+0100\n"
 "Last-Translator: Piotr Drąg <piotrdrag@gmail.com>\n"
 "Language-Team: Polish <gnomepl@aviary.pl>\n"
 "MIME-Version: 1.0\n"
@@ -77,10 +77,10 @@ msgstr ""
 
 #: ../data/gnome-color-manager.schemas.in.h:3
 msgid ""
-"If set to TRUE then the __ICC_PROFILE atom will be set, which applications "
+"If set to TRUE then the __ICC_PROFILE hint will be set, which applications "
 "use to convert true color to screen color."
 msgstr ""
-"Ustawione na \"true\" spowoduje ustawienie atomu __ICC_PROFILE, którego "
+"Ustawione na \"true\" spowoduje ustawienie podpowiedzi __ICC_PROFILE, której "
 "używają programy do przekształcania \"True Color\" do koloru ekranu."
 
 #: ../data/gnome-color-manager.schemas.in.h:4
@@ -99,8 +99,8 @@ msgstr ""
 "Ustawienie na \"true\" spowoduje ustawienie LUT obrazu z profilem ekranu"
 
 #: ../data/gnome-color-manager.schemas.in.h:6
-msgid "Set the _ICC_PROFILE atom for applications."
-msgstr "Ustawienie atomu _ICC_PROFILE dla programów."
+msgid "Set the _ICC_PROFILE hint for applications."
+msgstr "Ustawienie podpowiedzi _ICC_PROFILE dla programów."
 
 #: ../data/gnome-color-manager.schemas.in.h:7
 msgid "Show the fine tuning controls for display devices."
@@ -961,40 +961,51 @@ msgid "QPcard 201"
 msgstr "QPcard 201"
 
 #. TRANSLATORS: dialog title
-#: ../src/gcm-calibrate-manual.c:198
+#: ../src/gcm-calibrate-manual.c:200
 msgid "Introduction to display calibration"
 msgstr "Wprowadzenie do kalibracji ekranu"
 
-#. TRANSLATORS: message text
-#: ../src/gcm-calibrate-manual.c:217
+#. TRANSLATORS: message text, an ICC profile is a file that characterizes the device
+#: ../src/gcm-calibrate-manual.c:222
 msgid ""
-"This dialog will help calibrate your display and create a custom ICC "
-"profile. The calibration will involve several steps so that an accurate "
-"profile can be obtained. It should only take a few minutes."
-msgstr ""
-"To okno pomoże skalibrować ekran i utworzyć własny profil ICC. Kalibracja "
-"obejmuje kilka kroków, aby uzyskać dokładny profil. Powinien zająć tylko "
-"kilka minut."
+"This dialog will help calibrate your display and create a custom ICC profile."
+msgstr "To okno pomoże skalibrować ekran i utworzyć własny profil ICC."
 
-#. TRANSLATORS: message text
-#: ../src/gcm-calibrate-manual.c:224
+#. TRANSLATORS: message text, telling the user they are in for the long haul
+#: ../src/gcm-calibrate-manual.c:225
 msgid ""
-"It may help to sit back from the screen or squint at the calibration widgets "
-"in order to accurately match the colors. You can also repeat the calibration "
-"steps as many times as you want."
+"The calibration will involve several steps so that an accurate profile can "
+"be obtained."
+msgstr "Kalibracja obejmuje kilka kroków, aby uzyskać dokładny profil."
+
+#. TRANSLATORS: message text, this is a lie. It will take more than a few minutes, but we don't want to scare the hapless user
+#: ../src/gcm-calibrate-manual.c:228
+msgid "It should only take a few minutes."
+msgstr "Powinien zająć tylko kilka minut."
+
+#. TRANSLATORS: message text, when you're comparing colors, it helps if the image is a bit out of focus otherwise the
+#. * fovea (center bit of the eye) tries to 'pick out' a colour, rather than take the average reading
+#: ../src/gcm-calibrate-manual.c:239
+msgid ""
+"It may help to sit further from the screen or to squint at the calibration "
+"images in order to accurately compare the colors."
 msgstr ""
 "Odsunięcie się od ekranu lub patrzenie z boku na widżety kalibracji może "
-"pomóc w dokładnym dopasowaniu kolorów. Można powtórzyć kalibrację tyle razy, "
-"ile to konieczne."
+"pomóc w dokładnym dopasowaniu kolorów."
+
+#. TRANSLATORS: message text, tell the use that they can go back and forwards, as the human eye sucks
+#: ../src/gcm-calibrate-manual.c:242
+msgid "You can repeat the calibration steps as many times as you want."
+msgstr "Można powtórzyć kalibrację tyle razy, ile to konieczne."
 
 #. TRANSLATORS: dialog title
-#: ../src/gcm-calibrate-manual.c:233
+#: ../src/gcm-calibrate-manual.c:254
 #, c-format
 msgid "Create table item %i/%i"
 msgstr "Utworzenie elementu tablicy %i/%i"
 
 #. TRANSLATORS: message text
-#: ../src/gcm-calibrate-manual.c:254
+#: ../src/gcm-calibrate-manual.c:275
 msgid ""
 "Please try to match up the gray square with the surrounding alternating "
 "bars. You should match the brightness first, and then if required change the "
@@ -1005,12 +1016,12 @@ msgstr ""
 "koloru, jeśli to konieczne, aby był zwyczajnie szary."
 
 #. TRANSLATORS: dialog title
-#: ../src/gcm-calibrate-manual.c:351
+#: ../src/gcm-calibrate-manual.c:372
 msgid "Summary"
 msgstr "Podsumowanie"
 
 #. TRANSLATORS: message text
-#: ../src/gcm-calibrate-manual.c:370
+#: ../src/gcm-calibrate-manual.c:391
 msgid ""
 "This display is now calibrated. You can change the current profile using the "
 "Color Profiles program."
