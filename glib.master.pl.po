@@ -7,11 +7,10 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: glib\n"
-"Report-Msgid-Bugs-To: http://bugzilla.gnome.org/enter_bug.cgi?"
-"product=glib&component=general\n"
-"POT-Creation-Date: 2010-03-05 22:19+0000\n"
-"PO-Revision-Date: 2010-03-06 11:04+0100\n"
-"Last-Translator: Piotr Drąg <piotrdrag@gmail.com>\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2010-03-08 10:51+0100\n"
+"PO-Revision-Date: 2010-03-08 10:50+0100\n"
+"Last-Translator: Tomasz Dominikowski <dominikowski@gmail.com>\n"
 "Language-Team: Polish <gnomepl@aviary.pl>\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -105,8 +104,8 @@ msgid "Could not open converter from '%s' to '%s'"
 msgstr "Nie można otworzyć konwertera z \"%s\" na \"%s\""
 
 #: ../glib/gconvert.c:638 ../glib/gconvert.c:1031 ../glib/giochannel.c:1577
-#: ../glib/giochannel.c:1619 ../glib/giochannel.c:2463 ../glib/gutf8.c:980
-#: ../glib/gutf8.c:1435 ../gio/gcharsetconverter.c:346
+#: ../glib/giochannel.c:1619 ../glib/giochannel.c:2463 ../glib/gutf8.c:981
+#: ../glib/gutf8.c:1436 ../gio/gcharsetconverter.c:346
 msgid "Invalid byte sequence in conversion input"
 msgstr "Nieprawidłowa sekwencja bajtów na wejściu konwersji"
 
@@ -116,8 +115,8 @@ msgstr "Nieprawidłowa sekwencja bajtów na wejściu konwersji"
 msgid "Error during conversion: %s"
 msgstr "Błąd podczas konwersji: %s"
 
-#: ../glib/gconvert.c:678 ../glib/gutf8.c:976 ../glib/gutf8.c:1186
-#: ../glib/gutf8.c:1327 ../glib/gutf8.c:1431
+#: ../glib/gconvert.c:678 ../glib/gutf8.c:977 ../glib/gutf8.c:1187
+#: ../glib/gutf8.c:1328 ../glib/gutf8.c:1432
 msgid "Partial character sequence at end of input"
 msgstr "Na końcu wejścia występuje sekwencja odpowiadająca części znaku"
 
@@ -265,6 +264,14 @@ msgstr "Szablon \"%s\" jest nieprawidłowy, nie powinien on zawierać \"%s\""
 #, c-format
 msgid "Template '%s' doesn't contain XXXXXX"
 msgstr "Szablon \"%s\" nie zawiera XXXXXX"
+
+#: ../glib/gfileutils.c:1774
+#, c-format
+msgid "%u byte"
+msgid_plural "%u bytes"
+msgstr[0] "%u bajt"
+msgstr[1] "%u bajty"
+msgstr[2] "%u bajtów"
 
 #: ../glib/gfileutils.c:1782
 #, c-format
@@ -1000,16 +1007,16 @@ msgstr ""
 "Odczytanie odpowiedniej liczby danych z potoku procesu potomnego (%s) się "
 "nie powiodło"
 
-#: ../glib/gutf8.c:1054
+#: ../glib/gutf8.c:1055
 msgid "Character out of range for UTF-8"
 msgstr "Znak jest poza zakresem dla UTF-8"
 
-#: ../glib/gutf8.c:1154 ../glib/gutf8.c:1163 ../glib/gutf8.c:1295
-#: ../glib/gutf8.c:1304 ../glib/gutf8.c:1445 ../glib/gutf8.c:1541
+#: ../glib/gutf8.c:1155 ../glib/gutf8.c:1164 ../glib/gutf8.c:1296
+#: ../glib/gutf8.c:1305 ../glib/gutf8.c:1446 ../glib/gutf8.c:1542
 msgid "Invalid sequence in conversion input"
 msgstr "Nieprawidłowa sekwencja na wejściu konwersji"
 
-#: ../glib/gutf8.c:1456 ../glib/gutf8.c:1552
+#: ../glib/gutf8.c:1457 ../glib/gutf8.c:1553
 msgid "Character out of range for UTF-16"
 msgstr "Znak jest poza zakresem dla UTF-16"
 
@@ -1781,7 +1788,7 @@ msgstr "Plik został zmieniony poza programem"
 msgid "Error removing old file: %s"
 msgstr "Błąd podczas usuwania starego pliku: %s"
 
-#: ../gio/gmemoryinputstream.c:487 ../gio/gmemoryoutputstream.c:714
+#: ../gio/gmemoryinputstream.c:487 ../gio/gmemoryoutputstream.c:718
 msgid "Invalid GSeekType supplied"
 msgstr "Podano nieprawidłowy obiekt GSeekType"
 
@@ -1793,15 +1800,15 @@ msgstr "Nieprawidłowe żądanie wyszukiwania"
 msgid "Cannot truncate GMemoryInputStream"
 msgstr "Nie można skrócić GMemoryInputStream"
 
-#: ../gio/gmemoryoutputstream.c:464
+#: ../gio/gmemoryoutputstream.c:468
 msgid "Memory output stream not resizable"
 msgstr "Potok wyjściowy pamięci nie obsługuje zmiany rozmiaru"
 
-#: ../gio/gmemoryoutputstream.c:480
+#: ../gio/gmemoryoutputstream.c:484
 msgid "Failed to resize memory output stream"
 msgstr "Zmiana rozmiaru potoku wyjściowego pamięci się nie powiodła"
 
-#: ../gio/gmemoryoutputstream.c:568
+#: ../gio/gmemoryoutputstream.c:572
 msgid ""
 "Amount of memory required to process the write is larger than available "
 "address space"
@@ -1809,11 +1816,11 @@ msgstr ""
 "Ilość pamięci wymagana dla przetworzenia zapisu jest większa, niż dostępna "
 "przestrzeń adresowa"
 
-#: ../gio/gmemoryoutputstream.c:724
+#: ../gio/gmemoryoutputstream.c:728
 msgid "Requested seek before the beginning of the stream"
 msgstr "Zażądano przejścia przed początkiem potoku"
 
-#: ../gio/gmemoryoutputstream.c:733
+#: ../gio/gmemoryoutputstream.c:737
 msgid "Requested seek beyond the end of the stream"
 msgstr "Zażądano przejścia poza koniec potoku"
 
