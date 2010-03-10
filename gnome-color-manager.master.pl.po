@@ -9,8 +9,8 @@ msgstr ""
 "Project-Id-Version: gnome-color-manager\n"
 "Report-Msgid-Bugs-To: http://bugzilla.gnome.org/enter_bug.cgi?product=gnome-color-manager\n"
 "POT-Creation-Date: 2010-03-08 15:09+0000\n"
-"PO-Revision-Date: 2010-03-09 12:43+0100\n"
-"Last-Translator: Tomasz Dominikowski <dominikowski@gmail.com>\n"
+"PO-Revision-Date: 2010-03-10 12:09+0100\n"
+"Last-Translator: Piotr Drąg <piotrdrag@gmail.com>\n"
 "Language-Team: Polish <gnomepl@aviary.pl>\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -59,10 +59,9 @@ msgstr "Ustawione na \"true\" spowoduje wyszukiwanie profilów ICC urządzenia n
 msgid "If set to TRUE then the __ICC_PROFILE hint will be set, which applications use to convert true color to screen color."
 msgstr "Ustawione na \"true\" spowoduje ustawienie podpowiedzi __ICC_PROFILE, której używają programy do przekształcania \"True Color\" do koloru ekranu."
 
-# rev: profilu ekrany?
 #: ../data/gnome-color-manager.schemas.in.h:4
 msgid "If set to TRUE then the fine tuning controls are visible. This allows the user to change the display profile outside of what the ICC profile suggests and is only recommended for advanced users."
-msgstr "Ustawione na \"true\" spowoduje wyświetlanie kontroli dostrajania. Umożliwia to użytkownikowi zmianę profilu ekrany poza tym, co sugeruje profil ICC i jest zalecane tylko dla zaawansowanych użytkowników."
+msgstr "Ustawione na \"true\" spowoduje wyświetlanie kontroli dostrajania. Umożliwia to użytkownikowi zmianę profilu ekranu poza tym, co sugeruje profil ICC i jest zalecane tylko dla zaawansowanych użytkowników."
 
 #: ../data/gnome-color-manager.schemas.in.h:5
 msgid "If set to TRUE then the video LUT is set with the display profile"
@@ -104,23 +103,21 @@ msgstr "Domyślnie używana gamma dla monitorów bez ustawionej poprzedniej wart
 msgid "The length of calibration, as this is proportional to the accuracy. The option 'short' creates a quick profile, 'normal' a regular one, and 'long' takes a really long time, but is more precise and creates a better profile. Use 'ask' if the want the user to choose."
 msgstr "Długość kalibracji jest proporcjonalna do dokładności. Opcja \"short\" (krótka) utworzy szybki profil, \"normal\" (normalna) utworzy zwykły, a \"long\" (długa) zajmuje naprawdę dużo czasu, ale jest bardziej dokładna i utworzy lepszy profil. Należy użyć opcji \"ask\" (zapytaj), aby użytkownik wybierał."
 
-# rev: skąd pomysł że percepcyjne = precyzyjne? global
 #: ../data/gnome-color-manager.schemas.in.h:15
 msgid "The rendering intent to use for softproofs, e.g. 'perceptual'."
-msgstr "Renderowanie przeznaczone dla korekty ekranowej, np. \"perceptual\" (precyzyjne)."
+msgstr "Renderowanie przeznaczone dla korekty ekranowej, np. \"perceptual\" (percepcyjne)."
 
 #: ../data/gnome-color-manager.schemas.in.h:16
 msgid "The rendering intent to use for the display, e.g. 'perceptual'."
-msgstr "Renderowanie przeznaczone dla ekranu, np. \"perceptual\" (precyzyjne)."
+msgstr "Renderowanie przeznaczone dla ekranu, np. \"perceptual\" (percepcyjne)."
 
 #: ../data/gnome-color-manager.schemas.in.h:17
 msgid "Whether ICC profiles should be loaded from external disks."
 msgstr "Określa, czy profile ICC powinny być wczytywane z zewnętrznych dysków."
 
-# rev: ekran poprawiana, ekran pozostawiana, ekran dobra wynalezek
 #: ../data/gnome-color-manager.schemas.in.h:18
 msgid "Whether the display should be globally corrected or left to applications."
-msgstr "Określa, czy ekran powinien być globalnie poprawiana, czy pozostawiona programom."
+msgstr "Określa, czy ekran powinien być globalnie poprawiany, czy pozostawiony programom."
 
 #: ../policy/org.gnome.color.policy.in.h:1
 msgid "Authentication is required to install the color profile for all users"
@@ -153,11 +150,10 @@ msgstr "Debuguje podane moduły"
 msgid "Debug these specific functions"
 msgstr "Debuguje podane funkcje"
 
-# rev: dane debugowanie czy debugowania?
 #. TRANSLATORS: save to a log
 #: ../src/egg-debug.c:465
 msgid "Log debugging data to a file"
-msgstr "Zapisuje dane debugowanie do pliku"
+msgstr "Zapisuje dane debugowania do pliku"
 
 #: ../src/egg-debug.c:469
 msgid "Debugging Options"
@@ -376,22 +372,20 @@ msgstr "Proszę ustawić urządzenie do mierzenia na tryb ekranu, i upewnić si�
 msgid "Calibration error"
 msgstr "Błąd kalibracji"
 
-# rev: a może "w tym momencie"
 #. TRANSLATORS: message, the sample was not read correctly
 #: ../src/gcm-calibrate-argyll.c:2220
 msgid "The sample could not be read at this time."
-msgstr "Nie można odczytać próbki za tym razem."
+msgstr "Nie można odczytać próbki w tej chwili."
 
 #. TRANSLATORS: button text
 #: ../src/gcm-calibrate-argyll.c:2228
 msgid "Try again"
 msgstr "Spróbuj ponownie"
 
-# rev: oprogr. wbudowanego (check dict)
 #. TRANSLATORS: message, no firmware is available
 #: ../src/gcm-calibrate-argyll.c:2269
 msgid "No firmware is installed for this instrument."
-msgstr "Nie zainstalowano oprogramowania dla tego urządzenia."
+msgstr "Nie zainstalowano oprogramowania wbudowanego dla tego urządzenia."
 
 #. TRANSLATORS: message, the image wasn't good enough
 #: ../src/gcm-calibrate-argyll.c:2272
@@ -807,11 +801,10 @@ msgstr "To okno pomoże skalibrować ekran i utworzyć własny profil ICC."
 msgid "The calibration will involve several steps so that an accurate profile can be obtained."
 msgstr "Kalibracja obejmuje kilka kroków, aby uzyskać dokładny profil."
 
-# rev: kalibracja powinien?
 #. TRANSLATORS: message text, this is a lie. It will take more than a few minutes, but we don't want to scare the hapless user
 #: ../src/gcm-calibrate-manual.c:228
 msgid "It should only take a few minutes."
-msgstr "Powinien zająć tylko kilka minut."
+msgstr "Powinno to zająć tylko kilka minut."
 
 #. TRANSLATORS: message text, when you're comparing colors, it helps if the image is a bit out of focus otherwise the
 #. * fovea (center bit of the eye) tries to 'pick out' a colour, rather than take the average reading
@@ -855,11 +848,10 @@ msgstr "Te urządzenie już istnieje"
 msgid "Measuring instrument not recognized"
 msgstr "Urządzenie do mierzenia nie zostało rozpoznane"
 
-# rev: mierzeniA
 #. TRANSLATORS: this is when the device is not recognized
 #: ../src/gcm-colorimeter.c:359
 msgid "Measuring instrument not registered"
-msgstr "Urządzenie do mierzenie nie jest zarejestrowane"
+msgstr "Urządzenie do mierzenia nie jest zarejestrowane"
 
 #. TRANSLATORS: this is the name of the internal panel
 #: ../src/gcm-device-xrandr.c:111
@@ -1312,11 +1304,10 @@ msgstr "Nie można profilować: urządzenie do mierzenia nie obsługuje profilow
 msgid "Cannot profile this type of device"
 msgstr "Nie można profilować tego typu urządzenia"
 
-# rev: warto dodać, że z osobna
 #. TRANSLATORS: this is when the user is using a binary blob
 #: ../src/gcm-prefs.c:1348
 msgid "Per-device settings not supported. Check your display driver."
-msgstr "Ustawienia dla każdego urządzenia nie są obsługiwane. Proszę sprawdzić sterownik ekranu."
+msgstr "Ustawienia dla każdego urządzenia z osobna nie są obsługiwane. Proszę sprawdzić sterownik ekranu."
 
 #. TRANSLATORS: this the ICC profile type
 #: ../src/gcm-prefs.c:1440
@@ -1530,7 +1521,7 @@ msgstr "%e %B %Y, %H:%M:%S"
 #. TRANSLATORS: rendering intent: you probably want to google this
 #: ../src/gcm-utils.c:527
 msgid "Perceptual"
-msgstr "Precyzyjny"
+msgstr "Percepcyjny"
 
 #. TRANSLATORS: rendering intent: you probably want to google this
 #: ../src/gcm-utils.c:531
@@ -1863,4 +1854,3 @@ msgstr "P_rzywróć domyślne"
 #: ../data/gcm-prefs.ui.h:86
 msgid "_Set profile for color managed applications"
 msgstr "U_staw profil dla programów zarządzających kolorami"
-
