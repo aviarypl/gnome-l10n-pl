@@ -9,8 +9,8 @@ msgstr ""
 "Project-Id-Version: gnote\n"
 "Report-Msgid-Bugs-To: http://bugzilla.gnome.org/enter_bug.cgi?product=gnote&component=general\n"
 "POT-Creation-Date: 2010-02-26 10:17+0000\n"
-"PO-Revision-Date: 2010-03-09 11:34+0100\n"
-"Last-Translator: Tomasz Dominikowski <dominikowski@gmail.com>\n"
+"PO-Revision-Date: 2010-03-10 12:04+0100\n"
+"Last-Translator: Piotr Drąg <piotrdrag@gmail.com>\n"
 "Language-Team: Polish <gnomepl@aviary.pl>\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -179,19 +179,15 @@ msgstr "Liczba całkowita określająca minimalną liczbę notatek wyświetlanyc
 
 #: ../data/gnote.schemas.in.h:30
 msgid "Integer value indicating if there is a preference to always perform a specific behavior when a conflict is detected, instead of prompting the user. The values map to an internal enumeration. 0 indicates that the user wishes to be prompted when a conflict occurs, so that they may handle each conflict situation on a case-by-case basis."
-msgstr "Wartość liczbowa określająca, czy zawsze wykonywać określoną akcję po wykryciu konfliktu (zamiast pytania użytkownika). Wartość 0 oznacza proszenie użytkownika o decyzję przy każdym konflikcie."
+msgstr "Wartość liczbowa określająca, czy zawsze wykonywać określone działanie po wykryciu konfliktu (zamiast pytania użytkownika). Wartość 0 oznacza proszenie użytkownika o decyzję przy każdym konflikcie."
 
-# pd
-# rev: behavior jako akcja mi tu nie pasuje zbytnio. Prędzej działanie lub ewent. czynność. ("określone działanie w postaci...")
 #: ../data/gnote.schemas.in.h:31
 msgid "Integer value indicating if there is a preference to always perform a specific link updating behavior when a note is renamed, instead of prompting the user. The values map to an internal enumeration. 0 indicates that the user wishes to be prompted when renaming a note may impact links that exist in other notes. 1 indicates that links should automatically be removed. 2 indicates that link text should be updated to the new note name so that it will continue linking to the renamed note."
-msgstr "Wartość liczbowa określająca, czy zawsze wykonywać określoną akcję aktualizowania odnośników podczas zmiany nazwy notatki (zamiast pytania użytkownika). Wartości odnoszą się do wewnętrznej numeracji. Wartość 0 oznacza proszenie użytkownika o decyzję, kiedy zmiana nazwy notatki może wpłynąć na odnośniki w innych notatkach. Wartość 1 oznacza, że odnośniki powinny być automatycznie usuwane. Wartość 2 oznacza, że tekst odnośników powinien być aktualizowany do nowej nazwy notatki, aby dalej prowadziły do zmienionej notatki."
+msgstr "Wartość liczbowa określająca, czy zawsze wykonywać określone działanie w postaci aktualizowania odnośników podczas zmiany nazwy notatki (zamiast pytania użytkownika). Wartości odnoszą się do wewnętrznej numeracji. Wartość 0 oznacza proszenie użytkownika o decyzję, kiedy zmiana nazwy notatki może wpłynąć na odnośniki w innych notatkach. Wartość 1 oznacza, że odnośniki powinny być automatycznie usuwane. Wartość 2 oznacza, że tekst odnośników powinien być aktualizowany do nowej nazwy notatki, aby dalej prowadziły do zmienionej notatki."
 
-# pd
-# rev: tu też akcja jako działanie lepiej. Akcje to można na giełdzie kupić :)
 #: ../data/gnote.schemas.in.h:32
 msgid "Link Updating Behavior on Note Rename"
-msgstr "Akcja aktualizowania odnośników podczas zmiany nazwy notatki"
+msgstr "Działanie aktualizowania odnośników podczas zmiany nazwy notatki"
 
 #: ../data/gnote.schemas.in.h:33
 msgid "List of pinned notes"
@@ -425,7 +421,6 @@ msgstr "_Edycja"
 msgid "Gnote Preferences"
 msgstr "Preferencje programu Gnote"
 
-# pd
 #: ../src/actionmanager.cpp:212
 msgid "_Contents"
 msgstr "_Spis treści"
@@ -596,22 +591,18 @@ msgstr "A_utomatyczne wypunktowanie list"
 msgid "Use custom _font"
 msgstr "Własna _czcionka"
 
-# pd
 #: ../src/preferencesdialog.cpp:276
 msgid "When renaming a linked note: "
 msgstr "Podczas zmieniania nazwy notatki, do której prowadzą odnośniki:"
 
-# pd
 #: ../src/preferencesdialog.cpp:281
 msgid "Ask me what to do"
 msgstr "Pytanie co robić"
 
-# pd
 #: ../src/preferencesdialog.cpp:282
 msgid "Never rename links"
 msgstr "Bez zmieniania nazw odnośników"
 
-# pd
 #: ../src/preferencesdialog.cpp:283
 msgid "Always rename links"
 msgstr "Zmienianie nazw odnośników"
@@ -776,49 +767,38 @@ msgstr "Nowa notatka %1%"
 msgid "Describe your new note here."
 msgstr "Treść nowej notatki..."
 
-# pd
 #: ../src/noterenamedialog.cpp:151
 msgid "Rename Note Links?"
 msgstr "Zmienić nazwy odnośników?"
 
-# pd
-# rev: a to nie jest okno dialogowe z przyciskami zwykłymi?
 #: ../src/noterenamedialog.cpp:156
 msgid "_Don't Rename Links"
-msgstr "_Bez zmieniania nazw odnośników"
+msgstr "_Nie zmieniaj nazw odnośników"
 
-# pd
 #: ../src/noterenamedialog.cpp:157
 msgid "_Rename Links"
 msgstr "_Zmień nazwę odnośników"
 
-# pd
 #: ../src/noterenamedialog.cpp:158
 msgid "Select All"
 msgstr "Zaznacz wszystko"
 
-# pd
 #: ../src/noterenamedialog.cpp:159
 msgid "Select None"
 msgstr "Pusty wybór"
 
-# pd
 #: ../src/noterenamedialog.cpp:160
 msgid "Always show this _window"
 msgstr "Stałe wyświetlanie tego _okna"
 
-# pd
 #: ../src/noterenamedialog.cpp:161
 msgid "Alwa_ys rename links"
 msgstr "_Zmienianie nazw odnośników"
 
-# pd
-# rev: o, tu jest OK
 #: ../src/noterenamedialog.cpp:163
 msgid "Never rename _links"
 msgstr "_Bez zmieniania nazw odnośników"
 
-# pd
 #: ../src/noterenamedialog.cpp:182
 msgid ""
 "Rename links in other notes from \"<span underline=\"single\">%1</span>\" to\"<span underline=\"single\">%2</span>\"?\n"
@@ -833,12 +813,10 @@ msgstr ""
 msgid "Rename Links"
 msgstr "Zmień nazwy odnośników"
 
-# pd
 #: ../src/noterenamedialog.cpp:230
 msgid "Note Title"
 msgstr "Tytuł notatki"
 
-# pd
 #: ../src/noterenamedialog.cpp:266
 msgid "Ad_vanced"
 msgstr "Zaa_wansowane"
@@ -1053,7 +1031,6 @@ msgstr[2] "Pasuje: %1% notatek"
 msgid "Notes"
 msgstr "Notatki"
 
-# pd
 #: ../src/tray.cpp:50
 msgid "Take notes"
 msgstr "Robienie notatek"
@@ -1411,53 +1388,43 @@ msgstr "Użycie _zaznaczonego formatu"
 msgid "_Use Custom Format"
 msgstr "Własny forma_t"
 
-# pd
 #: ../src/addins/noteoftheday/noteoftheday.cpp:32
 msgid "Today: Template"
 msgstr "Dzisiaj: szablon"
 
-# pd
 #: ../src/addins/noteoftheday/noteoftheday.cpp:34
 msgid "Today: "
 msgstr "Dzisiaj: "
 
-# pd
 #: ../src/addins/noteoftheday/noteoftheday.cpp:160
 msgid "Tasks"
 msgstr "Zadania"
 
-# pd
 #: ../src/addins/noteoftheday/noteoftheday.cpp:161
 msgid "Appointments"
 msgstr "Spotkania"
 
-# pd
 #. Format: "Today: Friday, July 01 2005"
 #: ../src/addins/noteoftheday/noteoftheday.cpp:167
 msgid "%A, %B %d %Y"
 msgstr "%A, %d %B %Y"
 
-# pd
 #: ../src/addins/noteoftheday/noteofthedayapplicationaddin.cpp:43
 msgid "Note of the Day"
 msgstr "Notatka dnia"
 
-# pd
 #: ../src/addins/noteoftheday/noteofthedayapplicationaddin.cpp:47
 msgid "Automatically creates a \"Today\" note for easily jotting down daily thoughts"
 msgstr "Automatycznie tworzy notatkę \"Dzisiaj\" do łatwego notowania codziennych myśli"
 
-# pd
 #: ../src/addins/noteoftheday/noteofthedayapplicationaddin.cpp:52
 msgid "Debarshi Ray and the Tomboy Project"
 msgstr "Debarshi Ray i Projekt Tomboy"
 
-# pd
 #: ../src/addins/noteoftheday/noteofthedaypreferences.cpp:34
 msgid "_Open Today: Template"
 msgstr "_Otwórz dzisiaj: szablon"
 
-# pd
 #: ../src/addins/noteoftheday/noteofthedaypreferences.cpp:35
 msgid "Change the <span weight=\"bold\">Today: Template</span> note to customize the text that new Today notes have."
 msgstr "Aby dostosować tekst nowych notatek \"Dzisiaj\", należy zmienić notatkę <span weight=\"bold\">Dzisiaj: szablon</span>."
@@ -1549,4 +1516,3 @@ msgstr "Dodaje możliwość podkreślania tekstu."
 #: ../src/addins/underline/underlinenoteaddin.cpp:55
 msgid "Hubert Figuière and the Tomboy Project"
 msgstr "Hubert Figuière i Projekt Tomboy"
-
