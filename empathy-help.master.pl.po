@@ -12,8 +12,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: empathy master\n"
 "POT-Creation-Date: 2010-03-12 21:03+0000\n"
-"PO-Revision-Date: 2010-03-13 10:39+0100\n"
-"Last-Translator: Aleksander Łukasiewicz <aleksander@lukasiewicz.net>\n"
+"PO-Revision-Date: 2010-03-15 17:57+0100\n"
+"Last-Translator: Tomasz Dominikowski <dominikowski@gmail.com>\n"
 "Language-Team: Polish <gnomepl@aviary.pl>\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -322,12 +322,14 @@ msgid "Invisible"
 msgstr "Niewidoczny"
 
 # al: niepewne: 'Ukryty', nie ma tłumaczenia w interfejsie, wcześniej 'Ukryty' było tłumaczeniem 'Hidden'
+# rev: Niewidoczny (jest w UI empathy)
 #: C/status-icons.page:64(p)
 #, fuzzy
 msgid "When you set your status to <em>Invisible</em>, you will appear as offline to your contacts. You will still be connected to your accounts, and you still see your contacts’ statuses and start conversations with them."
 msgstr "Po ustawieniu stanu na <em>Ukryty</em>, użytkownik widoczny jest dla innych jakby był w trybie offline. Połączenie jest wciąż aktywne, można obserwować stany dostępności innych kontaktów i nawiązywać z nimi rozmowy."
 
 # al: uważam, że 'offline' należy zamienić na 'niedostępny' lub 'rozłączony', ale w UI jest 'offline' ;/
+# rev: wg naszego słownika jest OK
 #: C/status-icons.page:70(gui)
 #, fuzzy
 msgid "Offline"
@@ -707,6 +709,7 @@ msgid "Even after removing an account, <app>Empathy</app> does not delete your c
 msgstr "Nawet po usunięciu konta, program <app>Empathy</app>nie usuwa poprzednich rozmów dla tego konta."
 
 # al: nie jestem pewien 'instant messaging service'
+# rev: usług komunikatora (ewent. usług wiadomości błyskawicznych, ale to niezgrabne) 
 #: C/prob-conn.page:7(desc)
 #, fuzzy
 msgid "Diagnose common problems connecting to an instant messaging service."
@@ -830,6 +833,7 @@ msgid "Deselect the <gui>Enabled</gui> check-box next to the name of your accoun
 msgstr "Należy odznaczyć pole <gui>Włączone</gui> znajdujące się obok nazwy konta, a następnie wybrać je ponownie, aby ustanowić połączenie z usługą"
 
 # al: fuzzy - global check!
+# rev: Uwierzytelnienie się nie powiodło
 #: C/prob-conn-auth.page:8(desc)
 #, fuzzy
 msgid "An error message which says “<gui>Authentication failed</gui>” appears in the main window."
@@ -867,6 +871,7 @@ msgid "My account is not enabled"
 msgstr "Konto nie jest włączone"
 
 # al: komunikacja błyskawiczna - global check
+# rev: konto komunikatora (patrz słownik)
 #: C/prob-conn-acctdisabled.page:35(p)
 #, fuzzy
 msgid "If the instant messaging account that you want to use is not enabled in the drop-down account list when you try to start a new conversation or join a room, your account details may not be correct."
@@ -1121,6 +1126,7 @@ msgid "On some IRC networks, you can register your nickname with a service calle
 msgstr "W niektórych sieciach IRC można zarejestrować hasło dzięki usłudze NickServ. Wysyłając specjalną wiadomość do NickServ można ustawić hasło potrzebne do identyfikacji. Niektóre pokoje rozmów IRC mogą nie zezwalać na połączenie bez rejestracji pseudonimu."
 
 # al: feature > usługa ?
+# rev: a czemu "jednak" jest między przecinkami, nie są potrzebne. Reszta OK, ale chyba jednak "hasło serwera"
 #: C/irc-nick-password.page:40(p)
 #, fuzzy
 msgid "<app>Empathy</app> does not currently support nickname registration. Some IRC networks, however, will automatically forward a <em>server password</em> to NickServ. On these networks, you can use the IRC password in <app>Empathy</app> to identify yourself to NickServ. The popular FreeNode network is known to have this feature."
@@ -1165,6 +1171,7 @@ msgid "Internet Relay Chat (IRC)"
 msgstr "Internet Relay Chat (IRC)"
 
 # al: no właśnie, tak to jest jak się tłumaczy chat i conversation jako rozmowa, jeszcze nie wiem co tu wymyślić, trzeba pomyśleć
+# rev: zmień szyk i będzie OK (Rozmowy i pokoje...)
 #: C/irc-manage.page:37(title)
 #, fuzzy
 msgid "IRC Chat Rooms and Conversations"
@@ -1214,6 +1221,7 @@ msgid "From the <gui>Account</gui> drop-down list, select the IRC account that c
 msgstr "Z rozwijanej listy <gui>Konto</gui> należy wybrać konto IRC odpowiadające sieci, której chcemy używać."
 
 # al: nie wiem jak przetłumaczyć 'hash'
+# rev: to sprawdź nasz słownik http://slownik.lokalne.net/index.html
 #: C/irc-join-room.page:51(p)
 #, fuzzy
 msgid "In the <gui>Room</gui> text box, type the name of the channel you want to join. IRC channel names start with the hash character (<sys>#</sys>)."
@@ -1230,6 +1238,7 @@ msgid "To join multiple rooms, you need to repeat the steps above for each room.
 msgstr "Aby dołączyć do wielu pokojów należy powtórzyć powyższe kroki dla każdego pokoju."
 
 # al
+# rev: Łączenie?
 #: C/irc-join-pwd.page:9(desc)
 #, fuzzy
 msgid "Enter password-protected IRC chat rooms."
@@ -1626,6 +1635,7 @@ msgid "If you have an external device like a GPS or want to send a more accurate
 msgstr "W przypadku użycia urządzenia zewnętrznego GPS lub potrzeby przesłania dokładniejszej pozycji należy zaznaczyć odpowiednią opcję w sekcji <gui>Ustawienia Geoclue</gui>."
 
 # al: hmm... dziwna ta 'kompatybilność'
+# rev: geolokalizację
 #: C/geolocation-supported.page:7(desc)
 #, fuzzy
 msgid "Services that supports geolocation and compatibility."
@@ -1763,6 +1773,8 @@ msgid "In this case, your position will not be published, but you are still able
 msgstr "W takim wypadku położenie użytkownika nie jest udostępniane, choć wciąż można śledzić położenie innych kontaktów użytkownika."
 
 # al: publish > udostępnić ? global check
+# rev: w tym kontekście OK
+# (Global check daje sprawdzający, a nie tłumaczący. Jeśli coś jest przetłumaczone niepoprawnie i jest niezależne od kontekstu, to wtedy ewent. dam global check jeśli zauważę, że błąd się nagminnie powtarza lub jest na tyle rażący, że koniecznie trzeba całość sprawdzić. Jest to mechanizm który także zabezpiecza sprawdzającego od ciągłego powtarzania się, global check przeprowadza tylko tłumaczący. Chyba, że ten global check tutaj to sugestia od siebie dla siebie)
 #: C/geolocation-not-showing.page:42(p)
 #, fuzzy
 msgid "If you want to publish your geographical position, you can try to use an external device such as a GPS."
@@ -1774,6 +1786,7 @@ msgid "In order to publish your geographical location, your Jabber server needs 
 msgstr "Aby udostępnić położenie geograficzne, wykorzystywany serwer Jabber musi obsługiwać protokół PEP (Personal Eventing Protocal). Lista takich serwerów jest dostępna w Internecie pod <link href=\"http://coccinella.im/servers/servers_by_pubsub_pep.html\">tym adresem</link>. Google Talk nie obsługuje w chwili obecnej tego protokołu."
 
 # al: fuzzy
+# rev: geolokalizacji, global check
 #: C/geolocation.page:8(desc)
 #, fuzzy
 msgid "Use and understand geolocation in <app>Empathy</app>."
@@ -1940,6 +1953,7 @@ msgid "Most account types require you to create an account with a account provid
 msgstr "Większość rodzajów kont wymaga stworzenia konta u dostawcy usługi przed połączeniem za pomocą komunikatora takiego jak program <app>Empathy</app>. Niektórzy dostawcy kont pozwalają na użycie programu <app>Empathy</app> do rejestracji nowego konta przy użyciu tych samych kroków jak te potrzebne przy <link xref=\"add-account\">dodawaniu konta</link>."
 
 # al: trochę to masło maślane 'tworzenia nowego konta dla różnych rodzajów kont', więc drugie zrobiłem 'protokołów'
+# rev: zamień "ci" na "użytkownikowi", reszty nie będziemy po oryginale poprawiać
 #: C/create-account.page:40(p)
 #, fuzzy
 msgid "This page provides information on creating a new account for various types of accounts. Your account provider should give you a login ID and a password, as well as any additional information you need to connect with <app>Empathy</app>."
@@ -2423,6 +2437,7 @@ msgid "For most types of accounts, you can simply enter a login ID and a passwor
 msgstr "W przypadku większości typów kont można po prostu wprowadzić identyfikator logowania i hasło. Pewne konta lub typy kont mogą jednak wymagać podania dodatkowych informacji."
 
 # al: trochę dziwny ten komentarz do oryginalnej frazy :-S
+# rev: jaki komentarz?
 #: C/account-jabber.page:7(desc)
 #, fuzzy
 msgid "Advanced options for Jabber and Google Talk accounts."
@@ -2435,6 +2450,7 @@ msgid "Jabber Account Details"
 msgstr "Szczegóły konta Jabber"
 
 # al: instructions > wskazówki, czy może wytyczne
+# rev:  ja bym jednak przetłumaczył jako instrukcje, w końcu to coś w rodzaju instrukcji obsługi, global check
 #: C/account-jabber.page:31(p)
 #, fuzzy
 msgid "Most Jabber accounts will require only a login ID and a password to connect. For some accounts or on certain types of networks, you may need to enter additional information in the <gui>Advanced</gui> section. Normally, you will not need to use the advanced options below. For general instructions on adding an account, see <link xref=\"add-account\"/>."
