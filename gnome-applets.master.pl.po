@@ -9,8 +9,8 @@ msgstr ""
 "Project-Id-Version: gnome-applets\n"
 "Report-Msgid-Bugs-To: http://bugzilla.gnome.org/enter_bug.cgi?product=gnome-"
 "applets&component=general\n"
-"POT-Creation-Date: 2009-12-27 17:48+0000\n"
-"PO-Revision-Date: 2010-02-20 23:35+0100\n"
+"POT-Creation-Date: 2010-03-20 18:32+0000\n"
+"PO-Revision-Date: 2010-03-20 20:55+0100\n"
 "Last-Translator: Piotr Drąg <piotrdrag@gmail.com>\n"
 "Language-Team: Polish <gnomepl@aviary.pl>\n"
 "MIME-Version: 1.0\n"
@@ -73,7 +73,7 @@ msgstr "Wyświetla stan właściwości dostępności klawiatury"
 
 #: ../accessx-status/applet.c:137
 msgid "Shows the state of AccessX features such as latched modifiers"
-msgstr "Wyświetla stan właściwości AccessX takich jak modyfikatory zapadkowe"
+msgstr "Wyświetla stan właściwości AccessX, takich jak modyfikatory zapadkowe"
 
 #. about.set_artists([])
 #. about.set_documenters([])
@@ -90,12 +90,10 @@ msgstr "Wyświetla stan właściwości AccessX takich jak modyfikatory zapadkowe
 msgid "translator-credits"
 msgstr "Aviary.pl <gnomepl@aviary.pl>, 2008, 2009, 2010"
 
-
 #: ../accessx-status/applet.c:168
 #, c-format
 msgid "There was an error launching the help viewer: %s"
 msgstr "Podczas uruchamianiu przeglądarki pomocy wystąpił błąd: %s"
-
 
 #: ../accessx-status/applet.c:218
 #, c-format
@@ -145,7 +143,7 @@ msgstr "Generator stanu akumulatora"
 #: ../battstat/GNOME_BattstatApplet.server.in.in.h:3
 #: ../battstat/battstat_applet.c:1664
 msgid "Monitor a laptop's remaining power"
-msgstr "Monitoruje poziomu naładowania akumulatora komputera przenośnego"
+msgstr "Monitoruje poziomu naładowania akumulatora w laptopie"
 
 #: ../battstat/GNOME_BattstatApplet.xml.h:3
 #: ../charpick/GNOME_CharpickerApplet.xml.h:3
@@ -258,7 +256,7 @@ msgstr "Informacja akumulatora"
 #: ../battstat/battstat_applet.c:570
 #, c-format
 msgid "You have %d%% of your total battery capacity remaining."
-msgstr "Pozostało %d%% pojemności baterii."
+msgstr "Pozostało %d%% pojemności akumulatora."
 
 #: ../battstat/battstat_applet.c:576
 #, c-format
@@ -266,9 +264,9 @@ msgid ""
 "You have %d minute of battery power remaining (%d%% of the total capacity)."
 msgid_plural ""
 "You have %d minutes of battery power remaining (%d%% of the total capacity)."
-msgstr[0] "\t\tPozostała %d minuta pracy na baterii (%d%% całej pojemności)."
-msgstr[1] "Pozostały %d minuty pracy na baterii (%d%% całej pojemności)."
-msgstr[2] "Pozostało %d minut pracy na baterii (%d%% całej pojemności)."
+msgstr[0] "Pozostała %d minuta pracy na akumulatorze (%d%% całej pojemności)."
+msgstr[1] "Pozostały %d minuty pracy na akumulatorze (%d%% całej pojemności)."
+msgstr[2] "Pozostało %d minut pracy na akumulatorze (%d%% całej pojemności)."
 
 #. TRANSLATORS: this is a list, it is left as a single string
 #. * to allow you to make it appear like a list would in your
@@ -294,7 +292,7 @@ msgid ""
 " • save open documents and shut your laptop down."
 msgstr ""
 "Aby zapobiec utracie danych, należy:\n"
-" • wstrzymać komputer aby zaoszczędzić energię,\n"
+" • wstrzymać komputer, aby zaoszczędzić energię,\n"
 " • podłączyć komputer do gniazdka zasilania, albo\n"
 " • zapisać otwarte dokumenty i zakończyć pracę komputera."
 
@@ -331,12 +329,12 @@ msgstr "Narzędzie wyświetlające stan akumulatora laptopa."
 #. true
 #: ../battstat/battstat_applet.c:1235
 msgid "HAL backend enabled."
-msgstr "Włączone wsparcie mechanizmu HAL."
+msgstr "Włączona obsługa mechanizmu usługi HAL."
 
 #. false
 #: ../battstat/battstat_applet.c:1236
 msgid "Legacy (non-HAL) backend enabled."
-msgstr "Włączone wsparcie standardowe (nie HAL)."
+msgstr "Włączone wsparcie standardowe (nie używające usługi HAL)."
 
 #: ../battstat/battstat_applet.ui.h:1
 msgid "(shows single image for status and charge)"
@@ -389,7 +387,7 @@ msgstr "Os_trzeżenie o spadku poziomu naładowania do:"
 
 #: ../battstat/battstat-hal.c:343 ../battstat/battstat-hal.c:368
 msgid "HAL error"
-msgstr "Błąd HAL"
+msgstr "Błąd usługi HAL"
 
 #: ../battstat/battstat-hal.c:343
 msgid "Could not create libhal_ctx"
@@ -402,7 +400,7 @@ msgstr "Brak akumulatora"
 #: ../battstat/battstat-hal.c:417
 #, c-format
 msgid "Unable to initialise HAL: %s: %s"
-msgstr "Nie można zainicjować HAL; %s: %s"
+msgstr "Nie można zainicjować usługi HAL; %s: %s"
 
 #: ../battstat/battstat.schemas.in.h:1
 msgid "0 for no label, 1 for percentage and 2 for time remaining."
@@ -560,13 +558,11 @@ msgid ""
 "keyboard. Released under GNU General Public Licence."
 msgstr ""
 "Aplet panelu GNOME, pozwalający wybierać nietypowe znaki, których nie ma na "
-"klawiaturze. Rozpowszechniany na licencji GNU GPL."
-
+"klawiaturze. Rozpowszechniany na warunkach licencji GNU GPL."
 
 #: ../charpick/charpick.schemas.in.h:1
 msgid "Characters shown on applet startup"
 msgstr "Znaki widoczne podczas uruchamiania apletu"
-
 
 #: ../charpick/charpick.schemas.in.h:2
 msgid "DEPRECATED - Characters shown on applet startup"
@@ -579,7 +575,6 @@ msgstr "Lista dostępnych palet"
 #: ../charpick/charpick.schemas.in.h:4
 msgid "List of strings containing the available palettes."
 msgstr "Lista ciągów znaków zawierających dostępne palety."
-
 
 #: ../charpick/charpick.schemas.in.h:5
 msgid ""
@@ -603,7 +598,7 @@ msgstr "Element palety"
 
 #: ../charpick/properties.c:126
 msgid "Modify a palette by adding or removing characters"
-msgstr "Modyfikacja palety poprzez dodawanie lub usuwanie znaków"
+msgstr "Modyfikacja palety przez dodawanie lub usuwanie znaków"
 
 #: ../charpick/properties.c:240
 msgid "Add Palette"
@@ -625,7 +620,6 @@ msgstr "_Palety:"
 msgid "Add button"
 msgstr "Przycisk dodawania"
 
-
 #: ../charpick/properties.c:474
 msgid "Click to add a new palette"
 msgstr "Kliknięcie dodaje nową paletę"
@@ -634,7 +628,6 @@ msgstr "Kliknięcie dodaje nową paletę"
 msgid "Edit button"
 msgstr "Przycisk modyfikowania"
 
-
 #: ../charpick/properties.c:482
 msgid "Click to edit the selected palette"
 msgstr "Kliknięcie modyfikuje wybraną paletę"
@@ -642,7 +635,6 @@ msgstr "Kliknięcie modyfikuje wybraną paletę"
 #: ../charpick/properties.c:489
 msgid "Delete button"
 msgstr "Przycisk usuwania"
-
 
 #: ../charpick/properties.c:490
 msgid "Click to delete the selected palette"
@@ -814,30 +806,30 @@ msgstr "(nie zamontowane)"
 msgid "Cannot execute '%s'"
 msgstr "Nie można uruchomić \"%s\""
 
-#: ../drivemount/drive-button.c:871
+#: ../drivemount/drive-button.c:875
 msgid "_Play DVD"
 msgstr "_Odtwórz DVD"
 
-#: ../drivemount/drive-button.c:875
+#: ../drivemount/drive-button.c:879
 msgid "_Play CD"
 msgstr "_Odtwórz CD"
 
-#: ../drivemount/drive-button.c:878
+#: ../drivemount/drive-button.c:882
 #, c-format
 msgid "_Open %s"
 msgstr "_Otwórz %s"
 
-#: ../drivemount/drive-button.c:887
+#: ../drivemount/drive-button.c:891
 #, c-format
 msgid "Un_mount %s"
 msgstr "O_dmontuj %s"
 
-#: ../drivemount/drive-button.c:894
+#: ../drivemount/drive-button.c:898
 #, c-format
 msgid "_Mount %s"
 msgstr "_Zamontuj %s"
 
-#: ../drivemount/drive-button.c:902
+#: ../drivemount/drive-button.c:906
 #, c-format
 msgid "_Eject %s"
 msgstr "_Wysuń %s"
@@ -852,7 +844,7 @@ msgstr "Okres czasu sprawdzania stanu punktów montowania"
 
 #: ../drivemount/drivemount.schemas.in.h:2
 msgid "Time in seconds between status updates"
-msgstr "Czas w sekundach pomiędzy uaktualnieniami stanu"
+msgstr "Czas w sekundach pomiędzy aktualizacjami stanu"
 
 #: ../geyes/GNOME_GeyesApplet.server.in.in.h:1
 msgid "A set of eyeballs for your panel"
@@ -949,7 +941,7 @@ msgstr "Bułgarski układ klawiatury"
 
 #: ../gkb-new/xmodmap/base.xml.in.h:13 ../gkb-new/xmodmap.sun/base.xml.in.h:16
 msgid "CapsLock key changes layout."
-msgstr "Klawisz CapsLock zmienia układ."
+msgstr "Klawisz Caps Lock zmienia układ."
 
 #: ../gkb-new/xmodmap/base.xml.in.h:14 ../gkb-new/xmodmap.sun/base.xml.in.h:17
 msgid "Control+Shift changes layout."
@@ -1045,7 +1037,7 @@ msgstr "Węgierski 101 klawiszy latin 1"
 
 #: ../gkb-new/xmodmap/base.xml.in.h:37
 msgid "Hungarian 101-key latin 2"
-msgstr "Węgierski 101 klawiaszy latin 2"
+msgstr "Węgierski 101 klawiszy latin 2"
 
 #: ../gkb-new/xmodmap/base.xml.in.h:38
 msgid "Hungarian 105-key latin 1"
@@ -1253,7 +1245,7 @@ msgstr "Amerykańska klawiatura 101 klawiszy"
 
 #: ../gkb-new/xmodmap/base.xml.in.h:89
 msgid "US 105-key keyboard (with windows keys)"
-msgstr "Amerykańska klawiatura 105 klawiszy (z klawiszami windows)"
+msgstr "Amerykańska klawiatura 105 klawiszy (z klawiszami Windows)"
 
 #: ../gkb-new/xmodmap/base.xml.in.h:90
 msgid "US 84-key"
@@ -1301,7 +1293,7 @@ msgstr "Białoruski układ klawiatury Sun"
 
 #: ../gkb-new/xmodmap.sun/base.xml.in.h:9
 msgid "Brazil Portuguese Sun USB keymap"
-msgstr "Brazylijski - portugalski układ klawiatruy SUN USB"
+msgstr "Brazylijski - portugalski układ klawiatury SUN USB"
 
 #: ../gkb-new/xmodmap.sun/base.xml.in.h:10
 msgid "Brazil Portuguese Sun keymap"
@@ -1525,7 +1517,7 @@ msgstr "_Odśwież"
 
 #: ../gweather/GNOME_GWeatherApplet_Factory.server.in.in.h:1
 msgid "Factory for creating the weather applet."
-msgstr "Generator tworzący aplety pogodowe."
+msgstr "Generator tworzący aplet pogodowy."
 
 #: ../gweather/GNOME_GWeatherApplet_Factory.server.in.in.h:2
 msgid "Gweather Applet Factory"
@@ -1542,7 +1534,7 @@ msgstr "Raport pogodowy"
 
 #: ../gweather/gweather-about.c:50
 msgid "© 1999-2005 by S. Papadimitriou and others"
-msgstr "© 1999-2005 by S. Papadimitriou and others"
+msgstr "© 1999-2005 S. Papadimitriou i inni"
 
 #: ../gweather/gweather-about.c:51
 msgid "A panel application for monitoring local weather conditions."
@@ -1687,7 +1679,6 @@ msgstr "Wejście adresu"
 #: ../gweather/gweather-pref.c:173
 msgid "Enter the URL"
 msgstr "Wprowadzenie adresu URL"
-
 
 #: ../gweather/gweather-pref.c:317
 msgid ""
@@ -1872,7 +1863,6 @@ msgstr "Śledzenie zainwestowanych pieniędzy."
 msgid "_Refresh"
 msgstr "_Odśwież"
 
-
 #: ../invest-applet/data/financialchart.ui.h:1
 msgid "1 Year"
 msgstr "1 rok"
@@ -1893,7 +1883,6 @@ msgstr "20"
 msgid "200"
 msgstr "200"
 
-
 #: ../invest-applet/data/financialchart.ui.h:6
 msgid "3 Months"
 msgstr "Kwartał"
@@ -1902,11 +1891,9 @@ msgstr "Kwartał"
 msgid "5"
 msgstr "5"
 
-
 #: ../invest-applet/data/financialchart.ui.h:8
 msgid "5 Days"
 msgstr "5 dni"
-
 
 #: ../invest-applet/data/financialchart.ui.h:9
 msgid "5 Years"
@@ -1915,7 +1902,6 @@ msgstr "5 lat"
 #: ../invest-applet/data/financialchart.ui.h:10
 msgid "50"
 msgstr "50"
-
 
 #: ../invest-applet/data/financialchart.ui.h:11
 msgid "6 Months"
@@ -1931,7 +1917,7 @@ msgstr "Wstęga Bollingera"
 
 #: ../invest-applet/data/financialchart.ui.h:14
 msgid "Downloading chart from <b>Yahoo!</b>"
-msgstr "Pobieranie wykresu z <b>Yahoo!</b>"
+msgstr "Pobieranie wykresu z serwisu <b>Yahoo!</b>"
 
 #: ../invest-applet/data/financialchart.ui.h:15
 msgid "Exponential moving average: "
@@ -1957,7 +1943,6 @@ msgstr "MACD"
 #: ../invest-applet/data/financialchart.ui.h:20
 msgid "MFI"
 msgstr "MFI"
-
 
 #: ../invest-applet/data/financialchart.ui.h:21
 msgid "Maximum"
@@ -1991,7 +1976,6 @@ msgstr "Wskaźnik slow stoch"
 msgid "Splits"
 msgstr "Splity"
 
-
 #: ../invest-applet/data/financialchart.ui.h:29
 msgid "Today"
 msgstr "Dzisiaj"
@@ -2002,7 +1986,7 @@ msgstr "Obrót"
 
 #: ../invest-applet/data/financialchart.ui.h:31
 msgid "Vol+MA"
-msgstr "Vol+MA"
+msgstr "Obrót+MA"
 
 #: ../invest-applet/data/financialchart.ui.h:32
 msgid "Volumes"
@@ -2104,24 +2088,24 @@ msgstr "Cena"
 msgid "Commission"
 msgstr "Marża"
 
-#: ../invest-applet/invest/quotes.py:92
+#: ../invest-applet/invest/quotes.py:120
 msgid "Invest could not connect to Yahoo! Finance"
 msgstr "Aplet Invest nie mógł połączyć się z Yahoo! Finance"
 
-#: ../invest-applet/invest/quotes.py:94 ../invest-applet/invest/quotes.py:107
+#: ../invest-applet/invest/quotes.py:122 ../invest-applet/invest/quotes.py:135
 #, python-format
 msgid "Updated at %s"
 msgstr "Zaktualizowano o %s"
 
 #. Translators: This is share-market jargon. It is the percentage change in the price of a stock. The %% gets changed to a single percent sign and the %+.2f gets replaced with the value of the change.
-#: ../invest-applet/invest/quotes.py:103
+#: ../invest-applet/invest/quotes.py:131
 #, python-format
 msgid "Quotes average change %%: %+.2f%%"
 msgstr "Średnia zmiana notowań %%: %+.2f%%"
 
 # http://pol.proz.com/kudoz/english_to_polish/finance_general/2201546-balance_positions.html
 #. Translators: This is share-market jargon. It refers to the total difference between the current price and purchase price for all the shares put together. i.e. How much money would be earned if they were sold right now.
-#: ../invest-applet/invest/quotes.py:106
+#: ../invest-applet/invest/quotes.py:134
 #, python-format
 msgid "Positions balance: %+.2f"
 msgstr "Pozycje bilansu: %+.2f"
@@ -2227,12 +2211,10 @@ msgstr ""
 msgid "Must set the GCONF_CONFIG_SOURCE environment variable\n"
 msgstr "Należy ustawić zmienną środowiskową GCONF_CONFIG_SOURCE\n"
 
-
 #: ../mini-commander/src/mc-install-default-macros.c:154
 #, c-format
 msgid "Failed to access configuration source(s): %s\n"
 msgstr "Uzyskanie dostępu do źródła konfiguracji się nie powiodło: %s\n"
-
 
 #: ../mini-commander/src/mc-install-default-macros.c:169
 #, c-format
@@ -2418,14 +2400,13 @@ msgstr "Składowa czerwona koloru tła."
 msgid "The red component of the foreground color."
 msgstr "Składowa czerwona koloru pierwszego planu."
 
-
 #: ../mini-commander/src/mini-commander.schemas.in.h:24
 msgid ""
 "This per-applet key is deprecated in favour of the global key, /schemas/apps/"
 "mini-commander-global/macro_patterns."
 msgstr ""
-"Ten klucz apletu jest przestarzały i zastąpiony przez globalny klucz, "
-"/schemas/apps/mini-commander-global/macro_patterns."
+"Ten klucz apletu jest przestarzały i zastąpiony przez globalny klucz, /"
+"schemas/apps/mini-commander-global/macro_patterns."
 
 #: ../mini-commander/src/mini-commander.schemas.in.h:25
 msgid "Use the default theme colors"
@@ -2528,8 +2509,8 @@ msgid ""
 "that you don't have a sound card configured."
 msgstr ""
 "Regulator głośności nie znalazł żadnego elementu i/lub urządzeń do obsługi. "
-"Oznacza to, że nie są zainstalowane odpowiednie wtyczki GStreamer lub karta "
-"dźwiękowa nie jest skonfigurowana."
+"Oznacza to, że nie są zainstalowane odpowiednie wtyczki biblioteki GStreamer "
+"lub karta dźwiękowa nie jest skonfigurowana."
 
 #: ../mixer/applet.c:546
 msgid ""
@@ -2569,7 +2550,7 @@ msgstr "Regulacja głośności dla panelu GNOME."
 
 #: ../mixer/applet.c:1422
 msgid "Using GStreamer 0.10."
-msgstr "Używa GStreamer 0.10."
+msgstr "Używa biblioteki GStreamer 0.10."
 
 #: ../mixer/dock.c:218
 msgid "Mute"
@@ -2655,7 +2636,6 @@ msgstr ""
 "Aby rozłączyć się z dostawcą usług internetowych, wymagane są uprawnienia "
 "administratora"
 
-
 #: ../modemlights/modem-applet.c:826
 msgid "The entered password is invalid"
 msgstr "Wprowadzone hasło jest nieprawidłowe"
@@ -2738,7 +2718,6 @@ msgid ""
 msgstr ""
 "Monitor obciążenia systemu wyświetlający wykresy dla procesora, pamięci, "
 "przestrzeni wymiany oraz sieci."
-
 
 #: ../multiload/main.c:126
 #, c-format
@@ -3104,7 +3083,6 @@ msgstr "_Zapis"
 msgid "System Monitor Preferences"
 msgstr "Ustawienia monitora systemu"
 
-
 #: ../null_applet/GNOME_CDPlayerApplet.server.in.h:1
 msgid "CD Player (Deprecated)"
 msgstr "Odtwarzacz CD (przestarzałe)"
@@ -3117,16 +3095,13 @@ msgstr "Aplet panelu służący do odtwarzania płyt CD"
 msgid "Alert you when new mail arrives"
 msgstr "Powiadamia o nadejściu nowej poczty"
 
-
 #: ../null_applet/GNOME_MailcheckApplet_Factory.server.in.h:2
 msgid "Inbox Monitor (Deprecated)"
 msgstr "Monitor poczty (przestarzałe)"
 
-
 #: ../null_applet/GNOME_MixerApplet.server.in.h:2
 msgid "Volume Control (Deprecated)"
 msgstr "Regulacja głośności (przestarzałe)"
-
 
 #: ../null_applet/GNOME_NullApplet_Factory.server.in.in.h:1
 msgid "Factory for deprecating applets"
@@ -3144,6 +3119,14 @@ msgstr "Monitor jakości bezprzewodowego połączenia sieciowego"
 msgid "Wireless Link Monitor"
 msgstr "Monitor połączenia bezprzewodowego"
 
+#: ../null_applet/GNOME_KeyboardApplet.server.in.h:1
+msgid "Keyboard Indicator (Deprecated)"
+msgstr "Wskaźnik klawiatury (przestarzałe)"
+
+#: ../null_applet/GNOME_KeyboardApplet.server.in.h:2
+msgid "Keyboard layout indicator"
+msgstr "Wskaźnik układu klawiatury"
+
 #: ../null_applet/null_applet.c:40
 msgid "Inbox Monitor"
 msgstr "Monitor skrzynki odbiorczej"
@@ -3152,11 +3135,15 @@ msgstr "Monitor skrzynki odbiorczej"
 msgid "CD Player"
 msgstr "Odtwarzacz płyt CD"
 
-#: ../null_applet/null_applet.c:149
+#: ../null_applet/null_applet.c:48
+msgid "Keyboard Indicator"
+msgstr "Wskaźnik klawiatury"
+
+#: ../null_applet/null_applet.c:151
 msgid "Some panel items are no longer available"
 msgstr "Część elementów panelu nie jest już dostępna"
 
-#: ../null_applet/null_applet.c:150
+#: ../null_applet/null_applet.c:152
 msgid ""
 "One or more panel items (also referred to as applets) are no longer "
 "available in the GNOME desktop."
@@ -3164,11 +3151,11 @@ msgstr ""
 "Jeden lub więcej elementów panelu (nazywanych apletami) nie jest już "
 "dostępna w środowisku GNOME."
 
-#: ../null_applet/null_applet.c:152
+#: ../null_applet/null_applet.c:154
 msgid "These items will now be removed from your configuration:"
 msgstr "Następujące elementy zostaną usunięte teraz z konfiguracji:"
 
-#: ../null_applet/null_applet.c:155
+#: ../null_applet/null_applet.c:157
 msgid "You will not receive this message again."
 msgstr "Ten komunikat nie będzie już wyświetlany."
 
