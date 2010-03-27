@@ -7,9 +7,10 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: gnome-color-manager\n"
-"Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2010-03-26 23:35+0100\n"
-"PO-Revision-Date: 2010-03-25 13:14+0100\n"
+"Report-Msgid-Bugs-To: http://bugzilla.gnome.org/enter_bug.cgi?product=gnome-"
+"color-manager\n"
+"POT-Creation-Date: 2010-03-27 12:57+0000\n"
+"PO-Revision-Date: 2010-03-27 14:16+0100\n"
 "Last-Translator: Piotr Drąg <piotrdrag@gmail.com>\n"
 "Language-Team: Polish <gnomepl@aviary.pl>\n"
 "MIME-Version: 1.0\n"
@@ -130,13 +131,16 @@ msgid "The default gamma to use for monitors with no previous value set."
 msgstr ""
 "Domyślnie używana gamma dla monitorów bez ustawionej poprzedniej wartości."
 
+# pd
 #: ../data/gnome-color-manager.schemas.in.h:14
 msgid "The duration between sending notifications to recalibrate a display."
-msgstr ""
+msgstr "Okres czasu między wysyłaniem powiadomień o ponowną kalibrację ekranu."
 
+# pd
 #: ../data/gnome-color-manager.schemas.in.h:15
 msgid "The duration between sending notifications to recalibrate a printer."
 msgstr ""
+"Okres czasu między wysyłaniem powiadomień o ponowną kalibrację drukarki."
 
 #: ../data/gnome-color-manager.schemas.in.h:16
 msgid ""
@@ -162,17 +166,23 @@ msgid "The rendering intent to use for the display, e.g. 'perceptual'."
 msgstr ""
 "Renderowanie przeznaczone dla ekranu, np. \"perceptual\" (percepcyjne)."
 
+# pd
 #: ../data/gnome-color-manager.schemas.in.h:19
 msgid ""
 "This is the number of seconds in between notifying the user to recalibrate "
 "each display device. Set to 0 to disable the notification."
 msgstr ""
+"Liczba sekund między powiadamianiem użytkownika o ponownej kalibracji "
+"każdego ekranu. Ustawienie na 0 wyłączna powiadamianie."
 
+# pd
 #: ../data/gnome-color-manager.schemas.in.h:20
 msgid ""
 "This is the number of seconds in between notifying the user to recalibrate "
 "each printer device. Set to 0 to disable the notification."
 msgstr ""
+"Liczba sekund między powiadamianiem użytkownika o ponownej kalibracji "
+"każdej drukarki. Ustawienie na 0 wyłączna powiadamianie."
 
 #: ../data/gnome-color-manager.schemas.in.h:21
 msgid "Whether ICC profiles should be loaded from external disks."
@@ -1737,34 +1747,37 @@ msgstr ""
 msgid "Missing description"
 msgstr "Brakujący opis"
 
+# pd
 #. TRANSLATORS: button: this is to open GCM
 #: ../src/gcm-session.c:153
-#, fuzzy
 msgid "Recalibrate now"
-msgstr "Kalibracja urządzenia"
+msgstr "Ponownie skalibruj"
 
+# pd
 #. TRANSLATORS: button: this is to ignore the recalibrate notifications
 #: ../src/gcm-session.c:156
 msgid "Ignore"
-msgstr ""
+msgstr "Zignoruj"
 
+# pd
 #. TRANSLATORS: this is when the device has not been recalibrated in a while
 #: ../src/gcm-session.c:183
-#, fuzzy
 msgid "Recalibration required"
-msgstr "Błąd kalibracji"
+msgstr "Wymagana jest ponowna kalibracja"
 
+# pd
 #. TRANSLATORS: this is when the display has not been recalibrated in a while
 #: ../src/gcm-session.c:193
 #, c-format
 msgid "The display '%s' should be recalibrated soon."
-msgstr ""
+msgstr "Ekran \"%s\" powinien niedługo zostać ponownie skalibrowany."
 
+# pd
 #. TRANSLATORS: this is when the printer has not been recalibrated in a while
 #: ../src/gcm-session.c:200
 #, c-format
 msgid "The printer '%s' should be recalibrated soon."
-msgstr ""
+msgstr "Drukarka \"%s\" powinna niedługo zostać ponownie skalibrowana."
 
 #: ../src/gcm-session.c:263
 msgid "Do not exit after the request has been processed"
@@ -1819,7 +1832,7 @@ msgstr "CRT"
 #. The user wants to create images suitable to send to a photo-processing lab
 #: ../data/gcm-calibrate.ui.h:5
 msgid "Create images for printing"
-msgstr "Utworzenie zdjęć do wywołania"
+msgstr "Utworzenie obrazów do wydrukowania"
 
 #. Expander label, for use when the user wants to see the VTE widget and what the calibration tool is actually doing
 #: ../data/gcm-calibrate.ui.h:6 ../data/gcm-spawn.ui.h:2
@@ -1834,7 +1847,7 @@ msgstr "Kalibracja urządzenia"
 #. The user wants to analyse images that have been printed by a photo-processing lab
 #: ../data/gcm-calibrate.ui.h:10
 msgid "Generate profile from printed images"
-msgstr "Utworzenie profilu z wywołanych zdjęć"
+msgstr "Utworzenie profilu z wydrukowanych obrazów"
 
 #: ../data/gcm-calibrate.ui.h:11
 msgid "Green:"
@@ -2145,6 +2158,3 @@ msgstr "P_rzywróć domyślne"
 #: ../data/gcm-prefs.ui.h:86
 msgid "_Set profile for color managed applications"
 msgstr "U_staw profil dla programów zarządzających kolorami"
-
-#~ msgid "Measuring instrument not registered"
-#~ msgstr "Urządzenie do mierzenia nie jest zarejestrowane"
