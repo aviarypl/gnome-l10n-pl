@@ -9,8 +9,8 @@ msgstr ""
 "Project-Id-Version: gyrus\n"
 "Report-Msgid-Bugs-To: http://bugzilla.gnome.org/enter_bug.cgi?product=gyrus&component=general\n"
 "POT-Creation-Date: 2010-03-21 10:11+0000\n"
-"PO-Revision-Date: 2010-03-31 16:50+0100\n"
-"Last-Translator: Tomasz Dominikowski <dominikowski@gmail.com>\n"
+"PO-Revision-Date: 2010-03-31 17:17+0100\n"
+"Last-Translator: Piotr Drąg <piotrdrag@gmail.com>\n"
 "Language-Team: Polish <gnomepl@aviary.pl>\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -33,16 +33,13 @@ msgstr "*"
 msgid "<b>Name:</b>"
 msgstr "<b>Nazwa:</b>"
 
-# rev: Limit dyskowy, global
 #: ../src/glade/create_mailbox.glade.h:3
 msgid "<b>Quota (MB):</b>"
-msgstr "<b>Przydział (MB):</b>"
+msgstr "<b>Limit dyskowy (MB):</b>"
 
-# pd - bo "Przydziel przydział" doesn't work
-# rev: slownik.lokalne.net mówi, że quota to "limit dyskowy"
 #: ../src/glade/create_mailbox.glade.h:4
 msgid "Assign quota"
-msgstr "Dodaj przydział"
+msgstr "Dodaj limit dyskowy"
 
 #: ../src/glade/create_mailbox.glade.h:5
 msgid "Create mailbox"
@@ -98,11 +95,11 @@ msgstr "Lista kontroli dostępu"
 
 #: ../src/glade/page.glade.h:9
 msgid "Modify quota"
-msgstr "Zmodyfikuj przydział"
+msgstr "Zmodyfikuj limit dyskowy"
 
 #: ../src/glade/page.glade.h:10
 msgid "New quota (MB)"
-msgstr "Nowy przydział (MB)"
+msgstr "Nowy limit dyskowy (MB)"
 
 #: ../src/glade/page.glade.h:11
 msgid "Password"
@@ -114,19 +111,17 @@ msgstr "Hasło"
 msgid "_Connect"
 msgstr "Połą_cz"
 
-# rev: Limit dyskowy
 #: ../src/glade/preferences.glade.h:1
 msgid "<b>Mailbox quota:</b>"
-msgstr "<b>Przydział skrzynki pocztowej:</b>"
+msgstr "<b>Limit dyskowy skrzynki pocztowej:</b>"
 
 #: ../src/glade/preferences.glade.h:2
 msgid "<b>Mailboxes tree:</b>"
 msgstr "<b>Drzewo skrzynek pocztowych:</b>"
 
-# rev: limit dyskowy...
 #: ../src/glade/preferences.glade.h:3
 msgid "Default suffix for changing quota:"
-msgstr "Domyślny przyrostek do zmieniania przydziału:"
+msgstr "Domyślny przyrostek do zmieniania limitu dyskowego:"
 
 #: ../src/glade/preferences.glade.h:4
 msgid "Preferences"
@@ -230,24 +225,22 @@ msgstr "Brak uprawnień"
 msgid "Empty access control list."
 msgstr "Pusta lista kontroli dostępu."
 
-# rev: limit dyskowy, dobra, dalej nie będę już wymieniał tego ;)
 #: ../src/gyrus-admin-mailbox.c:80
 msgid "Quota does not exist"
-msgstr "Przydział nie istnieje"
+msgstr "Limit dyskowy nie istnieje"
 
 #: ../src/gyrus-admin-mailbox.c:174
 #, c-format
 msgid "Quota overloaded"
-msgstr "Przekroczono przydział"
+msgstr "Przekroczono limit dyskowy"
 
 #: ../src/gyrus-admin-mailbox.c:232
 msgid "Quota not valid. Please try again."
-msgstr "Przydział jest nieprawidłowy. Proszę spróbować ponownie."
+msgstr "Limit dyskowy jest nieprawidłowy. Proszę spróbować ponownie."
 
-# rev: Na pewno posiadane uprawnienia są odpowiednie?
 #: ../src/gyrus-admin-mailbox.c:246
 msgid "Unable to change quota. Are you sure do you have the appropriate permissions?"
-msgstr "Nie można zmienić przydziału. Na pewno posiadane są odpowiednie uprawnienia?"
+msgstr "Nie można zmienić limitu dyskowego. Na pewno posiadane uprawnienia są odpowiednie?"
 
 #: ../src/gyrus-admin-mailbox.c:332
 #, c-format
@@ -264,14 +257,13 @@ msgstr "Nadrzędna skrzynka pocztowa \"%s\" nie istnieje. Proszę odświeżyć l
 msgid "Mailbox '%s' already exists. Please try a different name."
 msgstr "Skrzynka pocztowa \"%s\" już istnieje. Proszę spróbować innej nazwy."
 
-# rev: Na pewno posiadane uprawnienia są odpowiednie?
 #: ../src/gyrus-admin-mailbox.c:363
 msgid "Unable to create the mailbox. Are you sure do you have the appropriate permissions?"
-msgstr "Nie można utworzyć skrzynki pocztowej. Na pewno posiadane są odpowiednie uprawnienia?"
+msgstr "Nie można utworzyć skrzynki pocztowej. Na pewno posiadane uprawnienia są odpowiednie?"
 
 #: ../src/gyrus-admin-mailbox.c:373
 msgid "Mailbox created, but could not set quota."
-msgstr "Utworzono skrzynkę pocztową, ale nie można ustawić przydziału."
+msgstr "Utworzono skrzynkę pocztową, ale nie można ustawić limitu dyskowego."
 
 #: ../src/gyrus-admin-mailbox.c:437
 #, c-format
@@ -386,7 +378,7 @@ msgstr "Wyszukiwanie skrzynki pocztowej"
 
 #: ../src/gyrus-dialog-mailbox-new.c:94
 msgid "Quota not valid"
-msgstr "Przydział jest nieprawidłowy"
+msgstr "Limit dyskowy jest nieprawidłowy"
 
 #: ../src/gyrus-dialog-mailbox-new.c:216
 msgid "New mailbox"
@@ -458,7 +450,7 @@ msgstr "Utwórz raport..."
 
 #: ../src/gyrus-main-app.c:417
 msgid "Create report of users with quota problems"
-msgstr "Tworzy raport użytkowników z problemami z przydziałem"
+msgstr "Tworzy raport użytkowników z problemami z limitem dyskowym"
 
 #: ../src/gyrus-main-app.c:421
 msgid "New entry"
@@ -476,10 +468,9 @@ msgstr "Usuń skrzynkę pocztową"
 msgid "Remove current mailbox from the server"
 msgstr "Usuwa bieżącą skrzynkę pocztową z serwera"
 
-# rev: nope!
 #: ../src/gyrus-main-app.c:429
 msgid "Rename entry"
-msgstr "Usuń wpis"
+msgstr "Zmień nazwę wpisu"
 
 #: ../src/gyrus-main-app.c:430
 msgid "Rename selected ACL entry"
@@ -522,7 +513,7 @@ msgstr "Raport użycia miejsca skrzynki pocztowej dla %s"
 #: ../src/gyrus-report.c:190
 #: ../src/gyrus-report.c:490
 msgid "Quota (%)"
-msgstr "Przydział (%)"
+msgstr "Limit dyskowy (%)"
 
 #: ../src/gyrus-report.c:203
 #: ../src/gyrus-report.c:494
@@ -588,4 +579,3 @@ msgstr "Talk - klient polecenia echo"
 #: ../tests/gyrus-talk.glade.h:8
 msgid "_Send"
 msgstr "_Wyślij"
-
