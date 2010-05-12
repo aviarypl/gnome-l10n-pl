@@ -16,15 +16,14 @@ msgstr ""
 "Project-Id-Version: pdfmod 0.6\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2010-05-10 22:12+0200\n"
-"PO-Revision-Date: 2010-05-10 22:12+0200\n"
-"Last-Translator: Łukasz Jernaś <deejay1@srem.org>\n"
+"PO-Revision-Date: 2010-05-12 22:51+0100\n"
+"Last-Translator: Wadim Dziedzic <wdziedzic@aviary.pl>\n"
 "Language-Team: Polish <gnomepl@aviary.pl>\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Language: pl\n"
-"Plural-Forms: nplurals=3; plural=(n==1 ? 0 : n%10>=2 && n%10<=4 && (n%100<10 "
-"|| n%100>=20) ? 1 : 2);\n"
+"Plural-Forms: nplurals=3; plural=(n==1 ? 0 : n%10>=2 && n%10<=4 && (n%100<10 || n%100>=20) ? 1 : 2);\n"
 "X-Generator: Virtaal 0.5.2\n"
 "X-Poedit-Language: Polish\n"
 "X-Poedit-Country: Poland\n"
@@ -59,9 +58,9 @@ msgstr "Błąd podczas przenoszenia stron"
 msgid "Error trying to remove pages from document"
 msgstr "Błąd podczas usuwania stron z dokumentu"
 
-#LJ
+# J
 #: ../src/PdfMod/Pdf/Page.cs:36
-#,  csharp-format
+#, csharp-format
 msgid "Page {0}"
 msgstr "Strona {0}"
 
@@ -89,6 +88,7 @@ msgstr "Zapisuje ten dokument jako nowy plik"
 msgid "_File"
 msgstr "_Plik"
 
+# REV: nie dałoby się innej listerki jako accesskey? t jest dosyć wąskie i przez to kiepsko widoczne...
 #: ../src/PdfMod/Gui/Actions.cs:69
 msgid "Recent _Files"
 msgstr "Ostatnio o_twarte pliki"
@@ -146,6 +146,7 @@ msgstr "_Widok"
 msgid "_Help"
 msgstr "Pomo_c"
 
+# REV: nie chodzi tu czasem o spis treści pomocy?
 #: ../src/PdfMod/Gui/Actions.cs:91
 msgid "_Contents"
 msgstr "_Zawartość"
@@ -160,9 +161,7 @@ msgstr "Otwiera w przeglądarce"
 
 #: ../src/PdfMod/Gui/Actions.cs:100
 msgid "View and edit the title, keywords, and more for this document"
-msgstr ""
-"Wyświetla i modyfikuje tytuł, słowa kluczowe i inne właściwości tego "
-"dokumentu"
+msgstr "Wyświetla i modyfikuje tytuł, słowa kluczowe i inne właściwości tego dokumentu"
 
 #: ../src/PdfMod/Gui/Actions.cs:102
 msgid "Toolbar"
@@ -176,6 +175,7 @@ msgstr "Tryb pełnoekranowy"
 msgid "_Undo"
 msgstr "C_ofnij"
 
+# REV: cofa?
 #: ../src/PdfMod/Gui/Actions.cs:173
 #, csharp-format
 msgid "Undo {0}"
@@ -214,6 +214,7 @@ msgstr[0] "Wyodrębnij stronę"
 msgstr[1] "Wyodrębnij {0} strony"
 msgstr[2] "Wyodrębnij {0} stron"
 
+# REV: l.poj wybraną, l.mn. zaznaczone - do ujednolicenia
 #: ../src/PdfMod/Gui/Actions.cs:195
 #, csharp-format
 msgid "Extract the selected page"
@@ -222,15 +223,18 @@ msgstr[0] "Wyodrębnia wybraną stronę"
 msgstr[1] "Wyodrębnia {0} zaznaczone strony"
 msgstr[2] "Wyodrębnia {0} zaznaczonych stron"
 
-#: ../src/PdfMod/Gui/Actions.cs:203 ../src/PdfMod/Gui/Actions.cs:244
+#: ../src/PdfMod/Gui/Actions.cs:203
+#: ../src/PdfMod/Gui/Actions.cs:244
 msgid "Select PDF"
 msgstr "Wybierz dokument PDF"
 
-#: ../src/PdfMod/Gui/Actions.cs:261 ../src/PdfMod/Gui/Client.cs:289
+#: ../src/PdfMod/Gui/Actions.cs:261
+#: ../src/PdfMod/Gui/Client.cs:289
 msgid "Error Loading Document"
 msgstr "Błąd podczas wczytywania dokumentu"
 
-#: ../src/PdfMod/Gui/Actions.cs:262 ../src/PdfMod/Gui/Client.cs:290
+#: ../src/PdfMod/Gui/Actions.cs:262
+#: ../src/PdfMod/Gui/Client.cs:290
 #, csharp-format
 msgid "There was an error loading {0}"
 msgstr "Wystąpił błąd podczas wczytywania {0}"
@@ -291,6 +295,7 @@ msgstr "Zapisać zmiany dokonane w tym dokumencie?"
 msgid "Close _Without Saving"
 msgstr "Zamknij _bez zapisywania"
 
+# REV: l.p. nie czasem "w osobnym oknie" ??
 #: ../src/PdfMod/Gui/Client.cs:223
 #, csharp-format
 msgid "Continue, opening {0} document in separate windows?"
@@ -299,6 +304,7 @@ msgstr[0] "Otworzyć {0} dokument w osobnych oknach?"
 msgstr[1] "Otworzyć {0} dokumenty w osobnych oknach?"
 msgstr[2] "Otworzyć {0} dokumentów w osobnych oknach?"
 
+# REV: może lepszy accesskey?
 #: ../src/PdfMod/Gui/Client.cs:227
 msgid "Open _First"
 msgstr "Otwórz p_ierwszy"
@@ -329,6 +335,7 @@ msgstr[2] "{0} stron"
 msgid "Document is Encrypted"
 msgstr "Dokument jest zaszyfrowany"
 
+# REV: może trochę uprościć: "...hasło dokumentu, aby go otworzyć: "
 #: ../src/PdfMod/Gui/Client.cs:344
 msgid "Enter the document's password to open it:"
 msgstr "Należy wprowadzić hasło do dokumentu, aby można go było otworzyć:"
@@ -357,6 +364,7 @@ msgstr "_Słowa kluczowe"
 msgid "_Subject:"
 msgstr "T_emat:"
 
+# REV: zmiany?
 #: ../src/PdfMod/Gui/MetadataEditorBox.cs:85
 msgid "_Revert Properties"
 msgstr "_Cofnij zmiany"
