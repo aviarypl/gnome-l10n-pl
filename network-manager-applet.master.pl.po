@@ -9,8 +9,8 @@ msgstr ""
 "Project-Id-Version: network-manager-applet\n"
 "Report-Msgid-Bugs-To: http://bugzilla.gnome.org/enter_bug.cgi?product=NetworkManager&component=nm-applet\n"
 "POT-Creation-Date: 2010-05-08 17:36+0000\n"
-"PO-Revision-Date: 2010-05-25 21:26+0100\n"
-"Last-Translator: Wadim Dziedzic <wdziedzic@aviary.pl>\n"
+"PO-Revision-Date: 2010-05-25 21:34+0200\n"
+"Last-Translator: Piotr Drąg <piotrdrag@gmail.com>\n"
 "Language-Team: Polish <gnomepl@aviary.pl>\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -793,7 +793,6 @@ msgstr "P_owiadomienia"
 msgid "Connection _Information"
 msgstr "I_nformacje o połączeniu"
 
-# pd
 #. 'Edit Connections...' item
 #: ../src/applet.c:1885
 msgid "Edit Connections..."
@@ -1090,7 +1089,6 @@ msgstr "Jeśli włączone, to połączenie nigdy nie będzie użyte jako domyśl
 msgid "Ig_nore automatically obtained routes"
 msgstr "Ig_norowanie automatycznie uzyskanych tras"
 
-# pd
 #: ../src/connection-editor/ce-page-ip4.glade.h:13
 msgid "Require IPv4 addressing for this connection to complete"
 msgstr "Wymaganie adresowania IPv4 do ukończenia tego połączenia"
@@ -1104,11 +1102,9 @@ msgstr "Identyfikator klienta DHCP umożliwia administratorowi sieci dostosować
 msgid "Use this c_onnection only for resources on its network"
 msgstr "Używanie tego p_ołączenia tylko dla zasobów tej sieci"
 
-# pd
-# REV: nie lepiej ukończenie połączenia? (cokolwiek by to było) - wygląda na "nawiązanie połączenia"...
 #: ../src/connection-editor/ce-page-ip4.glade.h:16
 msgid "When connecting to IPv6-capable networks, allows the connection to complete if IPv4 configuration fails but IPv6 configuration succeeds."
-msgstr "Podczas łączenia się z sieciami IPv6 umożliwia połączeniu ukończenie, jeśli konfiguracja IPv4 się nie powiedzie, a IPv6 tak."
+msgstr "Podczas łączenia się z sieciami IPv6 umożliwia ukończenie nawiązania połączenia, jeśli konfiguracja IPv4 się nie powiedzie, a IPv6 tak."
 
 #: ../src/connection-editor/ce-page-ip4.glade.h:17
 #: ../src/connection-editor/ce-page-ip6.glade.h:15
@@ -1130,17 +1126,13 @@ msgstr "T_rasy&#x2026;"
 msgid "_Search domains:"
 msgstr "Domeny wy_szukiwania:"
 
-# pd
-# REV: j.w.
 #: ../src/connection-editor/ce-page-ip6.glade.h:12
 msgid "Require IPv6 addressing for this connection to complete"
-msgstr "Wymaganie adresowania IPv6 do ukończenia tego połączenia"
+msgstr "Wymaganie adresowania IPv6 do ukończenia nawiązania tego połączenia"
 
-# pd
-# REV: j.w.
 #: ../src/connection-editor/ce-page-ip6.glade.h:14
 msgid "When connecting to IPv4-capable networks, allows the connection to complete if IPv6 configuration fails but IPv4 configuration succeeds."
-msgstr "Podczas łączenia się z sieciami IPv4 umożliwia połączeniu ukończenie, jeśli konfiguracja IPv6 się nie powiedzie, a IPv4 tak."
+msgstr "Podczas łączenia się z sieciami IPv4 umożliwia ukończenie nawiązania połączenia, jeśli konfiguracja IPv6 się nie powiedzie, a IPv4 tak."
 
 #: ../src/connection-editor/ce-page-mobile.glade.h:1
 msgid "<b>Advanced</b>"
@@ -1381,22 +1373,17 @@ msgstr "_Tryb:"
 msgid "Mb/s"
 msgstr "Mb/s"
 
-# pd
-# REV: lepiej chyba "określonym poprzez adres MAC"
 #: ../src/connection-editor/ce-page-wireless.glade.h:11
 msgid "This option locks this connection to the network device specified by the MAC address entered here.  Example: 00:11:22:33:44:55"
-msgstr "Ta opcja blokuje to połączenie z urządzeniem sieciowym podanym jako adres MAC. Przykład: 00:11:22:33:44:55"
+msgstr "Ta opcja blokuje to połączenie z urządzeniem sieciowym określonym przez adres MAC. Przykład: 00:11:22:33:44:55"
 
-# pd
-# REV: j.w.
 #: ../src/connection-editor/ce-page-wireless.glade.h:12
 msgid "This option locks this connection to the wireless access point (AP) specified by the BSSID entered here.  Example: 00:11:22:33:44:55"
-msgstr "Ta opcja blokuje to połączenie do bezprzewodowego punktu dostępowego (AP) podanego jako BSSID. Przykład: 00:11:22:33:44:55"
+msgstr "Ta opcja blokuje to połączenie do bezprzewodowego punktu dostępowego (AP) określonego przez BSSID. Przykład: 00:11:22:33:44:55"
 
-# REV: nie lepiej nadawania?
 #: ../src/connection-editor/ce-page-wireless.glade.h:13
 msgid "Transmission po_wer:"
-msgstr "_Moc nadajnika:"
+msgstr "_Moc nadawania:"
 
 #: ../src/connection-editor/ce-page-wireless.glade.h:14
 msgid "_BSSID:"
@@ -1531,7 +1518,6 @@ msgstr "Tylko Link-Local"
 msgid "Shared to other computers"
 msgstr "Współdzielone z innymi komputerami"
 
-# pd
 #: ../src/connection-editor/page-ip4.c:190
 msgid "Disabled"
 msgstr "Wyłączone"
@@ -1563,7 +1549,6 @@ msgstr "Automatycznie, tylko adresy"
 msgid "Ignore"
 msgstr "Zignoruj"
 
-# pd
 #: ../src/connection-editor/page-ip6.c:172
 msgid "Automatic, DHCP only"
 msgstr "Automatycznie, tylko DHCP"
@@ -1939,7 +1924,6 @@ msgstr "Nazwa"
 msgid "Last Used"
 msgstr "Ostatnie użycie"
 
-# pd
 # na przycisku
 #: ../src/connection-editor/nm-connection-list.c:1284
 msgid "Edit"
@@ -1949,7 +1933,6 @@ msgstr "Modyfikuj"
 msgid "Edit the selected connection"
 msgstr "Modyfikowanie zaznaczonego połączenia"
 
-# pd
 #: ../src/connection-editor/nm-connection-list.c:1286
 msgid "Edit..."
 msgstr "Modyfikuj..."
@@ -2073,18 +2056,15 @@ msgstr "nie można odnaleźć urządzenia Bluetooth."
 msgid "The default Bluetooth adapter must be enabled before setting up a Dial-Up-Networking connection."
 msgstr "Domyślny adapter Bluetooth musi być włączony przez ustawieniem połączenia wdzwanianego."
 
-# pd
 #: ../src/gnome-bluetooth/network-manager-applet.c:944
 #, c-format
 msgid "Bluetooth configuration not possible (failed to connect to D-Bus: %s)."
 msgstr "Konfiguracja Bluetooth nie jest możliwa (połączenie z usługą D-Bus się nie powiodło: %s)."
 
-# pd
 #: ../src/gnome-bluetooth/network-manager-applet.c:954
 msgid "Bluetooth configuration not possible (failed to create D-Bus proxy)."
 msgstr "Konfiguracja Bluetooth nie jest możliwa (utworzenie pośrednika usługi D-Bus się nie powiodło)."
 
-# pd
 #: ../src/gnome-bluetooth/network-manager-applet.c:963
 #, c-format
 msgid "Bluetooth configuration not possible (error finding NetworkManager: %s)."
@@ -2138,7 +2118,6 @@ msgstr "HSUPA"
 msgid "HSPA"
 msgstr "HSPA"
 
-# pd
 #: ../src/mb-menu-item.c:104
 msgid "not enabled"
 msgstr "nie włączono"
@@ -2332,7 +2311,6 @@ msgstr "Ustawienie połączenia komórkowego"
 msgid "New Mobile Broadband Connection"
 msgstr "Nowe połączenie komórkowe"
 
-# pd
 #: ../src/utils/nmn-mobile-providers.c:76
 msgid "United Kingdom"
 msgstr "Zjednoczone Królestwo"
@@ -2473,4 +2451,3 @@ msgstr "Tunelowane TLS"
 #: ../src/wireless-security/wireless-security.c:364
 msgid "Protected EAP (PEAP)"
 msgstr "Chronione EAP (PEAP)"
-
