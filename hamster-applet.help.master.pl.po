@@ -30,6 +30,7 @@ msgstr "Niniejszy utwór jest rozpowszechniany na warunkach licencji <link href=
 
 # LJ: tego nie wiem czy tłumaczyć, nie mam odpowiedniego legalese foo...
 # REV: a nie ma czegoś w tym stylu na creative commons Polska?
+#@rev: raczej nie
 #: C/legal.xml:6(p)
 msgid "As a special exception, the copyright holders give you permission to copy, modify, and distribute the example code contained in this document under the terms of your choosing, without restriction."
 msgstr ""
@@ -58,20 +59,17 @@ msgstr "Pozyskiwanie danych z programu Zarządzanie czasem."
 msgid "Report and export"
 msgstr "Raportowanie i eksportowanie"
 
-# REV: trzebaby się zdecydować na cudzysłowy „” lub \" i cały plik ujednolicić
 #: C/reports.page:10(p)
 msgid "Apart from the HTML format that is offered by default in the Save report dialog, the format drop-down allows you to choose TSV (Tab Separated Values, good for spreadsheets), XML, and iCal formats."
-msgstr "Oprócz formatu HTML, który jest dostępny domyślnie w oknie dialogowym \"Zapisz sprawozdanie\", dostępne są również formaty TSV (wartości oddzielone znakiem tabulatora, dobry dla arkuszy kalkulacyjnych), XML oraz iCal."
+msgstr "Oprócz formatu HTML, który jest dostępny domyślnie w oknie dialogowym „Zapisz sprawozdanie”, dostępne są również formaty TSV (wartości oddzielone znakiem tabulatora, dobry dla arkuszy kalkulacyjnych), XML oraz iCal."
 
 #: C/reports.page:15(p)
 msgid "For programmatic access, there is D-Bus API, that can be introspected using tools like <link href=\"https://fedorahosted.org/d-feet/\">D-Feet</link>."
 msgstr "Dostęp programowy możliwy jest za pomocą interfejsu D-Bus, które można podejrzeć za pomocą narzędzi takich jak <link href=\"https://fedorahosted.org/d-feet/\">D-Feet</link>."
 
-# REV: utworzenie - wytworzenie kojarzy mi się z produkcją
-# REV: przecinki: Następnie, przytrzymując klawisz <key>Ctrl</key>, należy zaznaczyć
 #: C/reports.page:21(p)
 msgid "The fastest way to get the data \"out\" of the Time Tracker is by generating a HTML report. While holding the <key>Ctrl</key> key down, select all the needed cells, and then copy and paste them into the target application."
-msgstr "Najszybszych sposobem na pozyskanie danych z programu Zarządzanie czasem jest wytworzenie raportu w formacie HTML. Następnie przytrzymując klawisz <key>Ctrl</key>, należy zaznaczyć wszystkie potrzebne komórki i skopiować je do docelowego programu."
+msgstr "Najszybszych sposobem na pozyskanie danych z programu Zarządzanie czasem jest utworzenie raportu w formacie HTML. Następnie, przytrzymując klawisz <key>Ctrl</key>, należy zaznaczyć wszystkie potrzebne komórki i skopiować je do docelowego programu."
 
 #: C/merge.page:6(desc)
 msgid "Automatic conflict solving."
@@ -81,13 +79,9 @@ msgstr "Automatyczne rozwiązywanie konfliktów."
 msgid "Splitting activities"
 msgstr "Rozdzielanie czynności"
 
-# REV: może da się jakoś uniknąć personifikacji programu?
-# REV: "W programie ... zaimplementowano algorytm unikania nakładających się czynności?"
-# REV: "w momencie utworzenia" - lepiej chyba "tworzenia" - to coś w stylu "present continuous " ;-)
-# REV: poprzednia czynnośCI
 #: C/merge.page:10(p)
 msgid "<app>Time Tracker</app> does its best to avoid overlaps in activities. If you create an activity in the middle of an existing activity, the former will be split into two. In other cases of overlapping, the previous entries will be shrunk."
-msgstr "Program <app>Zarządzanie czasem</app> robi wszystko co jest możliwe, aby zapobiec nakładającym się czynnościom. W momencie utworzenia nowej czynności w trakcie trwania innej, poprzednia czynności zostanie podzielona na dwie. W innych przypadkach czas trwania czynności zostanie skrócony."
+msgstr "W programie <app>Zarządzanie czasem</app> zaimplementowanoa algorytm unikania nakładających się czynności. W momencie tworzenia nowej czynności w trakcie trwania innej, poprzednia czynność zostanie podzielona na dwie. W innych przypadkach czas trwania czynności zostanie skrócony."
 
 #: C/merge.page:17(p)
 msgid "Merging can become handy when entering information for the whole day. Start by entering the first activity and select the \"in progress\" check box for the end time. For the next activity again set just the start time and mark it as ongoing. Observe how the end time of the previous activity gets adjusted to the start time of the new one. Repeat the process until happy!"
@@ -97,8 +91,6 @@ msgstr "Scalanie może okazać się przydatne podczas wprowadzania informacji za
 msgid "Tricks to speed up activity entry."
 msgstr "Sztuczki przyspieszające wprowadzanie czynności."
 
-# LJ: "Wprowadzanie" IMHO nie oddaje  sensu czynności, ale mogę się mylić
-# REV: byle tylko było spójne z samym programem
 #: C/input.page:8(title)
 msgid "Input"
 msgstr "Śledzenie"
@@ -107,12 +99,12 @@ msgstr "Śledzenie"
 msgid "To start tracking, type in the activity name in the input box and hit the <key>Enter</key> key. There are a few tricks that will allow you to specify more detail on the fly:"
 msgstr "W celu rozpoczęcia śledzenia, należy wprowadzić nazwę czynności w pole tekstowe i nacisnąć klawisz <key>Enter</key>. Istnieje jednak kilka sztuczek, pozwalających na podanie większej ilości szczegółów:"
 
-# REV: dałbym "wykorzystanie znaku ... do dodawania ..." - to wygląda na wypunktowanie z poprzedniego ciągi
 #: C/input.page:18(p)
 msgid "Use the @ symbol to add a category"
-msgstr "Wykorzystanie znaku @ do dodawania kategorii"
+msgstr "Wykorzystanie znaku @ do dodawania kategorii."
 
 # REV: kropka na końcu?
+#@rev: to jest numerowana lista z pełnymi zdaniami, AFAIR w j. polskim kończy się takie zdania kropką
 #: C/input.page:19(p)
 msgid "Everything after a comma (,) will be stored in the description field"
 msgstr "Treść znajdująca się po przecinku (,) zostanie zapisana jako opis."
@@ -125,7 +117,6 @@ msgstr "Aby podać czas, należy wprowadzić go na pierwszym miejscu w polu teks
 msgid "A few examples:"
 msgstr "Kilka przykładów:"
 
-# LJ: Zmieniłem trochę godziny by pasowało do następnego ciągu
 #: C/input.page:27(code)
 #, no-wrap
 msgid "12:30-12:45 watering flowers"
