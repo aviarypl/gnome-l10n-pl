@@ -10,7 +10,7 @@ msgstr ""
 "Report-Msgid-Bugs-To: http://bugzilla.gnome.org/enter_bug.cgi?product=gparted&component=general\n"
 "POT-Creation-Date: 2010-05-27 17:10+0000\n"
 "PO-Revision-Date: 2010-06-13 23:09+0100\n"
-"Last-Translator: wadim dziedzic <wdziedzic@aviary.pl>\n"
+"Last-Translator: Piotr Drąg <piotrdrag@gmail.com>\n"
 "Language-Team: Polish <gnomepl@aviary.pl>\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -40,7 +40,6 @@ msgstr "Edytor partycji GParted"
 msgid "Partition Editor"
 msgstr "Edytor partycji"
 
-# pd
 #: ../src/Dialog_Base_Partition.cc:56
 msgid "Free space preceding (MiB):"
 msgstr "Wolne miejsce przed (MiB):"
@@ -50,33 +49,28 @@ msgstr "Wolne miejsce przed (MiB):"
 msgid "New size (MiB):"
 msgstr "Nowy rozmiar (MiB):"
 
-# pd
 #. add spinbutton_after
 #: ../src/Dialog_Base_Partition.cc:72
 msgid "Free space following (MiB):"
 msgstr "Wolne miejsce za (MiB):"
 
-# pd
 #. add alignment
 #. TO TRANSLATORS: used as label for a list of choices.   Align to: <optionmenu with choices>
 #: ../src/Dialog_Base_Partition.cc:96
 msgid "Align to:"
 msgstr "Wyrównanie do:"
 
-# pd
 #. fill partition alignment menu
 #. TO TRANSLATORS: Menu option for drop down menu "Align to:"
 #: ../src/Dialog_Base_Partition.cc:101
 msgid "Cylinder"
 msgstr "Cylinder"
 
-# pd
 #. TO TRANSLATORS: Menu option for label "Align to:"
 #: ../src/Dialog_Base_Partition.cc:103
 msgid "MiB"
 msgstr "MiB"
 
-# pd
 #. TO TRANSLATORS: Menu option for drop down menu "Align to:"
 #: ../src/Dialog_Base_Partition.cc:105
 msgid "None"
@@ -478,23 +472,19 @@ msgstr "Skanowanie %1"
 msgid "Confirming %1"
 msgstr "Potwierdzanie %1"
 
-# pd
 #. TO TRANSLATORS: looks like  Ignoring device /dev/sde with logical sector size of 2048 bytes.
 #: ../src/GParted_Core.cc:258
 msgid "Ignoring device %1 with logical sector size of %2 bytes."
 msgstr "Ignorowanie urządzenia %1 z rozmiarem sektora logicznego %2 bajtów."
 
-# pd
-# REV: lepiej może: "Do obsługi urządzeń... wymagana jest biblioteka..."
 #: ../src/GParted_Core.cc:260
 msgid "GParted requires libparted version 2.2 or higher to support devices with sector sizes larger than 512 bytes."
-msgstr "Program GParted wymaga biblioteki libparted 2.2 lub nowszej, aby obsługiwać urządzenia z rozmiarem sektora większym niż 512 bajtów."
+msgstr "Do obsługi urządzeń z rozmiarem sektora większym niż 512 bajtów wymagana jest biblioteka libparted 2.2 lub nowsza."
 
-# REV: to musiało być z %1 na końcu - Wyszukiwanie partycji NNN
 #. TO TRANSLATORS: looks like Searching /dev/sda partitions
 #: ../src/GParted_Core.cc:297
 msgid "Searching %1 partitions"
-msgstr "Wyszukiwanie %1 partycji"
+msgstr "Wyszukiwanie partycji %1"
 
 #: ../src/GParted_Core.cc:339
 msgid "unrecognized"
@@ -743,23 +733,19 @@ msgstr "wykonywanie testu tylko do odczytu"
 msgid "using internal algorithm"
 msgstr "używanie wewnętrznego algorytmu"
 
-# pd
-# REV: może odczytywanie? (niżej tak jest)
 #. TO TRANSLATORS: looks like  read 1.00 MiB
 #: ../src/GParted_Core.cc:2274
 msgid "read %1"
-msgstr "odczyt %1"
+msgstr "odczytywanie %1"
 
-# pd
 #. TO TRANSLATORS: looks like  copy 1.00 MiB
 #: ../src/GParted_Core.cc:2276
 msgid "copy %1"
 msgstr "kopiowanie %1"
 
-# REV: optymalnego - czyli najlepszego...
 #: ../src/GParted_Core.cc:2280
 msgid "finding optimal block size"
-msgstr "wyszukiwanie odpowiedniego rozmiaru bloku"
+msgstr "wyszukiwanie najlepszego rozmiaru bloku"
 
 #: ../src/GParted_Core.cc:2320
 msgid "%1 seconds"
@@ -770,13 +756,11 @@ msgstr "%1 sekund"
 msgid "optimal block size is %1"
 msgstr "optymalny rozmiar bloku to %1"
 
-# pd
 #. TO TRANSLATORS: looks like  1.00 MiB (1048576 B) read
 #: ../src/GParted_Core.cc:2356
 msgid "%1 (%2 B) read"
 msgstr "Odczytano %1 (%2 B)"
 
-# pd
 #. TO TRANSLATORS: looks like  1.00 MiB (1048576 B) copied
 #: ../src/GParted_Core.cc:2358
 msgid "%1 (%2 B) copied"
@@ -824,13 +808,11 @@ msgstr "Odczytano %1 z %2"
 msgid "%1 of %2 copied"
 msgstr "Skopiowano %1 z %2"
 
-# pd
 #. TO TRANSLATORS: looks like  read 16.00 MiB using a block size of 1.00 MiB
 #: ../src/GParted_Core.cc:2524
 msgid "read %1 using a block size of %2"
 msgstr "odczytywanie %1 przy użyciu rozmiaru bloku %2"
 
-# pd
 #. TO TRANSLATORS: looks like  copy 16.00 MiB using a block size of 1.00 MiB
 #: ../src/GParted_Core.cc:2529
 msgid "copy %1 using a block size of %2"
@@ -1490,4 +1472,3 @@ msgstr "powiększanie zamontowanego systemu plików"
 #: ../src/xfs.cc:276
 msgid "copy file system"
 msgstr "kopiowanie systemu plików"
-
