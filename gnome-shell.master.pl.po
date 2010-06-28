@@ -7,15 +7,17 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: gnome-shell\n"
-"Report-Msgid-Bugs-To: http://bugzilla.gnome.org/enter_bug.cgi?product=gnome-shell&component=general\n"
-"POT-Creation-Date: 2010-05-20 19:50+0000\n"
+"Report-Msgid-Bugs-To: http://bugzilla.gnome.org/enter_bug.cgi?product=gnome-"
+"shell&component=general\n"
+"POT-Creation-Date: 2010-06-27 03:07+0000\n"
 "PO-Revision-Date: 2010-05-25 21:36+0200\n"
 "Last-Translator: Piotr Drąg <piotrdrag@gmail.com>\n"
 "Language-Team: Polish <gnomepl@aviary.pl>\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"Plural-Forms: nplurals=3; plural=(n==1 ? 0 : n%10>=2 && n%10<=4 && (n%100<10 || n%100>=20) ? 1 : 2);\n"
+"Plural-Forms: nplurals=3; plural=(n==1 ? 0 : n%10>=2 && n%10<=4 && (n%100<10 "
+"|| n%100>=20) ? 1 : 2);\n"
 "X-Poedit-Language: Polish\n"
 "X-Poedit-Country: Poland\n"
 
@@ -34,6 +36,157 @@ msgstr "Zegar"
 #: ../data/gnome-shell-clock-preferences.desktop.in.in.h:2
 msgid "Customize the panel clock"
 msgstr "Dostosowanie panelu zegara"
+
+#: ../data/org.gnome.shell.gschema.xml.in.h:1
+msgid ""
+"Allows access to internal debugging and monitoring tools using the Alt-F2 "
+"dialog."
+msgstr ""
+
+#: ../data/org.gnome.shell.gschema.xml.in.h:2
+#, fuzzy
+msgid "Custom format of the clock"
+msgstr "Dostosowanie panelu zegara"
+
+#: ../data/org.gnome.shell.gschema.xml.in.h:3
+msgid "Enable internal tools useful for developers and testers from Alt-F2"
+msgstr ""
+
+#: ../data/org.gnome.shell.gschema.xml.in.h:4
+msgid "File extension used for storing the screencast"
+msgstr ""
+
+#: ../data/org.gnome.shell.gschema.xml.in.h:5
+msgid "Framerate used for recording screencasts."
+msgstr ""
+
+#: ../data/org.gnome.shell.gschema.xml.in.h:6
+msgid ""
+"GNOME Shell extensions have a uuid property; this key lists extensions which "
+"should not be loaded."
+msgstr ""
+
+#: ../data/org.gnome.shell.gschema.xml.in.h:7
+msgid "History for command (Alt-F2) dialog"
+msgstr ""
+
+#: ../data/org.gnome.shell.gschema.xml.in.h:8
+#, fuzzy
+msgid "Hour format"
+msgstr "_12 godzinny"
+
+#: ../data/org.gnome.shell.gschema.xml.in.h:9
+msgid ""
+"If true and format is either \"12-hour\" or \"24-hour\", display date in the "
+"clock, in addition to time."
+msgstr ""
+
+#: ../data/org.gnome.shell.gschema.xml.in.h:10
+msgid ""
+"If true and format is either \"12-hour\" or \"24-hour\", display seconds in "
+"time."
+msgstr ""
+
+#: ../data/org.gnome.shell.gschema.xml.in.h:11
+msgid "If true, display the ISO week date in the calendar."
+msgstr ""
+
+#: ../data/org.gnome.shell.gschema.xml.in.h:12
+msgid "List of desktop file IDs for favorite applications"
+msgstr ""
+
+#: ../data/org.gnome.shell.gschema.xml.in.h:13
+msgid "Overview workspace view mode"
+msgstr ""
+
+#: ../data/org.gnome.shell.gschema.xml.in.h:14
+msgid ""
+"Sets the GStreamer pipeline used to encode recordings. It follows the syntax "
+"used for gst-launch. The pipeline should have an unconnected sink pad where "
+"the recorded video is recorded. It will normally have a unconnected source "
+"pad; output from that pad will be written into the output file. However the "
+"pipeline can also take care of its own output - this might be used to send "
+"the output to an icecast server via shout2send or similar. When unset or set "
+"to an empty value, the default pipeline will be used. This is currently "
+"'videorate ! theoraenc ! oggmux' and records to Ogg Theora."
+msgstr ""
+
+#: ../data/org.gnome.shell.gschema.xml.in.h:15
+msgid "Show date in clock"
+msgstr ""
+
+#: ../data/org.gnome.shell.gschema.xml.in.h:16
+msgid "Show the week date in the calendar"
+msgstr ""
+
+#: ../data/org.gnome.shell.gschema.xml.in.h:17
+#, fuzzy
+msgid "Show time with seconds"
+msgstr "Seku_ndy"
+
+#: ../data/org.gnome.shell.gschema.xml.in.h:18
+msgid ""
+"The applications corresponding to these identifiers will be displayed in the "
+"favorites area."
+msgstr ""
+
+#: ../data/org.gnome.shell.gschema.xml.in.h:19
+msgid ""
+"The filename for recorded screencasts will be a unique filename based on the "
+"current date, and use this extension. It should be changed when recording to "
+"a different container format."
+msgstr ""
+
+#: ../data/org.gnome.shell.gschema.xml.in.h:20
+msgid ""
+"The framerate of the resulting screencast recordered by GNOME Shell's "
+"screencast recorder in frames-per-second."
+msgstr ""
+
+#: ../data/org.gnome.shell.gschema.xml.in.h:21
+msgid "The gstreamer pipeline used to encode the screencast"
+msgstr ""
+
+#: ../data/org.gnome.shell.gschema.xml.in.h:22
+msgid ""
+"The selected workspace view mode in the overview. Supported values are "
+"\"single\" and \"grid\"."
+msgstr ""
+
+#: ../data/org.gnome.shell.gschema.xml.in.h:23
+msgid ""
+"The shell normally monitors active applications in order to present the most "
+"used ones (e.g. in launchers). While this data will be kept private, you may "
+"want to disable this for privacy reasons. Please note that doing so won't "
+"remove already saved data."
+msgstr ""
+
+#: ../data/org.gnome.shell.gschema.xml.in.h:24
+msgid ""
+"This key specifies the format used by the panel clock when the format key is "
+"set to \"custom\". You can use conversion specifiers understood by strftime"
+"() to obtain a specific format. See the strftime() manual for more "
+"information."
+msgstr ""
+
+#: ../data/org.gnome.shell.gschema.xml.in.h:25
+msgid ""
+"This key specifies the hour format used by the panel clock. Possible values "
+"are \"12-hour\", \"24-hour\", \"unix\" and \"custom\". If set to \"unix\", "
+"the clock will display time in seconds since Epoch, i.e. 1970-01-01. If set "
+"to \"custom\", the clock will display time according to the format specified "
+"in the custom_format key. Note that if set to either \"unix\" or \"custom\", "
+"the show_date and show_seconds keys are ignored."
+msgstr ""
+
+#: ../data/org.gnome.shell.gschema.xml.in.h:26
+#, fuzzy
+msgid "Uuids of extensions to disable"
+msgstr "Nie zainstalowano rozszerzeń"
+
+#: ../data/org.gnome.shell.gschema.xml.in.h:27
+msgid "Whether to collect stats about applications usage"
+msgstr ""
 
 #: ../data/clock-preferences.ui.h:1
 msgid "Clock Format"
@@ -64,24 +217,23 @@ msgid "_24 hour format"
 msgstr "_24 godzinny"
 
 #. **** Applications ****
-#: ../js/ui/appDisplay.js:306
-#: ../js/ui/dash.js:850
+#: ../js/ui/appDisplay.js:388 ../js/ui/dash.js:767
 msgid "APPLICATIONS"
 msgstr "Programy"
 
-#: ../js/ui/appDisplay.js:338
+#: ../js/ui/appDisplay.js:420
 msgid "PREFERENCES"
 msgstr "Preferencje"
 
-#: ../js/ui/appDisplay.js:705
+#: ../js/ui/appDisplay.js:725
 msgid "New Window"
 msgstr "Nowe okno"
 
-#: ../js/ui/appDisplay.js:709
+#: ../js/ui/appDisplay.js:729
 msgid "Remove from Favorites"
 msgstr "Usuń z ulubionych"
 
-#: ../js/ui/appDisplay.js:710
+#: ../js/ui/appDisplay.js:730
 msgid "Add to Favorites"
 msgstr "Dodaj do ulubionych"
 
@@ -89,175 +241,177 @@ msgstr "Dodaj do ulubionych"
 msgid "Drag here to add favorites"
 msgstr "Przeciągnięcie tutaj doda do ulubionych"
 
-#: ../js/ui/appFavorites.js:89
+#: ../js/ui/appFavorites.js:88
 #, c-format
 msgid "%s has been added to your favorites."
 msgstr "Program %s został dodany do ulubionych."
 
-#: ../js/ui/appFavorites.js:107
+#: ../js/ui/appFavorites.js:106
 #, c-format
 msgid "%s has been removed from your favorites."
 msgstr "Program %s został usunięty z ulubionych."
 
-#: ../js/ui/dash.js:189
+#: ../js/ui/dash.js:146
 msgid "Find"
 msgstr "Znajdź"
 
-#: ../js/ui/dash.js:505
+#: ../js/ui/dash.js:465
 msgid "Searching..."
 msgstr "Wyszukiwanie..."
 
-#: ../js/ui/dash.js:519
+#: ../js/ui/dash.js:479
 msgid "No matching results."
 msgstr "Brak wyników."
 
 #. **** Places ****
 #. Translators: This is in the sense of locations for documents,
 #. network locations, etc.
-#: ../js/ui/dash.js:869
-#: ../js/ui/placeDisplay.js:543
+#: ../js/ui/dash.js:786 ../js/ui/placeDisplay.js:552
 msgid "PLACES & DEVICES"
 msgstr "Miejsca i urządzenia"
 
 #. **** Documents ****
-#: ../js/ui/dash.js:876
-#: ../js/ui/docDisplay.js:489
+#: ../js/ui/dash.js:793 ../js/ui/docDisplay.js:497
 msgid "RECENT ITEMS"
 msgstr "Ostatnie dokumenty"
 
-#: ../js/ui/lookingGlass.js:466
+#: ../js/ui/lookingGlass.js:471
 msgid "No extensions installed"
 msgstr "Nie zainstalowano rozszerzeń"
 
-#: ../js/ui/lookingGlass.js:503
+#: ../js/ui/lookingGlass.js:508
 msgid "Enabled"
 msgstr "Włączone"
 
-#: ../js/ui/lookingGlass.js:505
+#: ../js/ui/lookingGlass.js:510
 msgid "Disabled"
 msgstr "Wyłączone"
 
-#: ../js/ui/lookingGlass.js:507
+#: ../js/ui/lookingGlass.js:512
 msgid "Error"
 msgstr "Błąd"
 
-#: ../js/ui/lookingGlass.js:509
+#: ../js/ui/lookingGlass.js:514
 msgid "Out of date"
 msgstr "Nieaktualne"
 
-#: ../js/ui/lookingGlass.js:534
+#: ../js/ui/lookingGlass.js:539
 msgid "View Source"
 msgstr "Wyświetl źródło"
 
-#: ../js/ui/lookingGlass.js:540
+#: ../js/ui/lookingGlass.js:545
 msgid "Web Page"
 msgstr "Strona WWW"
 
-#: ../js/ui/overview.js:161
+#: ../js/ui/overview.js:165
 msgid "Undo"
 msgstr "Cofnij"
 
-#. Button on the left side of the panel.
-#. Translators: If there is no suitable word for "Activities" in your language, you can use the word for "Overview".
-#: ../js/ui/panel.js:887
-msgid "Activities"
-msgstr "Podgląd"
+#: ../js/ui/panel.js:519
+msgid "Preferences"
+msgstr "Preferencje"
 
 #. Translators: This is the time format with date used
 #. in 24-hour mode.
-#: ../js/ui/panel.js:1102
+#: ../js/ui/panel.js:605
 msgid "%a %b %e, %R:%S"
 msgstr "%a %e %b, %R:%S"
 
-#: ../js/ui/panel.js:1103
+#: ../js/ui/panel.js:606
 msgid "%a %b %e, %R"
 msgstr "%a %e %b, %R"
 
 #. Translators: This is the time format without date used
 #. in 24-hour mode.
-#: ../js/ui/panel.js:1107
+#: ../js/ui/panel.js:610
 msgid "%a %R:%S"
 msgstr "%a, %R:%S"
 
-#: ../js/ui/panel.js:1108
+#: ../js/ui/panel.js:611
 msgid "%a %R"
 msgstr "%a, %R"
 
 #. Translators: This is a time format with date used
 #. for AM/PM.
-#: ../js/ui/panel.js:1115
+#: ../js/ui/panel.js:618
 msgid "%a %b %e, %l:%M:%S %p"
 msgstr "%a %e %b, %H:%M:%S %p"
 
-#: ../js/ui/panel.js:1116
+#: ../js/ui/panel.js:619
 msgid "%a %b %e, %l:%M %p"
 msgstr "%a %e %b, %l:%M %p"
 
 #. Translators: This is a time format without date used
 #. for AM/PM.
-#: ../js/ui/panel.js:1120
+#: ../js/ui/panel.js:623
 msgid "%a %l:%M:%S %p"
 msgstr "%a, %l:%M:%S %p"
 
-#: ../js/ui/panel.js:1121
+#: ../js/ui/panel.js:624
 msgid "%a %l:%M %p"
 msgstr "%a, %l:%M %p"
 
-#: ../js/ui/placeDisplay.js:108
+#. Button on the left side of the panel.
+#. Translators: If there is no suitable word for "Activities" in your language, you can use the word for "Overview".
+#: ../js/ui/panel.js:762
+msgid "Activities"
+msgstr "Podgląd"
+
+#: ../js/ui/placeDisplay.js:109
 #, c-format
 msgid "Failed to unmount '%s'"
 msgstr "Odmontowanie \"%s\" się nie powiodło"
 
-#: ../js/ui/placeDisplay.js:111
+#: ../js/ui/placeDisplay.js:112
 msgid "Retry"
 msgstr "Ponów"
 
-#: ../js/ui/placeDisplay.js:156
+#: ../js/ui/placeDisplay.js:157
 msgid "Connect to..."
 msgstr "Połącz z..."
 
-#: ../js/ui/runDialog.js:231
+#: ../js/ui/runDialog.js:234
 msgid "Please enter a command:"
 msgstr "Proszę wprowadzić polecenie:"
 
-#: ../js/ui/runDialog.js:375
+#: ../js/ui/runDialog.js:379
 #, c-format
 msgid "Execution of '%s' failed:"
 msgstr "Wykonanie \"%s\" się nie powiodło:"
 
-#: ../js/ui/statusMenu.js:90
+#: ../js/ui/statusMenu.js:91
 msgid "Available"
 msgstr "Dostępny"
 
-#: ../js/ui/statusMenu.js:94
+#: ../js/ui/statusMenu.js:95
 msgid "Busy"
 msgstr "Zajęty"
 
-#: ../js/ui/statusMenu.js:98
+#: ../js/ui/statusMenu.js:99
 msgid "Invisible"
 msgstr "Niewidoczny"
 
-#: ../js/ui/statusMenu.js:105
+#: ../js/ui/statusMenu.js:106
 msgid "Account Information..."
 msgstr "Informacje o koncie..."
 
-#: ../js/ui/statusMenu.js:109
+#: ../js/ui/statusMenu.js:110
 msgid "System Preferences..."
 msgstr "Preferencje systemu..."
 
-#: ../js/ui/statusMenu.js:116
+#: ../js/ui/statusMenu.js:117
 msgid "Lock Screen"
 msgstr "Zablokuj ekran"
 
-#: ../js/ui/statusMenu.js:120
+#: ../js/ui/statusMenu.js:121
 msgid "Switch User"
 msgstr "Przełącz użytkownika"
 
-#: ../js/ui/statusMenu.js:125
+#: ../js/ui/statusMenu.js:126
 msgid "Log Out..."
 msgstr "Wyloguj się..."
 
-#: ../js/ui/statusMenu.js:129
+#: ../js/ui/statusMenu.js:130
 msgid "Shut Down..."
 msgstr "Wyłącz komputer..."
 
@@ -271,19 +425,22 @@ msgstr "Ukończono uruchamianie programu %s"
 msgid "'%s' is ready"
 msgstr "Program \"%s\" jest gotowy"
 
-#: ../js/ui/workspacesView.js:239
-msgid "Can't add a new workspace because maximum workspaces limit has been reached."
-msgstr "Nie można dodać nowego obszaru roboczego, ponieważ osiągnięto ograniczenie maksymalnej liczby obszarów."
+#: ../js/ui/workspacesView.js:237
+msgid ""
+"Can't add a new workspace because maximum workspaces limit has been reached."
+msgstr ""
+"Nie można dodać nowego obszaru roboczego, ponieważ osiągnięto ograniczenie "
+"maksymalnej liczby obszarów."
 
-#: ../js/ui/workspacesView.js:256
+#: ../js/ui/workspacesView.js:254
 msgid "Can't remove the first workspace."
 msgstr "Nie można usunąć pierwszego obszaru roboczego."
 
-#: ../src/shell-global.c:976
+#: ../src/shell-global.c:1039
 msgid "Less than a minute ago"
 msgstr "Mniej niż minutę temu"
 
-#: ../src/shell-global.c:980
+#: ../src/shell-global.c:1043
 #, c-format
 msgid "%d minute ago"
 msgid_plural "%d minutes ago"
@@ -291,7 +448,7 @@ msgstr[0] "%d minuta temu"
 msgstr[1] "%d minuty temu"
 msgstr[2] "%d minut temu"
 
-#: ../src/shell-global.c:985
+#: ../src/shell-global.c:1048
 #, c-format
 msgid "%d hour ago"
 msgid_plural "%d hours ago"
@@ -299,7 +456,7 @@ msgstr[0] "%d godzina temu"
 msgstr[1] "%d godziny temu"
 msgstr[2] "%d godzin temu"
 
-#: ../src/shell-global.c:990
+#: ../src/shell-global.c:1053
 #, c-format
 msgid "%d day ago"
 msgid_plural "%d days ago"
@@ -307,7 +464,7 @@ msgstr[0] "%d dzień temu"
 msgstr[1] "%d dni temu"
 msgstr[2] "%d dni temu"
 
-#: ../src/shell-global.c:995
+#: ../src/shell-global.c:1058
 #, c-format
 msgid "%d week ago"
 msgid_plural "%d weeks ago"
