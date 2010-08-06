@@ -120,11 +120,11 @@ msgstr "Pozwala użytkownikowi na wyłączenie automatycznego oszczędzania prą
 
 #: ../applets/inhibit/inhibit-applet.c:361
 msgid "Automatic sleep inhibited"
-msgstr "Automatyczne wstrzymanie wyłączone"
+msgstr "Automatyczne uśpienie wyłączone"
 
 #: ../applets/inhibit/inhibit-applet.c:363
 msgid "Automatic sleep enabled"
-msgstr "Automatyczne wstrzymanie włączone"
+msgstr "Automatyczne uśpienie włączone"
 
 #: ../applets/inhibit/inhibit-applet.c:391
 msgid "Manual inhibit"
@@ -168,7 +168,7 @@ msgstr "Czynność przy krytycznie niskim poziomie naładowania akumulatora"
 
 #: ../data/gnome-power-manager.schemas.in.h:3
 msgid "Check CPU load before sleeping"
-msgstr "Sprawdzanie obciążenia procesora przed wstrzymaniem"
+msgstr "Sprawdzanie obciążenia procesora przed uśpieniem"
 
 #: ../data/gnome-power-manager.schemas.in.h:4
 msgid "Dim the screen after a period of inactivity when on AC power"
@@ -197,7 +197,7 @@ msgid ""
 "If a notification message should be displayed after suspend or hibernate "
 "failed."
 msgstr ""
-"Określa, czy wyświetlać informację o niepowodzeniu wstrzymania lub "
+"Określa, czy wyświetlać informację o niepowodzeniu uśpienia lub "
 "hibernacji."
 
 #: ../data/gnome-power-manager.schemas.in.h:9
@@ -251,7 +251,7 @@ msgid ""
 "closed on battery') when the lid is previously shut and the AC power "
 "disconnected at a later time."
 msgstr ""
-"Określa, czy uruchamiać zdarzenia zamknięcia pokrywy (np. \"Wstrzymanie przy "
+"Określa, czy uruchamiać zdarzenia zamknięcia pokrywy (np. \"Uśpienie przy "
 "zamknięciu pokrywy przy zasilaniu z akumulatora\"), gdy zasilanie sieciowe "
 "zostanie odłączone po zamknięciu pokrywy."
 
@@ -375,7 +375,7 @@ msgstr "Działanie po zamknięciu pokrywy przy zasilaniu sieciowym"
 
 #: ../data/gnome-power-manager.schemas.in.h:37
 msgid "Lock GNOME keyring on sleep"
-msgstr "Blokowanie bazy kluczy GNOME podczas wstrzymania"
+msgstr "Blokowanie bazy kluczy GNOME podczas uśpienia"
 
 #: ../data/gnome-power-manager.schemas.in.h:38
 msgid "Lock screen on hibernate"
@@ -383,7 +383,7 @@ msgstr "Blokowanie ekranu przy hibernacji"
 
 #: ../data/gnome-power-manager.schemas.in.h:39
 msgid "Lock screen on suspend"
-msgstr "Blokowanie ekranu po wstrzymaniu"
+msgstr "Blokowanie ekranu po uśpieniu"
 
 #: ../data/gnome-power-manager.schemas.in.h:40
 msgid "Lock screen when blanked"
@@ -403,7 +403,7 @@ msgstr "Powiadamianie o niskim poziomie naładowania"
 
 #: ../data/gnome-power-manager.schemas.in.h:44
 msgid "Notify on a sleep failure"
-msgstr "Powiadamianie o niepowodzeniu wstrzymania"
+msgstr "Powiadamianie o niepowodzeniu uśpienia"
 
 #: ../data/gnome-power-manager.schemas.in.h:45
 msgid "Notify when AC adapter is disconnected"
@@ -447,15 +447,15 @@ msgstr ""
 
 #: ../data/gnome-power-manager.schemas.in.h:54
 msgid "Sleep timeout computer when on AC"
-msgstr "Limit czasu wstrzymania komputera przy zasilaniu sieciowym"
+msgstr "Limit czasu uśpienia komputera przy zasilaniu sieciowym"
 
 #: ../data/gnome-power-manager.schemas.in.h:55
 msgid "Sleep timeout computer when on UPS"
-msgstr "Limit czasu do wstrzymania komputera przy zasilaniu z urządzenia UPS"
+msgstr "Limit czasu do uśpienia komputera przy zasilaniu z urządzenia UPS"
 
 #: ../data/gnome-power-manager.schemas.in.h:56
 msgid "Sleep timeout computer when on battery"
-msgstr "Limit czasu wstrzymania komputera przy zasilaniu z akumulatora"
+msgstr "Limit czasu uśpienia komputera przy zasilaniu z akumulatora"
 
 #: ../data/gnome-power-manager.schemas.in.h:57
 msgid "Sleep timeout display when on AC"
@@ -471,7 +471,7 @@ msgstr "Limit czasu wygaszenia ekranu przy zasilaniu z akumulatora"
 
 #: ../data/gnome-power-manager.schemas.in.h:60
 msgid "Suspend button action"
-msgstr "Działanie przycisku wstrzymania"
+msgstr "Działanie przycisku uśpienia"
 
 #: ../data/gnome-power-manager.schemas.in.h:61
 msgid ""
@@ -479,7 +479,7 @@ msgid ""
 "are \"standby\", \"suspend\" and \"off\"."
 msgstr ""
 "Metoda DPMS używana do wygaszenia ekranu przy zasilaniu sieciowym. Wartości: "
-"\"standby\" (oczekiwanie), \"suspend\" (wstrzymanie) i \"off\" (wyłączone)."
+"\"standby\" (oczekiwanie), \"suspend\" (uśpienie) i \"off\" (wyłączone)."
 
 #: ../data/gnome-power-manager.schemas.in.h:62
 msgid ""
@@ -487,12 +487,12 @@ msgid ""
 "values are \"standby\", \"suspend\" and \"off\"."
 msgstr ""
 "Metoda DPMS używana do wygaszenia ekranu przy zasilaniu z akumulatora. "
-"Wartości: \"standby\" (oczekiwanie), \"suspend\" (wstrzymanie) i \"off"
+"Wartości: \"standby\" (oczekiwanie), \"suspend\" (uśpienie) i \"off"
 "\" (wyłączone)."
 
 #: ../data/gnome-power-manager.schemas.in.h:63
 msgid "The URI to show to the user on sleep failure"
-msgstr "Adres URI do wyświetlenia podczas niepowodzenia wstrzymania"
+msgstr "Adres URI do wyświetlenia podczas niepowodzenia uśpienia"
 
 #: ../data/gnome-power-manager.schemas.in.h:64
 msgid ""
@@ -500,7 +500,7 @@ msgid ""
 "\"hibernate\", \"suspend\", \"shutdown\" and \"nothing\"."
 msgstr ""
 "Działanie podejmowane przy krytycznie niskim poziomie naładowania urządzenia "
-"UPS. Wartości: \"hibernate\" (hibernacja), \"suspend\" (wstrzymanie), "
+"UPS. Wartości: \"hibernate\" (hibernacja), \"suspend\" (uśpienie), "
 "\"shutdown\" (wyłączenie) i \"nothing\" (nic)."
 
 #: ../data/gnome-power-manager.schemas.in.h:65
@@ -509,7 +509,7 @@ msgid ""
 "\"suspend\", \"shutdown\" and \"nothing\"."
 msgstr ""
 "Działanie podejmowane przy krytycznie niskim poziomie naładowania urządzenia "
-"UPS. Wartości: \"hibernate\" (hibernacja), \"suspend\" (wstrzymanie), "
+"UPS. Wartości: \"hibernate\" (hibernacja), \"suspend\" (uśpienie), "
 "\"shutdown\" (wyłączenie) i \"nothing\" (nic)."
 
 #: ../data/gnome-power-manager.schemas.in.h:66
@@ -519,7 +519,7 @@ msgid ""
 msgstr ""
 "Działanie podejmowane przy krytycznie niskim poziomie naładowania "
 "akumulatora. Wartości: \"hibernate\" (hibernacja), \"suspend"
-"\" (wstrzymanie), \"shutdown\" (wyłączenie) i \"nothing\" (nic)."
+"\" (uśpienie), \"shutdown\" (wyłączenie) i \"nothing\" (nic)."
 
 #: ../data/gnome-power-manager.schemas.in.h:67
 msgid ""
@@ -528,7 +528,7 @@ msgid ""
 "\"nothing\"."
 msgstr ""
 "Działanie podejmowane po zamknięciu pokrywy przy zasilaniu sieciowym. "
-"Wartości: \"hibernate\" (hibernacja), \"suspend\" (wstrzymanie), \"blank"
+"Wartości: \"hibernate\" (hibernacja), \"suspend\" (uśpienie), \"blank"
 "\" (wygaszenie) i \"nothing\" (nic)."
 
 #: ../data/gnome-power-manager.schemas.in.h:68
@@ -538,7 +538,7 @@ msgid ""
 "and \"nothing\"."
 msgstr ""
 "Działanie podejmowane po zamknięciu pokrywy przy zasilaniu z akumulatora. "
-"Wartości: \"hibernate\" (hibernacja), \"suspend\" (wstrzymanie), \"blank"
+"Wartości: \"hibernate\" (hibernacja), \"suspend\" (uśpienie), \"blank"
 "\" (wygaszenie) i \"nothing\" (nic)."
 
 #: ../data/gnome-power-manager.schemas.in.h:69
@@ -548,7 +548,7 @@ msgid ""
 "\"nothing\"."
 msgstr ""
 "Działanie podejmowane po naciśnięciu przycisku hibernacji. Wartości: "
-"\"hibernate\" (hibernacja), \"suspend\" (wstrzymanie), \"interactive"
+"\"hibernate\" (hibernacja), \"suspend\" (uśpienie), \"interactive"
 "\" (interaktywnie), \"shutdown\" (wyłączenie) i \"nothing\" (nic)."
 
 #: ../data/gnome-power-manager.schemas.in.h:70
@@ -558,7 +558,7 @@ msgid ""
 "\"."
 msgstr ""
 "Działanie podejmowane po naciśnięciu wyłącznika. Wartości: \"hibernate"
-"\" (hibernacja), \"suspend\" (wstrzymanie), \"interactive\" (interaktywnie), "
+"\" (hibernacja), \"suspend\" (uśpienie), \"interactive\" (interaktywnie), "
 "\"shutdown\" (wyłączenie) i \"nothing\" (nic)."
 
 #: ../data/gnome-power-manager.schemas.in.h:71
@@ -567,8 +567,8 @@ msgid ""
 "values are \"suspend\", \"hibernate\", \"interactive\", \"shutdown\" and "
 "\"nothing\"."
 msgstr ""
-"Działanie podejmowane po naciśnięciu przycisku wstrzymania. Wartości: "
-"\"hibernate\" (hibernacja), \"suspend\" (wstrzymanie), \"interactive"
+"Działanie podejmowane po naciśnięciu przycisku uśpienia. Wartości: "
+"\"hibernate\" (hibernacja), \"suspend\" (uśpienie), \"interactive"
 "\" (interaktywnie), \"shutdown\" (wyłączenie) i \"nothing\" (nic)."
 
 #: ../data/gnome-power-manager.schemas.in.h:72
@@ -585,7 +585,7 @@ msgid ""
 "before it goes to sleep."
 msgstr ""
 "Liczba sekund bezczynności komputera przy zasilaniu sieciowym, po której "
-"komputer zostanie wstrzymany."
+"komputer zostanie uśpiony."
 
 #: ../data/gnome-power-manager.schemas.in.h:74
 msgid ""
@@ -593,7 +593,7 @@ msgid ""
 "before it goes to sleep."
 msgstr ""
 "Liczba sekund bezczynności komputera przy zasilaniu z urządzenia UPS, po "
-"której komputer zostanie wstrzymany."
+"której komputer zostanie uśpiony."
 
 #: ../data/gnome-power-manager.schemas.in.h:75
 msgid ""
@@ -609,7 +609,7 @@ msgid ""
 "inactive before it goes to sleep."
 msgstr ""
 "Liczba sekund bezczynności komputera przy zasilaniu z akumulatora, po której "
-"komputer zostanie wstrzymany."
+"komputer zostanie uśpiony."
 
 #: ../data/gnome-power-manager.schemas.in.h:77
 msgid ""
@@ -753,8 +753,8 @@ msgid ""
 "The type of sleeping that should be performed when the computer is inactive. "
 "Possible values are \"hibernate\", \"suspend\" and \"nothing\"."
 msgstr ""
-"Typ wstrzymania nieaktywnego komputera. Dostępne wartości to \"hibernate"
-"\" (hibernacja), \"suspend\" (wstrzymanie) i \"nothing\" (nic)."
+"Typ uśpienia nieaktywnego komputera. Dostępne wartości to \"hibernate"
+"\" (hibernacja), \"suspend\" (uśpienie) i \"nothing\" (nic)."
 
 #: ../data/gnome-power-manager.schemas.in.h:100
 msgid ""
@@ -789,7 +789,7 @@ msgid ""
 "When sleep fails we can show the user a button to help fix the situation. "
 "Leave this blank if the button should not be shown."
 msgstr ""
-"Jeśli wstrzymanie się nie powiedzie, to wyświetlany jest przycisk, aby pomóc "
+"Jeśli uśpienie się nie powiedzie, to wyświetlany jest przycisk, aby pomóc "
 "w tej sytuacji. Proszę pozostawić puste, jeśli przycisk nie ma być "
 "wyświetlany."
 
@@ -804,14 +804,14 @@ msgstr "Wyświetlanie ikony powiadomienia"
 msgid "Whether NetworkManager should be connected and disconnected on sleep"
 msgstr ""
 "Określa, czy program NetworkManager ma być włączany i wyłączany przy "
-"wstrzymaniu."
+"uśpieniu."
 
 #: ../data/gnome-power-manager.schemas.in.h:108
 msgid ""
 "Whether NetworkManager should disconnect before suspending or hibernating "
 "and connect on resume."
 msgstr ""
-"Określa, czy program NetworkManager ma się rozłączać przed wstrzymaniem lub "
+"Określa, czy program NetworkManager ma się rozłączać przed uśpieniem lub "
 "hibernacją i ponownie łączyć po wznowieniu."
 
 #: ../data/gnome-power-manager.schemas.in.h:109
@@ -828,7 +828,7 @@ msgid ""
 "means the keyring will have to be unlocked on resume."
 msgstr ""
 "Określa, czy baza kluczy GNOME ma zostać zablokowana przed wejściem "
-"komputera w stan wstrzymania. Baza kluczy będzie musiała zostać odblokowana "
+"komputera w stan uśpienia. Baza kluczy będzie musiała zostać odblokowana "
 "po wznowieniu pracy."
 
 #: ../data/gnome-power-manager.schemas.in.h:111
@@ -844,7 +844,7 @@ msgid ""
 "Whether the screen is locked when the computer wakes up from a suspend. Only "
 "used if lock_use_screensaver_settings is false."
 msgstr ""
-"Określa, czy blokować ekran po wyjściu komputera ze wstrzymania. Używane "
+"Określa, czy blokować ekran po wyjściu komputera z uśpienia. Używane "
 "tylko, gdy opcja lock_use_screensaver_settings ma wartość \"false\"."
 
 #: ../data/gnome-power-manager.schemas.in.h:113
@@ -857,14 +857,14 @@ msgstr ""
 
 #: ../data/gnome-power-manager.schemas.in.h:114
 msgid "Whether to hibernate, suspend or do nothing when inactive"
-msgstr "Hibernacja, wstrzymanie lub brak czynności podczas nieaktywności"
+msgstr "Hibernacja, uśpienie lub brak czynności podczas nieaktywności"
 
 #: ../data/gnome-power-manager.schemas.in.h:115
 msgid ""
 "Whether to use the screen lock setting of gnome-screensaver to decide if the "
 "screen is locked after a hibernate, suspend or blank screen."
 msgstr ""
-"Określa, czy do ustawień blokowania ekranu po hibernacji, wstrzymaniu i "
+"Określa, czy do ustawień blokowania ekranu po hibernacji, uśpieniu i "
 "wygaszeniu ekranu użyć ustawień programu gnome-screensaver."
 
 #: ../data/gnome-power-manager.schemas.in.h:116
@@ -1025,7 +1025,7 @@ msgstr "Wygasz_enie ekranu, gdy komputer jest nieaktywny przez:"
 
 #: ../data/gpm-prefs.ui.h:16
 msgid "Put computer to _sleep when inactive for:"
-msgstr "Wstrzymanie komputera, gdy jest _nieaktywny przez:"
+msgstr "Uśpienie komputera, gdy jest _nieaktywny przez:"
 
 #: ../data/gpm-prefs.ui.h:17
 msgid "Set display _brightness to:"
@@ -1057,7 +1057,7 @@ msgstr "_Kiedy pokrywa laptopa jest zamknięta:"
 
 #: ../data/gpm-prefs.ui.h:24
 msgid "When the _suspend button is pressed:"
-msgstr "Kiedy został _wciśnięty klawisz wstrzymania:"
+msgstr "Kiedy został _wciśnięty klawisz uśpienia:"
 
 #: ../data/gpm-prefs.ui.h:25
 msgid "When the power _button is pressed:"
@@ -1299,29 +1299,29 @@ msgstr "Akumulator jest w pełni naładowany"
 #. TRANSLATORS: this is the sound description
 #: ../src/gpm-manager.c:297
 msgid "Suspend started"
-msgstr "Wstrzymanie rozpoczęte"
+msgstr "Uśpienie rozpoczęte"
 
 #. TRANSLATORS: this is the sound description
 #: ../src/gpm-manager.c:301
 msgid "Resumed"
-msgstr "Powrót ze stanu wstrzymania"
+msgstr "Powrót ze stanu uśpienia"
 
 #. TRANSLATORS: this is the sound description
 #: ../src/gpm-manager.c:305
 msgid "Suspend failed"
-msgstr "Wstrzymanie się nie powiodło"
+msgstr "Uśpienie się nie powiodło"
 
 #. TRANSLATORS: message text
 #: ../src/gpm-manager.c:574
 #, fuzzy
 #| msgid "Your computer failed to suspend."
 msgid "Computer failed to suspend."
-msgstr "Wstrzymanie komputera się nie powiodło."
+msgstr "Uśpienie komputera się nie powiodło."
 
 #. TRANSLATORS: title text
 #: ../src/gpm-manager.c:576
 msgid "Failed to suspend"
-msgstr "Wstrzymanie się nie powiodło"
+msgstr "Uśpienie się nie powiodło"
 
 #. TRANSLATORS: message text
 #: ../src/gpm-manager.c:580
@@ -1624,7 +1624,7 @@ msgstr "Proszę podłączyć zasilacz do komputera, aby uniknąć utraty danych.
 #, c-format
 msgid "Computer will suspend very soon unless it is plugged in."
 msgstr ""
-"Komputer zostanie niedługo wstrzymany, jeśli nie zostanie podłączone "
+"Komputer zostanie niedługo uśpiony, jeśli nie zostanie podłączone "
 "zasilanie sieciowe."
 
 #. TRANSLATORS: give the user a ultimatum
@@ -1771,8 +1771,8 @@ msgid ""
 "computer in a suspended state."
 msgstr ""
 "Naładowanie akumulatora jest poniżej poziomu krytycznego i komputer zostanie "
-"przełączony w tryb wstrzymania.<br><b>UWAGA:</b> Niewielka ilość prądu jest "
-"potrzebna do działania komputera w trybie wstrzymania."
+"przełączony w tryb uśpienia.<br><b>UWAGA:</b> Niewielka ilość prądu jest "
+"potrzebna do działania komputera w trybie uśpienia."
 
 #. TRANSLATORS: computer will hibernate
 #: ../src/gpm-manager.c:1782
@@ -1843,7 +1843,7 @@ msgstr "Wyłącz"
 
 #: ../src/gpm-prefs-core.c:370
 msgid "Suspend"
-msgstr "Wstrzymaj"
+msgstr "Uśpij"
 
 #: ../src/gpm-prefs-core.c:373
 msgid "Hibernate"
