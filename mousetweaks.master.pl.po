@@ -7,15 +7,17 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: mousetweaks\n"
-"Report-Msgid-Bugs-To: http://bugzilla.gnome.org/enter_bug.cgi?product=mousetweaks&component=general\n"
-"POT-Creation-Date: 2010-01-08 17:50+0000\n"
+"Report-Msgid-Bugs-To: http://bugzilla.gnome.org/enter_bug.cgi?"
+"product=mousetweaks&component=general\n"
+"POT-Creation-Date: 2010-06-27 16:33+0000\n"
 "PO-Revision-Date: 2010-02-24 19:25+0100\n"
 "Last-Translator: Piotr Drąg <piotrdrag@gmail.com>\n"
 "Language-Team: Polish <gnomepl@aviary.pl>\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=utf-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"Plural-Forms: nplurals=3; plural=n==1 ? 0 : n%10>=2 && n%10<=4 && (n%100<10 || n%100>=20) ? 1 : 2;\n"
+"Plural-Forms: nplurals=3; plural=n==1 ? 0 : n%10>=2 && n%10<=4 && (n%100<10 "
+"|| n%100>=20) ? 1 : 2;\n"
 "X-Poedit-Language: Polish\n"
 "X-Poedit-Country: Poland\n"
 
@@ -31,29 +33,24 @@ msgstr ""
 msgid "Click Type Window"
 msgstr "Okno typów kliknięć"
 
-#: ../data/dwell-click-applet.ui.h:4
-#: ../data/mousetweaks.ui.h:1
+#: ../data/dwell-click-applet.ui.h:4 ../data/mousetweaks.ui.h:1
 msgid "Double Click"
 msgstr "Podwójne kliknięcie"
 
-#: ../data/dwell-click-applet.ui.h:5
-#: ../data/mousetweaks.ui.h:2
+#: ../data/dwell-click-applet.ui.h:5 ../data/mousetweaks.ui.h:2
 msgid "Drag Click"
 msgstr "Przeciągnięcie"
 
-#: ../data/dwell-click-applet.ui.h:6
-#: ../data/mousetweaks.schemas.in.h:12
-#: ../src/mt-main.c:877
+#: ../data/dwell-click-applet.ui.h:6 ../data/mousetweaks.schemas.in.h:12
+#: ../src/mt-main.c:807
 msgid "Enable dwell click"
 msgstr "Włączenie klikania spoczynkowego"
 
-#: ../data/dwell-click-applet.ui.h:7
-#: ../data/mousetweaks.ui.h:4
+#: ../data/dwell-click-applet.ui.h:7 ../data/mousetweaks.ui.h:4
 msgid "Right Click"
 msgstr "Kliknięcie prawym przyciskiem"
 
-#: ../data/dwell-click-applet.ui.h:8
-#: ../data/mousetweaks.ui.h:8
+#: ../data/dwell-click-applet.ui.h:8 ../data/mousetweaks.ui.h:8
 msgid "Single Click"
 msgstr "Pojedyncze kliknięcie"
 
@@ -62,8 +59,12 @@ msgid "A_lt"
 msgstr "A_lt"
 
 #: ../data/pointer-capture-applet.ui.h:2
+#, fuzzy
+#| msgid ""
+#| "Area to freeze the mouse pointer on the panel.\n"
+#| "Part of Mousetweaks"
 msgid ""
-"Area to freeze the mouse pointer on the panel.\n"
+"Area to lock the pointer on the panel.\n"
 "Part of Mousetweaks"
 msgstr ""
 "Obszar na panelu, na którym kursor myszy ma zostać zatrzymany.\n"
@@ -114,7 +115,9 @@ msgid "Sh_ift"
 msgstr "Sh_ift"
 
 #: ../data/pointer-capture-applet.ui.h:15
-msgid "Size of Capture Area"
+#, fuzzy
+#| msgid "Size of Capture Area"
+msgid "Size of the Capture Area"
 msgstr "Rozmiar obszaru przechwytywania"
 
 #: ../data/pointer-capture-applet.ui.h:16
@@ -145,8 +148,7 @@ msgstr "Wyświetlenie wyłącznie ikon"
 msgid "Show Text only"
 msgstr "Wyświetlanie wyłącznie tekstu"
 
-#: ../data/DwellClick_Factory.server.in.in.h:1
-#: ../src/dwell-click-applet.c:561
+#: ../data/DwellClick_Factory.server.in.in.h:1 ../src/dwell-click-applet.c:619
 msgid "Dwell Click"
 msgstr "Klikanie spoczynkowe"
 
@@ -159,22 +161,19 @@ msgid "Area to lock the pointer"
 msgstr "Obszar do zablokowania kursora"
 
 #: ../data/PointerCapture_Factory.server.in.in.h:2
-#: ../src/pointer-capture-applet.c:563
+#: ../src/pointer-capture-applet.c:530
 msgid "Pointer Capture"
 msgstr "Przechwytywanie kursora"
 
-#: ../data/DwellClick.xml.h:1
-#: ../data/PointerCapture.xml.h:1
+#: ../data/DwellClick.xml.h:1 ../data/PointerCapture.xml.h:1
 msgid "_About"
 msgstr "_O programie"
 
-#: ../data/DwellClick.xml.h:2
-#: ../data/PointerCapture.xml.h:2
+#: ../data/DwellClick.xml.h:2 ../data/PointerCapture.xml.h:2
 msgid "_Help"
 msgstr "Pomo_c"
 
-#: ../data/DwellClick.xml.h:3
-#: ../data/PointerCapture.xml.h:3
+#: ../data/DwellClick.xml.h:3 ../data/PointerCapture.xml.h:3
 msgid "_Preferences"
 msgstr "P_referencje"
 
@@ -187,24 +186,43 @@ msgid "Button style"
 msgstr "Styl przycisku"
 
 #: ../data/mousetweaks.schemas.in.h:3
-msgid "Button style in click type window (\"0\" = Text, \"1\" = Icon, \"2\" = Both)"
-msgstr "Styl przycisków w oknie typów kliknięć (\"0\" = Tekst, \"1\" = Ikony, \"2\" = Tekst i ikony)"
+msgid ""
+"Button style in click type window (\"0\" = Text, \"1\" = Icon, \"2\" = Both)"
+msgstr ""
+"Styl przycisków w oknie typów kliknięć (\"0\" = Tekst, \"1\" = Ikony, \"2\" "
+"= Tekst i ikony)"
 
 #: ../data/mousetweaks.schemas.in.h:4
-msgid "Direction to perform a double click (\"0\" = Left, \"1\" = Right, \"2\" = Up, \"3\" = Down)"
-msgstr "Kierunek, w którym ma zostać wykonane podwójne kliknięcie (\"0\" = Lewo, \"1\" = Prawo, \"2\" = Góra, \"3\" = Dół)"
+msgid ""
+"Direction to perform a double click (\"0\" = Left, \"1\" = Right, \"2\" = "
+"Up, \"3\" = Down)"
+msgstr ""
+"Kierunek, w którym ma zostać wykonane podwójne kliknięcie (\"0\" = Lewo, \"1"
+"\" = Prawo, \"2\" = Góra, \"3\" = Dół)"
 
 #: ../data/mousetweaks.schemas.in.h:5
-msgid "Direction to perform a drag click (\"0\" = Left, \"1\" = Right, \"2\" = Up, \"3\" = Down)"
-msgstr "Kierunek, w którym ma zostać wykonane przeciągnięcie (\"0\" = Lewo, \"1\" = Prawo, \"2\" = Góra, \"3\" = Dół)"
+msgid ""
+"Direction to perform a drag click (\"0\" = Left, \"1\" = Right, \"2\" = Up, "
+"\"3\" = Down)"
+msgstr ""
+"Kierunek, w którym ma zostać wykonane przeciągnięcie (\"0\" = Lewo, \"1\" = "
+"Prawo, \"2\" = Góra, \"3\" = Dół)"
 
 #: ../data/mousetweaks.schemas.in.h:6
-msgid "Direction to perform a secondary click (\"0\" = Left, \"1\" = Right, \"2\" = Up, \"3\" = Down)"
-msgstr "Kierunek, w którym ma zostać wykonane kliknięcie drugorzędne (\"0\" = Lewo, \"1\" = Prawo, \"2\" = Góra, \"3\" = Dół)"
+msgid ""
+"Direction to perform a secondary click (\"0\" = Left, \"1\" = Right, \"2\" = "
+"Up, \"3\" = Down)"
+msgstr ""
+"Kierunek, w którym ma zostać wykonane kliknięcie drugorzędne (\"0\" = Lewo, "
+"\"1\" = Prawo, \"2\" = Góra, \"3\" = Dół)"
 
 #: ../data/mousetweaks.schemas.in.h:7
-msgid "Direction to perform a single click (\"0\" = Left, \"1\" = Right, \"2\" = Up, \"3\" = Down)"
-msgstr "Kierunek, w którym ma zostać wykonane pojedyncze kliknięcie (\"0\" = Lewo, \"1\" = Prawo, \"2\" = Góra, \"3\" = Dół)"
+msgid ""
+"Direction to perform a single click (\"0\" = Left, \"1\" = Right, \"2\" = "
+"Up, \"3\" = Down)"
+msgstr ""
+"Kierunek, w którym ma zostać wykonane pojedyncze kliknięcie (\"0\" = Lewo, "
+"\"1\" = Prawo, \"2\" = Góra, \"3\" = Dół)"
 
 #: ../data/mousetweaks.schemas.in.h:8
 msgid "Distance in pixels before movement will be recognized"
@@ -226,8 +244,7 @@ msgstr "Czas klikania spoczynkowego"
 msgid "Enable secondary click"
 msgstr "Włączenie drugorzędnego kliknięcia"
 
-#: ../data/mousetweaks.schemas.in.h:14
-#: ../src/mt-main.c:879
+#: ../data/mousetweaks.schemas.in.h:14 ../src/mt-main.c:809
 msgid "Enable simulated secondary click"
 msgstr "Włączenie symulowanego kliknięcia drugorzędnego"
 
@@ -308,129 +325,184 @@ msgid "Size of capture area"
 msgstr "Rozmiar obszaru przechwytywania"
 
 #: ../data/pointer-capture-applet.schemas.in.h:10
-msgid "This mouse button must be pressed to release the pointer from the capture area. Valid values are \"1\" for left button, \"2\" for middle button, and \"3\" for right button."
-msgstr "Ten przycisk myszy musi być wciśnięty, aby uwolnić kursor z obszaru przechwytywania. Poprawne wartości to \"1\" dla przycisku lewego, \"2\" dla przycisku środkowego oraz \"3\" dla przycisku prawego."
+msgid ""
+"This mouse button must be pressed to release the pointer from the capture "
+"area. Valid values are \"1\" for left button, \"2\" for middle button, and "
+"\"3\" for right button."
+msgstr ""
+"Ten przycisk myszy musi być wciśnięty, aby uwolnić kursor z obszaru "
+"przechwytywania. Poprawne wartości to \"1\" dla przycisku lewego, \"2\" dla "
+"przycisku środkowego oraz \"3\" dla przycisku prawego."
 
 #: ../data/pointer-capture-applet.schemas.in.h:11
-msgid "This mouse button must be pressed while the pointer is over the capture area in order to capture the pointer. Valid values are \"0\" if no button is needed, \"1\" for left button, \"2\" for middle button, and \"3\" for right button."
-msgstr "Ten przycisk myszy musi zostać naciśnięty, gdy kursor jest nad obszarem przechwytywania, aby go przechwycić. Poprawne wartości to \"1\" dla przycisku lewego, \"2\" dla przycisku środkowego oraz \"3\" dla przycisku prawego."
+msgid ""
+"This mouse button must be pressed while the pointer is over the capture area "
+"in order to capture the pointer. Valid values are \"0\" if no button is "
+"needed, \"1\" for left button, \"2\" for middle button, and \"3\" for right "
+"button."
+msgstr ""
+"Ten przycisk myszy musi zostać naciśnięty, gdy kursor jest nad obszarem "
+"przechwytywania, aby go przechwycić. Poprawne wartości to \"1\" dla "
+"przycisku lewego, \"2\" dla przycisku środkowego oraz \"3\" dla przycisku "
+"prawego."
 
 #: ../data/pointer-capture-applet.schemas.in.h:12
-msgid "Whether the Alt key must be pressed for the pointer to be captured while it's over the capture area. If this option is set as true, and a mouse button is set in the \"capture_button\" key, then the Alt key must be pressed while the mouse button is pressed."
-msgstr "Określa, czy klawisz Alt musi być wciśnięty, aby kursor został przechwycony, gdy znajduje się na obszarze przechwytywania. Jeśli opcja jest ustawiona na \"true\", a przycisk myszy jest ustawiony w kluczu \"capture_button\", wtedy klawisz Alt musi zostać naciśnięty w trakcie naciskania przycisku myszy."
+msgid ""
+"Whether the Alt key must be pressed for the pointer to be captured while "
+"it's over the capture area. If this option is set as true, and a mouse "
+"button is set in the \"capture_button\" key, then the Alt key must be "
+"pressed while the mouse button is pressed."
+msgstr ""
+"Określa, czy klawisz Alt musi być wciśnięty, aby kursor został przechwycony, "
+"gdy znajduje się na obszarze przechwytywania. Jeśli opcja jest ustawiona na "
+"\"true\", a przycisk myszy jest ustawiony w kluczu \"capture_button\", wtedy "
+"klawisz Alt musi zostać naciśnięty w trakcie naciskania przycisku myszy."
 
 #: ../data/pointer-capture-applet.schemas.in.h:13
-msgid "Whether the Alt key must be pressed with the mouse button set in \"release_button\" for the pointer to be released from the capture area."
-msgstr "Określa, czy klawisz Alt musi być wciśnięty wraz przyciskiem myszy ustawionym w \"release_button\", aby klawisz został uwolniony z obszaru przechwytywania."
+msgid ""
+"Whether the Alt key must be pressed with the mouse button set in "
+"\"release_button\" for the pointer to be released from the capture area."
+msgstr ""
+"Określa, czy klawisz Alt musi być wciśnięty wraz przyciskiem myszy "
+"ustawionym w \"release_button\", aby klawisz został uwolniony z obszaru "
+"przechwytywania."
 
 #: ../data/pointer-capture-applet.schemas.in.h:14
-msgid "Whether the Ctrl key must be pressed for the pointer to be captured while it's over the capture area. If this option is set as true, and a mouse button is set in the \"capture_button\" key, then the Ctrl key must be pressed while the mouse button is pressed."
-msgstr "Określa, czy klawisz Ctrl musi być wciśnięty, aby kursor został przechwycony, gdy znajduje się na obszarze przechwytywania. Jeśli opcja jest ustawiona na \"true\", a przycisk myszy jest ustawiony w kluczu \"capture_button\", wtedy klawisz Alt musi zostać naciśnięty w trakcie naciskania przycisku myszy."
+msgid ""
+"Whether the Ctrl key must be pressed for the pointer to be captured while "
+"it's over the capture area. If this option is set as true, and a mouse "
+"button is set in the \"capture_button\" key, then the Ctrl key must be "
+"pressed while the mouse button is pressed."
+msgstr ""
+"Określa, czy klawisz Ctrl musi być wciśnięty, aby kursor został "
+"przechwycony, gdy znajduje się na obszarze przechwytywania. Jeśli opcja jest "
+"ustawiona na \"true\", a przycisk myszy jest ustawiony w kluczu "
+"\"capture_button\", wtedy klawisz Alt musi zostać naciśnięty w trakcie "
+"naciskania przycisku myszy."
 
 #: ../data/pointer-capture-applet.schemas.in.h:15
-msgid "Whether the Ctrl key must be pressed with the mouse button set in \"release_button\" for the pointer to be released from the capture area."
-msgstr "Określa, czy klawisz Ctrl musi być wciśnięty wraz przyciskiem myszy ustawionym w \"release_button\", aby klawisz został uwolniony z obszaru przechwytywania."
+msgid ""
+"Whether the Ctrl key must be pressed with the mouse button set in "
+"\"release_button\" for the pointer to be released from the capture area."
+msgstr ""
+"Określa, czy klawisz Ctrl musi być wciśnięty wraz przyciskiem myszy "
+"ustawionym w \"release_button\", aby klawisz został uwolniony z obszaru "
+"przechwytywania."
 
 #: ../data/pointer-capture-applet.schemas.in.h:16
-msgid "Whether the Shift key must be pressed for the pointer to be captured while it's over the capture area. If this option is set as true, and a mouse button is set in the \"capture_button\" key, then the Shift key must be pressed while the mouse button is pressed."
-msgstr "Określa, czy klawisz Shift musi być wciśnięty, aby kursor został przechwycony, gdy znajduje się na obszarze przechwytywania. Jeśli opcja jest ustawiona na \"true\", a przycisk myszy jest ustawiony w kluczu \"capture_button\", wtedy klawisz Alt musi zostać naciśnięty w trakcie naciskania przycisku myszy."
+msgid ""
+"Whether the Shift key must be pressed for the pointer to be captured while "
+"it's over the capture area. If this option is set as true, and a mouse "
+"button is set in the \"capture_button\" key, then the Shift key must be "
+"pressed while the mouse button is pressed."
+msgstr ""
+"Określa, czy klawisz Shift musi być wciśnięty, aby kursor został "
+"przechwycony, gdy znajduje się na obszarze przechwytywania. Jeśli opcja jest "
+"ustawiona na \"true\", a przycisk myszy jest ustawiony w kluczu "
+"\"capture_button\", wtedy klawisz Alt musi zostać naciśnięty w trakcie "
+"naciskania przycisku myszy."
 
 #: ../data/pointer-capture-applet.schemas.in.h:17
-msgid "Whether the Shift key must be pressed with the mouse button set in \"release_button\" for the pointer to be released from the capture area."
-msgstr "Określa, czy klawisz Shift musi być wciśnięty wraz przyciskiem myszy ustawionym w \"release_button\", aby klawisz został uwolniony z obszaru przechwytywania."
+msgid ""
+"Whether the Shift key must be pressed with the mouse button set in "
+"\"release_button\" for the pointer to be released from the capture area."
+msgstr ""
+"Określa, czy klawisz Shift musi być wciśnięty wraz przyciskiem myszy "
+"ustawionym w \"release_button\", aby klawisz został uwolniony z obszaru "
+"przechwytywania."
 
 #: ../data/pointer-capture-applet.schemas.in.h:18
 msgid "Width of the capture area in pixels."
 msgstr "Szerokość obszaru przechwytywania w pikselach."
 
-#: ../src/mt-main.c:782
-msgid "Assistive Technology Support is not Enabled"
-msgstr "Obsługa technologii wspierających jest wyłączona"
-
-#: ../src/mt-main.c:783
-msgid ""
-"Mousetweaks requires assistive technologies to be enabled in your session.\n"
-"\n"
-"To enable support for assistive technologies and restart your session, press \"Enable and Log Out\"."
-msgstr ""
-"Usługa Mousetweaks wymaga włączenia technologii wspierających w ramach sesji użytkownika.\n"
-"\n"
-"Aby włączyć obsługę technologii wspierających i uruchomić sesję ponownie, proszę nacisnąć przycisk \"Włącz i wyloguj\"."
-
-#: ../src/mt-main.c:881
+#: ../src/mt-main.c:811
 msgid "Time to wait before a dwell click"
 msgstr "Opóźnienie przed kliknięciem spoczynkowym"
 
-#: ../src/mt-main.c:883
+#: ../src/mt-main.c:813
 msgid "Time to wait before a simulated secondary click"
 msgstr "Opóźnienie przed symulowanym kliknięciem drugorzędnym"
 
-#: ../src/mt-main.c:885
+#: ../src/mt-main.c:815
 msgid "Set the active dwell mode"
 msgstr "Ustawienie aktywnego trybu spoczynkowego"
 
-#: ../src/mt-main.c:887
+#: ../src/mt-main.c:817
 msgid "Show a click-type window"
 msgstr "Wyświetlanie okna typów kliknięć"
 
-#: ../src/mt-main.c:889
+#: ../src/mt-main.c:819
 msgid "Click-type window X position"
 msgstr "Pozycja X okna typów kliknięć"
 
-#: ../src/mt-main.c:891
+#: ../src/mt-main.c:821
 msgid "Click-type window Y position"
 msgstr "Pozycja Y okna typów kliknięć"
 
-#: ../src/mt-main.c:893
+#: ../src/mt-main.c:823
 msgid "Ignore small pointer movements"
 msgstr "Ignorowanie niewielkich ruchów kursora"
 
-#: ../src/mt-main.c:895
+#: ../src/mt-main.c:825
 msgid "Shut down mousetweaks"
 msgstr "Kończy działanie programu mousetweaks"
 
-#: ../src/mt-main.c:897
+#: ../src/mt-main.c:827
 msgid "Disable cursor animations"
 msgstr "Wyłączenie animacji kursora"
 
-#: ../src/mt-main.c:899
+#: ../src/mt-main.c:829
 msgid "Start mousetweaks as a daemon"
 msgstr "Uruchamia program mousetweaks jako usługę"
 
-#: ../src/mt-main.c:901
+#: ../src/mt-main.c:831
 msgid "Start mousetweaks in login mode"
 msgstr "Uruchamia program mousetweaks w trybie logowania"
 
 #. parse
-#: ../src/mt-main.c:919
+#: ../src/mt-main.c:851
 msgid "- GNOME mouse accessibility daemon"
 msgstr "- usługa dostępności myszy środowiska GNOME"
 
-#: ../src/mt-common.c:30
+#: ../src/mt-common.c:31
 msgid "Failed to Display Help"
 msgstr "Wyświetlenie pomocy się nie powiodło"
 
-#: ../src/mt-common.c:66
+#: ../src/mt-common.c:70
 msgid "Enable and Log Out"
 msgstr "Włącz i wyloguj"
 
-#: ../src/pointer-capture-applet.c:213
-msgid "Locked"
-msgstr "Zablokowany"
-
-#. l10n: the first letter of 'Locked'
-#: ../src/pointer-capture-applet.c:216
-msgid "L"
-msgstr "Z"
-
-#: ../src/pointer-capture-applet.c:640
+#: ../src/pointer-capture-applet.c:68
 msgid "Capture area"
 msgstr "Obszar przechwytywania"
 
-#: ../src/pointer-capture-applet.c:641
+#: ../src/pointer-capture-applet.c:69
 msgid "Temporarily lock the mouse pointer"
 msgstr "Chwilowe blokowanie kursora myszy"
 
-#: ../src/dwell-click-applet.c:334
+#: ../src/pointer-capture-applet.c:596
+msgid "Locked"
+msgstr "Zablokowany"
+
+#: ../src/dwell-click-applet.c:475
 msgid "Failed to Launch Mouse Preferences"
 msgstr "Uruchomienie preferencji myszy się nie powiodło"
+
+#~ msgid "Assistive Technology Support is not Enabled"
+#~ msgstr "Obsługa technologii wspierających jest wyłączona"
+
+#~ msgid ""
+#~ "Mousetweaks requires assistive technologies to be enabled in your "
+#~ "session.\n"
+#~ "\n"
+#~ "To enable support for assistive technologies and restart your session, "
+#~ "press \"Enable and Log Out\"."
+#~ msgstr ""
+#~ "Usługa Mousetweaks wymaga włączenia technologii wspierających w ramach "
+#~ "sesji użytkownika.\n"
+#~ "\n"
+#~ "Aby włączyć obsługę technologii wspierających i uruchomić sesję ponownie, "
+#~ "proszę nacisnąć przycisk \"Włącz i wyloguj\"."
+
+#~ msgid "L"
+#~ msgstr "Z"

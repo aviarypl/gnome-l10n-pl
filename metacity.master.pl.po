@@ -9,7 +9,7 @@ msgstr ""
 "Project-Id-Version: metacity\n"
 "Report-Msgid-Bugs-To: http://bugzilla.gnome.org/enter_bug.cgi?"
 "product=metacity&component=general\n"
-"POT-Creation-Date: 2010-01-21 21:34+0000\n"
+"POT-Creation-Date: 2010-05-02 15:05+0000\n"
 "PO-Revision-Date: 2010-02-24 18:19+0100\n"
 "Last-Translator: Piotr Drąg <piotrdrag@gmail.com>\n"
 "Language-Team: Polish <gnomepl@aviary.pl>\n"
@@ -211,24 +211,24 @@ msgstr "Ponowne uruchomienie się nie powiodło: %s\n"
 #. * (Empty comment follows so the translators don't see this.)
 #.
 #.
-#: ../src/core/prefs.c:506 ../src/core/prefs.c:661
+#: ../src/core/prefs.c:508 ../src/core/prefs.c:663
 #, c-format
 msgid "GConf key '%s' is set to an invalid value\n"
 msgstr "Kluczowi GConf \"%s\" jest przypisana nieprawidłowa wartość\n"
 
-#: ../src/core/prefs.c:587 ../src/core/prefs.c:830
+#: ../src/core/prefs.c:589 ../src/core/prefs.c:832
 #, c-format
 msgid "%d stored in GConf key %s is out of range %d to %d\n"
 msgstr "Wartość %d zapisana w kluczu GConf %s jest poza zakresem %d - %d\n"
 
-#: ../src/core/prefs.c:631 ../src/core/prefs.c:708 ../src/core/prefs.c:756
-#: ../src/core/prefs.c:820 ../src/core/prefs.c:1113 ../src/core/prefs.c:1129
-#: ../src/core/prefs.c:1146 ../src/core/prefs.c:1162
+#: ../src/core/prefs.c:633 ../src/core/prefs.c:710 ../src/core/prefs.c:758
+#: ../src/core/prefs.c:822 ../src/core/prefs.c:1115 ../src/core/prefs.c:1131
+#: ../src/core/prefs.c:1148 ../src/core/prefs.c:1164
 #, c-format
 msgid "GConf key \"%s\" is set to an invalid type\n"
 msgstr "Klucz GConf \"%s\" jest nieprawidłowego typu\n"
 
-#: ../src/core/prefs.c:1232
+#: ../src/core/prefs.c:1234
 msgid ""
 "Workarounds for broken applications disabled. Some applications may not "
 "behave properly.\n"
@@ -236,13 +236,13 @@ msgstr ""
 "Obejścia dla błędnie działających programów są wyłączone. Niektóre z nich "
 "mogą się więc zachowywać w sposób nieprzewidywalny.\n"
 
-#: ../src/core/prefs.c:1303
+#: ../src/core/prefs.c:1305
 #, c-format
 msgid "Could not parse font description \"%s\" from GConf key %s\n"
 msgstr ""
 "Nie można przetworzyć opisu czcionki \"%s\", powiązanego z kluczem GConf %s\n"
 
-#: ../src/core/prefs.c:1365
+#: ../src/core/prefs.c:1367
 #, c-format
 msgid ""
 "\"%s\" found in configuration database is not a valid value for mouse button "
@@ -251,17 +251,17 @@ msgstr ""
 "Wartość \"%s\", odnaleziona w bazie danych konfiguracji nie opisuje "
 "prawidłowo modyfikatora przycisku myszy\n"
 
-#: ../src/core/prefs.c:1786
+#: ../src/core/prefs.c:1788
 #, c-format
 msgid "Error setting number of workspaces to %d: %s\n"
 msgstr "Błąd podczas ustawiania liczby obszarów roboczych na %d: %s\n"
 
-#: ../src/core/prefs.c:1975 ../src/core/prefs.c:2478
+#: ../src/core/prefs.c:1953 ../src/core/prefs.c:2456
 #, c-format
 msgid "Workspace %d"
 msgstr "Obszar roboczy %d"
 
-#: ../src/core/prefs.c:2005 ../src/core/prefs.c:2183
+#: ../src/core/prefs.c:1983 ../src/core/prefs.c:2161
 #, c-format
 msgid ""
 "\"%s\" found in configuration database is not a valid value for keybinding "
@@ -270,12 +270,12 @@ msgstr ""
 "Wartość \"%s\", odnaleziona w bazie danych konfiguracji nie opisuje "
 "prawidłowo skrótu klawiszowego \"%s\"\n"
 
-#: ../src/core/prefs.c:2559
+#: ../src/core/prefs.c:2537
 #, c-format
 msgid "Error setting name for workspace %d to \"%s\": %s\n"
 msgstr "Błąd podczas ustawiania nazwy obszaru roboczego %d na \"%s\": %s\n"
 
-#: ../src/core/prefs.c:2763
+#: ../src/core/prefs.c:2741
 #, c-format
 msgid "Error setting compositor status: %s\n"
 msgstr "Błąd podczas ustawiania stanu menedżera składania: %s\n"
@@ -378,42 +378,36 @@ msgstr "Błąd podczas zapisywania pliku sesji \"%s\": %s\n"
 msgid "Error closing session file '%s': %s\n"
 msgstr "Błąd podczas zamykania pliku sesji \"%s\": %s\n"
 
-#. oh, just give up
-#: ../src/core/session.c:1106
-#, c-format
-msgid "Failed to read saved session file %s: %s\n"
-msgstr "Odczytanie zapisanego pliku sesji \"%s\" się nie powiodło: %s\n"
-
-#: ../src/core/session.c:1145
+#: ../src/core/session.c:1143
 #, c-format
 msgid "Failed to parse saved session file: %s\n"
 msgstr "Przetworzenie zapisanego pliku sesji się nie powiodło: %s\n"
 
-#: ../src/core/session.c:1194
+#: ../src/core/session.c:1192
 #, c-format
 msgid "<metacity_session> attribute seen but we already have the session ID"
 msgstr ""
 "Odnaleziono atrybut <metacity_session>, kiedy identyfikator sesji został już "
 "ustawiony"
 
-#: ../src/core/session.c:1207 ../src/core/session.c:1282
-#: ../src/core/session.c:1314 ../src/core/session.c:1386
-#: ../src/core/session.c:1446
+#: ../src/core/session.c:1205 ../src/core/session.c:1280
+#: ../src/core/session.c:1312 ../src/core/session.c:1384
+#: ../src/core/session.c:1444
 #, c-format
 msgid "Unknown attribute %s on <%s> element"
 msgstr "Nieznany atrybut %s elementu <%s>"
 
-#: ../src/core/session.c:1224
+#: ../src/core/session.c:1222
 #, c-format
 msgid "nested <window> tag"
 msgstr "zagnieżdżony znacznik <window>"
 
-#: ../src/core/session.c:1466
+#: ../src/core/session.c:1464
 #, c-format
 msgid "Unknown element %s"
 msgstr "Nieznany element %s"
 
-#: ../src/core/session.c:1818
+#: ../src/core/session.c:1816
 msgid ""
 "These windows do not support &quot;save current setup&quot; and will have to "
 "be restarted manually next time you log in."
@@ -549,16 +543,16 @@ msgstr ""
 #, c-format
 msgid "Property %s on window 0x%lx contained invalid UTF-8\n"
 msgstr ""
-"Własność %s odnosząca się do okna 0x%lx zawiera nieprawidłową sekwencję "
-"UTF-8\n"
+"Własność %s odnosząca się do okna 0x%lx zawiera nieprawidłową sekwencję UTF-"
+"8\n"
 
 #: ../src/core/xprops.c:484
 #, c-format
 msgid ""
 "Property %s on window 0x%lx contained invalid UTF-8 for item %d in the list\n"
 msgstr ""
-"Własność %s odnosząca się do okna 0x%lx zawiera nieprawidłową sekwencję "
-"UTF-8 w %d. elemencie listy\n"
+"Własność %s odnosząca się do okna 0x%lx zawiera nieprawidłową sekwencję UTF-"
+"8 w %d. elemencie listy\n"
 
 #: ../src/include/all-keybindings.h:88
 msgid "Switch to workspace 1"
@@ -932,9 +926,9 @@ msgstr ""
 "Kliknięcie okna przy przytrzymaniu tego modyfikatora spowoduje przesunięcie "
 "okna (lewy przycisk), zmianę jego rozmiaru (środkowy przycisk) lub "
 "wyświetlenie menu okna (prawy przycisk). Funkcjonalność lewego i prawego "
-"przycisku myszy można odwrócić za pomocą klucza \"resize_with_right_button\". "
-"Przykładowy zapis modyfikatora ma postać \"&lt;Alt&gt;\" lub \"&lt;Super&gt;"
-"\"."
+"przycisku myszy można odwrócić za pomocą klucza \"resize_with_right_button"
+"\". Przykładowy zapis modyfikatora ma postać \"&lt;Alt&gt;\" lub \"&lt;"
+"Super&gt;\"."
 
 #: ../src/metacity.schemas.in.in.h:10
 msgid "Commands to run in response to keybindings"
@@ -1165,8 +1159,8 @@ msgid ""
 "The /apps/metacity/global_keybindings/run_command_screenshot key defines a "
 "keybinding which causes the command specified by this setting to be invoked."
 msgstr ""
-"Klucz /apps/metacity/global_keybindings/run_command_screenshot określa "
-"skrót klawiszowy wywołujący polecenie określone przez to ustawienie."
+"Klucz /apps/metacity/global_keybindings/run_command_screenshot określa skrót "
+"klawiszowy wywołujący polecenie określone przez to ustawienie."
 
 #: ../src/metacity.schemas.in.in.h:36
 msgid ""
@@ -1175,8 +1169,7 @@ msgid ""
 "be invoked."
 msgstr ""
 "Klucz /apps/metacity/global_keybindings/run_command_window_screenshot "
-"określa skrót klawiszowy wywołujący polecenia określone przez to "
-"ustawienie."
+"określa skrót klawiszowy wywołujący polecenia określone przez to ustawienie."
 
 #: ../src/metacity.schemas.in.in.h:37
 msgid ""
@@ -1772,8 +1765,8 @@ msgstr ""
 #, c-format
 msgid "Coordinate expression had an operand where an operator was expected"
 msgstr ""
-"Wyrażenie opisujące położenie zawiera operand w miejscu, w którym "
-"oczekiwano operatora"
+"Wyrażenie opisujące położenie zawiera operand w miejscu, w którym oczekiwano "
+"operatora"
 
 #: ../src/ui/theme.c:2038
 #, c-format
@@ -2434,3 +2427,6 @@ msgid "%d coordinate expressions parsed in %g seconds (%g seconds average)\n"
 msgstr ""
 "wyrażenia współrzędnych %d zostało przetworzone w %g sekund (średnio %g "
 "sekund(y))\n"
+
+#~ msgid "Failed to read saved session file %s: %s\n"
+#~ msgstr "Odczytanie zapisanego pliku sesji \"%s\" się nie powiodło: %s\n"

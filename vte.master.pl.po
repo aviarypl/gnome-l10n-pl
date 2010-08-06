@@ -9,7 +9,7 @@ msgstr ""
 "Project-Id-Version: vte\n"
 "Report-Msgid-Bugs-To: http://bugzilla.gnome.org/enter_bug.cgi?"
 "product=vte&component=general\n"
-"POT-Creation-Date: 2009-04-17 16:59+0000\n"
+"POT-Creation-Date: 2010-07-15 17:09+0000\n"
 "PO-Revision-Date: 2010-02-25 02:50+0100\n"
 "Last-Translator: Piotr Drąg <piotrdrag@gmail.com>\n"
 "Language-Team: Polish <gnomepl@aviary.pl>\n"
@@ -21,34 +21,26 @@ msgstr ""
 "X-Poedit-Language: Polish\n"
 "X-Poedit-Country: Poland\n"
 
-#: ../src/iso2022.c:785 ../src/iso2022.c:793 ../src/iso2022.c:824
-#: ../src/vte.c:2294
+#: ../src/iso2022.c:771 ../src/iso2022.c:779 ../src/iso2022.c:810
+#: ../src/vte.c:2254
 #, c-format
 msgid "Unable to convert characters from %s to %s."
 msgstr "Nie można przekonwertować znaków z %s na %s."
 
-#: ../src/iso2022.c:1472
+#: ../src/iso2022.c:1464
 #, c-format
 msgid "Attempt to set invalid NRC map '%c'."
 msgstr "Próba ustawienia nieprawidłowej mapy NRC \"%c\"."
 
 #. Application signalled an "identified coding system" we haven't heard of.  See ECMA-35 for gory details.
-#: ../src/iso2022.c:1502
+#: ../src/iso2022.c:1494
 msgid "Unrecognized identified coding system."
 msgstr "Nierozpoznany system kodowania."
 
-#: ../src/iso2022.c:1561 ../src/iso2022.c:1588
+#: ../src/iso2022.c:1553 ../src/iso2022.c:1580
 #, c-format
 msgid "Attempt to set invalid wide NRC map '%c'."
 msgstr "Próba ustawienia nieprawidłowej rozległej mapy NRC \"%c\"."
-
-#. Give the user some clue as to why session logging is not
-#. * going to work (assuming we can open a pty using some other
-#. * method).
-#: ../src/pty.c:831
-#, c-format
-msgid "can not run %s"
-msgstr "nie można uruchomić %s"
 
 #: ../src/trie.c:409
 #, c-format
@@ -56,43 +48,47 @@ msgid "Duplicate (%s/%s)!"
 msgstr "Duplikat (%s/%s)!"
 
 #. Bail back to normal mode.
-#: ../src/vteapp.c:846
+#: ../src/vteapp.c:965
 msgid "Could not open console.\n"
 msgstr "Nie można otworzyć konsoli.\n"
 
-#: ../src/vteapp.c:910
+#: ../src/vteapp.c:1056
 msgid "Could not parse the geometry spec passed to --geometry"
 msgstr ""
 "Nie można przetworzyć danych geometrii przekazanych za pomocą --geometry"
 
-#: ../src/vte.c:1343
+#: ../src/vte.c:1280
 #, c-format
 msgid "Error compiling regular expression \"%s\"."
 msgstr "Błąd podczas kompilowania wyrażenia regularnego \"%s\"."
 
 #. Translators: %s is replaced with error message returned by strerror().
-#: ../src/vte.c:4297
+#: ../src/vte.c:4362
 #, c-format
 msgid "Error reading from child: %s."
 msgstr "Błąd podczas odczytywania z procesu potomnego: %s."
 
-#: ../src/vte.c:4425
+#: ../src/vte.c:4489
 msgid "Unable to send data to child, invalid charset convertor"
 msgstr "Nie można wysłać danych do potomka, nieprawidłowa konwersja znaków"
 
-#: ../src/vte.c:4436 ../src/vte.c:5403
+#: ../src/vte.c:4500 ../src/vte.c:5526
 #, c-format
 msgid "Error (%s) converting data for child, dropping."
 msgstr "Błąd (%s) podczas konwertowania danych dla potomka. Porzucono."
 
-#: ../src/vte.c:7674
-#, c-format
-msgid "Error reading PTY size, using defaults: %s."
+#: ../src/vte.c:7720
+#, fuzzy, c-format
+#| msgid "Error reading PTY size, using defaults: %s."
+msgid "Error reading PTY size, using defaults: %s\n"
 msgstr "Błąd podczas odczytywania rozmiaru PTY, używanie domyślnego: %s."
 
 #. Aaargh.  We're screwed.
-#: ../src/vte.c:13033
+#: ../src/vte.c:13272
 msgid "_vte_conv_open() failed setting word characters"
 msgstr ""
 "Funkcja g_iconv_open() nie została ukończona podczas ustawiania znaków o "
 "szerokości słowa"
+
+#~ msgid "can not run %s"
+#~ msgstr "nie można uruchomić %s"
