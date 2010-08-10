@@ -7,18 +7,16 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: rygel\n"
-"Report-Msgid-Bugs-To: http://bugzilla.gnome.org/enter_bug.cgi?"
-"product=Rygel&component=general\n"
+"Report-Msgid-Bugs-To: http://bugzilla.gnome.org/enter_bug.cgi?product=Rygel&component=general\n"
 "POT-Creation-Date: 2010-08-05 14:19+0000\n"
-"PO-Revision-Date: 2010-08-07 00:25+0200\n"
-"Last-Translator: Piotr Drąg <piotrdrag@gmail.com>\n"
+"PO-Revision-Date: 2010-08-10 22:35+0100\n"
+"Last-Translator: Wadim Dziedzic <wdziedzic@aviary.pl>\n"
 "Language-Team: Polish <gnomepl@aviary.pl>\n"
 "Language: pl\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"Plural-Forms: nplurals=3; plural=(n==1 ? 0 : n%10>=2 && n%10<=4 && (n%100<10 "
-"|| n%100>=20) ? 1 : 2);\n"
+"Plural-Forms: nplurals=3; plural=(n==1 ? 0 : n%10>=2 && n%10<=4 && (n%100<10 || n%100>=20) ? 1 : 2);\n"
 
 #: ../data/rygel-preferences.ui.h:1
 msgid "<b>Network Options</b>"
@@ -66,11 +64,8 @@ msgstr "_Tytuł"
 
 #: ../data/rygel-preferences.ui.h:13
 #, no-c-format
-msgid ""
-"Write %u for username, %n for real name of the user and %h for host name"
-msgstr ""
-"%u oznacza nazwę użytkownika, %n oznacza imię i nazwisko użytkownika, a %h "
-"oznacza nazwę komputera"
+msgid "Write %u for username, %n for real name of the user and %h for host name"
+msgstr "%u oznacza nazwę użytkownika, %n oznacza imię i nazwisko użytkownika, a %h oznacza nazwę komputera"
 
 #: ../data/rygel-preferences.ui.h:14
 msgid "_Enable UPnP/DLNA"
@@ -176,6 +171,7 @@ msgstr "Obiekt %s nie jest elementem"
 msgid "Original search: %s"
 msgstr "Pierwotne wyszukiwanie: %s"
 
+# REV: na pewno regularne?
 #: ../src/plugins/media-export/rygel-media-export-media-cache.vala:409
 #, c-format
 msgid "Parsed search expression: %s"
@@ -242,6 +238,7 @@ msgstr "Zamiennik może być tylko na drugim miejscu"
 msgid "Directory %s gone, removing watch"
 msgstr "Katalog %s zniknął, usuwanie obserwacji"
 
+# REV: może pobieranie informacji?
 #: ../src/plugins/media-export/rygel-media-export-recursive-file-monitor.vala:75
 #, c-format
 msgid "Failed to get file info for %s"
@@ -276,6 +273,7 @@ msgstr "Utworzenie usługi D-Bus MediaExport się nie powiodło: %s"
 msgid "%s is not a valid virtual ID"
 msgstr "%s nie jest prawidłowym wirtualnym identyfikatorem"
 
+# ERV: w sumie wystarczyłoby "Błąd podczas..."
 #: ../src/plugins/media-export/rygel-media-export-root-container.vala:331
 #, c-format
 msgid "Got error while trying to find virtual folders: %s"
@@ -296,11 +294,12 @@ msgstr "Usunięcie wpisu się nie powiodło: %s"
 msgid "'%s' harvested"
 msgstr "Wydobyto z \"%s\""
 
+# REV: drugie zdanie - może "Pominięto przeszukiwanie" ?
 #: ../src/plugins/media-export/rygel-media-export-root-container.vala:363
 msgid "No Metadata extractor available. Will not crawl"
-msgstr ""
-"Brak dostępnego programu do wydobywania metadanych. Nie będzie przeszukiwane"
+msgstr "Brak dostępnego programu do wydobywania metadanych. Nie będzie przeszukiwane"
 
+# REV: "Trwa wydobywanie" ?
 #: ../src/plugins/media-export/rygel-media-export-root-container.vala:369
 msgid "Already harvesting; cancelling"
 msgstr "Już jest wydobywane, anulowanie"
@@ -344,6 +343,7 @@ msgstr "Utworzenie obiektu w %s nie jest dozwolone"
 msgid "Failed to connect to session bus: %s"
 msgstr "Połączenie z magistralą sesji się nie powiodło: %s"
 
+# REV: nie lepiej "pobierania"
 #: ../src/plugins/tracker/rygel-tracker-metadata-values.vala:125
 #, c-format
 msgid "Error getting all values for '%s': %s"
@@ -370,7 +370,8 @@ msgstr "Rok"
 
 #: ../src/rygel/rygel-media-query-action.vala:119
 #: ../src/rygel/rygel-media-query-action.vala:140
-#: ../src/rygel/rygel-browse.vala:93 ../src/rygel/rygel-item-creator.vala:107
+#: ../src/rygel/rygel-browse.vala:93
+#: ../src/rygel/rygel-item-creator.vala:107
 #: ../src/rygel/rygel-item-creator.vala:140
 msgid "No such object"
 msgstr "Nie ma takiego obiektu"
@@ -412,6 +413,7 @@ msgstr "Przeglądanie \"%s\" się nie powiodło: %s\n"
 msgid "No value available"
 msgstr "Brak dostępnej wartości"
 
+# REV: musiałoby być "odwołanie do połączenia", żeby była jasność o jakie odwołanie chodzi
 #: ../src/rygel/rygel-connection-manager.vala:103
 msgid "Invalid connection reference"
 msgstr "Nieprawidłowe odwołanie połączenia"
@@ -454,6 +456,7 @@ msgstr "Nieprawidłowa nazwa"
 msgid "Action Failed"
 msgstr "Działanie się nie powiodło"
 
+# REV: w programowaniu mówi się często o "serializowaniu"; szeregowanie to zwykle tłumaczenie "scheduling"
 #: ../src/rygel/rygel-didl-lite-writer.vala:48
 msgid "Unable to serialize unsupported object"
 msgstr "Nie można szeregować nieobsługiwanego obiektu"
@@ -489,6 +492,7 @@ msgstr "Dołączono następujące nagłówki HTTP do odpowiedzi:"
 msgid "Not found"
 msgstr "Nie odnaleziono"
 
+# REV: może "nie ma" ? żeby tak nie personalizować?
 #: ../src/rygel/rygel-http-identity-handler.vala:109
 #, c-format
 msgid "Item '%s' didn't provide a URI"
@@ -538,6 +542,7 @@ msgstr "Żądanie POST HTTP dla adresu URI \"%s\""
 msgid "Failed to get original URI for '%s': %s"
 msgstr "Uzyskanie pierwotnego adresu URI dla \"%s\" się nie powiodło: %s"
 
+# REV: import lub importowanie
 #: ../src/rygel/rygel-import-resource.vala:138
 #, c-format
 msgid "Import of '%s' to '%s' completed"
@@ -592,6 +597,7 @@ msgstr "Błąd z potoku %s: %s"
 msgid "Warning from pipeline %s: %s"
 msgstr "Ostrzeżenie z potoku %s: %s"
 
+# REV: offset to bardziej przesunięcie - ale można by w sumie nawet to pominąć w tłumaczeniu
 #: ../src/rygel/rygel-live-response.vala:266
 #, c-format
 msgid "Failed to seek to offset %lld"
@@ -646,8 +652,7 @@ msgstr "Błędny adres URI: %s"
 #: ../src/rygel/rygel-media-item.vala:299
 #, c-format
 msgid "Failed to probe protocol for URI %s. Assuming '%s'"
-msgstr ""
-"Wykrycie protokołu dla adresu URI %s się nie powiodło. Przyjmowanie \"%s\""
+msgstr "Wykrycie protokołu dla adresu URI %s się nie powiodło. Przyjmowanie \"%s\""
 
 #: ../src/rygel/rygel-meta-config.vala:57
 #, c-format
@@ -677,8 +682,7 @@ msgstr "Dostępna jest nowa wtyczka \"%s\""
 #: ../src/rygel/rygel-plugin-loader.vala:75
 #, c-format
 msgid "Plugin '%s' disabled in user configuration, ignoring.."
-msgstr ""
-"Wtyczka \"%s\" została wyłączona w konfiguracji użytkownika, ignorowanie..."
+msgstr "Wtyczka \"%s\" została wyłączona w konfiguracji użytkownika, ignorowanie..."
 
 #: ../src/rygel/rygel-plugin-loader.vala:89
 #, c-format
@@ -703,8 +707,7 @@ msgstr "Wczytanie modułu ze ścieżki \"%s\" się nie powiodło: %s"
 #: ../src/rygel/rygel-plugin-loader.vala:151
 #, c-format
 msgid "Failed to find entry point function '%s' in '%s': %s"
-msgstr ""
-"Wyszukanie funkcji punktu wejściowego \"%s\" w \"%s\" się nie powiodło: %s"
+msgstr "Wyszukanie funkcji punktu wejściowego \"%s\" w \"%s\" się nie powiodło: %s"
 
 #: ../src/rygel/rygel-plugin-loader.vala:167
 #, c-format
@@ -720,6 +723,7 @@ msgstr "Wczytano moduł źródłowy: \"%s\""
 msgid "XML node '%s' not found."
 msgstr "Nie odnaleziono węzła XML \"%s\"."
 
+# REV: nie zawiera?
 #: ../src/rygel/rygel-root-device-factory.vala:244
 #, c-format
 msgid "No icon provided by plugin '%s'. Using Rygel logo.."
@@ -739,11 +743,14 @@ msgstr "Wykonywanie żądania wyszukania: %s"
 msgid "No object satisfies given search criteria."
 msgstr "Żaden obiekt nie odpowiada podanym kryteriom wyszukiwania."
 
+# REV: wyszukiwanie?
 #: ../src/rygel/rygel-search.vala:83
 #, c-format
 msgid "Failed to search in '%s': %s"
 msgstr "Wyszukanie w \"%s\" się nie powiodło: %s"
 
+# REV: odczyt
+# REV: wydaje mi się, że szyk "Nie powiódł się odczyt z adresu..." jest lepszy - zrób jak uważasz
 #: ../src/rygel/rygel-seekable-response.vala:62
 #, c-format
 msgid "Failed to read from URI: %s: %s"
@@ -756,6 +763,7 @@ msgstr "Odczytanie z adresu URI się nie powiodło: %s: %s"
 msgid "Failed to seek to %s-%s on URI %s: %s"
 msgstr "Przejście do %s-%s w adresie URI %s się nie powiodło: %s"
 
+# REV: j.w.
 #: ../src/rygel/rygel-seekable-response.vala:100
 #, c-format
 msgid "Failed to read contents from URI: %s: %s"
@@ -831,3 +839,4 @@ msgstr "Ustawianie czasu oczekiwania na ostatnią zmianę"
 #, c-format
 msgid "Failed to create preferences dialog: %s"
 msgstr "Utworzenie okna preferencji się nie powiodło: %s"
+
