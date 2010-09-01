@@ -9,7 +9,7 @@ msgstr ""
 "Project-Id-Version: gnome-keyring\n"
 "Report-Msgid-Bugs-To: http://bugzilla.gnome.org/enter_bug.cgi?product=gnome-"
 "keyring&component=general\n"
-"POT-Creation-Date: 2010-07-29 07:55+0000\n"
+"POT-Creation-Date: 2010-08-29 13:20+0000\n"
 "PO-Revision-Date: 2010-02-21 21:42+0100\n"
 "Last-Translator: Piotr Drąg <piotrdrag@gmail.com>\n"
 "Language-Team: Polish <gnomepl@aviary.pl>\n"
@@ -20,54 +20,6 @@ msgstr ""
 "|| n%100>=20) ? 1 : 2);\n"
 "X-Poedit-Language: Polish\n"
 "X-Poedit-Country: Poland\n"
-
-#: ../daemon/data/gnome-keyring.schemas.in.h:1
-msgid ""
-"This option enables the PKCS#11 component in the gnome-keyring daemon. It "
-"only takes effect during startup with gnome-session, (ie: when the user logs "
-"in). This setting may be overridden when certain command line arguments are "
-"passed to the daemon."
-msgstr ""
-"Ta opcja włącza składnik PKCS#11 usługi gnome-keyring. Działa tylko podczas "
-"uruchamiania za pomocą gnome-session (tzn. kiedy użytkownik zostaje "
-"zalogowany). To ustawienie może zostać unieważnione poprzez odpowiednie "
-"parametry wiersza poleceń przekazane usłudze."
-
-#: ../daemon/data/gnome-keyring.schemas.in.h:2
-msgid ""
-"This option enables the SSH agent in the gnome-keyring daemon. It only takes "
-"effect as gnome-keyring-daemon starts, (ie: when the user logs in). This "
-"setting may be overridden when certain command line arguments are passed to "
-"the daemon."
-msgstr ""
-"Ta opcja uruchamia agenta SSH w usłudze gnome-keyring. Działa tylko podczas "
-"uruchamiania usługi gnome-keyring-daemon (tzn. kiedy użytkownik zostaje "
-"zalogowany). To ustawienie może zostać unieważnione poprzez odpowiednie "
-"parametry wiersza poleceń przekazane usłudze."
-
-#: ../daemon/data/gnome-keyring.schemas.in.h:3
-msgid ""
-"This option enables the secret service component in the gnome-keyring "
-"daemon. It only takes effect during startup with gnome-session, (ie: when "
-"the user logs in). This setting may be overridden when certain command line "
-"arguments are passed to the daemon."
-msgstr ""
-"Ta opcja włącza składnik usługi haseł usługi gnome-keyring. Działa tylko "
-"podczas uruchamiania za pomocą gnome-session (tzn. kiedy użytkownik zostaje "
-"zalogowany). To ustawienie może zostać unieważnione poprzez odpowiednie "
-"parametry wiersza poleceń przekazane usłudze."
-
-#: ../daemon/data/gnome-keyring.schemas.in.h:4
-msgid "Whether the gnome-keyring PKCS#11 component is enabled."
-msgstr "Określa, czy składnik PKCS#11 usługi gnome-keyring jest włączony."
-
-#: ../daemon/data/gnome-keyring.schemas.in.h:5
-msgid "Whether the gnome-keyring SSH agent is enabled."
-msgstr "Określa, czy agent SSH usługi gnome-keyring jest włączony."
-
-#: ../daemon/data/gnome-keyring.schemas.in.h:6
-msgid "Whether the gnome-keyring secret service is enabled."
-msgstr "Określa, czy usługa haseł gnome-keyring jest włączona."
 
 #. TRANSLATORS: This is the label for an keyring created without a label
 #: ../daemon/dbus/gkd-secret-change.c:78 ../daemon/dbus/gkd-secret-create.c:74
@@ -167,6 +119,22 @@ msgstr ""
 #: ../daemon/gpg-agent/gkd-gpg-agent-ops.c:304
 msgid "Enter Passphrase"
 msgstr ""
+
+#: ../daemon/gpg-agent/gkd-gpg-agent-ops.c:341
+#, fuzzy
+#| msgid "Lock this keyring if idle for"
+msgid "Forget this password if idle for"
+msgstr "Zablokowanie tej bazy kluczy w razie bezczynności przez"
+
+#: ../daemon/gpg-agent/gkd-gpg-agent-ops.c:342
+msgid "Forget this password after"
+msgstr ""
+
+#: ../daemon/gpg-agent/gkd-gpg-agent-ops.c:343
+#, fuzzy
+#| msgid "Lock this keyring when I log out"
+msgid "Forget this password when I log out"
+msgstr "Zablokowanie tej bazy kluczy po wylogowaniu"
 
 #. TRANSLATORS: This is the display label for the login keyring
 #: ../daemon/login/gkd-login.c:159
@@ -681,7 +649,9 @@ msgid "No key is needed"
 msgstr "Klucz nie jest wymagany"
 
 #: ../gp11/gp11-misc.c:147
-msgid "The key is different than before"
+#, fuzzy
+#| msgid "The key is different than before"
+msgid "The key is different from before"
 msgstr "Klucz jest inny od poprzedniego"
 
 #: ../gp11/gp11-misc.c:149
@@ -1067,11 +1037,11 @@ msgid ""
 "To change the password for '%s', the original and new passwords are required"
 msgstr ""
 
-#: ../ui/gku-prompt-tool.c:394
+#: ../ui/gku-prompt-tool.c:547
 msgid "Store passwords unencrypted?"
 msgstr "Przechowywać hasła bez szyfrowania?"
 
-#: ../ui/gku-prompt-tool.c:395
+#: ../ui/gku-prompt-tool.c:548
 msgid ""
 "By choosing to use a blank password, your stored passwords will not be "
 "safely encrypted. They will be accessible by anyone with access to your "
@@ -1080,15 +1050,15 @@ msgstr ""
 "Puste hasło oznacza niechronione przechowywanie haseł. Będą one dostępne dla "
 "każdego, kto będzie miał dostęp do plików tego konta."
 
-#: ../ui/gku-prompt-tool.c:402
+#: ../ui/gku-prompt-tool.c:555
 msgid "Use Unsafe Storage"
 msgstr "Użycie niechronionej przechowalni"
 
-#: ../ui/gku-prompt-tool.c:432
+#: ../ui/gku-prompt-tool.c:593
 msgid "Passwords do not match."
 msgstr "Hasła nie są zgodne."
 
-#: ../ui/gku-prompt-tool.c:442
+#: ../ui/gku-prompt-tool.c:603
 msgid "Password cannot be blank"
 msgstr "Hasło nie może być puste"
 
