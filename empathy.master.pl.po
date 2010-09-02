@@ -9,7 +9,7 @@ msgstr ""
 "Project-Id-Version: empathy\n"
 "Report-Msgid-Bugs-To: http://bugzilla.gnome.org/enter_bug.cgi?"
 "product=empathy&component=general\n"
-"POT-Creation-Date: 2010-08-30 15:46+0000\n"
+"POT-Creation-Date: 2010-09-02 13:37+0000\n"
 "PO-Revision-Date: 2010-03-17 14:56+0100\n"
 "Last-Translator: Piotr Drąg <piotrdrag@gmail.com>\n"
 "Language-Team: Polish <gnomepl@aviary.pl>\n"
@@ -743,26 +743,48 @@ msgstr "w przyszłości"
 msgid "All"
 msgstr "Wszystkie"
 
-#: ../libempathy-gtk/empathy-account-widget.c:549
-#: ../libempathy-gtk/empathy-account-widget.c:606
+#: ../libempathy-gtk/empathy-account-widget.c:500
+#: ../libempathy-gtk/empathy-log-window.c:646
+#: ../src/empathy-import-widget.c:312
+msgid "Account"
+msgstr "Konto"
+
+#: ../libempathy-gtk/empathy-account-widget.c:501
+#, fuzzy
+#| msgid "Password:"
+msgid "Password"
+msgstr "Hasło:"
+
+#: ../libempathy-gtk/empathy-account-widget.c:502
+#: ../libempathy-gtk/empathy-irc-network-dialog.c:507
+msgid "Server"
+msgstr "Serwer"
+
+#: ../libempathy-gtk/empathy-account-widget.c:503
+#: ../libempathy-gtk/empathy-irc-network-dialog.c:522
+msgid "Port"
+msgstr "Port"
+
+#: ../libempathy-gtk/empathy-account-widget.c:575
+#: ../libempathy-gtk/empathy-account-widget.c:632
 #, c-format
 msgid "%s:"
 msgstr "%s:"
 
-#: ../libempathy-gtk/empathy-account-widget.c:1145
+#: ../libempathy-gtk/empathy-account-widget.c:1172
 msgid "Username:"
 msgstr "Nazwa użytkownika:"
 
-#: ../libempathy-gtk/empathy-account-widget.c:1475
+#: ../libempathy-gtk/empathy-account-widget.c:1502
 msgid "A_pply"
 msgstr ""
 
-#: ../libempathy-gtk/empathy-account-widget.c:1505
+#: ../libempathy-gtk/empathy-account-widget.c:1532
 msgid "L_og in"
 msgstr "Zal_oguj się"
 
 #. Account and Identifier
-#: ../libempathy-gtk/empathy-account-widget.c:1571
+#: ../libempathy-gtk/empathy-account-widget.c:1598
 #: ../libempathy-gtk/empathy-contact-widget.ui.h:2
 #: ../libempathy-gtk/empathy-individual-widget.c:1397
 #: ../libempathy-gtk/empathy-contact-selector-dialog.ui.h:1
@@ -771,42 +793,42 @@ msgstr "Zal_oguj się"
 msgid "Account:"
 msgstr "Konto:"
 
-#: ../libempathy-gtk/empathy-account-widget.c:1582
+#: ../libempathy-gtk/empathy-account-widget.c:1609
 #, fuzzy
 #| msgid "Enabled"
 msgid "_Enabled"
 msgstr "Włączone"
 
-#: ../libempathy-gtk/empathy-account-widget.c:1647
+#: ../libempathy-gtk/empathy-account-widget.c:1674
 msgid "This account already exists on the server"
 msgstr "To konto już istnieje na serwerze"
 
-#: ../libempathy-gtk/empathy-account-widget.c:1650
+#: ../libempathy-gtk/empathy-account-widget.c:1677
 msgid "Create a new account on the server"
 msgstr "Utworzenie nowego konta na serwerze"
 
-#: ../libempathy-gtk/empathy-account-widget.c:1743
+#: ../libempathy-gtk/empathy-account-widget.c:1770
 msgid "Ca_ncel"
 msgstr ""
 
 #. To translators: The first parameter is the login id and the
-#. * second one is the server. The resulting string will be something
-#. * like: "MyUserName on chat.freenode.net".
+#. * second one is the network. The resulting string will be something
+#. * like: "MyUserName on freenode".
 #. * You should reverse the order of these arguments if the
 #. * server should come before the login id in your locale.
-#: ../libempathy-gtk/empathy-account-widget.c:2028
+#: ../libempathy-gtk/empathy-account-widget.c:2058
 #, c-format
 msgid "%1$s on %2$s"
 msgstr "%1$s na %2$s"
 
 #. To translators: The parameter is the protocol name. The resulting
 #. * string will be something like: "Jabber Account"
-#: ../libempathy-gtk/empathy-account-widget.c:2054
+#: ../libempathy-gtk/empathy-account-widget.c:2084
 #, c-format
 msgid "%s Account"
 msgstr "Konto %s"
 
-#: ../libempathy-gtk/empathy-account-widget.c:2058
+#: ../libempathy-gtk/empathy-account-widget.c:2088
 msgid "New account"
 msgstr "Nowe konto"
 
@@ -1502,69 +1524,69 @@ msgid "Subscription Request"
 msgstr "Prośba o upoważnienie"
 
 #: ../libempathy-gtk/empathy-contact-list-view.c:2004
-#: ../libempathy-gtk/empathy-individual-view.c:2244
+#: ../libempathy-gtk/empathy-individual-view.c:2255
 #, c-format
 msgid "Do you really want to remove the group '%s'?"
 msgstr "Na pewno usunąć grupę \"%s\"?"
 
 #: ../libempathy-gtk/empathy-contact-list-view.c:2006
-#: ../libempathy-gtk/empathy-individual-view.c:2247
+#: ../libempathy-gtk/empathy-individual-view.c:2258
 msgid "Removing group"
 msgstr "Usuwanie grupy"
 
 #. Remove
 #: ../libempathy-gtk/empathy-contact-list-view.c:2055
 #: ../libempathy-gtk/empathy-contact-list-view.c:2132
-#: ../libempathy-gtk/empathy-individual-view.c:2301
-#: ../libempathy-gtk/empathy-individual-view.c:2386
+#: ../libempathy-gtk/empathy-individual-view.c:2312
+#: ../libempathy-gtk/empathy-individual-view.c:2410
 #: ../src/empathy-accounts-dialog.ui.h:7
 msgid "_Remove"
 msgstr "_Usuń"
 
 #: ../libempathy-gtk/empathy-contact-list-view.c:2085
-#: ../libempathy-gtk/empathy-individual-view.c:2332
+#: ../libempathy-gtk/empathy-individual-view.c:2343
 #, c-format
 msgid "Do you really want to remove the contact '%s'?"
 msgstr "Na pewno usunąć kontakt \"%s\"?"
 
 #: ../libempathy-gtk/empathy-contact-list-view.c:2087
-#: ../libempathy-gtk/empathy-individual-view.c:2334
+#: ../libempathy-gtk/empathy-individual-view.c:2345
 msgid "Removing contact"
 msgstr "Usuwanie kontaktu"
 
 #: ../libempathy-gtk/empathy-contact-menu.c:203
-#: ../libempathy-gtk/empathy-individual-menu.c:364
+#: ../libempathy-gtk/empathy-individual-menu.c:520
 #: ../src/empathy-main-window.ui.h:13
 msgid "_Add Contact…"
 msgstr "_Dodaj kontakt…"
 
 #: ../libempathy-gtk/empathy-contact-menu.c:230
-#: ../libempathy-gtk/empathy-individual-menu.c:489
+#: ../libempathy-gtk/empathy-individual-menu.c:645
 #: ../src/empathy-main-window.ui.h:14
 msgid "_Chat"
 msgstr "_Rozmowa"
 
 #: ../libempathy-gtk/empathy-contact-menu.c:260
-#: ../libempathy-gtk/empathy-individual-menu.c:530
+#: ../libempathy-gtk/empathy-individual-menu.c:686
 msgctxt "menu item"
 msgid "_Audio Call"
 msgstr "Rozmow_a głosowa"
 
 #: ../libempathy-gtk/empathy-contact-menu.c:290
-#: ../libempathy-gtk/empathy-individual-menu.c:572
+#: ../libempathy-gtk/empathy-individual-menu.c:728
 msgctxt "menu item"
 msgid "_Video Call"
 msgstr "_Wideorozmowa"
 
 #: ../libempathy-gtk/empathy-contact-menu.c:330
-#: ../libempathy-gtk/empathy-individual-menu.c:630
+#: ../libempathy-gtk/empathy-individual-menu.c:786
 #: ../src/empathy-main-window.ui.h:25
 msgid "_Previous Conversations"
 msgstr "_Poprzednie rozmowy"
 
 # to jest w menu
 #: ../libempathy-gtk/empathy-contact-menu.c:352
-#: ../libempathy-gtk/empathy-individual-menu.c:671
+#: ../libempathy-gtk/empathy-individual-menu.c:827
 #, fuzzy
 #| msgid "Send file"
 msgid "Send File"
@@ -1572,7 +1594,7 @@ msgstr "Wyślij plik"
 
 # to jest w menu
 #: ../libempathy-gtk/empathy-contact-menu.c:375
-#: ../libempathy-gtk/empathy-individual-menu.c:713
+#: ../libempathy-gtk/empathy-individual-menu.c:869
 #, fuzzy
 #| msgid "Share my desktop"
 msgid "Share My Desktop"
@@ -1580,13 +1602,13 @@ msgstr "Współdziel pulpit"
 
 #: ../libempathy-gtk/empathy-contact-menu.c:415
 #: ../libempathy-gtk/empathy-contact-widget.c:1541
-#: ../libempathy-gtk/empathy-individual-menu.c:747
+#: ../libempathy-gtk/empathy-individual-menu.c:903
 #: ../libempathy-gtk/empathy-individual-widget.c:1288
 msgid "Favorite"
 msgstr "Ulubione"
 
 #: ../libempathy-gtk/empathy-contact-menu.c:444
-#: ../libempathy-gtk/empathy-individual-menu.c:774
+#: ../libempathy-gtk/empathy-individual-menu.c:930
 msgid "Infor_mation"
 msgstr "Infor_macje"
 
@@ -1596,13 +1618,13 @@ msgid "_Edit"
 msgstr "Z_modyfikuj"
 
 #: ../libempathy-gtk/empathy-contact-menu.c:544
-#: ../libempathy-gtk/empathy-individual-menu.c:967
+#: ../libempathy-gtk/empathy-individual-menu.c:1114
 #: ../src/empathy-chat-window.c:903
 msgid "Inviting you to this room"
 msgstr "Zapraszanie do tego pokoju"
 
 #: ../libempathy-gtk/empathy-contact-menu.c:575
-#: ../libempathy-gtk/empathy-individual-menu.c:1014
+#: ../libempathy-gtk/empathy-individual-menu.c:1161
 #, fuzzy
 #| msgid "_Invite to chat room"
 msgid "_Invite to Chat Room"
@@ -1869,32 +1891,32 @@ msgstr ""
 msgid "Linked Contacts"
 msgstr "K_ontakty w trybie offline"
 
-#: ../libempathy-gtk/empathy-individual-linker.c:353
+#: ../libempathy-gtk/empathy-individual-linker.c:354
 #, fuzzy
 #| msgid "Select a contact"
 msgid "Select contacts to link"
 msgstr "Wybór kontaktu"
 
-#: ../libempathy-gtk/empathy-individual-linker.c:426
+#: ../libempathy-gtk/empathy-individual-linker.c:428
 #, fuzzy
 #| msgid "New Contact"
 msgid "New contact preview"
 msgstr "Nowy kontakt"
 
-#: ../libempathy-gtk/empathy-individual-linker.c:470
+#: ../libempathy-gtk/empathy-individual-linker.c:472
 msgid "Contacts selected in the list on the left will be linked together."
 msgstr ""
 
 #. Translators: this is used in the context menu for a contact. The first
 #. * parameter is a contact ID (e.g. foo@jabber.org) and the second is one
 #. * of the user's account IDs (e.g. me@hotmail.com).
-#: ../libempathy-gtk/empathy-individual-menu.c:112
+#: ../libempathy-gtk/empathy-individual-menu.c:134
 #, fuzzy, c-format
 #| msgid " (%s)"
 msgid "%s (%s)"
 msgstr " (%s)"
 
-#: ../libempathy-gtk/empathy-individual-menu.c:825
+#: ../libempathy-gtk/empathy-individual-menu.c:981
 #, fuzzy
 #| msgid "_Edit"
 msgctxt "Edit individual (contextual menu)"
@@ -1903,7 +1925,7 @@ msgstr "_Edycja"
 
 #. Translators: this is a verb meaning "to connect two contacts together
 #. * to form a meta-contact".
-#: ../libempathy-gtk/empathy-individual-menu.c:857
+#: ../libempathy-gtk/empathy-individual-menu.c:1007
 #, fuzzy
 #| msgid "_Join…"
 msgctxt "Link individual (contextual menu)"
@@ -1936,14 +1958,6 @@ msgstr ""
 msgid "new server"
 msgstr "nowy serwer"
 
-#: ../libempathy-gtk/empathy-irc-network-dialog.c:507
-msgid "Server"
-msgstr "Serwer"
-
-#: ../libempathy-gtk/empathy-irc-network-dialog.c:522
-msgid "Port"
-msgstr "Port"
-
 #: ../libempathy-gtk/empathy-irc-network-dialog.c:535
 msgid "SSL"
 msgstr "SSL"
@@ -1966,11 +1980,6 @@ msgstr "K_ontakty w trybie offline"
 #| msgid "_Open Link"
 msgid "_Link"
 msgstr "_Otwórz odnośnik"
-
-#: ../libempathy-gtk/empathy-log-window.c:646
-#: ../src/empathy-import-widget.c:312
-msgid "Account"
-msgstr "Konto"
 
 #: ../libempathy-gtk/empathy-log-window.c:663
 msgid "Date"
