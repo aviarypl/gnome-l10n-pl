@@ -10,8 +10,8 @@ msgstr ""
 "Report-Msgid-Bugs-To: http://bugzilla.gnome.org/enter_bug.cgi?"
 "product=glib&component=general\n"
 "POT-Creation-Date: 2010-09-01 07:49+0000\n"
-"PO-Revision-Date: 2010-03-08 10:50+0100\n"
-"Last-Translator: Tomasz Dominikowski <dominikowski@gmail.com>\n"
+"PO-Revision-Date: 2010-09-04 12:26+0200\n"
+"Last-Translator: Piotr Drąg <piotrdrag@gmail.com>\n"
 "Language-Team: Polish <gnomepl@aviary.pl>\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -1833,7 +1833,7 @@ msgstr "Błąd podczas otwierania bazy kluczy \"%s\" do zapisania: "
 #: ../gio/gdbusauthmechanismsha1.c:877
 #, c-format
 msgid "(Additionally, releasing the lock for `%s' also failed: %s) "
-msgstr "(Dodatkowo, uwolnienie blokady \"%s\" także się nie powiodło: %s)"
+msgstr "(Dodatkowo, uwolnienie blokady \"%s\" także się nie powiodło: %s) "
 
 # pd
 #: ../gio/gdbusconnection.c:1058 ../gio/gdbusconnection.c:1287
@@ -1953,7 +1953,7 @@ msgstr "Komunikat METHOD_CALL: brak pola nagłówka PATH lub MEMBER"
 # pd
 #: ../gio/gdbusmessage.c:785
 msgid "METHOD_RETURN message: REPLY_SERIAL header field is missing"
-msgstr "Komunikat METHOD_CALL: brak pola nagłówka REPLY_SERIAL"
+msgstr "Komunikat METHOD_RETURN: brak pola nagłówka REPLY_SERIAL"
 
 # pd
 #: ../gio/gdbusmessage.c:797
@@ -1996,18 +1996,23 @@ msgid ""
 "Expected valid UTF-8 string but found invalid bytes at byte offset %d "
 "(length of string is %d). The valid UTF-8 string up until that point was `%s'"
 msgstr ""
+"Oczekiwano prawidłowego ciągu UTF-8, ale odnaleziono nieprawidłowe bajty w "
+"offsecie bajtu %d (długość ciągu wynosi %d). Prawidłowy ciąg UTF-8 do tego "
+"miejsca to \"%s\""
 
 # pd
 #: ../gio/gdbusmessage.c:939
 #, c-format
 msgid "Expected NUL byte after the string `%s' but found byte %d"
-msgstr ""
+msgstr "Oczekiwano bajtu NUL po ciągu \"%s\", ale odnaleziono bajt %d"
 
 # pd
 #: ../gio/gdbusmessage.c:1138
 #, c-format
 msgid "Parsed value `%s' is not a valid D-Bus object path"
 msgstr ""
+"Przetworzona wartość \"%s\" nie jest prawidłową ścieżką do obiektu usługi "
+"D-Bus"
 
 # pd
 #: ../gio/gdbusmessage.c:1164
@@ -2021,12 +2026,16 @@ msgstr "Przetworzona wartość \"%s\" nie jest prawidłowym podpisem usługi D-B
 msgid ""
 "Encountered array of length %u bytes. Maximum length is 2<<26 bytes (64 MiB)."
 msgstr ""
+"Wystąpiła macierz o długości %u bajtów. Maksymalna długość to 2<<26 bajtów "
+"(64 MiB)."
 
 # pd
 #: ../gio/gdbusmessage.c:1379
 #, c-format
 msgid "Parsed value `%s' for variant is not a valid D-Bus signature"
 msgstr ""
+"Przetworzona wartość \"%s\" dla wariantu nie jest prawidłowym podpisem "
+"usługi D-Bus"
 
 # pd
 #: ../gio/gdbusmessage.c:1406
@@ -2034,6 +2043,8 @@ msgstr ""
 msgid ""
 "Error deserializing GVariant with type string `%s' from the D-Bus wire format"
 msgstr ""
+"Błąd podczas deserializowania GVariant za pomocą ciągu typu \"%s\" z formatu "
+"przewodu usługi D-Bus"
 
 # pd
 #: ../gio/gdbusmessage.c:1590
@@ -2042,35 +2053,43 @@ msgid ""
 "Invalid endianness value. Expected 0x6c ('l') or 0x42 ('B') but found value "
 "0x%02x"
 msgstr ""
+"Nieprawidłowa wartość kolejności bajtów. Oczekiwano 0x6c (\"l\") lub 0x42 "
+"(\"B\"), ale odnaleziono wartość 0x%02x"
 
 # pd
 #: ../gio/gdbusmessage.c:1604
 #, c-format
 msgid "Invalid major protocol version. Expected 1 but found %d"
 msgstr ""
+"Nieprawidłowa główna wersja protokołu. Oczekiwano 1, ale odnaleziono %d"
 
 # pd
 #: ../gio/gdbusmessage.c:1661
 #, c-format
 msgid "Signature header with signature `%s' found but message body is empty"
 msgstr ""
+"Odnaleziono nagłówek podpisu z podpisem \"%s\", ale treść komunikatu jest "
+"pusta"
 
 # pd
 #: ../gio/gdbusmessage.c:1675
 #, c-format
 msgid "Parsed value `%s' is not a valid D-Bus signature (for body)"
 msgstr ""
+"Przetworzona wartość \"%s\" nie jest prawidłowym podpisem usługi D-Bus (dla "
+"treści)"
 
 # pd
 #: ../gio/gdbusmessage.c:1705
 #, c-format
 msgid "No signature header in message but the message body is %u bytes"
 msgstr ""
+"Brak nagłówka podpisu w komunikacie, ale treść komunikatu liczy %u bajtów"
 
 # pd
 #: ../gio/gdbusmessage.c:1713
 msgid "Cannot deserialize message: "
-msgstr ""
+msgstr "Nie można deserializować komunikatu: "
 
 # pd
 #: ../gio/gdbusmessage.c:2038
@@ -2078,23 +2097,25 @@ msgstr ""
 msgid ""
 "Error serializing GVariant with type string `%s' to the D-Bus wire format"
 msgstr ""
+"Błąd podczas serializowania GVariant za pomocą ciągu typu \"%s\" z formatu "
+"przewodu usługi D-Bus"
 
 # pd
 #: ../gio/gdbusmessage.c:2178
 #, c-format
 msgid "Message has %d fds but the header field indicates %d fds"
-msgstr ""
+msgstr "Komunikat posiada %d fd, ale pole nagłówka wskazuje na %d fd"
 
 # pd
 #: ../gio/gdbusmessage.c:2186
 msgid "Cannot serialize message: "
-msgstr ""
+msgstr "Nie można serializować komunikatu: "
 
 # pd
 #: ../gio/gdbusmessage.c:2230
 #, c-format
 msgid "Message body has signature `%s' but there is no signature header"
-msgstr ""
+msgstr "Treść komunikatu posiada podpis \"%s\", ale brak nagłówka podpisu"
 
 # pd
 #: ../gio/gdbusmessage.c:2240
@@ -2103,29 +2124,31 @@ msgid ""
 "Message body has type signature `%s' but signature in the header field is `%"
 "s'"
 msgstr ""
+"Treść komunikatu posiada podpis \"%s\", ale podpis w polu nagłówka to \"%s\""
 
 # pd
 #: ../gio/gdbusmessage.c:2256
 #, c-format
 msgid "Message body is empty but signature in the header field is `(%s)'"
-msgstr ""
+msgstr "Treść komunikatu jest pusta, ale podpis w polu nagłówka to \"(%s)\""
 
 # pd
 #: ../gio/gdbusmessage.c:2813
 #, c-format
 msgid "Error return with body of type `%s'"
-msgstr ""
+msgstr "Błąd zwrotu z treścią typu \"%s\""
 
 # pd
 #: ../gio/gdbusmessage.c:2821
 msgid "Error return with empty body"
-msgstr ""
+msgstr "Błąd zwrotu z pustą treścią"
 
 # pd
 #: ../gio/gdbusmethodinvocation.c:375
 #, c-format
 msgid "Type of return value is incorrect, got `%s', expected `%s'"
 msgstr ""
+"Typ wartości zwrotnej jest niepoprawny, otrzymano \"%s\", oczekiwano \"%s\""
 
 #: ../gio/gdbusmethodinvocation.c:406 ../gio/gsocket.c:2969
 #: ../gio/gsocket.c:3050
@@ -2136,7 +2159,7 @@ msgstr "Błąd podczas wysyłania komunikatu: %s"
 # pd
 #: ../gio/gdbusprivate.c:1723
 msgid "Unable to load /var/lib/dbus/machine-id: "
-msgstr ""
+msgstr "Nie można wczytać pliku /var/lib/dbus/machine-id: "
 
 # pd
 #: ../gio/gdbusproxy.c:714
@@ -2145,18 +2168,20 @@ msgid ""
 "Trying to set property %s of type %s but according to the expected interface "
 "the type is %s"
 msgstr ""
+"Próba ustawienia własności %s typu %s, ale według oczekiwanego interfejsu "
+"typ to %s"
 
 # pd
 #: ../gio/gdbusproxy.c:1235
 #, c-format
 msgid "Error calling StartServiceByName for %s: "
-msgstr ""
+msgstr "Błąd podczas wywoływania metody StartServiceByName dla %s: "
 
 # pd
 #: ../gio/gdbusproxy.c:1256
 #, c-format
 msgid "Unexpected reply %d from StartServiceByName(\"%s\") method"
-msgstr ""
+msgstr "Nieoczekiwana odpowiedź %d od metody StartServiceByName(\"%s\")"
 
 # pd
 #: ../gio/gdbusproxy.c:2315 ../gio/gdbusproxy.c:2472
@@ -2164,6 +2189,9 @@ msgid ""
 "Cannot invoke method; proxy is for a well-known name without an owner and "
 "proxy was constructed with the G_DBUS_PROXY_FLAGS_DO_NOT_AUTO_START flag"
 msgstr ""
+"Nie można wywołać metody; pośrednik jest dla znanej nazwy bez właściciela, a "
+"pośrednik został utworzony za pomocą flagi "
+"G_DBUS_PROXY_FLAGS_DO_NOT_AUTO_START"
 
 # pd
 #: ../gio/gdbusserver.c:710
@@ -2173,7 +2201,7 @@ msgstr "Przestrzeń nazw abstrakcyjnych nie jest obsługiwana"
 # pd
 #: ../gio/gdbusserver.c:800
 msgid "Cannot specify nonce file when creating a server"
-msgstr ""
+msgstr "Nie można określić pliku nonce podczas tworzenia serwera"
 
 # pd
 #: ../gio/gdbusserver.c:877
@@ -2191,7 +2219,7 @@ msgstr "Ciąg \"%s\" nie jest prawidłowym GUID usługi D-Bus"
 #: ../gio/gdbusserver.c:1073
 #, c-format
 msgid "Cannot listen on unsupported transport `%s'"
-msgstr ""
+msgstr "Nie można nasłuchiwać na nieobsługiwanym transporcie \"%s\""
 
 # pd
 #: ../gio/gdbus-tool.c:87 ../gio/gsettings-tool.c:76
@@ -2210,6 +2238,13 @@ msgid ""
 "\n"
 "Use \"%s COMMAND --help\" to get help on each command.\n"
 msgstr ""
+"Polecenia:\n"
+"  help         Wyświetla tę informację\n"
+"  introspect   Bada zdalny obiekt\n"
+"  monitor      Monitoruje zdalny obiekt\n"
+"  call         Wywołuje metodę na zdalnym obiekcie\n"
+"\n"
+"Polecenie \"%s POLECENIE --help\" wyświetla pomoc o każdym poleceniu.\n"
 
 # pd
 #: ../gio/gdbus-tool.c:160 ../gio/gdbus-tool.c:216 ../gio/gdbus-tool.c:288
@@ -2247,19 +2282,19 @@ msgstr "Opcje punktów końcowych połączenia:"
 # pd
 #: ../gio/gdbus-tool.c:359
 msgid "Options specifying the connection endpoint"
-msgstr ""
+msgstr "Opcje określające punkt końcowy połączenia"
 
 # pd
 #: ../gio/gdbus-tool.c:379
 #, c-format
 msgid "No connection endpoint specified"
-msgstr ""
+msgstr "Nie określono żadnych punktów końcowych połączenia"
 
 # pd
 #: ../gio/gdbus-tool.c:389
 #, c-format
 msgid "Multiple connection endpoints specified"
-msgstr ""
+msgstr "Określono wiele punktów końcowych połączenia"
 
 # pd
 #: ../gio/gdbus-tool.c:459
@@ -2267,6 +2302,7 @@ msgstr ""
 msgid ""
 "Warning: According to introspection data, interface `%s' does not exist\n"
 msgstr ""
+"Ostrzeżenie: według danych introspekcji, interfejs \"%s\" nie istnieje\n"
 
 # pd
 #: ../gio/gdbus-tool.c:468
@@ -2275,26 +2311,28 @@ msgid ""
 "Warning: According to introspection data, method `%s' does not exist on "
 "interface `%s'\n"
 msgstr ""
+"Ostrzeżenie: według danych introspekcji, metoda \"%s\" nie istnieje w "
+"interfejsie \"%s\"\n"
 
 # pd
 #: ../gio/gdbus-tool.c:530
 msgid "Destination name to invoke method on"
-msgstr ""
+msgstr "Nazwa docelowa do wywołania na niej metody"
 
 # pd
 #: ../gio/gdbus-tool.c:531
 msgid "Object path to invoke method on"
-msgstr ""
+msgstr "Ścieżka do obiektu do wywołania na niej metody"
 
 # pd
 #: ../gio/gdbus-tool.c:532
 msgid "Method and interface name"
-msgstr ""
+msgstr "Nazwa metody i interfejsu"
 
 # pd
 #: ../gio/gdbus-tool.c:571
 msgid "Invoke a method on a remote object."
-msgstr ""
+msgstr "Wywołuje metodę na zdalnym obiekcie."
 
 # pd
 #: ../gio/gdbus-tool.c:626 ../gio/gdbus-tool.c:1245 ../gio/gdbus-tool.c:1505
@@ -2306,13 +2344,13 @@ msgstr "Błąd podczas połączenia: %s\n"
 #: ../gio/gdbus-tool.c:646 ../gio/gdbus-tool.c:1264 ../gio/gdbus-tool.c:1524
 #, c-format
 msgid "Error: Destination is not specified\n"
-msgstr ""
+msgstr "Błąd: nie określono celu\n"
 
 # pd
 #: ../gio/gdbus-tool.c:667 ../gio/gdbus-tool.c:1283
 #, c-format
 msgid "Error: Object path is not specified\n"
-msgstr ""
+msgstr "Błąd: nie określono ścieżki do obiektu\n"
 
 # pd
 #: ../gio/gdbus-tool.c:687 ../gio/gdbus-tool.c:1303 ../gio/gdbus-tool.c:1564
@@ -2324,13 +2362,13 @@ msgstr "Błąd: %s nie jest prawidłową ścieżką do obiektu\n"
 #: ../gio/gdbus-tool.c:702
 #, c-format
 msgid "Error: Method name is not specified\n"
-msgstr ""
+msgstr "Błąd: nie określono nazwy metody\n"
 
 # pd
 #: ../gio/gdbus-tool.c:713
 #, c-format
 msgid "Error: Method name `%s' is invalid\n"
-msgstr ""
+msgstr "Błąd: nazwa metody \"%s\" jest nieprawidłowa\n"
 
 # pd
 #: ../gio/gdbus-tool.c:778
@@ -2347,32 +2385,32 @@ msgstr "Błąd podczas przetwarzania parametru %d: %s\n"
 # pd
 #: ../gio/gdbus-tool.c:1162
 msgid "Destination name to introspect"
-msgstr ""
+msgstr "Nazwa docelowa do zbadania"
 
 # pd
 #: ../gio/gdbus-tool.c:1163
 msgid "Object path to introspect"
-msgstr ""
+msgstr "Ścieżka do obiektu do zbadania"
 
 # pd
 #: ../gio/gdbus-tool.c:1164
 msgid "Print XML"
-msgstr ""
+msgstr "Wyświetla kod XML"
 
 # pd
 #: ../gio/gdbus-tool.c:1197
 msgid "Introspect a remote object."
-msgstr ""
+msgstr "Bada zdalny obiekt."
 
 # pd
 #: ../gio/gdbus-tool.c:1423
 msgid "Destination name to monitor"
-msgstr ""
+msgstr "Nazwa docelowa do monitorowania"
 
 # pd
 #: ../gio/gdbus-tool.c:1424
 msgid "Object path to monitor"
-msgstr ""
+msgstr "Ścieżka do obiektu do monitorowania"
 
 # pd
 #: ../gio/gdbus-tool.c:1457
@@ -3053,6 +3091,7 @@ msgstr "puste nazwy nie są dozwolone"
 #, c-format
 msgid "invalid name '%s': names must begin with a lowercase letter"
 msgstr ""
+"nieprawidłowa nazwa \"%s\": nazwy muszą rozpoczynać się od małej litery"
 
 # pd
 #: ../gio/gschema-compile.c:724
@@ -3061,41 +3100,44 @@ msgid ""
 "invalid name '%s': invalid character '%c'; only lowercase letters, numbers "
 "and dash ('-') are permitted."
 msgstr ""
+"nieprawidłowa nazwa \"%s\": niedozwolony znak \"%c\". Dozwolone są tylko "
+"małe litery, liczby i myślniki (\"-\")."
 
 # pd
 #: ../gio/gschema-compile.c:733
 #, c-format
 msgid "invalid name '%s': two successive dashes ('--') are not permitted."
-msgstr ""
+msgstr "nieprawidłowa nazwa \"%s\": dwa myślniki (\"--\") nie są dozwolone."
 
 # pd
 #: ../gio/gschema-compile.c:742
 #, c-format
 msgid "invalid name '%s': the last character may not be a dash ('-')."
 msgstr ""
+"nieprawidłowa nazwa \"%s\": ostatni znak nie może być myślnikiem (\"-\")."
 
 # pd
 #: ../gio/gschema-compile.c:750
 #, c-format
 msgid "invalid name '%s': maximum length is 32"
-msgstr ""
+msgstr "nieprawidłowa nazwa \"%s\": maksymalna długość do 32"
 
 # pd
 #: ../gio/gschema-compile.c:819
 #, c-format
 msgid "<child name='%s'> already specified"
-msgstr ""
+msgstr "<child name='%s'> zostało już określone"
 
 # pd
 #: ../gio/gschema-compile.c:845
 msgid "can not add keys to a 'list-of' schema"
-msgstr ""
+msgstr "nie można dodać kluczy do schematu \"list-of\""
 
 # pd
 #: ../gio/gschema-compile.c:856
 #, c-format
 msgid "<key name='%s'> already specified"
-msgstr ""
+msgstr "<key name='%s'> zostało już określone"
 
 # pd
 #: ../gio/gschema-compile.c:874
@@ -3104,6 +3146,8 @@ msgid ""
 "<key name='%s'> shadows <key name='%s'> in <schema id='%s'>; use <override> "
 "to modify value"
 msgstr ""
+"<key name='%s'> pokrywa <key name='%s'> w <schema id='%s'>; należy użyć "
+"znacznika <override>, aby zmodyfikować wartość"
 
 # pd
 #: ../gio/gschema-compile.c:885
@@ -3112,12 +3156,14 @@ msgid ""
 "exactly one of 'type', 'enum' or 'flags' must be specified as an attribute "
 "to <key>"
 msgstr ""
+"dokładnie jedna z wartości \"type\", \"enum\" lub \"flags\" musi zostać "
+"określona jako atrybut znacznika <key>"
 
 # pd
 #: ../gio/gschema-compile.c:904
 #, c-format
 msgid "<%s id='%s'> not (yet) defined."
-msgstr ""
+msgstr "<%s id='%s'> nie zostało (jeszcze) określone."
 
 # pd
 #: ../gio/gschema-compile.c:919
@@ -3128,37 +3174,37 @@ msgstr "nieprawidłowy typ GVariant ciągu \"%s\""
 # pd
 #: ../gio/gschema-compile.c:949
 msgid "<override> given but schema isn't extending anything"
-msgstr ""
+msgstr "podano znacznik <override>, ale schemat nic nie rozszerza"
 
 # pd
 #: ../gio/gschema-compile.c:962
 #, c-format
 msgid "no <key name='%s'> to override"
-msgstr ""
+msgstr "brak znacznika <key name='%s'> do zastąpienia"
 
 # pd
 #: ../gio/gschema-compile.c:970
 #, c-format
 msgid "<override name='%s'> already specified"
-msgstr ""
+msgstr "<override name='%s'> zostało już określone"
 
 # pd
 #: ../gio/gschema-compile.c:1036
 #, c-format
 msgid "<schema id='%s'> already specified"
-msgstr ""
+msgstr "<schema id='%s'> zostało już określone"
 
 # pd
 #: ../gio/gschema-compile.c:1048
 #, c-format
 msgid "<schema id='%s'> extends not yet existing schema '%s'"
-msgstr ""
+msgstr "<schema id='%s'> rozszerza jeszcze nie istniejący schemat \"%s\""
 
 # pd
 #: ../gio/gschema-compile.c:1062
 #, c-format
 msgid "<schema id='%s'> is list of not yet existing schema '%s'"
-msgstr ""
+msgstr "<schema id='%s'> jest listą jeszcze nie istniejącego schematu \"%s\""
 
 # pd
 #: ../gio/gschema-compile.c:1076
@@ -3166,6 +3212,8 @@ msgstr ""
 msgid ""
 "<schema id='%s'> is a list, extending <schema id='%s'> which is not a list"
 msgstr ""
+"<schema id='%s'> jest listą rozszerzającą znacznik <schema id='%s'>, który "
+"nie jest listą"
 
 # pd
 #: ../gio/gschema-compile.c:1086
@@ -3174,48 +3222,53 @@ msgid ""
 "<schema id='%s' list-of='%s'> extends <schema id='%s' list-of='%s'> but '%s' "
 "does not extend '%s'"
 msgstr ""
+"<schema id='%s' list-of='%s'> rozszerza znacznik <schema id='%s' "
+"list-of='%s'>, ale \"%s\" nie rozszerza \"%s\""
 
 # pd
 #: ../gio/gschema-compile.c:1103
 #, c-format
 msgid "a path, if given, must begin and end with a slash"
 msgstr ""
+"ścieżka, jeśli zostanie podana, musi rozpoczynać się i kończyć ukośnikiem"
 
 # pd
 #: ../gio/gschema-compile.c:1125
 #, c-format
 msgid "<%s id='%s'> already specified"
-msgstr ""
+msgstr "<%s id='%s'> zostało już określone"
 
 # pd
 #: ../gio/gschema-compile.c:1339
 #, c-format
 msgid "Element <%s> not allowed inside <%s>"
-msgstr ""
+msgstr "Element <%s> nie jest dozwolony wewnątrz <%s>"
 
 # pd
 #: ../gio/gschema-compile.c:1343
 #, c-format
 msgid "Element <%s> not allowed at toplevel"
-msgstr ""
+msgstr "Element <%s> nie jest dozwolony jako główny element"
 
 # pd
 #: ../gio/gschema-compile.c:1437
 #, c-format
 msgid "text may not appear inside <%s>"
-msgstr ""
+msgstr "tekst nie może znajdować się wewnątrz <%s>"
 
 # pd
 #: ../gio/gschema-compile.c:1651
 #, c-format
 msgid "No such schema `%s' specified in override file `%s'"
-msgstr ""
+msgstr "Nie określono schematu \"%s\" w pliku zastąpienia \"%s\""
 
 # pd
 #: ../gio/gschema-compile.c:1675
 #, c-format
 msgid "No such key `%s' in schema `%s' as specified in override file `%s'"
 msgstr ""
+"Brak klucza \"%s\" w schemacie \"%s\", jak określono w pliku zastąpienia "
+"\"%s\""
 
 # pd
 #: ../gio/gschema-compile.c:1708
@@ -3224,6 +3277,8 @@ msgid ""
 "override for key `%s' in schema `%s' in override file `%s' is out of the "
 "range given in the schema"
 msgstr ""
+"zastąpienie dla klucza \"%s\" w schemacie \"%s\" w pliku zastąpienia \"%s\" "
+"jest poza zakresem podanym w schemacie"
 
 # pd
 #: ../gio/gschema-compile.c:1729
@@ -3232,11 +3287,13 @@ msgid ""
 "override for key `%s' in schema `%s' in override file `%s' is not in the "
 "list of valid choices"
 msgstr ""
+"zastąpienie dla klucza \"%s\" w schemacie \"%s\" w pliku zastąpienia \"%s\" "
+"nie znajduje się na liście prawidłowych wyborów"
 
 # pd
 #: ../gio/gschema-compile.c:1774
 msgid "where to store the gschemas.compiled file"
-msgstr ""
+msgstr "gdzie przechowywać plik schemas.compiled"
 
 # pd
 #: ../gio/gschema-compile.c:1774 ../gio/gschema-compile.c:1786
@@ -3246,17 +3303,17 @@ msgstr "KATALOG"
 # pd
 #: ../gio/gschema-compile.c:1775
 msgid "Do not write the gschema.compiled file"
-msgstr ""
+msgstr "Bez zapisywania pliku gschema.compiled"
 
 # pd
 #: ../gio/gschema-compile.c:1776
 msgid "This option will be removed soon."
-msgstr ""
+msgstr "Ta opcja zostanie niedługo usunięta."
 
 # pd
 #: ../gio/gschema-compile.c:1777
 msgid "Do not enforce key name restrictions"
-msgstr ""
+msgstr "Bez wymuszania ograniczeń nazw kluczy"
 
 # pd
 #: ../gio/gschema-compile.c:1789
@@ -3265,30 +3322,34 @@ msgid ""
 "Schema files are required to have the extension .gschema.xml,\n"
 "and the cache file is called gschemas.compiled."
 msgstr ""
+"Kompiluje wszystkie pliki schematów GSettings do pamięci\n"
+"podręcznej schematów. Pliki schematów muszą posiadać\n"
+"rozszerzenie .gschema.xml, a pliki pamięci podręcznej\n"
+"nazywają się gschemas.compiled."
 
 # pd
 #: ../gio/gschema-compile.c:1805
 #, c-format
 msgid "You should give exactly one directory name\n"
-msgstr ""
+msgstr "Należy podać dokładnie jedną nazwę katalogu\n"
 
 # pd
 #: ../gio/gschema-compile.c:1844
 #, c-format
 msgid "No schema files found: "
-msgstr ""
+msgstr "Nie odnaleziono plików schematów: "
 
 # pd
 #: ../gio/gschema-compile.c:1847
 #, c-format
 msgid "doing nothing.\n"
-msgstr ""
+msgstr "nic.\n"
 
 # pd
 #: ../gio/gschema-compile.c:1850
 #, c-format
 msgid "removed existing output file.\n"
-msgstr ""
+msgstr "usunięto istniejący plik wyjściowy.\n"
 
 # pd
 #: ../gio/gsettings-tool.c:79
@@ -3304,13 +3365,23 @@ msgid ""
 "\n"
 "Use '%s COMMAND --help' to get help for individual commands.\n"
 msgstr ""
+"Polecenia:\n"
+"  help        Wyświetla tę informację\n"
+"  get         Uzyskuje wartość klucza\n"
+"  set         Ustawia wartość klucza\n"
+"  reset       Przywraca wartość klucza\n"
+"  monitor     Monitoruje zmiany klucza\n"
+"  writable    Sprawdza, czy klucz jest zapisywalny\n"
+"\n"
+"Polecenie \"%s POLECENIE --help\" wyświetla pomoc dla poszczególnych "
+"poleceń.\n"
 
 # pd
 #: ../gio/gsettings-tool.c:222 ../gio/gsettings-tool.c:322
 #: ../gio/gsettings-tool.c:438 ../gio/gsettings-tool.c:533
 #: ../gio/gsettings-tool.c:646
 msgid "Specify the path for the schema"
-msgstr ""
+msgstr "Określa ścieżkę do schematu"
 
 # pd
 #: ../gio/gsettings-tool.c:222 ../gio/gsettings-tool.c:322
@@ -3323,12 +3394,12 @@ msgstr "ŚCIEŻKA"
 #: ../gio/gsettings-tool.c:230 ../gio/gsettings-tool.c:541
 #: ../gio/gsettings-tool.c:654
 msgid "SCHEMA KEY"
-msgstr ""
+msgstr "SCHEMAT KLUCZ"
 
 # pd
 #: ../gio/gsettings-tool.c:232
 msgid "Get the value of KEY"
-msgstr ""
+msgstr "Uzyskuje wartość KLUCZA"
 
 # pd
 #: ../gio/gsettings-tool.c:234 ../gio/gsettings-tool.c:450
@@ -3338,16 +3409,19 @@ msgid ""
 "  SCHEMA      The id of the schema\n"
 "  KEY         The name of the key\n"
 msgstr ""
+"Parametry:\n"
+"  SCHEMAT     Identyfikator schematu\n"
+"  KLUCZ       Nazwa klucza\n"
 
 # pd
 #: ../gio/gsettings-tool.c:330 ../gio/gsettings-tool.c:446
 msgid "SCHEMA KEY VALUE"
-msgstr ""
+msgstr "SCHEMAT KLUCZ WARTOŚĆ"
 
 # pd
 #: ../gio/gsettings-tool.c:332
 msgid "Set the value of KEY"
-msgstr ""
+msgstr "Ustawia wartość KLUCZA"
 
 # pd
 #: ../gio/gsettings-tool.c:334
@@ -3357,6 +3431,10 @@ msgid ""
 "  KEY         The name of the key\n"
 "  VALUE       The value to set key to, as a serialized GVariant\n"
 msgstr ""
+"Parametry:\n"
+"  SCHEMAT     Identyfikator schematu\n"
+"  KLUCZ       Nazwa klucza\n"
+"  WARTOŚĆ     Wartość, na jaką ustawić klucz, jako serializowany GVariant\n"
 
 # pd
 #: ../gio/gsettings-tool.c:407
@@ -3367,12 +3445,12 @@ msgstr "Klucz %s nie jest zapisywalny\n"
 # pd
 #: ../gio/gsettings-tool.c:448
 msgid "Sets KEY to its default value"
-msgstr ""
+msgstr "Ustawia KLUCZ na jego domyślną wartość"
 
 # pd
 #: ../gio/gsettings-tool.c:543
 msgid "Find out whether KEY is writable"
-msgstr ""
+msgstr "Wyszukuje, czy KLUCZ jest zapisywalny"
 
 # pd
 #: ../gio/gsettings-tool.c:657
@@ -3380,6 +3458,8 @@ msgid ""
 "Monitor KEY for changes and print the changed values.\n"
 "Monitoring will continue until the process is terminated."
 msgstr ""
+"Monitoruje zmiany KLUCZA i wyświetla zmienione wartości.\n"
+"Monitorowanie będzie kontynuowane do zakończenia procesu."
 
 # pd
 #: ../gio/gsettings-tool.c:833
@@ -3403,7 +3483,7 @@ msgstr "Gniazdo jest już zamknięte"
 # pd
 #: ../gio/gsocket.c:299 ../gio/gsocket.c:2716 ../gio/gsocket.c:2760
 msgid "Socket I/O timed out"
-msgstr ""
+msgstr "Przekroczono czas oczekiwania wejścia/wyjścia gniazda"
 
 #: ../gio/gsocket.c:421
 #, c-format
@@ -3495,6 +3575,8 @@ msgstr "Błąd podczas pobierania komunikatu: %s"
 #: ../gio/gsocket.c:3489
 msgid "g_socket_get_credentials not implemented for this OS"
 msgstr ""
+"g_socket_get_credentials nie jest zaimplementowane dla tego systemu "
+"operacyjnego"
 
 #: ../gio/gsocketclient.c:674 ../gio/gsocketclient.c:1148
 msgid "Unknown error on connect"
@@ -3504,6 +3586,7 @@ msgstr "Nieznany błąd połączenia"
 #: ../gio/gsocketclient.c:711 ../gio/gsocketclient.c:1038
 msgid "Trying to proxy over non-TCP connection is not supported."
 msgstr ""
+"Próba pośredniczenia przez połączenie nie będące TCP nie jest obsługiwana."
 
 # pd
 #: ../gio/gsocketclient.c:749 ../gio/gsocketclient.c:1061
@@ -3523,108 +3606,115 @@ msgstr "Dodane gniazdo jest zamknięte"
 #: ../gio/gsocks4aproxy.c:121
 #, c-format
 msgid "SOCKSv4 does not support IPv6 address '%s'"
-msgstr ""
+msgstr "SOCKSv4 nie obsługuje adresu IPv6 \"%s\""
 
 # pd
 #: ../gio/gsocks4aproxy.c:139
 #, c-format
 msgid "SOCKSv4 implementation limits username to %i characters"
-msgstr ""
+msgstr "Implementacja SOCKSv4 ogranicza nazwę użytkownika do %i znaków"
 
 # pd
 #: ../gio/gsocks4aproxy.c:157
 #, c-format
 msgid "SOCKSv4a implementation limits hostname to %i characters"
-msgstr ""
+msgstr "Implementacja SOCKSv4 ogranicza nazwę komputera do %i znaków"
 
 # pd
 #: ../gio/gsocks4aproxy.c:183
 msgid "The server is not a SOCKSv4 proxy server."
-msgstr ""
+msgstr "Serwer nie jest serwerem pośrednika SOCKSv4."
 
 # pd
 #: ../gio/gsocks4aproxy.c:190
 msgid "Connection through SOCKSv4 server was rejected"
-msgstr ""
+msgstr "Połączenie przez serwer SOCKSv4 zostało odrzucone"
 
 # pd
 #: ../gio/gsocks5proxy.c:155 ../gio/gsocks5proxy.c:328
 #: ../gio/gsocks5proxy.c:338
 msgid "The server is not a SOCKSv5 proxy server."
-msgstr ""
+msgstr "Serwer nie jest serwerem pośrednika SOCKSv5."
 
 # pd
 #: ../gio/gsocks5proxy.c:169
 msgid "The SOCKSv5 proxy requires authentication."
-msgstr ""
+msgstr "Pośrednik SOCKSv5 wymaga uwierzytelnienia."
 
 # pd
 #: ../gio/gsocks5proxy.c:179
 msgid ""
 "The SOCKSv5 require an authentication method that is not supported by GLib."
 msgstr ""
+"SOCKSv5 wymaga metody uwierzytelnienia nieobsługiwaną przez bibliotekę GLib."
 
 # pd
 #: ../gio/gsocks5proxy.c:208
 #, c-format
 msgid "Username or password is too long for SOCKSv5 protocol (max. is %i)."
 msgstr ""
+"Nazwa użytkownika lub hasło są za długie dla protokołu SOCKSv5 (maksymalnie "
+"%i)."
 
 # pd
 #: ../gio/gsocks5proxy.c:239
 msgid "SOCKSv5 authentication failed due to wrong username or password."
 msgstr ""
+"Uwierzytelnienie SOCKSv5 się nie powiodło z powodu błędnej nazwy użytkownika "
+"lub hasła."
 
 # pd
 #: ../gio/gsocks5proxy.c:289
 #, c-format
 msgid "Hostname '%s' too long for SOCKSv5 protocol (maximum is %i bytes)"
 msgstr ""
+"Nazwa komputera \"%s\" jest za długa dla protokołu SOCKSv5 (maksymalnie %i "
+"bajtów)"
 
 # pd
 #: ../gio/gsocks5proxy.c:352
 msgid "The SOCKSv5 proxy server uses unkown address type."
-msgstr ""
+msgstr "Serwer pośrednika SOCKSv5 używa nieznanego typu adresu."
 
 # pd
 #: ../gio/gsocks5proxy.c:359
 msgid "Internal SOCKSv5 proxy server error."
-msgstr ""
+msgstr "Wewnętrzny błąd serwera pośrednika SOCKSv5."
 
 # pd
 #: ../gio/gsocks5proxy.c:365
 msgid "SOCKSv5 connection not allowed by ruleset."
-msgstr ""
+msgstr "Połączenia SOCKSv5 nie są dozwolone przez zestaw reguł."
 
 # pd
 #: ../gio/gsocks5proxy.c:372
 msgid "Host unreachable through SOCKSv5 server."
-msgstr ""
+msgstr "Komputer jest niedostępny przez serwer SOCKSv5."
 
 # pd
 #: ../gio/gsocks5proxy.c:378
 msgid "Network unreachable through SOCKSv5 proxy."
-msgstr ""
+msgstr "Sieć jest niedostępna przez serwer SOCKSv5."
 
 # pd
 #: ../gio/gsocks5proxy.c:384
 msgid "Connection refused through SOCKSv5 proxy."
-msgstr ""
+msgstr "Połączenie przez pośrednika SOCKSv5 zostało odrzucone."
 
 # pd
 #: ../gio/gsocks5proxy.c:390
 msgid "SOCKSv5 proxy does not support 'connect' command."
-msgstr ""
+msgstr "Pośrednik SOCKSv5 nie obsługuje polecenia \"connect\"."
 
 # pd
 #: ../gio/gsocks5proxy.c:396
 msgid "SOCKSv5 proxy does not support provided address type."
-msgstr ""
+msgstr "Pośrednik SOCKSv5 nie obsługuje podanego typu adresu."
 
 # pd
 #: ../gio/gsocks5proxy.c:402
 msgid "Unkown SOCKSv5 proxy error."
-msgstr ""
+msgstr "Nieznany błąd pośrednika SOCKSv5."
 
 #: ../gio/gthemedicon.c:498
 #, c-format
@@ -3659,6 +3749,8 @@ msgstr "Błąd podczas wysyłania danych uwierzytelniających: "
 #, c-format
 msgid "Error checking if SO_PASSCRED is enabled for socket: %s"
 msgstr ""
+"Błąd podczas sprawdzania, czy zmienna SO_PASSCRED została włączona dla "
+"gniazda: %s"
 
 # pd
 #: ../gio/gunixconnection.c:450
@@ -3667,6 +3759,8 @@ msgid ""
 "Unexpected option length while checking if SO_PASSCRED is enabled for "
 "socket. Expected %d bytes, got %d"
 msgstr ""
+"Oczekiwano długości opcji podczas sprawdzania, czy zmienna SO_PASSCRED "
+"została włączona dla gniazda. Oczekiwano %d bajtów, otrzymano %d"
 
 # pd
 #: ../gio/gunixconnection.c:467
@@ -3679,12 +3773,14 @@ msgstr "Błąd podczas włączania zmiennej SO_PASSCRED: %s"
 msgid ""
 "Expecting to read a single byte for receiving credentials but read zero bytes"
 msgstr ""
+"Oczekiwano odczytania pojedynczego bajtu dla odbieranych danych "
+"uwierzytelniających, ale odczytano zero bajtów"
 
 # pd
 #: ../gio/gunixconnection.c:540
 #, c-format
 msgid "Error while disabling SO_PASSCRED: %s"
-msgstr ""
+msgstr "Błąd podczas wyłączania zmiennej SO_PASSCRED: %s"
 
 #: ../gio/gunixinputstream.c:353 ../gio/gunixinputstream.c:373
 #: ../gio/gunixinputstream.c:451 ../gio/gunixoutputstream.c:438

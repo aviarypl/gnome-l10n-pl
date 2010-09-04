@@ -9,8 +9,8 @@ msgstr ""
 "Project-Id-Version: vinagre\n"
 "Report-Msgid-Bugs-To: http://bugzilla.gnome.org/enter_bug.cgi?"
 "product=vinagre&component=general\n"
-"POT-Creation-Date: 2010-08-25 14:49+0000\n"
-"PO-Revision-Date: 2010-02-27 18:24+0100\n"
+"POT-Creation-Date: 2010-09-03 23:45+0000\n"
+"PO-Revision-Date: 2010-06-28 15:52+0200\n"
 "Last-Translator: Piotr Drąg <piotrdrag@gmail.com>\n"
 "Language-Team: Polish <gnomepl@aviary.pl>\n"
 "MIME-Version: 1.0\n"
@@ -21,7 +21,7 @@ msgstr ""
 "X-Poedit-Language: Polish\n"
 "X-Poedit-Country: Poland\n"
 
-#: ../data/GNOME_VinagreApplet.xml.h:1
+#: ../data/GNOME_VinagreApplet.xml.h:1 ../vinagre/vinagre-plugin-manager.c:496
 msgid "_About"
 msgstr "_O programie"
 
@@ -35,8 +35,8 @@ msgstr "Dostęp do zdalnych pulpitów"
 
 #: ../data/vinagre.desktop.in.in.h:2 ../data/vinagre-file.desktop.in.in.h:2
 #: ../vinagre/GNOME_VinagreApplet.server.in.in.h:2
-#: ../vinagre/vinagre-applet.c:441 ../vinagre/vinagre-applet.c:493
-#: ../vinagre/vinagre-main.c:62
+#: ../vinagre/vinagre-applet.c:434 ../vinagre/vinagre-applet.c:486
+#: ../vinagre/vinagre-main.c:201
 msgid "Remote Desktop Viewer"
 msgstr "Przeglądarka zdalnych pulpitów"
 
@@ -49,7 +49,7 @@ msgid "Authentication is required"
 msgstr "Wymagane jest uwierzytelnienie"
 
 #. setup label
-#: ../data/vinagre.ui.h:3 ../vinagre/vinagre-fav.c:856
+#: ../data/vinagre.ui.h:3 ../vinagre/vinagre-fav.c:851
 msgid "Bookmarks"
 msgstr "Zakładki"
 
@@ -65,9 +65,8 @@ msgstr "Opcje połączenia"
 msgid "Folder"
 msgstr "Katalog"
 
-#: ../data/vinagre.ui.h:7 ../plugins/rdp/vinagre-rdp-tab.c:53
-#: ../plugins/ssh/vinagre-ssh-tab.c:49 ../plugins/vnc/vinagre-vnc-tab.c:148
-#: ../vinagre/vinagre-fav.c:408
+#: ../data/vinagre.ui.h:7 ../plugins/ssh/vinagre-ssh-tab.c:49
+#: ../plugins/vnc/vinagre-vnc-tab.c:148 ../vinagre/vinagre-fav.c:404
 msgid "Host:"
 msgstr "Komputer:"
 
@@ -134,12 +133,11 @@ msgstr "_Protokół:"
 msgid "_Remember this credential"
 msgstr "_Zapamiętanie danych logowania"
 
-#: ../data/vinagre.ui.h:25 ../plugins/rdp/vinagre-rdp-plugin.c:108
-#: ../plugins/ssh/vinagre-ssh-plugin.c:113
+#: ../data/vinagre.ui.h:25 ../plugins/ssh/vinagre-ssh-plugin.c:144
 msgid "_Username:"
 msgstr "_Nazwa użytkownika:"
 
-#: ../data/vinagre.schemas.in.in.h:1
+#: ../data/vinagre.schemas.in.in.h:1 ../vinagre/vinagre-plugin-manager.c:796
 msgid "Active plugins"
 msgstr "Włączone wtyczki"
 
@@ -228,34 +226,23 @@ msgstr "Plik zdalnego pulpitu (VNC)"
 msgid "Remote Desktop Connection"
 msgstr "Połączenie ze zdalnym pulpitem"
 
-#: ../plugins/rdp/rdp.vinagre-plugin.desktop.in.h:1
-#: ../plugins/rdp/vinagre-rdp-plugin.c:55
-msgid "RDP"
-msgstr ""
+#. vim: set ts=8:
+#: ../plugins/ssh/vinagre-ssh-plugin.c:76
+#: ../plugins/ssh/ssh.vinagre-plugin.desktop.in.h:1
+msgid "SSH"
+msgstr "SSH"
 
-#: ../plugins/rdp/rdp.vinagre-plugin.desktop.in.h:2
-#, fuzzy
-#| msgid "SSH support"
-msgid "RDP support"
-msgstr "Obsługa SSH"
+#. Translators: This is a description of the SSH protocol. It appears at Connect dialog.
+#: ../plugins/ssh/vinagre-ssh-plugin.c:78
+msgid "Access Unix/Linux terminals"
+msgstr "Dostęp do terminali Unix/Linux"
 
-#. Translators: This is a description of the RDP protocol. It appears at Connect dialog.
-#: ../plugins/rdp/vinagre-rdp-plugin.c:57
-#, fuzzy
-#| msgid "Access Unix/Linux, Windows and other machines."
-msgid "Access MS Windows machines"
-msgstr "Dostęp do komputerów z systemami Unix/Linux oraz Windows."
+#: ../plugins/ssh/vinagre-ssh-plugin.c:132
+msgid "SSH Options"
+msgstr "Opcje SSH"
 
-#: ../plugins/rdp/vinagre-rdp-plugin.c:96
-#, fuzzy
-#| msgid "Options"
-msgid "RDP Options"
-msgstr "Opcje"
-
-#. Translators: This is the tooltip for the username field in a RDP connection
 #. Translators: This is the tooltip for the username field in a SSH connection
-#: ../plugins/rdp/vinagre-rdp-plugin.c:113
-#: ../plugins/ssh/vinagre-ssh-plugin.c:118
+#: ../plugins/ssh/vinagre-ssh-plugin.c:149
 msgid ""
 "Optional. If blank, your username will be used. Also, it can be supplied in "
 "the Machine field above, in the form username@hostname."
@@ -264,170 +251,147 @@ msgstr ""
 "bieżącego użytkownika. Może zostać także podana w polu Komputer powyżej, w "
 "formie nazwa_użytkownika@nazwa_komputera."
 
-#: ../plugins/rdp/vinagre-rdp-tab.c:54 ../plugins/ssh/vinagre-ssh-tab.c:50
-#: ../plugins/vnc/vinagre-vnc-tab.c:149
+#: ../plugins/ssh/vinagre-ssh-tab.c:50 ../plugins/vnc/vinagre-vnc-tab.c:149
 msgid "Port:"
 msgstr "Port:"
-
-#: ../plugins/rdp/vinagre-rdp-tab.c:129
-#, fuzzy
-#| msgid "Error while creating the file %s: %s"
-msgid "Error while executing rdesktop"
-msgstr "Błąd podczas tworzenia pliku %s: %s"
-
-#: ../plugins/rdp/vinagre-rdp-tab.c:130 ../vinagre/vinagre-bookmarks.c:344
-#: ../vinagre/vinagre-bookmarks.c:459
-#: ../vinagre/vinagre-bookmarks-migration.c:136
-#: ../vinagre/vinagre-cache-prefs.c:56 ../vinagre/vinagre-commands.c:174
-#: ../vinagre/vinagre-connect.c:486 ../vinagre/vinagre-fav.c:768
-#: ../vinagre/vinagre-options.c:82 ../vinagre/vinagre-options.c:100
-#: ../vinagre/vinagre-window.c:279 ../vinagre/vinagre-window.c:749
-msgid "Unknown error"
-msgstr "Nieznany błąd"
-
-#. vim: set ts=8:
-#: ../plugins/ssh/vinagre-ssh-plugin.c:59
-#: ../plugins/ssh/ssh.vinagre-plugin.desktop.in.h:1
-msgid "SSH"
-msgstr "SSH"
-
-#. Translators: This is a description of the SSH protocol. It appears at Connect dialog.
-#: ../plugins/ssh/vinagre-ssh-plugin.c:61
-msgid "Access Unix/Linux terminals"
-msgstr "Dostęp do terminali Unix/Linux"
-
-#: ../plugins/ssh/vinagre-ssh-plugin.c:101
-msgid "SSH Options"
-msgstr "Opcje SSH"
 
 #: ../plugins/ssh/ssh.vinagre-plugin.desktop.in.h:2
 msgid "SSH support"
 msgstr "Obsługa SSH"
 
 #. Translators: 'shared' here is a VNC protocol specific flag. You can translate it, but I think it's better to let it untranslated
-#: ../plugins/vnc/vinagre-vnc-connection.c:316
-#: ../plugins/vnc/vinagre-vnc-plugin.c:199
+#: ../plugins/vnc/vinagre-vnc-connection.c:291
+#: ../plugins/vnc/vinagre-vnc-plugin.c:325
 #, c-format
 msgid ""
 "Bad value for 'shared' flag: %d. It is supposed to be 0 or 1. Ignoring it."
 msgstr ""
 "Błędna wartość dla flagi \"shared\": %d. Powinna być 0 lub 1. Ignorowanie."
 
+#. Translators: "Reverse" here is an adjective, not a verb.
+#: ../plugins/vnc/vinagre-vnc-plugin.c:85
+msgid "_Reverse Connections..."
+msgstr "_Odwrotne połączenia..."
+
+#: ../plugins/vnc/vinagre-vnc-plugin.c:87
+msgid "Configure incoming VNC connections"
+msgstr "Konfiguruje przychodzące połączenia VNC"
+
 #. Translators: this is a command line option (run vinagre --help)
-#: ../plugins/vnc/vinagre-vnc-plugin.c:50
+#: ../plugins/vnc/vinagre-vnc-plugin.c:174
 msgid "Enable scaled mode"
 msgstr "Tryb skalowany"
 
 #. Translators: this is a command line option (run vinagre --help)
-#: ../plugins/vnc/vinagre-vnc-plugin.c:63
+#: ../plugins/vnc/vinagre-vnc-plugin.c:189
 msgid "VNC Options:"
 msgstr "Opcje VNC:"
 
 #. Translators: this is a command line option (run vinagre --help)
-#: ../plugins/vnc/vinagre-vnc-plugin.c:65
+#: ../plugins/vnc/vinagre-vnc-plugin.c:191
 msgid "Show VNC Options"
 msgstr "Wyświetla opcje VNC"
 
 #. vim: set ts=8:
-#: ../plugins/vnc/vinagre-vnc-plugin.c:87
+#: ../plugins/vnc/vinagre-vnc-plugin.c:213
 #: ../plugins/vnc/vnc.vinagre-plugin.desktop.in.h:1
 msgid "VNC"
 msgstr "VNC"
 
-#: ../plugins/vnc/vinagre-vnc-plugin.c:88
+#: ../plugins/vnc/vinagre-vnc-plugin.c:214
 msgid "Access Unix/Linux, Windows and other machines."
 msgstr "Dostęp do komputerów z systemami Unix/Linux oraz Windows."
 
-#: ../plugins/vnc/vinagre-vnc-plugin.c:145
+#: ../plugins/vnc/vinagre-vnc-plugin.c:271
 msgid "Could not parse the file."
 msgstr "Nie można przetworzyć pliku."
 
 #. Translators: Do not translate "connection". It's the name of a group in the .vnc (.ini like) file.
-#: ../plugins/vnc/vinagre-vnc-plugin.c:153
+#: ../plugins/vnc/vinagre-vnc-plugin.c:279
 msgid "The file is not a VNC one: Missing the group \"connection\"."
 msgstr "To nie jest plik VNC: brak grupy \"connection\"."
 
 #. Translators: Do not translate "host". It's the name of a key in the .vnc (.ini like) file.
-#: ../plugins/vnc/vinagre-vnc-plugin.c:160
+#: ../plugins/vnc/vinagre-vnc-plugin.c:286
 msgid "The file is not a VNC one: Missing the key \"host\"."
 msgstr "To nie jest plik VNC: brak klucza \"host\"."
 
-#: ../plugins/vnc/vinagre-vnc-plugin.c:252
+#: ../plugins/vnc/vinagre-vnc-plugin.c:378
 msgid "VNC Options"
 msgstr "Opcje VNC"
 
 #. View only check button
-#: ../plugins/vnc/vinagre-vnc-plugin.c:265
+#: ../plugins/vnc/vinagre-vnc-plugin.c:391
 #: ../plugins/vnc/vinagre-vnc-tab.c:633
 msgid "_View only"
 msgstr "_Tylko podgląd"
 
 #. Scaling check button
-#: ../plugins/vnc/vinagre-vnc-plugin.c:273
+#: ../plugins/vnc/vinagre-vnc-plugin.c:399
 msgid "_Scaling"
 msgstr "_Skalowanie"
 
-#: ../plugins/vnc/vinagre-vnc-plugin.c:289
+#: ../plugins/vnc/vinagre-vnc-plugin.c:415
 msgid "_Keep aspect ratio"
 msgstr "Utrzy_mywanie proporcji obrazu"
 
 #. JPEG Compression check button
-#: ../plugins/vnc/vinagre-vnc-plugin.c:299
+#: ../plugins/vnc/vinagre-vnc-plugin.c:425
 msgid "_Use JPEG Compression"
 msgstr "_Użycie kompresji JPEG"
 
-#: ../plugins/vnc/vinagre-vnc-plugin.c:300
+#: ../plugins/vnc/vinagre-vnc-plugin.c:426
 msgid "This might not work on all VNC servers"
 msgstr "Może nie działać na wszystkich serwerach VNC"
 
-#: ../plugins/vnc/vinagre-vnc-plugin.c:309
+#: ../plugins/vnc/vinagre-vnc-plugin.c:435
 msgid "_Depth Color:"
 msgstr "_Głębia koloru:"
 
-#: ../plugins/vnc/vinagre-vnc-plugin.c:314
+#: ../plugins/vnc/vinagre-vnc-plugin.c:440
 msgid "Use Server Settings"
 msgstr "Użycie ustawień serwera"
 
-#: ../plugins/vnc/vinagre-vnc-plugin.c:315
+#: ../plugins/vnc/vinagre-vnc-plugin.c:441
 msgid "True Color (24 bits)"
 msgstr "True Color (24 bitowy)"
 
-#: ../plugins/vnc/vinagre-vnc-plugin.c:316
+#: ../plugins/vnc/vinagre-vnc-plugin.c:442
 msgid "High Color (16 bits)"
 msgstr "High Color (16 bitowy)"
 
-#: ../plugins/vnc/vinagre-vnc-plugin.c:317
+#: ../plugins/vnc/vinagre-vnc-plugin.c:443
 msgid "Low Color (8 bits)"
 msgstr "Low Color (8 bitowy)"
 
-#: ../plugins/vnc/vinagre-vnc-plugin.c:318
+#: ../plugins/vnc/vinagre-vnc-plugin.c:444
 msgid "Ultra Low Color (3 bits)"
 msgstr "Ultra Low Color (3 bitowy)"
 
 #. Translators: the whole sentence will be: Use host <hostname> as a SSH tunnel
-#: ../plugins/vnc/vinagre-vnc-plugin.c:331
+#: ../plugins/vnc/vinagre-vnc-plugin.c:457
 msgid "Use h_ost"
 msgstr "Użycie k_omputera"
 
-#: ../plugins/vnc/vinagre-vnc-plugin.c:340
+#: ../plugins/vnc/vinagre-vnc-plugin.c:466
 msgid "hostname or user@hostname"
 msgstr "nazwa-komputera lub użytkownik@nazwa-komputera"
 
-#: ../plugins/vnc/vinagre-vnc-plugin.c:341
+#: ../plugins/vnc/vinagre-vnc-plugin.c:467
 msgid "Supply an alternative port using colon"
-msgstr ""
+msgstr "Po dwukropku może zostać podany alternatywny numer portu"
 
-#: ../plugins/vnc/vinagre-vnc-plugin.c:342
+#: ../plugins/vnc/vinagre-vnc-plugin.c:468
 msgid "For instance: joe@domain.com:5022"
-msgstr ""
+msgstr "Na przykład: jan@domena.pl:5022"
 
 #. Translators: the whole sentence will be: Use host <hostname> as a SSH tunnel
-#: ../plugins/vnc/vinagre-vnc-plugin.c:348
+#: ../plugins/vnc/vinagre-vnc-plugin.c:474
 msgid "as a SSH tunnel"
 msgstr "jako tunelu SSH"
 
 #. Translators: this is a pattern to open *.vnc files in a open dialog.
-#: ../plugins/vnc/vinagre-vnc-plugin.c:383
+#: ../plugins/vnc/vinagre-vnc-plugin.c:509
 msgid "VNC Files"
 msgstr "Pliki VNC"
 
@@ -451,11 +415,10 @@ msgstr "Nieznany powód"
 msgid "Error connecting to host."
 msgstr "Błąd podczas łączenia z komputerem."
 
-#. Translators: %s is a host name or IP address; %u is a code error (number).
+#. Translators: %s is a host name or IP address; %u is a code error (number). Also, the right sentence would be ... method for host...
 #: ../plugins/vnc/vinagre-vnc-tab.c:360
-#, fuzzy, c-format
-#| msgid "Authentication method to host %s is unsupported. (%u)"
-msgid "Authentication method for host %s is unsupported. (%u)"
+#, c-format
+msgid "Authentication method to host %s is unsupported. (%u)"
 msgstr "Metoda uwierzytelniania w komputerze %s jest nieobsługiwana. (%u)"
 
 #: ../plugins/vnc/vinagre-vnc-tab.c:364
@@ -510,10 +473,10 @@ msgstr "_Odśwież ekran"
 msgid "Requests an update of the screen"
 msgstr "Wysyła żądanie odświeżenia ekranu"
 
-#: ../plugins/vnc/vinagre-vnc-tab.c:684
-#, fuzzy
-#| msgid "Send Ctrl-Alt-Del"
-msgid "_Send Ctrl-Alt-Del"
+#. Send Ctrl-alt-del
+#: ../plugins/vnc/vinagre-vnc-tab.c:684 ../plugins/vnc/vinagre-vnc-tab.c:756
+#: ../plugins/vnc/vinagre-vnc-tab.c:758
+msgid "Send Ctrl-Alt-Del"
 msgstr "Wyślij Ctrl-Alt-Del"
 
 #: ../plugins/vnc/vinagre-vnc-tab.c:685
@@ -527,11 +490,6 @@ msgstr "Skalowanie"
 #: ../plugins/vnc/vinagre-vnc-tab.c:747 ../plugins/vnc/vinagre-vnc-tab.c:748
 msgid "Read only"
 msgstr "Tylko do odczytu"
-
-#. Send Ctrl-alt-del
-#: ../plugins/vnc/vinagre-vnc-tab.c:756 ../plugins/vnc/vinagre-vnc-tab.c:758
-msgid "Send Ctrl-Alt-Del"
-msgstr "Wyślij Ctrl-Alt-Del"
 
 #: ../plugins/vnc/vinagre-vnc-tab.c:920
 msgid ""
@@ -554,23 +512,11 @@ msgstr "Nie można odnaleźć wolnego portu TCP"
 msgid "VNC support"
 msgstr "Obsługa VNC"
 
-#: ../plugins/reverse-vnc/reverse-vnc.vinagre-plugin.desktop.in.h:1
-#, fuzzy
-#| msgid "Reverse Connections"
-msgid "Allows reverse VNC connections"
-msgstr "Odwrotne połączenia"
-
-#: ../plugins/reverse-vnc/reverse-vnc.vinagre-plugin.desktop.in.h:2
-#, fuzzy
-#| msgid "Reverse Connections"
-msgid "Reverse VNC"
-msgstr "Odwrotne połączenia"
-
-#: ../plugins/reverse-vnc/vinagre-reverse-vnc-listener-dialog.c:101
+#: ../plugins/vnc/vinagre-vnc-listener-dialog.c:94
 msgid "IPv4:"
 msgstr "IPv4:"
 
-#: ../plugins/reverse-vnc/vinagre-reverse-vnc-listener-dialog.c:113
+#: ../plugins/vnc/vinagre-vnc-listener-dialog.c:106
 msgid ""
 "\n"
 "\n"
@@ -580,38 +526,17 @@ msgstr ""
 "\n"
 "IPv6:"
 
-#: ../plugins/reverse-vnc/vinagre-reverse-vnc-listener-dialog.c:172
+#: ../plugins/vnc/vinagre-vnc-listener-dialog.c:165
 #, c-format
 msgid "On the port %d"
 msgstr "Na porcie %d"
 
-#: ../plugins/reverse-vnc/vinagre-reverse-vnc-listener.c:162
+#: ../plugins/vnc/vinagre-vnc-listener.c:168
 msgid "Incoming VNC connection arrived but there is no active window"
 msgstr "Odebrano połączenie przychodzące VNC, ale nie ma aktywnego okna"
 
-#: ../plugins/reverse-vnc/vinagre-reverse-vnc-listener.c:214
-#, fuzzy
-#| msgid "Error saving recent connection."
-msgid "Error activating reverse connections"
-msgstr "Błąd podczas zapisywania ostatniego połączenia."
-
-#: ../plugins/reverse-vnc/vinagre-reverse-vnc-listener.c:215
-msgid ""
-"The program could not find any available TCP ports starting at 5500. Is "
-"there any other running program consuming all your TCP ports?"
-msgstr ""
-
-#. Translators: "Reverse" here is an adjective, not a verb.
-#: ../plugins/reverse-vnc/vinagre-reverse-vnc-plugin.c:69
-msgid "_Reverse Connections..."
-msgstr "_Odwrotne połączenia..."
-
-#: ../plugins/reverse-vnc/vinagre-reverse-vnc-plugin.c:71
-msgid "Configure incoming VNC connections"
-msgstr "Konfiguruje przychodzące połączenia VNC"
-
 #. vim: set ts=8:
-#: ../plugins/reverse-vnc/reverse-vnc.ui.h:1
+#: ../plugins/vnc/vnc.ui.h:1
 msgid ""
 "By activating reverse connections you can access machines that are behind a "
 "firewall. The remote side is supposed to initiate the connection with you. "
@@ -621,25 +546,25 @@ msgstr ""
 "sieciową. Zdalny komputer ma nawiązać połączenie z tym komputerem. Proszę "
 "zajrzeć do pomocy, aby dowiedzieć się więcej."
 
-#: ../plugins/reverse-vnc/reverse-vnc.ui.h:2
+#: ../plugins/vnc/vnc.ui.h:2
 msgid "Connectivity"
 msgstr "Łączność"
 
-#: ../plugins/reverse-vnc/reverse-vnc.ui.h:3
+#: ../plugins/vnc/vnc.ui.h:3
 msgid "Reverse Connections"
 msgstr "Odwrotne połączenia"
 
-#: ../plugins/reverse-vnc/reverse-vnc.ui.h:4
+#: ../plugins/vnc/vnc.ui.h:4
 msgid "This machine is reachable through the following IP address(es):"
 msgstr ""
 "Z tym komputerem można się połączyć za pomocą następujących adresów IP:"
 
 #. Translators: this is the reverse connection mode. "Always enabled" means it will be enabled by default in the program startup. You can see this string in the dialog Machine->Reverse connections.
-#: ../plugins/reverse-vnc/reverse-vnc.ui.h:6
+#: ../plugins/vnc/vnc.ui.h:6
 msgid "_Always Enabled"
 msgstr "Z_awsze włączone"
 
-#: ../plugins/reverse-vnc/reverse-vnc.ui.h:7
+#: ../plugins/vnc/vnc.ui.h:7
 msgid "_Enable Reverse Connections"
 msgstr "_Włączenie odwrotnych połączeń"
 
@@ -651,89 +576,98 @@ msgstr "Menu szybkiego dostępu do zdalnych komputerów"
 msgid "Vinagre Applet Factory"
 msgstr "Generator apletów Vinagre"
 
-#: ../vinagre/vinagre-applet.c:284 ../vinagre/vinagre-applet.c:367
+#: ../vinagre/vinagre-applet.c:277 ../vinagre/vinagre-applet.c:360
 msgid "Could not run vinagre:"
 msgstr "Nie można uruchomić programu Vinagre:"
 
-#: ../vinagre/vinagre-applet.c:387
+#: ../vinagre/vinagre-applet.c:380
 msgid "Open Remote Desktop Viewer"
 msgstr "Otwórz przeglądarkę zdalnych pulpitów"
 
-#: ../vinagre/vinagre-applet.c:442
+#: ../vinagre/vinagre-applet.c:435
 msgid "Access your bookmarks"
 msgstr "Dostęp do zakładek"
 
-#: ../vinagre/vinagre-bookmarks.c:266 ../vinagre/vinagre-connection.c:526
-#: ../vinagre/vinagre-tab.c:533 ../vinagre/vinagre-tube-handler.c:253
+#: ../vinagre/vinagre-bookmarks.c:265 ../vinagre/vinagre-connection.c:525
+#: ../vinagre/vinagre-tab.c:535 ../vinagre/vinagre-tube-handler.c:253
 #, c-format
 msgid "The protocol %s is not supported."
 msgstr "Protokół %s nie jest obsługiwany."
 
-#: ../vinagre/vinagre-bookmarks.c:344
+#: ../vinagre/vinagre-bookmarks.c:343
 #, c-format
 msgid "Error while initializing bookmarks: %s"
 msgstr "Błąd podczas inicjowania zakładek: %s"
 
-#: ../vinagre/vinagre-bookmarks.c:351
+#: ../vinagre/vinagre-bookmarks.c:343 ../vinagre/vinagre-bookmarks.c:458
+#: ../vinagre/vinagre-bookmarks-migration.c:135
+#: ../vinagre/vinagre-cache-prefs.c:53 ../vinagre/vinagre-commands.c:173
+#: ../vinagre/vinagre-connect.c:483 ../vinagre/vinagre-fav.c:765
+#: ../vinagre/vinagre-main.c:102 ../vinagre/vinagre-main.c:121
+#: ../vinagre/vinagre-window.c:268 ../vinagre/vinagre-window.c:737
+msgid "Unknown error"
+msgstr "Nieznany błąd"
+
+#: ../vinagre/vinagre-bookmarks.c:350
 msgid "Error while initializing bookmarks: The file seems to be empty"
 msgstr "Błąd podczas inicjowania zakładek: plik wydaje się być pusty"
 
-#: ../vinagre/vinagre-bookmarks.c:358
+#: ../vinagre/vinagre-bookmarks.c:357
 msgid ""
 "Error while initializing bookmarks: The file is not a vinagre bookmarks file"
 msgstr ""
 "Błąd podczas inicjowania zakładek: plik nie jest plikiem zakładek programu "
 "vinagre"
 
-#: ../vinagre/vinagre-bookmarks.c:420 ../vinagre/vinagre-bookmarks.c:427
+#: ../vinagre/vinagre-bookmarks.c:419 ../vinagre/vinagre-bookmarks.c:426
 msgid "Error while saving bookmarks: Failed to create the XML structure"
 msgstr ""
 "Błąd podczas zapisywania zakładek: utworzenie struktury XML się nie powiodło"
 
-#: ../vinagre/vinagre-bookmarks.c:434 ../vinagre/vinagre-bookmarks.c:441
+#: ../vinagre/vinagre-bookmarks.c:433 ../vinagre/vinagre-bookmarks.c:440
 msgid "Error while saving bookmarks: Failed to initialize the XML structure"
 msgstr ""
 "Błąd podczas zapisywania zakładek: zainicjowanie struktury XML się nie "
 "powiodło"
 
-#: ../vinagre/vinagre-bookmarks.c:450
+#: ../vinagre/vinagre-bookmarks.c:449
 msgid "Error while saving bookmarks: Failed to finalize the XML structure"
 msgstr ""
 "Błąd podczas zapisywania zakładek: sfinalizowanie struktury XML się nie "
 "powiodło"
 
-#: ../vinagre/vinagre-bookmarks.c:459
+#: ../vinagre/vinagre-bookmarks.c:458
 #, c-format
 msgid "Error while saving bookmarks: %s"
 msgstr "Błąd podczas zapisywania zakładek: %s"
 
-#: ../vinagre/vinagre-bookmarks-migration.c:96
-#: ../vinagre/vinagre-bookmarks-migration.c:103
+#: ../vinagre/vinagre-bookmarks-migration.c:95
+#: ../vinagre/vinagre-bookmarks-migration.c:102
 msgid "Error while migrating bookmarks: Failed to create the XML structure"
 msgstr ""
 "Wystąpił błąd podczas przenoszenia zakładek: utworzenie struktury XML się "
 "nie powiodło"
 
-#: ../vinagre/vinagre-bookmarks-migration.c:110
-#: ../vinagre/vinagre-bookmarks-migration.c:117
+#: ../vinagre/vinagre-bookmarks-migration.c:109
+#: ../vinagre/vinagre-bookmarks-migration.c:116
 msgid "Error while migrating bookmarks: Failed to initialize the XML structure"
 msgstr ""
 "Wystąpił błąd podczas przenoszenia zakładek: zainicjowanie struktury XML się "
 "nie powiodło"
 
-#: ../vinagre/vinagre-bookmarks-migration.c:126
+#: ../vinagre/vinagre-bookmarks-migration.c:125
 msgid "Error while migrating bookmarks: Failed to finalize the XML structure"
 msgstr ""
 "Wystąpił błąd podczas przenoszenia zakładek: sfinalizowanie struktury XML "
 "się nie powiodło"
 
-#: ../vinagre/vinagre-bookmarks-migration.c:136
+#: ../vinagre/vinagre-bookmarks-migration.c:135
 #: ../vinagre/vinagre-bookmarks-migration.c:217
 #, c-format
 msgid "Error while migrating bookmarks: %s"
 msgstr "Błąd podczas przenoszenia zakładek: %s"
 
-#: ../vinagre/vinagre-bookmarks-migration.c:165
+#: ../vinagre/vinagre-bookmarks-migration.c:164
 msgid "Error while migrating bookmarks: VNC plugin is not activated"
 msgstr "Błąd podczas przenoszenia zakładek: wtyczka VNC jest wyłączona"
 
@@ -741,7 +675,7 @@ msgstr "Błąd podczas przenoszenia zakładek: wtyczka VNC jest wyłączona"
 msgid "Failed to create the directory"
 msgstr "Utworzenie katalogu się nie powiodło"
 
-#: ../vinagre/vinagre-bookmarks-migration.c:242
+#: ../vinagre/vinagre-bookmarks-migration.c:241
 msgid ""
 "Migrating the bookmarks file to the new format. This operation is only "
 "supposed to run once."
@@ -749,21 +683,21 @@ msgstr ""
 "Migrowanie pliku zakładek do nowego formatu. Działanie ma odbyć się tylko "
 "jednokrotnie."
 
-#: ../vinagre/vinagre-bookmarks-migration.c:250
+#: ../vinagre/vinagre-bookmarks-migration.c:249
 #, c-format
 msgid "Error opening old bookmarks file: %s"
 msgstr "Błąd podczas otwierania poprzedniego pliku zakładek: %s"
 
-#: ../vinagre/vinagre-bookmarks-migration.c:251
-#: ../vinagre/vinagre-bookmarks-migration.c:263
+#: ../vinagre/vinagre-bookmarks-migration.c:250
+#: ../vinagre/vinagre-bookmarks-migration.c:262
 msgid "Migration cancelled"
 msgstr "Anulowano migrację"
 
-#: ../vinagre/vinagre-bookmarks-migration.c:260
+#: ../vinagre/vinagre-bookmarks-migration.c:259
 msgid "Could not remove the old bookmarks file"
 msgstr "Nie można usunąć poprzedniego pliku zakładek"
 
-#: ../vinagre/vinagre-bookmarks-tree.c:119
+#: ../vinagre/vinagre-bookmarks-tree.c:120
 msgid "Root Folder"
 msgstr "Katalog główny"
 
@@ -790,47 +724,47 @@ msgid "(Protocol: %s)"
 msgstr "(Protokół: %s)"
 
 #. Translators: %s is a bookmark entry name
-#: ../vinagre/vinagre-bookmarks-ui.c:306
+#: ../vinagre/vinagre-bookmarks-ui.c:308
 #, c-format
 msgid "Are you sure you want to remove %s from bookmarks?"
 msgstr "Na pewno usunąć %s z zakładek?"
 
-#: ../vinagre/vinagre-bookmarks-ui.c:312
+#: ../vinagre/vinagre-bookmarks-ui.c:314
 msgid "Remove Folder?"
 msgstr "Usunąć katalog?"
 
-#: ../vinagre/vinagre-bookmarks-ui.c:313
+#: ../vinagre/vinagre-bookmarks-ui.c:315
 msgid "Notice that all its subfolders and items will be removed as well."
 msgstr ""
 "Proszę zwrócić uwagę, iż wszystkie jego podkatalogi znajdujące się w nich "
 "elementy także zostaną usunięte."
 
-#: ../vinagre/vinagre-bookmarks-ui.c:318
+#: ../vinagre/vinagre-bookmarks-ui.c:320
 msgid "Remove Item?"
 msgstr "Usunąć element?"
 
-#: ../vinagre/vinagre-bookmarks-ui.c:335
+#: ../vinagre/vinagre-bookmarks-ui.c:337
 msgid "Error removing bookmark: Entry not found"
 msgstr "Błąd podczas usuwania zakładki: wpis nie został odnaleziony"
 
-#: ../vinagre/vinagre-bookmarks-ui.c:352
+#: ../vinagre/vinagre-bookmarks-ui.c:354
 msgid "New Folder"
 msgstr "Nowy katalog"
 
-#: ../vinagre/vinagre-cache-prefs.c:56
+#: ../vinagre/vinagre-cache-prefs.c:53
 #, c-format
 msgid "Error while saving preferences: %s"
 msgstr "Błąd podczas zapisywania preferencji: %s"
 
-#: ../vinagre/vinagre-commands.c:120
+#: ../vinagre/vinagre-commands.c:121
 msgid "Choose the file"
 msgstr "Wybór pliku"
 
-#: ../vinagre/vinagre-commands.c:150
+#: ../vinagre/vinagre-commands.c:149
 msgid "There are no supported files"
 msgstr "Brak obsługiwanych plików"
 
-#: ../vinagre/vinagre-commands.c:151
+#: ../vinagre/vinagre-commands.c:150
 msgid ""
 "None of the active plugins support this action. Activate some plugins and "
 "try again."
@@ -838,104 +772,133 @@ msgstr ""
 "Żadna z włączonych wtyczek nie obsługuje tego działania. Proszę włączyć "
 "wtyczki i spróbować ponownie. "
 
-#: ../vinagre/vinagre-commands.c:185
+#: ../vinagre/vinagre-commands.c:184
 msgid "The following file could not be opened:"
 msgid_plural "The following files could not be opened:"
 msgstr[0] "Następujący plik nie mógł zostać otwarty:"
 msgstr[1] "Następujące pliki nie mogły zostać otwarte:"
 msgstr[2] "Następujące pliki nie mogły zostać otwarte:"
 
-#: ../vinagre/vinagre-connect.c:92 ../vinagre/vinagre-connect.c:338
-#: ../vinagre/vinagre-connect.c:450
-#, fuzzy
-#| msgid "Could not get the active protocol in the protocol list."
-msgid "Could not get the active protocol from the protocol list."
+#. Translators: Please consider the word "from" instead of "in". I'll fix this phrase for 2.31 (or 3.0)
+#: ../vinagre/vinagre-connect.c:88 ../vinagre/vinagre-connect.c:335
+#: ../vinagre/vinagre-connect.c:447
+msgid "Could not get the active protocol in the protocol list."
 msgstr "Nie można uzyskać aktywnego protokołu na liście protokołów."
 
-#: ../vinagre/vinagre-connect.c:319
+#: ../vinagre/vinagre-connect.c:316
 #, c-format
 msgid "Error while saving history file: %s"
 msgstr "Błąd podczas zapisywania pliku historii: %s"
 
-#: ../vinagre/vinagre-connect.c:354
+#: ../vinagre/vinagre-connect.c:351
 msgid "Choose a Remote Desktop"
 msgstr "Wybór zdalnego pulpitu"
 
-#: ../vinagre/vinagre-connection.c:634
+#: ../vinagre/vinagre-connection.c:633
 msgid "Could not open the file."
 msgstr "Nie można otworzyć pliku."
 
-#: ../vinagre/vinagre-connection.c:658
+#: ../vinagre/vinagre-connection.c:657
 msgid "The file was not recognized by any of the plugins."
 msgstr "Plik nie został rozpoznany przez żadną z wtyczek."
 
-#: ../vinagre/vinagre-fav.c:571
+#: ../vinagre/vinagre-fav.c:567
 msgid "_New Folder"
 msgstr "_Nowy katalog"
 
-#: ../vinagre/vinagre-fav.c:572
+#: ../vinagre/vinagre-fav.c:568
 msgid "Create a new folder"
 msgstr "Tworzy nowy katalog"
 
-#: ../vinagre/vinagre-fav.c:577
+#: ../vinagre/vinagre-fav.c:573
 msgid "_Open bookmark"
 msgstr "_Otwórz zakładkę"
 
-#: ../vinagre/vinagre-fav.c:578
+#: ../vinagre/vinagre-fav.c:574
 msgid "Connect to this machine"
 msgstr "Łączy z tym komputerem"
 
-#: ../vinagre/vinagre-fav.c:579
+#: ../vinagre/vinagre-fav.c:575
 msgid "_Edit bookmark"
 msgstr "Z_modyfikuj zakładkę"
 
-#: ../vinagre/vinagre-fav.c:580
+#: ../vinagre/vinagre-fav.c:576
 msgid "Edit the details of selected bookmark"
 msgstr "Modyfikuje szczegóły zaznaczonej zakładki"
 
-#: ../vinagre/vinagre-fav.c:581
+#: ../vinagre/vinagre-fav.c:577
 msgid "_Remove from bookmarks"
 msgstr "_Usuń z zakładek"
 
-#: ../vinagre/vinagre-fav.c:582
+#: ../vinagre/vinagre-fav.c:578
 msgid "Remove current selected connection from bookmarks"
 msgstr "Usuwa bieżąco zaznaczone połączenie z zakładek"
 
-#: ../vinagre/vinagre-fav.c:599 ../vinagre/vinagre-window.c:410
+#: ../vinagre/vinagre-fav.c:596 ../vinagre/vinagre-window.c:399
 #, c-format
 msgid "Could not merge UI XML file: %s"
 msgstr "Nie można połączyć pliku XML interfejsu użytkownika: %s"
 
-#: ../vinagre/vinagre-fav.c:757
+#: ../vinagre/vinagre-fav.c:754
 msgid "Invalid operation"
 msgstr "Nieprawidłowe działanie"
 
-#: ../vinagre/vinagre-fav.c:758
+#: ../vinagre/vinagre-fav.c:755
 msgid "Data received from drag&drop operation is invalid."
 msgstr "Dane otrzymane z działania \"przeciągnij i upuść\" są nieprawidłowe."
 
-#: ../vinagre/vinagre-fav.c:864
+#: ../vinagre/vinagre-fav.c:859
 msgid "Hide panel"
 msgstr "Ukryj panel"
 
-#: ../vinagre/vinagre-fav.c:1048
+#: ../vinagre/vinagre-fav.c:1044
 msgid "Hosts nearby"
 msgstr "Komputery w pobliżu"
 
-#. engine = vinagre_plugins_engine_get_default ();
-#. plugins = (GSList *) vinagre_plugins_engine_get_plugin_list (engine);
+#. Translators: this is a command line option (run vinagre --help)
+#: ../vinagre/vinagre-main.c:64
+msgid "Open vinagre in fullscreen mode"
+msgstr "Otwiera program Vinagre w trybie pełnego ekranu"
+
+#. Translators: this is a command line option (run vinagre --help)
+#: ../vinagre/vinagre-main.c:68
+msgid "Create a new toplevel window in an existing instance of vinagre"
+msgstr ""
+"Tworzy nowe okno najwyższego poziomu w istniejącej instancji programu Vinagre"
+
+#. Translators: this is a command line option (run vinagre --help)
+#: ../vinagre/vinagre-main.c:72
+msgid "Open a file recognized by vinagre"
+msgstr "Otwiera plik rozpoznany przez program Vinagre"
+
+#: ../vinagre/vinagre-main.c:72
+msgid "filename"
+msgstr "nazwa_pliku"
+
+#. Translators: this is a command line option (run vinagre --help)
+#: ../vinagre/vinagre-main.c:77
+msgid "[server:port]"
+msgstr "[serwer:port]"
+
+#: ../vinagre/vinagre-main.c:132
+msgid "The following error has occurred:"
+msgid_plural "The following errors have occurred:"
+msgstr[0] "Wystąpił następujący błąd:"
+msgstr[1] "Wystąpiły następujące błędy:"
+msgstr[2] "Wystąpiły następujące błędy:"
+
 #. Setup command line options
-#: ../vinagre/vinagre-main.c:80
+#: ../vinagre/vinagre-main.c:171
 msgid "- Remote Desktop Viewer"
 msgstr "- przeglądarka zdalnych pulpitów"
 
-#: ../vinagre/vinagre-main.c:109
+#: ../vinagre/vinagre-main.c:196
 msgid ""
 "Run 'vinagre --help' to see a full list of available command line options"
 msgstr ""
 "Uruchomienie \"vinagre --help\" wyświetli pełną listę dostępnych poleceń"
 
-#: ../vinagre/vinagre-mdns.c:160
+#: ../vinagre/vinagre-mdns.c:159
 #, c-format
 msgid "Failed to resolve avahi hostname: %s\n"
 msgstr "Uzyskanie nazwy komputera przez usługę Avahi się nie powiodło: %s\n"
@@ -962,71 +925,71 @@ msgid "Failed to initialize mDNS browser: %s\n"
 msgstr "Zainicjowanie przeglądarki mDNS się nie powiodło: %s\n"
 
 #. Translators: %s is a host name or IP address.
-#: ../vinagre/vinagre-notebook.c:457
+#: ../vinagre/vinagre-notebook.c:461
 #, c-format
 msgid "Connection to host %s was closed."
 msgstr "Połączenie z komputerem %s zostało zamknięte."
 
-#: ../vinagre/vinagre-notebook.c:459
+#: ../vinagre/vinagre-notebook.c:463
 msgid "Connection closed"
 msgstr "Zamknięto połączenie"
 
 #. Translators: %s is a host name or IP address.
-#: ../vinagre/vinagre-notebook.c:478
-#, fuzzy, c-format
-#| msgid "Authentication to host %s has failed"
-msgid "Authentication for host %s has failed"
+#: ../vinagre/vinagre-notebook.c:482
+#, c-format
+msgid "Authentication to host %s has failed"
 msgstr "Uwierzytelnienie w komputerze %s się nie powiodło"
 
-#: ../vinagre/vinagre-notebook.c:484
+#: ../vinagre/vinagre-notebook.c:488
 msgid "Authentication failed"
 msgstr "Uwierzytelnienie się nie powiodło"
 
-#: ../vinagre/vinagre-notebook.c:522
+#: ../vinagre/vinagre-notebook.c:526
 msgid "Connecting..."
 msgstr "Łączenie..."
 
-#: ../vinagre/vinagre-notebook.c:549 ../vinagre/vinagre-tab.c:325
+#: ../vinagre/vinagre-notebook.c:553 ../vinagre/vinagre-tab.c:325
 msgid "Close connection"
 msgstr "Zamknij połączenie"
-
-#. Translators: this is a command line option (run vinagre --help)
-#: ../vinagre/vinagre-options.c:31
-msgid "Open vinagre in fullscreen mode"
-msgstr "Otwiera program Vinagre w trybie pełnego ekranu"
-
-#. Translators: this is a command line option (run vinagre --help)
-#: ../vinagre/vinagre-options.c:35
-msgid "Create a new toplevel window in an existing instance of vinagre"
-msgstr ""
-"Tworzy nowe okno najwyższego poziomu w istniejącej instancji programu Vinagre"
-
-#. Translators: this is a command line option (run vinagre --help)
-#: ../vinagre/vinagre-options.c:39
-msgid "Open a file recognized by vinagre"
-msgstr "Otwiera plik rozpoznany przez program Vinagre"
-
-#: ../vinagre/vinagre-options.c:39
-msgid "filename"
-msgstr "nazwa_pliku"
-
-#. Translators: this is a command line option (run vinagre --help)
-#: ../vinagre/vinagre-options.c:44
-msgid "[server:port]"
-msgstr "[serwer:port]"
-
-#: ../vinagre/vinagre-options.c:132
-msgid "The following error has occurred:"
-msgid_plural "The following errors have occurred:"
-msgstr[0] "Wystąpił następujący błąd:"
-msgstr[1] "Wystąpiły następujące błędy:"
-msgstr[2] "Wystąpiły następujące błędy:"
 
 #: ../vinagre/vinagre-plugin-dialog.c:83
 msgid "Plugin Manager"
 msgstr "Menedżer wtyczek"
 
-#: ../vinagre/vinagre-prefs.c:188
+#: ../vinagre/vinagre-plugin-manager.c:45
+msgid "Plugin"
+msgstr "Wtyczka"
+
+#. Translators: "Enabled" is the title of a column in the plugins treeview. This column shows a checkbox, where the plugin can be [de]activated. If it's activated, its status is "enabled" and the checkbox is checked.
+#: ../vinagre/vinagre-plugin-manager.c:47
+msgid "Enabled"
+msgstr "Włączona"
+
+#: ../vinagre/vinagre-plugin-manager.c:504
+msgid "C_onfigure"
+msgstr "_Skonfiguruj"
+
+#: ../vinagre/vinagre-plugin-manager.c:513
+msgid "A_ctivate"
+msgstr "_Włącz"
+
+#: ../vinagre/vinagre-plugin-manager.c:524
+msgid "Ac_tivate All"
+msgstr "Włącz ws_zystkie"
+
+#: ../vinagre/vinagre-plugin-manager.c:529
+msgid "_Deactivate All"
+msgstr "Wyłącz wszys_tkie"
+
+#: ../vinagre/vinagre-plugin-manager.c:825
+msgid "_About Plugin"
+msgstr "_O wtyczce"
+
+#: ../vinagre/vinagre-plugin-manager.c:829
+msgid "C_onfigure Plugin"
+msgstr "S_konfiguruj wtyczkę"
+
+#: ../vinagre/vinagre-prefs.c:212
 msgid "Cannot initialize preferences manager."
 msgstr "Nie można zainicjować menedżera preferencji."
 
@@ -1091,7 +1054,7 @@ msgstr "Anulowano okno dialogowe logowania"
 msgid "Can't send host identity confirmation"
 msgstr "Nie można wysłać potwierdzenia tożsamości komputera"
 
-#: ../vinagre/vinagre-ssh.c:562 ../vinagre/vinagre-tab.c:730
+#: ../vinagre/vinagre-ssh.c:562 ../vinagre/vinagre-tab.c:732
 msgid "Error saving the credentials on the keyring."
 msgstr "Błąd podczas zapisywania danych uwierzytelniania w bazie kluczy."
 
@@ -1123,21 +1086,21 @@ msgstr "Opuść pełny ekran"
 msgid "Error saving recent connection."
 msgstr "Błąd podczas zapisywania ostatniego połączenia."
 
-#: ../vinagre/vinagre-tab.c:816
+#: ../vinagre/vinagre-tab.c:818
 msgid "Could not get a screenshot of the connection."
 msgstr "Nie udało się uzyskać zrzutu ekranu połączenia."
 
-#: ../vinagre/vinagre-tab.c:821
+#: ../vinagre/vinagre-tab.c:823
 msgid "Save Screenshot"
 msgstr "Zapisz zrzut ekranu"
 
 #. Translators: This is the suggested filename (in save dialog) when taking a screenshot of the connection. %s will be replaced by the friendly name of the connection, for instance: Screenshot of wendell@wendell-laptop, or Screenshot of 200.100.100.123
-#: ../vinagre/vinagre-tab.c:833
+#: ../vinagre/vinagre-tab.c:835
 #, c-format
 msgid "Screenshot of %s"
 msgstr "Zrzut ekranu %s"
 
-#: ../vinagre/vinagre-tab.c:884
+#: ../vinagre/vinagre-tab.c:886
 msgid "Error saving screenshot"
 msgstr "Błąd podczas zapisywania zrzutu ekranu"
 
@@ -1278,9 +1241,7 @@ msgstr "Dodaje bieżące połączenie do zakładek"
 
 #. Machine menu
 #: ../vinagre/vinagre-ui.h:92
-#, fuzzy
-#| msgid "Take screenshot"
-msgid "_Take screenshot"
+msgid "Take screenshot"
 msgstr "Pobierz zrzut ekranu"
 
 #: ../vinagre/vinagre-ui.h:93
@@ -1291,11 +1252,11 @@ msgstr "Pobiera zrzut ekranu aktywnego połączenia"
 msgid "View the current machine in full screen"
 msgstr "Wyświetla bieżącą sesję na pełnym ekranie"
 
-#: ../vinagre/vinagre-utils.c:67
+#: ../vinagre/vinagre-utils.c:75
 msgid "An error has occurred:"
 msgstr "Wystąpił błąd:"
 
-#: ../vinagre/vinagre-utils.c:151
+#: ../vinagre/vinagre-utils.c:175
 msgid ""
 "A plugin tried to open an UI file but did not succeed, with the error "
 "message:"
@@ -1303,7 +1264,7 @@ msgstr ""
 "Wtyczka próbowała otworzyć plik interfejsu użytkownika, ale to się nie "
 "powiodło. Komunikat błędu:"
 
-#: ../vinagre/vinagre-utils.c:153
+#: ../vinagre/vinagre-utils.c:177
 msgid ""
 "The program tried to open an UI file but did not succeed, with the error "
 "message:"
@@ -1311,20 +1272,20 @@ msgstr ""
 "Program próbował otworzyć plik interfejsu użytkownika, ale to się nie "
 "powiodło. Komunikat błędu:"
 
-#: ../vinagre/vinagre-utils.c:156
+#: ../vinagre/vinagre-utils.c:180
 msgid "Please check your installation."
 msgstr "Proszę sprawdzić poprawność instalacji."
 
-#: ../vinagre/vinagre-utils.c:157
+#: ../vinagre/vinagre-utils.c:181
 msgid "Error loading UI file"
 msgstr "Błąd podczas wczytywania pliku interfejsu użytkownika"
 
-#: ../vinagre/vinagre-utils.c:309
+#: ../vinagre/vinagre-utils.c:492
 msgid "Vinagre is a remote desktop viewer for the GNOME Desktop"
 msgstr ""
 "Program Vinagre jest przeglądarką zdalnych pulpitów dla środowiska GNOME"
 
-#: ../vinagre/vinagre-utils.c:312
+#: ../vinagre/vinagre-utils.c:495
 msgid ""
 "Vinagre is free software; you can redistribute it and/or modify it under the "
 "terms of the GNU General Public License as published by the Free Software "
@@ -1336,7 +1297,7 @@ msgstr ""
 "przez Fundację Wolnego Oprogramowania - według wersji drugiej tej Licencji "
 "lub którejś z późniejszych wersji."
 
-#: ../vinagre/vinagre-utils.c:316
+#: ../vinagre/vinagre-utils.c:499
 msgid ""
 "Vinagre is distributed in the hope that it will be useful, but WITHOUT ANY "
 "WARRANTY; without even the implied warranty of MERCHANTABILITY or FITNESS "
@@ -1348,7 +1309,7 @@ msgstr ""
 "HANDLOWEJ albo PRZYDATNOŚCI DO OKREŚLONYCH ZASTOSOWAŃ. W celu uzyskania "
 "bliższych informacji należy zapoznać się z Powszechną Licencją Publiczną GNU."
 
-#: ../vinagre/vinagre-utils.c:320
+#: ../vinagre/vinagre-utils.c:503
 msgid ""
 "You should have received a copy of the GNU General Public License along with "
 "this program. If not, see <http://www.gnu.org/licenses/>."
@@ -1357,35 +1318,35 @@ msgstr ""
 "Powszechnej Licencji Publicznej GNU (GNU General Public License); jeśli nie "
 "- proszę odwiedzić stronę internetową <http://www.gnu.org/licenses/>."
 
-#: ../vinagre/vinagre-utils.c:342
+#: ../vinagre/vinagre-utils.c:525
 msgid "translator-credits"
 msgstr "Aviary.pl <gnomepl@aviary.pl>, 2007, 2008, 2009, 2010"
 
-#: ../vinagre/vinagre-utils.c:345
+#: ../vinagre/vinagre-utils.c:528
 msgid "Vinagre Website"
 msgstr "Witryna programu Vinagre"
 
 #. Translators: %s is a protocol, like VNC or SSH
-#: ../vinagre/vinagre-utils.c:471
+#: ../vinagre/vinagre-utils.c:654
 #, c-format
 msgid "%s authentication is required"
 msgstr "Wymagane jest uwierzytelnienie %s"
 
-#: ../vinagre/vinagre-window.c:439
+#: ../vinagre/vinagre-window.c:428
 msgid "_Recent connections"
 msgstr "_Ostatnie połączenia"
 
 #. Translators: This is server:port, a statusbar tooltip when mouse is over a bookmark item on menu
-#: ../vinagre/vinagre-window.c:554
+#: ../vinagre/vinagre-window.c:543
 #, c-format
 msgid "Open %s:%d"
 msgstr "Otwiera %s:%d"
 
-#: ../vinagre/vinagre-window.c:733
+#: ../vinagre/vinagre-window.c:721
 msgid "About menu accelerators and keyboard shortcuts"
 msgstr "O skrótach klawiszowych w menu"
 
-#: ../vinagre/vinagre-window.c:735
+#: ../vinagre/vinagre-window.c:723
 msgid ""
 "Vinagre comes with menu accelerators and keyboard shortcuts disabled by "
 "default. The reason is to avoid the keys to be intercepted by the program, "
@@ -1405,7 +1366,7 @@ msgstr ""
 "\n"
 "Ten komunikat pojawi się tylko raz."
 
-#: ../vinagre/vinagre-window.c:743 ../vinagre/vinagre-window.c:749
+#: ../vinagre/vinagre-window.c:731 ../vinagre/vinagre-window.c:737
 #, c-format
 msgid "Error while creating the file %s: %s"
 msgstr "Błąd podczas tworzenia pliku %s: %s"
