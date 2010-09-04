@@ -9,7 +9,7 @@ msgstr ""
 "Project-Id-Version: accounts-dialog\n"
 "Report-Msgid-Bugs-To: http://bugzilla.gnome.org/enter_bug.cgi?"
 "product=accounts-dialog&component=general\n"
-"POT-Creation-Date: 2010-05-17 23:48+0000\n"
+"POT-Creation-Date: 2010-09-03 15:22+0000\n"
 "PO-Revision-Date: 2010-03-18 23:15+0100\n"
 "Last-Translator: Piotr Drąg <piotrdrag@gmail.com>\n"
 "Language-Team: Polish <gnomepl@aviary.pl>\n"
@@ -158,167 +158,52 @@ msgstr ""
 msgid "Unspecified"
 msgstr "Nieokreślono"
 
-#: ../src/main.c:342
-msgid "Failed to delete user"
-msgstr "Usunięcie użytkownika się nie powiodło"
-
-#: ../src/main.c:402
-msgid "You cannot delete your own account."
-msgstr "Nie można usunąć własnego konta."
-
-#: ../src/main.c:411
-#, c-format
-msgid "%s is still logged in"
-msgstr "Użytkownik %s jest nadal zalogowany"
-
-#: ../src/main.c:415
-msgid ""
-"Deleting a user while they are logged in can leave the system in an "
-"inconsistent state."
-msgstr "Usunięcie użytkownika, kiedy jest zalogowany może uszkodzić system."
-
-#: ../src/main.c:424
-#, c-format
-msgid "Do you want to keep %s's files?"
-msgstr "Zachować pliki użytkownika %s?"
-
-#: ../src/main.c:428
-msgid ""
-"It is possible to keep the home directory, mail spool and temporary files "
-"around when deleting a user account."
-msgstr ""
-"Można zachować katalog domowy, kolejkę poczty i pliki tymczasowe podczas "
-"usuwania konta użytkownika."
-
-#: ../src/main.c:431
-msgid "_Delete Files"
-msgstr "_Usuń pliki"
-
-#: ../src/main.c:432
-msgid "_Keep Files"
-msgstr "_Zachowaj pliki"
-
-#: ../src/main.c:433
-msgid "_Cancel"
-msgstr "_Anuluj"
-
-#: ../src/main.c:510
-msgctxt "Password mode"
-msgid "Account disabled"
-msgstr "Konto jest wyłączone"
-
-#: ../src/main.c:518
-msgctxt "Password mode"
-msgid "To be set at next login"
-msgstr "Zostanie ustawione podczas następnego logowania"
-
-#: ../src/main.c:521
-msgctxt "Password mode"
-msgid "None"
-msgstr "Brak"
-
-#: ../src/main.c:1200
-msgid "Failed to contact the accounts service"
-msgstr "Skontaktowanie się z usługą kont się nie powiodło"
-
-#: ../src/main.c:1202
-msgid "Please make sure that the AccountService is installed and enabled."
-msgstr ""
-"Proszę się upewnić, że usługa AccountService jest zainstalowana i włączona."
-
-#: ../src/main.c:1245 ../data/user-accounts-dialog.ui.h:10
-msgid "Create a user"
-msgstr "Utworzenie użytkownika"
-
-#: ../src/main.c:1249 ../src/main.c:1584
-msgid ""
-"To create a user,\n"
-"click the * icon first"
-msgstr ""
-"Aby utworzyć użytkownika,\n"
-"należy najpierw kliknąć ikonę *"
-
-#: ../src/main.c:1257 ../data/user-accounts-dialog.ui.h:11
-msgid "Delete the selected user"
-msgstr "Usunięcie wybranego użytkownika"
-
-#: ../src/main.c:1261 ../src/main.c:1589
-msgid ""
-"To delete the selected user,\n"
-"click the * icon first"
-msgstr ""
-"Aby usunąć wybranego użytkownika,\n"
-"należy najpierw kliknąć ikonę *"
-
-#: ../src/main.c:1476 ../src/main.c:1484 ../src/main.c:1513 ../src/main.c:1524
-#: ../src/main.c:1539 ../src/main.c:1556
-msgid ""
-"To make changes,\n"
-"click the * icon first"
-msgstr ""
-"Aby wprowadzić zmiany,\n"
-"należy najpierw kliknąć ikonę *"
-
-#: ../src/main.c:1500
-msgid ""
-"To change the account type,\n"
-"click the * icon first"
-msgstr ""
-"Aby zmienić typ konta,\n"
-"należy najpierw kliknąć ikonę *"
-
-#: ../src/main.c:1628
-msgid "Enable debugging code"
-msgstr "Włączenie kodu debugowania"
-
-#: ../src/main.c:1629
-msgid "Output version information and exit"
-msgstr "Wyświetla informacje o wersji i kończy działanie"
-
-#: ../src/main.c:1641
-msgid "Lets you edit user account information."
-msgstr "Umożliwia modyfikację informacji o kontach użytkowników."
-
 #: ../src/run-passwd.c:426
 msgid "Authentication failed"
 msgstr "Uwierzytelnienie się nie powiodło"
 
-#: ../src/run-passwd.c:502 ../src/um-password-dialog.c:385
+#: ../src/run-passwd.c:506 ../src/um-password-dialog.c:385
 #, c-format
 msgid "The new password is too short"
 msgstr "Nowe hasło jest za krótkie"
 
-#: ../src/run-passwd.c:507
+#: ../src/run-passwd.c:512
 #, c-format
 msgid "The new password is too simple"
 msgstr "Nowe hasło jest za proste"
 
-#: ../src/run-passwd.c:511
+#: ../src/run-passwd.c:518
 #, c-format
 msgid "The old and new passwords are too similar"
 msgstr "Poprzednie i nowe hasło są zbyt podobne"
 
-#: ../src/run-passwd.c:514
+#: ../src/run-passwd.c:521
+#, fuzzy, c-format
+#| msgid "The old and new passwords are the same"
+msgid "The new password has already been used recently."
+msgstr "Poprzednie i nowe hasło są takie same"
+
+#: ../src/run-passwd.c:524
 #, c-format
 msgid "The new password must contain numeric or special characters"
 msgstr "Nowe hasło musi zawierać znaki numeryczne lub specjalne"
 
-#: ../src/run-passwd.c:518
+#: ../src/run-passwd.c:528
 #, c-format
 msgid "The old and new passwords are the same"
 msgstr "Poprzednie i nowe hasło są takie same"
 
-#: ../src/run-passwd.c:522
+#: ../src/run-passwd.c:532
 #, c-format
 msgid "Your password has been changed since you initially authenticated!"
 msgstr "Hasło zostało zmienione od początkowego uwierzytelnienia."
 
-#: ../src/run-passwd.c:526
+#: ../src/run-passwd.c:536
 #, c-format
 msgid "The new password does not contain enough different characters"
 msgstr "Nowe hasło nie zawiera wystarczającej liczby różnych znaków"
 
-#: ../src/run-passwd.c:530
+#: ../src/run-passwd.c:540
 #, c-format
 msgid "Unknown error"
 msgstr "Nieznany błąd"
@@ -330,18 +215,18 @@ msgstr "Utworzenie użytkownika się nie powiodło"
 #: ../src/um-account-dialog.c:175
 #, fuzzy, c-format
 #| msgid "A user with the short name '%s' already exists."
-msgid "A user with the short name '%s' already exists"
+msgid "A user with the username '%s' already exists"
 msgstr "Użytkownik o krótkiej nazwie \"%s\" już istnieje."
 
 #: ../src/um-account-dialog.c:179
 #, c-format
-msgid "The short name is too long"
+msgid "The username is too long"
 msgstr ""
 
 #: ../src/um-account-dialog.c:182
 #, fuzzy
 #| msgid "The short name must start with a lowercase letter."
-msgid "The short name cannot start with a '-'"
+msgid "The username cannot start with a '-'"
 msgstr "Krótka nazwa musi zaczynać się od małej litery."
 
 #: ../src/um-account-dialog.c:185
@@ -352,7 +237,7 @@ msgstr "Krótka nazwa musi zaczynać się od małej litery."
 #| " ➣ digits\n"
 #| " ➣ any of the characters '.', '-' and '_'"
 msgid ""
-"The short name must consist of:\n"
+"The username must consist of:\n"
 " ➣ letters from the English alphabet\n"
 " ➣ digits\n"
 " ➣ any of the characters '.', '-' and '_'"
@@ -438,16 +323,16 @@ msgid "Could not start finger capture on '%s' device"
 msgstr ""
 "Nie można uruchomić przechwytywania odcisków palców w urządzeniu \"%s\""
 
-#: ../src/um-fingerprint-dialog.c:546
+#: ../src/um-fingerprint-dialog.c:547
 msgid "Could not access any fingerprint readers"
 msgstr "Nie można uzyskać dostępu do żadnych czytników odcisków palców"
 
-#: ../src/um-fingerprint-dialog.c:547
+#: ../src/um-fingerprint-dialog.c:548
 msgid "Please contact your system administrator for help."
 msgstr ""
 "Proszę skontaktować się z administratorem systemu w celu uzyskania pomocy."
 
-#: ../src/um-fingerprint-dialog.c:584 ../data/account-fingerprint.ui.h:1
+#: ../src/um-fingerprint-dialog.c:585 ../data/account-fingerprint.ui.h:1
 msgid "Enable Fingerprint Login"
 msgstr "Włączenie logowania za pomocą odcisku palca"
 
@@ -455,7 +340,7 @@ msgstr "Włączenie logowania za pomocą odcisku palca"
 #. * The variable is the name of the device, for example:
 #. * "To enable fingerprint login, you need to save one of your fingerprints, using the
 #. * 'Digital Persona U.are.U 4000/4000B' device."
-#: ../src/um-fingerprint-dialog.c:620
+#: ../src/um-fingerprint-dialog.c:622
 #, c-format
 msgid ""
 "To enable fingerprint login, you need to save one of your fingerprints, "
@@ -464,7 +349,7 @@ msgstr ""
 "Aby uruchomić logowanie za pomocą czytnika odcisków palców, należy zapisać "
 "odcisk palca, używając urządzenia \"%s\"."
 
-#: ../src/um-fingerprint-dialog.c:628
+#: ../src/um-fingerprint-dialog.c:630
 #, c-format
 msgid ""
 "Enrolling fingerprints for\n"
@@ -473,7 +358,7 @@ msgstr ""
 "Pobieranie odcisków palców dla użytkownika\n"
 "<b><big>%s</big></b>"
 
-#: ../src/um-language-dialog.c:338
+#: ../src/um-language-dialog.c:328
 msgid "Other..."
 msgstr "Inny..."
 
@@ -546,19 +431,24 @@ msgstr "Hasła się nie zgadzają"
 msgid "Wrong password"
 msgstr "Błędne hasło"
 
-#: ../src/um-photo-dialog.c:213 ../data/photo-dialog.ui.h:2
+#: ../src/um-photo-dialog.c:97 ../data/language-chooser.ui.h:2
+#: ../data/photo-dialog.ui.h:8
+msgid "Select"
+msgstr "Wybierz"
+
+#: ../src/um-photo-dialog.c:212 ../data/photo-dialog.ui.h:2
 msgid "Browse for more pictures"
 msgstr "Przeglądanie obrazów"
 
-#: ../src/um-photo-dialog.c:430
+#: ../src/um-photo-dialog.c:429
 msgid "Take a photo..."
 msgstr "Wykonaj zdjęcie..."
 
-#: ../src/um-photo-dialog.c:448
+#: ../src/um-photo-dialog.c:447
 msgid "Browse for more pictures..."
 msgstr "Przeglądaj więcej obrazów..."
 
-#: ../src/um-photo-dialog.c:685
+#: ../src/um-photo-dialog.c:680
 #, c-format
 msgid "Used by %s"
 msgstr "Używane przez użytkownika %s"
@@ -572,7 +462,127 @@ msgstr "Użytkownik o nazwie \"%s\" już istnieje."
 msgid "This user does not exist."
 msgstr "Ten użytkownik nie istnieje."
 
-#: ../data/account-dialog.ui.h:1 ../data/user-accounts-dialog.ui.h:7
+#: ../src/um-user-panel.c:348
+msgid "Failed to delete user"
+msgstr "Usunięcie użytkownika się nie powiodło"
+
+#: ../src/um-user-panel.c:408
+msgid "You cannot delete your own account."
+msgstr "Nie można usunąć własnego konta."
+
+#: ../src/um-user-panel.c:417
+#, c-format
+msgid "%s is still logged in"
+msgstr "Użytkownik %s jest nadal zalogowany"
+
+#: ../src/um-user-panel.c:421
+msgid ""
+"Deleting a user while they are logged in can leave the system in an "
+"inconsistent state."
+msgstr "Usunięcie użytkownika, kiedy jest zalogowany może uszkodzić system."
+
+#: ../src/um-user-panel.c:430
+#, c-format
+msgid "Do you want to keep %s's files?"
+msgstr "Zachować pliki użytkownika %s?"
+
+#: ../src/um-user-panel.c:434
+msgid ""
+"It is possible to keep the home directory, mail spool and temporary files "
+"around when deleting a user account."
+msgstr ""
+"Można zachować katalog domowy, kolejkę poczty i pliki tymczasowe podczas "
+"usuwania konta użytkownika."
+
+#: ../src/um-user-panel.c:437
+msgid "_Delete Files"
+msgstr "_Usuń pliki"
+
+#: ../src/um-user-panel.c:438
+msgid "_Keep Files"
+msgstr "_Zachowaj pliki"
+
+#: ../src/um-user-panel.c:439
+msgid "_Cancel"
+msgstr "_Anuluj"
+
+#: ../src/um-user-panel.c:463
+msgctxt "Password mode"
+msgid "Account disabled"
+msgstr "Konto jest wyłączone"
+
+#: ../src/um-user-panel.c:472
+msgctxt "Password mode"
+msgid "To be set at next login"
+msgstr "Zostanie ustawione podczas następnego logowania"
+
+#: ../src/um-user-panel.c:475
+msgctxt "Password mode"
+msgid "None"
+msgstr "Brak"
+
+#: ../src/um-user-panel.c:815
+msgid "Failed to contact the accounts service"
+msgstr "Skontaktowanie się z usługą kont się nie powiodło"
+
+#: ../src/um-user-panel.c:817
+msgid "Please make sure that the AccountService is installed and enabled."
+msgstr ""
+"Proszę się upewnić, że usługa AccountService jest zainstalowana i włączona."
+
+#: ../src/um-user-panel.c:843
+msgid ""
+"To make changes,\n"
+"click the * icon first"
+msgstr ""
+"Aby wprowadzić zmiany,\n"
+"należy najpierw kliknąć ikonę *"
+
+#: ../src/um-user-panel.c:879 ../data/user-accounts-dialog.ui.h:11
+msgid "Create a user"
+msgstr "Utworzenie użytkownika"
+
+#: ../src/um-user-panel.c:883 ../src/um-user-panel.c:1138
+msgid ""
+"To create a user,\n"
+"click the * icon first"
+msgstr ""
+"Aby utworzyć użytkownika,\n"
+"należy najpierw kliknąć ikonę *"
+
+#: ../src/um-user-panel.c:891 ../data/user-accounts-dialog.ui.h:12
+msgid "Delete the selected user"
+msgstr "Usunięcie wybranego użytkownika"
+
+#: ../src/um-user-panel.c:895 ../src/um-user-panel.c:1143
+msgid ""
+"To delete the selected user,\n"
+"click the * icon first"
+msgstr ""
+"Aby usunąć wybranego użytkownika,\n"
+"należy najpierw kliknąć ikonę *"
+
+#: ../src/um-user-panel.c:1056
+#, fuzzy
+#| msgid "Account type:"
+msgid "My Account"
+msgstr "Rodzaj konta:"
+
+#: ../src/um-user-panel.c:1065
+msgid "Other Accounts"
+msgstr ""
+
+#: ../src/user-panel.desktop.in.h:1
+#, fuzzy
+#| msgid "Failed to create user"
+msgid "Add or remove users"
+msgstr "Utworzenie użytkownika się nie powiodło"
+
+#: ../src/user-panel.desktop.in.h:2
+msgid "Users"
+msgstr ""
+
+#: ../data/account-dialog.ui.h:1 ../data/user-accounts-dialog.ui.h:8
 msgid "Administrator"
 msgstr "Administrator"
 
@@ -584,11 +594,11 @@ msgstr "_Utwórz"
 msgid "Create new account"
 msgstr "Utworzenie nowego konta"
 
-#: ../data/account-dialog.ui.h:4 ../data/user-accounts-dialog.ui.h:22
+#: ../data/account-dialog.ui.h:4 ../data/user-accounts-dialog.ui.h:24
 msgid "Standard"
 msgstr "Standardowe"
 
-#: ../data/account-dialog.ui.h:5 ../data/user-accounts-dialog.ui.h:23
+#: ../data/account-dialog.ui.h:5 ../data/user-accounts-dialog.ui.h:25
 msgid "Supervised"
 msgstr "Nadzorowane"
 
@@ -601,16 +611,14 @@ msgid "_Full name:"
 msgstr "_Imię i nazwisko"
 
 #: ../data/account-dialog.ui.h:8
-msgid "_Short name:"
+#, fuzzy
+#| msgid "_Short name:"
+msgid "_Username:"
 msgstr "_Krótka nazwa:"
 
 #: ../data/language-chooser.ui.h:1 ../data/photo-dialog.ui.h:3
 msgid "Cancel"
 msgstr "Anuluj"
-
-#: ../data/language-chooser.ui.h:2 ../data/photo-dialog.ui.h:8
-msgid "Select"
-msgstr "Wybierz"
 
 #: ../data/password-dialog.ui.h:1
 msgid ""
@@ -744,60 +752,68 @@ msgid "Account type:"
 msgstr "Rodzaj konta:"
 
 #: ../data/user-accounts-dialog.ui.h:6
+#, fuzzy
+#| msgid "Account type:"
+msgid "Accounts"
+msgstr "Rodzaj konta:"
+
+#: ../data/user-accounts-dialog.ui.h:7
 msgid "Address Book Card:"
 msgstr "Wpis w książce adresowej:"
 
-#: ../data/user-accounts-dialog.ui.h:8
+#: ../data/user-accounts-dialog.ui.h:9
 msgid "Allow guests to log in to this computer"
 msgstr "Umożliwienie gościom na logowanie do tego komputera"
 
-#: ../data/user-accounts-dialog.ui.h:9
+#: ../data/user-accounts-dialog.ui.h:10
 msgid "Automatic Login:"
 msgstr "Automatyczne logowanie:"
 
-#: ../data/user-accounts-dialog.ui.h:12
+#: ../data/user-accounts-dialog.ui.h:13
 msgid "E-mail address:"
 msgstr "Adres e-mail:"
 
-#: ../data/user-accounts-dialog.ui.h:13
+#: ../data/user-accounts-dialog.ui.h:14
 msgid "Fingerprint Login:"
 msgstr "Logowanie za pomocą odcisku palca:"
 
-#: ../data/user-accounts-dialog.ui.h:14
+#: ../data/user-accounts-dialog.ui.h:15
 msgid "Language:"
 msgstr "Język:"
 
-#: ../data/user-accounts-dialog.ui.h:15
+#: ../data/user-accounts-dialog.ui.h:16
 msgid "Location:"
 msgstr "Położenie:"
 
-#: ../data/user-accounts-dialog.ui.h:16
+#: ../data/user-accounts-dialog.ui.h:17
+#, fuzzy
+#| msgid "_Login Options"
+msgid "Login Options"
+msgstr "_Opcje logowania"
+
+#: ../data/user-accounts-dialog.ui.h:18
 msgid "Open"
 msgstr "Otwórz"
 
-#: ../data/user-accounts-dialog.ui.h:17
+#: ../data/user-accounts-dialog.ui.h:19
 msgid "Password:"
 msgstr "Hasło:"
 
-#: ../data/user-accounts-dialog.ui.h:18
+#: ../data/user-accounts-dialog.ui.h:20
 msgid "Restrictions:"
 msgstr "Ograniczenia:"
 
-#: ../data/user-accounts-dialog.ui.h:19
+#: ../data/user-accounts-dialog.ui.h:21
 msgid "Show Shutdown, Suspend and Restart actions"
 msgstr "Działania wyłączenia, wstrzymania i ponownego uruchomienia"
 
-#: ../data/user-accounts-dialog.ui.h:20
+#: ../data/user-accounts-dialog.ui.h:22
 msgid "Show list of users"
 msgstr "Wyświetlanie listy użytkowników"
 
-#: ../data/user-accounts-dialog.ui.h:21
+#: ../data/user-accounts-dialog.ui.h:23
 msgid "Show password hints"
 msgstr "Wyświetlanie podpowiedzi hasła"
-
-#: ../data/user-accounts-dialog.ui.h:24
-msgid "_Login Options"
-msgstr "_Opcje logowania"
 
 #: ../data/account-fingerprint.ui.h:2
 msgid "Left index finger"
@@ -850,6 +866,3 @@ msgid ""
 msgstr ""
 "Odcisk palca został poprawnie zapisany. Od teraz można się logować za pomocą "
 "czytnika odcisków palców."
-
-#~ msgid "Changing names for:"
-#~ msgstr "Zmienianie nazw dla:"
