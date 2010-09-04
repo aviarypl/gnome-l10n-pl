@@ -9,7 +9,7 @@ msgstr ""
 "Project-Id-Version: gdm\n"
 "Report-Msgid-Bugs-To: http://bugzilla.gnome.org/enter_bug.cgi?product=gdm&component=general\n"
 "POT-Creation-Date: 2010-08-31 19:34+0000\n"
-"PO-Revision-Date: 2010-09-01 23:59+0100\n"
+"PO-Revision-Date: 2010-09-04 13:58+0200\n"
 "Last-Translator: Piotr Drąg <piotrdrag@gmail.com>\n"
 "Language-Team: Polish <gnomepl@aviary.pl>\n"
 "Language: pl\n"
@@ -79,7 +79,6 @@ msgstr "Nie można otworzyć sesji"
 #: ../daemon/gdm-factory-slave.c:689
 #: ../daemon/gdm-product-slave.c:449
 #: ../daemon/gdm-simple-slave.c:1196
-#, fuzzy
 msgid "Could not start the X server (your graphical environment) due to an internal error. Please contact your system administrator or check your syslog to diagnose. In the meantime this display will be disabled.  Please restart GDM when the problem is corrected."
 msgstr "Z powodu wewnętrznego błędu nie można uruchomić serwera X (odpowiedzialnego za interfejs graficzny). Proszę zwrócić się do administratora systemu lub zdiagnozować problem na podstawie zawartości dzienników systemu. Ekran zostanie tymczasowo wyłączony. Po naprawieniu problemu proszę ponownie uruchomić GDM."
 
@@ -114,7 +113,7 @@ msgid "Couldn't set userid to %d"
 msgstr "Nie można ustawić identyfikatora użytkownika na %d"
 
 #: ../daemon/gdm-server.c:435
-#, fuzzy, c-format
+#, c-format
 msgid "%s: Could not open log file for display %s!"
 msgstr "%s: nie można otworzyć pliku dziennika dla ekranu %s."
 
@@ -160,9 +159,9 @@ msgid "The display device"
 msgstr "Nazwa urządzenia wyświetlającego"
 
 #: ../daemon/gdm-session-worker.c:1310
-#, fuzzy, c-format
+#, c-format
 msgid "error initiating conversation with authentication system: %s"
-msgstr "błąd podczas inicjowania negocjacji z systemem uwierzytelniania - %s"
+msgstr "błąd podczas inicjowania negocjacji z systemem uwierzytelniania: %s"
 
 #: ../daemon/gdm-session-worker.c:1311
 msgid "general failure"
@@ -185,29 +184,29 @@ msgid "Username:"
 msgstr "Nazwa użytkownika:"
 
 #: ../daemon/gdm-session-worker.c:1327
-#, fuzzy, c-format
+#, c-format
 msgid "error informing authentication system of preferred username prompt: %s"
-msgstr "błąd podczas wysyłania do systemu uwierzytelniania żądanej nazwy użytkownika - %s"
+msgstr "błąd podczas wysyłania do systemu uwierzytelniania żądanej nazwy użytkownika: %s"
 
 #: ../daemon/gdm-session-worker.c:1341
-#, fuzzy, c-format
+#, c-format
 msgid "error informing authentication system of user's hostname: %s"
-msgstr "błąd podczas wysyłania do systemu uwierzytelniania nazwy komputera - %s"
+msgstr "błąd podczas wysyłania do systemu uwierzytelniania nazwy komputera: %s"
 
 #: ../daemon/gdm-session-worker.c:1356
-#, fuzzy, c-format
+#, c-format
 msgid "error informing authentication system of user's console: %s"
-msgstr "błąd podczas wysyłania do systemu uwierzytelniania informacji o konsoli  - %s"
+msgstr "błąd podczas wysyłania do systemu uwierzytelniania informacji o konsoli: %s"
 
 #: ../daemon/gdm-session-worker.c:1369
-#, fuzzy, c-format
+#, c-format
 msgid "error informing authentication system of display string: %s"
-msgstr "błąd podczas informowania systemu uwierzytelniania o ciągu wyświetlania - %s"
+msgstr "błąd podczas informowania systemu uwierzytelniania o ciągu wyświetlania: %s"
 
 #: ../daemon/gdm-session-worker.c:1384
-#, fuzzy, c-format
+#, c-format
 msgid "error informing authentication system of display xauth credentials: %s"
-msgstr "błąd podczas informowania systemu uwierzytelniania o wyświetlaniu uprawnień xauth - %s"
+msgstr "błąd podczas informowania systemu uwierzytelniania o wyświetlaniu uprawnień xauth: %s"
 
 #: ../daemon/gdm-session-worker.c:1679
 #: ../daemon/gdm-session-worker.c:1696
@@ -368,7 +367,7 @@ msgstr "Nie można pobrać nazwy serwera: %s."
 
 #: ../daemon/main.c:237
 #: ../daemon/main.c:250
-#, fuzzy, c-format
+#, c-format
 msgid "Cannot write PID file %s: possibly out of disk space: %s"
 msgstr "Nie można zapisać pliku PID %s: prawdopodobnie brak miejsca na dysku: %s"
 
@@ -421,9 +420,8 @@ msgid "Make all warnings fatal"
 msgstr "Wszystkie ostrzeżenia jako błędy"
 
 #: ../daemon/main.c:534
-#, fuzzy
 msgid "Exit after a time (for debugging)"
-msgstr "Wyjście po czasie - debugowanie"
+msgstr "Wyjście po czasie (debugowanie)"
 
 #: ../daemon/main.c:535
 msgid "Print GDM version"
@@ -445,9 +443,8 @@ msgid "GNOME Display Manager Session Worker"
 msgstr "Proces roboczy menedżera wyświetlania GNOME"
 
 #: ../data/greeter-autostart/at-spi-registryd-wrapper.desktop.in.in.h:1
-#, fuzzy
 msgid "AT-SPI Registry Wrapper"
-msgstr "Wrapper rejestru AT SPI"
+msgstr "Wrapper rejestru AT-SPI"
 
 #: ../data/greeter-autostart/gdm-simple-greeter.desktop.in.in.h:1
 #: ../gui/simple-greeter/gdm-greeter-login-window.c:1633
@@ -475,12 +472,10 @@ msgid "Magnify parts of the screen"
 msgstr "Powiększanie fragmentów ekranu"
 
 #: ../data/greeter-autostart/gok.desktop.in.h:1
-#, fuzzy
 msgid "GNOME On-Screen Keyboard"
 msgstr "Klawiatura ekranowa GNOME"
 
 #: ../data/greeter-autostart/gok.desktop.in.h:2
-#, fuzzy
 msgid "Use an on-screen keyboard"
 msgstr "Użycie klawiatury ekranowej"
 
@@ -574,9 +569,8 @@ msgid "%a %l:%M %p"
 msgstr "%a %H:%M"
 
 #: ../gui/simple-greeter/gdm-greeter-login-window.c:290
-#, fuzzy
 msgid "Automatically logging in…"
-msgstr "Logowanie automatyczne..."
+msgstr "Logowanie automatyczne…"
 
 #: ../gui/simple-greeter/gdm-greeter-login-window.c:576
 msgid "Select language and click Log In"
@@ -584,22 +578,21 @@ msgstr "Proszę wybrać język i nacisnąć przycisk Zaloguj"
 
 #. need to wait for response from backend
 #: ../gui/simple-greeter/gdm-greeter-login-window.c:689
-#, fuzzy
 msgid "Cancelling…"
-msgstr "Anulowanie..."
+msgstr "Anulowanie…"
 
 #: ../gui/simple-greeter/gdm-greeter-login-window.ui.h:1
 msgid "Computer Name"
 msgstr "Nazwa komputera"
 
 #: ../gui/simple-greeter/gdm-greeter-login-window.ui.h:2
-#, fuzzy
 msgid "Login"
 msgstr "Zaloguj"
 
+# pd
 #: ../gui/simple-greeter/gdm-greeter-login-window.ui.h:3
 msgid "Unlock"
-msgstr ""
+msgstr "Odblokuj"
 
 #: ../gui/simple-greeter/gdm-greeter-login-window.ui.h:4
 msgid "Version"
@@ -610,9 +603,8 @@ msgid "Panel"
 msgstr "Panel"
 
 #: ../gui/simple-greeter/gdm-greeter-panel.c:803
-#, fuzzy
 msgid "Shutdown Options…"
-msgstr "Opcje wyłączania..."
+msgstr "Opcje wyłączania…"
 
 #: ../gui/simple-greeter/gdm-greeter-panel.c:825
 msgid "Suspend"
@@ -626,14 +618,16 @@ msgstr "Uruchom ponownie"
 msgid "Shut Down"
 msgstr "Wyłącz"
 
+# pd
 #: ../gui/simple-greeter/gdm-greeter-panel.c:1109
 msgctxt "customsession"
 msgid "Custom"
-msgstr ""
+msgstr "Własna"
 
+# pd
 #: ../gui/simple-greeter/gdm-greeter-panel.c:1110
 msgid "Custom session"
-msgstr ""
+msgstr "Własna sesja"
 
 #: ../gui/simple-greeter/gdm-language-chooser-dialog.c:201
 msgid "Languages"
@@ -651,19 +645,18 @@ msgstr "_Język:"
 #. * with a list of languages to choose from
 #.
 #: ../gui/simple-greeter/gdm-language-option-widget.c:231
-#, fuzzy
 msgctxt "language"
 msgid "Other…"
-msgstr "Inny..."
+msgstr "Inny…"
 
 #: ../gui/simple-greeter/gdm-language-option-widget.c:232
 msgid "Choose a language from the full list of available languages."
 msgstr "Proszę wybrać język z pełnej listy dostępnych."
 
+# pd
 #: ../gui/simple-greeter/gdm-language-option-widget.c:262
-#, fuzzy
 msgid "Language"
-msgstr "Języki"
+msgstr "Język"
 
 #: ../gui/simple-greeter/gdm-languages.c:699
 msgid "Unspecified"
@@ -678,23 +671,23 @@ msgstr "Układy klawiatury"
 msgid "_Keyboard:"
 msgstr "_Klawiatura:"
 
+# pd
 #. translators: This brings up a dialog of
 #. * available keyboard layouts
 #.
 #: ../gui/simple-greeter/gdm-layout-option-widget.c:223
-#, fuzzy
 msgctxt "keyboard"
 msgid "Other…"
-msgstr "Inny..."
+msgstr "Inna…"
 
 #: ../gui/simple-greeter/gdm-layout-option-widget.c:224
 msgid "Choose a keyboard layout from the full list of available layouts."
 msgstr "Proszę wybrać układ klawiatury z pełnej listy dostępnych układów."
 
+# pd
 #: ../gui/simple-greeter/gdm-layout-option-widget.c:254
-#, fuzzy
 msgid "Keyboard"
-msgstr "_Klawiatura:"
+msgstr "Klawiatura"
 
 #: ../gui/simple-greeter/gdm-option-widget.c:505
 msgid "Label Text"
@@ -729,9 +722,9 @@ msgid "The maximum number of items to keep around in the list"
 msgstr "Maksymalna liczba elementów w liście"
 
 #: ../gui/simple-greeter/gdm-remote-login-window.c:188
-#, fuzzy, c-format
+#, c-format
 msgid "Remote Login (Connecting to %s…)"
-msgstr "Logowanie zdalne (łączenie z %s...)"
+msgstr "Logowanie zdalne (łączenie z %s…)"
 
 #: ../gui/simple-greeter/gdm-remote-login-window.c:202
 #, c-format
@@ -742,10 +735,10 @@ msgstr "Logowanie zdalne (połączono z %s)"
 msgid "Remote Login"
 msgstr "Logowanie zdalne"
 
+# pd
 #: ../gui/simple-greeter/gdm-session-option-widget.c:162
-#, fuzzy
 msgid "Session"
-msgstr "_Sesje:"
+msgstr "Sesja"
 
 #: ../gui/simple-greeter/gdm-simple-greeter.schemas.in.h:1
 msgid "Banner message text"
@@ -796,12 +789,10 @@ msgid "Recently selected languages"
 msgstr "Ostatnio wybrane języki"
 
 #: ../gui/simple-greeter/gdm-simple-greeter.schemas.in.h:13
-#, fuzzy
 msgid "Set to a list of keyboard layouts to be shown by default in the login window."
 msgstr "Proszę ustawić na listę układów klawiatury domyślnie wyświetlaną na ekranie logowania."
 
 #: ../gui/simple-greeter/gdm-simple-greeter.schemas.in.h:14
-#, fuzzy
 msgid "Set to a list of languages to be shown by default in the login window."
 msgstr "Proszę ustawić na listę języków do domyślnego wyświetlenia na ekranie logowania."
 
@@ -818,7 +809,6 @@ msgid "Set to true to disable showing the restart buttons in the login window."
 msgstr "Wartość \"true\" wyłącza wyświetlanie przycisków ponownego uruchamiania na ekranie logowania."
 
 #: ../gui/simple-greeter/gdm-simple-greeter.schemas.in.h:18
-#, fuzzy
 msgid "Set to true to enable the XRandR settings manager plugin."
 msgstr "Wartość \"true\" włącza wtyczkę menedżera ustawień XRandR."
 
@@ -852,52 +842,47 @@ msgstr "Wartość \"true\" włącza wtyczkę menedżera ustawień dźwięku."
 
 #: ../gui/simple-greeter/gdm-simple-greeter.schemas.in.h:26
 msgid "Set to true to enable the xsettings settings manager plugin."
-msgstr "Wartość \"true\" włącza wtyczkę menedżera ustawień xsettings."
+msgstr "Wartość \"true\" włącza wtyczkę menedżera ustawień XSettings."
 
 #: ../gui/simple-greeter/gdm-simple-greeter.schemas.in.h:27
 msgid "Set to true to show the banner message text."
 msgstr "Wartość \"true\" włącza wyświetlanie komunikatu bannera."
 
 #: ../gui/simple-greeter/gdm-simple-greeter.schemas.in.h:28
-#, fuzzy
 msgid "Set to true to use Compiz as the window manager."
-msgstr "Wartość \"true\" włącza compiz jako menedżera okien."
+msgstr "Wartość \"true\" włącza Compiz jako menedżera okien."
 
 #: ../gui/simple-greeter/gdm-simple-greeter.schemas.in.h:29
-#, fuzzy
 msgid "Text banner message to show in the login window when the user chooser is empty, instead of banner_message_text."
 msgstr "Treść komunikatu bannera do wyświetlenia na ekranie logowania, kiedy lista wyboru użytkowników jest pusta, zamiast zmiennej banner_message_text."
 
 #: ../gui/simple-greeter/gdm-simple-greeter.schemas.in.h:30
-#, fuzzy
 msgid "Text banner message to show in the login window."
 msgstr "Treść komunikatu bannera do wyświetlenia na ekranie logowania."
 
 #: ../gui/simple-greeter/gdm-simple-greeter.schemas.in.h:31
-#, fuzzy
 msgid "True if the XRandR settings manager plugin is enabled."
-msgstr "Wartość \"True\", gdy wtyczka menedżera ustawień xrandr jest włączona."
+msgstr "Wartość \"true\", gdy wtyczka menedżera ustawień XRandR jest włączona."
 
 #: ../gui/simple-greeter/gdm-simple-greeter.schemas.in.h:32
 msgid "True if the background settings manager plugin is enabled."
-msgstr "Wartość \"True\", gdy wtyczka menedżera ustawień tła jest włączona."
+msgstr "Wartość \"true\", gdy wtyczka menedżera ustawień tła jest włączona."
 
 #: ../gui/simple-greeter/gdm-simple-greeter.schemas.in.h:33
 msgid "True if the media-keys settings manager plugin is enabled."
-msgstr "Wartość \"True\", gdy wtyczka menedżera ustawień przycisków multimedialnych jest włączona."
+msgstr "Wartość \"true\", gdy wtyczka menedżera ustawień przycisków multimedialnych jest włączona."
 
 #: ../gui/simple-greeter/gdm-simple-greeter.schemas.in.h:34
 msgid "True if the sound settings manager plugin is enabled."
-msgstr "Wartość \"True\", gdy wtyczka menedżera ustawień dźwięku jest włączona."
+msgstr "Wartość \"true\", gdy wtyczka menedżera ustawień dźwięku jest włączona."
 
 #: ../gui/simple-greeter/gdm-simple-greeter.schemas.in.h:35
 msgid "True if the xsettings settings manager plugin is enabled."
-msgstr "Wartość \"True\", gdy wtyczka menedżera ustawień xsettings jest włączona."
+msgstr "Wartość \"true\", gdy wtyczka menedżera ustawień XSettings jest włączona."
 
 #: ../gui/simple-greeter/gdm-simple-greeter.schemas.in.h:36
-#, fuzzy
 msgid "Use Compiz as the window manager"
-msgstr "Użycie compiz jako menedżera okien"
+msgstr "Użycie Compiz jako menedżera okien"
 
 #: ../gui/simple-greeter/gdm-timer.c:149
 msgid "Duration"
@@ -930,17 +915,16 @@ msgstr "Określa, czy odbywa się odliczanie"
 msgid "Log in as %s"
 msgstr "Loguje jako %s"
 
-# kontekst dotyczy jednak konta w UI, a nie nazwy konta, "Inna..." wygląda dziwnie
+# pd
 #. translators: This option prompts
 #. * the user to type in a username
 #. * manually instead of choosing from
 #. * a list.
 #.
 #: ../gui/simple-greeter/gdm-user-chooser-widget.c:256
-#, fuzzy
 msgctxt "user"
 msgid "Other…"
-msgstr "Inne..."
+msgstr "Inny…"
 
 # tooltip
 #: ../gui/simple-greeter/gdm-user-chooser-widget.c:257
@@ -951,8 +935,8 @@ msgstr "Wybiera inne konto"
 msgid "Guest"
 msgstr "Gość"
 
+# tooltip
 #: ../gui/simple-greeter/gdm-user-chooser-widget.c:272
-#, fuzzy
 msgid "Log in as a temporary guest"
 msgstr "Loguje jako tymczasowego gościa"
 
@@ -960,8 +944,8 @@ msgstr "Loguje jako tymczasowego gościa"
 msgid "Automatic Login"
 msgstr "Logowanie automatyczne"
 
+# tooltip
 #: ../gui/simple-greeter/gdm-user-chooser-widget.c:288
-#, fuzzy
 msgid "Automatically log into the system after selecting options"
 msgstr "Automatyczne logowanie do systemu po wybraniu opcji"
 
@@ -1002,7 +986,7 @@ msgid "Can't temporarily set screensaver to blank screen: %s"
 msgstr "Nie można tymczasowo ustawić wygaszacza ekranu na wygaszenie ekranu: %s"
 
 #: ../gui/user-switch-applet/applet.c:888
-#, fuzzy, c-format
+#, c-format
 msgid "Can't log out: %s"
 msgstr "Nie można się wylogować: %s"
 
@@ -1039,10 +1023,11 @@ msgstr "Zablokuj ekran"
 msgid "Switch User"
 msgstr "Przełącz użytkownika"
 
+# pd
 #. Only show switch user if there are other users
 #: ../gui/user-switch-applet/applet.c:1170
 msgid "Quit…"
-msgstr ""
+msgstr "Zakończ…"
 
 #: ../gui/user-switch-applet/applet.c:1276
 msgid "Unknown"
@@ -1076,9 +1061,10 @@ msgstr "_Zmodyfikuj informacje osobiste"
 msgid "_About"
 msgstr "_O programie"
 
+# pd
 #: ../gui/user-switch-applet/GNOME_FastUserSwitchApplet.xml.h:3
 msgid "_Edit Users and Groups"
-msgstr "Z_modyfikuj użytkowników i grupy"
+msgstr "_Modyfikuj użytkowników i grupy"
 
 #: ../utils/gdmflexiserver.c:61
 msgid "Only the VERSION command is supported"
@@ -1092,9 +1078,8 @@ msgstr "POLECENIE"
 #: ../utils/gdmflexiserver.c:63
 #: ../utils/gdmflexiserver.c:65
 #: ../utils/gdmflexiserver.c:66
-#, fuzzy
 msgid "Ignored — retained for compatibility"
-msgstr "Ignorowane, zachowane dla zgodności"
+msgstr "Ignorowane — zachowane dla zgodności"
 
 #: ../utils/gdmflexiserver.c:64
 #: ../utils/gdm-screenshot.c:43
@@ -1127,4 +1112,3 @@ msgstr "Pobrano zrzut ekranu"
 #: ../utils/gdm-screenshot.c:283
 msgid "Take a picture of the screen"
 msgstr "Pobiera zrzut ekranu"
-
