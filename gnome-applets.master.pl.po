@@ -9,7 +9,7 @@ msgstr ""
 "Project-Id-Version: gnome-applets\n"
 "Report-Msgid-Bugs-To: http://bugzilla.gnome.org/enter_bug.cgi?product=gnome-applets&component=general\n"
 "POT-Creation-Date: 2010-09-01 08:24+0000\n"
-"PO-Revision-Date: 2010-09-01 23:59+0100\n"
+"PO-Revision-Date: 2010-09-04 14:07+0200\n"
 "Last-Translator: Piotr Drąg <piotrdrag@gmail.com>\n"
 "Language-Team: Polish <gnomepl@aviary.pl>\n"
 "Language: pl\n"
@@ -2030,9 +2030,10 @@ msgstr ""
 "<i><small><b>Uwaga:</b> Podawane notowania maja opóźnienie minimum 15 minut.\n"
 "<b>Źródło: </b> Yahoo!</small></i>"
 
+# pd
 #: ../invest-applet/data/prefs-dialog.ui.h:3
 msgid "Currency"
-msgstr ""
+msgstr "Waluta"
 
 #: ../invest-applet/data/prefs-dialog.ui.h:4
 msgid "Invest Preferences"
@@ -2100,9 +2101,10 @@ msgstr "Cena"
 msgid "Commission"
 msgstr "Marża"
 
+# pd
 #: ../invest-applet/invest/preferences.py:31
 msgid "Currency Rate"
-msgstr ""
+msgstr "Wartość waluty"
 
 #: ../invest-applet/invest/quotes.py:131
 msgid "Invest could not connect to Yahoo! Finance"
@@ -2115,18 +2117,19 @@ msgstr "Aplet Invest nie mógł połączyć się z Yahoo! Finance"
 msgid "Updated at %s"
 msgstr "Zaktualizowano o %s"
 
+# pd
 #. Translators: This is share-market jargon. It is the average percentage change of all stock prices. The %s gets replaced with the string value of the change (localized), including the percent sign.
 #: ../invest-applet/invest/quotes.py:153
-#, fuzzy, python-format
+#, python-format
 msgid "Average change: %s"
-msgstr "Średnia zmiana notowań %%: %+.2f%%"
+msgstr "Średnia zmiana: %s"
 
 # http://pol.proz.com/kudoz/english_to_polish/finance_general/2201546-balance_positions.html
 #. Translators: This is share-market jargon. It refers to the total difference between the current price and purchase price for all the shares put together for a particular currency. i.e. How much money would be earned if they were sold right now. The first string is the change value, the second the currency, and the third value is the percentage of the change, formatted using user's locale.
 #: ../invest-applet/invest/quotes.py:162
-#, fuzzy, python-format
+#, python-format
 msgid "Positions balance: %s %s (%s)"
-msgstr "Pozycje bilansu: %+.2f"
+msgstr "Pozycje bilansu: %s %s (%s)"
 
 #. model: SYMBOL, LABEL, TICKER_ONLY, BALANCE, BALANCE_PCT, VALUE, VARIATION_PCT, PB
 #. Translators: these words all refer to a stock. Last is short
@@ -3193,9 +3196,10 @@ msgstr "Proszę określić, czy notatki są widoczne na wszystkich obszarach"
 msgid "Choose if the default style is forced on all notes"
 msgstr "Proszę określić, czy użycie domyślnego stylu będzie wymuszane na wszystkich notatkach"
 
+# pd
 #: ../stickynotes/stickynotes.ui.h:8
 msgid "Choose whether to hide all notes when selecting on the desktop"
-msgstr ""
+msgstr "Proszę określić, czy ukrywać wszystkie notatki podczas zaznaczania na pulpicie"
 
 #: ../stickynotes/stickynotes.ui.h:9
 msgid "Close note"
@@ -3205,12 +3209,10 @@ msgstr "Zamknięcie notatki"
 msgid "Default Note Properties"
 msgstr "Domyślne właściwości notatki"
 
-#  FIXME : Hack because libglade does not properly set these
 #: ../stickynotes/stickynotes.ui.h:11
 msgid "Delete all sticky notes?"
 msgstr "Usunąć wszystkie notatki?"
 
-#  FIXME : Hack because libglade does not properly set these
 #: ../stickynotes/stickynotes.ui.h:12
 msgid "Delete this sticky note?"
 msgstr "Usunąć tę notatkę?"
@@ -3231,9 +3233,10 @@ msgstr "_Domyślny kolor i czcionka w notatkach"
 msgid "H_eight:"
 msgstr "Wy_sokość:"
 
+# pd
 #: ../stickynotes/stickynotes.ui.h:17
 msgid "Hide notes when the des_ktop is clicked on"
-msgstr ""
+msgstr "Ukrywanie notatek po _klikanięciu na pulpit"
 
 #: ../stickynotes/stickynotes.ui.h:18
 msgid "Lock/Unlock note"
@@ -3283,7 +3286,6 @@ msgstr "Określenie domyślnej wysokości (w pikselach) nowych notatek"
 msgid "Specify the default width (in pixels) of new notes"
 msgstr "Określenie domyślnej szerokości (w pikselach) nowych notatek"
 
-# FIXME : Hack because libglade does not properly set these
 #: ../stickynotes/stickynotes.ui.h:30
 msgid "Sticky Note"
 msgstr "Notatka"
@@ -3320,19 +3322,19 @@ msgstr "Użyj czcio_nki systemowej"
 msgid "_Delete All"
 msgstr "Usuń _wszystko"
 
+# pd
 #: ../stickynotes/stickynotes.ui.h:39
-#, fuzzy
 msgid "_Delete Note..."
-msgstr "_Usuń notatki"
+msgstr "_Usuń notatkę..."
 
 #: ../stickynotes/stickynotes.ui.h:40
 msgid "_Font:"
 msgstr "_Czcionka:"
 
+# pd
 #: ../stickynotes/stickynotes.ui.h:41
-#, fuzzy
 msgid "_Lock Note"
-msgstr "Za_blokuj notatki"
+msgstr "Za_blokuj notatkę"
 
 #: ../stickynotes/stickynotes.ui.h:42
 #: ../stickynotes/stickynotes_applet.c:33
@@ -3407,9 +3409,10 @@ msgstr "Jeżeli wyłączone, można użyć dowolnego koloru jako domyślnego dla
 msgid "If this option is disabled, a custom font can be used as the default font for all sticky notes."
 msgstr "Jeżeli wyłączone, można użyć dowolnej czcionki jako domyślnej dla wszystkich notatek."
 
+# pd
 #: ../stickynotes/stickynotes.schemas.in.h:16
 msgid "If this option is enabled, selecting the desktop in any way will automatically hide all the open notes."
-msgstr ""
+msgstr "Jeśli włączone, kliknięcie na pulpit w dowolny sposób automatycznie ukryje wszystkie otwarte notatki."
 
 #: ../stickynotes/stickynotes.schemas.in.h:17
 msgid "If this option is enabled, the custom colors and fonts that have been assigned to individual notes will be ignored."
@@ -3439,9 +3442,10 @@ msgstr "Określa, czy będzie wymagane potwierdzanie usunięcia notatki"
 msgid "Whether to force the default color and font on all notes"
 msgstr "Określa, czy wymuszane będzie na wszystkich notatkach użycie domyślnych kolorów i czcionek"
 
+# pd
 #: ../stickynotes/stickynotes.schemas.in.h:24
 msgid "Whether to hide all notes when the desktop is selected"
-msgstr ""
+msgstr "Określa, czy ukrywać wszystkie notatki podczas zaznaczania na pulpicie"
 
 #: ../stickynotes/stickynotes.schemas.in.h:25
 msgid "Whether to use the default system color"
@@ -3471,7 +3475,6 @@ msgstr[0] "%d notatka"
 msgstr[1] "%d notatki"
 msgstr[2] "%d notatek"
 
-#  FIXME : Hack because libglade does not properly set these
 #: ../stickynotes/stickynotes_applet.c:623
 msgid "Show sticky notes"
 msgstr "Wyświetla notatki"
@@ -3565,4 +3568,3 @@ msgstr "Opróżnianie kosza"
 #: ../trashapplet/trashapplet-empty-progress.ui.h:2
 msgid "From:"
 msgstr "Od:"
-
