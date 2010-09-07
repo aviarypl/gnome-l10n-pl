@@ -10,7 +10,7 @@ msgstr ""
 "Report-Msgid-Bugs-To: http://bugzilla.gnome.org/enter_bug.cgi?"
 "product=brasero&component=general\n"
 "POT-Creation-Date: 2010-08-26 14:43+0000\n"
-"PO-Revision-Date: 2010-03-03 17:39+0100\n"
+"PO-Revision-Date: 2010-09-07 15:50+0200\n"
 "Last-Translator: Piotr Drąg <piotrdrag@gmail.com>\n"
 "Language-Team: Polish <gnomepl@aviary.pl>\n"
 "MIME-Version: 1.0\n"
@@ -127,8 +127,6 @@ msgid "PATH TO IMAGE"
 msgstr "ŚCIEŻKA DO OBRAZU"
 
 #: ../src/brasero-cli.c:114
-#, fuzzy
-#| msgid "Force brasero to display the project selection page"
 msgid "Force Brasero to display the project selection page"
 msgstr "Wymusza wyświetlenie strony wyboru projektu"
 
@@ -141,8 +139,6 @@ msgid "Open the check disc dialog"
 msgstr "Otwiera puste okno płyty"
 
 #: ../src/brasero-cli.c:126
-#, fuzzy
-#| msgid "Burn the contents of burn:// URI"
 msgid "Burn the contents of the burn:// URI"
 msgstr "Nagrywa zawartość adresu URI burn://"
 
@@ -150,9 +146,10 @@ msgstr "Nagrywa zawartość adresu URI burn://"
 msgid "Start burning immediately."
 msgstr "Od razu rozpoczyna nagrywanie."
 
+# pd
 #: ../src/brasero-cli.c:134
 msgid "Don't connect to an already-running instance"
-msgstr ""
+msgstr "Bez łączenia z już uruchomionym wywołaniem programu"
 
 #: ../src/brasero-cli.c:138
 msgid ""
@@ -969,17 +966,15 @@ msgstr ""
 "Nie można wysunąć płyty, ale musi zostać wysunięta, aby bieżące działanie "
 "mogło być kontynuowane."
 
+# pd
 #: ../libbrasero-burn/brasero-burn-dialog.c:1101
-#, fuzzy
-#| msgid "Do you want to replace \"%s\"?"
 msgid "Do you want to replace the disc and continue?"
-msgstr "Zastąpić plik \"%s\"?"
+msgstr "Zastąpić płytę i kontynuować?"
 
+# pd
 #: ../libbrasero-burn/brasero-burn-dialog.c:1102
-#, fuzzy
-#| msgid "The image could not be loaded."
 msgid "The currently inserted disc could not be blanked."
-msgstr "Wczytanie obrazu się nie powiodło."
+msgstr "Nie można wyczyścić obecnie wsuniętej płyty."
 
 #: ../libbrasero-burn/brasero-burn-dialog.c:1111
 msgid "Do you want to continue with full Windows compatibility disabled?"
@@ -994,11 +989,10 @@ msgstr ""
 "Niektóre pliki nie mają nazwy odpowiedniej dla płyty CD zgodnej z systemem "
 "Windows."
 
+# pd
 #: ../libbrasero-burn/brasero-burn-dialog.c:1113
-#, fuzzy
-#| msgid "_Continue"
 msgid "C_ontinue"
-msgstr "_Kontynuuj"
+msgstr "K_ontynuuj"
 
 #: ../libbrasero-burn/brasero-burn-dialog.c:1346
 #: ../libbrasero-burn/brasero-burn-dialog.c:1367
@@ -1460,6 +1454,7 @@ msgstr "Nie można odnaleźć formatu dla tymczasowego pliku obrazu"
 msgid "Unknown song"
 msgstr "Nieznany utwór"
 
+# pd
 #. Reminder: if this string happens to be used
 #. * somewhere else in brasero we'll need a
 #. * context with C_() macro
@@ -1474,7 +1469,7 @@ msgstr "Nieznany utwór"
 #: ../src/brasero-player.c:419
 #, c-format
 msgid "by %s"
-msgstr ""
+msgstr "- %s"
 
 #: ../libbrasero-burn/brasero-dest-selection.c:605
 #: ../libbrasero-burn/brasero-image-type-chooser.c:133
@@ -2740,23 +2735,24 @@ msgstr "Nagrywanie płyt Brasero"
 msgid "Create and copy CDs and DVDs"
 msgstr "Nagrywanie i kopiowanie płyt CD/DVD"
 
+# pd
 #: ../data/brasero.desktop.in.in.h:4
-#, fuzzy
-#| msgid "Disc Burner"
 msgid "Disc Burner and Copier"
-msgstr "Nagrywanie płyt"
+msgstr "Nagrywanie i kopiowanie płyt"
 
+# pd
 #: ../data/org.gnome.brasero.gschema.xml.in.h:1
-#, fuzzy
-#| msgid "Burning image to disc"
 msgid "Burning flags to be used"
-msgstr "Nagrywanie obrazu na płycie"
+msgstr "Używane flagi nagrywania"
 
+# pd
 #: ../data/org.gnome.brasero.gschema.xml.in.h:2
 msgid ""
 "Contains the absolute path of the directory that was last browsed for images "
 "to burn"
 msgstr ""
+"Zawiera bezwzględną ścieżkę do katalogu obrazów do nagrania, który był "
+"przeglądany jako ostatni"
 
 #: ../data/org.gnome.brasero.gschema.xml.in.h:3
 msgid ""
@@ -2774,18 +2770,21 @@ msgstr ""
 "Zawiera nazwę domyślnego modułu nagrywającego. Zostanie użyty, jeśli to "
 "możliwe."
 
+# pd
 #: ../data/org.gnome.brasero.gschema.xml.in.h:5
 msgid ""
 "Contains the path to the directory where brasero should store temporary "
 "files. If that value is empty, the default directory set for glib will be "
 "used."
 msgstr ""
+"Zawiera ścieżkę do katalogu, gdzie przechowywać pliki tymczasowe. Jeśli "
+"wartość będzie pusta, to zostanie użyty domyślny zestaw katalogów biblioteki "
+"glib."
 
+# pd
 #: ../data/org.gnome.brasero.gschema.xml.in.h:6
-#, fuzzy
-#| msgid "Set the directory where to store temporary files"
 msgid "Directory to use for temporary files"
-msgstr "Ustawia katalog do przechowywania plików tymczasowych"
+msgstr "Katalog do przechowywania plików tymczasowych"
 
 #: ../data/org.gnome.brasero.gschema.xml.in.h:7
 msgid "Enable file preview"
@@ -2803,9 +2802,10 @@ msgstr "Domyślny moduł nagrywający"
 msgid "Replace symbolic links by their targets"
 msgstr "Zamienia pliki dowiązań symbolicznych ich plikami docelowymi"
 
+# pd
 #: ../data/org.gnome.brasero.gschema.xml.in.h:11
 msgid "Set to 0 for MD5, 1 for SHA1 and 2 for SHA256"
-msgstr ""
+msgstr "0 dla MD5, 1 dla SHA1 i 2 dla SHA256"
 
 #: ../data/org.gnome.brasero.gschema.xml.in.h:12
 msgid "Should Nautilus extension output debug statements"
@@ -2854,41 +2854,44 @@ msgstr ""
 "Określa, czy program Brasero ma zamieniać dowiązania symboliczne na ich "
 "pliki docelowe w projekcie. Ustawienie \"true\" spowoduje zamianę dowiązań."
 
+# pd
 #: ../data/org.gnome.brasero.gschema.xml.in.h:19
 msgid "The last browsed folder while looking for images to burn"
-msgstr ""
+msgstr "Ostatnio przeglądany katalog podczas wyszukiwania obrazów do nagrania"
 
+# pd
 #: ../data/org.gnome.brasero.gschema.xml.in.h:20
 msgid "The priority value for the plugin"
-msgstr ""
+msgstr "Wartość priorytetu wtyczki"
 
+# pd
 #: ../data/org.gnome.brasero.gschema.xml.in.h:21
 msgid "The speed to be used"
-msgstr ""
+msgstr "Używana prędkość"
 
+# pd
 #: ../data/org.gnome.brasero.gschema.xml.in.h:22
-#, fuzzy
-#| msgid "Creating checksum for image files"
 msgid "The type of checksum used for files"
-msgstr "Tworzenie sum kontrolnych dla plików obrazów"
+msgstr "Typ sum kontrolnych używanych dla plików"
 
+# pd
 #: ../data/org.gnome.brasero.gschema.xml.in.h:23
-#, fuzzy
-#| msgid "Creating checksum for image files"
 msgid "The type of checksum used for images"
-msgstr "Tworzenie sum kontrolnych dla plików obrazów"
+msgstr "Typ sum kontrolnych używanych dla obrazów"
 
+# pd
 #: ../data/org.gnome.brasero.gschema.xml.in.h:24
 msgid ""
 "This value represents the burning flags that were used in such a context the "
 "last time."
-msgstr ""
+msgstr "Ta wartość reprezentuje flagi nagrywania użyte ostatnim razem."
 
+# pd
 #: ../data/org.gnome.brasero.gschema.xml.in.h:25
 msgid ""
 "This value represents the speed that was used in such a context the last "
 "time."
-msgstr ""
+msgstr "Ta wartość reprezentuje prędkość użytą ostatnim razem."
 
 #: ../data/org.gnome.brasero.gschema.xml.in.h:26
 msgid "Used in conjunction with the \"-immed\" flag with cdrecord"
@@ -2898,6 +2901,7 @@ msgstr "Używane w połączeniu z flagą \"-immed\" w bibliotece cdrecord"
 msgid "Used in conjunction with the \"-immed\" flag with cdrecord."
 msgstr "Używane w połączeniu z flagą \"-immed\" w bibliotece cdrecord"
 
+# pd
 #: ../data/org.gnome.brasero.gschema.xml.in.h:28
 msgid ""
 "When several plugins are available for the same task, this value is used to "
@@ -2905,6 +2909,10 @@ msgid ""
 "priority is used. A positive value overrides the plugin's native priority. A "
 "negative value disables the plugin."
 msgstr ""
+"Kiedy dostępnych jest kilka wtyczek do tego samego zadania, ta wartość jest "
+"używana do określenia, która wtyczka powinna mieć pierwszeństwo. 0 oznacza "
+"ujemną wartość. Dodatnia wartość zastępuje domyślny priorytet wtyczki. "
+"Ujemny priorytet wyłącza wtyczkę."
 
 #: ../data/org.gnome.brasero.gschema.xml.in.h:29
 msgid "Whether to display file preview. Set to true to use it."
@@ -3438,10 +3446,6 @@ msgid "Do you want to replace \"%s\"?"
 msgstr "Zastąpić plik \"%s\"?"
 
 #: ../src/brasero-data-disc.c:791
-#, fuzzy
-#| msgid ""
-#| "A file with this name already exists in the folder.  Replacing it will "
-#| "overwrite its content on the disc to be burnt."
 msgid ""
 "A file with this name already exists in the folder.  Replacing it will "
 "overwrite its contents on the disc to be burnt."
@@ -3490,16 +3494,6 @@ msgstr ""
 
 #: ../src/brasero-data-disc.c:847
 #: ../libbrasero-burn/brasero-status-dialog.c:293
-#, fuzzy
-#| msgid ""
-#| "The size of the file is over 2 GiB. Files larger than 2 GiB are not "
-#| "supported by the ISO9660 standard in its first and second versions (the "
-#| "most widespread ones).\n"
-#| "It is recommended to use the third version of the ISO9660 standard, which "
-#| "is supported by most operating systems, including Linux and all versions "
-#| "of Windows ©.\n"
-#| "However, Mac OS X cannot read images created with version 3 of the "
-#| "ISO9660 standard."
 msgid ""
 "The size of the file is over 2 GiB. Files larger than 2 GiB are not "
 "supported by the ISO9660 standard in its first and second versions (the most "
@@ -3515,7 +3509,7 @@ msgstr ""
 "rozpowszechnionych).\n"
 "Zalecane jest użycie trzeciej wersji standardu ISO9660, który jest wspierany "
 "przez większość systemów operacyjnych, zarówno Linux oraz każdą z wersji "
-"Windows©.\n"
+"Windows™.\n"
 "Jednakże system Mac OS X nie odczytuje plików obrazów utworzonych używając "
 "trzeciej wersji standardu ISO9660."
 
@@ -3537,14 +3531,9 @@ msgstr "Z_awsze dodawaj takie pliki"
 msgid "Do you really want to add \"%s\" to the selection?"
 msgstr "Na pewno dodać \"%s\"?"
 
+# pd
 #: ../src/brasero-data-disc.c:891
 #: ../libbrasero-burn/brasero-status-dialog.c:231
-#, fuzzy
-#| msgid ""
-#| "The children of this directory will have 7 parent directories.\n"
-#| "Brasero can create an image of such a file hierarchy and burn it; but the "
-#| "disc may not be readable on all operating systems.\n"
-#| "Note: Such a file hierarchy is known to work on Linux."
 msgid ""
 "The children of this directory will have 7 parent directories.\n"
 "Brasero can create an image of such a file hierarchy and burn it but the "
@@ -3552,8 +3541,8 @@ msgid ""
 "Note: Such a file hierarchy is known to work on Linux."
 msgstr ""
 "Katalogi podrzędne tego katalogu będą miały 7 katalogów nadrzędnych. \n"
-"Program Brasero może stworzyć i nagrać obraz takiej hierarchii plików. "
-"Odczytanie nośnika może nie być możliwe we wszystkich systemach "
+"Program Brasero może stworzyć i nagrać obraz takiej hierarchii plików, ale "
+"odczytanie nośnika może nie być możliwe we wszystkich systemach "
 "operacyjnych.\n"
 "Uwaga: wiadomo, że taka hierarchia zadziała poprawnie w systemie Linux."
 
@@ -3674,17 +3663,17 @@ msgstr "Ustawia układ pionowy"
 msgid "Click to close the side pane"
 msgstr "Kliknięcie zamknie panel boczny"
 
+# pd
 #: ../src/brasero-player.c:540
 #, c-format
 msgid "%i × %i pixels"
-msgstr ""
+msgstr "%i × %i pikseli"
 
+# pd
 #. No Preview view
 #: ../src/brasero-player.c:845
-#, fuzzy
-#| msgid "Preview"
 msgid "No preview"
-msgstr "Podgląd"
+msgstr "Brak podglądu"
 
 #: ../src/brasero-project.c:194
 msgid "Save current project"
@@ -3957,8 +3946,6 @@ msgstr "No_wy projekt wideo"
 
 #: ../src/brasero-project-manager.c:110
 #: ../src/brasero-project-type-chooser.c:84
-#, fuzzy
-#| msgid "Create a video DVD or an SVCD that are readable on TV readers"
 msgid "Create a video DVD or an SVCD that is readable on TV readers"
 msgstr ""
 "Utworzenie płyty DVD-Video lub SVCD odtwarzalnej we wszystkich czytnikach TV"
@@ -4150,9 +4137,8 @@ msgstr "Spr_awdź ponownie"
 msgid "The file integrity check could not be performed."
 msgstr "Sprawdzenie spójności danych nie mogło zostać wykonane."
 
+# pd
 #: ../libbrasero-burn/brasero-sum-dialog.c:178
-#, fuzzy
-#| msgid "The file integrity was performed successfully."
 msgid "The file integrity check was performed successfully."
 msgstr "Sprawdzenie spójności danych się powiodło."
 
@@ -4460,15 +4446,13 @@ msgstr "Pobieranie kluczy DVD"
 msgid "Video DVD could not be opened"
 msgstr "Nie można otworzyć płyty DVD-Video"
 
+# pd
 #: ../plugins/dvdcss/burn-dvdcss.c:384
-#, fuzzy
-#| msgid "Copying Video DVD"
 msgid "Copying video DVD"
 msgstr "Kopiowanie DVD-Video"
 
+# pd
 #: ../plugins/dvdcss/burn-dvdcss.c:677
-#, fuzzy
-#| msgid "Copies css encrypted Video DVDs to a disc image"
 msgid "Copies CSS encrypted video DVDs to a disc image"
 msgstr "Kopiuje płyty DVD-Video zaszyfrowane za pomocą CSS do obrazu płyty"
 
@@ -4606,8 +4590,6 @@ msgid "Normalizing tracks"
 msgstr "Normalizowanie ścieżki"
 
 #: ../plugins/transcode/burn-normalize.c:646
-#, fuzzy
-#| msgid "Normalize"
 msgid "Normalization"
 msgstr "Normalizacja"
 
@@ -5098,9 +5080,8 @@ msgstr "Proszę dodawać wyłącznie pliki z nagraniami wideo"
 msgid "Creating file layout"
 msgstr "Tworzenie układu plików"
 
+# pd
 #: ../plugins/dvdauthor/burn-dvdauthor.c:374
-#, fuzzy
-#| msgid "Creates disc images suitable for Video DVDs"
 msgid "Creates disc images suitable for video DVDs"
 msgstr "Tworzy plik obrazu odpowiedni dla płyt DVD-Video"
 
@@ -5108,9 +5089,8 @@ msgstr "Tworzy plik obrazu odpowiedni dla płyt DVD-Video"
 msgid "Converting video file to MPEG2"
 msgstr "Konwertowanie pliku wideo do MPEG2"
 
+# pd
 #: ../plugins/transcode/burn-vob.c:1376
-#, fuzzy
-#| msgid "Converts any video file into a format suitable for Video DVDs"
 msgid "Converts any video file into a format suitable for video DVDs"
 msgstr "Konwertuje dowolny plik wideo do formatu odpowiedniego dla DVD-Video"
 
