@@ -10,8 +10,8 @@ msgstr ""
 "Report-Msgid-Bugs-To: http://bugzilla.gnome.org/enter_bug.cgi?product=gnome-"
 "panel&component=general\n"
 "POT-Creation-Date: 2010-08-23 14:11+0000\n"
-"PO-Revision-Date: 2010-03-22 13:05+0100\n"
-"Last-Translator: Tomasz Dominikowski <dominikowski@gmail.com>\n"
+"PO-Revision-Date: 2010-09-07 17:11+0200\n"
+"Last-Translator: Piotr Drąg <piotrdrag@gmail.com>\n"
 "Language-Team: Polish <gnomepl@aviary.pl>\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -21,6 +21,7 @@ msgstr ""
 "X-Poedit-Language: Polish\n"
 "X-Poedit-Country: Poland\n"
 
+# pd
 #. Translators: This is a strftime format string.
 #. * It is used to display the time in 12-hours format
 #. * (eg, like in the US: 8:10 am). The %p expands to
@@ -32,7 +33,7 @@ msgstr ""
 #: ../applets/clock/calendar-window.c:303 ../applets/clock/clock.c:444
 #: ../applets/clock/clock-location-tile.c:520
 msgid "%l:%M %p"
-msgstr "%H:%M"
+msgstr "%l:%M %p"
 
 #. Translators: This is a strftime format string.
 #. * It is used to display the time in 24-hours format
@@ -65,11 +66,12 @@ msgstr "%d %b"
 msgid "Tasks"
 msgstr "Zadania"
 
+# pd
 #: ../applets/clock/calendar-window.c:847
 #: ../applets/clock/calendar-window.c:1022
 #: ../applets/clock/calendar-window.c:1655
 msgid "Edit"
-msgstr "Zmodyfikuj"
+msgstr "Modyfikuj"
 
 #: ../applets/clock/calendar-window.c:968
 msgid "All Day"
@@ -95,12 +97,13 @@ msgstr "Położenia"
 msgid "Calendar"
 msgstr "Kalendarz"
 
+# pd
 #. Translators: This is a strftime format string.
 #. * It is used to display the time in 12-hours format (eg, like
 #. * in the US: 8:10 am). The %p expands to am/pm.
 #: ../applets/clock/clock.c:444
 msgid "%l:%M:%S %p"
-msgstr "%H:%M:%S"
+msgstr "%l:%M:%S %p"
 
 #. Translators: This is a strftime format string.
 #. * It is used to display the time in 24-hours format (eg, like
@@ -172,6 +175,7 @@ msgstr "Kliknięcie wyświetli miesięczny kalendarz"
 msgid "Computer Clock"
 msgstr "Zegar komputerowy"
 
+# pd
 #. Translators: This is a strftime format
 #. * string.
 #. * It is used to display the time in 12-hours
@@ -180,8 +184,9 @@ msgstr "Zegar komputerowy"
 #. * am/pm.
 #: ../applets/clock/clock.c:1570
 msgid "%I:%M:%S %p"
-msgstr "%H:%M:%S"
+msgstr "%I:%M:%S %p"
 
+# pd
 #. Translators: This is a strftime format
 #. * string.
 #. * It is used to display the time in 12-hours
@@ -190,7 +195,7 @@ msgstr "%H:%M:%S"
 #. * am/pm.
 #: ../applets/clock/clock.c:1578
 msgid "%I:%M %p"
-msgstr "%H:%M"
+msgstr "%I:%M %p"
 
 #. Translators: This is a strftime format string.
 #. * It is used to display a date in the full format (so that people can
@@ -2300,10 +2305,8 @@ msgid "Applet Bonobo IID"
 msgstr "IID apletu Bonobo"
 
 #: ../gnome-panel/panel-object.schemas.in.h:3
-#, fuzzy
-#| msgid "Applet Bonobo IID"
 msgid "Applet IID"
-msgstr "IID apletu Bonobo"
+msgstr "IID apletu"
 
 #: ../gnome-panel/panel-object.schemas.in.h:4
 msgid "Icon used for object's button"
@@ -2397,16 +2400,11 @@ msgid "The identifier of the toplevel panel which contains this object."
 msgstr "Identyfikator panelu nadrzędnego zawierającego ten obiekt."
 
 #: ../gnome-panel/panel-object.schemas.in.h:19
-#, fuzzy
-#| msgid ""
-#| "The Bonobo implementation ID of the applet - e.g. \"OAFIID:"
-#| "GNOME_ClockApplet\". This key is only relevant if the object_type key is "
-#| "\"bonobo-applet\"."
 msgid ""
 "The implementation ID of the applet - e.g. \"ClockAppletFactory::ClockApplet"
 "\". This key is only relevant if the object_type key is \"bonobo-applet\"."
 msgstr ""
-"Identyfikator implementacji Bonobo apletu - np. \"OAFIID:GNOME_ClockApplet"
+"Identyfikator implementacji apletu - np. \"ClockAppletFactory::ClockApplet"
 "\". To ustawienie ma sens tylko, gdy typem obiektu jest \"bonobo-applet\"."
 
 #: ../gnome-panel/panel-object.schemas.in.h:20
@@ -2463,20 +2461,18 @@ msgstr ""
 "\"bonobo-applet\" (aplet bonobo), \"action-applet\" oraz \"menu-bar\" (pasek "
 "menu)."
 
+# pd
 #: ../gnome-panel/panel-object.schemas.in.h:26
-#, fuzzy
-#| msgid ""
-#| "The Bonobo implementation ID of the applet - e.g. \"OAFIID:"
-#| "GNOME_ClockApplet\". This key is only relevant if the object_type key is "
-#| "\"bonobo-applet\"."
 msgid ""
 "This key is deprecated, following the migration to a new library for "
 "applets. The Bonobo implementation ID of the applet - e.g. \"OAFIID:"
 "GNOME_ClockApplet\". This key is only relevant if the object_type key is "
 "\"bonobo-applet\"."
 msgstr ""
+"Ten klucz jest przestarzały, zgodnie z migracją do nowej biblioteki apletów. "
 "Identyfikator implementacji Bonobo apletu - np. \"OAFIID:GNOME_ClockApplet"
-"\". To ustawienie ma sens tylko, gdy typem obiektu jest \"bonobo-applet\"."
+"\". To ustawienie ma sens tylko, gdy klucz object_type wynosi "
+"\"bonobo-applet\"."
 
 #: ../gnome-panel/panel-object.schemas.in.h:27
 msgid "Tooltip displayed for drawer or menu"
@@ -3189,7 +3185,7 @@ msgid ""
 "specified by the image key will be used as background."
 msgstr ""
 "Określa rodzaj tła użytego w tym panelu. Dopuszczalne wartości dla tła to: "
-"\"gtk\" - domyślne tło widgetu GTK+, \"color\" (kolor) - kolor określony "
+"\"gtk\" - domyślne tło widżetu GTK+, \"color\" (kolor) - kolor określony "
 "przez opcję color, \"image\" (obraz) - obraz określony przez opcję image."
 
 #: ../gnome-panel/panel-toplevel.schemas.in.h:48
