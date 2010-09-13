@@ -10,7 +10,7 @@ msgstr ""
 "Report-Msgid-Bugs-To: http://bugzilla.gnome.org/enter_bug.cgi?product=gnome-"
 "color-manager\n"
 "POT-Creation-Date: 2010-08-31 14:43+0000\n"
-"PO-Revision-Date: 2010-03-29 20:40+0100\n"
+"PO-Revision-Date: 2010-09-13 16:40+0200\n"
 "Last-Translator: Piotr Drąg <piotrdrag@gmail.com>\n"
 "Language-Team: Polish <gnomepl@aviary.pl>\n"
 "MIME-Version: 1.0\n"
@@ -237,10 +237,11 @@ msgstr "Opcje debugowania"
 msgid "Show debugging options"
 msgstr "Wyświetla opcje debugowania"
 
+# pd
 #. TRANSLATORS: we use this mode at login as we're sure there are no previous settings to clear
 #: ../src/gcm-apply.c:54
 msgid "Do not attempt to clear previously applied settings"
-msgstr ""
+msgstr "Bez próby wyczyszczenie poprzednio zastosowanych ustawień"
 
 #. TRANSLATORS: title, default paramters needed to calibrate_argyll
 #: ../src/gcm-calibrate-argyll.c:433
@@ -687,25 +688,21 @@ msgstr ""
 "Urządzenie do mierzenia kolorów nie zostało zaprojektowane do obsługi "
 "kalibracji i profilowania projektorów."
 
+# pd
 #. TRANSLATORS: dialog title
 #: ../src/gcm-calibrate.c:483
-#, fuzzy
-#| msgid "Profile Graphs"
 msgid "Profile Precision"
-msgstr "Wykresy profilu"
+msgstr "Dokładność profilu"
 
+# pd
 #. TRANSLATORS: this is the message body for the chart selection
 #: ../src/gcm-calibrate.c:486
-#, fuzzy
-#| msgid ""
-#| "The high precision profiles also require more time for reading the color "
-#| "swatches."
 msgid ""
 "A higher precision profile provides higher accuracy in color matching but "
 "requires more time for reading the color patches."
 msgstr ""
-"Profile o wysokiej dokładności wymagają także więcej czasu na odczytanie "
-"próbek kolorów."
+"Profil o wyższej dokładności dostarcza lepsze dopasowanie kolorów, ale "
+"wymaga także więcej czasu na odczytanie próbek kolorów."
 
 #. TRANSLATORS: this is the message body for the chart selection
 #: ../src/gcm-calibrate.c:489
@@ -713,16 +710,12 @@ msgid "For a typical workflow, a normal precision profile is sufficient."
 msgstr ""
 "W typowych przypadkach profil o normalnej dokładności jest wystarczający."
 
+# pd
 #. TRANSLATORS: dialog message, preface
 #: ../src/gcm-calibrate.c:494
-#, fuzzy
-#| msgid ""
-#| "The high precision profiles also require more paper and time for reading "
-#| "the color swatches."
 msgid "The high precision profile also requires more paper and printer ink."
 msgstr ""
-"Profile o wysokiej dokładności wymagają także więcej papieru i czasu na "
-"odczytanie próbek kolorów."
+"Profil o wysokiej dokładności wymaga także więcej papieru i tuszu drukarki."
 
 #. TRANSLATORS: this is the formattted custom profile description. "Custom" refers to the fact that it's user generated
 #: ../src/gcm-calibrate.c:568
@@ -791,14 +784,13 @@ msgstr ""
 msgid "Display setup"
 msgstr "Ustawienia ekranu"
 
+# pd
 #. TRANSLATORS: dialog for file->open dialog. A calibration target image is the
 #. * aquired image of the calibration target, e.g. an image file that looks
 #. * a bit like this: http://www.colorreference.de/targets/target.jpg
 #: ../src/gcm-calibrate.c:702
-#, fuzzy
-#| msgid "Recalibration required"
 msgid "Select calibration target image"
-msgstr "Wymagana jest ponowna kalibracja"
+msgstr "Proszę wybrać obraz docelowy kalibracji"
 
 #. TRANSLATORS: filter name on the file->open dialog
 #: ../src/gcm-calibrate.c:715
@@ -835,20 +827,17 @@ msgstr "Otwarcie"
 msgid "Please choose a profiling mode"
 msgstr "Proszę wybrać tryb profilowania"
 
+# pd
 #. TRANSLATORS: dialog message. Test patches are pages of colored squares
 #. * that are printed with a printer, and then read in with a calibration
 #. * device to create a profile
 #: ../src/gcm-calibrate.c:884
-#, fuzzy
-#| msgid ""
-#| "Please indicate if you want to profile a local printer, generate some "
-#| "reference images, or process some reference images."
 msgid ""
 "Please indicate if you want to profile a local printer, generate some test "
 "patches, or profile using existing test patches."
 msgstr ""
-"Proszę wskazać, czy ma być profilowana lokalna drukarka, utworzyć obrazy "
-"referencyjne czy przetworzyć takie obrazy."
+"Proszę wskazać, czy ma być profilowana lokalna drukarka, utworzyć łaty "
+"referencyjne czy utworzyć profil używając istniejących łat testujących."
 
 #. TRANSLATORS: title, usually we can tell based on the EDID data or output name
 #: ../src/gcm-calibrate.c:996
@@ -889,28 +878,24 @@ msgstr "Nie instaluj"
 msgid "Install"
 msgstr "Zainstaluj"
 
+# pd
 #. TRANSLATORS: this is the window title for when the user selects the calibration target.
 #. * A calibration target is an accuratly printed grid of colors, for instance:
 #. * the IT 8.7 targets available here: http://www.targets.coloraid.de/
 #: ../src/gcm-calibrate.c:1027
-#, fuzzy
-#| msgid "Please select chart type"
 msgid "Please select a calibration target"
-msgstr "Proszę wybrać typ wykresu"
+msgstr "Proszę wybrać docelową kalibrację"
 
+# pd
 #. TRANSLATORS: dialog message, preface. A calibration target looks like
 #. * this: http://www.colorreference.de/targets/target.jpg
 #: ../src/gcm-calibrate.c:1032
-#, fuzzy
-#| msgid ""
-#| "Before profiling the device, you have to manually capture an image of a "
-#| "calibrated target and save it as a TIFF image file."
 msgid ""
 "Before profiling the device, you have to manually capture an image of a "
 "calibration target and save it as a TIFF image file."
 msgstr ""
-"Przed profilowaniem urządzenia należy ręcznie utworzyć obraz skalibrowanego "
-"celu i zapisać go jako plik obrazu TIFF."
+"Przed profilowaniem urządzenia należy ręcznie utworzyć obraz celu kalibracji "
+"i zapisać go jako plik obrazu TIFF."
 
 #. TRANSLATORS: dialog message, preface
 #: ../src/gcm-calibrate.c:1037
@@ -948,15 +933,14 @@ msgstr ""
 "Aby uzyskać najlepsze wyniki, cel referencyjny powinien być nowszy niż 2 "
 "lata."
 
+# pd
 #. TRANSLATORS: this is the message body for the chart selection
 #: ../src/gcm-calibrate.c:1053
-#, fuzzy
-#| msgid ""
-#| "Please select the chart type which corresponds to your reference file."
 msgid ""
 "Please select the calibration target type which corresponds to your "
 "reference file."
-msgstr "Proszę wybrać typ wykresu odpowiadający plikowi referencyjnemu."
+msgstr ""
+"Proszę wybrać typ docelowy kalibracji odpowiadający plikowi referencyjnemu."
 
 #. TRANSLATORS: this is probably a brand name
 #: ../src/gcm-calibrate-dialog.c:567
@@ -1370,87 +1354,63 @@ msgstr "Instalator systemowych profilów ICC Menedżera kolorów środowiska GNO
 
 #. TRANSLATORS: user did not specify a valid filename
 #: ../src/gcm-install-system-wide.c:149
-#, fuzzy
-#| msgid "You need to specify exactly one ICC profile filename"
 msgid "You need to specify exactly one ICC profile filename."
-msgstr "Należy podać dokładnie jedną nazwę pliku profilu ICC"
+msgstr "Należy podać dokładnie jedną nazwę pliku profilu ICC."
 
 #. TRANSLATORS: user did not specify a valid device ID
 #: ../src/gcm-install-system-wide.c:157
-#, fuzzy
-#| msgid "You need to specify exactly one device ID"
 msgid "You need to specify exactly one device ID."
-msgstr "Należy podać dokładnie jeden identyfikator urządzenia"
+msgstr "Należy podać dokładnie jeden identyfikator urządzenia."
 
 #. TRANSLATORS: user did not specify a valid device ID
 #: ../src/gcm-install-system-wide.c:166
-#, fuzzy
-#| msgid "The device ID has invalid characters"
 msgid "The device ID has invalid characters."
-msgstr "Identyfikator urządzenia posiada nieprawidłowe znaki"
+msgstr "Identyfikator urządzenia posiada nieprawidłowe znaki."
 
 #. TRANSLATORS: only able to install profiles as root
 #: ../src/gcm-install-system-wide.c:176
-#, fuzzy
-#| msgid "This program can only be used by the root user"
 msgid "This program can only be used by the root user."
-msgstr "Ten program może być używany tylko przez użytkownika root"
+msgstr "Ten program może być używany tylko przez użytkownika root."
 
 #. TRANSLATORS: only able to install profiles with an absolute path
 #: ../src/gcm-install-system-wide.c:185
-#, fuzzy
-#| msgid "The source filename must be absolute"
 msgid "The source filename must be absolute."
-msgstr "Nazwa pliku źródłowego musi być bezwzględna"
+msgstr "Nazwa pliku źródłowego musi być bezwzględna."
 
 #. TRANSLATORS: error details
 #: ../src/gcm-install-system-wide.c:196
-#, fuzzy
-#| msgid "Failed to get content type"
 msgid "Failed to get content type:"
-msgstr "Uzyskanie typu zawartości się nie powiodło"
+msgstr "Uzyskanie typu zawartości się nie powiodło:"
 
 #. TRANSLATORS: the content type is the detected type of file
 #: ../src/gcm-install-system-wide.c:206
-#, fuzzy
-#| msgid "Content type was incorrect"
 msgid "Content type was incorrect:"
-msgstr "Typ zawartości był niepoprawny"
+msgstr "Typ zawartości był niepoprawny:"
 
 #. TRANSLATORS: the program must never be directly run
 #: ../src/gcm-install-system-wide.c:215
-#, fuzzy
-#| msgid "This program must only be run through pkexec"
 msgid "This program must only be run through pkexec."
-msgstr "Ten program może być wykonywany tylko przez pkexec"
+msgstr "Ten program może być wykonywany tylko przez pkexec."
 
 #. TRANSLATORS: PolicyKit has gone all insane on us, and we refuse to parse junk
 #: ../src/gcm-install-system-wide.c:224
-#, fuzzy
-#| msgid "PKEXEC_UID must be set to an integer value"
 msgid "PKEXEC_UID must be set to an integer value."
-msgstr "Zmienna PKEXEC_UID musi być ustawiona na wartość całkowitą"
+msgstr "Zmienna PKEXEC_UID musi być ustawiona na wartość całkowitą."
 
 #. TRANSLATORS: we are complaining that a file must be really owned by the user who called this program
 #: ../src/gcm-install-system-wide.c:233
-#, fuzzy
-#| msgid "The ICC profile must be owned by you"
 msgid "The ICC profile must be owned by the user."
-msgstr "Użytkownik musi być właścicielem pliku profilu ICC"
+msgstr "Użytkownik musi być właścicielem pliku profilu ICC."
 
 #. TRANSLATORS: only able to install profiles with an absolute path
 #: ../src/gcm-install-system-wide.c:246
-#, fuzzy
-#| msgid "The destination filename must be absolute"
 msgid "The destination filename must be absolute."
-msgstr "Nazwa pliku docelowego musi być bezwzględna"
+msgstr "Nazwa pliku docelowego musi być bezwzględna."
 
 #. TRANSLATORS: error details
 #: ../src/gcm-install-system-wide.c:256
-#, fuzzy
-#| msgid "Failed to copy"
 msgid "Failed to copy:"
-msgstr "Skopiowanie się nie powiodło"
+msgstr "Skopiowanie się nie powiodło:"
 
 #. TRANSLATORS: could not save for all users
 #: ../src/gcm-prefs.c:152
