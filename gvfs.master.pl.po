@@ -10,7 +10,7 @@ msgstr ""
 "Report-Msgid-Bugs-To: http://bugzilla.gnome.org/enter_bug.cgi?"
 "product=gvfs&component=general\n"
 "POT-Creation-Date: 2010-07-01 10:56+0000\n"
-"PO-Revision-Date: 2010-02-24 18:58+0100\n"
+"PO-Revision-Date: 2010-09-13 15:29+0200\n"
 "Last-Translator: Piotr Drąg <piotrdrag@gmail.com>\n"
 "Language-Team: Polish <gnomepl@aviary.pl>\n"
 "MIME-Version: 1.0\n"
@@ -340,9 +340,10 @@ msgstr ""
 msgid "Unhandled libimobiledevice error (%d)"
 msgstr "Nieobsłużony błąd biblioteki libimobiledevice (%d)"
 
+# pd
 #: ../daemon/gvfsbackendafc.c:272
 msgid "Try again"
-msgstr ""
+msgstr "Spróbuj ponownie"
 
 #: ../daemon/gvfsbackendafc.c:290 ../daemon/gvfsbackendarchive.c:536
 #: ../daemon/gvfsbackendarchive.c:565 ../daemon/gvfsbackenddav.c:1631
@@ -371,6 +372,7 @@ msgstr "Urządzenie przenośne firmy Apple"
 msgid "%s (%s)"
 msgstr "%s (%s)"
 
+# pd
 #. translators:
 #. * %s is the device name. 'Try again' is the caption of the button
 #. * shown in the dialog which is defined above.
@@ -380,6 +382,8 @@ msgid ""
 "Device '%s' is password protected. Enter the password on the device and "
 "click 'Try again'."
 msgstr ""
+"Urządzenie \"%s\" jest chronione hasłem. Proszę wprowadzić hasło dla "
+"urządzenia i kliknąć przycisk \"Spróbuj ponownie\"."
 
 #: ../daemon/gvfsbackendafc.c:540 ../daemon/gvfsbackendarchive.c:632
 #: ../daemon/gvfsbackendcomputer.c:645 ../daemon/gvfsbackendgphoto2.c:1886
@@ -1072,29 +1076,29 @@ msgstr "Nie można uruchomić programu ssh: %s"
 msgid "Timed out when logging in"
 msgstr "Przekroczono czas oczekiwania podczas logowania do"
 
+# pd
 #: ../daemon/gvfsbackendsftp.c:960
-#, fuzzy, c-format
-#| msgid "Enter password for ftp as %s on %s"
+#, c-format
 msgid "Enter passphrase for key for ssh as %s on %s"
-msgstr "Proszę wprowadzić hasło dla FTP jako %s na %s"
+msgstr "Proszę wprowadzić hasło dla klucza dla SSH jako %s na %s"
 
+# pd
 #: ../daemon/gvfsbackendsftp.c:962
-#, fuzzy, c-format
-#| msgid "Enter password for ftp as %s on %s"
+#, c-format
 msgid "Enter password for ssh as %s on %s"
-msgstr "Proszę wprowadzić hasło dla FTP jako %s na %s"
+msgstr "Proszę wprowadzić hasło dla SSH jako %s na %s"
 
+# pd
 #: ../daemon/gvfsbackendsftp.c:966
-#, fuzzy, c-format
-#| msgid "Enter passphrase for key"
+#, c-format
 msgid "Enter passphrase for key for ssh on %s"
-msgstr "Proszę wprowadzić hasło dla klucza"
+msgstr "Proszę wprowadzić hasło dla klucza dla SSH na %s"
 
+# pd
 #: ../daemon/gvfsbackendsftp.c:968
-#, fuzzy, c-format
-#| msgid "Enter password for ftp on %s"
+#, c-format
 msgid "Enter password for ssh on %s"
-msgstr "Proszę wprowadzić hasło dla FTP na %s"
+msgstr "Proszę wprowadzić hasło dla SSH na %s"
 
 #: ../daemon/gvfsbackendsftp.c:1048
 msgid "Can't send password"
@@ -2305,16 +2309,12 @@ msgstr ""
 "DOCELOWEGO"
 
 #: ../programs/gvfs-set-attribute.c:36
-#, fuzzy
-#| msgid ""
-#| "attribute type [string, bytestring, boolean, uint32, int32, uint64, "
-#| "int64, stringv]"
 msgid ""
 "attribute type [string, bytestring, boolean, uint32, int32, uint64, int64, "
 "stringv, unset]"
 msgstr ""
 "typ atrybutu [string, bytestring, boolean, uint32, int32, uint64, int64, "
-"stringv]"
+"stringv, unset]"
 
 #: ../programs/gvfs-set-attribute.c:119
 msgid " <location> <attribute> <values> - set attribute"
@@ -2330,11 +2330,11 @@ msgstr "Nie podano położenia\n"
 msgid "Attribute not specified\n"
 msgstr "Nie podano atrybutu\n"
 
+# pd
 #: ../programs/gvfs-set-attribute.c:154
-#, fuzzy, c-format
-#| msgid "Attribute not specified\n"
+#, c-format
 msgid "Value not specified\n"
-msgstr "Nie podano atrybutu\n"
+msgstr "Nie podano wartości\n"
 
 #: ../programs/gvfs-set-attribute.c:195
 #, c-format
