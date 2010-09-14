@@ -7,22 +7,21 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: gnome-keyring\n"
-"Report-Msgid-Bugs-To: http://bugzilla.gnome.org/enter_bug.cgi?product=gnome-"
-"keyring&component=general\n"
+"Report-Msgid-Bugs-To: http://bugzilla.gnome.org/enter_bug.cgi?product=gnome-keyring&component=general\n"
 "POT-Creation-Date: 2010-08-29 13:20+0000\n"
-"PO-Revision-Date: 2010-09-13 16:48+0200\n"
-"Last-Translator: Piotr Drąg <piotrdrag@gmail.com>\n"
+"PO-Revision-Date: 2010-09-14 18:57+0100\n"
+"Last-Translator: Tomasz Dominikowski <dominikowski@gmail.com>\n"
 "Language-Team: Polish <gnomepl@aviary.pl>\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"Plural-Forms: nplurals=3; plural=(n==1 ? 0 : n%10>=2 && n%10<=4 && (n%100<10 "
-"|| n%100>=20) ? 1 : 2);\n"
+"Plural-Forms: nplurals=3; plural=(n==1 ? 0 : n%10>=2 && n%10<=4 && (n%100<10 || n%100>=20) ? 1 : 2);\n"
 "X-Poedit-Language: Polish\n"
 "X-Poedit-Country: Poland\n"
 
 #. TRANSLATORS: This is the label for an keyring created without a label
-#: ../daemon/dbus/gkd-secret-change.c:78 ../daemon/dbus/gkd-secret-create.c:74
+#: ../daemon/dbus/gkd-secret-change.c:78
+#: ../daemon/dbus/gkd-secret-create.c:74
 #: ../pkcs11/secret-store/gkm-secret-collection.c:325
 #: ../pkcs11/wrap-layer/gkm-wrap-login.c:317
 #: ../pkcs11/wrap-layer/gkm-wrap-prompt.c:763
@@ -40,12 +39,8 @@ msgstr "Proszę wybrać nowe hasło dla bazy kluczy \"%s\""
 
 #: ../daemon/dbus/gkd-secret-change.c:92
 #, c-format
-msgid ""
-"An application wants to change the password for the '%s' keyring. Choose the "
-"new password you want to use for it."
-msgstr ""
-"Program wymaga zmiany hasła dla bazy kluczy \"%s\". Należy wprowadzić hasło, "
-"jakie będzie z nią używane."
+msgid "An application wants to change the password for the '%s' keyring. Choose the new password you want to use for it."
+msgstr "Program wymaga zmiany hasła dla bazy kluczy \"%s\". Należy wprowadzić hasło, jakie będzie z nią używane."
 
 #: ../daemon/dbus/gkd-secret-change.c:111
 msgid "The original password was incorrect"
@@ -61,12 +56,8 @@ msgstr "Proszę wprowadzić hasło dla nowej bazy kluczy"
 
 #: ../daemon/dbus/gkd-secret-create.c:81
 #, c-format
-msgid ""
-"An application wants to create a new keyring called '%s'. Choose the "
-"password you want to use for it."
-msgstr ""
-"Program wymaga utworzenia nowej bazy kluczy o nazwie \"%s\". Należy "
-"wprowadzić hasło, jakie będzie z nią używane."
+msgid "An application wants to create a new keyring called '%s'. Choose the password you want to use for it."
+msgstr "Program wymaga utworzenia nowej bazy kluczy o nazwie \"%s\". Należy wprowadzić hasło, jakie będzie z nią używane."
 
 #: ../daemon/gnome-keyring-pkcs11.desktop.in.in.h:1
 msgid "Certificate and Key Storage"
@@ -179,7 +170,8 @@ msgstr "Nazwa powszechna"
 msgid "Surname"
 msgstr "Nazwisko"
 
-#: ../egg/egg-oid.c:69 ../gcr/gcr-certificate-basics-widget.ui.h:18
+#: ../egg/egg-oid.c:69
+#: ../gcr/gcr-certificate-basics-widget.ui.h:18
 #: ../gcr/gcr-certificate-details-widget.c:318
 msgid "Serial Number"
 msgstr "Numer seryjny"
@@ -263,9 +255,7 @@ msgstr "SHA1 z DSA"
 #: ../egg/egg-spawn.c:273
 #, c-format
 msgid "Unexpected error in select() reading data from a child process (%s)"
-msgstr ""
-"Nieoczekiwany błąd w select() podczas odczytywania danych z procesu "
-"potomnego (%s)"
+msgstr "Nieoczekiwany błąd w select() podczas odczytywania danych z procesu potomnego (%s)"
 
 #: ../egg/egg-spawn.c:320
 #, c-format
@@ -298,8 +288,7 @@ msgstr "<b>Wydany dla</b>"
 
 #: ../gcr/gcr-certificate-basics-widget.ui.h:5
 msgid "<b>This certificate has been verified for the following uses:</b>"
-msgstr ""
-"<b>Ten certyfikat został sprawdzony dla następujących użytkowników:</b>"
+msgstr "<b>Ten certyfikat został sprawdzony dla następujących użytkowników:</b>"
 
 #: ../gcr/gcr-certificate-basics-widget.ui.h:6
 msgid "<b>Validity</b>"
@@ -431,7 +420,8 @@ msgstr "Parametry klucza"
 msgid "Key Size"
 msgstr "Rozmiar klucza"
 
-#: ../gcr/gcr-certificate-details-widget.c:378 ../gcr/gcr-parser.c:203
+#: ../gcr/gcr-certificate-details-widget.c:378
+#: ../gcr/gcr-parser.c:203
 msgid "Public Key"
 msgstr "Klucz publiczny"
 
@@ -442,8 +432,7 @@ msgstr "Odciski palców"
 
 #: ../gcr/gcr-import-dialog.ui.h:1
 msgid "<span size='large' weight='bold'>Import Certificates and Keys</span>"
-msgstr ""
-"<span size='large' weight='bold'>Importowanie certyfikatów i kluczy</span>"
+msgstr "<span size='large' weight='bold'>Importowanie certyfikatów i kluczy</span>"
 
 #: ../gcr/gcr-import-dialog.ui.h:2
 msgid "Import Into:"
@@ -469,7 +458,9 @@ msgstr "Zablokowanie tej bazy kluczy po wylogowaniu"
 msgid "minutes"
 msgstr "minut"
 
-#: ../gcr/gcr-importer.c:163 ../gcr/gcr-parser.c:1565 ../gp11/gp11-misc.c:98
+#: ../gcr/gcr-importer.c:163
+#: ../gcr/gcr-parser.c:1565
+#: ../gp11/gp11-misc.c:98
 msgid "The operation was cancelled"
 msgstr "Działanie zostało anulowane"
 
@@ -484,19 +475,20 @@ msgstr "Importowanie certyfikatów/kluczy"
 
 #: ../gcr/gcr-importer.c:411
 msgid "Choose a location to store the imported certificates/keys."
-msgstr ""
-"Proszę wybrać położenie do przechowywania zaimportowanych certyfikatów/"
-"kluczy."
+msgstr "Proszę wybrać położenie do przechowywania zaimportowanych certyfikatów/kluczy."
 
-#: ../gcr/gcr-importer.c:436 ../pkcs11/wrap-layer/gkm-wrap-prompt.c:676
+#: ../gcr/gcr-importer.c:436
+#: ../pkcs11/wrap-layer/gkm-wrap-prompt.c:676
 msgid "Enter password to unlock the private key"
 msgstr "Proszę wprowadzić hasło, aby odblokować klucz prywatny"
 
-#: ../gcr/gcr-importer.c:438 ../pkcs11/wrap-layer/gkm-wrap-prompt.c:678
+#: ../gcr/gcr-importer.c:438
+#: ../pkcs11/wrap-layer/gkm-wrap-prompt.c:678
 msgid "Enter password to unlock the certificate"
 msgstr "Proszę wprowadzić hasło, aby odblokować certyfikat"
 
-#: ../gcr/gcr-importer.c:440 ../pkcs11/wrap-layer/gkm-wrap-prompt.c:682
+#: ../gcr/gcr-importer.c:440
+#: ../pkcs11/wrap-layer/gkm-wrap-prompt.c:682
 msgid "Enter password to unlock"
 msgstr "Proszę wprowadzić hasło, aby odblokować"
 
@@ -902,19 +894,12 @@ msgid "Enter password to unlock your login keyring"
 msgstr "Proszę wprowadzić hasło, aby odblokować bazę kluczy konta"
 
 #: ../pkcs11/wrap-layer/gkm-wrap-prompt.c:612
-msgid ""
-"The password you use to log in to your computer no longer matches that of "
-"your login keyring."
-msgstr ""
-"Hasło używane do zalogowania się do komputera nie pasuje do hasła bazy "
-"kluczy konta."
+msgid "The password you use to log in to your computer no longer matches that of your login keyring."
+msgstr "Hasło używane do zalogowania się do komputera nie pasuje do hasła bazy kluczy konta."
 
 #: ../pkcs11/wrap-layer/gkm-wrap-prompt.c:614
-msgid ""
-"The login keyring did not get unlocked when you logged into your computer."
-msgstr ""
-"Baza kluczy konta nie została automatycznie odblokowana podczas zalogowania "
-"się do tego komputera."
+msgid "The login keyring did not get unlocked when you logged into your computer."
+msgstr "Baza kluczy konta nie została automatycznie odblokowana podczas zalogowania się do tego komputera."
 
 #: ../pkcs11/wrap-layer/gkm-wrap-prompt.c:632
 msgid "Unlock Keyring"
@@ -928,8 +913,7 @@ msgstr "Proszę wprowadzić hasło do bazy kluczy \"%s\", aby ją odblokować"
 #: ../pkcs11/wrap-layer/gkm-wrap-prompt.c:638
 #, c-format
 msgid "An application wants access to the keyring '%s', but it is locked"
-msgstr ""
-"Program wymaga dostępu do bazy kluczy \"%s\", ale baza jest zablokowana"
+msgstr "Program wymaga dostępu do bazy kluczy \"%s\", ale baza jest zablokowana"
 
 #: ../pkcs11/wrap-layer/gkm-wrap-prompt.c:661
 msgid "Unlock private key"
@@ -955,8 +939,7 @@ msgstr "Proszę wprowadzić hasło, aby odblokować klucz publiczny"
 #: ../pkcs11/wrap-layer/gkm-wrap-prompt.c:692
 #, c-format
 msgid "An application wants access to the private key '%s', but it is locked"
-msgstr ""
-"Program wymaga dostępu do klucza prywatnego \"%s\", ale jest zablokowany"
+msgstr "Program wymaga dostępu do klucza prywatnego \"%s\", ale jest zablokowany"
 
 #. TRANSLATORS: The certificate is locked
 #: ../pkcs11/wrap-layer/gkm-wrap-prompt.c:695
@@ -968,8 +951,7 @@ msgstr "Program wymaga dostępu do certyfikatu \"%s\", ale jest zablokowany"
 #: ../pkcs11/wrap-layer/gkm-wrap-prompt.c:698
 #, c-format
 msgid "An application wants access to the public key '%s', but it is locked"
-msgstr ""
-"Program wymaga dostępu do klucza publicznego \"%s\", ale jest zablokowany"
+msgstr "Program wymaga dostępu do klucza publicznego \"%s\", ale jest zablokowany"
 
 #. TRANSLATORS: The object '%s' is locked
 #: ../pkcs11/wrap-layer/gkm-wrap-prompt.c:701
@@ -983,18 +965,13 @@ msgstr "Odblokowanie przechowalni certyfikatów/kluczy"
 
 #: ../pkcs11/wrap-layer/gkm-wrap-prompt.c:797
 msgid "Enter password to unlock the certificate/key storage"
-msgstr ""
-"Proszę wprowadzić hasło, aby odblokować przechowalnię certyfikatów/kluczy"
+msgstr "Proszę wprowadzić hasło, aby odblokować przechowalnię certyfikatów/kluczy"
 
 #. TRANSLATORS: The storage is locked, and needs unlocking before the application can use it.
 #: ../pkcs11/wrap-layer/gkm-wrap-prompt.c:800
 #, c-format
-msgid ""
-"An application wants access to the certificate/key storage '%s', but it is "
-"locked"
-msgstr ""
-"Program wymaga dostępu do przechowalni certyfikatów/kluczy \"%s\", ale jest "
-"zablokowana"
+msgid "An application wants access to the certificate/key storage '%s', but it is locked"
+msgstr "Program wymaga dostępu do przechowalni certyfikatów/kluczy \"%s\", ale jest zablokowana"
 
 #: ../pkcs11/wrap-layer/gkm-wrap-prompt.c:1035
 msgid "New Password Required"
@@ -1006,12 +983,8 @@ msgstr "Wymagane jest nowe hasło do bezpiecznej przechowalni"
 
 #: ../pkcs11/wrap-layer/gkm-wrap-prompt.c:1038
 #, c-format
-msgid ""
-"In order to prepare '%s' for storage of certificates or keys, a password is "
-"required"
-msgstr ""
-"Wymagane jest hasło, aby przygotować \"%s\" do przechowywania certyfikatów "
-"lub kluczy"
+msgid "In order to prepare '%s' for storage of certificates or keys, a password is required"
+msgstr "Wymagane jest hasło, aby przygotować \"%s\" do przechowywania certyfikatów lub kluczy"
 
 # pd
 #: ../pkcs11/wrap-layer/gkm-wrap-prompt.c:1160
@@ -1024,10 +997,10 @@ msgid "Change password for secure storage"
 msgstr "Zmiana hasła do bezpiecznej przechowalni"
 
 # pd
+# rev: "oryginalne" może być zrozumiane jako bardzo wymyślne
 #: ../pkcs11/wrap-layer/gkm-wrap-prompt.c:1163
 #, c-format
-msgid ""
-"To change the password for '%s', the original and new passwords are required"
+msgid "To change the password for '%s', the original and new passwords are required"
 msgstr "Wymagane jest oryginalne i nowe hasło, aby je zmienić dla \"%s\""
 
 #: ../ui/gku-prompt-tool.c:547
@@ -1035,13 +1008,8 @@ msgid "Store passwords unencrypted?"
 msgstr "Przechowywać hasła bez szyfrowania?"
 
 #: ../ui/gku-prompt-tool.c:548
-msgid ""
-"By choosing to use a blank password, your stored passwords will not be "
-"safely encrypted. They will be accessible by anyone with access to your "
-"files."
-msgstr ""
-"Puste hasło oznacza niechronione przechowywanie haseł. Będą one dostępne dla "
-"każdego, kto będzie miał dostęp do plików tego konta."
+msgid "By choosing to use a blank password, your stored passwords will not be safely encrypted. They will be accessible by anyone with access to your files."
+msgstr "Puste hasło oznacza niechronione przechowywanie haseł. Będą one dostępne dla każdego, kto będzie miał dostęp do plików tego konta."
 
 #: ../ui/gku-prompt-tool.c:555
 msgid "Use Unsafe Storage"
@@ -1086,3 +1054,4 @@ msgstr "P_oprzednie hasło:"
 #: ../ui/gku-prompt.ui.h:8
 msgid "_Password:"
 msgstr "_Hasło:"
+
