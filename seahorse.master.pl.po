@@ -7,17 +7,15 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: seahorse\n"
-"Report-Msgid-Bugs-To: http://bugzilla.gnome.org/enter_bug.cgi?"
-"product=seahorse&component=general\n"
+"Report-Msgid-Bugs-To: http://bugzilla.gnome.org/enter_bug.cgi?product=seahorse&component=general\n"
 "POT-Creation-Date: 2010-07-19 20:50+0000\n"
-"PO-Revision-Date: 2010-09-13 15:50+0200\n"
-"Last-Translator: Piotr Drąg <piotrdrag@gmail.com>\n"
+"PO-Revision-Date: 2010-09-14 17:46+0100\n"
+"Last-Translator: Tomasz Dominikowski <dominikowski@gmail.com>\n"
 "Language-Team: Polish <gnomepl@aviary.pl>\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"Plural-Forms: nplurals=3; plural=(n==1 ? 0 : n%10>=2 && n%10<=4 && (n%100<10 "
-"|| n%100>=20) ? 1 : 2);\n"
+"Plural-Forms: nplurals=3; plural=(n==1 ? 0 : n%10>=2 && n%10<=4 && (n%100<10 || n%100>=20) ? 1 : 2);\n"
 "X-Poedit-Language: Polish\n"
 "X-Poedit-Country: Poland\n"
 
@@ -37,7 +35,8 @@ msgstr "nie można utworzyć nowej grupy procesów"
 msgid "Encryption Daemon (Seahorse)"
 msgstr "Usługa szyfrowania (Seahorse)"
 
-#: ../daemon/seahorse-service.c:163 ../daemon/seahorse-service.c:277
+#: ../daemon/seahorse-service.c:163
+#: ../daemon/seahorse-service.c:277
 #, c-format
 msgid "Invalid or unrecognized key type: %s"
 msgstr "Nieprawidłowy lub nierozpoznany typ klucza: %s"
@@ -47,13 +46,13 @@ msgstr "Nieprawidłowy lub nierozpoznany typ klucza: %s"
 msgid "This keytype is not supported: %s"
 msgstr "Ten typ kluczy nie jest obsługiwany: %s"
 
-# pd
 #: ../daemon/seahorse-service.c:241
 #, c-format
 msgid "Support for this feature was not enabled at build time"
 msgstr "Obsługa tej funkcji nie została włączona podczas kompilacji programu"
 
-#: ../daemon/seahorse-service.c:341 ../daemon/seahorse-service-keyset.c:180
+#: ../daemon/seahorse-service.c:341
+#: ../daemon/seahorse-service-keyset.c:180
 #: ../daemon/seahorse-service-keyset.c:223
 #, c-format
 msgid "Invalid or unrecognized key: %s"
@@ -107,8 +106,7 @@ msgstr "Nieznany podpis"
 
 #: ../daemon/seahorse-service-crypto.c:236
 msgid "Bad or forged signature. The signed data was modified."
-msgstr ""
-"Nieprawidłowy lub podrobiony podpis. Podpisane dane zostały zmodyfikowane."
+msgstr "Nieprawidłowy lub podrobiony podpis. Podpisane dane zostały zmodyfikowane."
 
 #: ../daemon/seahorse-service-crypto.c:237
 msgid "Bad Signature"
@@ -182,7 +180,8 @@ msgstr "Nieprawidłowy klucz do weryfikowania: %s"
 msgid "Invalid key id: %s"
 msgstr "Nieprawidłowy identyfikator klucza: %s"
 
-#: ../daemon/seahorse-sharing.c:84 ../daemon/seahorse-sharing.c:269
+#: ../daemon/seahorse-sharing.c:84
+#: ../daemon/seahorse-sharing.c:269
 msgid "Couldn't share keys"
 msgstr "Nie można udostępnić kluczy"
 
@@ -201,13 +200,8 @@ msgid "%s's encryption keys"
 msgstr "Klucze szyfrujące dla %s"
 
 #: ../data/seahorse.schemas.in.h:1
-msgid ""
-"A list of key server URIs to search for remote PGP keys. In later versions a "
-"display name can be included, by appending a space and then the name."
-msgstr ""
-"Lista adresów serwerów kluczy, na których będą wyszukiwane zdalne klucze "
-"PGP. W późniejszych wersjach będzie możliwe dodawanie nazw, poprzez "
-"dopisanie spacji a następnie nazwy."
+msgid "A list of key server URIs to search for remote PGP keys. In later versions a display name can be included, by appending a space and then the name."
+msgstr "Lista adresów serwerów kluczy, na których będą wyszukiwane zdalne klucze PGP. W późniejszych wersjach będzie możliwe dodawanie nazw, poprzez dopisanie spacji a następnie nazwy."
 
 #: ../data/seahorse.schemas.in.h:2
 msgid "Auto Retrieve Keys"
@@ -238,32 +232,20 @@ msgid "Enable DNS-SD sharing"
 msgstr "Włączenie udostępniania DNS-SD"
 
 #: ../data/seahorse.schemas.in.h:9
-msgid ""
-"Enables DNS-SD (Apple Bonjour) sharing of keys. seahorse-daemon must be "
-"running and must be built with HKP and DNS-SD support."
-msgstr ""
-"Włącza udostępnianie kluczy DNS-SD (Apple Bonjour). Usługa seahorse-daemon "
-"musi być uruchomiona i posiadać skompilowane wsparcie HKP i DNS-SD."
+msgid "Enables DNS-SD (Apple Bonjour) sharing of keys. seahorse-daemon must be running and must be built with HKP and DNS-SD support."
+msgstr "Włącza udostępnianie kluczy DNS-SD (Apple Bonjour). Usługa seahorse-daemon musi być uruchomiona i posiadać skompilowane wsparcie HKP i DNS-SD."
 
 #: ../data/seahorse.schemas.in.h:10
 msgid "ID of the default key"
 msgstr "Identyfikator domyślnego klucza"
 
 #: ../data/seahorse.schemas.in.h:11
-msgid ""
-"If set to true, then files encrypted with seahorse will be ASCII armor "
-"encoded."
-msgstr ""
-"Jeżeli zaznaczone, pliki szyfrowane za pomocą programu Seahorse będą "
-"zakodowane przy użyciu otoczki ASCII."
+msgid "If set to true, then files encrypted with seahorse will be ASCII armor encoded."
+msgstr "Jeżeli zaznaczone, pliki szyfrowane za pomocą programu Seahorse będą zakodowane przy użyciu otoczki ASCII."
 
 #: ../data/seahorse.schemas.in.h:12
-msgid ""
-"If set to true, then the default key will always be added to an encryption "
-"recipients list."
-msgstr ""
-"Jeżeli ustawione, wtedy domyślny klucz będzie zawsze dodawany do listy "
-"kodowanych odbiorców."
+msgid "If set to true, then the default key will always be added to an encryption recipients list."
+msgstr "Jeżeli ustawione, wtedy domyślny klucz będzie zawsze dodawany do listy kodowanych odbiorców."
 
 #: ../data/seahorse.schemas.in.h:13
 msgid "Last key server search pattern"
@@ -302,30 +284,16 @@ msgid "Show validity column in key manager"
 msgstr "Wyświetlanie kolumny poprawność w menedżerze kluczy"
 
 #: ../data/seahorse.schemas.in.h:22
-msgid ""
-"Specify the column to sort the recipients window by. Columns are: 'name' and "
-"'id'. Put a '-' in front of the column name to sort in descending order."
-msgstr ""
-"Określa kolumnę, według której będą sortowane wpisy okna odbiorców. Możliwe "
-"wartości to: \"name\" i \"id\". Znak \"-\" przed nazwą kolumny sortuje w "
-"kolejności malejącej."
+msgid "Specify the column to sort the recipients window by. Columns are: 'name' and 'id'. Put a '-' in front of the column name to sort in descending order."
+msgstr "Określa kolumnę, według której będą sortowane wpisy okna odbiorców. Możliwe wartości to: \"name\" i \"id\". Znak \"-\" przed nazwą kolumny sortuje w kolejności malejącej."
 
 #: ../data/seahorse.schemas.in.h:23
-msgid ""
-"Specify the column to sort the seahorse key manager main window by. Columns "
-"are: 'name', 'id', 'validity', 'expires', 'trust', and 'type'. Put a '-' in "
-"front of the column name to sort in descending order."
-msgstr ""
-"Określa kolumnę, według której będą sortowane wpisy głównego okna menedżera "
-"kluczy Seahorse. Możliwe wartości to: \"name\", \"id\", \"validity\", "
-"\"expires\", \"trust\" i \"type\". Znak \"-\" przed nazwą kolumny sortuje w "
-"kolejności malejącej."
+msgid "Specify the column to sort the seahorse key manager main window by. Columns are: 'name', 'id', 'validity', 'expires', 'trust', and 'type'. Put a '-' in front of the column name to sort in descending order."
+msgstr "Określa kolumnę, według której będą sortowane wpisy głównego okna menedżera kluczy Seahorse. Możliwe wartości to: \"name\", \"id\", \"validity\", \"expires\", \"trust\" i \"type\". Znak \"-\" przed nazwą kolumny sortuje w kolejności malejącej."
 
 #: ../data/seahorse.schemas.in.h:24
 msgid "The ID of the last secret key used to sign a message."
-msgstr ""
-"Identyfikator klucza prywatnego ostatnio używanego do podpisywania "
-"wiadomości."
+msgstr "Identyfikator klucza prywatnego ostatnio używanego do podpisywania wiadomości."
 
 #: ../data/seahorse.schemas.in.h:25
 msgid "The column to sort the recipients by"
@@ -336,43 +304,28 @@ msgid "The column to sort the seahorse keys by"
 msgstr "Kolumna, według której będą sortowane klucze Seahorse"
 
 #: ../data/seahorse.schemas.in.h:27
-msgid ""
-"The key server to publish PGP keys to. Or empty to suppress publishing of "
-"PGP keys."
-msgstr ""
-"Serwer kluczy, na którym będą publikowane klucze PGP. Wartość pusta oznacza, "
-"że publikowanie kluczy jest wyłączone."
+msgid "The key server to publish PGP keys to. Or empty to suppress publishing of PGP keys."
+msgstr "Serwer kluczy, na którym będą publikowane klucze PGP. Wartość pusta oznacza, że publikowanie kluczy jest wyłączone."
 
 #: ../data/seahorse.schemas.in.h:28
-msgid ""
-"The last key server a search was performed against or empty for all key "
-"servers."
-msgstr ""
-"Serwer kluczy, na którym ostatnio przeprowadzane było wyszukiwanie. Pusta "
-"wartość oznacza, że wyszukiwanie było przeprowadzane na wszystkich serwerach."
+msgid "The last key server a search was performed against or empty for all key servers."
+msgstr "Serwer kluczy, na którym ostatnio przeprowadzane było wyszukiwanie. Pusta wartość oznacza, że wyszukiwanie było przeprowadzane na wszystkich serwerach."
 
 #: ../data/seahorse.schemas.in.h:29
 msgid "The last search pattern searched for against a key server."
 msgstr "Ostatnio używane kryterium wyszukiwania na serwerze kluczy."
 
 #: ../data/seahorse.schemas.in.h:30
-msgid ""
-"This specifies the default key to use for certain operations, mainly signing."
-msgstr ""
-"Określa domyślny klucz używany przy określonych działaniach, głównie do "
-"podpisywania."
+msgid "This specifies the default key to use for certain operations, mainly signing."
+msgstr "Określa domyślny klucz używany przy określonych działaniach, głównie do podpisywania."
 
 #: ../data/seahorse.schemas.in.h:31
 msgid "Whether or not keys should be automatically retrieved from key servers."
 msgstr "Określa, czy klucze będą automatycznie pobierane z serwerów kluczy."
 
 #: ../data/seahorse.schemas.in.h:32
-msgid ""
-"Whether or not modified keys should be automatically synced with the default "
-"key server."
-msgstr ""
-"Określa, czy zmodyfikowane klucze będą automatycznie synchronizowane z "
-"domyślnym serwerem kluczy."
+msgid "Whether or not modified keys should be automatically synced with the default key server."
+msgstr "Określa, czy zmodyfikowane klucze będą automatycznie synchronizowane z domyślnym serwerem kluczy."
 
 #: ../data/seahorse.schemas.in.h:33
 msgid "Whether to always encrypt to default key"
@@ -391,12 +344,8 @@ msgid "New Keyring Name:"
 msgstr "Nazwa nowej bazy kluczy:"
 
 #: ../gkr/seahorse-add-keyring.xml.h:3
-msgid ""
-"Please choose a name for the new keyring. You will be prompted for an unlock "
-"password."
-msgstr ""
-"Proszę wybrać nazwę dla nowej bazy kluczy. Użytkownik będzie proszony o "
-"hasło odblokowujące."
+msgid "Please choose a name for the new keyring. You will be prompted for an unlock password."
+msgstr "Proszę wybrać nazwę dla nowej bazy kluczy. Użytkownik będzie proszony o hasło odblokowujące."
 
 #: ../gkr/seahorse-add-keyring.xml.h:4
 #: ../libseahorse/seahorse-add-keyserver.xml.h:5
@@ -404,7 +353,8 @@ msgstr ""
 msgid "The host name or address of the server."
 msgstr "Nazwa lub adres serwera."
 
-#: ../gkr/seahorse-gkr-add-item.c:61 ../gkr/seahorse-gkr-add-keyring.c:73
+#: ../gkr/seahorse-gkr-add-item.c:61
+#: ../gkr/seahorse-gkr-add-keyring.c:73
 msgid "Couldn't add keyring"
 msgstr "Nie można dodać bazy kluczy"
 
@@ -413,7 +363,8 @@ msgid "Add Password"
 msgstr "Dodanie hasła"
 
 #: ../gkr/seahorse-gkr-add-item.xml.h:2
-#: ../gkr/seahorse-gkr-item-properties.xml.h:17 ../pgp/seahorse-revoke.xml.h:5
+#: ../gkr/seahorse-gkr-item-properties.xml.h:17
+#: ../pgp/seahorse-revoke.xml.h:5
 msgid "_Description:"
 msgstr "_Opis:"
 
@@ -437,7 +388,8 @@ msgstr "Hasło witryny WWW"
 msgid "Network Password"
 msgstr "Hasło sieciowe"
 
-#: ../gkr/seahorse-gkr-item.c:474 ../gkr/seahorse-gkr-item-properties.c:107
+#: ../gkr/seahorse-gkr-item.c:474
+#: ../gkr/seahorse-gkr-item-properties.c:107
 msgid "Password"
 msgstr "Hasło"
 
@@ -622,24 +574,16 @@ msgid "_Lock"
 msgstr "_Zablokuj"
 
 #: ../gkr/seahorse-gkr-keyring-commands.c:289
-msgid ""
-"Lock the password storage keyring so a master password is required to unlock "
-"it."
-msgstr ""
-"Zablokowanie bazy haseł tak, by główne hasło było wymagane do jej "
-"odblokowania."
+msgid "Lock the password storage keyring so a master password is required to unlock it."
+msgstr "Zablokowanie bazy haseł tak, by główne hasło było wymagane do jej odblokowania."
 
 #: ../gkr/seahorse-gkr-keyring-commands.c:290
 msgid "_Unlock"
 msgstr "_Odblokuj"
 
 #: ../gkr/seahorse-gkr-keyring-commands.c:291
-msgid ""
-"Unlock the password storage keyring with a master password so it is "
-"available for use."
-msgstr ""
-"Odblokowanie bazy haseł za pomocą głównego hasła tak, by było możliwe jej "
-"użycie."
+msgid "Unlock the password storage keyring with a master password so it is available for use."
+msgstr "Odblokowanie bazy haseł za pomocą głównego hasła tak, by było możliwe jej użycie."
 
 #: ../gkr/seahorse-gkr-keyring-commands.c:292
 msgid "_Set as default"
@@ -712,7 +656,8 @@ msgstr "Element już istnieje"
 msgid "Internal error accessing gnome-keyring"
 msgstr "Błąd wewnętrzny podczas próby dostępu do programu gnome-keyring"
 
-#: ../gkr/seahorse-gkr-operation.c:238 ../gkr/seahorse-gkr-operation.c:264
+#: ../gkr/seahorse-gkr-operation.c:238
+#: ../gkr/seahorse-gkr-operation.c:264
 msgid "Saving item..."
 msgstr "Zapisywanie elementu..."
 
@@ -729,14 +674,8 @@ msgid "Listing password keyrings"
 msgstr "Tworzenie listy bazy haseł"
 
 #: ../libcryptui/cryptui.c:272
-msgid ""
-"No encryption keys were found with which to perform the operation you "
-"requested.  The program <b>Passwords and Encryption Keys</b> will now be "
-"started so that you may either create a key or import one."
-msgstr ""
-"Nie odnaleziono kluczy szyfrujących do wykonania żądanej operacji. Program "
-"<b>Hasła i klucze szyfrujące</b> zostanie teraz uruchomiony, aby można było "
-"utworzyć lub zaimportować klucz."
+msgid "No encryption keys were found with which to perform the operation you requested.  The program <b>Passwords and Encryption Keys</b> will now be started so that you may either create a key or import one."
+msgstr "Nie odnaleziono kluczy szyfrujących do wykonania żądanej operacji. Program <b>Hasła i klucze szyfrujące</b> zostanie teraz uruchomiony, aby można było utworzyć lub zaimportować klucz."
 
 #: ../libcryptui/cryptui-key-chooser.c:173
 msgid "All Keys"
@@ -969,7 +908,8 @@ msgstr "Wybór daty"
 msgid "Select the date from a calendar"
 msgstr "Wybór daty z kalendarza"
 
-#: ../libegg/egg-datetime.c:517 ../libegg/egg-datetime.c:2194
+#: ../libegg/egg-datetime.c:517
+#: ../libegg/egg-datetime.c:2194
 msgid "Time"
 msgstr "Czas"
 
@@ -992,12 +932,14 @@ msgstr "Wybór czasu z listy"
 msgid "24hr: no"
 msgstr "24hr: yes"
 
-#: ../libegg/egg-datetime.c:795 ../libegg/egg-datetime.c:1255
+#: ../libegg/egg-datetime.c:795
+#: ../libegg/egg-datetime.c:1255
 #: ../libegg/egg-datetime.c:1259
 msgid "AM"
 msgstr "AM"
 
-#: ../libegg/egg-datetime.c:797 ../libegg/egg-datetime.c:1256
+#: ../libegg/egg-datetime.c:797
+#: ../libegg/egg-datetime.c:1256
 #: ../libegg/egg-datetime.c:1263
 msgid "PM"
 msgstr "PM"
@@ -1068,9 +1010,7 @@ msgstr "Nierozpoznana opcja uruchamiania: %d"
 #: ../libegg/eggdesktopfile.c:1383
 #, c-format
 msgid "Can't pass document URIs to a 'Type=Link' desktop entry"
-msgstr ""
-"Nie można przekazać adresów URI dokumentów do pozycji pliku .desktop "
-"\"Type=Link\""
+msgstr "Nie można przekazać adresów URI dokumentów do pozycji pliku .desktop \"Type=Link\""
 
 #: ../libegg/eggdesktopfile.c:1404
 #, c-format
@@ -1093,7 +1033,8 @@ msgstr "PLIK"
 msgid "Specify session management ID"
 msgstr "Proszę określić identyfikator zarządzania sesją"
 
-#: ../libegg/eggsmclient.c:231 ../pgp/seahorse-pgp-key-properties.c:1314
+#: ../libegg/eggsmclient.c:231
+#: ../pgp/seahorse-pgp-key-properties.c:1314
 msgid "ID"
 msgstr "Identyfikator"
 
@@ -1200,12 +1141,8 @@ msgid "Not a valid Key Server address."
 msgstr "Nieprawidłowy adres serwera kluczy."
 
 #: ../libseahorse/seahorse-prefs.c:63
-msgid ""
-"For help contact your system adminstrator or the administrator of the key "
-"server."
-msgstr ""
-"Aby uzyskać pomoc, należy skontaktować się z administratorem systemu lub "
-"administratorem serwera kluczy."
+msgid "For help contact your system adminstrator or the administrator of the key server."
+msgstr "Aby uzyskać pomoc, należy skontaktować się z administratorem systemu lub administratorem serwera kluczy."
 
 #: ../libseahorse/seahorse-prefs.c:172
 msgid "URL"
@@ -1241,16 +1178,11 @@ msgstr "Preferencje"
 
 #: ../libseahorse/seahorse-prefs.xml.h:6
 msgid ""
-"Sharing your keys allows other people on your network to use the keys you've "
-"collected. This means they can automatically encrypt things for you or those "
-"you know, without you having to send them your key.\n"
+"Sharing your keys allows other people on your network to use the keys you've collected. This means they can automatically encrypt things for you or those you know, without you having to send them your key.\n"
 "\n"
 "<b>Note:</b> Your personal keys will not be compromised."
 msgstr ""
-"Udostępnianie kluczy umożliwia współdzielenie zebranych kluczy z innymi "
-"osobami w sieci lokalnej. Oznacza to, że mogą oni automatycznie szyfrować "
-"wiadomości i pliki dla ciebie lub twoich znajomych, bez konieczności "
-"ręcznego wysyłania im kluczy publicznych.\n"
+"Udostępnianie kluczy umożliwia współdzielenie zebranych kluczy z innymi osobami w sieci lokalnej. Oznacza to, że mogą oni automatycznie szyfrować wiadomości i pliki dla ciebie lub twoich znajomych, bez konieczności ręcznego wysyłania im kluczy publicznych.\n"
 "\n"
 "<b>Uwaga:</b> klucze prywatne nie zostaną ujawnione."
 
@@ -1304,7 +1236,8 @@ msgstr "Proces file-roller nie zakończył się powodzeniem"
 msgid "All key files"
 msgstr "Wszystkie pliki kluczy"
 
-#: ../libseahorse/seahorse-util.c:965 ../libseahorse/seahorse-util.c:1013
+#: ../libseahorse/seahorse-util.c:965
+#: ../libseahorse/seahorse-util.c:1013
 #: ../pgp/seahorse-gpgme-photos.c:242
 msgid "All files"
 msgstr "Wszystkie pliki"
@@ -1327,7 +1260,8 @@ msgstr ""
 msgid "_Replace"
 msgstr "_Zastąp"
 
-#: ../libseahorse/seahorse-validity.c:40 ../pgp/seahorse-gpgme-subkey.c:197
+#: ../libseahorse/seahorse-validity.c:40
+#: ../pgp/seahorse-gpgme-subkey.c:197
 #: ../pgp/seahorse-pgp-key-properties.c:1133
 #: ../pgp/seahorse-pgp-private-key-properties.xml.h:47
 #: ../pgp/seahorse-pgp-public-key-properties.xml.h:41
@@ -1409,7 +1343,8 @@ msgstr "Dodaje identyfikator użytkownika"
 msgid "Create the new user ID"
 msgstr "Tworzy nowy identyfikator użytkownika"
 
-#: ../pgp/seahorse-add-uid.xml.h:3 ../pgp/seahorse-pgp-generate.xml.h:7
+#: ../pgp/seahorse-add-uid.xml.h:3
+#: ../pgp/seahorse-pgp-generate.xml.h:7
 msgid "Full _Name:"
 msgstr "Imię i _nazwisko:"
 
@@ -1429,7 +1364,8 @@ msgstr "Opcjonalny komentarz opisujący klucz"
 msgid "Optional email address"
 msgstr "Opcjonalny adres e-mail"
 
-#: ../pgp/seahorse-add-uid.xml.h:8 ../pgp/seahorse-pgp-generate.xml.h:13
+#: ../pgp/seahorse-add-uid.xml.h:8
+#: ../pgp/seahorse-pgp-generate.xml.h:13
 msgid "_Email Address:"
 msgstr "Adres _e-mail:"
 
@@ -1437,7 +1373,8 @@ msgstr "Adres _e-mail:"
 msgid "C_hange"
 msgstr "Z_mień"
 
-#: ../pgp/seahorse-expires.xml.h:2 ../pgp/seahorse-revoke.xml.h:4
+#: ../pgp/seahorse-expires.xml.h:2
+#: ../pgp/seahorse-revoke.xml.h:4
 msgid "Revoke key"
 msgstr "Unieważnia klucz"
 
@@ -1454,7 +1391,8 @@ msgstr "Nie można dodać podklucza"
 msgid "Add subkey to %s"
 msgstr "Dodaje podklucz do %s"
 
-#: ../pgp/seahorse-gpgme-add-subkey.c:182 ../pgp/seahorse-gpgme-generate.c:117
+#: ../pgp/seahorse-gpgme-add-subkey.c:182
+#: ../pgp/seahorse-gpgme-generate.c:117
 msgid "DSA (sign only)"
 msgstr "DSA (tylko podpisywanie)"
 
@@ -1462,7 +1400,8 @@ msgstr "DSA (tylko podpisywanie)"
 msgid "ElGamal (encrypt only)"
 msgstr "ElGamal (tylko szyfrowanie)"
 
-#: ../pgp/seahorse-gpgme-add-subkey.c:196 ../pgp/seahorse-gpgme-generate.c:118
+#: ../pgp/seahorse-gpgme-add-subkey.c:196
+#: ../pgp/seahorse-gpgme-generate.c:118
 msgid "RSA (sign only)"
 msgstr "RSA (tylko podpisywanie)"
 
@@ -1481,8 +1420,7 @@ msgstr "Dodaje identyfikator użytkownika do %s"
 
 #: ../pgp/seahorse-gpgme.c:72
 msgid "Decryption failed. You probably do not have the decryption key."
-msgstr ""
-"Deszyfrowanie nie powiodło się. Prawdopodobnie brak klucza deszyfrującego."
+msgstr "Deszyfrowanie nie powiodło się. Prawdopodobnie brak klucza deszyfrującego."
 
 #: ../pgp/seahorse-gpgme-expires.c:58
 msgid "Invalid expiry date"
@@ -1509,7 +1447,8 @@ msgstr "Klucz PGP"
 msgid "Used to encrypt email and files"
 msgstr "Używany do szyfrowania poczty i plików"
 
-#: ../pgp/seahorse-gpgme-generate.c:115 ../ssh/seahorse-ssh-generate.xml.h:9
+#: ../pgp/seahorse-gpgme-generate.c:115
+#: ../ssh/seahorse-ssh-generate.xml.h:9
 msgid "RSA"
 msgstr "RSA"
 
@@ -1564,12 +1503,8 @@ msgstr "_Zmień rozmiar"
 
 #: ../pgp/seahorse-gpgme-photos.c:128
 #, c-format
-msgid ""
-"This is not a image file, or an unrecognized kind of image file. Try to use "
-"a JPEG image."
-msgstr ""
-"Plik nie jest obrazem, lub nierozpoznany format obrazu. Proszę spróbować "
-"obraz JPEG."
+msgid "This is not a image file, or an unrecognized kind of image file. Try to use a JPEG image."
+msgstr "Plik nie jest obrazem, lub nierozpoznany format obrazu. Proszę spróbować obraz JPEG."
 
 #: ../pgp/seahorse-gpgme-photos.c:224
 msgid "All image files"
@@ -1583,15 +1518,14 @@ msgstr "Wszystkie pliki JPEG"
 msgid "Choose Photo to Add to Key"
 msgstr "Wybór zdjęcia dla klucza"
 
-#: ../pgp/seahorse-gpgme-photos.c:290 ../pgp/seahorse-gpgme-photos.c:294
+#: ../pgp/seahorse-gpgme-photos.c:290
+#: ../pgp/seahorse-gpgme-photos.c:294
 msgid "Couldn't add photo"
 msgstr "Nie można dodać zdjęcia"
 
 #: ../pgp/seahorse-gpgme-photos.c:291
 msgid "The file could not be loaded. It may be in an invalid format"
-msgstr ""
-"Plik nie może zostać wczytany. Prawdopodobnie jest on zapisany w "
-"nieprawidłowym formacie"
+msgstr "Plik nie może zostać wczytany. Prawdopodobnie jest on zapisany w nieprawidłowym formacie"
 
 #: ../pgp/seahorse-gpgme-photos.c:320
 msgid "Are you sure you want to remove the current photo from your key?"
@@ -1644,12 +1578,8 @@ msgstr "Klucz nie jest już używany"
 
 #: ../pgp/seahorse-gpgme-revoke.c:161
 #, c-format
-msgid ""
-"You are about to add %s as a revoker for %s. This operation cannot be "
-"undone! Are you sure you want to continue?"
-msgstr ""
-"Dodanie %s unieważnieni %s. Działanie te nie będzie mogło zostać cofnięte. "
-"Na pewno kontynuować?"
+msgid "You are about to add %s as a revoker for %s. This operation cannot be undone! Are you sure you want to continue?"
+msgstr "Dodanie %s unieważnieni %s. Działanie te nie będzie mogło zostać cofnięte. Na pewno kontynuować?"
 
 #: ../pgp/seahorse-gpgme-revoke.c:173
 msgid "Couldn't add revoker"
@@ -1661,17 +1591,14 @@ msgstr "Nie można podpisać klucza"
 
 #. TODO: We should be giving an error message that allows them to
 #. generate or import a key
-#: ../pgp/seahorse-gpgme-sign.c:149 ../pgp/seahorse-signer.c:61
+#: ../pgp/seahorse-gpgme-sign.c:149
+#: ../pgp/seahorse-signer.c:61
 msgid "No keys usable for signing"
 msgstr "Brak kluczy zdolnych do podpisywania"
 
 #: ../pgp/seahorse-gpgme-sign.c:150
-msgid ""
-"You have no personal PGP keys that can be used to indicate your trust of "
-"this key."
-msgstr ""
-"Brak osobistych kluczy PGP, które mogłyby być użyte do wskazania twojego "
-"zaufania do tego klucza."
+msgid "You have no personal PGP keys that can be used to indicate your trust of this key."
+msgstr "Brak osobistych kluczy PGP, które mogłyby być użyte do wskazania twojego zaufania do tego klucza."
 
 #: ../pgp/seahorse-gpgme-source.c:99
 #, c-format
@@ -1711,14 +1638,11 @@ msgid "Loading Keys..."
 msgstr "Wczytywanie kluczy..."
 
 #: ../pgp/seahorse-gpgme-source.c:820
-msgid ""
-"Invalid key data (missing UIDs). This may be due to a computer with a date "
-"set in the future or a missing self-signature."
-msgstr ""
-"Nieprawidłowe dane klucza (brakujące UID). Przyczyną tego może być "
-"nieprawidłowo ustawiona data w systemie lub brak podpisu własnego."
+msgid "Invalid key data (missing UIDs). This may be due to a computer with a date set in the future or a missing self-signature."
+msgstr "Nieprawidłowe dane klucza (brakujące UID). Przyczyną tego może być nieprawidłowo ustawiona data w systemie lub brak podpisu własnego."
 
-#: ../pgp/seahorse-gpgme-source.c:910 ../src/seahorse-key-manager.c:538
+#: ../pgp/seahorse-gpgme-source.c:910
+#: ../src/seahorse-key-manager.c:538
 msgid "Importing Keys"
 msgstr "Importowanie kluczy"
 
@@ -1733,9 +1657,7 @@ msgstr "ElGamal"
 #: ../pgp/seahorse-hkp-source.c:387
 #, c-format
 msgid "Search was not specific enough. Server '%s' found too many keys."
-msgstr ""
-"Kryterium wyszukiwania nie było dostatecznie sprecyzowane. Serwer \"%s\" "
-"znalazł zbyt wiele pasujących kluczy."
+msgstr "Kryterium wyszukiwania nie było dostatecznie sprecyzowane. Serwer \"%s\" znalazł zbyt wiele pasujących kluczy."
 
 #: ../pgp/seahorse-hkp-source.c:389
 #, c-format
@@ -1760,7 +1682,8 @@ msgid "Searching for keys on: %s"
 msgstr "Wyszukiwanie kluczy na: %s"
 
 #. The ldap_cb and chain_cb were set in seahorse_ldap_operation_start
-#: ../pgp/seahorse-hkp-source.c:1072 ../pgp/seahorse-hkp-source.c:1154
+#: ../pgp/seahorse-hkp-source.c:1072
+#: ../pgp/seahorse-hkp-source.c:1154
 #: ../pgp/seahorse-ldap-source.c:668
 #, c-format
 msgid "Connecting to: %s"
@@ -1835,7 +1758,8 @@ msgstr "Na pewno trwale usunąć %d kluczy?"
 msgid "Are you sure you want to permanently delete %d identities?"
 msgstr "Na pewno trwale usunąć %d tożsamości?"
 
-#: ../pgp/seahorse-pgp-generate.xml.h:1 ../ssh/seahorse-ssh-generate.xml.h:1
+#: ../pgp/seahorse-pgp-generate.xml.h:1
+#: ../ssh/seahorse-ssh-generate.xml.h:1
 msgid "<b>_Advanced key options</b>"
 msgstr "<b>_Zaawansowane opcje klucza</b>"
 
@@ -1855,7 +1779,8 @@ msgstr "_Utwórz"
 msgid "E_xpiration Date:"
 msgstr "Data _wygaśnięcia:"
 
-#: ../pgp/seahorse-pgp-generate.xml.h:6 ../ssh/seahorse-ssh-generate.xml.h:5
+#: ../pgp/seahorse-pgp-generate.xml.h:6
+#: ../ssh/seahorse-ssh-generate.xml.h:5
 msgid "Encryption _Type:"
 msgstr "Typ _szyfrowania:"
 
@@ -1863,7 +1788,8 @@ msgstr "Typ _szyfrowania:"
 msgid "Generate a new key"
 msgstr "Tworzy nowy klucz"
 
-#: ../pgp/seahorse-pgp-generate.xml.h:9 ../ssh/seahorse-ssh-generate.xml.h:7
+#: ../pgp/seahorse-pgp-generate.xml.h:9
+#: ../ssh/seahorse-ssh-generate.xml.h:7
 msgid "Key _Strength (bits):"
 msgstr "_Długość klucza (w bitach):"
 
@@ -1889,7 +1815,8 @@ msgstr "Prywatny klucz PGP"
 msgid "Public PGP Key"
 msgstr "Publiczny klucz PGP"
 
-#: ../pgp/seahorse-pgp-key.c:583 ../pgp/seahorse-pgp-key-properties.c:1349
+#: ../pgp/seahorse-pgp-key.c:583
+#: ../pgp/seahorse-pgp-key-properties.c:1349
 msgid "Expired"
 msgstr "Wygasł"
 
@@ -1947,7 +1874,8 @@ msgstr "Nie można usunąć podklucza"
 msgid "Unable to change trust"
 msgstr "Nie można zmienić zaufania"
 
-#: ../pgp/seahorse-pgp-key-properties.c:1006 ../src/seahorse-viewer.c:316
+#: ../pgp/seahorse-pgp-key-properties.c:1006
+#: ../src/seahorse-viewer.c:316
 #: ../ssh/seahorse-ssh-key-properties.c:168
 #, c-format
 msgid "Couldn't export key to \"%s\""
@@ -2162,9 +2090,7 @@ msgstr "Długość:"
 #: ../pgp/seahorse-pgp-private-key-properties.xml.h:44
 #: ../pgp/seahorse-pgp-public-key-properties.xml.h:37
 msgid "The owner of the key revoked the key. It can no longer be used."
-msgstr ""
-"Ten klucz został unieważniony przez właściciela. Klucz nie może być dłużej "
-"używany."
+msgstr "Ten klucz został unieważniony przez właściciela. Klucz nie może być dłużej używany."
 
 #: ../pgp/seahorse-pgp-private-key-properties.xml.h:48
 msgid "_Add Name"
@@ -2214,20 +2140,13 @@ msgstr "Zaufanie do podpisów złożonych przez \"%s\" pod innymi kluczami"
 
 #: ../pgp/seahorse-pgp-public-key-properties.xml.h:27
 #, no-c-format
-msgid ""
-"If you believe that the person that owns this key is '%s', <i>sign</i> this "
-"key:"
-msgstr ""
-"Jeśli istnieje pewność, że posiadaczem klucza jest \"%s\", proszę "
-"<i>podpisać</i> ten klucz:"
+msgid "If you believe that the person that owns this key is '%s', <i>sign</i> this key:"
+msgstr "Jeśli istnieje pewność, że posiadaczem klucza jest \"%s\", proszę <i>podpisać</i> ten klucz:"
 
 #: ../pgp/seahorse-pgp-public-key-properties.xml.h:29
 #, no-c-format
-msgid ""
-"If you no longer trust that '%s' owns this key, <i>revoke</i> your signature:"
-msgstr ""
-"Jeśli nie ma już pewności co do tożsamości osoby \"%s\", można "
-"<i>unieważnić</i> własny podpis:"
+msgid "If you no longer trust that '%s' owns this key, <i>revoke</i> your signature:"
+msgstr "Jeśli nie ma już pewności co do tożsamości osoby \"%s\", można <i>unieważnić</i> własny podpis:"
 
 #: ../pgp/seahorse-pgp-public-key-properties.xml.h:32
 msgid "Marginally"
@@ -2285,11 +2204,8 @@ msgid "_Reason:"
 msgstr "_Powód:"
 
 #: ../pgp/seahorse-signer.c:62
-msgid ""
-"You have no personal PGP keys that can be used to sign a document or message."
-msgstr ""
-"Brak osobistych kluczy PGP umożliwiających podpisywanie dokumentów i "
-"wiadomości."
+msgid "You have no personal PGP keys that can be used to sign a document or message."
+msgstr "Brak osobistych kluczy PGP umożliwiających podpisywanie dokumentów i wiadomości."
 
 #: ../pgp/seahorse-sign.xml.h:1
 msgid "<b>How carefully have you checked this key?</b>"
@@ -2304,36 +2220,20 @@ msgid "<b>Sign key as:</b>"
 msgstr "<b>Podpis:</b>"
 
 #: ../pgp/seahorse-sign.xml.h:4
-msgid ""
-"<i>Casually:</i> means you have done a casual verification that the key is "
-"owned by the person who claims to own it. For example, you could read the "
-"key fingerprint to the owner over the phone. "
-msgstr ""
-"<i>Pobieżnie:</i> oznacza, że wykonano pobieżne sprawdzenie, czy "
-"właścicielem klucza jest osoba, która się za niego podaje. Przykładowo, "
-"takiego sprawdzenia można dokonać telefonicznie, odczytując odcisk palca "
-"klucza właścicielowi. "
+msgid "<i>Casually:</i> means you have done a casual verification that the key is owned by the person who claims to own it. For example, you could read the key fingerprint to the owner over the phone. "
+msgstr "<i>Pobieżnie:</i> oznacza, że wykonano pobieżne sprawdzenie, czy właścicielem klucza jest osoba, która się za niego podaje. Przykładowo, takiego sprawdzenia można dokonać telefonicznie, odczytując odcisk palca klucza właścicielowi. "
 
 #: ../pgp/seahorse-sign.xml.h:5
 msgid "<i>Key Name</i>"
 msgstr "<i>Nazwa klucza</i>"
 
 #: ../pgp/seahorse-sign.xml.h:6
-msgid ""
-"<i>Not at all:</i> means you believe the key is owned by the person who "
-"claims to own it, but you could not or did not verify this to be a fact."
-msgstr ""
-"<i>Wcale:</i> oznacza że istnieje przekonanie, że właścicielem klucza jest "
-"osoba, która się za niego podaje, ale nie było sprawdzane lub nie było "
-"możliwe sprawdzenie, czy tak jest faktycznie."
+msgid "<i>Not at all:</i> means you believe the key is owned by the person who claims to own it, but you could not or did not verify this to be a fact."
+msgstr "<i>Wcale:</i> oznacza że istnieje przekonanie, że właścicielem klucza jest osoba, która się za niego podaje, ale nie było sprawdzane lub nie było możliwe sprawdzenie, czy tak jest faktycznie."
 
 #: ../pgp/seahorse-sign.xml.h:7
-msgid ""
-"<i>Very Carefully:</i> Select this only if you are absolutely sure that this "
-"key is genuine."
-msgstr ""
-"<i>Bardzo dokładnie:</i> Wybierane tylko wtedy, gdy istnieje absolutna "
-"pewność, że klucz ten jest autentyczny."
+msgid "<i>Very Carefully:</i> Select this only if you are absolutely sure that this key is genuine."
+msgstr "<i>Bardzo dokładnie:</i> Wybierane tylko wtedy, gdy istnieje absolutna pewność, że klucz ten jest autentyczny."
 
 #: ../pgp/seahorse-sign.xml.h:8
 msgid "By signing you indicate your trust that this key belongs to:"
@@ -2348,15 +2248,8 @@ msgid "Sign Key"
 msgstr "Podpisywanie klucza"
 
 #: ../pgp/seahorse-sign.xml.h:11
-msgid ""
-"You could use a hard to forge photo identification (such as a passport) to "
-"personally check that the name on the key is correct. You should have also "
-"used email to check that the email address belongs to the owner."
-msgstr ""
-"W tym przypadku, w celu zweryfikowania zgodności nazwy w kluczu, można użyć "
-"identyfikacji na podstawie zdjęcia z dokumentu stwierdzającego tożsamość "
-"(np. z paszportu). Dodatkowo wskazane jest sprawdzenie, czy adres e-mail "
-"należy do właściciela klucza."
+msgid "You could use a hard to forge photo identification (such as a passport) to personally check that the name on the key is correct. You should have also used email to check that the email address belongs to the owner."
+msgstr "W tym przypadku, w celu zweryfikowania zgodności nazwy w kluczu, można użyć identyfikacji na podstawie zdjęcia z dokumentu stwierdzającego tożsamość (np. z paszportu). Dodatkowo wskazane jest sprawdzenie, czy adres e-mail należy do właściciela klucza."
 
 #: ../pgp/seahorse-sign.xml.h:12
 msgid "_Casually"
@@ -2424,7 +2317,8 @@ msgstr "Nowe _hasło:"
 msgid "Manage your passwords and encryption keys"
 msgstr "Zarządzanie hasłami i kluczami szyfrującymi"
 
-#: ../src/seahorse.desktop.in.in.h:2 ../src/seahorse-key-manager.c:857
+#: ../src/seahorse.desktop.in.in.h:2
+#: ../src/seahorse-key-manager.c:857
 msgid "Passwords and Encryption Keys"
 msgstr "Hasła i klucze szyfrujące"
 
@@ -2440,7 +2334,8 @@ msgstr "K_ontynuuj"
 msgid "Create New ..."
 msgstr "Utwórz nowy..."
 
-#: ../src/seahorse-key-manager.c:233 ../src/seahorse-keyserver-results.c:108
+#: ../src/seahorse-key-manager.c:233
+#: ../src/seahorse-keyserver-results.c:108
 #, c-format
 msgid "Selected %d key"
 msgid_plural "Selected %d keys"
@@ -2448,12 +2343,15 @@ msgstr[0] "Zaznaczono %d klucz"
 msgstr[1] "Zaznaczono %d klucze"
 msgstr[2] "Zaznaczono %d kluczy"
 
-#: ../src/seahorse-key-manager.c:404 ../src/seahorse-key-manager.c:464
-#: ../src/seahorse-key-manager.c:527 ../src/seahorse-viewer.c:484
+#: ../src/seahorse-key-manager.c:404
+#: ../src/seahorse-key-manager.c:464
+#: ../src/seahorse-key-manager.c:527
+#: ../src/seahorse-viewer.c:484
 msgid "Couldn't import keys"
 msgstr "Nie można zaimportować kluczy"
 
-#: ../src/seahorse-key-manager.c:409 ../src/seahorse-viewer.c:489
+#: ../src/seahorse-key-manager.c:409
+#: ../src/seahorse-viewer.c:489
 msgid "Imported keys"
 msgstr "Zaimportowane klucze"
 
@@ -2461,7 +2359,8 @@ msgstr "Zaimportowane klucze"
 msgid "Importing keys"
 msgstr "Importowanie kluczy"
 
-#: ../src/seahorse-key-manager.c:481 ../ssh/seahorse-ssh-operation.c:1017
+#: ../src/seahorse-key-manager.c:481
+#: ../ssh/seahorse-ssh-operation.c:1017
 msgid "Import Key"
 msgstr "Importowanie klucza"
 
@@ -2469,7 +2368,8 @@ msgstr "Importowanie klucza"
 msgid "Unrecognized key type, or invalid data format"
 msgstr "Nierozpoznany typ klucza lub nieprawidłowy format danych"
 
-#: ../src/seahorse-key-manager.c:725 ../src/seahorse-keyserver-results.c:207
+#: ../src/seahorse-key-manager.c:725
+#: ../src/seahorse-keyserver-results.c:207
 msgid "_Remote"
 msgstr "_Zdalne"
 
@@ -2497,11 +2397,13 @@ msgstr "Importuje z pliku"
 msgid "Import from the clipboard"
 msgstr "Importuje ze schowka"
 
-#: ../src/seahorse-key-manager.c:738 ../src/seahorse-keyserver-results.c:217
+#: ../src/seahorse-key-manager.c:738
+#: ../src/seahorse-keyserver-results.c:217
 msgid "_Find Remote Keys..."
 msgstr "Wyszukaj _kluczy zdalnych..."
 
-#: ../src/seahorse-key-manager.c:739 ../src/seahorse-keyserver-results.c:218
+#: ../src/seahorse-key-manager.c:739
+#: ../src/seahorse-keyserver-results.c:218
 msgid "Search for keys on a key server"
 msgstr "Wyszukuje klucze na serwerze kluczy"
 
@@ -2573,7 +2475,8 @@ msgstr "Inne _klucze"
 msgid "To get started with encryption you will need keys."
 msgstr "Aby rozpocząć szyfrowanie, potrzebne są klucze."
 
-#: ../src/seahorse-key-manager.xml.h:7 ../src/seahorse-viewer.c:548
+#: ../src/seahorse-key-manager.xml.h:7
+#: ../src/seahorse-viewer.c:548
 msgid "_Import"
 msgstr "Za_importuj"
 
@@ -2581,7 +2484,8 @@ msgstr "Za_importuj"
 msgid "_Passwords"
 msgstr "_Hasła"
 
-#: ../src/seahorse-key-manager-store.c:685 ../src/seahorse-viewer.c:282
+#: ../src/seahorse-key-manager-store.c:685
+#: ../src/seahorse-viewer.c:282
 msgid "Couldn't export keys"
 msgstr "Nie można wyeksportować kluczy"
 
@@ -2636,12 +2540,8 @@ msgid "Find Remote Keys"
 msgstr "Wyszukiwanie kluczy zdalnych"
 
 #: ../src/seahorse-keyserver-search.xml.h:4
-msgid ""
-"This will find keys for others on the Internet. These keys can then be "
-"imported into your local key ring."
-msgstr ""
-"Internetowe wyszukiwanie kluczy innych osób. Klucze te można importować do "
-"swojej bazy kluczy."
+msgid "This will find keys for others on the Internet. These keys can then be imported into your local key ring."
+msgstr "Internetowe wyszukiwanie kluczy innych osób. Klucze te można importować do swojej bazy kluczy."
 
 #: ../src/seahorse-keyserver-search.xml.h:5
 msgid "Where to search:"
@@ -2686,25 +2586,12 @@ msgid "Sync Keys"
 msgstr "Synchronizowanie kluczy"
 
 #: ../src/seahorse-keyserver-sync.xml.h:2
-msgid ""
-"This will publish the keys in your key ring so they're available for others "
-"to use. You'll also get any changes others have made since you received "
-"their keys."
-msgstr ""
-"Synchronizacja spowoduje opublikowanie kluczy z tej bazy kluczy. Zostaną "
-"także pobrane wszystkie zmiany w kluczach, jakie zostały wprowadzone przez "
-"ich właścicieli od momentu ich zaimportowania."
+msgid "This will publish the keys in your key ring so they're available for others to use. You'll also get any changes others have made since you received their keys."
+msgstr "Synchronizacja spowoduje opublikowanie kluczy z tej bazy kluczy. Zostaną także pobrane wszystkie zmiany w kluczach, jakie zostały wprowadzone przez ich właścicieli od momentu ich zaimportowania."
 
 #: ../src/seahorse-keyserver-sync.xml.h:3
-msgid ""
-"This will retrieve any changes others have made since you received their "
-"keys. No key server has been chosen for publishing, so your keys will not be "
-"made available to others."
-msgstr ""
-"Synchronizacja spowoduje pobranie wszystkich zmian kluczy, jakie zostały "
-"wprowadzone przez ich właścicieli od momentu ich zaimportowania. Nie wybrano "
-"żadnego serwera do publikowania kluczy, przez co klucze użytkownika nie będą "
-"dostępne dla innych."
+msgid "This will retrieve any changes others have made since you received their keys. No key server has been chosen for publishing, so your keys will not be made available to others."
+msgstr "Synchronizacja spowoduje pobranie wszystkich zmian kluczy, jakie zostały wprowadzone przez ich właścicieli od momentu ich zaimportowania. Nie wybrano żadnego serwera do publikowania kluczy, przez co klucze użytkownika nie będą dostępne dla innych."
 
 #: ../src/seahorse-keyserver-sync.xml.h:4
 msgid "_Key Servers"
@@ -2718,7 +2605,8 @@ msgstr "Z_synchronizuj"
 msgid "Version of this application"
 msgstr "Wersja tego programu"
 
-#: ../src/seahorse-main.c:78 ../src/seahorse-viewer.c:170
+#: ../src/seahorse-main.c:78
+#: ../src/seahorse-viewer.c:170
 msgid "Encryption Key Manager"
 msgstr "Menedżer kluczy szyfrujących"
 
@@ -2847,12 +2735,8 @@ msgid "Configure Key for _Secure Shell..."
 msgstr "Skonfiguruj klucz _dla SSH..."
 
 #: ../ssh/seahorse-ssh-commands.c:86
-msgid ""
-"Send public Secure Shell key to another machine, and enable logins using "
-"that key."
-msgstr ""
-"Wysyła publiczny klucz SSH na inny komputer i włącza możliwość zdalnego "
-"logowania za pomocą tego klucza."
+msgid "Send public Secure Shell key to another machine, and enable logins using that key."
+msgstr "Wysyła publiczny klucz SSH na inny komputer i włącza możliwość zdalnego logowania za pomocą tego klucza."
 
 #: ../ssh/seahorse-ssh-commands.c:115
 #, c-format
@@ -2864,8 +2748,10 @@ msgstr "Na pewno trwale usunąć klucz SSH \"%s\"?"
 msgid "Are you sure you want to delete %d secure shell keys?"
 msgstr "Na pewno trwale usunąć %d kluczy SSH?"
 
-#: ../ssh/seahorse-ssh-generate.c:59 ../ssh/seahorse-ssh-key.c:91
-#: ../ssh/seahorse-ssh-key.c:95 ../ssh/seahorse-ssh-key-properties.xml.h:19
+#: ../ssh/seahorse-ssh-generate.c:59
+#: ../ssh/seahorse-ssh-key.c:91
+#: ../ssh/seahorse-ssh-key.c:95
+#: ../ssh/seahorse-ssh-key-properties.xml.h:19
 msgid "Secure Shell Key"
 msgstr "Klucz SSH"
 
@@ -2882,33 +2768,20 @@ msgid "Creating Secure Shell Key"
 msgstr "Tworzenie klucza SSH"
 
 #: ../ssh/seahorse-ssh-generate.xml.h:2
-msgid ""
-"<i>Use your email address, and any other reminder you need about what this "
-"key is for.</i>"
-msgstr ""
-"<i>Można użyć adresu e-mail i dowolnych innych informacji opisujących ten "
-"klucz.</i>"
+msgid "<i>Use your email address, and any other reminder you need about what this key is for.</i>"
+msgstr "<i>Można użyć adresu e-mail i dowolnych innych informacji opisujących ten klucz.</i>"
 
 #: ../ssh/seahorse-ssh-generate.xml.h:3
-msgid ""
-"A Secure Shell (SSH) key lets you connect securely to trusted computers "
-"using SSH, without entering a different password for each of them."
-msgstr ""
-"Klucz bezpiecznej powłoki (SSH) umożliwia bezpieczne połączenia z zaufanymi "
-"komputerami, bez konieczności podawania różnych haseł dla każdego z nich."
+msgid "A Secure Shell (SSH) key lets you connect securely to trusted computers using SSH, without entering a different password for each of them."
+msgstr "Klucz bezpiecznej powłoki (SSH) umożliwia bezpieczne połączenia z zaufanymi komputerami, bez konieczności podawania różnych haseł dla każdego z nich."
 
 #: ../ssh/seahorse-ssh-generate.xml.h:4
 msgid "DSA"
 msgstr "DSA"
 
 #: ../ssh/seahorse-ssh-generate.xml.h:6
-msgid ""
-"If there is already a computer you want to use this key with, you can set up "
-"that computer to recognize your key now. "
-msgstr ""
-"Jeżeli tworzony klucz ma być używany do łączenia się z konkretnym "
-"komputerem, można w tej chwili przygotować ten komputer do rozpoznawania "
-"tworzonego klucza. "
+msgid "If there is already a computer you want to use this key with, you can set up that computer to recognize your key now. "
+msgstr "Jeżeli tworzony klucz ma być używany do łączenia się z konkretnym komputerem, można w tej chwili przygotować ten komputer do rozpoznawania tworzonego klucza. "
 
 #: ../ssh/seahorse-ssh-generate.xml.h:8
 msgid "New Secure Shell Key"
@@ -2985,23 +2858,25 @@ msgstr "Wyeksportuj cały _klucz"
 
 #: ../ssh/seahorse-ssh-key-properties.xml.h:20
 msgid "The owner of this key is _authorized to connect to this computer"
-msgstr ""
-"Właściciel _tego klucza jest uprawniony do łączenia się z tym komputerem"
+msgstr "Właściciel _tego klucza jest uprawniony do łączenia się z tym komputerem"
 
 #: ../ssh/seahorse-ssh-key-properties.xml.h:21
 msgid "Used to connect to other computers."
 msgstr "Używany do łączenia się z innymi komputerami."
 
-#: ../ssh/seahorse-ssh-operation.c:143 ../ssh/seahorse-ssh-operation.c:732
+#: ../ssh/seahorse-ssh-operation.c:143
+#: ../ssh/seahorse-ssh-operation.c:732
 #, c-format
 msgid "The SSH command was terminated unexpectedly."
 msgstr "Polecenie SSH zostało nieoczekiwanie zakończone."
 
-#: ../ssh/seahorse-ssh-operation.c:151 ../ssh/seahorse-ssh-operation.c:739
+#: ../ssh/seahorse-ssh-operation.c:151
+#: ../ssh/seahorse-ssh-operation.c:739
 msgid "The SSH command failed."
 msgstr "Polecenie SSH się nie powiodło."
 
-#: ../ssh/seahorse-ssh-operation.c:445 ../ssh/seahorse-ssh-operation.c:477
+#: ../ssh/seahorse-ssh-operation.c:445
+#: ../ssh/seahorse-ssh-operation.c:477
 msgid "Secure Shell key"
 msgstr "Klucz SSH"
 
@@ -3075,12 +2950,8 @@ msgid "Set Up Computer for SSH Connection"
 msgstr "Przygotowywanie komputera do połączeń SSH"
 
 #: ../ssh/seahorse-ssh-upload.xml.h:4
-msgid ""
-"To use your Secure Shell key with another computer that uses SSH, you must "
-"already have a login account on that computer."
-msgstr ""
-"Aby możliwe było używanie tego klucza SSH do połączeń z innym komputerem, "
-"musi być na nim utworzone konto z możliwością logowania."
+msgid "To use your Secure Shell key with another computer that uses SSH, you must already have a login account on that computer."
+msgstr "Aby możliwe było używanie tego klucza SSH do połączeń z innym komputerem, musi być na nim utworzone konto z możliwością logowania."
 
 #: ../ssh/seahorse-ssh-upload.xml.h:5
 msgid "_Computer Name:"
@@ -3093,3 +2964,4 @@ msgstr "_Login:"
 #: ../ssh/seahorse-ssh-upload.xml.h:7
 msgid "_Set Up"
 msgstr "_Przygotuj"
+
