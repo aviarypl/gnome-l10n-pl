@@ -9,8 +9,8 @@ msgstr ""
 "Project-Id-Version: gparted\n"
 "Report-Msgid-Bugs-To: http://bugzilla.gnome.org/enter_bug.cgi?product=gparted&component=general\n"
 "POT-Creation-Date: 2010-09-01 20:00+0000\n"
-"PO-Revision-Date: 2010-09-14 16:57+0100\n"
-"Last-Translator: Tomasz Dominikowski <dominikowski@gmail.com>\n"
+"PO-Revision-Date: 2010-09-15 22:12+0200\n"
+"Last-Translator: Piotr Drąg <piotrdrag@gmail.com>\n"
 "Language-Team: Polish <gnomepl@aviary.pl>\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -1302,19 +1302,15 @@ msgstr "Nie można utworzyć więcej niż %1 podstawowych partycji"
 msgid "If you want more partitions you should first create an extended partition. Such a partition can contain other partitions. Because an extended partition is also a primary partition it might be necessary to remove a primary partition first."
 msgstr "Należy najpierw utworzyć partycję rozszerzoną, jeśli potrzeba większej liczby partycji. Taka partycja może zawierać inne. Ponieważ partycja rozszerzona jest także partycją podstawową, uprzednie usunięcie partycji podstawowej może okazać się konieczne."
 
-# pd
 #. TO TRANSLATORS: looks like   You queued an operation to move the start sector of partition /dev/sda3.
 #: ../src/Win_GParted.cc:1434
 msgid "You have queued an operation to move the start sector of partition %1."
 msgstr "Zaplanowano działanie przeniesienia sektora startowego partycji %1."
 
-# pd
-# rev: może uniemożliwić uruchomienie
 #: ../src/Win_GParted.cc:1440
 msgid "Moving a partition might cause your operating system to fail to boot."
-msgstr "Przeniesienie partycji może spowodować niemożliwość uruchomienia systemu operacyjnego."
+msgstr "Przeniesienie partycji może uniemożliwić uruchomienie systemu operacyjnego."
 
-# pd
 # rev: zbędny przecinek
 #: ../src/Win_GParted.cc:1443
 msgid "You can learn how to repair the boot configuration in the GParted FAQ."
@@ -1370,7 +1366,6 @@ msgstr "Partycja nie mogła być odmontowana z poniższych punktów montowania:"
 msgid "Most likely other partitions are also mounted on these mount points. You are advised to unmount them manually."
 msgstr "Najprawdopodobniej inne partycje również są zamontowane w tych punktach. Zaleca się ręczne ich odmontowanie."
 
-# pd
 #: ../src/Win_GParted.cc:1821
 #: ../src/Win_GParted.cc:1905
 msgid "%1 operation is currently pending for partition %2."
@@ -1379,12 +1374,10 @@ msgstr[0] "Zaplanowane jest w tej chwili %1 działanie dla partycji %2."
 msgstr[1] "Zaplanowane są w tej chwili %1 działania dla partycji %2."
 msgstr[2] "Zaplanowanych jest w tej chwili %1 działań dla partycji %2."
 
-# pd
 #: ../src/Win_GParted.cc:1835
 msgid "The swapon action cannot be performed if an operation is pending for the partition."
 msgstr "Działanie polecenia swapon nie może zostać wykonane, jeśli są oczekujące działania dla partycji."
 
-# pd
 #: ../src/Win_GParted.cc:1837
 msgid "Use the Edit menu to undo, clear, or apply operations before using swapon with this partition."
 msgstr "Należy użyć menu Edycja, aby cofnąć, wyczyścić lub zastosować wszystkie działania przed użyciem polecenia swapon dla tej partycji."
@@ -1413,12 +1406,10 @@ msgstr "Odmontowywanie %1"
 msgid "Could not unmount %1"
 msgstr "Nie można odmontować %1"
 
-# pd
 #: ../src/Win_GParted.cc:1919
 msgid "The mount action cannot be performed if an operation is pending for the partition."
 msgstr "Działanie polecenia mount nie może zostać wykonane, jeśli są oczekujące działania dla partycji."
 
-# pd
 #: ../src/Win_GParted.cc:1921
 msgid "Use the Edit menu to undo, clear, or apply operations before using mount with this partition."
 msgstr "Należy użyć menu Edycja, aby cofnąć, wyczyścić lub zastosować wszystkie działania przed użyciem polecenia mount dla tej partycji."
@@ -1431,7 +1422,6 @@ msgstr "montowanie %1 w %2"
 msgid "Could not mount %1 on %2"
 msgstr "Nie można zamontować %1 w %2"
 
-# pd
 #. TO TRANSLATORS: Singular case looks like  1 partition is currently active on device /dev/sda.
 #: ../src/Win_GParted.cc:1972
 msgid "%1 partition is currently active on device %2."
@@ -1440,18 +1430,14 @@ msgstr[0] "%1 partycja jest obecnie aktywna na urządzeniu %2."
 msgstr[1] "%1 partycje są obecnie aktywne na urządzeniu %2."
 msgstr[2] "%1 partycji jest obecnie aktywnych na urządzeniu %2."
 
-# pd
-# rev: partycje?
 #: ../src/Win_GParted.cc:1987
 msgid "A new partition table cannot be created when there are active partitions."
-msgstr "Nie można utworzyć nowej tablicy partycji, jeśli są aktywne partycji."
+msgstr "Nie można utworzyć nowej tablicy partycji, jeśli są aktywne partycje."
 
-# pd
 #: ../src/Win_GParted.cc:1989
 msgid "Active partitions are those that are in use, such as a mounted file system, or enabled swap space."
 msgstr "Aktywne partycje to te, które są używane, takie jak zamontowany system plików lub włączony obszar wymiany."
 
-# pd
 #: ../src/Win_GParted.cc:1991
 msgid "Use Partition menu options, such as unmount or swapoff, to deactivate all partitions on this device before creating a new partition table."
 msgstr "Należy użyć opcji w menu Partycja, takich jak polecenia unmount lub swapoff, aby deaktywować wszystkie partycje na tym urządzeniu przed utworzeniem nowej tablicy partycji."
@@ -1544,4 +1530,3 @@ msgstr "powiększanie zamontowanego systemu plików"
 #: ../src/xfs.cc:276
 msgid "copy file system"
 msgstr "kopiowanie systemu plików"
-
