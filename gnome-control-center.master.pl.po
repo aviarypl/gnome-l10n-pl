@@ -390,8 +390,6 @@ msgid "Work _fax:"
 msgstr "_Faks do pracy:"
 
 #: ../capplets/about-me/gnome-about-me-dialog.ui.h:38
-#, fuzzy
-#| msgid "Zip/_Postal code:"
 msgid "ZIP/_Postal code:"
 msgstr "Ko_d pocztowy:"
 
@@ -404,8 +402,6 @@ msgid "_Department:"
 msgstr "_Wydział:"
 
 #: ../capplets/about-me/gnome-about-me-dialog.ui.h:41
-#, fuzzy
-#| msgid "_Groupwise:"
 msgid "_GroupWise:"
 msgstr "_GroupWise:"
 
@@ -442,7 +438,6 @@ msgstr "S_tanowisko:"
 msgid "_Work:"
 msgstr "_Praca:"
 
-# pd
 #: ../capplets/about-me/gnome-about-me-dialog.ui.h:51
 msgid "_XMPP:"
 msgstr "_XMPP:"
@@ -452,8 +447,6 @@ msgid "_Yahoo:"
 msgstr "_Yahoo!:"
 
 #: ../capplets/about-me/gnome-about-me-dialog.ui.h:53
-#, fuzzy
-#| msgid "_Zip/Postal code:"
 msgid "_ZIP/Postal code:"
 msgstr "Kod poc_ztowy:"
 
@@ -674,11 +667,10 @@ msgstr "Nowe hasło musi zawierać znaki numeryczne lub specjalne."
 msgid "The old and new passwords are the same."
 msgstr "Nowe hasło jest takie same jak poprzednie."
 
+# pd
 #: ../capplets/about-me/gnome-about-me-password.c:556
-#, fuzzy
-#| msgid "The two passwords are not equal."
 msgid "The new password has already been used recently."
-msgstr "Hasła nie są takie same."
+msgstr "Nowe hasło zostało już niedawno użyte."
 
 #. translators: Unable to launch <program>: <error message>
 #: ../capplets/about-me/gnome-about-me-password.c:827
@@ -2128,11 +2120,10 @@ msgstr "Dołącz pa_nel"
 msgid "Left"
 msgstr "Lewo"
 
+# pd
 #: ../capplets/display/display-capplet.ui.h:3
-#, fuzzy
-#| msgid "Default"
 msgid "Make Default"
-msgstr "Domyślne"
+msgstr "Uczyń domyślnym"
 
 #: ../capplets/display/display-capplet.ui.h:4
 #: ../capplets/display/xrandr-capplet.c:513
@@ -2202,6 +2193,7 @@ msgstr "Zmiana rozdzielczości i położenia monitorów"
 msgid "Monitors"
 msgstr "Monitory"
 
+# pd
 #: ../capplets/display/gnome-display-properties-install-systemwide.c:44
 #, c-format
 msgid ""
@@ -2218,31 +2210,43 @@ msgid ""
 "            the systemwide directory for RANDR configurations,\n"
 "            so the result will typically be %s/DEST_NAME\n"
 msgstr ""
+"Użycie: %s PLIK_ŹRÓDŁOWY NAZWA_DOCELOWA\n"
+"\n"
+"This program installs a RANDR profile for multi-monitor setups into\n"
+"a systemwide location.  The resulting profile will get used when\n"
+"the RANDR plug-in gets run in gnome-settings-daemon.\n"
+"\n"
+"SOURCE_FILE - a full pathname, typically /home/username/.config/monitors."
+"xml\n"
+"\n"
+"DEST_NAME - relative name for the installed file.  This will get put in\n"
+"            the systemwide directory for RANDR configurations,\n"
+"            so the result will typically be %s/DEST_NAME\n"
 
+# pd
 #. Translators: only able to install RANDR profiles as root
 #: ../capplets/display/gnome-display-properties-install-systemwide.c:151
 msgid "This program can only be used by the root user"
 msgstr ""
 
+# pd
 #: ../capplets/display/gnome-display-properties-install-systemwide.c:168
-#, fuzzy
-#| msgid "Theme name must be present"
 msgid "The source filename must be absolute"
-msgstr "Motyw musi mieć nazwę"
+msgstr "Nazwa pliku źródłowego musi być bezwzględna"
 
+# pd
 #. Translators: first %s is a filename; second %s is an error message
 #: ../capplets/display/gnome-display-properties-install-systemwide.c:179
-#, fuzzy, c-format
-#| msgid "Could not access '%s' device"
+#, c-format
 msgid "Could not open %s: %s\n"
-msgstr "Nie można uzyskać dostępu do urządzenia \"%s\""
+msgstr "Nie można otworzyć %s: %s\n"
 
+# pd
 #. Translators: first %s is a filename; second %s is an error message
 #: ../capplets/display/gnome-display-properties-install-systemwide.c:188
-#, fuzzy, c-format
-#| msgid "Could not get screen information"
+#, c-format
 msgid "Could not get information for %s: %s\n"
-msgstr "Nie można uzyskać informacji o rozdzielczości ekranu"
+msgstr "Nie można uzyskać informacji o %s: %s\n"
 
 #: ../capplets/display/gnome-display-properties-install-systemwide.c:195
 #, c-format
@@ -2274,12 +2278,12 @@ msgstr ""
 msgid "%s must be a directory\n"
 msgstr ""
 
+# pd
 #. Translators: the first %s/%s is a directory/filename; the last %s is an error message
 #: ../capplets/display/gnome-display-properties-install-systemwide.c:242
-#, fuzzy, c-format
-#| msgid "Could not access '%s' device"
+#, c-format
 msgid "Could not open %s/%s: %s\n"
-msgstr "Nie można uzyskać dostępu do urządzenia \"%s\""
+msgstr "Nie można otworzyć %s/%s: %s\n"
 
 #: ../capplets/display/gnome-display-properties-install-systemwide.c:262
 #, c-format
@@ -2346,21 +2350,19 @@ msgstr ""
 msgid "Could not detect displays"
 msgstr "Nie można wykryć ekranów"
 
+# pd
 #: ../capplets/display/xrandr-capplet.c:2325
-#, fuzzy
-#| msgid "Could not save the monitor configuration"
 msgid "The monitor configuration has been saved"
-msgstr "Nie można zapisać konfiguracji monitora"
+msgstr "Konfiguracja monitora została zapisana"
 
 #: ../capplets/display/xrandr-capplet.c:2327
 msgid "This configuration will be used the next time someone logs in."
 msgstr ""
 
+# pd
 #: ../capplets/display/xrandr-capplet.c:2361
-#, fuzzy
-#| msgid "Could not save the monitor configuration"
 msgid "Could not set the default configuration for monitors"
-msgstr "Nie można zapisać konfiguracji monitora"
+msgstr "Nie można ustawić domyślnej konfiguracji monitorów"
 
 #: ../capplets/display/xrandr-capplet.c:2403
 msgid "Could not get screen information"
@@ -2732,11 +2734,10 @@ msgstr "Powolne"
 msgid "Typing Break"
 msgstr "Przerwa w pisaniu"
 
+# pd
 #: ../capplets/keyboard/gnome-keyboard-properties-dialog.ui.h:42
-#, fuzzy
-#| msgid "Keyboard Layout Options"
 msgid "View and edit keyboard layout options"
-msgstr "Opcje układu klawiatury"
+msgstr "Wyświetlanie i modyfikacja opcji układu klawiatury"
 
 #: ../capplets/keyboard/gnome-keyboard-properties-dialog.ui.h:43
 #: ../capplets/mouse/gnome-mouse-properties.ui.h:37
@@ -3686,12 +3687,11 @@ msgstr "Nowy arkusz kalkulacyjny"
 msgid "New Document"
 msgstr "Nowy dokument tekstowy"
 
+# pd
 #: ../libslab/bookmark-agent.c:1168
-#, fuzzy
-#| msgid "Home"
 msgctxt "Home folder"
 msgid "Home"
-msgstr "Dom"
+msgstr "Katalog domowy"
 
 #: ../libslab/bookmark-agent.c:1175
 msgid "Documents"
@@ -3757,17 +3757,17 @@ msgstr "Otwórz za pomocą domyślnego programu"
 msgid "Open in File Manager"
 msgstr "Otwiera w menedżerze plików"
 
+# pd
 #. clean item from menu
 #: ../libslab/document-tile.c:304
-#, fuzzy
-#| msgid "Remove from Favorites"
 msgid "Remove from recent menu"
-msgstr "Usuń z ulubionych"
+msgstr "Usuwa z menu ostatnich elementów"
 
+# pd
 #. clean all the items from menu
 #: ../libslab/document-tile.c:312
 msgid "Purge all the recent items"
-msgstr ""
+msgstr "Czyście wszystkie ostatnie elementy"
 
 #: ../libslab/document-tile.c:634
 msgid "?"
