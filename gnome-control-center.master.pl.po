@@ -10,7 +10,7 @@ msgstr ""
 "Report-Msgid-Bugs-To: http://bugzilla.gnome.org/enter_bug.cgi?product=gnome-"
 "control-center&component=general\n"
 "POT-Creation-Date: 2010-08-22 20:15+0000\n"
-"PO-Revision-Date: 2010-03-08 21:51+0100\n"
+"PO-Revision-Date: 2010-09-16 15:54+0200\n"
 "Last-Translator: Piotr Drąg <piotrdrag@gmail.com>\n"
 "Language-Team: Polish <gnomepl@aviary.pl>\n"
 "MIME-Version: 1.0\n"
@@ -2212,22 +2212,22 @@ msgid ""
 msgstr ""
 "Użycie: %s PLIK_ŹRÓDŁOWY NAZWA_DOCELOWA\n"
 "\n"
-"This program installs a RANDR profile for multi-monitor setups into\n"
-"a systemwide location.  The resulting profile will get used when\n"
-"the RANDR plug-in gets run in gnome-settings-daemon.\n"
+"Ten program instaluje profil RandR dla wielu monitorów do położenia\n"
+"systemowego. Wynikowy profil zostanie użyty, kiedy wtyczka RandR dostanie\n"
+"się do usługi gnome-settings-daemon.\n"
 "\n"
-"SOURCE_FILE - a full pathname, typically /home/username/.config/monitors."
-"xml\n"
+"PLIK_ŹRÓDŁOWY - pełna ścieżka, zwykle /home/nazwa_użytkownika/.config/"
+"monitors.xml\n"
 "\n"
-"DEST_NAME - relative name for the installed file.  This will get put in\n"
-"            the systemwide directory for RANDR configurations,\n"
-"            so the result will typically be %s/DEST_NAME\n"
+"NAZWA_DOCELOWA - względna nazwa dla zainstalowanego pliku. Zostanie on\n"
+"                 umieszczony w systemowym katalogu dla konfiguracji\n"
+"                 RandR, więc wynikiem będzie zwykle %s/NAZWA_DOCELOWA\n"
 
 # pd
 #. Translators: only able to install RANDR profiles as root
 #: ../capplets/display/gnome-display-properties-install-systemwide.c:151
 msgid "This program can only be used by the root user"
-msgstr ""
+msgstr "Ten program może być uruchamiany tylko przez użytkownika root"
 
 # pd
 #: ../capplets/display/gnome-display-properties-install-systemwide.c:168
@@ -2248,35 +2248,41 @@ msgstr "Nie można otworzyć %s: %s\n"
 msgid "Could not get information for %s: %s\n"
 msgstr "Nie można uzyskać informacji o %s: %s\n"
 
+# pd
 #: ../capplets/display/gnome-display-properties-install-systemwide.c:195
 #, c-format
 msgid "%s must be a regular file\n"
-msgstr ""
+msgstr "%s musi być zwykłym plikiem\n"
 
+# pd
 #: ../capplets/display/gnome-display-properties-install-systemwide.c:204
 msgid "This program must only be run through pkexec(1)"
-msgstr ""
+msgstr "Ten program musi być uruchamiany przez pkexec(1)"
 
+# pd
 #: ../capplets/display/gnome-display-properties-install-systemwide.c:209
 msgid "PKEXEC_UID must be set to an integer value"
-msgstr ""
+msgstr "Zmienna PKEXEC_UID musi zostać ustawiona na wartość całkowitą"
 
+# pd
 #. Translators: we are complaining that a file must be really owned by the user who called this program
 #: ../capplets/display/gnome-display-properties-install-systemwide.c:215
 #, c-format
 msgid "%s must be owned by you\n"
-msgstr ""
+msgstr "Użytkownik musi być właścicielem pliku %s\n"
 
+# pd
 #. Translators: here we are saying that a plain filename must look like "filename", not like "some_dir/filename"
 #: ../capplets/display/gnome-display-properties-install-systemwide.c:223
 #, c-format
 msgid "%s must not have any directory components\n"
-msgstr ""
+msgstr "%s nie może posiadać żadnych katalogów w ścieżce\n"
 
+# pd
 #: ../capplets/display/gnome-display-properties-install-systemwide.c:231
 #, c-format
 msgid "%s must be a directory\n"
-msgstr ""
+msgstr "%s musi być katalogiem\n"
 
 # pd
 #. Translators: the first %s/%s is a directory/filename; the last %s is an error message
@@ -2285,19 +2291,24 @@ msgstr ""
 msgid "Could not open %s/%s: %s\n"
 msgstr "Nie można otworzyć %s/%s: %s\n"
 
+# pd
 #: ../capplets/display/gnome-display-properties-install-systemwide.c:262
 #, c-format
 msgid "Could not rename %s to %s: %s\n"
-msgstr ""
+msgstr "Nie można zmienić nazwy %s na %s: %s\n"
 
+# pd
 #: ../capplets/display/org.gnome.randr.policy.in.h:1
 msgid ""
 "Authentication is required to install multi-monitor settings for all users"
 msgstr ""
+"Wymagane jest uwierzytelnienie, aby zainstalować ustawienia wielu monitorów "
+"dla wszystkich użytkowników"
 
+# pd
 #: ../capplets/display/org.gnome.randr.policy.in.h:2
 msgid "Install multi-monitor settings for the whole system"
-msgstr ""
+msgstr "Instalacja ustawień wielu monitorów dla całego systemu"
 
 #: ../capplets/display/xrandr-capplet.c:312
 msgid "Upside Down"
@@ -2355,9 +2366,10 @@ msgstr "Nie można wykryć ekranów"
 msgid "The monitor configuration has been saved"
 msgstr "Konfiguracja monitora została zapisana"
 
+# pd
 #: ../capplets/display/xrandr-capplet.c:2327
 msgid "This configuration will be used the next time someone logs in."
-msgstr ""
+msgstr "Ta konfiguracja zostanie użyta następnym razem, gdy ktoś się zaloguje."
 
 # pd
 #: ../capplets/display/xrandr-capplet.c:2361
@@ -2645,9 +2657,10 @@ msgstr "M_odel klawiatury:"
 msgid "Layouts"
 msgstr "Układy"
 
+# pd
 #: ../capplets/keyboard/gnome-keyboard-properties-dialog.ui.h:19
 msgid "List of keyboard layouts selected for usage"
-msgstr ""
+msgstr "Lista układów klawiatury wybranych do użycia"
 
 #: ../capplets/keyboard/gnome-keyboard-properties-dialog.ui.h:20
 msgid ""
@@ -2674,25 +2687,29 @@ msgstr "Prz_enieś w górę"
 msgid "Move _Up"
 msgstr "_Przenieś w dół"
 
+# pd
 #: ../capplets/keyboard/gnome-keyboard-properties-dialog.ui.h:25
 msgid "Move the selected keyboard layout down in the list"
-msgstr ""
+msgstr "Przenosi wybrany układ klawiatury niżej na liście"
 
+# pd
 #: ../capplets/keyboard/gnome-keyboard-properties-dialog.ui.h:26
 msgid "Move the selected keyboard layout up in the list"
-msgstr ""
+msgstr "Przenosi wybrany układ klawiatury wyżej na liście"
 
 #: ../capplets/keyboard/gnome-keyboard-properties-dialog.ui.h:27
 msgid "New windows u_se active window's layout"
 msgstr "_Nowe okna używają układu aktywnego okna"
 
+# pd
 #: ../capplets/keyboard/gnome-keyboard-properties-dialog.ui.h:28
 msgid "Print a diagram of the selected keyboard layout"
-msgstr ""
+msgstr "Drukuje schemat wybranego układu klawiatury"
 
+# pd
 #: ../capplets/keyboard/gnome-keyboard-properties-dialog.ui.h:29
 msgid "Remove the selected keyboard layout from the list"
-msgstr ""
+msgstr "Usuwa wybrany układ klawiatury z listy"
 
 #: ../capplets/keyboard/gnome-keyboard-properties-dialog.ui.h:30
 msgid "Repeat Keys"
@@ -2702,11 +2719,14 @@ msgstr "Powtarzanie klawiszy"
 msgid "Repeat keys speed"
 msgstr "Szybkość powtarzania klawiszy"
 
+# pd
 #: ../capplets/keyboard/gnome-keyboard-properties-dialog.ui.h:32
 msgid ""
 "Replace the current keyboard layout settings with the\n"
 "default settings"
 msgstr ""
+"Zastępuje bieżące ustawienia układu klawiatury\n"
+"domyślnymi ustawieniami"
 
 #: ../capplets/keyboard/gnome-keyboard-properties-dialog.ui.h:34
 msgid "Reset to De_faults"
@@ -2716,9 +2736,10 @@ msgstr "P_rzywróć domyślne"
 msgid "S_peed:"
 msgstr "_Prędkość:"
 
+# pd
 #: ../capplets/keyboard/gnome-keyboard-properties-dialog.ui.h:36
 msgid "Select a keyboard layout to be added to the list"
-msgstr ""
+msgstr "Wybiera układ klawiatury do dodania do listy"
 
 #: ../capplets/keyboard/gnome-keyboard-properties-dialog.ui.h:37
 #: ../capplets/mouse/gnome-mouse-properties.ui.h:27
@@ -2781,9 +2802,10 @@ msgstr "_Zezwolenie na kontrolowanie kursora za pomocą klawiatury"
 msgid "_Separate layout for each window"
 msgstr "Osobny _układ dla każdego okna"
 
+# pd
 #: ../capplets/keyboard/gnome-keyboard-properties-dialog.ui.h:54
 msgid "_Show..."
-msgstr ""
+msgstr "_Wyświetl..."
 
 #: ../capplets/keyboard/gnome-keyboard-properties-dialog.ui.h:55
 msgid "_Simulate simultaneous keypresses"
@@ -3408,10 +3430,11 @@ msgstr "Czas na przerwę!"
 msgid "_Take a Break"
 msgstr "C_zas na przerwę"
 
+# pd
 #: ../typing-break/drwright.c:507
 #, c-format
 msgid "Take a break now (next in %dm)"
-msgstr ""
+msgstr "Weź przerwę (następna za %dm)"
 
 #: ../typing-break/drwright.c:509
 #, c-format
@@ -3421,10 +3444,11 @@ msgstr[0] "%d minuta do przerwy"
 msgstr[1] "%d minuty do przerwy"
 msgstr[2] "%d minut do przerwy"
 
+# pd
 #: ../typing-break/drwright.c:515
 #, c-format
 msgid "Take a break now (next in less than one minute)"
-msgstr ""
+msgstr "Weź przerwę (następna za mniej niż minutę)"
 
 #: ../typing-break/drwright.c:517
 #, c-format
