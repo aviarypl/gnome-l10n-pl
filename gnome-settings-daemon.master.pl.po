@@ -10,7 +10,7 @@ msgstr ""
 "Report-Msgid-Bugs-To: http://bugzilla.gnome.org/enter_bug.cgi?product=gnome-"
 "settings-daemon&component=general\n"
 "POT-Creation-Date: 2010-08-02 23:45+0000\n"
-"PO-Revision-Date: 2010-02-21 23:29+0100\n"
+"PO-Revision-Date: 2010-09-16 16:15+0200\n"
 "Last-Translator: Piotr Drąg <piotrdrag@gmail.com>\n"
 "Language-Team: Polish <gnomepl@aviary.pl>\n"
 "MIME-Version: 1.0\n"
@@ -250,7 +250,7 @@ msgstr "Zwiększenie głośności"
 # pd
 #: ../data/apps_gnome_settings_daemon_xrandr.schemas.in.h:1
 msgid "File for default configuration for RandR"
-msgstr ""
+msgstr "Plik domyślnej konfiguracji RandR"
 
 #: ../data/apps_gnome_settings_daemon_xrandr.schemas.in.h:2
 msgid "Show Displays in Notification Area"
@@ -265,11 +265,16 @@ msgid ""
 "such a file, or has one that does not match the user's setup of monitors, "
 "then the file specified by this key will be used instead."
 msgstr ""
+"Wtyczka XRandR będzie wyszukiwała domyślnej konfiguracji w pliku określonym "
+"w tym kluczu. Jest ona podobna do pliku ~/.config/monitors.xml, który zwykle "
+"jest przechowywany w katalogach domowych użytkowników. Jeśli użytkownik nie "
+"posiada takiego pliku, lub posiada plik nie pasujący do ustawienia "
+"monitorów, to zostanie użyty plik określony w tym kluczu."
 
 # pd
 #: ../data/apps_gnome_settings_daemon_xrandr.schemas.in.h:4
 msgid "Turn on external monitor after system boot"
-msgstr ""
+msgstr "Włączenie zewnętrznego monitora po uruchomieniu systemu"
 
 # pd
 #: ../data/apps_gnome_settings_daemon_xrandr.schemas.in.h:5
@@ -277,11 +282,13 @@ msgid ""
 "Turn on external monitor after system boot if user plugs in external monitor "
 "on system boot."
 msgstr ""
+"Włączenie zewnętrznego monitora po uruchomieniu systemu, jeśli użytkownik "
+"podłączył go podczas uruchamiania."
 
 # pd
 #: ../data/apps_gnome_settings_daemon_xrandr.schemas.in.h:6
 msgid "Turn on laptop monitor after system boot"
-msgstr ""
+msgstr "Włącza monitor laptopa po uruchomieniu systemu"
 
 # pd
 #: ../data/apps_gnome_settings_daemon_xrandr.schemas.in.h:7
@@ -289,6 +296,8 @@ msgid ""
 "Turn on laptop monitor after system boot if user plugs in external monitor "
 "on system boot."
 msgstr ""
+"Włącza monitor laptopa po uruchomieniu systemu, jeśli użytkownik podłączył "
+"go podczas uruchamiania."
 
 #: ../data/apps_gnome_settings_daemon_xrandr.schemas.in.h:8
 msgid ""
@@ -501,7 +510,6 @@ msgstr "Włączenie wtyczki myszy"
 
 # pd
 #: ../data/gnome-settings-daemon.schemas.in.h:18
-#, fuzzy
 msgid "Enable smartcard plugin"
 msgstr "Włączenie wtyczki smartcard"
 
@@ -568,12 +576,12 @@ msgstr "Wartość \"true\" włącza wtyczkę zarządzania ustawieniami klawiatur
 
 # pd
 #: ../data/gnome-settings-daemon.schemas.in.h:33
-#, fuzzy
-#| msgid "Set to True to enable the plugin to manage font settings."
 msgid ""
 "Set to True to enable the plugin to manage locking the screen on smartcard "
 "removal."
-msgstr "Wartość \"true\" włącza wtyczkę zarządzania ustawieniami czcionek."
+msgstr ""
+"Wartość \"true\" włącza wtyczkę zarządzania blokowaniem ekranu podczas "
+"wysunięcia karty smartcard."
 
 #: ../data/gnome-settings-daemon.schemas.in.h:34
 msgid "Set to True to enable the plugin to manage mouse settings."
@@ -710,11 +718,15 @@ msgid ""
 "Set this to one of \"none\", \"lock_screen\", or \"force_logout\". The "
 "action will get performed when the smartcard used for log in is removed."
 msgstr ""
+"Należy ustawić na jedną z wartości: \"none\", (nic) \"lock_screen\" "
+"(zablokowanie ekranu) lub \"force_logout\" (wymuszenie wylogowania). "
+"Czynność zostanie wykonana, kiedy użytkownik wysunie kartę smartcard użytą "
+"do zalogowania."
 
 # pd
 #: ../data/desktop_gnome_peripherals_smartcard.schemas.in.h:2
 msgid "Smartcard removal action"
-msgstr ""
+msgstr "Czynność po wysunięciu karty smartcard"
 
 #: ../gnome-settings-daemon/main.c:55
 msgid "Enable debugging code"
@@ -1110,8 +1122,6 @@ msgstr "_Preferencje klawiatury"
 
 # pd
 #: ../plugins/keyboard/gsd-keyboard-xkb.c:292
-#, fuzzy
-#| msgid "Show Current _Layout"
 msgid "Show _Current Layout"
 msgstr "Wyświetlenie bieżącego u_kładu"
 
@@ -1345,69 +1355,68 @@ msgstr "Ustawienia X"
 # pd
 #: ../plugins/smartcard/gsd-smartcard-manager.c:167
 msgid "Module Path"
-msgstr ""
+msgstr "Ścieżka do modułu"
 
 # pd
 #: ../plugins/smartcard/gsd-smartcard-manager.c:168
 msgid "path to smartcard PKCS #11 driver"
-msgstr ""
+msgstr "ścieżka do sterownika PKCS #11 kart smartcard"
 
 # pd
 #: ../plugins/smartcard/gsd-smartcard-manager.c:504
 msgid "received error or hang up from event source"
-msgstr ""
+msgstr "odebrano błąd lub rozłączenie ze źródła zdarzeń"
 
 # pd
 #: ../plugins/smartcard/gsd-smartcard-manager.c:593
 #, c-format
 msgid "NSS security system could not be initialized"
-msgstr ""
+msgstr "nie można zainicjować systemu bezpieczeństwa NSS"
 
 # pd
 #: ../plugins/smartcard/gsd-smartcard-manager.c:662
 #, c-format
 msgid "no suitable smartcard driver could be found"
-msgstr ""
+msgstr "nie odnaleziono odpowiedniego sterownika kart smartcard"
 
 # pd
 #: ../plugins/smartcard/gsd-smartcard-manager.c:682
 #, c-format
 msgid "smartcard driver '%s' could not be loaded"
-msgstr ""
+msgstr "nie można wczytać sterownika kart smartcard \"%s\""
 
 # pd
 #: ../plugins/smartcard/gsd-smartcard-manager.c:771
 #, c-format
 msgid "could not watch for incoming card events - %s"
-msgstr ""
+msgstr "nie można obserwować przychodzących zdarzeń dla kart - %s"
 
 # pd
 #: ../plugins/smartcard/gsd-smartcard-manager.c:1124
 #, c-format
 msgid "encountered unexpected error while waiting for smartcard events"
 msgstr ""
+"wystąpił nieoczekiwany błąd podczas oczekiwania na zdarzenia kart smartcard"
 
 # pd
 #: ../plugins/smartcard/gsd-smartcard.c:154
 msgid "Slot ID"
-msgstr ""
+msgstr "Identyfikator gniazda"
 
 # pd
 #: ../plugins/smartcard/gsd-smartcard.c:155
 msgid "The slot the card is in"
-msgstr ""
+msgstr "Gniazdo, w którym znajduje się karta"
 
 # pd
 #: ../plugins/smartcard/gsd-smartcard.c:161
-#, fuzzy
-#| msgid "Slow keys"
 msgid "Slot Series"
-msgstr "Klawisze powolne"
+msgstr "Serie gniazda"
 
 # pd
 #: ../plugins/smartcard/gsd-smartcard.c:162
 msgid "per-slot card identifier"
-msgstr ""
+msgstr "identyfikator karty dla gniazda"
 
 # pd
 #: ../plugins/smartcard/gsd-smartcard.c:168
@@ -1423,7 +1432,7 @@ msgstr "Moduł"
 # pd
 #: ../plugins/smartcard/gsd-smartcard.c:174
 msgid "smartcard driver"
-msgstr ""
+msgstr "sterownik smartcard"
 
 # pd
 #: ../plugins/datetime/org.gnome.settingsdaemon.datetimemechanism.policy.in.h:1
