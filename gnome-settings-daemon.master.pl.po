@@ -7,17 +7,15 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: gnome-settings-daemon\n"
-"Report-Msgid-Bugs-To: http://bugzilla.gnome.org/enter_bug.cgi?product=gnome-"
-"settings-daemon&component=general\n"
+"Report-Msgid-Bugs-To: http://bugzilla.gnome.org/enter_bug.cgi?product=gnome-settings-daemon&component=general\n"
 "POT-Creation-Date: 2010-08-02 23:45+0000\n"
-"PO-Revision-Date: 2010-09-16 16:15+0200\n"
-"Last-Translator: Piotr Drąg <piotrdrag@gmail.com>\n"
+"PO-Revision-Date: 2010-09-17 22:16+0100\n"
+"Last-Translator: Tomasz Dominikowski <dominikowski@gmail.com>\n"
 "Language-Team: Polish <gnomepl@aviary.pl>\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"Plural-Forms: nplurals=3; plural=(n==1 ? 0 : n%10>=2 && n%10<=4 && (n%100<10 "
-"|| n%100>=20) ? 1 : 2);\n"
+"Plural-Forms: nplurals=3; plural=(n==1 ? 0 : n%10>=2 && n%10<=4 && (n%100<10 || n%100>=20) ? 1 : 2);\n"
 "X-Poedit-Language: Polish\n"
 "X-Poedit-Country: Poland\n"
 
@@ -42,48 +40,28 @@ msgid "Mount paths to ignore"
 msgstr "Ignorowane ścieżki montowania"
 
 #: ../data/apps_gnome_settings_daemon_housekeeping.schemas.in.h:5
-msgid ""
-"Percentage free space threshold for initial warning of low disk space. If "
-"the percentage free space drops below this, a warning will be shown."
-msgstr ""
-"Próg wolnego miejsca w procentach dla początkowego ostrzeżenie o małej "
-"ilości miejsca na dysku. Jeśli procent wolnego miejsca spadnie poniżej tej "
-"wartości, wyświetlone zostanie ostrzeżenie."
+msgid "Percentage free space threshold for initial warning of low disk space. If the percentage free space drops below this, a warning will be shown."
+msgstr "Próg wolnego miejsca w procentach dla początkowego ostrzeżenie o małej ilości miejsca na dysku. Jeśli procent wolnego miejsca spadnie poniżej tej wartości, wyświetlone zostanie ostrzeżenie."
 
 #: ../data/apps_gnome_settings_daemon_housekeeping.schemas.in.h:6
 msgid "Specify a list of mount paths to ignore when they run low on space."
-msgstr ""
-"Określenie listy ścieżek montowania do zignorowania, kiedy jest mało miejsca."
+msgstr "Określenie listy ścieżek montowania do zignorowania, kiedy jest mało miejsca."
 
 #: ../data/apps_gnome_settings_daemon_housekeeping.schemas.in.h:7
-msgid ""
-"Specify a time in minutes. Subsequent warnings for a volume will not appear "
-"more often than this period."
-msgstr ""
-"Określenie czasu w minutach. Kolejne ostrzeżenia dla woluminu nie będą "
-"pojawiały się częściej niż ten okres."
+msgid "Specify a time in minutes. Subsequent warnings for a volume will not appear more often than this period."
+msgstr "Określenie czasu w minutach. Kolejne ostrzeżenia dla woluminu nie będą pojawiały się częściej niż ten okres."
 
 #: ../data/apps_gnome_settings_daemon_housekeeping.schemas.in.h:8
-msgid ""
-"Specify an amount in GB. If the amount of free space is more than this, no "
-"warning will be shown."
-msgstr ""
-"Określenie liczby w gigabajtach. Jeśli ilość wolnego miejsca jest większa "
-"niż ta wartość, żadne ostrzeżenie nie zostanie wyświetlone."
+msgid "Specify an amount in GB. If the amount of free space is more than this, no warning will be shown."
+msgstr "Określenie liczby w gigabajtach. Jeśli ilość wolnego miejsca jest większa niż ta wartość, żadne ostrzeżenie nie zostanie wyświetlone."
 
 #: ../data/apps_gnome_settings_daemon_housekeeping.schemas.in.h:9
-msgid ""
-"Specify the percentage that the free disk space should reduce by before "
-"issuing a subsequent warning."
-msgstr ""
-"Określenie procentu, o jaką wolne miejsce powinno się zmniejszyć przed "
-"wyświetleniem kolejnego ostrzeżenia."
+msgid "Specify the percentage that the free disk space should reduce by before issuing a subsequent warning."
+msgstr "Określenie procentu, o jaką wolne miejsce powinno się zmniejszyć przed wyświetleniem kolejnego ostrzeżenia."
 
 #: ../data/apps_gnome_settings_daemon_housekeeping.schemas.in.h:10
 msgid "Subsequent free percentage notify threshold"
-msgstr ""
-"Próg powiadamiania o małej ilości wolnego miejsca na dysku przed kolejnym "
-"ostrzeżeniem, w procentach"
+msgstr "Próg powiadamiania o małej ilości wolnego miejsca na dysku przed kolejnym ostrzeżeniem, w procentach"
 
 # pd
 #: ../data/apps_gnome_settings_daemon_keybindings.schemas.in.h:1
@@ -156,8 +134,7 @@ msgstr "Skrót do przechodzenia do poprzedniej ścieżki."
 
 #: ../data/apps_gnome_settings_daemon_keybindings.schemas.in.h:18
 msgid "Binding to start playback (or toggle play/pause)."
-msgstr ""
-"Skrót do rozpoczęcia odtwarzania (lub przełączania odtwarzania/wstrzymania)."
+msgstr "Skrót do rozpoczęcia odtwarzania (lub przełączania odtwarzania/wstrzymania)."
 
 #: ../data/apps_gnome_settings_daemon_keybindings.schemas.in.h:19
 msgid "Binding to stop playback."
@@ -257,19 +234,10 @@ msgid "Show Displays in Notification Area"
 msgstr "Wyświetlanie ekranów w obszarze powiadamiania"
 
 # pd
+# rev: wyszukiwała domyślną lub szukała domyślnej
 #: ../data/apps_gnome_settings_daemon_xrandr.schemas.in.h:3
-msgid ""
-"The XRandR plugin will look for a default configuration in the file "
-"specified by this key. This is similar to the ~/.config/monitors.xml that "
-"normally gets stored in users' home directories. If a user does not have "
-"such a file, or has one that does not match the user's setup of monitors, "
-"then the file specified by this key will be used instead."
-msgstr ""
-"Wtyczka XRandR będzie wyszukiwała domyślnej konfiguracji w pliku określonym "
-"w tym kluczu. Jest ona podobna do pliku ~/.config/monitors.xml, który zwykle "
-"jest przechowywany w katalogach domowych użytkowników. Jeśli użytkownik nie "
-"posiada takiego pliku, lub posiada plik nie pasujący do ustawienia "
-"monitorów, to zostanie użyty plik określony w tym kluczu."
+msgid "The XRandR plugin will look for a default configuration in the file specified by this key. This is similar to the ~/.config/monitors.xml that normally gets stored in users' home directories. If a user does not have such a file, or has one that does not match the user's setup of monitors, then the file specified by this key will be used instead."
+msgstr "Wtyczka XRandR będzie wyszukiwała domyślnej konfiguracji w pliku określonym w tym kluczu. Jest ona podobna do pliku ~/.config/monitors.xml, który zwykle jest przechowywany w katalogach domowych użytkowników. Jeśli użytkownik nie posiada takiego pliku, lub posiada plik nie pasujący do ustawienia monitorów, to zostanie użyty plik określony w tym kluczu."
 
 # pd
 #: ../data/apps_gnome_settings_daemon_xrandr.schemas.in.h:4
@@ -278,12 +246,8 @@ msgstr "Włączenie zewnętrznego monitora po uruchomieniu systemu"
 
 # pd
 #: ../data/apps_gnome_settings_daemon_xrandr.schemas.in.h:5
-msgid ""
-"Turn on external monitor after system boot if user plugs in external monitor "
-"on system boot."
-msgstr ""
-"Włączenie zewnętrznego monitora po uruchomieniu systemu, jeśli użytkownik "
-"podłączył go podczas uruchamiania."
+msgid "Turn on external monitor after system boot if user plugs in external monitor on system boot."
+msgstr "Włączenie zewnętrznego monitora po uruchomieniu systemu, jeśli użytkownik podłączył go podczas uruchamiania."
 
 # pd
 #: ../data/apps_gnome_settings_daemon_xrandr.schemas.in.h:6
@@ -292,20 +256,12 @@ msgstr "Włącza monitor laptopa po uruchomieniu systemu"
 
 # pd
 #: ../data/apps_gnome_settings_daemon_xrandr.schemas.in.h:7
-msgid ""
-"Turn on laptop monitor after system boot if user plugs in external monitor "
-"on system boot."
-msgstr ""
-"Włącza monitor laptopa po uruchomieniu systemu, jeśli użytkownik podłączył "
-"go podczas uruchamiania."
+msgid "Turn on laptop monitor after system boot if user plugs in external monitor on system boot."
+msgstr "Włącza monitor laptopa po uruchomieniu systemu, jeśli użytkownik podłączył go podczas uruchamiania."
 
 #: ../data/apps_gnome_settings_daemon_xrandr.schemas.in.h:8
-msgid ""
-"Whether a notification icon with display-related things should be shown in "
-"the panel."
-msgstr ""
-"Określa, czy ma być wyświetlana ikona z właściwościami ekranu w obszarze "
-"powiadamiania."
+msgid "Whether a notification icon with display-related things should be shown in the panel."
+msgstr "Określa, czy ma być wyświetlana ikona z właściwościami ekranu w obszarze powiadamiania."
 
 #: ../data/desktop_gnome_font_rendering.schemas.in.h:1
 msgid "Antialiasing"
@@ -328,58 +284,28 @@ msgid "RGBA order"
 msgstr "kolejność RGBA"
 
 #: ../data/desktop_gnome_font_rendering.schemas.in.h:5
-msgid ""
-"The order of subpixel elements on an LCD screen; only used when antialiasing "
-"is set to \"rgba\". Possible values are: \"rgb\" for red on left (most "
-"common), \"bgr\" for blue on left, \"vrgb\" for red on top, \"vbgr\" for red "
-"on bottom."
-msgstr ""
-"Kolejność składowych pikseli; używana tylko w wypadku wygładzania krawędzi "
-"\"rgba\". Możliwe wartości: \"rgb\" dla czerwonego po lewej stronie "
-"(najczęściej używane), \"bgr\" dla niebieskiego po lewej, \"vrgb\" dla "
-"czerwonego na górze, \"vbgr\" dla czerwonego na dole."
+msgid "The order of subpixel elements on an LCD screen; only used when antialiasing is set to \"rgba\". Possible values are: \"rgb\" for red on left (most common), \"bgr\" for blue on left, \"vrgb\" for red on top, \"vbgr\" for red on bottom."
+msgstr "Kolejność składowych pikseli; używana tylko w wypadku wygładzania krawędzi \"rgba\". Możliwe wartości: \"rgb\" dla czerwonego po lewej stronie (najczęściej używane), \"bgr\" dla niebieskiego po lewej, \"vrgb\" dla czerwonego na górze, \"vbgr\" dla czerwonego na dole."
 
 #: ../data/desktop_gnome_font_rendering.schemas.in.h:6
-msgid ""
-"The resolution used for converting font sizes to pixel sizes, in dots per "
-"inch."
-msgstr ""
-"Rozdzielczość do zmiany rozmiaru czcionek na rozmiar w pikselach, w punktach "
-"na cal."
+msgid "The resolution used for converting font sizes to pixel sizes, in dots per inch."
+msgstr "Rozdzielczość do zmiany rozmiaru czcionek na rozmiar w pikselach, w punktach na cal."
 
 #: ../data/desktop_gnome_font_rendering.schemas.in.h:7
-msgid ""
-"The type of antialiasing to use when rendering fonts. Possible values are: "
-"\"none\" for no antialiasing, \"grayscale\" for standard grayscale "
-"antialiasing, and \"rgba\" for subpixel antialiasing (LCD screens only)."
-msgstr ""
-"Rodzaj wygładzania renderowanych czcionek. Możliwe wartości to: \"brak\" dla "
-"wyłączonego wygładzania, \"Skala szarości\" dla standardowego wygładzania w "
-"skali szarości oraz \"rgba\" dla wygładzania podpikselowego (tylko ekrany "
-"LCD)."
+msgid "The type of antialiasing to use when rendering fonts. Possible values are: \"none\" for no antialiasing, \"grayscale\" for standard grayscale antialiasing, and \"rgba\" for subpixel antialiasing (LCD screens only)."
+msgstr "Rodzaj wygładzania renderowanych czcionek. Możliwe wartości to: \"brak\" dla wyłączonego wygładzania, \"Skala szarości\" dla standardowego wygładzania w skali szarości oraz \"rgba\" dla wygładzania podpikselowego (tylko ekrany LCD)."
 
 #: ../data/desktop_gnome_font_rendering.schemas.in.h:8
-msgid ""
-"The type of hinting to use when rendering fonts. Possible values are: \"none"
-"\" for no hinting, \"slight\" for basic, \"medium\" for moderate, and \"full"
-"\" for maximum hinting (may cause distortion of letter forms)."
-msgstr ""
-"Rodzaj hintingu renderowanych czcionek. Możliwe wartości to: \"Brak\" dla "
-"wyłączonego hintingu, \"Lekki\" dla podstawowego, \"Średni\" dla "
-"zaawansowanego oraz \"Pełny\" dla maksymalnego hintingu (może zniekształcać "
-"czcionki)."
+msgid "The type of hinting to use when rendering fonts. Possible values are: \"none\" for no hinting, \"slight\" for basic, \"medium\" for moderate, and \"full\" for maximum hinting (may cause distortion of letter forms)."
+msgstr "Rodzaj hintingu renderowanych czcionek. Możliwe wartości to: \"Brak\" dla wyłączonego hintingu, \"Lekki\" dla podstawowego, \"Średni\" dla zaawansowanego oraz \"Pełny\" dla maksymalnego hintingu (może zniekształcać czcionki)."
 
 #: ../data/desktop_gnome_keybindings.schemas.in.h:1
 msgid "Allowed keys"
 msgstr "Klawisze dozwolone"
 
 #: ../data/desktop_gnome_keybindings.schemas.in.h:2
-msgid ""
-"If non-empty, keybindings will be ignored unless their GConf directory is in "
-"the list. This is useful for lockdown."
-msgstr ""
-"Jeśli nie jest puste, to skróty klawiszowe będą ignorowane, chyba że ich "
-"katalog GConf znajduje się w liście. Używane przy ograniczaniu dostępu."
+msgid "If non-empty, keybindings will be ignored unless their GConf directory is in the list. This is useful for lockdown."
+msgstr "Jeśli nie jest puste, to skróty klawiszowe będą ignorowane, chyba że ich katalog GConf znajduje się w liście. Używane przy ograniczaniu dostępu."
 
 #: ../data/desktop_gnome_peripherals_touchpad.schemas.in.h:1
 msgid "Disable touchpad while typing"
@@ -402,35 +328,20 @@ msgid "Select the touchpad scroll method"
 msgstr "Wybór metody przewijania panelu dotykowego"
 
 #: ../data/desktop_gnome_peripherals_touchpad.schemas.in.h:6
-msgid ""
-"Select the touchpad scroll method. Supported values are: 0: disabled, 1: "
-"edge scrolling, and 2: two-finger scrolling"
-msgstr ""
-"Wybór metody przewijania panelu dotykowego. Obsługiwane wartości: 0: "
-"wyłączone, 1: przewijanie przy krawędziach, 2: przewijanie dwoma palcami"
+msgid "Select the touchpad scroll method. Supported values are: 0: disabled, 1: edge scrolling, and 2: two-finger scrolling"
+msgstr "Wybór metody przewijania panelu dotykowego. Obsługiwane wartości: 0: wyłączone, 1: przewijanie przy krawędziach, 2: przewijanie dwoma palcami"
 
 #: ../data/desktop_gnome_peripherals_touchpad.schemas.in.h:7
-msgid ""
-"Set this to TRUE if you have problems with accidentally hitting the touchpad "
-"while typing."
-msgstr ""
-"Powinno być ustawione na \"TRUE\", jeśli użytkownik ma problemy z "
-"przypadkowym naciskaniem panelu dotykowego podczas pisania."
+msgid "Set this to TRUE if you have problems with accidentally hitting the touchpad while typing."
+msgstr "Powinno być ustawione na \"TRUE\", jeśli użytkownik ma problemy z przypadkowym naciskaniem panelu dotykowego podczas pisania."
 
 #: ../data/desktop_gnome_peripherals_touchpad.schemas.in.h:8
-msgid ""
-"Set this to TRUE to allow horizontal scrolling by the same method selected "
-"with the scroll_method key."
-msgstr ""
-"Ustawienie na \"TRUE\" umożliwia przewijanie w poziomie tą samą metodą, jaką "
-"wybrano za pomocą klucza \"scroll_method\""
+msgid "Set this to TRUE to allow horizontal scrolling by the same method selected with the scroll_method key."
+msgstr "Ustawienie na \"TRUE\" umożliwia przewijanie w poziomie tą samą metodą, jaką wybrano za pomocą klucza \"scroll_method\""
 
 #: ../data/desktop_gnome_peripherals_touchpad.schemas.in.h:9
-msgid ""
-"Set this to TRUE to be able to send mouse clicks by tapping on the touchpad."
-msgstr ""
-"Ustawienie na \"TRUE\" umożliwia wysyłanie kliknięć myszy przez stukanie na "
-"panelu dotykowym"
+msgid "Set this to TRUE to be able to send mouse clicks by tapping on the touchpad."
+msgstr "Ustawienie na \"TRUE\" umożliwia wysyłanie kliknięć myszy przez stukanie na panelu dotykowym"
 
 #: ../data/desktop_gnome_peripherals_touchpad.schemas.in.h:10
 msgid "Set this to TRUE to enable all touchpads."
@@ -546,12 +457,8 @@ msgid "Screen reader"
 msgstr "Czytnik ekranowy"
 
 #: ../data/gnome-settings-daemon.schemas.in.h:27
-msgid ""
-"Set to True to enable the housekeeping plugin, to prune transient file "
-"caches."
-msgstr ""
-"Wartość \"true\" włącza wtyczkę gospodarowania, aby oczyścić przejściowe "
-"bufory plików."
+msgid "Set to True to enable the housekeeping plugin, to prune transient file caches."
+msgstr "Wartość \"true\" włącza wtyczkę gospodarowania, aby oczyścić przejściowe bufory plików."
 
 #: ../data/gnome-settings-daemon.schemas.in.h:28
 msgid "Set to True to enable the plugin to manage XRandR settings."
@@ -563,8 +470,7 @@ msgstr "Wartość \"true\" włącza wtyczkę zarządzania ustawieniami schowka."
 
 #: ../data/gnome-settings-daemon.schemas.in.h:30
 msgid "Set to True to enable the plugin to manage desktop background settings."
-msgstr ""
-"Wartość \"true\" włącza wtyczkę zarządzania ustawieniami tapety pulpitu."
+msgstr "Wartość \"true\" włącza wtyczkę zarządzania ustawieniami tapety pulpitu."
 
 #: ../data/gnome-settings-daemon.schemas.in.h:31
 msgid "Set to True to enable the plugin to manage font settings."
@@ -576,12 +482,8 @@ msgstr "Wartość \"true\" włącza wtyczkę zarządzania ustawieniami klawiatur
 
 # pd
 #: ../data/gnome-settings-daemon.schemas.in.h:33
-msgid ""
-"Set to True to enable the plugin to manage locking the screen on smartcard "
-"removal."
-msgstr ""
-"Wartość \"true\" włącza wtyczkę zarządzania blokowaniem ekranu podczas "
-"wysunięcia karty smartcard."
+msgid "Set to True to enable the plugin to manage locking the screen on smartcard removal."
+msgstr "Wartość \"true\" włącza wtyczkę zarządzania blokowaniem ekranu podczas wysunięcia karty smartcard."
 
 #: ../data/gnome-settings-daemon.schemas.in.h:34
 msgid "Set to True to enable the plugin to manage mouse settings."
@@ -589,21 +491,15 @@ msgstr "Wartość \"true\" włącza wtyczkę zarządzania ustawieniami myszy."
 
 #: ../data/gnome-settings-daemon.schemas.in.h:35
 msgid "Set to True to enable the plugin to manage multimedia keys settings."
-msgstr ""
-"Wartość \"true\" włącza wtyczkę zarządzania ustawieniami klawiszy "
-"multimedialnych."
+msgstr "Wartość \"true\" włącza wtyczkę zarządzania ustawieniami klawiszy multimedialnych."
 
 #: ../data/gnome-settings-daemon.schemas.in.h:36
 msgid "Set to True to enable the plugin to manage sound sample caches."
 msgstr "Wartość \"true\" włącza wtyczkę zarządzania buforami próbek dźwięku."
 
 #: ../data/gnome-settings-daemon.schemas.in.h:37
-msgid ""
-"Set to True to enable the plugin to manage the accessibility keyboard "
-"settings."
-msgstr ""
-"Wartość \"true\" włącza wtyczkę zarządzania ustawieniami dostępności "
-"klawiatury."
+msgid "Set to True to enable the plugin to manage the accessibility keyboard settings."
+msgstr "Wartość \"true\" włącza wtyczkę zarządzania ustawieniami dostępności klawiatury."
 
 #: ../data/gnome-settings-daemon.schemas.in.h:38
 msgid "Set to True to enable the plugin to manage the keybindings."
@@ -642,28 +538,16 @@ msgid "The name of the keyboard shortcut to toggle the screen reader"
 msgstr "Nazwa skrótu klawiszowego do przełączania czytnika ekranowego"
 
 #: ../data/gnome-settings-daemon.schemas.in.h:47
-msgid ""
-"This is the name of the keyboard shortcut to toggle the magnifier. This name "
-"will be shown in the keyboard shortcut preferences dialog."
-msgstr ""
-"To jest nazwa skrótu klawiszowego do przełączania lupy ekranowej. Nazwa "
-"będzie wyświetlana w oknie dialogowym skrótów klawiszowych."
+msgid "This is the name of the keyboard shortcut to toggle the magnifier. This name will be shown in the keyboard shortcut preferences dialog."
+msgstr "To jest nazwa skrótu klawiszowego do przełączania lupy ekranowej. Nazwa będzie wyświetlana w oknie dialogowym skrótów klawiszowych."
 
 #: ../data/gnome-settings-daemon.schemas.in.h:48
-msgid ""
-"This is the name of the keyboard shortcut to toggle the on-screen keyboard. "
-"This name will be shown in the keyboard shortcut preferences dialog."
-msgstr ""
-"To jest nazwa skrótu klawiszowego do przełączania klawiatury ekranowej. "
-"Nazwa będzie wyświetlana w oknie dialogowym skrótów klawiszowych."
+msgid "This is the name of the keyboard shortcut to toggle the on-screen keyboard. This name will be shown in the keyboard shortcut preferences dialog."
+msgstr "To jest nazwa skrótu klawiszowego do przełączania klawiatury ekranowej. Nazwa będzie wyświetlana w oknie dialogowym skrótów klawiszowych."
 
 #: ../data/gnome-settings-daemon.schemas.in.h:49
-msgid ""
-"This is the name of the keyboard shortcut to toggle the screen reader. This "
-"name will be shown in the keyboard shortcut preferences dialog."
-msgstr ""
-"To jest nazwa skrótu klawiszowego do przełączania czytnika ekranowego. Nazwa "
-"będzie wyświetlana w oknie dialogowym skrótów klawiszowych."
+msgid "This is the name of the keyboard shortcut to toggle the screen reader. This name will be shown in the keyboard shortcut preferences dialog."
+msgstr "To jest nazwa skrótu klawiszowego do przełączania czytnika ekranowego. Nazwa będzie wyświetlana w oknie dialogowym skrótów klawiszowych."
 
 #: ../data/gnome-settings-daemon.schemas.in.h:50
 msgid "Toggle magnifier"
@@ -679,14 +563,11 @@ msgstr "Przełącza czytnik ekranowy"
 
 #: ../data/gnome-settings-daemon.schemas.in.h:53
 msgid "Whether the bounce keys keyboard accessibility feature is turned on."
-msgstr ""
-"Określa, czy funkcja dostępności klawiatury \"klawisze odbijane\" jest "
-"włączona."
+msgstr "Określa, czy funkcja dostępności klawiatury \"klawisze odbijane\" jest włączona."
 
 #: ../data/gnome-settings-daemon.schemas.in.h:54
 msgid "Whether the mouse keys keyboard accessibility feature is turned on."
-msgstr ""
-"Określa, czy funkcja dostępności klawiatury \"klawisze myszy\" jest włączona."
+msgstr "Określa, czy funkcja dostępności klawiatury \"klawisze myszy\" jest włączona."
 
 #: ../data/gnome-settings-daemon.schemas.in.h:55
 msgid "Whether the on-screen keyboard is turned on."
@@ -702,26 +583,16 @@ msgstr "Określa, czy czytnik ekranowy jest włączony."
 
 #: ../data/gnome-settings-daemon.schemas.in.h:58
 msgid "Whether the slow keys keyboard accessibility feature is turned on."
-msgstr ""
-"Określa, czy funkcja dostępności klawiatury \"klawisze powolne\" jest "
-"włączona."
+msgstr "Określa, czy funkcja dostępności klawiatury \"klawisze powolne\" jest włączona."
 
 #: ../data/gnome-settings-daemon.schemas.in.h:59
 msgid "Whether the sticky keys keyboard accessibility feature is turned on."
-msgstr ""
-"Określa, czy funkcja dostępności klawiatury \"klawisze trwałe\" jest "
-"włączona."
+msgstr "Określa, czy funkcja dostępności klawiatury \"klawisze trwałe\" jest włączona."
 
 # pd
 #: ../data/desktop_gnome_peripherals_smartcard.schemas.in.h:1
-msgid ""
-"Set this to one of \"none\", \"lock_screen\", or \"force_logout\". The "
-"action will get performed when the smartcard used for log in is removed."
-msgstr ""
-"Należy ustawić na jedną z wartości: \"none\", (nic) \"lock_screen\" "
-"(zablokowanie ekranu) lub \"force_logout\" (wymuszenie wylogowania). "
-"Czynność zostanie wykonana, kiedy użytkownik wysunie kartę smartcard użytą "
-"do zalogowania."
+msgid "Set this to one of \"none\", \"lock_screen\", or \"force_logout\". The action will get performed when the smartcard used for log in is removed."
+msgstr "Należy ustawić na jedną z wartości: \"none\", (nic) \"lock_screen\" (zablokowanie ekranu) lub \"force_logout\" (wymuszenie wylogowania). Czynność zostanie wykonana, kiedy użytkownik wysunie kartę smartcard użytą do zalogowania."
 
 # pd
 #: ../data/desktop_gnome_peripherals_smartcard.schemas.in.h:2
@@ -769,12 +640,8 @@ msgstr "Wyłączyć funkcję powolnych klawiszy?"
 
 #: ../plugins/a11y-keyboard/gsd-a11y-keyboard-manager.c:593
 #: ../plugins/a11y-keyboard/gsd-a11y-keyboard-manager.c:659
-msgid ""
-"You just held down the Shift key for 8 seconds.  This is the shortcut for "
-"the Slow Keys feature, which affects the way your keyboard works."
-msgstr ""
-"Przytrzymano przez osiem sekund klawisz Shift. Jest to skrót klawiszowy dla "
-"funkcji powolnych klawiszy, która wpływa na sposób pracy klawiatury."
+msgid "You just held down the Shift key for 8 seconds.  This is the shortcut for the Slow Keys feature, which affects the way your keyboard works."
+msgstr "Przytrzymano przez osiem sekund klawisz Shift. Jest to skrót klawiszowy dla funkcji powolnych klawiszy, która wpływa na sposób pracy klawiatury."
 
 #: ../plugins/a11y-keyboard/gsd-a11y-keyboard-manager.c:618
 #: ../plugins/a11y-keyboard/gsd-a11y-keyboard-manager.c:757
@@ -832,23 +699,13 @@ msgstr "Wyłączyć funkcję klawiszy trwałych?"
 
 #: ../plugins/a11y-keyboard/gsd-a11y-keyboard-manager.c:730
 #: ../plugins/a11y-keyboard/gsd-a11y-keyboard-manager.c:798
-msgid ""
-"You just pressed the Shift key 5 times in a row.  This is the shortcut for "
-"the Sticky Keys feature, which affects the way your keyboard works."
-msgstr ""
-"Przyciśnięto klawisz Shift pięć razy pod rząd. Jest to skrót klawiszowy dla "
-"funkcji trwałych klawiszy, która wpływa na sposób pracy klawiatury."
+msgid "You just pressed the Shift key 5 times in a row.  This is the shortcut for the Sticky Keys feature, which affects the way your keyboard works."
+msgstr "Przyciśnięto klawisz Shift pięć razy pod rząd. Jest to skrót klawiszowy dla funkcji trwałych klawiszy, która wpływa na sposób pracy klawiatury."
 
 #: ../plugins/a11y-keyboard/gsd-a11y-keyboard-manager.c:732
 #: ../plugins/a11y-keyboard/gsd-a11y-keyboard-manager.c:800
-msgid ""
-"You just pressed two keys at once, or pressed the Shift key 5 times in a "
-"row.  This turns off the Sticky Keys feature, which affects the way your "
-"keyboard works."
-msgstr ""
-"Przyciśnięto dwa klawisze na raz, lub przyciśnięto klawisz Shift pięć razy "
-"pod rząd. Wyłącza to funkcję trwałych klawiszy, która wpływa na sposób pracy "
-"klawiatury."
+msgid "You just pressed two keys at once, or pressed the Shift key 5 times in a row.  This turns off the Sticky Keys feature, which affects the way your keyboard works."
+msgstr "Przyciśnięto dwa klawisze na raz, lub przyciśnięto klawisz Shift pięć razy pod rząd. Wyłącza to funkcję trwałych klawiszy, która wpływa na sposób pracy klawiatury."
 
 #: ../plugins/a11y-keyboard/gsd-a11y-keyboard-manager.c:828
 msgid "Sticky Keys Alert"
@@ -869,8 +726,7 @@ msgstr "Powiększenie _tekstu do łatwiejszego odczytania"
 
 #: ../plugins/a11y-keyboard/gsd-a11y-preferences-dialog.ui.h:3
 msgid "Press and _hold keys to accept them (Slow Keys)"
-msgstr ""
-"N_aciskanie i przytrzymywanie klawiszy, aby je zatwierdzić (klawisze powolne)"
+msgstr "N_aciskanie i przytrzymywanie klawiszy, aby je zatwierdzić (klawisze powolne)"
 
 #: ../plugins/a11y-keyboard/gsd-a11y-preferences-dialog.ui.h:5
 msgid "Use on-screen _keyboard"
@@ -886,13 +742,11 @@ msgstr "_Czytnik ekranowy"
 
 #: ../plugins/a11y-keyboard/gsd-a11y-preferences-dialog.ui.h:8
 msgid "_Ignore duplicate keypresses (Bounce Keys)"
-msgstr ""
-"_Ignorowanie podwójnych naciśnięć klawiszy w jednym ciągu (klawisze odbijane)"
+msgstr "_Ignorowanie podwójnych naciśnięć klawiszy w jednym ciągu (klawisze odbijane)"
 
 #: ../plugins/a11y-keyboard/gsd-a11y-preferences-dialog.ui.h:9
 msgid "_Press keyboard shortcuts one key at a time (Sticky Keys)"
-msgstr ""
-"_Wprowadzanie skrótów klawiszowych jeden klawisz po drugim (klawisze trwałe)"
+msgstr "_Wprowadzanie skrótów klawiszowych jeden klawisz po drugim (klawisze trwałe)"
 
 #: ../plugins/background/background.gnome-settings-plugin.in.h:1
 msgid "Background"
@@ -945,36 +799,20 @@ msgid "This computer has only %s disk space remaining."
 msgstr "Ten komputer posiada tylko %s wolnego miejsca."
 
 #: ../plugins/housekeeping/gsd-ldsm-dialog.c:98
-msgid ""
-"You can free up disk space by emptying the Trash, removing unused programs "
-"or files, or moving files to another disk or partition."
-msgstr ""
-"Można uwolnić trochę miejsca przez opróżnienie kosza, usunięcie nieużywanych "
-"programów albo plików lub przeniesienie plików na inny dysk lub partycję."
+msgid "You can free up disk space by emptying the Trash, removing unused programs or files, or moving files to another disk or partition."
+msgstr "Można uwolnić trochę miejsca przez opróżnienie kosza, usunięcie nieużywanych programów albo plików lub przeniesienie plików na inny dysk lub partycję."
 
 #: ../plugins/housekeeping/gsd-ldsm-dialog.c:101
-msgid ""
-"You can free up disk space by removing unused programs or files, or by "
-"moving files to another disk or partition."
-msgstr ""
-"Można uwolnić trochę miejsca przez usunięcie nieużywanych programów albo "
-"plików lub przeniesienie plików na inny dysk lub partycję."
+msgid "You can free up disk space by removing unused programs or files, or by moving files to another disk or partition."
+msgstr "Można uwolnić trochę miejsca przez usunięcie nieużywanych programów albo plików lub przeniesienie plików na inny dysk lub partycję."
 
 #: ../plugins/housekeeping/gsd-ldsm-dialog.c:106
-msgid ""
-"You can free up disk space by emptying the Trash, removing unused programs "
-"or files, or moving files to an external disk."
-msgstr ""
-"Można uwolnić trochę miejsca przez opróżnienie kosza, usunięcie nieużywanych "
-"programów albo plików lub przeniesienie plików na dysk zewnętrzny."
+msgid "You can free up disk space by emptying the Trash, removing unused programs or files, or moving files to an external disk."
+msgstr "Można uwolnić trochę miejsca przez opróżnienie kosza, usunięcie nieużywanych programów albo plików lub przeniesienie plików na dysk zewnętrzny."
 
 #: ../plugins/housekeeping/gsd-ldsm-dialog.c:109
-msgid ""
-"You can free up disk space by removing unused programs or files, or by "
-"moving files to an external disk."
-msgstr ""
-"Można uwolnić trochę miejsca przez usunięcie nieużywanych programów albo "
-"plików lub przeniesienie plików na dysk zewnętrzny."
+msgid "You can free up disk space by removing unused programs or files, or by moving files to an external disk."
+msgstr "Można uwolnić trochę miejsca przez usunięcie nieużywanych programów albo plików lub przeniesienie plików na dysk zewnętrzny."
 
 #. Set up all the window stuff here
 #: ../plugins/housekeeping/gsd-ldsm-dialog.c:204
@@ -1022,12 +860,8 @@ msgid "Empty all of the items from the trash?"
 msgstr "Usunąć wszystkie elementy z kosza?"
 
 #: ../plugins/housekeeping/gsd-ldsm-trash-empty.c:363
-msgid ""
-"If you choose to empty the trash, all items in it will be permanently lost. "
-"Please note that you can also delete them separately."
-msgstr ""
-"Jeśli wybrano opróżnienie kosza, wszystkie elementy w nim zostaną trwale "
-"utracone. Proszę zauważyć, że można je także usuwać osobno."
+msgid "If you choose to empty the trash, all items in it will be permanently lost. Please note that you can also delete them separately."
+msgstr "Jeśli wybrano opróżnienie kosza, wszystkie elementy w nim zostaną trwale utracone. Proszę zauważyć, że można je także usuwać osobno."
 
 #: ../plugins/housekeeping/gsd-ldsm-trash-empty.c:370
 msgid "_Empty Trash"
@@ -1103,13 +937,11 @@ msgstr ""
 msgid ""
 "You are using XFree 4.3.0.\n"
 "There are known problems with complex XKB configurations.\n"
-"Try using a simpler configuration or using a later version of the XFree "
-"software."
+"Try using a simpler configuration or using a later version of the XFree software."
 msgstr ""
 "Używane jest oprogramowanie XFree 4.3.0.\n"
 "W tej wersji występują znane problemy ze złożonymi konfiguracjami XKB.\n"
-"Proszę spróbować użyć prostszej konfiguracji lub nowszej wersji "
-"oprogramowania XFree."
+"Proszę spróbować użyć prostszej konfiguracji lub nowszej wersji oprogramowania XFree."
 
 # pd
 #: ../plugins/keyboard/gsd-keyboard-xkb.c:279
@@ -1150,12 +982,8 @@ msgid "_Loaded files:"
 msgstr "Wczy_tane pliki:"
 
 #: ../plugins/media-keys/gsd-media-keys-manager.c:195
-msgid ""
-"Could not get default terminal. Verify that your default terminal command is "
-"set and points to a valid application."
-msgstr ""
-"Nie można uzyskać domyślnego terminala. Proszę sprawdzić, czy ustalone jest "
-"domyślne polecenie terminala i czy wskazuje na prawidłowy program."
+msgid "Could not get default terminal. Verify that your default terminal command is set and points to a valid application."
+msgstr "Nie można uzyskać domyślnego terminala. Proszę sprawdzić, czy ustalone jest domyślne polecenie terminala i czy wskazuje na prawidłowy program."
 
 #: ../plugins/media-keys/gsd-media-keys-manager.c:235
 #, c-format
@@ -1210,8 +1038,7 @@ msgstr "Nie można włączyć funkcji dostępności myszy"
 
 # pd
 #: ../plugins/mouse/gsd-mouse-manager.c:884
-msgid ""
-"Mouse accessibility requires Mousetweaks to be installed on your system."
+msgid "Mouse accessibility requires Mousetweaks to be installed on your system."
 msgstr "Dostępność myszy wymaga instalacji programu Mousetweaks."
 
 #: ../plugins/mouse/gsd-mouse-manager.c:887
@@ -1257,8 +1084,7 @@ msgstr "Nie można odtworzyć konfiguracji ekranu z kopii zapasowej"
 #: ../plugins/xrandr/gsd-xrandr-manager.c:295
 #, c-format
 msgid "The display will be reset to its previous configuration in %d second"
-msgid_plural ""
-"The display will be reset to its previous configuration in %d seconds"
+msgid_plural "The display will be reset to its previous configuration in %d seconds"
 msgstr[0] "Poprzednie ustawienia zostaną przywrócone w ciągu %d sekundy"
 msgstr[1] "Poprzednie ustawienia zostaną przywrócone w ciągu %d sekund"
 msgstr[2] "Poprzednie ustawienia zostaną przywrócone w ciągu %d sekund"
@@ -1340,9 +1166,7 @@ msgstr "Baza zasobów X"
 #: ../plugins/xsettings/gsd-xsettings-manager.c:596
 #, c-format
 msgid "GConf key %s set to type %s but its expected type was %s\n"
-msgstr ""
-"Klucz GConf %s został ustawiony na typ %s, lecz jego oczekiwanym typem był %"
-"s\n"
+msgstr "Klucz GConf %s został ustawiony na typ %s, lecz jego oczekiwanym typem był %s\n"
 
 #: ../plugins/xsettings/xsettings.gnome-settings-plugin.in.h:1
 msgid "Manage X Settings"
@@ -1395,8 +1219,7 @@ msgstr "nie można obserwować przychodzących zdarzeń dla kart - %s"
 #: ../plugins/smartcard/gsd-smartcard-manager.c:1124
 #, c-format
 msgid "encountered unexpected error while waiting for smartcard events"
-msgstr ""
-"wystąpił nieoczekiwany błąd podczas oczekiwania na zdarzenia kart smartcard"
+msgstr "wystąpił nieoczekiwany błąd podczas oczekiwania na zdarzenia kart smartcard"
 
 # pd
 #: ../plugins/smartcard/gsd-smartcard.c:154
@@ -1463,3 +1286,4 @@ msgstr "Wymagane są uprawnienia, aby zmienić czas systemowy."
 #: ../plugins/datetime/org.gnome.settingsdaemon.datetimemechanism.policy.in.h:6
 msgid "Privileges are required to configure the hardware clock."
 msgstr "Wymagane są uprawnienia, aby skonfigurować zegar sprzętowy."
+
