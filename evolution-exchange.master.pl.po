@@ -10,8 +10,8 @@ msgstr ""
 "Report-Msgid-Bugs-To: http://bugzilla.gnome.org/enter_bug.cgi?"
 "product=evolution-exchange&component=general\n"
 "POT-Creation-Date: 2010-08-31 20:21+0000\n"
-"PO-Revision-Date: 2010-03-30 18:34+0100\n"
-"Last-Translator: wadim dziedzic <wdziedzic@aviary.pl>\n"
+"PO-Revision-Date: 2010-09-17 09:56+0200\n"
+"Last-Translator: Piotr Drąg <piotrdrag@gmail.com>\n"
 "Language-Team: Polish <gnomepl@aviary.pl>\n"
 "Language: pl\n"
 "MIME-Version: 1.0\n"
@@ -24,10 +24,9 @@ msgstr ""
 
 #: ../addressbook/apps_exchange_addressbook.schemas.in.in.h:1
 msgid "Specifies the time interval to refresh the GAL Cache."
-msgstr "Określa okres czasu pomiędzy odświeżeniami GAL Cache."
+msgstr "Określa okres czasu pomiędzy odświeżeniami bufora GAL."
 
 #: ../addressbook/apps_exchange_addressbook.schemas.in.in.h:2
-#, fuzzy
 msgid ""
 "This key specifies the number of days' interval between GAL cache refreshes. "
 "Set this value to zero if you don't want to update GAL and use the current "
@@ -36,17 +35,19 @@ msgid ""
 msgstr ""
 "Ten klucz określa liczbę dni pomiędzy odświeżeniami bufora GAL. Wartość 0 "
 "wyłącza odświeżanie i pozostawia bieżącą zawartość bufora na stałe. "
-"Ustawienie to działa tylko gdy włączono bufor dla GAL trybie bez podłączenia."
+"Ustawienie to działa tylko gdy włączono bufor dla GAL trybie offline."
 
+# pd
 #: ../addressbook/e-book-backend-exchange.c:135
 #, c-format
 msgid "Operation failed with status %d"
-msgstr ""
+msgstr "Działanie się nie powiodło ze stanem %d"
 
+# pd
 #: ../addressbook/e-book-backend-exchange.c:1797
 #: ../addressbook/e-book-backend-exchange.c:2642
 msgid "Cancelled"
-msgstr ""
+msgstr "Anulowano"
 
 #: ../addressbook/e-book-backend-exchange.c:2319
 #: ../addressbook/e-book-backend-gal.c:1931
@@ -78,12 +79,12 @@ msgstr "Bez tematu"
 #: ../camel/camel-exchange-folder.c:137
 #, c-format
 msgid "This message is not available in offline mode."
-msgstr "Ta wiadomość nie jest dostępna w trybie bez podłączenia."
+msgstr "Ta wiadomość nie jest dostępna w trybie offline."
 
 #: ../camel/camel-exchange-folder.c:386
 #, c-format
 msgid "You cannot expunge in offline mode."
-msgstr "Nie można opróżnić trybie bez podłączenia."
+msgstr "Nie można opróżnić trybie offline."
 
 #: ../camel/camel-exchange-folder.c:626
 msgid "Moving messages"
@@ -104,9 +105,9 @@ msgid "Could not load summary for %s"
 msgstr "Nie można wczytać zestawienia dla %s"
 
 #: ../camel/camel-exchange-folder.c:1088
-#, fuzzy, c-format
+#, c-format
 msgid "Could not create cache for %s: "
-msgstr "Nie można utworzyć buforu dla %s"
+msgstr "Nie można utworzyć buforu dla %s: "
 
 #: ../camel/camel-exchange-folder.c:1099
 #, c-format
@@ -122,9 +123,9 @@ msgid "Fetching summary information for new messages"
 msgstr "Pobieranie podsumowań nowych wiadomości"
 
 #: ../camel/camel-exchange-journal.c:144
-#, fuzzy, c-format
+#, c-format
 msgid "No folder name found"
-msgstr "Nie znaleziono nazwy katalogu\n"
+msgstr "Nie znaleziono nazwy katalogu"
 
 #: ../camel/camel-exchange-journal.c:185 ../camel/camel-exchange-utils.c:3139
 #: ../camel/camel-exchange-utils.c:3203 ../camel/camel-exchange-utils.c:3321
@@ -137,13 +138,11 @@ msgstr "Katalog nie istnieje"
 #: ../camel/camel-exchange-journal.c:417
 #, c-format
 msgid "Cannot append message in offline mode: cache unavailable"
-msgstr ""
-"Nie można dodać wiadomości w trybie bez podłączenia: bufor jest niedostępny"
+msgstr "Nie można dodać wiadomości w trybie offline: bufor jest niedostępny"
 
 #: ../camel/camel-exchange-journal.c:437
-#, fuzzy
 msgid "Cannot append message in offline mode: "
-msgstr "Nie można dołączyć wiadomości w trybie bez podłączenia: %s"
+msgstr "Nie można dołączyć wiadomości w trybie offline: "
 
 #: ../camel/camel-exchange-provider.c:52
 msgid "Secure or Plaintext Password"
@@ -179,9 +178,8 @@ msgstr "Nazwa _użytkownika Windows:"
 
 #. i18n: GAL is an Outlookism, AD is a Windowsism
 #: ../camel/camel-exchange-provider.c:75
-#, fuzzy
 msgid "Global Address List/Active Directory"
-msgstr "Ogólna lista adresowa / Active Directory"
+msgstr "Ogólna lista adresowa/Active Directory"
 
 #. i18n: "Global Catalog" is a Windowsism, but it's a
 #. technical term and may not have translations?
@@ -271,11 +269,9 @@ msgid "Exchange account for %s on %s"
 msgstr "Konto Exchange dla %s na %s"
 
 #: ../camel/camel-exchange-store.c:378
-#, fuzzy, c-format
+#, c-format
 msgid "Could not authenticate to server. (Password incorrect?)"
-msgstr ""
-"Nie można uwierzytelnić na serwerze. (Niepoprawne hasło?)\n"
-"\n"
+msgstr "Nie można uwierzytelnić na serwerze. (Niepoprawne hasło?)"
 
 #: ../camel/camel-exchange-store.c:441
 #, c-format
@@ -285,27 +281,27 @@ msgstr "Nie ma takiego katalogu %s"
 #: ../camel/camel-exchange-store.c:574
 #, c-format
 msgid "Cannot create folder in offline mode."
-msgstr "Nie można utworzyć katalogu w trybie bez połączenia."
+msgstr "Nie można utworzyć katalogu w trybie offline."
 
 #: ../camel/camel-exchange-store.c:604
 #, c-format
 msgid "Cannot delete folder in offline mode."
-msgstr "Nie można usunąć katalogu w trybie bez połączenia."
+msgstr "Nie można usunąć katalogu w trybie offline."
 
 #: ../camel/camel-exchange-store.c:630
 #, c-format
 msgid "Cannot rename folder in offline mode."
-msgstr "Nie można zmienić nazwy katalogu w trybie bez połączenia."
+msgstr "Nie można zmienić nazwy katalogu w trybie offline."
 
 #: ../camel/camel-exchange-store.c:711
 #, c-format
 msgid "Cannot subscribe folder in offline mode."
-msgstr "Nie można subskrybować katalogu w trybie bez połączenia."
+msgstr "Nie można subskrybować katalogu w trybie offline."
 
 #: ../camel/camel-exchange-store.c:730
 #, c-format
 msgid "Cannot unsubscribe folder in offline mode."
-msgstr "Nie można odsubskrybować katalogu w trybie bez połączenia."
+msgstr "Nie można odsubskrybować katalogu w trybie offline."
 
 #: ../camel/camel-exchange-transport.c:65
 #, c-format
@@ -434,7 +430,6 @@ msgid "Folder already exists"
 msgstr "Katalogu już istnieje"
 
 #: ../eplugin/exchange-account-setup.c:266
-#, fuzzy
 msgid "Out of Office"
 msgstr "Poza biurem"
 
@@ -454,12 +449,12 @@ msgstr "Stan:"
 #: ../eplugin/exchange-account-setup.c:285
 #: ../eplugin/exchange-account-setup.c:290
 msgid "I am out of the office"
-msgstr "Jestem aktualnie poza biurem"
+msgstr "Jestem obecnie poza biurem"
 
 #: ../eplugin/exchange-account-setup.c:286
 #: ../eplugin/exchange-account-setup.c:289
 msgid "I am in the office"
-msgstr "Jestem aktualnie w biurze"
+msgstr "Jestem obecnie w biurze"
 
 #. Security settings
 #: ../eplugin/exchange-account-setup.c:325
@@ -514,7 +509,6 @@ msgid "A_uthenticate"
 msgstr "_Uwierzytelnij"
 
 #: ../eplugin/exchange-account-setup.c:783
-#, fuzzy
 msgid "Mailbox name is _different from username"
 msgstr "Nazwa _skrzynki pocztowej jest inna niż nazwa użytkownika"
 
@@ -551,8 +545,8 @@ msgid ""
 "Evolution is in offline mode. You cannot create or modify folders now.\n"
 "Please switch to online mode for such operations."
 msgstr ""
-"Program Evolution jest w trybie offline. Nie można teraz tworzyć i zmieniać "
-"katalogów.\n"
+"Program Evolution działa w trybie offline. Nie można teraz tworzyć i "
+"zmieniać katalogów.\n"
 "Aby wykonać takie działania, należy przełączyć program w tryb online."
 
 #: ../eplugin/exchange-calendar.c:247 ../eplugin/exchange-contacts.c:239
@@ -561,7 +555,7 @@ msgstr "_Położenie:"
 
 #: ../eplugin/exchange-change-password.c:95
 msgid "Your current password has expired. Please change your password now."
-msgstr "Bieżące hasło utraciło ważność. Zmień teraz swoje hasło."
+msgstr "Bieżące hasło utraciło ważność. Proszę zmienić teraz swoje hasło."
 
 #: ../eplugin/exchange-change-password.c:110
 msgid "Current _Password:"
@@ -588,14 +582,15 @@ msgstr ""
 
 #: ../eplugin/exchange-change-password.c:182
 msgid "The two passwords do not match. Please re-enter the passwords."
-msgstr "Obydwa hasła nie są zgodne. Wprowadź je ponownie."
+msgstr "Obydwa hasła nie są zgodne. Proszę wprowadzić je ponownie."
 
+# pd
 #. Translators: The %d is replaced with the actual number of days
 #: ../eplugin/exchange-config-listener.c:662
-#, fuzzy, c-format
+#, c-format
 msgid "Your password will expire in the next %d day"
 msgid_plural "Your password will expire in the next %d days"
-msgstr[0] "Hasło wygaśnie w ciągu kolejnych %d dni"
+msgstr[0] "Hasło wygaśnie w ciągu %d dnia"
 msgstr[1] "Hasło wygaśnie w ciągu kolejnych %d dni"
 msgstr[2] "Hasło wygaśnie w ciągu kolejnych %d dni"
 
@@ -767,7 +762,6 @@ msgstr "Możesz także przeglądać moje prywatne elementy."
 #. to the private items.
 #.
 #: ../eplugin/exchange-delegates-user.c:465
-#, fuzzy
 msgid "However, you are not permitted to see my private items."
 msgstr "Nie możesz jednak przeglądać moich elementów prywatnych."
 
@@ -795,7 +789,7 @@ msgstr "Nie można uzyskać dostępu do Active Directory"
 
 #: ../eplugin/exchange-delegates.c:707
 msgid "Could not find self in Active Directory"
-msgstr "Nie można znaleźć siebie samego w Active Directory"
+msgstr "Nie można odnaleźć siebie samego w Active Directory"
 
 #: ../eplugin/exchange-delegates.c:720
 #, c-format
@@ -884,7 +878,6 @@ msgid "Check tasks permissions"
 msgstr "Sprawdzenie uprawnień zadań"
 
 #: ../eplugin/exchange-folder-permission.c:590
-#, fuzzy
 msgid "Check address book permissions"
 msgstr "Sprawdza uprawnienia książki adresowej"
 
@@ -892,10 +885,11 @@ msgstr "Sprawdza uprawnienia książki adresowej"
 msgid "Exchange Folder Tree"
 msgstr "Drzewo katalogów Exchange"
 
+# pd
 #: ../eplugin/exchange-folder-size-display.c:151
 #, c-format
 msgid "Total size: %.2f KB"
-msgstr ""
+msgstr "Całkowity rozmiar: %.2f KB"
 
 #: ../eplugin/exchange-folder-size-display.c:179
 msgid "Folder Name"
@@ -1131,7 +1125,6 @@ msgid "Could not change password."
 msgstr "Nie można zmienić hasła."
 
 #: ../eplugin/org-gnome-exchange-operations.error.xml.h:8
-#, fuzzy
 msgid ""
 "Could not configure Exchange account because \n"
 "an unknown error occurred. Check the URL, \n"
@@ -1139,7 +1132,7 @@ msgid ""
 msgstr ""
 "Nie można skonfigurować konta Exchange z powodu \n"
 "wystąpienia nieznanego błędu. Proszę sprawdzić adres \n"
-"URL, nazwę użytkownika, hasło i spróbować ponownie."
+"URL, nazwę użytkownika oraz hasło i spróbować ponownie."
 
 #: ../eplugin/org-gnome-exchange-operations.error.xml.h:11
 msgid "Could not connect to Exchange server."
@@ -1159,7 +1152,7 @@ msgstr "Nie można odnaleźć systemu magazynu sieciowego Exchange."
 
 #: ../eplugin/org-gnome-exchange-operations.error.xml.h:15
 msgid "Could not locate server {0}."
-msgstr "Nie można znaleźć serwera {0}."
+msgstr "Nie można odnaleźć serwera {0}."
 
 #: ../eplugin/org-gnome-exchange-operations.error.xml.h:16
 msgid "Could not make {0} a delegate"
@@ -1318,7 +1311,7 @@ msgstr "Konto Exchange zostanie usunięte po zakończeniu programu Evolution"
 
 #: ../eplugin/org-gnome-exchange-operations.error.xml.h:59
 msgid "The Exchange server is not compatible with Exchange Connector."
-msgstr "Serwer Exchange nie jest kompatybilny z programem Exchange Connector."
+msgstr "Serwer Exchange nie jest zgodny z programem Exchange Connector."
 
 #: ../eplugin/org-gnome-exchange-operations.error.xml.h:60
 msgid ""
@@ -1329,7 +1322,6 @@ msgstr ""
 "obsługuje tylko Microsoft Exchange 2000 oraz 2003."
 
 #: ../eplugin/org-gnome-exchange-operations.error.xml.h:62
-#, fuzzy
 msgid ""
 "This probably means that your server requires \n"
 "you to specify the Windows domain name \n"
@@ -1341,7 +1333,7 @@ msgstr ""
 "określenia nazwy domeny Windows jako części \n"
 "nazwy użytkownika (np &quot;DOMENA\\użytkownik&quot;).\n"
 "\n"
-"Być może podano błędne hasło."
+"Być może podano niepoprawne hasło."
 
 #: ../eplugin/org-gnome-exchange-operations.error.xml.h:67
 msgid "Try again with a different password."
@@ -1495,11 +1487,11 @@ msgstr "Katalog o takiej samej nazwie już istnieje"
 
 #: ../server/storage/e-storage.c:561
 msgid "The specified folder type is not valid"
-msgstr "Podany typ katalogu nie jest poprawny"
+msgstr "Podany typ katalogu nie jest prawidłowy"
 
 #: ../server/storage/e-storage.c:563
 msgid "I/O error"
-msgstr "Błąd We/Wy"
+msgstr "Błąd wejścia/wyjścia"
 
 #: ../server/storage/e-storage.c:565
 msgid "Not enough space to create the folder"
@@ -1515,11 +1507,11 @@ msgstr "Podany katalog nie był pusty"
 
 #: ../server/storage/e-storage.c:571
 msgid "Function not implemented in this storage"
-msgstr "Funkcja nie jest zaimplementowana w tej przechowalni."
+msgstr "Funkcja nie jest zaimplementowana w tej przechowalni"
 
 #: ../server/storage/e-storage.c:575
 msgid "Operation not supported"
-msgstr "Operacja nie jest obsługiwana"
+msgstr "Działanie nie jest obsługiwane"
 
 #: ../server/storage/e-storage.c:577
 msgid "The specified type is not supported in this storage"
@@ -1539,9 +1531,8 @@ msgid "Cannot create a folder with that name"
 msgstr "Nie można utworzyć katalogu o takiej nazwie"
 
 #: ../server/storage/e-storage.c:585
-#, fuzzy
 msgid "This operation cannot be performed in offline mode"
-msgstr "Ta operacja nie może być wykonana w trybie offline"
+msgstr "To działanie nie może zostać wykonane w trybie offline"
 
 #: ../server/storage/e-storage.c:587
 msgid "Unknown error"
@@ -1606,9 +1597,9 @@ msgid ""
 msgstr ""
 "Witamy w Evolution Connector dla Microsoft Exchange.\n"
 "Na kolejnych ekranach można będzie skonfigurować\n"
-"Evolution do połączenia z kontem Exchange.\n"
+"program Evolution do połączenia z kontem Exchange.\n"
 "\n"
-"Aby kontynuować, należy nacisnąć przycisk \"Do przodu\"."
+"Aby kontynuować, należy nacisnąć przycisk \"Dalej\"."
 
 #: ../tools/exchange-autoconfig-wizard.c:188
 #: ../tools/exchange-autoconfig-wizard.c:361
@@ -1627,8 +1618,8 @@ msgstr ""
 "Evolution Connector może wykorzystać informacje o koncie z istniejącego "
 "konta Outlook Web Access (OWA).\n"
 "\n"
-"Proszę pdać adres URL strony OWA, nazwę użytkownika oraz hasło i nacisnąć "
-"przycisk \"Do przodu\".\n"
+"Proszę podać adres URL strony OWA, nazwę użytkownika oraz hasło i nacisnąć "
+"przycisk \"Dalej\".\n"
 
 #: ../tools/exchange-autoconfig-wizard.c:196
 msgid "OWA _URL:"
@@ -1653,8 +1644,8 @@ msgid ""
 "Make sure the URL is correct (try \"%s\" instead of \"%s\"?) and try again."
 msgstr ""
 "Nie można nawiązać połączenia z serwerem Exchange.\n"
-"Upewnij się, że adres URL jest poprawny (użyj \"%s\" zamiast \"%s\") i "
-"spróbuj jeszcze raz."
+"Proszę upewnić się, że adres URL jest poprawny (należy użyć \"%s\" zamiast "
+"\"%s\") i spróbować jeszcze raz."
 
 #: ../tools/exchange-autoconfig-wizard.c:290
 msgid ""
@@ -1662,7 +1653,7 @@ msgid ""
 "Make sure the server name is spelled correctly and try again."
 msgstr ""
 "Nie można zlokalizować serwera Exchange.\n"
-"Upewnij się, że nazwa serwera jest poprawna i spróbuj ponownie."
+"Proszę upewnić się, że nazwa serwera jest poprawna i spróbować ponownie."
 
 #: ../tools/exchange-autoconfig-wizard.c:299
 msgid ""
@@ -1670,7 +1661,8 @@ msgid ""
 "Make sure the username and password are correct and try again."
 msgstr ""
 "Nie można dokonać uwierzytelnienia na serwerze Exchange.\n"
-"Upewnij się, że nazwa użytkownika oraz hasło są poprawne i spróbuj ponownie."
+"Proszę upewnić się, że nazwa użytkownika oraz hasło są poprawne i spróbować "
+"ponownie."
 
 #: ../tools/exchange-autoconfig-wizard.c:306
 #, c-format
@@ -1682,10 +1674,10 @@ msgid ""
 "(eg, \"MY-DOMAIN\\%s\")."
 msgstr ""
 "Nie można dokonać uwierzytelnienia na serwerze Exchange.\n"
-"Upewnij się, że nazwa użytkownika oraz hasło są poprawne i spróbuj "
+"Proszę upewnić się, że nazwa użytkownika oraz hasło są poprawne i spróbować "
 "ponownie.\n"
-"Może być konieczne podanie domeny Windows jako części nazwy użytkownika(np.: "
-"\"DOMENA\\%s\")."
+"Może być konieczne podanie domeny Windows jako części nazwy użytkownika "
+"(np.: \"DOMENA\\%s\")."
 
 #: ../tools/exchange-autoconfig-wizard.c:318
 msgid ""
@@ -1693,7 +1685,7 @@ msgid ""
 "Make sure the URL is correct and try again."
 msgstr ""
 "Nie można odnaleźć danych OWA pod wskazanym adresem URL.\n"
-"Upewnij się, że adres jest poprawny i spróbuj ponownie."
+"Proszę upewnić się, że adres jest poprawny i spróbować ponownie."
 
 #: ../tools/exchange-autoconfig-wizard.c:324
 msgid ""
@@ -1729,7 +1721,8 @@ msgid ""
 "Check the URL, username, and password, and try again."
 msgstr ""
 "Nie można skonfigurować konta Exchange z powodu wystąpienia nieznanego "
-"błędu. Sprawdź adres URL, nazwę użytkownika, hasło i spróbuj ponownie."
+"błędu. Proszę sprawdzić adres URL, nazwę użytkownika, hasło i spróbować "
+"ponownie."
 
 #: ../tools/exchange-autoconfig-wizard.c:361
 msgid ""
@@ -1762,17 +1755,17 @@ msgid ""
 "Please check the server name and try again."
 msgstr ""
 "Nie można się połączyć z podanym serwerem.\n"
-"Sprawdź nazwę serwera i spróbuj ponownie."
+"Proszę sprawdzić nazwę serwera i spróbować ponownie."
 
 #: ../tools/exchange-autoconfig-wizard.c:421
 msgid "Configuration Failed"
-msgstr "Konfiguracja nie powiodła się"
+msgstr "Konfiguracja się nie powiodła"
 
 #: ../tools/exchange-autoconfig-wizard.c:421
 msgid ""
 "Evolution Connector for Microsoft Exchange has encountered a problem "
 "configuring your Exchange account."
-msgstr "Napotkano problem podczas konfiguracji konta Exchange."
+msgstr "Wystąpił problem podczas konfiguracji konta Exchange."
 
 #: ../tools/exchange-autoconfig-wizard.c:448
 msgid ""
@@ -1841,7 +1834,7 @@ msgstr "Pobiera rozmiar katalogów osobistych"
 
 #: ../tools/ximian-connector.xml.h:4
 msgid "Subscribe to _Other User's Folder..."
-msgstr "Zas_ubskrybuj katalog innego użytkownika..."
+msgstr "S_ubskrybuj katalog innego użytkownika..."
 
 #: ../tools/ximian-connector.xml.h:5
 msgid "Subscribe to a folder belonging to some other user on the server"
@@ -1851,7 +1844,7 @@ msgstr "Subskrybuje katalog poczty należący do innego użytkownika serwera"
 msgid ""
 "Unsubscribe from a folder added with \"Subscribe to Other User's Folder\""
 msgstr ""
-"Usuwa subskrypcję katalogu poczty dodanego za pomocą \"Zasubskrybuj katalog "
+"Usuwa subskrypcję katalogu poczty dodanego za pomocą \"Subskrybuj katalog "
 "innego użytkownika\""
 
 #: ../tools/ximian-connector.xml.h:7
