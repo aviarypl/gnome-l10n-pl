@@ -130,9 +130,10 @@ msgstr "Imię"
 msgid "Family Name"
 msgstr "Nazwisko"
 
+# pd
 #: ../addressbook/libebook/e-contact.c:127
 msgid "Nickname"
-msgstr "Przydomek"
+msgstr "Pseudonim"
 
 #. Email fields
 #: ../addressbook/libebook/e-contact.c:130
@@ -241,10 +242,11 @@ msgstr "Radio"
 msgid "Telex"
 msgstr "Teleks"
 
+# pd
 #. To translators: TTY is Teletypewriter
 #: ../addressbook/libebook/e-contact.c:162
 msgid "TTY"
-msgstr "TTY"
+msgstr "Dalekopis"
 
 #. Organizational fields
 #: ../addressbook/libebook/e-contact.c:165
@@ -280,9 +282,10 @@ msgstr "Asystent"
 msgid "Homepage URL"
 msgstr "Adres URL strony domowej"
 
+# pd
 #: ../addressbook/libebook/e-contact.c:175
 msgid "Weblog URL"
-msgstr "Adres URL dziennika WWW"
+msgstr "Adres URL bloga"
 
 #. Contact categories
 #: ../addressbook/libebook/e-contact.c:178
@@ -958,7 +961,7 @@ msgstr "Nie można utworzyć pliku bufora"
 
 #: ../calendar/backends/groupwise/e-cal-backend-groupwise.c:1094
 msgid "Could not create thread for populating cache"
-msgstr "Nie można utworzyć wątka wypełniającego bufor"
+msgstr "Nie można utworzyć wątku wypełniającego bufor"
 
 #: ../calendar/backends/http/e-cal-backend-http.c:327
 msgid "Redirected to Invalid URI"
@@ -1159,10 +1162,11 @@ msgstr "Zwykły"
 msgid "Low"
 msgstr "Niski"
 
+# pd
 #. An empty string is the same as 'None'.
 #: ../calendar/libecal/e-cal-util.c:713
 msgid "Undefined"
-msgstr "Niezdefiniowany"
+msgstr "Nieokreślony"
 
 #: ../calendar/libecal/e-cal.c:1227
 #: ../libedataserverui/e-book-auth-util.c:206
@@ -1178,7 +1182,7 @@ msgstr "Hasło dla %s (użytkownik %s)"
 #: ../calendar/libecal/e-cal.c:1241
 #, c-format
 msgid "Enter password for %s to enable proxy for user %s"
-msgstr "Hasło dla %s aby włączyć pośrednika sieciowego dla użytkownika %s"
+msgstr "Hasło dla %s, aby włączyć pośrednika sieciowego dla użytkownika %s"
 
 #: ../calendar/libecal/e-cal.c:4051
 msgid "Backend is busy"
@@ -1266,7 +1270,7 @@ msgstr "Nieznany błąd"
 
 #: ../calendar/libecal/e-cal.c:4085
 msgid "No error"
-msgstr "bez błędu"
+msgstr "Bez błędu"
 
 #: ../calendar/libedata-cal/e-cal-backend-sexp.c:69
 #: ../calendar/libedata-cal/e-cal-backend-sexp.c:676
@@ -1387,7 +1391,7 @@ msgstr "Nie można pobrać adresu e-mail alarmu kalendarza"
 #: ../calendar/libedata-cal/e-data-cal.c:644
 #, fuzzy, c-format
 msgid "Cannot retrieve calendar's LDAP attribute: %s"
-msgstr "Nie można pobrać atrybutu ldap kalendarza"
+msgstr "Nie można pobrać atrybutu LDAP kalendarza"
 
 #. Translators: The '%s' is replaced with a detailed error message
 #: ../calendar/libedata-cal/e-data-cal.c:664
@@ -1665,7 +1669,7 @@ msgstr "Do zakończenia tej operacji konieczne jest połączenie z siecią"
 #: ../camel/providers/pop3/camel-pop3-folder.c:690
 #: ../camel/providers/pop3/camel-pop3-store.c:466
 #: ../libedataserverui/e-book-auth-util.c:229
-#, fuzzy, c-format
+#, c-format
 msgid "Cancelled"
 msgstr "Anulowano"
 
@@ -1845,12 +1849,13 @@ msgstr "Przenoszenie wiadomości"
 msgid "Copying messages"
 msgstr "Kopiowanie wiadomości"
 
+# pd
 #: ../camel/camel-gpg-context.c:701
 #: ../camel/camel-gpg-context.c:706
 #: ../camel/camel-gpg-context.c:1330
 #, c-format
 msgid "Failed to execute gpg: %s"
-msgstr "Nie można uruchomić gpg: %s"
+msgstr "Nie można wykonać polecenia gpg: %s"
 
 #: ../camel/camel-gpg-context.c:706
 #: ../camel/providers/smtp/camel-smtp-transport.c:114
@@ -1886,7 +1891,7 @@ msgid ""
 "You need a PIN to unlock the key for your\n"
 "SmartCard: \"%s\""
 msgstr ""
-"Należy podać kod PIN aby odblokować klucz\n"
+"Należy podać kod PIN, aby odblokować klucz\n"
 "SmartCard: \"%s\""
 
 #: ../camel/camel-gpg-context.c:852
@@ -1924,6 +1929,7 @@ msgstr "Nie można zaszyfrować wiadomości: nie podano poprawnych odbiorców."
 msgid "Could not generate signing data: "
 msgstr "Nie można wygenerować danych podpisujących: %s"
 
+# pd
 #: ../camel/camel-gpg-context.c:1481
 #: ../camel/camel-gpg-context.c:1740
 #: ../camel/camel-gpg-context.c:1848
@@ -1931,7 +1937,7 @@ msgstr "Nie można wygenerować danych podpisujących: %s"
 #: ../camel/camel-gpg-context.c:2081
 #: ../camel/camel-gpg-context.c:2128
 msgid "Failed to execute gpg."
-msgstr "Nie można uruchomić gpg."
+msgstr "Nie można wykonać polecenia gpg."
 
 #: ../camel/camel-gpg-context.c:1622
 #: ../camel/camel-gpg-context.c:1630
@@ -2113,10 +2119,11 @@ msgstr "Wyszukanie nazwy nie powiodło się"
 msgid "Name lookup failed: %s"
 msgstr "Wyszukanie nazwy nie powiodło się: %s"
 
+# pd
 #: ../camel/camel-offline-folder.c:169
 #, c-format
 msgid "Syncing messages in folder '%s' to disk"
-msgstr "Synchronizacja wiadomości w katalogu \"%s\" na dysk"
+msgstr "Synchronizowanie wiadomości w katalogu \"%s\" na dysku"
 
 #: ../camel/camel-offline-journal.c:144
 #: ../camel/camel-offline-journal.c:170
@@ -2212,7 +2219,7 @@ msgstr "Przy tej opcji połączenie z serwerem nastąpi przy użyciu hasła DIGE
 #: ../camel/camel-sasl-digest-md5.c:818
 #, c-format
 msgid "Server challenge too long (>2048 octets)"
-msgstr "Zbyt długie wezwanie serwera (>2048 oktetów)"
+msgstr "Za długie wezwanie serwera (>2048 oktetów)"
 
 #: ../camel/camel-sasl-digest-md5.c:829
 #, c-format
@@ -2283,9 +2290,10 @@ msgstr "Sprawdzenie spójności elementu input_token nie powiodło się."
 msgid "The consistency checks performed on the credential failed."
 msgstr "Sprawdzenie spójności danych uwierzytelniania nie powiodło się."
 
+# pd
 #: ../camel/camel-sasl-gssapi.c:154
 msgid "The referenced credentials have expired."
-msgstr "Wskazane dane uwierzytelniania są przeterminowane."
+msgstr "Wskazane dane uwierzytelniania wygasły."
 
 #: ../camel/camel-sasl-gssapi.c:160
 #: ../camel/camel-sasl-gssapi.c:296
@@ -2451,9 +2459,10 @@ msgstr "Poprawny podpis"
 msgid "Bad signature"
 msgstr "Nieprawidłowy podpis"
 
+# pd
 #: ../camel/camel-smime-context.c:512
 msgid "Content tampered with or altered in transit"
-msgstr "Zawartość sfałszowana lub naruszona podczas przekazu"
+msgstr "Treść sfałszowana lub naruszona podczas przekazu"
 
 #: ../camel/camel-smime-context.c:514
 msgid "Signing certificate not found"
@@ -2724,7 +2733,7 @@ msgstr ""
 "\n"
 "%s\n"
 "\n"
-"Czy zaakceptować go?"
+"Zaakceptować go?"
 
 #: ../camel/camel-tcp-stream-ssl.c:511
 #, c-format
@@ -2803,9 +2812,10 @@ msgstr "Nie można usunąć katalogu: %s: katalog nie istnieje"
 msgid "Cannot copy messages to the Trash folder"
 msgstr "Nie można skopiować wiadomości do katalogu kosza"
 
+# pd
 #: ../camel/camel-vtrash-folder.c:51
 msgid "Cannot copy messages to the Junk folder"
-msgstr "Nie można skopiować wiadomości do katalogu kosza"
+msgstr "Nie można skopiować wiadomości do katalogu niechcianych wiadomości"
 
 #: ../camel/providers/groupwise/camel-groupwise-folder.c:139
 #, c-format
@@ -3341,7 +3351,7 @@ msgstr "Odebrane"
 #: ../camel/providers/imapx/camel-imapx-server.c:2928
 #, c-format
 msgid "IMAP server %s does not support requested authentication type %s"
-msgstr "Serwer IMAP-a %s nie obsługuje wymaganego typu uwierzytelniania %s"
+msgstr "Serwer IMAP %s nie obsługuje wymaganego typu uwierzytelniania %s"
 
 #: ../camel/providers/imap/camel-imap-store.c:1141
 #: ../camel/providers/imapx/camel-imapx-server.c:2940
@@ -3406,11 +3416,11 @@ msgstr "Nie można utworzyć bufora dla %s"
 #: ../camel/providers/imapx/camel-imapx-provider.c:43
 #, fuzzy
 msgid "Use _Quick Resync if the server supports it"
-msgstr "Użycie opcji i_dle jeśli serwer ją obsługuje"
+msgstr "Użycie opcji i_dle, jeśli serwer ją obsługuje"
 
 #: ../camel/providers/imapx/camel-imapx-provider.c:45
 msgid "Use I_dle if the server supports it"
-msgstr "Użycie opcji i_dle jeśli serwer ją obsługuje"
+msgstr "Użycie opcji i_dle, jeśli serwer ją obsługuje"
 
 #: ../camel/providers/imapx/camel-imapx-provider.c:57
 msgid "Command:"
@@ -3521,7 +3531,7 @@ msgstr "Dostarczanie lokalne"
 
 #: ../camel/providers/local/camel-local-provider.c:70
 msgid "For retrieving (moving) local mail from standard mbox-formatted spools into folders managed by Evolution."
-msgstr "Pobieranie (przenoszenie) lokalnej poczty ze standardowych kolejek w formacie mbox do katalogów zarządzanych przez Evolution."
+msgstr "Pobieranie (przenoszenie) lokalnej poczty ze standardowych kolejek w formacie mbox do katalogów zarządzanych przez program Evolution."
 
 #: ../camel/providers/local/camel-local-provider.c:84
 #: ../camel/providers/local/camel-local-provider.c:103
@@ -4012,12 +4022,12 @@ msgstr "Wysłanie nie powiodło się: %s"
 #: ../camel/providers/nntp/camel-nntp-folder.c:541
 #, c-format
 msgid "You cannot post NNTP messages while working offline!"
-msgstr "Nie można wysyłać wiadomości NNTP podczas pracy bez podłączenia!"
+msgstr "Nie można wysyłać wiadomości NNTP podczas pracy bez podłączenia."
 
 #: ../camel/providers/nntp/camel-nntp-folder.c:560
 #, c-format
 msgid "You cannot copy messages from a NNTP folder!"
-msgstr "Nie można kopiować wiadomości z katalogu NNTP!"
+msgstr "Nie można kopiować wiadomości z katalogu NNTP."
 
 #: ../camel/providers/nntp/camel-nntp-provider.c:44
 msgid "_Show folders in short notation (e.g. c.o.linux rather than comp.os.linux)"
@@ -4090,7 +4100,7 @@ msgstr ""
 #: ../camel/providers/nntp/camel-nntp-store.c:1094
 #, c-format
 msgid "You cannot create a folder in a News store: subscribe instead."
-msgstr "Nie można utworzyć katalogu w drzewie grup dyskusyjnych: zamiast tego należy zasubskrybować grupę."
+msgstr "Nie można utworzyć katalogu w drzewie grup dyskusyjnych: zamiast tego należy subskrybować grupę."
 
 #: ../camel/providers/nntp/camel-nntp-store.c:1106
 #, c-format
@@ -4210,10 +4220,11 @@ msgstr "Przy tej opcji uwierzytelnianie na serwerze POP będzie przeprowadzane z
 msgid "This option will connect to the POP server using an encrypted password via the APOP protocol. This may not work for all users even on servers that claim to support it."
 msgstr "Przy tej opcji uwierzytelnianie na serwerze POP będzie przeprowadzane przy użyciu protokołu APOP. Może on nie funkcjonować dla wszystkich użytkowników, nawet, jeśli serwer teoretycznie obsługuje protokół."
 
+# pd
 #. Translators: This is the separator between an error and an explanation
 #: ../camel/providers/pop3/camel-pop3-store.c:98
 msgid ": "
-msgstr ""
+msgstr ": "
 
 #: ../camel/providers/pop3/camel-pop3-store.c:168
 #, c-format
@@ -4443,7 +4454,7 @@ msgstr "Przerwano żądaną czynność: błąd przy przetwarzaniu"
 
 #: ../camel/providers/smtp/camel-smtp-transport.c:144
 msgid "User not local; please try <forward-path>"
-msgstr "Użytkownik nie jest lokalny; spróbuj <forward-path>"
+msgstr "Użytkownik nie jest lokalny; proszę spróbować <forward-path>"
 
 #: ../camel/providers/smtp/camel-smtp-transport.c:146
 msgid "Requested action not taken: insufficient system storage"
@@ -4457,9 +4468,10 @@ msgstr "Przerwano żądaną czynność: przekroczony wykorzystany rozmiar"
 msgid "Requested action not taken: mailbox name not allowed"
 msgstr "Nie wykonano żądanej operacji: niedozwolona nazwa skrzynki"
 
+# pd
 #: ../camel/providers/smtp/camel-smtp-transport.c:152
 msgid "Start mail input; end with <CRLF>.<CRLF>"
-msgstr "Rozpocznij wprowadzanie wiadomości; zakończ poprzez <CRLF>.<CRLF>"
+msgstr "Rozpoczynanie wprowadzania wiadomości; proszę zakończyć przez <CRLF>.<CRLF>"
 
 #: ../camel/providers/smtp/camel-smtp-transport.c:154
 msgid "Transaction failed"
@@ -4471,7 +4483,7 @@ msgstr "Potrzebna jest zmiana hasła"
 
 #: ../camel/providers/smtp/camel-smtp-transport.c:160
 msgid "Authentication mechanism is too weak"
-msgstr "Mechanizm uwierzytelniania jest zbyt słaby"
+msgstr "Mechanizm uwierzytelniania jest za słaby"
 
 #: ../camel/providers/smtp/camel-smtp-transport.c:162
 msgid "Encryption required for requested authentication mechanism"
@@ -4950,13 +4962,15 @@ msgstr "K_ategoria:"
 msgid "Contacts"
 msgstr "Kontakty"
 
+# pd
 #: ../libedataserverui/e-name-selector-dialog.ui.h:9
 msgid "Search"
-msgstr "Szukaj"
+msgstr "Wyszukiwanie"
 
+# pd
 #: ../libedataserverui/e-name-selector-dialog.ui.h:10
 msgid "_Search:"
-msgstr "S_zukaj:"
+msgstr "Wys_zukiwanie:"
 
 #. To Translators: This would be similiar to "Expand MyList Inline" where MyList is a Contact List
 #: ../libedataserverui/e-name-selector-entry.c:2636
@@ -5036,4 +5050,3 @@ msgstr "Brak odpowiedzi z serwera"
 #: ../servers/groupwise/e-gw-connection.c:239
 msgid "Bad parameter"
 msgstr "Błędny parametr"
-
