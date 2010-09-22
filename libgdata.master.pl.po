@@ -10,7 +10,7 @@ msgstr ""
 "Report-Msgid-Bugs-To: http://bugzilla.gnome.org/enter_bug.cgi?"
 "product=libgdata&component=general\n"
 "POT-Creation-Date: 2010-08-23 21:09+0000\n"
-"PO-Revision-Date: 2010-03-06 17:12+0100\n"
+"PO-Revision-Date: 2010-09-22 15:44+0200\n"
 "Last-Translator: Piotr Drąg <piotrdrag@gmail.com>\n"
 "Language-Team: Polish <gnomepl@aviary.pl>\n"
 "MIME-Version: 1.0\n"
@@ -89,6 +89,7 @@ msgstr "Zawartość elementu %s (\"%s\") jest nieznana."
 msgid "A required property of a %s element (%s) was not present."
 msgstr "Wymagana własność elementu %s (%s) nie była obecna."
 
+# pd
 #. Translators: the first two parameters are the names of XML properties of an XML element given in the third
 #. * parameter (including the angle brackets ("<" and ">")).
 #. *
@@ -101,6 +102,8 @@ msgid ""
 "Values were present for properties %s and %s of a %s element when only one "
 "of the two is allowed."
 msgstr ""
+"Wartości są przedstawiane dla własności %s i %s elementu %s, a tylko jedna z "
+"nich jest dozwolona."
 
 #. Translators: the parameter is the name of an XML element, including the angle brackets ("<" and ">").
 #. *
@@ -125,15 +128,17 @@ msgstr "Pojedynczy element (%s) występuje dwa razy."
 msgid "The server returned a malformed response."
 msgstr "Serwer zwrócił błędnie sformatowaną odpowiedź."
 
+# pd
 #: ../gdata/gdata-service.c:434
 #, c-format
 msgid "Cannot connect to the service's server."
-msgstr ""
+msgstr "Nie można połączyć się z serwerem usługi."
 
+# pd
 #: ../gdata/gdata-service.c:439
 #, c-format
 msgid "Cannot connect to the proxy server."
-msgstr ""
+msgstr "Nie można połączyć się z serwerem pośrednika."
 
 #. Translators: the parameter is an error message returned by the server.
 #: ../gdata/gdata-service.c:445
@@ -161,13 +166,13 @@ msgstr "Nie znaleziono żądanego zasobu: %s"
 msgid "The entry has been modified since it was downloaded: %s"
 msgstr "Wpis został zmodyfikowany po pobraniu: %s"
 
+# pd
 #. Translators: the first parameter is an HTTP status,
 #. * and the second is an error message returned by the server.
 #: ../gdata/gdata-service.c:476
-#, fuzzy, c-format
-#| msgid "Error code %u when querying: %s"
+#, c-format
 msgid "Error code %u when authenticating: %s"
-msgstr "Kod błędu %u podczas odpytywania: %s"
+msgstr "Kod błędu %u podczas uwierzytelniania: %s"
 
 #. Translators: the first parameter is an HTTP status,
 #. * and the second is an error message returned by the server.
@@ -211,13 +216,13 @@ msgstr "Kod błędu %u podczas pobierania: %s"
 msgid "Error code %u when uploading: %s"
 msgstr "Kod błędu %u podczas wysyłania: %s"
 
+# pd
 #. Translators: the first parameter is a HTTP status,
 #. * and the second is an error message returned by the server.
 #: ../gdata/gdata-service.c:518
-#, fuzzy, c-format
-#| msgid "Error code %u when updating an entry: %s"
+#, c-format
 msgid "Error code %u when running a batch operation: %s"
-msgstr "Kod błędu %u podczas aktualizowania wpisu: %s"
+msgstr "Kod błędu %u podczas wykonywania działania wsadowego: %s"
 
 #: ../gdata/gdata-service.c:643
 msgid "A CAPTCHA must be filled out to log in."
@@ -239,6 +244,7 @@ msgstr "Adres e-mail konta nie został sprawdzony. (%s)"
 msgid "You have not agreed to the service's terms and conditions. (%s)"
 msgstr "Nie wyrażono zgody na warunki usługi. (%s)"
 
+# pd
 #. Translators: the parameter is a URI for further information.
 #: ../gdata/gdata-service.c:697
 #, c-format
@@ -246,6 +252,8 @@ msgid ""
 "This account has been migrated. Please log in online to receive your new "
 "username and password. (%s)"
 msgstr ""
+"To konto zostało migrowane. Proszę się zalogować online, aby otrzymać nową "
+"nazwę użytkownika i hasło. (%s)"
 
 #. Translators: the parameter is a URI for further information.
 #: ../gdata/gdata-service.c:702
@@ -306,11 +314,10 @@ msgstr "Należy być uwierzytelnionym, aby odpytać wszystkie kalendarze."
 msgid "You must be authenticated to query your own calendars."
 msgstr "Należy być uwierzytelnionym, aby odpytać własne kalendarze."
 
+# pd
 #: ../gdata/services/calendar/gdata-calendar-service.c:293
-#, fuzzy
-#| msgid "The calendar did not have a content source."
 msgid "The calendar did not have a content URI."
-msgstr "Kalendarz nie posiada źródła zawartości."
+msgstr "Kalendarz nie posiada adresu URI treści."
 
 #: ../gdata/services/contacts/gdata-contacts-service.c:116
 #: ../gdata/services/contacts/gdata-contacts-service.c:162
@@ -414,13 +421,14 @@ msgstr ""
 msgid ""
 "Unknown error code \"%s\" in domain \"%s\" received with location \"%s\"."
 msgstr ""
-"Nieznany kod błędu\"%s\" w domenie \"%s\" otrzymanej za pomocą położenia \"%s"
-"\"."
+"Nieznany kod błędu \"%s\" w domenie \"%s\" otrzymanej za pomocą położenia "
+"\"%s\"."
 
+# pd
 #: ../gdata/services/youtube/gdata-youtube-service.c:377
 #, c-format
 msgid "Unknown and unparsable error received."
-msgstr ""
+msgstr "Otrzymano nieznany i nieprzetwarzalny błąd."
 
 #: ../gdata/services/youtube/gdata-youtube-service.c:599
 #: ../gdata/services/youtube/gdata-youtube-service.c:646
