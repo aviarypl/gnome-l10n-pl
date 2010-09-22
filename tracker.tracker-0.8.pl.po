@@ -10,7 +10,7 @@ msgstr ""
 "Report-Msgid-Bugs-To: http://bugzilla.gnome.org/enter_bug.cgi?"
 "product=tracker&component=general\n"
 "POT-Creation-Date: 2010-07-16 10:12+0000\n"
-"PO-Revision-Date: 2010-03-31 17:01+0100\n"
+"PO-Revision-Date: 2010-09-22 16:14+0200\n"
 "Last-Translator: Piotr Drąg <piotrdrag@gmail.com>\n"
 "Language-Team: Polish <gnomepl@aviary.pl>\n"
 "MIME-Version: 1.0\n"
@@ -65,16 +65,13 @@ msgid "Tracker File System Miner"
 msgstr "Przeszukiwanie systemu plików programu Tracker"
 
 #: ../data/tracker-miner-rss.desktop.in.in.h:1
-#, fuzzy
-#| msgid "Fetch RSS/ATOM Feeds"
 msgid "Fetch RSS/ATOM feeds"
 msgstr "Pobieranie kanałów RSS/Atom"
 
+# pd
 #: ../data/tracker-miner-rss.desktop.in.in.h:2
-#, fuzzy
-#| msgid "Fetch RSS/ATOM Feeds"
 msgid "Tracker RSS/ATOM Feeds Miner"
-msgstr "Pobieranie kanałów RSS/Atom"
+msgstr "Przeszukiwanie kanałów RSS/Atom programu Tracker"
 
 #: ../data/tracker-status-icon.desktop.in.in.h:1
 msgid "Tracker Status Icon"
@@ -223,12 +220,11 @@ msgstr "Podaje dane programowi Tracker, aby można je było odpytywać."
 msgid "Tracker"
 msgstr "Tracker"
 
+# pd
 #: ../src/plugins/evolution/tracker-evolution-plugin.c:2461
 #: ../src/tracker-utils/tracker-status.c:70
-#, fuzzy
-#| msgid "Processing files"
 msgid "Processing…"
-msgstr "Przetwarzanie plików"
+msgstr "Przetwarzanie plików…"
 
 #: ../src/tracker-explorer/tracker-explorer.ui.h:1
 msgid "Properties"
@@ -569,13 +565,15 @@ msgstr "Położenia"
 msgid "Non-Recursively Indexed"
 msgstr "Zindeksowane nierekursywnie"
 
+# pd
 #: ../src/tracker-preferences/tracker-preferences.ui.h:23
 msgid "Opens text entry for glob patterns"
-msgstr ""
+msgstr "Otwiera pole wprowadzania tekstu dla wyrażeń regularnych"
 
+# pd
 #: ../src/tracker-preferences/tracker-preferences.ui.h:24
 msgid "Opens the filechooser dialogue"
-msgstr ""
+msgstr "Otwiera okno wybierania plików"
 
 #: ../src/tracker-preferences/tracker-preferences.ui.h:25
 msgid "Recursively Indexed"
@@ -734,10 +732,8 @@ msgstr "Aplet paska wyszukiwania zawartości przechowywanej w programie Tracker"
 
 #: ../src/tracker-search-bar/tracker-search-bar.ui.h:2
 #: ../src/tracker-status-icon/tracker-status-icon.c:806
-#, fuzzy
-#| msgid "Copyright Tracker Authors 2005-2009"
 msgid "Copyright Tracker Authors 2005-2010"
-msgstr "Copyright © 2005-2009 Autorzy programu Tracker"
+msgstr "Copyright © 2005-2010 Autorzy programu Tracker"
 
 #: ../src/tracker-search-bar/tracker-search-bar.ui.h:3
 msgid ""
@@ -831,17 +827,20 @@ msgstr "Album:"
 msgid "Duration:"
 msgstr "Czas trwania:"
 
+# pd
 #: ../src/tracker-search-tool/tracker-metadata-tile.gs:375
 msgid "Subject:"
-msgstr ""
+msgstr "Temat:"
 
+# pd
 #: ../src/tracker-search-tool/tracker-metadata-tile.gs:376
 msgid "From:"
-msgstr ""
+msgstr "Od:"
 
+# pd
 #: ../src/tracker-search-tool/tracker-metadata-tile.gs:377
 msgid "Received:"
-msgstr ""
+msgstr "Odebrano:"
 
 #: ../src/tracker-search-tool/tracker-metadata-tile.gs:391
 msgid "Author:"
@@ -851,11 +850,10 @@ msgstr "Autor:"
 msgid "Page count:"
 msgstr "Liczba stron:"
 
+# pd
 #: ../src/tracker-search-tool/tracker-metadata-tile.gs:418
-#, fuzzy
-#| msgid "Duration:"
 msgid "Description:"
-msgstr "Czas trwania:"
+msgstr "Opis:"
 
 #: ../src/tracker-search-tool/tracker-search-tool.desktop.in.in.h:1
 msgid ""
@@ -879,16 +877,14 @@ msgstr ""
 "Wczytanie interfejsu użytkownika nie powiodło się\n"
 "%s"
 
+# pd
 #: ../src/tracker-search-tool/tracker-utils.gs:101
-#, fuzzy, c-format
-#| msgid ""
-#| "Could not lauch %s\n"
-#| "Error: %s\n"
+#, c-format
 msgid ""
 "Could not launch \"%s\"\n"
 "Error: %s\n"
 msgstr ""
-"Nie można uruchomić %s\n"
+"Nie można uruchomić \"%s\"\n"
 "Błąd: %s\n"
 
 #: ../src/tracker-search-tool/tracker-utils.gs:117
@@ -1039,10 +1035,6 @@ msgid "APPS"
 msgstr "PROGRAMY"
 
 #: ../src/tracker-control/tracker-control.c:81
-#, fuzzy
-#| msgid ""
-#| "Use SIGTERM to stop all matrhing processes, either \"store\", \"miners\" "
-#| "or \"all\" may be used, no parameter equals \"all\""
 msgid ""
 "Use SIGTERM to stop all matching processes, either \"store\", \"miners\" or "
 "\"all\" may be used, no parameter equals \"all\""
@@ -1194,9 +1186,12 @@ msgstr "Nie można zaimportować pliku Turtle"
 msgid "Done"
 msgstr "Ukończono"
 
+# pd
 #: ../src/tracker-utils/tracker-info.c:54
 msgid "Show full namespaces (i.e. don't use nie:title, use full URLs)"
 msgstr ""
+"Wyświetlanie pełnych przestrzeni nazw (tzn. nie używanie nie:tytuł, tylko "
+"pełnych adresów URL)"
 
 #. Translators: this messagge will apper immediately after the
 #. usage string - Usage: COMMAND [OPTION]... <THIS_MESSAGE>
@@ -1245,11 +1240,14 @@ msgstr "0"
 msgid "Use OR for search terms instead of AND (the default)"
 msgstr "Używa LUB dla terminów wyszukiwania zamiast domyślnego ORAZ"
 
+# pd
 #: ../src/tracker-utils/tracker-search.c:76
 msgid ""
 "Show URNs for results (doesn't apply to --music-albums, --music-artists, --"
 "feeds)"
 msgstr ""
+"Wyświetlanie adresów URN dla wyników (nie ma zastosowania dla "
+"--music-albums, --music-artists, --feeds)"
 
 #: ../src/tracker-utils/tracker-search.c:80
 msgid "Return all non-existing matches too (i.e. include unmounted volumes)"
@@ -1289,23 +1287,20 @@ msgstr "Wyszukaj pliki wideo"
 msgid "Search for document files"
 msgstr "Wyszukaj pliki dokumentów"
 
+# pd
 #: ../src/tracker-utils/tracker-search.c:116
-#, fuzzy
-#| msgid "Search for files"
 msgid "Search for emails"
-msgstr "Wyszukaj pliki"
+msgstr "Wyszukaj wiadomości e-mail"
 
+# pd
 #: ../src/tracker-utils/tracker-search.c:120
-#, fuzzy
-#| msgid "Search for folders"
 msgid "Search for contacts"
-msgstr "Wyszukaj katalogi"
+msgstr "Wyszukaj kontakty"
 
+# pd
 #: ../src/tracker-utils/tracker-search.c:124
-#, fuzzy
-#| msgid "Search for music artists (--all has no effect on this) "
 msgid "Search for feeds (--all has no effect on this) "
-msgstr "Wyszukaj wykonawców muzyki (opcja --all na to nie wpływa) "
+msgstr "Wyszukaj kontakty (opcja --all na to nie wpływa) "
 
 #: ../src/tracker-utils/tracker-search.c:133
 msgid "search terms"
@@ -1333,17 +1328,15 @@ msgstr ""
 msgid "Could not get search results"
 msgstr "Nie można uzyskać wyników wyszukiwania"
 
+# pd
 #: ../src/tracker-utils/tracker-search.c:230
-#, fuzzy
-#| msgid "No tags were found"
 msgid "No contacts were found"
-msgstr "Nie odnaleziono etykiet"
+msgstr "Nie odnaleziono kontaktów"
 
+# pd
 #: ../src/tracker-utils/tracker-search.c:339
-#, fuzzy
-#| msgid "No files were found"
 msgid "No emails were found"
-msgstr "Nie odnaleziono plików"
+msgstr "Nie odnaleziono wiadomości e-mail"
 
 #: ../src/tracker-utils/tracker-search.c:454
 msgid "No files were found"
@@ -1357,11 +1350,10 @@ msgstr "Nie odnaleziono wykonawców"
 msgid "No music was found"
 msgstr "Nie odnaleziono muzyki"
 
+# pd
 #: ../src/tracker-utils/tracker-search.c:916
-#, fuzzy
-#| msgid "No files were found"
 msgid "No feeds were found"
-msgstr "Nie odnaleziono plików"
+msgstr "Nie odnaleziono kanałów"
 
 #: ../src/tracker-utils/tracker-search.c:1164
 msgid "No results were found matching your query"
@@ -1402,9 +1394,7 @@ msgid "Search term '%s' is a stop word."
 msgstr "Wyszukiwany termin \"%s\" jest słowem zatrzymującym."
 
 #: ../src/tracker-utils/tracker-search.c:1295
-#, fuzzy, c-format
-#| msgid ""
-#| "Stop words are common words which are ignored during the indexing process."
+#, c-format
 msgid ""
 "Stop words are common words which may be ignored during the indexing process."
 msgstr ""
@@ -1586,10 +1576,8 @@ msgid "Statistics:"
 msgstr "Statystyki:"
 
 #: ../src/tracker-utils/tracker-status.c:71
-#, fuzzy
-#| msgid "Fetching..."
 msgid "Fetching…"
-msgstr "Pobieranie..."
+msgstr "Pobieranie…"
 
 #. miner/rss
 #: ../src/tracker-utils/tracker-status.c:72
@@ -1602,11 +1590,10 @@ msgstr "Przeszukiwanie pojedynczego katalogu \"%s\""
 msgid "Crawling recursively directory '%s'"
 msgstr "Rekursywne przeszukiwanie katalogu \"%s\""
 
+# pd
 #: ../src/tracker-utils/tracker-status.c:74
-#, fuzzy
-#| msgid "Paused by user"
 msgid "Paused"
-msgstr "Wstrzymane przez użytkownika"
+msgstr "Wstrzymano"
 
 #: ../src/tracker-utils/tracker-status.c:75
 msgid "Idle"
@@ -1621,9 +1608,10 @@ msgid "Include details with state updates (only applies to --follow)"
 msgstr ""
 "Dołącza szczegóły do aktualizacji stanu (ma zastosowanie tylko do --follow)"
 
+# pd
 #: ../src/tracker-utils/tracker-status.c:88
 msgid "List common statuses for miners and the store"
-msgstr ""
+msgstr "Wyświetla listę wspólnych stanów dla przeszukiwań i przechowalni"
 
 #: ../src/tracker-utils/tracker-status.c:92
 msgid "List all miners currently running"
@@ -1726,9 +1714,10 @@ msgstr "Należy podać polecenia wstrzymania lub wznowienia dla przeszukiwania"
 msgid "You must provide a pause or resume command for the miner"
 msgstr "Należy podać polecenie wstrzymania lub wznowienia dla przeszukiwania"
 
+# pd
 #: ../src/tracker-utils/tracker-status.c:556
 msgid "Common statuses include"
-msgstr ""
+msgstr "Wspólne stany obejmują"
 
 #: ../src/tracker-utils/tracker-status.c:568
 #, c-format
@@ -1791,16 +1780,15 @@ msgstr ""
 "Usuwa etykietę (jeśli pominięto PLIKI, ETYKIETA zostanie usunięta z "
 "wszystkich plików)"
 
+# pd
 #: ../src/tracker-utils/tracker-tag.c:84
-#, fuzzy
-#| msgid "Show files associated with each tag (this is only used with --list)"
 msgid "Description for a tag (this is only used with --add)"
-msgstr ""
-"Wyświetla pliki powiązane z każdą etykietą (jest używane tylko z --list)"
+msgstr "Opis etykiety (jest używane tylko z --add)"
 
+# pd
 #: ../src/tracker-utils/tracker-tag.c:85
 msgid "STRING"
-msgstr ""
+msgstr "CIĄG"
 
 #: ../src/tracker-utils/tracker-tag.c:94
 msgid "FILE…"
@@ -1895,9 +1883,10 @@ msgstr "Nie można razem używać czynności dodania i usunięcia"
 msgid "No arguments were provided"
 msgstr "Nie podano parametrów"
 
+# pd
 #: ../src/tracker-utils/tracker-tag.c:876
 msgid "The --description option can only be used with --add"
-msgstr ""
+msgstr "Opcja --description może być używana tylko z opcją --add"
 
 #. Translators: this messagge will apper immediately after the
 #. * usage string - Usage: COMMAND <THIS_MESSAGE>
