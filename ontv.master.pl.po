@@ -7,22 +7,37 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: ontv\n"
-"Report-Msgid-Bugs-To: http://bugzilla.gnome.org/enter_bug.cgi?product=ontv&component=general\n"
-"POT-Creation-Date: 2010-02-18 21:17+0000\n"
-"PO-Revision-Date: 2010-03-09 11:45+0100\n"
+"Report-Msgid-Bugs-To: http://bugzilla.gnome.org/enter_bug.cgi?"
+"product=ontv&component=general\n"
+"POT-Creation-Date: 2010-08-31 16:33+0000\n"
+"PO-Revision-Date: 2010-09-22 18:28+0200\n"
 "Last-Translator: Piotr Drąg <piotrdrag@gmail.com>\n"
 "Language-Team: Polish <gnomepl@aviary.pl>\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"Plural-Forms: nplurals=3; plural=(n==1 ? 0 : n%10>=2 && n%10<=4 && (n%100<10 || n%100>=20) ? 1 : 2);\n"
+"Plural-Forms: nplurals=3; plural=(n==1 ? 0 : n%10>=2 && n%10<=4 && (n%100<10 "
+"|| n%100>=20) ? 1 : 2);\n"
 "X-Poedit-Language: Polish\n"
 "X-Poedit-Country: Poland\n"
 
-#: ../data/90-ontv.xml.in.h:1
-#: ../data/GNOME_OnTVApplet.server.in.in.h:4
+#: ../data/90-ontv.xml.in.h:1 ../data/GNOME_OnTVApplet.server.in.in.h:4
+#: ../data/ontv.desktop.in.h:2
 msgid "OnTV"
 msgstr "W telewizji (OnTV)"
+
+#: ../data/about_dialog.ui.h:1
+msgid "Copyright (C) 2004-2010 Johan Svedberg"
+msgstr "Copyright (C) 2004-2010 Johan Svedberg"
+
+# pd
+#: ../data/about_dialog.ui.h:2
+msgid "OnTV is a GNOME Applet for monitoring TV programs."
+msgstr "OnTV to aplet środowiska GNOME do monitorowania programów TV."
+
+#: ../data/about_dialog.ui.h:3
+msgid "translator-credits"
+msgstr "Aviary.pl <gnomepl@aviary.pl>, 2010"
 
 #: ../data/GNOME_OnTVApplet.server.in.in.h:1
 msgid "Accessories"
@@ -32,7 +47,7 @@ msgstr "Akcesoria"
 msgid "Factory for creating the OnTV applet"
 msgstr "Fabryka tworząca aplet OnTV"
 
-#: ../data/GNOME_OnTVApplet.server.in.in.h:3
+#: ../data/GNOME_OnTVApplet.server.in.in.h:3 ../data/ontv.desktop.in.h:1
 msgid "Monitor TV programs"
 msgstr "Monitor programów TV"
 
@@ -56,318 +71,338 @@ msgstr "Wy_szukaj program"
 msgid "_Update TV listings"
 msgstr "Zakt_ualizuj listingi TV"
 
-#: ../data/ontv.glade.h:1
-msgid "<b>Air time:</b>"
-msgstr "<b>Czas nadawania:</b>"
-
-#: ../data/ontv.glade.h:2
-msgid "<b>Channel:</b>"
-msgstr "<b>Kanał:</b>"
-
-#: ../data/ontv.glade.h:3
-msgid "<b>Description:</b>"
-msgstr "<b>Opis:</b>"
-
-#: ../data/ontv.glade.h:4
-msgid "<b>Display</b>"
-msgstr "<b>Wyświetlanie</b>"
-
-#: ../data/ontv.glade.h:5
-msgid "<b>Logo:</b>"
-msgstr "<b>Logo:</b>"
-
-#: ../data/ontv.glade.h:6
-msgid "<b>Name:</b>"
-msgstr "<b>Nazwa:</b>"
-
-#: ../data/ontv.glade.h:7
-msgid "<b>XMLTV</b>"
-msgstr "<b>XMLTV</b>"
-
-#: ../data/ontv.glade.h:8
-#: ../ontv/assistant.py:173
-msgid "Browse..."
-msgstr "Przeglądaj..."
-
-#: ../data/ontv.glade.h:9
-msgid "C_urrent programs"
-msgstr "_Bieżące programy"
-
-#: ../data/ontv.glade.h:10
-msgid "Channels"
-msgstr "Kanały"
-
-#: ../data/ontv.glade.h:11
-msgid "General"
-msgstr "Ogólne"
-
-#: ../data/ontv.glade.h:12
-msgid "Position:"
-msgstr "Położenie:"
-
-#: ../data/ontv.glade.h:13
-msgid "Preferences for OnTV"
-msgstr "Preferencje programu OnTV"
-
-#: ../data/ontv.glade.h:14
-msgid "Reminders"
-msgstr "Powiadomienia"
-
-#: ../data/ontv.glade.h:15
-msgid "Right-click on a channel to set logo"
-msgstr "Kliknięcie prawym przyciskiem na kanale ustawi logo"
-
-#: ../data/ontv.glade.h:16
-msgid "Search Program"
-msgstr "Wyszukaj program"
-
-#: ../data/ontv.glade.h:17
-msgid "To the _right"
-msgstr "Po p_rawej"
-
-#: ../data/ontv.glade.h:18
-msgid "U_pcoming programs"
-msgstr "_Nadchodzące programy"
-
-#: ../data/ontv.glade.h:19
-msgid "_Below"
-msgstr "_Poniżej"
-
-#: ../data/ontv.glade.h:20
-msgid "_Channel:"
-msgstr "_Kanał:"
-
-#: ../data/ontv.glade.h:21
-msgid "_Current reminders:"
-msgstr "_Bieżące powiadomienia:"
-
-#: ../data/ontv.glade.h:22
-#: ../ontv/gui.py:109
-msgid "_Details"
-msgstr "_Szczegóły"
-
-#: ../data/ontv.glade.h:23
-msgid "_Grabber command:"
-msgstr "_Polecenie mechanizmu pobierania:"
-
-#: ../data/ontv.glade.h:24
-msgid "_Notify"
-msgstr "_Powiadom"
-
-#: ../data/ontv.glade.h:25
-msgid "_Output file:"
-msgstr "P_lik wyjściowy:"
-
-#: ../data/ontv.glade.h:26
-msgid "_Program:"
-msgstr "_Program:"
-
-#: ../data/ontv.glade.h:27
-msgid "_Search:"
-msgstr "Wys_zukaj:"
-
-#: ../data/ontv.glade.h:28
-msgid "_Select channels to monitor in preferred order:"
-msgstr "_Proszę wybrać kanały do monitorowania w preferowanej kolejności:"
-
-#: ../data/ontv.glade.h:29
-msgid "minutes before the program begins"
-msgstr "minut przed rozpoczęciem programu"
-
-#: ../data/ontv.schemas.in.h:1
+#: ../data/ontv.schemas.in.in.h:1
 msgid "Absolute path to the XMLTV file containing TV listings."
 msgstr "Dokładne położenie pliku XMLTV, zawierającego ramówkę TV."
 
-#: ../data/ontv.schemas.in.h:2
+#: ../data/ontv.schemas.in.in.h:2
 msgid "Command for grabbing XMLTV file."
 msgstr "Polecenie do pobierania pliku XMLTV."
 
-#: ../data/ontv.schemas.in.h:3
+#: ../data/ontv.schemas.in.in.h:3
 msgid "Command for showing the search program window."
 msgstr "Polecenie do wyświetlania okna wyszukiwania programów."
 
-#: ../data/ontv.schemas.in.h:4
+#: ../data/ontv.schemas.in.in.h:4
 msgid "Command for toggling visibility of the OnTV program window."
 msgstr "Polecenie do przełączenia widoczności okna programu OnTV."
 
-#: ../data/ontv.schemas.in.h:5
+#: ../data/ontv.schemas.in.in.h:5
 msgid "Display current programs"
 msgstr "Wyświetlanie bieżących programów"
 
-#: ../data/ontv.schemas.in.h:6
+#: ../data/ontv.schemas.in.in.h:6
 msgid "Display upcoming programs"
 msgstr "Wyświetlanie nadchodzących programów"
 
-#: ../data/ontv.schemas.in.h:7
+#: ../data/ontv.schemas.in.in.h:7
 msgid "Keyboard shortcut for showing the search program window."
 msgstr "Skrót klawiszowy wyświetlający okno wyszukiwania programów."
 
-#: ../data/ontv.schemas.in.h:8
+#: ../data/ontv.schemas.in.in.h:8
 msgid "Keyboard shortcut for toggling visibility of the OnTV program window."
 msgstr "Skrót klawiszowy przełączający widoczność okna programów OnTV."
 
-#: ../data/ontv.schemas.in.h:9
+#: ../data/ontv.schemas.in.in.h:9
 msgid "Path to XMLTV file"
 msgstr "Ścieżka do pliku XMLTV"
 
-#: ../data/ontv.schemas.in.h:10
+#: ../data/ontv.schemas.in.in.h:10
 msgid "Position upcoming programs below or to the right"
 msgstr "Położenie nadchodzących programów poniżej lub po prawej"
 
-#: ../data/ontv.schemas.in.h:11
+#: ../data/ontv.schemas.in.in.h:11
 msgid "Show search program action"
 msgstr "Wyświetlanie działania wyszukiwania programów"
 
-#: ../data/ontv.schemas.in.h:12
+#: ../data/ontv.schemas.in.in.h:12
 msgid "Show search program binding"
 msgstr "Wyświetlanie dowiązywania wyszukiwania programów"
 
-#: ../data/ontv.schemas.in.h:13
+#: ../data/ontv.schemas.in.in.h:13
 msgid "Show search program dialog"
 msgstr "Wyświetlanie okna wyszukiwania programów"
 
-#: ../data/ontv.schemas.in.h:14
+#: ../data/ontv.schemas.in.in.h:14
 msgid "Show search program dialog."
 msgstr "Wyświetlanie okna wyszukiwania programów."
 
-#: ../data/ontv.schemas.in.h:15
+#: ../data/ontv.schemas.in.in.h:15
 msgid "Toggle OnTV program window"
 msgstr "Przełączanie okna programu OnTV"
 
-#: ../data/ontv.schemas.in.h:16
+#: ../data/ontv.schemas.in.in.h:16
 msgid "Toggle program window action"
 msgstr "Przełączanie działania okna programu"
 
-#: ../data/ontv.schemas.in.h:17
+#: ../data/ontv.schemas.in.in.h:17
 msgid "Toggle program window binding"
 msgstr "Przełączanie dowiązywania okna programu"
 
-#: ../data/ontv.schemas.in.h:18
+#: ../data/ontv.schemas.in.in.h:18
 msgid "Toggle visibility of the OnTV program window."
 msgstr "Przełączanie widoczności okna programu OnTV."
 
-#: ../data/ontv.schemas.in.h:19
+#: ../data/ontv.schemas.in.in.h:19
 msgid "Whether OnTV should display current programs."
 msgstr "Określa, czy program OnTV ma wyświetlać bieżące programy."
 
-#: ../data/ontv.schemas.in.h:20
+#: ../data/ontv.schemas.in.in.h:20
 msgid "Whether OnTV should display upcoming programs."
 msgstr "Określa, czy program OnTV ma wyświetlać nadchodzące programy."
 
-#: ../data/ontv.schemas.in.h:21
-msgid "Whether OnTV should position upcoming programs below or to the right of the current programs."
-msgstr "Określa, czy program OnTV ma umieszczać informacje o nadchodzących programach poniżej, czy po prawej bieżących programów."
+#: ../data/ontv.schemas.in.in.h:21
+msgid ""
+"Whether OnTV should position upcoming programs below or to the right of the "
+"current programs."
+msgstr ""
+"Określa, czy program OnTV ma umieszczać informacje o nadchodzących "
+"programach poniżej, czy po prawej bieżących programów."
 
-#: ../data/ontv.schemas.in.h:22
+#: ../data/ontv.schemas.in.in.h:22
 msgid "XMLTV grabber command"
 msgstr "Polecenie mechanizmu pobierania XMLTV"
 
-#: ../ontv/applet.py:142
-msgid "Downloading"
-msgstr "Pobieranie"
+#: ../data/preferences_dialog.ui.h:1
+msgid "<b>Display</b>"
+msgstr "<b>Wyświetlanie</b>"
 
-#: ../ontv/applet.py:146
-msgid "Sorting"
-msgstr "Porządkowanie"
+#: ../data/preferences_dialog.ui.h:2
+msgid "<b>XMLTV</b>"
+msgstr "<b>XMLTV</b>"
 
-#: ../ontv/applet.py:150
-msgid "Loading"
-msgstr "Wczytywanie"
+#: ../data/preferences_dialog.ui.h:3 ../ontv/assistant.py:172
+msgid "Browse..."
+msgstr "Przeglądaj..."
 
-#: ../ontv/applet.py:200
-#, python-format
-msgid "%s TV Listings..."
-msgstr "Listing TV %s..."
+#: ../data/preferences_dialog.ui.h:4
+msgid "C_urrent programs"
+msgstr "_Bieżące programy"
 
-#: ../ontv/assistant.py:33
+#: ../data/preferences_dialog.ui.h:5
+msgid "Channels"
+msgstr "Kanały"
+
+#: ../data/preferences_dialog.ui.h:6
+msgid "General"
+msgstr "Ogólne"
+
+#: ../data/preferences_dialog.ui.h:7
+msgid "Position:"
+msgstr "Położenie:"
+
+#: ../data/preferences_dialog.ui.h:8
+msgid "Preferences for OnTV"
+msgstr "Preferencje programu OnTV"
+
+#: ../data/preferences_dialog.ui.h:9
+msgid "Reminders"
+msgstr "Powiadomienia"
+
+#: ../data/preferences_dialog.ui.h:10
+msgid "Right-click on a channel to set logo"
+msgstr "Kliknięcie prawym przyciskiem na kanale ustawi logo"
+
+#: ../data/preferences_dialog.ui.h:11
+msgid "To the _right"
+msgstr "Po p_rawej"
+
+#: ../data/preferences_dialog.ui.h:12
+msgid "U_pcoming programs"
+msgstr "_Nadchodzące programy"
+
+#: ../data/preferences_dialog.ui.h:13
+msgid "_Below"
+msgstr "_Poniżej"
+
+#: ../data/preferences_dialog.ui.h:14
+msgid "_Channel:"
+msgstr "_Kanał:"
+
+#: ../data/preferences_dialog.ui.h:15
+msgid "_Current reminders:"
+msgstr "_Bieżące powiadomienia:"
+
+#: ../data/preferences_dialog.ui.h:16
+msgid "_Grabber command:"
+msgstr "_Polecenie mechanizmu pobierania:"
+
+#: ../data/preferences_dialog.ui.h:17
+msgid "_Notify"
+msgstr "_Powiadom"
+
+#: ../data/preferences_dialog.ui.h:18
+msgid "_Output file:"
+msgstr "P_lik wyjściowy:"
+
+#: ../data/preferences_dialog.ui.h:19
+msgid "_Program:"
+msgstr "_Program:"
+
+#: ../data/preferences_dialog.ui.h:20
+msgid "_Select channels to monitor in preferred order:"
+msgstr "_Proszę wybrać kanały do monitorowania w preferowanej kolejności:"
+
+#: ../data/preferences_dialog.ui.h:21
+msgid "minutes before the program begins"
+msgstr "minut przed rozpoczęciem programu"
+
+#: ../data/program_dialog.ui.h:1
+msgid "<b>Air time:</b>"
+msgstr "<b>Czas nadawania:</b>"
+
+#: ../data/program_dialog.ui.h:2
+msgid "<b>Channel:</b>"
+msgstr "<b>Kanał:</b>"
+
+#: ../data/program_dialog.ui.h:3
+msgid "<b>Description:</b>"
+msgstr "<b>Opis:</b>"
+
+#: ../data/program_dialog.ui.h:4
+msgid "<b>Name:</b>"
+msgstr "<b>Nazwa:</b>"
+
+#: ../data/search_dialog.ui.h:1
+msgid "Search Program"
+msgstr "Wyszukaj program"
+
+#: ../data/search_dialog.ui.h:2 ../ontv/gui.py:114
+msgid "_Add reminder"
+msgstr "_Dodaj powiadomienie"
+
+#: ../data/search_dialog.ui.h:3 ../ontv/gui.py:109
+msgid "_Details"
+msgstr "_Szczegóły"
+
+#: ../data/search_dialog.ui.h:4
+msgid "_Search:"
+msgstr "Wys_zukaj:"
+
+# pd
+#: ../data/status_icon.ui.h:1
+msgid "About"
+msgstr "O programie"
+
+# pd
+#: ../data/status_icon.ui.h:2
+msgid "Exit"
+msgstr "Zakończ"
+
+# pd
+#: ../data/status_icon.ui.h:3
+msgid "Preferences"
+msgstr "Preferencje"
+
+# pd
+#: ../data/status_icon.ui.h:4
+msgid "Search"
+msgstr "Wyszukaj"
+
+# pd
+#: ../data/status_icon.ui.h:5
+msgid "Update TV Listings"
+msgstr "Zaktualizuj listingi TV"
+
+#: ../ontv/assistant.py:32
 msgid "Error while importing vte module"
 msgstr "Błąd podczas importowania modułu vte"
 
-#: ../ontv/assistant.py:34
+#: ../ontv/assistant.py:33
 msgid "Could not find python-vte."
 msgstr "Nie odnaleziono programu python-vte."
 
-#: ../ontv/assistant.py:78
-#: ../ontv/assistant.py:101
+#: ../ontv/assistant.py:77 ../ontv/assistant.py:100
 msgid "OnTV XMLTV Configuration"
 msgstr "Konfiguracja XMLTV programu OnTV"
 
-#: ../ontv/assistant.py:95
-msgid "Welcome! This assistant will help you setup the program OnTV will use to download TV listings for your country."
-msgstr "Witamy! Ten asystent pomoże w konfiguracji programu OnTV do pobierania listingów TV dla danego kraju."
+#: ../ontv/assistant.py:94
+msgid ""
+"Welcome! This assistant will help you setup the program OnTV will use to "
+"download TV listings for your country."
+msgstr ""
+"Witamy! Ten asystent pomoże w konfiguracji programu OnTV do pobierania "
+"listingów TV dla danego kraju."
 
-#: ../ontv/assistant.py:115
+#: ../ontv/assistant.py:114
 msgid "Configure installed grabber"
 msgstr "Konfiguracja mechanizmu pobierania"
 
-#: ../ontv/assistant.py:123
+#: ../ontv/assistant.py:122
 msgid "Country:"
 msgstr "Kraj:"
 
-#: ../ontv/assistant.py:149
+#: ../ontv/assistant.py:148
 msgid "Use custom grabber"
 msgstr "Użycie własnego mechanizmu pobierania"
 
-#: ../ontv/assistant.py:154
+#: ../ontv/assistant.py:153
 msgid "Grabber command:"
 msgstr "Polecenie mechanizmu pobierania:"
 
-#: ../ontv/assistant.py:164
+#: ../ontv/assistant.py:163
 msgid "Output file:"
 msgstr "Plik wyjściowy:"
 
-#: ../ontv/assistant.py:188
-#: ../ontv/assistant.py:254
+#: ../ontv/assistant.py:187 ../ontv/assistant.py:253
 msgid "Configure grabber"
 msgstr "Konfiguracja mechanizmu pobierania"
 
-#: ../ontv/assistant.py:229
-#: ../ontv/dialogs.py:385
+#: ../ontv/assistant.py:228 ../ontv/dialogs.py:392
 msgid "XML files"
 msgstr "Plik XML"
 
-#: ../ontv/assistant.py:232
-#: ../ontv/dialogs.py:388
+#: ../ontv/assistant.py:231 ../ontv/dialogs.py:395
 msgid "Select XMLTV file..."
 msgstr "Wybierz plik XMLTV..."
 
-#: ../ontv/assistant.py:245
+#: ../ontv/assistant.py:244
 msgid "Configure the grabber by answering the questions in the terminal below."
-msgstr "Należy skonfigurować mechanizm pobierania odpowiadając na pytania w poniższym terminalu."
+msgstr ""
+"Należy skonfigurować mechanizm pobierania odpowiadając na pytania w "
+"poniższym terminalu."
 
-#: ../ontv/assistant.py:262
-msgid "Please wait while the TV listings are being downloaded and sorted. This may take several minutes depending on the speed of your Internet connection."
-msgstr "Proszę czekać, podczas gdy listingi TV są pobierane i porządkowane. To może potrwać kilka minut, zależnie od prędkości połączenia internetowego."
+#: ../ontv/assistant.py:261
+msgid ""
+"Please wait while the TV listings are being downloaded and sorted. This may "
+"take several minutes depending on the speed of your Internet connection."
+msgstr ""
+"Proszę czekać, podczas gdy listingi TV są pobierane i porządkowane. To może "
+"potrwać kilka minut, zależnie od prędkości połączenia internetowego."
 
-#: ../ontv/assistant.py:269
+#: ../ontv/assistant.py:268
 msgid "Details"
 msgstr "Szczegóły"
 
-#: ../ontv/assistant.py:275
+#: ../ontv/assistant.py:274
 msgid "Downloading and sorting TV listings"
 msgstr "Pobieranie i porządkowanie listingów TV"
 
-#: ../ontv/assistant.py:283
-msgid "Congratulations! OnTV is now ready for use. You can select which channels to monitor in the preferences dialog."
-msgstr "Gratulacje! Program OnTV jest teraz gotowy do użycia. Można wybrać, które kanały mają być monitorowane w oknie preferencji."
+#: ../ontv/assistant.py:282
+msgid ""
+"Congratulations! OnTV is now ready for use. You can select which channels to "
+"monitor in the preferences dialog."
+msgstr ""
+"Gratulacje! Program OnTV jest teraz gotowy do użycia. Można wybrać, które "
+"kanały mają być monitorowane w oknie preferencji."
 
-#: ../ontv/assistant.py:289
+#: ../ontv/assistant.py:288
 msgid "All done!"
 msgstr "Wszystko gotowe."
 
-#: ../ontv/assistant.py:401
+#: ../ontv/assistant.py:400
 msgid "Downloading TV listings..."
 msgstr "Pobieranie listingów TV..."
 
-#: ../ontv/assistant.py:448
+#: ../ontv/assistant.py:447
 msgid "Failed to download TV listings!"
 msgstr "Wczytanie listingów TV się nie powiodło."
 
-#: ../ontv/assistant.py:462
+#: ../ontv/assistant.py:461
 msgid "Sorting TV listings..."
 msgstr "Porządkowanie listingów TV..."
 
-#: ../ontv/assistant.py:479
+#: ../ontv/assistant.py:478
 msgid "Done!"
 msgstr "Gotowe."
 
@@ -382,46 +417,39 @@ msgstr "Nie można odnaleźć katalogu konfiguracji w GConf"
 
 #: ../ontv/config.py:75
 msgid "Please make sure that ontv.schemas was correctly installed."
-msgstr "Proszę sprawdzić, czy plik ontv.schemas został poprawnie zainstalowany."
+msgstr ""
+"Proszę sprawdzić, czy plik ontv.schemas został poprawnie zainstalowany."
 
-#: ../ontv/dialogs.py:66
+#: ../ontv/dialogs.py:74
 #, python-format
 msgid "Properties for channel %s"
 msgstr "Właściwości kanału %s"
 
-#: ../ontv/dialogs.py:154
-#: ../ontv/dialogs.py:614
-#: ../ontv/dialogs.py:726
-#: ../ontv/dialogs.py:774
-#: ../ontv/listings.py:95
-#: ../ontv/reminders.py:59
+#: ../ontv/dialogs.py:160 ../ontv/dialogs.py:590 ../ontv/dialogs.py:704
+#: ../ontv/dialogs.py:752 ../ontv/listings.py:95 ../ontv/reminders.py:59
 msgid "All"
 msgstr "Wszystkie"
 
-#: ../ontv/dialogs.py:239
+#: ../ontv/dialogs.py:246
 msgid "_Properties"
 msgstr "_Właściwości"
 
-#: ../ontv/dialogs.py:287
+#: ../ontv/dialogs.py:294
 msgid "Program"
 msgstr "Program"
 
-#: ../ontv/dialogs.py:295
+#: ../ontv/dialogs.py:302
 msgid "Channel"
 msgstr "Kanał"
 
-#: ../ontv/dialogs.py:303
+#: ../ontv/dialogs.py:310
 msgid "Notification time"
 msgstr "Czas powiadomienia"
 
-#: ../ontv/dialogs.py:646
+#: ../ontv/dialogs.py:623
 #, python-format
 msgid "Details about %s"
 msgstr "Szczegóły %s"
-
-#: ../ontv/gui.py:114
-msgid "_Add reminder"
-msgstr "_Dodaj powiadomienie"
 
 #: ../ontv/gui.py:146
 msgid "All files"
@@ -431,43 +459,6 @@ msgstr "Wszystkie pliki"
 msgid "Error"
 msgstr "Błąd"
 
-#: ../ontv/main.py:93
-#, python-format
-msgid "Usage: %s [OPTIONS]..."
-msgstr "Składnia: %s [OPCJE]..."
-
-#: ../ontv/main.py:95
-msgid "OPTIONS:"
-msgstr "OPCJE:"
-
-#: ../ontv/main.py:96
-msgid "run XMLTV assistant on startup"
-msgstr "uruchamia asystenta XMLTV podczas startu programu"
-
-#: ../ontv/main.py:97
-msgid "enable debug messages"
-msgstr "włącza komunikaty debugowania"
-
-#: ../ontv/main.py:98
-msgid "show this help message and exit"
-msgstr "wyświetla ten komunikat pomocy i kończy działanie"
-
-#: ../ontv/main.py:99
-msgid "brings up search dialog"
-msgstr "wyświetla okno wyszukiwania"
-
-#: ../ontv/main.py:100
-msgid "toggles visibility of program window"
-msgstr "przełącza widoczność okna programu"
-
-#: ../ontv/main.py:101
-msgid "update TV listings"
-msgstr "aktualizuje listingi TV"
-
-#: ../ontv/main.py:102
-msgid "run OnTV in a standalone window (for testing purposes)"
-msgstr "uruchamia program OnTV w osobnym oknie (dla testów)"
-
 #: ../ontv/notify.py:34
 msgid "Error while importing pynotify module"
 msgstr "Błąd podczas importowania modułu pynotify"
@@ -476,10 +467,23 @@ msgstr "Błąd podczas importowania modułu pynotify"
 msgid "Could not find python-notify."
 msgstr "Nie odnaleziono programu python-notify."
 
-#: ../ontv/notify.py:72
+#: ../ontv/notify.py:68
 #, python-format
 msgid "%s until the program begins."
 msgstr "%s do rozpoczęcia programu."
+
+#: ../ontv/ontv_core.py:120
+msgid "Downloading TV Listings..."
+msgstr "Pobieranie listingów TV..."
+
+#: ../ontv/ontv_core.py:124
+msgid "Sorting TV Listings..."
+msgstr "Porządkowanie listingów TV..."
+
+# pd
+#: ../ontv/ontv_core.py:128
+msgid "Loading TV Listings..."
+msgstr "Wczytywanie listingów TV..."
 
 #: ../ontv/window.py:79
 msgid "No channels selected"
@@ -538,34 +542,34 @@ msgstr[2] "pozostało %d sekund"
 msgid "Upcoming programs"
 msgstr "Nadchodzące programy"
 
-#: ../ontv/xmltv_file.py:100
+#: ../ontv/xmltv_file.py:98
 #, python-format
 msgid "Failed to load %s"
 msgstr "Wczytanie %s się nie powiodło"
 
-#: ../ontv/xmltv_file.py:102
+#: ../ontv/xmltv_file.py:100
 msgid "File not found"
 msgstr "Plik nie został odnaleziony"
 
-#: ../ontv/xmltv_file.py:104
+#: ../ontv/xmltv_file.py:102
 msgid "Access denied"
 msgstr "Brak dostępu"
 
-#: ../ontv/xmltv_file.py:106
+#: ../ontv/xmltv_file.py:104
 msgid "Unknown error"
 msgstr "Nieznany błąd"
 
-#: ../ontv/xmltv_file.py:108
+#: ../ontv/xmltv_file.py:106
 #, python-format
 msgid "Error while parsing %s"
 msgstr "Błąd podczas przetwarzania %s"
 
-#: ../ontv/xmltv_file.py:109
+#: ../ontv/xmltv_file.py:107
 #, python-format
 msgid "The parser returned: \"%s\""
 msgstr "Parser zwrócił: \"%s\""
 
-#: ../ontv/xmltv_file.py:113
+#: ../ontv/xmltv_file.py:111
 #, python-format
 msgid "Unknown error while loading %s"
 msgstr "Nieznany błąd podczas wczytywania %s"
