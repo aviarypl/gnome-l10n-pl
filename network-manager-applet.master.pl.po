@@ -10,8 +10,8 @@ msgstr ""
 "Report-Msgid-Bugs-To: http://bugzilla.gnome.org/enter_bug.cgi?"
 "product=NetworkManager&component=nm-applet\n"
 "POT-Creation-Date: 2010-09-02 15:06+0000\n"
-"PO-Revision-Date: 2010-05-25 22:58+0100\n"
-"Last-Translator: wadim dziedzic <wdziedzic@aviary,pl>\n"
+"PO-Revision-Date: 2010-09-22 15:53+0200\n"
+"Last-Translator: Piotr Drąg <piotrdrag@gmail.com>\n"
 "Language-Team: Polish <gnomepl@aviary.pl>\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -243,12 +243,11 @@ msgstr "Urządzenie komórkowe \"%s\" wymaga kodu PIN karty SIM przed użyciem."
 msgid "PIN code:"
 msgstr "Kod PIN:"
 
+# pd
 #. Translators: Show/obscure PIN checkbox label
 #: ../src/applet-device-gsm.c:969
-#, fuzzy
-#| msgid "New PIN code:"
 msgid "Show PIN code"
-msgstr "Nowy kod PIN:"
+msgstr "Wyświetlanie kodu PIN"
 
 #: ../src/applet-device-gsm.c:972
 msgid "SIM PUK unlock required"
@@ -281,12 +280,11 @@ msgstr "Nowy kod PIN:"
 msgid "Re-enter new PIN code:"
 msgstr "Proszę ponownie wprowadzić nowy kod PIN:"
 
+# pd
 #. Translators: Show/obscure PIN/PUK checkbox label
 #: ../src/applet-device-gsm.c:987
-#, fuzzy
-#| msgid "New PIN code:"
 msgid "Show PIN/PUK codes"
-msgstr "Nowy kod PIN:"
+msgstr "Wyświetlanie kodów PIN/PUK"
 
 #: ../src/applet-device-wired.c:63
 msgid "Auto Ethernet"
@@ -458,19 +456,16 @@ msgstr "WPA/WPA2"
 msgid "WEP"
 msgstr "WEP"
 
+# pd
 #: ../src/applet-dialogs.c:198 ../src/applet-dialogs.c:207
 #: ../src/connection-editor/page-wireless-security.c:238
 #: ../src/wireless-dialog.c:919
-#, fuzzy
-#| msgctxt "No wifi security used"
-#| msgid "None"
 msgctxt "Wifi/wired security"
 msgid "None"
 msgstr "Brak"
 
+# pd
 #: ../src/applet-dialogs.c:210
-#, fuzzy
-#| msgid "Unknown"
 msgctxt "Wifi/wired security"
 msgid "Unknown"
 msgstr "Nieznane"
@@ -480,12 +475,11 @@ msgstr "Nieznane"
 msgid "%u Mb/s"
 msgstr "%u Mb/s"
 
+# pd
 #: ../src/applet-dialogs.c:282 ../src/applet-dialogs.c:384
-#, fuzzy
-#| msgid "Unknown"
 msgctxt "Speed"
 msgid "Unknown"
-msgstr "Nieznane"
+msgstr "Nieznana"
 
 #: ../src/applet-dialogs.c:313
 #, c-format
@@ -531,12 +525,11 @@ msgstr "Zabezpieczenia:"
 msgid "IP Address:"
 msgstr "Adres IP:"
 
+# pd
 #: ../src/applet-dialogs.c:421 ../src/applet-dialogs.c:439
-#, fuzzy
-#| msgid "Unknown"
 msgctxt "Address"
 msgid "Unknown"
-msgstr "Nieznane"
+msgstr "Nieznany"
 
 #: ../src/applet-dialogs.c:437
 msgid "Broadcast Address:"
@@ -546,12 +539,11 @@ msgstr "Adres rozgłoszeniowy:"
 msgid "Subnet Mask:"
 msgstr "Maska podsieci:"
 
+# pd
 #: ../src/applet-dialogs.c:450
-#, fuzzy
-#| msgid "Unknown"
 msgctxt "Subnet Mask"
 msgid "Unknown"
-msgstr "Nieznane"
+msgstr "Nieznana"
 
 #: ../src/applet-dialogs.c:460
 msgid "Default Route:"
@@ -1178,10 +1170,11 @@ msgstr "Serwery _DNS:"
 msgid "_Method:"
 msgstr "_Metoda:"
 
+# pd
 #: ../src/connection-editor/ce-page-ip4.glade.h:19
 #: ../src/connection-editor/ce-page-ip6.glade.h:17
 msgid "_Routes…"
-msgstr ""
+msgstr "_Trasy…"
 
 #: ../src/connection-editor/ce-page-ip4.glade.h:20
 #: ../src/connection-editor/ce-page-ip6.glade.h:18
@@ -1392,6 +1385,7 @@ msgstr "Pełny duple_ks"
 msgid "MT_U:"
 msgstr "MT_U:"
 
+# pd
 #: ../src/connection-editor/ce-page-wired.glade.h:14
 #: ../src/connection-editor/ce-page-wireless.glade.h:11
 msgid ""
@@ -1399,33 +1393,32 @@ msgid ""
 "network device this connection is activated on.  This feature is known as "
 "MAC cloning or spoofing.  Example: 00:11:22:33:44:55"
 msgstr ""
+"Podany tu adres MAC będzie używany jako adres sprzętowy dla urządzenia "
+"sieciowego, dla którego zostało utworzone to połączenie. Ta funkcja jest "
+"znana jako klonowanie lub \"spoofing\" adresu MAC. Przykład: "
+"00:11:22:33:44:55"
 
+# pd
 #: ../src/connection-editor/ce-page-wired.glade.h:15
 #: ../src/connection-editor/ce-page-wireless.glade.h:12
-#, fuzzy
-#| msgid ""
-#| "This option locks this connection to the network device specified by the "
-#| "MAC address entered here.  Example: 00:11:22:33:44:55"
 msgid ""
 "This option locks this connection to the network device specified by its "
 "permanent MAC address entered here.  Example: 00:11:22:33:44:55"
 msgstr ""
 "Ta opcja blokuje to połączenie z urządzeniem sieciowym określonym przez "
-"adres MAC. Przykład: 00:11:22:33:44:55"
+"trwały adres MAC. Przykład: 00:11:22:33:44:55"
 
+# pd
 #: ../src/connection-editor/ce-page-wired.glade.h:16
 #: ../src/connection-editor/ce-page-wireless.glade.h:16
-#, fuzzy
-#| msgid "_MAC address:"
 msgid "_Cloned MAC address:"
-msgstr "Adres _MAC:"
+msgstr "S_klonowany adres MAC:"
 
+# pd
 #: ../src/connection-editor/ce-page-wired.glade.h:17
 #: ../src/connection-editor/ce-page-wireless.glade.h:17
-#, fuzzy
-#| msgid "_MAC address:"
 msgid "_Device MAC address:"
-msgstr "Adres _MAC:"
+msgstr "A_dres MAC urządzenia:"
 
 #: ../src/connection-editor/ce-page-wired.glade.h:18
 msgid "_Port:"
@@ -1818,12 +1811,11 @@ msgstr "Bezprzewodowe"
 msgid "Wireless connection %d"
 msgstr "Połączenie bezprzewodowe %d"
 
+# pd
 #: ../src/connection-editor/page-wireless-security.c:262
 #: ../src/wireless-dialog.c:936
-#, fuzzy
-#| msgid "WEP 40/128-bit Key"
 msgid "WEP 40/128-bit Key (Hex or ASCII)"
-msgstr "40/128-bitowy klucz WEP"
+msgstr "40/128-bitowy klucz WEP (szesnastkowy lub ASCII)"
 
 #: ../src/connection-editor/page-wireless-security.c:271
 #: ../src/wireless-dialog.c:945
