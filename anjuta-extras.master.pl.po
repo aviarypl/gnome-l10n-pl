@@ -10,7 +10,7 @@ msgstr ""
 "Report-Msgid-Bugs-To: http://bugzilla.gnome.org/enter_bug.cgi?"
 "product=anjuta&component=unknown\n"
 "POT-Creation-Date: 2010-08-28 09:36+0000\n"
-"PO-Revision-Date: 2008-09-24 03:23+0100\n"
+"PO-Revision-Date: 2010-09-25 22:16+0200\n"
 "Last-Translator: Piotr Drąg <piotrdrag@gmail.com>\n"
 "Language-Team: Polish <gnomepl@aviary.pl>\n"
 "MIME-Version: 1.0\n"
@@ -27,7 +27,7 @@ msgstr ""
 #: ../plugins/profiler/gprof-flat-profile-view.c:56
 #: ../plugins/profiler/gprof-function-call-tree-view.c:60
 msgid "Function Name"
-msgstr "Funkcja"
+msgstr "Nazwa funkcji"
 
 #: ../plugins/profiler/gprof-call-graph-view.c:344
 msgid "Time"
@@ -58,7 +58,7 @@ msgstr "Wywołania"
 
 #: ../plugins/profiler/gprof-flat-profile-view.c:68
 msgid "% Time"
-msgstr "% Czas"
+msgstr "% czas"
 
 #: ../plugins/profiler/gprof-flat-profile-view.c:82
 msgid "Cumulative Seconds"
@@ -92,19 +92,13 @@ msgstr ""
 "Proszę sprawdzić położenie pliku profilowania tego obiektu docelowego."
 
 #: ../plugins/profiler/plugin.c:293
-#, fuzzy
-#| msgid ""
-#| "This target does not have any profiling data.\n"
-#| "\n"
-#| "Please ensure that the target is complied with profiling support and that "
-#| "it is run at least once."
 msgid ""
 "This target does not have any profiling data.\n"
 "\n"
 "Please ensure that the target is compiled with profiling support (-p)and "
 "that it is run at least once."
 msgstr ""
-"Ten obiekt docelowy nie ma danych profilowania.\n"
+"Ten obiekt docelowy nie posiada danych profilowania.\n"
 "\n"
 "Proszę upewnić się, że obiekt obsługuje profilowanie i został uruchomiony "
 "przynajmniej raz."
@@ -113,7 +107,7 @@ msgstr ""
 #. Stock icon, if any
 #: ../plugins/profiler/plugin.c:754
 msgid "Debug"
-msgstr "Debugowanie"
+msgstr "Debuguj"
 
 #. Action name
 #. Stock icon, if any
@@ -145,9 +139,8 @@ msgid "Application Performance Profiler"
 msgstr "Narzędzie profilowania wydajności programu"
 
 #: ../plugins/profiler/plugin.c:851
-#, fuzzy
 msgid "Flat Profile"
-msgstr "Plik danych"
+msgstr "Płaski profil"
 
 #: ../plugins/profiler/plugin.c:856
 msgid "Call Graph"
@@ -172,7 +165,7 @@ msgstr "Nie można pobrać bufora tekstowego do wydrukowania"
 
 #: ../plugins/scintilla/print.c:967
 msgid "No file to print!"
-msgstr "Brak plików do wydrukowania!"
+msgstr "Brak plików do wydrukowania."
 
 #: ../plugins/scintilla/plugin.c:309 ../plugins/scintilla/plugin.c:321
 #: ../plugins/scintilla/anjuta-editor.plugin.in.h:2
@@ -180,32 +173,22 @@ msgid "Scintilla Editor"
 msgstr "Edytor Scintilla"
 
 #: ../plugins/scintilla/text_editor.c:438
-#, fuzzy, c-format
-#| msgid ""
-#| "The file '%s' on the disk is more recent than\n"
-#| "the current buffer.\n"
-#| "Do you want to reload it?"
+#, c-format
 msgid ""
 "The file '%s' has been changed.\n"
 "Do you want to reload it ?"
 msgstr ""
-"Plik \"%s\" na dysku jest nowszy niż plik\n"
-"znajdujący się w bieżącym buforze.\n"
-"Czy chcesz go wczytać ponownie?"
+"Plik \"%s\" został zmieniony.\n"
+"Wczytać go ponownie?"
 
 #: ../plugins/scintilla/text_editor.c:444
-#, fuzzy, c-format
-#| msgid ""
-#| "The file '%s' on the disk is more recent than\n"
-#| "the current buffer.\n"
-#| "Do you want to reload it?"
+#, c-format
 msgid ""
 "The file '%s' has been changed.\n"
 "Do you want to loose your changes and reload it ?"
 msgstr ""
-"Plik \"%s\" na dysku jest nowszy niż plik\n"
-"znajdujący się w bieżącym buforze.\n"
-"Czy chcesz go wczytać ponownie?"
+"Plik \"%s\" został zmieniony.\n"
+"Utracić zmiany i wczytać go ponownie?"
 
 #: ../plugins/scintilla/text_editor.c:464
 #, c-format
@@ -213,18 +196,17 @@ msgid ""
 "The file '%s' has been deleted.\n"
 "Do you confirm and close it ?"
 msgstr ""
+"Plik \"%s\" został usunięty.\n"
+"Zamknąć go?"
 
 #: ../plugins/scintilla/text_editor.c:471
-#, fuzzy, c-format
-#| msgid ""
-#| "The file '%s' already exists.\n"
-#| "Do you want to replace it with the one you are saving?"
+#, c-format
 msgid ""
 "The file '%s' has been deleted.\n"
 "Do you want to loose your changes and close it ?"
 msgstr ""
-"Plik \"%s\" już istnieje.\n"
-"Czy chcesz go zastąpić aktualnie zapisywanym?."
+"Plik \"%s\" został usunięty.\n"
+"Utracić zmiany i zamknąć go?"
 
 #: ../plugins/scintilla/text_editor.c:1458
 msgid "Could not get file info"
@@ -241,7 +223,7 @@ msgstr "Nie można otworzyć pliku"
 
 #: ../plugins/scintilla/text_editor.c:1490
 msgid "Error while reading from file"
-msgstr "Błąd przy odczycie pliku"
+msgstr "Błąd podczas odczytywania z pliku"
 
 #: ../plugins/scintilla/text_editor.c:1536
 msgid ""
@@ -249,9 +231,9 @@ msgid ""
 "supported. Please check if the encoding of file is in the supported "
 "encodings list. If not, add it from the preferences."
 msgstr ""
-"Ten plik nie wygląda na plik tekstowy lub kodowanie tego pliku nie jest "
-"obsługiwane. Sprawdź czy kodowanie pliku znajduje się na liście "
-"obsługiwanych kodowań. Jeśli nie dodaj je w preferencjach."
+"Plik nie wygląda na plik tekstowy lub kodowanie pliku nie jest obsługiwane. "
+"Proszę sprawdzić, czy kodowanie pliku znajduje się na liście obsługiwanych "
+"kodowań. Jeśli nie, to należy dodać je w preferencjach."
 
 #: ../plugins/scintilla/text_editor.c:1683
 msgid "Loading file..."
@@ -270,20 +252,20 @@ msgstr ""
 
 #: ../plugins/scintilla/text_editor.c:1713
 msgid "File loaded successfully"
-msgstr "Plik został wczytany"
+msgstr "Wczytano plik"
 
 #: ../plugins/scintilla/text_editor.c:1731
 msgid "Saving file..."
 msgstr "Zapisywanie pliku..."
 
 #: ../plugins/scintilla/text_editor.c:1740
-#, fuzzy, c-format
+#, c-format
 msgid "Could not save intermediate file %s: %s"
-msgstr "Nie można zapisać pliku: %s."
+msgstr "Nie można zapisać pliku tymczasowego %s: %s."
 
 #: ../plugins/scintilla/text_editor.c:1756
 msgid "File saved successfully"
-msgstr "Projekt został pomyślnie zapisany"
+msgstr "Zapisano plik"
 
 #: ../plugins/scintilla/text_editor.c:2129
 #, c-format
@@ -293,15 +275,15 @@ msgid ""
 "This may result in improper behaviour or instabilities.\n"
 "Anjuta will fall back to built in (limited) settings"
 msgstr ""
-"Nie można wczytać globalnych wartości domyślnych i plików konfiguracyjnych:\n"
+"Nie można wczytać globalnych wartości domyślnych i plików konfiguracji:\n"
 "%s.\n"
-"To może skutkować niepoprawnym zachowaniem lub niestabilnością.\n"
-"Anjuta powróci do wbudowanych ustawień (ograniczonych)"
+"To może spowodować niepoprawne zachowanie lub niestabilność.\n"
+"Program Anjuta powróci do wbudowanych (ograniczonych) ustawień"
 
 #: ../plugins/scratchbox/plugin.c:213
 #, c-format
 msgid "Program '%s' does not exists"
-msgstr "Program '%s' nie istnieje"
+msgstr "Program \"%s\" nie istnieje"
 
 #: ../plugins/scratchbox/plugin.c:464 ../plugins/scratchbox/plugin.c:486
 #: ../plugins/scratchbox/anjuta-scratchbox.plugin.in.h:2
@@ -325,8 +307,8 @@ msgstr "Valgrind"
 msgid ""
 "No executable target selected for debugging with Valgrind. Please select one."
 msgstr ""
-"Żaden docelowy plik wykonywalny nie został wybrany do debugowania przy "
-"pomocy Valgrind. Proszę wybrać plik."
+"Żaden docelowy plik wykonywalny nie został wybrany do debugowania za pomocą "
+"programu Valgrind. Proszę wybrać plik."
 
 #: ../plugins/valgrind/plugin.c:356
 msgid ""
@@ -334,7 +316,7 @@ msgid ""
 "Please create one first."
 msgstr ""
 "Brak dostępnych plików wykonywalnych dla tego projektu.\n"
-"Proszę utworzyć plik."
+"Proszę najpierw utworzyć plik."
 
 #: ../plugins/valgrind/plugin.c:368
 msgid "Choose file where to save Valgrind log"
@@ -347,7 +329,7 @@ msgid ""
 "Do you want to replace it with the one you are saving?"
 msgstr ""
 "Plik \"%s\" już istnieje.\n"
-"Czy chcesz go zastąpić aktualnie zapisywanym?."
+"Zastąpić go plikiem obecnie zapisywanym?"
 
 #: ../plugins/valgrind/plugin.c:398
 msgid "_Replace"
@@ -355,13 +337,13 @@ msgstr "_Zastąp"
 
 #: ../plugins/valgrind/plugin.c:418
 msgid "Open Valgrind log file"
-msgstr "Otwórz plik dziennika Valgrinda"
+msgstr "Otwórz plik dziennika programu Valgrind"
 
 #. Action name
 #. Stock icon, if any
 #: ../plugins/valgrind/plugin.c:452
 msgid "_Debug"
-msgstr "_Debugowanie"
+msgstr "_Debuguj"
 
 #. Action name
 #. Stock icon, if any
@@ -373,25 +355,25 @@ msgstr "_Valgrind"
 #. Stock icon, if any
 #: ../plugins/valgrind/plugin.c:468
 msgid "_Select Tool and Run..."
-msgstr "_Wybór narzędzia i uruchomienie..."
+msgstr "_Wybierz narzędzie i uruchom..."
 
 #. Action name
 #. Stock icon, if any
 #: ../plugins/valgrind/plugin.c:476
 msgid "_Kill Execution"
-msgstr "Zakończ wykonywanie"
+msgstr "_Zakończ wykonywanie"
 
 #. Action name
 #. Stock icon, if any
 #: ../plugins/valgrind/plugin.c:484
 msgid "_Load Log"
-msgstr "_Wczytaj dziennik"
+msgstr "Wczytaj _dziennik"
 
 #. Action name
 #. Stock icon, if any
 #: ../plugins/valgrind/plugin.c:492
 msgid "S_ave Log"
-msgstr "_Zapisz dziennik"
+msgstr "Zapi_sz dziennik"
 
 #. Action name
 #. Stock icon, if any
@@ -401,7 +383,7 @@ msgstr "Modyfikuj reguły"
 
 #: ../plugins/valgrind/plugin.c:565
 msgid "Use Valgrind debug tool"
-msgstr "Użycie debugera Valgrind"
+msgstr "Użycie narzędzia debugowania Valgrind"
 
 #: ../plugins/valgrind/preferences.c:122
 msgid "<b>Valgrind general preferences</b>"
@@ -413,7 +395,7 @@ msgstr "Ścieżka pliku binarnego Valgrind:"
 
 #: ../plugins/valgrind/preferences.c:142
 msgid "Choose Valgrind Binary File Path..."
-msgstr "Proszę wybrać ścieżkę pliku binarnego Valgrind:"
+msgstr "Wybór ścieżki pliku binarnego Valgrind..."
 
 #: ../plugins/valgrind/preferences.c:161
 msgid "Preview"
@@ -426,16 +408,18 @@ msgstr "wierszy nad i pod wierszem docelowym."
 #: ../plugins/valgrind/process.c:55
 #, c-format
 msgid "Failed to create pipe to '%s': %s"
-msgstr "Nie udało się utworzyć potoku do '%s': %s"
+msgstr "Utworzenie potoku do \"%s\" się nie powiodło: %s"
 
 #: ../plugins/valgrind/process.c:110
 #, c-format
 msgid "Failed to create child process '%s': %s"
-msgstr "Nie udało się utworzyć procesu potomnego '%s': %s"
+msgstr "Utworzenie procesu potomnego \"%s\" się nie powiodło: %s"
 
 #: ../plugins/valgrind/vgactions.c:168
 msgid "Reached the end of the input file or error in parsing valgrind output."
 msgstr ""
+"Osiągnięto koniec pliku wejściowego lub błąd podczas przetwarzania wyjścia "
+"programu Valgrind."
 
 #: ../plugins/valgrind/vgactions.c:177
 msgid "Process exited."
@@ -443,7 +427,7 @@ msgstr "Zakończono proces."
 
 #: ../plugins/valgrind/vgactions.c:197
 msgid "Could not get the right valgrind-binary gconf key:"
-msgstr "Nie można uzyskać odpowiedniego klucza gconf programu valgrind-binary:"
+msgstr "Nie można uzyskać właściwego klucza GConf programu valgrind-binary:"
 
 #: ../plugins/valgrind/vgactions.c:205
 #, c-format
@@ -451,12 +435,12 @@ msgid ""
 "Valgrind binary [%s] does not exist. Please check the preferences or install "
 "Valgrind package."
 msgstr ""
-"Plik binarny Valgrind [%s] nie istnieje. Proszę sprawdzić ustawienia i "
-"zainstalować pakiet Valgrind."
+"Plik binarny programu Valgrind [%s] nie istnieje. Proszę sprawdzić "
+"ustawienia i zainstalować pakiet programu Valgrind."
 
 #: ../plugins/valgrind/vgactions.c:241 ../plugins/valgrind/vgactions.c:248
 msgid "Could not get the right pipe for the process."
-msgstr "Nie można uzyskać odpowiedniego potoku dla procesu."
+msgstr "Nie można uzyskać właściwego potoku dla procesu."
 
 #: ../plugins/valgrind/vgcachegrindprefs.c:197
 #, c-format
@@ -464,21 +448,20 @@ msgid ""
 "Invalid syntax in settings '%s'.\n"
 "Please enter a value of the form \"<integer>,<integer>,<integer>\"."
 msgstr ""
-"Nieprawidłowa składnia w ustawieniach '%s'.\n"
-"Proszę wprowadzić wartość formularza\"<liczba całkowita>,<liczba całkowita>,"
-"<integer>\"."
+"Nieprawidłowa składnia w ustawieniach \"%s\".\n"
+"Proszę wprowadzić wartość formularza \"<liczba całkowita>,<liczba całkowita>,"
+"<liczba całkowita>\"."
 
 #: ../plugins/valgrind/vgcachegrindprefs.c:234
 msgid "Override default settings"
-msgstr "Nadpisanie domyślnych ustawień"
+msgstr "Zastąpienie domyślnych ustawień"
 
 #. This is the format of the preference, simply translate the words
 #. * inside the <>
 #: ../plugins/valgrind/vgcachegrindprefs.c:246
 msgid "Enter <size>,<assoc>,<line_size>:"
-msgstr ""
+msgstr "Proszę wprowadzić <rozmiar>,<powiązanie>,<rozmiar_wiersza>:"
 
-# shooya: nazwa własna (nie zmieniać)
 #: ../plugins/valgrind/vgcachegrindprefs.c:280
 msgid "Cachegrind"
 msgstr "Cachegrind"
@@ -502,12 +485,12 @@ msgstr "Nazwa pliku źródłowego zawiera"
 #: ../plugins/valgrind/vgdefaultview.c:229
 #, c-format
 msgid "Invalid regular expression: '%s': %s"
-msgstr "Nieprawidłowe wyrażenie regularne: '%s': %s"
+msgstr "Nieprawidłowe wyrażenie regularne: \"%s\": %s"
 
 #. FIXME: we should really get this title from somewhere else?
 #: ../plugins/valgrind/vgdefaultview.c:773
 msgid "Valgrind Suppression Rules"
-msgstr "Reguły ignorowania błędów"
+msgstr "Reguły ignorowania błędów programu Valgrind"
 
 #. FIXME: we should really get this title from somewhere else?
 #: ../plugins/valgrind/vgdefaultview.c:1118
@@ -517,7 +500,7 @@ msgstr "Ignorowanie błędów programu Valgrind"
 
 #: ../plugins/valgrind/vgdefaultview.c:1166
 msgid "Cu_t"
-msgstr "Wytnij"
+msgstr "_Wytnij"
 
 #: ../plugins/valgrind/vgdefaultview.c:1167
 msgid "_Copy"
@@ -533,7 +516,7 @@ msgstr "Ignoruj"
 
 #: ../plugins/valgrind/vgdefaultview.c:1172
 msgid "Edit in Custom Editor"
-msgstr "Edycja w edytorze użytkownika"
+msgstr "Modyfikacja w edytorze użytkownika"
 
 #: ../plugins/valgrind/vggeneralprefs.c:172
 msgid "General"
@@ -550,19 +533,20 @@ msgstr "Wyświetlanie"
 
 #: ../plugins/valgrind/vggeneralprefs.c:199
 msgid "callers in stack trace"
-msgstr ""
+msgstr "wywołania w śledzeniu stosu"
 
 #: ../plugins/valgrind/vggeneralprefs.c:206
 msgid "Stop showing errors if there are too many"
-msgstr "Zaprzestanie wyświetlania błędów przy zbyt dużej ilości"
+msgstr "Zatrzytmanie wyświetlania błędów przy zbyt dużej ilości"
 
 #: ../plugins/valgrind/vggeneralprefs.c:214
 msgid "Round malloc sizes to next word"
-msgstr ""
+msgstr "Zaokrąglanie rozmiarów wywołania malloc do następnego wyrazu"
 
 #: ../plugins/valgrind/vggeneralprefs.c:222
 msgid "Trace any child processes forked off by the program being debugged"
 msgstr ""
+"Śledzenie procesów potomnych rozdzielonych z programu podczas debugowania"
 
 #: ../plugins/valgrind/vggeneralprefs.c:230
 msgid "Track open file descriptors"
@@ -575,6 +559,8 @@ msgstr "Dodanie datowników do komunikatów dziennika"
 #: ../plugins/valgrind/vggeneralprefs.c:246
 msgid "Call __libc_freeres() at exit before checking for memory leaks"
 msgstr ""
+"Wywoływanie funkcji __libc_freeres() podczas zakończenia działania przez "
+"sprawdzeniem wycieków pamięci"
 
 #: ../plugins/valgrind/vggeneralprefs.c:254
 msgid "Suppressions File:"
@@ -582,22 +568,20 @@ msgstr "Plik ignorowania:"
 
 #: ../plugins/valgrind/vggeneralprefs.c:274
 msgid "Choose Valgrind Suppressions File..."
-msgstr "Wybór pliku ignorowania programu Valgrind..."
+msgstr "Wybierz plik ignorowania programu Valgrind..."
 
-# shooya: nazwa własna (nie zmieniać)
 #: ../plugins/valgrind/vghelgrindprefs.c:180
 msgid "Helgrind"
 msgstr "Helgrind"
 
 #: ../plugins/valgrind/vghelgrindprefs.c:185
 msgid "Assume thread stacks are used privately"
-msgstr ""
+msgstr "Przyjmowanie stosów wątków jako używane prywatnie"
 
 #: ../plugins/valgrind/vghelgrindprefs.c:194
 msgid "Show location of last word access on error:"
-msgstr ""
+msgstr "Wyświetlanie położenie ostatniego dostępu do wyrazu przy błędzie:"
 
-# shooya: nazwa własna (nie zmieniać)
 #: ../plugins/valgrind/vgmemcheckprefs.c:204
 msgid "Memcheck"
 msgstr "Memcheck"
@@ -612,24 +596,23 @@ msgstr "Sprawdzanie wycieków:"
 
 #: ../plugins/valgrind/vgmemcheckprefs.c:225
 msgid "Show reachable blocks in leak check"
-msgstr ""
+msgstr "Wyświetlanie osiągalnych bloków w sprawdzaniu wycieków"
 
 #: ../plugins/valgrind/vgmemcheckprefs.c:233
-#, fuzzy
 msgid "Leak resolution:"
-msgstr "Kierunek wyszukiwania:"
+msgstr "Rozwiązanie wycieku:"
 
 #: ../plugins/valgrind/vgmemcheckprefs.c:251
 msgid "Keep up to"
-msgstr ""
+msgstr "Utrzymywanie do"
 
 #: ../plugins/valgrind/vgmemcheckprefs.c:263
 msgid "bytes in the queue after being free()'d"
-msgstr ""
+msgstr "bajtów w kolejce po uwolnieniu za pomocą funkcji free()"
 
 #: ../plugins/valgrind/vgmemcheckprefs.c:270
 msgid "Work around bugs generated by gcc 2.96"
-msgstr ""
+msgstr "Obchodzenie błędów tworzonych przez kompilator GCC 2.96"
 
 #: ../plugins/valgrind/vgrule-editor.c:146
 msgid "Function"
@@ -671,7 +654,7 @@ msgstr "Łańcuch wywołań:"
 #: ../plugins/valgrind/vgrule-editor.c:555
 #, c-format
 msgid "Error saving to suppression file '%s': %s"
-msgstr "Błąd przy zapisie do pliku ignorowania '%s': %s"
+msgstr "Błąd podczas zapisywania do pliku ignorowania \"%s\": %s"
 
 #: ../plugins/valgrind/vgrule-list.c:177 ../plugins/valgrind/vgrule-list.c:246
 msgid "You have forgotten to name your suppression rule."
@@ -696,7 +679,7 @@ msgstr "Przykładowa wtyczka"
 
 #: ../plugins/sample1/anjuta-sample.plugin.in.h:2
 msgid "Sample Plugin for Anjuta."
-msgstr "Przykładowa wtyczka Anjuty."
+msgstr "Przykładowa wtyczka programu Anjuta."
 
 #: ../plugins/profiler/profiler.plugin.in.h:1
 msgid "Application performance profiler"
@@ -707,14 +690,12 @@ msgid "Profile"
 msgstr "Profil"
 
 #: ../plugins/scintilla/anjuta-editor.plugin.in.h:1
-#, fuzzy
-#| msgid "An alternate editor based on GtkSourceview"
 msgid "An alternate editor based on Scintilla"
-msgstr "Edytor alternatywny na bazie GtkSourceview"
+msgstr "Edytor alternatywny oparty na bibliotece Scintilla"
 
 #: ../plugins/valgrind/anjuta-valgrind.plugin.in.h:1
 msgid "Powerful debugging tool."
-msgstr "Zaawansowane narzędzie debugowania"
+msgstr "Zaawansowane narzędzie debugowania."
 
 #: ../plugins/valgrind/anjuta-valgrind.plugin.in.h:2
 msgid "Valgrind Plugin"
@@ -722,4 +703,4 @@ msgstr "Wtyczka Valgrind"
 
 #: ../plugins/scratchbox/anjuta-scratchbox.plugin.in.h:1
 msgid "Change build commands to use scratchbox 1 or 2"
-msgstr ""
+msgstr "Zmiana poleceń budowania na używanie Scratchbox 1 lub 2"
