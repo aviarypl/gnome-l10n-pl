@@ -54,7 +54,7 @@ msgstr "Rozdzielczość czcionki"
 
 #: ../gdk/gdkscreen.c:84
 msgid "The resolution for fonts on the screen"
-msgstr "Rozdzielczość czcinek na ekranie"
+msgstr "Rozdzielczość czcionek na ekranie"
 
 #: ../gdk/gdkwindow.c:496 ../gdk/gdkwindow.c:497
 msgid "Cursor"
@@ -179,19 +179,19 @@ msgstr "Określa, czy tekst licencji powinien być zawijany."
 
 #: ../gtk/gtkaccellabel.c:178
 msgid "Accelerator Closure"
-msgstr "Domknięcie akceleratora"
+msgstr "Domknięcie skrótu"
 
 #: ../gtk/gtkaccellabel.c:179
 msgid "The closure to be monitored for accelerator changes"
-msgstr "Domknięcie monitorowane pod kątem zmian akceleratora"
+msgstr "Domknięcie monitorowane pod kątem zmian skrótów"
 
 #: ../gtk/gtkaccellabel.c:185
 msgid "Accelerator Widget"
-msgstr "Widżet akceleratora"
+msgstr "Widżet skrótu"
 
 #: ../gtk/gtkaccellabel.c:186
 msgid "The widget to be monitored for accelerator changes"
-msgstr "Widżet monitorowana zmian akceleratora"
+msgstr "Widżet monitorowana zmian skrótów"
 
 #: ../gtk/gtkaction.c:220 ../gtk/gtkactiongroup.c:170 ../gtk/gtkprinter.c:111
 #: ../gtk/gtktextmark.c:89
@@ -235,9 +235,8 @@ msgstr "Ikona standardowa"
 
 #: ../gtk/gtkaction.c:282
 msgid "The stock icon displayed in widgets representing this action."
-msgstr "Typowa ikona wyświetlana w widżetach reprezentujących tę czynność."
+msgstr "Standardowa ikona wyświetlana w widżetach reprezentujących tę czynność."
 
-# prawdopodobnie obiekt GTK - raczej nie ruszać
 #: ../gtk/gtkaction.c:302 ../gtk/gtkstatusicon.c:253
 msgid "GIcon"
 msgstr "GIcon"
@@ -787,17 +786,17 @@ msgid ""
 "for the mnemonic accelerator key"
 msgstr ""
 "Określa, czy podkreślenie jest używane w tekście w roli znacznika, który "
-"poprzedza znak akceleratora"
+"poprzedza znak skrótu"
 
 #: ../gtk/gtkbutton.c:235 ../gtk/gtkimagemenuitem.c:150
 msgid "Use stock"
-msgstr "Użycie typowego"
+msgstr "Użycie standardowego"
 
 #: ../gtk/gtkbutton.c:236
 msgid ""
 "If set, the label is used to pick a stock item instead of being displayed"
 msgstr ""
-"Określa, czy należy użyć etykiety do wyboru typowego elementu zamiast jej "
+"Określa, czy należy użyć etykiety do wyboru standardowego elementu zamiast jej "
 "wyświetlenia"
 
 #: ../gtk/gtkbutton.c:243 ../gtk/gtkcombobox.c:851
@@ -945,7 +944,7 @@ msgid ""
 "The selected day (as a number between 1 and 31, or 0 to unselect the "
 "currently selected day)"
 msgstr ""
-"Wybrany dzień (jako liczba między 1 i 31 lub 0, aby odznaczyć aktualnie "
+"Wybrany dzień (jako liczba między 1 i 31 lub 0, aby odznaczyć obecnie "
 "wybrany dzień)"
 
 #: ../gtk/gtkcalendar.c:480
@@ -1211,36 +1210,38 @@ msgstr "Jeżeli nie ustawione, nie można wprowadzać innych ciągów niż wybra
 
 #: ../gtk/gtkcellrendererpixbuf.c:111
 msgid "Pixbuf Object"
-msgstr "Obiekt pixbuf"
+msgstr "Obiekt bufora pikseli"
 
 #: ../gtk/gtkcellrendererpixbuf.c:112
 msgid "The pixbuf to render"
-msgstr "Renderowany obiekt pixbuf"
+msgstr "Rysowany obiekt bufora pikseli"
 
+# pd
 #: ../gtk/gtkcellrendererpixbuf.c:119
 msgid "Pixbuf Expander Open"
-msgstr "Otwarty element rozwijający"
+msgstr "Otwarty element rozwijający bufora pikseli"
 
 #: ../gtk/gtkcellrendererpixbuf.c:120
 msgid "Pixbuf for open expander"
-msgstr "Obiekt pixbuf związany z otwartym elementem rozwijającym"
+msgstr "Obiekt bufora pikseli związany z otwartym elementem rozwijającym"
 
+# pd
 #: ../gtk/gtkcellrendererpixbuf.c:127
 msgid "Pixbuf Expander Closed"
-msgstr "Zamknięty element rozwijający"
+msgstr "Zamknięty element rozwijający bufora pikseli"
 
 #: ../gtk/gtkcellrendererpixbuf.c:128
 msgid "Pixbuf for closed expander"
-msgstr "Obiekt pixbuf związany z zamkniętym elementem rozwijającym"
+msgstr "Obiekt bufora pikseli związany z zamkniętym elementem rozwijającym"
 
 #: ../gtk/gtkcellrendererpixbuf.c:135 ../gtk/gtkimage.c:265
 #: ../gtk/gtkstatusicon.c:229
 msgid "Stock ID"
-msgstr "Identyfikator typowego elementu"
+msgstr "Identyfikator standardowego elementu"
 
 #: ../gtk/gtkcellrendererpixbuf.c:136
 msgid "The stock ID of the stock icon to render"
-msgstr "Identyfikator rysowanej typowej ikony"
+msgstr "Identyfikator rysowanej standardowej ikony"
 
 #: ../gtk/gtkcellrendererpixbuf.c:143 ../gtk/gtkcellrendererspinner.c:158
 #: ../gtk/gtkrecentmanager.c:250 ../gtk/gtkstatusicon.c:270
@@ -1266,7 +1267,7 @@ msgstr "Śledzenie stanu"
 #: ../gtk/gtkcellrendererpixbuf.c:188
 msgid "Whether the rendered pixbuf should be colorized according to the state"
 msgstr ""
-"Określa, czy rysowany bufor piksmapy powinien mieć kolor zgodny ze stanem"
+"Określa, czy rysowany bufora pikseli powinien mieć kolor zgodny ze stanem"
 
 #: ../gtk/gtkcellrendererpixbuf.c:205 ../gtk/gtkimage.c:340
 #: ../gtk/gtkwindow.c:610
@@ -2000,7 +2001,7 @@ msgstr "Aktywny element"
 
 #: ../gtk/gtkcombobox.c:808
 msgid "The item which is currently active"
-msgstr "Aktualnie aktywny element"
+msgstr "Obecnie aktywny element"
 
 #: ../gtk/gtkcombobox.c:827 ../gtk/gtkuimanager.c:226
 msgid "Add tearoffs to menus"
@@ -2389,19 +2390,19 @@ msgstr ""
 
 #: ../gtk/gtkentry.c:903
 msgid "Primary pixbuf"
-msgstr "Główny bufor piksmapy"
+msgstr "Główny bufor pikseli"
 
 #: ../gtk/gtkentry.c:904
 msgid "Primary pixbuf for the entry"
-msgstr "Główny bufor piksmapy dla elementu"
+msgstr "Główny bufor pikseli dla elementu"
 
 #: ../gtk/gtkentry.c:918
 msgid "Secondary pixbuf"
-msgstr "Drugorzędny bufor piksmapy"
+msgstr "Drugorzędny bufor pikseli"
 
 #: ../gtk/gtkentry.c:919
 msgid "Secondary pixbuf for the entry"
-msgstr "Drugorzędny bufor piksmapy dla elementu"
+msgstr "Drugorzędny bufor pikseli dla elementu"
 
 #: ../gtk/gtkentry.c:933
 msgid "Primary stock ID"
@@ -2525,7 +2526,7 @@ msgstr "Znacznik podpowiedzi ikony drugorzędnej"
 
 #: ../gtk/gtkentry.c:1219 ../gtk/gtktextview.c:684
 msgid "IM module"
-msgstr "Moduł trybu wprowadzania"
+msgstr "Moduł metody wprowadzania"
 
 #: ../gtk/gtkentry.c:1220 ../gtk/gtktextview.c:685
 msgid "Which IM module should be used"
@@ -2868,7 +2869,7 @@ msgstr "Nazwa pliku"
 
 #: ../gtk/gtkfilesel.c:527
 msgid "The currently selected filename"
-msgstr "Aktualnie wybrana nazwa pliku"
+msgstr "Obecnie wybrana nazwa pliku"
 
 #: ../gtk/gtkfilesel.c:533
 msgid "Show file operations"
@@ -2951,7 +2952,7 @@ msgstr "Napis reprezentujący tę czcionkę"
 
 #: ../gtk/gtkfontsel.c:204
 msgid "The GdkFont that is currently selected"
-msgstr "Aktualnie wybrany GdkFont"
+msgstr "Obecnie wybrany GdkFont"
 
 #: ../gtk/gtkfontsel.c:210
 msgid "Preview text"
@@ -3054,11 +3055,11 @@ msgstr "Tryb zaznaczania"
 
 #: ../gtk/gtkiconview.c:569
 msgid "Pixbuf column"
-msgstr "Kolumna grafik"
+msgstr "Kolumna bufora pikseli"
 
 #: ../gtk/gtkiconview.c:570
 msgid "Model column used to retrieve the icon pixbuf from"
-msgstr "Użyty model kolumny do pobierania grafik ikon"
+msgstr "Użyty model kolumny do pobierania bufora pikseli ikon"
 
 #: ../gtk/gtkiconview.c:588
 msgid "Model column used to retrieve the text from"
@@ -3178,7 +3179,7 @@ msgstr "Nieprzepuszczalność prostokąta zaznaczania"
 
 #: ../gtk/gtkimage.c:224 ../gtk/gtkstatusicon.c:213
 msgid "Pixbuf"
-msgstr "Pixbuf"
+msgstr "Bufor pikseli"
 
 #: ../gtk/gtkimage.c:225 ../gtk/gtkstatusicon.c:214
 msgid "A GdkPixbuf to display"
@@ -3186,7 +3187,7 @@ msgstr "Obiekt GdkPixbuf do wyświetlenia"
 
 #: ../gtk/gtkimage.c:232
 msgid "Pixmap"
-msgstr "Piksmapa"
+msgstr "Mapa pikseli"
 
 #: ../gtk/gtkimage.c:233
 msgid "A GdkPixmap to display"
@@ -3214,7 +3215,7 @@ msgstr "Nazwa pliku do wczytania i wyświetlenia"
 
 #: ../gtk/gtkimage.c:266 ../gtk/gtkstatusicon.c:230
 msgid "Stock ID for a stock image to display"
-msgstr "Identyfikator wyświetlanego typowego obrazu"
+msgstr "Identyfikator wyświetlanego standardowego obrazu"
 
 #: ../gtk/gtkimage.c:273
 msgid "Icon set"
@@ -3232,7 +3233,7 @@ msgstr "Rozmiar ikony"
 #: ../gtk/gtkimage.c:282
 msgid "Symbolic size to use for stock icon, icon set or named icon"
 msgstr ""
-"Symboliczny rozmiar używany przy typowej ikonie, zbiorze ikon lub nazwanej "
+"Symboliczny rozmiar używany przy standardowej ikonie, zbiorze ikon lub nazwanej "
 "ikonie"
 
 #: ../gtk/gtkimage.c:298
@@ -3274,7 +3275,7 @@ msgstr "Grupa klawiszy skrótów"
 
 #: ../gtk/gtkimagemenuitem.c:185
 msgid "The Accel Group to use for stock accelerator keys"
-msgstr "Grupa akceleratorów używana dla podstawowych klawiszy akceleratorów"
+msgstr "Grupa skrótów używana dla podstawowych klawiszy skrótów"
 
 #: ../gtk/gtkimagemenuitem.c:190
 msgid "Show menu images"
@@ -3481,7 +3482,7 @@ msgstr "Określa, czy ten odnośnik był odwiedzony."
 
 #: ../gtk/gtkmenu.c:508
 msgid "The currently selected menu item"
-msgstr "Aktualnie wybrana pozycja menu"
+msgstr "Obecnie wybrana pozycja menu"
 
 #: ../gtk/gtkmenu.c:523
 msgid "The accel group holding accelerators for the menu"
@@ -3631,13 +3632,13 @@ msgstr "Umowna stała do skalowania rozmiaru strzałki przewijania"
 
 #: ../gtk/gtkmenu.c:805
 msgid "Can change accelerators"
-msgstr "Możliwa zmiana akceleratorów"
+msgstr "Możliwa zmiana skrótów"
 
 #: ../gtk/gtkmenu.c:806
 msgid ""
 "Whether menu accelerators can be changed by pressing a key over the menu item"
 msgstr ""
-"Określa, czy możliwa jest zmiana akceleratorów poprzez przyciśnięcie "
+"Określa, czy możliwa jest zmiana skrótów poprzez przyciśnięcie "
 "klawisza przy zaznaczonym elemencie menu"
 
 #: ../gtk/gtkmenu.c:811
@@ -3719,7 +3720,7 @@ msgstr "Podmenu przypisane elementowi menu lub NULL, gdy brak podmenu"
 
 #: ../gtk/gtkmenuitem.c:291
 msgid "Sets the accelerator path of the menu item"
-msgstr "Ustawia ścieżkę akceleratora z wpisu menu"
+msgstr "Ustawia ścieżkę skrótu z wpisu menu"
 
 #: ../gtk/gtkmenuitem.c:306
 msgid "The text for the child label"
@@ -3920,7 +3921,7 @@ msgstr "Wyświetlanie krawędzi"
 
 #: ../gtk/gtknotebook.c:638
 msgid "Whether the border should be shown or not"
-msgstr "Określa, czy krawędź powinna być widoczna"
+msgstr "Określa, czy krawędź powinna być wyświetlana"
 
 #: ../gtk/gtknotebook.c:644
 msgid "Scrollable"
@@ -3964,7 +3965,7 @@ msgstr "Grupa"
 
 #: ../gtk/gtknotebook.c:685
 msgid "Group for tabs drag and drop"
-msgstr "Grupy dla przeciągania i upuszczania kart"
+msgstr "Grupa dla przeciągania i upuszczania kart"
 
 # pd
 #: ../gtk/gtknotebook.c:698
@@ -4658,7 +4659,7 @@ msgid ""
 "is the current action of its group."
 msgstr ""
 "Wartość zwracana przez funkcję gtp_radio_action_get_current_value(), gdy ta "
-"czynność jest aktualną czynnością w swojej grupie."
+"czynność jest obecną czynnością w swojej grupie."
 
 #: ../gtk/gtkradioaction.c:129
 msgid "The radio action whose group this action belongs to."
@@ -5461,7 +5462,7 @@ msgstr "Animacje"
 
 #: ../gtk/gtksettings.c:571
 msgid "Whether to enable toolkit-wide animations."
-msgstr "Określa, czy włączać animację dla całej biblioteki."
+msgstr "Określa, czy włączać animacje dla całej biblioteki."
 
 #: ../gtk/gtksettings.c:589
 msgid "Enable Touchscreen Mode"
@@ -5571,9 +5572,7 @@ msgstr "Włączenie klawiszy skrótu"
 
 #: ../gtk/gtksettings.c:818
 msgid "Whether menu items should have accelerators"
-msgstr ""
-"Określa, czy elementy menu maja mieć akceleratory powinny być dodawane do "
-"menu"
+msgstr "Określa, czy elementy menu mają mieć skróty"
 
 #: ../gtk/gtksettings.c:835
 msgid "Recent Files Limit"
@@ -6551,7 +6550,7 @@ msgid ""
 "should be used for the mnemonic accelerator key in the overflow menu"
 msgstr ""
 "Określa, czy pokreślenie jest używane w tekście w roli znacznika, który "
-"poprzedza znak akceleratora"
+"poprzedza znak skróŧu"
 
 #: ../gtk/gtktoolbutton.c:219
 msgid "Widget to use as the item label"
@@ -6559,11 +6558,11 @@ msgstr "Widżet używany jako etykieta elementu"
 
 #: ../gtk/gtktoolbutton.c:225
 msgid "Stock Id"
-msgstr "Identyfikator typowego elementu"
+msgstr "Identyfikator standardowego elementu"
 
 #: ../gtk/gtktoolbutton.c:226
 msgid "The stock icon displayed on the item"
-msgstr "Ikona typowego elementu wyświetlana na elemencie"
+msgstr "Ikona standardowego elementu wyświetlana na elemencie"
 
 #: ../gtk/gtktoolbutton.c:242
 msgid "Icon name"
@@ -7618,4 +7617,4 @@ msgstr "Styl stanu metody wprowadzania"
 
 #: ../modules/input/gtkimcontextxim.c:344
 msgid "How to draw the input method statusbar"
-msgstr "Sposób rysowania paska stanu metody wejściowej"
+msgstr "Sposób rysowania paska stanu metody wprowadzania"
