@@ -10,7 +10,7 @@ msgstr ""
 "Report-Msgid-Bugs-To: http://bugzilla.gnome.org/enter_bug.cgi?"
 "product=glib&component=general\n"
 "POT-Creation-Date: 2011-01-04 14:39+0000\n"
-"PO-Revision-Date: 2010-09-29 18:44+0100\n"
+"PO-Revision-Date: 2011-01-13 14:41+0100\n"
 "Last-Translator: Piotr Drąg <piotrdrag@gmail.com>\n"
 "Language-Team: Polish <gnomepl@aviary.pl>\n"
 "MIME-Version: 1.0\n"
@@ -3203,140 +3203,123 @@ msgstr "Błąd podczas rozwiązywania \"%s\""
 #: ../gio/gsettings-tool.c:60
 #, c-format
 msgid "Schema '%s' is not relocatable (path must not be specified)\n"
-msgstr ""
+msgstr "Nie można przenosić schematu \"%s\" (nie można podać ścieżki)\n"
 
 # pd
 #: ../gio/gsettings-tool.c:65 ../gio/gsettings-tool.c:82
-#, fuzzy, c-format
-#| msgid "No such interface `%s'"
+#, c-format
 msgid "No such schema '%s'\n"
-msgstr "Brak interfejsu \"%s\""
+msgstr "Brak schematu \"%s\"\n"
 
 # pd
 #: ../gio/gsettings-tool.c:77
 #, c-format
 msgid "Schema '%s' is relocatable (path must be specified)\n"
-msgstr ""
+msgstr "Można przenosić schemat \"%s\" (należy podać ścieżkę)\n"
 
 # pd
 #: ../gio/gsettings-tool.c:92
 #, c-format
 msgid "Empty path given.\n"
-msgstr ""
+msgstr "Podano pustą ścieżkę.\n"
 
 # pd
 #: ../gio/gsettings-tool.c:98
-#, fuzzy, c-format
-#| msgid "a path, if given, must begin and end with a slash"
+#, c-format
 msgid "Path must begin with a slash (/)\n"
-msgstr ""
-"ścieżka, jeśli zostanie podana, musi rozpoczynać się i kończyć ukośnikiem"
+msgstr "ścieżka musi rozpoczynać się od ukośnika (/)\n"
 
 # pd
 #: ../gio/gsettings-tool.c:104
-#, fuzzy, c-format
-#| msgid "a path, if given, must begin and end with a slash"
+#, c-format
 msgid "Path must end with a slash (/)\n"
-msgstr ""
-"ścieżka, jeśli zostanie podana, musi rozpoczynać się i kończyć ukośnikiem"
+msgstr "ścieżka musi kończyć się ukośnikiem (/)\n"
 
 # pd
 #: ../gio/gsettings-tool.c:110
 #, c-format
 msgid "Path must not contain two adjacent slashes (//)\n"
-msgstr ""
+msgstr "Ścieżka nie może zawierać dwóch sąsiadujących ukośników (//)\n"
 
 # pd
 #: ../gio/gsettings-tool.c:131
-#, fuzzy, c-format
-#| msgid "No such property `%s'"
+#, c-format
 msgid "No such key '%s'\n"
-msgstr "Brak własności \"%s\""
+msgstr "Brak klucza \"%s\"\n"
 
 # pd
 #: ../gio/gsettings-tool.c:429
 #, c-format
 msgid "The provided value is outside of the valid range\n"
-msgstr ""
+msgstr "Podana wartość jest poza prawidłowym zakresem\n"
 
 # pd
 #: ../gio/gsettings-tool.c:458
 msgid "List the installed (non-relocatable) schemas"
 msgstr ""
+"Wyświetla listę zainstalowanych schematów (których nie można przenosić)"
 
 # pd
 #: ../gio/gsettings-tool.c:464
 msgid "List the installed relocatable schemas"
-msgstr ""
+msgstr "Wyświetla listę zainstalowanych schematów (które można przenosić)"
 
 # pd
 #: ../gio/gsettings-tool.c:470
 msgid "Lists the keys in SCHEMA"
-msgstr ""
+msgstr "Wyświetla listę kluczy w SCHEMACIE"
 
 # pd
 #: ../gio/gsettings-tool.c:471 ../gio/gsettings-tool.c:477
 #: ../gio/gsettings-tool.c:483
 msgid "SCHEMA[:PATH]"
-msgstr ""
+msgstr "SCHEMAT[:ŚCIEŻKA]"
 
 # pd
 #: ../gio/gsettings-tool.c:476
 msgid "Lists the children of SCHEMA"
-msgstr ""
+msgstr "Wyświetla listę elementów potomnych ŚCIEŻKI"
 
 # pd
 #: ../gio/gsettings-tool.c:482
 msgid "List keys and values, recursively"
-msgstr ""
+msgstr "Wyświetla listę kluczy i wartości, rekursywnie"
 
 # pd
 #: ../gio/gsettings-tool.c:488
-#, fuzzy
-#| msgid "Get the value of KEY"
 msgid "Gets the value of KEY"
 msgstr "Uzyskuje wartość KLUCZA"
 
 # pd
 #: ../gio/gsettings-tool.c:489 ../gio/gsettings-tool.c:495
 #: ../gio/gsettings-tool.c:507 ../gio/gsettings-tool.c:513
-#, fuzzy
-#| msgid "SCHEMA KEY"
 msgid "SCHEMA[:PATH] KEY"
-msgstr "SCHEMAT KLUCZ"
+msgstr "SCHEMAT[:ŚCIEŻKA] KLUCZ"
 
 # pd
 #: ../gio/gsettings-tool.c:494
 msgid "Queries the range of valid values for KEY"
-msgstr ""
+msgstr "Odpytuje zakres prawidłowych wartości KLUCZA"
 
 # pd
 #: ../gio/gsettings-tool.c:500
-#, fuzzy
-#| msgid "Set the value of KEY"
 msgid "Sets the value of KEY to VALUE"
-msgstr "Ustawia wartość KLUCZA"
+msgstr "Ustawia wartość KLUCZA na WARTOŚĆ"
 
 # pd
 #: ../gio/gsettings-tool.c:501
-#, fuzzy
-#| msgid "SCHEMA KEY VALUE"
 msgid "SCHEMA[:PATH] KEY VALUE"
-msgstr "SCHEMAT KLUCZ WARTOŚĆ"
+msgstr "SCHEMAT[:ŚCIEŻKA] KLUCZ WARTOŚĆ"
 
 # pd
 #: ../gio/gsettings-tool.c:506
-#, fuzzy
-#| msgid "Sets KEY to its default value"
 msgid "Resets KEY to its default value"
-msgstr "Ustawia KLUCZ na jego domyślną wartość"
+msgstr "Przywraca KLUCZ na jego domyślną wartość"
 
 # pd
 #: ../gio/gsettings-tool.c:512
-#, fuzzy
-#| msgid "Find out whether KEY is writable"
 msgid "Checks if KEY is writable"
-msgstr "Wyszukuje, czy KLUCZ jest zapisywalny"
+msgstr "Sprawdza, czy KLUCZ jest zapisywalny"
 
 # pd
 #: ../gio/gsettings-tool.c:518
@@ -3345,22 +3328,24 @@ msgid ""
 "If no KEY is specified, monitor all keys in SCHEMA.\n"
 "Use ^C to stop monitoring.\n"
 msgstr ""
+"Monitoruje zmiany KLUCZA.\n"
+"Jeśli nie podano KLUCZA, to monitoruje wszystkie klucze w SCHEMACIE.\n"
+"Użycie ^C zatrzymuje monitorowanie.\n"
 
 # pd
 #: ../gio/gsettings-tool.c:521
-#, fuzzy
-#| msgid "SCHEMA KEY"
 msgid "SCHEMA[:PATH] [KEY]"
-msgstr "SCHEMAT KLUCZ"
+msgstr "SCHEMAT[:ŚCIEŻKA] [KLUCZ]"
 
 # pd
 #: ../gio/gsettings-tool.c:525
-#, fuzzy, c-format
-#| msgid "Unknown command '%s'\n"
+#, c-format
 msgid ""
 "Unknown command %s\n"
 "\n"
-msgstr "Nieznane polecenie \"%s\"\n"
+msgstr ""
+"Nieznane polecenie %s\n"
+"\n"
 
 # pd
 #: ../gio/gsettings-tool.c:533
@@ -3385,6 +3370,26 @@ msgid ""
 "Use 'gsettings help COMMAND' to get detailed help.\n"
 "\n"
 msgstr ""
+"Użycie:\n"
+"  gsettings POLECENIE [PARAMETRY...]\n"
+"\n"
+"Polecenia:\n"
+"  help                      Wyświetla te informacje\n"
+"  list-schemas              Wyświetla listę zainstalowanych schematów\n"
+"  list-relocatable-schemas  Wyświetla listę zainstalowanych schematów,\n"
+"                            które można przenosić\n"
+"  list-keys                 Wyświetla listę kluczy w schemacie\n"
+"  list-children             Wyświetla listę elementów potomnych schematu\n"
+"  list-recursively          Wyświetla listę kluczy i wartości, rekursywanie\n"
+"  range                     Odpytuje zakres klucza\n"
+"  get                       Uzyskuje wartość klucza\n"
+"  set                       Ustawia wartość klucza\n"
+"  reset                     Przywraca wartość klucza\n"
+"  writable                  Sprawdza, czy klucz jest zapisywalny\n"
+"  monitor                   Obserwuje zmiany\n"
+"\n"
+"Użycie polecenia \"gsettings help POLECENIE\" wyświetla szczegółową pomoc.\n"
+"\n"
 
 # pd
 #: ../gio/gsettings-tool.c:554
@@ -3396,47 +3401,46 @@ msgid ""
 "%s\n"
 "\n"
 msgstr ""
+"Użycie:\n"
+"  gsettings %s %s\n"
+"\n"
+"%s\n"
+"\n"
 
 # pd
 #: ../gio/gsettings-tool.c:559
 msgid "Arguments:\n"
-msgstr ""
+msgstr "Parametry:\n"
 
 # pd
 #: ../gio/gsettings-tool.c:563
-#, fuzzy
-#| msgid ""
-#| "Arguments:\n"
-#| "  SCHEMA      The id of the schema\n"
-#| "  KEY         The name of the key\n"
 msgid ""
 "  SCHEMA    The name of the schema\n"
 "  PATH      The path, for relocatable schemas\n"
 msgstr ""
-"Parametry:\n"
-"  SCHEMAT     Identyfikator schematu\n"
-"  KLUCZ       Nazwa klucza\n"
+"  SCHEMAT   Identyfikator schematu\n"
+"  ŚCIEŻKA   Ścieżka (dla schematów, które można przenosić)\n"
 
 # pd
 #: ../gio/gsettings-tool.c:568
 msgid "  KEY       The (optional) key within the schema\n"
-msgstr ""
+msgstr "  KLUCZ     (Opcjonalny) klucz w schemacie\n"
 
 # pd
 #: ../gio/gsettings-tool.c:572
 msgid "  KEY       The key within the schema\n"
-msgstr ""
+msgstr "  KLUCZ     Klucz w schemacie\n"
 
 # pd
 #: ../gio/gsettings-tool.c:576
 msgid "  VALUE     The value to set\n"
-msgstr ""
+msgstr "  WARTOŚĆ   Wartość do ustawienia\n"
 
 # pd
 #: ../gio/gsettings-tool.c:652
 #, c-format
 msgid "Empty schema name given"
-msgstr ""
+msgstr "Podano pustą nazwę schematu"
 
 #: ../gio/gsocket.c:277
 msgid "Invalid socket, not initialized"
@@ -3662,8 +3666,6 @@ msgstr "Pośrednik SOCKSv5 nie obsługuje podanego typu adresu."
 
 # pd
 #: ../gio/gsocks5proxy.c:402
-#, fuzzy
-#| msgid "Unkown SOCKSv5 proxy error."
 msgid "Unknown SOCKSv5 proxy error."
 msgstr "Nieznany błąd pośrednika SOCKSv5."
 
@@ -3675,17 +3677,17 @@ msgstr "Nie można obsłużyć wersji %d kodowania GThemedIcon"
 # pd
 #: ../gio/gtlscertificate.c:228
 msgid "No PEM-encoded certificate found"
-msgstr ""
+msgstr "Nie odnaleziono certyfikatu zakodowanego za pomocą PEM"
 
 # pd
 #: ../gio/gtlscertificate.c:237
 msgid "Could not parse PEM-encoded certificate"
-msgstr ""
+msgstr "Nie można przetworzyć certyfikatów zakodowanych za pomocą PEM"
 
 # pd
 #: ../gio/gtlscertificate.c:258
 msgid "Could not parse PEM-encoded private key"
-msgstr ""
+msgstr "Nie można przetworzyć klucza prywatnego zakodowanego za pomocą PEM"
 
 #: ../gio/gunixconnection.c:164 ../gio/gunixconnection.c:505
 #, c-format
