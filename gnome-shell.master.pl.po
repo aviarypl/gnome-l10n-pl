@@ -9,14 +9,14 @@ msgstr ""
 "Project-Id-Version: gnome-shell\n"
 "Report-Msgid-Bugs-To: http://bugzilla.gnome.org/enter_bug.cgi?product=gnome-"
 "shell&component=general\n"
-"POT-Creation-Date: 2011-01-04 16:17+0000\n"
+"POT-Creation-Date: 2011-01-15 11:44+0000\n"
 "PO-Revision-Date: 2010-09-22 18:14+0200\n"
 "Last-Translator: Piotr Drąg <piotrdrag@gmail.com>\n"
 "Language-Team: Polish <gnomepl@aviary.pl>\n"
+"Language: pl\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"Language: pl\n"
 "Plural-Forms: nplurals=3; plural=(n==1 ? 0 : n%10>=2 && n%10<=4 && (n%100<10 "
 "|| n%100>=20) ? 1 : 2);\n"
 "X-Poedit-Language: Polish\n"
@@ -316,6 +316,23 @@ msgid "Width of the vertical and horizontal lines that make up the crosshairs."
 msgstr ""
 
 # pd
+#. Replace "Error invoking GLib.shell_parse_argv: " with
+#. something nicer
+#: ../js/misc/util.js:108
+msgid "Could not parse command:"
+msgstr "Nie można przetworzyć polecenia:"
+
+# pd
+#: ../js/misc/util.js:130
+msgid "No such application"
+msgstr "Nie ma takiego programu"
+
+#: ../js/misc/util.js:143 ../js/ui/runDialog.js:364
+#, c-format
+msgid "Execution of '%s' failed:"
+msgstr "Wykonanie polecenia \"%s\" się nie powiodło:"
+
+# pd
 #. Translators: Filter to display all applications
 #: ../js/ui/appDisplay.js:155
 msgid "All"
@@ -356,120 +373,213 @@ msgstr "Program %s został usunięty z ulubionych."
 msgid "Remove"
 msgstr "Usuń"
 
-#: ../js/ui/docDisplay.js:494
+#: ../js/ui/docDisplay.js:18
 msgid "RECENT ITEMS"
 msgstr "Ostatnie elementy"
 
-#: ../js/ui/lookingGlass.js:552
+# pd
+#: ../js/ui/endSessionDialog.js:63
+#, c-format
+msgid "Log Out %s"
+msgstr "Wyloguj %s"
+
+# pd
+#: ../js/ui/endSessionDialog.js:64 ../js/ui/endSessionDialog.js:69
+msgid "Log Out"
+msgstr "Wyloguj się"
+
+# pd
+#: ../js/ui/endSessionDialog.js:65
+msgid "Click Log Out to quit these applications and log out of the system."
+msgstr "Kliknięcie Wyloguj zakończy poniższe programy i wyloguje z systemu."
+
+# pd
+#: ../js/ui/endSessionDialog.js:66
+#, c-format
+msgid "%s will be logged out automatically in %d seconds."
+msgstr "Użytkownik %s zostanie automatycznie wylogowany za %d sekund."
+
+# pd
+#: ../js/ui/endSessionDialog.js:67
+#, c-format
+msgid "You will be logged out automatically in %d seconds."
+msgstr "Użytkownik zostanie automatycznie wylogowany za %d sekund."
+
+# pd
+#: ../js/ui/endSessionDialog.js:68
+msgid "Logging out of the system."
+msgstr "Wylogowywanie z systemu."
+
+# pd
+#: ../js/ui/endSessionDialog.js:74 ../js/ui/endSessionDialog.js:78
+msgid "Shut Down"
+msgstr "Wyłącz komputer"
+
+# pd
+#: ../js/ui/endSessionDialog.js:75
+msgid "Click Shut Down to quit these applications and shut down the system."
+msgstr ""
+"Kliknięcie Wyłącz komputer zakończy poniższe programy i wyłączy system."
+
+# pd
+#: ../js/ui/endSessionDialog.js:76
+#, c-format
+msgid "The system will shut down automatically in %d seconds."
+msgstr "System zostanie automatycznie wyłączony za %d sekund."
+
+# pd
+#: ../js/ui/endSessionDialog.js:77
+msgid "Shutting down the system."
+msgstr "Wyłączanie komputera."
+
+# pd
+#: ../js/ui/endSessionDialog.js:84 ../js/ui/endSessionDialog.js:88
+msgid "Restart"
+msgstr "Uruchom ponownie"
+
+# pd
+#: ../js/ui/endSessionDialog.js:85
+msgid "Click Restart to quit these applications and restart the system."
+msgstr ""
+"Kliknięcie uruchom ponownie zakończy poniższe programy i ponownie uruchomi "
+"system."
+
+# pd
+#: ../js/ui/endSessionDialog.js:86
+#, c-format
+msgid "The system will restart automatically in %d seconds."
+msgstr "System zostanie automatycznie uruchomiony ponownie za %d sekund."
+
+# pd
+#: ../js/ui/endSessionDialog.js:87
+msgid "Restarting the system."
+msgstr "Ponowne uruchamianie systemu."
+
+# pd
+#: ../js/ui/endSessionDialog.js:395
+msgid "Confirm"
+msgstr "Potwierdź"
+
+# pd
+#: ../js/ui/endSessionDialog.js:400 ../js/ui/status/bluetooth.js:469
+msgid "Cancel"
+msgstr "Anuluj"
+
+#: ../js/ui/lookingGlass.js:556
 msgid "No extensions installed"
 msgstr "Nie zainstalowano rozszerzeń"
 
-#: ../js/ui/lookingGlass.js:589
+#: ../js/ui/lookingGlass.js:593
 msgid "Enabled"
 msgstr "Włączone"
 
 #. translators:
 #. * The device has been disabled
-#: ../js/ui/lookingGlass.js:591 ../src/gvc/gvc-mixer-control.c:1087
+#: ../js/ui/lookingGlass.js:595 ../src/gvc/gvc-mixer-control.c:1087
 msgid "Disabled"
 msgstr "Wyłączone"
 
-#: ../js/ui/lookingGlass.js:593
+#: ../js/ui/lookingGlass.js:597
 msgid "Error"
 msgstr "Błąd"
 
-#: ../js/ui/lookingGlass.js:595
+#: ../js/ui/lookingGlass.js:599
 msgid "Out of date"
 msgstr "Nieaktualne"
 
-#: ../js/ui/lookingGlass.js:620
+#: ../js/ui/lookingGlass.js:624
 msgid "View Source"
 msgstr "Wyświetl źródło"
 
-#: ../js/ui/lookingGlass.js:626
+#: ../js/ui/lookingGlass.js:630
 msgid "Web Page"
 msgstr "Strona WWW"
 
-#: ../js/ui/overview.js:96
+# pd
+#: ../js/ui/messageTray.js:1748
+msgid "System Information"
+msgstr "Informacje systemowe"
+
+#: ../js/ui/overview.js:75
 msgid "Undo"
 msgstr "Cofnij"
 
 # pd
-#: ../js/ui/overview.js:158
+#: ../js/ui/overview.js:140
 msgid "Windows"
 msgstr "Okna"
 
 # pd
-#: ../js/ui/overview.js:161
+#: ../js/ui/overview.js:143
 msgid "Applications"
 msgstr "Programy"
 
 #. TODO - _quit() doesn't really work on apps in state STARTING yet
-#: ../js/ui/panel.js:476
+#: ../js/ui/panel.js:479
 #, c-format
 msgid "Quit %s"
 msgstr "Zakończ program %s"
 
 #. Translators: This is the time format with date used
 #. in 24-hour mode.
-#: ../js/ui/panel.js:561
+#: ../js/ui/panel.js:564
 msgid "%a %b %e, %R:%S"
 msgstr "%a %e %b, %R:%S"
 
-#: ../js/ui/panel.js:562
+#: ../js/ui/panel.js:565
 msgid "%a %b %e, %R"
 msgstr "%a %e %b, %R"
 
 #. Translators: This is the time format without date used
 #. in 24-hour mode.
-#: ../js/ui/panel.js:566
+#: ../js/ui/panel.js:569
 msgid "%a %R:%S"
 msgstr "%a, %R:%S"
 
-#: ../js/ui/panel.js:567
+#: ../js/ui/panel.js:570
 msgid "%a %R"
 msgstr "%a, %R"
 
 #. Translators: This is a time format with date used
 #. for AM/PM.
-#: ../js/ui/panel.js:574
+#: ../js/ui/panel.js:577
 msgid "%a %b %e, %l:%M:%S %p"
 msgstr "%a %e %b, %H:%M:%S %p"
 
-#: ../js/ui/panel.js:575
+#: ../js/ui/panel.js:578
 msgid "%a %b %e, %l:%M %p"
 msgstr "%a %e %b, %l:%M %p"
 
 #. Translators: This is a time format without date used
 #. for AM/PM.
-#: ../js/ui/panel.js:579
+#: ../js/ui/panel.js:582
 msgid "%a %l:%M:%S %p"
 msgstr "%a, %l:%M:%S %p"
 
-#: ../js/ui/panel.js:580
+#: ../js/ui/panel.js:583
 msgid "%a %l:%M %p"
 msgstr "%a, %l:%M %p"
 
 #. Button on the left side of the panel.
 #. Translators: If there is no suitable word for "Activities" in your language, you can use the word for "Overview".
-#: ../js/ui/panel.js:725
+#: ../js/ui/panel.js:728
 msgid "Activities"
 msgstr "Podgląd"
 
-#: ../js/ui/placeDisplay.js:111
+#: ../js/ui/placeDisplay.js:112
 #, c-format
 msgid "Failed to unmount '%s'"
 msgstr "Odmontowanie \"%s\" się nie powiodło"
 
-#: ../js/ui/placeDisplay.js:114
+#: ../js/ui/placeDisplay.js:115
 msgid "Retry"
 msgstr "Ponów"
 
-#: ../js/ui/placeDisplay.js:159
+#: ../js/ui/placeDisplay.js:160
 msgid "Connect to..."
 msgstr "Połącz z..."
 
-#: ../js/ui/placeDisplay.js:558
+#: ../js/ui/placeDisplay.js:559
 msgid "PLACES & DEVICES"
 msgstr "Miejsca i urządzenia"
 
@@ -482,96 +592,91 @@ msgstr "Miejsca i urządzenia"
 msgid "toggle-switch-us"
 msgstr "toggle-switch-intl"
 
-#: ../js/ui/runDialog.js:233
+#: ../js/ui/runDialog.js:222
 msgid "Please enter a command:"
 msgstr "Proszę wprowadzić polecenie:"
 
-#: ../js/ui/runDialog.js:378
-#, c-format
-msgid "Execution of '%s' failed:"
-msgstr "Wykonanie polecenia \"%s\" się nie powiodło:"
-
-#: ../js/ui/statusMenu.js:101
+#: ../js/ui/statusMenu.js:102
 msgid "Available"
 msgstr "Dostępny"
 
-#: ../js/ui/statusMenu.js:106
+#: ../js/ui/statusMenu.js:107
 msgid "Busy"
 msgstr "Zajęty"
 
 # pd
-#: ../js/ui/statusMenu.js:114
+#: ../js/ui/statusMenu.js:115
 msgid "My Account"
 msgstr "Moje konto"
 
 # pd
-#: ../js/ui/statusMenu.js:118
+#: ../js/ui/statusMenu.js:119
 msgid "System Settings"
 msgstr "Ustawienia systemu"
 
-#: ../js/ui/statusMenu.js:125
+#: ../js/ui/statusMenu.js:126
 msgid "Lock Screen"
 msgstr "Zablokuj ekran"
 
-#: ../js/ui/statusMenu.js:129
+#: ../js/ui/statusMenu.js:130
 msgid "Switch User"
 msgstr "Przełącz użytkownika"
 
-#: ../js/ui/statusMenu.js:134
+#: ../js/ui/statusMenu.js:135
 msgid "Log Out..."
 msgstr "Wyloguj się..."
 
 # pd
-#: ../js/ui/statusMenu.js:141
+#: ../js/ui/statusMenu.js:142
 msgid "Suspend..."
 msgstr "Uśpij..."
 
-#: ../js/ui/statusMenu.js:145
+#: ../js/ui/statusMenu.js:146
 msgid "Shut Down..."
 msgstr "Wyłącz komputer..."
 
 # pd
-#: ../js/ui/status/accessibility.js:82
+#: ../js/ui/status/accessibility.js:83
 msgid "Zoom"
 msgstr "Powiększenie"
 
 # pd
-#: ../js/ui/status/accessibility.js:88
+#: ../js/ui/status/accessibility.js:89
 msgid "Screen Reader"
 msgstr "Czytnik ekranu"
 
 # pd
-#: ../js/ui/status/accessibility.js:91
+#: ../js/ui/status/accessibility.js:92
 msgid "Screen Keyboard"
 msgstr "Klawiatura ekranowa"
 
 # pd
-#: ../js/ui/status/accessibility.js:94
+#: ../js/ui/status/accessibility.js:95
 msgid "Visual Alerts"
 msgstr "Ostrzeżenia wzrokowe"
 
 # pd
-#: ../js/ui/status/accessibility.js:97
+#: ../js/ui/status/accessibility.js:98
 msgid "Sticky Keys"
 msgstr "Lepkie klawisze"
 
 # pd
-#: ../js/ui/status/accessibility.js:100
+#: ../js/ui/status/accessibility.js:101
 msgid "Slow Keys"
 msgstr "Powolne klawisze"
 
 # pd
-#: ../js/ui/status/accessibility.js:103
+#: ../js/ui/status/accessibility.js:104
 msgid "Bounce Keys"
 msgstr "Odbijanie klawiszy"
 
 # pd
-#: ../js/ui/status/accessibility.js:106
+#: ../js/ui/status/accessibility.js:107
 msgid "Mouse Keys"
 msgstr "Klawisze myszy"
 
 # pd
-#: ../js/ui/status/accessibility.js:110
+#: ../js/ui/status/accessibility.js:111
 msgid "Universal Access Settings"
 msgstr "Ustawienia uniwersalnego dostępu"
 
@@ -586,7 +691,7 @@ msgid "Large Text"
 msgstr "Duży tekst"
 
 # pd
-#: ../js/ui/status/bluetooth.js:42 ../js/ui/status/bluetooth.js:234
+#: ../js/ui/status/bluetooth.js:42 ../js/ui/status/bluetooth.js:240
 msgid "Bluetooth"
 msgstr "Bluetooth"
 
@@ -611,127 +716,122 @@ msgid "Bluetooth Settings"
 msgstr "Ustawienia Bluetooth"
 
 # pd
-#: ../js/ui/status/bluetooth.js:185
+#: ../js/ui/status/bluetooth.js:191
 msgid "Connection"
 msgstr "Połączenie"
 
 # pd
-#: ../js/ui/status/bluetooth.js:221
+#: ../js/ui/status/bluetooth.js:227
 msgid "Send Files..."
 msgstr "Wyślij pliki..."
 
 # pd
-#: ../js/ui/status/bluetooth.js:226
+#: ../js/ui/status/bluetooth.js:232
 msgid "Browse Files..."
 msgstr "Przeglądaj pliki..."
 
 # pd
-#: ../js/ui/status/bluetooth.js:235
+#: ../js/ui/status/bluetooth.js:241
 msgid "Error browsing device"
 msgstr "Błąd podczas przeglądania urządzenia"
 
 # pd
-#: ../js/ui/status/bluetooth.js:236
+#: ../js/ui/status/bluetooth.js:242
 #, c-format
 msgid "The requested device cannot be browsed, error is '%s'"
 msgstr "Nie można przeglądać żądanego urządzenia. Błąd: \"%s\""
 
 # pd
-#: ../js/ui/status/bluetooth.js:244
+#: ../js/ui/status/bluetooth.js:250 ../js/ui/status/keyboard.js:78
 msgid "Keyboard Settings"
 msgstr "Ustawienia klawiatury"
 
 # pd
-#: ../js/ui/status/bluetooth.js:249
+#: ../js/ui/status/bluetooth.js:255
 msgid "Mouse Settings"
 msgstr "Ustawienia myszy"
 
 # pd
-#: ../js/ui/status/bluetooth.js:256 ../js/ui/status/volume.js:62
+#: ../js/ui/status/bluetooth.js:262 ../js/ui/status/volume.js:63
 msgid "Sound Settings"
 msgstr "Ustawienia dźwięku"
 
 # pd
-#: ../js/ui/status/bluetooth.js:327 ../js/ui/status/bluetooth.js:361
-#: ../js/ui/status/bluetooth.js:401 ../js/ui/status/bluetooth.js:434
+#: ../js/ui/status/bluetooth.js:336 ../js/ui/status/bluetooth.js:370
+#: ../js/ui/status/bluetooth.js:410 ../js/ui/status/bluetooth.js:443
 msgid "Bluetooth Agent"
 msgstr "Agent Bluetooth"
 
 # pd
-#: ../js/ui/status/bluetooth.js:362
+#: ../js/ui/status/bluetooth.js:371
 #, c-format
 msgid "Authorization request from %s"
 msgstr "Żądanie upoważnienia z %s"
 
 # pd
-#: ../js/ui/status/bluetooth.js:368
+#: ../js/ui/status/bluetooth.js:377
 #, c-format
 msgid "Device %s wants access to the service '%s'"
 msgstr "Urządzenie %s żąda dostępu do usługi \"%s\""
 
 # pd
-#: ../js/ui/status/bluetooth.js:370
+#: ../js/ui/status/bluetooth.js:379
 msgid "Always grant access"
 msgstr "Zawsze udzielaj dostęp"
 
 # pd
-#: ../js/ui/status/bluetooth.js:371
+#: ../js/ui/status/bluetooth.js:380
 msgid "Grant this time only"
 msgstr "Udziel dostęp tylko tym razem"
 
 # pd
-#: ../js/ui/status/bluetooth.js:372
+#: ../js/ui/status/bluetooth.js:381
 msgid "Reject"
 msgstr "Odrzuć"
 
 # pd
-#: ../js/ui/status/bluetooth.js:402
+#: ../js/ui/status/bluetooth.js:411
 #, c-format
 msgid "Pairing confirmation for %s"
 msgstr "Potwierdzenie wiązania dla %s"
 
 # pd
-#: ../js/ui/status/bluetooth.js:408 ../js/ui/status/bluetooth.js:442
+#: ../js/ui/status/bluetooth.js:417 ../js/ui/status/bluetooth.js:451
 #, c-format
 msgid "Device %s wants to pair with this computer"
 msgstr "Urządzenie %s żąda powiązania z tym komputerem"
 
 # pd
-#: ../js/ui/status/bluetooth.js:409
+#: ../js/ui/status/bluetooth.js:418
 #, c-format
 msgid "Please confirm whether the PIN '%s' matches the one on the device."
 msgstr "Proszę potwierdzić, czy PIN \"%s\" zgadza się z tym na urządzeniu."
 
 # pd
-#: ../js/ui/status/bluetooth.js:411
+#: ../js/ui/status/bluetooth.js:420
 msgid "Matches"
 msgstr "Zgadza się"
 
 # pd
-#: ../js/ui/status/bluetooth.js:412
+#: ../js/ui/status/bluetooth.js:421
 msgid "Does not match"
 msgstr "Nie zgadza się"
 
 # pd
-#: ../js/ui/status/bluetooth.js:435
+#: ../js/ui/status/bluetooth.js:444
 #, c-format
 msgid "Pairing request for %s"
 msgstr "Żądanie powiązania dla %s"
 
 # pd
-#: ../js/ui/status/bluetooth.js:443
+#: ../js/ui/status/bluetooth.js:452
 msgid "Please enter the PIN mentioned on the device."
 msgstr "Proszę wprowadzić PIN wyświetlony na urządzeniu."
 
 # pd
-#: ../js/ui/status/bluetooth.js:459
+#: ../js/ui/status/bluetooth.js:468
 msgid "OK"
 msgstr "OK"
-
-# pd
-#: ../js/ui/status/bluetooth.js:460
-msgid "Cancel"
-msgstr "Anuluj"
 
 # pd
 #: ../js/ui/status/power.js:85
@@ -780,95 +880,95 @@ msgstr[1] "Pozostały %d minuty"
 msgstr[2] "Pozostało %d minut"
 
 # pd
-#: ../js/ui/status/power.js:237
+#: ../js/ui/status/power.js:235
 msgid "AC adapter"
 msgstr "Zasilacz sieciowy"
 
 # pd
-#: ../js/ui/status/power.js:239
+#: ../js/ui/status/power.js:237
 msgid "Laptop battery"
 msgstr "Akumulator laptopa"
 
 # pd
-#: ../js/ui/status/power.js:241
+#: ../js/ui/status/power.js:239
 msgid "UPS"
 msgstr "UPS"
 
 # pd
-#: ../js/ui/status/power.js:243
+#: ../js/ui/status/power.js:241
 msgid "Monitor"
 msgstr "Monitor"
 
 # pd
-#: ../js/ui/status/power.js:245
+#: ../js/ui/status/power.js:243
 msgid "Mouse"
 msgstr "Mysz"
 
 # pd
-#: ../js/ui/status/power.js:247
+#: ../js/ui/status/power.js:245
 msgid "Keyboard"
 msgstr "Klawiatura"
 
 # pd
-#: ../js/ui/status/power.js:249
+#: ../js/ui/status/power.js:247
 msgid "PDA"
 msgstr "Urządzenie PDA"
 
 # pd
-#: ../js/ui/status/power.js:251
+#: ../js/ui/status/power.js:249
 msgid "Cell phone"
 msgstr "Telefon komórkowy"
 
 # pd
-#: ../js/ui/status/power.js:253
+#: ../js/ui/status/power.js:251
 msgid "Media player"
 msgstr "Odtwarzacz multimedialny"
 
 # pd
-#: ../js/ui/status/power.js:255
+#: ../js/ui/status/power.js:253
 msgid "Tablet"
 msgstr "Tablet"
 
 # pd
-#: ../js/ui/status/power.js:257
+#: ../js/ui/status/power.js:255
 msgid "Computer"
 msgstr "Komputer"
 
 # pd
-#: ../js/ui/status/power.js:259 ../src/shell-app-system.c:1012
+#: ../js/ui/status/power.js:257 ../src/shell-app-system.c:1012
 msgid "Unknown"
 msgstr "Nieznane"
 
 # pd
-#: ../js/ui/status/volume.js:41
+#: ../js/ui/status/volume.js:42
 msgid "Volume"
 msgstr "Głośność"
 
 # pd
-#: ../js/ui/status/volume.js:54
+#: ../js/ui/status/volume.js:55
 msgid "Microphone"
 msgstr "Mikrofon"
 
 # pd
-#: ../js/ui/telepathyClient.js:560
+#: ../js/ui/telepathyClient.js:561
 #, c-format
 msgid "%s is online."
 msgstr "Użytkownik %s jest online."
 
 # pd
-#: ../js/ui/telepathyClient.js:565
+#: ../js/ui/telepathyClient.js:566
 #, c-format
 msgid "%s is offline."
 msgstr "Użytkownik %s jest offline."
 
 # pd
-#: ../js/ui/telepathyClient.js:568
+#: ../js/ui/telepathyClient.js:569
 #, c-format
 msgid "%s is away."
 msgstr "Użytkownik %s jest nieobecny."
 
 # pd
-#: ../js/ui/telepathyClient.js:571
+#: ../js/ui/telepathyClient.js:572
 #, c-format
 msgid "%s is busy."
 msgstr "Użytkownik %s jest zajęty."
@@ -877,7 +977,7 @@ msgstr "Użytkownik %s jest zajęty."
 #. Translators: this is a time format string followed by a date.
 #. If applicable, replace %X with a strftime format valid for your
 #. locale, without seconds.
-#: ../js/ui/telepathyClient.js:665
+#: ../js/ui/telepathyClient.js:666
 #, no-c-format
 msgid "Sent at %X on %A"
 msgstr "Wysłano o %H:%M w dniu %e %b"
@@ -935,11 +1035,11 @@ msgstr[2] "%u wejść"
 msgid "System Sounds"
 msgstr "Dźwięki systemowe"
 
-#: ../src/shell-global.c:1156
+#: ../src/shell-global.c:1233
 msgid "Less than a minute ago"
 msgstr "Mniej niż minutę temu"
 
-#: ../src/shell-global.c:1160
+#: ../src/shell-global.c:1237
 #, c-format
 msgid "%d minute ago"
 msgid_plural "%d minutes ago"
@@ -947,7 +1047,7 @@ msgstr[0] "%d minuta temu"
 msgstr[1] "%d minuty temu"
 msgstr[2] "%d minut temu"
 
-#: ../src/shell-global.c:1165
+#: ../src/shell-global.c:1242
 #, c-format
 msgid "%d hour ago"
 msgid_plural "%d hours ago"
@@ -955,7 +1055,7 @@ msgstr[0] "%d godzina temu"
 msgstr[1] "%d godziny temu"
 msgstr[2] "%d godzin temu"
 
-#: ../src/shell-global.c:1170
+#: ../src/shell-global.c:1247
 #, c-format
 msgid "%d day ago"
 msgid_plural "%d days ago"
@@ -963,7 +1063,7 @@ msgstr[0] "%d dzień temu"
 msgstr[1] "%d dni temu"
 msgstr[2] "%d dni temu"
 
-#: ../src/shell-global.c:1175
+#: ../src/shell-global.c:1252
 #, c-format
 msgid "%d week ago"
 msgid_plural "%d weeks ago"
