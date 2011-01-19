@@ -9,7 +9,7 @@ msgstr ""
 "Project-Id-Version: gnome-control-center\n"
 "Report-Msgid-Bugs-To: http://bugzilla.gnome.org/enter_bug.cgi?product=gnome-"
 "control-center&component=general\n"
-"POT-Creation-Date: 2011-01-12 00:12+0000\n"
+"POT-Creation-Date: 2011-01-19 13:03+0000\n"
 "PO-Revision-Date: 2010-09-17 22:54+0200\n"
 "Last-Translator: Piotr Drąg <piotrdrag@gmail.com>\n"
 "Language-Team: Polish <gnomepl@aviary.pl>\n"
@@ -382,25 +382,25 @@ msgid "Date and Time preferences panel"
 msgstr ""
 
 #: ../panels/display/display-capplet.ui.h:1
-msgid "<i>Note: may limit resolution options</i>"
-msgstr ""
-
-#: ../panels/display/display-capplet.ui.h:2
 #: ../panels/display/xrandr-capplet.c:316
 msgid "Left"
 msgstr "Lewo"
 
-#: ../panels/display/display-capplet.ui.h:3
+#: ../panels/display/display-capplet.ui.h:2
 #: ../panels/display/xrandr-capplet.c:479
 msgid "Monitor"
 msgstr "Monitor"
 
-#: ../panels/display/display-capplet.ui.h:4
+#: ../panels/display/display-capplet.ui.h:3
 #: ../panels/display/xrandr-capplet.c:315
 #: ../panels/display/xrandr-capplet.c:354
 #: ../panels/universal-access/uap.ui.h:58
 msgid "Normal"
 msgstr "Normalnie"
+
+#: ../panels/display/display-capplet.ui.h:4
+msgid "Note: may limit resolution options"
+msgstr ""
 
 #: ../panels/display/display-capplet.ui.h:5
 msgid "R_otation:"
@@ -507,12 +507,52 @@ msgstr "Nie można wykryć ekranów"
 msgid "Could not get screen information"
 msgstr "Nie można uzyskać informacji o rozdzielczości ekranu"
 
-#: ../panels/info/cc-info-panel.c:242
+#. translators: This is the type of architecture, for example:
+#. * "64-bit" or "32-bit"
+#: ../panels/info/cc-info-panel.c:247
 #, c-format
 msgid "%d-bit"
 msgstr ""
 
-#: ../panels/info/cc-info-panel.c:290
+#: ../panels/info/cc-info-panel.c:261
+#, c-format
+msgid "%u byte"
+msgid_plural "%u bytes"
+msgstr[0] ""
+msgstr[1] ""
+msgstr[2] ""
+
+#: ../panels/info/cc-info-panel.c:269
+#, c-format
+msgid "%.1f KB"
+msgstr ""
+
+#: ../panels/info/cc-info-panel.c:274
+#, c-format
+msgid "%.1f MB"
+msgstr ""
+
+#: ../panels/info/cc-info-panel.c:279
+#, c-format
+msgid "%.1f GB"
+msgstr ""
+
+#: ../panels/info/cc-info-panel.c:284
+#, c-format
+msgid "%.1f TB"
+msgstr ""
+
+#: ../panels/info/cc-info-panel.c:289
+#, c-format
+msgid "%.1f PB"
+msgstr ""
+
+#: ../panels/info/cc-info-panel.c:294
+#, c-format
+msgid "%.1f EB"
+msgstr ""
+
+#: ../panels/info/cc-info-panel.c:404
 #, fuzzy
 #| msgid "Unknown"
 msgid "Unknown model"
@@ -534,13 +574,12 @@ msgid "device;system;information;memory;processor;version;"
 msgstr ""
 
 #: ../panels/keyboard/00-multimedia-key.xml.in.h:1
-#: ../panels/sound/data/gnome-sound-panel.desktop.in.in.h:4
-msgid "Sound"
-msgstr "Dźwięk"
+msgid "Sound and Media"
+msgstr ""
 
 #: ../panels/keyboard/01-desktop-key.xml.in.h:1
-msgid "Desktop"
-msgstr "Pulpit"
+msgid "Launchers and Actions"
+msgstr ""
 
 #: ../panels/keyboard/eggcellrendererkeys.c:21
 msgid "New shortcut..."
@@ -572,7 +611,7 @@ msgstr "Rodzaj klawisza skrótu."
 #. translators:
 #. * The device has been disabled
 #: ../panels/keyboard/eggcellrendererkeys.c:243
-#: ../panels/keyboard/keyboard-shortcuts.c:1140
+#: ../panels/keyboard/keyboard-shortcuts.c:1194
 #: ../panels/sound/gvc-mixer-control.c:1091
 #: ../panels/user-accounts/um-fingerprint-dialog.c:177
 #: ../panels/user-accounts/um-fingerprint-dialog.c:178
@@ -594,21 +633,21 @@ msgstr "Klawiatura"
 msgid "Shortcut;Repeat;Blink;"
 msgstr ""
 
-#: ../panels/keyboard/keyboard-shortcuts.c:659
-#: ../panels/keyboard/keyboard-shortcuts.c:1544
-#: ../panels/keyboard/keyboard-shortcuts.c:1548
+#: ../panels/keyboard/keyboard-shortcuts.c:709
+#: ../panels/keyboard/keyboard-shortcuts.c:1598
+#: ../panels/keyboard/keyboard-shortcuts.c:1602
 msgid "Custom Shortcuts"
 msgstr "Własne skróty"
 
-#: ../panels/keyboard/keyboard-shortcuts.c:767
+#: ../panels/keyboard/keyboard-shortcuts.c:821
 msgid "<Unknown Action>"
 msgstr "<Nieznane działanie>"
 
-#: ../panels/keyboard/keyboard-shortcuts.c:1166
+#: ../panels/keyboard/keyboard-shortcuts.c:1220
 msgid "Error saving the new shortcut"
 msgstr "Błąd podczas zapisywania nowego skrótu"
 
-#: ../panels/keyboard/keyboard-shortcuts.c:1276
+#: ../panels/keyboard/keyboard-shortcuts.c:1330
 #, c-format
 msgid ""
 "The shortcut \"%s\" cannot be used because it will become impossible to type "
@@ -619,7 +658,7 @@ msgstr ""
 "użyciu wybranego klawisza.\n"
 "Proszę spróbować w połączeniu z klawiszem takim jak Control, Alt lub Shift."
 
-#: ../panels/keyboard/keyboard-shortcuts.c:1306
+#: ../panels/keyboard/keyboard-shortcuts.c:1360
 #, c-format
 msgid ""
 "The shortcut \"%s\" is already used for\n"
@@ -628,37 +667,37 @@ msgstr ""
 "Skrót \"%s\" jest już wykorzystywany przez\n"
 " \"%s\""
 
-#: ../panels/keyboard/keyboard-shortcuts.c:1312
+#: ../panels/keyboard/keyboard-shortcuts.c:1366
 #, c-format
 msgid ""
 "If you reassign the shortcut to \"%s\", the \"%s\" shortcut will be disabled."
 msgstr ""
 "Jeśli skrót zostanie zmieniony na \"%s\", skrót \"%s\" zostanie wyłączony."
 
-#: ../panels/keyboard/keyboard-shortcuts.c:1320
+#: ../panels/keyboard/keyboard-shortcuts.c:1374
 msgid "_Reassign"
 msgstr "_Zmień"
 
-#: ../panels/keyboard/keyboard-shortcuts.c:1440
+#: ../panels/keyboard/keyboard-shortcuts.c:1494
 #, c-format
 msgid "Error unsetting accelerator in configuration database: %s"
 msgstr "Wystąpił błąd podczas usuwania skrótu w bazie danych konfiguracji: %s"
 
-#: ../panels/keyboard/keyboard-shortcuts.c:1498
+#: ../panels/keyboard/keyboard-shortcuts.c:1552
 msgid "Too many custom shortcuts"
 msgstr "Za dużo własnych skrótów"
 
-#: ../panels/keyboard/keyboard-shortcuts.c:1706
+#: ../panels/keyboard/keyboard-shortcuts.c:1830
 #, fuzzy
 #| msgid "Action"
 msgid "Section"
 msgstr "Działanie"
 
-#: ../panels/keyboard/keyboard-shortcuts.c:1737
+#: ../panels/keyboard/keyboard-shortcuts.c:1873
 msgid "Action"
 msgstr "Działanie"
 
-#: ../panels/keyboard/keyboard-shortcuts.c:1759
+#: ../panels/keyboard/keyboard-shortcuts.c:1895
 msgid "Shortcut"
 msgstr "Skrót"
 
@@ -675,7 +714,7 @@ msgid "Cursor _blinks in text fields"
 msgstr "Miganie _kursora w polach tekstowych"
 
 #: ../panels/keyboard/gnome-keyboard-panel.ui.h:4
-#: ../panels/mouse/gnome-mouse-properties.ui.h:4
+#: ../panels/mouse/gnome-mouse-properties.ui.h:1
 #: ../panels/universal-access/uap.ui.h:28
 msgid "Cursor blinks speed"
 msgstr "Szybkość migania kursora"
@@ -687,12 +726,12 @@ msgstr "Własny skrót"
 #. fast acceleration
 #: ../panels/keyboard/gnome-keyboard-panel.ui.h:6
 #: ../panels/region/gnome-region-panel.ui.h:1
-#: ../panels/mouse/gnome-mouse-properties.ui.h:17
+#: ../panels/mouse/gnome-mouse-properties.ui.h:8
 msgid "Fast"
 msgstr "Szybkie"
 
 #: ../panels/keyboard/gnome-keyboard-panel.ui.h:7
-#: ../panels/mouse/gnome-mouse-properties.ui.h:18
+#: ../panels/mouse/gnome-mouse-properties.ui.h:9
 msgid "General"
 msgstr "Ogólne"
 
@@ -703,7 +742,7 @@ msgstr "Powtarza_nie naciśnięcia klawisza przy jego przytrzymaniu"
 #. long delay
 #: ../panels/keyboard/gnome-keyboard-panel.ui.h:10
 #: ../panels/region/gnome-region-panel.ui.h:5
-#: ../panels/mouse/gnome-mouse-properties.ui.h:25
+#: ../panels/mouse/gnome-mouse-properties.ui.h:15
 #: ../panels/universal-access/uap.ui.h:51
 msgid "Long"
 msgstr "Długie"
@@ -723,7 +762,7 @@ msgstr "_Prędkość:"
 #. short delay
 #: ../panels/keyboard/gnome-keyboard-panel.ui.h:14
 #: ../panels/region/gnome-region-panel.ui.h:19
-#: ../panels/mouse/gnome-mouse-properties.ui.h:35
+#: ../panels/mouse/gnome-mouse-properties.ui.h:24
 #: ../panels/universal-access/uap.ui.h:71
 msgid "Short"
 msgstr "Krótkie"
@@ -737,21 +776,24 @@ msgstr "Skrót"
 #. slow acceleration
 #: ../panels/keyboard/gnome-keyboard-panel.ui.h:16
 #: ../panels/region/gnome-region-panel.ui.h:20
-#: ../panels/mouse/gnome-mouse-properties.ui.h:39
+#: ../panels/mouse/gnome-mouse-properties.ui.h:26
 msgid "Slow"
 msgstr "Powolne"
 
 #: ../panels/keyboard/gnome-keyboard-panel.ui.h:17
+#, fuzzy
+#| msgid ""
+#| "To edit a shortcut key, click on the corresponding row and type a new key "
+#| "combination, or press backspace to clear."
 msgid ""
-"To edit a shortcut key, click on the corresponding row and type a new key "
-"combination, or press backspace to clear."
+"To edit a shortcut, click the row and hold down the new keys or press "
+"Backspace to clear."
 msgstr ""
 "Aby zmodyfikować klawisz skrótu, należy kliknąć na odpowiednim wierszu i "
 "wprowadzić nowy skrót lub nacisnąć klawisz backspace, aby wyczyścić obecny."
 
 #: ../panels/keyboard/gnome-keyboard-panel.ui.h:18
 #: ../panels/region/gnome-region-panel.ui.h:24
-#: ../panels/mouse/gnome-mouse-properties.ui.h:49
 msgid "_Delay:"
 msgstr "_Opóźnienie:"
 
@@ -763,6 +805,14 @@ msgstr "_Nazwa:"
 #: ../panels/region/gnome-region-panel.ui.h:28
 msgid "_Speed:"
 msgstr "Prę_dkość:"
+
+#: ../panels/keyboard/gnome-keyboard-panel.ui.h:21
+msgid "add-toolbutton"
+msgstr ""
+
+#: ../panels/keyboard/gnome-keyboard-panel.ui.h:22
+msgid "remove-toolbutton"
+msgstr ""
 
 #: ../panels/media/cc-media-panel.c:322
 msgid "Ask what to do"
@@ -842,6 +892,260 @@ msgstr ""
 msgid "Removable Media"
 msgstr ""
 
+#: ../panels/printers/cc-printers-panel.c:174
+#, fuzzy
+#| msgid "Locate Pointer"
+msgid "Low on toner"
+msgstr "Ustalenie położenia kursora"
+
+#: ../panels/printers/cc-printers-panel.c:175
+msgid "Out of toner"
+msgstr ""
+
+#. Translators: "Developer" like on photo development context
+#: ../panels/printers/cc-printers-panel.c:177
+msgid "Low on developer"
+msgstr ""
+
+#. Translators: "Developer" like on photo development context
+#: ../panels/printers/cc-printers-panel.c:179
+msgid "Out of developer"
+msgstr ""
+
+#. Translators: "marker" is one color bin of the printer
+#: ../panels/printers/cc-printers-panel.c:181
+msgid "Low on a marker supply"
+msgstr ""
+
+#. Translators: "marker" is one color bin of the printer
+#: ../panels/printers/cc-printers-panel.c:183
+msgid "Out of a marker supply"
+msgstr ""
+
+#: ../panels/printers/cc-printers-panel.c:184
+msgid "Open cover"
+msgstr ""
+
+#: ../panels/printers/cc-printers-panel.c:185
+#, fuzzy
+#| msgid "Vendors"
+msgid "Open door"
+msgstr "Dostawcy"
+
+#: ../panels/printers/cc-printers-panel.c:186
+msgid "Low on paper"
+msgstr ""
+
+#: ../panels/printers/cc-printers-panel.c:187
+msgid "Out of paper"
+msgstr ""
+
+#: ../panels/printers/cc-printers-panel.c:188
+#, fuzzy
+#| msgid "Off"
+msgid "Offline"
+msgstr "Wyłączony"
+
+#: ../panels/printers/cc-printers-panel.c:189
+#: ../panels/printers/cc-printers-panel.c:287
+msgid "Paused"
+msgstr ""
+
+#: ../panels/printers/cc-printers-panel.c:190
+msgid "Waste receptacle almost full"
+msgstr ""
+
+#: ../panels/printers/cc-printers-panel.c:191
+msgid "Waste receptacle full"
+msgstr ""
+
+#: ../panels/printers/cc-printers-panel.c:192
+msgid "The optical photo conductor is near end of life"
+msgstr ""
+
+#: ../panels/printers/cc-printers-panel.c:193
+msgid "The optical photo conductor is no longer functioning"
+msgstr ""
+
+#: ../panels/printers/cc-printers-panel.c:281
+msgid "Idle"
+msgstr ""
+
+#: ../panels/printers/cc-printers-panel.c:284
+#: ../panels/printers/cc-printers-panel.c:671
+#, fuzzy
+#| msgid "_Profession:"
+msgid "Processing"
+msgstr "_Zawód:"
+
+#: ../panels/printers/cc-printers-panel.c:665
+#, fuzzy
+#| msgid "Rendering"
+msgid "Pending"
+msgstr "Renderowanie"
+
+#: ../panels/printers/cc-printers-panel.c:668
+#, fuzzy
+#| msgid "Help"
+msgid "Held"
+msgstr "Pomoc"
+
+#: ../panels/printers/cc-printers-panel.c:674
+msgid "Stopped"
+msgstr ""
+
+#: ../panels/printers/cc-printers-panel.c:677
+msgid "Canceled"
+msgstr ""
+
+#: ../panels/printers/cc-printers-panel.c:680
+#, fuzzy
+#| msgid "About Me"
+msgid "Aborted"
+msgstr "O mnie"
+
+#: ../panels/printers/cc-printers-panel.c:683
+msgid "Completed"
+msgstr ""
+
+#: ../panels/printers/cc-printers-panel.c:773
+#, fuzzy
+#| msgid "_Title:"
+msgid "Job Title"
+msgstr "S_tanowisko:"
+
+#: ../panels/printers/cc-printers-panel.c:780
+msgid "Job State"
+msgstr ""
+
+#: ../panels/printers/cc-printers-panel.c:785
+#, fuzzy
+#| msgid "Dasher"
+msgid "User"
+msgstr "Dasher"
+
+#: ../panels/printers/cc-printers-panel.c:790
+#, fuzzy
+#| msgid "Tile"
+msgid "Time"
+msgstr "Sąsiadująco"
+
+#: ../panels/printers/cc-printers-panel.c:973
+#, fuzzy, c-format
+#| msgid "Could not rename %s to %s: %s\n"
+msgid "Could not connect to system bus: %s"
+msgstr "Nie można zmienić nazwy %s na %s: %s\n"
+
+#: ../panels/printers/cc-printers-panel.c:1449
+#, fuzzy
+#| msgid "page"
+msgid "Test page"
+msgstr "strona"
+
+#: ../panels/printers/cc-printers-panel.c:1456
+msgid "Clean print heads"
+msgstr ""
+
+#: ../panels/printers/cc-printers-panel.c:1458
+msgid "An error has occured during a maintenance command."
+msgstr ""
+
+#: ../panels/printers/cc-printers-panel.c:1493
+#, fuzzy, c-format
+#| msgid "Could not open %s: %s\n"
+msgid "Could not load ui: %s"
+msgstr "Nie można otworzyć %s: %s\n"
+
+#: ../panels/printers/gnome-printers-panel.desktop.in.in.h:1
+#, fuzzy
+#| msgid "Change set"
+msgid "Change printer settings"
+msgstr "Zbiór zmian"
+
+#. Translators: those are keywords for the printing control-center panel
+#: ../panels/printers/gnome-printers-panel.desktop.in.in.h:3
+msgid "Printer;Queue;Print;Paper;Ink;Toner;"
+msgstr ""
+
+#: ../panels/printers/gnome-printers-panel.desktop.in.in.h:4
+#, fuzzy
+#| msgid "Pointer"
+msgid "Printers"
+msgstr "Kursor"
+
+#: ../panels/printers/printers.ui.h:1
+msgid "---"
+msgstr ""
+
+#: ../panels/printers/printers.ui.h:2
+#: ../panels/user-accounts/data/language-chooser.ui.h:1
+#: ../panels/user-accounts/data/photo-dialog.ui.h:3
+msgid "Cancel"
+msgstr ""
+
+#: ../panels/printers/printers.ui.h:3
+msgid "Clean Print Heads"
+msgstr ""
+
+#: ../panels/printers/printers.ui.h:4
+#: ../panels/region/gnome-region-panel-xkbot.c:227
+#: ../panels/sound/gvc-sound-theme-chooser.c:589
+msgid "Default"
+msgstr "Domyślne"
+
+#: ../panels/printers/printers.ui.h:5
+msgid "Description:"
+msgstr "Opis:"
+
+#: ../panels/printers/printers.ui.h:6
+#, fuzzy
+#| msgid "Default Pointer"
+msgid "Disable Printer"
+msgstr "Domyślny kursor"
+
+#: ../panels/printers/printers.ui.h:7
+msgid "Hold"
+msgstr ""
+
+#: ../panels/printers/printers.ui.h:8
+#: ../panels/user-accounts/data/user-accounts-dialog.ui.h:18
+msgid "Location:"
+msgstr "Położenie:"
+
+#: ../panels/printers/printers.ui.h:9
+msgid "Print Test Page"
+msgstr ""
+
+#: ../panels/printers/printers.ui.h:10
+#, fuzzy
+#| msgid "Pointer"
+msgid "Printer Jobs"
+msgstr "Kursor"
+
+#: ../panels/printers/printers.ui.h:11
+#, fuzzy
+#| msgid "Iceweasel"
+msgid "Release"
+msgstr "Iceweasel"
+
+#: ../panels/printers/printers.ui.h:12
+msgid "Share with these users:"
+msgstr ""
+
+#: ../panels/printers/printers.ui.h:13
+msgid "Show / hide printer's jobs"
+msgstr ""
+
+#: ../panels/printers/printers.ui.h:14
+#, fuzzy
+#| msgid "Start %s"
+msgid "Status:"
+msgstr "Uruchom %s"
+
+#: ../panels/printers/printers.ui.h:15
+msgid "Supply:"
+msgstr ""
+
 #: ../panels/region/gnome-region-panel.ui.h:2
 msgid "Keyboard _model:"
 msgstr "M_odel klawiatury:"
@@ -913,7 +1217,7 @@ msgid "View and edit keyboard layout options"
 msgstr "Wyświetlanie i modyfikacja opcji układu klawiatury"
 
 #: ../panels/region/gnome-region-panel.ui.h:22
-#: ../panels/mouse/gnome-mouse-properties.ui.h:48
+#: ../panels/mouse/gnome-mouse-properties.ui.h:33
 msgid "_Acceleration:"
 msgstr "Pr_zyspieszenie:"
 
@@ -1000,11 +1304,6 @@ msgstr "Dostawcy"
 msgid "Models"
 msgstr "Modele"
 
-#: ../panels/region/gnome-region-panel-xkbot.c:227
-#: ../panels/sound/gvc-sound-theme-chooser.c:589
-msgid "Default"
-msgstr "Domyślne"
-
 #: ../panels/region/gnome-region-panel.desktop.in.in.h:1
 msgid "Change your region and language settings"
 msgstr ""
@@ -1016,123 +1315,83 @@ msgstr ""
 msgid "Language;Layout;"
 msgstr "Ję_zyk:"
 
-#: ../panels/mouse/gnome-mouse-properties.ui.h:1
-msgid "Accessibility"
-msgstr "Dostępność"
-
 #: ../panels/mouse/gnome-mouse-properties.ui.h:2
-msgid "Choose type of click _beforehand"
-msgstr "Uprzedni wy_bór rodzaju kliknięcia"
-
-#: ../panels/mouse/gnome-mouse-properties.ui.h:3
-msgid "Choose type of click with mo_use gestures"
-msgstr "_Rodzaj kliknięcia z gestami myszy"
-
-#: ../panels/mouse/gnome-mouse-properties.ui.h:5
-#: ../panels/universal-access/uap.ui.h:29
-msgid "D_elay:"
-msgstr "Opóź_nienie:"
-
-#: ../panels/mouse/gnome-mouse-properties.ui.h:6
-msgid "D_ouble click:"
-msgstr "Podwójne _kliknięcie:"
-
-#. click to initiate drag-and-drop (like normally click and hold)
-#: ../panels/mouse/gnome-mouse-properties.ui.h:8
-msgid "D_rag click:"
-msgstr "Przy_trzymanie przycisku:"
-
-#: ../panels/mouse/gnome-mouse-properties.ui.h:9
 msgid "Disable _touchpad while typing"
 msgstr "Wyłączenie panelu _dotykowego podczas pisania"
 
-#: ../panels/mouse/gnome-mouse-properties.ui.h:10
+#: ../panels/mouse/gnome-mouse-properties.ui.h:3
 msgid "Double-Click Timeout"
 msgstr "Opóźnienie podwójnego kliknięcia"
 
-#: ../panels/mouse/gnome-mouse-properties.ui.h:11
+#: ../panels/mouse/gnome-mouse-properties.ui.h:4
 msgid "Drag and Drop"
 msgstr "Przeciąganie i upuszczanie"
 
-#. Dwell Click = Clicking without hardware buttons (by letting the pointer sit on the click target for a certain amount of time)
-#: ../panels/mouse/gnome-mouse-properties.ui.h:13
-msgid "Dwell Click"
-msgstr "Klikanie spoczynkowe"
-
-#: ../panels/mouse/gnome-mouse-properties.ui.h:14
+#: ../panels/mouse/gnome-mouse-properties.ui.h:5
 msgid "Enable _mouse clicks with touchpad"
 msgstr "_Kliknięcia myszy za pomocą panelu dotykowego"
 
-#: ../panels/mouse/gnome-mouse-properties.ui.h:15
+#: ../panels/mouse/gnome-mouse-properties.ui.h:6
 msgid "Enable h_orizontal scrolling"
 msgstr "Przewijanie w p_oziomie"
 
 #. high sensitivity
-#: ../panels/mouse/gnome-mouse-properties.ui.h:20
+#: ../panels/mouse/gnome-mouse-properties.ui.h:11
 #: ../panels/universal-access/uap.ui.h:39
 msgid "High"
 msgstr "Wysoka"
 
 #. large threshold
-#: ../panels/mouse/gnome-mouse-properties.ui.h:22
+#: ../panels/mouse/gnome-mouse-properties.ui.h:13
 #: ../panels/universal-access/uap.ui.h:48
 msgid "Large"
 msgstr "Duży"
 
-#: ../panels/mouse/gnome-mouse-properties.ui.h:23
+#: ../panels/mouse/gnome-mouse-properties.ui.h:14
 msgid "Locate Pointer"
 msgstr "Ustalenie położenia kursora"
 
 #. low sensitivity
-#: ../panels/mouse/gnome-mouse-properties.ui.h:27
+#: ../panels/mouse/gnome-mouse-properties.ui.h:17
 #: ../panels/universal-access/uap.ui.h:52
 msgid "Low"
 msgstr "Nisko"
 
-#: ../panels/mouse/gnome-mouse-properties.ui.h:28
+#: ../panels/mouse/gnome-mouse-properties.ui.h:18
+msgid "Mouse"
+msgstr "Mysz"
+
+#: ../panels/mouse/gnome-mouse-properties.ui.h:19
 msgid "Mouse Orientation"
 msgstr "Ułożenie myszy"
 
-#: ../panels/mouse/gnome-mouse-properties.ui.h:29
+#: ../panels/mouse/gnome-mouse-properties.ui.h:20
 msgid "Mouse Preferences"
 msgstr "Preferencje myszy"
 
-#: ../panels/mouse/gnome-mouse-properties.ui.h:30
+#: ../panels/mouse/gnome-mouse-properties.ui.h:21
 msgid "Pointer Speed"
 msgstr "Prędkość kursora"
 
-#: ../panels/mouse/gnome-mouse-properties.ui.h:31
+#: ../panels/mouse/gnome-mouse-properties.ui.h:22
 msgid "Scrolling"
 msgstr "Przewijanie"
 
-#: ../panels/mouse/gnome-mouse-properties.ui.h:32
-msgid "Seco_ndary click:"
-msgstr "Pr_awy przycisk:"
-
-#: ../panels/mouse/gnome-mouse-properties.ui.h:33
+#: ../panels/mouse/gnome-mouse-properties.ui.h:23
 msgid "Sh_ow position of pointer when the Control key is pressed"
 msgstr "Wyświetlanie pozycji _kursora po wciśnięciu klawisza Control"
 
-#: ../panels/mouse/gnome-mouse-properties.ui.h:36
-msgid "Show click type _window"
-msgstr "Wyświetlanie okna z ro_dzajami kliknięć"
-
-#: ../panels/mouse/gnome-mouse-properties.ui.h:37
-#: ../panels/universal-access/uap.ui.h:73
-msgid "Simulated Secondary Click"
-msgstr "Symulowanie prawego przycisku"
-
 #. small threshold
-#: ../panels/mouse/gnome-mouse-properties.ui.h:41
+#: ../panels/mouse/gnome-mouse-properties.ui.h:28
 #: ../panels/universal-access/uap.ui.h:76
 msgid "Small"
 msgstr "Mały"
 
-#: ../panels/mouse/gnome-mouse-properties.ui.h:42
+#: ../panels/mouse/gnome-mouse-properties.ui.h:29
 msgid "Thr_eshold:"
 msgstr "_Próg:"
 
-#: ../panels/mouse/gnome-mouse-properties.ui.h:43
+#: ../panels/mouse/gnome-mouse-properties.ui.h:30
 #, fuzzy
 #| msgid ""
 #| "To test your double-click settings, try to double-click on the light bulb."
@@ -1141,61 +1400,37 @@ msgstr ""
 "Aby przetestować nowe ustawienia podwójnego kliknięcia należy kliknąć "
 "dwukrotnie żarówkę."
 
-#: ../panels/mouse/gnome-mouse-properties.ui.h:44
+#: ../panels/mouse/gnome-mouse-properties.ui.h:31
 msgid "Touchpad"
 msgstr "Panel dotykowy"
 
-#: ../panels/mouse/gnome-mouse-properties.ui.h:45
+#: ../panels/mouse/gnome-mouse-properties.ui.h:32
 msgid "Two-_finger scrolling"
 msgstr "P_rzewijanie dwoma palcami"
 
-#. Dwell Click = Clicking without hardware buttons (by letting the pointer sit on the click target for a certain amount of time)
-#: ../panels/mouse/gnome-mouse-properties.ui.h:47
-msgid "You can also use the Dwell Click panel applet to choose the click type."
-msgstr ""
-"Można również użyć apletu klikania spoczynkowego, by wybrać odpowiedni "
-"rodzaj kliknięcia."
-
-#: ../panels/mouse/gnome-mouse-properties.ui.h:50
+#: ../panels/mouse/gnome-mouse-properties.ui.h:34
 msgid "_Disabled"
 msgstr "_Wyłączone"
 
-#: ../panels/mouse/gnome-mouse-properties.ui.h:51
+#: ../panels/mouse/gnome-mouse-properties.ui.h:35
 msgid "_Edge scrolling"
 msgstr "Prz_ewijanie przy krawędziach"
 
-#: ../panels/mouse/gnome-mouse-properties.ui.h:52
-msgid "_Initiate click when stopping pointer movement"
-msgstr "Inicjowanie kliknięcia po _zatrzymaniu kursora"
-
-#: ../panels/mouse/gnome-mouse-properties.ui.h:53
+#: ../panels/mouse/gnome-mouse-properties.ui.h:36
 msgid "_Left-handed"
 msgstr "Dla l_eworęcznych"
 
-#: ../panels/mouse/gnome-mouse-properties.ui.h:54
-#: ../panels/universal-access/uap.ui.h:96
-msgid "_Motion threshold:"
-msgstr "Próg prz_esunięcia:"
-
-#: ../panels/mouse/gnome-mouse-properties.ui.h:55
+#: ../panels/mouse/gnome-mouse-properties.ui.h:37
 msgid "_Right-handed"
 msgstr "Dla p_raworęcznych"
 
-#: ../panels/mouse/gnome-mouse-properties.ui.h:56
+#: ../panels/mouse/gnome-mouse-properties.ui.h:38
 msgid "_Sensitivity:"
 msgstr "Cz_ułość:"
 
-#: ../panels/mouse/gnome-mouse-properties.ui.h:57
-msgid "_Single click:"
-msgstr "_Pojedyncze kliknięcie:"
-
-#: ../panels/mouse/gnome-mouse-properties.ui.h:58
+#: ../panels/mouse/gnome-mouse-properties.ui.h:39
 msgid "_Timeout:"
 msgstr "_Opóźnienie:"
-
-#: ../panels/mouse/gnome-mouse-properties.ui.h:59
-msgid "_Trigger secondary click by holding down the primary button"
-msgstr "_Wywoływanie kliknięcia prawego przycisku przy przytrzymaniu lewego"
 
 #: ../panels/mouse/gnome-mouse-panel.desktop.in.in.h:1
 #, fuzzy
@@ -1483,6 +1718,23 @@ msgstr ""
 msgid "Username:"
 msgstr "Nazwa użytkownika:"
 
+#: ../panels/network/network.ui.h:25
+msgctxt "proxy method"
+msgid "Automatic"
+msgstr ""
+
+#: ../panels/network/network.ui.h:26
+msgctxt "proxy method"
+msgid "Manual"
+msgstr ""
+
+#: ../panels/network/network.ui.h:27
+#, fuzzy
+#| msgid "None"
+msgctxt "proxy method"
+msgid "None"
+msgstr "Brak"
+
 #: ../panels/power/gnome-power-panel.desktop.in.in.h:1
 #, fuzzy
 #| msgid "Pointer"
@@ -1582,6 +1834,80 @@ msgstr ""
 msgid "%.0lf%% charged"
 msgstr ""
 
+#: ../panels/power/power.ui.h:1 ../panels/screen/screen.ui.h:1
+msgid "1 hour"
+msgstr ""
+
+#: ../panels/power/power.ui.h:2 ../panels/screen/screen.ui.h:3
+#, fuzzy
+#| msgid "minutes"
+msgid "10 minutes"
+msgstr "minut"
+
+#: ../panels/power/power.ui.h:3 ../panels/screen/screen.ui.h:6
+#, fuzzy
+#| msgid "minutes"
+msgid "30 minutes"
+msgstr "minut"
+
+#: ../panels/power/power.ui.h:4 ../panels/screen/screen.ui.h:7
+#, fuzzy
+#| msgid "minutes"
+msgid "5 minutes"
+msgstr "minut"
+
+#: ../panels/power/power.ui.h:5
+msgid "AC power and inactive for:"
+msgstr ""
+
+#: ../panels/power/power.ui.h:6
+msgid "Ask me"
+msgstr ""
+
+#: ../panels/power/power.ui.h:7
+msgid "Battery power and inactive for:"
+msgstr ""
+
+#: ../panels/power/power.ui.h:8
+#, fuzzy
+#| msgid "Smoothing"
+msgid "Do nothing"
+msgstr "Wygładzanie"
+
+#: ../panels/power/power.ui.h:9
+msgid "Hibernate"
+msgstr ""
+
+#: ../panels/power/power.ui.h:10
+msgid "Put the computer to sleep when inactive for:"
+msgstr ""
+
+#: ../panels/power/power.ui.h:11
+msgid "Put the computer to sleep when on:"
+msgstr ""
+
+#: ../panels/power/power.ui.h:12
+msgid "Shutdown"
+msgstr ""
+
+#: ../panels/power/power.ui.h:13
+#, fuzzy
+#| msgid "Sound"
+msgid "Suspend"
+msgstr "Dźwięk"
+
+#: ../panels/power/power.ui.h:14
+msgid "When power is critically low:"
+msgstr ""
+
+#: ../panels/power/power.ui.h:15
+msgid "When the power button is pressed:"
+msgstr ""
+
+#: ../panels/power/power.ui.h:16
+msgid "When the sleep button is pressed:"
+msgstr ""
+
 #. Translators: those are keywords for the brightness and lock control-center panel
 #: ../panels/screen/gnome-screen-panel.desktop.in.in.h:2
 msgid "Brightness;Lock;Dim;Blank;"
@@ -1595,6 +1921,58 @@ msgstr "Powielenie ekranu"
 
 #: ../panels/screen/gnome-screen-panel.desktop.in.in.h:4
 msgid "Screen brightness and lock settings"
+msgstr ""
+
+#: ../panels/screen/screen.ui.h:2
+#, fuzzy
+#| msgid "minutes"
+msgid "1 minute"
+msgstr "minut"
+
+#: ../panels/screen/screen.ui.h:4
+#, fuzzy
+#| msgid "minutes"
+msgid "2 minutes"
+msgstr "minut"
+
+#: ../panels/screen/screen.ui.h:5
+#, fuzzy
+#| msgid "minutes"
+msgid "3 minutes"
+msgstr "minut"
+
+#: ../panels/screen/screen.ui.h:8
+msgid "Brightness"
+msgstr ""
+
+#: ../panels/screen/screen.ui.h:9
+msgid "Dim screen to save power"
+msgstr ""
+
+#: ../panels/screen/screen.ui.h:10
+msgid "Don't lock when at home"
+msgstr ""
+
+#: ../panels/screen/screen.ui.h:11
+#, fuzzy
+#| msgid "New Location..."
+msgid "Locations..."
+msgstr "Nowe położenie..."
+
+#: ../panels/screen/screen.ui.h:12 ../panels/user-accounts/um-lockbutton.c:355
+msgid "Lock"
+msgstr ""
+
+#: ../panels/screen/screen.ui.h:13
+msgid "Lock screen after:"
+msgstr ""
+
+#: ../panels/screen/screen.ui.h:14
+msgid "Screen turns off"
+msgstr ""
+
+#: ../panels/screen/screen.ui.h:15
+msgid "Turn off after:"
 msgstr ""
 
 #: ../panels/sound/applet-main.c:49
@@ -1611,7 +1989,7 @@ msgstr "Otwórz za pomocą domyślnego programu"
 msgid " — GNOME Volume Control Applet"
 msgstr ""
 
-#: ../panels/sound/gvc-applet.c:276 ../panels/sound/gvc-mixer-dialog.c:1921
+#: ../panels/sound/gvc-applet.c:276 ../panels/sound/gvc-mixer-dialog.c:1922
 #, fuzzy
 #| msgid "Mutt"
 msgid "Output"
@@ -1621,7 +1999,7 @@ msgstr "Mutt"
 msgid "Sound Output Volume"
 msgstr ""
 
-#: ../panels/sound/gvc-applet.c:282 ../panels/sound/gvc-mixer-dialog.c:1838
+#: ../panels/sound/gvc-applet.c:282 ../panels/sound/gvc-mixer-dialog.c:1839
 msgid "Input"
 msgstr ""
 
@@ -1701,7 +2079,7 @@ msgstr ""
 msgid "Mute"
 msgstr "Mutt"
 
-#: ../panels/sound/gvc-combo-box.c:167 ../panels/sound/gvc-mixer-dialog.c:1629
+#: ../panels/sound/gvc-combo-box.c:167 ../panels/sound/gvc-mixer-dialog.c:1630
 #, fuzzy
 #| msgid "_Mobile:"
 msgid "_Profile:"
@@ -1744,79 +2122,79 @@ msgstr "K_raj:"
 msgid "Peak detect"
 msgstr ""
 
-#: ../panels/sound/gvc-mixer-dialog.c:1506
-#: ../panels/sound/gvc-mixer-dialog.c:1717
+#: ../panels/sound/gvc-mixer-dialog.c:1507
+#: ../panels/sound/gvc-mixer-dialog.c:1718
 #: ../panels/sound/gvc-sound-theme-chooser.c:599
 #, fuzzy
 #| msgid "Name:"
 msgid "Name"
 msgstr "Nazwa:"
 
-#: ../panels/sound/gvc-mixer-dialog.c:1524
+#: ../panels/sound/gvc-mixer-dialog.c:1525
 msgid "Device"
 msgstr ""
 
-#: ../panels/sound/gvc-mixer-dialog.c:1572
+#: ../panels/sound/gvc-mixer-dialog.c:1573
 #, c-format
 msgid "Speaker Testing for %s"
 msgstr ""
 
-#: ../panels/sound/gvc-mixer-dialog.c:1630
+#: ../panels/sound/gvc-mixer-dialog.c:1631
 msgid "Test Speakers"
 msgstr ""
 
-#: ../panels/sound/gvc-mixer-dialog.c:1761
+#: ../panels/sound/gvc-mixer-dialog.c:1762
 msgid "_Output volume: "
 msgstr ""
 
-#: ../panels/sound/gvc-mixer-dialog.c:1775
+#: ../panels/sound/gvc-mixer-dialog.c:1776
 msgid "Sound Effects"
 msgstr ""
 
-#: ../panels/sound/gvc-mixer-dialog.c:1782
+#: ../panels/sound/gvc-mixer-dialog.c:1783
 msgid "_Alert volume: "
 msgstr ""
 
-#: ../panels/sound/gvc-mixer-dialog.c:1795
+#: ../panels/sound/gvc-mixer-dialog.c:1796
 msgid "Hardware"
 msgstr ""
 
-#: ../panels/sound/gvc-mixer-dialog.c:1800
+#: ../panels/sound/gvc-mixer-dialog.c:1801
 msgid "C_hoose a device to configure:"
 msgstr ""
 
-#: ../panels/sound/gvc-mixer-dialog.c:1827
-#: ../panels/sound/gvc-mixer-dialog.c:1950
+#: ../panels/sound/gvc-mixer-dialog.c:1828
+#: ../panels/sound/gvc-mixer-dialog.c:1951
 msgid "Settings for the selected device:"
 msgstr ""
 
-#: ../panels/sound/gvc-mixer-dialog.c:1845
+#: ../panels/sound/gvc-mixer-dialog.c:1846
 #, fuzzy
 #| msgid "_Input boxes:"
 msgid "_Input volume: "
 msgstr "_Pola wejściowe:"
 
-#: ../panels/sound/gvc-mixer-dialog.c:1868
+#: ../panels/sound/gvc-mixer-dialog.c:1869
 #, fuzzy
 #| msgid "_Input boxes:"
 msgid "Input level:"
 msgstr "_Pola wejściowe:"
 
-#: ../panels/sound/gvc-mixer-dialog.c:1894
+#: ../panels/sound/gvc-mixer-dialog.c:1895
 msgid "C_hoose a device for sound input:"
 msgstr ""
 
-#: ../panels/sound/gvc-mixer-dialog.c:1926
+#: ../panels/sound/gvc-mixer-dialog.c:1927
 msgid "C_hoose a device for sound output:"
 msgstr ""
 
-#: ../panels/sound/gvc-mixer-dialog.c:1961
+#: ../panels/sound/gvc-mixer-dialog.c:1962
 #, fuzzy
 #| msgid "_Application font:"
 msgid "Applications"
 msgstr "Czcionk_a używana przez programy:"
 
-#: ../panels/sound/gvc-mixer-dialog.c:1965
+#: ../panels/sound/gvc-mixer-dialog.c:1966
 msgid "No application is currently playing or recording audio."
 msgstr ""
 
@@ -1908,6 +2286,10 @@ msgstr ""
 #: ../panels/sound/data/gnome-sound-panel.desktop.in.in.h:3
 msgid "Change sound volume and sound events"
 msgstr ""
+
+#: ../panels/sound/data/gnome-sound-panel.desktop.in.in.h:4
+msgid "Sound"
+msgstr "Dźwięk"
 
 #. Translators: This is the name of an audio file that sounds like the bark of a dog.
 #. You might want to translate it into the equivalent words of your language.
@@ -2064,6 +2446,10 @@ msgstr ""
 #: ../panels/universal-access/uap.ui.h:27
 msgid "Ctrl+Alt+="
 msgstr ""
+
+#: ../panels/universal-access/uap.ui.h:29
+msgid "D_elay:"
+msgstr "Opóź_nienie:"
 
 #: ../panels/universal-access/uap.ui.h:30
 msgid "Dasher"
@@ -2230,6 +2616,10 @@ msgstr ""
 msgid "Show Universal Access status"
 msgstr ""
 
+#: ../panels/universal-access/uap.ui.h:73
+msgid "Simulated Secondary Click"
+msgstr "Symulowanie prawego przycisku"
+
 #: ../panels/universal-access/uap.ui.h:74
 msgid "Slow Keys"
 msgstr "Powolne klawisze"
@@ -2325,6 +2715,10 @@ msgstr "Powiększenie"
 #| msgid "Zoom"
 msgid "Zoom out:"
 msgstr "Powiększenie"
+
+#: ../panels/universal-access/uap.ui.h:96
+msgid "_Motion threshold:"
+msgstr "Próg prz_esunięcia:"
 
 #: ../panels/universal-access/uap.ui.h:97
 msgid "accepted"
@@ -2561,10 +2955,6 @@ msgstr ""
 #| msgid "Other"
 msgid "Other..."
 msgstr "Inne"
-
-#: ../panels/user-accounts/um-lockbutton.c:355
-msgid "Lock"
-msgstr ""
 
 #: ../panels/user-accounts/um-lockbutton.c:373
 msgid "Locked"
@@ -2883,11 +3273,6 @@ msgstr "Imię i nazwisko"
 msgid "_Username:"
 msgstr "Nazwa użytkownika:"
 
-#: ../panels/user-accounts/data/language-chooser.ui.h:1
-#: ../panels/user-accounts/data/photo-dialog.ui.h:3
-msgid "Cancel"
-msgstr ""
-
 #: ../panels/user-accounts/data/password-dialog.ui.h:1
 msgid ""
 "<a href=\"http://wolfram.org/writing/howto/password.html\">How to choose a "
@@ -3062,10 +3447,6 @@ msgstr "Włączenie logowania za pomocą odcisku palca"
 msgid "Language:"
 msgstr "Ję_zyk:"
 
-#: ../panels/user-accounts/data/user-accounts-dialog.ui.h:18
-msgid "Location:"
-msgstr "Położenie:"
-
 #: ../panels/user-accounts/data/user-accounts-dialog.ui.h:19
 msgid "Login Options"
 msgstr ""
@@ -3180,19 +3561,6 @@ msgstr ""
 #: ../shell/gnomecc.directory.in.h:1
 msgid "Control Center"
 msgstr "Centrum sterowania"
-
-#: ../examples/gnome-example-panel.desktop.in.in.h:1
-msgid "Example Panel"
-msgstr ""
-
-#: ../examples/gnome-example-panel.desktop.in.in.h:2
-msgid "Example preferences panel"
-msgstr ""
-
-#. Translators: those are keywords for the example control-center panel
-#: ../examples/gnome-example-panel.desktop.in.in.h:4
-msgid "Foo;Bar;Baz;"
-msgstr ""
 
 #: ../shell/shell.ui.h:2
 msgid "_All Settings"
