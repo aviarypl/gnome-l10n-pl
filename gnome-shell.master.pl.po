@@ -9,8 +9,8 @@ msgstr ""
 "Project-Id-Version: gnome-shell\n"
 "Report-Msgid-Bugs-To: http://bugzilla.gnome.org/enter_bug.cgi?product=gnome-"
 "shell&component=general\n"
-"POT-Creation-Date: 2011-01-29 18:34+0000\n"
-"PO-Revision-Date: 2011-01-29 21:28+0100\n"
+"POT-Creation-Date: 2011-02-02 12:03+0000\n"
+"PO-Revision-Date: 2011-02-02 17:28+0100\n"
 "Last-Translator: Piotr Drąg <piotrdrag@gmail.com>\n"
 "Language-Team: Polish <gnomepl@aviary.pl>\n"
 "Language: pl\n"
@@ -387,9 +387,157 @@ msgid "%s has been removed from your favorites."
 msgstr "Program %s został usunięty z ulubionych."
 
 # pd
+#. Translators: Shown in calendar event list for all day events
+#: ../js/ui/calendar.js:62
+msgid "All Day"
+msgstr "Cały dzień"
+
+# pd
+#. Translators: Calendar grid abbreviation for Sunday.
+#. *
+#. * NOTE: These abbreviations are always shown together and in
+#. * order, e.g. "S M T W T F S".
+#.
+#. Translators: Calendar grid abbreviation for Saturday
+#. Translators: Event list abbreviation for Saturday
+#: ../js/ui/calendar.js:112 ../js/ui/calendar.js:124 ../js/ui/calendar.js:149
+msgid "S"
+msgstr "N"
+
+# pd
+#. Translators: Calendar grid abbreviation for Monday
+#. Translators: Event list abbreviation for Monday
+#: ../js/ui/calendar.js:114 ../js/ui/calendar.js:139
+msgid "M"
+msgstr "P"
+
+# pd
+#. Translators: Calendar grid abbreviation for Tuesday
+#. Translators: Calendar grid abbreviation for Thursday
+#. Translators: Event list abbreviation for Tuesday
+#: ../js/ui/calendar.js:116 ../js/ui/calendar.js:120 ../js/ui/calendar.js:141
+msgid "T"
+msgstr "W"
+
+# pd
+#. Translators: Calendar grid abbreviation for Wednesday
+#. Translators: Event list abbreviation for Wednesday
+#: ../js/ui/calendar.js:118 ../js/ui/calendar.js:143
+msgid "W"
+msgstr "Ś"
+
+# pd
+#. Translators: Calendar grid abbreviation for Friday
+#. Translators: Event list abbreviation for Friday
+#: ../js/ui/calendar.js:122 ../js/ui/calendar.js:147
+msgid "F"
+msgstr "P"
+
+# pd
+#. Translators: Event list abbreviation for Sunday.
+#. *
+#. * NOTE: These abbreviations are normally not shown together
+#. * so they need to be unique (e.g. Tuesday and Thursday cannot
+#. * both be 'T').
+#.
+#: ../js/ui/calendar.js:137
+msgid "Su"
+msgstr "Ni"
+
+# pd
+#. Translators: Event list abbreviation for Thursday
+#: ../js/ui/calendar.js:145
+msgid "Th"
+msgstr "Cz"
+
+# pd
+#. Translators: Text to show if there are no events
+#: ../js/ui/calendar.js:696
+msgid "Nothing Scheduled"
+msgstr "Nic nie zaplanowano"
+
+# pd
+#: ../js/ui/calendar.js:723
+msgid "Today"
+msgstr "Dzisiaj"
+
+# pd
+#: ../js/ui/calendar.js:727
+msgid "Tomorrow"
+msgstr "Jutro"
+
+# pd
+#: ../js/ui/calendar.js:736
+msgid "This week"
+msgstr "Ten tydzień"
+
+# pd
+#: ../js/ui/calendar.js:744
+msgid "Next week"
+msgstr "Następny tydzień"
+
+# pd
 #: ../js/ui/dash.js:27
 msgid "Remove"
 msgstr "Usuń"
+
+# pd
+#: ../js/ui/dateMenu.js:91
+msgid "Date and Time Settings"
+msgstr "Ustawienia daty i czasu"
+
+# pd
+#: ../js/ui/dateMenu.js:110
+msgid "Open Calendar"
+msgstr "Otwórz kalendarz"
+
+#. Translators: This is the time format with date used
+#. in 24-hour mode.
+#: ../js/ui/dateMenu.js:149
+msgid "%a %b %e, %R:%S"
+msgstr "%a %e %b, %R:%S"
+
+#: ../js/ui/dateMenu.js:150
+msgid "%a %b %e, %R"
+msgstr "%a %e %b, %R"
+
+#. Translators: This is the time format without date used
+#. in 24-hour mode.
+#: ../js/ui/dateMenu.js:154
+msgid "%a %R:%S"
+msgstr "%a, %R:%S"
+
+#: ../js/ui/dateMenu.js:155
+msgid "%a %R"
+msgstr "%a, %R"
+
+#. Translators: This is a time format with date used
+#. for AM/PM.
+#: ../js/ui/dateMenu.js:162
+msgid "%a %b %e, %l:%M:%S %p"
+msgstr "%a %e %b, %H:%M:%S %p"
+
+#: ../js/ui/dateMenu.js:163
+msgid "%a %b %e, %l:%M %p"
+msgstr "%a %e %b, %l:%M %p"
+
+#. Translators: This is a time format without date used
+#. for AM/PM.
+#: ../js/ui/dateMenu.js:167
+msgid "%a %l:%M:%S %p"
+msgstr "%a, %l:%M:%S %p"
+
+#: ../js/ui/dateMenu.js:168
+msgid "%a %l:%M %p"
+msgstr "%a, %l:%M %p"
+
+# pd
+#. Translators: This is the date format to use when the calendar popup is
+#. * shown - it is shown just below the time in the shell (e.g. "Tue 9:29 AM").
+#.
+#: ../js/ui/dateMenu.js:194
+msgid "%A %B %e, %Y"
+msgstr "%A %e %B, %Y"
 
 #: ../js/ui/docDisplay.js:18
 msgid "RECENT ITEMS"
@@ -514,7 +662,7 @@ msgid "Web Page"
 msgstr "Strona WWW"
 
 # pd
-#: ../js/ui/messageTray.js:1778
+#: ../js/ui/messageTray.js:1809
 msgid "System Information"
 msgstr "Informacje systemowe"
 
@@ -533,54 +681,14 @@ msgid "Applications"
 msgstr "Programy"
 
 #. TODO - _quit() doesn't really work on apps in state STARTING yet
-#: ../js/ui/panel.js:479
+#: ../js/ui/panel.js:480
 #, c-format
 msgid "Quit %s"
 msgstr "Zakończ program %s"
 
-#. Translators: This is the time format with date used
-#. in 24-hour mode.
-#: ../js/ui/panel.js:564
-msgid "%a %b %e, %R:%S"
-msgstr "%a %e %b, %R:%S"
-
-#: ../js/ui/panel.js:565
-msgid "%a %b %e, %R"
-msgstr "%a %e %b, %R"
-
-#. Translators: This is the time format without date used
-#. in 24-hour mode.
-#: ../js/ui/panel.js:569
-msgid "%a %R:%S"
-msgstr "%a, %R:%S"
-
-#: ../js/ui/panel.js:570
-msgid "%a %R"
-msgstr "%a, %R"
-
-#. Translators: This is a time format with date used
-#. for AM/PM.
-#: ../js/ui/panel.js:577
-msgid "%a %b %e, %l:%M:%S %p"
-msgstr "%a %e %b, %H:%M:%S %p"
-
-#: ../js/ui/panel.js:578
-msgid "%a %b %e, %l:%M %p"
-msgstr "%a %e %b, %l:%M %p"
-
-#. Translators: This is a time format without date used
-#. for AM/PM.
-#: ../js/ui/panel.js:582
-msgid "%a %l:%M:%S %p"
-msgstr "%a, %l:%M:%S %p"
-
-#: ../js/ui/panel.js:583
-msgid "%a %l:%M %p"
-msgstr "%a, %l:%M %p"
-
 #. Button on the left side of the panel.
 #. Translators: If there is no suitable word for "Activities" in your language, you can use the word for "Overview".
-#: ../js/ui/panel.js:728
+#: ../js/ui/panel.js:614
 msgid "Activities"
 msgstr "Podgląd"
 
@@ -973,25 +1081,25 @@ msgid "Microphone"
 msgstr "Mikrofon"
 
 # pd
-#: ../js/ui/telepathyClient.js:561
+#: ../js/ui/telepathyClient.js:563
 #, c-format
 msgid "%s is online."
 msgstr "Użytkownik %s jest online."
 
 # pd
-#: ../js/ui/telepathyClient.js:566
+#: ../js/ui/telepathyClient.js:568
 #, c-format
 msgid "%s is offline."
 msgstr "Użytkownik %s jest offline."
 
 # pd
-#: ../js/ui/telepathyClient.js:569
+#: ../js/ui/telepathyClient.js:571
 #, c-format
 msgid "%s is away."
 msgstr "Użytkownik %s jest nieobecny."
 
 # pd
-#: ../js/ui/telepathyClient.js:572
+#: ../js/ui/telepathyClient.js:574
 #, c-format
 msgid "%s is busy."
 msgstr "Użytkownik %s jest zajęty."
@@ -1000,7 +1108,7 @@ msgstr "Użytkownik %s jest zajęty."
 #. Translators: this is a time format string followed by a date.
 #. If applicable, replace %X with a strftime format valid for your
 #. locale, without seconds.
-#: ../js/ui/telepathyClient.js:666
+#: ../js/ui/telepathyClient.js:668
 #, no-c-format
 msgid "Sent at %X on %A"
 msgstr "Wysłano o %H:%M w dniu %e %b"
