@@ -9,8 +9,8 @@ msgstr ""
 "Project-Id-Version: gnome-control-center\n"
 "Report-Msgid-Bugs-To: http://bugzilla.gnome.org/enter_bug.cgi?product=gnome-"
 "control-center&component=general\n"
-"POT-Creation-Date: 2011-02-28 05:14+0000\n"
-"PO-Revision-Date: 2011-02-28 06:18+0100\n"
+"POT-Creation-Date: 2011-03-02 00:20+0000\n"
+"PO-Revision-Date: 2011-03-02 11:57+0100\n"
 "Last-Translator: Piotr Drąg <piotrdrag@gmail.com>\n"
 "Language-Team: Polish <gnomepl@aviary.pl>\n"
 "Language: pl\n"
@@ -248,7 +248,6 @@ msgid "Tile"
 msgstr "Sąsiadująco"
 
 #: ../panels/background/background.ui.h:8
-#: ../panels/universal-access/uap.ui.h:83
 msgid "Zoom"
 msgstr "Powiększenie"
 
@@ -455,12 +454,13 @@ msgstr "Lewo"
 msgid "Monitor"
 msgstr "Monitor"
 
+# pd
 #: ../panels/display/display-capplet.ui.h:3
 #: ../panels/display/xrandr-capplet.c:333
 #: ../panels/display/xrandr-capplet.c:372
-#: ../panels/universal-access/uap.ui.h:53
+#: ../panels/universal-access/uap.ui.h:44
 msgid "Normal"
-msgstr "Normalnie"
+msgstr "Zwykły"
 
 # pd
 #: ../panels/display/display-capplet.ui.h:4
@@ -589,15 +589,29 @@ msgid "Could not get screen information"
 msgstr "Nie można uzyskać informacji o rozdzielczości ekranu"
 
 # pd
-#. translators: This is the type of architecture, for example:
-#. * "64-bit" or "32-bit"
-#: ../panels/info/cc-info-panel.c:479
+#. Translators: VESA is an techncial acronym, don't translate it.
+#: ../panels/info/cc-info-panel.c:364
 #, c-format
-msgid "%d-bit"
-msgstr "%d bity"
+msgid "VESA: %s"
+msgstr "VESA: %s"
+
+#. TRANSLATORS: device type
+#. TRANSLATORS: AP type
+#: ../panels/info/cc-info-panel.c:388 ../panels/network/panel-common.c:72
+#: ../panels/network/panel-common.c:151
+msgid "Unknown"
+msgstr "Nieznany"
 
 # pd
-#: ../panels/info/cc-info-panel.c:493
+#. translators: This is the type of architecture, for example:
+#. * "64-bit" or "32-bit"
+#: ../panels/info/cc-info-panel.c:526
+#, c-format
+msgid "%d-bit"
+msgstr "%d bitowy"
+
+# pd
+#: ../panels/info/cc-info-panel.c:540
 #, c-format
 msgid "%u byte"
 msgid_plural "%u bytes"
@@ -606,97 +620,101 @@ msgstr[1] "%u bajty"
 msgstr[2] "%u bajtów"
 
 # pd
-#: ../panels/info/cc-info-panel.c:501
+#: ../panels/info/cc-info-panel.c:548
 #, c-format
 msgid "%.1f KB"
 msgstr "%.1f KB"
 
 # pd
-#: ../panels/info/cc-info-panel.c:506
+#: ../panels/info/cc-info-panel.c:553
 #, c-format
 msgid "%.1f MB"
 msgstr "%.1f MB"
 
 # pd
-#: ../panels/info/cc-info-panel.c:511
+#: ../panels/info/cc-info-panel.c:558
 #, c-format
 msgid "%.1f GB"
 msgstr "%.1f GB"
 
 # pd
-#: ../panels/info/cc-info-panel.c:516
+#: ../panels/info/cc-info-panel.c:563
 #, c-format
 msgid "%.1f TB"
 msgstr "%.1f TB"
 
 # pd
-#: ../panels/info/cc-info-panel.c:521
+#: ../panels/info/cc-info-panel.c:568
 #, c-format
 msgid "%.1f PB"
 msgstr "%.1f PB"
 
 # pd
-#: ../panels/info/cc-info-panel.c:526
+#: ../panels/info/cc-info-panel.c:573
 #, c-format
 msgid "%.1f EB"
 msgstr "%.1f EB"
 
 # pd
-#: ../panels/info/cc-info-panel.c:637
+#: ../panels/info/cc-info-panel.c:684
 msgid "Unknown model"
 msgstr "Nieznany model"
 
 # pd
-#: ../panels/info/cc-info-panel.c:720
+#: ../panels/info/cc-info-panel.c:767
 msgid "The next login will attempt to use the standard experience."
 msgstr ""
+"Podczas następnego logowania zostanie użyty standardowy interfejs "
+"użytkownika."
 
 # pd
-#: ../panels/info/cc-info-panel.c:722
+#: ../panels/info/cc-info-panel.c:769
 msgid ""
 "The next login will use the fallback mode intended for unsupported graphics "
 "hardware."
 msgstr ""
+"Podczas następnego logowania zostanie użyty tryb zastępczy, przeznaczony dla "
+"nieobsługiwanego sprzętu graficznego."
 
 # pd
 #. translators: The hardware is not able to run GNOME 3's
 #. * shell, so we use the GNOME "Fallback" session
-#: ../panels/info/cc-info-panel.c:771
+#: ../panels/info/cc-info-panel.c:811
 msgctxt "Experience"
 msgid "Fallback"
-msgstr ""
+msgstr "Zastępczy"
 
 # pd
 #. translators: The hardware is able to run GNOME 3's
 #. * shell, also called "Standard" experience
-#: ../panels/info/cc-info-panel.c:777
+#: ../panels/info/cc-info-panel.c:817
 msgctxt "Experience"
 msgid "Standard"
-msgstr ""
+msgstr "Standardowy"
 
 # pd
-#: ../panels/info/cc-info-panel.c:909
+#: ../panels/info/cc-info-panel.c:949
 #: ../panels/keyboard/keyboard-shortcuts.c:1711
 msgid "Section"
 msgstr "Sekcja"
 
 # pd
-#: ../panels/info/cc-info-panel.c:918 ../panels/info/info.ui.h:14
+#: ../panels/info/cc-info-panel.c:958 ../panels/info/info.ui.h:14
 msgid "Overview"
 msgstr "Przegląd"
 
 # pd
-#: ../panels/info/cc-info-panel.c:924 ../panels/info/info.ui.h:3
+#: ../panels/info/cc-info-panel.c:964 ../panels/info/info.ui.h:3
 msgid "Default Applications"
 msgstr "Domyślne programy"
 
 # pd
-#: ../panels/info/cc-info-panel.c:929 ../panels/info/info.ui.h:9
+#: ../panels/info/cc-info-panel.c:969 ../panels/info/info.ui.h:9
 msgid "Graphics"
 msgstr "Grafika"
 
 # pd
-#: ../panels/info/cc-info-panel.c:954
+#: ../panels/info/cc-info-panel.c:994
 #, c-format
 msgid "Version %s"
 msgstr "Wersja %s"
@@ -725,7 +743,7 @@ msgstr "Kalendarz"
 # pd
 #: ../panels/info/info.ui.h:2
 msgid "Chipset"
-msgstr "Chipset"
+msgstr "Układ"
 
 # pd
 #: ../panels/info/info.ui.h:4
@@ -740,13 +758,13 @@ msgstr "Dysk"
 # pd
 #: ../panels/info/info.ui.h:6
 msgid "Experience"
-msgstr ""
+msgstr "Interfejs"
 
 # pd
 #. Hardware is not able to run GNOME 3's shell, so we might want to force running the 'Fallback' experience.
 #: ../panels/info/info.ui.h:8
 msgid "Forced Fallback Mode"
-msgstr ""
+msgstr "Wymuszenie trybu zastępczego"
 
 # pd
 #: ../panels/info/info.ui.h:10
@@ -1069,7 +1087,7 @@ msgstr "Miganie _kursora w polach tekstowych"
 
 #: ../panels/keyboard/gnome-keyboard-panel.ui.h:4
 #: ../panels/mouse/gnome-mouse-properties.ui.h:1
-#: ../panels/universal-access/uap.ui.h:23
+#: ../panels/universal-access/uap.ui.h:21
 msgid "Cursor blinks speed"
 msgstr "Szybkość migania kursora"
 
@@ -1095,7 +1113,7 @@ msgstr "Powtarza_nie naciśnięcia klawisza przy jego przytrzymaniu"
 #. long delay
 #: ../panels/keyboard/gnome-keyboard-panel.ui.h:10
 #: ../panels/mouse/gnome-mouse-properties.ui.h:15
-#: ../panels/universal-access/uap.ui.h:46
+#: ../panels/universal-access/uap.ui.h:39
 msgid "Long"
 msgstr "Długie"
 
@@ -1114,7 +1132,7 @@ msgstr "_Prędkość:"
 #. short delay
 #: ../panels/keyboard/gnome-keyboard-panel.ui.h:14
 #: ../panels/mouse/gnome-mouse-properties.ui.h:24
-#: ../panels/universal-access/uap.ui.h:63
+#: ../panels/universal-access/uap.ui.h:54
 msgid "Short"
 msgstr "Krótkie"
 
@@ -1804,15 +1822,16 @@ msgstr "_Kliknięcia myszy za pomocą panelu dotykowego"
 msgid "Enable h_orizontal scrolling"
 msgstr "Przewijanie w p_oziomie"
 
+# pd
 #. high sensitivity
 #: ../panels/mouse/gnome-mouse-properties.ui.h:11
-#: ../panels/universal-access/uap.ui.h:34
 msgid "High"
-msgstr "Wysoka"
+msgstr "Wysoki"
 
+# pd
 #. large threshold
 #: ../panels/mouse/gnome-mouse-properties.ui.h:13
-#: ../panels/universal-access/uap.ui.h:43
+#: ../panels/universal-access/uap.ui.h:36
 msgid "Large"
 msgstr "Duży"
 
@@ -1820,11 +1839,11 @@ msgstr "Duży"
 msgid "Locate Pointer"
 msgstr "Ustalenie położenia kursora"
 
+# pd
 #. low sensitivity
 #: ../panels/mouse/gnome-mouse-properties.ui.h:17
-#: ../panels/universal-access/uap.ui.h:47
 msgid "Low"
-msgstr "Nisko"
+msgstr "Niski"
 
 #: ../panels/mouse/gnome-mouse-properties.ui.h:18
 msgid "Mouse"
@@ -1852,7 +1871,7 @@ msgstr "Wyświetlanie pozycji _kursora po wciśnięciu klawisza Control"
 
 #. small threshold
 #: ../panels/mouse/gnome-mouse-properties.ui.h:28
-#: ../panels/universal-access/uap.ui.h:67
+#: ../panels/universal-access/uap.ui.h:58
 msgid "Small"
 msgstr "Mały"
 
@@ -1919,24 +1938,24 @@ msgstr ""
 "Trackpad;Wskaźnik;Kliknięcie;Puknięcie;Podwójne;Przycisk;Trackball;Touchpad"
 
 # pd
-#: ../panels/network/cc-network-panel.c:962
+#: ../panels/network/cc-network-panel.c:968
 msgid "Network proxy"
 msgstr "Pośrednik sieciowy"
 
 # pd
-#: ../panels/network/cc-network-panel.c:971
+#: ../panels/network/cc-network-panel.c:977
 msgid "Set the system proxy settings"
 msgstr "Ustawienia pośrednika systemowego"
 
 # pd
 #. TRANSLATORS: the user is running a NM that is too new and API compatible
-#: ../panels/network/cc-network-panel.c:1115
+#: ../panels/network/cc-network-panel.c:1121
 msgid "The running NetworkManager version is not compatible (too new)."
 msgstr "Uruchomiona wersja usługi NetworkManager nie jest zgodna (zbyt nowa)."
 
 # pd
 #. TRANSLATORS: the user is running a NM that is too old and API compatible
-#: ../panels/network/cc-network-panel.c:1121
+#: ../panels/network/cc-network-panel.c:1127
 msgid "The running NetworkManager version is not compatible (too old)."
 msgstr "Uruchomiona wersja usługi NetworkManager nie jest zgodna (zbyt stara)."
 
@@ -2089,129 +2108,123 @@ msgctxt "proxy method"
 msgid "None"
 msgstr "Brak"
 
-#. TRANSLATORS: device type
-#. TRANSLATORS: AP type
-#: ../panels/network/panel-common.c:64 ../panels/network/panel-common.c:136
-msgid "Unknown"
-msgstr "Nieznany"
-
 # pd
 #. TRANSLATORS: device type
-#: ../panels/network/panel-common.c:68
+#: ../panels/network/panel-common.c:76
 msgid "Wired"
 msgstr "Przewodowe"
 
 # pd
 #. TRANSLATORS: device type
-#: ../panels/network/panel-common.c:72
+#: ../panels/network/panel-common.c:80
 msgid "Wireless"
 msgstr "Bezprzewodowe"
 
 # pd
 #. TRANSLATORS: device type
-#: ../panels/network/panel-common.c:77
+#: ../panels/network/panel-common.c:87
 msgid "Mobile broadband"
 msgstr "Sieć komórkowa"
 
 # pd
 #. TRANSLATORS: device type
-#: ../panels/network/panel-common.c:81
+#: ../panels/network/panel-common.c:92
 msgid "Bluetooth"
 msgstr "Bluetooth"
 
 # pd
 #. TRANSLATORS: device type
-#: ../panels/network/panel-common.c:85
+#: ../panels/network/panel-common.c:96
 msgid "Mesh"
 msgstr "Sieć kratowa"
 
 # pd
 #. TRANSLATORS: AP type
-#: ../panels/network/panel-common.c:140
+#: ../panels/network/panel-common.c:155
 msgid "Ad-hoc"
 msgstr "Ad-hoc"
 
 # pd
 #. TRANSLATORS: AP type
-#: ../panels/network/panel-common.c:144
+#: ../panels/network/panel-common.c:159
 msgid "Infrastructure"
 msgstr "Infrastruktura"
 
 # pd
 #. TRANSLATORS: device status
-#: ../panels/network/panel-common.c:162
+#: ../panels/network/panel-common.c:177
 msgid "Status unknown"
 msgstr "Stan nieznany"
 
 # pd
 #. TRANSLATORS: device status
-#: ../panels/network/panel-common.c:166
+#: ../panels/network/panel-common.c:181
 msgid "Unmanaged"
 msgstr "Niezarządzane"
 
 # pd
 #. TRANSLATORS: device status
-#: ../panels/network/panel-common.c:170
+#: ../panels/network/panel-common.c:185
 msgid "Unavailable"
 msgstr "Niedostępne"
 
 # pd
 #. TRANSLATORS: device status
-#: ../panels/network/panel-common.c:174
+#: ../panels/network/panel-common.c:189
 msgid "Disconnected"
 msgstr "Rozłączone"
 
 # pd
 #. TRANSLATORS: device status
-#: ../panels/network/panel-common.c:178
+#: ../panels/network/panel-common.c:193
 msgid "Preparing connection"
 msgstr "Przygotowywanie połączenia"
 
 # pd
 #. TRANSLATORS: device status
-#: ../panels/network/panel-common.c:182
+#: ../panels/network/panel-common.c:197
 msgid "Configuring connection"
 msgstr "Konfigurowanie połączenia"
 
 # pd
 #. TRANSLATORS: device status
-#: ../panels/network/panel-common.c:186
+#: ../panels/network/panel-common.c:201
 msgid "Authenticating"
 msgstr "Uwierzytelnianie"
 
 # pd
 #. TRANSLATORS: device status
-#: ../panels/network/panel-common.c:190
+#: ../panels/network/panel-common.c:205
 msgid "Getting network address"
 msgstr "Uzyskiwanie adresu sieciowego"
 
 # pd
 #. TRANSLATORS: device status
-#: ../panels/network/panel-common.c:194
+#: ../panels/network/panel-common.c:209
 msgid "Checking network address"
 msgstr "Sprawdzanie adresu sieciowego"
 
 # pd
 #. TRANSLATORS: device status
-#: ../panels/network/panel-common.c:198
+#: ../panels/network/panel-common.c:213
 msgid "Connected"
 msgstr "Połączone"
 
 # pd
 #. TRANSLATORS: device status
-#: ../panels/network/panel-common.c:202
+#: ../panels/network/panel-common.c:217
 msgid "Disconnecting"
 msgstr "Rozłączanie"
 
 # pd
 #. TRANSLATORS: device status
-#: ../panels/network/panel-common.c:206
+#: ../panels/network/panel-common.c:221
 msgid "Failed to connect"
 msgstr "Połączenie się nie powiodło"
 
 # pd
 #. TRANSLATORS: device status
-#: ../panels/network/panel-common.c:210
+#: ../panels/network/panel-common.c:225
 msgid "Status unknown (missing)"
 msgstr "Stan nieznany (brak)"
 
@@ -2810,8 +2823,8 @@ msgid "Sonar"
 msgstr "Sonar"
 
 # pd
-#: ../panels/universal-access/cc-ua-panel.c:553
-#: ../panels/universal-access/cc-ua-panel.c:558
+#: ../panels/universal-access/cc-ua-panel.c:555
+#: ../panels/universal-access/cc-ua-panel.c:560
 msgid "No shortcut set"
 msgstr "Nie ustawiono żadnego skrótu"
 
@@ -2845,345 +2858,368 @@ msgid "150%"
 msgstr "150%"
 
 # pd
-#: ../panels/universal-access/uap.ui.h:7
-msgid "<span size=\"x-large\">High/Inverse</span>"
-msgstr "<span size=\"x-large\">Wysoki/Odwrócenie</span>"
-
-# pd
 #: ../panels/universal-access/uap.ui.h:8
-msgid "<span size=\"x-large\">High</span>"
-msgstr "<span size=\"x-large\">Wysoki</span>"
+#, no-c-format
+msgid "75%"
+msgstr "75%"
 
 # pd
 #: ../panels/universal-access/uap.ui.h:9
-msgid "<span size=\"x-large\">Low</span>"
-msgstr "<span size=\"x-large\">Niski</span>"
-
-# pd
-#: ../panels/universal-access/uap.ui.h:10
-msgid "<span size=\"x-large\">Normal</span>"
-msgstr "<span size=\"x-large\">Zwykły</span>"
-
-# pd
-#: ../panels/universal-access/uap.ui.h:11
 msgid "Acceptance delay:"
 msgstr "Opóźnienie akceptacji:"
 
 # pd
-#: ../panels/universal-access/uap.ui.h:12
+#: ../panels/universal-access/uap.ui.h:10
 msgid "Beep when Caps and Num Lock are used"
 msgstr "Sygnał dźwiękowy, kiedy używane są klawisze Caps Lock i Num Lock"
 
 # pd
-#: ../panels/universal-access/uap.ui.h:13
+#: ../panels/universal-access/uap.ui.h:11
 msgid "Beep when a key is"
 msgstr "Sygnał dźwiękowy przy przyciśnięciu klawisza"
 
 # pd
-#: ../panels/universal-access/uap.ui.h:14
+#: ../panels/universal-access/uap.ui.h:12
 msgid "Beep when a key is rejected"
 msgstr "Sygnał dźwiękowy przy odrzuceniu klawisza"
 
 # pd
-#: ../panels/universal-access/uap.ui.h:15
+#: ../panels/universal-access/uap.ui.h:13
 msgid "Beep when a modifer key is pressed"
 msgstr "Sygnał dźwiękowy przy przyciśnięciu klawisza modyfikacji"
 
-#: ../panels/universal-access/uap.ui.h:16
+#: ../panels/universal-access/uap.ui.h:14
 msgid "Bounce Keys"
 msgstr "Odskakujące klawisze"
 
 # pd
-#: ../panels/universal-access/uap.ui.h:17
+#: ../panels/universal-access/uap.ui.h:15
 msgid "Caribou"
 msgstr "Caribou"
 
 # pd
-#: ../panels/universal-access/uap.ui.h:18
+#: ../panels/universal-access/uap.ui.h:16
 msgid "Change contrast:"
 msgstr "Zmiana kontrastu:"
 
 # pd
-#: ../panels/universal-access/uap.ui.h:19
+#: ../panels/universal-access/uap.ui.h:17
 msgid "Closed Captioning"
 msgstr "Napisy"
 
 # pd
-#: ../panels/universal-access/uap.ui.h:20
+#: ../panels/universal-access/uap.ui.h:18
 msgid "Contrast:"
 msgstr "Kontrast:"
 
 # pd
-#: ../panels/universal-access/uap.ui.h:21
+#: ../panels/universal-access/uap.ui.h:19
 msgid "Control the pointer using the keypad"
 msgstr "Kontrolowanie wskaźnika używając klawiatury numerycznej"
 
 # pd
-#: ../panels/universal-access/uap.ui.h:22
+#: ../panels/universal-access/uap.ui.h:20
 msgid "Control the pointer using the video camera."
 msgstr "Kontrolowanie wskaźnika używając kamery wideo."
 
-#: ../panels/universal-access/uap.ui.h:24
+#: ../panels/universal-access/uap.ui.h:22
 msgid "D_elay:"
 msgstr "Opóź_nienie:"
 
-#: ../panels/universal-access/uap.ui.h:25
+#: ../panels/universal-access/uap.ui.h:23
 msgid "Dasher"
 msgstr "Dasher"
 
 # pd
-#: ../panels/universal-access/uap.ui.h:26
+#: ../panels/universal-access/uap.ui.h:24
 msgid "Decrease size:"
 msgstr "Zmniejszenie rozmiaru:"
 
 # pd
-#: ../panels/universal-access/uap.ui.h:27
+#: ../panels/universal-access/uap.ui.h:25
 msgid "Disable if two keys are pressed together"
 msgstr "Wyłączenie po jednoczesnym przyciśnięciu dwóch klawiszy"
 
 # pd
-#: ../panels/universal-access/uap.ui.h:28
-msgid "Display"
-msgstr "Wyświetlanie"
-
-# pd
-#: ../panels/universal-access/uap.ui.h:29
+#: ../panels/universal-access/uap.ui.h:26
 msgid "Display a textual description of speech and sounds"
 msgstr "Wyświetlanie tekstowego opisu mowy i dźwięków"
 
 # pd
-#: ../panels/universal-access/uap.ui.h:30
+#: ../panels/universal-access/uap.ui.h:27
 msgid "Flash the entire screen"
 msgstr "Miganie całym ekranem"
 
 # pd
-#: ../panels/universal-access/uap.ui.h:31
+#: ../panels/universal-access/uap.ui.h:28
 msgid "Flash the window title"
 msgstr "Miganie paskiem tytułu"
 
 # pd
-#: ../panels/universal-access/uap.ui.h:32
+#: ../panels/universal-access/uap.ui.h:29
 msgid "GOK"
 msgstr "GOK"
 
 # pd
-#: ../panels/universal-access/uap.ui.h:33
+#: ../panels/universal-access/uap.ui.h:30
 msgid "Hearing"
 msgstr "Słyszenie"
 
 # pd
-#: ../panels/universal-access/uap.ui.h:35
-msgid "High/Inverse"
-msgstr "Wysoki/odwrócony"
-
-# pd
-#: ../panels/universal-access/uap.ui.h:36
-msgid "HighContrast"
-msgstr "Wysoki kontrast"
-
-# pd
-#: ../panels/universal-access/uap.ui.h:37
-msgid "HighContrastInverse"
-msgstr "Wysoki kontrast, odwrócony"
-
-# pd
-#: ../panels/universal-access/uap.ui.h:38
+#: ../panels/universal-access/uap.ui.h:31
 msgid "Hover Click"
 msgstr "Klikanie po najechaniu"
 
 # pd
-#: ../panels/universal-access/uap.ui.h:39
+#: ../panels/universal-access/uap.ui.h:32
 msgid "Ignores fast duplicate keypresses"
 msgstr "Ignorowanie szybkich podwójnych wciśnięć klawiszy"
 
 # pd
-#: ../panels/universal-access/uap.ui.h:40
+#: ../panels/universal-access/uap.ui.h:33
 msgid "Increase size:"
 msgstr "Zwiększenie rozmiaru:"
 
 # pd
-#: ../panels/universal-access/uap.ui.h:41
+#: ../panels/universal-access/uap.ui.h:34
 msgid "Keyboard Settings"
 msgstr "Ustawienia klawiatury"
 
 # pd
-#: ../panels/universal-access/uap.ui.h:44
+#: ../panels/universal-access/uap.ui.h:37
 msgid "Larger"
 msgstr "Większy"
 
-# pd
-#: ../panels/universal-access/uap.ui.h:48
-msgid "LowContrast"
-msgstr "Niski kontrast"
-
-#: ../panels/universal-access/uap.ui.h:49
+#: ../panels/universal-access/uap.ui.h:40
 msgid "Mouse Keys"
 msgstr "Klawisze myszy"
 
 # pd
-#: ../panels/universal-access/uap.ui.h:50
+#: ../panels/universal-access/uap.ui.h:41
 msgid "Mouse Settings"
 msgstr "Ustawienia myszy"
 
 # pd
-#: ../panels/universal-access/uap.ui.h:51
+#: ../panels/universal-access/uap.ui.h:42
 msgid "Nomon"
 msgstr "Nomon"
 
-#: ../panels/universal-access/uap.ui.h:52
+#: ../panels/universal-access/uap.ui.h:43
 msgid "None"
 msgstr "Brak"
 
 # pd
-#: ../panels/universal-access/uap.ui.h:54
+#: ../panels/universal-access/uap.ui.h:45
 msgid "On screen keyboard"
 msgstr "Klawiatura ekranowa"
 
 # pd
-#: ../panels/universal-access/uap.ui.h:55
+#: ../panels/universal-access/uap.ui.h:46
 msgid "OnBoard"
 msgstr "OnBoard"
 
 # pd
-#: ../panels/universal-access/uap.ui.h:56
+#: ../panels/universal-access/uap.ui.h:47
 msgid "Options..."
 msgstr "Opcje..."
 
 # pd
-#: ../panels/universal-access/uap.ui.h:57
+#: ../panels/universal-access/uap.ui.h:48
 msgid "Pointing and Clicking"
 msgstr "Wskazywanie i klikanie"
 
 # pd
-#: ../panels/universal-access/uap.ui.h:58
+#: ../panels/universal-access/uap.ui.h:49
 msgid "Puts a delay between when a key is pressed and when it is accepted"
 msgstr "Umieszcza opóźnienie między wciśnięciem klawisza a jego akceptacją"
 
 # pd
-#: ../panels/universal-access/uap.ui.h:59
+#: ../panels/universal-access/uap.ui.h:50
 msgid "Screen Reader"
 msgstr "Czytnik ekranowy"
 
 # pd
-#: ../panels/universal-access/uap.ui.h:60
+#: ../panels/universal-access/uap.ui.h:51
 msgid "Screen keyboard"
 msgstr "Klawiatura ekranowa"
 
 # pd
-#: ../panels/universal-access/uap.ui.h:61
+#: ../panels/universal-access/uap.ui.h:52
 msgid "Seeing"
 msgstr "Widzenie"
 
-#: ../panels/universal-access/uap.ui.h:64
+#: ../panels/universal-access/uap.ui.h:55
 msgid "Simulated Secondary Click"
 msgstr "Symulowanie prawego przycisku"
 
-#: ../panels/universal-access/uap.ui.h:65
+#: ../panels/universal-access/uap.ui.h:56
 msgid "Slow Keys"
 msgstr "Powolne klawisze"
 
 # pd
-#: ../panels/universal-access/uap.ui.h:68
+#: ../panels/universal-access/uap.ui.h:59
 msgid "Sound Settings"
 msgstr "Ustawienia dźwięku"
 
-#: ../panels/universal-access/uap.ui.h:69
+#: ../panels/universal-access/uap.ui.h:60
 msgid "Sticky Keys"
 msgstr "Trwałe klawisze"
 
 # pd
-#: ../panels/universal-access/uap.ui.h:70
+#: ../panels/universal-access/uap.ui.h:61
 msgid "Test flash"
 msgstr "Test migania"
 
 # pd
-#: ../panels/universal-access/uap.ui.h:71
+#: ../panels/universal-access/uap.ui.h:62
 msgid "Text size:"
 msgstr "Rozmiar tekstu:"
 
 # pd
-#: ../panels/universal-access/uap.ui.h:72
+#: ../panels/universal-access/uap.ui.h:63
 msgid "Treats a sequence of modifier keys as a key combination"
 msgstr "Traktuje sekwencję klawiszy modyfikacji jako kombinację klawiszy"
 
 # pd
-#: ../panels/universal-access/uap.ui.h:73
+#: ../panels/universal-access/uap.ui.h:64
 msgid "Trigger a click when the pointer hovers"
 msgstr "Wywołanie kliknięcia po najechaniu wskaźnikiem"
 
 # pd
-#: ../panels/universal-access/uap.ui.h:74
+#: ../panels/universal-access/uap.ui.h:65
 msgid "Trigger a secondary click by holding down the primary button"
 msgstr "Wywołanie kliknięcia prawego przycisku przy przytrzymaniu lewego"
 
 # pd
-#: ../panels/universal-access/uap.ui.h:75
+#: ../panels/universal-access/uap.ui.h:66
 msgid "Turn on accessibility features from the keyboard"
 msgstr "Włączenie funkcji dostępności z klawiatury"
 
 # pd
-#: ../panels/universal-access/uap.ui.h:76
+#: ../panels/universal-access/uap.ui.h:67
 msgid "Turn on or off:"
 msgstr "Włączenie lub wyłączenie:"
 
 # pd
-#: ../panels/universal-access/uap.ui.h:77
+#: ../panels/universal-access/uap.ui.h:68
 msgid "Type here to test settings"
 msgstr "Proszę wprowadzić tekst, aby przetestować ustawienia"
 
 # pd
-#: ../panels/universal-access/uap.ui.h:78
+#: ../panels/universal-access/uap.ui.h:69
 msgid "Typing"
 msgstr "Pisanie"
 
 # pd
-#: ../panels/universal-access/uap.ui.h:79
+#: ../panels/universal-access/uap.ui.h:70
 msgid "Typing Assistant"
 msgstr "Asystent pisania"
 
 # pd
-#: ../panels/universal-access/uap.ui.h:80
+#: ../panels/universal-access/uap.ui.h:71
 msgid "Use a visual indication when an alert sound occurs"
 msgstr "Wizualny wskaźnik po wystąpieniu dźwięku alarmu"
 
 # pd
-#: ../panels/universal-access/uap.ui.h:81
+#: ../panels/universal-access/uap.ui.h:72
 msgid "Video Mouse"
 msgstr "Mysz wideo"
 
 # pd
-#: ../panels/universal-access/uap.ui.h:82
+#: ../panels/universal-access/uap.ui.h:73
 msgid "Visual Alerts"
 msgstr "Alarmy wizualne"
 
 # pd
-#: ../panels/universal-access/uap.ui.h:84
+#: ../panels/universal-access/uap.ui.h:74
 msgid "Zoom in:"
 msgstr "Powiększenie:"
 
 # pd
-#: ../panels/universal-access/uap.ui.h:85
+#: ../panels/universal-access/uap.ui.h:75
 msgid "Zoom out:"
 msgstr "Pomniejszenie:"
 
-#: ../panels/universal-access/uap.ui.h:86
+#: ../panels/universal-access/uap.ui.h:76
 msgid "_Motion threshold:"
 msgstr "Próg prz_esunięcia:"
 
 # pd
-#: ../panels/universal-access/uap.ui.h:87
+#: ../panels/universal-access/uap.ui.h:77
 msgid "accepted"
 msgstr "zaakceptowany"
 
 # pd
-#: ../panels/universal-access/uap.ui.h:88
+#: ../panels/universal-access/uap.ui.h:78
 msgid "pressed"
 msgstr "wciśnięty"
 
 # pd
-#: ../panels/universal-access/uap.ui.h:89
+#: ../panels/universal-access/uap.ui.h:79
 msgid "rejected"
 msgstr "odrzucony"
+
+# pd
+#: ../panels/universal-access/uap.ui.h:80
+msgctxt "universal access, contrast"
+msgid "<span size=\"x-large\">High/Inverse</span>"
+msgstr "<span size=\"x-large\">Wysoki/odwrócony</span>"
+
+# pd
+#: ../panels/universal-access/uap.ui.h:81
+msgctxt "universal access, contrast"
+msgid "<span size=\"x-large\">High</span>"
+msgstr "<span size=\"x-large\">Wysoki</span>"
+
+# pd
+#: ../panels/universal-access/uap.ui.h:82
+msgctxt "universal access, contrast"
+msgid "<span size=\"x-large\">Low</span>"
+msgstr "<span size=\"x-large\">Niski</span>"
+
+# pd
+#: ../panels/universal-access/uap.ui.h:83
+msgctxt "universal access, contrast"
+msgid "<span size=\"x-large\">Normal</span>"
+msgstr "<span size=\"x-large\">Zwykły</span>"
+
+# pd
+#: ../panels/universal-access/uap.ui.h:84
+msgctxt "universal access, contrast"
+msgid "High"
+msgstr "Wysoki"
+
+# pd
+#: ../panels/universal-access/uap.ui.h:85
+msgctxt "universal access, contrast"
+msgid "High/Inverse"
+msgstr "Wysoki/odwrócony"
+
+# pd
+#: ../panels/universal-access/uap.ui.h:86
+msgctxt "universal access, contrast"
+msgid "Low"
+msgstr "Niski"
+
+# pd
+#: ../panels/universal-access/uap.ui.h:87
+msgctxt "universal access, contrast"
+msgid "Normal"
+msgstr "Zwykły"
+
+# pd
+#. Translators: this refers to theme contrast and font size
+#: ../panels/universal-access/uap.ui.h:89
+msgctxt "universal access, seeing"
+msgid "Display"
+msgstr "Wyświetlanie"
+
+# pd
+#. Translators: this refers to screen magnifier
+#: ../panels/universal-access/uap.ui.h:91
+msgctxt "universal access, seeing"
+msgid "Zoom"
+msgstr "Powiększanie"
 
 # pd
 #: ../panels/user-accounts/run-passwd.c:426
