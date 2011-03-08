@@ -9,10 +9,11 @@ msgstr ""
 "Project-Id-Version: gnome-keyring\n"
 "Report-Msgid-Bugs-To: http://bugzilla.gnome.org/enter_bug.cgi?product=gnome-"
 "keyring&component=general\n"
-"POT-Creation-Date: 2011-01-15 16:34+0000\n"
-"PO-Revision-Date: 2011-03-02 14:12+0100\n"
+"POT-Creation-Date: 2011-03-08 21:06+0000\n"
+"PO-Revision-Date: 2011-03-08 22:11+0100\n"
 "Last-Translator: Piotr Drąg <piotrdrag@gmail.com>\n"
 "Language-Team: Polish <gnomepl@aviary.pl>\n"
+"Language: pl\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
@@ -539,14 +540,17 @@ msgid "The data is locked"
 msgstr "Dane są zablokowane"
 
 # pd
-#: ../gcr/gcr-trust.c:417
+#. Translators: A pinned certificate is an exception which
+#. trusts a given certificate explicitly for a purpose and
+#. communication with a certain peer.
+#: ../gcr/gcr-trust.c:420
 #, c-format
 msgid "Couldn't find a place to store the pinned certificate"
-msgstr ""
-"Nie można odnaleźć położenie do przechowywania przypiętego certyfikatu"
+msgstr "Nie można odnaleźć położenie do przechowywania przypiętego certyfikatu"
 
 # pd
-#: ../gck/gck-uri.c:78 ../gck/gck-uri.c:135 ../gck/gck-uri.c:170
+#: ../gck/gck-uri.c:124 ../gck/gck-uri.c:181 ../gck/gck-uri.c:216
+#: ../gck/gck-uri.c:248
 #, c-format
 msgid "The URI has invalid syntax. The '%s' field encoding is invalid."
 msgstr ""
@@ -554,7 +558,7 @@ msgstr ""
 "nieprawidłowe."
 
 # pd
-#: ../gck/gck-uri.c:195
+#: ../gck/gck-uri.c:287
 msgid "The URI has does not have the 'pkcs11' scheme."
 msgstr "Adres URI nie posiada schematu \"pkcs11\"."
 
@@ -1034,27 +1038,27 @@ msgid ""
 msgstr "Wymagane jest poprzednie i nowe hasło, aby je zmienić dla \"%s\""
 
 # pd
-#: ../tool/gkr-tool.c:101
+#: ../tool/gkr-tool.c:102
 #, c-format
 msgid "usage: gnome-keyring command [options]\n"
 msgstr "użycie: gnome-keyring polecenie [opcje]\n"
 
 # pd
-#: ../tool/gkr-tool.c:103
+#: ../tool/gkr-tool.c:104
 msgid "commands: "
 msgstr "polecenia: "
 
 # pd
 #. Translators: keep same length as translated message "commands: "
-#: ../tool/gkr-tool.c:107
+#: ../tool/gkr-tool.c:108
 msgid "          "
 msgstr "           "
 
-#: ../ui/gku-prompt-tool.c:538
+#: ../ui/gku-prompt-tool.c:596
 msgid "Store passwords unencrypted?"
 msgstr "Przechowywać hasła bez szyfrowania?"
 
-#: ../ui/gku-prompt-tool.c:539
+#: ../ui/gku-prompt-tool.c:597
 msgid ""
 "By choosing to use a blank password, your stored passwords will not be "
 "safely encrypted. They will be accessible by anyone with access to your "
@@ -1063,17 +1067,27 @@ msgstr ""
 "Puste hasło oznacza niechronione przechowywanie haseł. Będą one dostępne dla "
 "każdego, kto będzie miał dostęp do plików tego konta."
 
-#: ../ui/gku-prompt-tool.c:546
+#: ../ui/gku-prompt-tool.c:604
 msgid "Use Unsafe Storage"
 msgstr "Użycie niechronionej przechowalni"
 
-#: ../ui/gku-prompt-tool.c:584
+#: ../ui/gku-prompt-tool.c:642
 msgid "Passwords do not match."
 msgstr "Hasła nie są zgodne."
 
-#: ../ui/gku-prompt-tool.c:594
+#: ../ui/gku-prompt-tool.c:652
 msgid "Password cannot be blank"
 msgstr "Hasło nie może być puste"
+
+# pd
+#: ../ui/gnome-keyring-prompt.desktop.in.in.h:1
+msgid "Keyring Access"
+msgstr "Dostęp do bazy kluczy"
+
+# pd
+#: ../ui/gnome-keyring-prompt.desktop.in.in.h:2
+msgid "Unlock access to passwords and other secrets"
+msgstr "Odblokowanie dostępu do haseł"
 
 #: ../ui/gku-prompt.ui.h:1
 msgid "New password strength"
