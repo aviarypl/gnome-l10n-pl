@@ -7,18 +7,16 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: gnome-shell\n"
-"Report-Msgid-Bugs-To: http://bugzilla.gnome.org/enter_bug.cgi?product=gnome-"
-"shell&component=general\n"
+"Report-Msgid-Bugs-To: http://bugzilla.gnome.org/enter_bug.cgi?product=gnome-shell&component=general\n"
 "POT-Creation-Date: 2011-03-08 13:01+0000\n"
-"PO-Revision-Date: 2011-03-08 15:24+0100\n"
-"Last-Translator: Piotr Drąg <piotrdrag@gmail.com>\n"
+"PO-Revision-Date: 2011-03-09 21:28+0100\n"
+"Last-Translator: Tomasz Dominikowski <dominikowski@gmail.com>\n"
 "Language-Team: Polish <gnomepl@aviary.pl>\n"
 "Language: pl\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"Plural-Forms: nplurals=3; plural=(n==1 ? 0 : n%10>=2 && n%10<=4 && (n%100<10 "
-"|| n%100>=20) ? 1 : 2);\n"
+"Plural-Forms: nplurals=3; plural=(n==1 ? 0 : n%10>=2 && n%10<=4 && (n%100<10 || n%100>=20) ? 1 : 2);\n"
 "X-Poedit-Language: Polish\n"
 "X-Poedit-Country: Poland\n"
 
@@ -31,18 +29,12 @@ msgid "Window management and application launching"
 msgstr "Zarządzanie oknami i uruchamianiem programów"
 
 #: ../data/org.gnome.shell.gschema.xml.in.h:1
-msgid ""
-"Allows access to internal debugging and monitoring tools using the Alt-F2 "
-"dialog."
-msgstr ""
-"Umożliwia dostęp do wewnętrznych narzędzi debugowania i monitorowania "
-"używając okna dialogowego Alt-F2."
+msgid "Allows access to internal debugging and monitoring tools using the Alt-F2 dialog."
+msgstr "Umożliwia dostęp do wewnętrznych narzędzi debugowania i monitorowania używając okna dialogowego Alt-F2."
 
 #: ../data/org.gnome.shell.gschema.xml.in.h:2
 msgid "Enable internal tools useful for developers and testers from Alt-F2"
-msgstr ""
-"Włącza wewnętrzne narzędzia przydatne programistom i testerom w oknie "
-"dialogowym Alt-F2"
+msgstr "Włącza wewnętrzne narzędzia przydatne programistom i testerom w oknie dialogowym Alt-F2"
 
 #: ../data/org.gnome.shell.gschema.xml.in.h:3
 msgid "File extension used for storing the screencast"
@@ -53,12 +45,8 @@ msgid "Framerate used for recording screencasts."
 msgstr "Liczba klatek na sekundę do nagrywania pulpitu."
 
 #: ../data/org.gnome.shell.gschema.xml.in.h:5
-msgid ""
-"GNOME Shell extensions have a uuid property; this key lists extensions which "
-"should not be loaded."
-msgstr ""
-"Rozszerzenia powłoki GNOME posiadają własność UUID; ten klucz zawiera "
-"rozszerzenia, które nie powinny zostać wczytane."
+msgid "GNOME Shell extensions have a uuid property; this key lists extensions which should not be loaded."
+msgstr "Rozszerzenia powłoki GNOME posiadają własność UUID; ten klucz zawiera rozszerzenia, które nie powinny zostać wczytane."
 
 #: ../data/org.gnome.shell.gschema.xml.in.h:6
 msgid "History for command (Alt-F2) dialog"
@@ -72,9 +60,7 @@ msgstr "Historia okna dialogowego looking glass"
 # pd
 #: ../data/org.gnome.shell.gschema.xml.in.h:8
 msgid "If true, display date in the clock, in addition to time."
-msgstr ""
-"Jeśli jest ustawione na \"true\", to wyświetla datę w zegarze, dodatkowo do "
-"czasu."
+msgstr "Jeśli jest ustawione na \"true\", to wyświetla datę w zegarze, dodatkowo do czasu."
 
 # pd
 #: ../data/org.gnome.shell.gschema.xml.in.h:9
@@ -83,9 +69,7 @@ msgstr "Jeśli jest ustawione na \"true\", to wyświetla sekundy w zegarze."
 
 #: ../data/org.gnome.shell.gschema.xml.in.h:10
 msgid "If true, display the ISO week date in the calendar."
-msgstr ""
-"Jeśli jest ustawione na \"true\", to wyświetla dzień tygodnia w formacie ISO "
-"w kalendarzu."
+msgstr "Jeśli jest ustawione na \"true\", to wyświetla dzień tygodnia w formacie ISO w kalendarzu."
 
 #: ../data/org.gnome.shell.gschema.xml.in.h:11
 msgid "List of desktop file IDs for favorite applications"
@@ -94,28 +78,8 @@ msgstr "Lista identyfikatorów plików .desktop ulubionych programów"
 # pd
 #: ../data/org.gnome.shell.gschema.xml.in.h:13
 #, no-c-format
-msgid ""
-"Sets the GStreamer pipeline used to encode recordings. It follows the syntax "
-"used for gst-launch. The pipeline should have an unconnected sink pad where "
-"the recorded video is recorded. It will normally have a unconnected source "
-"pad; output from that pad will be written into the output file. However the "
-"pipeline can also take care of its own output - this might be used to send "
-"the output to an icecast server via shout2send or similar. When unset or set "
-"to an empty value, the default pipeline will be used. This is currently "
-"'videorate ! vp8enc quality=10 speed=2 threads=%T ! queue ! webmmux' and "
-"records to WEBM using the VP8 codec. %T is used as a placeholder for a guess "
-"at the optimal thread count on the system."
-msgstr ""
-"Ustawia potok biblioteki GStreamer używany do zakodowania nagrań. Używa "
-"składni programu gst-launch. Potok powinien posiadać niepołączony odpływ, "
-"gdzie jest nagrywane. Zwykle taki posiada, a wyjście będzie zapisywane do "
-"pliku wyjściowego. Mimo, że potok może sam zająć się swoim wyjściem, można "
-"także wysłać wyjście do serwera icecast przez polecenie shout2send lub "
-"podobne. Jeśli nie zostanie ustawione lub ustawione na pustą wartość, to "
-"zostanie użyty domyślny potok. Jest nim obecnie \"videorate ! vp8enc "
-"quality=10 speed=2 threads=%T ! queue ! webmmux\" i nagrywa do formatu WebM "
-"używając kodeka VP8. %T jest zamieniane na odgadniętą optymalną liczbę "
-"wątków dla komputera."
+msgid "Sets the GStreamer pipeline used to encode recordings. It follows the syntax used for gst-launch. The pipeline should have an unconnected sink pad where the recorded video is recorded. It will normally have a unconnected source pad; output from that pad will be written into the output file. However the pipeline can also take care of its own output - this might be used to send the output to an icecast server via shout2send or similar. When unset or set to an empty value, the default pipeline will be used. This is currently 'videorate ! vp8enc quality=10 speed=2 threads=%T ! queue ! webmmux' and records to WEBM using the VP8 codec. %T is used as a placeholder for a guess at the optimal thread count on the system."
+msgstr "Ustawia potok biblioteki GStreamer używany do zakodowania nagrań. Używa składni programu gst-launch. Potok powinien posiadać niepołączony odpływ, gdzie jest nagrywane. Zwykle taki posiada, a wyjście będzie zapisywane do pliku wyjściowego. Mimo, że potok może sam zająć się swoim wyjściem, można także wysłać wyjście do serwera icecast przez polecenie shout2send lub podobne. Jeśli nie zostanie ustawione lub ustawione na pustą wartość, to zostanie użyty domyślny potok. Jest nim obecnie \"videorate ! vp8enc quality=10 speed=2 threads=%T ! queue ! webmmux\" i nagrywa do formatu WebM używając kodeka VP8. %T jest zamieniane na odgadniętą optymalną liczbę wątków dla komputera."
 
 #: ../data/org.gnome.shell.gschema.xml.in.h:14
 msgid "Show date in clock"
@@ -130,27 +94,15 @@ msgid "Show time with seconds"
 msgstr "Wyświetlanie czasu z sekundami"
 
 #: ../data/org.gnome.shell.gschema.xml.in.h:17
-msgid ""
-"The applications corresponding to these identifiers will be displayed in the "
-"favorites area."
-msgstr ""
-"Programy odpowiadające tym identyfikatorom będą wyświetlane w obszarze "
-"ulubionych."
+msgid "The applications corresponding to these identifiers will be displayed in the favorites area."
+msgstr "Programy odpowiadające tym identyfikatorom będą wyświetlane w obszarze ulubionych."
 
 #: ../data/org.gnome.shell.gschema.xml.in.h:18
-msgid ""
-"The filename for recorded screencasts will be a unique filename based on the "
-"current date, and use this extension. It should be changed when recording to "
-"a different container format."
-msgstr ""
-"Nazwa pliku dla nagrań pulpitu będzie unikalną nazwą opartą na bieżącej "
-"dacie, i używającej tego rozszerzenia. Rozszerzenie powinno zostać "
-"zmienione, aby nagrywać w innym formacie kontenera."
+msgid "The filename for recorded screencasts will be a unique filename based on the current date, and use this extension. It should be changed when recording to a different container format."
+msgstr "Nazwa pliku dla nagrań pulpitu będzie unikalną nazwą opartą na bieżącej dacie, i używającej tego rozszerzenia. Rozszerzenie powinno zostać zmienione, aby nagrywać w innym formacie kontenera."
 
 #: ../data/org.gnome.shell.gschema.xml.in.h:19
-msgid ""
-"The framerate of the resulting screencast recordered by GNOME Shell's "
-"screencast recorder in frames-per-second."
+msgid "The framerate of the resulting screencast recordered by GNOME Shell's screencast recorder in frames-per-second."
 msgstr "Liczba klatek na sekundę wynikowego nagrania pulpitu."
 
 #: ../data/org.gnome.shell.gschema.xml.in.h:20
@@ -158,16 +110,8 @@ msgid "The gstreamer pipeline used to encode the screencast"
 msgstr "Potok biblioteki GStreamer używany do zakodowania nagrania pulpitu"
 
 #: ../data/org.gnome.shell.gschema.xml.in.h:21
-msgid ""
-"The shell normally monitors active applications in order to present the most "
-"used ones (e.g. in launchers). While this data will be kept private, you may "
-"want to disable this for privacy reasons. Please note that doing so won't "
-"remove already saved data."
-msgstr ""
-"Powłoka zwykle monitoruje aktywne programy, aby przedstawiać najczęściej "
-"używane (np. aktywatory programów). Mimo, że te dane nie są publiczne, można "
-"wyłączyć je z powodu prywatności. Proszę zauważyć, że wyłączenie nie "
-"spowoduje usunięcia już zapisanych danych."
+msgid "The shell normally monitors active applications in order to present the most used ones (e.g. in launchers). While this data will be kept private, you may want to disable this for privacy reasons. Please note that doing so won't remove already saved data."
+msgstr "Powłoka zwykle monitoruje aktywne programy, aby przedstawiać najczęściej używane (np. aktywatory programów). Mimo, że te dane nie są publiczne, można wyłączyć je z powodu prywatności. Proszę zauważyć, że wyłączenie nie spowoduje usunięcia już zapisanych danych."
 
 #: ../data/org.gnome.shell.gschema.xml.in.h:22
 msgid "Uuids of extensions to disable"
@@ -178,6 +122,7 @@ msgid "Whether to collect stats about applications usage"
 msgstr "Określa, czy zbierać statystyki o użyciu programów"
 
 # pd
+# rev: Wyłączone?
 #: ../data/org.gnome.shell.gschema.xml.in.h:24
 msgid "disabled OpenSearch providers"
 msgstr "Wyłączenie dostawców OpenSearch"
@@ -276,6 +221,7 @@ msgid "S"
 msgstr "N"
 
 # pd
+# rev: Piątek też masz jako P
 #. Translators: Calendar grid abbreviation for Monday
 #: ../js/ui/calendar.js:120
 msgctxt "grid monday"
@@ -412,7 +358,8 @@ msgid "Next week"
 msgstr "Następny tydzień"
 
 # pd
-#: ../js/ui/dash.js:174 ../js/ui/messageTray.js:933
+#: ../js/ui/dash.js:174
+#: ../js/ui/messageTray.js:933
 msgid "Remove"
 msgstr "Usuń"
 
@@ -485,7 +432,8 @@ msgid "Log Out %s"
 msgstr "Wyloguj %s"
 
 # pd
-#: ../js/ui/endSessionDialog.js:64 ../js/ui/endSessionDialog.js:69
+#: ../js/ui/endSessionDialog.js:64
+#: ../js/ui/endSessionDialog.js:69
 msgid "Log Out"
 msgstr "Wyloguj się"
 
@@ -512,15 +460,15 @@ msgid "Logging out of the system."
 msgstr "Wylogowywanie z systemu."
 
 # pd
-#: ../js/ui/endSessionDialog.js:74 ../js/ui/endSessionDialog.js:78
+#: ../js/ui/endSessionDialog.js:74
+#: ../js/ui/endSessionDialog.js:78
 msgid "Shut Down"
 msgstr "Wyłącz komputer"
 
 # pd
 #: ../js/ui/endSessionDialog.js:75
 msgid "Click Shut Down to quit these applications and shut down the system."
-msgstr ""
-"Kliknięcie Wyłącz komputer zakończy poniższe programy i wyłączy system."
+msgstr "Kliknięcie Wyłącz komputer zakończy poniższe programy i wyłączy system."
 
 # pd
 #: ../js/ui/endSessionDialog.js:76
@@ -534,16 +482,15 @@ msgid "Shutting down the system."
 msgstr "Wyłączanie komputera."
 
 # pd
-#: ../js/ui/endSessionDialog.js:84 ../js/ui/endSessionDialog.js:88
+#: ../js/ui/endSessionDialog.js:84
+#: ../js/ui/endSessionDialog.js:88
 msgid "Restart"
 msgstr "Uruchom ponownie"
 
 # pd
 #: ../js/ui/endSessionDialog.js:85
 msgid "Click Restart to quit these applications and restart the system."
-msgstr ""
-"Kliknięcie uruchom ponownie zakończy poniższe programy i ponownie uruchomi "
-"system."
+msgstr "Kliknięcie uruchom ponownie zakończy poniższe programy i ponownie uruchomi system."
 
 # pd
 #: ../js/ui/endSessionDialog.js:86
@@ -562,7 +509,8 @@ msgid "Confirm"
 msgstr "Potwierdź"
 
 # pd
-#: ../js/ui/endSessionDialog.js:400 ../js/ui/status/bluetooth.js:470
+#: ../js/ui/endSessionDialog.js:400
+#: ../js/ui/status/bluetooth.js:470
 msgid "Cancel"
 msgstr "Anuluj"
 
@@ -576,7 +524,8 @@ msgstr "Włączone"
 
 #. translators:
 #. * The device has been disabled
-#: ../js/ui/lookingGlass.js:627 ../src/gvc/gvc-mixer-control.c:1087
+#: ../js/ui/lookingGlass.js:627
+#: ../src/gvc/gvc-mixer-control.c:1087
 msgid "Disabled"
 msgstr "Wyłączone"
 
@@ -685,12 +634,14 @@ msgid "No matching results."
 msgstr "Brak wyników."
 
 # pd
-#: ../js/ui/statusMenu.js:102 ../js/ui/statusMenu.js:166
+#: ../js/ui/statusMenu.js:102
+#: ../js/ui/statusMenu.js:166
 msgid "Power Off..."
 msgstr "Wyłącz..."
 
 # pd
-#: ../js/ui/statusMenu.js:104 ../js/ui/statusMenu.js:165
+#: ../js/ui/statusMenu.js:104
+#: ../js/ui/statusMenu.js:165
 msgid "Suspend"
 msgstr "Uśpij"
 
@@ -780,9 +731,12 @@ msgid "Large Text"
 msgstr "Duży tekst"
 
 # pd
-#: ../js/ui/status/bluetooth.js:42 ../js/ui/status/bluetooth.js:241
-#: ../js/ui/status/bluetooth.js:337 ../js/ui/status/bluetooth.js:371
-#: ../js/ui/status/bluetooth.js:411 ../js/ui/status/bluetooth.js:444
+#: ../js/ui/status/bluetooth.js:42
+#: ../js/ui/status/bluetooth.js:241
+#: ../js/ui/status/bluetooth.js:337
+#: ../js/ui/status/bluetooth.js:371
+#: ../js/ui/status/bluetooth.js:411
+#: ../js/ui/status/bluetooth.js:444
 msgid "Bluetooth"
 msgstr "Bluetooth"
 
@@ -843,7 +797,8 @@ msgid "Mouse Settings"
 msgstr "Ustawienia myszy"
 
 # pd
-#: ../js/ui/status/bluetooth.js:263 ../js/ui/status/volume.js:65
+#: ../js/ui/status/bluetooth.js:263
+#: ../js/ui/status/volume.js:65
 msgid "Sound Settings"
 msgstr "Ustawienia dźwięku"
 
@@ -881,7 +836,8 @@ msgid "Pairing confirmation for %s"
 msgstr "Potwierdzenie wiązania dla %s"
 
 # pd
-#: ../js/ui/status/bluetooth.js:418 ../js/ui/status/bluetooth.js:452
+#: ../js/ui/status/bluetooth.js:418
+#: ../js/ui/status/bluetooth.js:452
 #, c-format
 msgid "Device %s wants to pair with this computer"
 msgstr "Urządzenie %s żąda powiązania z tym komputerem"
@@ -1037,7 +993,8 @@ msgid "Computer"
 msgstr "Komputer"
 
 # pd
-#: ../js/ui/status/power.js:249 ../src/shell-app-system.c:1013
+#: ../js/ui/status/power.js:249
+#: ../src/shell-app-system.c:1013
 msgid "Unknown"
 msgstr "Nieznane"
 
@@ -1093,7 +1050,8 @@ msgstr "Wysłano o %H:%M w dniu %e %b"
 msgid "Type to search..."
 msgstr "Wyszukiwanie..."
 
-#: ../js/ui/viewSelector.js:137 ../src/shell-util.c:250
+#: ../js/ui/viewSelector.js:137
+#: ../src/shell-util.c:250
 msgid "Search"
 msgstr "Wyszukaj"
 
@@ -1199,3 +1157,4 @@ msgstr "System plików"
 #, c-format
 msgid "%1$s: %2$s"
 msgstr "%1$s: %2$s"
+
