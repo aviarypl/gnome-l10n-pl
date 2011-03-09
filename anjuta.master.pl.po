@@ -10,7 +10,7 @@ msgstr ""
 "Report-Msgid-Bugs-To: http://bugzilla.gnome.org/enter_bug.cgi?"
 "product=anjuta&component=core application\n"
 "POT-Creation-Date: 2011-03-07 19:39+0000\n"
-"PO-Revision-Date: 2010-09-25 21:58+0200\n"
+"PO-Revision-Date: 2011-03-09 16:09+0100\n"
 "Last-Translator: Piotr Drąg <piotrdrag@gmail.com>\n"
 "Language-Team: Polish <gnomepl@aviary.pl>\n"
 "MIME-Version: 1.0\n"
@@ -878,12 +878,11 @@ msgstr "Proszę określić nazwę grupy"
 
 # pd
 #: ../plugins/am-project/amp-group.c:555
-#, fuzzy
-#| msgid "Group name can only contain alphanumeric, '_', '-' or '.' characters"
 msgid ""
 "Group name can only contain alphanumeric or \"#$:%+,-.=@^_`~\" characters"
 msgstr ""
-"Nazwa grupy może zawierać tylko znaki alfanumeryczne, \"_\", \"-\" lub \".\""
+"Nazwa grupy może zawierać tylko znaki alfanumeryczne lub znaki "
+"\"#$:%+,-.=@^_`~\""
 
 #: ../plugins/am-project/amp-group.c:585
 #: ../plugins/dir-project/dir-project.c:656
@@ -904,14 +903,11 @@ msgstr "Proszę określić nazwę docelową"
 
 # pd
 #: ../plugins/am-project/amp-target.c:280
-#, fuzzy
-#| msgid ""
-#| "Target name can only contain alphanumeric, '_', '-' or '.' characters"
 msgid ""
 "Target name can only contain alphanumeric, '_', '-', '/' or '.' characters"
 msgstr ""
-"Nazwa docelowa może zawierać tylko znaki alfanumeryczne, \"_\", \"-\" lub \"."
-"\""
+"Nazwa docelowa może zawierać tylko znaki alfanumeryczne, \"_\", \"-\", \"/\" "
+"lub \".\""
 
 #: ../plugins/am-project/amp-target.c:295
 msgid "Shared library target name must be of the form 'libxxx.la'"
@@ -953,10 +949,8 @@ msgstr "Kontynuowanie mimo błędów"
 
 # pd
 #: ../plugins/build-basic-autotools/anjuta-build-basic-autotools-plugin.ui.h:8
-#, fuzzy
-#| msgid "Highlight message locations in editor"
 msgid "Highlight build warnings and errors in editor"
-msgstr "Wyróżnianie położeń komunikatów w edytorze"
+msgstr "Wyróżnianie ostrzeżeń i błędów w edytorze"
 
 #: ../plugins/build-basic-autotools/anjuta-build-basic-autotools-plugin.ui.h:9
 msgid "Install"
@@ -1113,10 +1107,8 @@ msgstr "ostrzeżenie:"
 
 # pd
 #: ../plugins/build-basic-autotools/plugin.c:946
-#, fuzzy
-#| msgid "warning:"
 msgid "warning:-old"
-msgstr "ostrzeżenie:"
+msgstr "ostrzeżenie:-stare"
 
 #. The translations should match that of 'gcc' program.
 #. * The second string with -old should be used for an older
@@ -1130,10 +1122,8 @@ msgstr "błąd:"
 
 # pd
 #: ../plugins/build-basic-autotools/plugin.c:958
-#, fuzzy
-#| msgid "error:"
 msgid "error:-old"
-msgstr "błąd:"
+msgstr "błąd:stary"
 
 #: ../plugins/build-basic-autotools/plugin.c:1075
 #, c-format
@@ -1390,12 +1380,13 @@ msgstr "Budowanie Autotools"
 
 # pd
 #: ../plugins/build-basic-autotools/program.c:269
-#, fuzzy, c-format
-#| msgid "Error closing project: %s"
+#, c-format
 msgid ""
 "Error while setting up build environment:\n"
 " %s"
-msgstr "Błąd podczas zamykania projektu: %s"
+msgstr ""
+"Błąd podczas ustawiania środowiska budowania:\n"
+" %s"
 
 #: ../plugins/build-basic-autotools/program.c:342
 msgid "Command aborted"
@@ -1448,10 +1439,8 @@ msgstr "Generator klas"
 
 # pd
 #: ../plugins/class-gen/anjuta-class-gen-plugin.ui.h:12
-#, fuzzy
-#| msgid "Class Elements"
 msgid "Class Methods"
-msgstr "Elementy klasy"
+msgstr "Metody klasy"
 
 #: ../plugins/class-gen/anjuta-class-gen-plugin.ui.h:13
 msgid "Class Name:"
@@ -1463,17 +1452,13 @@ msgstr "Opcje klasy:"
 
 # pd
 #: ../plugins/class-gen/anjuta-class-gen-plugin.ui.h:15
-#, fuzzy
-#| msgid "Class Name:"
 msgid "Class Scope:"
-msgstr "Nazwa klasy:"
+msgstr "Zakres klasy:"
 
 # pd
 #: ../plugins/class-gen/anjuta-class-gen-plugin.ui.h:16
-#, fuzzy
-#| msgid "Variables"
 msgid "Constants/Variables"
-msgstr "Zmienne"
+msgstr "Stałe/zmienne"
 
 #: ../plugins/class-gen/anjuta-class-gen-plugin.ui.h:17
 msgid "Create"
@@ -1481,10 +1466,8 @@ msgstr "Utworzenie"
 
 # pd
 #: ../plugins/class-gen/anjuta-class-gen-plugin.ui.h:18
-#, fuzzy
-#| msgid "Pixbuf Object"
 msgid "GLib.Object"
-msgstr "Obiekt bufora pikseli"
+msgstr "Obiekt biblioteki GLib"
 
 #: ../plugins/class-gen/anjuta-class-gen-plugin.ui.h:19
 msgid "GObject Class\t"
@@ -1531,17 +1514,13 @@ msgstr "Plik nagłówka:"
 
 # pd
 #: ../plugins/class-gen/anjuta-class-gen-plugin.ui.h:25
-#, fuzzy
-#| msgid "Import"
 msgid "Imports"
 msgstr "Importowanie"
 
 # pd
 #: ../plugins/class-gen/anjuta-class-gen-plugin.ui.h:26
-#, fuzzy
-#| msgid "_Initialize repository"
 msgid "Initializer Arguments:"
-msgstr "_Zainicjuj repozytorium"
+msgstr "Parametry inicjatora:"
 
 #: ../plugins/class-gen/anjuta-class-gen-plugin.ui.h:27
 msgid "Inline the declaration and implementation"
@@ -1626,10 +1605,8 @@ msgstr "Zmienne"
 
 # pd
 #: ../plugins/class-gen/anjuta-class-gen-plugin.ui.h:41
-#, fuzzy
-#| msgid "Base Class:"
 msgid "is Sub-Class"
-msgstr "Klasa podstawowa:"
+msgstr "jest podklasą"
 
 #: ../plugins/class-gen/generator.c:133
 #, c-format
@@ -1756,17 +1733,13 @@ msgstr "Automatyczne"
 
 # pd
 #: ../plugins/class-gen/window.c:793
-#, fuzzy
-#| msgid "Western"
 msgid "Getter"
-msgstr "zachodnie"
+msgstr "Getter"
 
 # pd
 #: ../plugins/class-gen/window.c:794
-#, fuzzy
-#| msgid "Starter"
 msgid "Setter"
-msgstr "Program uruchamiający"
+msgstr "Setter"
 
 #: ../plugins/class-gen/window.c:1208
 msgid "XML description of the user interface"
@@ -2194,10 +2167,8 @@ msgstr "Działania wyskakujące CVS"
 
 # pd
 #: ../plugins/code-analyzer/code-analyzer.ui.h:1
-#, fuzzy
-#| msgid "Change Watch"
 msgid "CLang Paths"
-msgstr "Zmień obserwację"
+msgstr "Ścieżki CLang"
 
 # pd
 #: ../plugins/code-analyzer/code-analyzer.ui.h:2
@@ -2229,15 +2200,13 @@ msgid ""
 "Couldn't find clang analyzer, please check if it is installed and if the "
 "paths are configured correctly in the preferences"
 msgstr ""
-"Nie można odnaleźć analizowania clang. Proszę sprawdzić, czy jest "
+"Nie można odnaleźć analizowania CLang. Proszę sprawdzić, czy jest "
 "zainstalowany i czy ścieżki są poprawnie skonfigurowane w preferencjach"
 
 # pd
 #: ../plugins/code-analyzer/plugin.c:226 ../plugins/code-analyzer/plugin.c:234
-#, fuzzy
-#| msgid "Change Value"
 msgid "CLang Analyzer"
-msgstr "Zmień wartość"
+msgstr "Analizowanie CLang"
 
 #: ../plugins/debug-manager/anjuta-debug-manager.ui.h:1
 msgid ""
@@ -3613,10 +3582,8 @@ msgstr "Powtarza ostatnie polecenie wyszukiwania"
 
 # pd
 #: ../plugins/document-manager/plugin.c:279
-#, fuzzy
-#| msgid "Highlight"
 msgid "Clear Highlight"
-msgstr "Wyróżnianie"
+msgstr "Wyczyść wyróżnianie"
 
 # pd
 #: ../plugins/document-manager/plugin.c:280
@@ -3625,10 +3592,8 @@ msgstr "Czyści cały wyróżniony tekst"
 
 # pd
 #: ../plugins/document-manager/plugin.c:286
-#, fuzzy
-#| msgid "Sensitive"
 msgid "Case Sensitive"
-msgstr "Aktywne"
+msgstr "Rozróżnianie małych i wielkich liter"
 
 # pd
 #: ../plugins/document-manager/plugin.c:287
@@ -3637,31 +3602,22 @@ msgstr "Rozróżnianie małych i wielkich liter w wynikach wyszukiwania."
 
 # pd
 #: ../plugins/document-manager/plugin.c:290
-#, fuzzy
-#| msgid "Highlight"
 msgid "Highlight All"
-msgstr "Wyróżnianie"
+msgstr "Wyróżnianie wszystkiego"
 
 # pd
 #: ../plugins/document-manager/plugin.c:291
-#, fuzzy
-#| msgid "Highlight current line"
 msgid "Highlight all occurrences"
-msgstr "Wyróżnianie bieżącej linii"
+msgstr "Wyróżnia wszystkie wystąpienia"
 
-# pd
 #: ../plugins/document-manager/plugin.c:294
-#, fuzzy
-#| msgid "Regular expression"
 msgid "Regular Expression"
 msgstr "Wyrażenie regularne"
 
 # pd
 #: ../plugins/document-manager/plugin.c:295
-#, fuzzy
-#| msgid "Search for a string or regular expression in the editor"
 msgid "Search using regular expressions"
-msgstr "Wyszukuje ciąg znaków lub wyrażeń regularnych w edytorze"
+msgstr "Wyszukuje używając wyrażeń regularnych"
 
 #: ../plugins/document-manager/plugin.c:301 ../src/anjuta-actions.h:30
 #: ../plugins/language-support-cpp-java/plugin.c:1197
@@ -3874,17 +3830,13 @@ msgstr "Za_kładki"
 
 # pd
 #: ../plugins/document-manager/plugin.c:407
-#, fuzzy
-#| msgid "_Next Bookmark"
 msgid "_Toggle Bookmark"
-msgstr "N_astępna zakładka"
+msgstr "_Przełącz zakładkę"
 
 # pd
 #: ../plugins/document-manager/plugin.c:408
-#, fuzzy
-#| msgid "Add a bookmark at the current line position"
 msgid "Toggle bookmark at the current line position"
-msgstr "Dodaje zakładkę na bieżącej pozycji wiersza"
+msgstr "Przełącza zakładkę na bieżącej pozycji wiersza"
 
 #: ../plugins/document-manager/plugin.c:410
 msgid "_Previous Bookmark"
@@ -3969,10 +3921,8 @@ msgstr "Ustawienia widoku w edytorze"
 
 # pd
 #: ../plugins/document-manager/plugin.c:455
-#, fuzzy
-#| msgid "Toggle Breakpoint"
 msgid "Toggle search options"
-msgstr "Przełącz punkt przerwania"
+msgstr "Przełącz opcje wyszukiwania"
 
 #: ../plugins/document-manager/plugin.c:644
 msgid "Reload"
@@ -4015,8 +3965,7 @@ msgstr "Ukończono automatyczny zapis"
 
 # pd
 #: ../plugins/document-manager/search-box.c:494
-#, fuzzy, c-format
-#| msgid "Search for \"%s\" reached the end and was continued at the top."
+#, c-format
 msgid "Search for \"%s\" reached the end and wrapped around."
 msgstr ""
 "Wyszukiwanie \"%s\" osiągnęło koniec pliku i zostało kontynuowane od "
@@ -4024,10 +3973,7 @@ msgstr ""
 
 # pd
 #: ../plugins/document-manager/search-box.c:500
-#, fuzzy, c-format
-#| msgid ""
-#| "Search for \"%s\" reached the end and was continued at the top but no new "
-#| "match was found."
+#, c-format
 msgid ""
 "Search for \"%s\" reached the end and wrapped around but no new match was "
 "found."
@@ -4053,34 +3999,26 @@ msgstr ""
 
 # pd
 #: ../plugins/document-manager/search-box.c:584
-#, fuzzy, c-format
-#| msgid "Search for \"%s\" reached the end and was continued at the top."
+#, c-format
 msgid "Search for \"%s\" reached top and was continued at the bottom."
 msgstr ""
-"Wyszukiwanie \"%s\" osiągnęło koniec pliku i zostało kontynuowane od "
-"początku."
+"Wyszukiwanie \"%s\" osiągnęło koniec pliku i zostało kontynuowane od końca."
 
 # pd
 #: ../plugins/document-manager/search-box.c:590
-#, fuzzy, c-format
-#| msgid ""
-#| "Search for \"%s\" reached the end and was continued at the top but no new "
-#| "match was found."
+#, c-format
 msgid ""
 "Search for \"%s\" reached top and was continued at the bottom but no new "
 "match was found."
 msgstr ""
-"Wyszukiwanie \"%s\" osiągnęło koniec pliku i zostało kontynuowane od "
-"początku, ale nie odnaleziono nowych wyników."
+"Wyszukiwanie \"%s\" osiągnęło koniec pliku i zostało kontynuowane od końca, "
+"ale nie odnaleziono nowych wyników."
 
 #: ../plugins/document-manager/search-box.c:983
 msgid "Replace"
 msgstr "Zastąpienie"
 
-# pd
 #: ../plugins/document-manager/search-box.c:988
-#, fuzzy
-#| msgid "Replace All"
 msgid "Replace all"
 msgstr "Zamiana wszystkiego"
 
@@ -4508,10 +4446,9 @@ msgstr "Źródło"
 #: ../plugins/dir-project/dir-project.c:909
 #: ../plugins/mk-project/mk-project.c:977
 #: ../plugins/mk-project/mk-project.c:987
-#, fuzzy, c-format
-#| msgid "Project doesn't exist"
+#, c-format
 msgid "Project doesn't allow to set properties"
-msgstr "Projekt nie istnieje"
+msgstr "Projekt nie zezwala na ustawianie właściwości"
 
 #: ../plugins/am-project/am-project.c:112
 msgid "Shared Library"
@@ -4560,10 +4497,9 @@ msgstr "Pakiet"
 
 # pd
 #: ../plugins/am-project/am-project.c:1591
-#, fuzzy, c-format
-#| msgid "Unable to update project"
+#, c-format
 msgid "Unable to parse project file"
-msgstr "Nie można zaktualizować projektu"
+msgstr "Nie można przetworzyć pliku projektu"
 
 # pd
 #: ../plugins/am-project/am-properties.c:51
@@ -4849,42 +4785,32 @@ msgstr "Dodatkowe biblioteki:"
 #: ../plugins/am-project/am-properties.c:219
 #: ../plugins/am-project/am-properties.c:379
 #: ../plugins/am-project/am-properties.c:531
-#, fuzzy
-#| msgid "No properties available for this target"
 msgid "Additional libraries for this target."
-msgstr "Brak dostępnych właściwości obiektu docelowego"
+msgstr "Dodatkowe biblioteki dla tego obiektu docelowego."
 
 # pd
 #: ../plugins/am-project/am-properties.c:224
-#, fuzzy
-#| msgid "Add to Project"
 msgid "Additional objects:"
-msgstr "Dodanie do projektu"
+msgstr "Dodatkowe obiekty:"
 
 # pd
 #: ../plugins/am-project/am-properties.c:227
-#, fuzzy
-#| msgid "No properties available for this target"
 msgid "Additional object files for this target."
-msgstr "Brak dostępnych właściwości obiektu docelowego"
+msgstr "Dodatkowe pliki obiektów dla tego obiektu docelowego."
 
 # pd
 #: ../plugins/am-project/am-properties.c:235
 #: ../plugins/am-project/am-properties.c:387
 #: ../plugins/am-project/am-properties.c:539
-#, fuzzy
-#| msgid "No properties available for this target"
 msgid "Additional C preprocessor flags for this target."
-msgstr "Brak dostępnych właściwości obiektu docelowego"
+msgstr "Dodatkowe flagi preprocesora języka C dla tego obiektu docelowego."
 
 # pd
 #: ../plugins/am-project/am-properties.c:243
 #: ../plugins/am-project/am-properties.c:395
 #: ../plugins/am-project/am-properties.c:547
-#, fuzzy
-#| msgid "No properties available for this target"
 msgid "Additional C compiler flags for this target."
-msgstr "Brak dostępnych właściwości obiektu docelowego"
+msgstr "Dodatkowe flagi kompilatora języka C dla tego obiektu docelowego."
 
 # pd
 #: ../plugins/am-project/am-properties.c:251
@@ -4948,10 +4874,8 @@ msgstr ""
 #: ../plugins/am-project/am-properties.c:608
 #: ../plugins/am-project/am-properties.c:656
 #: ../plugins/am-project/am-properties.c:703
-#, fuzzy
-#| msgid "Plugin Dependencies:"
 msgid "Additional dependencies:"
-msgstr "Zależności wtyczki:"
+msgstr "Dodatkowe zależności:"
 
 # pd
 #: ../plugins/am-project/am-properties.c:307
@@ -4967,10 +4891,8 @@ msgstr "Dodatkowe zależności dla tego obiektu docelowego."
 #: ../plugins/am-project/am-properties.c:464
 #: ../plugins/am-project/am-properties.c:616
 #: ../plugins/am-project/am-properties.c:711
-#, fuzzy
-#| msgid "Plugin Description:"
 msgid "Include in distribution:"
-msgstr "Opis wtyczki:"
+msgstr "Dołączanie w dystrybucji:"
 
 # pd
 #: ../plugins/am-project/am-properties.c:315
@@ -4985,10 +4907,8 @@ msgstr "Dołączanie tego obiektu docelowego w rozprowadzanym pakiecie."
 #: ../plugins/am-project/am-properties.c:472
 #: ../plugins/am-project/am-properties.c:624
 #: ../plugins/am-project/am-properties.c:719
-#, fuzzy
-#| msgid "Build Directory:"
 msgid "Build for check only:"
-msgstr "Katalog budowania:"
+msgstr "Budowanie tylko do sprawdzania:"
 
 # pd
 #: ../plugins/am-project/am-properties.c:323
@@ -5019,6 +4939,8 @@ msgid ""
 "Do not rename the target with an optional prefix, used to avoid overwritting "
 "system program. "
 msgstr ""
+"Bez zmieniania nazwy obiektu docelowego za pomocą opcjonalnego przedrostka, "
+"używanego do uniknięcia zastąpienia programu systemowego. "
 
 # pd
 #: ../plugins/am-project/am-properties.c:336
@@ -5026,7 +4948,7 @@ msgstr ""
 #: ../plugins/am-project/am-properties.c:640
 #: ../plugins/am-project/am-properties.c:735
 msgid "Keep target path:"
-msgstr ""
+msgstr "Utrzymywanie ścieżki obiektu docelowego:"
 
 # pd
 #: ../plugins/am-project/am-properties.c:339
@@ -5038,6 +4960,10 @@ msgid ""
 "program subdir/app installed in bin directory it will be installed in bin/"
 "subdir/app not in bin/app."
 msgstr ""
+"Utrzymywanie względnej ścieżki obiektu docelowego do instalowania. Na "
+"przykład, jeśli program podkatalog/program jest zainstalowany w katalogu "
+"bin, to zostanie on zainstalowany w bin/podkatalog/program, zamiast w bin/"
+"program."
 
 #: ../plugins/am-project/am-properties.c:376
 #: ../plugins/am-project/am-properties.c:528
@@ -5046,10 +4972,8 @@ msgstr "Biblioteki:"
 
 # pd
 #: ../plugins/am-project/am-properties.c:672
-#, fuzzy
-#| msgid "Maximum Actions"
 msgid "Manual section:"
-msgstr "Maksymalna ilość działań"
+msgstr "Sekcja ręczna:"
 
 # pd
 #: ../plugins/am-project/am-properties.c:675
@@ -5057,6 +4981,8 @@ msgid ""
 "Section where are installed the man pages. Valid section names are the "
 "digits ‘0’ through ‘9’, and the letters ‘l’ and ‘n’. "
 msgstr ""
+"Sekcja, w której są instalowane strony podręcznika. Prawidłowe nazwy sekcji "
+"to cyfry od \"0\" do \"9\" oraz litery \"l\" i \"n\"."
 
 #: ../plugins/gdb/anjuta-gdb.ui.h:1
 msgid "Available pretty printers"
@@ -5266,17 +5192,13 @@ msgstr "Debuger GDB"
 
 # pd
 #: ../plugins/git/anjuta-git.ui.h:1
-#, fuzzy
-#| msgid "Add File"
 msgid "Add Files:"
-msgstr "Dodaj plik"
+msgstr "Dodanie plików:"
 
 # pd
 #: ../plugins/git/anjuta-git.ui.h:2
-#, fuzzy
-#| msgid "Add signed-off-by line"
 msgid "Add signed off by line"
-msgstr "Dodaj wiersz Signed-off-by"
+msgstr "Dodaj wiersz \"signed off by\""
 
 #: ../plugins/git/anjuta-git.ui.h:3
 msgid "Amend the previous commit"
@@ -5284,10 +5206,8 @@ msgstr "Dodanie do poprzedniego zatwierdzenia"
 
 # pd
 #: ../plugins/git/anjuta-git.ui.h:4
-#, fuzzy
-#| msgid "Annotate this tag"
 msgid "Annotate this tag:"
-msgstr "Adnotuj tę etykietę"
+msgstr "Adnotowanie tej etykiety:"
 
 #: ../plugins/git/anjuta-git.ui.h:5
 msgid "Append fetch data"
@@ -5295,10 +5215,8 @@ msgstr "Dodaj dane pobrania"
 
 # pd
 #: ../plugins/git/anjuta-git.ui.h:6
-#, fuzzy
-#| msgid "Add signed-off-by line"
 msgid "Append signed-of- by line"
-msgstr "Dodaj wiersz Signed-off-by"
+msgstr "Dodaj wiersz \"signed-of- by\""
 
 #: ../plugins/git/anjuta-git.ui.h:7
 #: ../plugins/subversion/subversion-log-dialog.c:132
@@ -5321,12 +5239,9 @@ msgstr "Gałęzie"
 msgid "Branches must be fully merged"
 msgstr "Gałęzie muszą być w pełni scalone"
 
-# pd
 #: ../plugins/git/anjuta-git.ui.h:12
-#, fuzzy
-#| msgid "Branches"
 msgid "Branches:"
-msgstr "Gałęzie"
+msgstr "Gałęzie:"
 
 #: ../plugins/git/anjuta-git.ui.h:13
 #: ../plugins/subversion/anjuta-subversion.ui.h:4
@@ -5341,10 +5256,7 @@ msgstr "Sprawdza gałąź po jej utworzeniu"
 msgid "Commit on fast-forward merges"
 msgstr "Zatwierdza przy szybkich scalaniach"
 
-# pd
 #: ../plugins/git/anjuta-git.ui.h:16
-#, fuzzy
-#| msgid "Commit to Cherry Pick:"
 msgid "Commit to cherry pick:"
 msgstr "Zatwierdzenie do wybrania:"
 
@@ -5368,12 +5280,12 @@ msgstr "Bez korzystania z etykiet"
 # pd
 #: ../plugins/git/anjuta-git.ui.h:21
 msgid "Drop or enter revision here"
-msgstr ""
+msgstr "W tym miejscu należy umieścić lub wpisać wydanie"
 
 # pd
 #: ../plugins/git/anjuta-git.ui.h:22
 msgid "Drop or type a revision here"
-msgstr ""
+msgstr "W tym miejscu należy umieścić lub wpisać wydanie"
 
 #: ../plugins/git/anjuta-git.ui.h:23
 msgid "E-mail:"
@@ -5411,10 +5323,8 @@ msgstr "Komunikat dziennika:"
 
 # pd
 #: ../plugins/git/anjuta-git.ui.h:32
-#, fuzzy
-#| msgid "Mailbox file containing patches:"
 msgid "Mailbox files to apply:"
-msgstr "Plik skrzynki pocztowej zawierającej łaty:"
+msgstr "Plik skrzynki pocztowej do zastosowania:"
 
 #: ../plugins/git/anjuta-git.ui.h:33
 msgid "Mixed"
@@ -5428,6 +5338,8 @@ msgstr "Tryb:"
 #: ../plugins/git/anjuta-git.ui.h:38
 msgid "Previous commit; Drop or enter a different revision here"
 msgstr ""
+"Poprzednie zatwierdzenie; w tym miejscu należy umieścić lub wpisać inne "
+"wydanie"
 
 #: ../plugins/git/anjuta-git.ui.h:39
 msgid "Push all branches and tags"
@@ -5443,43 +5355,36 @@ msgstr "Odnów"
 
 # pd
 #: ../plugins/git/anjuta-git.ui.h:42
-#, fuzzy
-#| msgid "_Remote repository"
 msgid "Remote Repositories:"
-msgstr "_Zdalne repozytorium"
+msgstr "Zdalne repozytoria:"
 
 # pd
 #: ../plugins/git/anjuta-git.ui.h:43
-#, fuzzy
-#| msgid "Module name:"
 msgid "Remote name:"
-msgstr "Nazwa modułu:"
+msgstr "Nazwa zdalnego:"
 
 # pd
 #: ../plugins/git/anjuta-git.ui.h:44
-#, fuzzy
-#| msgid "Remove File"
 msgid "Remove Files:"
-msgstr "Usuń plik"
+msgstr "Usunięcie plików:"
 
 # pd
 #: ../plugins/git/anjuta-git.ui.h:45
-#, fuzzy
-#| msgid "Repository:"
 msgid "Repository Status:"
-msgstr "Repozytorium:"
+msgstr "Stan repozytorium:"
 
 # pd
 #: ../plugins/git/anjuta-git.ui.h:46
-#, fuzzy
-#| msgid "Reset repository head to this revision"
 msgid "Repository head; Drop or type a different revision here"
-msgstr "Przywraca \"head\" repozytorium do tego wydania"
+msgstr ""
+"\"head\" repozytorium; w tym miejscu należy umieścić lub wpisać inne wydanie"
 
 # pd
 #: ../plugins/git/anjuta-git.ui.h:47
 msgid "Repository origin; Drop or type a different revision here"
 msgstr ""
+"\"origin\" repozytorium; w tym miejscu należy umieścić lub wpisać inne "
+"wydanie"
 
 #: ../plugins/git/anjuta-git.ui.h:48
 msgid "Repository to pull from:"
@@ -5497,7 +5402,7 @@ msgstr "Wydanie"
 # pd
 #: ../plugins/git/anjuta-git.ui.h:51
 msgid "Revision to merge with:"
-msgstr ""
+msgstr "Wydanie, z którym scalić:"
 
 #: ../plugins/git/anjuta-git.ui.h:53
 #: ../plugins/subversion/subversion-log-dialog.c:160
@@ -5520,12 +5425,9 @@ msgstr "Miękko"
 msgid "Squash"
 msgstr "Squash"
 
-# pd
 #: ../plugins/git/anjuta-git.ui.h:58
-#, fuzzy
-#| msgid "Stash Message (Optional)"
 msgid "Stash Message (Optional):"
-msgstr "Komunikat schowka (opcjonalny)"
+msgstr "Komunikat schowka (opcjonalny):"
 
 #: ../plugins/git/anjuta-git.ui.h:59
 msgid "Stash indexed changes"
@@ -5533,10 +5435,8 @@ msgstr "Schowaj zindeksowane zmiany"
 
 # pd
 #: ../plugins/git/anjuta-git.ui.h:60
-#, fuzzy
-#| msgid "Stash indexed changes"
 msgid "Stashed Changes:"
-msgstr "Schowaj zindeksowane zmiany"
+msgstr "Schowane zmiany:"
 
 #: ../plugins/git/anjuta-git.ui.h:61
 msgid "Tag name:"
@@ -5544,10 +5444,8 @@ msgstr "Nazwa etykiety:"
 
 # pd
 #: ../plugins/git/anjuta-git.ui.h:62
-#, fuzzy
-#| msgid "Tags"
 msgid "Tags:"
-msgstr "Etykiety"
+msgstr "Etykiety:"
 
 #: ../plugins/git/anjuta-git.ui.h:63
 msgid "This commit concludes a failed merge (use -i)"
@@ -5556,10 +5454,8 @@ msgstr ""
 
 # pd
 #: ../plugins/git/anjuta-git.ui.h:65
-#, fuzzy
-#| msgid "Use a custom log message"
 msgid "Use a custom log message:"
-msgstr "Własny komunikat dziennika"
+msgstr "Własny komunikat dziennika:"
 
 #: ../plugins/git/anjuta-git.ui.h:66
 msgid "Use custom author information:"
@@ -5575,11 +5471,15 @@ msgstr "Wyświetlenie dziennika pliku/katalogu:"
 msgid ""
 "Whole project; Drop a file here or type a path to view a file or folder log"
 msgstr ""
+"Cały projekt; w tym miejscu należy umieścić plik lub wpisać ścieżkę do "
+"wyświetlenia pliku lub dziennika katalogu"
 
 # pd
 #: ../plugins/git/anjuta-git.ui.h:69
 msgid "Whole project; Drop a file here to view a file or folder log"
 msgstr ""
+"Cały projekt; w tym miejscu należy umieścić plik do wyświetlenia pliku lub "
+"dziennika katalogu"
 
 #: ../plugins/git/anjuta-git.ui.h:70
 msgid "page 1"
@@ -5591,36 +5491,24 @@ msgstr "strona 2"
 
 # pd
 #: ../plugins/git/git-add-files-pane.c:157
-#, fuzzy
-#| msgid "Add File"
 msgid "Add Files"
-msgstr "Dodaj plik"
+msgstr "Dodaj pliki"
 
 # pd
 #: ../plugins/git/git-add-remote-pane.c:52
-#, fuzzy
-#| msgid "Please enter a tag name."
 msgid "Please enter a remote name."
-msgstr "Proszę wprowadzić nazwę etykiety."
+msgstr "Proszę wprowadzić nazwę zdalnego."
 
-# pd
 #: ../plugins/git/git-add-remote-pane.c:55
-#, fuzzy
-#| msgid "Please enter a URL."
 msgid "Please enter a URL"
-msgstr "Proszę wprowadzić adres URL."
+msgstr "Proszę wprowadzić adres URL"
 
 # pd
 #: ../plugins/git/git-add-remote-pane.c:179
-#, fuzzy
-#| msgid "Remote"
 msgid "Add Remote"
-msgstr "Zdalne"
+msgstr "Dodaj zdalne"
 
-# pd
 #: ../plugins/git/git-apply-mailbox-pane.c:157
-#, fuzzy
-#| msgid "Apply mailbox files"
 msgid "Apply Mailbox Files"
 msgstr "Zastosuj pliki skrzynek pocztowych"
 
@@ -5628,10 +5516,8 @@ msgstr "Zastosuj pliki skrzynek pocztowych"
 #: ../plugins/git/git-apply-stash-pane.c:54
 #: ../plugins/git/git-diff-stash-pane.c:67
 #: ../plugins/git/git-drop-stash-pane.c:48
-#, fuzzy
-#| msgid "No group selected"
 msgid "No stash selected."
-msgstr "Nie wybrano żadnej grupy"
+msgstr "Nie wybrano żadnego schowka."
 
 #: ../plugins/git/git-checkout-pane.c:147
 msgid "Check Out Files"
@@ -5640,28 +5526,20 @@ msgstr "Sprawdź pliki"
 # pd
 #: ../plugins/git/git-commit-pane.c:124
 #: ../plugins/git/git-create-tag-pane.c:79 ../plugins/git/git-merge-pane.c:70
-#, fuzzy
-#| msgid "Please enter a tag name."
 msgid "Please enter a log message."
-msgstr "Proszę wprowadzić nazwę etykiety."
+msgstr "Proszę wprowadzić komunikat dziennika."
 
-# pd
 #: ../plugins/git/git-commit-pane.c:145
-#, fuzzy
-#| msgid "Please enter the commit author's name."
 msgid "Please enter the commit author's name"
-msgstr "Proszę wprowadzić imię i nazwisko autora zatwierdzenia."
+msgstr "Proszę wprowadzić imię i nazwisko autora zatwierdzenia"
 
 #: ../plugins/git/git-commit-pane.c:149
 msgid "Please enter the commit author's e-mail address."
 msgstr "Proszę wprowadzić adres e-mail autora zatwierdzenia."
 
-# pd
 #: ../plugins/git/git-commit-pane.c:293 ../plugins/git/plugin.c:146
-#, fuzzy
-#| msgid "_Commit"
 msgid "Commit"
-msgstr "_Zatwierdź"
+msgstr "Zatwierdź"
 
 #: ../plugins/git/git-cherry-pick-pane.c:53 ../plugins/git/git-merge-pane.c:56
 #: ../plugins/subversion/subversion-copy-dialog.c:207
@@ -5676,46 +5554,35 @@ msgstr "Wybierz zmiany"
 # pd
 #. Translators: default file name for git diff's output
 #: ../plugins/git/git-diff-pane.c:33
-#, fuzzy
-#| msgid "Stash Uncommitted Changes"
 msgid "Uncommitted Changes.diff"
-msgstr "Schowaj niezatwierdzone zmiany"
+msgstr "Niezatwierdzone zmiany.diff"
 
 # pd
 #. Translators: file name for an existing commits diff, %s is an SHASUM of a commit
 #: ../plugins/git/git-diff-pane.c:71
-#, fuzzy, c-format
-#| msgid "_Show commit diff"
+#, c-format
 msgid "Commit %s.diff"
-msgstr "Wyświetl _różnicę zatwierdzeń"
+msgstr "Zatwierdzenie %s.diff"
 
 # pd
 #: ../plugins/git/git-diff-pane.c:104
-#, fuzzy
-#| msgid "No group selected"
 msgid "No revision selected"
-msgstr "Nie wybrano żadnej grupy"
+msgstr "Nie wybrano żadnego wydania"
 
 # pd
 #: ../plugins/git/git-reset-pane.c:167
-#, fuzzy
-#| msgid "_Reset"
 msgid "Reset"
-msgstr "_Przywróć"
+msgstr "Przywróć"
 
 # pd
 #: ../plugins/git/git-revert-pane.c:48
-#, fuzzy
-#| msgid "Please enter a path."
 msgid "Please enter a commit."
-msgstr "Proszę wprowadzić ścieżkę."
+msgstr "Proszę wprowadzić zatwierdzenie."
 
 # pd
 #: ../plugins/git/git-revert-pane.c:162
-#, fuzzy
-#| msgid "_Revert…"
 msgid "Revert"
-msgstr "_Odrzuć…"
+msgstr "Odrzuć"
 
 #: ../plugins/git/git-create-branch-pane.c:51
 msgid "Please enter a branch name."
@@ -5731,24 +5598,19 @@ msgstr "Utwórz etykietę"
 
 # pd
 #: ../plugins/git/git-delete-remote-pane.c:49
-#, fuzzy
-#| msgid "No group selected"
 msgid "No remote selected."
-msgstr "Nie wybrano żadnej grupy"
+msgstr "Nie wybrano żadnego zdalnego."
 
 # pd
 #: ../plugins/git/git-delete-tags-pane.c:49
-#, fuzzy
-#| msgid "No group selected"
 msgid "No tags selected."
-msgstr "Nie wybrano żadnej grupy"
+msgstr "Nie wybrano żadnej etykiety."
 
 # pd
 #: ../plugins/git/git-diff-stash-pane.c:40
-#, fuzzy, c-format
-#| msgid "Standard diff"
+#, c-format
 msgid "Stash %i.diff"
-msgstr "Standardowa różnica"
+msgstr "Schowek %i.diff"
 
 #: ../plugins/git/git-log-pane.c:560
 #, c-format
@@ -5776,22 +5638,15 @@ msgstr "Git"
 
 # pd
 #: ../plugins/git/git-pane.c:204
-#, fuzzy
-#| msgid "Error"
 msgid "Git Error"
-msgstr "Błąd"
+msgstr "Błąd programu git"
 
 # pd
 #: ../plugins/git/git-pane.c:210
-#, fuzzy
-#| msgid "Warning"
 msgid "Git Warning"
-msgstr "Ostrzeżenie"
+msgstr "Ostrzeżenie programu git"
 
-# pd
 #: ../plugins/git/git-patch-series-pane.c:167
-#, fuzzy
-#| msgid "Create patch series"
 msgid "Generate Patch Series"
 msgstr "Utwórz serię łat"
 
@@ -5809,17 +5664,13 @@ msgstr "Wyślij"
 
 # pd
 #: ../plugins/git/git-rebase-pane.c:61
-#, fuzzy
-#| msgid "No group selected"
 msgid "No remote selected"
-msgstr "Nie wybrano żadnej grupy"
+msgstr "Nie wybrano żadnego zdalnego"
 
 # pd
 #: ../plugins/git/git-remove-files-pane.c:157
-#, fuzzy
-#| msgid "Remove File"
 msgid "Remove Files"
-msgstr "Usuń plik"
+msgstr "Usuń pliki"
 
 #: ../plugins/git/git-repository-selector.c:66
 msgid "Remote"
@@ -5831,10 +5682,8 @@ msgstr "Adres URL"
 
 # pd
 #: ../plugins/git/git-repository-selector.c:100
-#, fuzzy
-#| msgid "<b>Remote:</b> %s"
 msgid "<b>Selected Remote:</b>"
-msgstr "<b>Zdalne:</b> %s"
+msgstr "<b>Wybrane zdalne:</b>"
 
 # pd
 #: ../plugins/git/git-repository-selector.c:199
@@ -5842,13 +5691,13 @@ msgid ""
 "No remote selected; using origin by default.\n"
 "To push to a different remote, select one from the Remotes list above."
 msgstr ""
+"Nie wybrano zdalnego; używanie domyślnego \"origin\".\n"
+"Aby wysłać inne zdalne, należy wybrać je z listy Zdalne powyżej."
 
 # pd
 #: ../plugins/git/git-resolve-conflicts-pane.c:50
-#, fuzzy
-#| msgid "Mark conflicted files as resolved"
 msgid "No conflicted files selected."
-msgstr "Oznacza konflikty jako rozwiązane"
+msgstr "Nie wybrano żadnych plików w konflikcie."
 
 #: ../plugins/git/git-stash-changes-pane.c:158
 msgid "Stash Uncommitted Changes"
@@ -5857,26 +5706,22 @@ msgstr "Schowaj niezatwierdzone zmiany"
 # pd
 #: ../plugins/git/git-status-pane.c:368
 msgid "Changes to be committed"
-msgstr ""
+msgstr "Zmiany do zatwierdzenia"
 
 # pd
 #: ../plugins/git/git-status-pane.c:377
 msgid "Changed but not updated"
-msgstr ""
+msgstr "Zmieniono, ale nie zaktualizowano"
 
 # pd
 #: ../plugins/git/git-unstage-pane.c:51
-#, fuzzy
-#| msgid "No target has been selected"
 msgid "No staged files selected."
-msgstr "Nie wybrano żadnego obiektu docelowego"
+msgstr "Nie wybrano żadnych wstrzymanych plików."
 
 # pd
 #: ../plugins/git/plugin.c:65
-#, fuzzy
-#| msgid "Branches"
 msgid "Branch tools"
-msgstr "Gałęzie"
+msgstr "Narzędzia gałęzi"
 
 #: ../plugins/git/plugin.c:73 ../plugins/git/plugin.c:74
 msgid "Create a branch"
@@ -5884,31 +5729,23 @@ msgstr "Tworzy gałąź"
 
 # pd
 #: ../plugins/git/plugin.c:81 ../plugins/git/plugin.c:82
-#, fuzzy
-#| msgid "Git: Deleted selected branches."
 msgid "Delete selected branches"
-msgstr "Git: usunięto wybrane gałęzie."
+msgstr "Usuwa wybrane gałęzie"
 
 # pd
 #: ../plugins/git/plugin.c:89 ../plugins/git/plugin.c:90
-#, fuzzy
-#| msgid "Switch to another branch"
 msgid "Switch to the selected branch"
-msgstr "Przełącza na inną gałąź"
+msgstr "Przełącza na wybraną gałąź"
 
 # pd
 #: ../plugins/git/plugin.c:98
-#, fuzzy
-#| msgid "Merge this commit into the current branch"
 msgid "Merge a revision into the current branch"
-msgstr "Łączy to zatwierdzenie z bieżącą gałęzią"
+msgstr "Scala to wydanie z bieżącą gałęzią"
 
 # pd
 #: ../plugins/git/plugin.c:109
-#, fuzzy
-#| msgid "Tools"
 msgid "Tag tools"
-msgstr "Narzędzia"
+msgstr "Narzędzia etykiet"
 
 #: ../plugins/git/plugin.c:117 ../plugins/git/plugin.c:118
 msgid "Create a tag"
@@ -5916,38 +5753,26 @@ msgstr "Tworzy etykietę"
 
 # pd
 #: ../plugins/git/plugin.c:125 ../plugins/git/plugin.c:126
-#, fuzzy
-#| msgid "Git: Deleted selected tags."
 msgid "Delete selected tags"
-msgstr "Git: usunięto wybrane etykiety."
+msgstr "Usuwa wybrane etykiety"
 
 # pd
 #: ../plugins/git/plugin.c:138
-#, fuzzy
-#| msgid "Changes:"
 msgid "Changes"
-msgstr "Zmiany:"
+msgstr "Zmiany"
 
-# pd
 #: ../plugins/git/plugin.c:147
-#, fuzzy
-#| msgid "Commit Changes"
 msgid "Commit changes"
 msgstr "Zatwierdź zmiany"
 
-# pd
 #: ../plugins/git/plugin.c:154
-#, fuzzy
-#| msgid "_Diff uncommitted changes"
 msgid "Diff uncommitted changes"
-msgstr "_Różnica niezatwierdzonych zmian"
+msgstr "Różnica niezatwierdzonych zmian"
 
 # pd
 #: ../plugins/git/plugin.c:155
-#, fuzzy
-#| msgid "Show uncommitted changes"
 msgid "Show a diff of uncommitted changes in an editor"
-msgstr "Wyświetla niezatwierdzone zmiany"
+msgstr "Wyświetla różnicę niezatwierdzonych zmian w edytorze"
 
 #: ../plugins/git/plugin.c:170
 #: ../plugins/snippets-manager/snippets-editor.ui.h:3
@@ -5956,10 +5781,8 @@ msgstr "Dodaj"
 
 # pd
 #: ../plugins/git/plugin.c:171
-#, fuzzy
-#| msgid "Add files to the repository"
 msgid "Add files to the index"
-msgstr "Dodaje pliki do repozytorium"
+msgstr "Dodaje pliki do indeksu"
 
 #: ../plugins/git/plugin.c:179
 msgid "Remove files from the repository"
@@ -5967,80 +5790,57 @@ msgstr "Usuwa pliki z repozytorium"
 
 # pd
 #: ../plugins/git/plugin.c:186
-#, fuzzy
-#| msgid "Check Out Files"
 msgid "Check out"
-msgstr "Sprawdź pliki"
+msgstr "Sprawdź"
 
 # pd
 #: ../plugins/git/plugin.c:187
-#, fuzzy
-#| msgid "Revert uncommitted changes to files"
 msgid "Revert changes in unstaged files"
-msgstr "Odrzuca niezatwierdzone zmiany plików"
+msgstr "Odrzuca zmiany w wycofanych plikach"
 
 # pd
 #: ../plugins/git/plugin.c:194
-#, fuzzy
-#| msgid "Unstage Files"
 msgid "Unstage"
-msgstr "Wycofaj pliki"
+msgstr "Wycofaj"
 
 # pd
 #: ../plugins/git/plugin.c:195
-#, fuzzy
-#| msgid "Remove files from the commit index"
 msgid "Remove staged files from the index"
-msgstr "Usuwa pliki z indeksu zatwierdzenia"
+msgstr "Usuwa wstrzymane pliki z indeksu"
 
-# pd
 #: ../plugins/git/plugin.c:202
-#, fuzzy
-#| msgid "_Resolve conflicts…"
 msgid "Resolve conflicts"
-msgstr "_Rozwiąż konflikty…"
+msgstr "Rozwiąż konflikty"
 
 # pd
 #: ../plugins/git/plugin.c:203
-#, fuzzy
-#| msgid "Mark conflicted files as resolved"
 msgid "Mark selected conflicted files as resolved"
-msgstr "Oznacza konflikty jako rozwiązane"
+msgstr "Oznacza wybrane pliki w konflikcie jako rozwiązane"
 
 # pd
 #: ../plugins/git/plugin.c:214
-#, fuzzy
-#| msgid "_Remote repository"
 msgid "Remote repository tools"
-msgstr "_Zdalne repozytorium"
+msgstr "Narzędzia zdalnego repozytorium"
 
 # pd
 #: ../plugins/git/plugin.c:222
-#, fuzzy
-#| msgid "Add a remote branch"
 msgid "Add a remote"
-msgstr "Dodaje zdalną gałąź"
+msgstr "Dodaj zdalne"
 
 # pd
 #: ../plugins/git/plugin.c:223
-#, fuzzy
-#| msgid "Add to repository"
 msgid "Add a remote repository"
-msgstr "Dodaj do repozytorium"
+msgstr "Dodaje zdalne repozytorium"
 
 # pd
 #: ../plugins/git/plugin.c:230
-#, fuzzy
-#| msgid "Git: Deleted selected tags."
 msgid "Delete selected remote"
-msgstr "Git: usunięto wybrane etykiety."
+msgstr "Usuwa wybrane zdalne"
 
 # pd
 #: ../plugins/git/plugin.c:231
-#, fuzzy
-#| msgid "Delete a remote branch"
 msgid "Delete a remote"
-msgstr "Usuwa zdalną gałąź"
+msgstr "Usuń zdalne"
 
 #: ../plugins/git/plugin.c:239
 msgid "Push changes to a remote repository"
@@ -6048,153 +5848,110 @@ msgstr "Wysyła zmiany do zdalnego repozytorium"
 
 # pd
 #: ../plugins/git/plugin.c:247
-#, fuzzy
-#| msgid "Push changes to a remote repository"
 msgid "Pull changes from a remote repository"
-msgstr "Wysyła zmiany do zdalnego repozytorium"
+msgstr "Pobiera zmiany ze zdalnego repozytorium"
 
-# pd
 #: ../plugins/git/plugin.c:254
-#, fuzzy
-#| msgid "_Fetch"
 msgid "Fetch"
-msgstr "_Pobierz"
+msgstr "Pobierz"
 
 # pd
 #: ../plugins/git/plugin.c:255
-#, fuzzy
-#| msgid "Push changes to a remote repository"
 msgid "Fetch changes from remote repositories"
-msgstr "Wysyła zmiany do zdalnego repozytorium"
+msgstr "Pobiera zmiany ze zdalnego repozytorium"
 
 # pd
 #: ../plugins/git/plugin.c:270
 msgid "Rebase against selected remote"
-msgstr ""
+msgstr "Odnawia opierając na wybranym zdalnym"
 
 # pd
 #: ../plugins/git/plugin.c:271
 msgid "Start a rebase operation relative to the selected remote repository"
-msgstr ""
+msgstr "Uruchamia działanie odnowy względne do wybranego zdalnego repozytorium"
 
 # pd
 #: ../plugins/git/plugin.c:278 ../plugins/git/plugin.c:446
-#, fuzzy
-#| msgid "_Continue"
 msgid "Continue"
-msgstr "_Kontynuuj"
+msgstr "Kontynuuj"
 
 # pd
 #: ../plugins/git/plugin.c:279
-#, fuzzy
-#| msgid "_Continue with resolved conflicts"
 msgid "Continue a rebase with resolved conflicts"
-msgstr "_Kontynuuj z rozwiązanymi konfliktami"
+msgstr "Kontynuuje odnowę z rozwiązanymi konfliktami"
 
-# pd
 #: ../plugins/git/plugin.c:286 ../plugins/git/plugin.c:454
-#, fuzzy
-#| msgid "_Skip"
 msgid "Skip"
-msgstr "_Pomiń"
+msgstr "Pomiń"
 
 # pd
 #: ../plugins/git/plugin.c:287
-#, fuzzy
-#| msgid "Mark the current head revision as bad"
 msgid "Skip the current revision"
-msgstr "Oznacza bieżące wydanie \"head\" jako błędne"
+msgstr "Pomija bieżące wydanie"
 
-# pd
 #: ../plugins/git/plugin.c:294 ../plugins/git/plugin.c:462
-#, fuzzy
-#| msgid "_Abort"
 msgid "Abort"
-msgstr "_Przerwij"
+msgstr "Przerwij"
 
 # pd
 #: ../plugins/git/plugin.c:295
-#, fuzzy
-#| msgid "Abort the rebase and put the repository in its original state"
 msgid "Abort the rebase and return the repository to its previous state"
-msgstr "Przerywa odnowę i umieszcza repozytorium w jego pierwotnym stanie"
+msgstr "Przerywa odnowę i wraca repozytorium do jego pierwotnego stanu"
 
 # pd
 #: ../plugins/git/plugin.c:306
-#, fuzzy
-#| msgid "Stash to Apply"
 msgid "Stash tools"
-msgstr "Schowek do zastosowania"
+msgstr "Narzędzia schowka"
 
 # pd
 #: ../plugins/git/plugin.c:314
-#, fuzzy
-#| msgid "_Stash uncommitted changes…"
 msgid "Stash uncommitted changes"
-msgstr "_Schowaj niezatwierdzone zmiany…"
+msgstr "Schowaj niezatwierdzone zmiany"
 
 # pd
 #: ../plugins/git/plugin.c:315
-#, fuzzy
-#| msgid "Revert uncommitted changes to files"
 msgid "Save uncommitted changes without committing them"
-msgstr "Odrzuca niezatwierdzone zmiany plików"
+msgstr "Zapisuje niezatwierdzone zmiany bez ich wysyłania"
 
 # pd
 #: ../plugins/git/plugin.c:322
-#, fuzzy
-#| msgid "Apply the selected stash"
 msgid "Apply selected stash"
-msgstr "Zastosowuje wybrany schowek"
+msgstr "Zastosuj wybrany schowek"
 
 # pd
 #: ../plugins/git/plugin.c:323
-#, fuzzy
-#| msgid "Apply stashed changes to the working tree"
 msgid "Apply stashed changes back into the working tree"
 msgstr "Zastosowuje schowane zmiany w drzewie roboczym"
 
 # pd
 #: ../plugins/git/plugin.c:330
-#, fuzzy
-#| msgid "Apply stashed changes to the working tree"
 msgid "Apply stash and restore index"
-msgstr "Zastosowuje schowane zmiany w drzewie roboczym"
+msgstr "Zastosuj schowek i przywróć indeks"
 
 # pd
 #: ../plugins/git/plugin.c:331
-#, fuzzy
-#| msgid "Apply stashed changes to the working tree"
 msgid "Apply stashed changes back into the working tree and the index"
-msgstr "Zastosowuje schowane zmiany w drzewie roboczym"
+msgstr "Zastosowuje schowane zmiany w drzewie roboczym i indeksie"
 
 # pd
 #: ../plugins/git/plugin.c:338
-#, fuzzy
-#| msgid "Drop the selected stash"
 msgid "Diff selected stash"
-msgstr "Opuszcza wybrany schowek"
+msgstr "Różnica wybranego schowka"
 
 # pd
 #: ../plugins/git/plugin.c:339
-#, fuzzy
-#| msgid "Drop the selected stash"
 msgid "Show a diff of the selected stash"
-msgstr "Opuszcza wybrany schowek"
+msgstr "Wyświetla różnicę wybranego schowka"
 
 # pd
 #: ../plugins/git/plugin.c:346
-#, fuzzy
-#| msgid "Drop the selected stash"
 msgid "Drop selected stash"
-msgstr "Opuszcza wybrany schowek"
+msgstr "Opuść wybrany schowek"
 
 # pd
 #: ../plugins/git/plugin.c:347
-#, fuzzy
-#| msgid "Drop the selected stash"
 msgid "Delete the selected stash"
-msgstr "Opuszcza wybrany schowek"
+msgstr "Usuwa wybrany schowek"
 
 #: ../plugins/git/plugin.c:354
 msgid "Clear all stashes"
@@ -6202,73 +5959,49 @@ msgstr "Czyści wszystkie schowki"
 
 # pd
 #: ../plugins/git/plugin.c:355
-#, fuzzy
-#| msgid "Select all text in the editor"
 msgid "Delete all stashes in this repository"
-msgstr "Zaznacza cały tekst w edytorze"
+msgstr "Usuwa wszystkie schowki w tym repozytorium"
 
 # pd
 #: ../plugins/git/plugin.c:366
-#, fuzzy
-#| msgid "Revision"
 msgid "Revision tools"
-msgstr "Wydanie"
+msgstr "Narzędzia wydania"
 
-# pd
 #: ../plugins/git/plugin.c:374
-#, fuzzy
-#| msgid "_Show commit diff"
 msgid "Show commit diff"
-msgstr "Wyświetl _różnicę zatwierdzeń"
+msgstr "Wyświetl różnicę zatwierdzeń"
 
 # pd
 #: ../plugins/git/plugin.c:375
-#, fuzzy
-#| msgid "_View selected revision"
 msgid "Show a diff of the selected revision"
-msgstr "_Wyświetl wybrane wydanie"
+msgstr "Wyświetla różnicę wybranego wydania"
 
-# pd
 #: ../plugins/git/plugin.c:382
-#, fuzzy
-#| msgid "Cherry Pick"
 msgid "Cherry pick"
 msgstr "Wybierz zmiany"
 
 # pd
 #: ../plugins/git/plugin.c:383
-#, fuzzy
-#| msgid "Merge this commit into the current branch"
 msgid "Merge an individual commit from another branch"
-msgstr "Łączy to zatwierdzenie z bieżącą gałęzią"
+msgstr "Scala to indywidualne zatwierdzenie z innej gałęzi"
 
-# pd
 #: ../plugins/git/plugin.c:390
-#, fuzzy
-#| msgid "_Reset/Revert"
 msgid "Reset/Revert"
-msgstr "_Przywróć/odrzuć"
+msgstr "Przywróć/odrzuć"
 
-# pd
 #: ../plugins/git/plugin.c:398
-#, fuzzy
-#| msgid "Reset Tree"
 msgid "Reset tree"
 msgstr "Przywróć drzewo"
 
 # pd
 #: ../plugins/git/plugin.c:399
-#, fuzzy
-#| msgid "Reset repository head to this revision"
 msgid "Reset tree to a previous revision"
-msgstr "Przywraca \"head\" repozytorium do tego wydania"
+msgstr "Przywraca drzewo do poprzedniego wydania"
 
 # pd
 #: ../plugins/git/plugin.c:406
-#, fuzzy
-#| msgid "Revert a commit"
 msgid "Revert commit"
-msgstr "Odrzuca zatwierdzenie"
+msgstr "Odrzuć zatwierdzenie"
 
 #: ../plugins/git/plugin.c:407
 msgid "Revert a commit"
@@ -6276,24 +6009,18 @@ msgstr "Odrzuca zatwierdzenie"
 
 # pd
 #: ../plugins/git/plugin.c:414
-#, fuzzy
-#| msgid "Patches"
 msgid "Patch series"
-msgstr "Łaty"
+msgstr "Serie łat"
 
 # pd
 #: ../plugins/git/plugin.c:422 ../plugins/git/plugin.c:423
-#, fuzzy
-#| msgid "Create patch series"
 msgid "Generate a patch series"
-msgstr "Utwórz serię łat"
+msgstr "Tworzy serie łat"
 
 # pd
 #: ../plugins/git/plugin.c:430
-#, fuzzy
-#| msgid "Apply mailbox files"
 msgid "Mailbox files"
-msgstr "Zastosuj pliki skrzynek pocztowych"
+msgstr "Pliki skrzynek pocztowych"
 
 #: ../plugins/git/plugin.c:438
 msgid "Apply mailbox files"
@@ -6301,34 +6028,26 @@ msgstr "Zastosuj pliki skrzynek pocztowych"
 
 # pd
 #: ../plugins/git/plugin.c:439
-#, fuzzy
-#| msgid "Apply mailbox files"
 msgid "Apply patches from mailbox files"
-msgstr "Zastosuj pliki skrzynek pocztowych"
+msgstr "Zastosowuje łaty ze skrzynek pocztowych"
 
 # pd
 #: ../plugins/git/plugin.c:447
-#, fuzzy
-#| msgid "Continue applying a series after resolving conflicts"
 msgid "Continue applying patches with resolved conflicts"
-msgstr "Kontynuuje zastosowywanie serii po rozwiązaniu konfliktów"
+msgstr "Kontynuuje zastosowywanie łat z rozwiązanymi konfliktami"
 
 # pd
 #: ../plugins/git/plugin.c:455
-#, fuzzy
-#| msgid "Skip the current patch in the series and continue"
 msgid "Skip the current patch in the series"
-msgstr "Pomija bieżącą łatę w serii i kontynuuje"
+msgstr "Pomiń bieżącą łatę w serii"
 
 # pd
 #: ../plugins/git/plugin.c:463
-#, fuzzy
-#| msgid ""
-#| "Stop applying the series and return the repository to its original state"
 msgid ""
 "Stop applying the patch series and return the tree to its previous state"
 msgstr ""
-"Zatrzymuje zastosowywanie sesji i wraca repozytorium do pierwotnego stanu"
+"Zatrzymuje zastosowywanie serii zmian i wraca repozytorium do jego "
+"pierwotnego stanu"
 
 #: ../plugins/git/plugin.c:554 ../plugins/git/plugin.c:627
 msgid "Branch"
@@ -6336,24 +6055,18 @@ msgstr "Gałąź"
 
 # pd
 #: ../plugins/git/plugin.c:696
-#, fuzzy
-#| msgid "Tasks"
 msgid "Git Tasks"
-msgstr "Zadania"
+msgstr "Zadania programu git"
 
 # pd
 #: ../plugins/git/plugin.c:758
-#, fuzzy
-#| msgid "State"
 msgid "Status"
 msgstr "Stan"
 
 # pd
 #: ../plugins/git/plugin.c:764
-#, fuzzy
-#| msgid "Low"
 msgid "Log"
-msgstr "Niski"
+msgstr "Dziennik"
 
 #: ../plugins/git/plugin.c:775
 msgid "Tags"
@@ -6361,8 +6074,6 @@ msgstr "Etykiety"
 
 # pd
 #: ../plugins/git/plugin.c:781
-#, fuzzy
-#| msgid "Remote"
 msgid "Remotes"
 msgstr "Zdalne"
 
@@ -6372,15 +6083,13 @@ msgstr "Schowek"
 
 # pd
 #: ../plugins/glade/plugin.c:460
-#, fuzzy
-#| msgid "Select all text in the editor"
 msgid "Select widgets in the workspace"
-msgstr "Zaznacza cały tekst w edytorze"
+msgstr "Zaznacza widżety w edytorze"
 
 # pd
 #: ../plugins/glade/plugin.c:486
 msgid "Drag and resize widgets in the workspace"
-msgstr ""
+msgstr "Przesuwa i zmienia rozmiar widżetów w obszarze roboczym"
 
 # pd
 #: ../plugins/glade/plugin.c:514
@@ -6562,10 +6271,9 @@ msgstr[2] "%d błędów"
 
 # pd
 #: ../plugins/mk-project/mk-project.c:460
-#, fuzzy, c-format
-#| msgid "Unable to delete file"
+#, c-format
 msgid "Unable to parse make file"
-msgstr "Nie można usunąć pliku"
+msgstr "Nie można przetworzyć pliku make"
 
 #: ../plugins/mk-project/mk-project.ui.h:1
 msgid "Add _Package"
@@ -6766,10 +6474,8 @@ msgstr "Importowanie"
 
 # pd
 #: ../plugins/project-manager/pm_dialogs.ui.h:1
-#, fuzzy
-#| msgid "Library"
 msgid "Add Library"
-msgstr "Biblioteka"
+msgstr "Dodawanie biblioteki"
 
 #: ../plugins/project-manager/pm_dialogs.ui.h:2
 msgid "Add Source"
@@ -6777,38 +6483,28 @@ msgstr "Dodawanie źródeł"
 
 # pd
 #: ../plugins/project-manager/pm_dialogs.ui.h:3
-#, fuzzy
-#| msgid "Close other documents"
 msgid "Browse other nodes"
-msgstr "Zamyka inne dokumenty"
+msgstr "Przeglądanie innych węzłów"
 
 # pd
 #: ../plugins/project-manager/pm_dialogs.ui.h:4
-#, fuzzy
-#| msgid "Module"
 msgid "Modules:"
-msgstr "Moduł"
+msgstr "Moduły:"
 
 # pd
 #: ../plugins/project-manager/pm_dialogs.ui.h:5
-#, fuzzy
-#| msgid "Import options"
 msgid "More options:"
-msgstr "Opcje importowania"
+msgstr "Więcej opcji:"
 
 # pd
 #: ../plugins/project-manager/pm_dialogs.ui.h:6
-#, fuzzy
-#| msgid "Build Directory:"
 msgid "New Directory"
-msgstr "Katalog budowania:"
+msgstr "Nowy katalog"
 
 # pd
 #: ../plugins/project-manager/pm_dialogs.ui.h:7
-#, fuzzy
-#| msgid "Library"
 msgid "New Library"
-msgstr "Biblioteka"
+msgstr "Nowa biblioteka"
 
 #: ../plugins/project-manager/pm_dialogs.ui.h:8
 msgid "New Target"
@@ -6816,17 +6512,13 @@ msgstr "Nowy obiekt docelowy"
 
 # pd
 #: ../plugins/project-manager/pm_dialogs.ui.h:9
-#, fuzzy
-#| msgid "Packages"
 msgid "Package list:"
-msgstr "Pakiety"
+msgstr "Lista pakietów:"
 
 # pd
 #: ../plugins/project-manager/pm_dialogs.ui.h:10
-#, fuzzy
-#| msgid "Select the _target for the new source files:"
 msgid "Select the _target for the library:"
-msgstr "Proszę wybrać obiekt _docelowy dla nowych plików źródłowych:"
+msgstr "Proszę wybrać obiekt _docelowy dla biblioteki:"
 
 #: ../plugins/project-manager/pm_dialogs.ui.h:11
 msgid "Select the _target for the new source files:"
@@ -6838,10 +6530,8 @@ msgstr "Pliki źródłowe:"
 
 # pd
 #: ../plugins/project-manager/pm_dialogs.ui.h:13
-#, fuzzy
-#| msgid "Specify _where to create the target:"
 msgid "Specify _where to create the directory:"
-msgstr "_Gdzie utworzyć obiekt docelowy:"
+msgstr "_Gdzie utworzyć katalog:"
 
 #: ../plugins/project-manager/pm_dialogs.ui.h:14
 msgid "Specify _where to create the target:"
@@ -6861,24 +6551,18 @@ msgstr "Typy docelowe"
 
 # pd
 #: ../plugins/project-manager/pm_dialogs.ui.h:18
-#, fuzzy
-#| msgid "Project name:"
 msgid "_Directory name:"
-msgstr "Nazwa projektu:"
+msgstr "Nazwa _katalogu:"
 
 # pd
 #: ../plugins/project-manager/pm_dialogs.ui.h:19
-#, fuzzy
-#| msgid "Module name:"
 msgid "_Module name:"
-msgstr "Nazwa modułu:"
+msgstr "Nazwa _modułu:"
 
 # pd
 #: ../plugins/project-manager/pm_dialogs.ui.h:20
-#, fuzzy
-#| msgid "New accelerator…"
 msgid "_New library…"
-msgstr "Nowy skrót klawiszowy…"
+msgstr "_Nowa biblioteka…"
 
 #: ../plugins/project-manager/pm_dialogs.ui.h:21
 msgid "_Select file to add…"
@@ -6935,28 +6619,20 @@ msgstr ""
 
 # pd
 #: ../plugins/project-manager/plugin.c:677
-#, fuzzy
-#| msgid ""
-#| "Are you sure you want to remove the following target from the project?\n"
-#| "\n"
 msgid ""
 "Are you sure you want to remove the following package from the project?\n"
 "\n"
 msgstr ""
-"Na pewno usunąć następujący obiekt docelowy z projektu?\n"
+"Na pewno usunąć następujący pakiet z projektu?\n"
 "\n"
 
 # pd
 #: ../plugins/project-manager/plugin.c:680
-#, fuzzy
-#| msgid ""
-#| "Are you sure you want to remove the following group from the project?\n"
-#| "\n"
 msgid ""
 "Are you sure you want to remove the following module from the project?\n"
 "\n"
 msgstr ""
-"Na pewno usunąć następującą grupę z projektu?\n"
+"Na pewno usunąć następujący moduł z projektu?\n"
 "\n"
 
 #: ../plugins/project-manager/plugin.c:683
@@ -6989,24 +6665,20 @@ msgstr "Skrót: %s\n"
 
 # pd
 #: ../plugins/project-manager/plugin.c:712
-#, fuzzy, c-format
-#| msgid "Source: %s\n"
+#, c-format
 msgid "Module: %s\n"
-msgstr "Źródło: %s\n"
+msgstr "Moduł: %s\n"
 
 # pd
 #: ../plugins/project-manager/plugin.c:715
-#, fuzzy, c-format
-#| msgid "Packages"
+#, c-format
 msgid "Package: %s\n"
-msgstr "Pakiety"
+msgstr "Pakiet: %s\n"
 
 # pd
 #: ../plugins/project-manager/plugin.c:727
-#, fuzzy
-#| msgid "The group will not be deleted from the file system."
 msgid "The group will be deleted from the file system."
-msgstr "Grupa nie zostanie usunięta z systemu plików."
+msgstr "Grupa zostanie usunięta z systemu plików."
 
 #: ../plugins/project-manager/plugin.c:729
 msgid "The group will not be deleted from the file system."
@@ -7014,10 +6686,8 @@ msgstr "Grupa nie zostanie usunięta z systemu plików."
 
 # pd
 #: ../plugins/project-manager/plugin.c:731
-#, fuzzy
-#| msgid "The source file will not be deleted from the file system."
 msgid "The source file will be deleted from the file system."
-msgstr "Plik źródłowy nie zostanie usunięty z systemu plików."
+msgstr "Plik źródłowy zostanie usunięty z systemu plików."
 
 #: ../plugins/project-manager/plugin.c:733
 msgid "The source file will not be deleted from the file system."
@@ -7047,33 +6717,25 @@ msgstr "_Projekt"
 
 # pd
 #: ../plugins/project-manager/plugin.c:892
-#, fuzzy
-#| msgid "New accelerator…"
 msgid "New _Directory…"
-msgstr "Nowy skrót klawiszowy…"
+msgstr "Nowy _katalog…"
 
 # pd
 #: ../plugins/project-manager/plugin.c:892
 #: ../plugins/project-manager/plugin.c:931
-#, fuzzy
-#| msgid "Add a new file/directory to the CVS tree"
 msgid "Add a new directory to the project"
-msgstr "Dodaje nowy plik/katalog do drzewa CVS"
+msgstr "Dodaje nowy katalog do projektu"
 
 # pd
 #: ../plugins/project-manager/plugin.c:897
-#, fuzzy
-#| msgid "New Target"
 msgid "New _Target…"
-msgstr "Nowy obiekt docelowy"
+msgstr "Nowy _obiekt docelowy…"
 
 # pd
 #: ../plugins/project-manager/plugin.c:897
 #: ../plugins/project-manager/plugin.c:936
-#, fuzzy
-#| msgid "Add a target to project"
 msgid "Add a new target to the project"
-msgstr "Dodaje obiekt docelowy do projektu"
+msgstr "Dodaje nowy obiekt docelowy do projektu"
 
 #: ../plugins/project-manager/plugin.c:902
 msgid "Add _Source File…"
@@ -7083,38 +6745,28 @@ msgstr "Dodaj plik źró_dłowy…"
 #: ../plugins/project-manager/plugin.c:902
 #: ../plugins/project-manager/plugin.c:941
 #: ../plugins/project-manager/plugin.c:956
-#, fuzzy
-#| msgid "Add a source file to project"
 msgid "Add a source file to a target"
-msgstr "Dodaje plik źródłowy do projektu"
+msgstr "Dodaje plik źródłowy do obiektu docelowego"
 
 # pd
 #: ../plugins/project-manager/plugin.c:907
-#, fuzzy
-#| msgid "Add _Target…"
 msgid "Add _Library…"
-msgstr "D_odaj obiekt docelowy…"
+msgstr "Dodaj _bibliotekę…"
 
 # pd
 #: ../plugins/project-manager/plugin.c:907
-#, fuzzy
-#| msgid "Add a source file to project"
 msgid "Add a module to a target"
-msgstr "Dodaje plik źródłowy do projektu"
+msgstr "Dodaje moduł do obiektu docelowego"
 
 # pd
 #: ../plugins/project-manager/plugin.c:912
-#, fuzzy
-#| msgid "Library"
 msgid "New _Library…"
-msgstr "Biblioteka"
+msgstr "Nowa _biblioteka…"
 
 # pd
 #: ../plugins/project-manager/plugin.c:912
-#, fuzzy
-#| msgid "Add a target to project"
 msgid "Add a new package to the project"
-msgstr "Dodaje obiekt docelowy do projektu"
+msgstr "Dodaje nowy pakiet do projektu"
 
 #: ../plugins/project-manager/plugin.c:917
 #: ../plugins/project-manager/plugin.c:961
@@ -7136,17 +6788,13 @@ msgstr "Zamyka projekt"
 
 # pd
 #: ../plugins/project-manager/plugin.c:931
-#, fuzzy
-#| msgid "Build Directory:"
 msgid "New _Directory"
-msgstr "Katalog budowania:"
+msgstr "Nowy _katalog"
 
 # pd
 #: ../plugins/project-manager/plugin.c:936
-#, fuzzy
-#| msgid "New Target"
 msgid "New _Target"
-msgstr "Nowy obiekt docelowy"
+msgstr "Nowy _obiekt docelowy"
 
 #: ../plugins/project-manager/plugin.c:941
 msgid "Add _Source File"
@@ -7154,31 +6802,23 @@ msgstr "Dodaj plik źró_dłowy"
 
 # pd
 #: ../plugins/project-manager/plugin.c:946
-#, fuzzy
-#| msgid "Library"
 msgid "Add _Library"
-msgstr "Biblioteka"
+msgstr "Dodaj _bibliotekę"
 
 # pd
 #: ../plugins/project-manager/plugin.c:946
-#, fuzzy
-#| msgid "Add shared library support:"
 msgid "Add a library to a target"
-msgstr "Obsługa bibliotek współdzielonych:"
+msgstr "Dodaje bibliotekę do obiektu docelowego"
 
 # pd
 #: ../plugins/project-manager/plugin.c:951
-#, fuzzy
-#| msgid "Library"
 msgid "New _Library"
-msgstr "Biblioteka"
+msgstr "Nowa _biblioteka"
 
 # pd
 #: ../plugins/project-manager/plugin.c:951
-#, fuzzy
-#| msgid "Add a new file/directory to the CVS tree"
 msgid "Add a new library to the project"
-msgstr "Dodaje nowy plik/katalog do drzewa CVS"
+msgstr "Dodaje nową bibliotekę do projektu"
 
 #: ../plugins/project-manager/plugin.c:956
 msgid "_Add to Project"
@@ -7198,17 +6838,13 @@ msgstr "Usuwa z projektu"
 
 # pd
 #: ../plugins/project-manager/plugin.c:971
-#, fuzzy
-#| msgid "_Abort"
 msgid "_Sort"
-msgstr "_Przerwij"
+msgstr "_Uporządkuj"
 
 # pd
 #: ../plugins/project-manager/plugin.c:971
-#, fuzzy
-#| msgid "Shortcuts"
 msgid "Sort shortcuts"
-msgstr "Skróty"
+msgstr "Porządkuje skróty"
 
 #: ../plugins/project-manager/plugin.c:1309
 #, c-format
@@ -7221,10 +6857,8 @@ msgstr ""
 
 # pd
 #: ../plugins/project-manager/plugin.c:1319
-#, fuzzy
-#| msgid "Created project view…"
 msgid "Update project view…"
-msgstr "Utworzono widok projektu…"
+msgstr "Zaktualizuj widok projektu…"
 
 #: ../plugins/project-manager/plugin.c:1362
 #, c-format
@@ -7266,14 +6900,12 @@ msgstr "Wybierz źródła…"
 # pd
 #: ../plugins/project-manager/dialogs.c:372
 msgid " This property is not modifiable."
-msgstr ""
+msgstr " Tej właściwości nie można modyfikować."
 
 # pd
 #: ../plugins/project-manager/dialogs.c:533
-#, fuzzy
-#| msgid "Project properties"
 msgid "Directory properties"
-msgstr "Właściwości projektu"
+msgstr "Właściwości katalogu"
 
 #: ../plugins/project-manager/dialogs.c:536
 msgid "Target properties"
@@ -7281,31 +6913,23 @@ msgstr "Właściwości obiektu docelowego"
 
 # pd
 #: ../plugins/project-manager/dialogs.c:539
-#, fuzzy
-#| msgid "Group properties"
 msgid "Source properties"
-msgstr "Właściwości grupy"
+msgstr "Właściwości źródła"
 
 # pd
 #: ../plugins/project-manager/dialogs.c:542
-#, fuzzy
-#| msgid "Group properties"
 msgid "Module properties"
-msgstr "Właściwości grupy"
+msgstr "Właściwości modułu"
 
 # pd
 #: ../plugins/project-manager/dialogs.c:545
-#, fuzzy
-#| msgid "Target properties"
 msgid "Package properties"
-msgstr "Właściwości obiektu docelowego"
+msgstr "Właściwości pakietu"
 
 # pd
 #: ../plugins/project-manager/dialogs.c:548
-#, fuzzy
-#| msgid "Breakpoint properties"
 msgid "Unknown properties"
-msgstr "Właściwości punktu przerwania"
+msgstr "Nieznane właściwości"
 
 #: ../plugins/project-manager/dialogs.c:946
 #: ../plugins/project-manager/dialogs.c:957
@@ -7323,10 +6947,8 @@ msgstr "Nie można dodać plików źródłowych"
 
 # pd
 #: ../plugins/project-manager/dialogs.c:1183
-#, fuzzy
-#| msgid "Select the _target for the new source files:"
 msgid "The selected node cannot contain source files."
-msgstr "Proszę wybrać obiekt _docelowy dla nowych plików źródłowych:"
+msgstr "Wybrany węzeł nie może zawierać plików źródłowych."
 
 #: ../plugins/project-manager/dialogs.c:1369
 #: ../plugins/project-manager/dialogs.c:1380
@@ -7340,10 +6962,8 @@ msgstr "Nie wybrano żadnej grupy"
 # pd
 #: ../plugins/project-manager/dialogs.c:1540
 #: ../plugins/project-manager/dialogs.c:1551
-#, fuzzy
-#| msgid "Cannot add source files"
 msgid "Cannot add modules"
-msgstr "Nie można dodać plików źródłowych"
+msgstr "Nie można dodać modułów"
 
 #: ../plugins/project-manager/dialogs.c:1552
 msgid "No target has been selected"
@@ -7352,17 +6972,13 @@ msgstr "Nie wybrano żadnego obiektu docelowego"
 # pd
 #. Missing module name
 #: ../plugins/project-manager/dialogs.c:1755
-#, fuzzy
-#| msgid "Missing tool name"
 msgid "Missing module name"
-msgstr "Brak nazwy narzędzia"
+msgstr "Brak nazwy modułu"
 
 # pd
 #: ../plugins/project-manager/dialogs.c:1817
-#, fuzzy
-#| msgid "Cannot add target"
 msgid "Cannot add packages"
-msgstr "Nie można dodać obiektu docelowego"
+msgstr "Nie można dodać pakietów"
 
 #: ../plugins/project-wizard/anjuta-project-wizard.ui.h:1
 msgid "Details"
@@ -7414,6 +7030,9 @@ msgid ""
 "\"#$:%%+,.=@^_`~\". In addition you cannot have a leading dash. Please fix "
 "it."
 msgstr ""
+"Pole \"%s\" może zawierać tylko litery, cyfry lub następujące znaki: "
+"\"#$:%%+,.=@^_`~\". Dodatkowo nie może zaczynać się od kreski. Proszę je "
+"naprawić."
 
 # pd
 #: ../plugins/project-wizard/druid.c:651
@@ -7423,6 +7042,9 @@ msgid ""
 "$:%%+,.=@^_`~\" or directory separators. In addition you cannot have a "
 "leading dash. Please fix it."
 msgstr ""
+"Pole \"%s\" może zawierać tylko litery, cyfry oraz znaki "
+"\"#$:%%+,.=@^_`~\" i separatory katalogów. Dodatkowo nie może zaczynać się "
+"od kreski. Proszę je naprawić."
 
 #: ../plugins/project-wizard/druid.c:656
 #, c-format
@@ -7483,16 +7105,7 @@ msgstr ""
 msgid "Install missing packages"
 msgstr "Instalacja brakujących pakietów"
 
-# pd
 #: ../plugins/project-wizard/druid.c:928
-#, fuzzy
-#| msgid ""
-#| "The missing programs are usually part of some distrubution packages and "
-#| "can be searched for in your Application Manager. Similarly, the "
-#| "development packages are contained in special packages that your "
-#| "distribution provides to allow development of projects based on them. "
-#| "They usually end with a \"-dev\" or \"-devel\" suffix in package names "
-#| "and can be found by searching in your Application Manager."
 msgid ""
 "The missing programs are usually part of some distribution packages and can "
 "be searched for in your Application Manager. Similarly, the development "
@@ -8076,7 +7689,7 @@ msgstr "Użycie systemu gtk-doc:"
 #: ../plugins/project-wizard/templates/gtk.wiz.in.h:15
 #: ../plugins/project-wizard/templates/vala-gtk.wiz.in.h:10
 msgid "GTK+ (simple)"
-msgstr "GTK+ (proste)"
+msgstr "GTK+ (prosty)"
 
 #: ../plugins/project-wizard/templates/gtk.wiz.in.h:18
 #: ../plugins/project-wizard/templates/vala-gtk.wiz.in.h:13
@@ -8099,19 +7712,15 @@ msgstr "Wymagany pakiet:"
 # pd
 #: ../plugins/project-wizard/templates/gtk.wiz.in.h:27
 #: ../plugins/project-wizard/templates/vala-gtk.wiz.in.h:22
-#, fuzzy
-#| msgid "A generic GTK+ project"
 msgid "Simple GTK+ project"
-msgstr "Standardowy projekt biblioteki GTK+"
+msgstr "Prosty projekt biblioteki GTK+"
 
 # pd
 #: ../plugins/project-wizard/templates/gtk.wiz.in.h:28
 #: ../plugins/project-wizard/templates/gtkmm.wiz.in.h:26
 #: ../plugins/project-wizard/templates/gtkapplication.wiz.in.h:28
-#, fuzzy
-#| msgid "Create Gtk Builder interface file"
 msgid "Use GtkBuilder for user interface:"
-msgstr "Utwórz plik interfejsu GtkBuilder"
+msgstr "Użycie biblioteki GtkBuilder dla interfejsu użytkownika:"
 
 # pd
 #: ../plugins/project-wizard/templates/gtk.wiz.in.h:29
@@ -8121,6 +7730,8 @@ msgid ""
 "Use GtkBuilder to create the user-interface in a graphical way and load it "
 "from xml files at runtime"
 msgstr ""
+"Używa biblioteki GtkBuilder do utworzenia interfejsu graficznego w sposób "
+"graficzny i wczytuje go z plików XML podczas uruchamiania"
 
 #: ../plugins/project-wizard/templates/gtk.wiz.in.h:32
 #: ../plugins/project-wizard/templates/gtkmm.wiz.in.h:30
@@ -8242,15 +7853,13 @@ msgstr "Określa, czy wtyczka posiada menu lub paski narzędziowe"
 
 # pd
 #: ../plugins/project-wizard/templates/gtkmm.wiz.in.h:1
-#, fuzzy
-#| msgid "A generic GTK+ project"
 msgid "A minimal GTKmm project"
-msgstr "Standardowy projekt biblioteki GTK+"
+msgstr "Minimalny projekt biblioteki GTKmm"
 
 # pd
 #: ../plugins/project-wizard/templates/gtkmm.wiz.in.h:15
 msgid "GTKmm (Simple)"
-msgstr "GTKmm (proste)"
+msgstr "GTKmm (prosty)"
 
 #: ../plugins/project-wizard/templates/wxwin.wiz.in.h:1
 msgid "A generic wx Widgets project"
@@ -8361,7 +7970,7 @@ msgstr "Minimalna wymagana wersja biblioteki SDL"
 
 #: ../plugins/project-wizard/templates/sdl.wiz.in.h:20
 msgid "Require SDL version:"
-msgstr "Wymagana wersja bibliteki SDL:"
+msgstr "Wymagana wersja biblioteki SDL:"
 
 #: ../plugins/project-wizard/templates/sdl.wiz.in.h:21
 msgid "Require SDL_gfx library"
@@ -8438,7 +8047,7 @@ msgstr "Biblioteka współdzielona lub statyczna"
 # pd
 #: ../plugins/project-wizard/templates/gtkapplication.wiz.in.h:15
 msgid "Full features Gtk+ Application with file handling"
-msgstr ""
+msgstr "Pełne funkcje programów GTK+ z obsługą plików"
 
 # pd
 #: ../plugins/project-wizard/templates/gtkapplication.wiz.in.h:16
@@ -8530,7 +8139,7 @@ msgstr "Uruchom działania"
 # pd
 #: ../plugins/run-program/org.gnome.anjuta.run.gschema.xml.in.h:1
 msgid "Command used for starting a terminal"
-msgstr ""
+msgstr "Polecenie używane do uruchomienia terminala"
 
 #: ../plugins/snippets-manager/plugin.c:62
 #: ../plugins/snippets-manager/plugin.c:306
@@ -8801,35 +8410,27 @@ msgstr "Przygotowywanie stron do wydruku"
 # pd
 #: ../plugins/sourceview/sourceview-print.c:111
 msgid "Wrap lines"
-msgstr ""
+msgstr "Zawijanie wierszy"
 
 # pd
 #: ../plugins/sourceview/sourceview-print.c:113
-#, fuzzy
-#| msgid "Show Line Numbers"
 msgid "Line numbers"
-msgstr "Wyświetlanie numerów wierszy"
+msgstr "Numery wierszy"
 
 # pd
 #: ../plugins/sourceview/sourceview-print.c:115
-#, fuzzy
-#| msgid "Head"
 msgid "Header"
-msgstr "Head"
+msgstr "Nagłówek"
 
 # pd
 #: ../plugins/sourceview/sourceview-print.c:117
-#, fuzzy
-#| msgid "Filter"
 msgid "Footer"
-msgstr "Filtr"
+msgstr "Stopka"
 
 # pd
 #: ../plugins/sourceview/sourceview-print.c:119
-#, fuzzy
-#| msgid "_Highlight Mode"
 msgid "Highlight source code"
-msgstr "_Styl wyróżniania"
+msgstr "Wyróżnianie elementów kodu źródłowego"
 
 #: ../plugins/sourceview/anjuta-editor-sourceview.ui.h:1
 msgid "Color scheme:"
@@ -8902,10 +8503,8 @@ msgstr "Widok"
 
 # pd
 #: ../plugins/starter/plugin.c:273
-#, fuzzy
-#| msgid "Started"
 msgid "Start"
-msgstr "Uruchomiono"
+msgstr "Uruchom"
 
 #: ../plugins/starter/starter.ui.h:1
 msgid "Anjuta Manual"
@@ -8913,43 +8512,33 @@ msgstr "Podręcznik użytkownika programu Anjuta"
 
 # pd
 #: ../plugins/starter/starter.ui.h:2
-#, fuzzy
-#| msgid "Create File/Project"
 msgid "Create a new project"
-msgstr "Utwórz plik/projekt"
+msgstr "Utwórz nowy projekt"
 
 # pd
 #: ../plugins/starter/starter.ui.h:3
 msgid "FAQ"
-msgstr "FAQ"
+msgstr "Najczęściej zadawane pytani"
 
 # pd
 #: ../plugins/starter/starter.ui.h:4
-#, fuzzy
-#| msgid "started:"
 msgid "Getting started:"
-msgstr "rozpoczęto:"
+msgstr "Rozpoczynanie:"
 
 # pd
 #: ../plugins/starter/starter.ui.h:5
-#, fuzzy
-#| msgid "Import an existing autotools project to Anjuta"
 msgid "Import an existing project"
-msgstr "Importuje istniejący projekt Autotools do programu Anjuta"
+msgstr "Importuje istniejący projekt"
 
 # pd
 #: ../plugins/starter/starter.ui.h:6
-#, fuzzy
-#| msgid "Recent Projects"
 msgid "Recent projects:"
-msgstr "Ostatnie projekty"
+msgstr "Ostatnie projekty:"
 
 # pd
 #: ../plugins/starter/starter.ui.h:7
-#, fuzzy
-#| msgid "Turkish"
 msgid "Tutorials"
-msgstr "tureckie"
+msgstr "Samouczki"
 
 #: ../plugins/subversion/anjuta-subversion.ui.h:1
 msgid "Add file/directory"
@@ -10234,10 +9823,8 @@ msgstr ""
 
 # pd
 #: ../plugins/language-support-cpp-java/anjuta-language-cpp-java.ui.h:1
-#, fuzzy
-#| msgid "API Tags"
 msgid "API Tags (C/C++)"
-msgstr "Etykiety API"
+msgstr "Etykiety API (C/C++)"
 
 #: ../plugins/language-support-cpp-java/anjuta-language-cpp-java.ui.h:2
 #: ../plugins/language-support-python/python-plugin-properties.ui.h:1
@@ -10261,7 +9848,7 @@ msgstr "Automatyczne uzupełnianie"
 # pd
 #: ../plugins/language-support-cpp-java/anjuta-language-cpp-java.ui.h:6
 msgid "Automatically load required libraries of the project"
-msgstr ""
+msgstr "Automatyczne wczytywanie wymaganych bibliotek projektu"
 
 #: ../plugins/language-support-cpp-java/anjuta-language-cpp-java.ui.h:7
 #: ../plugins/language-support-python/python-plugin-properties.ui.h:5
@@ -10299,7 +9886,7 @@ msgstr "Parametry wcięcia"
 # pd
 #: ../plugins/language-support-cpp-java/anjuta-language-cpp-java.ui.h:14
 msgid "Leading asterisk in multi-line comment"
-msgstr ""
+msgstr "Początkowa gwiazdka w komentarzach wielowierszowych"
 
 #: ../plugins/language-support-cpp-java/anjuta-language-cpp-java.ui.h:15
 msgid "Line up parentheses"
@@ -10308,12 +9895,12 @@ msgstr "Nadrzędność zawijania"
 # pd
 #: ../plugins/language-support-cpp-java/anjuta-language-cpp-java.ui.h:16
 msgid "Load API tags for C standard library"
-msgstr ""
+msgstr "Wczytywanie etykiet API dla standardowej biblioteki C"
 
 # pd
 #: ../plugins/language-support-cpp-java/anjuta-language-cpp-java.ui.h:17
 msgid "Load API tags for C++ standard template library"
-msgstr ""
+msgstr "Wczytywanie etykiet API dla standardowej biblioteki szablonów C++"
 
 #: ../plugins/language-support-cpp-java/anjuta-language-cpp-java.ui.h:18
 msgid "Parenthesis indentation"
@@ -10322,7 +9909,7 @@ msgstr "Nadrzędność wcięć"
 # pd
 #: ../plugins/language-support-cpp-java/anjuta-language-cpp-java.ui.h:19
 msgid "Prefer vim/emacs modelines over indentation settings"
-msgstr ""
+msgstr "Preferowanie wierszy trybu programów VIM/Emacs nad ustawieniami wcięć"
 
 #: ../plugins/language-support-cpp-java/anjuta-language-cpp-java.ui.h:20
 #: ../plugins/language-support-python/python-plugin-properties.ui.h:14
@@ -10355,17 +9942,13 @@ msgstr ""
 
 # pd
 #: ../plugins/language-support-cpp-java/plugin.c:1210
-#, fuzzy
-#| msgid "Bo_x Comment/Uncomment"
 msgid "Comment/Uncomment"
-msgstr "Sk_omentuj/odkomentuj blokowo"
+msgstr "Skomentuj/odkomentuj"
 
 # pd
 #: ../plugins/language-support-cpp-java/plugin.c:1211
-#, fuzzy
-#| msgid "Current selection"
 msgid "Comment or uncomment current selection"
-msgstr "Bieżące zaznaczenie"
+msgstr "Komentuje lub odkomentowuje bieżące zaznaczenie"
 
 #: ../plugins/language-support-cpp-java/plugin.c:1216
 msgid "Swap .h/.c"
@@ -10441,10 +10024,7 @@ msgstr "Ścieżka: "
 msgid "GtkSourceView Editor"
 msgstr "Edytor GtkSourceView"
 
-# pd
 #: ../plugins/gdb/anjuta-gdb.plugin.in.h:1
-#, fuzzy
-#| msgid "Gdb Debugger"
 msgid "GNU Debugger"
 msgstr "Debuger GDB"
 
@@ -10502,10 +10082,8 @@ msgstr "Projektant interfejsu Glade"
 
 # pd
 #: ../plugins/glade/anjuta-glade.plugin.in.h:3
-#, fuzzy
-#| msgid "Interface file"
 msgid "User interface file"
-msgstr "Plik interfejsu"
+msgstr "Plik interfejsu użytkownika"
 
 #: ../plugins/patch/anjuta-patch.plugin.in.h:1
 msgid "Patch Plugin"
@@ -10587,10 +10165,8 @@ msgstr "Wtyczka generatora klas programu Anjuta"
 
 # pd
 #: ../plugins/class-gen/anjuta-class-gen.plugin.in.h:2
-#, fuzzy
-#| msgid "Pass"
 msgid "Class"
-msgstr "Przebieg"
+msgstr "Klasa"
 
 #: ../plugins/project-manager/anjuta-project-manager.plugin.in.h:1
 msgid "Project Manager"
@@ -10646,10 +10222,8 @@ msgstr "Mechenizm Autotools"
 
 # pd
 #: ../plugins/am-project/am-project.plugin.in.h:2
-#, fuzzy
-#| msgid "Autotools backend for project manager"
 msgid "New Autotools backend for project manager"
-msgstr "Mechanizm Autotools dla menedżera projektu"
+msgstr "Nowy mechanizm Autotools dla menedżera projektu"
 
 #: ../plugins/js-debugger/plugin.c:122
 #, c-format
@@ -10663,10 +10237,8 @@ msgstr "Błąd: nie można dowiązać do portu"
 
 # pd
 #: ../plugins/js-debugger/js_debugger.plugin.in.h:1
-#, fuzzy
-#| msgid "Javascript Debugger Plugin"
 msgid "Javascript Debugger"
-msgstr "Wtyczka debugera języka JavaScript"
+msgstr "Debuger języka JavaScript"
 
 #: ../plugins/js-debugger/js_debugger.plugin.in.h:2
 msgid "Javascript Debugger Plugin"
