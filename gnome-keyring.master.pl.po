@@ -7,10 +7,9 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: gnome-keyring\n"
-"Report-Msgid-Bugs-To: http://bugzilla.gnome.org/enter_bug.cgi?product=gnome-"
-"keyring&component=general\n"
-"POT-Creation-Date: 2011-03-08 21:06+0000\n"
-"PO-Revision-Date: 2011-03-08 22:11+0100\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2011-03-09 20:16+0100\n"
+"PO-Revision-Date: 2011-03-09 20:17+0100\n"
 "Last-Translator: Piotr Drąg <piotrdrag@gmail.com>\n"
 "Language-Team: Polish <gnomepl@aviary.pl>\n"
 "Language: pl\n"
@@ -23,7 +22,7 @@ msgstr ""
 "X-Poedit-Country: Poland\n"
 
 #. TRANSLATORS: This is the label for an keyring created without a label
-#: ../daemon/dbus/gkd-secret-change.c:78 ../daemon/dbus/gkd-secret-create.c:74
+#: ../daemon/dbus/gkd-secret-change.c:78 ../daemon/dbus/gkd-secret-create.c:79
 #: ../pkcs11/secret-store/gkm-secret-collection.c:325
 #: ../pkcs11/wrap-layer/gkm-wrap-login.c:343
 #: ../pkcs11/wrap-layer/gkm-wrap-prompt.c:789
@@ -52,15 +51,15 @@ msgstr ""
 msgid "The original password was incorrect"
 msgstr "Oryginalne hasło jest niepoprawne"
 
-#: ../daemon/dbus/gkd-secret-create.c:78
+#: ../daemon/dbus/gkd-secret-create.c:83
 msgid "New Keyring Password"
 msgstr "Hasło nowej bazy kluczy"
 
-#: ../daemon/dbus/gkd-secret-create.c:79
+#: ../daemon/dbus/gkd-secret-create.c:84
 msgid "Choose password for new keyring"
 msgstr "Proszę wprowadzić hasło dla nowej bazy kluczy"
 
-#: ../daemon/dbus/gkd-secret-create.c:81
+#: ../daemon/dbus/gkd-secret-create.c:86
 #, c-format
 msgid ""
 "An application wants to create a new keyring called '%s'. Choose the "
@@ -141,7 +140,6 @@ msgstr "Składnik domeny"
 msgid "User ID"
 msgstr "Identyfikator użytkownika"
 
-# pd
 #: ../egg/egg-oid.c:46
 msgid "Email Address"
 msgstr "Adres e-mail"
@@ -174,7 +172,7 @@ msgstr "Nazwa powszechna"
 msgid "Surname"
 msgstr "Nazwisko"
 
-#: ../egg/egg-oid.c:69 ../gcr/gcr-certificate-renderer.c:379
+#: ../egg/egg-oid.c:69 ../gcr/gcr-certificate-renderer.c:436
 msgid "Serial Number"
 msgstr "Numer seryjny"
 
@@ -266,112 +264,113 @@ msgstr ""
 msgid "Unexpected error in waitpid() (%s)"
 msgstr "Nieoczekiwany błąd w waitpid() (%s)"
 
-#: ../gcr/gcr-certificate-renderer.c:82 ../gcr/gcr-parser.c:201
+#: ../gcr/gcr-certificate-renderer.c:83 ../gcr/gcr-parser.c:201
 msgid "Certificate"
 msgstr "Certyfikat"
 
-#: ../gcr/gcr-certificate-renderer.c:107
+#: ../gcr/gcr-certificate-renderer.c:108
 msgid "Extension"
 msgstr "Rozszerzenie"
 
-#: ../gcr/gcr-certificate-renderer.c:112
+#: ../gcr/gcr-certificate-renderer.c:113
 msgid "Identifier"
 msgstr "Identyfikator"
 
-#: ../gcr/gcr-certificate-renderer.c:120
+#: ../gcr/gcr-certificate-renderer.c:121
 msgid "Value"
 msgstr "Wartość"
 
-#: ../gcr/gcr-certificate-renderer.c:126
+#: ../gcr/gcr-certificate-renderer.c:127
 msgid "Critical"
 msgstr "Krytyczne"
 
-#: ../gcr/gcr-certificate-renderer.c:126
+#: ../gcr/gcr-certificate-renderer.c:127
 msgid "Yes"
 msgstr "Tak"
 
-#: ../gcr/gcr-certificate-renderer.c:126
+#: ../gcr/gcr-certificate-renderer.c:127
 msgid "No"
 msgstr "Nie"
 
-# pd
-#: ../gcr/gcr-certificate-renderer.c:339
+#: ../gcr/gcr-certificate-renderer.c:198
+msgid "Couldn't export the certificate."
+msgstr "Nie można wyeksportować certyfikatu."
+
+#: ../gcr/gcr-certificate-renderer.c:396
 msgid "Identity"
 msgstr "Tożsamość"
 
-# pd
-#: ../gcr/gcr-certificate-renderer.c:343
+#: ../gcr/gcr-certificate-renderer.c:400
 msgid "Verified by"
 msgstr "Sprawdzone przez"
 
-# pd
-#: ../gcr/gcr-certificate-renderer.c:350
+#: ../gcr/gcr-certificate-renderer.c:407
 msgid "Expires"
 msgstr "Wygasa"
 
 #. The subject
-#: ../gcr/gcr-certificate-renderer.c:360
+#: ../gcr/gcr-certificate-renderer.c:417
 msgid "Subject Name"
 msgstr "Nazwa podmiotu"
 
 #. The Issuer
-#: ../gcr/gcr-certificate-renderer.c:364
+#: ../gcr/gcr-certificate-renderer.c:421
 msgid "Issuer Name"
 msgstr "Nazwa wydawcy"
 
 #. The Issued Parameters
-#: ../gcr/gcr-certificate-renderer.c:368
+#: ../gcr/gcr-certificate-renderer.c:425
 msgid "Issued Certificate"
 msgstr "Wydany certyfikat"
 
-#: ../gcr/gcr-certificate-renderer.c:373
+#: ../gcr/gcr-certificate-renderer.c:430
 msgid "Version"
 msgstr "Wersja"
 
-#: ../gcr/gcr-certificate-renderer.c:387
+#: ../gcr/gcr-certificate-renderer.c:444
 msgid "Not Valid Before"
 msgstr "Nieważny przed"
 
-#: ../gcr/gcr-certificate-renderer.c:392
+#: ../gcr/gcr-certificate-renderer.c:449
 msgid "Not Valid After"
 msgstr "Nieważny po"
 
-#: ../gcr/gcr-certificate-renderer.c:401
+#: ../gcr/gcr-certificate-renderer.c:458
 msgid "Signature Algorithm"
 msgstr "Algorytm podpisu"
 
-#: ../gcr/gcr-certificate-renderer.c:406
+#: ../gcr/gcr-certificate-renderer.c:463
 msgid "Signature Parameters"
 msgstr "Parametry podpisu"
 
-#: ../gcr/gcr-certificate-renderer.c:413
+#: ../gcr/gcr-certificate-renderer.c:470
 msgid "Signature"
 msgstr "Podpis"
 
 #. Public Key Info
-#: ../gcr/gcr-certificate-renderer.c:418
+#: ../gcr/gcr-certificate-renderer.c:475
 msgid "Public Key Info"
 msgstr "Informacje o kluczu publicznym"
 
-#: ../gcr/gcr-certificate-renderer.c:423
+#: ../gcr/gcr-certificate-renderer.c:480
 msgid "Key Algorithm"
 msgstr "Algorytm klucza"
 
-#: ../gcr/gcr-certificate-renderer.c:429
+#: ../gcr/gcr-certificate-renderer.c:486
 msgid "Key Parameters"
 msgstr "Parametry klucza"
 
-#: ../gcr/gcr-certificate-renderer.c:436
+#: ../gcr/gcr-certificate-renderer.c:493
 msgid "Key Size"
 msgstr "Rozmiar klucza"
 
-#: ../gcr/gcr-certificate-renderer.c:444 ../gcr/gcr-key-renderer.c:271
+#: ../gcr/gcr-certificate-renderer.c:501 ../gcr/gcr-key-renderer.c:271
 #: ../gcr/gcr-parser.c:204
 msgid "Public Key"
 msgstr "Klucz publiczny"
 
 #. Fingerprints
-#: ../gcr/gcr-certificate-renderer.c:449
+#: ../gcr/gcr-certificate-renderer.c:506
 msgid "Fingerprints"
 msgstr "Odciski palców"
 
@@ -474,17 +473,14 @@ msgstr ""
 "Proszę wybrać położenie do przechowywania zaimportowanych certyfikatów/"
 "kluczy."
 
-# pd
 #: ../gcr/gcr-key-renderer.c:69
 msgid "Key"
 msgstr "Klucz"
 
-# pd
 #: ../gcr/gcr-key-renderer.c:260
 msgid "Private RSA Key"
 msgstr "Klucz prywatny RSA"
 
-# pd
 #: ../gcr/gcr-key-renderer.c:262
 msgid "Private DSA Key"
 msgstr "Klucz prywatny DSA"
@@ -493,7 +489,6 @@ msgstr "Klucz prywatny DSA"
 msgid "Private Key"
 msgstr "Klucz prywatny"
 
-# pd
 #: ../gcr/gcr-key-renderer.c:267 ../gcr/gcr-key-renderer.c:269
 msgid "Public DSA Key"
 msgstr "Klucz publiczny DSA"
@@ -506,22 +501,18 @@ msgstr[0] "%d bit"
 msgstr[1] "%d bity"
 msgstr[2] "%d bitów"
 
-# pd
 #: ../gcr/gcr-key-renderer.c:279
 msgid "Strength"
 msgstr "Siła"
 
-# pd
 #: ../gcr/gcr-key-renderer.c:292
 msgid "Algorithm"
 msgstr "Algorytm"
 
-# pd
 #: ../gcr/gcr-key-renderer.c:299
 msgid "Size"
 msgstr "Rozmiar"
 
-# pd
 #. TODO: We need to have consistent key fingerprints.
 #: ../gcr/gcr-key-renderer.c:303
 msgid "Fingerprint"
@@ -539,7 +530,6 @@ msgstr "Nie można przetworzyć nieprawidłowych lub uszkodzonych danych."
 msgid "The data is locked"
 msgstr "Dane są zablokowane"
 
-# pd
 #. Translators: A pinned certificate is an exception which
 #. trusts a given certificate explicitly for a purpose and
 #. communication with a certain peer.
@@ -548,7 +538,6 @@ msgstr "Dane są zablokowane"
 msgid "Couldn't find a place to store the pinned certificate"
 msgstr "Nie można odnaleźć położenie do przechowywania przypiętego certyfikatu"
 
-# pd
 #: ../gck/gck-uri.c:124 ../gck/gck-uri.c:181 ../gck/gck-uri.c:216
 #: ../gck/gck-uri.c:248
 #, c-format
@@ -557,7 +546,6 @@ msgstr ""
 "Adres URI posiada nieprawidłową składnię. Kodowanie pola \"%s\" jest "
 "nieprawidłowe."
 
-# pd
 #: ../gck/gck-uri.c:287
 msgid "The URI has does not have the 'pkcs11' scheme."
 msgstr "Adres URI nie posiada schematu \"pkcs11\"."
@@ -654,12 +642,10 @@ msgstr "Klucz jest błędnego typu"
 msgid "No key is needed"
 msgstr "Klucz nie jest wymagany"
 
-# pd
 #: ../gck/gck-misc.c:147
 msgid "The key is different than before"
 msgstr "Klucz jest inny niż wcześniej"
 
-# pd
 #: ../gck/gck-misc.c:149
 msgid "A key is needed"
 msgstr "Klucz jest wymagany"
@@ -1037,28 +1023,25 @@ msgid ""
 "To change the password for '%s', the original and new passwords are required"
 msgstr "Wymagane jest poprzednie i nowe hasło, aby je zmienić dla \"%s\""
 
-# pd
 #: ../tool/gkr-tool.c:102
 #, c-format
 msgid "usage: gnome-keyring command [options]\n"
 msgstr "użycie: gnome-keyring polecenie [opcje]\n"
 
-# pd
 #: ../tool/gkr-tool.c:104
 msgid "commands: "
 msgstr "polecenia: "
 
-# pd
 #. Translators: keep same length as translated message "commands: "
 #: ../tool/gkr-tool.c:108
 msgid "          "
 msgstr "           "
 
-#: ../ui/gku-prompt-tool.c:596
+#: ../ui/gku-prompt-tool.c:597
 msgid "Store passwords unencrypted?"
 msgstr "Przechowywać hasła bez szyfrowania?"
 
-#: ../ui/gku-prompt-tool.c:597
+#: ../ui/gku-prompt-tool.c:598
 msgid ""
 "By choosing to use a blank password, your stored passwords will not be "
 "safely encrypted. They will be accessible by anyone with access to your "
@@ -1067,24 +1050,22 @@ msgstr ""
 "Puste hasło oznacza niechronione przechowywanie haseł. Będą one dostępne dla "
 "każdego, kto będzie miał dostęp do plików tego konta."
 
-#: ../ui/gku-prompt-tool.c:604
+#: ../ui/gku-prompt-tool.c:605
 msgid "Use Unsafe Storage"
 msgstr "Użycie niechronionej przechowalni"
 
-#: ../ui/gku-prompt-tool.c:642
+#: ../ui/gku-prompt-tool.c:643
 msgid "Passwords do not match."
 msgstr "Hasła nie są zgodne."
 
-#: ../ui/gku-prompt-tool.c:652
+#: ../ui/gku-prompt-tool.c:653
 msgid "Password cannot be blank"
 msgstr "Hasło nie może być puste"
 
-# pd
 #: ../ui/gnome-keyring-prompt.desktop.in.in.h:1
 msgid "Keyring Access"
 msgstr "Dostęp do bazy kluczy"
 
-# pd
 #: ../ui/gnome-keyring-prompt.desktop.in.in.h:2
 msgid "Unlock access to passwords and other secrets"
 msgstr "Odblokowanie dostępu do haseł"
