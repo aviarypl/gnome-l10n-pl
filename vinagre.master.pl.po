@@ -7,12 +7,12 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: vinagre\n"
-"Report-Msgid-Bugs-To: http://bugzilla.gnome.org/enter_bug.cgi?"
-"product=vinagre&component=general\n"
-"POT-Creation-Date: 2011-02-23 23:27+0000\n"
-"PO-Revision-Date: 2011-03-04 11:35+0100\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2011-03-09 21:09+0100\n"
+"PO-Revision-Date: 2011-03-09 21:17+0100\n"
 "Last-Translator: Piotr Drąg <piotrdrag@gmail.com>\n"
 "Language-Team: Polish <gnomepl@aviary.pl>\n"
+"Language: pl\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
@@ -29,13 +29,102 @@ msgstr "_O programie"
 msgid "_Help"
 msgstr "Pomo_c"
 
+# pd
+#: ../data/org.gnome.Vinagre.gschema.xml.in.h:1
+msgid "Active plugins"
+msgstr "Aktywne wtyczki"
+
+# pd
+#: ../data/org.gnome.Vinagre.gschema.xml.in.h:2
+msgid ""
+"List of active plugins. It contains the \"Location\" of the active plugins. "
+"See the .vinagre-plugin file for obtaining the \"Location\" of a given "
+"plugin."
+msgstr ""
+"Lista aktywnych wtyczek. Zawiera \"Położenie\" aktywnych wtyczek. Proszę "
+"zobaczyć w pliku .vinagre-plugin, jak uzyskać \"Położenie\" danej wtyczki."
+
+# pd
+#: ../data/org.gnome.Vinagre.gschema.xml.in.h:3
+msgid "Maximum number of history items in connect dialog"
+msgstr "Maksymalna liczba elementów w historii w oknie połączenia"
+
+# pd
+#: ../data/org.gnome.Vinagre.gschema.xml.in.h:4
+msgid ""
+"Set to \"false\" to disable menu shortcuts. Set to \"true\" to enable them. "
+"Note that if they are enabled, those keys will be intercepted by the menu "
+"and will not be sent to the remote host."
+msgstr ""
+"Ustawienie na wartość \"false\" wyłącza skróty w menu. Ustawienie na wartość "
+"\"true\" je włącza. Proszę zauważyć, że jeśli są włączone, to wciśnięcia "
+"klawiszy mogą zostać "
+
+# pd
+#: ../data/org.gnome.Vinagre.gschema.xml.in.h:5
+msgid ""
+"Set to \"true\" to always show the tabs. Set to \"false\" to only show the "
+"tabs when there is more than one active connection."
+msgstr ""
+"Ustawienie na wartość \"true\" powoduje, że katy są zawsze wyświetlane. "
+"Ustawienie na wartość \"false\" powoduje, że wyświetlane są tylko wtedy, "
+"kiedy jest więcej niż jedno aktywne połączenie."
+
+# pd
+#: ../data/org.gnome.Vinagre.gschema.xml.in.h:6
+msgid ""
+"Set to \"true\" to always start the program listening for reverse "
+"connections."
+msgstr ""
+"Ustawienie na wartość \"true\" powoduje, że program jest zawsze uruchamiany "
+"nasłuchując odwrotnych połączeń."
+
+# pd
+#: ../data/org.gnome.Vinagre.gschema.xml.in.h:7
+msgid "Specifies the maximum number of items in the host dropdown entry."
+msgstr "Określa maksymalną liczbę elementów w menu wyboru komputera."
+
+# pd
+#: ../data/org.gnome.Vinagre.gschema.xml.in.h:8
+msgid ""
+"When connecting to a host, the client can say to the server to leave other "
+"clients connected or to drop the existent connections. Set the value to true "
+"to share the desktop with the other clients."
+msgstr ""
+"Po połączeniu z komputerem klient może kazać serwerowi pozostawić innych "
+"klientów połączonych lub opuścić istniejące połączenia. Ustawienie na "
+"wartość \"true\" umożliwia współdzielenie pulpitu z innymi klientami."
+
+# pd
+#: ../data/org.gnome.Vinagre.gschema.xml.in.h:9
+msgid "Whether we should leave other clients connected"
+msgstr "Określa, czy pozostawiać innych klientów połączonych"
+
+# pd
+#: ../data/org.gnome.Vinagre.gschema.xml.in.h:10
+msgid ""
+"Whether we should show tabs even when there is only one active connection"
+msgstr ""
+"Określa, czy wyświetlać karty nawet, jeśli jest tylko jedno aktywne "
+"połączenie"
+
+# pd
+#: ../data/org.gnome.Vinagre.gschema.xml.in.h:11
+msgid "Whether we should show the menu accelerators (shortcut keys)"
+msgstr "Określa, czy wyświetlać skróty w menu (skróty klawiszowe)"
+
+# pd
+#: ../data/org.gnome.Vinagre.gschema.xml.in.h:12
+msgid "Whether we should start the program listening for reverse connections"
+msgstr "Określa, czy uruchamiać program nasłuchując odwrotnych połączeń"
+
 #: ../data/vinagre.desktop.in.in.h:1 ../data/vinagre-file.desktop.in.in.h:1
 msgid "Access remote desktops"
 msgstr "Dostęp do zdalnych pulpitów"
 
 #: ../data/vinagre.desktop.in.in.h:2 ../data/vinagre-file.desktop.in.in.h:2
 #: ../vinagre/GNOME_VinagreApplet.server.in.in.h:2
-#: ../vinagre/vinagre-applet.c:440 ../vinagre/vinagre-applet.c:492
+#: ../vinagre/vinagre-applet.c:430 ../vinagre/vinagre-applet.c:482
 #: ../vinagre/vinagre-main.c:130
 msgid "Remote Desktop Viewer"
 msgstr "Przeglądarka zdalnych pulpitów"
@@ -147,24 +236,20 @@ msgstr "Plik zdalnego pulpitu (VNC)"
 msgid "Remote Desktop Connection"
 msgstr "Połączenie ze zdalnym pulpitem"
 
-# pd
 #: ../plugins/rdp/rdp.plugin.desktop.in.h:1
 #: ../plugins/rdp/vinagre-rdp-plugin.c:55
 msgid "RDP"
 msgstr "RDP"
 
-# pd
 #: ../plugins/rdp/rdp.plugin.desktop.in.h:2
 msgid "RDP support"
 msgstr "Obsługa RDP"
 
-# pd
 #. Translators: This is a description of the RDP protocol. It appears at Connect dialog.
 #: ../plugins/rdp/vinagre-rdp-plugin.c:57
 msgid "Access MS Windows machines"
 msgstr "Dostęp do komputerów z systemami MS Windows"
 
-# pd
 #: ../plugins/rdp/vinagre-rdp-plugin.c:96
 msgid "RDP Options"
 msgstr "Opcje RDP"
@@ -187,7 +272,6 @@ msgstr ""
 msgid "Port:"
 msgstr "Port:"
 
-# pd
 #: ../plugins/rdp/vinagre-rdp-tab.c:123
 msgid "Error while executing rdesktop"
 msgstr "Błąd podczas wykonywania programu rdesktop"
@@ -337,13 +421,11 @@ msgstr "Użycie k_omputera"
 msgid "hostname or user@hostname"
 msgstr "nazwa-komputera lub użytkownik@nazwa-komputera"
 
-# pd
 #: ../plugins/vnc/vinagre-vnc-plugin.c:341
 #: ../plugins/spice/vinagre-spice-plugin.c:267
 msgid "Supply an alternative port using colon"
 msgstr "Dostarczenie alternatywnego portu używając dwukropka"
 
-# pd
 #: ../plugins/vnc/vinagre-vnc-plugin.c:342
 #: ../plugins/spice/vinagre-spice-plugin.c:268
 msgid "For instance: joe@domain.com:5022"
@@ -384,7 +466,6 @@ msgstr "Nieznany powód"
 msgid "Error connecting to host."
 msgstr "Błąd podczas łączenia z komputerem."
 
-# pd
 #. Translators: %s is a host name or IP address; %u is a code error (number).
 #: ../plugins/vnc/vinagre-vnc-tab.c:351
 #, c-format
@@ -446,7 +527,6 @@ msgstr "_Odśwież ekran"
 msgid "Requests an update of the screen"
 msgstr "Wysyła żądanie odświeżenia ekranu"
 
-# pd
 #: ../plugins/vnc/vinagre-vnc-tab.c:675
 #: ../plugins/spice/vinagre-spice-tab.c:530
 msgid "_Send Ctrl-Alt-Del"
@@ -498,12 +578,10 @@ msgstr "Nie można odnaleźć wolnego portu TCP"
 msgid "VNC support"
 msgstr "Obsługa VNC"
 
-# pd
 #: ../plugins/reverse-vnc/reverse-vnc.plugin.desktop.in.h:1
 msgid "Allows reverse VNC connections"
 msgstr "Zezwolenie na odwrotne połączenia VNC"
 
-# pd
 #: ../plugins/reverse-vnc/reverse-vnc.plugin.desktop.in.h:2
 msgid "Reverse VNC"
 msgstr "Odwrotne VNC"
@@ -527,12 +605,10 @@ msgstr ""
 msgid "On the port %d"
 msgstr "Na porcie %d"
 
-# pd
 #: ../plugins/reverse-vnc/vinagre-reverse-vnc-listener.c:211
 msgid "Error activating reverse connections"
 msgstr "Błąd podczas aktywowania odwrotnych połączeń"
 
-# pd
 #: ../plugins/reverse-vnc/vinagre-reverse-vnc-listener.c:212
 msgid ""
 "The program could not find any available TCP ports starting at 5500. Is "
@@ -550,77 +626,64 @@ msgstr "_Odwrotne połączenia..."
 msgid "Configure incoming VNC connections"
 msgstr "Konfiguruje przychodzące połączenia VNC"
 
-# pd
 #. vim: set ts=8:
 #: ../plugins/spice/spice.plugin.desktop.in.h:1
 msgid "Spice"
 msgstr "Spice"
 
-# pd
 #: ../plugins/spice/spice.plugin.desktop.in.h:2
 msgid "Spice support"
 msgstr "Obsługa Spice"
 
-# pd
 #. Translators: Do not translate "connection". It's the name of a group in the .spice (.ini like) file.
 #: ../plugins/spice/vinagre-spice-plugin.c:107
 msgid "The file is not a Spice one: Missing the group \"connection\"."
 msgstr "To nie jest plik Spice: brak grupy \"connection\"."
 
-# pd
 #. Translators: Do not translate "host". It's the name of a key in the .spice (.ini like) file.
 #: ../plugins/spice/vinagre-spice-plugin.c:114
 msgid "The file is not a Spice one: Missing the key \"host\"."
 msgstr "To nie jest plik Spice: brak klucza \"host\"."
 
-# pd
 #: ../plugins/spice/vinagre-spice-plugin.c:158
 msgid "SPICE"
 msgstr "Spice"
 
-# pd
 #. Translators: This is a description of the SPICE protocol. It appears at Connect dialog.
 #: ../plugins/spice/vinagre-spice-plugin.c:160
 msgid "Access Spice desktop server"
 msgstr "Dostęp do serwera pulpitu Spice"
 
-# pd
 #: ../plugins/spice/vinagre-spice-plugin.c:209
 msgid "SPICE Options"
 msgstr "Opcje Spice"
 
-# pd
 #. Resize guest check button
 #: ../plugins/spice/vinagre-spice-plugin.c:230
 #: ../plugins/spice/vinagre-spice-tab.c:479
 msgid "_Resize guest"
 msgstr "Zmień _rozmiar gościa"
 
-# pd
 #. Clipboard sharing check button
 #: ../plugins/spice/vinagre-spice-plugin.c:238
 #: ../plugins/spice/vinagre-spice-tab.c:492
 msgid "_Share clipboard"
 msgstr "Współdziel _schowek"
 
-# pd
 #. Translators: This is the tooltip for the password field in a SPICE connection
 #: ../plugins/spice/vinagre-spice-plugin.c:300
 msgid "Optional"
 msgstr "Opcjonalne"
 
-# pd
 #. Translators: this is a pattern to open *.spice files in a open dialog.
 #: ../plugins/spice/vinagre-spice-plugin.c:321
 msgid "Spice Files"
 msgstr "Pliki Spice"
 
-# pd
 #: ../plugins/spice/vinagre-spice-tab.c:480
 msgid "Resize the screen guest to best fit"
 msgstr "Zmienia rozmiar ekranu gościa w celu najlepszego dopasowania"
 
-# pd
 #: ../plugins/spice/vinagre-spice-tab.c:493
 msgid "Automatically share clipboard between client and guest"
 msgstr "Automatycznie współdzieli schowek między klientem a gościem"
@@ -658,7 +721,6 @@ msgstr "Z_awsze włączone"
 msgid "_Enable Reverse Connections"
 msgstr "_Włączenie odwrotnych połączeń"
 
-# pd
 #: ../plugins/im-status/im-status.plugin.desktop.in.h:1
 msgid ""
 "Changes Instant Messenger status to busy when window toggles to fullscreen "
@@ -667,12 +729,10 @@ msgstr ""
 "Zmienia stan komunikatora na zajęty, kiedy okno zostaje przełączone na pełny "
 "ekran (działa z programem Empathy)"
 
-# pd
 #: ../plugins/im-status/im-status.plugin.desktop.in.h:2
 msgid "IM Status"
 msgstr "Stan komunikatora"
 
-# pd
 #: ../plugins/im-status/im-status.js:43
 msgid "Could not communicate to Telepathy. IM Status plugin will not work."
 msgstr ""
@@ -687,15 +747,15 @@ msgstr "Menu szybkiego dostępu do zdalnych komputerów"
 msgid "Vinagre Applet Factory"
 msgstr "Generator apletów Vinagre"
 
-#: ../vinagre/vinagre-applet.c:283 ../vinagre/vinagre-applet.c:366
+#: ../vinagre/vinagre-applet.c:273 ../vinagre/vinagre-applet.c:356
 msgid "Could not run vinagre:"
 msgstr "Nie można uruchomić programu Vinagre:"
 
-#: ../vinagre/vinagre-applet.c:386
+#: ../vinagre/vinagre-applet.c:376
 msgid "Open Remote Desktop Viewer"
 msgstr "Otwórz przeglądarkę zdalnych pulpitów"
 
-#: ../vinagre/vinagre-applet.c:441
+#: ../vinagre/vinagre-applet.c:431
 msgid "Access your bookmarks"
 msgstr "Dostęp do zakładek"
 
@@ -875,7 +935,6 @@ msgstr[0] "Następujący plik nie mógł zostać otwarty:"
 msgstr[1] "Następujące pliki nie mogły zostać otwarte:"
 msgstr[2] "Następujące pliki nie mogły zostać otwarte:"
 
-# pd
 #: ../vinagre/vinagre-connect.c:91 ../vinagre/vinagre-connect.c:337
 #: ../vinagre/vinagre-connect.c:456
 msgid "Could not get the active protocol from the protocol list."
@@ -967,7 +1026,6 @@ msgstr "- przeglądarka zdalnych pulpitów"
 msgid "Failed to resolve avahi hostname: %s\n"
 msgstr "Uzyskanie nazwy komputera przez usługę Avahi się nie powiodło: %s\n"
 
-# pd
 #: ../vinagre/vinagre-mdns.c:225
 #, c-format
 msgid "The service %s was already registered by another plugin."
@@ -999,7 +1057,6 @@ msgstr "Połączenie z komputerem %s zostało zamknięte."
 msgid "Connection closed"
 msgstr "Zamknięto połączenie"
 
-# pd
 #. Translators: %s is a host name or IP address.
 #: ../vinagre/vinagre-notebook.c:483
 #, c-format
@@ -1304,7 +1361,6 @@ msgstr "Dod_aj do zakładek"
 msgid "Add current connection to your bookmarks"
 msgstr "Dodaje bieżące połączenie do zakładek"
 
-# pd
 #. Machine menu
 #: ../vinagre/vinagre-ui.h:92
 msgid "_Take screenshot"
