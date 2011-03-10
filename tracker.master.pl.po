@@ -9,14 +9,14 @@ msgstr ""
 "Project-Id-Version: tracker\n"
 "Report-Msgid-Bugs-To: http://bugzilla.gnome.org/enter_bug.cgi?"
 "product=tracker&component=general\n"
-"POT-Creation-Date: 2011-02-28 15:08+0000\n"
-"PO-Revision-Date: 2011-03-08 17:38+0100\n"
+"POT-Creation-Date: 2011-03-10 11:17+0000\n"
+"PO-Revision-Date: 2011-03-10 13:12+0100\n"
 "Last-Translator: Piotr Drąg <piotrdrag@gmail.com>\n"
 "Language-Team: Polish <gnomepl@aviary.pl>\n"
+"Language: pl\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"Language: pl\n"
 "Plural-Forms: nplurals=3; plural=n==1 ? 0 : n%10>=2 && n%10<=4 && (n%100<10 "
 "|| n%100>=20) ? 1 : 2;\n"
 "X-Poedit-Language: Polish\n"
@@ -441,46 +441,63 @@ msgstr "Konfiguracja indeksowania plików za pomocą programu Tracker"
 msgid "Search and Indexing"
 msgstr "Wyszukiwanie i indeksowanie"
 
-#: ../src/tracker-preferences/tracker-preferences.vala:85
-#: ../src/tracker-preferences/tracker-preferences.vala:97
+#: ../src/tracker-preferences/tracker-preferences.vala:117
+#: ../src/tracker-preferences/tracker-preferences.vala:118
+#: ../src/tracker-preferences/tracker-preferences.vala:119
+#: ../src/tracker-preferences/tracker-preferences.vala:120
+msgid "Directory"
+msgstr "Katalog"
+
+#: ../src/tracker-preferences/tracker-preferences.vala:121
+#: ../src/tracker-needle/tracker-view.vala:139
+msgid "File"
+msgstr "Plik"
+
+#: ../src/tracker-preferences/tracker-preferences.vala:252
+#: ../src/tracker-preferences/tracker-preferences.vala:266
 msgid "Disabled"
 msgstr "Wyłączone"
 
-#: ../src/tracker-preferences/tracker-preferences.vala:88
+#: ../src/tracker-preferences/tracker-preferences.vala:255
 #, c-format
 msgid "%d%%"
 msgstr "%d%%"
 
-#: ../src/tracker-preferences/tracker-preferences.vala:92
+#: ../src/tracker-preferences/tracker-preferences.vala:260
 #, c-format
 msgid "%d/20"
 msgstr "%d/20"
 
 # pd
-#: ../src/tracker-preferences/tracker-preferences.vala:100
+#: ../src/tracker-preferences/tracker-preferences.vala:269
 #, c-format
 msgid "%d"
 msgstr "%d"
 
-#: ../src/tracker-preferences/tracker-preferences.vala:108
+#: ../src/tracker-preferences/tracker-preferences.vala:360
 msgid "Enter value"
 msgstr "Wprowadzenie wartości"
 
-#: ../src/tracker-preferences/tracker-preferences.vala:139
+#: ../src/tracker-preferences/tracker-preferences.vala:389
 msgid "Select directory"
 msgstr "Wybór katalogu"
 
-#: ../src/tracker-preferences/tracker-preferences.vala:376
-#: ../src/tracker-preferences/tracker-preferences.vala:377
-#: ../src/tracker-preferences/tracker-preferences.vala:378
-#: ../src/tracker-preferences/tracker-preferences.vala:379
-msgid "Directory"
-msgstr "Katalog"
+#: ../src/tracker-preferences/tracker-preferences.vala:497
+#: ../src/tracker-needle/tracker-needle.vala:669
+#: ../src/tracker-control/tracker-control.c:53
+#: ../src/tracker-utils/tracker-import.c:50
+#: ../src/tracker-utils/tracker-info.c:49
+#: ../src/tracker-utils/tracker-search.c:139
+#: ../src/tracker-utils/tracker-sparql.c:100
+#: ../src/tracker-utils/tracker-stats.c:47
+#: ../src/tracker-utils/tracker-tag.c:87
+msgid "Print version"
+msgstr "Wersja do druku"
 
-#: ../src/tracker-preferences/tracker-preferences.vala:380
-#: ../src/tracker-needle/tracker-view.vala:139
-msgid "File"
-msgstr "Plik"
+# pd
+#: ../src/tracker-preferences/tracker-preferences.vala:503
+msgid "Desktop Search preferences"
+msgstr "Preferencje wyszukiwania na pulpicie"
 
 # pd
 #: ../src/tracker-preferences/tracker-preferences.ui.h:1
@@ -643,17 +660,6 @@ msgstr ""
 "Wyszukiwanie na tym komputerze według nazwy lub treści używając programu "
 "Tracker"
 
-#: ../src/tracker-needle/tracker-needle.vala:669
-#: ../src/tracker-control/tracker-control.c:53
-#: ../src/tracker-utils/tracker-import.c:50
-#: ../src/tracker-utils/tracker-info.c:49
-#: ../src/tracker-utils/tracker-search.c:139
-#: ../src/tracker-utils/tracker-sparql.c:100
-#: ../src/tracker-utils/tracker-stats.c:47
-#: ../src/tracker-utils/tracker-tag.c:87
-msgid "Print version"
-msgstr "Wersja do druku"
-
 # pd
 #: ../src/tracker-needle/tracker-needle.vala:676
 #: ../src/tracker-needle/tracker-needle.vala:677
@@ -673,17 +679,17 @@ msgstr "Nieznane"
 
 # pd
 #. fn:concat(nco:pageCount(?urn), \" pages\")
-#: ../src/tracker-needle/tracker-query.vala:167
+#: ../src/tracker-needle/tracker-query.vala:169
 msgid "Pages"
 msgstr "Strony"
 
 # pd
-#: ../src/tracker-needle/tracker-query.vala:194
+#: ../src/tracker-needle/tracker-query.vala:196
 msgid "No Subject"
 msgstr "Brak tematu"
 
 # pd
-#: ../src/tracker-needle/tracker-query.vala:195
+#: ../src/tracker-needle/tracker-query.vala:197
 msgid "To"
 msgstr "Do"
 
