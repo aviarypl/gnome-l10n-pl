@@ -7,18 +7,16 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: network-manager-openvpn\n"
-"Report-Msgid-Bugs-To: http://bugzilla.gnome.org/enter_bug.cgi?"
-"product=NetworkManager&keywords=I18N+L10N&component=VPN: openvpn\n"
+"Report-Msgid-Bugs-To: http://bugzilla.gnome.org/enter_bug.cgi?product=NetworkManager&keywords=I18N+L10N&component=VPN: openvpn\n"
 "POT-Creation-Date: 2011-03-29 21:58+0000\n"
-"PO-Revision-Date: 2011-03-15 14:05+0100\n"
-"Last-Translator: Piotr Drąg <piotrdrag@gmail.com>\n"
+"PO-Revision-Date: 2011-04-03 20:06+0100\n"
+"Last-Translator: Tomasz Dominikowski <dominikowski@gmail.com>\n"
 "Language-Team: Polish <gnomepl@aviary.pl>\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Language: pl\n"
-"Plural-Forms: nplurals=3; plural=n==1 ? 0 : n%10>=2 && n%10<=4 && (n%100<10 "
-"|| n%100>=20) ? 1 : 2;\n"
+"Plural-Forms: nplurals=3; plural=n==1 ? 0 : n%10>=2 && n%10<=4 && (n%100<10 || n%100>=20) ? 1 : 2;\n"
 "X-Poedit-Language: Polish\n"
 "X-Poedit-Country: Poland\n"
 
@@ -57,9 +55,7 @@ msgstr "_Zapamiętanie hasła w bazie kluczy"
 #: ../auth-dialog/main.c:89
 #, c-format
 msgid "You need to authenticate to access the Virtual Private Network '%s'."
-msgstr ""
-"Aby uzyskać dostęp do wirtualnej sieci prywatnej \"%s\", należy się "
-"uwierzytelnić."
+msgstr "Aby uzyskać dostęp do wirtualnej sieci prywatnej \"%s\", należy się uwierzytelnić."
 
 #: ../auth-dialog/main.c:90
 msgid "Authenticate VPN"
@@ -89,7 +85,8 @@ msgstr "Wybierz klucz prywatny..."
 msgid "Choose an OpenVPN static key..."
 msgstr "Wybierz klucz statyczny OpenVPN..."
 
-#: ../properties/auth-helpers.c:321 ../properties/auth-helpers.c:1104
+#: ../properties/auth-helpers.c:321
+#: ../properties/auth-helpers.c:1104
 #: ../properties/auth-helpers.c:1494
 msgid "None"
 msgstr "Brak"
@@ -106,7 +103,8 @@ msgstr "Certyfikaty PEM (*.pem, *.crt, *.key, *.cer)"
 msgid "OpenVPN Static Keys (*.key)"
 msgstr "Klucze statyczne OpenVPN (*.key)"
 
-#: ../properties/auth-helpers.c:1021 ../properties/auth-helpers.c:1096
+#: ../properties/auth-helpers.c:1021
+#: ../properties/auth-helpers.c:1096
 msgid "Default"
 msgstr "Domyślny"
 
@@ -138,7 +136,8 @@ msgstr "SHA512"
 msgid "RIPEMD-160"
 msgstr "RIPEMD-160"
 
-#: ../properties/auth-helpers.c:1293 ../properties/nm-openvpn-dialog.ui.h:16
+#: ../properties/auth-helpers.c:1293
+#: ../properties/nm-openvpn-dialog.ui.h:16
 msgid "Not required"
 msgstr "Niewymagane"
 
@@ -191,28 +190,16 @@ msgid ""
 "<i>Connect only to servers whose certificate matches the given subject.\n"
 "Example: /CN=myvpn.company.com</i>"
 msgstr ""
-"<i>Połączenie tylko z serwerami, których certyfikaty pasują do podanego "
-"tematu.\n"
+"<i>Połączenie tylko z serwerami, których certyfikaty pasują do podanego tematu.\n"
 "Przykład: /CN=mójvpn.firma.pl</i>"
 
 #: ../properties/nm-openvpn-dialog.ui.h:6
-msgid ""
-"<i>If key direction is used, it must be the opposite of that used on the VPN "
-"peer.  For example, if the peer uses '1', this connection must use '0'.  If "
-"you are unsure what value to use, contact your system administrator.</i>"
-msgstr ""
-"<i>Jeśli zostanie użyty kierunek klucza, to musi być przeciwny kierunkowi "
-"użytemu na serwerze VPN. Przykładowo, jeśli serwer używa \"1\", te "
-"połączenie musi użyć \"0\". W wypadku braku pewności jakiej wartości użyć, "
-"proszę skontaktować się z administratorem systemu.</i>"
+msgid "<i>If key direction is used, it must be the opposite of that used on the VPN peer.  For example, if the peer uses '1', this connection must use '0'.  If you are unsure what value to use, contact your system administrator.</i>"
+msgstr "<i>Jeśli zostanie użyty kierunek klucza, to musi być przeciwny kierunkowi użytemu na serwerze VPN. Przykładowo, jeśli serwer używa \"1\", te połączenie musi użyć \"0\". W wypadku braku pewności jakiej wartości użyć, proszę skontaktować się z administratorem systemu.</i>"
 
 #: ../properties/nm-openvpn-dialog.ui.h:7
-msgid ""
-"<i>Select this option if your organization requires the use of a proxy "
-"server to access the Internet.</i>"
-msgstr ""
-"<i>Należy wybrać tę opcję, jeśli organizacja wymaga użycia serwera "
-"pośrednika do dostępu do Internetu.</i>"
+msgid "<i>Select this option if your organization requires the use of a proxy server to access the Internet.</i>"
+msgstr "<i>Należy wybrać tę opcję, jeśli organizacja wymaga użycia serwera pośrednika do dostępu do Internetu.</i>"
 
 #: ../properties/nm-openvpn-dialog.ui.h:8
 msgid "Ad_vanced..."
@@ -380,17 +367,13 @@ msgstr "nieprawidłowy adres \"%s\""
 #: ../src/nm-openvpn-service.c:204
 #, c-format
 msgid "invalid integer property '%s' or out of range [%d -> %d]"
-msgstr ""
-"nieprawidłowa własność liczby całkowitej \"%s\" lub jest poza zakresem [%d "
-"-> %d]"
+msgstr "nieprawidłowa własność liczby całkowitej \"%s\" lub jest poza zakresem [%d -> %d]"
 
 # pd
 #: ../src/nm-openvpn-service.c:214
 #, c-format
 msgid "invalid boolean property '%s' (not yes or no)"
-msgstr ""
-"nieprawidłowa własność zmiennej logicznej \"%s\" (nie wynosi \"yes\" lub "
-"\"no\")"
+msgstr "nieprawidłowa własność zmiennej logicznej \"%s\" (nie wynosi \"yes\" lub \"no\")"
 
 # pd
 #: ../src/nm-openvpn-service.c:221
@@ -425,7 +408,8 @@ msgid "Invalid HMAC auth."
 msgstr "Nieprawidłowe uwierzytelnienie HMAC."
 
 # pd
-#: ../src/nm-openvpn-service.c:764 ../src/nm-openvpn-service.c:1160
+#: ../src/nm-openvpn-service.c:764
+#: ../src/nm-openvpn-service.c:1160
 #: ../src/nm-openvpn-service.c:1230
 msgid "Invalid connection type."
 msgstr "Nieprawidłowy typ połączenia."
@@ -477,13 +461,10 @@ msgid "Unknown connection type '%s'."
 msgstr "Nieznany typ połączenia \"%s\"."
 
 # pd
-#: ../src/nm-openvpn-service.c:1149 ../src/nm-openvpn-service.c:1220
-msgid ""
-"Could not process the request because the VPN connection settings were "
-"invalid."
-msgstr ""
-"Nie można przetworzyć żądania, ponieważ ustawienia połączenia VPN są "
-"nieprawidłowe."
+#: ../src/nm-openvpn-service.c:1149
+#: ../src/nm-openvpn-service.c:1220
+msgid "Could not process the request because the VPN connection settings were invalid."
+msgstr "Nie można przetworzyć żądania, ponieważ ustawienia połączenia VPN są nieprawidłowe."
 
 # pd
 #: ../src/nm-openvpn-service.c:1174
@@ -501,9 +482,8 @@ msgid "Enable verbose debug logging (may expose passwords)"
 msgstr "Włącza więcej komunikatów debugowania (może wyjawić hasła)"
 
 # pd
+# rev: no tutaj tak samo jak w vpnc, możliwość OpenVPN to nie jest dobre. możliwość nawiązywania połączeń OpenVPN.
 #: ../src/nm-openvpn-service.c:1379
-msgid ""
-"nm-vpnc-service provides integrated OpenVPN capability to NetworkManager."
-msgstr ""
-"nm-openvpn-service dostarcza zintegrowaną możliwość OpenVPN dla usługi "
-"NetworkManager."
+msgid "nm-vpnc-service provides integrated OpenVPN capability to NetworkManager."
+msgstr "nm-openvpn-service dostarcza zintegrowaną możliwość OpenVPN dla usługi NetworkManager."
+
