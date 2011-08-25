@@ -10,14 +10,14 @@ msgstr ""
 "Project-Id-Version: evolution\n"
 "Report-Msgid-Bugs-To: http://bugzilla.gnome.org/enter_bug.cgi?"
 "product=evolution&keywords=I18N+L10N\n"
-"POT-Creation-Date: 2011-08-23 14:58+0000\n"
-"PO-Revision-Date: 2011-08-23 22:43+0200\n"
+"POT-Creation-Date: 2011-08-25 13:19+0000\n"
+"PO-Revision-Date: 2011-08-25 17:00+0200\n"
 "Last-Translator: Piotr Drąg <piotrdrag@gmail.com>\n"
 "Language-Team: Polish <gnomepl@aviary.pl>\n"
+"Language: pl\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"Language: pl\n"
 "Plural-Forms: nplurals=3; plural=(n==1 ? 0 : n%10>=2 && n%10<=4 && (n%100<10 "
 "|| n%100>=20) ? 1 : 2);\n"
 "X-Poedit-Language: Polish\n"
@@ -1230,7 +1230,7 @@ msgid "Video Chat"
 msgstr "Rozmowa wideo"
 
 #: ../addressbook/gui/widgets/eab-contact-display.c:683
-#: ../calendar/gui/dialogs/calendar-setup.c:396
+#: ../calendar/gui/dialogs/calendar-setup.c:437
 #: ../modules/calendar/e-cal-shell-view-actions.c:232
 #: ../modules/calendar/e-cal-shell-view-actions.c:261
 #: ../modules/calendar/e-cal-shell-view.c:511
@@ -2462,13 +2462,18 @@ msgstr "Skopiuj listę _zadań do działania w trybie offline"
 msgid "Cop_y memo list contents locally for offline operation"
 msgstr "Skopiuj listę _notatek do działania w trybie offline"
 
-#: ../calendar/gui/dialogs/calendar-setup.c:372
+# pd
+#: ../calendar/gui/dialogs/calendar-setup.c:340
+msgid "Sh_ow reminder notifications"
+msgstr "Wyświetlanie p_owiadomień o przypomnieniach"
+
+#: ../calendar/gui/dialogs/calendar-setup.c:413
 msgid "Colo_r:"
 msgstr "K_olor:"
 
-#: ../calendar/gui/dialogs/calendar-setup.c:395
-#: ../calendar/gui/dialogs/calendar-setup.c:406
-#: ../calendar/gui/dialogs/calendar-setup.c:417
+#: ../calendar/gui/dialogs/calendar-setup.c:436
+#: ../calendar/gui/dialogs/calendar-setup.c:448
+#: ../calendar/gui/dialogs/calendar-setup.c:459
 #: ../mail/em-folder-properties.c:233 ../mail/mail-config.ui.h:52
 #: ../modules/addressbook/addressbook-config.c:1052
 #: ../modules/addressbook/autocompletion-config.c:218
@@ -2479,36 +2484,36 @@ msgstr "K_olor:"
 msgid "General"
 msgstr "Ogólne"
 
-#: ../calendar/gui/dialogs/calendar-setup.c:407
+#: ../calendar/gui/dialogs/calendar-setup.c:449
 #: ../modules/calendar/e-calendar-preferences.ui.h:41
 msgid "Task List"
 msgstr "Lista zadań"
 
-#: ../calendar/gui/dialogs/calendar-setup.c:418
+#: ../calendar/gui/dialogs/calendar-setup.c:460
 msgid "Memo List"
 msgstr "Lista notatek"
 
-#: ../calendar/gui/dialogs/calendar-setup.c:506
+#: ../calendar/gui/dialogs/calendar-setup.c:548
 msgid "Calendar Properties"
 msgstr "Właściwości kalendarza"
 
-#: ../calendar/gui/dialogs/calendar-setup.c:506
+#: ../calendar/gui/dialogs/calendar-setup.c:548
 msgid "New Calendar"
 msgstr "Nowy kalendarz"
 
-#: ../calendar/gui/dialogs/calendar-setup.c:565
+#: ../calendar/gui/dialogs/calendar-setup.c:607
 msgid "Task List Properties"
 msgstr "Właściwości listy zadań"
 
-#: ../calendar/gui/dialogs/calendar-setup.c:565
+#: ../calendar/gui/dialogs/calendar-setup.c:607
 msgid "New Task List"
 msgstr "Nowa lista zadań"
 
-#: ../calendar/gui/dialogs/calendar-setup.c:624
+#: ../calendar/gui/dialogs/calendar-setup.c:666
 msgid "Memo List Properties"
 msgstr "Właściwości listy notatek"
 
-#: ../calendar/gui/dialogs/calendar-setup.c:624
+#: ../calendar/gui/dialogs/calendar-setup.c:666
 msgid "New Memo List"
 msgstr "Nowa lista notatek"
 
@@ -3332,7 +3337,8 @@ msgstr "Okresowa data jest nieprawidłowa"
 #: ../calendar/gui/dialogs/recurrence-page.c:944
 msgid "End time of the recurrence was before event's start"
 msgstr ""
-"Czas zakończenia powtarzania jest wcześniejszy od czasu rozpoczęcia wydarzenia"
+"Czas zakończenia powtarzania jest wcześniejszy od czasu rozpoczęcia "
+"wydarzenia"
 
 #. TRANSLATORS: Entire string is for example: This appointment recurs/Every [x] week(s) on [Wednesday] [forever]'
 #. * (dropdown menu options are in [square brackets]). This means that after the 'on', name of a week day always follows.
@@ -3712,7 +3718,8 @@ msgstr ""
 
 #: ../calendar/gui/dialogs/task-page.c:288
 msgid "Task cannot be fully edited, because you are not the organizer"
-msgstr "Tylko organizator wydarzenia może modyfikować wszystkie aspekty zadania"
+msgstr ""
+"Tylko organizator wydarzenia może modyfikować wszystkie aspekty zadania"
 
 #: ../calendar/gui/dialogs/task-page.c:339
 #: ../calendar/gui/dialogs/task-page.ui.h:4
@@ -7334,7 +7341,7 @@ msgid "Back - Receiving options"
 msgstr "Wstecz - Opcje odbierania"
 
 #: ../capplet/settings/mail-account-view.c:635
-#: ../mail/em-account-editor.c:3226
+#: ../mail/em-account-editor.c:3299
 msgid "Defaults"
 msgstr "Domyślne"
 
@@ -8277,17 +8284,17 @@ msgstr "Sprawdzanie _nowych wiadomości co"
 msgid "minu_tes"
 msgstr "minu_t"
 
-#: ../mail/em-account-editor.c:3365 ../mail/mail-config.ui.h:101
+#: ../mail/em-account-editor.c:3438 ../mail/mail-config.ui.h:101
 msgid "Security"
 msgstr "Bezpieczeństwo"
 
 #. Most sections for this is auto-generated from the camel config
 #. Most sections for this is auto-generated fromt the camel config
-#: ../mail/em-account-editor.c:3419 ../mail/em-account-editor.c:3502
+#: ../mail/em-account-editor.c:3492 ../mail/em-account-editor.c:3575
 msgid "Receiving Options"
 msgstr "Opcje odbierania"
 
-#: ../mail/em-account-editor.c:3420 ../mail/em-account-editor.c:3503
+#: ../mail/em-account-editor.c:3493 ../mail/em-account-editor.c:3576
 msgid "Checking for New Messages"
 msgstr "Sprawdzanie nowych wiadomości"
 
