@@ -9,14 +9,14 @@ msgstr ""
 "Project-Id-Version: tomboy\n"
 "Report-Msgid-Bugs-To: http://bugzilla.gnome.org/enter_bug.cgi?"
 "product=tomboy&keywords=I18N+L10N&component=general\n"
-"POT-Creation-Date: 2011-08-22 21:48+0000\n"
+"POT-Creation-Date: 2011-08-30 20:22+0000\n"
 "PO-Revision-Date: 2011-08-24 02:02+0200\n"
 "Last-Translator: Piotr Drąg <piotrdrag@gmail.com>\n"
 "Language-Team: Polish <gnomepl@aviary.pl>\n"
+"Language: pl\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"Language: pl\n"
 "Plural-Forms: nplurals=3; plural=n==1 ? 0 : n%10>=2 && n%10<=4 && (n%100<10 "
 "|| n%100>=20) ? 1 : 2;\n"
 "X-Poedit-Language: Polish\n"
@@ -460,8 +460,8 @@ msgid ""
 "for this action."
 msgstr ""
 "Globalne przypisanie klawisza dla tworzenia i wyświetlania nowej notatki. "
-"Format jest w postaci \"&lt;Control&gt;a\" lub \"&lt;Shift&gt;&lt;Alt&gt;F1"
-"\". Analizator jest całkiem tolerancyjny i zezwala na małe i duże litery, "
+"Format jest w postaci \"&lt;Control&gt;a\" lub \"&lt;Shift&gt;&lt;Alt&gt;"
+"F1\". Analizator jest całkiem tolerancyjny i zezwala na małe i duże litery, "
 "jak również skróty takie jak \"&lt;Ctl&gt;\" oraz \"&lt;Ctrl&gt;\". Jeżeli "
 "opcja zostanie ustawiona na specjalny ciąg \"disabled\" (wyłączone), wtedy "
 "nie będzie przypisanego klawisza do tego działania."
@@ -1152,23 +1152,27 @@ msgstr "Witryna programu Tomboy"
 
 # pd
 #: ../Tomboy/ExportAllApplicationAddin.cs:53
-msgid "Export All Notes to "
-msgstr "Eksport wszystkich notatek do "
+#, csharp-format
+msgid "Export All Notes to {0}"
+msgstr "Eksport wszystkich notatek do {0}"
 
 # pd
 #: ../Tomboy/ExportAllApplicationAddin.cs:54
-msgid "Start exporting notes to "
-msgstr "Rozpocznij eksportowanie notatek do "
+#, csharp-format
+msgid "Start exporting notes to {0}"
+msgstr "Rozpocznij eksportowanie notatek do {0}"
 
 # pd
 #: ../Tomboy/ExportAllApplicationAddin.cs:58
-msgid "Export selected notebook to "
-msgstr "Eksport zaznaczonego notatnika do "
+#, csharp-format
+msgid "Export selected notebook to {0}"
+msgstr "Eksport zaznaczonego notatnika do {0}"
 
 # pd
 #: ../Tomboy/ExportAllApplicationAddin.cs:59
-msgid "Start exporting notebook to "
-msgstr "Rozpocznij eksportowanie notatnika do "
+#, csharp-format
+msgid "Start exporting notebook to {0}"
+msgstr "Rozpocznij eksportowanie notatnika do {0}"
 
 #: ../Tomboy/ExportAllApplicationAddin.cs:65
 #: ../Tomboy/Synchronization/SyncManager.cs:161
@@ -1187,13 +1191,21 @@ msgstr "Eksportuje notatki."
 
 # pd
 #: ../Tomboy/ExportAllApplicationAddin.cs:72
-msgid "Export All Notes To "
-msgstr "Eksport wszystkich notatek do "
+#, csharp-format
+msgid "Export All Notes To {0}"
+msgstr "Eksport wszystkich notatek do {0}"
 
 # pd
 #: ../Tomboy/ExportAllApplicationAddin.cs:77
-msgid "Export Selected Notebook To "
-msgstr "Eksport zaznaczonego notatnika do "
+#, csharp-format
+msgid "Export Selected Notebook To {0}"
+msgstr "Eksport zaznaczonego notatnika do {0}"
+
+# pd
+#: ../Tomboy/ExportAllApplicationAddin.cs:153
+#, csharp-format
+msgid "All Notes {0} Export"
+msgstr "Eksport wszystkich notatek {0}"
 
 # pd
 #: ../Tomboy/ExportAllApplicationAddin.cs:193
@@ -1243,7 +1255,8 @@ msgid "Could not save the files in \"{0}\""
 msgstr "Nie można zapisać plików w \"{0}\""
 
 # pd
-#: ../Tomboy/ExportAllApplicationAddin.cs:506
+#. Translators: {0} is the export type, e.g. HTML
+#: ../Tomboy/ExportAllApplicationAddin.cs:507
 #, csharp-format
 msgid "Create destination folder for {0} export"
 msgstr "Utwórz katalog docelowy do eksportu {0}"
