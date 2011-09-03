@@ -9,8 +9,8 @@ msgstr ""
 "Project-Id-Version: gnome-documents\n"
 "Report-Msgid-Bugs-To: http://bugzilla.gnome.org/enter_bug.cgi?product=gnome-"
 "documents&keywords=I18N+L10N&component=general\n"
-"POT-Creation-Date: 2011-08-30 18:06+0000\n"
-"PO-Revision-Date: 2011-08-30 21:18+0200\n"
+"POT-Creation-Date: 2011-09-03 11:06+0000\n"
+"PO-Revision-Date: 2011-09-03 21:17+0200\n"
 "Last-Translator: Piotr Drąg <piotrdrag@gmail.com>\n"
 "Language-Team: Polish <gnomepl@aviary.pl>\n"
 "Language: pl\n"
@@ -26,7 +26,7 @@ msgstr ""
 msgid "Access, manage and share documents"
 msgstr "Dostęp, zarządzanie i współdzielenie dokumentów"
 
-#: ../data/gnome-documents.desktop.in.in.h:2 ../src/mainWindow.js:64
+#: ../data/gnome-documents.desktop.in.in.h:2 ../src/mainWindow.js:82
 msgid "Documents"
 msgstr "Dokumenty"
 
@@ -46,33 +46,57 @@ msgstr "Aktywny filtr źródeł"
 msgid "The last active source filter"
 msgstr "Ostatni aktywny filtr źródeł"
 
-#: ../src/categories.js:69
+#. Translators: this refers to new and recent documents
+#: ../src/categories.js:77
 msgid "New and Recent"
 msgstr "Nowe i ostatnie"
 
-#: ../src/categories.js:71
+#. Translators: this refers to favorite documents
+#: ../src/categories.js:80
 msgid "Favorites"
 msgstr "Ulubione"
 
-#: ../src/categories.js:73
+#. Translators: this refers to shared documents
+#: ../src/categories.js:83
 msgid "Shared with you"
 msgstr "Współdzielone"
 
 #. unimplemented
-#: ../src/categories.js:77
+#: ../src/categories.js:87
 msgid "Private"
 msgstr "Prywatne"
 
-#: ../src/documents.js:335
+#: ../src/documents.js:269 ../src/sources.js:116
+msgid "Local"
+msgstr "Lokalne"
+
+#: ../src/documents.js:388
 msgid "Google Docs"
 msgstr "Google Docs"
 
-#: ../src/error.js:36
+#: ../src/documents.js:389
+msgid "Google"
+msgstr "Google"
+
+#: ../src/documents.js:446
+msgid "Spreadsheet"
+msgstr "Arkusz kalkulacyjny"
+
+#: ../src/documents.js:448
+msgid "Presentation"
+msgstr "Prezentacja"
+
+#: ../src/documents.js:450
+msgid "Document"
+msgstr "Dokument"
+
+#. Translators: %s is the title of a document
+#: ../src/error.js:37
 #, c-format
 msgid "Unable to load \"%s\" for preview"
 msgstr "Nie można wczytać \"%s\" dla podglądu"
 
-#: ../src/error.js:43
+#: ../src/error.js:44
 msgid "Unable to fetch the list of documents"
 msgstr "Nie można pobrać listy dokumentów"
 
@@ -81,40 +105,37 @@ msgstr "Nie można pobrać listy dokumentów"
 msgid "Load %d more documents"
 msgstr "Wczytaj %d więcej dokumentów"
 
-#: ../src/mainToolbar.js:164
+#: ../src/mainToolbar.js:183
 #, c-format
-msgid "page %d of %d"
-msgstr "strona %d z %d"
+msgid "(%d of %d)"
+msgstr "(%d z %d)"
 
-#: ../src/sidebar.js:130 ../src/sources.js:214
+#: ../src/sidebar.js:130 ../src/sources.js:255
 msgid "Sources"
 msgstr "Źródła"
 
-#: ../src/sources.js:109
+#: ../src/sources.js:110
 msgid "All"
 msgstr "Wszystko"
-
-#: ../src/sources.js:114
-msgid "Local"
-msgstr "Lokalne"
 
 #: ../src/spinnerBox.js:47
 msgid "Loading..."
 msgstr "Wczytywanie..."
 
-#: ../src/view.js:45
+#. Translators: this is the Open action in a context menu
+#: ../src/view.js:46
 #, c-format
 msgid "Open with %s"
 msgstr "Otwórz za pomocą %s"
 
-#: ../src/view.js:45
+#: ../src/view.js:46
 msgid "Open"
 msgstr "Otwórz"
 
-#: ../src/view.js:55
+#: ../src/view.js:56
 msgid "Remove from favorites"
 msgstr "Usuń z ulubionych"
 
-#: ../src/view.js:55
+#: ../src/view.js:56
 msgid "Add to favorites"
 msgstr "Dodaj do ulubionych"
