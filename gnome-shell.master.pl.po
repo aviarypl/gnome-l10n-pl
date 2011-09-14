@@ -9,8 +9,8 @@ msgstr ""
 "Project-Id-Version: gnome-shell\n"
 "Report-Msgid-Bugs-To: http://bugzilla.gnome.org/enter_bug.cgi?product=gnome-"
 "shell&keywords=I18N+L10N&component=general\n"
-"POT-Creation-Date: 2011-09-06 15:20+0000\n"
-"PO-Revision-Date: 2011-09-06 17:45+0200\n"
+"POT-Creation-Date: 2011-09-14 13:45+0000\n"
+"PO-Revision-Date: 2011-09-14 16:43+0200\n"
 "Last-Translator: Piotr Drąg <piotrdrag@gmail.com>\n"
 "Language-Team: Polish <gnomepl@aviary.pl>\n"
 "Language: pl\n"
@@ -202,42 +202,49 @@ msgid "disabled OpenSearch providers"
 msgstr "Wyłączeni dostawcy OpenSearch"
 
 # pd
-#: ../js/gdm/loginDialog.js:601
+#: ../js/gdm/loginDialog.js:604
 msgid "Session..."
 msgstr "Sesja..."
 
 # pd
-#: ../js/gdm/loginDialog.js:758 ../js/gdm/loginDialog.js:931
+#: ../js/gdm/loginDialog.js:761
+msgctxt "title"
 msgid "Sign In"
-msgstr "Zaloguj"
+msgstr "Proszę się zalogować"
 
 # pd
-#: ../js/gdm/loginDialog.js:816
+#: ../js/gdm/loginDialog.js:818
 msgid "Not listed?"
 msgstr "Inny użytkownik?"
 
-#: ../js/gdm/loginDialog.js:926 ../js/ui/endSessionDialog.js:410
-#: ../js/ui/networkAgent.js:158 ../js/ui/polkitAuthenticationAgent.js:170
-#: ../js/ui/status/bluetooth.js:480
+#: ../js/gdm/loginDialog.js:928 ../js/ui/endSessionDialog.js:426
+#: ../js/ui/extensionSystem.js:477 ../js/ui/networkAgent.js:158
+#: ../js/ui/polkitAuthenticationAgent.js:170 ../js/ui/status/bluetooth.js:480
 msgid "Cancel"
 msgstr "Anuluj"
 
 # pd
-#: ../js/gdm/loginDialog.js:1251
+#: ../js/gdm/loginDialog.js:933
+msgctxt "button"
+msgid "Sign In"
+msgstr "Zaloguj"
+
+# pd
+#: ../js/gdm/loginDialog.js:1253
 msgid "Login Window"
 msgstr "Okno logowania"
 
-#: ../js/misc/util.js:68
+#: ../js/misc/util.js:92
 msgid "Command not found"
 msgstr "Nie odnaleziono polecenia"
 
 #. Replace "Error invoking GLib.shell_parse_argv: " with
 #. something nicer
-#: ../js/misc/util.js:95
+#: ../js/misc/util.js:119
 msgid "Could not parse command:"
 msgstr "Nie można przetworzyć polecenia:"
 
-#: ../js/misc/util.js:103
+#: ../js/misc/util.js:127
 #, c-format
 msgid "Execution of '%s' failed:"
 msgstr "Wykonanie polecenia \"%s\" się nie powiodło:"
@@ -462,7 +469,7 @@ msgstr "Offline"
 msgid "CONTACTS"
 msgstr "Kontakty"
 
-#: ../js/ui/dash.js:172 ../js/ui/messageTray.js:1197
+#: ../js/ui/dash.js:172 ../js/ui/messageTray.js:1195
 msgid "Remove"
 msgstr "Usuń"
 
@@ -530,109 +537,137 @@ msgstr "Ostatnie elementy"
 msgid "Log Out %s"
 msgstr "Wyloguj %s"
 
-#: ../js/ui/endSessionDialog.js:61 ../js/ui/endSessionDialog.js:67
+# pd
+#: ../js/ui/endSessionDialog.js:61 ../js/ui/endSessionDialog.js:75
 msgid "Log Out"
-msgstr "Wyloguj się"
+msgstr "Wyloguj"
 
 #: ../js/ui/endSessionDialog.js:62
 msgid "Click Log Out to quit these applications and log out of the system."
 msgstr "Kliknięcie Wyloguj zakończy poniższe programy i wyloguje z systemu."
 
-#: ../js/ui/endSessionDialog.js:63
-#, c-format
-msgid "%s will be logged out automatically in %d seconds."
-msgstr "Użytkownik %s zostanie automatycznie wylogowany za %d sekund."
-
+# pd
 #: ../js/ui/endSessionDialog.js:64
 #, c-format
-msgid "You will be logged out automatically in %d seconds."
-msgstr "Użytkownik zostanie automatycznie wylogowany za %d sekund."
+msgid "%s will be logged out automatically in %d second."
+msgid_plural "%s will be logged out automatically in %d seconds."
+msgstr[0] "Użytkownik %s zostanie automatycznie wylogowany za %d sekundę."
+msgstr[1] "Użytkownik %s zostanie automatycznie wylogowany za %d sekundy."
+msgstr[2] "Użytkownik %s zostanie automatycznie wylogowany za %d sekund."
 
-#: ../js/ui/endSessionDialog.js:65
+# pd
+#: ../js/ui/endSessionDialog.js:69
+#, c-format
+msgid "You will be logged out automatically in %d second."
+msgid_plural "You will be logged out automatically in %d seconds."
+msgstr[0] "Użytkownik zostanie automatycznie wylogowany za %d sekundę."
+msgstr[1] "Użytkownik zostanie automatycznie wylogowany za %d sekundy."
+msgstr[2] "Użytkownik zostanie automatycznie wylogowany za %d sekund."
+
+#: ../js/ui/endSessionDialog.js:73
 msgid "Logging out of the system."
 msgstr "Wylogowywanie z systemu."
 
-#: ../js/ui/endSessionDialog.js:72 ../js/ui/endSessionDialog.js:79
+#: ../js/ui/endSessionDialog.js:80 ../js/ui/endSessionDialog.js:91
 msgid "Power Off"
 msgstr "Wyłącz komputer"
 
-#: ../js/ui/endSessionDialog.js:73
+#: ../js/ui/endSessionDialog.js:81
 msgid "Click Power Off to quit these applications and power off the system."
 msgstr "Kliknięcie Wyłącz zakończy poniższe programy i wyłączy komputer."
 
-#: ../js/ui/endSessionDialog.js:74
+# pd
+#: ../js/ui/endSessionDialog.js:83
 #, c-format
-msgid "The system will power off automatically in %d seconds."
-msgstr "Komputer zostanie automatycznie wyłączony za %d sekund."
+msgid "The system will power off automatically in %d second."
+msgid_plural "The system will power off automatically in %d seconds."
+msgstr[0] "Komputer zostanie automatycznie wyłączony za %d sekundę."
+msgstr[1] "Komputer zostanie automatycznie wyłączony za %d sekundy."
+msgstr[2] "Komputer zostanie automatycznie wyłączony za %d sekund."
 
-#: ../js/ui/endSessionDialog.js:75
+#: ../js/ui/endSessionDialog.js:87
 msgid "Powering off the system."
 msgstr "Wyłączanie komputera."
 
-#: ../js/ui/endSessionDialog.js:77 ../js/ui/endSessionDialog.js:85
-#: ../js/ui/endSessionDialog.js:90
+#: ../js/ui/endSessionDialog.js:89 ../js/ui/endSessionDialog.js:97
+#: ../js/ui/endSessionDialog.js:106
 msgid "Restart"
 msgstr "Uruchom ponownie"
 
-#: ../js/ui/endSessionDialog.js:86
+#: ../js/ui/endSessionDialog.js:98
 msgid "Click Restart to quit these applications and restart the system."
 msgstr ""
 "Kliknięcie Uruchom ponownie zakończy poniższe programy i ponownie uruchomi "
 "system."
 
-#: ../js/ui/endSessionDialog.js:87
+# pd
+#: ../js/ui/endSessionDialog.js:100
 #, c-format
-msgid "The system will restart automatically in %d seconds."
-msgstr "System zostanie automatycznie uruchomiony ponownie za %d sekund."
+msgid "The system will restart automatically in %d second."
+msgid_plural "The system will restart automatically in %d seconds."
+msgstr[0] "System zostanie automatycznie uruchomiony ponownie za %d sekundę."
+msgstr[1] "System zostanie automatycznie uruchomiony ponownie za %d sekundy."
+msgstr[2] "System zostanie automatycznie uruchomiony ponownie za %d sekund."
 
-#: ../js/ui/endSessionDialog.js:88
+#: ../js/ui/endSessionDialog.js:104
 msgid "Restarting the system."
 msgstr "Ponowne uruchamianie systemu."
 
-#: ../js/ui/keyboard.js:508 ../js/ui/status/power.js:211
+# pd
+#: ../js/ui/extensionSystem.js:481
+msgid "Install"
+msgstr "Zainstaluj"
+
+# pd
+#: ../js/ui/extensionSystem.js:485
+#, c-format
+msgid "Download and install '%s' from extensions.gnome.org?"
+msgstr "Pobrać i zainstalować \"%s\" z witryny extensions.gnome.org?"
+
+#: ../js/ui/keyboard.js:513 ../js/ui/status/power.js:211
 msgid "Keyboard"
 msgstr "Klawiatura"
 
-#: ../js/ui/lookingGlass.js:640
+#: ../js/ui/lookingGlass.js:641
 msgid "No extensions installed"
 msgstr "Nie zainstalowano rozszerzeń"
 
-#: ../js/ui/lookingGlass.js:686
+#: ../js/ui/lookingGlass.js:687
 msgid "Enabled"
 msgstr "Włączone"
 
 #. translators:
 #. * The device has been disabled
-#: ../js/ui/lookingGlass.js:688 ../src/gvc/gvc-mixer-control.c:1093
+#: ../js/ui/lookingGlass.js:689 ../src/gvc/gvc-mixer-control.c:1093
 msgid "Disabled"
 msgstr "Wyłączone"
 
-#: ../js/ui/lookingGlass.js:690
+#: ../js/ui/lookingGlass.js:691
 msgid "Error"
 msgstr "Błąd"
 
-#: ../js/ui/lookingGlass.js:692
+#: ../js/ui/lookingGlass.js:693
 msgid "Out of date"
 msgstr "Nieaktualne"
 
 # pd
-#: ../js/ui/lookingGlass.js:694
+#: ../js/ui/lookingGlass.js:695
 msgid "Downloading"
 msgstr "Pobieranie"
 
-#: ../js/ui/lookingGlass.js:719
+#: ../js/ui/lookingGlass.js:720
 msgid "View Source"
 msgstr "Wyświetl źródło"
 
-#: ../js/ui/lookingGlass.js:725
+#: ../js/ui/lookingGlass.js:726
 msgid "Web Page"
 msgstr "Strona WWW"
 
-#: ../js/ui/messageTray.js:1190
+#: ../js/ui/messageTray.js:1188
 msgid "Open"
 msgstr "Otwórz"
 
-#: ../js/ui/messageTray.js:2352
+#: ../js/ui/messageTray.js:2367
 msgid "System Information"
 msgstr "Informacje systemowe"
 
@@ -1129,8 +1164,8 @@ msgstr "Utracono łączność"
 
 # pd
 #: ../js/ui/status/network.js:1748
-msgid "You're no longer connected to the network"
-msgstr "Brak połączenia z siecią"
+msgid "You are no longer connected to the network"
+msgstr "Utracono połączenia z siecią"
 
 # pd
 #: ../js/ui/status/network.js:1756
@@ -1142,11 +1177,11 @@ msgstr "Połączenie się nie powiodło"
 msgid "Activation of network connection failed"
 msgstr "Aktywacja połączenia sieciowego się nie powiodła"
 
-#: ../js/ui/status/network.js:1992
+#: ../js/ui/status/network.js:2008
 msgid "Networking is disabled"
 msgstr "Sieć jest wyłączona"
 
-#: ../js/ui/status/network.js:2117
+#: ../js/ui/status/network.js:2133
 msgid "Network Manager"
 msgstr "Menedżer sieci"
 
@@ -1195,6 +1230,13 @@ msgid_plural "%d minutes remaining"
 msgstr[0] "Pozostała %d minuta"
 msgstr[1] "Pozostały %d minuty"
 msgstr[2] "Pozostało %d minut"
+
+# pd
+#: ../js/ui/status/power.js:121 ../js/ui/status/power.js:194
+#, c-format
+msgctxt "percent of battery remaining"
+msgid "%d%%"
+msgstr "%d%%"
 
 #: ../js/ui/status/power.js:201
 msgid "AC adapter"
@@ -1679,8 +1721,3 @@ msgstr "System plików"
 #, c-format
 msgid "%1$s: %2$s"
 msgstr "%1$s: %2$s"
-
-# pd
-#: ../src/shell-util.c:600
-msgid "calendar:week_start:0"
-msgstr "calendar:week_start:1"
