@@ -10,7 +10,7 @@ msgstr ""
 "Report-Msgid-Bugs-To: http://bugzilla.gnome.org/enter_bug.cgi?product=gnome-shell&keywords=I18N+L10N&component=general\n"
 "POT-Creation-Date: 2011-09-19 12:40+0000\n"
 "PO-Revision-Date: 2011-09-21 08:43-0800\n"
-"Last-Translator: Joanna Mazgaj <jmazgaj@aviary.pl>\n"
+"Last-Translator: Piotr Drąg <piotrdrag@gmail.com>\n"
 "Language-Team: Polish <gnomepl@aviary.pl>\n"
 "Language: pl\n"
 "MIME-Version: 1.0\n"
@@ -44,11 +44,9 @@ msgstr "Rozszerzenie pliku używane do przechowywania nagrań pulpitu"
 msgid "Framerate used for recording screencasts."
 msgstr "Liczba klatek na sekundę do nagrywania pulpitu."
 
-# pd
-# jm: po prostu: 'posiadają UUID'?. Wtedy początek drugiego zdania ładnie wyjaśnia, że to klucz jakiś. możnaby dodać jakiś deskryptor do disabled-extensions (strzelam, że to jakaś dodatkowa paczka/rozrzerzenie? dodatek?)
 #: ../data/org.gnome.shell.gschema.xml.in.h:5
 msgid "GNOME Shell extensions have a uuid property; this key lists extensions which should be loaded. disabled-extensions overrides this setting for extensions that appear in both lists."
-msgstr "Rozszerzenia powłoki GNOME posiadają własność UUID; ten klucz zawiera rozszerzenia, które powinny zostać wczytane. disabled-extensions zastępuje to ustawienie w przypadku rozszerzeń, które znajdują się na obu listach."
+msgstr "Rozszerzenia powłoki GNOME posiadają własność UUID; ten klucz zawiera rozszerzenia, które powinny zostać wczytane. Klucz disabled-extensions zastępuje to ustawienie w przypadku rozszerzeń, które znajdują się na obu listach."
 
 #: ../data/org.gnome.shell.gschema.xml.in.h:6
 msgid "History for command (Alt-F2) dialog"
@@ -415,8 +413,6 @@ msgstr "Nieobecny"
 msgid "Busy"
 msgstr "Zajęty"
 
-# pd
-# jm: my tego nie tłumaczymy? jakiś niedostępny czy coś?
 #: ../js/ui/contactDisplay.js:93
 msgid "Offline"
 msgstr "Offline"
@@ -507,19 +503,17 @@ msgstr "Kliknięcie Wyloguj zakończy poniższe programy i wyloguje z systemu."
 #, c-format
 msgid "%s will be logged out automatically in %d second."
 msgid_plural "%s will be logged out automatically in %d seconds."
-msgstr[0] "Użytkownik %s zostanie automatycznie wylogowany za %d sekundę."
-msgstr[1] "Użytkownik %s zostanie automatycznie wylogowany za %d sekundy."
-msgstr[2] "Użytkownik %s zostanie automatycznie wylogowany za %d sekund."
+msgstr[0] "Użytkownik %s zostanie wylogowany za %d sekundę."
+msgstr[1] "Użytkownik %s zostanie wylogowany za %d sekundy."
+msgstr[2] "Użytkownik %s zostanie wylogowany za %d sekund."
 
-# pd
-# jm: Automatyczne wylogowanie nastąpi za %d sec ?
 #: ../js/ui/endSessionDialog.js:69
 #, c-format
 msgid "You will be logged out automatically in %d second."
 msgid_plural "You will be logged out automatically in %d seconds."
-msgstr[0] "Użytkownik zostanie automatycznie wylogowany za %d sekundę."
-msgstr[1] "Użytkownik zostanie automatycznie wylogowany za %d sekundy."
-msgstr[2] "Użytkownik zostanie automatycznie wylogowany za %d sekund."
+msgstr[0] "Wylogowanie nastąpi za %d sekundę."
+msgstr[1] "Wylogowanie nastąpi za %d sekundy."
+msgstr[2] "Wylogowanie nastąpi za %d sekund."
 
 #: ../js/ui/endSessionDialog.js:73
 msgid "Logging out of the system."
@@ -529,15 +523,13 @@ msgstr "Wylogowywanie z systemu."
 msgid "Click Power Off to quit these applications and power off the system."
 msgstr "Kliknięcie Wyłącz zakończy poniższe programy i wyłączy komputer."
 
-# pd
-# jm: Wyłączenie komputera nastąpi za %d... ? ew. Automatyczne na początku, ale tu bym się pokusiła o wywalenie, wiadomo, że jak jest odliczanie to to automat :)
 #: ../js/ui/endSessionDialog.js:83
 #, c-format
 msgid "The system will power off automatically in %d second."
 msgid_plural "The system will power off automatically in %d seconds."
-msgstr[0] "Komputer zostanie automatycznie wyłączony za %d sekundę."
-msgstr[1] "Komputer zostanie automatycznie wyłączony za %d sekundy."
-msgstr[2] "Komputer zostanie automatycznie wyłączony za %d sekund."
+msgstr[0] "Wyłączenie komputera nastąpi za %d sekundę."
+msgstr[1] "Wyłączenie komputera nastąpi za %d sekundy."
+msgstr[2] "Wyłączenie komputera nastąpi za %d sekund."
 
 #: ../js/ui/endSessionDialog.js:87
 msgid "Powering off the system."
@@ -547,16 +539,13 @@ msgstr "Wyłączanie komputera."
 msgid "Click Restart to quit these applications and restart the system."
 msgstr "Kliknięcie Uruchom ponownie zakończy poniższe programy i ponownie uruchomi system."
 
-# pd
-# jm: ponowne uruchomienie systemu nastąpi za XXX. 
-# nie poradzę, że tak mi lepiej brzmi :)
 #: ../js/ui/endSessionDialog.js:100
 #, c-format
 msgid "The system will restart automatically in %d second."
 msgid_plural "The system will restart automatically in %d seconds."
-msgstr[0] "System zostanie automatycznie uruchomiony ponownie za %d sekundę."
-msgstr[1] "System zostanie automatycznie uruchomiony ponownie za %d sekundy."
-msgstr[2] "System zostanie automatycznie uruchomiony ponownie za %d sekund."
+msgstr[0] "Ponowne uruchomienie systemu nastąpi za %d sekundę."
+msgstr[1] "Ponowne uruchomienie systemu nastąpi za %d sekundy."
+msgstr[2] "Ponowne uruchomienie systemu nastąpi za %d sekund."
 
 #: ../js/ui/endSessionDialog.js:104
 msgid "Restarting the system."
@@ -665,12 +654,10 @@ msgstr "Usługa: "
 msgid "Authentication required by wireless network"
 msgstr "Sieć bezprzewodowa wymaga uwierzytelnienia"
 
-# pd
-# jm: szyk zdania został ci angielski. Proponuję tak: Do uzyskania dostępu do sieci bezprzewodowej XXX wymagane jest hasło lub klucze szyfrowania. 
 #: ../js/ui/networkAgent.js:335
 #, c-format
 msgid "Passwords or encryption keys are required to access the wireless network '%s'."
-msgstr "Wymagane jest hasło lub klucze szyfrowania, aby uzyskać dostęp do sieci bezprzewodowej \"%s\"."
+msgstr "Do uzyskania dostępu do sieci bezprzewodowej \"%s\" wymagane jest hasło lub klucze szyfrowania."
 
 #: ../js/ui/networkAgent.js:339
 msgid "Wired 802.1X authentication"
@@ -684,34 +671,26 @@ msgstr "Nazwa sieci: "
 msgid "DSL authentication"
 msgstr "Uwierzytelnienie DSL"
 
-# pd
-# jm: wywaliłabym 'jest'. 
 #: ../js/ui/networkAgent.js:353
 msgid "PIN code required"
-msgstr "Wymagany jest kod PIN"
+msgstr "Wymagany kod PIN"
 
-# pd
-# jm: do korzystania z urządzenia komórkowego wymagane jest podanie kodu PIN?
 #: ../js/ui/networkAgent.js:354
 msgid "PIN code is needed for the mobile broadband device"
-msgstr "Wymagany jest kod PIN dla urządzenia komórkowego"
+msgstr "Do korzystania z urządzenia komórkowego wymagane jest podanie kodu PIN"
 
-# pd
-# jm: kod PIN? tak, żeby była spójność z dwoma powyżej
 #: ../js/ui/networkAgent.js:355
 msgid "PIN: "
-msgstr "PIN: "
+msgstr "Kod PIN: "
 
 #: ../js/ui/networkAgent.js:361
 msgid "Mobile broadband network password"
 msgstr "Hasło sieci komórkowej"
 
-# pd
-# jm: do połączenia z siecią.... itd :D
 #: ../js/ui/networkAgent.js:362
 #, c-format
 msgid "A password is required to connect to '%s'."
-msgstr "Wymagane jest hasło, aby połączyć z siecią \"%s\"."
+msgstr "Do połączenia z siecią \"%s\" wymagane jest hasło."
 
 #: ../js/ui/overview.js:91
 msgid "Undo"
@@ -1264,33 +1243,27 @@ msgstr "Użytkownik %s jest nieobecny."
 msgid "%s is busy."
 msgstr "Użytkownik %s jest zajęty."
 
-# pd
-# jm: wysłano w dniu XY o godzinie ABC? po naszemu tak jest chyba naturalniej
 #. Translators: this is a time format string followed by a date.
 #. If applicable, replace %X with a strftime format valid for your
 #. locale, without seconds.
 #: ../js/ui/telepathyClient.js:978
 #, no-c-format
 msgid "Sent at <b>%X</b> on <b>%A</b>"
-msgstr "Wysłano o <b>%H:%M</b> w dniu <b>%e %b</b>"
+msgstr "Wysłano w dniu <b>%e %b</b> o godzinie <b>%H:%M</b>"
 
-# pd
-# jm: tak myślę... 'wysłano dnia 25 maj, środa', czy 'wysłano w dniu 25 maj, środa' ? Jak myślisz? Albo nawet 'wysłano: 25 maj, środa' ? bo pewnie miesiące się nie odmieniają. odmieniają się ('wysłano (dnia) 25 maja, środa')?
 #. Translators: this is a time format in the style of "Wednesday, May 25",
 #. shown when you get a chat message in the same year.
 #: ../js/ui/telepathyClient.js:984
 #, no-c-format
 msgid "Sent on <b>%A</b>, <b>%B %d</b>"
-msgstr "Wysłano dnia <b>%d %B</b>, <b>%A</b>"
+msgstr "Wysłano w dniu <b>%d %B</b>, <b>%A</b>"
 
-# pd
-# jm: j/w
 #. Translators: this is a time format in the style of "Wednesday, May 25, 2012",
 #. shown when you get a chat message in a different year.
 #: ../js/ui/telepathyClient.js:989
 #, no-c-format
 msgid "Sent on <b>%A</b>, <b>%B %d</b>, %Y"
-msgstr "Wysłano dnia <b>%d %B</b> %Y, <b>%A</b>"
+msgstr "Wysłano w dniu <b>%d %B</b> %Y, <b>%A</b>"
 
 #. Translators: this is the other person changing their old IM name to their new
 #. IM name.
@@ -1342,8 +1315,6 @@ msgstr "Rozmowa z %s"
 msgid "Answer"
 msgstr "Odbierz"
 
-# pd
-# jm: przesyła plik XXX. deskryptooor :)
 #. To translators: The first parameter is
 #. * the contact's alias and the second one is the
 #. * file name. The string will be something
@@ -1352,7 +1323,7 @@ msgstr "Odbierz"
 #: ../js/ui/telepathyClient.js:1233
 #, c-format
 msgid "%s is sending you %s"
-msgstr "Użytkownik %s przysyła %s"
+msgstr "Użytkownik %s przysyła plik %s"
 
 #. To translators: The parameter is the contact's alias
 #: ../js/ui/telepathyClient.js:1308
@@ -1400,8 +1371,6 @@ msgstr "Odcisk palca certyfikatu się nie zgadza"
 msgid "Certificate self-signed"
 msgstr "Certyfikat został samodzielnie podpisany"
 
-# pd
-# jm: gdzieś wyżej pytałam o to offline
 #: ../js/ui/telepathyClient.js:1426
 msgid "Status is set to offline"
 msgstr "Stan jest ustawiony na offline"
@@ -1430,11 +1399,9 @@ msgstr "Utracono połączenie"
 msgid "This resource is already connected to the server"
 msgstr "Ten zasób jest już połączony z serwerem"
 
-# pd
-# jm: z wykorzystaniem?
 #: ../js/ui/telepathyClient.js:1440
 msgid "Connection has been replaced by a new connection using the same resource"
-msgstr "Połączenie zostało zastąpione nowym używając tego samego zasobu"
+msgstr "Połączenie zostało zastąpione nowym z wykorzystaniem tego samego zasobu"
 
 #: ../js/ui/telepathyClient.js:1442
 msgid "The account already exists on the server"
@@ -1448,14 +1415,10 @@ msgstr "Serwer jest obecnie zbyt zajęty, aby obsłużyć połączenie"
 msgid "Certificate has been revoked"
 msgstr "Certyfikat został unieważniony"
 
-# pd
-# jm: niezabezpieczonego ? słabo zabezpieczonego? insecure jako niebezpieczny mi trochę nie pasuje
 #: ../js/ui/telepathyClient.js:1448
 msgid "Certificate uses an insecure cipher algorithm or is cryptographically weak"
-msgstr "Certyfikat używa niebezpiecznego algorytmu szyfrowania lub jest kryptograficznie słaby"
+msgstr "Certyfikat używa niezabezpieczonego algorytmu szyfrowania lub jest kryptograficznie słaby"
 
-# pd
-# jm: przecinki chyba przed ,lub i po łańcucha,
 #: ../js/ui/telepathyClient.js:1450
 msgid "The length of the server certificate, or the depth of the server certificate chain, exceed the limits imposed by the cryptography library"
 msgstr "Długość certyfikatu serwera lub głębokość jego łańcucha przekracza ograniczenia nałożone przez bibliotekę kryptograficzną"
@@ -1525,11 +1488,9 @@ msgstr "Wyloguj się..."
 msgid "Your chat status will be set to busy"
 msgstr "Stan komunikatora zostanie ustawiony na \"zajęty\""
 
-# pd
-# jm: przecinek w pierwszym zdaniu po 'komunikatora'. Online chyba tłumaczymy jako dostępny, możesz wziąć w jakiś apostrof, żeby było wiadomo. Co powiesz na: "może nie zobaczyć przychodzących od nich wiadomości" ?
 #: ../js/ui/userMenu.js:612
 msgid "Notifications are now disabled, including chat messages. Your online status has been adjusted to let others know that you might not see their messages."
-msgstr "Powiadomienia, w tym także wiadomości komunikatora są teraz wyłączone. Stan online został odpowiednio dostosowany, aby inne osoby wiedziały, że użytkownik tego komputera może nie zobaczyć wiadomości od nich."
+msgstr "Powiadomienia, w tym także wiadomości komunikatora, są teraz wyłączone. Stan komunikatora został odpowiednio dostosowany, aby inne osoby wiedziały, że użytkownik tego komputera może nie zobaczyć przychodzących od nich wiadomości."
 
 #. Translators: this is the text displayed
 #. in the search entry when no search is
