@@ -9,8 +9,8 @@ msgstr ""
 "Project-Id-Version: ekiga\n"
 "Report-Msgid-Bugs-To: http://bugzilla.gnome.org/enter_bug.cgi?"
 "product=ekiga&keywords=I18N+L10N&component=general\n"
-"POT-Creation-Date: 2011-09-14 14:22+0000\n"
-"PO-Revision-Date: 2011-09-14 17:08+0200\n"
+"POT-Creation-Date: 2011-09-21 21:03+0000\n"
+"PO-Revision-Date: 2011-09-21 23:11+0200\n"
 "Last-Translator: Piotr Drąg <piotrdrag@gmail.com>\n"
 "Language-Team: Polish <gnomepl@aviary.pl>\n"
 "Language: pl\n"
@@ -822,85 +822,6 @@ msgstr "Nieodebrane"
 msgid "New contact"
 msgstr "Nowy kontakt"
 
-#: ../lib/engine/components/local-roster/local-presentity.cpp:118
-#: ../plugins/resource-list/rl-entry.cpp:141
-#: ../plugins/resource-list/rl-heap.cpp:102
-#: ../plugins/resource-list/rl-heap.cpp:144
-#: ../plugins/resource-list/rl-heap.cpp:176
-#: ../plugins/resource-list/rl-presentity.cpp:143
-msgid "Unnamed"
-msgstr "Bez nazwy"
-
-#: ../lib/engine/components/local-roster/local-presentity.cpp:220
-#: ../lib/engine/components/opal/opal-account.cpp:374
-#: ../plugins/evolution/evolution-contact.cpp:228
-#: ../plugins/loudmouth/loudmouth-presentity.cpp:159
-#: ../plugins/resource-list/rl-presentity.cpp:212
-#: ../src/gui/main_window.cpp:3599
-msgid "_Edit"
-msgstr "_Edycja"
-
-#: ../lib/engine/components/local-roster/local-presentity.cpp:222
-#: ../lib/engine/components/opal/opal-account.cpp:376
-#: ../plugins/evolution/evolution-contact.cpp:230
-#: ../plugins/loudmouth/loudmouth-account.cpp:393
-#: ../plugins/loudmouth/loudmouth-presentity.cpp:192
-#: ../plugins/resource-list/rl-presentity.cpp:214 ../src/gui/accounts.cpp:692
-msgid "_Remove"
-msgstr "_Usuń"
-
-#: ../lib/engine/components/local-roster/local-presentity.cpp:247
-#: ../plugins/loudmouth/loudmouth-presentity.cpp:277
-msgid "Edit roster element"
-msgstr "Modyfikowanie elementu listy kontaktów"
-
-#: ../lib/engine/components/local-roster/local-presentity.cpp:248
-msgid ""
-"Please fill in this form to change an existing element of ekiga's internal "
-"roster"
-msgstr ""
-"Proszę wypełnić formularz, aby zmienić istniejący element wewnętrznej listy "
-"kontaktów programu Ekiga"
-
-#: ../lib/engine/components/local-roster/local-presentity.cpp:250
-#: ../lib/engine/components/local-roster/local-heap.cpp:235
-#: ../lib/engine/components/local-roster/local-heap.cpp:427
-#: ../lib/engine/components/opal/opal-account.cpp:419
-#: ../plugins/evolution/evolution-contact.cpp:324
-#: ../plugins/loudmouth/loudmouth-account.cpp:296
-#: ../plugins/loudmouth/loudmouth-bank.cpp:125
-#: ../plugins/loudmouth/loudmouth-presentity.cpp:280
-#: ../plugins/resource-list/rl-cluster.cpp:169
-#: ../plugins/resource-list/rl-heap.cpp:526
-#: ../plugins/resource-list/rl-presentity.cpp:233
-msgid "Name:"
-msgstr "Nazwa:"
-
-#: ../lib/engine/components/local-roster/local-presentity.cpp:251
-#: ../lib/engine/components/local-roster/local-heap.cpp:244
-#: ../lib/engine/components/local-roster/local-heap.cpp:246
-#: ../plugins/resource-list/rl-cluster.cpp:170
-#: ../plugins/resource-list/rl-heap.cpp:527
-#: ../plugins/resource-list/rl-presentity.cpp:234
-msgid "Address:"
-msgstr "Adres:"
-
-#: ../lib/engine/components/local-roster/local-presentity.cpp:252
-msgid "Is a preferred contact"
-msgstr "Jest preferowanym kontaktem"
-
-#: ../lib/engine/components/local-roster/local-presentity.cpp:254
-#: ../plugins/loudmouth/loudmouth-presentity.cpp:282
-#: ../plugins/resource-list/rl-heap.cpp:528
-#: ../plugins/resource-list/rl-presentity.cpp:236
-msgid "Choose groups:"
-msgstr "Wybór grup:"
-
-#: ../lib/engine/components/local-roster/local-roster-bridge.cpp:93
-#: ../lib/engine/components/local-roster/local-heap.cpp:232
-msgid "Add to local roster"
-msgstr "Dodaj do lokalnej listy"
-
 #: ../lib/engine/components/local-roster/local-heap.cpp:93
 msgid "Services"
 msgstr "Usługi"
@@ -964,6 +885,11 @@ msgstr "Przełożony"
 msgid "Self"
 msgstr "Użytkownik"
 
+#: ../lib/engine/components/local-roster/local-heap.cpp:232
+#: ../lib/engine/components/local-roster/local-roster-bridge.cpp:93
+msgid "Add to local roster"
+msgstr "Dodaj do lokalnej listy"
+
 #: ../lib/engine/components/local-roster/local-heap.cpp:233
 msgid ""
 "Please fill in this form to add a new contact to ekiga's internal roster"
@@ -972,8 +898,31 @@ msgstr ""
 "kontaktów programu Ekiga"
 
 #: ../lib/engine/components/local-roster/local-heap.cpp:235
+#: ../lib/engine/components/local-roster/local-heap.cpp:427
+#: ../lib/engine/components/local-roster/local-presentity.cpp:250
+#: ../lib/engine/components/opal/opal-account.cpp:419
+#: ../plugins/evolution/evolution-contact.cpp:324
+#: ../plugins/loudmouth/loudmouth-account.cpp:338
+#: ../plugins/loudmouth/loudmouth-bank.cpp:125
+#: ../plugins/loudmouth/loudmouth-presentity.cpp:281
+#: ../plugins/resource-list/rl-cluster.cpp:169
+#: ../plugins/resource-list/rl-heap.cpp:526
+#: ../plugins/resource-list/rl-presentity.cpp:233
+msgid "Name:"
+msgstr "Nazwa:"
+
+#: ../lib/engine/components/local-roster/local-heap.cpp:235
 msgid "Name of the contact, as shown in your roster"
 msgstr "Nazwa kontaktu, tak jak wyświetlana na liście kontaktów"
+
+#: ../lib/engine/components/local-roster/local-heap.cpp:244
+#: ../lib/engine/components/local-roster/local-heap.cpp:246
+#: ../lib/engine/components/local-roster/local-presentity.cpp:251
+#: ../plugins/resource-list/rl-cluster.cpp:170
+#: ../plugins/resource-list/rl-heap.cpp:527
+#: ../plugins/resource-list/rl-presentity.cpp:234
+msgid "Address:"
+msgstr "Adres:"
 
 #: ../lib/engine/components/local-roster/local-heap.cpp:244
 #: ../lib/engine/components/local-roster/local-heap.cpp:246
@@ -1000,15 +949,66 @@ msgstr "Zmień nazwę grupy"
 msgid "Please edit this group name"
 msgstr "Proszę zmodyfikować nazwę grupy"
 
+#: ../lib/engine/components/local-roster/local-presentity.cpp:118
+#: ../plugins/resource-list/rl-entry.cpp:141
+#: ../plugins/resource-list/rl-heap.cpp:102
+#: ../plugins/resource-list/rl-heap.cpp:144
+#: ../plugins/resource-list/rl-heap.cpp:176
+#: ../plugins/resource-list/rl-presentity.cpp:143
+msgid "Unnamed"
+msgstr "Bez nazwy"
+
+#: ../lib/engine/components/local-roster/local-presentity.cpp:220
+#: ../lib/engine/components/opal/opal-account.cpp:374
+#: ../plugins/evolution/evolution-contact.cpp:228
+#: ../plugins/loudmouth/loudmouth-presentity.cpp:160
+#: ../plugins/resource-list/rl-presentity.cpp:212
+#: ../src/gui/main_window.cpp:3599
+msgid "_Edit"
+msgstr "_Edycja"
+
+#: ../lib/engine/components/local-roster/local-presentity.cpp:222
+#: ../lib/engine/components/opal/opal-account.cpp:376
+#: ../plugins/evolution/evolution-contact.cpp:230
+#: ../plugins/loudmouth/loudmouth-account.cpp:435
+#: ../plugins/loudmouth/loudmouth-presentity.cpp:193
+#: ../plugins/resource-list/rl-presentity.cpp:214 ../src/gui/accounts.cpp:692
+msgid "_Remove"
+msgstr "_Usuń"
+
+#: ../lib/engine/components/local-roster/local-presentity.cpp:247
+#: ../plugins/loudmouth/loudmouth-presentity.cpp:278
+msgid "Edit roster element"
+msgstr "Modyfikowanie elementu listy kontaktów"
+
+#: ../lib/engine/components/local-roster/local-presentity.cpp:248
+msgid ""
+"Please fill in this form to change an existing element of ekiga's internal "
+"roster"
+msgstr ""
+"Proszę wypełnić formularz, aby zmienić istniejący element wewnętrznej listy "
+"kontaktów programu Ekiga"
+
+#: ../lib/engine/components/local-roster/local-presentity.cpp:252
+msgid "Is a preferred contact"
+msgstr "Jest preferowanym kontaktem"
+
+#: ../lib/engine/components/local-roster/local-presentity.cpp:254
+#: ../plugins/loudmouth/loudmouth-presentity.cpp:283
+#: ../plugins/resource-list/rl-heap.cpp:528
+#: ../plugins/resource-list/rl-presentity.cpp:236
+msgid "Choose groups:"
+msgstr "Wybór grup:"
+
 #: ../lib/engine/components/opal/h323-endpoint.cpp:130
-#: ../lib/engine/components/opal/sip-endpoint.cpp:231
-#: ../lib/engine/components/opal/sip-endpoint.cpp:235
+#: ../lib/engine/components/opal/sip-endpoint.cpp:243
+#: ../lib/engine/components/opal/sip-endpoint.cpp:247
 msgid "Call"
 msgstr "Połącz"
 
 #: ../lib/engine/components/opal/h323-endpoint.cpp:133
-#: ../lib/engine/components/opal/sip-endpoint.cpp:232
-#: ../lib/engine/components/opal/sip-endpoint.cpp:236
+#: ../lib/engine/components/opal/sip-endpoint.cpp:244
+#: ../lib/engine/components/opal/sip-endpoint.cpp:248
 #: ../src/gui/main_window.cpp:3361
 msgid "Transfer"
 msgstr "Przeniesienie"
@@ -1023,28 +1023,28 @@ msgid "Bad username/password"
 msgstr "Nieprawidłowa nazwa użytkownika lub hasło"
 
 #: ../lib/engine/components/opal/h323-endpoint.cpp:314
-#: ../lib/engine/components/opal/sip-endpoint.cpp:562
+#: ../lib/engine/components/opal/sip-endpoint.cpp:590
 msgid "Transport error"
 msgstr "Błąd transportu"
 
 #: ../lib/engine/components/opal/h323-endpoint.cpp:325
 #: ../lib/engine/components/opal/h323-endpoint.cpp:330
-#: ../lib/engine/components/opal/sip-endpoint.cpp:771
+#: ../lib/engine/components/opal/sip-endpoint.cpp:799
 msgid "Failed"
 msgstr "Nieudane"
 
 #. Translators: this is a state, not an action, i.e. it should be read as
 #. "(you are) unregistered", and not as "(you have been) unregistered"
-#: ../lib/engine/components/opal/opal-account.cpp:68
-#: ../lib/engine/components/opal/opal-account.cpp:155
-#: ../lib/engine/components/opal/opal-account.cpp:569
+#: ../lib/engine/components/opal/opal-account.cpp:69
+#: ../lib/engine/components/opal/opal-account.cpp:156
+#: ../lib/engine/components/opal/opal-account.cpp:568
 msgid "Unregistered"
 msgstr "Nie zarejestrowano"
 
 #. translators : the result will look like :
 #. * "registered (with 2 voice mail messages)"
 #.
-#: ../lib/engine/components/opal/opal-account.cpp:219
+#: ../lib/engine/components/opal/opal-account.cpp:222
 #, c-format
 msgid "%s (with %d voice mail message)"
 msgid_plural "%s (with %d voice mail messages)"
@@ -1053,33 +1053,33 @@ msgstr[1] "%s (%d wiadomości w poczcie głosowej)"
 msgstr[2] "%s (%d wiadomości w poczcie głosowej)"
 
 #: ../lib/engine/components/opal/opal-account.cpp:366
-#: ../plugins/loudmouth/loudmouth-account.cpp:381 ../src/gui/accounts.cpp:686
+#: ../plugins/loudmouth/loudmouth-account.cpp:423 ../src/gui/accounts.cpp:686
 msgid "_Disable"
 msgstr "_Wyłącz"
 
 #: ../lib/engine/components/opal/opal-account.cpp:369
-#: ../plugins/loudmouth/loudmouth-account.cpp:385 ../src/gui/accounts.cpp:683
+#: ../plugins/loudmouth/loudmouth-account.cpp:427 ../src/gui/accounts.cpp:683
 msgid "_Enable"
 msgstr "Włą_cz"
 
 #: ../lib/engine/components/opal/opal-account.cpp:390
-#: ../src/gui/assistant.cpp:732
+#: ../src/gui/assistant.cpp:762
 msgid "Recharge the account"
 msgstr "Doładuj konto"
 
 #: ../lib/engine/components/opal/opal-account.cpp:395
-#: ../src/gui/assistant.cpp:744
+#: ../src/gui/assistant.cpp:774
 msgid "Consult the balance history"
 msgstr "Sprawdź historię stanu konta"
 
 #: ../lib/engine/components/opal/opal-account.cpp:400
-#: ../src/gui/assistant.cpp:756
+#: ../src/gui/assistant.cpp:786
 msgid "Consult the call history"
 msgstr "Sprawdź historię połączeń"
 
 #: ../lib/engine/components/opal/opal-account.cpp:415
 #: ../lib/engine/components/opal/opal-bank.cpp:96
-#: ../plugins/loudmouth/loudmouth-account.cpp:291
+#: ../plugins/loudmouth/loudmouth-account.cpp:333
 #: ../plugins/loudmouth/loudmouth-bank.cpp:121
 msgid "Edit account"
 msgstr "Modyfikowanie konta"
@@ -1088,7 +1088,7 @@ msgstr "Modyfikowanie konta"
 #: ../lib/engine/components/opal/opal-bank.cpp:97
 #: ../plugins/evolution/evolution-book.cpp:341
 #: ../plugins/evolution/evolution-contact.cpp:322
-#: ../plugins/loudmouth/loudmouth-account.cpp:293
+#: ../plugins/loudmouth/loudmouth-account.cpp:335
 msgid "Please update the following fields:"
 msgstr "Proszę zaktualizować następujące pola:"
 
@@ -1117,7 +1117,7 @@ msgid "The gatekeeper, e.g. ekiga.net"
 msgstr "Bramka, np. ekiga.net"
 
 #: ../lib/engine/components/opal/opal-account.cpp:424
-#: ../plugins/loudmouth/loudmouth-account.cpp:300
+#: ../plugins/loudmouth/loudmouth-account.cpp:342
 #: ../plugins/loudmouth/loudmouth-bank.cpp:126
 #: ../plugins/resource-list/rl-cluster.cpp:174
 msgid "User:"
@@ -1148,7 +1148,7 @@ msgstr ""
 "użytkownika. Należy pozostawić puste, jeśli nie jest potrzebna"
 
 #: ../lib/engine/components/opal/opal-account.cpp:430
-#: ../plugins/loudmouth/loudmouth-account.cpp:312
+#: ../plugins/loudmouth/loudmouth-account.cpp:354
 #: ../plugins/loudmouth/loudmouth-bank.cpp:129
 #: ../plugins/resource-list/rl-cluster.cpp:173
 msgid "Password:"
@@ -1176,7 +1176,7 @@ msgstr ""
 
 #: ../lib/engine/components/opal/opal-account.cpp:432
 #: ../lib/engine/components/opal/opal-bank.cpp:141
-#: ../plugins/loudmouth/loudmouth-account.cpp:326
+#: ../plugins/loudmouth/loudmouth-account.cpp:368
 #: ../plugins/loudmouth/loudmouth-bank.cpp:130
 msgid "Enable Account"
 msgstr "Włączenie konta"
@@ -1203,77 +1203,77 @@ msgstr "Ograniczenie czasu powinno wynosić co najmniej 10 sekund."
 
 #. Translators: this is a state, not an action, i.e. it should be read as
 #. "(you are) registered", and not as "(you have been) registered"
-#: ../lib/engine/components/opal/opal-account.cpp:555
+#: ../lib/engine/components/opal/opal-account.cpp:554
 msgid "Registered"
 msgstr "Zarejestrowano"
 
-#: ../lib/engine/components/opal/opal-account.cpp:579
+#: ../lib/engine/components/opal/opal-account.cpp:578
 msgid "Could not unregister"
 msgstr "Nie można się wyrejestrować"
 
-#: ../lib/engine/components/opal/opal-account.cpp:606
+#: ../lib/engine/components/opal/opal-account.cpp:603
 msgid "Could not register"
 msgstr "Nie można się zarejestrować"
 
-#: ../lib/engine/components/opal/opal-account.cpp:618
+#: ../lib/engine/components/opal/opal-account.cpp:615
 msgid "Processing..."
 msgstr "Przetwarzanie..."
 
 #. Translators: see RFC 4480 for more information about activities
-#: ../lib/engine/components/opal/opal-account.cpp:752
+#: ../lib/engine/components/opal/opal-account.cpp:749
 msgid "Appointment"
 msgstr "Jestem umówiony"
 
-#: ../lib/engine/components/opal/opal-account.cpp:756
+#: ../lib/engine/components/opal/opal-account.cpp:753
 msgid "Breakfast"
 msgstr "Śniadanie"
 
-#: ../lib/engine/components/opal/opal-account.cpp:760
+#: ../lib/engine/components/opal/opal-account.cpp:757
 msgid "Dinner"
 msgstr "Obiad"
 
-#: ../lib/engine/components/opal/opal-account.cpp:764
+#: ../lib/engine/components/opal/opal-account.cpp:761
 msgid "Holiday"
 msgstr "Wakacje"
 
-#: ../lib/engine/components/opal/opal-account.cpp:768
+#: ../lib/engine/components/opal/opal-account.cpp:765
 msgid "In transit"
 msgstr "Przemieszczam się"
 
-#: ../lib/engine/components/opal/opal-account.cpp:772
+#: ../lib/engine/components/opal/opal-account.cpp:769
 msgid "Looking for work"
 msgstr "Szukam pracy"
 
-#: ../lib/engine/components/opal/opal-account.cpp:776
+#: ../lib/engine/components/opal/opal-account.cpp:773
 msgid "Lunch"
 msgstr "Lunch"
 
-#: ../lib/engine/components/opal/opal-account.cpp:780
+#: ../lib/engine/components/opal/opal-account.cpp:777
 msgid "Meal"
 msgstr "Posiłek"
 
-#: ../lib/engine/components/opal/opal-account.cpp:784
+#: ../lib/engine/components/opal/opal-account.cpp:781
 msgid "Meeting"
 msgstr "Na spotkaniu"
 
 # pd
-#: ../lib/engine/components/opal/opal-account.cpp:788
+#: ../lib/engine/components/opal/opal-account.cpp:785
 msgid "On the phone"
 msgstr "Przy telefonie"
 
-#: ../lib/engine/components/opal/opal-account.cpp:792
+#: ../lib/engine/components/opal/opal-account.cpp:789
 msgid "Playing"
 msgstr "Gram"
 
-#: ../lib/engine/components/opal/opal-account.cpp:796
+#: ../lib/engine/components/opal/opal-account.cpp:793
 msgid "Shopping"
 msgstr "Robię zakupy"
 
-#: ../lib/engine/components/opal/opal-account.cpp:800
+#: ../lib/engine/components/opal/opal-account.cpp:797
 msgid "Sleeping"
 msgstr "Śpię"
 
-#: ../lib/engine/components/opal/opal-account.cpp:804
+#: ../lib/engine/components/opal/opal-account.cpp:801
 msgid "Working"
 msgstr "Pracuję"
 
@@ -1294,7 +1294,7 @@ msgid "_Add an H.323 Account"
 msgstr "Dodaj konto _H.323"
 
 #: ../lib/engine/components/opal/opal-bank.cpp:102
-#: ../src/gui/assistant.cpp:616
+#: ../src/gui/assistant.cpp:646
 msgid "Get an Ekiga.net SIP account"
 msgstr "Załóż konto SIP w Ekiga.net"
 
@@ -1312,7 +1312,7 @@ msgid "_Password:"
 msgstr "_Hasło:"
 
 #: ../lib/engine/components/opal/opal-bank.cpp:112
-#: ../src/gui/assistant.cpp:720
+#: ../src/gui/assistant.cpp:750
 msgid "Get an Ekiga Call Out account"
 msgstr "Załóż konto Ekiga Call Out"
 
@@ -1423,7 +1423,7 @@ msgid "User is not available"
 msgstr "Użytkownik jest niedostępny"
 
 #: ../lib/engine/components/opal/opal-call.cpp:467
-#: ../lib/engine/components/opal/sip-endpoint.cpp:736
+#: ../lib/engine/components/opal/sip-endpoint.cpp:764
 msgid "Service unavailable"
 msgstr "Usługa jest niedostępna"
 
@@ -1431,7 +1431,7 @@ msgstr "Usługa jest niedostępna"
 msgid "Call completed"
 msgstr "Połączenie zostało zakończone"
 
-#: ../lib/engine/components/opal/opal-call-manager.cpp:792
+#: ../lib/engine/components/opal/opal-call-manager.cpp:794
 msgid ""
 "Ekiga did not manage to configure your network settings automatically. You "
 "can still use it, but you need to configure your network settings manually.\n"
@@ -1446,102 +1446,102 @@ msgstr ""
 "Instrukcje znajdują się na http://wiki.ekiga.org/index.php/"
 "Enable_port_forwarding_manually"
 
-#: ../lib/engine/components/opal/sip-endpoint.cpp:256
-#: ../lib/engine/components/opal/sip-endpoint.cpp:258
+#: ../lib/engine/components/opal/sip-endpoint.cpp:268
+#: ../lib/engine/components/opal/sip-endpoint.cpp:270
 msgid "Message"
 msgstr "Wiadomość"
 
-#: ../lib/engine/components/opal/sip-endpoint.cpp:557
+#: ../lib/engine/components/opal/sip-endpoint.cpp:585
 msgid "Illegal status code"
 msgstr "Nieprawidłowy kod stanu"
 
 #. Translators: Host of the remote party is offline, this should
 #. * appear when the remote host does not reply in an acceptable time
-#: ../lib/engine/components/opal/sip-endpoint.cpp:568
+#: ../lib/engine/components/opal/sip-endpoint.cpp:596
 msgid "Remote party host is offline"
 msgstr "Zdalny komputer jest w trybie offline"
 
 #. Translators: the following strings are answers from the SIP server
 #. * when the packet it receives has an error, see
 #. * http://www.ietf.org/rfc/rfc3261.txt, chapter 21 for more information
-#: ../lib/engine/components/opal/sip-endpoint.cpp:584
+#: ../lib/engine/components/opal/sip-endpoint.cpp:612
 msgid "Multiple choices"
 msgstr "Wybór wielokrotny"
 
-#: ../lib/engine/components/opal/sip-endpoint.cpp:588
+#: ../lib/engine/components/opal/sip-endpoint.cpp:616
 msgid "Moved permanently"
 msgstr "Przesunięcie stałe"
 
-#: ../lib/engine/components/opal/sip-endpoint.cpp:592
+#: ../lib/engine/components/opal/sip-endpoint.cpp:620
 msgid "Moved temporarily"
 msgstr "Przesunięcie tymczasowe"
 
-#: ../lib/engine/components/opal/sip-endpoint.cpp:596
+#: ../lib/engine/components/opal/sip-endpoint.cpp:624
 msgid "Use proxy"
 msgstr "Użycie pośrednika sieciowego"
 
-#: ../lib/engine/components/opal/sip-endpoint.cpp:600
+#: ../lib/engine/components/opal/sip-endpoint.cpp:628
 msgid "Alternative service"
 msgstr "Usługa alternatywna"
 
-#: ../lib/engine/components/opal/sip-endpoint.cpp:604
+#: ../lib/engine/components/opal/sip-endpoint.cpp:632
 msgid "Bad request"
 msgstr "Błędne żądanie"
 
-#: ../lib/engine/components/opal/sip-endpoint.cpp:608
+#: ../lib/engine/components/opal/sip-endpoint.cpp:636
 msgid "Unauthorized"
 msgstr "Nieupoważniony"
 
-#: ../lib/engine/components/opal/sip-endpoint.cpp:612
+#: ../lib/engine/components/opal/sip-endpoint.cpp:640
 msgid "Payment required"
 msgstr "Wymagana jest opłata"
 
-#: ../lib/engine/components/opal/sip-endpoint.cpp:616
+#: ../lib/engine/components/opal/sip-endpoint.cpp:644
 msgid "Forbidden, please check that username and password are correct"
 msgstr ""
 "Zabronione, proszę sprawdzić, czy nazwa użytkownika i hasło są poprawne"
 
-#: ../lib/engine/components/opal/sip-endpoint.cpp:620
+#: ../lib/engine/components/opal/sip-endpoint.cpp:648
 msgid "Not found"
 msgstr "Nie odnaleziono"
 
-#: ../lib/engine/components/opal/sip-endpoint.cpp:624
+#: ../lib/engine/components/opal/sip-endpoint.cpp:652
 msgid "Method not allowed"
 msgstr "Metoda nie jest dozwolona"
 
-#: ../lib/engine/components/opal/sip-endpoint.cpp:628
+#: ../lib/engine/components/opal/sip-endpoint.cpp:656
 msgid "Not acceptable"
 msgstr "Nieakceptowalne"
 
-#: ../lib/engine/components/opal/sip-endpoint.cpp:632
+#: ../lib/engine/components/opal/sip-endpoint.cpp:660
 msgid "Proxy authentication required"
 msgstr "Wymagane uwierzytelnienie pośrednika sieciowego"
 
-#: ../lib/engine/components/opal/sip-endpoint.cpp:636
+#: ../lib/engine/components/opal/sip-endpoint.cpp:664
 msgid "Timeout"
 msgstr "Przekroczony czas"
 
-#: ../lib/engine/components/opal/sip-endpoint.cpp:640
+#: ../lib/engine/components/opal/sip-endpoint.cpp:668
 msgid "Conflict"
 msgstr "Konflikt"
 
-#: ../lib/engine/components/opal/sip-endpoint.cpp:644
+#: ../lib/engine/components/opal/sip-endpoint.cpp:672
 msgid "Length required"
 msgstr "Wymagana jest długość"
 
-#: ../lib/engine/components/opal/sip-endpoint.cpp:648
+#: ../lib/engine/components/opal/sip-endpoint.cpp:676
 msgid "Request entity too big"
 msgstr "Jednostka żądania jest za duża"
 
-#: ../lib/engine/components/opal/sip-endpoint.cpp:652
+#: ../lib/engine/components/opal/sip-endpoint.cpp:680
 msgid "Request URI too long"
 msgstr "Adresu URI żądania jest za długi"
 
-#: ../lib/engine/components/opal/sip-endpoint.cpp:656
+#: ../lib/engine/components/opal/sip-endpoint.cpp:684
 msgid "Unsupported media type"
 msgstr "Nieobsługiwany typ multimediów"
 
-#: ../lib/engine/components/opal/sip-endpoint.cpp:660
+#: ../lib/engine/components/opal/sip-endpoint.cpp:688
 msgid "Unsupported URI scheme"
 msgstr "Nieobsługiwany schemat adresu URI"
 
@@ -1549,136 +1549,132 @@ msgstr "Nieobsługiwany schemat adresu URI"
 #. * Here extension is a specific "phone number", see
 #. * http://en.wikipedia.org/wiki/Extension_(telephone)
 #. * for more information
-#: ../lib/engine/components/opal/sip-endpoint.cpp:668
+#: ../lib/engine/components/opal/sip-endpoint.cpp:696
 msgid "Bad extension"
 msgstr "Błędne rozszerzenie"
 
-#: ../lib/engine/components/opal/sip-endpoint.cpp:672
+#: ../lib/engine/components/opal/sip-endpoint.cpp:700
 msgid "Extension required"
 msgstr "Wymagane jest rozszerzenie"
 
-#: ../lib/engine/components/opal/sip-endpoint.cpp:676
+#: ../lib/engine/components/opal/sip-endpoint.cpp:704
 msgid "Interval too brief"
 msgstr "Przerwa jest za krótka"
 
-#: ../lib/engine/components/opal/sip-endpoint.cpp:680
+#: ../lib/engine/components/opal/sip-endpoint.cpp:708
 msgid "Temporarily unavailable"
 msgstr "Tymczasowo niedostępny"
 
-#: ../lib/engine/components/opal/sip-endpoint.cpp:684
+#: ../lib/engine/components/opal/sip-endpoint.cpp:712
 msgid "Loop detected"
 msgstr "Wykryto pętlę"
 
-#: ../lib/engine/components/opal/sip-endpoint.cpp:688
+#: ../lib/engine/components/opal/sip-endpoint.cpp:716
 msgid "Too many hops"
 msgstr "Zbyt wiele przeskoków"
 
-#: ../lib/engine/components/opal/sip-endpoint.cpp:692
+#: ../lib/engine/components/opal/sip-endpoint.cpp:720
 msgid "Address incomplete"
 msgstr "Adres jest niepełny"
 
-#: ../lib/engine/components/opal/sip-endpoint.cpp:696
+#: ../lib/engine/components/opal/sip-endpoint.cpp:724
 msgid "Ambiguous"
 msgstr "Niejednoznaczne"
 
-#: ../lib/engine/components/opal/sip-endpoint.cpp:700
+#: ../lib/engine/components/opal/sip-endpoint.cpp:728
 msgid "Busy Here"
 msgstr "Zajęty"
 
-#: ../lib/engine/components/opal/sip-endpoint.cpp:704
+#: ../lib/engine/components/opal/sip-endpoint.cpp:732
 msgid "Request terminated"
 msgstr "Anulowano żądanie"
 
-#: ../lib/engine/components/opal/sip-endpoint.cpp:708
+#: ../lib/engine/components/opal/sip-endpoint.cpp:736
 msgid "Not acceptable here"
 msgstr "Nieakceptowalne w tym miejscu"
 
-#: ../lib/engine/components/opal/sip-endpoint.cpp:712
+#: ../lib/engine/components/opal/sip-endpoint.cpp:740
 msgid "Bad event"
 msgstr "Błędne zdarzenie"
 
-#: ../lib/engine/components/opal/sip-endpoint.cpp:716
+#: ../lib/engine/components/opal/sip-endpoint.cpp:744
 msgid "Request pending"
 msgstr "Żądanie oczekujące"
 
-#: ../lib/engine/components/opal/sip-endpoint.cpp:720
+#: ../lib/engine/components/opal/sip-endpoint.cpp:748
 msgid "Undecipherable"
 msgstr "Nieodszyfrowalne"
 
-#: ../lib/engine/components/opal/sip-endpoint.cpp:724
+#: ../lib/engine/components/opal/sip-endpoint.cpp:752
 msgid "Internal server error"
 msgstr "Wewnętrzny błąd serwera"
 
-#: ../lib/engine/components/opal/sip-endpoint.cpp:728
+#: ../lib/engine/components/opal/sip-endpoint.cpp:756
 msgid "Not implemented"
 msgstr "Niezaimplementowane"
 
-#: ../lib/engine/components/opal/sip-endpoint.cpp:732
+#: ../lib/engine/components/opal/sip-endpoint.cpp:760
 msgid "Bad gateway"
 msgstr "Błędna bramka"
 
-#: ../lib/engine/components/opal/sip-endpoint.cpp:740
+#: ../lib/engine/components/opal/sip-endpoint.cpp:768
 msgid "Server timeout"
 msgstr "Przekroczono ograniczenie czasu oczekiwania na serwer"
 
-#: ../lib/engine/components/opal/sip-endpoint.cpp:744
+#: ../lib/engine/components/opal/sip-endpoint.cpp:772
 msgid "SIP version not supported"
 msgstr "Wersja protokołu SIP jest nieobsługiwana"
 
-#: ../lib/engine/components/opal/sip-endpoint.cpp:748
+#: ../lib/engine/components/opal/sip-endpoint.cpp:776
 msgid "Message too large"
 msgstr "Wiadomość jest za długa"
 
-#: ../lib/engine/components/opal/sip-endpoint.cpp:752
+#: ../lib/engine/components/opal/sip-endpoint.cpp:780
 msgid "Busy everywhere"
 msgstr "Wszystkie linie są zajęte"
 
-#: ../lib/engine/components/opal/sip-endpoint.cpp:756
+#: ../lib/engine/components/opal/sip-endpoint.cpp:784
 msgid "Decline"
 msgstr "Odmów"
 
-#: ../lib/engine/components/opal/sip-endpoint.cpp:760
+#: ../lib/engine/components/opal/sip-endpoint.cpp:788
 msgid "Does not exist anymore"
 msgstr "Już nie istnieje"
 
-#: ../lib/engine/components/opal/sip-endpoint.cpp:764
+#: ../lib/engine/components/opal/sip-endpoint.cpp:792
 msgid "Globally not acceptable"
 msgstr "Nieakceptowalne globalnie"
 
 # pd
-#: ../lib/engine/components/opal/sip-endpoint.cpp:905
+#: ../lib/engine/components/opal/sip-endpoint.cpp:933
 msgid "Could not send message: "
 msgstr "Nie można wysłać wiadomości: "
 
 # pd
-#: ../lib/engine/components/opal/sip-endpoint.cpp:907
+#: ../lib/engine/components/opal/sip-endpoint.cpp:935
 msgid "user offline"
 msgstr "użytkownik jest w trybie offline"
 
-#: ../lib/engine/components/opal/sip-endpoint.cpp:946
+#: ../lib/engine/components/opal/sip-endpoint.cpp:974
 #: ../src/gui/main_window.cpp:3198
 #, c-format
 msgid "Incoming call from %s"
 msgstr "Połączenie przychodzące od %s"
 
-#: ../lib/engine/components/opal/sip-endpoint.cpp:948
+#: ../lib/engine/components/opal/sip-endpoint.cpp:976
 #, c-format
 msgid "Incoming call"
 msgstr "Połączenie przychodzące"
 
-#: ../lib/engine/components/opal/sip-endpoint.cpp:954
+#: ../lib/engine/components/opal/sip-endpoint.cpp:982
 #, c-format
 msgid "In a call with %s"
 msgstr "W trakcie połączenia z %s"
 
-#: ../lib/engine/components/opal/sip-endpoint.cpp:956
+#: ../lib/engine/components/opal/sip-endpoint.cpp:984
 #, c-format
 msgid "In a call"
 msgstr "W trakcie połączenia"
-
-#: ../lib/engine/gui/gtk-core/form-dialog-gtk.cpp:664
-msgid "Advanced"
-msgstr "Zaawansowane"
 
 #: ../lib/engine/gui/gtk-core/codecsbox.cpp:452
 msgid "Move selected codec priority upwards"
@@ -1687,6 +1683,10 @@ msgstr "Przenosi priorytet zaznaczonego kodeku w górę"
 #: ../lib/engine/gui/gtk-core/codecsbox.cpp:462
 msgid "Move selected codec priority downwards"
 msgstr "Przenosi priorytet zaznaczonego kodeku w dół"
+
+#: ../lib/engine/gui/gtk-core/form-dialog-gtk.cpp:664
+msgid "Advanced"
+msgstr "Zaawansowane"
 
 #: ../lib/engine/gui/gtk-frontend/addressbook-window.cpp:635
 msgid "Address Book"
@@ -1707,7 +1707,7 @@ msgid "Category"
 msgstr "Kategoria"
 
 #: ../lib/engine/gui/gtk-frontend/book-view-gtk.cpp:586
-#: ../src/gui/assistant.cpp:1366
+#: ../src/gui/assistant.cpp:1396
 msgid "Full Name"
 msgstr "Imię i nazwisko"
 
@@ -1789,7 +1789,7 @@ msgstr[1] "%d odnalezionych użytkowników"
 msgstr[2] "%d odnalezionych użytkowników"
 
 #: ../plugins/evolution/evolution-book.cpp:297
-#: ../plugins/loudmouth/loudmouth-heap.cpp:138
+#: ../plugins/loudmouth/loudmouth-heap-roster.cpp:71
 msgid "New _Contact"
 msgstr "_Nowy kontakt"
 
@@ -1853,9 +1853,8 @@ msgstr "Zwariowany"
 msgid "Screencast"
 msgstr "Przesyłanie obrazu ekranu"
 
-#: ../plugins/ldap/ldap-book.cpp:427
+#: ../plugins/ldap/ldap-book.cpp:427 ../plugins/resource-list/rl-entry.cpp:160
 #: ../plugins/resource-list/rl-entry-ref.cpp:138
-#: ../plugins/resource-list/rl-entry.cpp:160
 msgid "_Refresh"
 msgstr "_Odśwież"
 
@@ -2055,53 +2054,53 @@ msgstr "Tworzenie katalogu LDAP"
 msgid "Ekiga.net Directory"
 msgstr "Katalog Ekiga.net"
 
-#: ../plugins/loudmouth/loudmouth-account.cpp:79
-#: ../plugins/loudmouth/loudmouth-account.cpp:113
+#: ../plugins/loudmouth/loudmouth-account.cpp:112
+#: ../plugins/loudmouth/loudmouth-account.cpp:156
 msgid "inactive"
 msgstr "nieaktywne"
 
-#: ../plugins/loudmouth/loudmouth-account.cpp:179
+#: ../plugins/loudmouth/loudmouth-account.cpp:222
 #, c-format
 msgid "error connecting (%s)"
 msgstr "błąd podczas łączenia (%s)"
 
-#: ../plugins/loudmouth/loudmouth-account.cpp:185
+#: ../plugins/loudmouth/loudmouth-account.cpp:228
 msgid "connecting"
 msgstr "łączenie"
 
-#: ../plugins/loudmouth/loudmouth-account.cpp:229
+#: ../plugins/loudmouth/loudmouth-account.cpp:280
 msgid "authenticating"
 msgstr "uwierzytelnianie"
 
 #. FIXME: can't we report better?
-#: ../plugins/loudmouth/loudmouth-account.cpp:239
+#: ../plugins/loudmouth/loudmouth-account.cpp:290
 msgid "error connecting"
 msgstr "błąd podczas łączenia"
 
-#: ../plugins/loudmouth/loudmouth-account.cpp:251
+#: ../plugins/loudmouth/loudmouth-account.cpp:300
 msgid "disconnected"
 msgstr "rozłączono"
 
-#: ../plugins/loudmouth/loudmouth-account.cpp:268
+#: ../plugins/loudmouth/loudmouth-account.cpp:310
 msgid "connected"
 msgstr "połączono"
 
 #. FIXME: can't we report something better?
-#: ../plugins/loudmouth/loudmouth-account.cpp:274
+#: ../plugins/loudmouth/loudmouth-account.cpp:316
 msgid "error authenticating loudmouth account"
 msgstr "błąd podczas uwierzytelniania konta biblioteki loudmouth"
 
-#: ../plugins/loudmouth/loudmouth-account.cpp:304
+#: ../plugins/loudmouth/loudmouth-account.cpp:346
 #: ../plugins/loudmouth/loudmouth-bank.cpp:127
 msgid "Server:"
 msgstr "Serwer:"
 
-#: ../plugins/loudmouth/loudmouth-account.cpp:308
+#: ../plugins/loudmouth/loudmouth-account.cpp:350
 #: ../plugins/loudmouth/loudmouth-bank.cpp:128
 msgid "Resource:"
 msgstr "Zasób:"
 
-#: ../plugins/loudmouth/loudmouth-account.cpp:391
+#: ../plugins/loudmouth/loudmouth-account.cpp:433
 msgid "Edit"
 msgstr "Edycja"
 
@@ -2148,82 +2147,82 @@ msgstr "Pseudonim"
 msgid "The pseudonym you'll have in the room"
 msgstr "Pseudonim posiadany w pokoju"
 
-#: ../plugins/loudmouth/loudmouth-heap.cpp:234
+#: ../plugins/loudmouth/loudmouth-heap-roster.cpp:172
 msgid "Authorization to see your presence"
 msgstr "Upoważnienie spowoduje wyświetlanie obecności"
 
-#: ../plugins/loudmouth/loudmouth-heap.cpp:238
+#: ../plugins/loudmouth/loudmouth-heap-roster.cpp:176
 #, c-format
 msgid "%s asks the permission to see your presence, saying: \"%s\"."
 msgstr "%s prosi o upoważnienie do wyświetlania obecności, mówiąc: \"%s\"."
 
-#: ../plugins/loudmouth/loudmouth-heap.cpp:242
+#: ../plugins/loudmouth/loudmouth-heap-roster.cpp:180
 #, c-format
 msgid "%s asks the permission to see your presence."
 msgstr "%s prosi o upoważnienie do wyświetlania obecności."
 
-#: ../plugins/loudmouth/loudmouth-heap.cpp:249
+#: ../plugins/loudmouth/loudmouth-heap-roster.cpp:187
 msgid "grant him/her the permission to see your presence"
 msgstr "udziel upoważnienia do wyświetlania obecności"
 
-#: ../plugins/loudmouth/loudmouth-heap.cpp:250
+#: ../plugins/loudmouth/loudmouth-heap-roster.cpp:188
 msgid "refuse him/her the permission to see your presence"
 msgstr "odmów upoważnienia do wyświetlania obecności"
 
-#: ../plugins/loudmouth/loudmouth-heap.cpp:251
+#: ../plugins/loudmouth/loudmouth-heap-roster.cpp:189
 msgid "decide later (also close or cancel this dialog)"
 msgstr "zdecyduj później (spowoduje zamknięcie lub anulowanie tego okna)"
 
-#: ../plugins/loudmouth/loudmouth-heap.cpp:252
+#: ../plugins/loudmouth/loudmouth-heap-roster.cpp:190
 msgid "Your answer is: "
 msgstr "Odpowiedź:"
 
-#: ../plugins/loudmouth/loudmouth-heap.cpp:354
+#: ../plugins/loudmouth/loudmouth-heap-roster.cpp:306
 msgid "Add a roster element"
 msgstr "Dodanie elementu listy kontaktów"
 
-#: ../plugins/loudmouth/loudmouth-heap.cpp:355
+#: ../plugins/loudmouth/loudmouth-heap-roster.cpp:307
 msgid "Please fill in this form to add a new element to the remote roster"
 msgstr ""
 "Proszę wypełnić formularz, aby dodać nowy kontakt do zdalnej listy kontaktów"
 
-#: ../plugins/loudmouth/loudmouth-heap.cpp:357
+#: ../plugins/loudmouth/loudmouth-heap-roster.cpp:309
 #: ../plugins/resource-list/rl-heap.cpp:470
 msgid "Identifier:"
 msgstr "Identyfikator:"
 
-#: ../plugins/loudmouth/loudmouth-heap.cpp:357
+#: ../plugins/loudmouth/loudmouth-heap-roster.cpp:309
 msgid "identifier@server"
 msgstr "identyfikator@serwer"
 
-#: ../plugins/loudmouth/loudmouth-presentity.cpp:164
-#: ../plugins/loudmouth/loudmouth-presentity.cpp:170
+#: ../plugins/loudmouth/loudmouth-presentity.cpp:165
+#: ../plugins/loudmouth/loudmouth-presentity.cpp:171
 msgid "Ask him/her to see his/her status"
 msgstr "Poproś o upoważnienie na wyświetlanie stanu"
 
-#: ../plugins/loudmouth/loudmouth-presentity.cpp:168
-#: ../plugins/loudmouth/loudmouth-presentity.cpp:180
+#: ../plugins/loudmouth/loudmouth-presentity.cpp:169
+#: ../plugins/loudmouth/loudmouth-presentity.cpp:181
 msgid "Forbid him/her to see my status"
 msgstr "Zabroń wyświetlania stanu"
 
-#: ../plugins/loudmouth/loudmouth-presentity.cpp:172
+#: ../plugins/loudmouth/loudmouth-presentity.cpp:173
 msgid "Ask him/her to see his/her status (pending)"
 msgstr "Poproś o upoważnienie na wyświetlanie stanu (oczekujące)"
 
-#: ../plugins/loudmouth/loudmouth-presentity.cpp:176
-#: ../plugins/loudmouth/loudmouth-presentity.cpp:181
+#: ../plugins/loudmouth/loudmouth-presentity.cpp:177
+#: ../plugins/loudmouth/loudmouth-presentity.cpp:182
 msgid "Stop getting his/her status"
 msgstr "Zatrzymaj pobieranie stanu"
 
-#: ../plugins/loudmouth/loudmouth-presentity.cpp:186
+#: ../plugins/loudmouth/loudmouth-presentity.cpp:187
 msgid "Start chat"
 msgstr "Rozpocznij rozmowę"
 
-#: ../plugins/loudmouth/loudmouth-presentity.cpp:189
+#: ../plugins/loudmouth/loudmouth-presentity.cpp:190
 msgid "Continue chat"
 msgstr "Kontynuuj rozmowę"
 
-#: ../plugins/loudmouth/loudmouth-presentity.cpp:278
+#: ../plugins/loudmouth/loudmouth-presentity.cpp:279
 msgid ""
 "Please fill in this form to change an existing element of the remote roster"
 msgstr ""
@@ -2254,6 +2253,10 @@ msgstr "Zapisywalny:"
 msgid "Username:"
 msgstr "Użytkownik:"
 
+#: ../plugins/resource-list/rl-entry.cpp:202
+msgid "Invalid server data"
+msgstr "Nieprawidłowe dane serwera"
+
 #: ../plugins/resource-list/rl-entry-ref.cpp:53
 msgid "Click to fetch"
 msgstr "Proszę kliknąć, aby pobrać"
@@ -2261,10 +2264,6 @@ msgstr "Proszę kliknąć, aby pobrać"
 #: ../plugins/resource-list/rl-entry-ref.cpp:120
 msgid "Distant contact"
 msgstr "Daleki kontakt"
-
-#: ../plugins/resource-list/rl-entry.cpp:202
-msgid "Invalid server data"
-msgstr "Nieprawidłowe dane serwera"
 
 #: ../plugins/resource-list/rl-heap.cpp:198
 msgid "_Add a new contact"
@@ -2364,7 +2363,7 @@ msgstr "Aktywne"
 msgid "Edi_t"
 msgstr "_Edycja"
 
-#: ../src/gui/assistant.cpp:341
+#: ../src/gui/assistant.cpp:342
 msgid ""
 "This is the Ekiga general configuration assistant. The following steps will "
 "set up Ekiga by asking a few simple questions.\n"
@@ -2379,20 +2378,20 @@ msgstr ""
 "Po zakończeniu pracy asystenta opcje można w każdej chwili zmienić "
 "wybierając Preferencje w menu Edycja."
 
-#: ../src/gui/assistant.cpp:349
+#: ../src/gui/assistant.cpp:350
 msgid "Welcome to Ekiga"
 msgstr "Witamy w programie Ekiga"
 
-#: ../src/gui/assistant.cpp:373 ../src/gui/preferences.cpp:441
+#: ../src/gui/assistant.cpp:374 ../src/gui/preferences.cpp:441
 msgid "Personal Information"
 msgstr "Informacje osobiste"
 
 #. The user fields
-#: ../src/gui/assistant.cpp:376
+#: ../src/gui/assistant.cpp:377
 msgid "Please enter your first name and your surname:"
 msgstr "Proszę wprowadzić swoje imię i nazwisko:"
 
-#: ../src/gui/assistant.cpp:385
+#: ../src/gui/assistant.cpp:386
 msgid ""
 "Your first name and surname will be used when connecting to other VoIP and "
 "videoconferencing software."
@@ -2400,19 +2399,47 @@ msgstr ""
 "Imię i nazwisko będą używane podczas połączeń z innym oprogramowaniem do "
 "VoIP i wideokonferencji."
 
-#: ../src/gui/assistant.cpp:579
+# pd
+#: ../src/gui/assistant.cpp:436
+msgid ""
+"If you do not have a SIP or H323 account, ekiga can only be used on your "
+"local internal network (inside your company, for example).  You will require "
+"an account if you want to be accessible to people on the Internet.  Many web "
+"sites allow you to create an account.  We suggest that you use a free ekiga."
+"net account, which allows you to be joined by any person with a SIP "
+"account.  If you want to call regular phone lines too, we suggest that you "
+"purchase an inexpensive call out account.\n"
+"\n"
+"The following two pages allow you to create such accounts."
+msgstr ""
+"Jeśli użytkownik nie posiada konta SIP lub H.323, to program Ekiga może być "
+"używany tylko w lokalnej sieci wewnętrznej (na przykład wewnątrz firmy). Aby "
+"komunikować się z innymi osobami przez Internet, wymagane jest konto. Wiele "
+"witryn umożliwia jego utworzenie. Polecamy użycie wolnego i darmowego konta "
+"ekiga.net, które umożliwia połączenie z każdą osobą dysponującą kontem SIP. "
+"Aby dzwonić także na zwykłe linie telefoniczne, polecamy wykupienie "
+"niedrogiego konta do rozmów zewnętrznych.\n"
+"\n"
+"Następne dwie strony umożliwiają utworzenie takich kont."
+
+# pd
+#: ../src/gui/assistant.cpp:451
+msgid "Account Information"
+msgstr "Informacje o koncie"
+
+#: ../src/gui/assistant.cpp:609
 msgid "Ekiga.net Account"
 msgstr "Konto Ekiga.net"
 
-#: ../src/gui/assistant.cpp:581
+#: ../src/gui/assistant.cpp:611
 msgid "Please enter your username:"
 msgstr "Proszę wprowadzić swoją nazwę użytkownika:"
 
-#: ../src/gui/assistant.cpp:589
+#: ../src/gui/assistant.cpp:619
 msgid "Please enter your password:"
 msgstr "Proszę wprowadzić hasło:"
 
-#: ../src/gui/assistant.cpp:599
+#: ../src/gui/assistant.cpp:629
 msgid ""
 "The username and password are used to login to your existing account at the "
 "ekiga.net free SIP service. If you do not have an ekiga.net SIP address yet, "
@@ -2430,23 +2457,23 @@ msgstr ""
 "Można pominąć ten krok w wypadku korzystania z innego usługodawcy SIP lub "
 "jeżeli dane do zalogowania mają być wprowadzone później."
 
-#: ../src/gui/assistant.cpp:625
+#: ../src/gui/assistant.cpp:655
 msgid "I do not want to sign up for the ekiga.net free service"
 msgstr "Bez zapisywania się w darmowej usłudze ekiga.net"
 
-#: ../src/gui/assistant.cpp:685
+#: ../src/gui/assistant.cpp:715
 msgid "Ekiga Call Out Account"
 msgstr "Konto Ekiga Call Out"
 
-#: ../src/gui/assistant.cpp:687
+#: ../src/gui/assistant.cpp:717
 msgid "Please enter your account ID:"
 msgstr "Proszę wprowadzić identyfikator konta:"
 
-#: ../src/gui/assistant.cpp:695
+#: ../src/gui/assistant.cpp:725
 msgid "Please enter your PIN code:"
 msgstr "Proszę wprowadzić kod PIN:"
 
-#: ../src/gui/assistant.cpp:706
+#: ../src/gui/assistant.cpp:736
 msgid ""
 "You can make calls to regular phones and cell numbers worldwide using Ekiga. "
 "To enable this, you need to do two things:\n"
@@ -2463,44 +2490,44 @@ msgstr ""
 "Usługa będzie działać tylko, gdy konto zostanie utworzone przy użyciu adresu "
 "URL z tego okna.\n"
 
-#: ../src/gui/assistant.cpp:765
+#: ../src/gui/assistant.cpp:795
 msgid "I do not want to sign up for the Ekiga Call Out service"
 msgstr "Bez zapisywania się w usłudze Ekiga Call Out"
 
-#: ../src/gui/assistant.cpp:828 ../src/gui/assistant.cpp:1377
+#: ../src/gui/assistant.cpp:858 ../src/gui/assistant.cpp:1407
 msgid "Connection Type"
 msgstr "Rodzaj połączenia"
 
 #. The connection type
-#: ../src/gui/assistant.cpp:831
+#: ../src/gui/assistant.cpp:861
 msgid "Please choose your connection type:"
 msgstr "Wybór rodzaju połączenia:"
 
-#: ../src/gui/assistant.cpp:848
+#: ../src/gui/assistant.cpp:878
 msgid "56k Modem"
 msgstr "Modem 56k"
 
-#: ../src/gui/assistant.cpp:853
+#: ../src/gui/assistant.cpp:883
 msgid "ISDN"
 msgstr "ISDN"
 
-#: ../src/gui/assistant.cpp:858
+#: ../src/gui/assistant.cpp:888
 msgid "DSL/Cable (128 kbit/s uplink)"
 msgstr "DSL/Internet kablowy (prędkość wysyłania 128 kbit/s)"
 
-#: ../src/gui/assistant.cpp:863
+#: ../src/gui/assistant.cpp:893
 msgid "DSL/Cable (512 kbit/s uplink)"
 msgstr "DSL/Internet kablowy (prędkość wysyłania 512 kbit/s)"
 
-#: ../src/gui/assistant.cpp:868
+#: ../src/gui/assistant.cpp:898
 msgid "LAN"
 msgstr "LAN"
 
-#: ../src/gui/assistant.cpp:873
+#: ../src/gui/assistant.cpp:903
 msgid "Keep current settings"
 msgstr "Zachowanie bieżących ustawień"
 
-#: ../src/gui/assistant.cpp:878
+#: ../src/gui/assistant.cpp:908
 msgid ""
 "The connection type will permit determining the best quality settings that "
 "Ekiga will use during calls. You can later change the settings individually "
@@ -2510,17 +2537,17 @@ msgstr ""
 "podczas połączeń programu Ekiga. Ustawienia te można potem indywidualnie "
 "dopasować w oknie preferencji."
 
-#: ../src/gui/assistant.cpp:967 ../src/gui/main_window.cpp:3424
+#: ../src/gui/assistant.cpp:997 ../src/gui/main_window.cpp:3424
 #: ../src/gui/main_window.cpp:3428 ../src/gui/main_window.cpp:3432
 #: ../src/gui/preferences.cpp:727
 msgid "Audio Devices"
 msgstr "Urządzenia dźwiękowe"
 
-#: ../src/gui/assistant.cpp:969
+#: ../src/gui/assistant.cpp:999
 msgid "Please choose the audio ringing device:"
 msgstr "Wybór urządzenia dźwiękowego do dzwonienia:"
 
-#: ../src/gui/assistant.cpp:989
+#: ../src/gui/assistant.cpp:1019
 msgid ""
 "The audio ringing device is the device that will be used to play the ringing "
 "sound on incoming calls."
@@ -2529,11 +2556,11 @@ msgstr ""
 "dźwięku dzwonienia przy rozmowie przychodzącej."
 
 #. ---
-#: ../src/gui/assistant.cpp:1000
+#: ../src/gui/assistant.cpp:1030
 msgid "Please choose the audio output device:"
 msgstr "Wybór wyjściowego urządzenia dźwiękowego:"
 
-#: ../src/gui/assistant.cpp:1020
+#: ../src/gui/assistant.cpp:1050
 msgid ""
 "The audio output device is the device that will be used to play audio during "
 "calls."
@@ -2542,11 +2569,11 @@ msgstr ""
 "dźwięku podczas rozmów."
 
 #. ---
-#: ../src/gui/assistant.cpp:1031
+#: ../src/gui/assistant.cpp:1061
 msgid "Please choose the audio input device:"
 msgstr "Wybór wejściowego urządzenia dźwiękowego:"
 
-#: ../src/gui/assistant.cpp:1051
+#: ../src/gui/assistant.cpp:1081
 msgid ""
 "The audio input device is the device that will be used to record your voice "
 "during calls."
@@ -2554,15 +2581,15 @@ msgstr ""
 "Wejściowe urządzenie dźwiękowe jest urządzeniem używanym do zapisu głosu "
 "podczas rozmów."
 
-#: ../src/gui/assistant.cpp:1147 ../src/gui/assistant.cpp:1422
+#: ../src/gui/assistant.cpp:1177 ../src/gui/assistant.cpp:1452
 msgid "Video Input Device"
 msgstr "Urządzenie wideo wejściowe"
 
-#: ../src/gui/assistant.cpp:1149
+#: ../src/gui/assistant.cpp:1179
 msgid "Please choose your video input device:"
 msgstr "Wybór wejściowego urządzenia wideo:"
 
-#: ../src/gui/assistant.cpp:1169
+#: ../src/gui/assistant.cpp:1199
 msgid ""
 "The video input device is the device that will be used to capture video "
 "during calls."
@@ -2570,17 +2597,17 @@ msgstr ""
 "Wejściowe urządzenie wideo jest urządzeniem zarządzanym przez menedżera "
 "obrazu służącym do przechwytywania obrazu podczas rozmów."
 
-#: ../src/gui/assistant.cpp:1233 ../src/gui/assistant.cpp:1255
-#: ../src/gui/assistant.cpp:1277 ../src/gui/preferences.cpp:768
+#: ../src/gui/assistant.cpp:1263 ../src/gui/assistant.cpp:1285
+#: ../src/gui/assistant.cpp:1307 ../src/gui/preferences.cpp:768
 #: ../src/gui/preferences.cpp:792 ../src/gui/preferences.cpp:814
 msgid "No device found"
 msgstr "Nie odnaleziono urządzeń"
 
-#: ../src/gui/assistant.cpp:1308
+#: ../src/gui/assistant.cpp:1338
 msgid "Configuration Complete"
 msgstr "Konfiguracja ukończona"
 
-#: ../src/gui/assistant.cpp:1310
+#: ../src/gui/assistant.cpp:1340
 msgid ""
 "You have now finished the Ekiga configuration. All the settings can be "
 "changed in the Ekiga preferences. Enjoy!"
@@ -2588,31 +2615,31 @@ msgstr ""
 "Ukończono konfigurację programu Ekiga. Wszystkie ustawienia mogą zostać "
 "zmienione w preferencjach programu Ekiga. Dobrej zabawy!"
 
-#: ../src/gui/assistant.cpp:1317
+#: ../src/gui/assistant.cpp:1347
 msgid "Configuration summary:"
 msgstr "Podsumowanie konfiguracji:"
 
-#: ../src/gui/assistant.cpp:1389
+#: ../src/gui/assistant.cpp:1419
 msgid "Audio Ringing Device"
 msgstr "Urządzenie dźwiękowe dzwoniące"
 
-#: ../src/gui/assistant.cpp:1400
+#: ../src/gui/assistant.cpp:1430
 msgid "Audio Output Device"
 msgstr "Urządzenie dźwiękowe wyjściowe"
 
-#: ../src/gui/assistant.cpp:1411
+#: ../src/gui/assistant.cpp:1441
 msgid "Audio Input Device"
 msgstr "Urządzenie dźwiękowe wejściowe"
 
-#: ../src/gui/assistant.cpp:1435
+#: ../src/gui/assistant.cpp:1465
 msgid "SIP URI"
 msgstr "Adres URI SIP"
 
-#: ../src/gui/assistant.cpp:1447
+#: ../src/gui/assistant.cpp:1477
 msgid "Ekiga Call Out"
 msgstr "Ekiga Call Out"
 
-#: ../src/gui/assistant.cpp:1490
+#: ../src/gui/assistant.cpp:1521
 #, c-format
 msgid "Ekiga Configuration Assistant (%d of %d)"
 msgstr "Asystent konfiguracji programu Ekiga (%d z %d)"
