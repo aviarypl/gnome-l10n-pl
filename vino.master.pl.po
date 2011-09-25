@@ -79,6 +79,7 @@ msgid "E-mail address to which the remote desktop URL should be sent"
 msgstr "Adres e-mail, na który powinien być wysłany adres URL zdalnego pulpitu"
 
 # REV LJ: bez włączenie, to checkbox
+# pd: to nie checkbox, to shemat gsettingsów :)
 #: ../common/org.gnome.Vino.gschema.xml.in.h:4
 msgid "Enable remote access to the desktop"
 msgstr "Włączenie zdalnego dostępu do pulpitu"
@@ -93,15 +94,14 @@ msgstr ""
 "sieciowych. Można to ustawić, jeśli wymagane jest akceptowane połączenie "
 "wyłącznie z konkretnych interfejsów sieciowych, np.: eth0, wifi0, lo"
 
-# REV LJ: IMO "jest ustawione", "mogą wtedy łączyć się"
 #: ../common/org.gnome.Vino.gschema.xml.in.h:6
 msgid ""
 "If true, allows remote access to the desktop via the RFB protocol. Users on "
 "remote machines may then connect to the desktop using a VNC viewer."
 msgstr ""
-"Jeżeli ustawione na \"true\", pozwala na zdalny dostęp do pulpitu poprzez "
-"protokół RFB. Użytkownicy na zdalnych maszynach mogą się wtedy łączyć z "
-"pulpitem za pomocą przeglądarki VNC."
+"Jeżeli jest ustawione na \"true\", to pozwala na zdalny dostęp do pulpitu "
+"poprzez protokół RFB. Użytkownicy na zdalnych maszynach mogą wtedy łączyć "
+"się z pulpitem za pomocą przeglądarki VNC."
 
 #: ../common/org.gnome.Vino.gschema.xml.in.h:7
 msgid ""
@@ -240,15 +240,13 @@ msgstr ""
 "\" - ikona zawsze wyświetlona; \"client\" - wyświetlona tylko, gdy ktoś jest "
 "podłączony; domyślne; \"never\" - ikona nigdy nie będzie wyświetlona."
 
-# REV LJ: bez "klucz ten" będzie lepiej, ew. jak wyżej "ten klucz" coby
-# utrzymać formę
 #: ../common/org.gnome.Vino.gschema.xml.in.h:25
 msgid ""
 "This key specifies the e-mail address to which the remote desktop URL should "
 "be sent if the user clicks on the URL in the Desktop Sharing preferences "
 "dialog."
 msgstr ""
-"Klucz ten określa adres e-mail na który powinien zostać wysłany adres URL "
+"Ten klucz określa adres e-mail na który powinien zostać wysłany adres URL "
 "zdalnego pulpitu. Adres będzie wysłany po kliknięciu na URL w oknie "
 "preferencji współdzielenia pulpitu."
 
@@ -270,10 +268,9 @@ msgstr "Określa, czy rozszerzenie X.org XDamage ma zostać wyłączone"
 msgid "Whether we should use UPNP to forward the port in routers"
 msgstr "Określa, czy używać UPnP do przekierowania portu w routerach"
 
-# REV LJ: konflikt z "_Wymaganie wprowadzania poniższego hasła"
 #: ../capplet/vino-preferences.ui.h:1
 msgid "Al_ways"
-msgstr "Za_wsze"
+msgstr "Zaw_sze"
 
 #: ../capplet/vino-preferences.ui.h:2
 msgid "Allow other users to _view your desktop"
@@ -311,6 +308,7 @@ msgid "Some of these preferences are locked down"
 msgstr "Część preferencji jest zablokowana"
 
 # REV LJ: Na ruterze musi być włączona funkcja UPnP ?
+# pd: na ruterze? a może w ruterze? chociaż forma "Ruter musi mieć..." też mi się podoba
 #: ../capplet/vino-preferences.ui.h:10
 msgid "The router must have the UPnP feature enabled"
 msgstr "Ruter musi mieć włączoną funkcję UPnP"
@@ -327,11 +325,9 @@ msgstr "Zezw_olenie innym użytkownikom na kontrolę pulpitu"
 msgid "_Never"
 msgstr "_Nigdy"
 
-# REV LJ: konflikt z "Zezw_olenie innym", "T" powinno być
-# wolne
 #: ../capplet/vino-preferences.ui.h:14
 msgid "_Only when someone is connected"
-msgstr "Tylk_o, jeśli ktoś jest połączony"
+msgstr "_Tylko, jeśli ktoś jest połączony"
 
 #: ../capplet/vino-preferences.ui.h:15
 msgid "_Require the user to enter this password:"
@@ -429,10 +425,9 @@ msgstr ""
 "Proszę uruchomić \"vino-server --help\", aby uzyskać pełną listę opcji w "
 "wierszu poleceń"
 
-# REV LJ: środowiska GNOME?
 #: ../server/vino-main.c:226
 msgid "GNOME Desktop Sharing"
-msgstr "Współdzielenie pulpitu GNOME"
+msgstr "Współdzielenie pulpitu środowiska GNOME"
 
 #.
 #. * Translators: translate "vino-mdns:showusername" to
@@ -508,10 +503,9 @@ msgstr "_Odmów"
 msgid "Failed to open connection to bus: %s\n"
 msgstr "Nie można otworzyć połączenia do magistrali: %s\n"
 
-# REV LJ: typo "Se_r_wer", środowiska
 #: ../server/vino-server.desktop.in.in.h:2
 msgid "GNOME Desktop Sharing Server"
-msgstr "Sewer współdzielenia pulpitu GNOME"
+msgstr "Serwer współdzielenia pulpitu środowiska GNOME"
 
 #: ../server/vino-status-icon.c:103 ../server/vino-status-tube-icon.c:96
 msgid "Desktop sharing is enabled"
