@@ -10,7 +10,7 @@ msgstr ""
 "Report-Msgid-Bugs-To: http://bugzilla.gnome.org/enter_bug.cgi?"
 "product=vino&keywords=I18N+L10N&component=Preferences Dialog\n"
 "POT-Creation-Date: 2011-07-08 10:28+0000\n"
-"PO-Revision-Date: 2011-08-23 22:09+0200\n"
+"PO-Revision-Date: 2011-09-25 19:45+0200\n"
 "Last-Translator: Piotr Drąg <piotrdrag@gmail.com>\n"
 "Language-Team: Polish <gnomepl@aviary.pl>\n"
 "MIME-Version: 1.0\n"
@@ -78,12 +78,9 @@ msgstr "Alternatywny numer portu"
 msgid "E-mail address to which the remote desktop URL should be sent"
 msgstr "Adres e-mail, na który powinien być wysłany adres URL zdalnego pulpitu"
 
-# REV LJ: bez włączenie, to checkbox
-# pd: to nie checkbox, to shemat gsettingsów :)
-# REV LJ #2: nie upieram się ;) http://www.flickr.com/photos/deejay1/6181577001
 #: ../common/org.gnome.Vino.gschema.xml.in.h:4
 msgid "Enable remote access to the desktop"
-msgstr "Włączenie zdalnego dostępu do pulpitu"
+msgstr "Zdalny dostęp do pulpitu"
 
 #: ../common/org.gnome.Vino.gschema.xml.in.h:5
 msgid ""
@@ -91,16 +88,17 @@ msgid ""
 "you want that accept connections only from some specific network interface. "
 "eg: eth0, wifi0, lo, ..."
 msgstr ""
-"Jeśli nieustawione, serwer będzie nasłuchiwał na wszystkich interfejsach "
-"sieciowych. Można to ustawić, jeśli wymagane jest akceptowane połączenie "
-"wyłącznie z konkretnych interfejsów sieciowych, np.: eth0, wifi0, lo"
+"Jeśli jest nieustawione, to serwer będzie nasłuchiwał na wszystkich "
+"interfejsach sieciowych. Można to ustawić, jeśli wymagane jest akceptowane "
+"połączenie wyłącznie z konkretnych interfejsów sieciowych, np.: eth0, wifi0, "
+"lo."
 
 #: ../common/org.gnome.Vino.gschema.xml.in.h:6
 msgid ""
 "If true, allows remote access to the desktop via the RFB protocol. Users on "
 "remote machines may then connect to the desktop using a VNC viewer."
 msgstr ""
-"Jeżeli jest ustawione na \"true\", to pozwala na zdalny dostęp do pulpitu "
+"Jeśli jest ustawione na \"true\", to pozwala na zdalny dostęp do pulpitu "
 "poprzez protokół RFB. Użytkownicy na zdalnych maszynach mogą wtedy łączyć "
 "się z pulpitem za pomocą przeglądarki VNC."
 
@@ -110,17 +108,17 @@ msgid ""
 "user on the host machine approves the connection. Recommended especially "
 "when access is not password protected."
 msgstr ""
-"Jeżeli ustawione na \"true\", zdalni użytkownicy nie otrzymają pozwolenia na "
-"dostęp do pulpitu bez akceptacji użytkownika na lokalnym komputerze. "
-"Zalecane szczególnie przy dostępie niezabezpieczonym hasłem."
+"Jeśli jest ustawione na \"true\", to zdalni użytkownicy nie otrzymają "
+"pozwolenia na dostęp do pulpitu bez akceptacji użytkownika na lokalnym "
+"komputerze. Zalecane szczególnie przy dostępie niezabezpieczonym hasłem."
 
 #: ../common/org.gnome.Vino.gschema.xml.in.h:8
 msgid ""
 "If true, remote users accessing the desktop are only allowed to view the "
 "desktop. Remote users will not be able to use the mouse or keyboard."
 msgstr ""
-"Jeżeli ustawione na \"true\", zdalni użytkownicy będą mogli wyświetlać "
-"pulpit, bez możliwości użycia myszy lub klawiatury."
+"Jeśli jest ustawione na \"true\", to zdalni użytkownicy będą mogli "
+"wyświetlać pulpit, bez możliwości użycia myszy lub klawiatury."
 
 #: ../common/org.gnome.Vino.gschema.xml.in.h:9
 msgid ""
@@ -128,23 +126,24 @@ msgid ""
 "encryption. It is highly recommended that you use a client which supports "
 "encryption unless the intervening network is trusted."
 msgstr ""
-"Jeżeli ustawione na \"true\", zdalni użytkownicy będą musieli mieć obsługę "
-"szyfrowania. Używanie programów klientów z szyfrowaniem jest mocno zalecane, "
-"chyba, że pośrednicząca sieć jest zaufana."
+"Jeśli jest ustawione na \"true\", to zdalni użytkownicy będą musieli mieć "
+"obsługę szyfrowania. Używanie programów klientów z szyfrowaniem jest mocno "
+"zalecane, chyba, że pośrednicząca sieć jest zaufana."
 
 #: ../common/org.gnome.Vino.gschema.xml.in.h:10
 msgid "If true, screen will be locked after the last remote client disconnect."
 msgstr ""
-"Jeżeli ustawione na \"true\", ekran zostanie zablokowany po rozłączeniu "
-"ostatniego zdalnego klienta."
+"Jeśli jest ustawione na \"true\", to ekran zostanie zablokowany po "
+"rozłączeniu ostatniego zdalnego klienta."
 
 #: ../common/org.gnome.Vino.gschema.xml.in.h:11
 msgid ""
 "If true, the server will listen to another port, instead of the default "
 "(5900). The port must be specified in the 'alternative-port' key."
 msgstr ""
-"Jeżeli ustawione na \"true\", serwer będzie nasłuchiwał na porcie innym od "
-"domyślnego (5900). Port musi zostać podany w kluczu \"alternative-port\"."
+"Jeśli jest ustawione na \"true\", to serwer będzie nasłuchiwał na porcie "
+"innym od domyślnego (5900). Port musi zostać podany w kluczu "
+"\"alternative-port\"."
 
 #: ../common/org.gnome.Vino.gschema.xml.in.h:12
 msgid ""
@@ -153,19 +152,19 @@ msgid ""
 "will make vino work on these environments with a slower rendering as side "
 "effect."
 msgstr ""
-"Jeśli ustawione na \"true\", to rozszerzenie X.org XDamage nie będzie "
-"używane. To rozszerzenie nie działa poprawnie z niektórym sterownikami "
-"obrazu, gdy używane są efekty 3D. Wyłączenie tego rozszerzenia umożliwi "
-"działanie programu Vino w takich środowiskach z wolniejszym renderowaniem "
-"jako efektem ubocznym."
+"Jeśli jest ustawione na \"true\", to rozszerzenie XDamage systemu X.org nie "
+"będzie używane. To rozszerzenie nie działa poprawnie z niektórym "
+"sterownikami obrazu, gdy używane są efekty 3D. Wyłączenie tego rozszerzenia "
+"umożliwi działanie programu Vino w takich środowiskach z wolniejszym "
+"wyświetlaniem jako efektem ubocznym."
 
 #: ../common/org.gnome.Vino.gschema.xml.in.h:13
 msgid ""
 "If true, we will use UPNP protocol to automatically forward the port used by "
 "vino in the router."
 msgstr ""
-"Jeśli ustawione na \"true\", zostanie użyty protokół UPnP, aby automatycznie "
-"przekierować port używany przez program Vino do routera."
+"Jeśli jest ustawione na \"true\", to zostanie użyty protokół UPnP, aby "
+"automatycznie przekierować port używany przez program Vino do rutera."
 
 #: ../common/org.gnome.Vino.gschema.xml.in.h:14
 msgid "Listen on an alternative port"
@@ -226,7 +225,7 @@ msgid ""
 "The port which the server will listen to if the 'use-alternative-port' key "
 "is set to true. Valid values are in the range from 5000 to 50000."
 msgstr ""
-"Numer portu na którym serwer będzie nasłuchiwał w przypadku ustawienia "
+"Numer portu, na którym serwer będzie nasłuchiwał w przypadku ustawienia "
 "klucza \"use-alternative-port\". Dopuszczalnymi wartościami są liczby z "
 "przedziału od 5000 do 50000."
 
@@ -247,8 +246,8 @@ msgid ""
 "be sent if the user clicks on the URL in the Desktop Sharing preferences "
 "dialog."
 msgstr ""
-"Ten klucz określa adres e-mail na który powinien zostać wysłany adres URL "
-"zdalnego pulpitu. Adres będzie wysłany po kliknięciu na URL w oknie "
+"Ten klucz określa adres e-mail, na który powinien zostać wysłany adres URL "
+"zdalnego pulpitu. Adres będzie wysłany po kliknięciu na adres URL w oknie "
 "preferencji współdzielenia pulpitu."
 
 #: ../common/org.gnome.Vino.gschema.xml.in.h:26
@@ -258,16 +257,16 @@ msgstr "Kiedy ikona stanu ma być wyświetlana"
 #: ../common/org.gnome.Vino.gschema.xml.in.h:27
 msgid "When true, disable the background on receive valid session"
 msgstr ""
-"Jeżeli ustawione na \"true\", tło pulpitu zostanie wyłączone na czas "
+"Jeśli jest ustawione na \"true\", to tło pulpitu zostanie wyłączone na czas "
 "prawidłowej sesji"
 
 #: ../common/org.gnome.Vino.gschema.xml.in.h:28
 msgid "Whether we should disable the XDamage extension of X.org"
-msgstr "Określa, czy rozszerzenie X.org XDamage ma zostać wyłączone"
+msgstr "Określa, czy rozszerzenie XDamage systemu X.org ma zostać wyłączone"
 
 #: ../common/org.gnome.Vino.gschema.xml.in.h:29
 msgid "Whether we should use UPNP to forward the port in routers"
-msgstr "Określa, czy używać UPnP do przekierowania portu w routerach"
+msgstr "Określa, czy używać UPnP do przekierowania portu w ruterach"
 
 #: ../capplet/vino-preferences.ui.h:1
 msgid "Al_ways"
@@ -276,7 +275,6 @@ msgstr "Zaw_sze"
 #: ../capplet/vino-preferences.ui.h:2
 msgid "Allow other users to _view your desktop"
 msgstr "_Zezwolenie innym użytkownikom na wyświetlanie pulpitu"
-
 
 #: ../capplet/vino-preferences.ui.h:3
 msgid "Automatically _configure UPnP router to open and forward ports"
@@ -567,7 +565,7 @@ msgstr ""
 #. Translators comment: put your own name here to appear in the about dialog.
 #: ../server/vino-status-icon.c:282
 msgid "translator-credits"
-msgstr "Aviary.pl <gnomepl@aviary.pl>, 2008, 2009, 2010"
+msgstr "Aviary.pl <gnomepl@aviary.pl>, 2008, 2009, 2010, 2011"
 
 #: ../server/vino-status-icon.c:288
 msgid "Share your desktop with other users"
