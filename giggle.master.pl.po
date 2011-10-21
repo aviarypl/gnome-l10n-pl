@@ -8,13 +8,15 @@
 # pomóc w jego rozwijaniu i pielęgnowaniu, napisz do nas:
 # gnomepl@aviary.pl
 # -=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-
-# Łukasz Jernaś <deejay1@srem.org>, 2007, 2008, 2009, 2010.
+# Review całości pliku: 2011-10-17 Piotr Drąg
+# Łukasz Jernaś <deejay1@srem.org>, 2007, 2008, 2009, 2010, 2011.
+#
 msgid ""
 msgstr ""
 "Project-Id-Version: giggle\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2011-10-17 18:13+0200\n"
-"PO-Revision-Date: 2010-05-25 23:03+0100\n"
+"PO-Revision-Date: 2011-10-21 19:43+0200\n"
 "Last-Translator: Łukasz Jernaś <deejay1@srem.org>\n"
 "Language-Team: Polish <gnomepl@aviary.pl>\n"
 "Language: pl\n"
@@ -42,49 +44,42 @@ msgstr "Gałęzie"
 msgid "Name:"
 msgstr "Nazwa:"
 
-# rev: jeśli jest miejsce, to można by dodać "Adres" na początku
 #: ../data/main-window.ui.h:3
 msgid "URL:"
-msgstr "URL:"
+msgstr "Adres URL:"
 
-# rev: w tłumaczeniu brakuje \"
 #: ../libgiggle/giggle-plugin.c:528
 #, c-format
 msgid "Cannot find plugin description in '%s'"
-msgstr "Nie można odnaleźć opisu wtyczki w %s"
+msgstr "Nie można odnaleźć opisu wtyczki w \"%s\""
 
-# rev: przed czy obowiązkowo przecinek
 #: ../plugins/hello-world.xml.h:1
 msgid "Check if the plugin system works"
-msgstr "Sprawdza czy system wtyczek działa poprawnie"
+msgstr "Sprawdza, czy system wtyczek działa poprawnie"
 
 #: ../plugins/hello-world.xml.h:2
 msgid "Demonstration of Giggle's Plugin System"
 msgstr "Demonstracja systemu wtyczek Giggle"
 
-# rev: przecinek pomiędzy by nie zawadził
 #: ../plugins/hello-world.xml.h:3
 msgid "Hello World"
-msgstr "Witaj świecie"
+msgstr "Witaj, świecie"
 
-# rev: w czasie > podczas, ale to kosmetyka i może zostać jak jest
 #: ../plugins/giggle-personal-details-window.c:82
 msgid "There was an error setting the configuration"
-msgstr "Wystąpił błąd w czasie ustawiania konfiguracji"
+msgstr "Wystąpił błąd podczas ustawiania konfiguracji"
 
-# rev: jw.
 #: ../plugins/giggle-personal-details-window.c:184
 msgid "There was an error getting the configuration"
-msgstr "Wystąpił błąd w czasie pobierania konfiguracji"
+msgstr "Wystąpił błąd podczas pobierania konfiguracji"
 
 #: ../plugins/giggle-personal-details-window.c:248
 msgid "_Name:"
 msgstr "_Nazwa:"
 
-# rev: jeśli jest miejsce, to można dodać "Adres"
 #: ../plugins/giggle-personal-details-window.c:258
 msgid "_Email:"
-msgstr "_E-mail:"
+msgstr "Adres _e-mail:"
 
 #: ../plugins/giggle-personal-details-window.c:271
 #: ../plugins/personal-details.xml.h:2
@@ -100,28 +95,25 @@ msgstr "_Terminal"
 msgid "Issue git commands via terminal"
 msgstr "Pozwala na wydawanie poleceń git w oknie terminala"
 
-# rev: Edytuje > Modyfikuje. Jedyne miejsce na Edycję jest w pasku menu :)
 #: ../plugins/personal-details.xml.h:1
 msgid "Edit personal details"
-msgstr "Edytuje informacje osobiste"
+msgstr "Modyfikuje informacje osobiste"
 
 #: ../plugins/terminal-view.xml.h:1
 msgid "Create _Terminal"
 msgstr "Utwórz okno _terminala"
 
-# rev: tab to karta, a nie zakładka!!!
 #: ../plugins/terminal-view.xml.h:2
 msgid "Create new tab in git terminal"
-msgstr "Tworzy nową zakładkę w oknie terminala git"
+msgstr "Tworzy nową kartę w oknie terminala git"
 
 #: ../plugins/terminal-view.xml.h:3
 msgid "Terminal window"
 msgstr "Okno terminala"
 
-# rev: jeśli jest miejsce, to poprawna forma to coś w stylu "Wyszukiwanie:"
 #: ../src/eggfindbar.c:305
 msgid "Find:"
-msgstr "Znajdź:"
+msgstr "Wyszukiwanie:"
 
 #: ../src/eggfindbar.c:314 ../src/giggle-window.c:1035
 msgid "Find Pre_vious"
@@ -197,14 +189,13 @@ msgstr "Proszę wskazać położenie dla klona"
 msgid "Clone in _folder:"
 msgstr "Klonowanie do _katalogu:"
 
-# rev: w oryginale nie ma spacji między : a \n
 #: ../src/giggle-diff-tree-view.c:142 ../src/giggle-file-list.c:1664
 #, c-format
 msgid ""
 "An error occurred when retrieving different files list:\n"
 "%s"
 msgstr ""
-"Wystąpił błąd podczas pobierania listy różniących się plików: \n"
+"Wystąpił błąd podczas pobierania listy różniących się plików:\n"
 "%s"
 
 #: ../src/giggle-diff-tree-view.c:209
@@ -259,12 +250,12 @@ msgstr ""
 "Wystąpił błąd podczas dodawania pliku do repozytorium git:\n"
 "%s"
 
-# rev: łatki? może lepiej poprawki? ale może być i łatka :)
+
 #: ../src/giggle-file-list.c:819 ../src/giggle-file-list.c:845
 #: ../src/giggle-rev-list-view.c:1193 ../src/giggle-rev-list-view.c:1224
 #, c-format
 msgid "Could not save the patch as %s"
-msgstr "Nie można zapisać łatki jako %s"
+msgstr "Nie można zapisać poprawki jako %s"
 
 #: ../src/giggle-file-list.c:824 ../src/giggle-file-list.c:850
 #: ../src/giggle-rev-list-view.c:1201 ../src/giggle-rev-list-view.c:1229
@@ -274,7 +265,7 @@ msgstr "Nie zwrócono błędu"
 #: ../src/giggle-file-list.c:871 ../src/giggle-rev-list-view.c:1255
 #, c-format
 msgid "Patch saved as %s"
-msgstr "Łatka została zapisana jako %s"
+msgstr "Poprawka została zapisana jako %s"
 
 #: ../src/giggle-file-list.c:875 ../src/giggle-rev-list-view.c:1259
 #, c-format
@@ -288,20 +279,19 @@ msgstr "Utworzono w katalogu %s"
 
 #: ../src/giggle-file-list.c:913 ../src/giggle-rev-list-view.c:1315
 msgid "Create Patch"
-msgstr "Utwórz łatkę"
+msgstr "Utwórz poprawkę"
 
 #: ../src/giggle-file-list.c:1016
 msgid "Delete glob pattern?"
 msgstr "Usunąć wzorzec globalny?"
 
-# rev: lepiej podzielić na dwa zdania
 #: ../src/giggle-file-list.c:1019
 msgid ""
 "The selected file was shadowed by a glob pattern that may be hiding other "
 "files, delete it?"
 msgstr ""
 "Zaznaczony plik jest przesłoniony przez wzorzec, który może ukrywać inne "
-"pliki, usunąć ten wzorzec?"
+"pliki. Usunąć ten wzorzec?"
 
 #: ../src/giggle-file-list.c:1414
 msgid "_Commit Changes"
@@ -313,7 +303,7 @@ msgstr "_Dodaj plik do repozytorium"
 
 #: ../src/giggle-file-list.c:1417 ../src/giggle-rev-list-view.c:1663
 msgid "Create _Patch"
-msgstr "_Utwórz łatkę"
+msgstr "_Utwórz poprawkę"
 
 #: ../src/giggle-file-list.c:1418
 msgid "_Add to .gitignore"
@@ -323,10 +313,9 @@ msgstr "D_odaj do pliku .gitignore"
 msgid "_Remove from .gitignore"
 msgstr "_Usuń z pliku .gitignore"
 
-# rev: pewnie pole wyboru, więc forma "Wyświetlanie..."
 #: ../src/giggle-file-list.c:1423
 msgid "_Show all files"
-msgstr "_Wyświetlaj wszystkie pliki"
+msgstr "_Wyświetlanie wszystkich plików"
 
 #: ../src/giggle-file-list.c:1462
 msgid "Project"
@@ -348,42 +337,36 @@ msgstr "URL"
 msgid "Show the diff window"
 msgstr "Wyświetla okno różnic"
 
-# rev: "...i kończy działanie"
-# LJ
 #: ../src/giggle-main.c:46
 msgid "Show version information and exit"
-msgstr "Wyświetla informacje o wersji"
+msgstr "Wyświetla informacje o wersji i kończy działanie"
 
 #: ../src/giggle-main.c:49
 msgid "[DIRECTORY]"
 msgstr "[KATALOG]"
 
-# rev: literówka (jezyku)
 #: ../src/giggle-main.c:79
 #, c-format
 msgid "Report errors (in English, with LC_ALL=C) to <%s>."
 msgstr ""
-"Zgłaszanie błędów (w jezyku angielskim z LC_ALL=C) dostępne pod adresem <%s>."
+"Zgłaszanie błędów (w języku angielskim z LC_ALL=C) dostępne pod adresem <%s>."
 
-# rev: "Program Giggle..."
 #: ../src/giggle-main.c:80
 msgid "Giggle is a graphical frontend for the git content tracker."
-msgstr "Giggle jest graficznym interfejsem dla git."
+msgstr "Program Giggle jest graficznym interfejsem dla git."
 
 #: ../src/giggle-main.c:88
 #, c-format
 msgid "Try `%s --help' for more information.\n"
 msgstr "Polecenie \"%s --help\" wyświetla więcej informacji.\n"
 
-# rev: na pewno przycisk?
 #: ../src/giggle-remote-editor.c:148
 msgid "Click to add mapping..."
-msgstr "Kliknij, aby dodać mapowanie..."
+msgstr "Kliknięcie dodaje mapowanie..."
 
-# rev: "Bez nazwy"
 #: ../src/giggle-remote-editor.c:366
 msgid "Unnamed"
-msgstr "Nienazwana"
+msgstr "Bez nazwy"
 
 #: ../src/giggle-remotes-view.c:265
 msgid "Icon"
@@ -458,7 +441,7 @@ msgstr "Nazwa etykiety:"
 #: ../src/giggle-rev-list-view.c:1195
 #, c-format
 msgid "Could not create patch"
-msgstr "Nie można utworzyć łatki"
+msgstr "Nie można utworzyć poprawki"
 
 #: ../src/giggle-rev-list-view.c:1453
 msgid "Uncommitted changes"
@@ -469,16 +452,15 @@ msgstr "Niezatwierdzone zmiany"
 msgid "%I:%M %p"
 msgstr "%H:%M"
 
-# rev: w GNOME zwykle wstawiamy przecinek między datą a godziną (patrz gnome-shell, gnome-cc etc)
 #. TRANSLATORS: it's a strftime format string
 #: ../src/giggle-rev-list-view.c:1520
 msgid "%a %I:%M %p"
-msgstr "%a %H:%M"
+msgstr "%a, %H:%M"
 
 #. TRANSLATORS: it's a strftime format string
 #: ../src/giggle-rev-list-view.c:1532
 msgid "%b %d %I:%M %p"
-msgstr "%d %b %H:%M"
+msgstr "%d %b, %H:%M"
 
 #. it's older
 #. TRANSLATORS: it's a strftime format string
@@ -490,10 +472,9 @@ msgstr "%d %b %Y"
 msgid "Commit"
 msgstr "Zatwierdź"
 
-# rev: mnemonik pod długą literą?
 #: ../src/giggle-rev-list-view.c:1661
 msgid "Create _Branch"
-msgstr "Utwórz _gałąź"
+msgstr "Ut_wórz gałąź"
 
 #: ../src/giggle-rev-list-view.c:1662
 msgid "Create _Tag"
@@ -552,22 +533,18 @@ msgstr "_Zmiany"
 msgid "Browse a revision's changes"
 msgstr "Przegląda zmiany zawarte w rewizji"
 
-# rev: Idź > Przejdź
 #: ../src/giggle-view-file.c:327
 msgid "_Goto Line Number"
-msgstr "_Idź do wiersza numer"
+msgstr "_Przejdź do wiersza numer"
 
-# rev: Podświetla > Wyróżnia
 #: ../src/giggle-view-file.c:328
 msgid "Highlight specified line number"
-msgstr "Podświetla wybrany numer wiersza"
+msgstr "Wyróżnia wybrany numer wiersza"
 
-# LJ
 #: ../src/giggle-view-file.c:332
 msgid "Show _Changes"
 msgstr "Wyświetl _zmiany"
 
-# LJ
 #: ../src/giggle-view-file.c:333
 msgid "Show changes for selected revision"
 msgstr "Wyświetla zmiany wprowadzone przez wybraną rewizję"
@@ -576,19 +553,17 @@ msgstr "Wyświetla zmiany wprowadzone przez wybraną rewizję"
 msgid "Select _Revision"
 msgstr "Wybierz _rewizję"
 
-# LJ
 #: ../src/giggle-view-file.c:338
 msgid "Select revision of selected line"
 msgstr "Wyświetla rewizję, w której został wprowadzony zaznaczony wiersz"
 
-# rev: getting file ref to zapisywanie pliku?
 #: ../src/giggle-view-file.c:900
 #, c-format
 msgid ""
 "An error occurred when getting file ref:\n"
 "%s"
 msgstr ""
-"Wystąpił błąd podczas zapisu do pliku:\n"
+"Wystąpił błąd podczas pobierania odnośnika do pliku:\n"
 "%s"
 
 #: ../src/giggle-view-file.c:971 ../src/giggle-view-history.c:250
@@ -645,12 +620,11 @@ msgstr "_Autorzy"
 msgid "_Remotes"
 msgstr "_Zdalne gałęzie"
 
-# rev: zazwyczaj używamy cudzysłowów ASCII: \"
-# rev: GIT > git
+
 #: ../src/giggle-window.c:563
 #, c-format
 msgid "The directory '%s' does not look like a git repository."
-msgstr "Katalog „%s” nie wygląda na repozytorium GIT."
+msgstr "Katalog \"%s\" nie wygląda na repozytorium git."
 
 #: ../src/giggle-window.c:646
 msgid "Select git repository"
@@ -690,10 +664,9 @@ msgstr ""
 "Aviary.pl <gnomepl@aviary.pl>, 2010, 2011\n"
 "Łukasz Jernaś, <deejay1@srem.org>, 2010, 2011"
 
-# rev: wszędzie używana jest forma "git"
 #: ../src/giggle-window.c:959
 msgid "A graphical frontend for Git"
-msgstr "Graficzna nakładka na system śledzenia katalogów Git"
+msgstr "Graficzna nakładka na system śledzenia katalogów git"
 
 #: ../src/giggle-window.c:964
 msgid "About Giggle"
@@ -753,30 +726,27 @@ msgstr "Klonowanie położenia"
 
 #: ../src/giggle-window.c:1058
 msgid "_Save patch"
-msgstr "_Zapisz łatkę"
+msgstr "_Zapisz poprawkę"
 
 #: ../src/giggle-window.c:1058
 msgid "Save a patch"
-msgstr "Zapisuje łatkę"
+msgstr "Zapisuje poprawkę"
 
 #: ../src/giggle-window.c:1062
 msgid "_Diff current changes"
 msgstr "_Porównaj bieżące zmiany"
 
-# rev: aktualne > bieżące
 #: ../src/giggle-window.c:1062
 msgid "Diff current changes"
-msgstr "Wyświetla aktualne różnice"
+msgstr "Wyświetla bieżące różnice"
 
-# rev: Kończy działanie programu
 #: ../src/giggle-window.c:1067
 msgid "Quit the application"
-msgstr "Zamyka program"
+msgstr "Kończy działanie programu"
 
-# rev: przesuwa? czy przechodzi?
 #: ../src/giggle-window.c:1085
 msgid "Go backward in history"
-msgstr "Przesuwa wstecz w historii"
+msgstr "Przechodzi wstecz w historii"
 
 #: ../src/giggle-window.c:1089
 msgid "Go forward in history"
@@ -798,39 +768,33 @@ msgstr "_Zgłoś błąd w programie"
 msgid "Report an issue you've found in Giggle"
 msgstr "Pozwala zgłosić błąd znaleziony w Giggle"
 
-# rev: przyjrzyj się ciągowi :D
 #: ../src/giggle-window.c:1102
 msgid "About this application"
-msgstr "Wyświetla informacje o tej programie"
+msgstr "Wyświetla informacje o programie"
 
 #: ../src/giggle-window.c:1109
 msgid "Show revision tree"
-msgstr "Przełącza wyświetlanie drzewa rewizji"
+msgstr "Wyświetlanie drzewa rewizji"
 
-# LJ
 #: ../src/giggle-window.c:1116
 msgid "Show diffs by chunk"
-msgstr "Wyświetl zmiany wg fragmentów"
+msgstr "Wyświetlanie zmian wg fragmentów"
 
-# LJ
 #: ../src/giggle-window.c:1119
 msgid "Show diffs by file"
-msgstr "Wyświetl zmiany wg plików"
+msgstr "Wyświetlanie zmian wg plików"
 
-# LJ
 #: ../src/giggle-window.c:1122
 msgid "Show all diffs"
-msgstr "Wyświetl wszystkie zmiany"
+msgstr "Wyświetlanie wszystkich zmian"
 
-# rev: edytuje > modyfikuje
 #: ../src/giggle-window.c:1128
 msgid "Show and edit project properties"
-msgstr "Wyświetla i edytuje właściwości projektu"
+msgstr "Wyświetla i modyfikuje właściwości projektu"
 
-# rev: aktualny > bieżący
 #: ../src/giggle-window.c:1132
 msgid "Refresh current view"
-msgstr "Odświeża aktualny widok"
+msgstr "Odświeża bieżący widok"
 
 #: ../src/giggle-window.c:1472
 msgid "Search Inside _Patches"
@@ -838,7 +802,7 @@ msgstr "Wyszukiwanie wewnątrz ł_atek"
 
 #: ../src/giggle-window.c:1741
 msgid "Save patch file"
-msgstr "Zapisywanie łatki"
+msgstr "Zapisywanie poprawki"
 
 #: ../src/giggle-window.c:1761
 #, c-format
