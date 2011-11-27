@@ -8,8 +8,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: gnome-web-photo\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2011-02-16 19:30+0000\n"
-"PO-Revision-Date: 2010-03-07 12:45+0100\n"
+"POT-Creation-Date: 2011-09-26 08:40+0000\n"
+"PO-Revision-Date: 2011-11-27 18:18+0100\n"
 "Last-Translator: Piotr Drąg <piotrdrag@gmail.com>\n"
 "Language-Team: Polish <gnomepl@aviary.pl>\n"
 "MIME-Version: 1.0\n"
@@ -52,275 +52,330 @@ msgstr "Określa, czy włączyć tworzenie miniatur plików XHTML"
 msgid "Whether to enable thumbnailing of XHTML files."
 msgstr "Określa, czy włączyć tworzenie miniatur plików XHTML."
 
+# pd
 #. Translators: first %s is a URI
-#: ../src/gnome-web-photo.c:369 ../src/gnome-web-photo.c:384
+#: ../src/gnome-web-photo.c:376 ../src/gnome-web-photo.c:391
 #, c-format
 msgid "Error while saving '%s': %s\n"
-msgstr ""
+msgstr "Błąd podczas zapisywania \"%s\": %s\n"
 
+# pd
 #. Translators: first %s is a URI
-#: ../src/gnome-web-photo.c:437 ../src/gnome-web-photo.c:480
+#: ../src/gnome-web-photo.c:444 ../src/gnome-web-photo.c:487
 #, c-format
 msgid "Error while thumbnailing '%s': %s\n"
-msgstr ""
+msgstr "Błąd podczas tworzenia miniatury \"%s\": %s\n"
 
+# pd
 #. Translators: first %s is a URI, second %s is a printer name
-#: ../src/gnome-web-photo.c:514
+#: ../src/gnome-web-photo.c:521
 #, c-format
 msgid "Error while printing '%s' on '%s': %s\n"
-msgstr ""
+msgstr "Błąd podczas drukowania \"%s\" za pomocą \"%s\": %s\n"
 
+# pd
 #. Translators: first %s is a URI
-#: ../src/gnome-web-photo.c:534
+#: ../src/gnome-web-photo.c:541
 #, c-format
 msgid "Error while printing '%s': %s\n"
-msgstr ""
+msgstr "Błąd podczas drukowania \"%s\": %s\n"
 
+# pd
 #. Translators: first %s is a URI
-#: ../src/gnome-web-photo.c:604
+#: ../src/gnome-web-photo.c:622
 #, c-format
 msgid "Error while loading '%s': %s\n"
-msgstr ""
+msgstr "Błąd podczas wczytywania \"%s\": %s\n"
 
+# pd
 #. Translators: first %s is a URI
-#: ../src/gnome-web-photo.c:663
+#: ../src/gnome-web-photo.c:685
 #, c-format
 msgid "Timed out while loading '%s'. Outputting current view...\n"
 msgstr ""
+"Przekroczono czas oczekiwania podczas wczytywania \"%s\". Wyświetlanie "
+"bieżącego widoku...\n"
 
+# pd
 #. Translators: first %s is a URI
-#: ../src/gnome-web-photo.c:670
+#: ../src/gnome-web-photo.c:699
 #, c-format
 msgid "Timed out while loading '%s'. Nothing to output...\n"
 msgstr ""
+"Przekroczono czas oczekiwania podczas wczytywania \"%s\". Nie ma nic do "
+"wyświetlania...\n"
 
+# pd
 #. Translators: first %s is a URI
-#: ../src/gnome-web-photo.c:676
+#: ../src/gnome-web-photo.c:705
 #, c-format
 msgid "Timed out while loading '%s'.\n"
-msgstr ""
+msgstr "Przekroczono czas oczekiwania podczas wczytywania \"%s\".\n"
 
-#: ../src/gnome-web-photo.c:780
+#: ../src/gnome-web-photo.c:812
 #, c-format
 msgid "Unknown mode '%s'"
 msgstr "Nieznany tryb \"%s\""
 
-#: ../src/gnome-web-photo.c:793
+#: ../src/gnome-web-photo.c:825
 #, c-format
 msgid "Usage: %s [--mode=photo|thumbnail|print] [...]\n"
 msgstr "Użycie: %s [--mode=photo|thumbnail|print] [...]\n"
 
-#: ../src/gnome-web-photo.c:797
-#, fuzzy, c-format
-#| msgid ""
-#| "Usage: %s [-t TIMEOUT] [--force] [-w WIDTH] -s SIZE [--files] URI|FILE "
-#| "OUTFILE [...]\n"
+# pd
+#: ../src/gnome-web-photo.c:829
+#, c-format
 msgid ""
-"Usage: %s [-c CSSFILE] [-t TIMEOUT] [--force] [-w WIDTH] [--file] URI|FILE "
-"OUTFILE\n"
+"Usage: %s [-c CSSFILE] [-d DELAY] [-t TIMEOUT] [--force] [-w WIDTH] [--file] "
+"URI|FILE OUTFILE\n"
 msgstr ""
-"Użycie: %s [-t CZAS_OCZEKIWANIA] [--force] [-w SZEROKOŚĆ] -s ROZMIAR [--"
-"files] ADRES_URI|PLIK PLIK_WYJŚCIOWY [...]\n"
+"Użycie: %s [-c PLIK_CSS] [-d OPÓŹNIENIE] [-t CZAS_OCZEKIWANIA] [--force] [-w "
+"SZEROKOŚĆ] [--file] ADRES_URI|PLIK PLIK_WYJŚCIOWY\n"
 
-#: ../src/gnome-web-photo.c:800
-#, fuzzy, c-format
-#| msgid ""
-#| "Usage: %s [-t TIMEOUT] [--force] [-w WIDTH] -s SIZE [--files] URI|FILE "
-#| "OUTFILE [...]\n"
+# pd
+#: ../src/gnome-web-photo.c:832
+#, c-format
 msgid ""
-"Usage: %s [-c CSSFILE] [-t TIMEOUT] [--force] [-w WIDTH] [-s THUMBNAILSIZE] "
-"[--file] URI|FILE OUTFILE\n"
+"Usage: %s [-c CSSFILE] [-d DELAY] [-t TIMEOUT] [--force] [-w WIDTH] [-s "
+"THUMBNAILSIZE] [--file] URI|FILE OUTFILE\n"
 msgstr ""
-"Użycie: %s [-t CZAS_OCZEKIWANIA] [--force] [-w SZEROKOŚĆ] -s ROZMIAR [--"
-"files] ADRES_URI|PLIK PLIK_WYJŚCIOWY [...]\n"
+"Użycie: %s [-c PLIK_CSS] [-d OPÓŹNIENIE] [-t CZAS_OCZEKIWANIA] [--force] [-w "
+"SZEROKOŚĆ] [-s ROZMIAR_MINIATURY] [--file] ADRES_URI|PLIK PLIK_WYJŚCIOWY\n"
 
-#: ../src/gnome-web-photo.c:804
-#, fuzzy, c-format
-#| msgid ""
-#| "Usage: %s [-t TIMEOUT] [--force] [-w WIDTH] [--print-background] [--"
-#| "files] URI|FILE OUTFILE [...]\n"
+# pd
+#: ../src/gnome-web-photo.c:836
+#, c-format
 msgid ""
-"Usage: %s [-c CSSFILE] [-t TIMEOUT] [--force] [-w WIDTH] [--print-"
+"Usage: %s [-c CSSFILE] [-d DELAY] [-t TIMEOUT] [--force] [-w WIDTH] [--print-"
 "background] [--file] URI|FILE OUTFILE|--printer=PRINTER\n"
 msgstr ""
-"Użycie: %s [-t CZAS_OCZEKIWANIA] [--force] [-w SZEROKOŚĆ] [--print-"
-"background] [--files] ADRES_URI|PLIK PLIK_WYJŚCIOWY [...]\n"
+"Użycie: %s [-c PLIK_CSS] [-d OPÓŹNIENIE] [-t CZAS_OCZEKIWANIA] [--force] [-w SZEROKOŚĆ] [--print-background] [--file] ADRES_URI|PLIK PLIK_WYJŚCIOWY|--printer=DRUKARKA\n"
 
-#: ../src/gnome-web-photo.c:806
-#, fuzzy, c-format
-#| msgid ""
-#| "Usage: %s [-t TIMEOUT] [--force] [-w WIDTH] [--print-background] [--"
-#| "files] URI|FILE OUTFILE [...]\n"
+# pd
+#: ../src/gnome-web-photo.c:838
+#, c-format
 msgid ""
-"Usage: %s [-c CSSFILE] [-t TIMEOUT] [--force] [-w WIDTH] [--print-"
+"Usage: %s [-c CSSFILE] [-d DELAY] [-t TIMEOUT] [--force] [-w WIDTH] [--print-"
 "background] [--file] URI|FILE OUTFILE\n"
 msgstr ""
-"Użycie: %s [-t CZAS_OCZEKIWANIA] [--force] [-w SZEROKOŚĆ] [--print-"
-"background] [--files] ADRES_URI|PLIK PLIK_WYJŚCIOWY [...]\n"
+"Użycie: %s [-c PLIK_CSS] [-d OPÓŹNIENIE] [-t CZAS_OCZEKIWANIA] [--force] [-w "
+"SZEROKOŚĆ] [--print-background] [--file] ADRES_URI|PLIK PLIK_WYJŚCIOWY\n"
 
+# pd
 #. Translators: the leading spaces are a way to add tabulation in some text
 #. * printed on the terminal; %s is the name of a printer.
-#: ../src/gnome-web-photo.c:846
+#: ../src/gnome-web-photo.c:878
 #, c-format
 msgid "  %s\n"
-msgstr ""
+msgstr "  %s\n"
 
+# pd
 #. Translators: the leading spaces are a way to add tabulation in some text
 #. * printed on the terminal; %s is the name of a printer; "active" applies
 #. * to the printer.
-#: ../src/gnome-web-photo.c:851
+#: ../src/gnome-web-photo.c:883
 #, c-format
 msgid "  %s (not active)\n"
-msgstr ""
+msgstr "  %s (nieaktywna)\n"
 
-#: ../src/gnome-web-photo.c:881
+#: ../src/gnome-web-photo.c:913
 msgid "Operation mode [photo|thumbnail|print]"
 msgstr "Tryb działania [photo|thumbnail|print]"
 
-#: ../src/gnome-web-photo.c:883
-#, fuzzy
-#| msgid "The desired width of the image (default: 1024)"
+# pd
+#: ../src/gnome-web-photo.c:915
 msgid "User style sheet to use for the page (default: "
-msgstr "Docelowa szerokość obrazu (domyślnie: 1024)"
+msgstr "Arkusz stylów użytkownika do użycia dla strony (domyślnie: "
 
+# pd
 #. Translators: CSSFILE will appear in the help, as in: --user-css=CSSFILE
-#: ../src/gnome-web-photo.c:885
+#: ../src/gnome-web-photo.c:917
 msgid "CSSFILE"
+msgstr "PLIK_CSS"
+
+# pd
+#: ../src/gnome-web-photo.c:919
+msgid ""
+"Delay in seconds to wait after page is loaded, or 0 to disable delay "
+"(default: 0)"
 msgstr ""
+"Opóźnienie przed wczytaniem strony w sekundach, lub 0, aby je wyłączyć "
+"(domyślnie: 0)"
 
-#: ../src/gnome-web-photo.c:887
-#, fuzzy
-#| msgid "The timeout in seconds, or 0 to disable timeout (default: 60)"
-msgid "Timeout in seconds, or 0 to disable timeout (default: 60)"
-msgstr "Czas oczekiwania w sekundach, lub 0, aby go wyłączyć (domyślnie: 60)"
+# pd
+#. Translators: T will appear in the help, as in: --delay=D
+#: ../src/gnome-web-photo.c:921
+msgid "D"
+msgstr "O"
 
+# pd
+#: ../src/gnome-web-photo.c:923
+msgid ""
+"Timeout in seconds to wait to load the page, or 0 to disable timeout "
+"(default: 60)"
+msgstr ""
+"Czas oczekiwania na wczytanie strony w sekundach, lub 0, aby go wyłączyć "
+"(domyślnie: 60)"
+
+# pd
 #. Translators: T will appear in the help, as in: --timeout=T
-#: ../src/gnome-web-photo.c:889
+#: ../src/gnome-web-photo.c:925
 msgid "T"
-msgstr ""
+msgstr "C"
 
-#: ../src/gnome-web-photo.c:891
-#, fuzzy
-#| msgid ""
-#| "Force output when timeout expires, even if the page isn't loaded fully"
+# pd
+#: ../src/gnome-web-photo.c:927
 msgid "Force output when timeout expires, even if the page is not fully loaded"
 msgstr ""
-"Wymuszenie wyjścia, kiedy zostanie przekroczony czas oczekiwania, nawet "
-"jeśli strona nie jest całkiem wczytana"
+"Wymusza wyjście, kiedy zostanie przekroczony czas oczekiwania, nawet jeśli "
+"strona nie jest całkiem wczytana"
 
-#: ../src/gnome-web-photo.c:893
-#, fuzzy
-#| msgid "The desired width of the image (default: 1024)"
+# pd
+#: ../src/gnome-web-photo.c:929
 msgid "Desired width of the web page (default: 1024)"
-msgstr "Docelowa szerokość obrazu (domyślnie: 1024)"
+msgstr "Docelowa szerokość strony WWW (domyślnie: 1024)"
 
+# pd
 #. Translators: W will appear in the help, as in: --width=W
-#: ../src/gnome-web-photo.c:895
+#: ../src/gnome-web-photo.c:931
 msgid "W"
-msgstr ""
+msgstr "S"
 
-#: ../src/gnome-web-photo.c:897
-#, fuzzy
-#| msgid "The thumbnail size (default: 256)"
+# pd
+#: ../src/gnome-web-photo.c:933
 msgid "Thumbnail size (default: 256)"
 msgstr "Rozmiar miniatury (domyślnie: 256)"
 
+# pd
 #. Translators: S will appear in the help, as in: --thumbnail-size=S
-#: ../src/gnome-web-photo.c:899
+#: ../src/gnome-web-photo.c:935
 msgid "S"
-msgstr ""
+msgstr "R"
 
-#: ../src/gnome-web-photo.c:902
+# pd
+#: ../src/gnome-web-photo.c:938
 msgid "Print page on PRINTER (default: none, save as PDF)"
 msgstr ""
+"Drukuje stronę za pomocą DRUKARKI (domyślnie: brak, zapisuje jako plik PDF)"
 
+# pd
 #. Translators: PRINTER will appear in the help, as in: --printer=PRINTER
-#: ../src/gnome-web-photo.c:904
+#: ../src/gnome-web-photo.c:940
 msgid "PRINTER"
-msgstr ""
+msgstr "DRUKARKA"
 
-#: ../src/gnome-web-photo.c:907
+#: ../src/gnome-web-photo.c:943
 msgid "Print background images and colours (default: false)"
 msgstr "Wyświetlanie obrazów i kolorów tła (domyślnie: fałsz)"
 
-#: ../src/gnome-web-photo.c:909
-msgid "Argument is a file and not a URI"
+# pd
+#: ../src/gnome-web-photo.c:945
+msgid ""
+"Disable embedded plugins in the rendering engine (default: enable plugins)"
 msgstr ""
+"Wyłącza osadzone wtyczki w mechanizmie renderowania (domyślnie: włącza wtyczki)"
 
+# pd
+#: ../src/gnome-web-photo.c:947
+msgid "Argument is a file and not a URI"
+msgstr "Parametr jest plikiem, a nie adresem URI"
+
+# pd
 #. Translators: %s is a filename or a URI
-#: ../src/gnome-web-photo.c:974
+#: ../src/gnome-web-photo.c:1012
 #, c-format
 msgid "Specified user stylesheet ('%s') does not exist!\n"
-msgstr ""
+msgstr "Podany arkusz stylów użytkownika (\"%s\") nie istnieje.\n"
 
-#: ../src/gnome-web-photo.c:995
+# pd
+#: ../src/gnome-web-photo.c:1033
+#, c-format
+msgid "--delay cannot be negative!\n"
+msgstr "Wartość opcji --delay nie może być ujemna.\n"
+
+# pd
+#: ../src/gnome-web-photo.c:1040
 #, c-format
 msgid "--timeout cannot be negative!\n"
-msgstr ""
+msgstr "Wartość opcji --timeout nie może być ujemna.\n"
 
-#: ../src/gnome-web-photo.c:1010
-#, c-format
-msgid "--size can only be 32, 64, 96, 128 or 256!\n"
-msgstr ""
-
-#: ../src/gnome-web-photo.c:1014
-#, c-format
-msgid "--size is only available in thumbnail mode!\n"
-msgstr ""
-
-#: ../src/gnome-web-photo.c:1023
-#, c-format
-msgid "--width out of bounds; must be between %d and %d!\n"
-msgstr ""
-
-#: ../src/gnome-web-photo.c:1028
-#, c-format
-msgid "--width must be a multiple of 32 in thumbnail mode!\n"
-msgstr ""
-
-#: ../src/gnome-web-photo.c:1036
-#, c-format
-msgid "--print-background is only available in print mode!\n"
-msgstr ""
-
-#: ../src/gnome-web-photo.c:1044
-#, c-format
-msgid "--printer is only available in print mode!\n"
-msgstr ""
-
-#. Translators: %s is the name of a printer
-#: ../src/gnome-web-photo.c:1053
-#, c-format
-msgid "'%s' is not a valid printer!\n"
-msgstr ""
-
+# pd
 #: ../src/gnome-web-photo.c:1055
 #, c-format
-msgid "List of printers:\n"
-msgstr ""
+msgid "--size can only be 32, 64, 96, 128 or 256!\n"
+msgstr "Wartość opcji --size może wynosić tylko 32, 64, 96, 128 lub 256.\n"
 
+# pd
+#: ../src/gnome-web-photo.c:1059
+#, c-format
+msgid "--size is only available in thumbnail mode!\n"
+msgstr "Opcja --size jest dostępna tylko w trybie miniatur.\n"
+
+# pd
+#: ../src/gnome-web-photo.c:1068
+#, c-format
+msgid "--width out of bounds; must be between %d and %d!\n"
+msgstr "Wartość opcji --width jest poza zakresem. Musi być między %d a %d.\n"
+
+# pd
+#: ../src/gnome-web-photo.c:1073
+#, c-format
+msgid "--width must be a multiple of 32 in thumbnail mode!\n"
+msgstr "Wartość opcji --size musi być wielokrotnością 32 w trybie miniatur.\n"
+
+# pd
+#: ../src/gnome-web-photo.c:1081
+#, c-format
+msgid "--print-background is only available in print mode!\n"
+msgstr "Opcja --print-background jest dostępna tylko w trybie wydruku.\n"
+
+# pd
 #: ../src/gnome-web-photo.c:1089
 #, c-format
-msgid "Missing arguments!\n"
-msgstr ""
+msgid "--printer is only available in print mode!\n"
+msgstr "Opcja --printer jest dostępna tylko w trybie wydruku.\n"
 
-#: ../src/gnome-web-photo.c:1095
+# pd
+#. Translators: %s is the name of a printer
+#: ../src/gnome-web-photo.c:1098
+#, c-format
+msgid "'%s' is not a valid printer!\n"
+msgstr "\"%s\" nie jest prawidłową drukarką.\n"
+
+# pd
+#: ../src/gnome-web-photo.c:1100
+#, c-format
+msgid "List of printers:\n"
+msgstr "Lista drukarek:\n"
+
+# pd
+#: ../src/gnome-web-photo.c:1134
+#, c-format
+msgid "Missing arguments!\n"
+msgstr "Brak parametrów.\n"
+
+# pd
+#: ../src/gnome-web-photo.c:1140
 #, c-format
 msgid "Too many arguments!\n"
-msgstr ""
+msgstr "Za dużo parametrów.\n"
 
+# pd
 #: ../src/photo-offscreen-window.c:164
 msgid "Maximum width"
-msgstr ""
+msgstr "Maksymalna szerokość"
 
+# pd
 #: ../src/photo-offscreen-window.c:165
 msgid "Maximum width of the offscreen window"
-msgstr ""
+msgstr "Maksymalna szerokość okna poza ekranem"
 
+# pd
 #: ../src/photo-offscreen-window.c:182
 msgid "Maximum height"
-msgstr ""
+msgstr "Maksymalna wysokość"
 
+# pd
 #: ../src/photo-offscreen-window.c:183
 msgid "Maximum height of the offscreen window"
-msgstr ""
+msgstr "Maksymalna wysokość okna poza ekranem"
