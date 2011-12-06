@@ -35,15 +35,16 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: gimp\n"
-"Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2011-12-04 21:56+0100\n"
+"Report-Msgid-Bugs-To: http://bugzilla.gnome.org/enter_bug.cgi?"
+"product=gimp&keywords=I18N+L10N&component=general\n"
+"POT-Creation-Date: 2011-12-05 14:02+0000\n"
 "PO-Revision-Date: 2011-01-17 16:34+0100\n"
 "Last-Translator: Tomasz Dominikowski <dominikowski@gmail.com>\n"
 "Language-Team: Polish <gnomepl@aviary.pl>\n"
-"Language: pl\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
+"Language: pl\n"
 "Plural-Forms: nplurals=3; plural=(n==1 ? 0 : n%10>=2 && n%10<=4 && (n%100<10 "
 "|| n%100>=20) ? 1 : 2);\n"
 "X-Poedit-Language: Polish\n"
@@ -2321,9 +2322,6 @@ msgctxt "file-action"
 msgid "Create a new template from this image"
 msgstr "Tworzy nowy szablon z bieżącego obrazu"
 
-# FIXME
-# 1. app/gui/file-commands.c: "Przywróć"
-# 2. app/widgets/gimpdataeditor.c: "Przywraca"
 #: ../app/actions/file-actions.c:100
 msgctxt "file-action"
 msgid "Re_vert"
@@ -2780,8 +2778,6 @@ msgstr "Zr_eplikuj zaznaczenie..."
 msgid "Split Segments at _Midpoints"
 msgstr "_Podziel segmenty w punktach pośrednich"
 
-# - raz - "Podziel segmenty równomiernie"
-# - dwa - "Równomierny podział segmentów"
 #: ../app/actions/gradient-editor-actions.c:809
 msgid "Split Segments _Uniformly..."
 msgstr "Podziel _segmenty równomiernie..."
@@ -2854,8 +2850,6 @@ msgstr ""
 msgid "Split Segment Uniformly"
 msgstr "Podziel segment równomiernie"
 
-# - raz - "Podziel segment równomiernie"
-# - dwa - "Równomierny podział segmentu"
 #: ../app/actions/gradient-editor-commands.c:554
 msgid "Split Gradient Segment Uniformly"
 msgstr "Równomierny podział segmentu gradientu"
@@ -2864,11 +2858,9 @@ msgstr "Równomierny podział segmentu gradientu"
 msgid "Split Segments Uniformly"
 msgstr "Podziel segmenty równomiernie"
 
-# - raz - "Podziel segmenty równomiernie"
-# - dwa - "Równomierny podział segmentów"
 #: ../app/actions/gradient-editor-commands.c:559
 msgid "Split Gradient Segments Uniformly"
-msgstr "Równomierny podział segmentów"
+msgstr "Równomierny podział segmentów gradientu"
 
 #: ../app/actions/gradient-editor-commands.c:572
 msgid "Split"
@@ -3830,9 +3822,6 @@ msgstr "Do _nowej warstwy"
 msgid "Layer Attributes"
 msgstr "Atrybuty warstwy"
 
-# KOLIZJA
-# app/gui/layers-commands.c - "Modyfikacja atrybutów warstwy"
-# app/widgets/gimplayertreeview.c - "Modyfikuje atrybuty warstwy"
 #: ../app/actions/layers-commands.c:206
 msgid "Edit Layer Attributes"
 msgstr "Modyfikacja atrybutów warstwy"
@@ -5246,9 +5235,6 @@ msgctxt "view-action"
 msgid "Adjust the zoom ratio so that the entire window is used"
 msgstr "Dopasowuje powiększenie do okna"
 
-# FIXME
-# 1. app/gui/file-commands.c: "Przywróć"
-# 2. app/widgets/gimpdataeditor.c: "Przywraca"
 #: ../app/actions/view-actions.c:100
 msgctxt "view-action"
 msgid "Re_vert Zoom"
@@ -5449,6 +5435,17 @@ msgctxt "view-action"
 msgid "Toggle fullscreen view"
 msgstr "Przełącza na pełny ekran"
 
+#: ../app/actions/view-actions.c:238
+#, fuzzy
+msgctxt "view-action"
+msgid "Use GEGL"
+msgstr "Użyj GEGL-a"
+
+#: ../app/actions/view-actions.c:239
+msgctxt "view-action"
+msgid "Use GEGL to create this window's projection"
+msgstr ""
+
 #: ../app/actions/view-actions.c:263
 msgctxt "view-zoom-action"
 msgid "Zoom _Out"
@@ -5584,7 +5581,6 @@ msgctxt "view-padding-color"
 msgid "From _Theme"
 msgstr "Z _motywu"
 
-# cyba: forma skrócona
 #: ../app/actions/view-actions.c:364
 msgctxt "view-padding-color"
 msgid "Use the current theme's background color"
@@ -5635,9 +5631,6 @@ msgstr "Ustawia kolor wyściółki na taki jaki był ustawiony w preferencjach"
 msgid "Re_vert Zoom (%d%%)"
 msgstr "_Ponów powiększenie (%d%%)"
 
-# FIXME
-# 1. app/gui/file-commands.c: "Przywróć"
-# 2. app/widgets/gimpdataeditor.c: "Przywraca"
 #: ../app/actions/view-actions.c:596
 msgid "Re_vert Zoom"
 msgstr "Przyw_róć powiększenie"
@@ -7088,9 +7081,6 @@ msgctxt "undo-type"
 msgid "Anchor floating selection"
 msgstr "Zakotwiczenie oderwanego zaznaczenia"
 
-# FIXME
-# 1. app/core/core-enums.c:1 app/core/gimpedit.c:1: "Wklejenie"
-# 2. app/widgets/gimpbufferview.c: "Wklej"
 #: ../app/core/core-enums.c:862 ../app/core/gimp-edit.c:261
 msgctxt "undo-type"
 msgid "Paste"
@@ -7342,9 +7332,6 @@ msgctxt "dynamics-output-type"
 msgid "Opacity"
 msgstr "Krycie"
 
-# kolizja!
-# app/gui/resize-dialog.c: "Wymiary"
-# app/tools/gimppaintoptions-gui.c: "Rozmiar"
 #: ../app/core/core-enums.c:1291
 msgctxt "dynamics-output-type"
 msgid "Size"
@@ -8565,33 +8552,21 @@ msgctxt "undo-type"
 msgid "Reorder Layer"
 msgstr "Zmiana pozycji warstwy"
 
-# KOLIZJA
-# app/core/gimpimage.c - Podniesienie warstwy
-# app/widgets/gimplayertreeview.c - Podnosi warstwę
 #: ../app/core/gimplayer.c:277
 msgctxt "undo-type"
 msgid "Raise Layer"
 msgstr "Podniesienie warstwy"
 
-# KOLIZJA
-# app/core/gimpimage.c - Podniesienie warstwy na wierzchołek
-# app/widgets/gimplayertreeview.c - Podnosi warstwę na wierzchołek
 #: ../app/core/gimplayer.c:278
 msgctxt "undo-type"
 msgid "Raise Layer to Top"
 msgstr "Podniesienie warstwy na wierzch"
 
-# KOLIZJA
-# app/core/gimpimage.c - Obniżenie warstwy
-# app/widgets/gimplayertreeview.c - Obniża warstwę
 #: ../app/core/gimplayer.c:279
 msgctxt "undo-type"
 msgid "Lower Layer"
 msgstr "Obniżenie warstwy"
 
-# KOLIZJA
-# app/core/gimpimage.c - Obniżenie warstwy na dno
-# app/widgets/gimplayertreeview.c - Obniża warstwę na dno
 #: ../app/core/gimplayer.c:280
 msgctxt "undo-type"
 msgid "Lower Layer to Bottom"
@@ -9097,10 +9072,6 @@ msgstr "Zaznaczenie"
 msgid "Selection Editor"
 msgstr "Edytor zaznaczenia"
 
-# KOLIZJA
-# app/gui/dialogs-constructors.c - "Cofnięcia"
-# app/pdb/internal_procs.c -  "Cofanie"
-# app/widgets/gimpundoeditor.c - "Cofa operację"
 #: ../app/dialogs/dialogs.c:366
 msgid "Undo"
 msgstr "Cofnięcie"
@@ -11407,8 +11378,8 @@ msgstr "Obiekt wektorowy %d nie zawiera krzywej o ID %d"
 #: ../app/pdb/gimppdb.c:409
 #, c-format
 msgid ""
-"Procedure '%s' has been called with a wrong type for argument #%d. Expected "
-"%s, got %s."
+"Procedure '%s' has been called with a wrong type for argument #%d. Expected %"
+"s, got %s."
 msgstr ""
 "Procedura \"%s\" została wywołana z błędnym typem argumentu #%d. Spodziewany "
 "%s, otrzymany %s."
@@ -11436,8 +11407,8 @@ msgstr ""
 #: ../app/pdb/gimpprocedure.c:651
 #, c-format
 msgid ""
-"Procedure '%s' has been called with a wrong value type for argument '%s' (#"
-"%d). Expected %s, got %s."
+"Procedure '%s' has been called with a wrong value type for argument '%s' (#%"
+"d). Expected %s, got %s."
 msgstr ""
 "Procedura \"%s\" została wywołana z błędnym argumentem \"%s\" (#%d). "
 "Spodziewany %s, otrzymany %s."
@@ -11490,8 +11461,8 @@ msgstr ""
 #: ../app/pdb/gimpprocedure.c:756
 #, c-format
 msgid ""
-"Procedure '%s' has been called with value '%s' for argument '%s' (#%d, type "
-"%s). This value is out of range."
+"Procedure '%s' has been called with value '%s' for argument '%s' (#%d, type %"
+"s). This value is out of range."
 msgstr ""
 "Procedura \"%s\" została wywołana z wartością \"%s\", jako argument \"%s\" (#"
 "%d, typ %s). Ta wartość jest poza zakresem."
@@ -11517,9 +11488,6 @@ msgstr "Przesunięcie warstwy"
 msgid "Failed to create text layer"
 msgstr "Nie powiodło sie utworzenie warstwy tekstowej"
 
-# KOLIZJA
-# app/gui/layers-commands.c - "Modyfikacja atrybutów warstwy"
-# app/widgets/gimplayertreeview.c - "Modyfikuje atrybuty warstwy"
 #: ../app/pdb/text-layer-cmds.c:164 ../app/pdb/text-layer-cmds.c:274
 #: ../app/pdb/text-layer-cmds.c:353 ../app/pdb/text-layer-cmds.c:426
 #: ../app/pdb/text-layer-cmds.c:498 ../app/pdb/text-layer-cmds.c:570
@@ -13028,9 +12996,6 @@ msgstr "_Podgląd"
 msgid "Adjustment"
 msgstr "Dopasowanie"
 
-# kolizja!
-# app/gui/resize-dialog.c: "Wymiary"
-# app/tools/gimppaintoptions-gui.c: "Rozmiar"
 #: ../app/tools/gimpinkoptions-gui.c:64 ../app/tools/gimpinkoptions-gui.c:87
 #: ../app/tools/gimppaintoptions-gui.c:134
 #, fuzzy
@@ -14274,9 +14239,6 @@ msgctxt "rectangle-tool-fixed-rule"
 msgid "Height"
 msgstr "Wysokość"
 
-# kolizja!
-# app/gui/resize-dialog.c: "Wymiary"
-# app/tools/gimppaintoptions-gui.c: "Rozmiar"
 #: ../app/tools/tools-enums.c:153
 msgctxt "rectangle-tool-fixed-rule"
 msgid "Size"
@@ -14978,19 +14940,13 @@ msgstr "Kółko myszy"
 msgid "Mouse Wheel Events"
 msgstr "Zdarzenia kółka myszy"
 
-# FIXME
-# 1. app/widgets/gimpdataeditor.c: "Zapisuje"
-# 2. app/tools/gimpcurvestool.c, app/tools/gimplevelstool.c: "Zapisz"
 #: ../app/widgets/gimpdataeditor.c:215
 msgid "Save"
-msgstr "Zapisz"
+msgstr "Zapisuje"
 
-# FIXME
-# 1. app/gui/file-commands.c: "Przywróć"
-# 2. app/widgets/gimpdataeditor.c: "Przywraca"
 #: ../app/widgets/gimpdataeditor.c:223
 msgid "Revert"
-msgstr "Przywróć"
+msgstr "Przywraca"
 
 #: ../app/widgets/gimpdataeditor.c:435
 #, c-format
