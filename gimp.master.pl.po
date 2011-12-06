@@ -1,37 +1,28 @@
-# translation of gimp.master.pl.po to Polish
-# Copyright (C) 2001-2011 Free Software Foundation, Inc.
 # -=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-
 # Aviary.pl
 # Jeśli masz jakiekolwiek uwagi odnoszące się do tłumaczenia lub chcesz
 # pomóc w jego rozwijaniu i pielęgnowaniu, napisz do nas:
 # gnomepl@aviary.pl
 # -=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-
+# Paweł Dziekoński, 1999-2000.
+# Bartosz Kosiorek <gang65@poczta.onet.pl>, 2005-2011.
+# Piotr Zaryk <pzaryk@aviary.pl>, 2008.
+# Robert Gomulka <carramba@epf.pl>, 2008.
+# Aviary.pl <gnomepl@aviary.pl>, 2011.
+#
 # Terminy:
-#  drawable    - obszar rysowania (warstwa, kanał, itp.)
+#  drawable    - obszar rysowania (warstwa, kanał itp.)
 #  segment
 #              - segment (gradient)
 #              - odcinek (ścieżka)
 #  component   - składowa (koloru, ścieżki)
-#  UTF-8       - system kodowania Unikodu.
-#  zoom in     - powiekszenie
+#  zoom in     - powiększenie
 #  zoom out    - zmniejszenie (nie pomniejszenie)
-#  colormap    - Paleta kolorów
-#  Brushes, Patterns, Gradients -  Pędzle, desenie, gradienty
+#  colormap    - paleta kolorów
+#  brushes, patterns, gradients - pędzle, desenie, gradienty
 #
-# Bartosz Kosiorek <gang65@poczta.onet.pl>, 2005-2011.
-# Piotr Zaryk (Aviary.pl) <pzaryk@aviary.pl>, 2008.
-# Robert Gomulka <carramba@epf.pl>, 2008.
-# Paweł Dziekoński, 1999-2000.
 # TODO:
 # - rozmiar vs wymiary - sprawdzić wszystkie "rozmiary"
-# - nazwa "convolve", aktualnie "rozmywanie lub wyostrzanie"
-# - shrink/grow - zmniejsz/zwiększ -> zacieśnij/rozszerz
-# - może (niekoniecznie) selection outline - obwódka -> kontur
-# - Shear - Ścięcie? (jest już chyba gdzieś nowsze inaczej)
-# - "midpoint" w gradiencie = punkt pośredni - sprawdzić, czy tak już jest wszędzie
-# - named buffers = ??? nazwane bufory ???
-# - Toolbox - przybornik
-# - s/narzędzia/przybory/ ???
 msgid ""
 msgstr ""
 "Project-Id-Version: gimp\n"
@@ -39,7 +30,7 @@ msgstr ""
 "product=gimp&keywords=I18N+L10N&component=general\n"
 "POT-Creation-Date: 2011-12-05 14:02+0000\n"
 "PO-Revision-Date: 2011-01-17 16:34+0100\n"
-"Last-Translator: Tomasz Dominikowski <dominikowski@gmail.com>\n"
+"Last-Translator: Piotr Drąg <piotrdrag@gmail.com>\n"
 "Language-Team: Polish <gnomepl@aviary.pl>\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -66,7 +57,7 @@ msgid ""
 "Spencer Kimball, Peter Mattis and the GIMP Development Team"
 msgstr ""
 "Copyright © 1995-%s\n"
-"Spencer Kimball, Peter Mattis oraz Zespół programistów GIMP"
+"Spencer Kimball, Peter Mattis oraz Zespół programistów programu GIMP"
 
 #: ../app/about.h:34
 msgid ""
@@ -2980,7 +2971,7 @@ msgstr "Pomoc _kontekstowa"
 #: ../app/actions/help-actions.c:47
 msgctxt "help-action"
 msgid "Show the help for a specific user interface item"
-msgstr "Wyświetla pomoc wybranego obiektu intefejsu użytkownika"
+msgstr "Wyświetla pomoc wybranego obiektu interfejsu użytkownika"
 
 #: ../app/actions/image-actions.c:48 ../app/actions/image-actions.c:52
 msgctxt "image-action"
@@ -5303,7 +5294,7 @@ msgstr "Wyświetl _zaznaczenia"
 #: ../app/actions/view-actions.c:141
 msgctxt "view-action"
 msgid "Display the selection outline"
-msgstr "Wyświetla kontur zaznaczenia"
+msgstr "Wyświetla krawędź zaznaczenia"
 
 #: ../app/actions/view-actions.c:147
 msgctxt "view-action"
@@ -5604,7 +5595,7 @@ msgstr "Kolor _ciemnego pola"
 #: ../app/actions/view-actions.c:376
 msgctxt "view-padding-color"
 msgid "Use the dark check color"
-msgstr "Używa kolor ciemnego pola"
+msgstr "Używa koloru ciemnego pola"
 
 #: ../app/actions/view-actions.c:381
 msgctxt "view-padding-color"
@@ -6538,15 +6529,15 @@ msgstr ""
 #: ../app/config/gimprc-blurbs.h:423
 msgid "Show the current foreground and background colors in the toolbox."
 msgstr ""
-"Wyświetla aktywny kolor pierwszoplanowy oraz tła z kolorem tła w narzędziówce"
+"Wyświetla aktywny kolor pierwszoplanowy oraz tła z kolorem tła w przyborniku."
 
 #: ../app/config/gimprc-blurbs.h:426
 msgid "Show the currently selected brush, pattern and gradient in the toolbox."
-msgstr "Wyświetla aktywny pędzel, deseń i gradient w narzędziówce"
+msgstr "Wyświetla aktywny pędzel, deseń i gradient w przyborniku."
 
 #: ../app/config/gimprc-blurbs.h:429
 msgid "Show the currently active image in the toolbox."
-msgstr "Wyświetla aktywny obraz w narzędziówce"
+msgstr "Wyświetla aktywny obraz w przyborniku."
 
 #: ../app/config/gimprc-blurbs.h:435
 msgid "Sets the manner in which transparency is displayed in images."
@@ -8956,8 +8947,11 @@ msgstr "Odwiedź stronę programu GIMP"
 #: ../app/dialogs/about-dialog.c:128
 msgid "translator-credits"
 msgstr ""
-"Aviary.pl <gnomepl@aviary.pl>\n"
-"Bartosz Kosiorek <gang65@poczta.onet.pl>, 2008."
+"Paweł Dziekoński, 1999-2000\n"
+"Bartosz Kosiorek <gang65@poczta.onet.pl>, 2005-2011\n"
+"Piotr Zaryk <pzaryk@aviary.pl>, 2008\n"
+"Robert Gomulka <carramba@epf.pl>, 2008\n"
+"Aviary.pl <gnomepl@aviary.pl>, 2011"
 
 #: ../app/dialogs/about-dialog.c:518
 msgid "GIMP is brought to you by"
@@ -9741,7 +9735,7 @@ msgstr "_Konfiguruj skróty klawiszowe..."
 
 #: ../app/dialogs/preferences-dialog.c:1635
 msgid "_Save keyboard shortcuts on exit"
-msgstr "Zap_isz skróty klawiszowe przed zakończeniem"
+msgstr "Zap_isywanie skrótów klawiszowych przed zakończeniem"
 
 #: ../app/dialogs/preferences-dialog.c:1639
 msgid "Save Keyboard Shortcuts _Now"
@@ -16115,4 +16109,4 @@ msgstr "Tworzenie oraz obróbka obrazów i fotografii"
 
 #: ../desktop/gimp.desktop.in.in.h:3
 msgid "Image Editor"
-msgstr "Edytor obrazu"
+msgstr "Edytor obrazów"
