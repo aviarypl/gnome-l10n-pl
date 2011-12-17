@@ -3874,7 +3874,6 @@ msgstr "_Utwórz wielostronicowy plik PDF..."
 msgid "You must select a file to save!"
 msgstr "Należy wybrać plik do zapisu."
 
-# fixme
 #: ../plug-ins/common/file-pdf-save.c:405
 #, c-format
 msgid ""
@@ -3883,26 +3882,30 @@ msgid ""
 "Make sure you entered a valid filename and that the selected location isn't "
 "read only!"
 msgstr ""
+"Wystąpił błąd podczas tworzenia pliku PDF:\n"
+"%s\n"
+"Proszę się upewnić, że podano prawidłową nazwę pliku i zaznaczone położenie "
+"nie jest tylko do odczytu."
 
 #: ../plug-ins/common/file-pdf-save.c:715
 #: ../plug-ins/common/file-pdf-save.c:832
 msgid "Omit hidden layers and layers with zero opacity"
-msgstr ""
+msgstr "Pominięcie ukrytych warstw i warstw o zerowym kryciu"
 
 #: ../plug-ins/common/file-pdf-save.c:719
 #: ../plug-ins/common/file-pdf-save.c:836
 msgid "Convert bitmaps to vector graphics where possible"
-msgstr ""
+msgstr "Konwersja bitmap do grafik wektorowych, jeśli to możliwe"
 
 #: ../plug-ins/common/file-pdf-save.c:723
 #: ../plug-ins/common/file-pdf-save.c:840
 msgid "Apply layer masks before saving"
-msgstr ""
+msgstr "Zastosowanie masek warstw przed zapisaniem"
 
 #: ../plug-ins/common/file-pdf-save.c:726
 #: ../plug-ins/common/file-pdf-save.c:843
 msgid "Keeping the masks will not change the output"
-msgstr ""
+msgstr "Utrzymanie masek nie zmieni pliku wyjściowego"
 
 #: ../plug-ins/common/file-pdf-save.c:779
 msgid "Save to:"
@@ -3914,26 +3917,23 @@ msgstr "Przeglądaj..."
 
 #: ../plug-ins/common/file-pdf-save.c:784
 msgid "Multipage PDF export"
-msgstr ""
+msgstr "Eksport wielostronicowych plików PDF"
 
 #: ../plug-ins/common/file-pdf-save.c:817
-#, fuzzy
 msgid "Remove the selected pages"
-msgstr "Usuwa zaznaczone ustawienia"
+msgstr "Usunięcie zaznaczonych stron"
 
 #: ../plug-ins/common/file-pdf-save.c:827
-#, fuzzy
 msgid "Add this image"
-msgstr "Obraz X PixMap"
+msgstr "Dodanie tego obrazu"
 
 #: ../plug-ins/common/file-pdf-save.c:940
 msgid "Error! In order to save the file, at least one image should be added!"
-msgstr ""
+msgstr "Błąd. Aby zapisać plik, należy dodać co najmniej jeden obraz."
 
 #: ../plug-ins/common/file-pix.c:142 ../plug-ins/common/file-pix.c:159
-#, fuzzy
 msgid "Alias Pix image"
-msgstr "Obraz X PixMap"
+msgstr "Obraz Alias Pix"
 
 #: ../plug-ins/common/file-png.c:275 ../plug-ins/common/file-png.c:296
 #: ../plug-ins/common/file-png.c:316 ../plug-ins/common/file-png.c:333
@@ -3941,52 +3941,52 @@ msgid "PNG image"
 msgstr "Obraz PNG"
 
 #: ../plug-ins/common/file-png.c:640
-#, fuzzy, c-format
+#, c-format
 msgid "Error loading PNG file: %s"
-msgstr "Błąd przy otwieraniu pliku \"%s\""
+msgstr "Błąd podczas wczytywania pliku PNG: %s"
 
 #: ../plug-ins/common/file-png.c:728
 #, c-format
 msgid "Error creating PNG read struct while saving '%s'."
-msgstr ""
+msgstr "Błąd podczas tworzenia struktur odczytu PNG podczas zapisywania \"%s\"."
 
 #: ../plug-ins/common/file-png.c:738
 #, c-format
 msgid "Error while reading '%s'. File corrupted?"
-msgstr "Błąd przy odczytywaniu pliku \"%s\". Plik może być uszkodzony."
+msgstr "Błąd podczas odczytywania pliku \"%s\". Plik może być uszkodzony."
 
 #: ../plug-ins/common/file-png.c:867
 #, c-format
 msgid "Unknown color model in PNG file '%s'."
-msgstr "Nieznany model kolorów w pliku \"%s\" w formacie PNG."
+msgstr "Nieznany model kolorów w pliku PNG \"%s\"."
 
 #: ../plug-ins/common/file-png.c:878
-#, fuzzy, c-format
+#, c-format
 msgid "Could not create new image for '%s': %s"
-msgstr "Nie można utworzyć katalogu roboczego \"%s\": %s"
+msgstr "Nie można utworzyć nowego obrazu dla \"%s\": %s"
 
 #: ../plug-ins/common/file-png.c:927
 msgid ""
 "The PNG file specifies an offset that caused the layer to be positioned "
 "outside the image."
 msgstr ""
-"Plik PNG definiuje przesunięcie, które spowoduje umieszczenie zawartości "
+"Plik PNG określa przesunięcie, które powoduje umieszczenie zawartości "
 "warstwy poza obrazem."
 
 #: ../plug-ins/common/file-png.c:1262
 #, c-format
 msgid "Error creating PNG write struct while saving '%s'."
-msgstr ""
+msgstr "Błąd podczas tworzenia struktur zapisu PNG podczas zapisywania \"%s\"."
 
 #: ../plug-ins/common/file-png.c:1272
 #, c-format
 msgid "Error while saving '%s'. Could not save image."
-msgstr "Błąd przy zapisie pliku \"%s\". Nie można zapisać obrazu."
+msgstr "Błąd podczas zapisywania pliku \"%s\". Nie można zapisać obrazu."
 
 #: ../plug-ins/common/file-png.c:1895
-#, fuzzy, c-format
+#, c-format
 msgid "Error loading UI file '%s': %s"
-msgstr "Błąd przy otwieraniu pliku \"%s\""
+msgstr "Błąd podczas wczytywania pliku interfejsu użytkownika \"%s\": %s"
 
 #: ../plug-ins/common/file-png.c:1896
 msgid "Unknown error"
@@ -4015,46 +4015,40 @@ msgstr "Obraz PPM"
 #: ../plug-ins/common/file-pnm.c:528 ../plug-ins/common/file-pnm.c:550
 #: ../plug-ins/common/file-pnm.c:559 ../plug-ins/common/file-pnm.c:570
 #: ../plug-ins/common/file-pnm.c:656 ../plug-ins/common/file-pnm.c:738
-#, fuzzy
 msgid "Premature end of file."
-msgstr "PNM: Wystąpił koniec pliku."
+msgstr "Przedwczesny koniec pliku."
 
 #: ../plug-ins/common/file-pnm.c:530
-#, fuzzy
 msgid "Invalid file."
-msgstr "PNM: Niepoprawny plik."
+msgstr "Nieprawidłowy plik."
 
 #: ../plug-ins/common/file-pnm.c:544
 msgid "File not in a supported format."
-msgstr "Plik w nieobsługiwanym formacie."
+msgstr "Plik jest w nieobsługiwanym formacie."
 
 #: ../plug-ins/common/file-pnm.c:553
-#, fuzzy
 msgid "Invalid X resolution."
-msgstr "PNM: Niepoprawna rozdzielczość X."
+msgstr "Nieprawidłowa rozdzielczość X."
 
 #: ../plug-ins/common/file-pnm.c:555
 msgid "Image width is larger than GIMP can handle."
-msgstr ""
+msgstr "Szerokość obrazu jest większa niż program GIMP może obsłużyć."
 
 #: ../plug-ins/common/file-pnm.c:562
-#, fuzzy
 msgid "Invalid Y resolution."
-msgstr "PNM: Niepoprawna rozdzielczość Y."
+msgstr "Nieprawidłowa rozdzielczość Y."
 
 #: ../plug-ins/common/file-pnm.c:564
 msgid "Image height is larger than GIMP can handle."
-msgstr ""
+msgstr "Wysokość obrazu jest większa niż program GIMP może obsłużyć."
 
 #: ../plug-ins/common/file-pnm.c:574
-#, fuzzy
 msgid "Unsupported maximum value."
-msgstr "PNM: Niepoprawna wartość maksymalna."
+msgstr "Nieobsługiwana wartość maksymalna."
 
 #: ../plug-ins/common/file-pnm.c:814
-#, fuzzy
 msgid "Error reading file."
-msgstr "Błąd przy odczycie pliku"
+msgstr "Błąd podczas odczytywania pliku."
 
 #: ../plug-ins/common/file-pnm.c:1219
 msgid "PNM"
@@ -4079,16 +4073,16 @@ msgstr "Dokument PostScript"
 
 #: ../plug-ins/common/file-ps.c:620 ../plug-ins/common/file-ps.c:709
 msgid "Encapsulated PostScript image"
-msgstr "Obraz PostScript"
+msgstr "Zagnieżdżalny obraz PostScript"
 
 #: ../plug-ins/common/file-ps.c:640
 msgid "PDF document"
 msgstr "Dokument PDF"
 
 #: ../plug-ins/common/file-ps.c:1051
-#, fuzzy, c-format
+#, c-format
 msgid "Could not interpret Postscript file '%s'"
-msgstr "nie można zinterpretować \"%s\""
+msgstr "Nie można zinterpretować pliku PostScript \"%s\""
 
 #: ../plug-ins/common/file-ps.c:1193
 #, c-format
@@ -4103,6 +4097,10 @@ msgid ""
 "location.\n"
 "(%s)"
 msgstr ""
+"Błąd podczas uruchamiania Ghostscript. Proszę się upewnić, że pakiet "
+"Ghostscript jest zainstalowany i, jeśli to wymagane, użyć zmiennej "
+"środowiskowej GS_PROG do przekazania programowi GIMP o jego położeniu.\n"
+"(%s)"
 
 #: ../plug-ins/common/file-ps.c:1942 ../plug-ins/common/file-tiff-load.c:999
 #, c-format
@@ -4118,7 +4116,7 @@ msgstr "Wystąpił błąd zapisu"
 
 #: ../plug-ins/common/file-ps.c:3095
 msgid "Import from PostScript"
-msgstr "Import z PostScriptu"
+msgstr "Import z pliku PostScript"
 
 #. Rendering
 #: ../plug-ins/common/file-ps.c:3139
@@ -4137,7 +4135,7 @@ msgstr "Strony:"
 
 #: ../plug-ins/common/file-ps.c:3201
 msgid "Pages to load (e.g.: 1-4 or 1,3,5-7)"
-msgstr "Strony do odczytania (np.: 1-4 lub 1,3,5-7)"
+msgstr "Strony do wczytania (np.: 1-4 lub 1,3,5-7)"
 
 #: ../plug-ins/common/file-ps.c:3206 ../plug-ins/common/sphere-designer.c:2657
 msgid "Layers"
@@ -4173,7 +4171,7 @@ msgstr "Kolor"
 
 #: ../plug-ins/common/file-ps.c:3236 ../plug-ins/file-fits/fits.c:1032
 msgid "Automatic"
-msgstr "Auto"
+msgstr "Automatycznie"
 
 #: ../plug-ins/common/file-ps.c:3247
 msgid "Text antialiasing"
@@ -4207,14 +4205,14 @@ msgstr "Wymiary obrazu"
 
 #: ../plug-ins/common/file-ps.c:3403
 msgid "_Keep aspect ratio"
-msgstr "_Zachowaj współczynnik proporcji"
+msgstr "_Zachowanie współczynnika proporcji"
 
 #: ../plug-ins/common/file-ps.c:3409
 msgid ""
 "When toggled, the resulting image will be scaled to fit into the given size "
 "without changing the aspect ratio."
 msgstr ""
-"Powoduje skalowanie obrazu celem dopasowania do podanego rozmiaru bez zmiany "
+"Powoduje skalowanie obrazu, aby dopasować do podanego rozmiaru bez zmiany "
 "współczynnika proporcji."
 
 #. Unit
@@ -4289,7 +4287,7 @@ msgstr "Dane obrazu Raw"
 
 #: ../plug-ins/common/file-raw.c:1056
 msgid "Load Image from Raw Data"
-msgstr "Wczytaj obraz z danych Raw"
+msgstr "Wczytanie obrazu z danych Raw"
 
 #: ../plug-ins/common/file-raw.c:1090
 msgid "Image"
@@ -4325,7 +4323,7 @@ msgstr "Deseń"
 
 #: ../plug-ins/common/file-raw.c:1170 ../plug-ins/common/file-raw.c:1255
 msgid "R, G, B (normal)"
-msgstr "R, G, B (normalny)"
+msgstr "R, G, B (zwykły)"
 
 #: ../plug-ins/common/file-raw.c:1171 ../plug-ins/common/file-raw.c:1257
 msgid "B, G, R, X (BMP style)"
@@ -4333,29 +4331,27 @@ msgstr "B, G, R, X (format BMP)"
 
 #: ../plug-ins/common/file-raw.c:1176
 msgid "_Palette Type:"
-msgstr "Typ _deseniu:"
+msgstr "Typ _desenia:"
 
 #: ../plug-ins/common/file-raw.c:1187
 msgid "Off_set:"
 msgstr "Prze_sunięcie:"
 
 #: ../plug-ins/common/file-raw.c:1199
-#, fuzzy
 msgid "Select Palette File"
-msgstr "Wybierz plik z deseniem do odczytania"
+msgstr "Wybór pliku desenia"
 
 #: ../plug-ins/common/file-raw.c:1205
 msgid "Pal_ette File:"
-msgstr "Plik z d_eseniem:"
+msgstr "Plik d_esenia:"
 
 #: ../plug-ins/common/file-raw.c:1233
-#, fuzzy
 msgid "Raw Image"
-msgstr "Zapisz nieobrobiony obraz"
+msgstr "Obraz Raw"
 
 #: ../plug-ins/common/file-raw.c:1241
 msgid "RGB Save Type"
-msgstr "Zapisz typ RGB"
+msgstr "Zapis typu RGB"
 
 #: ../plug-ins/common/file-raw.c:1245
 msgid "Standard (R,G,B)"
@@ -4376,20 +4372,20 @@ msgstr "Obraz SUN Rasterfile"
 #: ../plug-ins/common/file-sunras.c:402
 #, c-format
 msgid "Could not open '%s' as SUN-raster-file"
-msgstr "Nie można otworzyć pliku \"%s\" przyjmując format SUN-raster"
+msgstr "Nie można otworzyć pliku \"%s\" jako plik SUN-raster"
 
 #: ../plug-ins/common/file-sunras.c:412
 msgid "The type of this SUN-rasterfile is not supported"
-msgstr "Typ tego SUN-rastra nie jest obsługiwany"
+msgstr "Typ tego pliku SUN-raster nie jest obsługiwany"
 
 #: ../plug-ins/common/file-sunras.c:441
 #, c-format
 msgid "Could not read color entries from '%s'"
-msgstr "Nie można odczytać opisów kolorów z pliku \"%s\""
+msgstr "Nie można odczytać wpisów kolorów z pliku \"%s\""
 
 #: ../plug-ins/common/file-sunras.c:450
 msgid "Type of colormap not supported"
-msgstr "Nieobsługiwany typ palety kolorów "
+msgstr "Nieobsługiwany typ palety kolorów"
 
 #: ../plug-ins/common/file-sunras.c:457 ../plug-ins/common/file-xbm.c:827
 #: ../plug-ins/common/file-xwd.c:489
@@ -4408,6 +4404,8 @@ msgid ""
 "'%s':\n"
 "Image width is larger than GIMP can handle"
 msgstr ""
+"'%s':\n"
+"Szerokość obrazu jest większa niż program GIMP może obsłużyć"
 
 #: ../plug-ins/common/file-sunras.c:473 ../plug-ins/common/file-xbm.c:841
 #: ../plug-ins/common/file-xwd.c:508
@@ -4426,6 +4424,8 @@ msgid ""
 "'%s':\n"
 "Image height is larger than GIMP can handle"
 msgstr ""
+"'%s':\n"
+"Wysokość obrazu jest większa niż program GIMP może obsłużyć"
 
 #: ../plug-ins/common/file-sunras.c:520
 msgid "This image depth is not supported"
@@ -4434,11 +4434,11 @@ msgstr "Ta głębia kolorów nie jest obsługiwana"
 #: ../plug-ins/common/file-sunras.c:544
 #, c-format
 msgid "SUNRAS save cannot handle images with alpha channels"
-msgstr "SUNRAS nie zapisuje obrazów z kanałami alfa"
+msgstr "Zapis SUNRAS nie obsługuje obrazów z kanałami alfa"
 
 #: ../plug-ins/common/file-sunras.c:555
 msgid "Can't operate on unknown image types"
-msgstr "Nie można wykonywać tej operacji na nieznanych formatach obrazów"
+msgstr "Nie można wykonywać tego działania na nieznanych typach obrazów"
 
 #: ../plug-ins/common/file-sunras.c:1084 ../plug-ins/common/file-sunras.c:1175
 #: ../plug-ins/common/file-sunras.c:1256 ../plug-ins/common/file-sunras.c:1351
@@ -4459,7 +4459,7 @@ msgstr "Formatowanie danych"
 
 #: ../plug-ins/common/file-sunras.c:1634
 msgid "RunLength Encoded"
-msgstr "Kompresja RLE"
+msgstr "Kompresja RunLength"
 
 #: ../plug-ins/common/file-svg.c:140
 msgid "SVG image"
@@ -4471,11 +4471,11 @@ msgstr "Nieznana przyczyna"
 
 #: ../plug-ins/common/file-svg.c:341
 msgid "Rendering SVG"
-msgstr "Renderowanie SVG"
+msgstr "Renderowanie pliku SVG"
 
 #: ../plug-ins/common/file-svg.c:353
 msgid "Rendered SVG"
-msgstr "Wyrenderowano SVG"
+msgstr "Wyrenderowany plik SVG"
 
 #: ../plug-ins/common/file-svg.c:549 ../plug-ins/common/file-wmf.c:358
 #, c-format
@@ -4488,12 +4488,12 @@ msgid ""
 "specify a size!"
 msgstr ""
 "Plik SVG nie określa\n"
-"rozmiaru!"
+"rozmiaru."
 
 #. Scalable Vector Graphics is SVG, should perhaps not be translated
 #: ../plug-ins/common/file-svg.c:724
 msgid "Render Scalable Vector Graphics"
-msgstr "Renderowanie Sklowanej Grafiki Wektorowej (Scalable Vector Graphics)"
+msgstr "Renderowanie SVG (Skalowanej grafiki wektorowej)"
 
 #. Width and Height
 #: ../plug-ins/common/file-svg.c:790 ../plug-ins/common/file-wmf.c:571
@@ -4515,23 +4515,23 @@ msgstr "Współczynnik _Y:"
 
 #: ../plug-ins/common/file-svg.c:906 ../plug-ins/common/file-wmf.c:687
 msgid "Constrain aspect ratio"
-msgstr "Powoduje zachowanie proporcji"
+msgstr "Zachowanie proporcji"
 
 #. Path Import
 #: ../plug-ins/common/file-svg.c:937
 msgid "Import _paths"
-msgstr "Importuj ści_eżki"
+msgstr "Importowanie ści_eżek"
 
 #: ../plug-ins/common/file-svg.c:944
 msgid ""
 "Import path elements of the SVG so they can be used with the GIMP path tool"
 msgstr ""
 "Powoduje importowanie elementów ścieżek z pliku SVG w taki sposób, że są one "
-"widoczne w GIMP-ie w postaci ścieżek."
+"widoczne w programie GIMP w postaci ścieżek"
 
 #: ../plug-ins/common/file-svg.c:952
 msgid "Merge imported paths"
-msgstr "Połącz zaimportowane ścieżki"
+msgstr "Połączenie zaimportowanych ścieżek"
 
 #: ../plug-ins/common/file-tga.c:245 ../plug-ins/common/file-tga.c:264
 msgid "TarGA image"
@@ -4548,7 +4548,7 @@ msgid "Cannot read extension from '%s'"
 msgstr "Nie można odczytać rozszerzenia z pliku \"%s\""
 
 #: ../plug-ins/common/file-tga.c:485
-#, fuzzy, c-format
+#, c-format
 msgid "Cannot read header from '%s'"
 msgstr "Nie można odczytać nagłówka z pliku \"%s\""
 
@@ -4582,17 +4582,16 @@ msgstr "Obraz TIFF"
 #: ../plug-ins/common/file-tiff-load.c:310
 #, c-format
 msgid "TIFF '%s' does not contain any directories"
-msgstr ""
+msgstr "Plik TIFF \"%s\" nie zawiera żadnych katalogów"
 
 #: ../plug-ins/common/file-tiff-load.c:478
-#, fuzzy
 msgid "Import from TIFF"
-msgstr "Import z PDF"
+msgstr "Import z pliku TIFF"
 
 #: ../plug-ins/common/file-tiff-load.c:780
-#, fuzzy, c-format
+#, c-format
 msgid "%s-%d-of-%d-pages"
-msgstr "%s-stron"
+msgstr "%s-%d-z-%d-stron"
 
 #: ../plug-ins/common/file-tiff-load.c:1015
 msgid "TIFF Channel"
@@ -4606,9 +4605,9 @@ msgid ""
 "bit, so it will be converted for you. Information will be lost because of "
 "this conversion."
 msgstr ""
-"Uwaga:\n"
-"Obraz który zamierzasz otworzyć zawiera 16 bitów na kanał. GIMP obsługuje "
-"tylko 8 bitów, więc obraz zostanie skonwertowany. Z tego powodu część danych "
+"Ostrzeżenie:\n"
+"Wczytywany obraz zawiera 16 bitów na kanał. Program GIMP obsługuje tylko 8 "
+"bitów, więc obraz zostanie przekonwertowany. Z tego powodu część danych "
 "może zostać utracona."
 
 #: ../plug-ins/common/file-tiff-save.c:888
@@ -4616,8 +4615,8 @@ msgid ""
 "The TIFF format only supports comments in\n"
 "7bit ASCII encoding. No comment is saved."
 msgstr ""
-"Format TIFF obsłguje jednynie komentarze\n"
-"zapisane w kodowaniu 7bit ASCII.\n"
+"Format TIFF obsługuje tylko komentarze\n"
+"zapisane w 7 bitowym kodowaniu ASCII.\n"
 "Komentarz nie został zapisany."
 
 #: ../plug-ins/common/file-tiff-save.c:1062
@@ -4627,7 +4626,7 @@ msgstr "TIFF"
 #. compression
 #: ../plug-ins/common/file-tiff-save.c:1070
 msgid "Compression"
-msgstr "Kompresja danych"
+msgstr "Kompresja"
 
 #: ../plug-ins/common/file-tiff-save.c:1074
 msgid "_None"
@@ -4651,15 +4650,15 @@ msgstr "_JPEG"
 
 #: ../plug-ins/common/file-tiff-save.c:1079
 msgid "CCITT Group _3 fax"
-msgstr ""
+msgstr "Faks CCITT Group _3"
 
 #: ../plug-ins/common/file-tiff-save.c:1080
 msgid "CCITT Group _4 fax"
-msgstr ""
+msgstr "Faks CCITT Group _4"
 
 #: ../plug-ins/common/file-tiff-save.c:1102
 msgid "Save _color values from transparent pixels"
-msgstr "Zapis wartości ko_lorów dla przezroczystych punktów"
+msgstr "Zapisywanie wartości ko_lorów dla przezroczystych punktów"
 
 #: ../plug-ins/common/file-tiff-save.c:1118 ../plug-ins/common/file-xbm.c:1235
 msgid "Comment:"
@@ -4674,21 +4673,21 @@ msgid ""
 "WMF file does not\n"
 "specify a size!"
 msgstr ""
-"Plik WMF nie ma\n"
-"odpowiedniego rozmiaru!"
+"Plik WMF nie określa\n"
+"rozmiaru."
 
 #: ../plug-ins/common/file-wmf.c:500
 msgid "Render Windows Metafile"
-msgstr "Render Windows Metafile (WMF)"
+msgstr "Renderowanie plików WMF (Windows Metafile)"
 
 #: ../plug-ins/common/file-wmf.c:963
-#, fuzzy, c-format
+#, c-format
 msgid "Could not open '%s' for reading"
-msgstr "Nie można otworzyć pliku \"%s\" do odczytu."
+msgstr "Nie można otworzyć pliku \"%s\" do odczytania"
 
 #: ../plug-ins/common/file-wmf.c:1003
 msgid "Rendered WMF"
-msgstr "Wyrenderowany WMF"
+msgstr "Wyrenderowany plik WMF"
 
 #: ../plug-ins/common/file-xbm.c:177 ../plug-ins/common/file-xbm.c:195
 msgid "X BitMap image"
@@ -4720,9 +4719,9 @@ msgid ""
 "\n"
 "Please convert it to a black and white (1-bit) indexed image and try again."
 msgstr ""
-"Zapisywany w formacie XBM obraz zawiera więcej niż dwa kolory.\n"
+"Obraz zapisywany w formacie XBM zawiera więcej niż dwa kolory.\n"
 "\n"
-"Przekonwertuj obraz na indeksowany czarno-biały (1-bitowy) i spróbuj "
+"Proszę przekonwertować obraz na indeksowany czarno-biały (1-bitowy) i spróbować "
 "ponownie."
 
 #: ../plug-ins/common/file-xbm.c:1010
@@ -4754,7 +4753,7 @@ msgstr "Przedrostek _identyfikatora:"
 #. hotspot toggle
 #: ../plug-ins/common/file-xbm.c:1243
 msgid "_Write hot spot values"
-msgstr "_Zapisz współrzęde gorącego punktu"
+msgstr "_Zapisywanie wartości gorącego punktu"
 
 #: ../plug-ins/common/file-xbm.c:1266 ../plug-ins/common/file-xmc.c:1089
 msgid "Hot spot _X:"
@@ -4767,15 +4766,15 @@ msgstr "Gorący punkt _Y:"
 #. mask file
 #: ../plug-ins/common/file-xbm.c:1283
 msgid "Mask File"
-msgstr "Plik z maską"
+msgstr "Plik maski"
 
 #: ../plug-ins/common/file-xbm.c:1293
 msgid "W_rite extra mask file"
-msgstr "Zapisz _dodatkowy plik z maską"
+msgstr "Zapisywanie _dodatkowego pliku maski"
 
 #: ../plug-ins/common/file-xbm.c:1306
 msgid "_Mask file extension:"
-msgstr "Rozszerzenie pliku z _maską:"
+msgstr "Rozszerzenie pliku _maski:"
 
 #: ../plug-ins/common/file-xmc.c:333 ../plug-ins/common/file-xmc.c:373
 #: ../plug-ins/common/file-xmc.c:1052
@@ -4788,41 +4787,43 @@ msgid ""
 "Cannot set the hot spot!\n"
 "You must arrange layers so that all of them have an intersection."
 msgstr ""
+"Nie można ustawić gorącego punktu.\n"
+"Należy uporządkować warstwy, aby wszystkie posiadały przecięcie."
 
 #: ../plug-ins/common/file-xmc.c:670
-#, fuzzy, c-format
+#, c-format
 msgid "'%s' is not a valid X cursor."
-msgstr "\"%s\" nie jest poprawnym plikiem formatu BMP"
+msgstr "\"%s\" nie jest prawidłowym kursorem X."
 
 #: ../plug-ins/common/file-xmc.c:686
 #, c-format
 msgid "The width of frame %d of '%s' is too big for X cursor."
-msgstr ""
+msgstr "Szerokość klatki %d z \"%s\" jest za duża dla kursora X."
 
 #: ../plug-ins/common/file-xmc.c:693
 #, c-format
 msgid "The height of frame %d of '%s' is too big for X cursor."
-msgstr ""
+msgstr "Wysokość klatki %d z \"%s\" jest za duża dla kursora X."
 
 #: ../plug-ins/common/file-xmc.c:896
 #, c-format
 msgid "there is no image chunk in \"%s\"."
-msgstr ""
+msgstr "brak fragmentu obrazu w \"%s\"."
 
 #: ../plug-ins/common/file-xmc.c:938
 #, c-format
 msgid "The width of '%s' is too big for X cursor."
-msgstr ""
+msgstr "Szerokość \"%s\" jest za duża dla kursora X."
 
 #: ../plug-ins/common/file-xmc.c:945
 #, c-format
 msgid "The height of '%s' is too big for X cursor."
-msgstr ""
+msgstr "Wysokość \"%s\" jest za duża dla kursora X."
 
 #: ../plug-ins/common/file-xmc.c:1015
-#, fuzzy, c-format
+#, c-format
 msgid "A read error occurred."
-msgstr "Wystąpił błąd zapisu"
+msgstr "Wystąpił błąd odczytu."
 
 #.
 #. * parameter settings
@@ -4833,15 +4834,15 @@ msgstr "Opcje XMC"
 
 #: ../plug-ins/common/file-xmc.c:1085
 msgid "Enter the X coordinate of the hot spot. The origin is top left corner."
-msgstr ""
+msgstr "Proszę podać współrzędną X gorącego punktu. Punktem odniesienia jest górny lewy róg."
 
 #: ../plug-ins/common/file-xmc.c:1103
 msgid "Enter the Y coordinate of the hot spot. The origin is top left corner."
-msgstr ""
+msgstr "Proszę podać współrzędną Y gorącego punktu. Punktem odniesienia jest górny lewy róg."
 
 #: ../plug-ins/common/file-xmc.c:1114
 msgid "_Auto-Crop all frames."
-msgstr ""
+msgstr "_Automatyczne przycinanie wszystkich klatek."
 
 #: ../plug-ins/common/file-xmc.c:1127
 msgid ""
@@ -4875,9 +4876,8 @@ msgid "Enter time span in milliseconds in which each frame is rendered."
 msgstr ""
 
 #: ../plug-ins/common/file-xmc.c:1207
-#, fuzzy
 msgid "_Delay:"
-msgstr "Opóźnienie"
+msgstr "_Opóźnienie:"
 
 #: ../plug-ins/common/file-xmc.c:1212
 msgid "_Use this value only for a frame which delay is not specified."
