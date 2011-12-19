@@ -9,19 +9,20 @@ msgstr ""
 "Project-Id-Version: alleyoop\n"
 "Report-Msgid-Bugs-To: http://bugzilla.gnome.org/enter_bug.cgi?"
 "product=alleyoop&keywords=I18N+L10N&component=general\n"
-"POT-Creation-Date: 2011-12-17 21:22+0000\n"
-"PO-Revision-Date: 2011-12-17 22:35+0100\n"
+"POT-Creation-Date: 2011-12-17 22:32+0000\n"
+"PO-Revision-Date: 2011-12-18 00:00+0100\n"
 "Last-Translator: Piotr Drąg <piotrdrag@gmail.com>\n"
 "Language-Team: Polish <gnomepl@aviary.pl>\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"Plural-Forms: nplurals=3; plural=(n==1 ? 0 : n%10>=2 && n%10<=4 && (n%"
-"100<10 || n%100>=20) ? 1 : 2);\n"
+"Language: pl\n"
+"Plural-Forms: nplurals=3; plural=(n==1 ? 0 : n%10>=2 && n%10<=4 && (n%100<10 "
+"|| n%100>=20) ? 1 : 2);\n"
 "X-Poedit-Language: Polish\n"
 "X-Poedit-Country: Poland\n"
 
-#: ../alleyoop.desktop.in.h:1 ../src/main.c:208
+#: ../alleyoop.desktop.in.h:1 ../src/main.c:206
 msgid "Alleyoop"
 msgstr "Alleyoop"
 
@@ -33,17 +34,18 @@ msgstr "Sprawdzanie pamięci Alleyoop"
 msgid ""
 "Find memory-management problems in your programs using the valgrind tool"
 msgstr ""
-"Wyszukiwanie problemów z zarządzaniem pamięcią w programach używając narzędzia Valgrind"
+"Wyszukiwanie problemów z zarządzaniem pamięcią w programach używając "
+"narzędzia Valgrind"
 
 #: ../alleyoop.desktop.in.h:4
 msgid "Memory Checker"
 msgstr "Sprawdzanie pamięci"
 
-#: ../src/alleyoop.c:168
+#: ../src/alleyoop.c:160
 msgid "Run Executable..."
 msgstr "Uruchomienie programu..."
 
-#: ../src/alleyoop.c:182
+#: ../src/alleyoop.c:174
 msgid ""
 "Enter the path to an executable and\n"
 "any arguments you wish to pass to it."
@@ -51,16 +53,16 @@ msgstr ""
 "Proszę wprowadzić ścieżkę do pliku\n"
 "wykonywalnego razem z parametrami."
 
-#: ../src/alleyoop.c:283
+#: ../src/alleyoop.c:275
 #, c-format
 msgid "Could not load `%s': %s"
 msgstr "Nie można wczytać \"%s\": %s"
 
-#: ../src/alleyoop.c:311
+#: ../src/alleyoop.c:303
 msgid "Load Valgrind log..."
 msgstr "Wczytanie dziennika programu Valgrind..."
 
-#: ../src/alleyoop.c:349
+#: ../src/alleyoop.c:341
 #, c-format
 msgid ""
 "Could not save to `%s': %s\n"
@@ -69,87 +71,207 @@ msgstr ""
 "Nie można zapisać do \"%s\": %s\n"
 "Zastąpić?"
 
-#: ../src/alleyoop.c:364
+#: ../src/alleyoop.c:356
 #, c-format
 msgid "Could not save to `%s': %s"
 msgstr "Nie można zapisać do \"%s\": %s"
 
-#: ../src/alleyoop.c:410
+#: ../src/alleyoop.c:402
 msgid "Save Valgrind log..."
 msgstr "Zapis dziennika programu Valgrind..."
 
-#: ../src/alleyoop.c:541
+#: ../src/alleyoop.c:507
 msgid "Alleyoop is a Valgrind front-end for the GNOME environment."
 msgstr ""
 "Alleyoop jest nakładką graficzną na program Valgrind dla środowiska GNOME."
 
-#: ../src/alleyoop.c:563
+#: ../src/alleyoop.c:529
 msgid "translator-credits"
 msgstr "Aviary.pl <gnomepl@aviary.pl>, 2011"
 
-#: ../src/alleyoop.c:575
+#: ../src/alleyoop.c:542
+msgid "_File"
+msgstr "_Plik"
+
+#: ../src/alleyoop.c:543
 msgid "_Run"
 msgstr "_Uruchom"
 
-#: ../src/alleyoop.c:577
+#: ../src/alleyoop.c:544
+msgid "Run program"
+msgstr "Uruchamia program"
+
+#: ../src/alleyoop.c:545
 msgid "_Kill"
 msgstr "_Zakończ"
 
-#: ../src/alleyoop.c:597
+#: ../src/alleyoop.c:546
+msgid "Kill program"
+msgstr "Kończy działanie programu"
+
+#: ../src/alleyoop.c:547
+msgid "_Open..."
+msgstr "_Otwórz..."
+
+#: ../src/alleyoop.c:548
+msgid "Open a log file"
+msgstr "Otwiera plik dziennika"
+
+#: ../src/alleyoop.c:549
+msgid "_Save"
+msgstr "Zapi_sz"
+
+#: ../src/alleyoop.c:550
+msgid "Save the file"
+msgstr "Zapisuje plik"
+
+#: ../src/alleyoop.c:551
+msgid "Save _As..."
+msgstr "Z_apisz jako..."
+
+#: ../src/alleyoop.c:552
+msgid "Save the file as..."
+msgstr "Zapisuje plik jako..."
+
+#: ../src/alleyoop.c:553
+msgid "_Quit"
+msgstr "Za_kończ"
+
+#: ../src/alleyoop.c:554
+msgid "Exit the program"
+msgstr "Kończy działanie programu"
+
+#: ../src/alleyoop.c:556 ../src/vgrule-list.c:403
+msgid "_Edit"
+msgstr "_Edycja"
+
+#: ../src/alleyoop.c:557 ../src/vgdefaultview.c:1206
+msgid "Cu_t"
+msgstr "Wy_tnij"
+
+#: ../src/alleyoop.c:558
+msgid "Cut to clipboard"
+msgstr "Wycina do schowka"
+
+#: ../src/alleyoop.c:559 ../src/vgdefaultview.c:1207
+msgid "_Copy"
+msgstr "S_kopiuj"
+
+#: ../src/alleyoop.c:560
+msgid "Copy to clipboard"
+msgstr "Kopiuje do schowka"
+
+#: ../src/alleyoop.c:561 ../src/vgdefaultview.c:1208
+msgid "_Paste"
+msgstr "_Wklej"
+
+#: ../src/alleyoop.c:562
+msgid "Paste from clipboard"
+msgstr "Wkleja ze schowka"
+
+#: ../src/alleyoop.c:563
+msgid "C_lear"
+msgstr "Wy_czyść"
+
+#: ../src/alleyoop.c:564
+msgid "Clear log view"
+msgstr "Czyści okno dziennika"
+
+#: ../src/alleyoop.c:566
+msgid "_Settings"
+msgstr "_Ustawienia"
+
+#: ../src/alleyoop.c:567
+msgid "Prefere_nces"
+msgstr "Prefere_ncje"
+
+#: ../src/alleyoop.c:568
+msgid "Edit preferences..."
+msgstr "Modyfikuje proferencje..."
+
+#: ../src/alleyoop.c:569
 msgid "Suppressions"
 msgstr "Blokady"
 
-#: ../src/alleyoop.c:597
+#: ../src/alleyoop.c:570
 msgid "View/Edit Suppressions"
 msgstr "Widok/modyfikacja blokad"
 
-#: ../src/alleyoop.c:628
-msgid "Tool"
-msgstr "Narzędzie"
+#: ../src/alleyoop.c:572
+msgid "_Tools"
+msgstr "_Narzędzia"
 
-#: ../src/alleyoop.c:643
+#: ../src/alleyoop.c:574
+msgid "_Help"
+msgstr "Pomo_c"
+
+#: ../src/alleyoop.c:575
+msgid "_About"
+msgstr "_O programie"
+
+#: ../src/alleyoop.c:576
+msgid "About Alleyoop"
+msgstr "O programie Alleyoop"
+
+#: ../src/alleyoop.c:580
+msgid "Use the AddrCheck Valgrind tool"
+msgstr "Używa narzędzia AddrCheck programu Valgrind"
+
+#: ../src/alleyoop.c:581
+msgid "Use the MemCheck Valgrind tool"
+msgstr "Używa narzędzia MemCheck programu Valgrind"
+
+#: ../src/alleyoop.c:582
+msgid "Use the Helgrind tool"
+msgstr "Używa narzędzia Helgrind"
+
+#: ../src/alleyoop.c:628
 msgid "Run"
 msgstr "Uruchom"
 
-#: ../src/alleyoop.c:643
+#: ../src/alleyoop.c:628
 msgid "Run Program"
 msgstr "Uruchamia program"
 
-#: ../src/alleyoop.c:648
+#: ../src/alleyoop.c:633
 msgid "Kill"
 msgstr "Zakończ"
 
-#: ../src/alleyoop.c:648
+#: ../src/alleyoop.c:633
 msgid "Kill Program"
 msgstr "Kończy działanie programu"
 
-#: ../src/alleyoop.c:651
+#: ../src/alleyoop.c:636
 msgid "Open Log File"
 msgstr "Otwiera plik dziennika"
 
-#: ../src/alleyoop.c:653
+#: ../src/alleyoop.c:638
 msgid "Save Log File"
 msgstr "Zapisuje plik dziennika"
 
-#: ../src/main.c:163
+#: ../src/main.c:161
 msgid "Display help and quit"
 msgstr "Wyświetla pomoc i kończy działanie"
 
-#: ../src/main.c:164
+#: ../src/main.c:162
 msgid "Display version and quit"
 msgstr "Wyświetla wersję i kończy działanie"
 
-#: ../src/main.c:165
+#: ../src/main.c:163
 msgid "Add <dir> to the list of directories to search for source files"
-msgstr "Dodaje <katalog> do listy katalogów do przeszukania pod kątem plików źródłowych"
+msgstr ""
+"Dodaje <katalog> do listy katalogów do przeszukania pod kątem plików "
+"źródłowych"
 
-#: ../src/main.c:166
+#: ../src/main.c:164
 msgid ""
 "Recursively add <dir> and all subdirectories to the list of directories to "
 "search for source files"
-msgstr "Rekursywnie dodaje <katalog> i wszystkie podkatalogi do listy katalogów do przeszukania pod kątem plików źródłowych"
+msgstr ""
+"Rekursywnie dodaje <katalog> i wszystkie podkatalogi do listy katalogów do "
+"przeszukania pod kątem plików źródłowych"
 
-#: ../src/main.c:167
+#: ../src/main.c:165
 msgid "Specify the default Valgrind tool to use"
 msgstr "Określa domyślnie używane narzędzie Valgrind"
 
@@ -186,7 +308,8 @@ msgid ""
 "Please enter a value of the form \"<integer>,<integer>,<integer>\"."
 msgstr ""
 "Nieprawidłowa składnia w ustawieniach \"%s\".\n"
-"Proszę wprowadzić wartość w formie \"<liczba całkowita>,<liczba całkowita>,<liczba całkowita>\"."
+"Proszę wprowadzić wartość w formie \"<liczba całkowita>,<liczba całkowita>,"
+"<liczba całkowita>\"."
 
 #: ../src/vgcachegrindprefs.c:232
 msgid "Override default settings"
@@ -225,18 +348,6 @@ msgstr "Reguły blokad programu Valgrind"
 #: ../src/vgdefaultview.c:1032 ../src/vgrule-list.c:132
 msgid "Valgrind Suppression"
 msgstr "Blokady programu Valgrind"
-
-#: ../src/vgdefaultview.c:1206
-msgid "Cu_t"
-msgstr "Wy_tnij"
-
-#: ../src/vgdefaultview.c:1207
-msgid "_Copy"
-msgstr "S_kopiuj"
-
-#: ../src/vgdefaultview.c:1208
-msgid "_Paste"
-msgstr "_Wklej"
 
 #: ../src/vgdefaultview.c:1210
 msgid "Suppress"
@@ -416,10 +527,6 @@ msgstr "Błąd podczas zapisywania do pliku blokady: \"%s\": %s"
 #: ../src/vgrule-list.c:174 ../src/vgrule-list.c:243
 msgid "You have forgotten to name your suppression rule."
 msgstr "Należy nadać nazwę regule blokady."
-
-#: ../src/vgrule-list.c:403
-msgid "_Edit"
-msgstr "_Edycja"
 
 #: ../src/vgrule-list.c:648
 #, c-format
