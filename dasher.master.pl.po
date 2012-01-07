@@ -9,7 +9,7 @@ msgstr ""
 "Project-Id-Version: dasher\n"
 "Report-Msgid-Bugs-To: http://bugzilla.gnome.org/enter_bug.cgi?"
 "product=dasher&keywords=I18N+L10N&component=general\n"
-"POT-Creation-Date: 2011-12-05 17:13+0000\n"
+"POT-Creation-Date: 2012-01-03 21:30+0000\n"
 "PO-Revision-Date: 2011-12-07 22:04+0100\n"
 "Last-Translator: Piotr Drąg <piotrdrag@gmail.com>\n"
 "Language-Team: Polish <gnomepl@aviary.pl>\n"
@@ -529,12 +529,11 @@ msgstr "Za_importuj tekst treningowy…"
 # pd
 #. think XML_LChar==char, depends on preprocessor variables...
 #. /TRANSLATORS: the first string is the error message from the XML Parser;
-#. / the second is the URL of the file we're trying to read; the third
-#. / is a section excerpt from the file, containing the error.
-#: ../Src/DasherCore/AbstractXMLParser.cpp:64
+#. / the second is the URL of the file we're trying to read.
+#: ../Src/DasherCore/AbstractXMLParser.cpp:63
 #, c-format
-msgid "XML Error %s in %s somewhere in block: %s"
-msgstr "Błąd XML %s w %s gdzieś w bloku: %s"
+msgid "XML Error %s in file %s "
+msgstr "Błąd XML %s w pliku %s "
 
 # pd
 #: ../Src/DasherCore/Alphabet/AlphabetMap.cpp:116
@@ -556,7 +555,7 @@ msgstr "Odczytaj nieprawidłowy znak UTF-8 0x%x"
 #. /TRANSLATORS: the string "GameTextFile" is the name of a setting in gsettings
 #. / (or equivalent), and should not be translated. The %s is the value of that
 #. / setting (this message displayed only if the user has provided a value)
-#: ../Src/DasherCore/AlphabetManager.cpp:163
+#: ../Src/DasherCore/AlphabetManager.cpp:213
 #, c-format
 msgid ""
 "Note: GameTextFile setting specifies game sentences file '%s' but this does "
@@ -565,11 +564,14 @@ msgstr ""
 "Uwaga: ustawienie GameTextFile określa plik zdań gry \"%s\", ale on nie "
 "istnieje"
 
+# pd
 #. TRANSLATORS: The number of time steps over which to perform the zooming motion in button mode.
 #: ../Src/DasherCore/AlternatingDirectMode.cpp:28
 #: ../Src/DasherCore/ButtonMode.cpp:28 ../Src/DasherCore/CompassMode.cpp:28
-msgid "Zoom steps"
-msgstr "Stopnie powiększenia"
+#: ../Src/DasherCore/StylusFilter.cpp:11
+
+msgid "Frames over which to perform zoom"
+msgstr "Klatki, po ilu wykonać przybliżenie"
 
 #. TRANSLATORS: Intercept keyboard events for 'special' keys even when the Dasher window doesn't have keyboard focus.
 #: ../Src/DasherCore/AlternatingDirectMode.cpp:30
@@ -598,9 +600,10 @@ msgstr "Automatyczne zmniejszenie prędkości do %0.2f"
 msgid "Scan time in menu mode (0 to not scan)"
 msgstr "Czas skanowania w trybie menu (0 wyłącza skanowanie)"
 
+# pd
 #: ../Src/DasherCore/ButtonMode.cpp:30
-msgid "Number of boxes"
-msgstr "Liczba prostokątów"
+msgid "Number of forward boxes"
+msgstr "Liczba prostokątów przejścia wprzód"
 
 #: ../Src/DasherCore/ButtonMode.cpp:31
 msgid "Safety margin"
@@ -719,9 +722,21 @@ msgstr ""
 
 # pd
 #: ../Src/DasherCore/DefaultFilter.cpp:19
+msgid ""
+"Distance from right-hand-side Y-axis, at which maximum speed is reached. "
+"(2048=xhair)"
+msgstr ""
+
+# pd
+#: ../Src/DasherCore/DefaultFilter.cpp:20
 msgid "Hold right mouse button / key 1 to go 3/4 faster"
 msgstr ""
 "Przytrzymaniu prawego przycisku myszy/pierwszego klawisza przyspiesza o 3/4"
+
+# pd
+#: ../Src/DasherCore/DefaultFilter.cpp:21
+msgid "Use exact computation of per-frame movement (slower)"
+msgstr ""
 
 # pd
 #: ../Src/DasherCore/DemoFilter.cpp:15
@@ -749,18 +764,78 @@ msgid "When we give help, show the shortest path to the target sentence?"
 msgstr "Po podaniu pomocy wyświetlić najkrótszą ścieżkę do zdania docelowego?"
 
 # pd
-#: ../Src/DasherCore/NodeCreationManager.cpp:32
+#: ../Src/DasherCore/MandarinAlphMgr.cpp:176
+#: ../Src/DasherCore/RoutingAlphMgr.cpp:128
+#, fuzzy, c-format
+msgid ""
+"Warning: faulty alphabet definition: training-start delimiter %s must be a "
+"single unicode character. May be unable to process training file."
+msgstr ""
+"Ostrzeżenie: błędna definicja alfabety, sekwencja sterująca %s musi być "
+"pojedynczym znakiem unikodu. Może to pogorszyć przewidywanie tekstu programu "
+"Dasher."
+
+# pd
+#: ../Src/DasherCore/MandarinAlphMgr.cpp:186
+#, c-format
+msgid ""
+"Warning: training file contains character '%s' as member of group '%s', but "
+"no group of that name contains the character; ignoring group specifier"
+msgstr ""
+
+# pd
+#: ../Src/DasherCore/MandarinAlphMgr.cpp:199
+#, c-format
+msgid ""
+"Warning: training file contains character '%s' as member of group '%s', but "
+"no group of that name contains the character. Dasher will not be able to "
+"learn how you want to write this character."
+msgstr ""
+
+# pd
+#: ../Src/DasherCore/MandarinAlphMgr.cpp:200
+#: ../Src/DasherCore/RoutingAlphMgr.cpp:147
+#, c-format
+msgid ""
+"Warning: training file contains character '%s' as member of group '%s', but "
+"alphabet contains several such groups. Dasher will not be able to learn how "
+"you want to write this character."
+msgstr ""
+
+# pd
+#: ../Src/DasherCore/MandarinAlphMgr.cpp:220
+#: ../Src/DasherCore/RoutingAlphMgr.cpp:164
+#, c-format
+msgid ""
+"Warning: in training file, annotation '<%s>' is followed by another "
+"annotation and will be ignored"
+msgstr ""
+
+# pd
+#. /TRANSLATORS: first string will be the filename; after the end of the string,
+#. / some number of output (e.g. Chinese) characters will be appended,
+#. / the number of which is the integer here
+#: ../Src/DasherCore/MandarinAlphMgr.cpp:244
+#, c-format
+msgid ""
+"In file %s, the following %i symbols appeared without annotations saying how "
+"they should be entered, but each can be entered in several ways. Dasher will "
+"not be able to learn how you want to enter these symbols:"
+msgstr ""
+
+# pd
+#: ../Src/DasherCore/NodeCreationManager.cpp:33
 msgid "Training on User Text"
 msgstr "Trening na tekście użytkownika"
 
 # pd
-#: ../Src/DasherCore/NodeCreationManager.cpp:32
+#: ../Src/DasherCore/NodeCreationManager.cpp:33
 msgid "Training on System Text"
 msgstr "Trening na tekście systemowym"
 
 # pd
 #. /TRANSLATORS: These 3 messages will be displayed when the user has just chosen a new alphabet. The %s parameter will be the name of the alphabet.
-#: ../Src/DasherCore/NodeCreationManager.cpp:92
+#: ../Src/DasherCore/NodeCreationManager.cpp:101
 #, c-format
 msgid ""
 "No user training text found - if you have written in \"%s\" before, this "
@@ -770,7 +845,7 @@ msgstr ""
 "wcześniej, to program Dasher nie może uczyć się z poprzednich sesji"
 
 # pd
-#: ../Src/DasherCore/NodeCreationManager.cpp:93
+#: ../Src/DasherCore/NodeCreationManager.cpp:102
 #, c-format
 msgid ""
 "No training text (user or system) found for \"%s\". Dasher will still work "
@@ -783,7 +858,7 @@ msgstr ""
 "skonstruowanie własnego."
 
 # pd
-#: ../Src/DasherCore/NodeCreationManager.cpp:99
+#: ../Src/DasherCore/NodeCreationManager.cpp:108
 #, c-format
 msgid ""
 "\"%s\" does not specify training file. Dasher will work but entry will be "
@@ -862,6 +937,14 @@ msgstr ""
 #: ../Src/DasherCore/OneDimensionalFilter.h:12
 msgid "One Dimensional Mode"
 msgstr "Tryb jednowymiarowy"
+
+# pd
+#: ../Src/DasherCore/RoutingAlphMgr.cpp:146
+#, c-format
+msgid ""
+"Warning: training file contains character '%s' as member of group '%s', but "
+"no group of that name contains the character. Ignoring group specifier."
+msgstr ""
 
 #: ../Src/DasherCore/SettingsStore.cpp:75
 #: ../Src/Gtk2/DasherAppSettings.cpp:540 ../Src/Gtk2/DasherAppSettings.cpp:574
@@ -962,6 +1045,11 @@ msgstr ""
 "Wejście gniazda programu Dasher: uruchomienie wątku czytającego się nie "
 "powiodło."
 
+# pd
+#: ../Src/DasherCore/StylusFilter.cpp:10
+msgid "Max time for a 'tap' (anything longer is held)"
+msgstr ""
+
 #: ../Src/DasherCore/StylusFilter.h:12
 msgid "Stylus Control"
 msgstr "Sterowanie piórem"
@@ -979,22 +1067,10 @@ msgstr ""
 "Dasher."
 
 # pd
-#: ../Src/DasherCore/Trainer.cpp:100
+#: ../Src/DasherCore/Trainer.cpp:101
 #, c-format
 msgid "Unable to open file \"%s\" for reading"
 msgstr "Nie można otworzyć pliku \"%s\" do odczytania"
-
-# pd
-#: ../Src/DasherCore/Trainer.cpp:125
-#, c-format
-msgid "Training file contains unknown source alphabet character %s"
-msgstr "Plik treningowy zawiera nieznany źródłowy znak alfabetu %s"
-
-# pd
-#: ../Src/DasherCore/Trainer.cpp:130
-#, c-format
-msgid "Training file contains unknown target alphabet character %s"
-msgstr "Plik treningowy zawiera nieznany docelowy znak alfabetu %s"
 
 #: ../Src/DasherCore/TwoButtonDynamicFilter.cpp:30
 msgid "Button offset"
@@ -1055,8 +1131,8 @@ msgid ""
 "Use push and release times of single press rather than push times of two "
 "presses"
 msgstr ""
-"Użycie czasów przyciśnięcia i zwolnienia jednego naciśnięcia zamiast "
-"czasów przyciśnięcia dwóch naciśnięć"
+"Użycie czasów przyciśnięcia i zwolnienia jednego naciśnięcia zamiast czasów "
+"przyciśnięcia dwóch naciśnięć"
 
 #: ../Src/DasherCore/TwoPushDynamicFilter.cpp:38
 msgid "Slow startup time"

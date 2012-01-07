@@ -14,14 +14,14 @@ msgstr ""
 "Project-Id-Version: gimp-plug-ins\n"
 "Report-Msgid-Bugs-To: http://bugzilla.gnome.org/enter_bug.cgi?"
 "product=gimp&keywords=I18N+L10N&component=general\n"
-"POT-Creation-Date: 2011-12-25 07:49+0000\n"
-"PO-Revision-Date: 2011-12-11 23:34+0100\n"
+"POT-Creation-Date: 2011-12-29 17:13+0000\n"
+"PO-Revision-Date: 2011-12-29 18:40+0100\n"
 "Last-Translator: Piotr Drąg <piotrdrag@gmail.com>\n"
 "Language-Team: Polish <gnomepl@aviary.pl>\n"
-"Language: pl\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
+"Language: pl\n"
 "Plural-Forms: nplurals=3; plural=(n==1 ? 0 : n%10>=2 && n%10<=4 && (n%100<10 "
 "|| n%100>=20) ? 1 : 2);\n"
 "X-Poedit-Language: Polish\n"
@@ -4813,13 +4813,13 @@ msgstr "\"%s\" nie jest prawidłowym kursorem X."
 
 #: ../plug-ins/common/file-xmc.c:686
 #, c-format
-msgid "The width of frame %d of '%s' is too big for X cursor."
-msgstr "Szerokość klatki %d z \"%s\" jest za duża dla kursora X."
+msgid "Frame %d of '%s' is too wide for an X cursor."
+msgstr "Klatka %d z \"%s\" jest za szeroka dla kursora X."
 
 #: ../plug-ins/common/file-xmc.c:693
 #, c-format
-msgid "The height of frame %d of '%s' is too big for X cursor."
-msgstr "Wysokość klatki %d z \"%s\" jest za duża dla kursora X."
+msgid "Frame %d of '%s' is too high for an X cursor."
+msgstr "Klatka %d z \"%s\" jest za wysoka dla kursora X."
 
 #: ../plug-ins/common/file-xmc.c:896
 #, c-format
@@ -4828,13 +4828,13 @@ msgstr "brak fragmentu obrazu w \"%s\"."
 
 #: ../plug-ins/common/file-xmc.c:938
 #, c-format
-msgid "The width of '%s' is too big for X cursor."
-msgstr "Szerokość \"%s\" jest za duża dla kursora X."
+msgid "'%s' is too wide for an X cursor."
+msgstr "\"%s\" jest za szerokie dla kursora X."
 
 #: ../plug-ins/common/file-xmc.c:945
 #, c-format
-msgid "The height of '%s' is too big for X cursor."
-msgstr "Wysokość \"%s\" jest za duża dla kursora X."
+msgid "'%s' is too high for an X cursor."
+msgstr "\"%s\" jest za wysokie dla kursora X."
 
 #: ../plug-ins/common/file-xmc.c:1015
 #, c-format
@@ -4969,72 +4969,82 @@ msgstr "Komentarz jest ograniczony do %d znaków."
 
 #: ../plug-ins/common/file-xmc.c:1489
 #, c-format
-msgid "This plug-in can only handle RGBA image format with 8bit color depth."
+msgid "This plug-in can only handle RGBA image files with 8bit color depth."
 msgstr ""
-"Ta wtyczka obsługuje tylko format obrazu RGBA o 8-bitowej głębi kolorów."
+"Ta wtyczka obsługuje tylko pliki obrazów RGBA o 8-bitowej głębi kolorów."
 
 #: ../plug-ins/common/file-xmc.c:1507
 #, c-format
-msgid "Width of '%s' is too large. Please reduce more than %dpx."
+msgid "Frame '%s' is too wide. Please reduce to no more than %dpx."
 msgstr ""
-"Szerokość \"%s\" jest za duża. Proszę ją zmniejszyć o więcej niż %d pikseli."
+"Klatka \"%s\" jest za szeroka. Proszę ją zmniejszyć nie więcej niż o %d "
+"pikseli."
 
 #: ../plug-ins/common/file-xmc.c:1514
 #, c-format
-msgid "Height of '%s' is too large. Please reduce more than %dpx."
+msgid "Frame '%s' is too high. Please reduce to no more than %dpx."
 msgstr ""
-"Wysokość \"%s\" jest za duża. Proszę ją zmniejszyć o więcej niż %d pikseli."
+"Klatka \"%s\" jest za wysoka. Proszę ją zmniejszyć nie więcej niż o %d "
+"pikseli."
 
 #: ../plug-ins/common/file-xmc.c:1521
 #, c-format
-msgid "The size of '%s' is zero!"
-msgstr "Rozmiar \"%s\" wynosi zero."
+msgid "Width and/or height of frame '%s' is zero!"
+msgstr "Szerokość i/lub wysokość klatki \"%s\" wynosi zero."
 
 #: ../plug-ins/common/file-xmc.c:1561
 #, c-format
 msgid ""
-"Cannot save the cursor because the hot spot is not on '%s'.\n"
+"Cannot save the cursor because the hot spot is not on frame '%s'.\n"
 "Try to change the hot spot position, layer geometry or save without auto-"
 "crop."
 msgstr ""
-"Nie można zapisać kursora, ponieważ gorący punkt nie znajduje się na \"%s\".\n"
-"Proszę spróbować zmienić położenie gorącego punktu, geometrię warstw lub zapisać bez automatycznego przycinania."
+"Nie można zapisać kursora, ponieważ gorący punkt nie znajduje się w klatce "
+"\"%s\".\n"
+"Proszę spróbować zmienić położenie gorącego punktu, geometrię warstw lub "
+"zapisać bez automatycznego przycinania."
 
-#: ../plug-ins/common/file-xmc.c:1717
+#: ../plug-ins/common/file-xmc.c:1718
 #, c-format
 msgid ""
-"Your cursor was successfully saved but it contains one or more frames which "
+"Your cursor was successfully saved but it contains one or more frames whose "
 "width or height is more than %ipx.\n"
 "It will clutter the screen in some environments."
 msgstr ""
-"Kursor został pomyślnie zapisany, ale zawiera jedną lub więcej klatek o szerokości lub wysokości większej niż %i pikseli.\n"
+"Kursor został pomyślnie zapisany, ale zawiera jedną lub więcej klatek o "
+"szerokości lub wysokości większej niż %i pikseli.\n"
 "Spowoduje to zaśmiecenie ekranu w niektórych środowiskach."
 
-#: ../plug-ins/common/file-xmc.c:1724
+#: ../plug-ins/common/file-xmc.c:1725
 msgid ""
 "Your cursor was successfully saved but it contains one or more frames whose "
-"nominal size is not supported by gnome-appearance-properties.\n"
-"You can satisfy it by checking \"Replace the size of all frame...\" in the "
-"save dialog, or your cursor may not appear in gnome-appearance-properties."
+"nominal size is not supported by GNOME settings.\n"
+"You can satisfy it by checking \"Replace the size of all frames...\" in the "
+"save dialog, or your cursor may not appear in GNOME settings."
 msgstr ""
-"Kursor został pomyślnie zapisany, ale zawiera jedną lub więcej klatek o rozmiarze nominalnym nieobsługiwanym przez program gnome-appearance-properties.\n"
-"Można to naprawić przez zaznaczenie opcji \"Zastąpienie rozmiaru wszystkich klatek...\" w oknie zapisywania. W innym przypadku kursor nie pojawi się w programie gnome-appearance-properties."
+"Kursor został pomyślnie zapisany, ale zawiera jedną lub więcej klatek o "
+"rozmiarze nominalnym nieobsługiwanym przez ustawienia środowiska GNOME.\n"
+"Można to naprawić przez zaznaczenie opcji \"Zastąpienie rozmiaru wszystkich "
+"klatek...\" w oknie zapisywania. W innym przypadku kursor nie pojawi się w "
+"ustawieniach środowiska GNOME."
 
-#: ../plug-ins/common/file-xmc.c:1961
+#: ../plug-ins/common/file-xmc.c:1962
 #, c-format
 msgid ""
-"The parasite \"%s\" is too long for X cursor.\n"
-"The overflowed string was dropped."
+"The parasite \"%s\" is too long for an X cursor comment. It was cut off to "
+"fit."
 msgstr ""
-"Pasożyt \"%s\" jest za długi dla kursora systemu X.\n"
-"Nadmiarowy ciąg został usunięty."
+"Pasożyt \"%s\" jest za długi dla komentarza kursora systemu X. Został "
+"skrócony, aby pasował."
 
-#: ../plug-ins/common/file-xmc.c:2163
+#: ../plug-ins/common/file-xmc.c:2164
 #, c-format
 msgid ""
 "Sorry, this plug-in cannot handle a cursor which contains over %i different "
 "nominal sizes."
-msgstr "Ta wtyczka nie obsługuje kursora zawierającego ponad %i różnych rozmiarów nominalnych."
+msgstr ""
+"Ta wtyczka nie obsługuje kursora zawierającego ponad %i różnych rozmiarów "
+"nominalnych."
 
 #: ../plug-ins/common/file-xpm.c:174 ../plug-ins/common/file-xpm.c:199
 msgid "X PixMap image"
@@ -7829,8 +7839,8 @@ msgid ""
 "The unit's symbol if it has one (e.g. \" for inches). The unit's "
 "abbreviation is used if doesn't have a symbol."
 msgstr ""
-"Symbol jednostki, jeśli taki istnieje (np. \" dla cali). Jeśli "
-"jednostka nie ma symbolu, to używany jest jej skrót."
+"Symbol jednostki, jeśli taki istnieje (np. \" dla cali). Jeśli jednostka nie "
+"ma symbolu, to używany jest jej skrót."
 
 #: ../plug-ins/common/unit-editor.c:107
 msgid "Abbreviation"
@@ -8152,7 +8162,9 @@ msgstr "_Punkty"
 
 #: ../plug-ins/common/video.c:1807
 msgid "Simulate distortion produced by a fuzzy or low-res monitor"
-msgstr "Symuluje zniekształcenie tworzone przez rozmyty monitor lub monitor o małej rozdzielczości"
+msgstr ""
+"Symuluje zniekształcenie tworzone przez rozmyty monitor lub monitor o małej "
+"rozdzielczości"
 
 #: ../plug-ins/common/video.c:1814
 msgid "Vi_deo..."
@@ -8350,7 +8362,8 @@ msgstr "Nie odnaleziono podanej ścieżki."
 msgid ""
 "The .exe file is invalid (non-Microsoft Win32 .exe or error in .exe image)."
 msgstr ""
-"Plik .exe jest nieprawidłowy (nie jest plikiem .exe systemu Microsoft Win32 lub obraz .exe zawiera błąd)."
+"Plik .exe jest nieprawidłowy (nie jest plikiem .exe systemu Microsoft Win32 "
+"lub obraz .exe zawiera błąd)."
 
 #: ../plug-ins/common/web-browser.c:147
 msgid "The operating system denied access to the specified file."
@@ -8601,7 +8614,8 @@ msgstr "Bitmapa niespodziewanie się zakończyła."
 #: ../plug-ins/file-bmp/bmp-write.c:191 ../plug-ins/file-bmp/bmp-write.c:217
 msgid "Cannot save indexed image with transparency in BMP file format."
 msgstr ""
-"Nie można zapisać indeksowanego obrazu z przezroczystością w formacie pliku BMP."
+"Nie można zapisać indeksowanego obrazu z przezroczystością w formacie pliku "
+"BMP."
 
 #: ../plug-ins/file-bmp/bmp-write.c:193 ../plug-ins/file-bmp/bmp-write.c:219
 msgid "Alpha channel will be ignored."
@@ -8626,7 +8640,11 @@ msgid ""
 "Some applications can not read BMP images that include color space "
 "information. GIMP writes color space information by default. Enabling this "
 "option will cause GIMP to not write color space information to the file."
-msgstr "Niektóre programy nie mogą odczytywać obrazów BMP zawierających informacje o przestrzeni kolorów. Program GIMP domyślnie zapisuje informacje o przestrzeni kolorów. Włączenie tej opcji powoduje, że program GIMP nie zapisuje informacji o przestrzeni kolorów do pliku."
+msgstr ""
+"Niektóre programy nie mogą odczytywać obrazów BMP zawierających informacje o "
+"przestrzeni kolorów. Program GIMP domyślnie zapisuje informacje o "
+"przestrzeni kolorów. Włączenie tej opcji powoduje, że program GIMP nie "
+"zapisuje informacji o przestrzeni kolorów do pliku."
 
 #. Advanced Options
 #: ../plug-ins/file-bmp/bmp-write.c:901 ../plug-ins/file-jpeg/jpeg-save.c:901
@@ -8710,8 +8728,8 @@ msgstr "Klatka (%i)"
 
 #: ../plug-ins/file-fli/fli-gimp.c:714
 msgid "Sorry, I can save only INDEXED and GRAY images."
-msgstr "Można zapisywać obrazy tylko w trybie indeksowanym lub w "
-"odcieniach szarości."
+msgstr ""
+"Można zapisywać obrazy tylko w trybie indeksowanym lub w odcieniach szarości."
 
 #: ../plug-ins/file-fli/fli-gimp.c:847
 msgid "GFLI 1.3 - Load framestack"
@@ -8743,7 +8761,9 @@ msgstr "Szczegóły ikony"
 msgid ""
 "Large icons and compression are not supported by all programs. Older "
 "applications may not open this file correctly."
-msgstr "Duże ikony i kompresja nie są obsługiwane przez wszystkie programy. Starsze programy mogą otwierać ten plik niepoprawnie."
+msgstr ""
+"Duże ikony i kompresja nie są obsługiwane przez wszystkie programy. Starsze "
+"programy mogą otwierać ten plik niepoprawnie."
 
 #: ../plug-ins/file-ico/ico-dialog.c:165
 msgid "1 bpp, 1-bit alpha, 2-slot palette"
@@ -8879,7 +8899,10 @@ msgid ""
 "If the original image was loaded from a JPEG file using non-standard quality "
 "settings (quantization tables), enable this option to get almost the same "
 "quality and file size."
-msgstr "Jeśli pierwotny obraz został wczytany z pliku JPEG używając niestandardowych ustawień jakości (tablice kwantyzacji), to włączenie tej opcji umożliwia uzyskanie prawie takiej samej jakości i rozmiaru pliku."
+msgstr ""
+"Jeśli pierwotny obraz został wczytany z pliku JPEG używając niestandardowych "
+"ustawień jakości (tablice kwantyzacji), to włączenie tej opcji umożliwia "
+"uzyskanie prawie takiej samej jakości i rozmiaru pliku."
 
 #. Subsampling
 #: ../plug-ins/file-jpeg/jpeg-save.c:1085
@@ -9041,11 +9064,16 @@ msgstr "Obraz programu Photoshop"
 msgid ""
 "Unable to save layer with mode '%s'.  Either the PSD file format or the save "
 "plug-in does not support that, using normal mode instead."
-msgstr "Nie można zapisać warstwy za pomocą trybu \"%s\". Format pliku PSD lub wtyczka zapisywania nie obsługuje go. Zamiast tego zostanie użyty zwykły tryb."
+msgstr ""
+"Nie można zapisać warstwy za pomocą trybu \"%s\". Format pliku PSD lub "
+"wtyczka zapisywania nie obsługuje go. Zamiast tego zostanie użyty zwykły "
+"tryb."
 
 #: ../plug-ins/file-psd/psd-save.c:634
 msgid "Error: Can't convert GIMP base imagetype to PSD mode"
-msgstr "Błąd: nie można przekonwertować podstawowego typu obrazu programu GIMP na tryb PSD"
+msgstr ""
+"Błąd: nie można przekonwertować podstawowego typu obrazu programu GIMP na "
+"tryb PSD"
 
 #: ../plug-ins/file-psd/psd-save.c:1622
 #, c-format
@@ -9053,8 +9081,8 @@ msgid ""
 "Unable to save '%s'.  The PSD file format does not support images that are "
 "more than 30,000 pixels wide or tall."
 msgstr ""
-"Nie można zapisać '\"%s\". Format pliku PSD nie obsługuje obrazów większych niż "
-"30000 pikseli wzdłuż lub wszerz."
+"Nie można zapisać '\"%s\". Format pliku PSD nie obsługuje obrazów większych "
+"niż 30000 pikseli wzdłuż lub wszerz."
 
 #: ../plug-ins/file-psd/psd-save.c:1637
 #, c-format
@@ -9628,8 +9656,7 @@ msgstr "Używa wygładzania loglog"
 #: ../plug-ins/fractal-explorer/fractal-explorer-dialogs.c:939
 msgid "Use log log smoothing to eliminate \"banding\" in the result"
 msgstr ""
-"Używa wygładzania log log, aby wyeliminować powstawanie prążków na "
-"obrazie"
+"Używa wygładzania log log, aby wyeliminować powstawanie prążków na obrazie"
 
 #. Color Density frame
 #: ../plug-ins/fractal-explorer/fractal-explorer-dialogs.c:943
@@ -9685,8 +9712,8 @@ msgid ""
 "Use linear mapping instead of any trigonometrical function for this color "
 "channel"
 msgstr ""
-"Używa odwzorowania liniowego zamiast funkcji trygonometrycznej dla "
-"kanału tego koloru"
+"Używa odwzorowania liniowego zamiast funkcji trygonometrycznej dla kanału "
+"tego koloru"
 
 #: ../plug-ins/fractal-explorer/fractal-explorer-dialogs.c:1021
 #: ../plug-ins/fractal-explorer/fractal-explorer-dialogs.c:1062
@@ -9717,8 +9744,8 @@ msgid ""
 "Create a color-map with the options you specified above (color density/"
 "function). The result is visible in the preview image"
 msgstr ""
-"Tworzy paletę kolorów na podstawie powyższych opcji (gęstość kolorów/funkcja). "
-"Rezultat widać na podglądzie"
+"Tworzy paletę kolorów na podstawie powyższych opcji (gęstość kolorów/"
+"funkcja). Rezultat widać na podglądzie"
 
 #: ../plug-ins/fractal-explorer/fractal-explorer-dialogs.c:1147
 msgid "Apply active gradient to final image"
@@ -10171,7 +10198,8 @@ msgstr "_Gfigury..."
 msgid ""
 "Error trying to save figure as a parasite: can't attach parasite to drawable."
 msgstr ""
-"Błąd podczas próby zapisania figury jako pasożytu: nie można dołączyć pasożytu do obszaru rysowania."
+"Błąd podczas próby zapisania figury jako pasożytu: nie można dołączyć "
+"pasożytu do obszaru rysowania."
 
 #: ../plug-ins/gfig/gfig.c:762
 #, c-format
@@ -10933,10 +10961,11 @@ msgid ""
 "(gflare-path \"%s\")\n"
 "and make a folder '%s', then you can save your own GFlares into that folder."
 msgstr ""
-"Plik GFlare \"%s\" nie został zapisany. Po dodaniu w pliku \"%s\" nowego wpisu w "
-"postaci:\n"
+"Plik GFlare \"%s\" nie został zapisany. Po dodaniu w pliku \"%s\" nowego "
+"wpisu w postaci:\n"
 "(gflare-path \"%s\")\n"
-"i utworzeniu katalogu %s będzie możliwe zapisywanie w nim własnych plików GFlare."
+"i utworzeniu katalogu %s będzie możliwe zapisywanie w nim własnych plików "
+"GFlare."
 
 #: ../plug-ins/gradient-flare/gradient-flare.c:1485
 #, c-format
@@ -11255,12 +11284,13 @@ msgid ""
 "Please install the additional help package or use the online user manual at "
 "http://docs.gimp.org/."
 msgstr ""
-"Proszę zainstalować dodatkowy pakiet pomocy lub użyć podręcznika "
-"użytkownika online na stronie http://docs.gimp.org/."
+"Proszę zainstalować dodatkowy pakiet pomocy lub użyć podręcznika użytkownika "
+"online na stronie http://docs.gimp.org/."
 
 #: ../plug-ins/help/gimphelpdomain.c:196
 msgid "Perhaps you are missing GIO backends and need to install GVFS?"
-msgstr "Być może brakuje mechanizmów GIO lub należy zainstalować bibliotekę GVFS."
+msgstr ""
+"Być może brakuje mechanizmów GIO lub należy zainstalować bibliotekę GVFS."
 
 #: ../plug-ins/help/gimphelpdomain.c:215
 #, c-format
@@ -11578,7 +11608,11 @@ msgid ""
 "their width, height, and spacing from each other. This allows you to rapidly "
 "create the most common image map type - image collection of \"thumbnails\", "
 "suitable for navigation bars."
-msgstr "Prowadnice są wcześniej określonymi prostokątami pokrywającymi obraz. Określa się je według ich szerokości, wysokości i odstępu między nimi. Umożliwia to szybkie tworzenie najczęściej używanego typu mapy obrazu - kolekcji obrazów \"miniatur\", odpowiedniej dla pasków nawigacji."
+msgstr ""
+"Prowadnice są wcześniej określonymi prostokątami pokrywającymi obraz. "
+"Określa się je według ich szerokości, wysokości i odstępu między nimi. "
+"Umożliwia to szybkie tworzenie najczęściej używanego typu mapy obrazu - "
+"kolekcji obrazów \"miniatur\", odpowiedniej dla pasków nawigacji."
 
 #: ../plug-ins/imagemap/imap_cmd_guides.c:169
 msgid "_Left start at:"
@@ -11728,7 +11762,9 @@ msgstr "Odnośn_ik względny"
 
 #: ../plug-ins/imagemap/imap_edit_area_info.c:279
 msgid "_Target frame name/ID: (optional - used for FRAMES only)"
-msgstr "Nazwa lub identyfikator klatki do_celowej: (opcjonalne, używane tylko dla klatek)"
+msgstr ""
+"Nazwa lub identyfikator klatki do_celowej: (opcjonalne, używane tylko dla "
+"klatek)"
 
 #: ../plug-ins/imagemap/imap_edit_area_info.c:282
 msgid "ALT te_xt: (optional)"
@@ -12528,7 +12564,9 @@ msgstr "Odwzorowanie na cylinder"
 
 #: ../plug-ins/map-object/map-object-main.c:188
 msgid "Map the image to an object (plane, sphere, box or cylinder)"
-msgstr "Odwzorowanie obrazu na obiekt (płaszczyzna, sfera, prostopadłościan lub walec)"
+msgstr ""
+"Odwzorowanie obrazu na obiekt (płaszczyzna, sfera, prostopadłościan lub "
+"walec)"
 
 #: ../plug-ins/map-object/map-object-main.c:193
 msgid "Map _Object..."
