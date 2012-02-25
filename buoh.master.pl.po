@@ -25,14 +25,17 @@ msgstr ""
 msgid "Buoh"
 msgstr "Buoh"
 
+# rev: to tooltip w menu środowiska, może coś mnie "rozkazowego"?
 #: ../data/buoh.desktop.in.h:2
 msgid "Read your favourite comic strips"
 msgstr "Czytaj swoje ulubione komiksy"
 
+# rev: spójrz na nazwę pliku - schemas.in to opisy opcji w gconf-editor czy dconf-editor, stąd formy "Wybór...", "Wyświetlanie..." itp.
 #: ../data/buoh.schemas.in.h:1
 msgid "Select viewer zoom mode"
 msgstr "Wybierz tryb powiększenia przeglądarki"
 
+# rev: jw., "Domyślne wyświetlanie paska stanu". Nie będę zaznaczał tego błędu w każdym ciągu, popraw globalnie.
 #: ../data/buoh.schemas.in.h:2
 msgid "Show statusbar by default"
 msgstr "Domyślnie pokazuj pasek stanu"
@@ -41,18 +44,22 @@ msgstr "Domyślnie pokazuj pasek stanu"
 msgid "Show toolbar by default"
 msgstr "Domyślnie pokazuj pasek narzędziowy"
 
+# rev: niepotrzebny przecinek przed "to", natomiast brakuje przecinka przed "natomiast" ;)
 #: ../data/buoh.schemas.in.h:4
 msgid "Statusbar is the bottom bar that contains help and status messages. Two boolean options, true makes statusbar visible by default while false makes statusbar not visible by default."
 msgstr "Pasek stanu, to dolny pasek zawierający wiadomości pomocy i stanu programu. Dwie opcje logiczne, prawda czyni pasek stanu domyślnie widocznym natomiast fałsz czyni pasek stanu domyślnie niewidocznym."
 
+# rev: chyba ucięło tłumaczenie
 #: ../data/buoh.schemas.in.h:5
 msgid "There are two zoom modes available, 1 makes the current comic fill the window, 2 makes the current comic fill the window width."
 msgstr "Dostępne są dwa tryby powiększenia, 1 "
 
+# rev: te same problemy z przecinkami co wyżej
 #: ../data/buoh.schemas.in.h:6
 msgid "Toolbar is the top bar that contains navigation and zoom controls. Two boolean options, true makes toolbar visible by default while false makes toolbar not visible by default."
 msgstr "Pasek narzędziowy, to górny pasek zawierający przyciski nawigacji i przybliżenia. Dwie opcje logiczne, prawda czyni pasek narzędziowy domyślnie widocznym natomiast fałsz czyni pasek narzędziowy domyślnie niewidocznym."
 
+# rev: wg kodu źródłowego jest to tytuł okna, nie przycisk
 #: ../src/buoh-add-comic-dialog.c:67
 msgid "Add Comic"
 msgstr "Dodaj komiks"
@@ -72,11 +79,13 @@ msgstr "Tytuł"
 msgid "Author"
 msgstr "Autor"
 
+# rev: raczej "Zaznaczone komiksy"
 #: ../src/buoh-add-comic-dialog.c:202
 #, fuzzy, c-format
 msgid "Comics selected: %d"
 msgstr "Wybrano komiksów: %d"
 
+# rev: podwójna spacja po "można"
 #: ../src/buoh-comic.c:435
 #, c-format
 msgid "Cannot create file '%s': %s"
@@ -86,7 +95,7 @@ msgstr "Nie można  utworzyć pliku \"%s\": %s"
 #: ../src/buoh-comic.c:452
 #, c-format
 msgid "Error writting to file '%s': %s"
-msgstr "Błąd podczas zapisu do pliku \"%s\": %s"
+msgstr "Błąd podczas zapisywania do pliku \"%s\": %s"
 
 #: ../src/buoh-comic-manager-date.c:56
 msgid "Monday"
@@ -147,11 +156,14 @@ msgstr "Data publikacji"
 msgid "Publication days"
 msgstr "Dni publikacji"
 
+# rev: wg naszego słownika online piszemy bez kreski. Całe zdanie można też przetłumaczyć z nazwą programu na końcu, wydaje się naturalniejsze.
 #: ../src/buoh-view.c:155
 #, fuzzy
 msgid "Buoh online comic strips reader"
 msgstr "Buoh, czytnik komiksów on-line"
 
+# rev: środowisko nie musi być z wielkiej litery.
+# rev: trzeba wywalić "Twoje", może być "...zawiera komiksy dodane do ulubionych". Dalej nie "kliknij", ale "należy kliknąć", nie "po prostu wybierz", a "Wystarczy wybrać". Do tego "Dziękujemy" zamiast "Dziękuję" i jest git.
 #: ../src/buoh-view.c:157
 #, fuzzy
 msgid ""
@@ -187,6 +199,7 @@ msgstr "Pomo_c"
 msgid "_Add..."
 msgstr "_Dodaj..."
 
+# rev: tooltip, więc forma "Dodaje..."
 #: ../src/buoh-window.c:165
 msgid "Add a comic to the comic list"
 msgstr "Dodaj komiks do listy komiksów"
@@ -195,6 +208,7 @@ msgstr "Dodaj komiks do listy komiksów"
 msgid "_Remove"
 msgstr "_Usuń"
 
+# rev: jw.
 #: ../src/buoh-window.c:168
 msgid "Remove this comic from the comic list"
 msgstr "Usuń ten komiks z listy komiksów"
@@ -203,14 +217,17 @@ msgstr "Usuń ten komiks z listy komiksów"
 msgid "_Save A Copy..."
 msgstr "_Zapisz kopię..."
 
+# rev: jw.
 #: ../src/buoh-window.c:171
 msgid "Save the current comic with a new filename"
 msgstr "Zapisz bieżący komiks pod nową nazwą"
 
+# rev: wg naszego słownika "Skopiuj", poza tym _ pod p się nie wyświetli, musisz wybrać inną literę.
 #: ../src/buoh-window.c:173
 msgid "_Copy Location"
 msgstr "Kopiuj _położenie"
 
+# rev: znowu tooltip
 #: ../src/buoh-window.c:174
 msgid "Copy the location of this comic to clipboard"
 msgstr "Kopiuj położenie tego komiksu do schowka"
@@ -219,16 +236,19 @@ msgstr "Kopiuj położenie tego komiksu do schowka"
 msgid "_Properties..."
 msgstr "Wł_aściwości..."
 
+# rev: wyświetl, a dokładnie to "Wyświetla..."
 # wyświetl, czy pokaż?
 #: ../src/buoh-window.c:177
 #, fuzzy
 msgid "View the properties of this comic"
 msgstr "Wyświetl właściwości tego komiksu"
 
+# rev: wg naszego słownika "Zakończ", a _ zwyczajowo jest pod "k"
 #: ../src/buoh-window.c:179
 msgid "_Quit"
 msgstr "Za_mknij"
 
+# rev: jw., do tego tooltip
 #: ../src/buoh-window.c:180
 msgid "Quit application"
 msgstr "Zamknij program"
@@ -238,6 +258,7 @@ msgstr "Zamknij program"
 msgid "Zoom _In"
 msgstr "Przybl_iż"
 
+# rev: tooltip
 #: ../src/buoh-window.c:185
 msgid "Increase the comic size"
 msgstr "Zwiększ rozmiar komiksu"
@@ -246,6 +267,7 @@ msgstr "Zwiększ rozmiar komiksu"
 msgid "Zoom _Out"
 msgstr "_Oddal"
 
+# rev: jw.
 #: ../src/buoh-window.c:188
 msgid "Decrease the comic size"
 msgstr "Zmniejsz rozmiar komiksu"
@@ -254,6 +276,7 @@ msgstr "Zmniejsz rozmiar komiksu"
 msgid "_Normal Size"
 msgstr "Zwykły _rozmiar"
 
+# rev: jw.
 #: ../src/buoh-window.c:191
 msgid "Use the normal comic size"
 msgstr "Użyj zwykłego rozmiaru komiksu"
@@ -263,6 +286,7 @@ msgstr "Użyj zwykłego rozmiaru komiksu"
 msgid "_Previous Comic"
 msgstr "_Poprzedni komiks"
 
+# rev: jw.
 #: ../src/buoh-window.c:196
 msgid "Go to the previous comic"
 msgstr "Przejdź do poprzedniego komiksu"
@@ -271,6 +295,7 @@ msgstr "Przejdź do poprzedniego komiksu"
 msgid "_Next Comic"
 msgstr "_Następny komiks"
 
+# rev: jw.
 #: ../src/buoh-window.c:199
 msgid "Go to the next comic"
 msgstr "Przejdź do następnego komiksu"
@@ -279,6 +304,7 @@ msgstr "Przejdź do następnego komiksu"
 msgid "_First Comic"
 msgstr "P_ierwszy komiks"
 
+# rev: jw.
 #: ../src/buoh-window.c:202
 msgid "Go to the first comic"
 msgstr "Przejdź do pierwszego komiksu"
@@ -287,23 +313,28 @@ msgstr "Przejdź do pierwszego komiksu"
 msgid "_Last Comic"
 msgstr "_Ostatni komiks"
 
+# rev: jw.
 #: ../src/buoh-window.c:205
 msgid "Go to the last comic"
 msgstr "Przejdź do ostatniego komiksu"
 
+# rev: wg naszego słownika "Spis treści"
 #. Help menu
 #: ../src/buoh-window.c:209
 msgid "_Contents"
 msgstr "_Spis tematów"
 
+# rev: tooltip, online, poza tym podwójna spacja po przecinku. Może być też "Wyświetla pomoc czytnika komiksów online Buoh"
 #: ../src/buoh-window.c:210
 msgid "Display help for the Buoh online comic reader"
 msgstr "Wyświetl pomoc programu Buoh,  czytnika komiksów on-line"
 
+# rev: _ zwyczajowo pod O
 #: ../src/buoh-window.c:212
 msgid "_About"
 msgstr "O progr_amie"
 
+# rev: formę można zmienić tak jak wyżej - "...czytnika komiksów online Buoh"
 #: ../src/buoh-window.c:213
 msgid "Display credits for the Buoh online comic reader creators"
 msgstr "Wyświetla zasługi twórców programu Buoh, czytnika komiksów on-line"
@@ -313,6 +344,7 @@ msgstr "Wyświetla zasługi twórców programu Buoh, czytnika komiksów on-line"
 msgid "_Toolbar"
 msgstr "Pasek _narzędziowy"
 
+# rev: "ustawienia" jest nadmiarowe, wystarczy "Zmienia widoczność..."
 #: ../src/buoh-window.c:221
 msgid "Changes the visibility of the toolbar"
 msgstr "Zmienia ustawienia widoczności paska narzędziowego"
@@ -321,6 +353,7 @@ msgstr "Zmienia ustawienia widoczności paska narzędziowego"
 msgid "St_atusbar"
 msgstr "Pasek st_anu"
 
+# rev: literówka w "Zmiania", poza tym jak wyżej z ustawieniami
 #: ../src/buoh-window.c:224
 msgid "Changes the visibility of the statusbar"
 msgstr "Zmiania ustawienia widoczności paska stanu"
@@ -345,6 +378,7 @@ msgstr "Dopasowuje bieżący komiks do szerokości okna"
 msgid "Images"
 msgstr "Obrazy"
 
+# rev: tytuł okna, czyli "Zapis komiksu"
 #: ../src/buoh-window.c:538
 msgid "Save Comic"
 msgstr "Zapisz komiks"
@@ -353,6 +387,7 @@ msgstr "Zapisz komiks"
 msgid "Unable to save comic"
 msgstr "Nie można zapisać komiksu"
 
+# rev: on-line > online
 #: ../src/buoh-window.c:842
 msgid "Online comic strips reader"
 msgstr "Czytnik komiksów on-line"
