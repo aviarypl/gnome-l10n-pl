@@ -7,32 +7,32 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: kupfer\n"
-"Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2012-02-14 19:53+0100\n"
-"PO-Revision-Date: 2012-02-14 19:55+0100\n"
+"Report-Msgid-Bugs-To: http://bugs.launchpad.net/kupfer\n"
+"POT-Creation-Date: 2012-02-25 19:02+0000\n"
+"PO-Revision-Date: 2012-02-25 21:07+0100\n"
 "Last-Translator: Piotr Drąg <piotrdrag@gmail.com>\n"
 "Language-Team: Polish <gnomepl@aviary.pl>\n"
-"Language: pl\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
+"Language: pl\n"
 "Plural-Forms: nplurals=3; plural=(n==1 ? 0 : n%10>=2 && n%10<=4 && (n%100<10 "
 "|| n%100>=20) ? 1 : 2);\n"
 "X-Poedit-Language: Polish\n"
 "X-Poedit-Country: Poland\n"
 
-#: ../auxdata/kupfer.desktop.in.h:1
-msgid "Application Launcher"
-msgstr "Aktywator programów"
-
-#: ../auxdata/kupfer.desktop.in.h:2
-msgid "Convenient command and access tool for applications and documents"
-msgstr "Wygodne narzędzie do uruchamiania programów i otwierania dokumentów"
-
-#: ../auxdata/kupfer.desktop.in.h:3 ../kupfer/version.py:15
+#: ../auxdata/kupfer.desktop.in.h:1 ../kupfer/version.py:15
 #: ../kupfer/plugin/core/contents.py:91
 msgid "Kupfer"
 msgstr "Kupfer"
+
+#: ../auxdata/kupfer.desktop.in.h:2
+msgid "Application Launcher"
+msgstr "Aktywator programów"
+
+#: ../auxdata/kupfer.desktop.in.h:3
+msgid "Convenient command and access tool for applications and documents"
+msgstr "Wygodne narzędzie do uruchamiania programów i otwierania dokumentów"
 
 #: ../auxdata/kupfer-exec.desktop.in.h:1
 msgid "Execute in Kupfer"
@@ -47,79 +47,91 @@ msgid "User credentials"
 msgstr "Dane użytkownika"
 
 #: ../data/credentials_dialog.ui.h:2
-msgid "_Change"
-msgstr "_Zmień"
+msgid "_User:"
+msgstr "_Użytkownik:"
 
 #: ../data/credentials_dialog.ui.h:3
 msgid "_Password:"
 msgstr "_Hasło:"
 
 #: ../data/credentials_dialog.ui.h:4
-msgid "_User:"
-msgstr "_Użytkownik:"
+msgid "_Change"
+msgstr "_Zmień"
 
 #: ../data/getkey_dialog.ui.h:1
-msgid "Keybinding could not be bound"
-msgstr "Przypisanie klawisza się nie powiodło"
+msgid "Set Keyboard Shortcut"
+msgstr "Wybór klawisza skrótu"
 
 #: ../data/getkey_dialog.ui.h:2
 msgid "Please press desired key combination"
 msgstr "Proszę nacisnąć żądaną kombinację klawiszy"
 
 #: ../data/getkey_dialog.ui.h:3
-msgid "Set Keyboard Shortcut"
-msgstr "Wybór klawisza skrótu"
+msgid "Keybinding could not be bound"
+msgstr "Przypisanie klawisza się nie powiodło"
 
-#: ../data/preferences.ui.h:1
-msgid "<b>Browser Keyboard Shortcuts</b>"
-msgstr "<b>Skróty klawiszowe przeglądarki</b>"
+#: ../data/preferences.ui.h:1 ../kupfer/plugin/core/contents.py:78
+msgid "Kupfer Preferences"
+msgstr "Preferencje programu Kupfer"
 
 #: ../data/preferences.ui.h:2
-msgid "<b>Global Keyboard Shortcuts</b>"
-msgstr "<b>Globalne skróty klawiszowe</b>"
+msgid "Start automatically on login"
+msgstr "Automatycznie uruchamianie po zalogowaniu"
 
 #: ../data/preferences.ui.h:3
 msgid "<b>Start</b>"
 msgstr "<b>Początek</b>"
 
-#: ../data/preferences.ui.h:4 ../kupfer/obj/sources.py:156
-msgid "Catalog"
-msgstr "Katalog"
+#: ../data/preferences.ui.h:4
+msgid "Show icon in notification area"
+msgstr "Ikona w obszarze powiadamiania"
 
 #: ../data/preferences.ui.h:5
-msgid "Desktop Environment"
-msgstr "Środowisko graficzne"
-
-#: ../data/preferences.ui.h:6
-msgid "Folders whose files are always available in the catalog."
-msgstr ""
-"Katalogi, których pliki będą zawsze dostępne w katalogu programu Kupfer."
-
-#: ../data/preferences.ui.h:7
-msgid "General"
-msgstr "Ogólne"
-
-#: ../data/preferences.ui.h:8
 msgid "Icon set:"
 msgstr "Zestaw ikon:"
 
-#: ../data/preferences.ui.h:9
-msgid "Inclusion in Top Level Searches"
-msgstr "Zawartość najwyższego poziomu katalogu"
+#: ../data/preferences.ui.h:6
+msgid "Terminal emulator:"
+msgstr "Emulator terminala:"
 
-#: ../data/preferences.ui.h:10
-msgid "Indexed Folders"
-msgstr "Indeksowane katalogi"
+#: ../data/preferences.ui.h:7
+msgid "Desktop Environment"
+msgstr "Środowisko graficzne"
+
+#: ../data/preferences.ui.h:8 ../kupfer/plugin/gmail/__init__.py:60
+msgid "General"
+msgstr "Ogólne"
+
+#: ../data/preferences.ui.h:9
+msgid "<b>Global Keyboard Shortcuts</b>"
+msgstr "<b>Globalne skróty klawiszowe</b>"
+
+#: ../data/preferences.ui.h:10 ../kupfer/ui/preferences.py:849
+msgid "Reset"
+msgstr "Przywróć"
 
 #: ../data/preferences.ui.h:11
+msgid "<b>Browser Keyboard Shortcuts</b>"
+msgstr "<b>Skróty klawiszowe przeglądarki</b>"
+
+#: ../data/preferences.ui.h:12
+msgid "Use single keystroke commands (Space, /, period, comma etc.)"
+msgstr ""
+"Włączenie jednoklawiszowych poleceń (spacja, /, kropka, przecinek itp.)"
+
+#: ../data/preferences.ui.h:13
 msgid "Keyboard"
 msgstr "Klawiatura"
 
-#: ../data/preferences.ui.h:12 ../kupfer/plugin/core/contents.py:78
-msgid "Kupfer Preferences"
-msgstr "Preferencje programu Kupfer"
+#: ../data/preferences.ui.h:14
+msgid "Plugins"
+msgstr "Wtyczki"
 
-#: ../data/preferences.ui.h:13
+#: ../data/preferences.ui.h:15
+msgid "Inclusion in Top Level Searches"
+msgstr "Zawartość najwyższego poziomu katalogu"
+
+#: ../data/preferences.ui.h:16
 msgid ""
 "Marked sources have their objects included in top level searches.\n"
 "An unmarked source's contents are only available by locating its subcatalog."
@@ -128,30 +140,18 @@ msgstr ""
 "wyszukiwania.\n"
 "Zawartość odznaczonych źródeł jest dostępna jedynie przez podkatalogi listy."
 
-#: ../data/preferences.ui.h:15
-msgid "Plugins"
-msgstr "Wtyczki"
-
-#: ../data/preferences.ui.h:16 ../kupfer/ui/preferences.py:849
-msgid "Reset"
-msgstr "Przywróć"
-
-#: ../data/preferences.ui.h:17
-msgid "Show icon in notification area"
-msgstr "Ikona w obszarze powiadamiania"
-
 #: ../data/preferences.ui.h:18
-msgid "Start automatically on login"
-msgstr "Automatycznie uruchamianie po zalogowaniu"
+msgid "Indexed Folders"
+msgstr "Indeksowane katalogi"
 
 #: ../data/preferences.ui.h:19
-msgid "Terminal emulator:"
-msgstr "Emulator terminala:"
-
-#: ../data/preferences.ui.h:20
-msgid "Use single keystroke commands (Space, /, period, comma etc.)"
+msgid "Folders whose files are always available in the catalog."
 msgstr ""
-"Włączenie jednoklawiszowych poleceń (spacja, /, kropka, przecinek itp.)"
+"Katalogi, których pliki będą zawsze dostępne w katalogu programu Kupfer."
+
+#: ../data/preferences.ui.h:20 ../kupfer/obj/sources.py:156
+msgid "Catalog"
+msgstr "Katalog"
 
 #: ../kupfer/core/commandexec.py:239
 #, python-format
@@ -478,10 +478,43 @@ msgstr[0] "%s obiekt"
 msgstr[1] "%s obiekty"
 msgstr[2] "%s obiektów"
 
-#: ../kupfer/obj/contacts.py:87 ../kupfer/plugin/pidgin.py:156
+#: ../kupfer/obj/contacts.py:129 ../kupfer/plugin/pidgin.py:156
 #, python-format
 msgid "[%(status)s] %(userid)s/%(service)s"
 msgstr "[%(status)s] %(userid)s/%(service)s"
+
+#: ../kupfer/obj/contacts.py:131
+msgid "unknown"
+msgstr "nieznane"
+
+#: ../kupfer/obj/contacts.py:144
+msgid "Aim"
+msgstr "AIM"
+
+#: ../kupfer/obj/contacts.py:151
+msgid "Google Talk"
+msgstr "Google Talk"
+
+#: ../kupfer/obj/contacts.py:159
+msgid "ICQ"
+msgstr "ICQ"
+
+#: ../kupfer/obj/contacts.py:166
+msgid "MSN"
+msgstr "MSN"
+
+#: ../kupfer/obj/contacts.py:173
+msgid "QQ"
+msgstr "QQ"
+
+#: ../kupfer/obj/contacts.py:180
+msgid "Yahoo"
+msgstr "Yahoo"
+
+#. -*- coding: UTF-8 -*-
+#: ../kupfer/obj/contacts.py:187 ../kupfer/plugin/skype.py:2
+msgid "Skype"
+msgstr "Skype"
 
 #: ../kupfer/obj/exceptions.py:19
 #, python-format
@@ -1848,12 +1881,12 @@ msgid "Offline"
 msgstr "Rozłączony"
 
 #: ../kupfer/plugin/empathy.py:96 ../kupfer/plugin/gajim.py:93
-#: ../kupfer/plugin/pidgin.py:97 ../kupfer/plugin/skype.py:204
+#: ../kupfer/plugin/pidgin.py:97 ../kupfer/plugin/skype.py:197
 msgid "Open Chat"
 msgstr "Rozpocznij rozmowę"
 
 #: ../kupfer/plugin/empathy.py:129 ../kupfer/plugin/gajim.py:121
-#: ../kupfer/plugin/skype.py:250
+#: ../kupfer/plugin/skype.py:243
 msgid "Change Global Status To..."
 msgstr "Zmień globalny stan na..."
 
@@ -1933,7 +1966,7 @@ msgid "Glob"
 msgstr "Wyrażenie regularne"
 
 #. -*- coding: UTF-8 -*-
-#: ../kupfer/plugin/gmail/__init__.py:2 ../kupfer/plugin/gmail/__init__.py:177
+#: ../kupfer/plugin/gmail/__init__.py:2 ../kupfer/plugin/gmail/__init__.py:234
 msgid "Gmail"
 msgstr "Gmail"
 
@@ -1943,28 +1976,96 @@ msgstr ""
 "Wczytuje kontakty i umożliwia tworzenie nowych wiadomości e-mail w serwisie "
 "Gmail"
 
-#: ../kupfer/plugin/gmail/__init__.py:32
+#: ../kupfer/plugin/gmail/__init__.py:33
 msgid "Load contacts' pictures"
 msgstr "Pobieranie obrazów kontaktów"
 
-#: ../kupfer/plugin/gmail/__init__.py:53
+#: ../kupfer/plugin/gmail/__init__.py:39
+msgid "Load additional information"
+msgstr "Wczytuje dodatkowe informacje"
+
+#: ../kupfer/plugin/gmail/__init__.py:50
+msgid "Work email"
+msgstr "Służbowy adres e-mail"
+
+#: ../kupfer/plugin/gmail/__init__.py:51
+msgid "Home email"
+msgstr "Domowy adres e-mail"
+
+#: ../kupfer/plugin/gmail/__init__.py:52
+msgid "Other email"
+msgstr "Inny adres e-mail"
+
+#: ../kupfer/plugin/gmail/__init__.py:54
+msgid "Work address"
+msgstr "Adres służbowy"
+
+#: ../kupfer/plugin/gmail/__init__.py:55
+msgid "Home address"
+msgstr "Adres domowy"
+
+#: ../kupfer/plugin/gmail/__init__.py:56
+msgid "Other address"
+msgstr "Inny adres"
+
+#: ../kupfer/plugin/gmail/__init__.py:58
+msgid "Car phone"
+msgstr "Telefon samochodowy"
+
+#: ../kupfer/plugin/gmail/__init__.py:59
+msgid "Fax"
+msgstr "Faks"
+
+#: ../kupfer/plugin/gmail/__init__.py:61
+msgid "Home phone"
+msgstr "Telefon domowy"
+
+#: ../kupfer/plugin/gmail/__init__.py:62
+msgid "Home fax"
+msgstr "Faks domowy"
+
+#: ../kupfer/plugin/gmail/__init__.py:63
+msgid "Internal phone"
+msgstr "Telefon wewnętrzny"
+
+#: ../kupfer/plugin/gmail/__init__.py:64
+msgid "Mobile"
+msgstr "Komórka"
+
+#: ../kupfer/plugin/gmail/__init__.py:65
+msgid "Other"
+msgstr "Inne"
+
+#: ../kupfer/plugin/gmail/__init__.py:66
+msgid "VOIP"
+msgstr "VoIP"
+
+#: ../kupfer/plugin/gmail/__init__.py:67
+msgid "Work phone"
+msgstr "Telefon służbowy"
+
+#: ../kupfer/plugin/gmail/__init__.py:68
+msgid "Work fax"
+msgstr "Faks służbowy"
+
+#: ../kupfer/plugin/gmail/__init__.py:93
 msgid "Compose Email in Gmail"
 msgstr "Utwórz wiadomość e-mail w serwisie Gmail"
 
-#: ../kupfer/plugin/gmail/__init__.py:76
+#: ../kupfer/plugin/gmail/__init__.py:117
 msgid "Open web browser and compose new email in Gmail"
 msgstr ""
 "Otwiera przeglądarkę WWW i tworzy nową wiadomość e-mail w serwisie Gmail"
 
-#: ../kupfer/plugin/gmail/__init__.py:82
+#: ../kupfer/plugin/gmail/__init__.py:123
 msgid "Edit Contact in Gmail"
 msgstr "Modyfikuj kontakt w serwisie Gmail"
 
-#: ../kupfer/plugin/gmail/__init__.py:92
+#: ../kupfer/plugin/gmail/__init__.py:133
 msgid "Open web browser and edit contact in Gmail"
 msgstr "Otwiera przeglądarkę WWW i modyfikuje kontakt w serwisie Gmail"
 
-#: ../kupfer/plugin/gmail/__init__.py:210
+#: ../kupfer/plugin/gmail/__init__.py:263
 msgid "Contacts from Google services (Gmail)"
 msgstr "Kontakty z usług firmy Google (Gmail)"
 
@@ -2596,11 +2697,6 @@ msgstr "Wyświetl QRCode"
 msgid "Display text as QRCode in a window"
 msgstr "Wyświetla tekst jako QRCode w oknie"
 
-#. -*- coding: UTF-8 -*-
-#: ../kupfer/plugin/skype.py:2
-msgid "Skype"
-msgstr "Skype"
-
 #: ../kupfer/plugin/skype.py:5
 msgid "Access to Skype contacts"
 msgstr "Dostęp do kontaktów programu Skype"
@@ -2613,24 +2709,24 @@ msgstr "Skype Me"
 msgid "Logged Out"
 msgstr "Wylogowano"
 
-#: ../kupfer/plugin/skype.py:183
+#: ../kupfer/plugin/skype.py:179
 #, python-format
 msgid "[%(status)s] %(userid)s"
 msgstr "[%(status)s] %(userid)s"
 
-#: ../kupfer/plugin/skype.py:225
+#: ../kupfer/plugin/skype.py:218
 msgid "Call"
 msgstr "Zadzwoń"
 
-#: ../kupfer/plugin/skype.py:239
+#: ../kupfer/plugin/skype.py:232
 msgid "Place a call to contact"
 msgstr "Nawiązuje połączenie z kontaktem"
 
-#: ../kupfer/plugin/skype.py:274
+#: ../kupfer/plugin/skype.py:267
 msgid "Skype Contacts"
 msgstr "Kontakty programu Skype"
 
-#: ../kupfer/plugin/skype.py:294
+#: ../kupfer/plugin/skype.py:287
 msgid "Skype Statuses"
 msgstr "Stany programu Skype"
 
