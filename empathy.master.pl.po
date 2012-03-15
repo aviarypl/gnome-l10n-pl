@@ -9,8 +9,8 @@ msgstr ""
 "Project-Id-Version: empathy\n"
 "Report-Msgid-Bugs-To: http://bugzilla.gnome.org/enter_bug.cgi?"
 "product=empathy&keywords=I18N+L10N&component=General\n"
-"POT-Creation-Date: 2012-03-13 12:15+0000\n"
-"PO-Revision-Date: 2012-03-13 13:34+0100\n"
+"POT-Creation-Date: 2012-03-14 16:28+0000\n"
+"PO-Revision-Date: 2012-03-14 21:06+0100\n"
 "Last-Translator: Piotr Drąg <piotrdrag@gmail.com>\n"
 "Language-Team: Polish <gnomepl@aviary.pl>\n"
 "Language: pl\n"
@@ -879,12 +879,12 @@ msgid "Password"
 msgstr "Hasło"
 
 #: ../libempathy-gtk/empathy-account-widget.c:684
-#: ../libempathy-gtk/empathy-irc-network-dialog.c:507
+#: ../libempathy-gtk/empathy-irc-network-dialog.c:511
 msgid "Server"
 msgstr "Serwer"
 
 #: ../libempathy-gtk/empathy-account-widget.c:685
-#: ../libempathy-gtk/empathy-irc-network-dialog.c:522
+#: ../libempathy-gtk/empathy-irc-network-dialog.c:529
 msgid "Port"
 msgstr "Port"
 
@@ -895,7 +895,7 @@ msgid "%s:"
 msgstr "%s:"
 
 #: ../libempathy-gtk/empathy-account-widget.c:1398
-#: ../libempathy-gtk/empathy-account-widget-irc.ui.h:10
+#: ../libempathy-gtk/empathy-account-widget-irc.ui.h:14
 msgid "Username:"
 msgstr "Nazwa użytkownika:"
 
@@ -989,7 +989,7 @@ msgstr "_Serwer:"
 #: ../libempathy-gtk/empathy-account-widget-generic.ui.h:1
 #: ../libempathy-gtk/empathy-account-widget-groupwise.ui.h:7
 #: ../libempathy-gtk/empathy-account-widget-icq.ui.h:8
-#: ../libempathy-gtk/empathy-account-widget-irc.ui.h:11
+#: ../libempathy-gtk/empathy-account-widget-irc.ui.h:15
 #: ../libempathy-gtk/empathy-account-widget-jabber.ui.h:23
 #: ../libempathy-gtk/empathy-account-widget-msn.ui.h:7
 #: ../libempathy-gtk/empathy-account-widget-local-xmpp.ui.h:7
@@ -1100,12 +1100,37 @@ msgstr "Sieć:"
 msgid "Character set:"
 msgstr "Zestaw znaków:"
 
+# pd
 #: ../libempathy-gtk/empathy-account-widget-irc.ui.h:4
+#: ../src/empathy-accounts-dialog.ui.h:1
+msgid "Add…"
+msgstr "Dodaj…"
+
+# pd
+#: ../libempathy-gtk/empathy-account-widget-irc.ui.h:5
+#: ../libempathy-gtk/empathy-contact-blocking-dialog.ui.h:3
+#: ../libempathy-gtk/empathy-status-preset-dialog.ui.h:1
+#: ../src/empathy-accounts-dialog.ui.h:2
+#: ../src/empathy-chatrooms-window.ui.h:3
+msgid "Remove"
+msgstr "Usuń"
+
+# pd
+#: ../libempathy-gtk/empathy-account-widget-irc.ui.h:6
+msgid "Up"
+msgstr "W górę"
+
+# pd
+#: ../libempathy-gtk/empathy-account-widget-irc.ui.h:7
+msgid "Down"
+msgstr "W dół"
+
+#: ../libempathy-gtk/empathy-account-widget-irc.ui.h:8
 msgid "Servers"
 msgstr "Serwery"
 
 # pd
-#: ../libempathy-gtk/empathy-account-widget-irc.ui.h:5
+#: ../libempathy-gtk/empathy-account-widget-irc.ui.h:9
 msgid ""
 "Most IRC servers don't need a password, so if you're not sure, don't enter a "
 "password."
@@ -1113,27 +1138,27 @@ msgstr ""
 "Większość serwerów IRC nie wymaga hasła, więc w razie niepewności nie należy "
 "go podawać."
 
-#: ../libempathy-gtk/empathy-account-widget-irc.ui.h:6
+#: ../libempathy-gtk/empathy-account-widget-irc.ui.h:10
 msgid "Nickname:"
 msgstr "Pseudonim:"
 
-#: ../libempathy-gtk/empathy-account-widget-irc.ui.h:7
+#: ../libempathy-gtk/empathy-account-widget-irc.ui.h:11
 msgid "Password:"
 msgstr "Hasło:"
 
-#: ../libempathy-gtk/empathy-account-widget-irc.ui.h:8
+#: ../libempathy-gtk/empathy-account-widget-irc.ui.h:12
 msgid "Quit message:"
 msgstr "Komunikat podczas zakończenia:"
 
-#: ../libempathy-gtk/empathy-account-widget-irc.ui.h:9
+#: ../libempathy-gtk/empathy-account-widget-irc.ui.h:13
 msgid "Real name:"
 msgstr "Imię i nazwisko:"
 
-#: ../libempathy-gtk/empathy-account-widget-irc.ui.h:12
+#: ../libempathy-gtk/empathy-account-widget-irc.ui.h:16
 msgid "Which IRC network?"
 msgstr "Sieć IRC:"
 
-#: ../libempathy-gtk/empathy-account-widget-irc.ui.h:13
+#: ../libempathy-gtk/empathy-account-widget-irc.ui.h:17
 msgid "What is your IRC nickname?"
 msgstr "Pseudonim IRC:"
 
@@ -1783,14 +1808,6 @@ msgstr "Konto:"
 msgid "Blocked Contacts"
 msgstr "Zablokowane kontakty"
 
-# pd
-#: ../libempathy-gtk/empathy-contact-blocking-dialog.ui.h:3
-#: ../libempathy-gtk/empathy-status-preset-dialog.ui.h:1
-#: ../src/empathy-accounts-dialog.ui.h:2
-#: ../src/empathy-chatrooms-window.ui.h:3
-msgid "Remove"
-msgstr "Usuń"
-
 #. Copy Link Address menu item
 #: ../libempathy-gtk/empathy-chat-text-view.c:322
 #: ../libempathy-gtk/empathy-webkit-utils.c:277
@@ -2408,7 +2425,7 @@ msgstr "Wybierz"
 msgid "new server"
 msgstr "nowy serwer"
 
-#: ../libempathy-gtk/empathy-irc-network-dialog.c:535
+#: ../libempathy-gtk/empathy-irc-network-dialog.c:539
 msgid "SSL"
 msgstr "SSL"
 
@@ -3317,11 +3334,6 @@ msgid ""
 msgstr ""
 "Za chwilę nastąpi zamknięcie okna, co spowoduje\n"
 "utratę zmian. Na pewno kontynuować?"
-
-# pd
-#: ../src/empathy-accounts-dialog.ui.h:1
-msgid "Add…"
-msgstr "Dodaj…"
 
 #: ../src/empathy-accounts-dialog.ui.h:3
 msgid "_Import…"
