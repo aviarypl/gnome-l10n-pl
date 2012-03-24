@@ -7,14 +7,14 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: release-notes\n"
-"POT-Creation-Date: 2012-03-20 20:57+0000\n"
+"POT-Creation-Date: 2012-03-22 14:49+0000\n"
 "PO-Revision-Date: 2011-09-27 16:30+0200\n"
 "Last-Translator: Piotr Drąg <piotrdrag@gmail.com>\n"
 "Language-Team: Polish <gnomepl@aviary.pl>\n"
+"Language: pl\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"Language: pl\n"
 "X-Poedit-Language: Polish\n"
 "X-Poedit-Country: Poland\n"
 "Plural-Forms: nplurals=3; plural=(n==1 ? 0 : n%10>=2 && n%10<=4 && (n%100<10 "
@@ -24,9 +24,9 @@ msgstr ""
 #. It doesn't matter what you translate it to: it's not used at all.
 #: C/rnlookingforward.xml:34(None)
 msgid ""
-"@@image: 'figures/rnusers.boxes.png'; md5=9a7ac82bce68964fc35abf5ce6872dea"
+"@@image: 'figures/rnusers.boxes.png'; md5=4d909e9cac05a8074f99cb47e406d7f3"
 msgstr ""
-"@@image: 'figures/rnusers.boxes.png'; md5=9a7ac82bce68964fc35abf5ce6872dea"
+"@@image: 'figures/rnusers.boxes.png'; md5=4d909e9cac05a8074f99cb47e406d7f3"
 
 #: C/rnlookingforward.xml:10(title)
 msgid "Looking Forward to GNOME 3.6"
@@ -38,8 +38,8 @@ msgid ""
 "The next release in the GNOME 3 series is scheduled for September 2012. Many "
 "new features and enhancements are planned for 3.6."
 msgstr ""
-"Następne wydanie w serii GNOME 3 jest zaplanowane na październik 2012. W wersji "
-"3.6 pojawi się wiele nowych funkcji i ulepszeń."
+"Następne wydanie w serii GNOME 3 jest zaplanowane na październik 2012. W "
+"wersji 3.6 pojawi się wiele nowych funkcji i ulepszeń."
 
 #: C/rnlookingforward.xml:16(title)
 msgid "User-Visible Changes"
@@ -51,6 +51,8 @@ msgid ""
 "Continued work on perfect integration of system components while still "
 "keeping an eye on the small details that make your life easier."
 msgstr ""
+"Dalsza praca nad dokładną integracją składników systemu, jednocześnie "
+"pamiętając o ułatwiających życie szczegółach."
 
 # pd
 #: C/rnlookingforward.xml:22(para)
@@ -60,6 +62,11 @@ msgid ""
 "use virtual machines. A first testing version of Boxes is already available "
 "for GNOME 3.4. However, it might not come included with your system yet."
 msgstr ""
+"Trwa praca nad programem <application>Boxes</application>. Ten nowy program "
+"dla środowiska GNOME 3.4 ułatwia łączenie ze zdalnymi komputerami oraz "
+"używanie maszyn wirtualnych. Pierwsza testowa wersja programu Boxes jest już "
+"dostępna w wersji 3.4. Jednakże może on nie być jeszcze dostępny w każdej "
+"dystrybucji."
 
 # pd
 #: C/rnlookingforward.xml:32(title)
@@ -76,34 +83,56 @@ msgstr ""
 "application> dzięki zmianie biblioteki <application>GtkHtml</application> na "
 "<application>WebKit</application>."
 
-#: C/rnlookingforward.xml:51(title)
+# pd
+#: C/rnlookingforward.xml:46(title)
+msgid "Accessibility Changes"
+msgstr "Zmiany dostępności"
+
+# pd
+#: C/rnlookingforward.xml:48(para)
+msgid ""
+"Continued improvements to <application>GNOME Shell</application> "
+"accessibility via <application>Orca</application> and further improvements "
+"to <application>Orca</application>'s support for <application>WebKit2GTK+</"
+"application>."
+msgstr ""
+"Dalsze ulepszenia dostępności <application>Powłoki GNOME</application> oraz "
+"obsługi mechanizmu <application>WebKit2GTK+</application> przez program "
+"<application>Orca</application>."
+
+# pd
+#: C/rnlookingforward.xml:51(para)
+msgid ""
+"<application>GNOME Shell Magnifier</application> will provide additional "
+"options for customizing brightness and contrast."
+msgstr ""
+"<application>Lupa powłoki GNOME</application> dostarcza dodatkowe opcje "
+"dostosowania jasności i kontrastu."
+
+#: C/rnlookingforward.xml:60(title)
 msgid "Developer-Related Changes"
 msgstr "Zmiany dotyczące programistów"
 
 # pd
-#: C/rnlookingforward.xml:54(para)
+#: C/rnlookingforward.xml:63(para)
 msgid ""
 "Support for search providers in <application>GNOME Shell</application> that "
 "are provided by applications."
 msgstr ""
+"Obsługa dostawców wyszukiwania programów w <application>Powłoce GNOME</"
+"application>."
 
 # pd
-#: C/rnlookingforward.xml:58(para)
-#, fuzzy
-#| msgid ""
-#| "Improved rendering of HTML messages in <application>Evolution</"
-#| "application> by using <application>WebKit</application> instead of "
-#| "<application>GtkHtml</application>."
+#: C/rnlookingforward.xml:67(para)
 msgid ""
-"<application>Web</application> and <application>Devhelp</application> might "
-"switch to using <application>WebKitGtk+2</application>."
+"<application>Web</application> might switch to using <application>WebKit2GTK"
+"+</application>."
 msgstr ""
-"Ulepszone wyświetlanie wiadomości HTML w programie <application>Evolution</"
-"application> dzięki zmianie biblioteki <application>GtkHtml</application> na "
-"<application>WebKit</application>."
+"Program <application>WWW</application> może przejść na używanie mechanizmu "
+"<application>WebKit2GTK+</application>."
 
 # pd
-#: C/rnlookingforward.xml:61(para)
+#: C/rnlookingforward.xml:70(para)
 msgid ""
 "<application>GTK+</application> plans to move away from implementing widget "
 "behaviors in event handlers, and instead move to a model where behaviors can "
@@ -111,6 +140,11 @@ msgid ""
 "project.org/docs/clutter/stable/ClutterAction.html\">similar to Clutter</"
 "ulink>)."
 msgstr ""
+"Programiści biblioteki <application>GTK+</application> planują odejście od "
+"implementowania zachowania widżetów jako mechanizmów obsługi zdarzeń i "
+"przejście do modelu, w którym zachowanie może być dodawane do widżetu jako "
+"oddzielny obiekt (<ulink url=\"http://docs.clutter-project.org/docs/clutter/"
+"stable/ClutterAction.html\">podobnie do biblioteki Clutter</ulink>)."
 
 #: C/rninstallation.xml:9(title)
 msgid "Getting GNOME 3.4"
@@ -441,21 +475,23 @@ msgid ""
 "version 3.2 and the Macedonian team as they raised their translation status "
 "21 points since 3.2."
 msgstr ""
+"Tłumaczenie pakietu oprogramowania, tak wielkiego jak GNOME, na inny język "
+"jest wielkim wyzwaniem nawet dla najbardziej ambitnego zespołu. W tym "
+"wydaniu chcielibyśmy szczególnie wspomnieć zespół języka białoruskiego, "
+"który zwiększył kompletność swoich tłumaczeń o ponad 39 punktów procentowych "
+"w stosunku do wersji 3.0. Chcielibyśmy także pogratulować zespołowi języka "
+"khmerskiego, który zwiększył kompletność o 24 punkty procentowe od wersji "
+"3.2 oraz zespołowi języka macedońskiego, który zwiększył stan tłumaczenia o "
+"21 punktów procentowych od wersji 3.2."
 
 # pd
 #: C/rni18n.xml:102(para)
-#, fuzzy
-#| msgid ""
-#| "Detailed statistics, how you can help make GNOME available in your "
-#| "language, and more information are all available on GNOME's <ulink url="
-#| "\"http://l10n.gnome.org/\">translation status site</ulink>."
 msgid ""
 "Detailed statistics and more information are available on GNOME's <ulink url="
 "\"http://l10n.gnome.org/\">translation status site</ulink>."
 msgstr ""
-"Szczegółowe statystyki, informacje jak można pomóc w tłumaczeniu GNOME oraz "
-"inne dodatkowe informacje można znaleźć na <ulink url=\"http://l10n.gnome."
-"org/\">witrynie stanu tłumaczeń</ulink> środowiska GNOME."
+"Szczegółowe statystyki oraz więcej informacji można znaleźć na <ulink url="
+"\"http://l10n.gnome.org/\">witrynie stanu tłumaczeń</ulink> środowiska GNOME."
 
 #: C/rndevelopers.xml:12(title)
 msgid "What's New for Developers"
@@ -503,6 +539,11 @@ msgid ""
 "thread-init\"><classname>g_thread_init()</classname></ulink> is no longer "
 "needed."
 msgstr ""
+"<ulink url=\"http://developer.gnome.org/glib/2.32/glib-Threads.html"
+"\">Przepisano</ulink> obsługę wątków. Jako efekt uboczny, wywołanie <ulink "
+"url=\"http://developer.gnome.org/glib/2.32/glib-Deprecated-Thread-APIs."
+"html#g-thread-init\"><classname>g_thread_init()</classname></ulink> nie jest "
+"już konieczne."
 
 # pd
 #: C/rndevelopers.xml:39(para)
@@ -513,6 +554,10 @@ msgid ""
 "developer.gnome.org/gio/2.32/gio-GSettingsSchema-GSettingsSchemaSource.html"
 "\"><classname>GSettingsSchemaSource</classname></ulink>."
 msgstr ""
+"Domyślny mechanizm przechowywania ustawień środowiska GNOME <classname>GSettings</classname> otrzymał natywną obsługę systemu Mac OS X. Ulepszono także obsługę wtyczek i rozszerzeń w <classname>GSettings</"
+"classname> przez <ulink url=\"http://"
+"developer.gnome.org/gio/2.32/gio-GSettingsSchema-GSettingsSchemaSource.html"
+"\"><classname>GSettingsSchemaSource</classname></ulink>."
 
 # pd
 #: C/rndevelopers.xml:43(para)
@@ -521,6 +566,8 @@ msgid ""
 "\"><classname>GResource</classname></ulink> provides support for embedding "
 "resources in binaries"
 msgstr ""
+"<ulink url=\"http://developer.gnome.org/gio/2.32/gio-GResource.html"
+"\"><classname>GResource</classname></ulink> dostarcza obsługę osadzania zasobów w plikach binarnych"
 
 # pd
 #: C/rndevelopers.xml:46(para)
@@ -528,6 +575,8 @@ msgid ""
 "<ulink url=\"http://www.unicode.org/versions/Unicode6.1.0/\">Unicode 6.1</"
 "ulink> support"
 msgstr ""
+"Obsługa standardu <ulink url=\"http://www.unicode.org/versions/Unicode6.1.0/\">Unicode 6.1</"
+"ulink>"
 
 # pd
 #: C/rndevelopers.xml:49(para)
@@ -536,6 +585,9 @@ msgid ""
 "org/gio/2.32/GNetworkMonitor.html\"><classname>GNetworkMonitor</classname></"
 "ulink>"
 msgstr ""
+"Nowy interfejs monitora stanu sieci: <ulink url=\"http://developer.gnome."
+"org/gio/2.32/GNetworkMonitor.html\"><classname>GNetworkMonitor</classname></"
+"ulink>"
 
 # pd
 #: C/rndevelopers.xml:53(para)
@@ -551,6 +603,13 @@ msgid ""
 "<classname>GDK_VERSION_MAX_ALLOWED</classname> for <application>GTK+</"
 "application>)."
 msgstr ""
+"W bibliotekach <application>GLib</application> i <application>GTK+</application> "
+"wprowadzono wersjonowanie przestarzałych elementów. Używając zmiennej "
+"<classname>GLIB_VERSION_MIN_REQUIRED</classname> (oraz "
+"<classname>GDK_VERSION_MIN_REQUIRED</classname> dla biblioteki <application>GTK+</"
+"application>) można na przykład ustawić wyświetlanie ostrzeżeń o API oznaczonym jako przestarzałe przed ostatnią stabilną wersją, ale nie da najnowszej wersji rozwojowej 2.31. "
+"Podobna funkcjonalność istnieje dla zbyt nowego API: <classname>GLIB_VERSION_MAX_ALLOWED</classname> (oraz <classname>GDK_VERSION_MAX_ALLOWED</classname> dla biblioteki <application>GTK+</"
+"application>)."
 
 #: C/rndevelopers.xml:33(para)
 msgid ""
@@ -569,14 +628,14 @@ msgstr "GTK+ 3.4"
 msgid ""
 "More complete CSS support in theming and better transparency support in "
 "theming and backgrounds"
-msgstr ""
+msgstr "Pełniejsza obsługa CSS w motywach i lepsza obsługa przezroczystości w motywach i tłach"
 
 # pd
 #: C/rndevelopers.xml:70(para)
 msgid ""
 "Improved cross-platform keyboard shortcut handling by using 'Primary' "
 "instead of 'Control'"
-msgstr ""
+msgstr "Ulepszona obsługa skrótów klawiszowych między platformami używając klawisza \"Primary\" zamiast \"Ctrl\"."
 
 # pd
 #: C/rndevelopers.xml:80(para)
@@ -590,6 +649,12 @@ msgid ""
 "developer.gnome.org/gtk3/3.3/GtkScrolledWindow.html\">GtkScrolledWindow</"
 "ulink> and touch-compatible menu behavior"
 msgstr ""
+"Podstawowa obsługa zdarzeń dotykowych (oraz obsługa mechanizmu <application>XInput 2.2</"
+"application>): widżety mogą posiadać <ulink url=\"http://developer.gnome.org/"
+"gdk3/3.4/gdk3-Event-Structures.html#GdkEventTouch\">zdarzenia dotykowe</ulink> łącząc się z <ulink url=\"http://developer.gnome.org/gtk3/3.3/GtkWidget."
+"html#GtkWidget-touch-event\">sygnałem GtkWidget::touch-event</ulink>. Biblioteka GTK+ używa zdarzeń dotykowych w implementacji przewijania kinetycznego w <ulink url=\"http://"
+"developer.gnome.org/gtk3/3.3/GtkScrolledWindow.html\">GtkScrolledWindow</"
+"ulink> oraz zachowania menu zgodnego z ekranami dotykowymi"
 
 # pd
 #: C/rndevelopers.xml:84(para)
@@ -602,6 +667,13 @@ msgid ""
 "gdk3/3.4/gdk3-Events.html#gdk-event-get-scroll-deltas"
 "\">gdk_event_get_scroll_deltas()</ulink> provides the scroll deltas."
 msgstr ""
+"Obsługa płynnego przewijania przez nowy kierunek przewijania <ulink url=\"http://"
+"developer.gnome.org/gdk3/3.4/gdk3-Event-Structures.html#GdkScrollDirection"
+"\">GDK_SCROLL_SMOOTH</ulink> i nową maskę zdarzeń <ulink url=\"http://"
+"developer.gnome.org/gdk3/3.4/gdk3-Events.html#GdkEventMask"
+"\">GDK_SMOOTH_SCROLL_MASK</ulink>. <ulink url=\"http://developer.gnome.org/"
+"gdk3/3.4/gdk3-Events.html#gdk-event-get-scroll-deltas"
+"\">gdk_event_get_scroll_deltas()</ulink> dostarcza deltę przewijania."
 
 # pd
 #: C/rndevelopers.xml:88(para)
@@ -609,6 +681,7 @@ msgid ""
 "Session support: <classname>GtkApplication</classname> supports log out "
 "notification and negotiation (similar to deprecated EggSMClient)"
 msgstr ""
+"Obsługa sesji: <classname>GtkApplication</classname> obsługuje negocjowanie i powiadamianie o wylogowaniu (podobnie do przestarzałej biblioteki EggSMClient)"
 
 # pd
 #: C/rndevelopers.xml:91(para)
@@ -617,6 +690,9 @@ msgid ""
 "org/gtk3/3.4/GtkApplication.html\">GtkApplication</ulink></classname>, "
 "including Mac OS X support"
 msgstr ""
+"Obsługa menu i okien w <classname><ulink url=\"http://developer.gnome."
+"org/gtk3/3.4/GtkApplication.html\">GtkApplication</ulink></classname>, "
+"w tym obsługa systemu Mac OS X"
 
 #: C/rndevelopers.xml:62(para)
 msgid ""
@@ -633,88 +709,114 @@ msgid "Clutter 1.10"
 msgstr "Clutter 1.10"
 
 # pd
+#: C/rndevelopers.xml:103(para)
+msgid ""
+"Multiple backend support: <application>Clutter</application> can be compiled "
+"with support for different platforms, and the backend can be selected at run "
+"time."
+msgstr ""
+"Obsługa wielu mechanizmów: biblioteka <application>Clutter</application> może zostać skompilowana z obsługą różnych platform, a mechanizm może być następnie wybierany podczas uruchamiania."
+
+# pd
 #: C/rndevelopers.xml:106(para)
 msgid ""
-"<classname>ClutterGestureAction</classname>, for writing gesture recognizers"
+"<ulink url=\"http://docs.clutter-project.org/docs/clutter/1.10/clutter-GDK-"
+"Specific-Support.html\">GDK backend</ulink>: Clutter can use <classname>GDK</"
+"classname>, the windowing system library also used by <application>GTK+</"
+"application>."
 msgstr ""
+"<ulink url=\"http://docs.clutter-project.org/docs/clutter/1.10/clutter-GDK-"
+"Specific-Support.html\">Mechanizm GDK</ulink>: biblioteka Clutter może używać <classname>GDK</"
+"classname>, biblioteki systemu okien używanej także przez bibliotekę <application>GTK+</"
+"application>."
 
 # pd
 #: C/rndevelopers.xml:109(para)
 msgid ""
-"<classname>ClutterSwipeAction</classname>, for detecting \"swipe\" gestures"
-msgstr ""
+"Support for the password hint in text entries: When the password hint is "
+"enabled, the last character inserted into a text entry will be shown for a "
+"brief amount of time, as a way to safely enter passwords and other hidden "
+"content on platforms with imprecise text input (e.g. touchscreen keyboards)."
+msgstr "Obsługa wskazówek haseł w polach tekstowych: jeśli wskazówki hasła są włączone, to ostatni znak wpisany w polu tekstowym będzie wyświetlany przez krótki okres czasu, zabezpieczając w ten sposób wprowadzanie haseł i innych ukrytych treści na platformach z nieprecyzyjnym wprowadzaniem tekstu (np. klawiaturach ekranowych)."
 
 # pd
 #: C/rndevelopers.xml:112(para)
-#, fuzzy
-#| msgid ""
-#| "<classname>ClutterState</classname> transitions can be bound to object "
-#| "signals when creating a scene in <classname>ClutterScript</classname>."
 msgid ""
-"<classname>ClutterDropAction</classname>, for making actors drop targets "
-"when using <classname>ClutterDragAction</classname>"
+"Use of the same definitions for versioned deprecations as <application>GLib</"
+"application> and <application>GTK+</application> (see above)."
 msgstr ""
-"Przekształcenia <classname>ClutterState</classname> mogą być dowiązywane do "
-"sygnałów obiektów podczas tworzenia sceny w <classname>ClutterScript</"
-"classname>."
+"Użycie takich samych definicji wersjonowania elementów przestarzałych co biblioteki <application>GLib</"
+"application> i <application>GTK+</application> (patrz wyżej)."
 
 # pd
 #: C/rndevelopers.xml:115(para)
-msgid "Long-press support to <classname>ClutterClickAction</classname>"
-msgstr ""
+msgid "Better support on Mac OS X and <application>Wayland</application>."
+msgstr "Lepsza obsługa systemów Mac OS X i <application>Wayland</application>."
 
 # pd
-#: C/rndevelopers.xml:103(para)
-#, fuzzy
-#| msgid "New widgets: <placeholder-1/>"
-msgid "Newly available actions: <placeholder-1/>"
-msgstr "Nowe widżety: <placeholder-1/>"
-
-# pd
-#: C/rndevelopers.xml:120(para)
-#, fuzzy
-#| msgid ""
-#| "<classname>ClutterState</classname> transitions can be bound to object "
-#| "signals when creating a scene in <classname>ClutterScript</classname>."
+#: C/rndevelopers.xml:119(para)
 msgid ""
-"Allow binding <classname>ClutterState</classname> transitions to object "
-"signals when creating a scene in <classname>ClutterScript</classname> (see "
-"the corresponding <ulink url=\"http://docs.clutter-project.org/docs/clutter-"
-"cookbook/1.0/script-state.html\">cookbook recipe</ulink>)"
+"New scene graph API: <ulink url=\"http://docs.clutter-project.org/docs/"
+"clutter/1.10/ClutterActor.html\"><classname>ClutterActor</classname></ulink> "
+"is now the only class dealing with the definition of a scene inside a "
+"Clutter application. This deprecated most of the "
+"<classname>ClutterContainer</classname> interface and "
+"<classname>ClutterGroup</classname>, <classname>ClutterRectangle</classname> "
+"and <classname>ClutterBox</classname>."
 msgstr ""
-"Przekształcenia <classname>ClutterState</classname> mogą być dowiązywane do "
-"sygnałów obiektów podczas tworzenia sceny w <classname>ClutterScript</"
-"classname>."
+"Nowe API sceny grafiki: <ulink url=\"http://docs.clutter-project.org/docs/"
+"clutter/1.10/ClutterActor.html\"><classname>ClutterActor</classname></ulink> "
+"jest teraz jedyną klasą definiującą scenę wewnątrz programu używającego biblioteki Clutter. Większość interfejsu <classname>ClutterContainer</classname> oraz klasy <classname>ClutterGroup</classname>, <classname>ClutterRectangle</classname> i <classname>ClutterBox</classname> zostały w związku z tym oznaczone jako przestarzałe."
 
 # pd
-#: C/rndevelopers.xml:126(para)
-#, fuzzy
-#| msgid ""
-#| "Improved <ulink url=\"http://developer.gnome.org/clutter/1.8/"
-#| "ClutterCairoTexture.html#ClutterCairoTexture-draw\">Cairo drawing "
-#| "integration</ulink>."
+#: C/rndevelopers.xml:123(para)
+msgid "New implicit animation API for <classname>ClutterActor</classname>."
+msgstr "Nowe bezwarunkowe API animacji dla klasy <classname>ClutterActor</classname>."
+
+# pd
+#: C/rndevelopers.xml:127(para)
 msgid ""
-"<ulink url=\"http://developer.gnome.org/clutter/unstable/ClutterCairoTexture."
-"html#ClutterCairoTexture-draw\">Improved <application>cairo</application> "
-"drawing integration</ulink>, with the same signal-based approach used by "
-"<application>GTK+</application>"
+"New <ulink url=\"http://docs.clutter-project.org/docs/clutter/1.10/"
+"ClutterContent.html\"><classname>ClutterContent</classname></ulink> "
+"interface, with two implementations: <classname>Canvas</classname> for Cairo "
+"drawing; and <classname>Image</classname> for displaying image data; the "
+"<classname>Content</classname> interface supports the new render objects API "
+"for painting the actor's content."
 msgstr ""
-"Ulepszona <ulink url=\"http://developer.gnome.org/clutter/1.8/"
-"ClutterCairoTexture.html#ClutterCairoTexture-draw\">integracja rysowania z "
-"biblioteką cairo</ulink>."
+"Nowy interfejs <ulink url=\"http://docs.clutter-project.org/docs/clutter/1.10/"
+"ClutterContent.html\"><classname>ClutterContent</classname></ulink> razem z dwiema implementacjami: <classname>Canvas</classname> do rysowania za pomocą biblioteki cairo oraz <classname>Image</classname> do wyświetlania danych obrazów. Interfejs <classname>Content</classname> obsługuje nowe API rysowania zawartości aktorów."
 
 # pd
 #: C/rndevelopers.xml:130(para)
-#, fuzzy
-#| msgid ""
-#| "<classname>Cogl</classname>, the GPU programming interface used by "
-#| "Clutter, is exposed as a separate library."
 msgid ""
-"Expose <application>Cogl</application>, the GPU programming API used by "
-"<application>Clutter</application>, as a separate library"
+"Support for localizable strings and GResource in <ulink url=\"http://docs."
+"clutter-project.org/docs/clutter/1.10/ClutterScript.html"
+"\"><classname>ClutterScript</classname></ulink> UI definitions."
 msgstr ""
-"<classname>Cogl</classname>, interfejs programowania procesora graficznego "
-"używany przez bibliotekę Clutter, został wydzielony do oddzielnej biblioteki."
+"Obsługa lokalizowania cięgów i zasobów GResource w definicjach interfejsu użytkownika <ulink url=\"http://docs."
+"clutter-project.org/docs/clutter/1.10/ClutterScript.html"
+"\"><classname>ClutterScript</classname></ulink>."
+
+# pd
+#: C/rndevelopers.xml:133(para)
+msgid ""
+"Repeat count and progress mode were added to the <ulink url=\"http://docs."
+"clutter-project.org/docs/clutter/1.10/ClutterTimeline.html"
+"\"><classname>Timeline</classname></ulink> class."
+msgstr ""
+"Dodano licznik powtórzeń i tryb postępu do klasy <ulink url=\"http://docs."
+"clutter-project.org/docs/clutter/1.10/ClutterTimeline.html"
+"\"><classname>Timeline</classname></ulink>."
+
+# pd
+#: C/rndevelopers.xml:136(para)
+msgid "Performance improvements on the GLSL-based effects shipped by Clutter."
+msgstr "Ulepszenia wydajności w efektach opartych na GLSL dostarczanych przez bibliotekę Clutter."
+
+# pd
+#: C/rndevelopers.xml:139(para)
+msgid "New brightness-contrast effect."
+msgstr "Nowy efekt jasności i kontrastu."
 
 #: C/rndevelopers.xml:100(para)
 msgid ""
@@ -727,19 +829,19 @@ msgstr ""
 "ulepszenia: <placeholder-1/>"
 
 # pd
-#: C/rndevelopers.xml:138(title)
+#: C/rndevelopers.xml:147(title)
 msgid "DConf"
 msgstr "DConf"
 
 # pd
-#: C/rndevelopers.xml:139(para)
+#: C/rndevelopers.xml:148(para)
 msgid ""
 "GNOME's default <classname>GSettings</classname> backend has seen several "
 "improvements:"
-msgstr ""
+msgstr "Domyślny mechanizm <classname>GSettings</classname> środowiska GNOME zyskał kilka ulepszeń:"
 
 # pd
-#: C/rndevelopers.xml:144(para)
+#: C/rndevelopers.xml:153(para)
 msgid ""
 "<application>DConf</application> can now read from multiple user "
 "configuration databases. The dconf profile format now explicitly identifies "
@@ -749,9 +851,10 @@ msgid ""
 "home directory, can use this support to read from a shared dconf database in "
 "addition to the live-writable dconf database."
 msgstr ""
+"<application>DConf</application> może teraz odczytywać wiele baz danych konfiguracji użytkowników. Format profilu DConf bezpośrednio identyfikuje teraz bazy danych użytkownika i systemu, zamiast przyjmować, że pierwszy wiersz określa bazę użytkownika. Użytkownicy zainteresowani współdzieleniem części swojego profilu DConf między wieloma systemami, na przykład przez katalog domowy zarządzany przez program kontrolujący wersje, mogą użyć tj obsługi do odczytywania z współdzielonej bazy DConf jako dodatek do bazy zapisywalnej na żywo."
 
 # pd
-#: C/rndevelopers.xml:147(para)
+#: C/rndevelopers.xml:156(para)
 msgid ""
 "<application>DConf</application> now supports dconf profiles specified by an "
 "absolute path in <filename>$DCONF_PROFILE</filename>, rather than just a "
@@ -759,12 +862,13 @@ msgid ""
 "users to specify a profile in their own home directory, such as to specify "
 "multiple user databases."
 msgstr ""
+"<application>DConf</application> obsługuje teraz profile DConf określone przez ścieżkę bezwzględną w zmiennej <filename>$DCONF_PROFILE</filename>, zamiast tylko ścieżkę względną do <filename>/etc/dconf/profiles/</filename>. Umożliwia to użytkownikom na określenie profilu we własnym katalogu domowym, na przykład aby określić wiele baz danych użytkowników."
 
-#: C/rndevelopers.xml:154(title)
+#: C/rndevelopers.xml:163(title)
 msgid "Use of Deprecated Libraries"
 msgstr "Wykorzystanie przestarzałych bibliotek"
 
-#: C/rndevelopers.xml:155(para)
+#: C/rndevelopers.xml:164(para)
 msgid ""
 "Further progress has been made in the continuous work of replacing outdated "
 "technologies with superior facilities."
@@ -773,15 +877,7 @@ msgstr ""
 "technologii lepszymi rozwiązaniami."
 
 # pd
-#: C/rndevelopers.xml:161(para)
-#, fuzzy
-#| msgid ""
-#| "Several applications (for example <application>Accerciser</application>, "
-#| "<application>Dasher</application>, <application>GHex</application>, the "
-#| "graphical debugger <application>Nemiver</application>, and the passwords "
-#| "and encryption keys management tool <application>Seahorse</application>) "
-#| "now use <classname>GSettings</classname> as storage backend instead of "
-#| "<application>GConf</application>."
+#: C/rndevelopers.xml:170(para)
 msgid ""
 "Several applications (such as <application>gdm</application>, "
 "<application>gnome-control-center</application>, <application>gnome-games</"
@@ -794,15 +890,19 @@ msgid ""
 "fmuellner/2011/11/22/gnome-shell-gsettings-and-keybindings/\">some "
 "keybinding changes</ulink>."
 msgstr ""
-"Niektóre programy (na przykład <application>Accerciser</application>, "
-"<application>Dasher</application>, <application>GHex</application>, "
-"graficzny debuger <application>Nemiver</application> oraz narzędzie do "
-"zarządzania hasłami i kluczami szyfrowania <application>Seahorse</"
-"application>) zamiast biblioteki <application>GConf</application> używają "
-"teraz mechanizmu <classname>GSettings</classname> do przechowywania ustawień."
+"Niektóre programy (na przykład <application>gdm</application>, "
+"<application>gnome-control-center</application>, <application>gnome-games</"
+"application>, <application>gthumb</application>, <application>gucharmap</"
+"application>, <application>metacity</application>, <application>mutter</"
+"application> i <application>Rhythmbox</application>) zamiast przestarzałej "
+"biblioteki <application>GConf</application> używają teraz mechanizmu "
+"<classname>GSettings</classname> do przechowywania ustawień. W przypadku "
+"programu <application>mutter</application> oznacza to <ulink url=\"http://"
+"blogs.gnome.org/fmuellner/2011/11/22/gnome-shell-gsettings-and-keybindings/"
+"\">pewne zmiany skrótów klawiszowych</ulink>."
 
 # pd
-#: C/rndevelopers.xml:167(para)
+#: C/rndevelopers.xml:176(para)
 msgid ""
 "<application>libgoffice</application>, <application>libgnomekbd</"
 "application> and <application>libxklavier</application> received GObject "
@@ -811,18 +911,11 @@ msgid ""
 "a related note, <application>gevice</application> was converted from using "
 "static deprecated Python bindings to using introspection."
 msgstr ""
+"Biblioteki <application>libgoffice</application>, <application>libgnomekbd</"
+"application> i <application>libxklavier</application> otrzymały obsługę introspekcji GObject, która automatycznie udostępnia API tych modułów innym językom programowania. Ponadto program <application>gevice</application> został przekonwertowany z używania statycznych dowiązań języka Python na używanie introspekcji."
 
 # pd
-#: C/rndevelopers.xml:175(para)
-#, fuzzy
-#| msgid ""
-#| "Several packages, such as the <application>Epiphany</application> web "
-#| "browser, have been converted from using <ulink url=\"http://developer."
-#| "gnome.org/gio/2.30/ch29.html\"><application>dbus-glib</application> to "
-#| "<classname>GDBus</classname></ulink> and from <ulink url=\"http://"
-#| "developer.gnome.org/gtk3/3.2/gtk-migrating-GtkApplication.html"
-#| "\"><application>libunique</application> to <classname>G(tk)Application</"
-#| "classname></ulink>."
+#: C/rndevelopers.xml:184(para)
 msgid ""
 "Several packages (such as <application>gnome-bluetooth</application>, "
 "<application>gnome-control-center</application>, <application>gnome-settings-"
@@ -834,41 +927,27 @@ msgid ""
 "migrating-GtkApplication.html\"><application>libunique</application> to "
 "<classname>G(tk)Application</classname></ulink>."
 msgstr ""
-"Część pakietów, takich jak przeglądarka WWW <application>Epiphany</"
-"application> zostało przekonwertowanych z używania dowiązań <ulink url="
-"\"http://developer.gnome.org/gio/2.30/ch29.html\"><application>dbus-glib</"
-"application> do dowiązań <classname>GDBus</classname></ulink> oraz z "
-"biblioteki <ulink url=\"http://developer.gnome.org/gtk3/3.2/gtk-migrating-"
-"GtkApplication.html\"><application>libunique</application> do interfejsu "
-"<classname>G(tk)Application</classname></ulink>."
+"Niektóre pakiety (na przykład <application>gnome-bluetooth</application>, "
+"<application>gnome-control-center</application>, <application>gnome-settings-"
+"daemon</application>, <application>gnome-shell</application>, "
+"<application>sound-juicer</application>) zostało przekonwertowanych z "
+"używania dowiązań <ulink url=\"http://developer.gnome.org/gio/2.32/ch29.html"
+"\"><application>dbus-glib</application> do dowiązań <classname>GDBus</"
+"classname></ulink> oraz z biblioteki <ulink url=\"http://developer.gnome.org/"
+"gtk3/3.4/gtk-migrating-GtkApplication.html\"><application>libunique</"
+"application> do interfejsu <classname>G(tk)Application</classname></ulink>."
 
-# pd
-#: C/rndevelopers.xml:190(title)
-msgid "Improved Developer Documentation"
-msgstr ""
-
-# pd
-#. http://git.gnome.org/browse/gnome-devel-docs/commit/?id=c5e43559c0d79f01764a720c9c99b733fbb0e17a
-#: C/rndevelopers.xml:192(para)
-msgid ""
-"The GNOME platform overview in the <ulink url=\"http://developer.gnome.org/"
-"\">GNOME Developer Center</ulink> has been reorganized to make it easier to "
-"start GNOME development in one of the featured languages C, C++, Python, "
-"JavaScript or Vala. Also, the JavaScript tutorials have received many "
-"improvements."
-msgstr ""
-
-#: C/rndevelopers.xml:202(title)
+#: C/rndevelopers.xml:199(title)
 msgid "Miscellaneous Developer Updates"
 msgstr "Różne aktualizacje dla programistów"
 
-#: C/rndevelopers.xml:203(para)
+#: C/rndevelopers.xml:200(para)
 msgid "Other GNOME Platform improvements in GNOME 3.4 include:"
 msgstr ""
 "Inne ulepszenia platformy programistycznej GNOME w wersji 3.4 obejmują:"
 
 # pd
-#: C/rndevelopers.xml:207(para)
+#: C/rndevelopers.xml:204(para)
 msgid ""
 "The project management of the Integrated Development Environment <ulink url="
 "\"http://projects.gnome.org/anjuta/\"><application>Anjuta</application></"
@@ -883,7 +962,7 @@ msgid ""
 msgstr ""
 
 # pd
-#: C/rndevelopers.xml:217(para)
+#: C/rndevelopers.xml:214(para)
 msgid ""
 "Several applications (such as <application>gnome-dictionary</application>, "
 "<application>gnome-system-monitor</application>, <application>transmageddon</"
@@ -893,7 +972,7 @@ msgid ""
 msgstr ""
 
 # pd
-#: C/rndevelopers.xml:223(para)
+#: C/rndevelopers.xml:220(para)
 msgid ""
 "Developers that use the text editor <application>gedit</application> can use "
 "the new plugin <application>gedit-code-assistance</application> which "
@@ -902,7 +981,7 @@ msgid ""
 msgstr ""
 
 # pd
-#: C/rndevelopers.xml:228(para)
+#: C/rndevelopers.xml:225(para)
 msgid ""
 "<application>Evolution-Data-Server</application> previously downloaded all "
 "(old) messages when adding an IMAP account. Now you can define to only "
@@ -913,7 +992,7 @@ msgid ""
 msgstr ""
 
 # pd
-#: C/rndevelopers.xml:237(para)
+#: C/rndevelopers.xml:234(para)
 msgid ""
 "<application>PyGObject</application>'s new <classname>pygtkcompat.py</"
 "classname> module provides easier backwards compatibility to deprecated "
@@ -921,7 +1000,7 @@ msgid ""
 msgstr ""
 
 # pd
-#: C/rndevelopers.xml:242(para)
+#: C/rndevelopers.xml:239(para)
 msgid ""
 "For your convenience <application>Empathy</application> includes a \"Send to "
 "pastebin\" option in its debug window."
@@ -929,7 +1008,7 @@ msgstr ""
 
 #. When image changes, this message will be marked fuzzy or untranslated for you.
 #. It doesn't matter what you translate it to: it's not used at all.
-#: C/rna11y.xml:40(None)
+#: C/rna11y.xml:42(None)
 msgid ""
 "@@image: 'figures/rna11y-high-contrast.png'; "
 "md5=5e8f9ccf722697e089b26c6b42e8eb9b"
@@ -939,13 +1018,13 @@ msgstr ""
 
 #. When image changes, this message will be marked fuzzy or untranslated for you.
 #. It doesn't matter what you translate it to: it's not used at all.
-#: C/rna11y.xml:59(None)
+#: C/rna11y.xml:60(None)
 msgid ""
 "@@image: 'figures/rna11y-zoom-dialog.png'; "
-"md5=bc70d7e86abc44119564a5aa5f3f9cf6"
+"md5=596e0da41f32875baed0621541093c35"
 msgstr ""
 "@@image: 'figures/rna11y-zoom-dialog.png'; "
-"md5=bc70d7e86abc44119564a5aa5f3f9cf6"
+"md5=596e0da41f32875baed0621541093c35"
 
 #: C/rna11y.xml:10(title)
 msgid "What's New in Accessibility"
@@ -954,11 +1033,11 @@ msgstr "Nowości w dziedzinie dostępności"
 # pd
 #: C/rna11y.xml:11(para)
 msgid ""
-"GNOME 3.4 is the most accessible version of GNOME to date, with an emphasis "
-"on being reliable and usable for everyone. GNOME has started a <ulink url="
-"\"www.gnome.org/friends\">Friends of GNOME fundraising campaign</ulink> in "
-"order to strengthen its commitment to accessibility with more resources and "
-"make 2012 the Year of Accessibility for GNOME."
+"GNOME 3.4 is the most accessible version of GNOME 3 to date, with an "
+"emphasis on being reliable and usable for everyone. GNOME has started a "
+"<ulink url=\"www.gnome.org/friends\">Friends of GNOME fundraising campaign</"
+"ulink> in order to strengthen its commitment to accessibility with more "
+"resources and make 2012 the Year of Accessibility for GNOME."
 msgstr ""
 
 # pd
@@ -969,34 +1048,40 @@ msgid ""
 msgstr ""
 
 # pd
-#: C/rna11y.xml:25(title)
-#, fuzzy
-#| msgid "Greater Integration"
+#: C/rna11y.xml:24(title)
 msgid "Improved Orca Integration"
-msgstr "Lepsza integracja"
+msgstr "Ulepszona integracja z programem Orca"
 
 # pd
-#: C/rna11y.xml:26(para)
+#: C/rna11y.xml:25(para)
 msgid ""
-"The interaction of the screen reader <application>Orca</application> with "
-"<application>GNOME Shell</application> has been thoroughly reviewed and many "
-"improvements has been made, especially with respect to accessible names, "
-"roles, and states. We encourage <application>Orca</application> users to "
+"GNOME 3 support for screen readers has been improved. This means that users "
+"of the <application>Orca</application> screen reader can now use GNOME 3 as "
+"their computing environment. This integration will be further developed in "
+"future releases, and we encourage <application>Orca</application> users to "
 "provide feedback."
 msgstr ""
 
 # pd
-#: C/rna11y.xml:36(title)
-msgid "Better High Contrast Mode"
+#: C/rna11y.xml:31(para)
+msgid ""
+"<application>Orca</application>'s performance has also been greatly improved "
+"this release. These improvements mean that the new version is much faster "
+"and more responsive."
 msgstr ""
 
 # pd
 #: C/rna11y.xml:38(title)
-msgid "New High Contrast Icons"
-msgstr ""
+msgid "Better High Contrast Mode"
+msgstr "Lepszy tryb wysokiego kontrastu"
 
 # pd
-#: C/rna11y.xml:43(para)
+#: C/rna11y.xml:40(title)
+msgid "New High Contrast Icons"
+msgstr "Nowe ikony o wysokim kontraście"
+
+# pd
+#: C/rna11y.xml:45(para)
 msgid ""
 "The high contrast theme has received several improvements this cycle. "
 "GNOME's new and refreshed interface components are now supported by high-"
@@ -1006,24 +1091,24 @@ msgid ""
 msgstr ""
 
 # pd
-#: C/rna11y.xml:52(title)
+#: C/rna11y.xml:53(title)
 msgid "Configure the Zoom to Suit You"
 msgstr ""
 
 # pd
 #. TRANSLATORS: To check this dialog, go to the universal access settings
 #.         and press the options button in the seing tab.
-#: C/rna11y.xml:57(title)
+#: C/rna11y.xml:58(title)
 msgid "New Zoom Settings"
-msgstr ""
+msgstr "Nowe ustawienia powiększania"
 
 # pd
-#: C/rna11y.xml:62(para)
+#: C/rna11y.xml:63(para)
 msgid ""
 "New settings for configuring the zoom (or magnifier) feature have been added "
 "for this release. The new zoom options allow you to change the magnification "
 "factor, the mouse tracking, the position of the magnified view on the screen "
-"and enable crosshairs to be added to hely you find the mouse or touchpad "
+"and enable crosshairs to be added to help you find the mouse or touchpad "
 "pointer."
 msgstr ""
 
@@ -1032,66 +1117,66 @@ msgstr ""
 #: C/rnusers.xml:15(None)
 msgid ""
 "@@image: 'figures/rnusers.gnome-3-4.png'; "
-"md5=df0e4ef9a8332aae2e97beb7bd4a2b09"
+"md5=ac2a9eb57d313fcb94ba846c316a0ca7"
 msgstr ""
 "@@image: 'figures/rnusers.gnome-3-4.png'; "
-"md5=df0e4ef9a8332aae2e97beb7bd4a2b09"
+"md5=ac2a9eb57d313fcb94ba846c316a0ca7"
 
 #. When image changes, this message will be marked fuzzy or untranslated for you.
 #. It doesn't matter what you translate it to: it's not used at all.
 #: C/rnusers.xml:50(None)
 msgid ""
 "@@image: 'figures/rnusers.documents.png'; "
-"md5=2af969e9ca2837c9d14b54125ddc8a64"
+"md5=85dfc44e58a483b4bbdcae5fb2dbdfa8"
 msgstr ""
 "@@image: 'figures/rnusers.documents.png'; "
-"md5=2af969e9ca2837c9d14b54125ddc8a64"
+"md5=85dfc44e58a483b4bbdcae5fb2dbdfa8"
 
 #. When image changes, this message will be marked fuzzy or untranslated for you.
 #. It doesn't matter what you translate it to: it's not used at all.
 #: C/rnusers.xml:66(None)
 msgid ""
-"@@image: 'figures/rnusers.web.png'; md5=23f57eba00be62ce53f2b372f0c163e8"
+"@@image: 'figures/rnusers.web.png'; md5=8a7065f27449897930ea8995c0d56567"
 msgstr ""
-"@@image: 'figures/rnusers.web.png'; md5=23f57eba00be62ce53f2b372f0c163e8"
+"@@image: 'figures/rnusers.web.png'; md5=8a7065f27449897930ea8995c0d56567"
 
 #. When image changes, this message will be marked fuzzy or untranslated for you.
 #. It doesn't matter what you translate it to: it's not used at all.
 #: C/rnusers.xml:80(None)
 msgid ""
-"@@image: 'figures/rnusers.contacts.png'; md5=f668c0c4741b6ca998c57c54382e2a94"
+"@@image: 'figures/rnusers.contacts.png'; md5=f97c6e36d837cf790e58c929a7d43516"
 msgstr ""
-"@@image: 'figures/rnusers.contacts.png'; md5=f668c0c4741b6ca998c57c54382e2a94"
+"@@image: 'figures/rnusers.contacts.png'; md5=f97c6e36d837cf790e58c929a7d43516"
 
 #. When image changes, this message will be marked fuzzy or untranslated for you.
 #. It doesn't matter what you translate it to: it's not used at all.
 #: C/rnusers.xml:108(None)
 msgid ""
 "@@image: 'figures/rnusers.document-search.png'; "
-"md5=215f886bdb80e6725977072fd7943d62"
+"md5=9bfe5fa26ab4cf4578a1c1a031c01de3"
 msgstr ""
 "@@image: 'figures/rnusers.document-search.png'; "
-"md5=215f886bdb80e6725977072fd7943d62"
+"md5=9bfe5fa26ab4cf4578a1c1a031c01de3"
 
 #. When image changes, this message will be marked fuzzy or untranslated for you.
 #. It doesn't matter what you translate it to: it's not used at all.
 #: C/rnusers.xml:133(None)
 msgid ""
 "@@image: 'figures/rnusers.application-menu.png'; "
-"md5=eae4940a2ddab7d4eebcf5086ddab6b7"
+"md5=d9f0565cb9a62f0813e308758829f870"
 msgstr ""
 "@@image: 'figures/rnusers.application-menu.png'; "
-"md5=eae4940a2ddab7d4eebcf5086ddab6b7"
+"md5=d9f0565cb9a62f0813e308758829f870"
 
 #. When image changes, this message will be marked fuzzy or untranslated for you.
 #. It doesn't matter what you translate it to: it's not used at all.
-#: C/rnusers.xml:173(None)
+#: C/rnusers.xml:174(None)
 msgid ""
 "@@image: 'figures/rnusers.color-chooser.png'; "
-"md5=f04b7d2ea0460eabf33b995ae0d7acaa"
+"md5=ddf92739b1da3c1e8b014459a2549e9f"
 msgstr ""
 "@@image: 'figures/rnusers.color-chooser.png'; "
-"md5=f04b7d2ea0460eabf33b995ae0d7acaa"
+"md5=ddf92739b1da3c1e8b014459a2549e9f"
 
 #. When image changes, this message will be marked fuzzy or untranslated for you.
 #. It doesn't matter what you translate it to: it's not used at all.
@@ -1108,20 +1193,20 @@ msgstr ""
 #: C/rnusers.xml:299(None)
 msgid ""
 "@@image: 'figures/rnusers.power-settings.png'; "
-"md5=01633820cd9373e97ae3a640852ae288"
+"md5=eb5d85c72da1bc3e667eb9589c68d5d6"
 msgstr ""
 "@@image: 'figures/rnusers.power-settings.png'; "
-"md5=01633820cd9373e97ae3a640852ae288"
+"md5=eb5d85c72da1bc3e667eb9589c68d5d6"
 
 #. When image changes, this message will be marked fuzzy or untranslated for you.
 #. It doesn't matter what you translate it to: it's not used at all.
 #: C/rnusers.xml:396(None)
 msgid ""
 "@@image: 'figures/rnusers.video-calling.png'; "
-"md5=d42e7f2a7171973009aeb66ba5a93866"
+"md5=9f68b354a83ae1b4adeb4ae4c36f3737"
 msgstr ""
 "@@image: 'figures/rnusers.video-calling.png'; "
-"md5=d42e7f2a7171973009aeb66ba5a93866"
+"md5=9f68b354a83ae1b4adeb4ae4c36f3737"
 
 #: C/rnusers.xml:11(title)
 msgid "What's New for Users"
@@ -1154,26 +1239,23 @@ msgstr ""
 # pd
 #: C/rnusers.xml:31(para)
 msgid ""
-"Other highlights for this release include a new document search facility, "
-"smooth scrolling, a new application, called Boxes, video calling, and a new "
-"animated background that updates over the course of the day. Enjoy!"
+"Other highlights for this release include a new document search facility, a "
+"new application called Boxes, video calling, and a new animated background "
+"that updates over the course of the day. Enjoy!"
 msgstr ""
 
 # pd
 #: C/rnusers.xml:38(title)
-#, fuzzy
-#| msgid "Web Applications"
 msgid "New Look GNOME 3 Applications"
-msgstr "Programy WWW"
+msgstr "Nowy wygląd programów GNOME 3"
 
-# pd
 #: C/rnusers.xml:39(para)
 msgid ""
-"Developing GNOME's applications has been a major theme for this release "
-"cycle. The new applications that were released in 3.2 have all received "
-"major updates that make them better looking and more pleasurable use. "
-"Several existing applications have also received an overhaul so that they "
-"are more consistent and integrated with GNOME 3."
+"Our applications have been a major theme for this release cycle. The new "
+"applications that were released in 3.2 have all received major updates that "
+"make them better looking and more pleasurable to use. Several existing "
+"applications have also received an overhaul so that they are more consistent "
+"and integrated with GNOME 3."
 msgstr ""
 
 # pd
@@ -1277,10 +1359,8 @@ msgstr ""
 
 # pd
 #: C/rnusers.xml:131(title) C/rnusers.xml:136(title)
-#, fuzzy
-#| msgid "Web Applications"
 msgid "Application Menus"
-msgstr "Programy WWW"
+msgstr "Menu programów"
 
 # pd
 #: C/rnusers.xml:137(para)
@@ -1301,12 +1381,25 @@ msgid ""
 msgstr ""
 
 # pd
-#: C/rnusers.xml:160(title)
+#: C/rnusers.xml:150(title)
+msgid "Focus-follows-mouse Users"
+msgstr ""
+
+# pd
+#: C/rnusers.xml:151(para)
+msgid ""
+"An exception will be made for <ulink url=\"http://en.wikipedia.org/wiki/"
+"Focus_%28computing%29#Focus_follows_pointer\">focus-follows-mouse</ulink> "
+"users; for them, a classic menu bar will be shown."
+msgstr ""
+
+# pd
+#: C/rnusers.xml:161(title)
 msgid "Refreshed Interface Components"
 msgstr ""
 
 # pd
-#: C/rnusers.xml:161(para)
+#: C/rnusers.xml:162(para)
 msgid ""
 "A number of our application interface components have been modernized this "
 "release. These changes will make applications more elegant and easier to "
@@ -1318,12 +1411,12 @@ msgstr ""
 #.       panel. Select System Settings > Background, then Colors and Gradients from the 
 #.       dropdown. Then select the button in the bottom-right corner of the window.
 #.       Screenshot Guidelines: https://live.gnome.org/GnomeMarketing/ScreenshotGuidelines
-#: C/rnusers.xml:171(title)
+#: C/rnusers.xml:172(title)
 msgid "Our New Color Chooser Look"
 msgstr ""
 
 # pd
-#: C/rnusers.xml:176(para)
+#: C/rnusers.xml:177(para)
 msgid ""
 "Our color chooser dialog has been brought up to date for 3.4. The new design "
 "provides easy access to a tasteful palette of colors, as well as a mechanism "
@@ -1332,7 +1425,7 @@ msgid ""
 msgstr ""
 
 # pd
-#: C/rnusers.xml:182(para)
+#: C/rnusers.xml:183(para)
 msgid ""
 "Scrollbars are another component that have been updated for 3.4. The new "
 "version takes up less space and removes the tiny 'stepper' buttons that "
@@ -1341,19 +1434,26 @@ msgid ""
 msgstr ""
 
 # pd
-#: C/rnusers.xml:187(para)
+#: C/rnusers.xml:188(para)
 msgid ""
 "We also revised the design of spin buttons for 3.4, which used to be fiddly. "
 "The new versions are much easier to use and look great too."
 msgstr ""
 
 # pd
-#: C/rnusers.xml:194(title)
+#: C/rnusers.xml:192(para)
+msgid ""
+"When maximized, certain applications will now hide their title bar. This "
+"ensures more space is available for the application."
+msgstr ""
+
+# pd
+#: C/rnusers.xml:199(title)
 msgid "A Bonanza of Smaller Improvements"
 msgstr ""
 
 # pd
-#: C/rnusers.xml:195(para)
+#: C/rnusers.xml:200(para)
 msgid ""
 "Incremental improvements and polishing has been a big focus for this "
 "release. The result is a large number of smaller improvements which add up "
@@ -1361,7 +1461,7 @@ msgid ""
 msgstr ""
 
 # pd
-#: C/rnusers.xml:200(para)
+#: C/rnusers.xml:205(para)
 msgid ""
 "The visual theme is a lot more polished in this release. Many of the changes "
 "are subtle, but almost every part of the theme has been improved in some "
@@ -1369,7 +1469,7 @@ msgid ""
 msgstr ""
 
 # pd
-#: C/rnusers.xml:205(para)
+#: C/rnusers.xml:210(para)
 msgid ""
 "A new initiative, called <ulink url=\"https://live.gnome.org/"
 "EveryDetailMatters\">Every Detail Matters</ulink>, has been focusing on "
@@ -1380,14 +1480,14 @@ msgid ""
 msgstr ""
 
 # pd
-#: C/rnusers.xml:214(para)
+#: C/rnusers.xml:219(para)
 msgid ""
 "There are many other incremental improvements in GNOME 3.4. As ever, there "
 "are too many to list here, but they include:"
 msgstr ""
 
 # pd
-#: C/rnusers.xml:219(para)
+#: C/rnusers.xml:224(para)
 msgid ""
 "Network password dialogs, including those for VPN passwords, were stuck on "
 "GNOME 2 until this release. They have now been fully integrated with the "
@@ -1395,16 +1495,16 @@ msgid ""
 msgstr ""
 
 # pd
-#: C/rnusers.xml:225(para)
+#: C/rnusers.xml:230(para)
 msgid ""
 "The return of Wanda the Fish! Yes Wanda, our trusty friend from GNOME 2, has "
-"returned. She's an <ulink url=\"http://en.wikipedia.org/wiki/Easter_egg_%"
-"28media%29#Computer-related_Easter_eggs\">easter egg</ulink>, so we won't "
+"returned. She's an <ulink url=\"http://en.wikipedia.org/wiki/Easter_egg_"
+"%28media%29#Computer-related_Easter_eggs\">easter egg</ulink>, so we won't "
 "tell you exactly where to find her. Search and you'll receive."
 msgstr ""
 
 # pd
-#: C/rnusers.xml:233(para)
+#: C/rnusers.xml:238(para)
 msgid ""
 "Our built in screen recorder now produces smoother videos while also using "
 "less system resources. To use it, simply press <keysym>Control+Shift+Alt+R</"
@@ -1412,21 +1512,21 @@ msgid ""
 msgstr ""
 
 # pd
-#: C/rnusers.xml:238(para)
+#: C/rnusers.xml:243(para)
 msgid ""
 "The visual layout of system modal dialogs has been improved since 3.2. They "
 "look much nicer as a result."
 msgstr ""
 
 # pd
-#: C/rnusers.xml:242(para)
+#: C/rnusers.xml:247(para)
 msgid ""
 "Notification pop-ups are more intelligent now and will avoid the mouse or "
 "touchpad pointer, so that they won't get in your way."
 msgstr ""
 
 # pd
-#: C/rnusers.xml:246(para)
+#: C/rnusers.xml:251(para)
 msgid ""
 "Another important enhancement to notifications is that the message tray, "
 "which displays a summary of your notifications, is now shown if you haven't "
@@ -1478,7 +1578,7 @@ msgstr ""
 # pd
 #: C/rnusers.xml:291(title)
 msgid "Improved System Settings"
-msgstr ""
+msgstr "Ulepszone ustawienia systemu"
 
 # pd
 #: C/rnusers.xml:292(para)
@@ -1564,13 +1664,6 @@ msgstr "Naprawdę pomocna dokumentacja"
 
 # pd
 #: C/rnusers.xml:349(para)
-#, fuzzy
-#| msgid ""
-#| "Traditional user documentation is written like a paper book; a good "
-#| "story, but it is very long and takes time to read through. It's not ideal "
-#| "if you just want to quickly find out how to perform a certain task. To "
-#| "address this, the following applications now include topic-orientated "
-#| "documentation:"
 msgid ""
 "Traditional user documentation is written like a paper book; a good story, "
 "but it is very long and takes time to read through. It's not ideal if you "
@@ -1582,41 +1675,33 @@ msgstr ""
 "Tradycyjnie dokumentacja użytkownika jest pisana jak drukowana książka - "
 "dobra fabuła, ale bardzo długa i przeczytanie jej zajmuje dużo czasu. Nie "
 "jest idealna, jeśli chce się szybko znaleźć sposób na wykonanie konkretnego "
-"zadania. Aby temu zapobiec, następujące programy zawierają teraz "
-"dokumentację zorientowaną na zadania:"
+"zadania. Aby temu zapobiec, następujące programy w środowisku GNOME 3.4 "
+"zawierają teraz dokumentację zorientowaną na zadania:"
 
 # pd
 #: C/rnusers.xml:357(para)
-#, fuzzy
-#| msgid ""
-#| "The image viewer <application><ulink url=\"http://library.gnome.org/users/"
-#| "eog/3.2/\">Eye of GNOME</ulink></application>"
 msgid ""
 "The disk usage analyzer <application><ulink url=\"http://library.gnome.org/"
 "users/baobab/3.4\">Baobab </ulink></application>"
 msgstr ""
-"Przeglądarka obrazów <application><ulink url=\"http://library.gnome.org/"
-"users/eog/3.2/\">Oko GNOME</ulink></application>"
+"Analizator użycia dysku <application><ulink url=\"http://library.gnome.org/"
+"users/baobab/3.4\">Baobab </ulink></application>"
 
 # pd
 #: C/rnusers.xml:362(para)
-#, fuzzy
-#| msgid ""
-#| "The image viewer <application><ulink url=\"http://library.gnome.org/users/"
-#| "eog/3.2/\">Eye of GNOME</ulink></application>"
 msgid ""
 "The archive manager <application><ulink url=\"http://library.gnome.org/users/"
 "file-roller/3.4\">File Roller</ulink></application>"
 msgstr ""
-"Przeglądarka obrazów <application><ulink url=\"http://library.gnome.org/"
-"users/eog/3.2/\">Oko GNOME</ulink></application>"
+"Menedżer archiwów <application><ulink url=\"http://library.gnome.org/users/"
+"file-roller/3.4\">File Roller</ulink></application>"
 
 # pd
 #: C/rnusers.xml:367(para)
 msgid ""
-"The games <application><ulink url=\"http://library.gnome.org/users/glines/3.4"
-"\">Glines</ulink></application>, <application><ulink url=\"http://library."
-"gnome.org/users/iagno/3.4\">Iagno </ulink></application>, "
+"The games <application><ulink url=\"http://library.gnome.org/users/"
+"glines/3.4\">Glines</ulink></application>, <application><ulink url=\"http://"
+"library.gnome.org/users/iagno/3.4\">Iagno </ulink></application>, "
 "<application><ulink url=\"http://library.gnome.org/users/mahjongg/3.4\"> "
 "Mahjongg</ulink></application>, and <application><ulink url=\"http://library."
 "gnome.org/users/gnome-sudoku/3.4\">Sudoku</ulink></application>"
@@ -1624,43 +1709,30 @@ msgstr ""
 
 # pd
 #: C/rnusers.xml:375(para)
-#, fuzzy
-#| msgid ""
-#| "The image viewer <application><ulink url=\"http://library.gnome.org/users/"
-#| "eog/3.2/\">Eye of GNOME</ulink></application>"
 msgid ""
 "The <application><ulink url=\"http://library.gnome.org/users/gnome-system-"
 "log/3.4\">log file viewer</ulink></application>"
 msgstr ""
-"Przeglądarka obrazów <application><ulink url=\"http://library.gnome.org/"
-"users/eog/3.2/\">Oko GNOME</ulink></application>"
+"<application><ulink url=\"http://library.gnome.org/users/gnome-system-"
+"log/3.4\">Przeglądarka plików dziennika</ulink></application>"
 
 # pd
 #: C/rnusers.xml:380(para)
-#, fuzzy
-#| msgid ""
-#| "The image viewer <application><ulink url=\"http://library.gnome.org/users/"
-#| "eog/3.2/\">Eye of GNOME</ulink></application>"
 msgid ""
 "The dialog box tool <application><ulink url=\"http://library.gnome.org/users/"
 "zenity/3.4\">Zenity</ulink></application>"
 msgstr ""
-"Przeglądarka obrazów <application><ulink url=\"http://library.gnome.org/"
-"users/eog/3.2/\">Oko GNOME</ulink></application>"
+"Narzędzie do tworzenia okien dialogowych <application><ulink url=\"http://"
+"library.gnome.org/users/zenity/3.4\">Zenity</ulink></application>"
 
 # pd
 #: C/rnusers.xml:384(para)
-#, fuzzy
-#| msgid ""
-#| "There have also been large improvements and enhancements to the <ulink "
-#| "url=\"http://library.gnome.org/users/gnome-help/3.2/\">Desktop Help</"
-#| "ulink>."
 msgid ""
 "There have also been large improvements and enhancements to the <ulink url="
 "\"http://library.gnome.org/users/gnome-help/3.4\">Desktop Help</ulink>."
 msgstr ""
 "Znacznie ulepszono także <ulink url=\"http://library.gnome.org/users/gnome-"
-"help/3.2/\">pomoc środowiska</ulink>."
+"help/3.4\">pomoc środowiska</ulink>."
 
 # pd
 #: C/rnusers.xml:392(title)
@@ -1709,7 +1781,7 @@ msgstr ""
 msgid ""
 "Improved integration with <application>Contacts</application>, which "
 "simplifies the user interface and means that Empathy can take advantage of "
-"Contact's features, such as linking suggestions."
+"Contacts' features, such as linking suggestions."
 msgstr ""
 
 # pd
@@ -1720,9 +1792,9 @@ msgstr ""
 # pd
 #: C/rnusers.xml:432(para)
 msgid ""
-"There are plenty of other improvements to GNOME's applications in this "
-"release. As well as the usual bug fixing work, there are visible "
-"enhancements and new features. Here are some of them:"
+"There are plenty of other improvements to our applications in this release. "
+"As well as the usual bug fixing work, there are visible enhancements and new "
+"features. Here are some of them:"
 msgstr ""
 
 # pd
@@ -1757,8 +1829,8 @@ msgstr ""
 # pd
 #: C/rnusers.xml:455(para)
 msgid ""
-"GNOME's games have been modernized. Status bars have been removed, "
-"application menus added, and more."
+"Our games have been modernized. Status bars have been removed, application "
+"menus added, and more."
 msgstr ""
 
 # pd
@@ -1772,13 +1844,13 @@ msgstr ""
 # pd
 #: C/rnusers.xml:464(para)
 msgid ""
-"The image viewer <application>Eye of GNOME</application> has a new image "
-"metadata sidebar. This makes it easy to browse images and see their "
-"properties at the same time."
+"<application>Image Viewer</application> (used to be called Eye of GNOME) has "
+"a new image metadata sidebar. This makes it easy to browse images and see "
+"their properties at the same time."
 msgstr ""
 
 # pd
-#: C/rnusers.xml:470(para)
+#: C/rnusers.xml:471(para)
 msgid ""
 "It is now possible to use <application>Evolution</application> to connect to "
 "<ulink url=\"http://www.kolab.org/\">Kolab Groupware</ulink> servers. It is "
@@ -1788,10 +1860,10 @@ msgid ""
 msgstr ""
 
 # pd
-#: C/rnusers.xml:476(para)
+#: C/rnusers.xml:477(para)
 msgid ""
 "<application>Evolution</application>'s account setup assistant will also "
-"automatically detect common email providers, making it less work to setup "
+"automatically detect common email providers, making it less work to set up "
 "your email account. As an added bonus, it will now also let you reorder your "
 "email accounts in the sidebar."
 msgstr ""
@@ -1897,16 +1969,6 @@ msgstr ""
 "Można nas także wesprzeć finansowo zostając <ulink url=\"http://www.gnome."
 "org/friends/\">Przyjacielem GNOME</ulink>."
 
-#: C/release-notes.xml:85(para)
-msgid ""
-"If you want to celebrate the release of 3.4 with others, <ulink url="
-"\"https://live.gnome.org/GnomeMarketing/ThreePointFour/ReleaseParties"
-"\">check out whether a Release Party takes place nearby</ulink>!"
-msgstr ""
-"Można świętować wydanie wersji 3.4 razem z innymi <ulink url=\"https://live."
-"gnome.org/GnomeMarketing/ThreePointFour/ReleaseParties\">na jednej z naszych "
-"imprez</ulink>!"
-
 #: C/release-notes.xml:116(title)
 msgid "Credits"
 msgstr "Zasługi"
@@ -1926,9 +1988,9 @@ msgid ""
 "dedication of <ulink url=\"http://www.gnome.org/foundation/membership/\">the "
 "GNOME community</ulink>. Congratulations and thanks to everyone."
 msgstr ""
-"To wydanie nie byłoby możliwe bez ciężkiej pracy i poświęceniu <ulink "
-"url=\"http://www.gnome.org/foundation/membership/\">społeczności GNOME</"
-"ulink>. Gratulacje i podziękowania dla nich wszystkich."
+"To wydanie nie byłoby możliwe bez ciężkiej pracy i poświęceniu <ulink url="
+"\"http://www.gnome.org/foundation/membership/\">społeczności GNOME</ulink>. "
+"Gratulacje i podziękowania dla nich wszystkich."
 
 #: C/release-notes.xml:128(para)
 msgid ""
