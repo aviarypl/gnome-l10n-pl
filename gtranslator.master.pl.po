@@ -9,8 +9,8 @@ msgstr ""
 "Project-Id-Version: gtranslator\n"
 "Report-Msgid-Bugs-To: http://bugzilla.gnome.org/enter_bug.cgi?"
 "product=gtranslator&keywords=I18N+L10N&component=general\n"
-"POT-Creation-Date: 2012-04-21 11:49+0000\n"
-"PO-Revision-Date: 2012-04-21 16:39+0200\n"
+"POT-Creation-Date: 2012-04-21 15:13+0000\n"
+"PO-Revision-Date: 2012-04-21 18:12+0200\n"
 "Last-Translator: Piotr Drąg <piotrdrag@gmail.com>\n"
 "Language-Team: Polish <gnomepl@aviary.pl>>\n"
 "MIME-Version: 1.0\n"
@@ -218,22 +218,22 @@ msgstr "Otwiera plik dla alternatywnego języka"
 msgid "File closed"
 msgstr "Zamknięto plik"
 
-#: ../plugins/alternate-language/gtr-alternate-language-panel.c:314
+#: ../plugins/alternate-language/gtr-alternate-language-panel.c:322
 msgctxt "alternate lang"
 msgid "_Open"
 msgstr "_Otwórz"
 
-#: ../plugins/alternate-language/gtr-alternate-language-panel.c:320
+#: ../plugins/alternate-language/gtr-alternate-language-panel.c:328
 msgctxt "alternate lang"
 msgid "_Close"
 msgstr "Zam_knij"
 
-#: ../plugins/alternate-language/gtr-alternate-language-panel.c:326
+#: ../plugins/alternate-language/gtr-alternate-language-panel.c:334
 msgctxt "alternate lang"
 msgid "Co_py"
 msgstr "S_kopiuj"
 
-#: ../plugins/alternate-language/gtr-alternate-language-panel.c:355
+#: ../plugins/alternate-language/gtr-alternate-language-panel.c:363
 msgid "There isn't any file loaded"
 msgstr "Nie wczytano żadnego pliku"
 
@@ -322,23 +322,23 @@ msgid "Double-click on the database to use"
 msgstr "Podwójne kliknięcie na bazie danych spowoduje jej użycie"
 
 #. Look up Button
-#: ../plugins/dictionary/gtr-dict-panel.c:440
+#: ../plugins/dictionary/gtr-dict-panel.c:502
 msgid "Look _up:"
 msgstr "Wysz_ukiwanie:"
 
-#: ../plugins/dictionary/gtr-dict-panel.c:497
+#: ../plugins/dictionary/gtr-dict-panel.c:559
 msgid "Similar words"
 msgstr "Podobne słowa"
 
-#: ../plugins/dictionary/gtr-dict-panel.c:510
+#: ../plugins/dictionary/gtr-dict-panel.c:572
 msgid "Available dictionaries"
 msgstr "Dostępne słowniki"
 
-#: ../plugins/dictionary/gtr-dict-panel.c:524
+#: ../plugins/dictionary/gtr-dict-panel.c:586
 msgid "Available strategies"
 msgstr "Dostępne strategie"
 
-#: ../plugins/dictionary/gtr-dict-panel.c:534
+#: ../plugins/dictionary/gtr-dict-panel.c:596
 msgid "Dictionary sources"
 msgstr "Źródła słowników"
 
@@ -533,7 +533,7 @@ msgstr "Typ"
 msgid "Open-Tran.eu"
 msgstr "Open-Tran.eu"
 
-#: ../plugins/open-tran/gtr-open-tran-panel.c:503
+#: ../plugins/open-tran/gtr-open-tran-panel.c:510
 msgid "Look for:"
 msgstr "Wyszukiwanie:"
 
@@ -1268,43 +1268,63 @@ msgstr "Wyszukiwanie _wstecz"
 msgid "_Wrap around"
 msgstr "_Zawijanie tekstu"
 
-#: ../src/gtr-message-table.c:265
+#: ../src/gtr-message-table.c:272
 msgid "Status"
 msgstr "Stan"
 
-#: ../src/gtr-message-table.c:281
+#: ../src/gtr-message-table.c:288
 msgid "ID"
 msgstr "Identyfikator"
 
-#: ../src/gtr-message-table.c:300
+#: ../src/gtr-message-table.c:307
 msgid "Original Message"
 msgstr "Pierwotny komunikat"
 
-#: ../src/gtr-message-table.c:319
+#: ../src/gtr-message-table.c:326
 msgid "Translated Message"
 msgstr "Przetłumaczony komunikat"
 
-#: ../src/gtr-po.c:405
-#, c-format
-msgid "Failed opening file '%s': %s"
-msgstr "Otwarcie pliku \"%s\" się nie powiodło: %s"
-
-#: ../src/gtr-po.c:429
+#: ../src/gtr-po.c:398
 #, c-format
 msgid "The file is empty"
 msgstr "Plik jest pusty"
 
-#: ../src/gtr-po.c:444
+#: ../src/gtr-po.c:407
+#, c-format
+msgid "Failed opening file '%s': %s"
+msgstr "Otwarcie pliku \"%s\" się nie powiodło: %s"
+
+#: ../src/gtr-po.c:481
+#, c-format
+msgid "Could not convert from charset '%s' to UTF-8"
+msgstr "Nie można przekonwertować z zestawu znaków \"%s\" na UTF-8"
+
+#: ../src/gtr-po.c:498 ../src/gtr-po.c:518
+#, c-format
+msgid "Could not store temporary file for encoding conversion"
+msgstr "Nie można przechować pliku tymczasowego do konwersji kodowania"
+
+#: ../src/gtr-po.c:555
+#, c-format
+msgid ""
+"All attempt to convert the file to UTF-8 has failed, use the msgconv or "
+"iconv command line tools before opening this file with gtranslator"
+msgstr ""
+"Żadna próba konwersji pliku do UTF-8 się nie powiodła. Proszę użyć narzędzi "
+"wiersza poleceń msgconv lub iconv przed otwarciem tego pliku za pomocą "
+"programu gtranslator"
+
+#: ../src/gtr-po.c:623
 #, c-format
 msgid "Gettext returned a null message domain list."
 msgstr "Program gettext zwrócił pustą listę domen komunikatów."
 
-#: ../src/gtr-po.c:496
+#: ../src/gtr-po.c:668
 #, c-format
 msgid "No messages obtained from parser."
 msgstr "Brak komunikatów uzyskanych z parsera."
 
-#: ../src/gtr-po.c:544
+#: ../src/gtr-po.c:716
 #, c-format
 msgid ""
 "You are saving a file with a .pot extension.\n"
@@ -1315,12 +1335,12 @@ msgstr ""
 "Pliki .pot są tworzone w procesie kompilacji.\n"
 "Plik powinien prawdopodobnie nosić nazwę \"%s.po\"."
 
-#: ../src/gtr-po.c:557
+#: ../src/gtr-po.c:729
 #, c-format
 msgid "The file %s is read-only, and can not be overwritten"
 msgstr "Plik %s jest tylko do odczytu i nie może zostać zastąpiony"
 
-#: ../src/gtr-po.c:588
+#: ../src/gtr-po.c:760
 #, c-format
 msgid "There was an error writing the PO file: %s"
 msgstr "Wystąpił błąd podczas zapisywania pliku PO: %s"
@@ -1342,28 +1362,28 @@ msgstr "Wystąpił błąd w komunikacie:"
 msgid "Plural %d"
 msgstr "Liczba mnoga %d"
 
-#: ../src/gtr-tab.c:712
+#: ../src/gtr-tab.c:743
 msgid "Message Table"
 msgstr "Tablica komunikatów"
 
-#: ../src/gtr-tab.c:722
+#: ../src/gtr-tab.c:753
 msgid "<b>Original Message:</b>"
 msgstr "<b>Pierwotny komunikat:</b>"
 
-#: ../src/gtr-tab.c:775
+#: ../src/gtr-tab.c:806
 msgid "<b>Translate_d Text:</b>"
 msgstr "<b>Przetłumaczony te_kst:</b>"
 
-#: ../src/gtr-tab.c:791
+#: ../src/gtr-tab.c:822
 msgid "Translation Fields"
 msgstr "Pola tłumaczeń"
 
-#: ../src/gtr-tab.c:801
+#: ../src/gtr-tab.c:832
 msgid "Message Details"
 msgstr "Szczegóły komunikatu"
 
 #. Translators: Path to the document opened
-#: ../src/gtr-tab.c:1323
+#: ../src/gtr-tab.c:1318
 msgid "Path:"
 msgstr "Ścieżka:"
 
