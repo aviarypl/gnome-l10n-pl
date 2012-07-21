@@ -1,0 +1,505 @@
+# -=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-
+# Aviary.pl
+# Jeśli masz jakiekolwiek uwagi odnoszące się do tłumaczenia lub chcesz
+# pomóc w jego rozwijaniu i pielęgnowaniu, napisz do nas:
+# gnomepl@aviary.pl
+# -=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-
+msgid ""
+msgstr ""
+"Project-Id-Version: regexxer\n"
+"Report-Msgid-Bugs-To: http://regexxer.sourceforge.net/bugs\n"
+"POT-Creation-Date: 2012-07-13 02:24+0200\n"
+"PO-Revision-Date: 2012-07-13 02:25+0200\n"
+"Last-Translator: Piotr Drąg <piotrdrag@gmail.com>\n"
+"Language-Team: Polish <gnomepl@aviary.pl>\n"
+"Language: pl\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=3; plural=(n==1 ? 0 : n%10>=2 && n%10<=4 && (n%100<10 "
+"|| n%100>=20) ? 1 : 2);\n"
+"X-Poedit-Language: Polish\n"
+"X-Poedit-Country: Poland\n"
+
+#: ../ui/regexxer.desktop.in.h:1
+msgid "regexxer Search Tool"
+msgstr "Narzędzie do wyszukiwania regexxer"
+
+#: ../ui/regexxer.desktop.in.h:2 ../src/mainwindow.cc:1028
+msgid "Search and replace using regular expressions"
+msgstr "Wyszukiwanie i zastępowanie używając wyrażeń regularnych"
+
+#: ../ui/org.regexxer.gschema.xml.in.h:1
+msgid "File Patterns"
+msgstr "Wzorce plików"
+
+#: ../ui/org.regexxer.gschema.xml.in.h:2
+msgid "List of pre-defined patterns available in the 'Pattern' entry."
+msgstr "Lista uprzednio określonych wzorców dostępnych w polu \"Wzorzec\"."
+
+#: ../ui/org.regexxer.gschema.xml.in.h:3
+msgid "Regex Patterns"
+msgstr "Wzorce wyrażeń regularnych"
+
+#: ../ui/org.regexxer.gschema.xml.in.h:4
+msgid "List of last patterns used in the 'Regex' entry."
+msgstr "Lista ostatnich wzorców używanych w polu \"Wyrażenie regularne\"."
+
+#: ../ui/org.regexxer.gschema.xml.in.h:5
+msgid "List of last patterns used in the 'Substitution' entry."
+msgstr "Lista ostatnich wzorców używanych w polu \"Przypisanie\"."
+
+#: ../ui/org.regexxer.gschema.xml.in.h:6
+msgid "Text view font"
+msgstr "Czcionka wyświetlania tekstu"
+
+#: ../ui/org.regexxer.gschema.xml.in.h:7
+msgid "The font used in the file editor."
+msgstr "Czcionka używana w edytorze plików."
+
+#: ../ui/org.regexxer.gschema.xml.in.h:8
+msgid "Match color"
+msgstr "Kolor dopasowania"
+
+#: ../ui/org.regexxer.gschema.xml.in.h:9
+msgid ""
+"The background color used to highlight matches of the search expression."
+msgstr "Kolor tła używany do wyróżniania dopasowań wyszukiwanego wyrażenia."
+
+#: ../ui/org.regexxer.gschema.xml.in.h:10
+msgid "Current-match color"
+msgstr "Kolor bieżącego dopasowania"
+
+#: ../ui/org.regexxer.gschema.xml.in.h:11
+msgid ""
+"The background color used to highlight the currently selected match of the "
+"search expression."
+msgstr ""
+"Kolor tła używany do wyróżniania obecnie zaznaczonych dopasowań "
+"wyszukiwanego wyrażenia."
+
+#: ../ui/org.regexxer.gschema.xml.in.h:12
+msgid "Fallback encoding"
+msgstr "Kodowanie zastępcze"
+
+#: ../ui/org.regexxer.gschema.xml.in.h:13
+msgid ""
+"Name of the character encoding to use if a file is not readable in either "
+"UTF-8 or the codeset specified by the current locale. Try \"iconv --list\" "
+"for a complete list of possible values."
+msgstr ""
+"Nazwa kodowania znaków używana, gdy pliku nie można odczytać zarówno w "
+"UTF-8, jak i zestawie znaków określonym przez bieżące ustawienia locale. "
+"Polecenie \"iconv --list\" wyświetli listę możliwych wartości."
+
+#: ../ui/org.regexxer.gschema.xml.in.h:14
+msgid "window width"
+msgstr "szerokość okna"
+
+#: ../ui/org.regexxer.gschema.xml.in.h:15
+msgid "The width of the window."
+msgstr "Szerokość okna."
+
+#: ../ui/org.regexxer.gschema.xml.in.h:16
+msgid "window height"
+msgstr "wysokość okna"
+
+#: ../ui/org.regexxer.gschema.xml.in.h:17
+msgid "The height of the window."
+msgstr "Wysokość okna."
+
+#: ../ui/org.regexxer.gschema.xml.in.h:18
+msgid "window x position"
+msgstr "położenie okna na osi X"
+
+#: ../ui/org.regexxer.gschema.xml.in.h:19
+msgid "The X coordinate of the window."
+msgstr "Współrzędna X okna."
+
+#: ../ui/org.regexxer.gschema.xml.in.h:20
+msgid "window y position"
+msgstr "położenie okna na osi Y"
+
+#: ../ui/org.regexxer.gschema.xml.in.h:21
+msgid "The Y coordinate of the window."
+msgstr "Współrzędna Y okna."
+
+#: ../ui/org.regexxer.gschema.xml.in.h:22
+msgid "window maximization"
+msgstr "maksymalizacja okna"
+
+#: ../ui/org.regexxer.gschema.xml.in.h:23
+msgid "Whether the window is maximized."
+msgstr "Określa, czy okno jest zmaksymalizowane."
+
+#: ../ui/org.regexxer.gschema.xml.in.h:24
+msgid "Show line numbers"
+msgstr "Wyświetlanie numerów wierszy"
+
+#: ../ui/org.regexxer.gschema.xml.in.h:25
+msgid "Whether to show the line numbers of the text view."
+msgstr "Określa, czy wyświetlać numery wierszy w widoku tekstu."
+
+#: ../ui/org.regexxer.gschema.xml.in.h:26
+msgid "Highlight the current line"
+msgstr "Wyróżnianie bieżącego wiersza"
+
+#: ../ui/org.regexxer.gschema.xml.in.h:27
+msgid "Whether to highlight the current line of the text view."
+msgstr "Określa, czy wyróżniać bieżący wiersz w widoku tekstu."
+
+#: ../ui/org.regexxer.gschema.xml.in.h:28
+msgid "Auto indentation"
+msgstr "Automatyczne wcięcia"
+
+#: ../ui/org.regexxer.gschema.xml.in.h:29
+msgid "Whether to enable auto indentation in the text view."
+msgstr "Określa, czy włączyć automatyczne wcięcia w widoku tekstu."
+
+#: ../ui/org.regexxer.gschema.xml.in.h:30
+msgid "Draw spaces"
+msgstr "Wyświetlanie spacji"
+
+#: ../ui/org.regexxer.gschema.xml.in.h:31
+msgid "Which type of space to draw in the text view."
+msgstr "Które typy spacji wyświetlać w widoku tekstu."
+
+#: ../src/filebuffer.cc:198
+msgid "Can’t read file:"
+msgstr "Nie można odczytać pliku:"
+
+#: ../src/filetree.cc:60
+msgid "File"
+msgstr "Plik"
+
+#: ../src/filetree.cc:79
+msgid "#"
+msgstr "#"
+
+#: ../src/filetree.cc:508
+#, qt-format
+msgid "Failed to save file “%1”: %2"
+msgstr "Nie można zapisać pliku \"%1\": %2"
+
+#: ../src/filetree.cc:924
+#, qt-format
+msgid "“%1” seems to be a binary file."
+msgstr "\"%1\" jest plikiem binarnym."
+
+#: ../src/main.cc:78
+msgid "Save _all"
+msgstr "Zapisz _wszystko"
+
+#: ../src/main.cc:135
+msgid "Find files matching PATTERN"
+msgstr "Wyszukuje pliki pasujące do WZORCA"
+
+#: ../src/main.cc:135
+msgid "PATTERN"
+msgstr "WZORZEC"
+
+#: ../src/main.cc:137
+msgid "Do not recurse into subdirectories"
+msgstr "Bez podkatalogów"
+
+#: ../src/main.cc:139 ../ui/mainwindow.ui.h:9
+msgid "Also find hidden files"
+msgstr "Wyszukiwanie również ukrytych plików"
+
+#: ../src/main.cc:141
+msgid "Find text matching REGEX"
+msgstr "Wyszukuje tekst pasujący do WYRAŻENIA REGULARNEGO"
+
+#: ../src/main.cc:141
+msgid "REGEX"
+msgstr "WYRAŻENIE REGULARNE"
+
+#: ../src/main.cc:143
+msgid "Find only the first match in a line"
+msgstr "Wyszukiwanie tylko pierwszego dopasowania w wierszu"
+
+#: ../src/main.cc:145 ../ui/mainwindow.ui.h:16
+msgid "Do case insensitive matching"
+msgstr "Wyszukiwanie niezależne od wielkości liter"
+
+#: ../src/main.cc:147
+msgid "Replace matches with STRING"
+msgstr "Zastępuje dopasowania CIĄGIEM"
+
+#: ../src/main.cc:147
+msgid "STRING"
+msgstr "CIĄG"
+
+#: ../src/main.cc:149
+msgid "Print match location to standard output"
+msgstr "Wyświetla położenie dopasowania w standardowym wyjściu"
+
+#: ../src/main.cc:151
+msgid "Do not automatically start search"
+msgstr "Bez automatycznego uruchamiania wyszukiwania"
+
+#: ../src/main.cc:153
+msgid "[FOLDER]"
+msgstr "[KATALOG]"
+
+#: ../src/mainwindow.cc:568
+msgid ""
+"Some files haven’t been saved yet.\n"
+"Quit anyway?"
+msgstr ""
+"Część plików nie została jeszcze zapisana.\n"
+"Zakończyć mimo to?"
+
+#: ../src/mainwindow.cc:582
+msgid ""
+"Some files haven’t been saved yet.\n"
+"Continue anyway?"
+msgstr ""
+"Część plików nie została jeszcze zapisana.\n"
+"Kontynuować mimo to?"
+
+#: ../src/mainwindow.cc:612
+msgid "The file search pattern is invalid."
+msgstr "Wzorzec wyszukiwania pliku jest nieprawidłowy."
+
+#: ../src/mainwindow.cc:618
+msgid "The following errors occurred during search:"
+msgstr "Następujące błędy wystąpiły podczas wyszukiwania:"
+
+#: ../src/mainwindow.cc:882
+msgid "The following errors occurred during save:"
+msgstr "Następujące błędy wystąpiły podczas zapisu:"
+
+#: ../src/mainwindow.cc:1034
+msgid "translator-credits"
+msgstr "Aviary.pl <gnomepl@aviary.pl>, 2012"
+
+#: ../src/prefdialog.cc:186
+#, qt-format
+msgid "“%1” is not a valid encoding."
+msgstr "\"%1\" nie jest prawidłowym kodowaniem."
+
+#: ../src/statusline.cc:245
+msgid "Stop"
+msgstr "Zatrzymaj"
+
+#: ../src/statusline.cc:253
+msgid "File:"
+msgstr "Plik:"
+
+#: ../src/statusline.cc:256
+msgid "Match:"
+msgstr "Dopasowanie:"
+
+#: ../src/statusline.cc:267
+msgid "Cancels the running search"
+msgstr "Przerywa wykonywane wyszukiwanie"
+
+#: ../ui/mainwindow.ui.h:1
+msgid "_File"
+msgstr "_Plik"
+
+#: ../ui/mainwindow.ui.h:2
+msgid "_Edit"
+msgstr "_Edycja"
+
+#: ../ui/mainwindow.ui.h:3
+msgid "_Match"
+msgstr "_Dopasowanie"
+
+#: ../ui/mainwindow.ui.h:4
+msgid "_Help"
+msgstr "Pomo_c"
+
+#: ../ui/mainwindow.ui.h:5
+msgid "Pattern:"
+msgstr "Wzorzec:"
+
+#: ../ui/mainwindow.ui.h:6
+msgid "recursive"
+msgstr "rekursywnie"
+
+#: ../ui/mainwindow.ui.h:7
+msgid "Recurse into subdirectories"
+msgstr "Z podkatalogami"
+
+#: ../ui/mainwindow.ui.h:8
+msgid "hidden"
+msgstr "ukryte"
+
+#: ../ui/mainwindow.ui.h:10
+msgid "Find all files that match the filename pattern"
+msgstr "Wyszukuje wszystkie pliki pasujące do wzorca"
+
+#: ../ui/mainwindow.ui.h:11
+msgid "Find fi_les"
+msgstr "Znajdź p_liki"
+
+#: ../ui/mainwindow.ui.h:12
+msgid "Fol_der:"
+msgstr "_Katalog:"
+
+#: ../ui/mainwindow.ui.h:13
+msgid "Search:"
+msgstr "Wyszukiwanie:"
+
+#: ../ui/mainwindow.ui.h:14
+msgid "Replace:"
+msgstr "Zastąpienie:"
+
+#: ../ui/mainwindow.ui.h:15
+msgid "Find all possible matches in a line"
+msgstr "Wyszukuje wszystkie możliwe dopasowania w wierszu"
+
+#: ../ui/mainwindow.ui.h:17
+msgid "Find all matches of the regular expression"
+msgstr "Wyszukuje wszystkie dopasowania wyrażenia regularnego"
+
+#: ../ui/mainwindow.ui.h:18
+msgid "A regular expression in Perl syntax"
+msgstr "Wyrażenie regularne w składni języka Perl"
+
+#: ../ui/mainwindow.ui.h:19
+msgid ""
+"The new string to substitute. As in Perl, you can refer to parts of the "
+"match using $1, $2, etc. or even $+, $&amp;, $` and $'. The operators \\l, "
+"\\u, \\L, \\U and \\E are supported as well."
+msgstr ""
+"Nowy ciąg do przypisania. Tak jak w języku Perlu, można się odwoływać do "
+"części pasujących przy pomocy $1, $2, itd. lub nawet $+, $&amp;, $` i $'. "
+"Operatory \\l, \\u, \\L, \\U i \\E są także obsługiwane."
+
+#: ../ui/mainwindow.ui.h:20
+msgid "Preview of the substitution"
+msgstr "Podgląd przypisania"
+
+#: ../ui/mainwindow.ui.h:21
+msgid "Preview"
+msgstr "Podgląd"
+
+#: ../ui/mainwindow.ui.h:22
+msgid "Replace current match"
+msgstr "Zastępuje bieżące dopasowanie"
+
+#: ../ui/mainwindow.ui.h:23
+msgid "_Replace"
+msgstr "_Zastąp"
+
+#: ../ui/mainwindow.ui.h:24
+msgid "Replace all matches in the current file"
+msgstr "Zastępuje wszystkie dopasowania w bieżącym pliku"
+
+#: ../ui/mainwindow.ui.h:25
+msgid "_This file"
+msgstr "_Ten plik"
+
+#: ../ui/mainwindow.ui.h:26
+msgid "Replace all matches in all files"
+msgstr "Zastępuje wszystkie dopasowania we wszystkich plikach"
+
+#: ../ui/mainwindow.ui.h:27
+msgid "_All files"
+msgstr "_Wszystkie pliki"
+
+#: ../ui/mainwindow.ui.h:28
+msgid "File backward"
+msgstr "Plik wstecz"
+
+#: ../ui/mainwindow.ui.h:29
+msgid "Go to the previous matching file"
+msgstr "Przechodzi do poprzedniego pasującego pliku"
+
+#: ../ui/mainwindow.ui.h:30
+msgid "Backward"
+msgstr "Wstecz"
+
+#: ../ui/mainwindow.ui.h:31
+msgid "Go to previous match"
+msgstr "Przechodzi do poprzedniego dopasowania"
+
+#: ../ui/mainwindow.ui.h:32
+msgid "Forward"
+msgstr "Dalej"
+
+#: ../ui/mainwindow.ui.h:33
+msgid "Go to next match"
+msgstr "Przechodzi do następnego dopasowania"
+
+#: ../ui/mainwindow.ui.h:34
+msgid "File forward"
+msgstr "Plik naprzód"
+
+#: ../ui/mainwindow.ui.h:35
+msgid "Go to the next matching file"
+msgstr "Przechodzi do następnego pasującego pliku"
+
+#: ../ui/prefdialog.ui.h:1
+msgid "Icons only"
+msgstr "Tylko ikony"
+
+#: ../ui/prefdialog.ui.h:2
+msgid "Text only"
+msgstr "Tylko tekst"
+
+#: ../ui/prefdialog.ui.h:3
+msgid "Icons and text"
+msgstr "Ikony i tekst"
+
+#: ../ui/prefdialog.ui.h:4
+msgid "Both horizontal"
+msgstr "Oba poziomo"
+
+#: ../ui/prefdialog.ui.h:5
+msgid "Preferences"
+msgstr "Preferencje"
+
+#: ../ui/prefdialog.ui.h:6
+msgid "_Text view font:"
+msgstr "Czcionka wyświetlania _tekstu:"
+
+#: ../ui/prefdialog.ui.h:7
+msgid "_Match color:"
+msgstr "Kolor _dopasowania:"
+
+#: ../ui/prefdialog.ui.h:8
+msgid "C_urrent match color:"
+msgstr "Kolor _bieżącego dopasowania:"
+
+#: ../ui/prefdialog.ui.h:9
+msgid "_Look&#x2019;n&#x2019;feel"
+msgstr "_Wygląd"
+
+#: ../ui/prefdialog.ui.h:10
+msgid ""
+"regexxer attempts to read a file in the following encodings before giving up:"
+msgstr ""
+"Program regexxer będzie próbował odczytać plik w następujących kodowaniach, "
+"zanim się podda:"
+
+#: ../ui/prefdialog.ui.h:11
+msgid "3."
+msgstr "3."
+
+#: ../ui/prefdialog.ui.h:12
+msgid "2."
+msgstr "2."
+
+#: ../ui/prefdialog.ui.h:13
+msgid "1."
+msgstr "1."
+
+#: ../ui/prefdialog.ui.h:14
+msgid "UTF-8"
+msgstr "UTF-8"
+
+#: ../ui/prefdialog.ui.h:15
+msgid "Fallback _encoding:"
+msgstr "_Kodowanie zastępcze:"
+
+#: ../ui/prefdialog.ui.h:16
+msgid "The encoding specified by the current locale"
+msgstr "Kodowanie określone przez bieżące ustawienia lokalizacji"
+
+#: ../ui/prefdialog.ui.h:17
+msgid "_File access"
+msgstr "_Dostęp do plików"
