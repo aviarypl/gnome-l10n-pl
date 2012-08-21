@@ -18,7 +18,7 @@ msgstr ""
 "Project-Id-Version: gegl\n"
 "Report-Msgid-Bugs-To: http://bugzilla.gnome.org/enter_bug.cgi?"
 "product=gegl&keywords=I18N+L10N&component=general\n"
-"POT-Creation-Date: 2012-05-05 14:11+0000\n"
+"POT-Creation-Date: 2012-07-19 07:21+0000\n"
 "PO-Revision-Date: 2012-03-31 16:03+0200\n"
 "Last-Translator: Piotr Drąg <piotrdrag@gmail.com>\n"
 "Language-Team: Polish <gnomepl@aviary.pl>\n"
@@ -31,31 +31,123 @@ msgstr ""
 "X-Poedit-Language: Polish\n"
 "X-Poedit-Country: Poland\n"
 
-#: ../gegl/gegl-init.c:216
+#: ../bin/gegl.c:147
+#, c-format
+msgid "Unable to read file: %s"
+msgstr "Nie można odczytać pliku: %s"
+
+#: ../bin/gegl.c:191
+#, c-format
+msgid "Invalid graph, abort.\n"
+msgstr ""
+
+#: ../bin/gegl.c:257 ../bin/gegl-options.c:124
+#, c-format
+msgid "Unknown GeglOption mode: %d"
+msgstr ""
+
+#: ../bin/gegl-options.c:45
+#, c-format
+msgid ""
+"usage: %s [options] <file | -- [op [op] ..]>\n"
+"\n"
+"  Options:\n"
+"     -h, --help      this help information\n"
+"\n"
+"     -i, --file      read xml from named file\n"
+"\n"
+"     -x, --xml       use xml provided in next argument\n"
+"\n"
+"     --dot           output a graphviz graph description\n"
+"\n"
+"     -o, --output    output generated image to named file, type based\n"
+"                     on extension.\n"
+"\n"
+"     -p              increment frame counters of various elements when\n"
+"                     processing is done.\n"
+"\n"
+"     -X              output the XML that was read in\n"
+"\n"
+"     -v, --verbose   print diagnostics while running\n"
+"\n"
+"All parameters following -- are considered ops to be chained together\n"
+"into a small composition instead of using an xml file, this allows for\n"
+"easy testing of filters. Be aware that the default value will be used\n"
+"for all properties.\n"
+msgstr ""
+
+#: ../bin/gegl-options.c:77
+#, c-format
+msgid "ERROR: '%s' option expected argument\n"
+msgstr ""
+
+#: ../bin/gegl-options.c:116
+msgid "Display on screen"
+msgstr ""
+
+#: ../bin/gegl-options.c:118
+msgid "Print XML"
+msgstr ""
+
+#: ../bin/gegl-options.c:120
+msgid "Output in a file"
+msgstr ""
+
+#: ../bin/gegl-options.c:122
+msgid "Display help information"
+msgstr ""
+
+#: ../bin/gegl-options.c:125
+msgid "unknown mode"
+msgstr ""
+
+#: ../bin/gegl-options.c:130
+#, c-format
+msgid ""
+"Parsed commandline:\n"
+"\tmode:   %s\n"
+"\tfile:   %s\n"
+"\txml:    %s\n"
+"\toutput: %s\n"
+"\trest:   %s\n"
+"\t\n"
+msgstr ""
+
+#: ../bin/gegl-options.c:257
+#, c-format
+msgid ""
+"\n"
+"\n"
+"unknown parameter '%s' giving you help instead\n"
+"\n"
+"\n"
+msgstr ""
+
+#: ../gegl/gegl-init.c:212
 msgid "babls error tolerance, a value between 0.2 and 0.000000001"
 msgstr ""
 
-#: ../gegl/gegl-init.c:221
+#: ../gegl/gegl-init.c:217
 msgid "Where GEGL stores its swap"
 msgstr ""
 
-#: ../gegl/gegl-init.c:226
+#: ../gegl/gegl-init.c:222
 msgid "How much memory to (approximately) use for caching imagery"
 msgstr ""
 
-#: ../gegl/gegl-init.c:231
+#: ../gegl/gegl-init.c:227
 msgid "Default size of tiles in GeglBuffers"
 msgstr ""
 
-#: ../gegl/gegl-init.c:236
+#: ../gegl/gegl-init.c:232
 msgid "The count of pixels to compute simultaneously"
 msgstr ""
 
-#: ../gegl/gegl-init.c:241
+#: ../gegl/gegl-init.c:237
 msgid "The quality of rendering a value between 0.0(fast) and 1.0(reference)"
 msgstr ""
 
-#: ../gegl/gegl-init.c:246
+#: ../gegl/gegl-init.c:242
 #, fuzzy
 msgid "The number of concurrent processing threads to use"
 msgstr "Liczba wykorzystywanych kierunków (tzn. pędzli)"
@@ -192,7 +284,7 @@ msgstr ""
 msgid "The GeglBuffer to load into the pipeline"
 msgstr ""
 
-#: ../operations/common/buffer-source.c:122
+#: ../operations/common/buffer-source.c:177
 msgid "A source that uses an in-memory GeglBuffer, for use internally by GEGL."
 msgstr ""
 
@@ -321,6 +413,61 @@ msgid ""
 "smaller dimensions."
 msgstr ""
 
+#: ../operations/common/color-reduction.c:33
+#, fuzzy
+msgid "Red bits"
+msgstr "16 bitów"
+
+#: ../operations/common/color-reduction.c:33
+#, fuzzy
+msgid "Number of bits for red channel"
+msgstr "Liczba kanałów:"
+
+#: ../operations/common/color-reduction.c:34
+#, fuzzy
+msgid "Green bits"
+msgstr "Zielony"
+
+#: ../operations/common/color-reduction.c:34
+#, fuzzy
+msgid "Number of bits for green channel"
+msgstr "Liczba kanałów:"
+
+#: ../operations/common/color-reduction.c:35
+#, fuzzy
+msgid "Blue bits"
+msgstr "16 bitów"
+
+#: ../operations/common/color-reduction.c:35
+#, fuzzy
+msgid "Number of bits for blue channel"
+msgstr "Liczba kanałów:"
+
+#: ../operations/common/color-reduction.c:36
+#, fuzzy
+msgid "Alpha bits"
+msgstr "Alfa"
+
+#: ../operations/common/color-reduction.c:36
+#, fuzzy
+msgid "Number of bits for alpha channel"
+msgstr "Liczba kanałów:"
+
+#: ../operations/common/color-reduction.c:38
+msgid "Dithering Strategy"
+msgstr ""
+
+#: ../operations/common/color-reduction.c:39
+#, fuzzy
+msgid "The dithering strategy to use"
+msgstr "_Biała (bez przezroczystości)"
+
+#: ../operations/common/color-reduction.c:478
+msgid ""
+"Reduces the number of bits per channel (colors and alpha), with optional "
+"dithering"
+msgstr ""
+
 #: ../operations/common/color-temperature.c:27
 msgid "Original temperature"
 msgstr ""
@@ -391,6 +538,29 @@ msgstr ""
 
 #: ../operations/common/display.c:142
 msgid "Display the input buffer in a window."
+msgstr ""
+
+#: ../operations/common/dot.c:26 ../operations/common/pixelize.c:25
+#, fuzzy
+msgid "Block Width"
+msgstr "Rozmiar bloku"
+
+#: ../operations/common/dot.c:27
+#, fuzzy
+msgid "Size of each block in pixels"
+msgstr "Szerokość obręczy"
+
+#: ../operations/common/dot.c:28
+#, fuzzy
+msgid "Dot size ratio"
+msgstr "Iteracja"
+
+#: ../operations/common/dot.c:29
+msgid "Size ratio of a dot inside each block"
+msgstr ""
+
+#: ../operations/common/dot.c:191
+msgid "Simplify image into an array of solid-colored dots"
 msgstr ""
 
 #: ../operations/common/dropshadow.c:25 ../operations/common/layer.c:32
@@ -1218,11 +1388,6 @@ msgstr ""
 msgid "Porter Duff operation over (d = cA + cB * (1 - aA))"
 msgstr ""
 
-#: ../operations/common/pixelize.c:25
-#, fuzzy
-msgid "Block Width"
-msgstr "Rozmiar bloku"
-
 #: ../operations/common/pixelize.c:26
 #, fuzzy
 msgid "Width of blocks in pixels"
@@ -1928,7 +2093,7 @@ msgid "Fill rule"
 msgstr "Kąt wypełnienia"
 
 #: ../operations/external/path.c:42
-msgid "How to determine what to fill (nonzero|evenodd"
+msgid "How to determine what to fill (nonzero|evenodd)"
 msgstr ""
 
 #: ../operations/external/path.c:44 ../operations/external/vector-fill.c:36
@@ -2179,7 +2344,7 @@ msgid "Fill rule."
 msgstr "Kąt wypełnienia"
 
 #: ../operations/external/vector-fill.c:34
-msgid "how to determine what to fill (nonzero|evenodd"
+msgid "how to determine what to fill (nonzero|evenodd)"
 msgstr ""
 
 #: ../operations/external/vector-fill.c:37
@@ -2536,64 +2701,9 @@ msgstr "Wk_lej bufor"
 msgid "The GeglBuffer where the caching is done"
 msgstr ""
 
-#: ../operations/workshop/buffer-cache.c:103
+#: ../operations/workshop/buffer-cache.c:96
 msgid ""
 "Cache the input buffer internally, further process take this buffer as input."
-msgstr ""
-
-#: ../operations/workshop/color-reduction.c:25
-#, fuzzy
-msgid "Red bits"
-msgstr "16 bitów"
-
-#: ../operations/workshop/color-reduction.c:25
-#, fuzzy
-msgid "Number of bits for red channel"
-msgstr "Liczba kanałów:"
-
-#: ../operations/workshop/color-reduction.c:26
-#, fuzzy
-msgid "Green bits"
-msgstr "Zielony"
-
-#: ../operations/workshop/color-reduction.c:26
-#, fuzzy
-msgid "Number of bits for green channel"
-msgstr "Liczba kanałów:"
-
-#: ../operations/workshop/color-reduction.c:27
-#, fuzzy
-msgid "Blue bits"
-msgstr "16 bitów"
-
-#: ../operations/workshop/color-reduction.c:27
-#, fuzzy
-msgid "Number of bits for blue channel"
-msgstr "Liczba kanałów:"
-
-#: ../operations/workshop/color-reduction.c:28
-#, fuzzy
-msgid "Alpha bits"
-msgstr "Alfa"
-
-#: ../operations/workshop/color-reduction.c:28
-#, fuzzy
-msgid "Number of bits for alpha channel"
-msgstr "Liczba kanałów:"
-
-#: ../operations/workshop/color-reduction.c:29
-msgid "Dither"
-msgstr "Dithering"
-
-#: ../operations/workshop/color-reduction.c:30
-msgid ""
-"Dithering strategy (none, random, random-covariant, bayer, floyd-steinberg)"
-msgstr ""
-
-#: ../operations/workshop/color-reduction.c:459
-msgid ""
-"Reduces the number of bits per channel (colors and alpha), with optional "
-"dithering"
 msgstr ""
 
 #: ../operations/workshop/color-rotate.c:33
@@ -2658,7 +2768,7 @@ msgstr "Zmiana na wybrany"
 msgid "The value of gray threshold"
 msgstr "Poruszenie myszą zmieni próg"
 
-#: ../operations/workshop/color-rotate.c:385
+#: ../operations/workshop/color-rotate.c:383
 #, fuzzy
 msgid "Rotate colors on the image"
 msgstr "Użycie koloru obrazu"
@@ -2924,7 +3034,7 @@ msgstr "Brzeg"
 
 #: ../operations/workshop/convolution-matrix.c:91
 msgid ""
-"Type of border to choose.Choices are extend, wrap, crop.Default is extend"
+"Type of border to choose. Choices are extend, wrap, crop. Default is extend"
 msgstr ""
 
 #: ../operations/workshop/convolution-matrix.c:433
@@ -3120,7 +3230,7 @@ msgid "Lens:"
 msgstr ""
 
 #: ../operations/workshop/external/lens-correct.c:33
-msgid "Write your lens model with majuscules"
+msgid "Write your lens model with uppercase letters"
 msgstr ""
 
 #: ../operations/workshop/external/lens-correct.c:34
@@ -3475,7 +3585,7 @@ msgstr "Gradient ciągły"
 msgid "The other end of a gradient"
 msgstr "Gradient ciągły"
 
-#: ../operations/workshop/linear-gradient.c:137
+#: ../operations/workshop/linear-gradient.c:136
 #, fuzzy
 msgid "Linear gradient renderer"
 msgstr "Odwrócony gradient otoczki"
@@ -3572,7 +3682,7 @@ msgstr "y2"
 msgid "One end of gradient"
 msgstr "Gradient ciągły"
 
-#: ../operations/workshop/radial-gradient.c:129
+#: ../operations/workshop/radial-gradient.c:128
 #, fuzzy
 msgid "Radial gradient renderer"
 msgstr "Gradient promienisty:"
