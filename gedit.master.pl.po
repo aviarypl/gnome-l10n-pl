@@ -7,10 +7,9 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: gedit\n"
-"Report-Msgid-Bugs-To: http://bugzilla.gnome.org/enter_bug.cgi?"
-"product=gedit&keywords=I18N+L10N&component=general\n"
-"POT-Creation-Date: 2012-03-06 18:42+0000\n"
-"PO-Revision-Date: 2012-03-06 19:56+0100\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2012-08-23 03:02+0200\n"
+"PO-Revision-Date: 2012-08-23 03:03+0200\n"
 "Last-Translator: Piotr Drąg <piotrdrag@gmail.com>\n"
 "Language-Team: Polish <gnomepl@aviary.pl>\n"
 "Language: pl\n"
@@ -34,19 +33,17 @@ msgstr "Edytor tekstu"
 msgid "Edit text files"
 msgstr "Edytor plików tekstowych"
 
-# pd
 #: ../data/gedit.desktop.in.in.h:4
+msgid "gedit Text Editor"
+msgstr "Edytor tekstu gedit"
+
+#: ../data/gedit.desktop.in.in.h:5
 msgid "Open a New Window"
 msgstr "Otwórz nowe okno"
 
-# pd
-#: ../data/gedit.desktop.in.in.h:5
+#: ../data/gedit.desktop.in.in.h:6
 msgid "Open a New Document"
 msgstr "Otwórz nowy dokument"
-
-#: ../data/gedit.desktop.in.in.h:6
-msgid "gedit Text Editor"
-msgstr "Edytor tekstu gedit"
 
 #: ../data/org.gnome.gedit.gschema.xml.in.in.h:1
 msgid "Use Default Font"
@@ -294,12 +291,10 @@ msgstr ""
 "Określa, czy program gedit powinien wyróżniać wszystkie wystąpienia "
 "wyszukiwanego tekstu."
 
-# pd
 #: ../data/org.gnome.gedit.gschema.xml.in.in.h:43
 msgid "Ensure Trailing Newline"
 msgstr "Sprawdzanie końcowego nowego wiersza"
 
-# pd
 #: ../data/org.gnome.gedit.gschema.xml.in.in.h:44
 msgid ""
 "Whether gedit will ensure that documents always end with a trailing newline."
@@ -452,11 +447,26 @@ msgstr ""
 "Określa czcionkę stosowaną do numerów wierszy na wydruku. Opcja jest brana "
 "pod uwagę tylko, jeśli aktywna jest opcja \"Drukowanie numerów wierszy\"."
 
-#: ../data/org.gnome.gedit.gschema.xml.in.in.h:69
+#. Translators: This is the sorted list of encodings used by gedit
+#. for automatic detection of the file encoding. You may want to customize it adding
+#. encodings that are common in your country, for instance the GB18030 encoding
+#. for the Chinese translation. You may also want to remove the ISO-8859-15 encoding
+#. (covering English and most Western European languages) if you think people
+#. in you country will rarely use it.
+#. "CURRENT" is a magic value used by gedit and it represents the encoding
+#. for the current locale, so please don't translate the "CURRENT" term.
+#. Only recognized encodings are used.
+#. See http://git.gnome.org/browse/gedit/tree/gedit/gedit-encodings.c#n152 for
+#. a list of supported encodings
+#: ../data/org.gnome.gedit.gschema.xml.in.in.h:80
+msgid "['UTF-8', 'CURRENT', 'ISO-8859-15', 'UTF-16']"
+msgstr "['UTF-8', 'CURRENT', 'ISO-8859-2', 'WINDOWS-1250', 'UTF-16']"
+
+#: ../data/org.gnome.gedit.gschema.xml.in.in.h:81
 msgid "Automatically Detected Encodings"
 msgstr "Automatyczne rozpoznawanie kodowania"
 
-#: ../data/org.gnome.gedit.gschema.xml.in.in.h:70
+#: ../data/org.gnome.gedit.gschema.xml.in.in.h:82
 msgid ""
 "Sorted list of encodings used by gedit for automatically detecting the "
 "encoding of a file. \"CURRENT\" represents the current locale encoding. Only "
@@ -466,11 +476,17 @@ msgstr ""
 "automatycznego wykrywania kodowania pliku. Wartość \"CURRENT\" oznacza "
 "bieżące kodowanie lokalne. Używane są tylko rozpoznane kodowania."
 
-#: ../data/org.gnome.gedit.gschema.xml.in.in.h:71
+#. Translators: This is the list of encodings shown by default in the Character Encoding
+#. menu in open/save file selector. Only recognized encodings are displayed.
+#: ../data/org.gnome.gedit.gschema.xml.in.in.h:85
+msgid "['ISO-8859-15']"
+msgstr "['UTF-8', 'ISO-8859-2', 'WINDOWS-1250']"
+
+#: ../data/org.gnome.gedit.gschema.xml.in.in.h:86
 msgid "Encodings shown in menu"
 msgstr "Kodowania wyświetlane w menu"
 
-#: ../data/org.gnome.gedit.gschema.xml.in.in.h:72
+#: ../data/org.gnome.gedit.gschema.xml.in.in.h:87
 msgid ""
 "List of encodings shown in the Character Encoding menu in open/save file "
 "selector. Only recognized encodings are used."
@@ -478,11 +494,11 @@ msgstr ""
 "Lista kodowań widoczna w menu Kodowanie znaków na liście wyboru otwierania i "
 "zapisywania pliku. Używane są tylko rozpoznane kodowania."
 
-#: ../data/org.gnome.gedit.gschema.xml.in.in.h:73
+#: ../data/org.gnome.gedit.gschema.xml.in.in.h:88
 msgid "Active plugins"
 msgstr "Aktywne wtyczki"
 
-#: ../data/org.gnome.gedit.gschema.xml.in.in.h:74
+#: ../data/org.gnome.gedit.gschema.xml.in.in.h:89
 msgid ""
 "List of active plugins. It contains the \"Location\" of the active plugins. "
 "See the .gedit-plugin file for obtaining the \"Location\" of a given plugin."
@@ -696,7 +712,6 @@ msgstr "Tworzy nowe główne okno w ramach istniejącej instancji programu gedit
 msgid "Create a new document in an existing instance of gedit"
 msgstr "Tworzy nowy dokument w ramach istniejącej instancji programu gedit"
 
-# pd
 #: ../gedit/gedit-command-line.c:294
 msgid "Set the size and position of the window (WIDTHxHEIGHT+X+Y)"
 msgstr "Ustawia rozmiar i położenie okna (SZEROKOŚĆxWYSOKOŚĆ+x+Y)"
@@ -763,7 +778,7 @@ msgstr "Plik o nazwie \"%s\" jest przeznaczony tylko do odczytu."
 msgid "Do you want to try to replace it with the one you are saving?"
 msgstr "Spróbować zastąpić go aktualnie zapisywanym plikiem?"
 
-#: ../gedit/gedit-commands-file.c:570 ../gedit/gedit-replace-dialog.c:270
+#: ../gedit/gedit-commands-file.c:570 ../gedit/gedit-replace-dialog.c:283
 msgid "_Replace"
 msgstr "Z_mień"
 
@@ -1652,22 +1667,18 @@ msgstr "Wybór czcionki edytora"
 msgid "Color Scheme"
 msgstr "Schemat kolorów"
 
-# pd
 #: ../gedit/gedit-preferences-dialog.ui.h:24
 msgid "Install scheme"
 msgstr "Instaluje schemat"
 
-# pd
 #: ../gedit/gedit-preferences-dialog.ui.h:25
 msgid "Install Scheme"
 msgstr "Zainstaluj schemat"
 
-# pd
 #: ../gedit/gedit-preferences-dialog.ui.h:26
 msgid "Uninstall scheme"
 msgstr "Odinstalowuje schemat"
 
-# pd
 #: ../gedit/gedit-preferences-dialog.ui.h:27
 msgid "Uninstall Scheme"
 msgstr "Odinstaluj schemat"
@@ -1815,12 +1826,12 @@ msgid "The preview of a page in the document to be printed"
 msgstr "Podgląd strony dokumentu do wydrukowania"
 
 #. ex:set ts=8 noet:
-#: ../gedit/gedit-replace-dialog.c:207 ../gedit/gedit-replace-dialog.ui.h:1
+#: ../gedit/gedit-replace-dialog.c:220 ../gedit/gedit-replace-dialog.ui.h:1
 #: ../gedit/gedit-window.c:1557
 msgid "Replace"
 msgstr "Zmień"
 
-#: ../gedit/gedit-replace-dialog.c:269
+#: ../gedit/gedit-replace-dialog.c:282
 msgid "Replace _All"
 msgstr "Zmień _wszystkie"
 
@@ -2234,46 +2245,46 @@ msgstr "Panel _dolny"
 msgid "Show or hide the bottom panel in the current window"
 msgstr "Przełącza wyświetlanie panelu dolnego w bieżącym oknie"
 
-#: ../gedit/gedit-utils.c:1017
+#: ../gedit/gedit-utils.c:1033
 msgid "Please check your installation."
 msgstr "Proszę sprawdzić poprawność instalacji."
 
-#: ../gedit/gedit-utils.c:1075
+#: ../gedit/gedit-utils.c:1091
 #, c-format
 msgid "Unable to open UI file %s. Error: %s"
 msgstr "Nie można otworzyć pliku interfejsu użytkownika %s. Błąd: %s"
 
-#: ../gedit/gedit-utils.c:1094
+#: ../gedit/gedit-utils.c:1110
 #, c-format
 msgid "Unable to find the object '%s' inside file %s."
 msgstr "Nie można odnaleźć obiektu \"%s\" w pliku %s."
 
 #. Translators: '/ on <remote-share>'
-#: ../gedit/gedit-utils.c:1316
+#: ../gedit/gedit-utils.c:1332
 #, c-format
 msgid "/ on %s"
 msgstr "/ na %s"
 
 #. create "Wrap Around" menu item.
-#: ../gedit/gedit-view-frame.c:546
+#: ../gedit/gedit-view-frame.c:542
 msgid "_Wrap Around"
 msgstr "_Automatyczny powrót do początku"
 
 #. create "Match Entire Word Only" menu item.
-#: ../gedit/gedit-view-frame.c:556
+#: ../gedit/gedit-view-frame.c:552
 msgid "Match _Entire Word Only"
 msgstr "Tylko całe _wyrazy"
 
 #. create "Match Case" menu item.
-#: ../gedit/gedit-view-frame.c:566
+#: ../gedit/gedit-view-frame.c:562
 msgid "_Match Case"
 msgstr "_Rozróżnianie małych i wielkich liter"
 
-#: ../gedit/gedit-view-frame.c:767
+#: ../gedit/gedit-view-frame.c:759
 msgid "String you want to search for"
 msgstr "Poszukiwane wyrażenie"
 
-#: ../gedit/gedit-view-frame.c:777
+#: ../gedit/gedit-view-frame.c:769
 msgid "Line you want to move the cursor to"
 msgstr "Numer wiersza, do którego ma zostać przeniesiony kursor"
 
@@ -2744,7 +2755,6 @@ msgstr "Pl_ik wejściowy:"
 msgid "_Save:"
 msgstr "_Zapisanie:"
 
-# pd
 #: ../plugins/externaltools/tools/tools.ui.h:33
 msgid "Shortcut _Key:"
 msgstr "_Klawisz skrótu:"
@@ -3012,7 +3022,6 @@ msgstr "Wyświetl pliki _wykonywalne"
 msgid "Show binary files"
 msgstr "Wyświetla pliki wykonywalne"
 
-# pd
 #: ../plugins/filebrowser/gedit-file-browser-widget.c:1202
 msgid "Match Filename"
 msgstr "Dopasuj nazwę pliku"
@@ -3172,12 +3181,10 @@ msgstr "Konsola języka Python"
 msgid "Interactive Python console standing in the bottom panel"
 msgstr "Interaktywna konsola języka Python dostępna w panelu dolnym"
 
-# pd
 #: ../plugins/quickopen/quickopen/__init__.py:71
 msgid "Quick open"
 msgstr "Szybkie otwarcie"
 
-# pd
 #: ../plugins/quickopen/quickopen/__init__.py:72
 msgid "Quickly open documents"
 msgstr "Szybko otwiera dokumenty"
@@ -3192,13 +3199,12 @@ msgstr "Szybkie otwarcie"
 msgid "Quickly open files"
 msgstr "Szybko otwiera pliki"
 
-# pd
 #: ../plugins/quickopen/quickopen/popup.py:72
 msgid "Type to search..."
 msgstr "Wyszukiwanie..."
 
 #. ex:ts=8:et:
-#: ../plugins/snippets/snippets/document.py:56
+#: ../plugins/snippets/snippets/document.py:57
 #: ../plugins/snippets/snippets.plugin.desktop.in.h:1
 msgid "Snippets"
 msgstr "Wstawki"
@@ -3274,11 +3280,13 @@ msgstr "Usuwa zaznaczoną wstawkę kodu"
 #. self['hbox_tab_trigger'].set_spacing(3)
 #: ../plugins/snippets/snippets/manager.py:663
 msgid ""
-"This is not a valid Tab trigger. Triggers can either contain letters or a "
-"single (non-alphanumeric) character like: {, [, etc."
+"This is not a valid Tab trigger. Triggers can either contain alphanumeric "
+"characters (or _, : and .) or a single (non-alphanumeric) character like: {, "
+"[, etc."
 msgstr ""
-"To nie jest prawidłowy wyzwalacz tabulatora. Wyzwalacz może zawierać litery "
-"lub pojedynczy znak niealfanumeryczny. Np. {, [ itp."
+"To nie jest prawidłowy wyzwalacz tabulatora. Wyzwalacz może zawierać znaki "
+"alfanumeryczne (lub _, : i .) lub pojedynczy (niealfanumeryczny) znak, taki "
+"jak : {, [ itp."
 
 #. self['hbox_tab_trigger'].set_spacing(0)
 #: ../plugins/snippets/snippets/manager.py:670

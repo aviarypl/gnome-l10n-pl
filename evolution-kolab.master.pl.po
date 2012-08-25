@@ -7,10 +7,9 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: evolution-kolab\n"
-"Report-Msgid-Bugs-To: http://bugzilla.gnome.org/enter_bug.cgi?"
-"product=evolution-kolab&keywords=I18N+L10N&component=build\n"
-"POT-Creation-Date: 2012-03-14 14:38+0000\n"
-"PO-Revision-Date: 2012-03-18 22:51+0100\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2012-08-25 02:17+0200\n"
+"PO-Revision-Date: 2012-08-25 02:18+0200\n"
 "Last-Translator: Piotr Drąg <piotrdrag@gmail.com>\n"
 "Language-Team: Polish <gnomepl@aviary.pl>\n"
 "Language: pl\n"
@@ -22,33 +21,440 @@ msgstr ""
 "X-Poedit-Language: Polish\n"
 "X-Poedit-Country: Poland\n"
 
-#: ../src/camel/camel-kolab-imapx-folder.c:176
-#: ../src/camel/providers/imapx/camel-imapx-extd-folder.c:433
-#: ../src/camel/providers/imapx/camel-imapx-folder.c:101
-#, c-format
-msgid "Could not create folder summary for %s"
-msgstr "Nie można utworzyć podsumowania katalogu dla %s"
+#: ../src/addressbook/e-book-backend-kolab.c:275
+#: ../src/calendar/e-cal-backend-kolab.c:322
+msgid "Could not get ESource for backend"
+msgstr "Nie można uzyskać ESource dla mechanizmu"
 
-#: ../src/camel/camel-kolab-imapx-folder.c:184
-#: ../src/camel/providers/imapx/camel-imapx-folder.c:109
+#: ../src/calendar/e-cal-backend-kolab.c:315
 #, c-format
-msgid "Could not create cache for %s: "
-msgstr "Nie można utworzyć bufora dla %s: "
+msgid "Unknown type used in e-cal-backend-kolab initialization"
+msgstr "Użyto nieznanego typu w inicjalizacji e-cal-backend-kolab"
 
-#: ../src/camel/camel-kolab-imapx-metadata-db.c:155
-#: ../src/camel/camel-kolab-imapx-metadata-db.c:205
-#: ../src/camel/camel-kolab-imapx-metadata-db.c:320
-#: ../src/camel/camel-kolab-imapx-metadata-db.c:359
-#: ../src/camel/camel-kolab-imapx-metadata-db.c:437
-#: ../src/camel/camel-kolab-imapx-metadata-db.c:455
-#: ../src/camel/camel-kolab-imapx-metadata-db.c:500
+#: ../src/calendar/e-cal-backend-kolab.c:907
+msgid "Kolab does not support bulk additions"
+msgstr "Kolab nie obsługuje dodawania całości"
+
+#: ../src/calendar/e-cal-backend-kolab.c:949
+msgid ""
+"TZID is set, but no timezone is available. Currently this may happen if an "
+"object is copied to an empty calendar."
+msgstr ""
+"TZID jest ustawione, ale żadna strefa czasowa nie jest dostępna. Obecnie "
+"może się to zdarzyć, jeśli obiekt jest kopiowany do pustego kalendarza."
+
+#: ../src/calendar/e-cal-backend-kolab.c:1249
+msgid "Kolab does not support bulk removals"
+msgstr "Kolab nie obsługuje usuwania całości"
+
+#: ../src/calendar/e-cal-backend-kolab.c:1673
+msgid "Putting timezone object into cache failed."
+msgstr "Umieszczenie obiektu strefy czasowej w buforze się nie powiodło."
+
+#: ../src/camel/camel-kolab-imapx-provider.c:45
+msgid "Checking for New Mail"
+msgstr "Sprawdzanie nowych wiadomości"
+
+#: ../src/camel/camel-kolab-imapx-provider.c:47
+msgid "C_heck for new messages in all folders"
+msgstr "_Sprawdzanie nowych wiadomości we wszystkich katalogach"
+
+#: ../src/camel/camel-kolab-imapx-provider.c:49
+msgid "Ch_eck for new messages in subscribed folders"
+msgstr "Spr_awdzanie nowych wiadomości w subskrybowanych katalogach"
+
+#: ../src/camel/camel-kolab-imapx-provider.c:51
+msgid "Use _Quick Resync if the server supports it"
+msgstr "Użycie opcji _Quick Resync, jeśli serwer ją obsługuje"
+
+#: ../src/camel/camel-kolab-imapx-provider.c:53
+msgid "_Listen for server change notifications"
+msgstr "_Nasłuchiwanie powiadomień o zmianach na serwerze"
+
+#: ../src/camel/camel-kolab-imapx-provider.c:56
+msgid "Folders"
+msgstr "Katalogi"
+
+#: ../src/camel/camel-kolab-imapx-provider.c:58
+msgid "_Show only subscribed folders"
+msgstr "Wyśw_ietlanie tylko subskrybowanych katalogów"
+
+#: ../src/camel/camel-kolab-imapx-provider.c:60
+msgid "Options"
+msgstr "Opcje"
+
+#: ../src/camel/camel-kolab-imapx-provider.c:62
+msgid "Apply _filters to new messages in all folders"
+msgstr "_Filtrowanie nowych wiadomości we wszystkich katalogach"
+
+#: ../src/camel/camel-kolab-imapx-provider.c:64
+msgid "_Apply filters to new messages in Inbox on this server"
+msgstr "_Filtrowanie nowych wiadomości w Odebranych na tym serwerze"
+
+#: ../src/camel/camel-kolab-imapx-provider.c:66
+msgid "Check new messages for _Junk contents"
+msgstr "Sprawdzanie nowych wiadomości pod kątem nie_chcianych treści"
+
+#: ../src/camel/camel-kolab-imapx-provider.c:68
+msgid "Only check for Junk messages in the IN_BOX folder"
+msgstr "Szukanie niechcianych tylko w katalogu _Odebrane"
+
+#: ../src/camel/camel-kolab-imapx-provider.c:70
+msgid "Automatically synchroni_ze remote mail locally"
+msgstr "Automatyczne synch_ronizowanie zdalnej poczty lokalnie"
+
+#: ../src/camel/camel-kolab-imapx-provider.c:76
+msgid "Default IMAP port"
+msgstr "Domyślny port IMAP"
+
+#: ../src/camel/camel-kolab-imapx-provider.c:77
+msgid "IMAP over SSL"
+msgstr "IMAP przez SSL"
+
+#: ../src/camel/camel-kolab-imapx-provider.c:84
+msgid "Kolab2"
+msgstr "Kolab2"
+
+#: ../src/camel/camel-kolab-imapx-provider.c:86
+msgid "For reading and storing mail on Kolab servers."
+msgstr "Przeglądanie i przechowywanie poczty na serwerach Kolab."
+
+#: ../src/camel/camel-kolab-imapx-provider.c:103
+msgid "Password"
+msgstr "Hasło"
+
+#: ../src/camel/camel-kolab-imapx-provider.c:105
+msgid ""
+"This option will connect to the Kolab server using a plaintext password."
+msgstr ""
+"Przy tej opcji połączenie z serwerem Kolab nastąpi używając hasła w postaci "
+"zwykłego tekstu."
+
+#: ../src/configuration/e-mail-config-kolab-backend.c:97
+msgid "Configuration"
+msgstr "Konfiguracja"
+
+#: ../src/configuration/e-mail-config-kolab-backend.c:115
+msgid "_Server:"
+msgstr "_Serwer:"
+
+#: ../src/configuration/e-mail-config-kolab-backend.c:129
+msgid "_Port:"
+msgstr "_Port:"
+
+#: ../src/configuration/e-mail-config-kolab-backend.c:141
+msgid "User_name:"
+msgstr "_Nazwa użytkownika:"
+
+#: ../src/configuration/e-mail-config-kolab-backend.c:155
+msgid "Security"
+msgstr "Bezpieczeństwo"
+
+#: ../src/configuration/e-mail-config-kolab-backend.c:174
+msgid "Encryption _method:"
+msgstr "_Metoda szyfrowania:"
+
+#: ../src/configuration/e-mail-config-kolab-backend.c:185
+msgid "No encryption"
+msgstr "Brak szyfrowania"
+
+#: ../src/configuration/e-mail-config-kolab-backend.c:189
+msgid "STARTTLS after connecting"
+msgstr "STARTTLS po połączeniu"
+
+#: ../src/configuration/e-mail-config-kolab-backend.c:193
+msgid "SSL on a dedicated port"
+msgstr "SSL przez dedykowany port"
+
+#: ../src/configuration/e-mail-config-kolab-backend.c:206
+msgid "Authentication"
+msgstr "Uwierzytelnianie"
+
+#: ../src/eplugin/e-kolab-backend-sync-conflict.c:134
+msgctxt "Sync Conflict Resolution"
+msgid ""
+"A synchronization error occured: \n"
+"Probably someone modified an entry remotely (i.e. on the server), \n"
+"which you have also modified locally (i.e. on your client)."
+msgstr ""
+"Wystąpił błąd synchronizacji: \n"
+"Prawdopodobnie ktoś zmodyfikował zdalnie wpis (tzn. na serwerze), \n"
+"który zmodyfikowano także lokalnie (tzn. w kliencie)."
+
+#: ../src/eplugin/e-kolab-backend-sync-conflict.c:147
+msgctxt "Sync Conflict Resolution"
+msgid "Conflict in folder:"
+msgstr "Konflikt w katalogu:"
+
+#: ../src/eplugin/e-kolab-backend-sync-conflict.c:159
+msgctxt "Sync Conflict Resolution"
+msgid "Local entry:"
+msgstr "Lokalny wpis:"
+
+#: ../src/eplugin/e-kolab-backend-sync-conflict.c:171
+#: ../src/eplugin/e-kolab-backend-sync-conflict.c:195
+msgctxt "Sync Conflict Resolution"
+msgid "Last modified:"
+msgstr "Ostatnia modyfikacja:"
+
+#: ../src/eplugin/e-kolab-backend-sync-conflict.c:183
+msgctxt "Sync Conflict Resolution"
+msgid "Remote entry:"
+msgstr "Zdalny wpis:"
+
+#: ../src/eplugin/e-kolab-backend-sync-conflict.c:207
+msgctxt "Sync Conflict Resolution"
+msgid "Take Option"
+msgstr "Przyjmowanie opcji"
+
+#: ../src/eplugin/e-kolab-backend-sync-conflict.c:218
+msgctxt "Sync Conflict Resolution"
+msgid "Please choose which of the two entries should be retained"
+msgstr "Proszę wybrać, który z dwóch wpisów pozostawić"
+
+#: ../src/eplugin/e-kolab-backend-sync-conflict.c:228
+msgctxt "Sync Conflict Resolution"
+msgid "Take Newer (last modified)"
+msgstr "Przyjęcie nowszego (ostatnia modyfikacja)"
+
+#: ../src/eplugin/e-kolab-backend-sync-conflict.c:235
+msgctxt "Sync Conflict Resolution"
+msgid "Take Remote (server-side)"
+msgstr "Przyjęcie zdalnego (po stronie serwera)"
+
+#: ../src/eplugin/e-kolab-backend-sync-conflict.c:242
+msgctxt "Sync Conflict Resolution"
+msgid "Take Local (client-side)"
+msgstr "Przyjęcie lokalnego (po stronie klienta)"
+
+#: ../src/eplugin/e-kolab-backend-sync-conflict.c:249
+msgctxt "Sync Conflict Resolution"
+msgid "Take Both (resulting in two different, parallel entries)"
+msgstr "Przyjęcie obu (wynikiem są dwa różne, równoległe wpisy)"
+
+#: ../src/eplugin/e-kolab-backend-sync-conflict.c:256
+msgctxt "Sync Conflict Resolution"
+msgid "Remember my choice and do not ask me again for this folder"
+msgstr "Zapamiętanie wyboru (bez pytania ponownie w tym katalogu)"
+
+#: ../src/eplugin/e-kolab-folder-metadata.c:72
+msgctxt "Kolab Folder Metadata"
+msgid "Folder Type (Annotation)"
+msgstr "Typ katalogu (adnotacja)"
+
+#: ../src/eplugin/e-kolab-folder-metadata.c:84
+msgctxt "Kolab Folder Type"
+msgid "Mail"
+msgstr "Poczta"
+
+#: ../src/eplugin/e-kolab-folder-metadata.c:91
+msgctxt "Kolab Folder Type"
+msgid "Calendar"
+msgstr "Kalendarz"
+
+#: ../src/eplugin/e-kolab-folder-metadata.c:97
+msgctxt "Kolab Folder Type"
+msgid "Memos"
+msgstr "Notatki"
+
+#: ../src/eplugin/e-kolab-folder-metadata.c:103
+msgctxt "Kolab Folder Type"
+msgid "Tasks"
+msgstr "Zadania"
+
+#: ../src/eplugin/e-kolab-folder-metadata.c:109
+msgctxt "Kolab Folder Type"
+msgid "Contacts"
+msgstr "Kontakty"
+
+#: ../src/eplugin/e-kolab-folder-metadata.c:116
+msgctxt "Kolab Folder Metadata"
+msgid "Kolab Folder Options"
+msgstr "Opcje katalogu Kolab"
+
+#: ../src/eplugin/e-kolab-folder-metadata.c:127
+msgctxt "Kolab Folder Options"
+msgid "Show all PIM folders in this Kolab account"
+msgstr "Wyświetlanie wszystkich katalogów PIM w tym koncie Kolab"
+
+#: ../src/eplugin/e-kolab-folder-permissions.c:87
+msgctxt "Kolab Folder Permissions"
+msgid "Edit Kolab Folder Permissions..."
+msgstr "Modyfikuj uprawnienia katalogu Kolab..."
+
+#: ../src/eplugin/e-kolab-folder-permissions.c:106
+msgctxt "Kolab Folder Permissions"
+msgid "User ID:"
+msgstr "Identyfikator użytkownika:"
+
+#: ../src/eplugin/e-kolab-folder-permissions.c:113
+msgctxt "Kolab Folder Permissions"
+msgid "Retrieve..."
+msgstr "Pobierz..."
+
+#: ../src/eplugin/e-kolab-folder-permissions.c:119
+#: ../src/eplugin/e-kolab-folder-permissions.c:337
+msgctxt "Kolab Folder Permissions"
+msgid "IMAP Folder Permissions"
+msgstr "Uprawnienia katalogu IMAP"
+
+#: ../src/eplugin/e-kolab-folder-permissions.c:134
+msgctxt "Kolab Folder Permissions"
+msgid "Read"
+msgstr "Odczyt"
+
+#: ../src/eplugin/e-kolab-folder-permissions.c:145
+msgctxt "Kolab Folder Permissions"
+msgid "Append"
+msgstr "Dołączanie"
+
+#: ../src/eplugin/e-kolab-folder-permissions.c:156
+msgctxt "Kolab Folder Permissions"
+msgid "Write"
+msgstr "Zapis"
+
+#: ../src/eplugin/e-kolab-folder-permissions.c:167
+msgctxt "Kolab Folder Permissions"
+msgid "All"
+msgstr "Wszystkie"
+
+#: ../src/eplugin/e-kolab-folder-permissions.c:217
+msgctxt "Kolab Folder Permissions"
+msgid "User ID"
+msgstr "Identyfikator użytkownika"
+
+#: ../src/eplugin/e-kolab-folder-permissions.c:230
+msgctxt "Kolab Folder Permissions"
+msgid "Permissions"
+msgstr "Uprawnienia"
+
+#: ../src/eplugin/e-kolab-folder-permissions.c:353
+msgctxt "Kolab Folder Permissions"
+msgid "My Folder Rights"
+msgstr "Uprawnienia do katalogów użytkownika"
+
+#: ../src/eplugin/e-kolab-folder-permissions.c:358
+msgctxt "Kolab Folder Permissions"
+msgid "(No access rights retrieved from server)"
+msgstr "(Nie uzyskano uprawnień do zapisu z serwera)"
+
+#: ../src/eplugin/e-kolab-plugin-ui.c:59 ../src/eplugin/e-kolab-plugin-ui.c:68
+#: ../src/eplugin/e-kolab-plugin-ui.c:77 ../src/eplugin/e-kolab-plugin-ui.c:86
+#: ../src/eplugin/e-kolab-plugin-ui.c:95
+msgid "Kolab Folder Properties..."
+msgstr "Właściwości katalogu Kolab..."
+
+#: ../src/eplugin/e-kolab-plugin-ui.c:61
+msgid "Edit Kolab mail folder properties"
+msgstr "Modyfikacja właściwości katalogu poczty Kolab"
+
+#: ../src/eplugin/e-kolab-plugin-ui.c:70
+msgid "Edit Kolab calendar folder properties"
+msgstr "Modyfikacja właściwości katalogu kalendarza Kolab"
+
+#: ../src/eplugin/e-kolab-plugin-ui.c:79
+msgid "Edit Kolab memos folder properties"
+msgstr "Modyfikacja właściwości katalogu notatek Kolab"
+
+#: ../src/eplugin/e-kolab-plugin-ui.c:88
+msgid "Edit Kolab Tasks folder properties"
+msgstr "Modyfikacja właściwości katalogu zadań Kolab"
+
+#: ../src/eplugin/e-kolab-plugin-ui.c:97
+msgid "Edit Kolab contacts folder properties"
+msgstr "Modyfikacja właściwości katalogu kontaktów Kolab"
+
+#: ../src/eplugin/e-kolab-plugin-ui.c:252
+msgid "Edit Kolab Folder Properties..."
+msgstr "Modyfikuj właściwości katalogu Kolab..."
+
+#: ../src/eplugin/e-kolab-plugin-ui.c:309
+msgctxt "Kolab Folder Properties"
+msgid "IMAP Metadata"
+msgstr "Metadane IMAP"
+
+#: ../src/eplugin/e-kolab-plugin-ui.c:318
+msgctxt "Kolab Folder Properties"
+msgid "IMAP Access Control"
+msgstr "Kontrola dostępu IMAP"
+
+#: ../src/eplugin/e-kolab-plugin-util.c:166
+msgctxt "Kolab Folder Properties"
+msgid "Selected Resource:"
+msgstr "Wybrany zasób:"
+
+#: ../src/eplugin/e-kolab-plugin-util.c:180
+msgctxt "Kolab Folder Properties"
+msgid "Selected Folder:"
+msgstr "Wybrany katalog:"
+
+#. define and set a sensible code here
+#: ../src/libekolab/camel-imapx-extd-server.c:115
+#, c-format
+msgid ""
+"A CamelIMAPXServer extended untagged response handler has been registered "
+"twice"
+msgstr ""
+"Program obsługujący rozszerzonej, nieoznakowanej odpowiedzi CamelIMAPXServer "
+"został zarejestrowany dwa razy"
+
+#. FIXME define and add a sensible code here
+#: ../src/libekolab/camel-imapx-extd-server-metadata.c:81
+#, c-format
+msgid ""
+"Got ANNOTATION response but server did not advertise ANNOTATEMORE capability"
+msgstr ""
+"Otrzymano odpowiedź ANNOTATION, ale serwer nie ogłosił możliwości "
+"ANNOTATEMORE"
+
+#. FIXME define and add a sensible code here
+#: ../src/libekolab/camel-imapx-extd-store.c:572
+#, c-format
+msgid "Cannot register extended IMAP capability flags"
+msgstr "Nie można zarejestrować flag rozszerzonych możliwości IMAP"
+
+#: ../src/libekolab/camel-imapx-metadata.c:364
+#, c-format
+msgid "Malformed IMAP annotation response, expected '(' after annotation name"
+msgstr ""
+"Błędnie sformatowana odpowiedź adnotacji, oczekiwano \"(\" po nazwie "
+"adnotacji"
+
+#: ../src/libekolab/camel-imapx-metadata.c:532
+#, c-format
+msgid "Invalid IMAP annotation protocol"
+msgstr "Nieprawidłowy protokół adnotacji IMAP"
+
+#: ../src/libekolab/camel-imapx-metadata.c:755
+#: ../src/libekolab/camel-imapx-metadata.c:783
+#, c-format
+msgid "Invalid token in meta data string"
+msgstr "Nieprawidłowy token w ciągu metadanych"
+
+#: ../src/libekolab/camel-kolab-imapx-metadata.c:95
+#, c-format
+msgid "Invalid Kolab folder type string encoding"
+msgstr "Nieprawidłowe kodowanie ciągu typu katalogu Kolab"
+
+#: ../src/libekolab/camel-kolab-imapx-metadata.c:107
+#, c-format
+msgid "Invalid Kolab folder type string"
+msgstr "Nieprawidłowy ciąg typu katalogu Kolab"
+
+#: ../src/libekolab/camel-kolab-imapx-metadata-db.c:152
+#: ../src/libekolab/camel-kolab-imapx-metadata-db.c:202
+#: ../src/libekolab/camel-kolab-imapx-metadata-db.c:317
+#: ../src/libekolab/camel-kolab-imapx-metadata-db.c:356
+#: ../src/libekolab/camel-kolab-imapx-metadata-db.c:434
+#: ../src/libekolab/camel-kolab-imapx-metadata-db.c:452
+#: ../src/libekolab/camel-kolab-imapx-metadata-db.c:497
 #: ../src/libekolab/kolab-mail-info-db.c:506
 #: ../src/libekolab/kolab-mail-info-db.c:640
 #: ../src/libekolab/kolab-mail-info-db.c:970
 #: ../src/libekolab/kolab-mail-info-db.c:1095
 #: ../src/libekolab/kolab-mail-info-db.c:1233
 #: ../src/libekolab/kolab-mail-side-cache.c:294
-#: ../src/libekolab/kolab-mail-side-cache.c:425
+#: ../src/libekolab/kolab-mail-side-cache.c:471
 #: ../src/libekolabutil/kolab-util-sqlite.c:77
 #: ../src/libekolabutil/kolab-util-sqlite.c:119
 #: ../src/libekolabutil/kolab-util-sqlite.c:242
@@ -59,821 +465,243 @@ msgstr "Nie można utworzyć bufora dla %s: "
 msgid "SQLite Error: %s"
 msgstr "Błąd biblioteki SQLite: %s"
 
-#: ../src/camel/camel-kolab-imapx-metadata-db.c:165
+#: ../src/libekolab/camel-kolab-imapx-metadata-db.c:162
 #: ../src/libekolabutil/kolab-util-sqlite.c:287
 #, c-format
 msgid "SQLite Error: Multiple tables named '%s', corrupted database '%s'"
-msgstr "Błąd biblioteki SQLite: wiele tablic o nazwie \"%s\", uszkodzona baza danych \"%s\""
+msgstr ""
+"Błąd biblioteki SQLite: wiele tablic o nazwie \"%s\", uszkodzona baza danych "
+"\"%s\""
 
-#: ../src/camel/camel-kolab-imapx-metadata-db.c:259
+#: ../src/libekolab/camel-kolab-imapx-metadata-db.c:256
 #, c-format
 msgid "SQLite Error: could not open/create SQLite database '%s'"
-msgstr "Błąd biblioteki SQLite: nie można otworzyć/utworzyć bazy danych SQLite \"%s\""
-
-#: ../src/camel/camel-kolab-imapx-metadata.c:96
-#, c-format
-msgid "Invalid Kolab folder type string encoding"
-msgstr "Nieprawidłowe kodowanie ciągu typu katalogu Kolab"
-
-#: ../src/camel/camel-kolab-imapx-metadata.c:108
-#, c-format
-msgid "Invalid Kolab folder type string"
-msgstr "Nieprawidłowy ciąg typu katalogu Kolab"
-
-#: ../src/camel/camel-kolab-imapx-provider.c:53
-#: ../src/camel/providers/imapx/camel-imapx-provider.c:40
-msgid "Checking for New Mail"
-msgstr "Sprawdzanie nowych wiadomości"
-
-#: ../src/camel/camel-kolab-imapx-provider.c:55
-#: ../src/camel/providers/imapx/camel-imapx-provider.c:42
-msgid "C_heck for new messages in all folders"
-msgstr "_Sprawdzanie nowych wiadomości we wszystkich katalogach"
-
-#: ../src/camel/camel-kolab-imapx-provider.c:57
-#: ../src/camel/providers/imapx/camel-imapx-provider.c:44
-msgid "Ch_eck for new messages in subscribed folders"
-msgstr "Spr_awdzanie nowych wiadomości w subskrybowanych katalogach"
-
-#: ../src/camel/camel-kolab-imapx-provider.c:59
-#: ../src/camel/providers/imapx/camel-imapx-provider.c:46
-msgid "Use _Quick Resync if the server supports it"
-msgstr "Użycie opcji _Quick Resync, jeśli serwer ją obsługuje"
-
-#: ../src/camel/camel-kolab-imapx-provider.c:61
-#: ../src/camel/providers/imapx/camel-imapx-provider.c:48
-msgid "_Listen for server change notifications"
-msgstr "_Nasłuchiwanie powiadomień o zmianach na serwerze"
-
-#: ../src/camel/camel-kolab-imapx-provider.c:65
-#: ../src/camel/providers/imapx/camel-imapx-provider.c:52
-msgid "Connection to Server"
-msgstr "Połączenie z serwerem"
-
-#: ../src/camel/camel-kolab-imapx-provider.c:67
-#: ../src/camel/providers/imapx/camel-imapx-provider.c:54
-msgid "_Use custom command to connect to server"
-msgstr "_Własne polecenie do połączenia z serwerem"
-
-#: ../src/camel/camel-kolab-imapx-provider.c:69
-#: ../src/camel/providers/imapx/camel-imapx-provider.c:56
-msgid "Command:"
-msgstr "Polecenie:"
-
-#: ../src/camel/camel-kolab-imapx-provider.c:71
-#: ../src/camel/providers/imapx/camel-imapx-provider.c:58
-msgid "Numbe_r of cached connections to use"
-msgstr "Li_czba używanych buforowanych połączeń"
-
-#: ../src/camel/camel-kolab-imapx-provider.c:75
-#: ../src/camel/providers/imapx/camel-imapx-provider.c:62
-msgid "Folders"
-msgstr "Katalogi"
-
-#: ../src/camel/camel-kolab-imapx-provider.c:77
-#: ../src/camel/providers/imapx/camel-imapx-provider.c:64
-msgid "_Show only subscribed folders"
-msgstr "Wyśw_ietlanie tylko subskrybowanych katalogów"
-
-#: ../src/camel/camel-kolab-imapx-provider.c:79
-#: ../src/camel/providers/imapx/camel-imapx-provider.c:72
-msgid "Options"
-msgstr "Opcje"
-
-#: ../src/camel/camel-kolab-imapx-provider.c:81
-#: ../src/camel/providers/imapx/camel-imapx-provider.c:74
-msgid "Apply _filters to new messages in all folders"
-msgstr "_Filtrowanie nowych wiadomości we wszystkich katalogach"
-
-#: ../src/camel/camel-kolab-imapx-provider.c:83
-#: ../src/camel/providers/imapx/camel-imapx-provider.c:76
-msgid "_Apply filters to new messages in Inbox on this server"
-msgstr "_Filtrowanie nowych wiadomości w Odebranych na tym serwerze"
-
-#: ../src/camel/camel-kolab-imapx-provider.c:85
-#: ../src/camel/providers/imapx/camel-imapx-provider.c:78
-msgid "Check new messages for _Junk contents"
-msgstr "Sprawdzanie nowych wiadomości pod kątem nie_chcianych treści"
-
-#: ../src/camel/camel-kolab-imapx-provider.c:87
-#: ../src/camel/providers/imapx/camel-imapx-provider.c:80
-msgid "Only check for Junk messages in the IN_BOX folder"
-msgstr "Szukanie niechcianych tylko w katalogu _Odebrane"
-
-#: ../src/camel/camel-kolab-imapx-provider.c:89
-#: ../src/camel/providers/imapx/camel-imapx-provider.c:82
-msgid "Automatically synchroni_ze remote mail locally"
-msgstr "Automatyczne synch_ronizowanie zdalnej poczty lokalnie"
-
-#: ../src/camel/camel-kolab-imapx-provider.c:95
-#: ../src/camel/providers/imapx/camel-imapx-provider.c:88
-msgid "Default IMAP port"
-msgstr "Domyślny port IMAP"
-
-#: ../src/camel/camel-kolab-imapx-provider.c:96
-#: ../src/camel/providers/imapx/camel-imapx-provider.c:89
-msgid "IMAP over SSL"
-msgstr "IMAP przez SSL"
-
-#: ../src/camel/camel-kolab-imapx-provider.c:103
-msgid "Kolab2"
-msgstr "Kolab2"
-
-#: ../src/camel/camel-kolab-imapx-provider.c:105
-msgid "For reading and storing mail on Kolab servers."
-msgstr "Przeglądanie i przechowywanie poczty na serwerach Kolab."
-
-#: ../src/camel/camel-kolab-imapx-provider.c:122
-#: ../src/camel/providers/imapx/camel-imapx-provider.c:118
-msgid "Password"
-msgstr "Hasło"
-
-#: ../src/camel/camel-kolab-imapx-provider.c:124
-msgid ""
-"This option will connect to the Kolab server using a plaintext password."
 msgstr ""
-"Przy tej opcji połączenie z serwerem Kolab nastąpi używając hasła w postaci "
-"zwykłego tekstu."
+"Błąd biblioteki SQLite: nie można otworzyć/utworzyć bazy danych SQLite \"%s\""
 
-#: ../src/camel/camel-kolab-imapx-store.c:314
-#: ../src/camel/providers/imapx/camel-imapx-extd-store.c:183
-#: ../src/camel/providers/imapx/camel-imapx-store.c:348
+#: ../src/libekolab/camel-kolab-imapx-store.c:375
 #, c-format
-msgid "No such folder %s"
-msgstr "Katalog \"%s\" nie istnieje"
+msgid "Must be online to complete this operation"
+msgstr "Do ukończenia tego działania konieczne jest połączenie z siecią"
 
-#: ../src/camel/camel-kolab-imapx-store.c:657
+#: ../src/libekolab/camel-kolab-imapx-store.c:384
+#, c-format
+msgid "Could not determine server metadata protocol type"
+msgstr "Nie można określić typu protokołu metadanych serwera"
+
+#: ../src/libekolab/camel-kolab-imapx-store.c:627
 #, c-format
 msgid "Kolab server %s"
 msgstr "Serwer Kolab %s"
 
-#: ../src/camel/camel-kolab-imapx-store.c:659
+#: ../src/libekolab/camel-kolab-imapx-store.c:629
 #, c-format
 msgid "Kolab service for %s on %s"
 msgstr "Usługa Kolab dla %s na %s"
 
-#: ../src/camel/camel-kolab-session.c:240
+#: ../src/libekolab/camel-kolab-imapx-store.c:993
+#, c-format
+msgid "Could not get user cache directory from Camel service"
+msgstr "Nie można pobrać katalogu bufora użytkownika z usługi Camel"
+
+#: ../src/libekolab/camel-kolab-session.c:235
 #, c-format
 msgid "%s authentication failed"
 msgstr "Uwierzytelnienie %s się nie powiodło"
 
-#: ../src/camel/camel-kolab-session.c:314
+#: ../src/libekolab/camel-kolab-session.c:314
 #, c-format
 msgid "No password was provided"
 msgstr "Nie podano hasła"
 
-#: ../src/camel/providers/imapx/camel-imapx-command.c:538
-msgid "Unknown error"
-msgstr "Nieznany błąd"
-
-#: ../src/camel/providers/imapx/camel-imapx-extd-folder.c:363
-#: ../src/camel/providers/imapx/camel-imapx-folder.c:767
-msgid "Apply message _filters to this folder"
-msgstr "_Filtrowanie wiadomości w tym katalogu"
-
-#: ../src/camel/providers/imapx/camel-imapx-extd-folder.c:441
+#: ../src/libekolabconv/main/src/kolab/contact-k-to-i.c:99
+#: ../src/libekolabconv/main/src/kolab/event-k-to-i.c:92
+#: ../src/libekolabconv/main/src/kolab/note-k-to-i.c:113
+#: ../src/libekolabconv/main/src/kolab/task-k-to-i.c:79
 #, c-format
-msgid "Could not create cache for %s"
-msgstr "Nie można utworzyć bufora dla %s"
+msgid "Root tag is missing"
+msgstr "Brak głównego znacznika"
 
-#: ../src/camel/providers/imapx/camel-imapx-extd-server.c:348
-#: ../src/camel/providers/imapx/camel-imapx-server.c:1203
-msgid "Error writing to cache stream: "
-msgstr "Błąd podczas zapisywania do bufora potoku: "
-
-#: ../src/camel/providers/imapx/camel-imapx-extd-server.c:926
-#: ../src/camel/providers/imapx/camel-imapx-server.c:2818
+#. appropriate?
+#: ../src/libekolabconv/main/src/kolab-conv.c:185
 #, c-format
-msgid "Failed to connect to IMAP server %s in secure mode: %s"
-msgstr ""
-"Połączenie z serwerem IMAP %s w trybie bezpiecznym się nie powiodło: %s"
+msgid "Empty server response"
+msgstr "Pusta odpowiedź serwera"
 
-#: ../src/camel/providers/imapx/camel-imapx-extd-server.c:927
-#: ../src/camel/providers/imapx/camel-imapx-server.c:2819
-msgid "STARTTLS not supported"
-msgstr "STARTTLS nie jest obsługiwane"
-
-#: ../src/camel/providers/imapx/camel-imapx-extd-server.c:966
-#: ../src/camel/providers/imapx/camel-imapx-server.c:2858
+#. appropriate?
+#: ../src/libekolabconv/main/src/kolab-conv.c:196
 #, c-format
-msgid "Failed to connect to IMAP server %s in secure mode: "
-msgstr "Połączenie z serwerem IMAP %s w trybie bezpiecznym się nie powiodło: "
+msgid "Cannot parse server response"
+msgstr "Nie można przetworzyć odpowiedzi serwera"
 
-#: ../src/camel/providers/imapx/camel-imapx-extd-server.c:1280
+#. appropriate?
+#: ../src/libekolabconv/main/src/kolab-conv.c:213
+#: ../src/libekolabconv/main/src/kolab-conv.c:222
 #, c-format
-msgid "Shutting down"
-msgstr "Wyłączanie"
+msgid "Unsupported component type"
+msgstr "Nieobsługiwany typ składnika"
 
-#: ../src/camel/providers/imapx/camel-imapx-extd-server.c:1350
-#: ../src/camel/providers/imapx/camel-imapx-server.c:2925
+#: ../src/libekolabconv/main/src/kolab/kolab-util.c:149
 #, c-format
-msgid "IMAP server %s does not support %s authentication"
-msgstr "Serwer IMAP %s nie obsługuje uwierzytelniania %s"
+msgid "Kolab mail struct must not be null"
+msgstr "Struct poczty Kolab nie może być pusty"
 
-#: ../src/camel/providers/imapx/camel-imapx-extd-server.c:1361
-#: ../src/camel/providers/imapx/camel-imapx-server.c:2936
+#: ../src/libekolabconv/main/src/kolab/kolab-util.c:161
 #, c-format
-msgid "No support for %s authentication"
-msgstr "Brak obsługi uwierzytelniania %s"
+msgid "XML parser returned null for data part %d"
+msgstr "Parser XML zwrócił puste dane dla części danych %d"
 
-#: ../src/camel/providers/imapx/camel-imapx-extd-server.c:1380
-#: ../src/camel/providers/imapx/camel-imapx-server.c:2955
-msgid "Cannot authenticate without a username"
-msgstr "Nie można uwierzytelnić bez nazwy użytkownika"
-
-#: ../src/camel/providers/imapx/camel-imapx-extd-server.c:1389
-#: ../src/camel/providers/imapx/camel-imapx-server.c:2964
-msgid "Authentication password not available"
-msgstr "Hasło uwierzytelnienia jest niedostępne"
-
-#: ../src/camel/providers/imapx/camel-imapx-extd-store.c:277
-#: ../src/camel/providers/imapx/camel-imapx-folder.c:407
-#: ../src/camel/providers/imapx/camel-imapx-folder.c:440
-#: ../src/camel/providers/imapx/camel-imapx-folder.c:474
-#: ../src/camel/providers/imapx/camel-imapx-folder.c:530
-#: ../src/camel/providers/imapx/camel-imapx-folder.c:587
-#: ../src/camel/providers/imapx/camel-imapx-folder.c:621
-#: ../src/camel/providers/imapx/camel-imapx-folder.c:661
-#: ../src/camel/providers/imapx/camel-imapx-folder.c:697
-#: ../src/camel/providers/imapx/camel-imapx-store.c:276
-#: ../src/camel/providers/imapx/camel-imapx-store.c:1367
-#: ../src/camel/providers/imapx/camel-imapx-store.c:1455
-#: ../src/camel/providers/imapx/camel-imapx-store.c:1501
+#: ../src/libekolabconv/main/src/kolab/kolab-util.c:170
 #, c-format
-msgid "You must be working online to complete this operation"
-msgstr "Do ukończenia tego działania konieczne jest połączenie z siecią"
+msgid "Kolab mail struct has no Kolab XML data part"
+msgstr "Struct poczty Kolab nie posiada części danych XML Kolab"
 
-#: ../src/camel/providers/imapx/camel-imapx-metadata.c:511
-#, c-format
-msgid "Invalid IMAP annotation protocol"
-msgstr "Nieprawidłowy protokół adnotacji IMAP"
-
-#: ../src/camel/providers/imapx/camel-imapx-metadata.c:734
-#: ../src/camel/providers/imapx/camel-imapx-metadata.c:762
-#, c-format
-msgid "Invalid token in meta data string"
-msgstr "Nieprawidłowy token w ciągu metadanych"
-
-#: ../src/camel/providers/imapx/camel-imapx-provider.c:67
-msgid "O_verride server-supplied folder namespace"
-msgstr "_Nadpisanie przestrzeni nazw katalogów podanej przez serwer"
-
-#: ../src/camel/providers/imapx/camel-imapx-provider.c:69
-msgid "Namespace:"
-msgstr "Przestrzeń nazw:"
-
-#: ../src/camel/providers/imapx/camel-imapx-provider.c:96
-msgid "IMAP+"
-msgstr "IMAP+"
-
-#: ../src/camel/providers/imapx/camel-imapx-provider.c:98
-msgid "For reading and storing mail on IMAP servers."
-msgstr "Przeglądanie i przechowywanie poczty na serwerach IMAP."
-
-#: ../src/camel/providers/imapx/camel-imapx-provider.c:120
-msgid "This option will connect to the IMAP server using a plaintext password."
-msgstr ""
-"Przy tej opcji połączenie z serwerem IMAP nastąpi używając hasła w postaci "
-"czystego tekstu."
-
-#: ../src/camel/providers/imapx/camel-imapx-server.c:817
-msgid "Server disconnected"
-msgstr "Serwer został rozłączony"
-
-#: ../src/camel/providers/imapx/camel-imapx-server.c:1930
-#, c-format
-msgid "Not authenticated"
-msgstr "Nie uwierzytelniono"
-
-#: ../src/camel/providers/imapx/camel-imapx-server.c:1995
-msgid "Error performing IDLE"
-msgstr "Błąd podczas wykonywania zajętości"
-
-#: ../src/camel/providers/imapx/camel-imapx-server.c:3150
-msgid "Error fetching message"
-msgstr "Błąd podczas pobierania wiadomości"
-
-#: ../src/camel/providers/imapx/camel-imapx-server.c:3218
-msgid "Closing tmp stream failed: "
-msgstr "Zamknięcie potoku tymczasowego się nie powiodło: "
-
-#: ../src/camel/providers/imapx/camel-imapx-server.c:3317
-msgid "Error copying messages"
-msgstr "Błąd podczas kopiowania wiadomości"
-
-#: ../src/camel/providers/imapx/camel-imapx-server.c:3447
-msgid "Error appending message"
-msgstr "Błąd podczas dołączania wiadomości"
-
-#: ../src/camel/providers/imapx/camel-imapx-server.c:3627
-msgid "Error fetching message headers"
-msgstr "Błąd podczas pobierania nagłówków wiadomości"
-
-#: ../src/camel/providers/imapx/camel-imapx-server.c:3768
-msgid "Error retrieving message"
-msgstr "Błąd podczas pobierania wiadomości"
-
-#: ../src/camel/providers/imapx/camel-imapx-server.c:3890
-#: ../src/camel/providers/imapx/camel-imapx-server.c:4070
-#, c-format
-msgid "Fetching summary information for new messages in %s"
-msgstr "Pobieranie informacji podsumowujących dla nowych wiadomości w %s"
-
-#: ../src/camel/providers/imapx/camel-imapx-server.c:3938
-#, c-format
-msgid "Scanning for changed messages in %s"
-msgstr "Wyszukiwanie zmodyfikowanych wiadomości w %s"
-
-#: ../src/camel/providers/imapx/camel-imapx-server.c:3971
-msgid "Error fetching new messages"
-msgstr "Błąd podczas pobierania nowych wiadomości"
-
-#: ../src/camel/providers/imapx/camel-imapx-server.c:4161
-msgid "Error while fetching messages"
-msgstr "Błąd podczas pobierania wiadomości"
-
-#: ../src/camel/providers/imapx/camel-imapx-server.c:4169
-#: ../src/camel/providers/imapx/camel-imapx-server.c:4199
-#, c-format
-msgid "Fetching summary information for %d message in %s"
-msgid_plural "Fetching summary information for %d messages in %s"
-msgstr[0] "Pobieranie informacji podsumowujących dla %d nowej wiadomości w %s"
-msgstr[1] "Pobieranie informacji podsumowujących dla %d nowych wiadomości w %s"
-msgstr[2] "Pobieranie informacji podsumowujących dla %d nowych wiadomości w %s"
-
-#: ../src/camel/providers/imapx/camel-imapx-server.c:4321
-#: ../src/camel/providers/imapx/camel-imapx-server.c:4355
-msgid "Error refreshing folder"
-msgstr "Błąd podczas odświeżania katalogu"
-
-#: ../src/camel/providers/imapx/camel-imapx-server.c:4444
-msgid "Error expunging message"
-msgstr "Błąd podczas czyszczenia wiadomości"
-
-#: ../src/camel/providers/imapx/camel-imapx-server.c:4528
-msgid "Error fetching folders"
-msgstr "Błąd podczas pobierania katalogów"
-
-#: ../src/camel/providers/imapx/camel-imapx-server.c:4602
-msgid "Error subscribing to folder"
-msgstr "Błąd podczas subskrybowania katalogu"
-
-#: ../src/camel/providers/imapx/camel-imapx-server.c:4655
-msgid "Error creating folder"
-msgstr "Błąd podczas tworzenia katalogu"
-
-#: ../src/camel/providers/imapx/camel-imapx-server.c:4700
-msgid "Error deleting folder"
-msgstr "Błąd podczas usuwania katalogu"
-
-#: ../src/camel/providers/imapx/camel-imapx-server.c:4750
-msgid "Error renaming folder"
-msgstr "Błąd podczas zmieniania nazwy katalogu"
-
-#: ../src/camel/providers/imapx/camel-imapx-server.c:4801
-msgid "Error performing NOOP"
-msgstr "Błąd podczas wykonywania NOOP"
-
-#: ../src/camel/providers/imapx/camel-imapx-server.c:4896
-msgid "Error syncing changes"
-msgstr "Błąd podczas synchronizowania zmian"
-
-#: ../src/camel/providers/imapx/camel-imapx-server.c:5503
-#, c-format
-msgid "Cannot get message with message ID %s: %s"
-msgstr "Nie można pobrać wiadomości z identyfikatorem %s: %s"
-
-#: ../src/camel/providers/imapx/camel-imapx-server.c:5504
-msgid "No such message available."
-msgstr "Nie ma takiej wiadomości."
-
-#: ../src/camel/providers/imapx/camel-imapx-server.c:5658
-#: ../src/camel/providers/imapx/camel-imapx-server.c:5673
-msgid "Cannot create spool file: "
-msgstr "Nie można utworzyć pliku kolejki: "
-
-#: ../src/camel/providers/imapx/camel-imapx-store.c:155
-#, c-format
-msgid "IMAP server %s"
-msgstr "Serwer IMAP %s"
-
-#: ../src/camel/providers/imapx/camel-imapx-store.c:158
-#, c-format
-msgid "IMAP service for %s on %s"
-msgstr "Usługa IMAP dla %s na %s"
-
-#: ../src/camel/providers/imapx/camel-imapx-store.c:373
-#: ../src/camel/providers/imapx/camel-imapx-store.c:844
-msgid "Inbox"
-msgstr "Odebrane"
-
-#: ../src/camel/providers/imapx/camel-imapx-store.c:1076
-#, c-format
-msgid "Retrieving folder list for %s"
-msgstr "Pobieranie listy katalogów dla %s"
-
-#: ../src/camel/providers/imapx/camel-imapx-store.c:1176
-#, c-format
-msgid "No such folder: %s"
-msgstr "Katalog nie istnieje: %s"
-
-#: ../src/camel/providers/imapx/camel-imapx-store.c:1388
-#, c-format
-msgid ""
-"The folder name \"%s\" is invalid because it contains the character \"%c\""
-msgstr "Nazwa katalogu \"%s\" jest nieprawidłowa, ponieważ zawiera znak \"%c\""
-
-#: ../src/camel/providers/imapx/camel-imapx-store.c:1399
-#, c-format
-msgid "Unknown parent folder: %s"
-msgstr "Nieznany katalog nadrzędny: %s"
-
-#: ../src/camel/providers/imapx/camel-imapx-store.c:1409
-#, c-format
-msgid "The parent folder is not allowed to contain subfolders"
-msgstr "Katalog nadrzędny nie może zawierać katalogów podrzędnych"
-
-#: ../src/camel/providers/imapx/camel-imapx-stream.c:70
-#, c-format
-msgid "Source stream returned no data"
-msgstr "Potok źródłowy nie zwrócił danych"
-
-#: ../src/camel/providers/imapx/camel-imapx-stream.c:79
-#, c-format
-msgid "Source stream unavailable"
-msgstr "Potok źródłowy jest niedostępny"
-
-#: ../src/eplugin/e-kolab-account-setup.c:381
-msgid "Kolab Server Settings"
-msgstr "Ustawienia serwera Kolab"
-
-#: ../src/eplugin/e-kolab-account-setup.c:392
-msgid "Kolab Account"
-msgstr "Konto Kolab"
-
-#: ../src/eplugin/e-kolab-account-setup.c:407
-msgid "Kolab Server"
-msgstr "Serwer Kolab"
-
-#: ../src/eplugin/e-kolab-account-setup.c:419
-#: ../src/eplugin/e-kolab-folder-permissions.c:94
-#: ../src/eplugin/e-kolab-folder-permissions.c:203
-msgid "User ID"
-msgstr "Identyfikator użytkownika"
-
-#: ../src/eplugin/e-kolab-account-setup.c:431
-msgid "Server PIM-Folders"
-msgstr "Katalogi PIM serwera"
-
-#: ../src/eplugin/e-kolab-account-setup.c:440
-msgid "Retrieve"
-msgstr "Pobieranie"
-
-#: ../src/eplugin/e-kolab-account-setup.c:449
-msgid "Selected Contact Folder"
-msgstr "Wybrany katalog kontaktów"
-
-#: ../src/eplugin/e-kolab-account-setup.c:451
-msgid "Selected Calendar Folder"
-msgstr "Wybrany katalog kalendarza"
-
-#: ../src/eplugin/e-kolab-account-setup.c:463
-msgid "Encryption Method"
-msgstr "Metoda szyfrowania"
-
-#: ../src/eplugin/e-kolab-account-setup.c:479
-msgid "PKCS #11 Infrastructure"
-msgstr "Infrastruktura PKCS #11"
-
-#: ../src/eplugin/e-kolab-account-setup.c:491
-msgid "Kolab Folder Options"
-msgstr "Opcje katalogu Kolab"
-
-#: ../src/eplugin/e-kolab-account-setup.c:501
-msgid "Conflict Solving Strategy"
-msgstr "Strategia rozwiązywania konfliktów"
-
-#: ../src/eplugin/e-kolab-backend-sync-conflict.c:127
-msgid ""
-"A synchronization error occured: \n"
-"Probably someone modified an entry remotely (i.e. on the server), \n"
-"which you have also modified locally (i.e. on your client)."
-msgstr ""
-"Wystąpił błąd synchronizacji: \n"
-"Prawdopodobnie ktoś zmodyfikował zdalnie wpis (tzn. na serwerze), \n"
-"który zmodyfikowano także lokalnie (tzn. w kliencie)."
-
-#. conflict folder name
-#: ../src/eplugin/e-kolab-backend-sync-conflict.c:145
-msgid "Conflict in folder"
-msgstr "Konflikt w katalogu"
-
-#. local object - subject
-#: ../src/eplugin/e-kolab-backend-sync-conflict.c:158
-msgid "Local entry"
-msgstr "Lokalny wpis"
-
-#. local object - last modified
-#. remote object - last modified
-#: ../src/eplugin/e-kolab-backend-sync-conflict.c:171
-#: ../src/eplugin/e-kolab-backend-sync-conflict.c:197
-msgid "Last modified"
-msgstr "Ostatnia modyfikacja"
-
-#. remote object - subject
-#: ../src/eplugin/e-kolab-backend-sync-conflict.c:184
-msgid "Remote entry"
-msgstr "Zdalny wpis"
-
-#. take option duration
-#: ../src/eplugin/e-kolab-backend-sync-conflict.c:211
-msgid "Take option duration"
-msgstr "Czas przyjmowania opcji"
-
-#: ../src/eplugin/e-kolab-backend-sync-conflict.c:226
-msgid ""
-"Please choose how long the \"Take option\" specified below \n"
-"should remain in effect"
-msgstr ""
-"Proszę wybrać jak długo ma trwać \"Przyjmowanie opcji\" \n"
-"określone poniżej"
-
-#: ../src/eplugin/e-kolab-backend-sync-conflict.c:234
-msgid "Apply to all conflicts occuring during this synchronization"
-msgstr ""
-"Zastosowanie do wszystkich konfliktów występujących podczas tej synchronizacji"
-
-#: ../src/eplugin/e-kolab-backend-sync-conflict.c:241
-msgid "Apply to all conflicts occuring during this Evolution session"
-msgstr ""
-"Zastosowanie do wszystkich konfliktów występujących podczas tej sesji programu Evolution"
-
-#: ../src/eplugin/e-kolab-backend-sync-conflict.c:247
-msgid "Apply always and permanently"
-msgstr "Zastosowanie zawsze i trwale"
-
-#: ../src/eplugin/e-kolab-backend-sync-conflict.c:253
-msgid "Apply only to this conflict (ask each time)"
-msgstr "Zastosowanie tylko do tego konfliktu (pytanie za każdym razem)"
-
-#. take options (actions!)
-#: ../src/eplugin/e-kolab-backend-sync-conflict.c:259
-msgid "Take options"
-msgstr "Przyjmowanie opcji"
-
-#: ../src/eplugin/e-kolab-backend-sync-conflict.c:274
-msgid "Please choose which of the two entries should be retained"
-msgstr "Proszę wybrać, który z dwóch wpisów pozostawić"
-
-#: ../src/eplugin/e-kolab-backend-sync-conflict.c:282
-msgid "Take Newer (last modified)"
-msgstr "Przyjęcie nowszego (ostatnia modyfikacja)"
-
-#: ../src/eplugin/e-kolab-backend-sync-conflict.c:288
-msgid "Take Remote (server-side)"
-msgstr "Przyjęcie zdalnego (po stronie serwera)"
-
-#: ../src/eplugin/e-kolab-backend-sync-conflict.c:294
-msgid "Take Local (client-side)"
-msgstr "Przyjęcie lokalnego (po stronie klienta)"
-
-#: ../src/eplugin/e-kolab-backend-sync-conflict.c:300
-msgid "Take Both (resulting in two different, parallel entries)"
-msgstr "Przyjęcie obu (wynikiem są dwa różne, równoległe wpisy)"
-
-#: ../src/eplugin/e-kolab-folder-metadata.c:57
-msgid "Folder Type (Annotation)"
-msgstr "Typ katalogu (adnotacja)"
-
-#: ../src/eplugin/e-kolab-folder-metadata.c:66
-msgctxt "Folder Type"
-msgid "Mail"
-msgstr "Poczta"
-
-#: ../src/eplugin/e-kolab-folder-metadata.c:71
-msgctxt "Folder Type"
-msgid "Calendar"
-msgstr "Kalendarz"
-
-#: ../src/eplugin/e-kolab-folder-metadata.c:75
-msgctxt "Folder Type"
-msgid "Memos"
-msgstr "Notatki"
-
-#: ../src/eplugin/e-kolab-folder-metadata.c:79
-msgctxt "Folder Type"
-msgid "Tasks"
-msgstr "Zadania"
-
-#: ../src/eplugin/e-kolab-folder-metadata.c:83
-msgctxt "Folder Type"
-msgid "Contacts"
-msgstr "Kontakty"
-
-#: ../src/eplugin/e-kolab-folder-permissions.c:83
-msgid "Edit Kolab Folder Permissions..."
-msgstr "Modyfikuj uprawnienia katalogu Kolab..."
-
-#: ../src/eplugin/e-kolab-folder-permissions.c:102
-msgid "Retrieve..."
-msgstr "Pobierz..."
-
-#: ../src/eplugin/e-kolab-folder-permissions.c:107
-#: ../src/eplugin/e-kolab-folder-permissions.c:314
-msgid "IMAP Folder Permissions"
-msgstr "Uprawnienia katalogu IMAP"
-
-#: ../src/eplugin/e-kolab-folder-permissions.c:120
-msgctxt "Permissions"
-msgid "None"
-msgstr "Brak"
-
-#: ../src/eplugin/e-kolab-folder-permissions.c:127
-msgctxt "Permissions"
-msgid "Read"
-msgstr "Odczyt"
-
-#: ../src/eplugin/e-kolab-folder-permissions.c:136
-msgctxt "Permissions"
-msgid "Append"
-msgstr "Dołączanie"
-
-#: ../src/eplugin/e-kolab-folder-permissions.c:145
-msgctxt "Permissions"
-msgid "Write"
-msgstr "Zapis"
-
-#: ../src/eplugin/e-kolab-folder-permissions.c:154
-msgctxt "Permissions"
-msgid "All"
-msgstr "Wszystkie"
-
-#: ../src/eplugin/e-kolab-folder-permissions.c:215
-msgid "Permissions"
-msgstr "Uprawnienia"
-
-#: ../src/eplugin/e-kolab-plugin-ui.c:64 ../src/eplugin/e-kolab-plugin-ui.c:73
-#: ../src/eplugin/e-kolab-plugin-ui.c:82 ../src/eplugin/e-kolab-plugin-ui.c:91
-#: ../src/eplugin/e-kolab-plugin-ui.c:100
-msgid "Kolab Folder Properties..."
-msgstr "Właściwości katalogu Kolab..."
-
-#: ../src/eplugin/e-kolab-plugin-ui.c:66
-msgid "Edit Kolab mail folder properties"
-msgstr "Modyfikacja właściwości katalogu poczty Kolab"
-
-#: ../src/eplugin/e-kolab-plugin-ui.c:75
-msgid "Edit Kolab calendar folder properties"
-msgstr "Modyfikacja właściwości katalogu kalendarza Kolab"
-
-#: ../src/eplugin/e-kolab-plugin-ui.c:84
-msgid "Edit Kolab memos folder properties"
-msgstr "Modyfikacja właściwości katalogu notatek Kolab"
-
-#: ../src/eplugin/e-kolab-plugin-ui.c:93
-msgid "Edit Kolab Tasks folder properties"
-msgstr "Modyfikacja właściwości katalogu zadań Kolab"
-
-#: ../src/eplugin/e-kolab-plugin-ui.c:102
-msgid "Edit Kolab contacts folder properties"
-msgstr "Modyfikacja właściwości katalogu kontaktów Kolab"
-
-#: ../src/eplugin/e-kolab-plugin-ui.c:263
-msgid "Selected Folder"
-msgstr "Wybrany katalog"
-
-#: ../src/eplugin/e-kolab-plugin-ui.c:284
-msgid "Edit Kolab Folder Properties..."
-msgstr "Modyfikuj właściwości katalogu Kolab..."
-
-#: ../src/eplugin/e-kolab-plugin-ui.c:320
-msgid "IMAP Metadata"
-msgstr "Metadane IMAP"
-
-#: ../src/eplugin/e-kolab-plugin-ui.c:328
-msgid "IMAP Access Control"
-msgstr "Kontrola dostępu IMAP"
-
-#: ../src/libekolab/kolab-mail-access.c:237
+#: ../src/libekolab/kolab-mail-access.c:307
 #, c-format
 msgid "Folder name '%s' is unknown to internal database"
 msgstr "Nazwa katalogu \"%s\" jest nieznana dla wewnętrznej bazy danych"
 
-#: ../src/libekolab/kolab-mail-access.c:274
-#: ../src/libekolab/kolab-mail-access.c:458
+#: ../src/libekolab/kolab-mail-access.c:343
+#: ../src/libekolab/kolab-mail-access.c:527
 #, c-format
 msgid ""
 "Internal inconsistency detected: Invalid PIM Object handle, cannot get any "
 "UID"
-msgstr "Wykryto wewnętrzną niespójność: nieprawidłowa obsługa obiektu PIM, nie można uzyskać żadnego UID"
+msgstr ""
+"Wykryto wewnętrzną niespójność: nieprawidłowa obsługa obiektu PIM, nie można "
+"uzyskać żadnego UID"
 
-#: ../src/libekolab/kolab-mail-access.c:282
-#: ../src/libekolab/kolab-mail-access.c:467
+#: ../src/libekolab/kolab-mail-access.c:351
+#: ../src/libekolab/kolab-mail-access.c:536
 #, c-format
 msgid ""
 "Internal inconsistency detected: Invalid PIM Object handle, cannot get "
 "foldername, UID '%s'"
-msgstr "Wykryto wewnętrzną niespójność: nieprawidłowa obsługa obiektu PIM, nie można uzyskać nazwy katalogu, UID \"%s\""
+msgstr ""
+"Wykryto wewnętrzną niespójność: nieprawidłowa obsługa obiektu PIM, nie można "
+"uzyskać nazwy katalogu, UID \"%s\""
 
-#: ../src/libekolab/kolab-mail-access.c:426
+#: ../src/libekolab/kolab-mail-access.c:495
 #, c-format
 msgid "PIM Object not found in internal database, UID '%s', Folder '%s'"
-msgstr "Nie odnaleziono obiektu PIM w wewnętrznej bazie danych, UID \"%s\", katalog \"%s\""
+msgstr ""
+"Nie odnaleziono obiektu PIM w wewnętrznej bazie danych, UID \"%s\", katalog "
+"\"%s\""
 
-#: ../src/libekolab/kolab-mail-access.c:684
+#: ../src/libekolab/kolab-mail-access.c:753
 #, c-format
 msgid ""
 "PIM Object not stored due to selected synchronization strategy, UID '%s', "
 "Folder '%s'"
-msgstr "Obiekt PIM nie został przechowany z powodu wybranej strategii synchronizacji, UID \"%s\", katalog \"%s\""
+msgstr ""
+"Obiekt PIM nie został przechowany z powodu wybranej strategii "
+"synchronizacji, UID \"%s\", katalog \"%s\""
 
-#: ../src/libekolab/kolab-mail-access.c:739
+#: ../src/libekolab/kolab-mail-access.c:808
 #, c-format
 msgid ""
 "Internal inconsistency detected: PIM Object handle, UID %s, has folder name "
 "'%s' set, but supplied folder name to delete it from is '%s'"
-msgstr "Wykryto wewnętrzną niespójność: obsługa obiektu PIM, UID \"%s\", posiada ustawioną nazwę katalogu \"%s\", ale podana nazwa katalogu, z którego go usunąć to \"%s\""
+msgstr ""
+"Wykryto wewnętrzną niespójność: obsługa obiektu PIM, UID \"%s\", posiada "
+"ustawioną nazwę katalogu \"%s\", ale podana nazwa katalogu, z którego go "
+"usunąć to \"%s\""
 
-#: ../src/libekolab/kolab-mail-access.c:951
+#: ../src/libekolab/kolab-mail-access.c:1104
 #, c-format
 msgid "Backend not in CONFIGURED state"
 msgstr "Mechanizm nie jest w stanie SKONFIGUROWANY"
 
-#: ../src/libekolab/kolab-mail-access.c:1070
-#: ../src/libekolab/kolab-mail-access.c:1302
+#: ../src/libekolab/kolab-mail-access.c:1221
+#: ../src/libekolab/kolab-mail-access.c:1350
 #, c-format
 msgid "Backend not in OFFLINE state"
 msgstr "Mechanizm nie jest w stanie OFFLINE"
 
-#: ../src/libekolab/kolab-mail-access.c:1195
+#: ../src/libekolab/kolab-mail-access.c:1303
 #, c-format
 msgid "Backend not in ONLINE state"
 msgstr "Mechanizm nie jest w stanie ONLINE"
 
-#: ../src/libekolab/kolab-mail-access.c:1424
+#: ../src/libekolab/kolab-mail-access.c:1472
 #, c-format
 msgid "Backend not in SHUTDOWN state"
 msgstr "Mechanizm nie jest w stanie WYŁĄCZANIE"
 
-#: ../src/libekolab/kolab-mail-access.c:1547
+#: ../src/libekolab/kolab-mail-access.c:1595
 #, c-format
 msgid "No transition function defined from operational mode %i"
 msgstr "Nie określono funkcji przejścia z trybu działania %i"
 
-#: ../src/libekolab/kolab-mail-access.c:1558
+#: ../src/libekolab/kolab-mail-access.c:1606
 #, c-format
 msgid "No transition function defined from operational mode %i to %i"
 msgstr "Nie określono funkcji przejścia z trybu działania %i do %i"
 
-#: ../src/libekolab/kolab-mail-access.c:1611
+#: ../src/libekolab/kolab-mail-access.c:1661
 #, c-format
 msgid "Backend is shutting down"
 msgstr "Mechanizm jest wyłączany"
 
-#: ../src/libekolab/kolab-mail-access.c:2323
+#: ../src/libekolab/kolab-mail-access.c:2399
 #, c-format
 msgid ""
 "PIM Object handle, UID '%s', which has PIM type %i, cannot be stored in "
 "folder of mismatching PIM type %i"
-msgstr "Obsługa obiektu PIM, UID \"%s\", która posiada tym PIM %i, nie może zostać przechowana w katalogu o niepasującym typie PIM %i"
+msgstr ""
+"Obsługa obiektu PIM, UID \"%s\", która posiada tym PIM %i, nie może zostać "
+"przechowana w katalogu o niepasującym typie PIM %i"
 
-#: ../src/libekolab/kolab-mail-access.c:2424
-#: ../src/libekolab/kolab-mail-access.c:2574
+#: ../src/libekolab/kolab-mail-access.c:2512
+#: ../src/libekolab/kolab-mail-access.c:2672
 #, c-format
 msgid "Internal inconsistency detected: Cannot get local PIM Object handle"
-msgstr "Wykryto wewnętrzną niespójność: nie można uzyskać lokalnej obsługi obiektu PIM"
+msgstr ""
+"Wykryto wewnętrzną niespójność: nie można uzyskać lokalnej obsługi obiektu "
+"PIM"
 
 #: ../src/libekolab/kolab-mail-handle.c:178
 #, c-format
 msgid ""
 "Internal inconsistency detected: PIM Object handle has inconsistent summary "
 "information, UID '%s', Folder '%s'"
-msgstr "Wykryto wewnętrzną niespójność: obsługa obiektu PIM posiada niespójne informacje o podsumowaniu, UID \"%s\", katalog \"%s\""
+msgstr ""
+"Wykryto wewnętrzną niespójność: obsługa obiektu PIM posiada niespójne "
+"informacje o podsumowaniu, UID \"%s\", katalog \"%s\""
 
 #: ../src/libekolab/kolab-mail-handle.c:189
 #, c-format
 msgid ""
 "Internal inconsistency detected: PIM Object handle has inconsistent folder "
 "context information (expected %i, got %i), UID '%s', Folder '%s'"
-msgstr "Wykryto wewnętrzną niespójność: obsługa obiektu PIM posiada niespójne informacje o kontekście katalogu (oczekiwano %i, otrzymano %i), UID \"%s\", katalog \"%s\""
+msgstr ""
+"Wykryto wewnętrzną niespójność: obsługa obiektu PIM posiada niespójne "
+"informacje o kontekście katalogu (oczekiwano %i, otrzymano %i), UID \"%s\", "
+"katalog \"%s\""
 
 #: ../src/libekolab/kolab-mail-handle.c:200
 #, c-format
 msgid ""
 "Internal inconsistency detected: PIM Object handle is incomplete, UID '%s', "
 "Folder '%s'"
-msgstr "Wykryto wewnętrzną niespójność: obsługa obiektu PIM jest niepełna, UID \"%s\", katalog \"%s\""
+msgstr ""
+"Wykryto wewnętrzną niespójność: obsługa obiektu PIM jest niepełna, UID \"%s"
+"\", katalog \"%s\""
 
 #: ../src/libekolab/kolab-mail-handle.c:414
 #, c-format
 msgid ""
 "Data conversion to Kolab format failed for PIM Object, UID '%s', Folder '%s'"
-msgstr "Konwersja danych do formatu Kolab się nie powiodło dla obiektu PIM, UID \"%s\", katalog \"%s\""
+msgstr ""
+"Konwersja danych do formatu Kolab się nie powiodło dla obiektu PIM, UID \"%s"
+"\", katalog \"%s\""
 
 #: ../src/libekolab/kolab-mail-handle.c:496
 #, c-format
 msgid "JOURNAL data type not supported for PIM Object, UID '%s', Folder '%s'"
-msgstr "Typ danych DZIENNIK jest nieobsługiwany dla obiektu PIM, UID \"%s\", katalog \"%s\""
+msgstr ""
+"Typ danych DZIENNIK jest nieobsługiwany dla obiektu PIM, UID \"%s\", katalog "
+"\"%s\""
 
 #: ../src/libekolab/kolab-mail-handle.c:503
 #, c-format
@@ -885,14 +713,18 @@ msgstr "Nieznany typ danych dla obiektu PIM, UID \"%s\", katalog \"%s\""
 msgid ""
 "Conversion from Kolab calendar type to Evolution failed for PIM Object, UID "
 "'%s', Folder '%s'"
-msgstr "Konwersja z typu kalendarza Kolab do programu Evolution się nie powiodła dla obiektu PIM, UID \"%s\", katalog \"%s\""
+msgstr ""
+"Konwersja z typu kalendarza Kolab do programu Evolution się nie powiodła dla "
+"obiektu PIM, UID \"%s\", katalog \"%s\""
 
 #: ../src/libekolab/kolab-mail-handle.c:542
 #, c-format
 msgid ""
 "Internal inconsistency detected: Corrupt timezone object for PIM Object, UID "
 "'%s', Folder '%s'"
-msgstr "Wykryto wewnętrzną niespójność: uszkodzony obiekt strefy czasowej dla obiektu PIM, UID \"%s\", katalog \"%s\""
+msgstr ""
+"Wykryto wewnętrzną niespójność: uszkodzony obiekt strefy czasowej dla "
+"obiektu PIM, UID \"%s\", katalog \"%s\""
 
 #: ../src/libekolab/kolab-mail-handle.c:554
 #: ../src/libekolab/kolab-mail-handle.c:580
@@ -900,7 +732,18 @@ msgstr "Wykryto wewnętrzną niespójność: uszkodzony obiekt strefy czasowej d
 msgid ""
 "Invalid Kolab mail object (UID in subject does not match UID in data part), "
 "UID '%s', Folder '%s'"
-msgstr "Nieprawidłowy obiekt poczty Kolab (UID w temacie nie zgadza się z UID w części danych), UID \"%s\", katalog \"%s\""
+msgstr ""
+"Nieprawidłowy obiekt poczty Kolab (UID w temacie nie zgadza się z UID w "
+"części danych), UID \"%s\", katalog \"%s\""
+
+#: ../src/libekolab/kolab-mail-handle.c:567
+#, c-format
+msgid ""
+"Conversion from Kolab contact type to Evolution failed for PIM Object, UID "
+"'%s', Folder '%s'"
+msgstr ""
+"Konwersja z typu kontaktu Kolab do programu Evolution się nie powiodła dla "
+"obiektu PIM, UID \"%s\", katalog \"%s\""
 
 #: ../src/libekolab/kolab-mail-handle.c:605
 #: ../src/libekolab/kolab-mail-handle.c:882
@@ -908,83 +751,107 @@ msgstr "Nieprawidłowy obiekt poczty Kolab (UID w temacie nie zgadza się z UID 
 msgid ""
 "Internal inconsistency detected: Invalid summary information for PIM Object, "
 "UID '%s', Folder '%s'"
-msgstr "Wykryto wewnętrzną niespójność: nieprawidłowe informacje o podsumowaniu dla obiektu PIM, UID \"%s\", katalog \"%s\""
+msgstr ""
+"Wykryto wewnętrzną niespójność: nieprawidłowe informacje o podsumowaniu dla "
+"obiektu PIM, UID \"%s\", katalog \"%s\""
 
-#: ../src/libekolab/kolab-mail-imap-client.c:220
+#: ../src/libekolab/kolab-mail-imap-client.c:219
 #, c-format
 msgid "Cannot get Camel folder for path '%s'"
 msgstr "Nie można pobrać katalogu Camel dla ścieżki \"%s\""
 
-#: ../src/libekolab/kolab-mail-imap-client.c:679
+#: ../src/libekolab/kolab-mail-imap-client.c:734
 #, c-format
 msgid "Internal inconsistency detected: Folder PIM context not set"
 msgstr "Wykryto wewnętrzną niespójność: nie ustawiono kontekstu katalogu PIM"
 
-#: ../src/libekolab/kolab-mail-imap-client.c:1127
+#: ../src/libekolab/kolab-mail-imap-client.c:853
+#, c-format
+msgid "Could not set PIM folder context %i for this backend"
+msgstr "Nie można ustawić kontekstu katalogu PIM %i dla tego mechanizmu"
+
+#: ../src/libekolab/kolab-mail-imap-client.c:1120
 #, c-format
 msgid "Folder '%s' has an invalid PIM type"
 msgstr "Katalog \"%s\" posiada nieprawidłowy typ PIM"
 
-#: ../src/libekolab/kolab-mail-imap-client.c:1370
+#: ../src/libekolab/kolab-mail-imap-client.c:1149
+#, c-format
+msgid "You must be working online to complete this operation"
+msgstr "Do ukończenia tego działania konieczne jest połączenie z siecią"
+
+#: ../src/libekolab/kolab-mail-imap-client.c:1431
 #, c-format
 msgid ""
 "Internal inconsistency detected: Folder '%s' has a PIM type %i set which "
 "does not map to a known folder context"
-msgstr "Wykryto wewnętrzną niespójność: katalog \"%s\" posiada ustawiony typ PIM %i, który nie pasuje do znanego kontekstu katalogu"
+msgstr ""
+"Wykryto wewnętrzną niespójność: katalog \"%s\" posiada ustawiony typ PIM %i, "
+"który nie pasuje do znanego kontekstu katalogu"
 
-#: ../src/libekolab/kolab-mail-imap-client.c:1446
+#: ../src/libekolab/kolab-mail-imap-client.c:1507
 #, c-format
 msgid "Folder creation not yet implemented"
 msgstr "Nie zaimplementowano tworzenia katalogów"
 
-#: ../src/libekolab/kolab-mail-imap-client.c:1459
+#: ../src/libekolab/kolab-mail-imap-client.c:1520
 #, c-format
 msgid "Moving object to different folder not yet implemented"
-msgstr "Przenoszenie obiektu do innego katalogu nie zostało jeszcze zaimplementowane"
+msgstr ""
+"Przenoszenie obiektu do innego katalogu nie zostało jeszcze zaimplementowane"
 
-#: ../src/libekolab/kolab-mail-imap-client.c:1486
-#: ../src/libekolab/kolab-mail-imap-client.c:1909
+#: ../src/libekolab/kolab-mail-imap-client.c:1547
+#: ../src/libekolab/kolab-mail-imap-client.c:1971
 #, c-format
 msgid "Could not get Camel folder for '%s'"
 msgstr "Nie można pobrać katalogu Camel dla \"%s\""
 
-#: ../src/libekolab/kolab-mail-imap-client.c:1595
+#: ../src/libekolab/kolab-mail-imap-client.c:1656
 #, c-format
 msgid "Could not read-back mail message from server, UID '%s', Folder '%s'"
-msgstr "Nie można odczytać powtórnie wiadomości pocztowej z serwera, UID \"%s\", katalog \"%s\""
+msgstr ""
+"Nie można odczytać powtórnie wiadomości pocztowej z serwera, UID \"%s\", "
+"katalog \"%s\""
 
-#: ../src/libekolab/kolab-mail-imap-client.c:1606
+#: ../src/libekolab/kolab-mail-imap-client.c:1667
 #, c-format
 msgid "Could not get IMAP UID from message, UID '%s', Folder '%s'"
 msgstr "Nie można uzyskać UID IMAP z wiadomości, UID \"%s\", katalog \"%s\""
 
-#: ../src/libekolab/kolab-mail-imap-client.c:1712
-#: ../src/libekolab/kolab-mail-imap-client.c:1870
+#: ../src/libekolab/kolab-mail-imap-client.c:1773
+#: ../src/libekolab/kolab-mail-imap-client.c:1932
 #, c-format
 msgid "Internal inconsistency detected: Kolab UID not set on PIM Object handle"
-msgstr "Wykryto wewnętrzną niespójność: UID Kolab nie jest ustawiony w obsłudze obiektu PIM"
+msgstr ""
+"Wykryto wewnętrzną niespójność: UID Kolab nie jest ustawiony w obsłudze "
+"obiektu PIM"
 
-#: ../src/libekolab/kolab-mail-imap-client.c:1721
-#: ../src/libekolab/kolab-mail-imap-client.c:1879
-#: ../src/libekolab/kolab-mail-side-cache.c:740
-#: ../src/libekolab/kolab-mail-side-cache.c:833
+#: ../src/libekolab/kolab-mail-imap-client.c:1782
+#: ../src/libekolab/kolab-mail-imap-client.c:1941
+#: ../src/libekolab/kolab-mail-side-cache.c:786
+#: ../src/libekolab/kolab-mail-side-cache.c:879
 #, c-format
 msgid ""
 "Internal inconsistency detected: Folder name not set on PIM Object handle, "
 "UID '%s'"
-msgstr "Wykryto wewnętrzną niespójność: nazwa katalogu nie jest ustawiona w obsłudze obiektu PIM, UID \"%s\""
+msgstr ""
+"Wykryto wewnętrzną niespójność: nazwa katalogu nie jest ustawiona w obsłudze "
+"obiektu PIM, UID \"%s\""
 
-#: ../src/libekolab/kolab-mail-imap-client.c:1748
+#: ../src/libekolab/kolab-mail-imap-client.c:1810
 #, c-format
 msgid ""
 "Internal inconsistency detected: Folder context mismatch, real is %i, stored "
 "is %i, UID '%s', Folder '%s'"
-msgstr "Wykryto wewnętrzną niespójność: kontekst katalogu nie pasuje, prawdziwy to %i, przechowywany to %i, UID \"%s\", katalog \"%s\""
+msgstr ""
+"Wykryto wewnętrzną niespójność: kontekst katalogu nie pasuje, prawdziwy to "
+"%i, przechowywany to %i, UID \"%s\", katalog \"%s\""
 
-#: ../src/libekolab/kolab-mail-imap-client.c:1803
+#: ../src/libekolab/kolab-mail-imap-client.c:1865
 #, c-format
 msgid "Could not find Kolab mail message, UID '%s', Folder '%s'"
-msgstr "Nie można odnaleźć wiadomości pocztowej Kolab, UID \"%s\", katalog \"%s\""
+msgstr ""
+"Nie można odnaleźć wiadomości pocztowej Kolab, UID \"%s\", katalog \"%s\""
 
 #: ../src/libekolab/kolab-mail-info-db.c:1359
 #: ../src/libekolab/kolab-mail-info-db.c:1658
@@ -1002,14 +869,18 @@ msgstr "Katalog do usunięcia nie istnieje w wewnętrznej bazie danych: \"%s\""
 msgid ""
 "Internal inconsistency detected: Folder without summary information, UID "
 "'%s', Folder '%s'"
-msgstr "Wykryto wewnętrzną niespójność: katalog bez informacji o podsumowaniu, UID \"%s\", katalog \"%s\""
+msgstr ""
+"Wykryto wewnętrzną niespójność: katalog bez informacji o podsumowaniu, UID "
+"\"%s\", katalog \"%s\""
 
 #: ../src/libekolab/kolab-mail-info-db.c:1610
 #, c-format
 msgid ""
 "Internal inconsistency detected: PIM Object has its folder deleted, UID "
 "'%s', Folder '%s'"
-msgstr "Wykryto wewnętrzną niespójność: katalog obiektu PIM został usunięty, UID \"%s\", katalog \"%s\""
+msgstr ""
+"Wykryto wewnętrzną niespójność: katalog obiektu PIM został usunięty, UID \"%s"
+"\", katalog \"%s\""
 
 #: ../src/libekolab/kolab-mail-info-db.c:1673
 #, c-format
@@ -1031,52 +902,127 @@ msgstr "Nie można rozpakować wiadomości MIME Camel"
 msgid "Mail message is not a multipart message, ignoring"
 msgstr "Wiadomość pocztowa nie jest wiadomością wieloczęściową, ignorowanie"
 
-#: ../src/libekolab/kolab-mail-mime-builder.c:253
-#, c-format
+#. Hint to translators:
+#. *
+#. * The minimum number of mime parts expected here
+#. * is subject to the Kolab format specification.
+#. * The Kolab2 format mandates a minimum number of
+#. * two mime parts, the first being a descriptive
+#. * text, the second being the Kolab XML mime part.
+#. * More mime parts may follow (e.g. attachments).
+#. * Unless the Kolab format specification changes,
+#. * KOLAB_MAIL_MIME_PARTS_MIN will therefore be 2.
+#. *
+#. * The singular form of this message will never
+#. * be displayed.
+#.
+#: ../src/libekolab/kolab-mail-mime-builder.c:266
+#, c-format, range: 2..2
 msgid ""
+"Mail message does not have the expected minimum of %i mime part, ignoring"
+msgid_plural ""
 "Mail message does not have the expected minimum of %i mime parts, ignoring"
-msgstr "Wiadomość pocztowa nie posiada oczekiwanego minimum %i części MIME, ignorowanie"
+msgstr[0] ""
+"Wiadomość pocztowa nie posiada oczekiwanego minimum %i części MIME, "
+"ignorowanie"
+msgstr[1] ""
+"Wiadomość pocztowa nie posiada oczekiwanego minimum %i części MIME, "
+"ignorowanie"
+msgstr[2] ""
+"Wiadomość pocztowa nie posiada oczekiwanego minimum %i części MIME, "
+"ignorowanie"
 
-#: ../src/libekolab/kolab-mail-mime-builder.c:291
+#: ../src/libekolab/kolab-mail-mime-builder.c:310
 #, c-format
 msgid "Mail message mime part has no content type set, skipping"
-msgstr "Część MIME wiadomości pocztowej nie posiada ustawionego typu treści, pomijanie"
+msgstr ""
+"Część MIME wiadomości pocztowej nie posiada ustawionego typu treści, "
+"pomijanie"
 
-#: ../src/libekolab/kolab-mail-mime-builder.c:303
+#: ../src/libekolab/kolab-mail-mime-builder.c:322
 #, c-format
 msgid "Could not get Camel data wrapper for mime part, skipping"
 msgstr "Nie można pobrać opakowania danych Camel dla części MIME, pomijanie"
 
-#: ../src/libekolab/kolab-mail-mime-builder.c:466
+#: ../src/libekolab/kolab-mail-mime-builder.c:485
 #, c-format
 msgid ""
-"Internal inconsistency detected: Invaldid mail part after Kolab data "
+"Internal inconsistency detected: Invalid mail part after Kolab data "
 "conversion, no Camel message created"
-msgstr "Wykryto wewnętrzną niespójność: nieprawidłowa część MIME po konwersji danych Kolab, nie utworzono wiadomości Camel"
+msgstr ""
+"Wykryto wewnętrzną niespójność: nieprawidłowa część wiadomości po konwersji "
+"danych Kolab, nie utworzono wiadomości Camel"
 
 #: ../src/libekolab/kolab-mail-side-cache.c:261
 #, c-format
 msgid ""
 "Internal inconsistency detected: Invalid cache object with zero mail message "
 "parts, UID '%s', Folder '%s'"
-msgstr "Wykryto wewnętrzną niespójność: nieprawidłowy obiekt bufora bez żadnej części wiadomości pocztowej, UID \"%s\", katalog \"%s\""
+msgstr ""
+"Wykryto wewnętrzną niespójność: nieprawidłowy obiekt bufora bez żadnej "
+"części wiadomości pocztowej, UID \"%s\", katalog \"%s\""
 
-#: ../src/libekolab/kolab-mail-side-cache.c:314
+#. Translators: This is the first sentence of a three-sentence message
+#. * of the form "Internal inconsistency detected: Invalid cache object, UID [uid],
+#. * Folder [foldername]. Expected payload size is [bytes] bytes. Actual payload
+#. * size is [bytes] bytes."
+#.
+#: ../src/libekolab/kolab-mail-side-cache.c:321
 #, c-format
 msgid ""
-"Internal inconsistency detected: Invalid cache object has %i payload bytes, "
-"expected %i bytes, UID '%s', Folder '%s'"
-msgstr "Wykryto wewnętrzną niespójność: nieprawidłowy obiekt bufora posiada %i bajtów danych, oczekiwano %i bajtów, UID \"%s\", katalog \"%s\""
+"Internal inconsistency detected: Invalid cache object, UID '%s', Folder '%s'."
+msgstr ""
+"Wykryto wewnętrzną niespójność: nieprawidłowy obiekt bufora, UID \"%s\", "
+"katalog \"%s\"."
 
-#: ../src/libekolab/kolab-mail-side-cache.c:685
+#. Translators: This is the second sentence of a three-sentence message
+#. * of the form "Internal inconsistency detected: Invalid cache object, UID [uid],
+#. * Folder [foldername]. Expected payload size is [bytes] bytes. Actual payload
+#. * size is [bytes] bytes."
+#.
+#: ../src/libekolab/kolab-mail-side-cache.c:329
+#, c-format
+msgid "Expected payload size is %i byte."
+msgid_plural "Expected payload size is %i bytes."
+msgstr[0] "Oczekiwany rozmiar danych to %i bajt."
+msgstr[1] "Oczekiwany rozmiar danych to %i bajty."
+msgstr[2] "Oczekiwany rozmiar danych to %i bajtów."
+
+#. Translators: This is the third sentence of a three-sentence message
+#. * of the form "Internal inconsistency detected: Invalid cache object, UID [uid],
+#. * Folder [foldername]. Expected payload size is [bytes] bytes. Actual payload
+#. * size is [bytes] bytes."
+#.
+#: ../src/libekolab/kolab-mail-side-cache.c:339
+#, c-format
+msgid "Actual payload size is %i byte."
+msgid_plural "Actual payload size is %i bytes."
+msgstr[0] "Właściwy rozmiar danych to %i bajt."
+msgstr[1] "Właściwy rozmiar danych to %i bajty."
+msgstr[2] "Właściwy rozmiar danych to %i bajtów."
+
+#. Translators: This is the concatenated three-sentence message
+#. * of the form "Internal inconsistency detected: Invalid cache object,
+#. * UID [uid], Folder [foldername]. Expected payload size is [bytes]
+#. * bytes. Actual payload size is [bytes] bytes."
+#. * Reverse the ordering of the string arguments for RTL languages
+#.
+#: ../src/libekolab/kolab-mail-side-cache.c:350
+#, c-format
+msgid "%1$s %2$s %3$s"
+msgstr "%1$s %2$s %3$s"
+
 #: ../src/libekolab/kolab-mail-side-cache.c:731
-#: ../src/libekolab/kolab-mail-side-cache.c:824
-#: ../src/libekolab/kolab-mail-synchronizer.c:1873
+#: ../src/libekolab/kolab-mail-side-cache.c:777
+#: ../src/libekolab/kolab-mail-side-cache.c:870
+#: ../src/libekolab/kolab-mail-synchronizer.c:1872
 #, c-format
 msgid "Internal inconsistency detected: PIM Object handle has no Kolab UID set"
-msgstr "Wykryto wewnętrzną niespójność: obsługa obiektu PIM nie posiada ustawionego UID Kolab"
+msgstr ""
+"Wykryto wewnętrzną niespójność: obsługa obiektu PIM nie posiada ustawionego "
+"UID Kolab"
 
-#: ../src/libekolab/kolab-mail-side-cache.c:757
+#: ../src/libekolab/kolab-mail-side-cache.c:803
 #, c-format
 msgid "Could not find cache object, UID '%s', Folder '%s'"
 msgstr "Nie można odnaleźć obiektu bufora, UID \"%s\"', katalog \"%s\""
@@ -1086,136 +1032,115 @@ msgstr "Nie można odnaleźć obiektu bufora, UID \"%s\"', katalog \"%s\""
 msgid ""
 "Folder not found, neither in internal database as '%s', nor on the server as "
 "'%s'"
-msgstr "Nie odnaleziono katalogu, ani w wewnętrznej bazie danych jako \"%s\", ani na serwerze jako \"%s\""
+msgstr ""
+"Nie odnaleziono katalogu, ani w wewnętrznej bazie danych jako \"%s\", ani na "
+"serwerze jako \"%s\""
 
 #: ../src/libekolab/kolab-mail-synchronizer.c:451
 #, c-format
 msgid ""
 "Internal inconsistency detected: Could not get a folder name, no info from "
 "internal database, write cache, or the IMAP cache"
-msgstr "Wykryto wewnętrzną niespójność: nie można uzyskać nazwy katalogu, brak informacji z wewnętrznej bazy danych, bufora zapisu lub bufora IMAP"
+msgstr ""
+"Wykryto wewnętrzną niespójność: nie można uzyskać nazwy katalogu, brak "
+"informacji z wewnętrznej bazy danych, bufora zapisu lub bufora IMAP"
 
 #: ../src/libekolab/kolab-mail-synchronizer.c:492
 #, c-format
 msgid ""
 "Internal inconsistency detected, Folder type %i does not map to any known "
 "folder context"
-msgstr "Wykryto wewnętrzną niespójność: typ katalogu %i nie pasuje do żadnego znanego kontekstu katalogu"
+msgstr ""
+"Wykryto wewnętrzną niespójność: typ katalogu %i nie pasuje do żadnego "
+"znanego kontekstu katalogu"
 
 #: ../src/libekolab/kolab-mail-synchronizer.c:1169
 #, c-format
 msgid "Folder does not exist in internal database: '%s'"
 msgstr "Katalog nie istnieje w wewnętrznej bazie danych: \"%s\""
 
-#: ../src/libekolab/kolab-settings-handler.c:158
-#: ../src/libekolab/kolab-settings-handler.c:213
-#: ../src/libekolab/kolab-settings-handler.c:276
+#: ../src/libekolab/kolab-settings-handler.c:157
+#: ../src/libekolab/kolab-settings-handler.c:212
+#: ../src/libekolab/kolab-settings-handler.c:275
 #, c-format
 msgid "Could not create directory '%s' ('%s')"
 msgstr "Nie można utworzyć katalogu \"%s\" (\"%s\")"
 
-#: ../src/libekolab/kolab-settings-handler.c:231
+#: ../src/libekolab/kolab-settings-handler.c:230
 #, c-format
 msgid "Cannot set Camel data directory, it is a read-only resource"
-msgstr "Nie można ustawić katalogu danych Camel, jest on zasobem tylko do odczytu"
+msgstr ""
+"Nie można ustawić katalogu danych Camel, jest on zasobem tylko do odczytu"
 
-#: ../src/libekolab/kolab-settings-handler.c:294
+#: ../src/libekolab/kolab-settings-handler.c:293
 #, c-format
 msgid "Cannot set Camel configuration directory, it is a read-only resource"
-msgstr "Nie można ustawić katalogu konfiguracji Camel, jest on zasobem tylko do odczytu"
+msgstr ""
+"Nie można ustawić katalogu konfiguracji Camel, jest on zasobem tylko do "
+"odczytu"
 
-#: ../src/libekolab/kolab-settings-handler.c:306
+#: ../src/libekolab/kolab-settings-handler.c:305
 #, c-format
 msgid "Cannot change folder context after it has initially been set"
 msgstr "Nie można zmienić kontekstu katalogu po jego początkowym ustawieniu"
 
-#: ../src/libekolab/kolab-settings-handler.c:952
+#: ../src/libekolab/kolab-settings-handler.c:1030
 #, c-format
 msgid ""
 "Internal inconsistency detected: No settings table exists, no value has "
 "previously been set"
-msgstr "Wykryto wewnętrzną niespójność: tablica ustawień nie istnieje, żadna wartość nie została poprzednio ustawiona"
+msgstr ""
+"Wykryto wewnętrzną niespójność: tablica ustawień nie istnieje, żadna wartość "
+"nie została poprzednio ustawiona"
 
-#: ../src/libekolab/kolab-settings-handler.c:962
+#: ../src/libekolab/kolab-settings-handler.c:1040
 #, c-format
 msgid "Internal inconsistency detected: No settings table with ID '%i' exists"
-msgstr "Wykryto wewnętrzną niespójność: tablica ustawień o identyfikatorze \"%i\" nie istnieje"
+msgstr ""
+"Wykryto wewnętrzną niespójność: tablica ustawień o identyfikatorze \"%i\" "
+"nie istnieje"
 
-#: ../src/libekolab/kolab-settings-handler.c:972
+#: ../src/libekolab/kolab-settings-handler.c:1050
 #, c-format
 msgid ""
 "Internal inconsistency detected: No settings value for table ID '%i', key ID "
 "'%s', exists"
-msgstr "Wykryto wewnętrzną niespójność: wartość ustawień dla identyfikatora tablicy \"%i\", identyfikatora klucza \"%s\", nie istnieje"
+msgstr ""
+"Wykryto wewnętrzną niespójność: wartość ustawień dla identyfikatora tablicy "
+"\"%i\", identyfikatora klucza \"%s\", nie istnieje"
 
-#: ../src/libekolab/kolab-util-backend.c:400
+#: ../src/libekolab/kolab-util-backend.c:388
 #, c-format
 msgid "Could not get Camel storage path for internal database"
-msgstr "Nie można uzyskać ścieżki do pamięci masowej Camel dla wewnętrznej bazy danych"
+msgstr ""
+"Nie można uzyskać ścieżki do pamięci masowej Camel dla wewnętrznej bazy "
+"danych"
 
-#. appropriate?
-#: ../src/libekolabconv/main/src/kolab-conv.c:185
-#, c-format
-msgid "Empty server response"
-msgstr "Pusta odpowiedź serwera"
-
-#. appropriate?
-#: ../src/libekolabconv/main/src/kolab-conv.c:196
-#, c-format
-msgid "Cannot parse server response"
-msgstr "Nie można przetworzyć odpowiedzi serwera"
-
-#. appropriate?
-#: ../src/libekolabconv/main/src/kolab-conv.c:213
-#: ../src/libekolabconv/main/src/kolab-conv.c:222
-#, c-format
-msgid "Unsupported component type"
-msgstr "Nieobsługiwany typ składnika"
-
-#: ../src/libekolabconv/main/src/kolab/contact-k-to-i.c:99
-#: ../src/libekolabconv/main/src/kolab/event-k-to-i.c:92
-#: ../src/libekolabconv/main/src/kolab/note-k-to-i.c:113
-#: ../src/libekolabconv/main/src/kolab/task-k-to-i.c:79
-#, c-format
-msgid "Root tag is missing"
-msgstr "Brak głównego znacznika"
-
-#: ../src/libekolabconv/main/src/kolab/kolab-util.c:149
-#, c-format
-msgid "Kolab mail struct must not be null"
-msgstr "Struct poczty Kolab nie może być pusty"
-
-#: ../src/libekolabconv/main/src/kolab/kolab-util.c:161
-#, c-format
-msgid "XML parser returned null for data part %d"
-msgstr "Parser XML zwrócił puste dane dla części danych %d"
-
-#: ../src/libekolabconv/main/src/kolab/kolab-util.c:170
-#, c-format
-msgid "Kolab mail struct has no Kolab XML data part"
-msgstr "Struct poczty Kolab nie posiada części danych XML Kolab"
-
-#: ../src/libekolabutil/kolab-util-camel.c:60
+#: ../src/libekolabutil/kolab-util-camel.c:59
 #, c-format
 msgid "Failed to initialize Camel subsystem"
 msgstr "Zainicjowanie podsystemu Camel się nie powiodło"
 
-#: ../src/libekolabutil/kolab-util-http.c:220
+#: ../src/libekolabutil/kolab-util-camel.c:101
 #, c-format
-msgid "Libsoup failed with status %u"
-msgstr "Biblioteka libsoup się nie powiodła ze stanem %u"
+msgid "Could not get Camel storage path"
+msgstr "Nie można uzyskać ścieżki do pamięci masowej Camel"
 
-#: ../src/libekolabutil/kolab-util-http.c:381
+#: ../src/libekolabutil/kolab-util-http.c:281
 #, c-format
 msgid "Configuring libcurl failed with CURLcode: %u"
 msgstr "Konfigurowanie biblioteki libsoup się nie powiodło z kodem CURL: %u"
 
-#: ../src/libekolabutil/kolab-util-http.c:403
+#: ../src/libekolabutil/kolab-util-http.c:303
 #, c-format
 msgid "Access to URL '%s' failed in libcurl with CURLcode: %u"
-msgstr "Uzyskanie dostępu do adresu URL \"%s\" się nie powiodło w bibliotece libcurl z kodem CURL: %u"
+msgstr ""
+"Uzyskanie dostępu do adresu URL \"%s\" się nie powiodło w bibliotece libcurl "
+"z kodem CURL: %u"
 
 #: ../src/libekolabutil/kolab-util-sqlite.c:191
 #, c-format
 msgid "Could not create full DB path for database '%s' filename '%s'"
-msgstr "Nie można utworzyć pełnej ścieżki bazy danych dla bazy \"%s\", nazwy pliku \"%s\""
+msgstr ""
+"Nie można utworzyć pełnej ścieżki bazy danych dla bazy \"%s\", nazwy pliku "
+"\"%s\""

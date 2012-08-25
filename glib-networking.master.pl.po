@@ -7,16 +7,15 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: glib-networking\n"
-"Report-Msgid-Bugs-To: http://bugzilla.gnome.org/enter_bug.cgi?"
-"product=glib&keywords=I18N+L10N&component=network\n"
-"POT-Creation-Date: 2011-11-19 01:32+0000\n"
-"PO-Revision-Date: 2012-03-03 23:47+0100\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2012-08-22 00:08+0200\n"
+"PO-Revision-Date: 2012-08-22 00:09+0200\n"
 "Last-Translator: Piotr Drąg <piotrdrag@gmail.com>\n"
 "Language-Team: Polish <gnomepl@aviary.pl>\n"
+"Language: pl\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"Language: pl\n"
 "Plural-Forms: nplurals=3; plural=(n==1 ? 0 : n%10>=2 && n%10<=4 && (n%100<10 "
 "|| n%100>=20) ? 1 : 2);\n"
 "X-Poedit-Language: Polish\n"
@@ -50,58 +49,73 @@ msgstr "Nie można przetworzyć klucza prywatnego PEM: %s"
 msgid "No certificate data provided"
 msgstr "Nie podano danych certyfikatu"
 
-#: ../tls/gnutls/gtlsclientconnection-gnutls.c:385
+#: ../tls/gnutls/gtlsclientconnection-gnutls.c:309
 msgid "Server required TLS certificate"
 msgstr "Serwer wymaga certyfikatu TLS"
 
-#: ../tls/gnutls/gtlsconnection-gnutls.c:279
+#: ../tls/gnutls/gtlsconnection-gnutls.c:254
 #, c-format
 msgid "Could not create TLS connection: %s"
 msgstr "Nie można utworzyć połączenia TLS: %s"
 
-#: ../tls/gnutls/gtlsconnection-gnutls.c:558
+#: ../tls/gnutls/gtlsconnection-gnutls.c:514
+msgid "Connection is closed"
+msgstr "Połączenie jest zamknięte"
+
+#: ../tls/gnutls/gtlsconnection-gnutls.c:574
+#: ../tls/gnutls/gtlsconnection-gnutls.c:1377
+msgid "Operation would block"
+msgstr "Działanie zablokowałoby"
+
+#: ../tls/gnutls/gtlsconnection-gnutls.c:701
 msgid "Peer failed to perform TLS handshake"
 msgstr "Wykonanie powitania TLS przez partnera się nie powiodło"
 
-#: ../tls/gnutls/gtlsconnection-gnutls.c:576
+#: ../tls/gnutls/gtlsconnection-gnutls.c:718
 msgid "Peer requested illegal TLS rehandshake"
 msgstr "Partner zażądał niedozwolonego ponownego powitania TLS"
 
-#: ../tls/gnutls/gtlsconnection-gnutls.c:594
+#: ../tls/gnutls/gtlsconnection-gnutls.c:744
 msgid "TLS connection closed unexpectedly"
 msgstr "Połączenie TLS zostało nieoczekiwanie zamknięte"
 
-#: ../tls/gnutls/gtlsconnection-gnutls.c:888
-#: ../tls/gnutls/gtlsconnection-gnutls.c:914
+#: ../tls/gnutls/gtlsconnection-gnutls.c:1055
+#: ../tls/gnutls/gtlsconnection-gnutls.c:1074
 #, c-format
 msgid "Error performing TLS handshake: %s"
 msgstr "Błąd podczas wykonywania powitania TLS: %s"
 
-#: ../tls/gnutls/gtlsconnection-gnutls.c:962
+#: ../tls/gnutls/gtlsconnection-gnutls.c:1210
 msgid "Unacceptable TLS certificate"
 msgstr "Nieakceptowalny certyfikat TLS"
 
-#: ../tls/gnutls/gtlsconnection-gnutls.c:1099
+#: ../tls/gnutls/gtlsconnection-gnutls.c:1221
+msgid "Server did not return a valid TLS certificate"
+msgstr "Serwer nie zwrócił prawidłowego certyfikatu TLS"
+
+#: ../tls/gnutls/gtlsconnection-gnutls.c:1400
 #, c-format
 msgid "Error reading data from TLS socket: %s"
 msgstr "Błąd podczas odczytywania danych z gniazda TLS: %s"
 
-#: ../tls/gnutls/gtlsconnection-gnutls.c:1125
+#: ../tls/gnutls/gtlsconnection-gnutls.c:1429
 #, c-format
 msgid "Error writing data to TLS socket: %s"
 msgstr "Błąd podczas zapisywania danych do gniazda TLS: %s"
 
-#: ../tls/gnutls/gtlsconnection-gnutls.c:1171
+#: ../tls/gnutls/gtlsconnection-gnutls.c:1473
+msgid "Connection is already closed"
+msgstr "Połączenie jest już zamknięte"
+
+#: ../tls/gnutls/gtlsconnection-gnutls.c:1483
 #, c-format
 msgid "Error performing TLS close: %s"
 msgstr "Błąd podczas wykonywania zamknięcia TLS: %s"
 
-# pd
-#: ../tls/gnutls/gtlsserverconnection-gnutls.c:138
+#: ../tls/gnutls/gtlsserverconnection-gnutls.c:103
 msgid "Certificate has no private key"
 msgstr "Certyfikat nie posiada klucza prywatnego"
 
-# pd
 #: ../tls/pkcs11/gpkcs11pin.c:108
 msgid ""
 "This is the last chance to enter the PIN correctly before the token is "
@@ -110,7 +124,6 @@ msgstr ""
 "To jest ostatnia szansa na poprawne wpisanie kodu PIN przed zablokowaniem "
 "tokena."
 
-# pd
 #: ../tls/pkcs11/gpkcs11pin.c:110
 msgid ""
 "Several PIN attempts have been incorrect, and the token will be locked after "
@@ -119,27 +132,22 @@ msgstr ""
 "Przeprowadzono kilka niepoprawnych prób wpisania kodu PIN. Token zostanie "
 "zablokowany po dalszych niepowodzeniach."
 
-# pd
 #: ../tls/pkcs11/gpkcs11pin.c:112
 msgid "The PIN entered is incorrect."
 msgstr "Wpisany kod PIN jest niepoprawny."
 
-# pd
 #: ../tls/pkcs11/gpkcs11slot.c:446
 msgid "Module"
 msgstr "Moduł"
 
-# pd
 #: ../tls/pkcs11/gpkcs11slot.c:447
 msgid "PKCS#11 Module Pointer"
 msgstr "Wskaźnik modułu PKCS#11"
 
-# pd
 #: ../tls/pkcs11/gpkcs11slot.c:454
 msgid "Slot ID"
 msgstr "Identyfikator gniazda"
 
-# pd
 #: ../tls/pkcs11/gpkcs11slot.c:455
 msgid "PKCS#11 Slot Identifier"
 msgstr "Identyfikator gniazda PKCS#11"
