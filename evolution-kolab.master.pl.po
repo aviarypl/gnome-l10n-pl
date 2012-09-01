@@ -8,8 +8,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: evolution-kolab\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2012-08-25 02:17+0200\n"
-"PO-Revision-Date: 2012-08-25 02:18+0200\n"
+"POT-Creation-Date: 2012-08-31 20:51+0200\n"
+"PO-Revision-Date: 2012-08-31 20:52+0200\n"
 "Last-Translator: Piotr Drąg <piotrdrag@gmail.com>\n"
 "Language-Team: Polish <gnomepl@aviary.pl>\n"
 "Language: pl\n"
@@ -21,21 +21,21 @@ msgstr ""
 "X-Poedit-Language: Polish\n"
 "X-Poedit-Country: Poland\n"
 
-#: ../src/addressbook/e-book-backend-kolab.c:275
-#: ../src/calendar/e-cal-backend-kolab.c:322
+#: ../src/addressbook/e-book-backend-kolab.c:271
+#: ../src/calendar/e-cal-backend-kolab.c:318
 msgid "Could not get ESource for backend"
 msgstr "Nie można uzyskać ESource dla mechanizmu"
 
-#: ../src/calendar/e-cal-backend-kolab.c:315
+#: ../src/calendar/e-cal-backend-kolab.c:311
 #, c-format
 msgid "Unknown type used in e-cal-backend-kolab initialization"
 msgstr "Użyto nieznanego typu w inicjalizacji e-cal-backend-kolab"
 
-#: ../src/calendar/e-cal-backend-kolab.c:907
+#: ../src/calendar/e-cal-backend-kolab.c:869
 msgid "Kolab does not support bulk additions"
 msgstr "Kolab nie obsługuje dodawania całości"
 
-#: ../src/calendar/e-cal-backend-kolab.c:949
+#: ../src/calendar/e-cal-backend-kolab.c:911
 msgid ""
 "TZID is set, but no timezone is available. Currently this may happen if an "
 "object is copied to an empty calendar."
@@ -43,11 +43,11 @@ msgstr ""
 "TZID jest ustawione, ale żadna strefa czasowa nie jest dostępna. Obecnie "
 "może się to zdarzyć, jeśli obiekt jest kopiowany do pustego kalendarza."
 
-#: ../src/calendar/e-cal-backend-kolab.c:1249
+#: ../src/calendar/e-cal-backend-kolab.c:1213
 msgid "Kolab does not support bulk removals"
 msgstr "Kolab nie obsługuje usuwania całości"
 
-#: ../src/calendar/e-cal-backend-kolab.c:1673
+#: ../src/calendar/e-cal-backend-kolab.c:1642
 msgid "Putting timezone object into cache failed."
 msgstr "Umieszczenie obiektu strefy czasowej w buforze się nie powiodło."
 
@@ -399,7 +399,7 @@ msgstr ""
 "został zarejestrowany dwa razy"
 
 #. FIXME define and add a sensible code here
-#: ../src/libekolab/camel-imapx-extd-server-metadata.c:81
+#: ../src/libekolab/camel-imapx-extd-server-metadata.c:87
 #, c-format
 msgid ""
 "Got ANNOTATION response but server did not advertise ANNOTATEMORE capability"
@@ -499,20 +499,15 @@ msgstr "Serwer Kolab %s"
 msgid "Kolab service for %s on %s"
 msgstr "Usługa Kolab dla %s na %s"
 
-#: ../src/libekolab/camel-kolab-imapx-store.c:993
+#: ../src/libekolab/camel-kolab-imapx-store.c:1009
 #, c-format
 msgid "Could not get user cache directory from Camel service"
 msgstr "Nie można pobrać katalogu bufora użytkownika z usługi Camel"
 
-#: ../src/libekolab/camel-kolab-session.c:235
+#: ../src/libekolab/camel-kolab-session.c:230
 #, c-format
 msgid "%s authentication failed"
 msgstr "Uwierzytelnienie %s się nie powiodło"
-
-#: ../src/libekolab/camel-kolab-session.c:314
-#, c-format
-msgid "No password was provided"
-msgstr "Nie podano hasła"
 
 #: ../src/libekolabconv/main/src/kolab/contact-k-to-i.c:99
 #: ../src/libekolabconv/main/src/kolab/event-k-to-i.c:92
@@ -556,13 +551,13 @@ msgstr "Parser XML zwrócił puste dane dla części danych %d"
 msgid "Kolab mail struct has no Kolab XML data part"
 msgstr "Struct poczty Kolab nie posiada części danych XML Kolab"
 
-#: ../src/libekolab/kolab-mail-access.c:307
+#: ../src/libekolab/kolab-mail-access.c:238
 #, c-format
 msgid "Folder name '%s' is unknown to internal database"
 msgstr "Nazwa katalogu \"%s\" jest nieznana dla wewnętrznej bazy danych"
 
-#: ../src/libekolab/kolab-mail-access.c:343
-#: ../src/libekolab/kolab-mail-access.c:527
+#: ../src/libekolab/kolab-mail-access.c:276
+#: ../src/libekolab/kolab-mail-access.c:460
 #, c-format
 msgid ""
 "Internal inconsistency detected: Invalid PIM Object handle, cannot get any "
@@ -571,8 +566,8 @@ msgstr ""
 "Wykryto wewnętrzną niespójność: nieprawidłowa obsługa obiektu PIM, nie można "
 "uzyskać żadnego UID"
 
-#: ../src/libekolab/kolab-mail-access.c:351
-#: ../src/libekolab/kolab-mail-access.c:536
+#: ../src/libekolab/kolab-mail-access.c:284
+#: ../src/libekolab/kolab-mail-access.c:469
 #, c-format
 msgid ""
 "Internal inconsistency detected: Invalid PIM Object handle, cannot get "
@@ -581,14 +576,14 @@ msgstr ""
 "Wykryto wewnętrzną niespójność: nieprawidłowa obsługa obiektu PIM, nie można "
 "uzyskać nazwy katalogu, UID \"%s\""
 
-#: ../src/libekolab/kolab-mail-access.c:495
+#: ../src/libekolab/kolab-mail-access.c:428
 #, c-format
 msgid "PIM Object not found in internal database, UID '%s', Folder '%s'"
 msgstr ""
 "Nie odnaleziono obiektu PIM w wewnętrznej bazie danych, UID \"%s\", katalog "
 "\"%s\""
 
-#: ../src/libekolab/kolab-mail-access.c:753
+#: ../src/libekolab/kolab-mail-access.c:712
 #, c-format
 msgid ""
 "PIM Object not stored due to selected synchronization strategy, UID '%s', "
@@ -597,7 +592,7 @@ msgstr ""
 "Obiekt PIM nie został przechowany z powodu wybranej strategii "
 "synchronizacji, UID \"%s\", katalog \"%s\""
 
-#: ../src/libekolab/kolab-mail-access.c:808
+#: ../src/libekolab/kolab-mail-access.c:767
 #, c-format
 msgid ""
 "Internal inconsistency detected: PIM Object handle, UID %s, has folder name "
@@ -607,43 +602,43 @@ msgstr ""
 "ustawioną nazwę katalogu \"%s\", ale podana nazwa katalogu, z którego go "
 "usunąć to \"%s\""
 
-#: ../src/libekolab/kolab-mail-access.c:1104
+#: ../src/libekolab/kolab-mail-access.c:1077
 #, c-format
 msgid "Backend not in CONFIGURED state"
 msgstr "Mechanizm nie jest w stanie SKONFIGUROWANY"
 
-#: ../src/libekolab/kolab-mail-access.c:1221
-#: ../src/libekolab/kolab-mail-access.c:1350
+#: ../src/libekolab/kolab-mail-access.c:1194
+#: ../src/libekolab/kolab-mail-access.c:1335
 #, c-format
 msgid "Backend not in OFFLINE state"
 msgstr "Mechanizm nie jest w stanie OFFLINE"
 
-#: ../src/libekolab/kolab-mail-access.c:1303
+#: ../src/libekolab/kolab-mail-access.c:1288
 #, c-format
 msgid "Backend not in ONLINE state"
 msgstr "Mechanizm nie jest w stanie ONLINE"
 
-#: ../src/libekolab/kolab-mail-access.c:1472
+#: ../src/libekolab/kolab-mail-access.c:1457
 #, c-format
 msgid "Backend not in SHUTDOWN state"
 msgstr "Mechanizm nie jest w stanie WYŁĄCZANIE"
 
-#: ../src/libekolab/kolab-mail-access.c:1595
+#: ../src/libekolab/kolab-mail-access.c:1580
 #, c-format
 msgid "No transition function defined from operational mode %i"
 msgstr "Nie określono funkcji przejścia z trybu działania %i"
 
-#: ../src/libekolab/kolab-mail-access.c:1606
+#: ../src/libekolab/kolab-mail-access.c:1591
 #, c-format
 msgid "No transition function defined from operational mode %i to %i"
 msgstr "Nie określono funkcji przejścia z trybu działania %i do %i"
 
-#: ../src/libekolab/kolab-mail-access.c:1661
+#: ../src/libekolab/kolab-mail-access.c:1649
 #, c-format
 msgid "Backend is shutting down"
 msgstr "Mechanizm jest wyłączany"
 
-#: ../src/libekolab/kolab-mail-access.c:2399
+#: ../src/libekolab/kolab-mail-access.c:2392
 #, c-format
 msgid ""
 "PIM Object handle, UID '%s', which has PIM type %i, cannot be stored in "
@@ -652,13 +647,19 @@ msgstr ""
 "Obsługa obiektu PIM, UID \"%s\", która posiada tym PIM %i, nie może zostać "
 "przechowana w katalogu o niepasującym typie PIM %i"
 
-#: ../src/libekolab/kolab-mail-access.c:2512
-#: ../src/libekolab/kolab-mail-access.c:2672
+#: ../src/libekolab/kolab-mail-access.c:2506
+#: ../src/libekolab/kolab-mail-access.c:2666
 #, c-format
 msgid "Internal inconsistency detected: Cannot get local PIM Object handle"
 msgstr ""
 "Wykryto wewnętrzną niespójność: nie można uzyskać lokalnej obsługi obiektu "
 "PIM"
+
+#: ../src/libekolab/kolab-mail-access.c:3004
+#: ../src/libekolab/kolab-mail-imap-client.c:1475
+#, c-format
+msgid "You must be working online to complete this operation"
+msgstr "Do ukończenia tego działania konieczne jest połączenie z siecią"
 
 #: ../src/libekolab/kolab-mail-handle.c:178
 #, c-format
@@ -760,27 +761,55 @@ msgstr ""
 msgid "Cannot get Camel folder for path '%s'"
 msgstr "Nie można pobrać katalogu Camel dla ścieżki \"%s\""
 
-#: ../src/libekolab/kolab-mail-imap-client.c:734
+#: ../src/libekolab/kolab-mail-imap-client.c:752
+#, c-format
+msgid ""
+"Internal inconsistency detected: Could not set temporary folder creation "
+"type on CamelKolabIMAPXStore"
+msgstr ""
+"Wykryto wewnętrzną niespójność: nie można ustawić typu utworzenia katalogu "
+"tymczasowego w CamelKolabIMAPXStore"
+
+#: ../src/libekolab/kolab-mail-imap-client.c:802
+#, c-format
+msgid "Moving object to different folder not yet implemented"
+msgstr ""
+"Przenoszenie obiektu do innego katalogu nie zostało jeszcze zaimplementowane"
+
+#: ../src/libekolab/kolab-mail-imap-client.c:829
+#: ../src/libekolab/kolab-mail-imap-client.c:2043
+#, c-format
+msgid "Could not get Camel folder for '%s'"
+msgstr "Nie można pobrać katalogu Camel dla \"%s\""
+
+#: ../src/libekolab/kolab-mail-imap-client.c:938
+#, c-format
+msgid "Could not read-back mail message from server, UID '%s', Folder '%s'"
+msgstr ""
+"Nie można odczytać powtórnie wiadomości pocztowej z serwera, UID \"%s\", "
+"katalog \"%s\""
+
+#: ../src/libekolab/kolab-mail-imap-client.c:949
+#, c-format
+msgid "Could not get IMAP UID from message, UID '%s', Folder '%s'"
+msgstr "Nie można uzyskać UID IMAP z wiadomości, UID \"%s\", katalog \"%s\""
+
+#: ../src/libekolab/kolab-mail-imap-client.c:1075
 #, c-format
 msgid "Internal inconsistency detected: Folder PIM context not set"
 msgstr "Wykryto wewnętrzną niespójność: nie ustawiono kontekstu katalogu PIM"
 
-#: ../src/libekolab/kolab-mail-imap-client.c:853
+#: ../src/libekolab/kolab-mail-imap-client.c:1191
 #, c-format
 msgid "Could not set PIM folder context %i for this backend"
 msgstr "Nie można ustawić kontekstu katalogu PIM %i dla tego mechanizmu"
 
-#: ../src/libekolab/kolab-mail-imap-client.c:1120
+#: ../src/libekolab/kolab-mail-imap-client.c:1446
 #, c-format
 msgid "Folder '%s' has an invalid PIM type"
 msgstr "Katalog \"%s\" posiada nieprawidłowy typ PIM"
 
-#: ../src/libekolab/kolab-mail-imap-client.c:1149
-#, c-format
-msgid "You must be working online to complete this operation"
-msgstr "Do ukończenia tego działania konieczne jest połączenie z siecią"
-
-#: ../src/libekolab/kolab-mail-imap-client.c:1431
+#: ../src/libekolab/kolab-mail-imap-client.c:1759
 #, c-format
 msgid ""
 "Internal inconsistency detected: Folder '%s' has a PIM type %i set which "
@@ -789,45 +818,16 @@ msgstr ""
 "Wykryto wewnętrzną niespójność: katalog \"%s\" posiada ustawiony typ PIM %i, "
 "który nie pasuje do znanego kontekstu katalogu"
 
-#: ../src/libekolab/kolab-mail-imap-client.c:1507
-#, c-format
-msgid "Folder creation not yet implemented"
-msgstr "Nie zaimplementowano tworzenia katalogów"
-
-#: ../src/libekolab/kolab-mail-imap-client.c:1520
-#, c-format
-msgid "Moving object to different folder not yet implemented"
-msgstr ""
-"Przenoszenie obiektu do innego katalogu nie zostało jeszcze zaimplementowane"
-
-#: ../src/libekolab/kolab-mail-imap-client.c:1547
-#: ../src/libekolab/kolab-mail-imap-client.c:1971
-#, c-format
-msgid "Could not get Camel folder for '%s'"
-msgstr "Nie można pobrać katalogu Camel dla \"%s\""
-
-#: ../src/libekolab/kolab-mail-imap-client.c:1656
-#, c-format
-msgid "Could not read-back mail message from server, UID '%s', Folder '%s'"
-msgstr ""
-"Nie można odczytać powtórnie wiadomości pocztowej z serwera, UID \"%s\", "
-"katalog \"%s\""
-
-#: ../src/libekolab/kolab-mail-imap-client.c:1667
-#, c-format
-msgid "Could not get IMAP UID from message, UID '%s', Folder '%s'"
-msgstr "Nie można uzyskać UID IMAP z wiadomości, UID \"%s\", katalog \"%s\""
-
-#: ../src/libekolab/kolab-mail-imap-client.c:1773
-#: ../src/libekolab/kolab-mail-imap-client.c:1932
+#: ../src/libekolab/kolab-mail-imap-client.c:1845
+#: ../src/libekolab/kolab-mail-imap-client.c:2004
 #, c-format
 msgid "Internal inconsistency detected: Kolab UID not set on PIM Object handle"
 msgstr ""
 "Wykryto wewnętrzną niespójność: UID Kolab nie jest ustawiony w obsłudze "
 "obiektu PIM"
 
-#: ../src/libekolab/kolab-mail-imap-client.c:1782
-#: ../src/libekolab/kolab-mail-imap-client.c:1941
+#: ../src/libekolab/kolab-mail-imap-client.c:1854
+#: ../src/libekolab/kolab-mail-imap-client.c:2013
 #: ../src/libekolab/kolab-mail-side-cache.c:786
 #: ../src/libekolab/kolab-mail-side-cache.c:879
 #, c-format
@@ -838,7 +838,7 @@ msgstr ""
 "Wykryto wewnętrzną niespójność: nazwa katalogu nie jest ustawiona w obsłudze "
 "obiektu PIM, UID \"%s\""
 
-#: ../src/libekolab/kolab-mail-imap-client.c:1810
+#: ../src/libekolab/kolab-mail-imap-client.c:1882
 #, c-format
 msgid ""
 "Internal inconsistency detected: Folder context mismatch, real is %i, stored "
@@ -847,7 +847,7 @@ msgstr ""
 "Wykryto wewnętrzną niespójność: kontekst katalogu nie pasuje, prawdziwy to "
 "%i, przechowywany to %i, UID \"%s\", katalog \"%s\""
 
-#: ../src/libekolab/kolab-mail-imap-client.c:1865
+#: ../src/libekolab/kolab-mail-imap-client.c:1937
 #, c-format
 msgid "Could not find Kolab mail message, UID '%s', Folder '%s'"
 msgstr ""
@@ -1015,7 +1015,7 @@ msgstr "%1$s %2$s %3$s"
 #: ../src/libekolab/kolab-mail-side-cache.c:731
 #: ../src/libekolab/kolab-mail-side-cache.c:777
 #: ../src/libekolab/kolab-mail-side-cache.c:870
-#: ../src/libekolab/kolab-mail-synchronizer.c:1872
+#: ../src/libekolab/kolab-mail-synchronizer.c:1879
 #, c-format
 msgid "Internal inconsistency detected: PIM Object handle has no Kolab UID set"
 msgstr ""
@@ -1116,12 +1116,12 @@ msgstr ""
 "Nie można uzyskać ścieżki do pamięci masowej Camel dla wewnętrznej bazy "
 "danych"
 
-#: ../src/libekolabutil/kolab-util-camel.c:59
+#: ../src/libekolabutil/kolab-util-camel.c:60
 #, c-format
 msgid "Failed to initialize Camel subsystem"
 msgstr "Zainicjowanie podsystemu Camel się nie powiodło"
 
-#: ../src/libekolabutil/kolab-util-camel.c:101
+#: ../src/libekolabutil/kolab-util-camel.c:102
 #, c-format
 msgid "Could not get Camel storage path"
 msgstr "Nie można uzyskać ścieżki do pamięci masowej Camel"
